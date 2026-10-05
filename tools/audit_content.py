@@ -210,7 +210,7 @@ def audit_word(w, gl, ranks, easy, topic_size):
     topics = w.get("topics") or []
     if not topics:
         errors.append("topic_missing")
-    elif all(topic_size.get(t, 0) > CATCH_ALL_SIZE for t in topics):
+    elif all(t == "unsorted" or t.startswith("open_") for t in topics):
         errors.append("topic_catch_all_only")
 
     rank = ranks.get(w["lemma"].lower())

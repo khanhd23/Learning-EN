@@ -76,6 +76,86 @@ def refresh_vi_status(path, old_status, sources):
 
 EDITOR_ROWS = load_all_editor_rows()
 
+# Controlled topic taxonomy (docs/content/CONTENT_STANDARD.md §5). Topics for words come from
+# tools/authoring/entry_corrections.tsv; "unsorted" marks entries that are not in lessons yet and is
+# deliberately not listed as a topic, so the app never shows it.
+CONTROLLED_TOPICS = [
+    ('people', 'family', '👪', 'Gia đình'),
+    ('people', 'friends_relationships', '🤝', 'Bạn bè & quan hệ'),
+    ('people', 'body_appearance', '🧍', 'Cơ thể & ngoại hình'),
+    ('people', 'feelings_personality', '😊', 'Cảm xúc & tính cách'),
+    ('people', 'health_illness', '🩺', 'Sức khỏe & bệnh tật'),
+    ('people', 'age_life_stages', '🌱', 'Tuổi tác & các giai đoạn sống'),
+    ('daily_life', 'home_furniture', '🏠', 'Nhà cửa & đồ dùng'),
+    ('daily_life', 'daily_routine', '🗓️', 'Sinh hoạt hằng ngày'),
+    ('daily_life', 'food_drink', '🍎', 'Đồ ăn & thức uống'),
+    ('daily_life', 'cooking', '🍳', 'Nấu ăn'),
+    ('daily_life', 'shopping', '🛍️', 'Mua sắm'),
+    ('daily_life', 'clothes', '👕', 'Quần áo'),
+    ('daily_life', 'money_banking', '💰', 'Tiền bạc & ngân hàng'),
+    ('daily_life', 'time_dates', '⏰', 'Thời gian & ngày tháng'),
+    ('daily_life', 'numbers_quantity', '🔢', 'Số & số lượng'),
+    ('daily_life', 'weather', '🌤️', 'Thời tiết'),
+    ('places_travel', 'city_directions', '🗺️', 'Thành phố & chỉ đường'),
+    ('places_travel', 'transport', '🚌', 'Phương tiện đi lại'),
+    ('places_travel', 'travel_holidays', '✈️', 'Du lịch & kỳ nghỉ'),
+    ('places_travel', 'hotel_restaurant', '🍽️', 'Khách sạn & nhà hàng'),
+    ('places_travel', 'nature_landscape', '🌳', 'Thiên nhiên & cảnh quan'),
+    ('places_travel', 'animals', '🐾', 'Động vật'),
+    ('study', 'school', '🏫', 'Trường học'),
+    ('study', 'university', '🎓', 'Đại học'),
+    ('study', 'language_learning', '📚', 'Học ngôn ngữ'),
+    ('study', 'science_basics', '🔬', 'Khoa học cơ bản'),
+    ('study', 'academic_words', '🧠', 'Từ vựng học thuật'),
+    ('work', 'jobs', '💼', 'Nghề nghiệp'),
+    ('work', 'office', '🏢', 'Văn phòng'),
+    ('work', 'meetings', '🗣️', 'Cuộc họp'),
+    ('work', 'hr_recruiting', '🧑\u200d💼', 'Nhân sự & tuyển dụng'),
+    ('work', 'sales_customer', '🤲', 'Bán hàng & khách hàng'),
+    ('work', 'marketing', '📣', 'Tiếp thị'),
+    ('work', 'finance_accounting', '📊', 'Tài chính & kế toán'),
+    ('work', 'contracts_law', '⚖️', 'Hợp đồng & pháp luật'),
+    ('work', 'logistics', '📦', 'Sản xuất & kho vận'),
+    ('work', 'it_technology', '💻', 'Công nghệ thông tin'),
+    ('work', 'events', '📅', 'Sự kiện & hội nghị'),
+    ('society', 'media_news', '📰', 'Truyền thông & tin tức'),
+    ('society', 'internet_social', '🌐', 'Internet & mạng xã hội'),
+    ('society', 'environment_energy', '♻️', 'Môi trường & năng lượng'),
+    ('society', 'government_society', '🏛️', 'Chính phủ & xã hội'),
+    ('society', 'arts_entertainment', '🎭', 'Nghệ thuật & giải trí'),
+    ('society', 'sports_fitness', '⚽', 'Thể thao & vận động'),
+    ('language', 'function_words', '🔤', 'Từ chức năng'),
+    ('language', 'core_verbs', '▶️', 'Động từ cốt lõi'),
+    ('language', 'describing_things', '🎨', 'Miêu tả sự vật'),
+    ('language', 'linking_words', '🔗', 'Từ nối'),
+    ('language', 'phrasal_verbs', '↗️', 'Cụm động từ'),
+    ('language', 'idioms_chunks', '💬', 'Thành ngữ & cụm từ'),
+]
+CONTROLLED_TOPIC_IDS = {t[1] for t in CONTROLLED_TOPICS}
+UNSORTED = "unsorted"
+LEGACY_TOPIC_MAP = {"office": "office", "hr": "hr_recruiting", "finance": "money_banking", "accounting": "finance_accounting", "marketing": "marketing", "sales": "sales_customer", "legal": "contracts_law", "logistics": "logistics", "commerce": "shopping", "travel": "travel_holidays", "hospitality": "hotel_restaurant", "events": "events", "tech": "it_technology", "health": "health_illness", "housing": "home_furniture", "education": "school", "environment": "environment_energy", "media": "media_news", "academic": "academic_words", "family": "family", "feelings": "feelings_personality", "food": "food_drink", "weather": "weather", "sports": "sports_fitness", "entertainment": "arts_entertainment", "body": "body_appearance", "animals": "animals", "clothes": "clothes", "city": "city_directions", "social": "internet_social", "phrasal": "phrasal_verbs", "idioms": "idioms_chunks", "home_basics": "home_furniture"}
+
+
+def load_topic_corrections(words):
+    path = os.path.join(ROOT, "tools", "authoring", "entry_corrections.tsv")
+    rows = {}
+    with open(path, encoding="utf-8") as f:
+        for n, raw in enumerate(f, 1):
+            line = raw.strip()
+            if not line or line.startswith("#"):
+                continue
+            wid, _, topic_text = line.partition("|")
+            topics = [t.strip() for t in topic_text.split(",") if t.strip()]
+            ok = topics == [UNSORTED] or (1 <= len(topics) <= 3 and all(t in CONTROLLED_TOPIC_IDS for t in topics))
+            if not ok or wid in rows:
+                raise SystemExit(f"entry_corrections.tsv line {n}: bad row {line!r}")
+            rows[wid] = topics
+    missing = [w["id"] for w in words if w["id"] not in rows]
+    if missing:
+        raise SystemExit(f"entry_corrections.tsv has no topic for: {missing[:10]} (+{max(0, len(missing) - 10)})")
+    return rows
+
+
 VI_CHARS = set("áạảãấầẩẫậắằẳẵặđẹẻẽếềểễệỉĩịọỏõốồổỗộớờởỡợụủũứừửữựỳỷỹỵ")
 
 
@@ -311,11 +391,11 @@ def main():
 
     vi = dict(topics={}, words={}, conf={}, grammar={}, q={}, passages={}, pet=pet, tips=ui_tips)
 
-    # Topics
+    # Topics: only the controlled taxonomy is emitted.
     topics = []
-    for t in lib.TOPICS:
-        vi["topics"][t["id"]] = t["vi"]
-        topics.append(dict(id=t["id"], icon=t["icon"], hue=t["hue"]))
+    for i, (domain, topic_id, icon, vi_name) in enumerate(CONTROLLED_TOPICS):
+        vi["topics"][topic_id] = vi_name
+        topics.append(dict(id=topic_id, domain=domain, icon=icon, hue=i % 10))
 
     # Words
     words = []
@@ -323,6 +403,10 @@ def main():
         v = w.pop("_vi")
         vi["words"][w["id"]] = {k: val for k, val in v.items() if val}
         words.append(w)
+
+    corrections = load_topic_corrections(words)
+    for w in words:
+        w["topics"] = corrections[w["id"]]
 
     lemma_to_id = {}
     for w in words:
@@ -359,6 +443,8 @@ def main():
     block = []
     for q in lib.QUESTIONS:
         q = dict(q)
+        if q.get("topic"):
+            q["topic"] = LEGACY_TOPIC_MAP.get(q["topic"], q["topic"])
         expl = q.pop("_vi")
         q["id"] = qid(q)
         if q["id"] in seen:
@@ -415,6 +501,8 @@ def main():
     passages = []
     for p in lib.PASSAGES:
         p = dict(p)
+        if p.get("topic"):
+            p["topic"] = LEGACY_TOPIC_MAP.get(p["topic"], p["topic"])
         vi["passages"][p["id"]] = {"blanks": []}
         blanks = []
         for i, b in enumerate(p["blanks"]):

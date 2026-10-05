@@ -62,8 +62,8 @@ session, and do not start a task until the previous one is ticked in that file.
   swapped words, prefixed copies of a source, translations that only repeat the word). This gets the
   whole task reverted.
 - Editing content source files in `tools/authoring/` unless the task explicitly assigns content work to you.
-- Editing UI resources (`app/src/main/res/values*/strings.xml`, `arrays.xml`) or screen code: the owner
-  does the UI (PLAN.md "Roles"). Data tasks 1C–1F are yours.
+- Editing content or data: `tools/authoring/*`, `content/**`, `res/values*/strings.xml` and `arrays.xml`.
+  The owner writes all content, data and UI text (PLAN.md "Roles, final"). You write code.
 
 ## 3. Definition of done for every task
 

@@ -214,7 +214,7 @@ def main():
         if not w.get("ipa") or not w.get("senses") or not w.get("topics"):
             errors.append(f"word {w['id']}: missing IPA, senses or topics")
         for t in w["topics"]:
-            if t not in topic_ids:
+            if t not in topic_ids and t != "unsorted":
                 errors.append(f"word {w['id']}: unknown topic {t}")
             per_topic[t] += 1
         for s in w["senses"]:

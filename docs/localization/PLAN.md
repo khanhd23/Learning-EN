@@ -9,16 +9,16 @@ write `dist/reports/task-<N>.md`, then stop.
 - [x] Task 1A: Schema upgrade (sense IDs, `def`, `tier`, `forms`, `hl`) + quarantine imports
 - [x] Task 1A.1: Fix Task 1A regressions (question translations, placeholder/auto definitions)
 - [x] Task 1B: Fill the NGSL gaps (718 missing lemmas, function words first)
-- [ ] Task 1C: Rewrite Level 1–2 entries to the standard  *(Codex, after 1D)*
-- [ ] Task 1D: Topics: replace catch-all topics with the controlled list  *(Codex, next)*
-- [ ] Task 1E: Rewrite Level 3 entries; re-level by frequency band  *(Codex)*
-- [ ] Task 1F: Grammar questions, confusables, families up to target  *(Codex)*
+- [ ] Task 1C: Rewrite Level 1–2 entries to the standard  *(owner/Claude)*
+- [x] Task 1D: Topics: replace catch-all topics with the controlled list  *(owner/Claude)*
+- [ ] Task 1E: Rewrite Level 3 entries; re-level by frequency band  *(owner/Claude)*
+- [ ] Task 1F: Grammar questions, confusables, families up to target  *(owner/Claude)*
 - [x] Task 1G: Write the UI text (English + Vietnamese) for all string keys  *(owner/Claude)*
 - [x] Task 2: Per-locale folder layout + review status
 - [x] Task 3: Validation rules
 - [x] Task 4: `tools/locale.py` operations tool
 - [x] Task 5: UI localization (English default, `values-xx`)
-- [ ] Task 6: Show only approved content; language picker  *(owner/Claude)*
+- [ ] Task 6: Show only approved content; language picker  *(Codex)*
 - [ ] Task 7: Spanish pilot (Level 1)
 - [ ] Task 8: Store listings per locale
 
@@ -438,6 +438,19 @@ stamped by part of speech and level (almost every Level 4 adjective = `describin
 government_society, events`; Level 2 nouns = `describing_things, science_basics`), and spot checks gave
 `electricity` → weather, `volunteer` → money_banking, `true` → time_dates, `toothbrush` →
 travel_holidays, `her` → school.
+
+**Roles, final (owner decision 2026-10-05, "whatever is most efficient long-term").** Codex writes
+**code only** (Task 6 next, then tooling/app features); every content and data decision (senses,
+glosses, examples, topics, IPA, questions, UI text) is done by the owner/Claude. Codex must not edit
+`tools/authoring/*`, `content/**` or `res/values*/strings.xml|arrays.xml`.
+
+**Task 1D done by the owner (2026-10-05).** 50 controlled topics (the §5 list plus `academic_words`), each
+with `domain`, `icon` and `hue` (the app reads `hue`). Topics come from
+`tools/authoring/entry_corrections.tsv`: 786 entries assigned by meaning, 1,364 mapped from their
+meaningful legacy topic (`office`→office, `food`→food_drink, …), 3,186 dictionary-only entries set to
+`unsorted` (not a listed topic, so never shown; give them a real topic when rewritten in 1C/1E).
+Question/passage topics use the same map. Every lesson-ready entry has a real topic.
+The audit's catch-all rule is now "only `unsorted`/legacy `open_*`", not topic size.
 
 ### Task 1C: Rewrite Level 1–2 entries to the standard
 
