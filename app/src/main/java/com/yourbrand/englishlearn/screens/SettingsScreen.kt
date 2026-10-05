@@ -11,10 +11,14 @@ import androidx.appcompat.widget.SwitchCompat
 import com.yourbrand.englishlearn.BuildConfig
 import com.yourbrand.englishlearn.MainActivity
 import com.yourbrand.englishlearn.R
+import com.yourbrand.englishlearn.content.DbWordHit
 import com.yourbrand.englishlearn.core.AppLocale
 import com.yourbrand.englishlearn.notify.Reminders
 import com.yourbrand.englishlearn.pet.PetState
 import com.yourbrand.englishlearn.ui.*
+import android.os.Handler
+import android.os.Looper
+import java.util.concurrent.Executors
 
 /** S21 — Cài đặt. */
 class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
@@ -170,6 +174,10 @@ class SearchScreen(activity: MainActivity) : ScrollScreen(activity) {
     private var query = ""
     private lateinit var input: android.widget.EditText
     private lateinit var results: LinearLayout
+    private val mainHandler = Handler(Looper.getMainLooper())
+    private val searchExecutor = Executors.newSingleThreadExecutor { task -> Thread(task, "content-search").apply { isDaemon = true } }
+    private var searchVersion = 0L
+    private var pendingSearch: Runnable? = null
 
     override fun buildHeader() {
         val c = ctx
@@ -187,7 +195,7 @@ class SearchScreen(activity: MainActivity) : ScrollScreen(activity) {
             layoutParams = lp(0, WRAP_CONTENT, 1f).apply { marginEnd = c.dpi(8) }
             imeOptions = android.view.inputmethod.EditorInfo.IME_ACTION_SEARCH
             addTextChangedListener(object : android.text.TextWatcher {
-                override fun afterTextChanged(e: android.text.Editable?) { query = e?.toString().orEmpty(); renderResults() }
+                override fun afterTextChanged(e: android.text.Editable?) { query = e?.toString().orEmpty(); scheduleSearch() }
                 override fun beforeTextChanged(s: CharSequence?, a: Int, b: Int, d: Int) {}
                 override fun onTextChanged(s: CharSequence?, a: Int, b: Int, d: Int) {}
             })
@@ -199,34 +207,60 @@ class SearchScreen(activity: MainActivity) : ScrollScreen(activity) {
     override fun build(body: LinearLayout) {
         results = Kit.vbox(ctx)
         body.addView(results)
-        renderResults()
+        renderEmptyQuery()
     }
 
     private fun norm(s: String) = java.text.Normalizer.normalize(s.lowercase(), java.text.Normalizer.Form.NFD).replace(Regex("\\p{M}+"), "").replace('đ', 'd')
 
     private fun remember(q: String) { if (q.isNotBlank()) services.settings.recentSearches = (listOf(q) + services.settings.recentSearches.filter { it != q }) }
 
-    private fun renderResults() {
+    private fun scheduleSearch() {
+        if (!::results.isInitialized) return
+        searchVersion++
+        pendingSearch?.let(mainHandler::removeCallbacks)
+        val version = searchVersion
+        val rawQuery = query
+        if (rawQuery.trim().isEmpty()) { renderEmptyQuery(); return }
+        val locale = services.settings.contentLocale
+        pendingSearch = Runnable {
+            searchExecutor.submit {
+                val words = services.contentDb.searchWords(locale, rawQuery)
+                mainHandler.post { if (version == searchVersion && query == rawQuery) renderResults(rawQuery, words) }
+            }
+        }
+        mainHandler.postDelayed(pendingSearch!!, 120L)
+    }
+
+    override fun onDestroy() {
+        pendingSearch?.let(mainHandler::removeCallbacks)
+        searchExecutor.shutdownNow()
+        super.onDestroy()
+    }
+
+    private fun renderEmptyQuery() {
         val c = ctx
         if (!::results.isInitialized) return
         results.removeAllViews()
-        val q = norm(query.trim())
         val content = services.content
-        if (q.isEmpty()) {
-            val recent = services.settings.recentSearches
-            if (recent.isNotEmpty()) {
-                results.addView(Kit.section(c, str(R.string.recent_searches), 8))
-                val f = Kit.flow(c); recent.forEach { r -> f.addView(Kit.chip(c, r) { input.setText(r); input.setSelection(r.length) }) }
-                results.addView(f)
-            }
-            results.addView(Kit.section(c, str(R.string.suggest_topics)))
-            val f = Kit.flow(c)
-            content.topics.take(12).forEach { t -> f.addView(Kit.chip(c, t.icon + " " + t.name, false, Hues.color(c, t.hue)) { activity.open(WordListScreen(activity, topicId = t.id)) }) }
+        val recent = services.settings.recentSearches
+        if (recent.isNotEmpty()) {
+            results.addView(Kit.section(c, str(R.string.recent_searches), 8))
+            val f = Kit.flow(c); recent.forEach { r -> f.addView(Kit.chip(c, r) { input.setText(r); input.setSelection(r.length) }) }
             results.addView(f)
-            return
         }
-        val words = content.words.filter { w -> norm(w.lemma).contains(q) || w.senses.any { norm(it.gloss).contains(q) } }
-            .sortedBy { if (norm(it.lemma).startsWith(q)) 0 else if (norm(it.lemma).contains(q)) 1 else 2 }.take(30)
+        results.addView(Kit.section(c, str(R.string.suggest_topics)))
+        val f = Kit.flow(c)
+        content.topics.take(12).forEach { t -> f.addView(Kit.chip(c, t.icon + " " + t.name, false, Hues.color(c, t.hue)) { activity.open(WordListScreen(activity, topicId = t.id)) }) }
+        results.addView(f)
+    }
+
+    private fun renderResults(rawQuery: String, hits: List<DbWordHit>) {
+        val c = ctx
+        if (!::results.isInitialized) return
+        results.removeAllViews()
+        val content = services.content
+        val words = hits.mapNotNull { hit -> content.wordById[hit.id] }
+        val q = norm(rawQuery.trim())
         val gps = content.grammar.filter { norm(it.title).contains(q) || norm(it.formula).contains(q) }
         val topics = content.topics.filter { norm(it.name).contains(q) }
         if (words.isEmpty() && gps.isEmpty() && topics.isEmpty()) { results.addView(Kit.empty(c, "🔍", str(R.string.no_results), null, null)); return }

@@ -115,6 +115,11 @@ val copyContent = tasks.register("generateContentAssets") {
         rootProject.file("config/app_config.json").copyTo(File(dst, "app_config.json"), overwrite = true)
         rootProject.file("content/LICENSES.md").copyTo(File(dst, "LICENSES.md"), overwrite = true)
         rootProject.file("content/open-vocabulary-manifest.json").copyTo(File(dst, "open-vocabulary-manifest.json"), overwrite = true)
+        val builder = ProcessBuilder(
+            "python", "tools/build_content_db.py", "--root", rootProject.projectDir.absolutePath,
+            "--output", File(dst, "content.db").absolutePath,
+        ).directory(rootProject.projectDir).inheritIO().start()
+        if (builder.waitFor() != 0) error("build_content_db.py failed")
     }
 }
 tasks.matching {

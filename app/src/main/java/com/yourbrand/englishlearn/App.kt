@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import com.yourbrand.englishlearn.ads.AdsManager
 import com.yourbrand.englishlearn.content.Content
 import com.yourbrand.englishlearn.content.ContentRepository
+import com.yourbrand.englishlearn.content.ContentDb
 import com.yourbrand.englishlearn.core.Settings
 import com.yourbrand.englishlearn.core.AppLocale
 import com.yourbrand.englishlearn.core.Sfx
@@ -28,6 +29,7 @@ import kotlin.concurrent.thread
 class Services(private val app: Application) {
     val settings = Settings(app)
     val contentRepo = ContentRepository(app)
+    val contentDb = ContentDb(app)
     val store = LearningStore(app)
     val ads by lazy { AdsManager(app) }
     val sfx = Sfx(app) { settings.sounds }
