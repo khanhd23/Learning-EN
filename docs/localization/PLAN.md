@@ -9,7 +9,7 @@ write `dist/reports/task-<N>.md`, then stop.
 - [x] Task 1A: Schema upgrade (sense IDs, `def`, `tier`, `forms`, `hl`) + quarantine imports
 - [x] Task 1A.1: Fix Task 1A regressions (question translations, placeholder/auto definitions)
 - [x] Task 1B: Fill the NGSL gaps (718 missing lemmas, function words first)
-- [ ] Task 1C: Rewrite Level 1–2 entries to the standard  *(owner/Claude)*
+- [x] Task 1C: Rewrite Level 1–2 entries to the standard  *(owner/Claude)*
 - [x] Task 1D: Topics: replace catch-all topics with the controlled list  *(owner/Claude)*
 - [ ] Task 1E: Rewrite Level 3 entries; re-level by frequency band  *(owner/Claude)*
 - [ ] Task 1F: Grammar questions, confusables, families up to target  *(owner/Claude)*

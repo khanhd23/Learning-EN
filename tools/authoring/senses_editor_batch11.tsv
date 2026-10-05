@@ -1,0 +1,118 @@
+sense_id	pos	def	vi_gloss	example	example_vi	note
+jump_s1	v	to push yourself off the ground with your legs	nhảy	The cat jumped onto the kitchen table.	Con mèo nhảy lên bàn bếp.	owner 1C batch11
+weapon_s1	n	an object used to hurt or kill	vũ khí	The police found a weapon in the car.	Cảnh sát tìm thấy một vũ khí trong xe.	owner 1C batch11
+winter_s1	n	the coldest season of the year	mùa đông	It often snows here in winter.	Ở đây mùa đông thường có tuyết.	owner 1C batch11 [keep-gloss]
+spring_s1	n	the season between winter and summer	mùa xuân	The trees get new leaves in spring.	Cây cối ra lá mới vào mùa xuân.	owner 1C batch11
+consideration_s1	n	careful thought about something	sự cân nhắc	After some consideration, she accepted the job.	Sau khi cân nhắc, cô ấy nhận công việc.	owner 1C batch11
+code_s1	n	a set of numbers or letters; rules for computers	mã	Enter the code to open the door.	Nhập mã để mở cửa.	owner 1C batch11
+threat_s1	n	a warning that something bad may happen	mối đe dọa	Pollution is a threat to wildlife.	Ô nhiễm là mối đe dọa đối với động vật hoang dã.	owner 1C batch11
+accident_s1	n	something bad that happens by chance	tai nạn	He broke his arm in a car accident.	Anh ấy bị gãy tay trong một vụ tai nạn ô tô.	owner 1C batch11
+cancer_s1	n	a serious illness in which cells grow wrongly	bệnh ung thư	Smoking can cause lung cancer.	Hút thuốc có thể gây ung thư phổi.	owner 1C batch11 [keep-gloss]
+blow_s1	v	to move air out of your mouth; for wind to move	thổi	Blow out the candles on your cake!	Thổi nến trên bánh của bạn đi!	owner 1C batch11
+wash_s1	v	to clean something with water	rửa, giặt	Please wash your hands before dinner.	Vui lòng rửa tay trước bữa tối.	owner 1C batch11
+stone_s1	n	a hard natural material; a small piece of rock	đá, hòn đá	The old wall is made of stone.	Bức tường cũ được xây bằng đá.	owner 1C batch11
+sum_s1	n	an amount of money; the total of numbers	khoản tiền, tổng số	He paid a large sum for the car.	Anh ấy trả một khoản tiền lớn cho chiếc xe.	owner 1C batch11
+murder_s1	n	the crime of killing a person on purpose	tội giết người	He was found guilty of murder last year.	Năm ngoái anh ta bị kết tội giết người.	owner 1C batch11
+soldier_s1	n	a person who serves in an army	người lính, binh sĩ	Her grandfather was a soldier in the war.	Ông của cô ấy từng là lính trong chiến tranh.	owner 1C batch11
+shock_s1	n	a sudden feeling of surprise and upset	cú sốc	The news came as a shock to everyone.	Tin đó là một cú sốc với mọi người.	owner 1C batch11
+wine_s1	n	an alcoholic drink made from grapes	rượu vang	They had a glass of red wine with dinner.	Họ uống một ly rượu vang đỏ trong bữa tối.	owner 1C batch11
+cycle_s1	n	a series of events that repeat	chu kỳ	The water cycle brings rain back to the land.	Vòng tuần hoàn nước đưa mưa trở lại đất liền.	owner 1C batch11
+freedom_s1	n	the right to do what you want	sự tự do	Everyone should have freedom of speech.	Mọi người đều nên có quyền tự do ngôn luận.	owner 1C batch11
+vehicle_s1	n	a machine for carrying people or goods	xe cộ, phương tiện	No vehicles are allowed in the park.	Không phương tiện nào được vào công viên.	owner 1C batch11
+route_s1	n	the way from one place to another	tuyến đường	This bus route goes past the hospital.	Tuyến xe buýt này đi qua bệnh viện.	owner 1C batch11
+danger_s1	n	the possibility of harm	sự nguy hiểm	The sign warns of danger from falling rocks.	Biển báo cảnh báo nguy hiểm đá lở.	owner 1C batch11
+army_s1	n	the soldiers who fight for a country on land	quân đội	Her brother joined the army last year.	Anh trai cô ấy nhập ngũ năm ngoái.	owner 1C batch11 [keep-gloss]
+council_s1	n	a group elected to run a town or city	hội đồng	The city council approved the new park.	Hội đồng thành phố đã duyệt công viên mới.	owner 1C batch11 [keep-gloss]
+sight_s1	n	the ability to see; something you see	thị lực, cảnh	The sunset over the sea was a beautiful sight.	Hoàng hôn trên biển là một cảnh tượng tuyệt đẹp.	owner 1C batch11
+gift_s1	n	something you give to someone; a present	món quà	Thank you for the lovely birthday gift.	Cảm ơn bạn vì món quà sinh nhật dễ thương.	owner 1C batch11
+mouth_s1	n	the part of the face used to eat and speak	miệng	Don't talk with your mouth full.	Đừng nói khi miệng đang đầy thức ăn.	owner 1C batch11
+noise_s1	n	a loud or unpleasant sound	tiếng ồn	The noise from the street kept me awake.	Tiếng ồn ngoài đường khiến tôi không ngủ được.	owner 1C batch11
+manner_s1	n	the way something is done	cách, cách thức	She spoke in a calm and friendly manner.	Cô ấy nói chuyện một cách bình tĩnh và thân thiện.	owner 1C batch11
+occasion_s1	n	a special event or time	dịp	We only eat cake on special occasions.	Chúng tôi chỉ ăn bánh vào những dịp đặc biệt.	owner 1C batch11
+affair_s1	n	an event or situation; a matter	việc, vấn đề	The wedding was a small family affair.	Đám cưới là một sự kiện gia đình nhỏ.	owner 1C batch11
+belief_s1	n	a feeling that something is true	niềm tin	She has a strong belief in hard work.	Cô ấy rất tin vào sự chăm chỉ.	owner 1C batch11
+prison_s1	n	a building where criminals are kept	nhà tù	The thief spent two years in prison.	Tên trộm đã ngồi tù hai năm.	owner 1C batch11
+wood_s1	n	the hard material that trees are made of	gỗ	The table is made of dark wood.	Chiếc bàn làm bằng gỗ sẫm màu.	owner 1C batch11 [keep-gloss]
+shake_s1	v	to move something quickly up and down or side to side	lắc	Shake the bottle before you drink.	Lắc chai trước khi uống.	owner 1C batch11
+description_s1	n	words that say what something is like	sự mô tả	Can you give a description of the man?	Bạn có thể mô tả người đàn ông đó không?	owner 1C batch11
+confidence_s1	n	the feeling that you can do something well	sự tự tin	Practice gives you more confidence when speaking.	Luyện tập giúp bạn tự tin hơn khi nói.	owner 1C batch11
+error_s1	n	a mistake	lỗi, sai sót	There is an error in the first sentence.	Có một lỗi trong câu đầu tiên.	owner 1C batch11
+arrest_s1	v	to take someone to the police because of a crime	bắt giữ	The police arrested two men last night.	Cảnh sát đã bắt giữ hai người đàn ông tối qua.	owner 1C batch11
+anybody_s1	pron	any person	bất kỳ ai, ai	Is there anybody at home?	Có ai ở nhà không?	owner 1C batch11
+blood_s1	n	the red liquid that moves around your body	máu	The nurse took a small blood sample.	Y tá lấy một mẫu máu nhỏ.	owner 1C batch11
+spirit_s1	n	a person's mood, energy, or character	tinh thần	The team showed great spirit in the final.	Đội đã thể hiện tinh thần tuyệt vời trong trận chung kết.	owner 1C batch11
+ball_s1	n	a round object used in games	quả bóng	The boy kicked the ball over the fence.	Cậu bé đá quả bóng qua hàng rào.	owner 1C batch11
+background_s1	n	the area behind the main thing; a person's past	nền, lý lịch	There are mountains in the background of the photo.	Phía sau bức ảnh là những ngọn núi.	owner 1C batch11
+master_s1	n	a person who is very skilled at something	bậc thầy	He is a master of the guitar.	Anh ấy là bậc thầy về ghi-ta.	owner 1C batch11
+earth_s1	n	the planet we live on; soil	trái đất, đất	The Earth moves around the Sun.	Trái Đất quay quanh Mặt Trời.	owner 1C batch11
+faith_s1	n	strong trust in someone or something	niềm tin, lòng tin	I have faith in my team.	Tôi tin tưởng đội của mình.	owner 1C batch11
+fault_s1	n	responsibility for a mistake	lỗi	It's not your fault that the bus was late.	Xe buýt đến muộn không phải lỗi của bạn.	owner 1C batch11
+flower_s1	n	the colored part of a plant	bông hoa	She picked flowers from the garden.	Cô ấy hái hoa trong vườn.	owner 1C batch11
+boat_s1	n	a small vehicle that travels on water	chiếc thuyền	We rowed a small boat across the lake.	Chúng tôi chèo một chiếc thuyền nhỏ qua hồ.	owner 1C batch11
+flow_s1	n	a steady movement of liquid, air, or people	dòng chảy	The flow of traffic is slow this morning.	Dòng xe sáng nay di chuyển chậm.	owner 1C batch11
+hole_s1	n	an empty space or opening in something	cái lỗ	There is a hole in my sock.	Tất của tôi bị thủng một lỗ.	owner 1C batch11
+breast_s1	n	the front part of the upper body; chest	ngực	The bird has a red breast.	Con chim có ngực màu đỏ.	owner 1C batch11
+coat_s1	n	a piece of clothing worn over others to keep warm	áo khoác	Put on a warm coat before you go out.	Mặc áo khoác ấm trước khi ra ngoài.	owner 1C batch11
+leg_s1	n	one of the body parts you stand and walk on	chân	He hurt his leg playing football.	Anh ấy bị đau chân khi chơi bóng đá.	owner 1C batch11
+protection_s1	n	keeping someone or something safe	sự bảo vệ	Sunscreen gives protection from the sun.	Kem chống nắng giúp bảo vệ khỏi ánh nắng.	owner 1C batch11
+impression_s1	n	the opinion you form about someone or something	ấn tượng	She made a good impression at the interview.	Cô ấy tạo được ấn tượng tốt ở buổi phỏng vấn.	owner 1C batch11
+title_s1	n	the name of a book, film, or song	tiêu đề, tựa đề	What's the title of your favorite book?	Tựa đề cuốn sách bạn thích nhất là gì?	owner 1C batch11
+duty_s1	n	something you must do because of your job or role	nhiệm vụ, bổn phận	It's my duty to check the doors at night.	Kiểm tra cửa vào ban đêm là nhiệm vụ của tôi.	owner 1C batch11
+ear_s1	n	the part of the body you hear with	tai	My left ear hurts a little.	Tai trái của tôi hơi đau.	owner 1C batch11
+index_s1	n	an alphabetical list of topics at the back of a book	mục lục	Look up the word in the index.	Tra từ đó trong mục lục.	owner 1C batch11
+majority_s1	n	more than half of a group	đa số	The majority of students passed the test.	Đa số học sinh đã qua bài kiểm tra.	owner 1C batch11
+association_s1	n	an organization for people with a shared aim	hiệp hội	She joined the local football association.	Cô ấy gia nhập hiệp hội bóng đá địa phương.	owner 1C batch11
+justice_s1	n	fair treatment by law	công lý	The family wants justice for their son.	Gia đình muốn đòi công lý cho con trai họ.	owner 1C batch11
+pool_s1	n	a place filled with water for swimming	hồ bơi	The hotel has an outdoor pool.	Khách sạn có một hồ bơi ngoài trời.	owner 1C batch11
+switch_s1	n	a button that turns electricity on or off	công tắc	The light switch is next to the door.	Công tắc đèn ở cạnh cửa.	owner 1C batch11
+administration_s1	n	the work of managing an organization	sự quản lý, hành chính	She works in hospital administration.	Cô ấy làm công việc hành chính ở bệnh viện.	owner 1C batch11
+tradition_s1	n	a custom that has existed for a long time	truyền thống	It's a family tradition to eat together on Sundays.	Ăn cơm cùng nhau vào Chủ nhật là truyền thống của gia đình.	owner 1C batch11 [keep-gloss]
+expression_s1	n	a word or phrase; a look on someone's face	cách diễn đạt, nét mặt	"Break a leg" is a common English expression.	"Break a leg" là một cách diễn đạt phổ biến trong tiếng Anh.	owner 1C batch11
+lay_s1	v	to put something down carefully	đặt, đặt nằm xuống	She laid the baby gently in the bed.	Cô ấy nhẹ nhàng đặt em bé xuống giường.	owner 1C batch11
+phrase_s1	n	a small group of words	cụm từ	Learn a few useful phrases before your trip.	Hãy học vài cụm từ hữu ích trước chuyến đi.	owner 1C batch11
+arrangement_s1	n	a plan made for something to happen	sự sắp xếp	We made arrangements to meet at the station.	Chúng tôi đã sắp xếp để gặp nhau ở nhà ga.	owner 1C batch11
+camp_s1	n	a place where people stay in tents	trại	The children went to a summer camp.	Bọn trẻ đi trại hè.	owner 1C batch11
+smell_s1	n	something that you notice with your nose	mùi	I love the smell of fresh bread.	Tôi thích mùi bánh mì mới nướng.	owner 1C batch11
+convention_s1	n	a large formal meeting; a usual way of doing things	hội nghị; quy ước	The convention center is near the hotel.	Trung tâm hội nghị ở gần khách sạn.	owner 1C batch11
+estate_s1	n	land and buildings owned by someone	bất động sản, điền trang	They bought a house on a quiet estate.	Họ mua một ngôi nhà ở một khu dân cư yên tĩnh.	owner 1C batch11
+improvement_s1	n	a change that makes something better	sự cải thiện	There is a big improvement in your writing.	Bài viết của bạn đã cải thiện rất nhiều.	owner 1C batch11
+opposition_s1	n	strong disagreement; the political party not in power	sự phản đối; phe đối lập	There was strong opposition to the new tax.	Đã có sự phản đối mạnh mẽ với loại thuế mới.	owner 1C batch11
+violence_s1	n	actions that hurt people	bạo lực	The film has too much violence for children.	Bộ phim có quá nhiều cảnh bạo lực đối với trẻ em.	owner 1C batch11
+engine_s1	n	the part of a vehicle that makes it move	động cơ	The car engine makes a strange noise.	Động cơ ô tô phát ra tiếng lạ.	owner 1C batch11
+instrument_s1	n	an object used to make music; a tool	nhạc cụ, dụng cụ	Can you play a musical instrument?	Bạn có chơi được nhạc cụ nào không?	owner 1C batch11
+revolution_s1	n	a big change, often in how a country is ruled	cuộc cách mạng	The internet caused a revolution in communication.	Internet đã tạo ra một cuộc cách mạng trong giao tiếp.	owner 1C batch11 [keep-gloss]
+request_s1	n	the act of politely asking for something	lời yêu cầu, đề nghị	We received your request for a refund.	Chúng tôi đã nhận được yêu cầu hoàn tiền của bạn.	owner 1C batch11
+implement_s1	v	to put a plan or decision into action	thực hiện, triển khai	The school will implement the new rules in May.	Nhà trường sẽ áp dụng quy định mới vào tháng Năm.	owner 1C batch11
+liberal_s1	adj	accepting different ideas and ways of living	cởi mở, tự do	My parents have liberal views about music.	Bố mẹ tôi có quan điểm cởi mở về âm nhạc.	owner 1C batch11
+victory_s1	n	a win in a game, fight, or election	chiến thắng	The team celebrated their victory all night.	Cả đội ăn mừng chiến thắng suốt đêm.	owner 1C batch11
+fat_s1	adj	having too much weight on the body	béo	The cat got fat because it ate too much.	Con mèo béo lên vì ăn quá nhiều.	owner 1C batch11
+critical_s1	adj	very important; saying what is wrong	quan trọng; chỉ trích	The next few days are critical for the project.	Vài ngày tới rất quan trọng đối với dự án.	owner 1C batch11
+arise_s1	v	to happen or begin to exist	nảy sinh, xảy ra	Call me if any problems arise.	Hãy gọi tôi nếu có vấn đề gì nảy sinh.	owner 1C batch11
+climb_s1	v	to go up something using your hands and feet	leo, trèo	We climbed the hill to see the view.	Chúng tôi leo lên đồi để ngắm cảnh.	owner 1C batch11
+responsible_s1	adj	having the job of looking after something	chịu trách nhiệm	Who is responsible for this project?	Ai chịu trách nhiệm cho dự án này?	owner 1C batch11 [keep-gloss]
+shoot_s1	v	to fire a gun; to kick a ball at the goal	bắn; sút	He shot the ball into the corner of the net.	Anh ấy sút bóng vào góc lưới.	owner 1C batch11
+appreciate_s1	v	to be thankful for something	trân trọng, cảm kích	I really appreciate your help today.	Tôi thật sự cảm kích sự giúp đỡ của bạn hôm nay.	owner 1C batch11
+academic_s1	adj	connected with schools and studying	thuộc học thuật	The academic year starts in September.	Năm học bắt đầu vào tháng Chín.	owner 1C batch11
+acknowledge_s1	v	to accept that something is true	thừa nhận	He acknowledged that he was wrong.	Anh ấy thừa nhận mình đã sai.	owner 1C batch11
+impose_s1	v	to make a rule or tax that people must follow	áp đặt, đánh (thuế)	The city imposed a fee on plastic bags.	Thành phố áp phí đối với túi ni lông.	owner 1C batch11
+constant_s1	adj	happening all the time	liên tục, không ngừng	The constant noise made it hard to sleep.	Tiếng ồn liên tục khiến tôi khó ngủ.	owner 1C batch11
+equal_s1	adj	the same in size, amount, or value	bằng nhau, ngang bằng	Cut the cake into equal pieces.	Cắt bánh thành những phần bằng nhau.	owner 1C batch11
+observe_s1	v	to watch something carefully	quan sát	Scientists observe the birds every morning.	Các nhà khoa học quan sát lũ chim mỗi sáng.	owner 1C batch11
+conclude_s1	v	to decide after thinking; to end something	kết luận, kết thúc	The doctor concluded that it was just a cold.	Bác sĩ kết luận đó chỉ là cảm lạnh.	owner 1C batch11
+internal_s1	adj	inside something	bên trong, nội bộ	The company sent an internal email to staff.	Công ty gửi một email nội bộ cho nhân viên.	owner 1C batch11
+ideal_s1	adj	perfect for a particular purpose	lý tưởng	This beach is ideal for families.	Bãi biển này rất lý tưởng cho các gia đình.	owner 1C batch11
+intend_s1	v	to plan to do something	định, dự định	I intend to visit my grandparents this summer.	Tôi định về thăm ông bà vào mùa hè này.	owner 1C batch11
+invite_s1	v	to ask someone to come to an event	mời	She invited me to her birthday party.	Cô ấy mời tôi đến dự tiệc sinh nhật.	owner 1C batch11
+largely_s1	adv	mostly; mainly	phần lớn, chủ yếu	The city is largely quiet at night.	Thành phố phần lớn yên tĩnh vào ban đêm.	owner 1C batch11
+reject_s1	v	to refuse to accept something	từ chối, bác bỏ	The company rejected my application.	Công ty đã từ chối đơn của tôi.	owner 1C batch11
+satisfy_s1	v	to make someone pleased or give them what they need	làm hài lòng	The new menu should satisfy our customers.	Thực đơn mới chắc sẽ làm khách hàng hài lòng.	owner 1C batch11
+elect_s1	v	to choose someone by voting	bầu, bầu chọn	The students elected a new class leader.	Học sinh đã bầu lớp trưởng mới.	owner 1C batch11
+essential_s1	adj	very important and necessary	thiết yếu, cần thiết	Water is essential for all living things.	Nước là thứ thiết yếu cho mọi sinh vật.	owner 1C batch11
+partner_s1	n	a person you work with or live with	đối tác, bạn đời	She runs the shop with her business partner.	Cô ấy điều hành cửa hàng cùng đối tác kinh doanh.	owner 1C batch11
+capture_s1	v	to catch a person or animal	bắt giữ, bắt được	The police captured the thief near the station.	Cảnh sát bắt được tên trộm gần nhà ga.	owner 1C batch11
+defend_s1	v	to protect someone or something from attack	bảo vệ, phòng thủ	The players worked hard to defend their goal.	Các cầu thủ nỗ lực bảo vệ khung thành.	owner 1C batch11
+ignore_s1	v	to pay no attention to something	phớt lờ	He ignored my message all day.	Anh ấy phớt lờ tin nhắn của tôi cả ngày.	owner 1C batch11
+inform_s1	v	to tell someone about something officially	thông báo	Please inform us if you change your address.	Vui lòng thông báo cho chúng tôi nếu bạn đổi địa chỉ.	owner 1C batch11
+rely_s1	v	to need and trust someone or something	dựa vào, tin cậy	You can rely on me to help you.	Bạn có thể tin cậy tôi sẽ giúp bạn.	owner 1C batch11
+accuse_s1	v	to say that someone did something wrong	buộc tội, cáo buộc	They accused him of stealing the money.	Họ buộc tội anh ấy ăn cắp tiền.	owner 1C batch11
+aware_s1	adj	knowing that something exists or is happening	nhận thức, biết	Are you aware of the new rules?	Bạn có biết về các quy định mới không?	owner 1C batch11
