@@ -9,16 +9,16 @@ write `dist/reports/task-<N>.md`, then stop.
 - [x] Task 1A: Schema upgrade (sense IDs, `def`, `tier`, `forms`, `hl`) + quarantine imports
 - [x] Task 1A.1: Fix Task 1A regressions (question translations, placeholder/auto definitions)
 - [x] Task 1B: Fill the NGSL gaps (718 missing lemmas, function words first)
-- [ ] Task 1C: Rewrite Level 1–2 entries to the standard  *(owner/Claude, in parallel — see note)*
-- [ ] Task 1D: Topics: replace catch-all topics with the controlled list  *(owner/Claude, in parallel)*
-- [ ] Task 1E: Rewrite Level 3 entries; re-level by frequency band  *(owner/Claude, in parallel)*
-- [ ] Task 1F: Grammar questions, confusables, families up to target  *(owner/Claude, in parallel)*
+- [ ] Task 1C: Rewrite Level 1–2 entries to the standard  *(Codex, after 1D)*
+- [ ] Task 1D: Topics: replace catch-all topics with the controlled list  *(Codex, next)*
+- [ ] Task 1E: Rewrite Level 3 entries; re-level by frequency band  *(Codex)*
+- [ ] Task 1F: Grammar questions, confusables, families up to target  *(Codex)*
 - [ ] Task 1G: Write the UI text (English + Vietnamese) for all string keys  *(owner/Claude)*
 - [x] Task 2: Per-locale folder layout + review status
 - [x] Task 3: Validation rules
 - [x] Task 4: `tools/locale.py` operations tool
 - [x] Task 5: UI localization (English default, `values-xx`)
-- [ ] Task 6: Show only approved content; language picker
+- [ ] Task 6: Show only approved content; language picker  *(owner/Claude)*
 - [ ] Task 7: Spanish pilot (Level 1)
 - [ ] Task 8: Store listings per locale
 
@@ -413,6 +413,23 @@ Task 1B is done: NGSL lemmas missing = 0; all 718 new entries pass the audit.
 checks cannot catch every way of producing text that only looks finished. Codex continues with the code
 tasks, starting with **Task 2**, which does not depend on 1C–1F. AGENTS.md "do tasks in order" applies to
 Codex's own sequence: Task 2 → 3 → 4 → 5 → 6. Codex must not edit `tools/authoring/*` content files.
+
+**Roles from 2026-10-05 (owner decision).** Codex works on **data**: Tasks 1D → 1C → 1E → 1F, in that
+order (1D first because catch-all topics block 1,578 of the 1,862 non-lesson-ready Level 1–2 entries).
+The owner/Claude works on the **UI**: Task 1G (UI text) and Task 6 (approved-only content, language
+picker), then 7–8. Codex must not edit `app/src/main/res/values*/strings.xml`, `arrays.xml` or screen code.
+Every data batch is reviewed by the owner before it is pushed. Content that only looks finished
+(template sentences, prefixed copies, word-only translations, random topics) gets the batch reverted.
+
+**How Codex edits data (applies to 1C–1F):**
+- Sense text (def, gloss, example, translation) only in `tools/authoring/senses_editor_batch<N>.tsv`,
+  checked with `tools/check_editor_batch.py` (problems=0 on all batch files).
+- Entry metadata (IPA, pos, level, topics, collocations, forms) in a correction TSV read by
+  `gen_content.py` (e.g. `tools/authoring/entry_corrections.tsv`, one row per word ID), never by
+  hand-editing generated JSON.
+- To remove an archaic/specialist sense from lessons, add a row with pos `drop` for that sense ID and
+  implement the drop in `gen_content.py` with a test (the sense stays in the dictionary datasets).
+- Batches of up to 400 entries. Report every changed entry in the batch report.
 
 ### Task 1C: Rewrite Level 1–2 entries to the standard
 
