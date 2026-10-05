@@ -468,6 +468,17 @@ Codex's own sequence: Task 2 → 3 → 4 → 5 → 6. Codex must not edit `tools
 **Done when:** the app shows identical Vietnamese content (spot-check 20 words, 5 grammar points,
 10 questions in the report); unit test for the loader passes.
 
+**Owner review of Task 2 (2026-10-05): ACCEPTED after a fix.** The layout, loader, tests and round-trip
+tool are good. But the committed `content/i18n/vi/words.json` was migrated from a stale copy that still
+held the rejected batch-7 text ("…khi thảo luận từ "championship""), and `status.json` hashed that text.
+The owner regenerated `vi/` with `tools/gen_content.py` and rebuilt `status.json` from the correct data.
+Always regenerate (`python tools/gen_content.py`) before migrating or hashing; never work from an old copy.
+
+**Requirement for Task 3:** `vi` is generated from `tools/authoring/` by `gen_content.py`. When the owner
+changes Vietnamese content there, `gen_content.py` must refresh `vi/status.json` for the changed entries
+(`s: approved`, `by: owner`, new `src`), so the stale-hash rule does not block the build. Add this to
+`gen_content.py` with a test; other locales keep the import/approve workflow.
+
 ## Task 3: Validation rules
 
 Extend `tools/validate_content.py` (or `tools/locale.py check`) so these **fail** the build:
