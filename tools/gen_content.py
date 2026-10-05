@@ -142,10 +142,15 @@ def upgrade_schema(words, vi):
             locale_word = vi.get("words", {}).get(word["id"])
             if locale_word:
                 locale_word.setdefault("senses", []).append({"g": "", "ex": {}})
-        if word["id"] in {"book", "place", "kind", "live"}:
-            preferred = {"book": "n", "place": "n", "kind": "n", "live": "v"}[word["id"]]
+        first_ids = {sid for sid, row in EDITOR_ROWS.items() if "[first]" in row.get("note", "")}
+        legacy_first = {"book": "n", "place": "n", "kind": "n", "live": "v"}
+        sense_ids = [((s.get("ex") or [{}])[0].get("id")) or s.get("id") for s in word.get("senses", [])]
+        if word["id"] in legacy_first or first_ids.intersection(sense_ids):
+            preferred = legacy_first.get(word["id"])
             locale_word = vi.get("words", {}).get(word["id"])
-            word["senses"].sort(key=lambda s: 0 if s.get("pos") == preferred else 1)
+            word["senses"].sort(key=lambda s: 0 if (
+                (((s.get("ex") or [{}])[0].get("id")) or s.get("id")) in first_ids
+                or (preferred and s.get("pos") == preferred)) else 1)
             if locale_word:
                 reordered = []
                 for sense in word["senses"]:

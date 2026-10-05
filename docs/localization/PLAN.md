@@ -327,6 +327,18 @@ For each batch `<N>` (3, 4, 5 …):
    word, pos, def, vi gloss, example, example translation). Commit `Task 1A.1 batch <N>: NGSL <from>-<to>`.
    Stop after one batch.
 
+To put a more common sense first, add a row for that sense with `[first]` in the `note` column
+(example: `draw_s2` "vẽ" before `draw_s1` "trận hòa"). `gen_content.py` reorders the senses.
+
+Common mistakes found in batch 3 (fixed by the owner) — check every row for them:
+- Choose the meaning a beginner meets most: `please` = "làm ơn" (not "làm hài lòng"), `draw` = "vẽ"
+  (not "trận hòa").
+- `pos` and `def` must match how the word is used in the example: `land` noun def with "The plane will
+  land" (verb); `front` marked adv in "the front of the line" (noun); `above`/`behind` used as
+  prepositions; `outside` used as an adverb.
+- The example must sound natural: not "These strong bags carry heavy books safely." or
+  "The train will pass the bridge soon."
+
 Tick Task 1A.1 only after the batch covering rank 1000 is accepted.
 
 ### Task 1B: Fill the NGSL gaps
