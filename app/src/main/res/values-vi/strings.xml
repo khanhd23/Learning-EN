@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="set_language">Ná»™i dung há»c</string>
-    <string name="locale_vi">Tiáº¿ng Viá»‡t</string>
-    <string name="locale_es">EspaÃ±ol</string>
-    <string name="locale_pt_br">PortuguÃªs (Brasil)</string>
+    <string name="set_language">Nội dung học</string>
+    <string name="locale_vi">Tiếng Việt</string>
+    <string name="locale_es">Español</string>
+    <string name="locale_pt_br">Português (Brasil)</string>
     <string name="locale_id">Bahasa Indonesia</string>
-    <string name="locale_hi">à¤¹à¤¿à¤¨à¥à¤¦à¥€</string>
-    <string name="locale_ar">Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©</string>
-    <string name="locale_ja">æ—¥æœ¬èªž</string>
-    <string name="locale_ko">í•œêµ­ì–´</string>
-    <string name="locale_th">à¹„à¸—à¸¢</string>
-    <string name="locale_fr">FranÃ§ais</string>
+    <string name="locale_hi">हिन्दी</string>
+    <string name="locale_ar">العربية</string>
+    <string name="locale_ja">日本語</string>
+    <string name="locale_ko">한국어</string>
+    <string name="locale_th">ไทย</string>
+    <string name="locale_fr">Français</string>
     <string name="about_disclaimer">about disclaimer</string>
     <string name="accuracy">accuracy</string>
     <string name="ach_combo">ach combo</string>
@@ -303,7 +303,7 @@
     <string name="pet_hidden_hint">pet hidden hint</string>
     <string name="pet_hide">pet hide</string>
     <string name="pet_hide_bubbles_today">pet hide bubbles today</string>
-    <string name="pet_menu_title">Pet menu â€” %1$s</string>
+    <string name="pet_menu_title">Pet menu — %1$s</string>
     <string name="pet_reset_position">pet reset position</string>
     <string name="pet_tap_cd">pet tap cd</string>
     <string name="pet_teaser">pet teaser</string>

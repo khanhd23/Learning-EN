@@ -13,6 +13,7 @@ write `dist/reports/task-<N>.md`, then stop.
 - [ ] Task 1D: Topics: replace catch-all topics with the controlled list  *(owner/Claude, in parallel)*
 - [ ] Task 1E: Rewrite Level 3 entries; re-level by frequency band  *(owner/Claude, in parallel)*
 - [ ] Task 1F: Grammar questions, confusables, families up to target  *(owner/Claude, in parallel)*
+- [ ] Task 1G: Write the UI text (English + Vietnamese) for all string keys  *(owner/Claude)*
 - [x] Task 2: Per-locale folder layout + review status
 - [x] Task 3: Validation rules
 - [x] Task 4: `tools/locale.py` operations tool
@@ -540,6 +541,21 @@ on a test locale `xx` in `tools/tests/`.
 5. Arabic is RTL: confirm `android:supportsRtl="true"` and use start/end, not left/right, in layouts.
 
 **Done when:** a device set to Vietnamese looks exactly as before; a device set to French shows English UI.
+
+**Owner review of Task 5 (2026-10-05): structure ACCEPTED, text NOT usable.**
+- Good: English fallback `values/` + `values-vi/`, pet catalog strings moved to resources, `build-ui`,
+  key parity tests.
+- The 11 non-placeholder strings in `values-vi/strings.xml` were written with broken encoding
+  ("Ná»™i dung há»c", "EspaÃ±ol", "â€”"). Restored by the owner; `validate_content.py` now fails on
+  cp1252-decoded UTF-8 in `res/values*/*.xml` and `content/i18n/*/*.json`.
+- Pre-existing problem found: since before the first commit, 534 of 550 strings were placeholders equal to
+  the key name ("by topic", "dozing sub"), so the app has never shown real UI text. Task 5's English text
+  is ~60% the key name reworded ("Placement sub", "Mine empty", "Est 5", "Instruction: stress").
+  Writing real UI text needs each string's screen context → new **Task 1G** (owner/Claude).
+- Still hardcoded Vietnamese in Kotlin (12): `Models.kt:45`, `Exercise.kt:24`, `LearningStore.kt:12`,
+  `PracticeBuilder.kt:7`, `SessionBuilder.kt:92,132`, `BuilderScreen.kt:17`, `ExamScreens.kt:159`,
+  `SessionScreen.kt:41` (×2), `WordDetailScreen.kt:156`, `WordListScreen.kt:152`. Move them to resources
+  at the start of Task 6.
 
 ## Task 6: Show only approved content; language picker
 

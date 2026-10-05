@@ -173,6 +173,13 @@ def main():
     locale_errors, locale_warnings = locale_rule_errors()
     errors.extend(locale_errors)
     warnings.extend(locale_warnings)
+    # UTF-8 text decoded as cp1252 ("Ná»™i dung", "EspaÃ±ol", "â€”") must never reach resources or packs.
+    mojibake = re.compile("Ã[\u0080-ÿ]|á»|áº|â€|Ä‘|Æ°")
+    root_path = __import__("pathlib").Path(ROOT)
+    for path in sorted((root_path / "app/src/main/res").glob("values*/*.xml")) + sorted((root_path / "content/i18n").glob("*/*.json")):
+        text = path.read_text(encoding="utf-8")
+        if mojibake.search(text):
+            errors.append(f"{path.relative_to(root_path).as_posix()}: broken encoding (UTF-8 read as cp1252)")
     words = load("content", "en", "words.json")
     grammar = load("content", "en", "grammar.json")
     qs = load("content", "en", "questions.json")
