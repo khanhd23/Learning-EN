@@ -13,7 +13,7 @@ write `dist/reports/task-<N>.md`, then stop.
 - [ ] Task 1D: Topics: replace catch-all topics with the controlled list  *(Codex, next)*
 - [ ] Task 1E: Rewrite Level 3 entries; re-level by frequency band  *(Codex)*
 - [ ] Task 1F: Grammar questions, confusables, families up to target  *(Codex)*
-- [ ] Task 1G: Write the UI text (English + Vietnamese) for all string keys  *(owner/Claude)*
+- [x] Task 1G: Write the UI text (English + Vietnamese) for all string keys  *(owner/Claude)*
 - [x] Task 2: Per-locale folder layout + review status
 - [x] Task 3: Validation rules
 - [x] Task 4: `tools/locale.py` operations tool
@@ -573,6 +573,12 @@ on a test locale `xx` in `tools/tests/`.
   `PracticeBuilder.kt:7`, `SessionBuilder.kt:92,132`, `BuilderScreen.kt:17`, `ExamScreens.kt:159`,
   `SessionScreen.kt:41` (×2), `WordDetailScreen.kt:156`, `WordListScreen.kt:152`. Move them to resources
   at the start of Task 6.
+
+**Task 1G done (owner, 2026-10-05).** All 593 UI strings were written in English (`values/`) and
+Vietnamese (`values-vi/`) from each key's real use in the screens, with format arguments matching the
+code (`%1$s` for names/labels, `%1$d` for counts). Fixed a crash: `pet_full_after` used `%1$d` while
+the code passes the pet name. Reminder lines are now Vietnamese in `values-vi/arrays.xml`. Locale names
+stay in their own language in both files. Not yet checked on a device: text length on small screens.
 
 ## Task 6: Show only approved content; language picker
 
