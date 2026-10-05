@@ -10,7 +10,7 @@ write `dist/reports/task-<N>.md`, then stop.
 - [x] Task 1A.1: Fix Task 1A regressions (question translations, placeholder/auto definitions)
 - [x] Task 1B: Fill the NGSL gaps (718 missing lemmas, function words first)
 - [ ] Task 1C: Rewrite Level 1–2 entries to the standard  *(Codex, after 1D)*
-- [x] Task 1D: Topics: replace catch-all topics with the controlled list  *(Codex, next)*
+- [ ] Task 1D: Topics: replace catch-all topics with the controlled list  *(Codex, next)*
 - [ ] Task 1E: Rewrite Level 3 entries; re-level by frequency band  *(Codex)*
 - [ ] Task 1F: Grammar questions, confusables, families up to target  *(Codex)*
 - [x] Task 1G: Write the UI text (English + Vietnamese) for all string keys  *(owner/Claude)*
