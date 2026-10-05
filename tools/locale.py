@@ -221,12 +221,15 @@ def draft_value(item: dict, locale: str, provider: str, api_key: str):
                        for x in source.get("ex", [])},
                 "tip": "", "regional": {"es-ES": ""}}
     if item["kind"] == "grammar":
-        # English grammar points hold only formula, signals and examples; titles, explanations and
-        # mistakes have no English source yet, so they stay empty (write them, do not pivot from vi).
+        # Title, when, body and each mistake's "why" are owner-written English sources
+        # (tools/authoring/grammar_en.json). Formulas, signals and the wrong/right sentences are taught
+        # English, so they are never translated.
+        def tr(text):
+            return translate_text(text, {}, locale, provider, api_key) if text else ""
         examples = [x.get("en", "") if isinstance(x, dict) else str(x) for x in source.get("examples", [])]
-        return {"title": "", "when": "", "body": "",
-                "examples": [translate_text(x, {}, locale, provider, api_key) for x in examples],
-                "mistakes": ["" for _ in source.get("mistakes", [])]}
+        return {"title": tr(source.get("title", "")), "when": tr(source.get("when", "")), "body": tr(source.get("body", "")),
+                "examples": [tr(x) for x in examples],
+                "mistakes": [tr(m.get("why", "")) if isinstance(m, dict) else "" for m in source.get("mistakes", [])]}
     if item["kind"] in ("questions", "passages", "topics"):
         return ""  # no English explanation/name exists to translate from
     if item["kind"] == "ui":

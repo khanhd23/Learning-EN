@@ -76,6 +76,24 @@ def refresh_vi_status(path, old_status, sources):
 
 EDITOR_ROWS = load_all_editor_rows()
 
+# English source explanations for grammar points (owner-written): when, body, and why per mistake.
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "authoring", "grammar_en.json"), encoding="utf-8") as _f:
+    GRAMMAR_EN = {k: v for k, v in json.load(_f).items() if not k.startswith("_")}
+
+
+def apply_grammar_en(point):
+    src = GRAMMAR_EN[point["id"]]
+    for index, fix in src.get("exampleFix", {}).items():
+        point["examples"][int(index)] = dict(fix)
+    for index, fix in src.get("mistakeFix", {}).items():
+        point["mistakes"][int(index)] = dict(fix)
+    if len(src["why"]) != len(point["mistakes"]):
+        raise SystemExit(f"grammar_en.json: {point['id']} needs one 'why' per mistake")
+    point["when"] = src["when"]
+    point["body"] = src["body"]
+    for mistake, why in zip(point["mistakes"], src["why"]):
+        mistake["why"] = why
+
 # Controlled topic taxonomy (docs/content/CONTENT_STANDARD.md §5). Topics for words come from
 # tools/authoring/entry_corrections.tsv; "unsorted" marks entries that are not in lessons yet and is
 # deliberately not listed as a topic, so the app never shows it.
@@ -442,6 +460,7 @@ def main():
     for g in lib.GRAMMAR:
         vi["grammar"][g["id"]] = g.pop("_vi")
         g["title"] = GRAMMAR_TITLES_EN[g["id"]]
+        apply_grammar_en(g)
         if g["id"] in formula_en and has_vi(g.get("formula", "")):
             vi["grammar"][g["id"]]["formulaVi"] = g["formula"]
             g["formula"] = formula_en[g["id"]]

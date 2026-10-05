@@ -1,0 +1,309 @@
+{
+  "_doc": "English source explanations for grammar points (owner-written, L1-neutral). when = when to use it; body = the explanation; why[i] = why mistakes[i].wrong is wrong. Optional exampleFix/mistakeFix replace items by index. Merged into content/en/grammar.json by tools/gen_content.py and used as the draft source by tools/locale.py.",
+  "be": {
+    "when": "To say who or what someone is, and to describe jobs, places, ages and feelings.",
+    "body": "Use am with I, is with he, she, it and singular nouns, and are with you, we, they and plural nouns. For the negative, add not (isn't, aren't). For a question, put the verb before the subject: Are you ready? Before an adjective, English always needs the verb to be: She is tired.",
+    "why": [
+      "She is singular, so the verb is is, not are.",
+      "An adjective like happy cannot follow the subject directly. English needs the verb to be: I am happy."
+    ]
+  },
+  "present_simple": {
+    "when": "For habits, repeated actions, facts that are always true, and fixed timetables.",
+    "body": "With he, she, it or a singular noun, add -s or -es to the verb (works, watches, goes). For negatives and questions, use do or does + the base verb: She doesn't work. Does she work? When does is already there, the main verb takes no -s.",
+    "why": [
+      "The subject he is third person singular, so the verb needs -s: works.",
+      "After doesn't, use the base verb. The -s is already in does, so like takes no -s."
+    ]
+  },
+  "articles": {
+    "when": "Use a or an when you mention one thing for the first time or mean any one of many. Use the when the listener knows which one you mean, when you have mentioned it before, or when there is only one.",
+    "body": "A and an go only with singular countable nouns. Choose by the first sound, not the first letter: an hour (the h is silent), a university (it starts with a /j/ sound). Use the for something both speakers can identify, or for something unique: the sun, the moon. Plural and uncountable nouns used in a general sense take no article: Cats like milk.",
+    "why": [
+      "The h in honest is silent, so the word starts with a vowel sound and needs an.",
+      "A job after be needs a or an when it refers to one person: an engineer."
+    ]
+  },
+  "plurals": {
+    "when": "When you talk about two or more people or things.",
+    "body": "Most nouns add -s. Nouns ending in -s, -sh, -ch, -x and many ending in -o add -es (buses, watches, boxes, tomatoes). A consonant + y changes to -ies (city → cities). Some plurals are irregular and must be learned: man → men, woman → women, child → children, foot → feet, tooth → teeth, person → people, mouse → mice. Uncountable nouns such as information, advice and furniture have no plural.",
+    "why": [
+      "Child has an irregular plural: children.",
+      "Information is uncountable, so it takes no -s, and it goes with much, not many."
+    ]
+  },
+  "prep_time": {
+    "when": "To say when something happens or where something is.",
+    "body": "Time: at + a clock time or a point (at 7 o'clock, at night, at the weekend in British English); on + a day or date (on Monday, on 5 May); in + a month, year, season or part of the day (in May, in 2025, in summer, in the morning). Place: at + a point (at the bus stop); on + a surface (on the table); in + inside a space or area (in the box, in the city).",
+    "why": [
+      "Days of the week take on.",
+      "Parts of the day take in: in the morning, in the afternoon, in the evening. The exception is at night."
+    ]
+  },
+  "there_is": {
+    "when": "To say that something exists or is in a place.",
+    "body": "Use there is or there are, not have or it has, to say that something exists somewhere. The verb agrees with the noun that comes after it: There is a book. There are two books. In a list, it agrees with the first noun: There is a pen and two books. Questions: Is there…? Are there…?",
+    "why": [
+      "To say that something exists in a place, use there is. It has means that a thing owns something.",
+      "People is plural, so the verb is are."
+    ]
+  },
+  "can_could": {
+    "when": "To talk about ability, to ask for or give permission, and to make polite requests.",
+    "body": "Can is for ability now (I can swim) and permission (You can sit here). Could is for ability in the past (I could read at four) and for more polite requests (Could you help me?). After can and could, always use the base verb: no to and no -s. Can and could never change for he, she or it.",
+    "why": [
+      "After can, use the base verb without -s: swim.",
+      "Can is followed directly by the base verb, without to."
+    ]
+  },
+  "word_order": {
+    "when": "Whenever you build a sentence, so that it sounds natural in English.",
+    "body": "The basic order is Subject + Verb + Object + Place + Time: I met Tom at the station yesterday. Adjectives come before the noun they describe: a red car. Frequency adverbs (always, often, never) go before the main verb but after the verb to be: She always walks. She is always late.",
+    "why": [
+      "In English, the adjective comes before the noun: a red car.",
+      "A frequency adverb goes before the main verb, not after it."
+    ]
+  },
+  "past_simple": {
+    "when": "For actions that started and finished at a definite time in the past.",
+    "body": "Regular verbs add -ed (worked, studied, stopped). Irregular verbs have their own forms and must be learned (go → went, buy → bought, see → saw). For negatives and questions, use did + the base verb: I didn't go. Did you see it? The verb to be has two past forms: was (I, he, she, it) and were (you, we, they).",
+    "why": [
+      "Did already shows the past, so the main verb stays in the base form: go.",
+      "Yesterday is a finished past time, so the verb must be in the past simple: went."
+    ]
+  },
+  "present_continuous": {
+    "when": "For actions happening now or around now, temporary situations, and future plans that are already arranged.",
+    "body": "Form it with am, is or are + verb-ing. Common signals are now, right now, at the moment, Look! and Listen! Stative verbs, which describe states rather than actions (know, like, want, need, believe, understand), are not normally used in the continuous: I know, not I'm knowing.",
+    "why": [
+      "The continuous needs the -ing form after is: cooking.",
+      "Know describes a state, not an action, so it stays in the simple form."
+    ]
+  },
+  "comparison": {
+    "when": "To compare two or more people or things.",
+    "body": "Short adjectives (one syllable, or two syllables ending in -y) add -er and -est: cheap → cheaper → the cheapest; happy → happier → the happiest. Longer adjectives use more and most: more expensive, the most expensive. Some forms are irregular: good → better → the best; bad → worse → the worst; far → farther/further → the farthest/furthest. To say two things are equal, use as + adjective + as.",
+    "why": [
+      "Cheaper is already comparative, so do not add more.",
+      "Good has irregular forms: better and the best."
+    ],
+    "exampleFix": {"2": {"en": "My town is as quiet as a village.", "hl": "as quiet as"}}
+  },
+  "quantifiers": {
+    "when": "To talk about amounts: how much or how many.",
+    "body": "With countable nouns use many, a few, few and a number of. With uncountable nouns (water, money, information, advice, furniture, luggage) use much, a little, little and an amount of. A lot of, lots of, some and any work with both. Some is usual in positive sentences and offers; any is usual in negatives and questions. A few and a little mean 'some, enough'; few and little mean 'not enough'.",
+    "why": [
+      "Money is uncountable, so use much, not many.",
+      "Luggage is uncountable, so it has no plural form."
+    ]
+  },
+  "future": {
+    "when": "To talk about the future: decisions made now, predictions, and plans.",
+    "body": "Use will for decisions made at the moment of speaking (I'll get it!), promises, offers, and general predictions (I think it will rain). Use be going to for plans you made before (I'm going to study abroad) and for predictions based on what you can see now (Look at those clouds. It's going to rain).",
+    "why": [
+      "After will, use the base verb without to.",
+      "Going to needs the verb to be before it: she is going to."
+    ]
+  },
+  "must_should": {
+    "when": "To talk about obligation, advice and things that are not allowed.",
+    "body": "Should gives advice. Must shows a strong obligation, often from the speaker or from rules. Have to shows an obligation that comes from outside, such as a job or a law. Be careful with the negatives: mustn't means it is not allowed, but don't have to means it is not necessary. After must and should, use the base verb.",
+    "why": [
+      "Must is followed directly by the base verb, without to.",
+      "With she, have to becomes has to."
+    ]
+  },
+  "pronouns": {
+    "when": "To replace a noun, or to show who something belongs to.",
+    "body": "Subject pronouns (I, he, she, we, they) come before the verb. Object pronouns (me, him, her, us, them) come after a verb or preposition. Possessive adjectives (my, his, her, our, their) come before a noun. Possessive pronouns (mine, his, hers, ours, theirs) stand alone and replace possessive + noun. Reflexive pronouns (myself, himself…) are used when the subject and object are the same person.",
+    "why": [
+      "The subject of a sentence needs subject pronouns: he and I. It is also polite to put I last.",
+      "With no noun after it, you need the possessive pronoun mine, not my."
+    ]
+  },
+  "present_perfect": {
+    "when": "For experiences, actions that have just finished, situations that started in the past and continue now, and past actions with a result now.",
+    "body": "Form it with have or has + the past participle. Do not use it with a finished past time such as yesterday, last year or in 2020; use the past simple instead. Common signals are just, already, yet, ever, never, since, for, so far, recently and up to now.",
+    "why": [
+      "Yesterday is a finished time, so use the past simple: I saw him yesterday.",
+      "After has, use the past participle: gone, not went."
+    ]
+  },
+  "passive": {
+    "when": "When the person or thing receiving the action matters more, or when we do not know or do not need to say who did it.",
+    "body": "Form it with the verb to be in the right tense + the past participle: is made, was built, has been sent, will be held, must be signed. Add by + the doer only if it is useful. A tip for exam questions: if the subject is a thing that receives the action and there is no object after the gap, the answer is usually passive.",
+    "why": [
+      "The passive uses the past participle: written, not wrote.",
+      "A report cannot send itself, so the verb must be passive: must be sent."
+    ]
+  },
+  "conditionals": {
+    "when": "Zero: facts that are always true. First: real possibilities in the future. Second: imagined situations in the present.",
+    "body": "Zero conditional: If + present, present (If you heat ice, it melts). First conditional: If + present, will + base verb (If it rains, I will stay home); do not use will in the if-clause. Second conditional: If + past, would + base verb (If I had money, I would travel); with be, use were for every subject (If I were you…). Unless means if … not.",
+    "why": [
+      "In a first conditional, the if-clause uses the present simple, not will.",
+      "An imagined present situation needs the second conditional: If + past (were), would + verb."
+    ]
+  },
+  "relative": {
+    "when": "To add information about the noun that comes just before.",
+    "body": "Use who for people, which for things, and that for both in defining clauses. Whose + noun shows possession. Where means 'in or at which' for places. In a non-defining clause, which is set off by commas, you cannot use that. You can leave out the relative pronoun when it is the object of the clause: the phone (that) I bought.",
+    "why": [
+      "The man is a person, so use who, not which.",
+      "After a comma (a non-defining clause), use which, not that."
+    ],
+    "mistakeFix": {"1": {"wrong": "The river, that runs through the city, is very long.", "right": "The river, which runs through the city, is very long."}}
+  },
+  "gerund_infinitive": {
+    "when": "To choose the correct form of a verb that follows another verb or a preposition.",
+    "body": "After a preposition, always use -ing (interested in learning, before leaving, look forward to meeting). Some verbs take -ing: enjoy, avoid, finish, mind, suggest, consider, keep, practise, recommend. Others take to + verb: want, decide, plan, hope, agree, refuse, promise, afford, manage, need, would like. A few change meaning: stop doing (quit) and stop to do (pause in order to do); remember doing (a memory of the past) and remember to do (not forget a task).",
+    "why": [
+      "In look forward to, to is a preposition, so it is followed by -ing.",
+      "Avoid is followed by -ing, not by to + verb."
+    ]
+  },
+  "conj_prep": {
+    "when": "To choose between a conjunction and a preposition that have the same meaning. Look at what follows: a clause or a noun phrase.",
+    "body": "Pairs with the same meaning: although/though/even though (conjunctions) and despite/in spite of (prepositions); because/since/as (conjunctions) and because of/due to/owing to (prepositions); while (conjunction) and during (preposition). A conjunction is followed by a clause with a subject and verb. A preposition is followed by a noun, a noun phrase or -ing.",
+    "why": [
+      "It rained is a clause, so you need the conjunction although.",
+      "The traffic is a noun phrase, so you need the preposition because of."
+    ]
+  },
+  "agreement": {
+    "when": "To make the verb agree with the real subject of the sentence.",
+    "body": "Find the real subject. A prepositional phrase between the subject and the verb does not change it: The list of names is… Each, every, everyone and nobody take a singular verb. Uncountable nouns take a singular verb. A number of + plural noun takes a plural verb, but the number of takes a singular verb. With either…or and neither…nor, the verb agrees with the nearer subject.",
+    "why": [
+      "The real subject is the quality, which is singular, so use is.",
+      "Everyone takes a singular verb: has."
+    ]
+  },
+  "word_forms": {
+    "when": "To choose the right part of speech for a gap, based on its position in the sentence.",
+    "body": "After an article or a possessive, use a noun (the decision). Before a noun, use an adjective (a successful plan). After be, become or seem, use an adjective (is available). To describe a verb, an adjective or a whole sentence, use an adverb (work efficiently, highly qualified). Between have or be and a past participle, use an adverb (has recently opened). Common endings help: nouns -tion, -ment, -ness, -ity; verbs -ize, -en, -ify; adjectives -ful, -ous, -ive, -able; adverbs -ly.",
+    "why": [
+      "The word describes how she speaks, so you need the adverb fluently.",
+      "Before the noun plan, you need an adjective: successful."
+    ]
+  },
+  "past_perfect": {
+    "when": "For an action that happened before another action or time in the past.",
+    "body": "When you talk about two past events, use had + past participle for the earlier one and the past simple for the later one. It often appears with before, after, by the time, when and already. Pattern: By the time + past simple, subject + had + past participle.",
+    "why": [
+      "The train left before I arrived, so the earlier action needs had left.",
+      "After had, use the past participle: seen, not saw."
+    ]
+  },
+  "conditional3": {
+    "when": "To imagine a different past (often for regret), or a past condition with a result now.",
+    "body": "Third conditional: If + had + past participle, would have + past participle, for something that did not happen in the past (If I had studied, I would have passed). Mixed conditional: a past condition with a present result (If I had taken that job, I would be rich now). In formal English, Had I known means If I had known.",
+    "why": [
+      "The if-clause does not take would. Use had + past participle.",
+      "The result is in the past, so use would have + past participle."
+    ]
+  },
+  "reported": {
+    "when": "To tell someone what another person said or asked.",
+    "body": "When the reporting verb is in the past (said, told, asked), move the tense back one step: am/is → was, will → would, can → could, present simple → past simple, past simple → past perfect. Change pronouns and time and place words as needed: now → then, today → that day, tomorrow → the next day, here → there. Reported questions use statement word order: She asked where I lived.",
+    "why": [
+      "A reported question uses statement word order: where I lived, without did.",
+      "Say is not followed directly by a person. Use told me, or said that."
+    ]
+  },
+  "participle": {
+    "when": "To make relative or adverb clauses shorter.",
+    "body": "Shortened relative clauses: active meaning → -ing (the man sitting there = who is sitting there); passive meaning → past participle (products made in Japan = which are made in Japan). Shortened adverb clauses work only when both clauses have the same subject: Walking home, I met an old friend. Having + past participle shows that one action happened first: Having finished the work, she went home.",
+    "why": [
+      "The report was written by someone, so the meaning is passive: written.",
+      "Walking home has no subject of its own, so it describes the main subject, the rain. The rain was not walking, so you need a full clause."
+    ]
+  },
+  "wish": {
+    "when": "To say that you want reality to be different.",
+    "body": "For the present, use wish + past (I wish I had more time, but I don't). With be, use were: I wish I were taller. For the past, use wish + had + past participle: I wish I had studied harder. To complain that someone or something will not change, use wish + would: I wish it would stop raining. If only has the same meaning but is stronger.",
+    "why": [
+      "A wish about the present moves the verb back to the past: were.",
+      "A wish about the past needs had + past participle: hadn't eaten."
+    ]
+  },
+  "inversion_basic": {
+    "when": "To say 'me too' or 'me neither', and to add emphasis in formal writing.",
+    "body": "To agree with a positive sentence: So + auxiliary + subject (I like tea. So do I). To agree with a negative sentence: Neither/Nor + auxiliary + subject (I can't swim. Neither can I). When a sentence starts with a negative word such as Never, Rarely, Seldom, Not only or Only then, put the auxiliary before the subject.",
+    "why": [
+      "After So, the auxiliary comes before the subject: So am I.",
+      "When Never starts the sentence, put the auxiliary before the subject: have I."
+    ]
+  },
+  "modal_perfect": {
+    "when": "To talk about regrets and to make guesses about the past.",
+    "body": "Should have + past participle: it was a good idea, but it did not happen. Shouldn't have + past participle: it happened, but it was a bad idea. Must have + past participle: you are almost sure it happened. Can't/couldn't have + past participle: you are sure it did not happen. Might/may/could have + past participle: it possibly happened.",
+    "why": [
+      "To talk about the past, a modal needs have + past participle: should have told.",
+      "After must, use the base form have, never has."
+    ]
+  },
+  "linking": {
+    "when": "To connect ideas across sentences in a paragraph.",
+    "body": "Contrast: however, nevertheless, on the other hand. Result: therefore, as a result, consequently. Addition: moreover, furthermore, in addition. Condition: otherwise (if not). Example: for example, for instance. These words usually start a new sentence and are followed by a comma. They link two sentences; unlike conjunctions such as but or so, they cannot join two clauses with only a comma.",
+    "why": [
+      "However cannot join two clauses with a comma. Start a new sentence, or use a semicolon.",
+      "Coming to work while sick is a contrast, not a result, so the linker is however."
+    ]
+  },
+  "noun_phrase": {
+    "when": "To read and build the long noun phrases found in work and academic texts.",
+    "body": "Order: determiner (the, our) + adverb (highly) + adjective (experienced) + noun modifier (sales) + head noun (team). A noun used before another noun works like an adjective and is usually singular: a customer service desk. Compound adjectives with numbers are joined by a hyphen and stay singular: a ten-minute break.",
+    "why": [
+      "A compound adjective with a number stays singular: two-week.",
+      "A noun that describes another noun is usually singular: customer service."
+    ]
+  },
+  "subjunctive": {
+    "when": "In formal English, after verbs and phrases of suggestion, demand and necessity.",
+    "body": "After suggest, recommend, insist, demand, request, require and It is important/essential/necessary that…, the verb in the that-clause is the base form for every subject: no -s and no tense change. The negative is not + base verb (that he not be late). British English often uses should + verb instead.",
+    "why": [
+      "After suggest that, use the base verb for every subject: go.",
+      "After It is important that, use be for every subject."
+    ]
+  },
+  "cleft": {
+    "when": "To give special emphasis to one part of a sentence.",
+    "body": "It-cleft: It is/was + the part you want to emphasise + that/who + the rest: It was Alex who won the prize. What-cleft: What + subject + verb + is/was + the emphasised part: What I need is a holiday.",
+    "why": [
+      "Do not repeat the subject after who or that.",
+      "The what-clause is already the subject, so do not add it."
+    ]
+  },
+  "inversion_adv": {
+    "when": "In formal writing and harder exam questions.",
+    "body": "No sooner had + subject + past participle + than + past simple: one thing happened just after another. Hardly/Scarcely had + subject + past participle + when + past simple. Only after/when/if + clause or phrase, then invert the main clause. Under no circumstances + inversion means 'never'. Should + subject + verb means If + subject + should + verb, a formal first conditional common in business emails.",
+    "why": [
+      "After No sooner, put had before the subject.",
+      "Hardly goes with when, not than."
+    ]
+  },
+  "ellipsis": {
+    "when": "To avoid repeating words and to sound natural.",
+    "body": "So and not replace a whole clause after think, hope, expect, guess and be afraid: I think so. I hope not. One and ones replace a countable noun already mentioned: I like the red one. Do so replaces a verb phrase in formal English. An auxiliary can stand for a whole verb phrase: She can swim, but I can't.",
+    "why": [
+      "After think, use so to replace the clause, not yes.",
+      "With hope, the negative is I hope not."
+    ]
+  },
+  "hedging": {
+    "when": "To show how certain you are, in academic writing and in polite conversation.",
+    "body": "Fluent speakers rarely state things as absolutely certain. Use may, might or could (possibly), seem/appear to, tend to, be likely/unlikely to and It is possible that… to make claims softer and more accurate. For polite requests, I was wondering if you could… is softer than Can you…?",
+    "why": [
+      "Be likely is followed by to + verb.",
+      "Tend is followed by to + verb."
+    ]
+  },
+  "register": {
+    "when": "To choose words that fit the situation: a work email, a job application or a message to a friend.",
+    "body": "Formal English uses longer, often Latin-based words (purchase for buy, assist for help, require for need, inform for tell), avoids contractions (I am, not I'm), and uses complete sentences and the passive. Informal English uses phrasal verbs (find out, get), contractions and short sentences. A work email starts with Dear Mr./Ms. + family name and ends with Best regards or Sincerely.",
+    "why": [
+      "A message to a manager needs a polite, complete, formal sentence.",
+      "Formal letters use the fixed phrase We regret to inform you."
+    ]
+  }
+}

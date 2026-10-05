@@ -253,8 +253,8 @@ class ContentRepository(private val context: Context) {
             for (i in 0 until array.length()) {
                 val item = array.getJSONObject(i)
                 val examples = JSONArray(); item.optJSONArray("examples")?.let { ex -> for (j in 0 until ex.length()) examples.put(ex.getJSONObject(j).optString("en")) }
-                val mistakes = JSONArray(); item.optJSONArray("mistakes")?.let { ms -> for (j in 0 until ms.length()) mistakes.put(ms.getJSONObject(j).optString("wrong")) }
-                grammarValues.put(item.getString("id"), JSONObject().put("title", item.optString("title", item.getString("id"))).put("when", "").put("body", "").put("examples", examples).put("mistakes", mistakes))
+                val mistakes = JSONArray(); item.optJSONArray("mistakes")?.let { ms -> for (j in 0 until ms.length()) mistakes.put(ms.getJSONObject(j).optString("why")) }
+                grammarValues.put(item.getString("id"), JSONObject().put("title", item.optString("title", item.getString("id"))).put("when", item.optString("when")).put("body", item.optString("body")).put("examples", examples).put("mistakes", mistakes))
             }
         }
         return LocalePackFiles(topics.toString(), wordValues.toString(), "{}", grammarValues.toString(), "{}", "{}", "{}")
