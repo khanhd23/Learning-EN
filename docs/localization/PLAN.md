@@ -614,6 +614,19 @@ stay in their own language in both files. Not yet checked on a device: text leng
 **Done when:** with a fake locale that has only Level 1 approved, the app shows only Level 1 content and
 "Coming soon" elsewhere (report includes screenshots or a test).
 
+**Owner review of Task 6 (2026-10-05): ACCEPTED after fixes.**
+- Critical: `ApprovalGate` re-hashed sources at runtime with Android's `org.json`, which escapes "/"
+  unlike Python's `json`. On a device, 23/38 grammar points (4/8 at Level 1) would look stale, Level 1
+  would fall below 95 %, Vietnamese would become unselectable and the app would fall back to English.
+  The JVM unit test passed because desktop `org.json` does not escape "/". Fixed: the app trusts
+  `s == approved`; staleness is enforced at build time by `validate_content.py`. Regression test added.
+- Hardcoded "I speak: " and "English" in Onboarding/Settings moved to resources (`i_speak`,
+  `locale_en`, `ob_language_title`, `ob_language_sub`); the language step had the goal step's subtitle.
+- English-only mode showed raw IDs (`home_furniture`, `present_simple`) and examples "translated" into
+  themselves. Topics and grammar points now carry English names/titles; English mode shows no
+  example translation. Still missing in English mode: grammar explanations (written in Vietnamese
+  only) — needed before Task 7 anyway.
+
 ## Task 7: Spanish pilot (Level 1)
 
 1. `locale.py new es` → `draft es --level 1` (UI, topics, Level 1 words, Level 1 grammar, Level 1

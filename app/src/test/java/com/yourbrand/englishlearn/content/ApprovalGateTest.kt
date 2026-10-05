@@ -49,13 +49,30 @@ class ApprovalGateTest {
     }
 
     @Test
-    fun staleApprovedRowIsNotApproved() {
-        val source = JSONObject().put("id", "s1").put("def", "a definition")
-        val words = JSONObject().put("words", JSONArray().put(JSONObject().put("level", 1).put("senses", JSONArray().put(source))))
-        val grammar = JSONObject().put("points", JSONArray())
-        val status = JSONObject().put("entries", JSONObject().put("words", JSONObject().put("s1", JSONObject().put("s", "approved").put("src", "stale"))))
+    fun approvedRowWithSlashInSourceStaysApproved() {
+        // Regression: on Android, org.json escapes "/" so a runtime re-hash rejected every grammar
+        // formula like "I am · He/She/It is". Staleness is checked at build time instead.
+        val point = JSONObject().put("id", "be").put("level", 1).put("formula", "I am · He/She/It is")
+        val grammar = JSONObject().put("points", JSONArray().put(point))
+        val words = JSONObject().put("words", JSONArray().put(JSONObject().put("level", 1).put("senses", JSONArray().put(JSONObject().put("id", "s1")))))
+        val status = JSONObject().put("entries", JSONObject().apply {
+            put("ui", approvedRows("ui_key"))
+            put("words", approvedRows("s1"))
+            put("grammar", JSONObject().put("be", JSONObject().put("s", "approved").put("src", "hash-from-python")))
+        })
 
         val result = ApprovalGate.evaluate(status, words, grammar, JSONObject())
+
+        assertEquals(setOf("be"), result.approvedGrammar)
+        assertTrue(result.selectable)
+    }
+
+    @Test
+    fun draftRowIsNotApproved() {
+        val words = JSONObject().put("words", JSONArray().put(JSONObject().put("level", 1).put("senses", JSONArray().put(JSONObject().put("id", "s1")))))
+        val status = JSONObject().put("entries", JSONObject().put("words", JSONObject().put("s1", JSONObject().put("s", "draft"))))
+
+        val result = ApprovalGate.evaluate(status, words, JSONObject().put("points", JSONArray()), JSONObject())
 
         assertFalse(result.selectable)
         assertTrue(result.approvedWords.isEmpty())

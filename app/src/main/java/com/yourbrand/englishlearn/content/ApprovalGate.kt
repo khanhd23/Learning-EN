@@ -1,6 +1,5 @@
 package com.yourbrand.englishlearn.content
 
-import java.security.MessageDigest
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -27,12 +26,13 @@ object ApprovalGate {
     fun evaluate(status: JSONObject, words: JSONObject, grammar: JSONObject, questions: JSONObject): LocaleApproval {
         val entries = status.optJSONObject("entries") ?: JSONObject()
         fun rows(kind: String) = entries.optJSONObject(kind) ?: JSONObject()
-        fun approved(kind: String, key: String, source: JSONObject? = null): Boolean {
-            val row = rows(kind).optJSONObject(key) ?: return false
-            if (row.optString("s") != "approved") return false
-            val recorded = row.optString("src")
-            return source == null || recorded.isBlank() || recorded == sourceHash(source)
-        }
+        // Staleness (`src` no longer matching the English source) is rejected at build time by
+        // tools/validate_content.py, so a shipped pack never contains stale approved rows. The app
+        // does not re-hash: Android's org.json escapes "/" differently from Python's json, which
+        // would wrongly reject every entry containing a slash (most grammar formulas).
+        @Suppress("UNUSED_PARAMETER")
+        fun approved(kind: String, key: String, source: JSONObject? = null): Boolean =
+            rows(kind).optJSONObject(key)?.optString("s") == "approved"
         fun keys(kind: String, sources: Map<String, JSONObject>? = null): Set<String> =
             (sources?.keys ?: rows(kind).keys().asSequence().toSet()).filterTo(linkedSetOf()) { key ->
                 approved(kind, key, sources?.get(key))
@@ -101,20 +101,4 @@ object ApprovalGate {
         )
     }
 
-    fun sourceHash(source: JSONObject): String = sha256(canonical(source)).take(12)
-
-    private fun sha256(value: String): String = MessageDigest.getInstance("SHA-256")
-        .digest(value.toByteArray(Charsets.UTF_8)).joinToString("") { "%02x".format(it) }
-
-    /** Matches tools/locale.py canonical(): UTF-8, sorted object keys, compact separators. */
-    private fun canonical(value: Any?): String = when (value) {
-        null, JSONObject.NULL -> "null"
-        is JSONObject -> value.keys().asSequence().toList().sorted().joinToString(prefix = "{", postfix = "}", separator = ",") {
-            JSONObject.quote(it) + ":" + canonical(value.get(it))
-        }
-        is JSONArray -> (0 until value.length()).joinToString(prefix = "[", postfix = "]", separator = ",") { canonical(value.get(it)) }
-        is String -> JSONObject.quote(value)
-        is Boolean, is Number -> value.toString()
-        else -> JSONObject.quote(value.toString())
-    }
 }

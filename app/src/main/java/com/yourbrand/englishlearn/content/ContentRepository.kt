@@ -235,7 +235,7 @@ class ContentRepository(private val context: Context) {
     private fun englishLocaleFiles(): LocalePackFiles {
         val words = JSONObject(asset("en/words.json"))
         val topics = JSONObject()
-        words.getJSONArray("topics").let { array -> for (i in 0 until array.length()) { val id = array.getJSONObject(i).getString("id"); topics.put(id, id) } }
+        words.getJSONArray("topics").let { array -> for (i in 0 until array.length()) { val t = array.getJSONObject(i); topics.put(t.getString("id"), t.optString("name", t.getString("id"))) } }
         val wordValues = JSONObject()
         words.getJSONArray("words").let { array ->
             for (i in 0 until array.length()) {
@@ -243,9 +243,8 @@ class ContentRepository(private val context: Context) {
                 val senses = word.getJSONArray("senses")
                 for (j in 0 until senses.length()) {
                     val sense = senses.getJSONObject(j)
-                    val examples = JSONObject()
-                    sense.getJSONArray("ex").let { ex -> for (k in 0 until ex.length()) { val item = ex.getJSONObject(k); examples.put(item.getString("id"), item.getString("text")) } }
-                    wordValues.put(sense.getString("id"), JSONObject().put("g", sense.optString("def")).put("ex", examples))
+                    // English mode: the gloss is the English learner definition; examples need no translation.
+                    wordValues.put(sense.getString("id"), JSONObject().put("g", sense.optString("def")).put("ex", JSONObject()))
                 }
             }
         }
@@ -255,7 +254,7 @@ class ContentRepository(private val context: Context) {
                 val item = array.getJSONObject(i)
                 val examples = JSONArray(); item.optJSONArray("examples")?.let { ex -> for (j in 0 until ex.length()) examples.put(ex.getJSONObject(j).optString("en")) }
                 val mistakes = JSONArray(); item.optJSONArray("mistakes")?.let { ms -> for (j in 0 until ms.length()) mistakes.put(ms.getJSONObject(j).optString("wrong")) }
-                grammarValues.put(item.getString("id"), JSONObject().put("title", item.getString("id")).put("when", "").put("body", "").put("examples", examples).put("mistakes", mistakes))
+                grammarValues.put(item.getString("id"), JSONObject().put("title", item.optString("title", item.getString("id"))).put("when", "").put("body", "").put("examples", examples).put("mistakes", mistakes))
             }
         }
         return LocalePackFiles(topics.toString(), wordValues.toString(), "{}", grammarValues.toString(), "{}", "{}", "{}")

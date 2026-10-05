@@ -593,4 +593,8 @@
     <string name="pet_default_cat">Mít</string>
     <string name="pet_default_dog">Bông</string>
     <string name="pet_default_dragon">Lửa</string>
+    <string name="locale_en">English</string>
+    <string name="ob_language_title">Bạn nói ngôn ngữ nào?</string>
+    <string name="ob_language_sub">Nghĩa và giải thích sẽ hiển thị bằng ngôn ngữ này.</string>
+    <string name="i_speak">Tôi nói %1$s</string>
 </resources>

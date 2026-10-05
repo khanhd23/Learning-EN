@@ -593,4 +593,8 @@
     <string name="pet_default_cat">Mia</string>
     <string name="pet_default_dog">Max</string>
     <string name="pet_default_dragon">Ember</string>
+    <string name="locale_en">English</string>
+    <string name="ob_language_title">Which language do you speak?</string>
+    <string name="ob_language_sub">Meanings and explanations will appear in this language.</string>
+    <string name="i_speak">I speak %1$s</string>
 </resources>

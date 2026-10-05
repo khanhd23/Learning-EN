@@ -84,13 +84,13 @@ class OnboardingScreen(activity: MainActivity) : Screen(activity) {
 
     private fun stepLanguage() {
         val c = ctx
-        title(R.string.set_language, R.string.ob_goal_sub)
+        title(R.string.ob_language_title, R.string.ob_language_sub)
         val locales = services.contentRepo.selectableLocales()
         if (language !in locales) language = locales.firstOrNull() ?: "en"
         locales.forEach { locale ->
             val card = Kit.card(c, 14, 12) {
                 isClickable = true
-                addView(Kit.text(c, "I speak: ${localeLabel(locale)}", R.style.Text_BodyStrong))
+                addView(Kit.text(c, str(R.string.i_speak, localeLabel(locale)), R.style.Text_BodyStrong))
             }
             fun paint() { card.background = c.rounded(c.col(if (locale == language) R.color.primary_container else R.color.surface), 16f, c.col(if (locale == language) R.color.primary else R.color.outline), if (locale == language) 2f else 1f) }
             paint()
@@ -100,7 +100,7 @@ class OnboardingScreen(activity: MainActivity) : Screen(activity) {
     }
 
     private fun localeLabel(locale: String): String = when (locale) {
-        "en" -> "English"
+        "en" -> str(R.string.locale_en)
         "vi" -> str(R.string.locale_vi)
         "es" -> str(R.string.locale_es)
         "pt-BR" -> str(R.string.locale_pt_br)
