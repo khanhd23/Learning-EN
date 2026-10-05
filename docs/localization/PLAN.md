@@ -7,7 +7,7 @@ write `dist/reports/task-<N>.md`, then stop.
 
 - [x] Task 0: Freeze the broken Spanish draft
 - [x] Task 1A: Schema upgrade (sense IDs, `def`, `tier`, `forms`, `hl`) + quarantine imports
-- [ ] Task 1A.1: Fix Task 1A regressions (question translations, placeholder/auto definitions)
+- [x] Task 1A.1: Fix Task 1A regressions (question translations, placeholder/auto definitions)
 - [ ] Task 1B: Fill the NGSL gaps (718 missing lemmas, function words first)
 - [ ] Task 1C: Rewrite Level 1–2 entries to the standard
 - [ ] Task 1D: Topics: replace catch-all topics with the controlled list
@@ -345,13 +345,43 @@ Common mistakes found in batch 3 (fixed by the owner) — check every row for th
 
 Tick Task 1A.1 only after the batch covering rank 1000 is accepted.
 
+**Owner review of batch 5 (NGSL 601–1000, 2026-10-05): ACCEPTED after fixes. Task 1A.1 is done.**
+All 880 NGSL top-1000 entries in the core now have an editor sense 1. Fixed by the owner:
+- 110 rows kept the old imported Vietnamese gloss unchanged; about 50 of them contradicted the new
+  definition (`bank` "đắp bờ", `guy` "sự chuồn", `dog` "gã, thằng cha", `useful` "làm ăn được, cừ",
+  `clock` "ghi giờ", `version` "bản dịch", `fail` "không nhớ, quên"…). Rewritten; the correct ones are
+  marked `[keep-gloss]`.
+- Wrong sense 1: `firm` (company), `pretty` (= quite), `pound` (money), `apply` (for a job),
+  `operation` (surgery), `statement`, `degree`.
+- pos/def mismatch: `notice`, `press`, `review`, `guess`, `attempt`, `release`.
+- A real person and product in an example (`author`: "Ho Ngoc Duc … FVDP"); translations that added
+  "Hà Nội" (`season`, `conference`); missing `true`.
+
+`tools/check_editor_batch.py` now also fails on: a gloss copied unchanged from the imported dictionary
+(unless the note says `[keep-gloss]` after you checked it), pos that does not match the def form, old
+dictionary-style glosses ("(thuộc) …"), and names or places added only in the translation.
+
 ### Task 1B: Fill the NGSL gaps
 
-1. Add all 718 missing NGSL lemmas, in rank order. Function words (pronouns, modals, determiners,
-   auxiliaries, wh-words, conjunctions) first, linked to grammar points via `grammarIds`.
-2. Each new entry is written to the full standard (senses, `def`, ≥ 2 sentence examples for Levels
-   1–2, collocations, IPA, forms, a controlled topic) with a vi gloss per sense. Level by NGSL band.
-3. Mark new entries `needs_review: true`, `tier: silver` if the audit passes.
+1. Add all 718 missing NGSL lemmas (120 in ranks 1–1000, 272 in 1001–2000, 326 in 2001–2809),
+   including function words (`he`, `we`, `would`, `which`, `who`, `no`, `could`…) linked to grammar
+   points via `grammarIds`.
+2. Batches: **batch 6 = every missing lemma ranked 1–2000 (392)**; **batch 7 = ranks 2001–2809 (326)**.
+3. How to add an entry (one source of truth, no duplicated text):
+   - `tools/authoring/vocab_ngsl_core.tsv` + `vocab_ngsl_core.py` (same pattern as `vocab_foundation`):
+     `lemma|pos|ipa|level|topic|collocations|forms|grammarIds`. Level by NGSL band (1–1000 → 1,
+     1001–2000 → 2, 2001+ → 3). `topic` = an existing topic ID that is not a catch-all
+     (`open_things`, `open_descriptions`); Task 1D reorganises topics later. IPA: General American,
+     standard §3.2. Collocations: ≥ 2 for nouns/verbs/adjectives.
+   - The sense text (def, vi gloss, example, example translation) goes **only** in
+     `tools/authoring/senses_editor_batch<N>.tsv`, one row per new sense `<id>_s1`, and the new
+     module reads its gloss/example from there. Add more senses only when a beginner needs them.
+   - Mark new entries `needs_review: true`, `source: "original:ngsl-core-2026-10"`.
+4. Same checks as Task 1A.1 batches: `check_editor_batch.py` → `problems=0` (also run it on all earlier
+   batch files), gen, validate, audit (0 errors on the new entries), `gradlew check assembleDebug`.
+   Report the "NGSL lemmas missing" count before/after. Commit `Task 1B batch <N>: …`. Do not push.
+   Apply the batch 3–5 lessons: most frequent meaning first, pos = def = example usage, natural
+   examples, no names or places in translations that are not in the English sentence.
 
 **Done when:** "NGSL lemmas missing" = 0 and none of the new entries has an audit error.
 

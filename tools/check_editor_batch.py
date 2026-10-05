@@ -23,6 +23,33 @@ VI_NAMES = re.compile(r"\b(Lan|Nam|Hoa|Minh|Mai|Tuấn|Hùng|Hà Nội|Hanoi|Da 
                       r"Vietnam|Việt Nam|Hue|Huế|Haiduong)\b")
 
 
+def norm(text):
+    return re.sub(r"[\s.;,]+", " ", (text or "").lower()).strip()
+
+
+def imported_glosses():
+    """sense_id -> gloss as it came from the vi.wiktionary import (before any editor work)."""
+    import importlib
+    import gen_content
+    sys.path.insert(0, str(ROOT / "tools" / "authoring"))
+    import lib
+    for name in gen_content.MODULES:
+        try:
+            importlib.import_module(name)
+        except ModuleNotFoundError:
+            pass
+    out = {}
+    for w in lib.WORDS:
+        if "wiktionary" not in (w.get("source") or ""):
+            continue
+        senses = (w.get("_vi") or {}).get("senses") or []
+        for i, s in enumerate(w.get("senses") or []):
+            sid = s.get("id") or ((s.get("ex") or [{}])[0].get("id"))
+            if sid and i < len(senses):
+                out[sid] = senses[i].get("g") or ""
+    return out
+
+
 def main() -> int:
     paths = [Path(p) for p in sys.argv[1:]]
     if not paths or any(p.name in ("-h", "--help") for p in paths):
@@ -32,6 +59,7 @@ def main() -> int:
     sense_ids = {s.get("id") for w in words for s in w.get("senses") or []}
     lemma_of = {s.get("id"): w["lemma"] for w in words for s in w.get("senses") or []}
     wordnet = audit.wordnet_texts()
+    imported = imported_glosses()
     problems, seen, rows = [], set(), []
 
     for path in paths:
@@ -89,6 +117,19 @@ def main() -> int:
                 problems.append(f"{where}: example does not seem to contain '{lemma}' (check irregular forms)")
             if VI_NAMES.search(example):
                 problems.append(f"{where}: example uses a Vietnamese name or place; content/en is L1-neutral")
+            if VI_NAMES.search(example_vi) and not VI_NAMES.search(example):
+                problems.append(f"{where}: example_vi adds a name or place that is not in the English example")
+            if pos in ("n", "adj", "adv") and definition.startswith("to ") \
+                    and not definition.startswith(("to a ", "to some ", "to such ", "to the ", "to an ")):
+                problems.append(f"{where}: pos '{pos}' but def reads like a verb ('to …'); make them match")
+            if pos == "v" and not definition.startswith(("to ", "used ")):
+                problems.append(f"{where}: pos 'v' but def does not start with 'to …'; make them match")
+            if re.search(r"\((thuộc|Thuộc|nghĩa đen|nghĩa bóng)", gloss) or gloss[:1].isupper():
+                problems.append(f"{where}: vi_gloss is in old dictionary style: {gloss!r}")
+            old = imported.get(sid)
+            if old and norm(old) == norm(gloss) and "[keep-gloss]" not in _note:
+                problems.append(f"{where}: vi_gloss is copied unchanged from the imported dictionary "
+                                f"({gloss!r}); rewrite it to match def, or add [keep-gloss] to note if it already matches")
 
     skel = collections.Counter(audit.skeleton(ex, lemma_of.get(sid, sid)) for _, sid, ex, _, _ in rows)
     for where, sid, ex, _, _ in rows:

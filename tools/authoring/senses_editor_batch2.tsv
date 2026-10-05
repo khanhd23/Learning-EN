@@ -46,7 +46,7 @@ today_s1	adv	on this day	hôm nay	I have two classes today.	Hôm nay tôi có ha
 hour_s1	n	a period of sixty minutes	giờ, tiếng	The journey takes one hour.	Chuyến đi mất một tiếng.	editor 2026-10-05
 student_s1	n	a person who studies at a school	học sinh, sinh viên	She is a student at a large university.	Cô ấy là sinh viên của một trường đại học lớn.	editor 2026-10-05
 face_s1	n	the front part of a person's head	mặt, khuôn mặt	Wash your face with cold water.	Hãy rửa mặt bằng nước lạnh.	editor 2026-10-05
-hope_s1	n	a feeling that something good may happen	hy vọng	There is still hope that he will win.	Vẫn còn hy vọng rằng anh ấy sẽ thắng.	editor 2026-10-05
+hope_s1	n	a feeling that something good may happen	hy vọng	There is still hope that he will win.	Vẫn còn hy vọng rằng anh ấy sẽ thắng.	editor 2026-10-05 [keep-gloss]
 idea_s1	n	a thought or plan in your mind	ý tưởng, ý kiến	That is a great idea for a party.	Đó là một ý tưởng tuyệt vời cho bữa tiệc.	editor 2026-10-05
 cost_s1	n	the amount of money needed for something	chi phí, giá	The cost of living is rising.	Chi phí sinh hoạt đang tăng lên.	editor 2026-10-05
 less_s1	det	a smaller amount or degree	ít hơn	I want to spend less time on my phone.	Tôi muốn dành ít thời gian hơn cho điện thoại.	editor 2026-10-05
@@ -95,11 +95,11 @@ price_s1	n	the amount paid for something	giá	The room price includes a free bre
 parent_s1	n	a mother or father	cha, mẹ, phụ huynh	Every parent wants the best for their child.	Cha mẹ nào cũng muốn điều tốt nhất cho con mình.	editor 2026-10-05
 hard_s1	adj	not easy; needing effort	khó, vất vả	The last question was hard.	Câu hỏi cuối cùng rất khó.	editor 2026-10-05
 party_s1	n	a social event where people celebrate together	bữa tiệc	We are having a party for her birthday.	Chúng tôi sẽ tổ chức một bữa tiệc mừng sinh nhật cô ấy.	editor 2026-10-05
-local_s1	adj	connected with a particular area	địa phương	We buy bread from a local bakery.	Chúng tôi mua bánh mì ở một tiệm bánh địa phương.	editor 2026-10-05
+local_s1	adj	connected with a particular area	địa phương	We buy bread from a local bakery.	Chúng tôi mua bánh mì ở một tiệm bánh địa phương.	editor 2026-10-05 [keep-gloss]
 control_s1	v	to direct or manage something	kiểm soát, điều khiển	This small button controls the volume.	Nút nhỏ này điều chỉnh âm lượng.	editor 2026-10-05
 already_s1	adv	before now or before a stated time	đã, rồi	I've already finished this lesson.	Tôi đã học xong bài này rồi.	editor 2026-10-05
 concern_s1	n	something that worries or interests someone	mối lo ngại, mối quan tâm	Safety is our main concern.	An toàn là mối quan tâm hàng đầu của chúng tôi.	editor 2026-10-05
-product_s1	n	something made to be sold	sản phẩm	This shop sells only local products.	Cửa hàng này chỉ bán sản phẩm địa phương.	editor 2026-10-05
+product_s1	n	something made to be sold	sản phẩm	This shop sells only local products.	Cửa hàng này chỉ bán sản phẩm địa phương.	editor 2026-10-05 [keep-gloss]
 lose_s1	v	to no longer have something	làm mất, thua	I often lose my keys at home.	Ở nhà tôi hay làm mất chìa khóa.	editor 2026-10-05
 story_s1	n	a description of events, real or imagined	câu chuyện	My grandfather tells us a story every night.	Tối nào ông tôi cũng kể cho chúng tôi nghe một câu chuyện.	editor 2026-10-05
 continue_s1	v	to keep happening or doing something	tiếp tục	Please continue reading from page five.	Vui lòng đọc tiếp từ trang năm.	editor 2026-10-05
@@ -129,11 +129,11 @@ visit_s1	v	to go to a person or place for a time	thăm, đến thăm	We visit ou
 grow_s1	v	to become bigger or develop	lớn lên, phát triển	Children grow very fast at this age.	Trẻ em lớn rất nhanh ở độ tuổi này.	editor 2026-10-05
 nothing_s1	pron	not anything	không có gì	There is nothing in the fridge.	Trong tủ lạnh không có gì cả.	editor 2026-10-05
 return_s1	v	to come or go back	trở lại, trở về	She will return from her trip on Monday.	Cô ấy sẽ trở về sau chuyến đi vào thứ Hai.	editor 2026-10-05
-mother_s1	n	a woman who has a child	mẹ	My mother works at a school.	Mẹ tôi làm việc ở một trường học.	editor 2026-10-05
+mother_s1	n	a woman who has a child	mẹ	My mother works at a school.	Mẹ tôi làm việc ở một trường học.	editor 2026-10-05 [keep-gloss]
 walk_s1	v	to move on foot	đi bộ	I walk to the station every morning.	Sáng nào tôi cũng đi bộ đến nhà ga.	editor 2026-10-05
 matter_s1	n	a subject or situation that concerns people	vấn đề, chuyện	This is an important matter for the family.	Đây là một vấn đề quan trọng đối với gia đình.	editor 2026-10-05
 mind_s1	n	the part of you that thinks and feels	tâm trí, trí óc	Reading is good for your mind.	Đọc sách tốt cho trí óc của bạn.	editor 2026-10-05
-value_s1	n	how useful or important something is	giá trị	The value of the house has gone up.	Giá trị của ngôi nhà đã tăng lên.	editor 2026-10-05
+value_s1	n	how useful or important something is	giá trị	The value of the house has gone up.	Giá trị của ngôi nhà đã tăng lên.	editor 2026-10-05 [keep-gloss]
 office_s1	n	a place where people work	văn phòng	Our office is on the third floor.	Văn phòng của chúng tôi ở tầng ba.	editor 2026-10-05
 record_s1	n	stored information about an event or person	hồ sơ, bản ghi	Keep a record of all your expenses.	Hãy ghi lại tất cả các khoản chi tiêu của bạn.	editor 2026-10-05
 stay_s1	v	to remain in a place or state	ở lại, lưu lại	We stayed at a small hotel by the sea.	Chúng tôi ở tại một khách sạn nhỏ gần biển.	editor 2026-10-05
@@ -159,10 +159,10 @@ minute_s1	n	a unit of time equal to sixty seconds	phút	The next bus arrives in 
 food_s1	n	things people or animals eat	thức ăn, đồ ăn	This restaurant serves very good food.	Nhà hàng này phục vụ đồ ăn rất ngon.	editor 2026-10-05
 break_s1	v	to damage or separate something by force	làm vỡ, làm gãy	Be careful not to break the glass.	Cẩn thận kẻo làm vỡ cái ly.	editor 2026-10-05
 clear_s1	adj	easy to see, hear, or understand	rõ ràng	The teacher gave us clear instructions.	Giáo viên đã hướng dẫn chúng tôi rất rõ ràng.	editor 2026-10-05
-future_s1	n	the time that has not happened yet	tương lai	What do you want to do in the future?	Trong tương lai bạn muốn làm gì?	editor 2026-10-05
+future_s1	n	the time that has not happened yet	tương lai	What do you want to do in the future?	Trong tương lai bạn muốn làm gì?	editor 2026-10-05 [keep-gloss]
 either_s1	pron	one or the other of two	một trong hai	Both seats are empty; you can take either.	Cả hai ghế đều trống; bạn ngồi ghế nào cũng được.	editor 2026-10-05
 ago_s1	adv	before the present time	cách đây, trước đây	I started learning English two years ago.	Tôi bắt đầu học tiếng Anh cách đây hai năm.	editor 2026-10-05
-per_s1	prep	for each	mỗi	The tickets cost ten dollars per person.	Vé có giá mười đô la mỗi người.	editor 2026-10-05
+per_s1	prep	for each	mỗi	The tickets cost ten dollars per person.	Vé có giá mười đô la mỗi người.	editor 2026-10-05 [keep-gloss]
 remain_s1	v	to stay in the same place or state	vẫn, ở lại	Please remain in your seats until the bus stops.	Vui lòng ngồi yên tại chỗ cho đến khi xe buýt dừng hẳn.	editor 2026-10-05
 among_s1	prep	in or surrounded by a group	giữa, trong số	I found my pen among the books.	Tôi tìm thấy cây bút của mình giữa đống sách.	editor 2026-10-05
 win_s1	v	to succeed in a competition	thắng, chiến thắng	Our team won the game last night.	Đội chúng tôi đã thắng trận đấu tối qua.	editor 2026-10-05
@@ -176,9 +176,9 @@ create_s1	v	to make something new	tạo ra	The students created a short video to
 drive_s1	v	to control and move a vehicle	lái xe	I drive to work every morning.	Sáng nào tôi cũng lái xe đi làm.	editor 2026-10-05
 along_s1	prep	moving beside or through a place	dọc theo	We walked along the beach at sunset.	Chúng tôi đi dạo dọc bãi biển lúc hoàng hôn.	editor 2026-10-05
 type_s1	n	a group of things with shared features	loại, kiểu	What type of phone do you have?	Bạn dùng loại điện thoại nào?	editor 2026-10-05
-sound_s1	n	something that can be heard	âm thanh, tiếng động	I heard a strange sound outside.	Tôi nghe thấy một âm thanh lạ bên ngoài.	editor 2026-10-05
+sound_s1	n	something that can be heard	âm thanh, tiếng động	I heard a strange sound outside.	Tôi nghe thấy một âm thanh lạ bên ngoài.	editor 2026-10-05 [keep-gloss]
 game_s1	n	an activity with rules and a winner	trò chơi, trận đấu	The children are playing a card game.	Bọn trẻ đang chơi một trò chơi bài.	editor 2026-10-05
-political_s1	adj	related to government or politics	chính trị	The two political parties disagree on taxes.	Hai đảng chính trị bất đồng về thuế.	editor 2026-10-05
+political_s1	adj	related to government or politics	chính trị	The two political parties disagree on taxes.	Hai đảng chính trị bất đồng về thuế.	editor 2026-10-05 [keep-gloss]
 free_s1	adj	not busy; or not costing money	rảnh, miễn phí	Are you free after lunch?	Bạn có rảnh sau bữa trưa không?	editor 2026-10-05
 receive_s1	v	to get something that someone sends	nhận, nhận được	You will receive a letter next week.	Tuần sau bạn sẽ nhận được một lá thư.	editor 2026-10-05
 moment_s1	n	a very short period of time	lát, khoảnh khắc	Please wait a moment, I'm almost ready.	Vui lòng đợi một lát, tôi sắp xong rồi.	editor 2026-10-05
