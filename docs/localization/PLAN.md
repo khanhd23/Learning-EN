@@ -20,7 +20,8 @@ write `dist/reports/task-<N>.md`, then stop.
 - [x] Task 5: UI localization (English default, `values-xx`)
 - [x] Task 6: Show only approved content; language picker  *(Codex)*
 - [x] Task 6.1: UI follows the chosen language  *(Codex)*
-- [ ] Task 6.2: Language sync + English-source checks  *(Codex)*
+- [x] Task 6.2: Language sync + English-source checks  *(Codex)*
+- [ ] Task 6.3: Prebuilt content database (SQLite)  *(Codex)*
 - [ ] Task 7: Spanish pilot (Level 1)
 - [ ] Task 8: Store listings per locale
 
@@ -670,6 +671,70 @@ per-app language settings is overwritten at the next launch, because `App.onCrea
 5. One commit: `Task 6.2: language sync and English-source checks`. Report in
    `dist/reports/task-6.2.md`. Do not push. Do not touch `tools/authoring/*`, `content/**`,
    `res/values*/strings.xml`.
+
+### Task 6.2 review (owner)
+
+Accepted and pushed (af341ea). Verified in a clean checkout: validate, Python tests, `gradlew check
+assembleDebug` all pass.
+
+### Uncommitted search/SQLite work — review (owner): not accepted as is
+
+- **Ranking regression (blocking).** FTS hits come back in `rowid` order and are cut to 30, so the
+  word itself often disappears: typing `go` matches 315 entries and `go` is #82 — not shown at all.
+  `eat` is #10 behind "promote", "fare". The old code ranked exact/prefix lemma first.
+- **`đ` never matches.** The query is normalised (`đi` → `di`), the index body is not, and
+  `unicode61` does not fold `đ` (it is a letter, not a diacritic). Vietnamese gloss search breaks.
+- **Rebuilt on every launch.** `indexedSearch` is in memory, so each process start deletes and
+  re-inserts every entry (inside the synchronized `get()`, on the prewarm thread). The DB is
+  persistent, so this is pure waste, and there is no content-version check either.
+- **Two indexes.** `Content.searchIndex` (in-memory `SearchIndex`) is built for every `Content` but
+  not used for searching; `SearchIndexTest` tests the unused class.
+- **It is not "content in SQLite".** Content is still parsed from JSON into memory; only search
+  moved. That does not make larger dictionaries easier to query.
+- Keep: debounce + background search in `SearchScreen`, the tab-label ellipsis, the extra top
+  padding in `ScrollScreen`.
+
+## Task 6.3: Prebuilt content database (SQLite)  *(Codex, code only)*
+
+Goal: one read-only SQLite file built from the validated content at build time, so the dictionary
+can grow to tens of thousands of entries and several locales without parsing everything into memory.
+Lessons may keep using the in-memory `Content` in this task; search, word lists and word lookup move
+to the database.
+
+1. **First, separate commits.** Commit the UI fixes alone (`MainActivity` tab label, `Kit.kt`
+   padding) as `UI: tab label ellipsis, top padding`. Then delete `ContentSearchStore.kt`,
+   `SearchIndex.kt`, `SearchIndexTest.kt` and the related `ContentRepository`/`Content` changes.
+2. **Builder:** `tools/build_content_db.py` reads `content/en/*.json` and every shippable
+   `content/i18n/<locale>/` pack and writes `build/generated/contentAssets/content/content.db`
+   (called from the existing Gradle content-bundling task, like the JSON copy; never committed).
+   - Tables (suggested): `meta(key, value)` with `schema_version` and `content_hash` (sha256 of all
+     input files); `word(id, lemma, lemma_norm, level, tier, ngsl_rank, pos_list)`;
+     `sense(id, word_id, ord, pos, def)`; `example(id, sense_id, ord, text, hl)`;
+     `word_topic(word_id, topic_id)`; `topic(id, domain, icon, hue, name)`;
+     `grammar(id, level, title)`;
+     `loc(locale, kind, key, value_json, status)` — the locale pack values with their status row.
+   - Search: FTS4 table `word_fts(lemma, gloss, body)` with `tokenize=unicode61` and
+     `content`-less or rowid-linked to `word`. Index **normalised** text (lowercase, NFD, strip
+     marks, `đ→d`) for lemma, each locale's gloss (one row per locale, or a `locale` column), and
+     def + examples in `body`. Apply the same normalisation to queries (share one rule; write a test
+     that Python and Kotlin normalise the same 20 sample strings identically).
+   - Indexes on `word(level)`, `word(lemma_norm)`, `word_topic(topic_id)`, `loc(locale, kind, key)`.
+3. **App:** `ContentDb` opens the asset DB read-only (copy to `noBackupFilesDir` when the bundled
+   `content_hash` differs from the copied one; otherwise reuse). No runtime writes, no rebuilds.
+   - `searchWords(locale, query, limit)`: rank **exact lemma → lemma prefix → gloss match →
+     def/example match**, then level ascending, then silver before bronze, then `ngsl_rank`.
+     Exclude entries whose locale row is not approved (same rule as `ApprovalGate`; English mode
+     uses everything).
+   - `wordsByTopic(locale, topicId)`, `wordsByLevel(locale, level)`, `word(locale, id)`.
+   - `SearchScreen` and `WordListScreen` use it; keep the debounce/background thread.
+4. **Tests:** ranking (`go` → `go` first; `eat` → `eat` first; Vietnamese `đi`/`di` both find
+   `go`), approval filtering, hash-based copy (same hash → no copy). Unit tests may use a DB built
+   by the Python builder from a small fixture.
+5. Run `python tools/gen_content.py`, `validate_content.py`, `python -m unittest discover -s
+   tools/tests`, `./gradlew check assembleDebug`. Report APK size before/after and cold-start
+   search latency for `go` on a device or emulator, in `dist/reports/task-6.3.md`.
+6. Commit `Task 6.3: prebuilt content database` (after the UI commit). Do not push. Do not touch
+   `tools/authoring/*`, `content/**`, `res/values*/strings.xml`.
 
 ## Task 7: Spanish pilot (Level 1)
 
