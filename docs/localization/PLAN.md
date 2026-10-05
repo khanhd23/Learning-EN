@@ -16,7 +16,7 @@ write `dist/reports/task-<N>.md`, then stop.
 - [x] Task 2: Per-locale folder layout + review status
 - [x] Task 3: Validation rules
 - [x] Task 4: `tools/locale.py` operations tool
-- [ ] Task 5: UI localization (English default, `values-xx`)
+- [x] Task 5: UI localization (English default, `values-xx`)
 - [ ] Task 6: Show only approved content; language picker
 - [ ] Task 7: Spanish pilot (Level 1)
 - [ ] Task 8: Store listings per locale

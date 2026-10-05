@@ -26,6 +26,7 @@ if __name__ == "locale":
 import argparse
 import csv
 import hashlib
+import html
 import json
 import os
 import re
@@ -364,6 +365,25 @@ def cmd_report(root: Path) -> Path:
     out.parent.mkdir(parents=True, exist_ok=True); out.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n"); return out
 
 
+def cmd_build_ui(root: Path, locale: str) -> Path:
+    """Build an Android UI resource file from a fully approved locale UI pack."""
+    target = locale_dir(root, locale)
+    ui = load(target / "ui.json")
+    status = load(target / "status.json")
+    missing = sorted(key for key in ui if status.get("entries", {}).get("ui", {}).get(key, {}).get("s") != "approved")
+    if missing:
+        raise SystemExit(f"UI is not fully approved for {locale}; first missing/unapproved key: {missing[0]}")
+    qualifier = {"es": "es", "pt-BR": "pt-rBR"}.get(locale, locale)
+    out = root / "app/src/main/res" / f"values-{qualifier}" / "strings.xml"
+    lines = ['<?xml version="1.0" encoding="utf-8"?>', "<resources>"]
+    for key in sorted(ui):
+        lines.append(f'    <string name="{key}">{html.escape(str(ui[key]), quote=False)}</string>')
+    lines += ["</resources>", ""]
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text("\n".join(lines), encoding="utf-8", newline="\n")
+    return out
+
+
 def parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(description=__doc__); sub = p.add_subparsers(dest="command", required=True)
     n = sub.add_parser("new"); n.add_argument("locale")
@@ -371,6 +391,7 @@ def parser() -> argparse.ArgumentParser:
     e = sub.add_parser("export"); e.add_argument("locale"); e.add_argument("--level", type=int); e.add_argument("--status", default="draft", choices=("draft", "reviewed", "approved", "missing"))
     i = sub.add_parser("import"); i.add_argument("locale"); i.add_argument("csv_file"); i.add_argument("--reviewer", required=True)
     a = sub.add_parser("approve"); a.add_argument("locale"); a.add_argument("--level", type=int); a.add_argument("--file")
+    b = sub.add_parser("build-ui"); b.add_argument("locale")
     c = sub.add_parser("check"); c.add_argument("locale", nargs="?"); c.add_argument("--all", action="store_true")
     sub.add_parser("report")
     return p
@@ -384,6 +405,7 @@ def main(argv=None, root: Path = ROOT) -> int:
     elif args.command == "export": result = {"files": [str(x) for x in cmd_export(root, args.locale, args.level, args.status)]}
     elif args.command == "import": result = cmd_import(root, args.locale, Path(args.csv_file), args.reviewer)
     elif args.command == "approve": result = cmd_approve(root, args.locale, args.level, args.file)
+    elif args.command == "build-ui": result = {"locale": args.locale, "path": str(cmd_build_ui(root, args.locale))}
     elif args.command == "check":
         locales = [args.locale] if args.locale else [x.name for x in (root / "content/i18n").iterdir() if x.is_dir() and not x.name.startswith("_")]
         if not args.all and not args.locale: raise SystemExit("usage: check <locale> or check --all")

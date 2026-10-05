@@ -66,8 +66,8 @@ android {
         }
     }
 
-    // Vietnamese UI (default values/) + English (values-en/). Everything else is filtered out.
-    androidResources { localeFilters += listOf("vi", "en") }
+    // English is the fallback in values/; Vietnamese is the shipped translated UI.
+    androidResources { localeFilters += listOf("en", "vi") }
 
     sourceSets["main"].assets.srcDir("build/generated/contentAssets")
 

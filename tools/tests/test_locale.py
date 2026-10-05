@@ -65,6 +65,15 @@ class LocaleCycle(unittest.TestCase):
         self.assertIn("xx", text)
         self.assertIn("| 1 | words | 0 (0.0%) | 0 (0.0%) | 0 (0.0%) | 1 (100.0%) | 0 |", text)
 
+        ui_dir = self.root / "content/i18n/xx"
+        ui_dir.joinpath("ui.json").write_text(json.dumps({"hello": "Hola"}, ensure_ascii=False), encoding="utf-8")
+        status = json.loads(ui_dir.joinpath("status.json").read_text(encoding="utf-8"))
+        status.setdefault("entries", {})["ui"] = {"hello": {"s": "approved"}}
+        ui_dir.joinpath("status.json").write_text(json.dumps(status), encoding="utf-8")
+        built = locale_tool.cmd_build_ui(self.root, "xx")
+        self.assertEqual(built.name, "strings.xml")
+        self.assertIn('name="hello">Hola</string>', built.read_text(encoding="utf-8"))
+
 
 if __name__ == "__main__":
     unittest.main()

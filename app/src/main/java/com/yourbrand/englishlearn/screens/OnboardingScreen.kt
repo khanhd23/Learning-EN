@@ -27,13 +27,14 @@ class OnboardingScreen(activity: MainActivity) : Screen(activity) {
     private var level = 1
     private var minutes = 10
     private var species = "cat"
-    private var name = Species.defaultName("cat")
+    private var name = ""
     private lateinit var content: LinearLayout
     private lateinit var dots: LinearLayout
     private lateinit var next: TextView
 
     override fun onCreateView(parent: ViewGroup): View {
         val c = ctx
+        if (name.isEmpty()) name = c.getString(Species.defaultNameRes(species))
         val root = Kit.vbox(c).apply { layoutParams = ViewGroup.LayoutParams(MATCH_PARENT, MATCH_PARENT) }
         val top = Kit.hbox(c) { setPadding(c.dpi(20), c.dpi(12), c.dpi(8), 0) }
         dots = Kit.hbox(c) { layoutParams = lp(0, WRAP_CONTENT, 1f) }
@@ -134,7 +135,7 @@ class OnboardingScreen(activity: MainActivity) : Screen(activity) {
                 layoutParams = lp(0, WRAP_CONTENT, 1f).apply { if (i > 0) marginStart = c.dpi(10) }
                 isClickable = true
                 addView(PetView(c).apply { species = sp; stage = 1; mood = Mood.HI; layoutParams = LinearLayout.LayoutParams(c.dpi(92), c.dpi(92)) })
-                addView(Kit.text(c, Species.nameVi(sp), R.style.Text_BodyStrong).apply { gravity = Gravity.CENTER })
+                addView(Kit.text(c, c.getString(Species.nameRes(sp)), R.style.Text_BodyStrong).apply { gravity = Gravity.CENTER })
             }.also { row.addView(it) }
         }
         val nameInput = EditText(c).apply {
@@ -144,16 +145,16 @@ class OnboardingScreen(activity: MainActivity) : Screen(activity) {
             setPadding(c.dpi(16), c.dpi(12), c.dpi(16), c.dpi(12))
             layoutParams = lp().apply { topMargin = c.dpi(8) }
             addTextChangedListener(object : android.text.TextWatcher {
-                override fun afterTextChanged(s: android.text.Editable?) { name = s.toString().trim().ifEmpty { Species.defaultName(species) } }
+                override fun afterTextChanged(s: android.text.Editable?) { name = s.toString().trim().ifEmpty { c.getString(Species.defaultNameRes(species)) } }
                 override fun beforeTextChanged(s: CharSequence?, a: Int, b: Int, d: Int) {}
                 override fun onTextChanged(s: CharSequence?, a: Int, b: Int, d: Int) {}
             })
         }
         fun paint() { cards.forEachIndexed { i, v -> v.background = c.rounded(c.col(if (Species.all[i] == species) R.color.primary_container else R.color.surface), 16f, c.col(if (Species.all[i] == species) R.color.primary else R.color.outline), if (Species.all[i] == species) 2f else 1f) } }
         cards.forEachIndexed { i, v -> v.onTap {
-            val old = Species.defaultName(species)
+            val old = c.getString(Species.defaultNameRes(species))
             species = Species.all[i]
-            if (name == old) { name = Species.defaultName(species); nameInput.setText(name) }
+            if (name == old) { name = c.getString(Species.defaultNameRes(species)); nameInput.setText(name) }
             paint(); (v.getChildAt(0) as PetView).react(Mood.HI)
         } }
         paint()
@@ -161,7 +162,7 @@ class OnboardingScreen(activity: MainActivity) : Screen(activity) {
         content.addView(Kit.text(c, str(R.string.ob_pet_name), R.style.Text_BodyStrong).margins(c, top = 20))
         content.addView(nameInput)
         val sugg = Kit.flow(c).margins(c, top = 8)
-        listOf("Miu", "Bông", "Mochi", "Kem", "Lửa", "Bin").forEach { n -> sugg.addView(Kit.chip(c, n) { nameInput.setText(n) }) }
+        c.resources.getStringArray(R.array.pet_name_suggestions).forEach { n -> sugg.addView(Kit.chip(c, n) { nameInput.setText(n) }) }
         content.addView(sugg)
         content.addView(Kit.card(c, 14, 14, c.col(R.color.accent_container), null) {
             addView(Kit.text(c, str(R.string.ob_pet_explain), R.style.Text_Body).apply { textSize = 14f })

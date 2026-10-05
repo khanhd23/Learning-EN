@@ -137,7 +137,7 @@ class PetHomeScreen(activity: MainActivity) : Screen(activity) {
             setOnClickListener { rename() }
             setOnLongClickListener { rename(); true }
         })
-        nameBox.addView(Kit.text(c, str(R.string.stage_of, st.stage, engine.config.maxStage) + " · " + Species.nameVi(st.species), R.style.Text_Caption))
+        nameBox.addView(Kit.text(c, str(R.string.stage_of, st.stage, engine.config.maxStage) + " · " + c.getString(Species.nameRes(st.species)), R.style.Text_Caption))
         r.addView(nameBox)
         if (!engine.isMaxStage) r.addView(PetView(c).apply {
             species = st.species; stage = st.stage + 1; silhouette = true; shadow = false
@@ -222,7 +222,7 @@ class PetHomeScreen(activity: MainActivity) : Screen(activity) {
                     gravity = Gravity.CENTER_HORIZONTAL
                     layoutParams = lp(0, WRAP_CONTENT, 1f).apply { marginEnd = c.dpi(8) }
                     addView(PetView(c).apply { species = sp; stage = 1; mood = Mood.HI; layoutParams = LinearLayout.LayoutParams(c.dpi(80), c.dpi(80)) })
-                    addView(Kit.text(c, Species.nameVi(sp), R.style.Text_BodyStrong).apply { gravity = Gravity.CENTER })
+                    addView(Kit.text(c, c.getString(Species.nameRes(sp)), R.style.Text_BodyStrong).apply { gravity = Gravity.CENTER })
                 })
             }
             box.addView(row)
@@ -283,7 +283,7 @@ class PetHomeScreen(activity: MainActivity) : Screen(activity) {
                             engine.owns(item) -> { engine.equip(item); services.savePet(); render(); fill(); services.sfx.play(Sfx.Sound.POP) }
                             st.stage < item.minStage -> activity.toast(str(R.string.need_stage, item.minStage))
                             st.coins < item.price -> activity.toast(str(R.string.need_coins, item.price - st.coins))
-                            else -> Dialogs.confirm(c, item.emoji + " " + item.vi, str(R.string.buy_msg, item.price), str(R.string.buy), str(R.string.cancel)) {
+                            else -> Dialogs.confirm(c, item.emoji + " " + c.getString(item.nameRes), str(R.string.buy_msg, item.price), str(R.string.buy), str(R.string.cancel)) {
                                 if (engine.buy(item)) {
                                     engine.equip(item); services.savePet(); render(); fill()
                                     services.sfx.play(Sfx.Sound.SUCCESS)
@@ -320,7 +320,7 @@ class PetHomeScreen(activity: MainActivity) : Screen(activity) {
             isClickable = true
             foreground = c.rounded(0, 16f, ripple = true)
             addView(Kit.text(c, item.emoji, sizeSp = 30f).apply { gravity = Gravity.CENTER; alpha = if (unlocked) 1f else 0.4f }.margins(c, top = 4))
-            addView(Kit.ellipsize(Kit.text(c, item.vi, R.style.Text_BodyStrong).apply { textSize = 12.5f; gravity = Gravity.CENTER }, 2).margins(c, top = 4))
+            addView(Kit.ellipsize(Kit.text(c, c.getString(item.nameRes), R.style.Text_BodyStrong).apply { textSize = 12.5f; gravity = Gravity.CENTER }, 2).margins(c, top = 4))
             val label = when {
                 equipped -> "✓ " + str(R.string.in_use)
                 owned -> str(R.string.owned)
@@ -328,7 +328,7 @@ class PetHomeScreen(activity: MainActivity) : Screen(activity) {
                 else -> "🪙 ${item.price}"
             }
             addView(Kit.text(c, label, R.style.Text_Caption, c.col(if (equipped) R.color.primary else if (owned) R.color.success else R.color.on_surface)).apply { gravity = Gravity.CENTER; textSize = 12f; setTypeface(typeface, Typeface.BOLD) }.margins(c, top = 4))
-            contentDescription = "${item.vi}, $label"
+            contentDescription = "${c.getString(item.nameRes)}, $label"
         }
     }
 }
