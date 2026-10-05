@@ -549,7 +549,7 @@ def main():
         "grammar": {x["id"]: x for x in grammar},
         "questions": {x["id"]: x for x in questions},
         "passages": {x["id"]: x for x in passages},
-        "ui": ui,
+        "ui": {node.attrib["name"]: "".join(node.itertext()) for node in ET.parse(strings_path).getroot().findall("string")} if os.path.isfile(strings_path) else {},
         "pet": vi.get("pet", {}),
         "tips": vi.get("tips", {}),
     })

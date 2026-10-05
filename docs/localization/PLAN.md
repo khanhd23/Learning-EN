@@ -15,7 +15,7 @@ write `dist/reports/task-<N>.md`, then stop.
 - [ ] Task 1F: Grammar questions, confusables, families up to target  *(owner/Claude, in parallel)*
 - [x] Task 2: Per-locale folder layout + review status
 - [x] Task 3: Validation rules
-- [ ] Task 4: `tools/locale.py` operations tool
+- [x] Task 4: `tools/locale.py` operations tool
 - [ ] Task 5: UI localization (English default, `values-xx`)
 - [ ] Task 6: Show only approved content; language picker
 - [ ] Task 7: Spanish pilot (Level 1)
