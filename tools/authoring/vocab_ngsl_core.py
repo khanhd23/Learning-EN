@@ -1,4 +1,4 @@
-"""Metadata-only authoring module for the NGSL 1-2000 gap batch.
+"""Metadata-only authoring module for the NGSL gap batches.
 
 Sense definitions, Vietnamese glosses, and examples live only in
 ``senses_editor_batch6.tsv``. This module owns the reusable vocabulary metadata.
