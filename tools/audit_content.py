@@ -23,7 +23,7 @@ SENTENCE = re.compile(r"""^["'(]?[A-Z0-9]""")
 WORD = re.compile(r"[A-Za-z']+")
 CATCH_ALL_SIZE = 300
 # Words whose real IPA happens to match their spelling.
-IPA_EQUALS_SPELLING = {"ski"}
+IPA_EQUALS_SPELLING = {"ski", "kiwi"}
 # Collocation "frames" that say nothing about how a word is really used.
 TEMPLATE_COLL = {"the x", "a x", "an x", "x something", "x together", "very x", "x example", "x today",
                  "x enough", "use of x", "meaning of x", "x it", "x this", "x that", "x thing"}

@@ -144,12 +144,14 @@ def load_topic_corrections(words):
             line = raw.strip()
             if not line or line.startswith("#"):
                 continue
-            wid, _, topic_text = line.partition("|")
+            parts = line.split("|")
+            wid, topic_text = parts[0], parts[1] if len(parts) > 1 else ""
+            ipa = parts[2].strip() if len(parts) > 2 else ""
             topics = [t.strip() for t in topic_text.split(",") if t.strip()]
             ok = topics == [UNSORTED] or (1 <= len(topics) <= 3 and all(t in CONTROLLED_TOPIC_IDS for t in topics))
             if not ok or wid in rows:
                 raise SystemExit(f"entry_corrections.tsv line {n}: bad row {line!r}")
-            rows[wid] = topics
+            rows[wid] = (topics, ipa)
     missing = [w["id"] for w in words if w["id"] not in rows]
     if missing:
         raise SystemExit(f"entry_corrections.tsv has no topic for: {missing[:10]} (+{max(0, len(missing) - 10)})")
@@ -406,7 +408,9 @@ def main():
 
     corrections = load_topic_corrections(words)
     for w in words:
-        w["topics"] = corrections[w["id"]]
+        w["topics"], ipa = corrections[w["id"]]
+        if ipa:
+            w["ipa"] = ipa
 
     lemma_to_id = {}
     for w in words:
