@@ -1,0 +1,616 @@
+# English source explanations for questions and passage blanks (owner-written, L1-neutral).
+# Format: id|explanation|stem override (optional)|vi explanation override (optional)
+# Passage blanks use passage_id#blank_index. Merged by tools/gen_content.py; used as the
+# translation source by tools/locale.py.
+qd5b75949c|After can, we need a base verb. Affect is the verb; effect is usually a noun.
+q830c03079|After a positive, we need a noun. Effect is the noun meaning 'result'.
+q5fd6cbe02|Lend means 'give something for a short time': lend somebody something. Borrow means 'take', so it does not fit with me as the receiver.|Could you ___ me some money until tomorrow?
+q877de3ff6|Borrow something from somewhere means you take it and give it back later.
+q1713f0351|Tell is followed by a person: tell me the way. Say and speak do not take a person as the object like this.
+qabcaa6b07|Say that + clause. Told needs a person after it: told me that…
+q8047a210b|We say do homework. It is a fixed collocation.
+q3dad66886|We say make a mistake. It is a fixed collocation.
+qa44378353|Do somebody a favour means 'help somebody'. It is a fixed expression.
+q8aefbd72a|We say make a decision. It is a fixed collocation.
+qab683114a|After don't, we need a base verb: lose. Loose is an adjective; loss is a noun.
+qefa5c4152|After too, we need an adjective. Loose means 'not tight'.
+q6cebc0160|After a new, we need a singular countable noun. Job is countable; work in this sense is not.
+q91c12b211|A lot of + uncountable noun. Work is uncountable here, so it takes no a and no -s.
+q9a58184d8|Fun means 'enjoyable'. Funny means 'making you laugh'.
+q8a360766b|A joke that makes people laugh is funny.
+qcef739fac|Bored describes how a person feels. Boring describes the thing that causes the feeling.
+qae68d123c|The lecture caused the feeling, so we use the -ing adjective: boring.
+q4b85e2921|We describes people's feelings, so we use the -ed adjective: excited.
+qb8980f3d9|Listen to music means paying attention to it on purpose.
+qd34c4288e|Hear is for sounds that reach you without trying. A noise is something you hear.
+qac4bb110e|We watch a movie: we look at something that moves for a period of time.
+q5416ef47c|Look at means 'turn your eyes towards'. Look! is often used to make someone notice something.
+qbb19d5ef8|Raise takes an object (prices). Rise has no object.
+qfa8e4db70|Rise has no object: the sun rises. Raise needs an object.
+q96a7d1322|Between is used for two clear points: the bank and the school.
+q5b2bee451|Among is used for a group of people or things: her classmates.
+q04206fc57|2018 is a starting point, so we use since.
+qd64e644dd|Ten years is a length of time, so we use for.
+q6fc9c33c8|The meeting is a noun phrase, so we need the preposition during.
+q2c8da63b1|You were out is a clause, so we need the conjunction while.
+qe9a37268b|The heavy traffic is a noun phrase, so we need the preposition Despite.
+q8379d2e35|He was tired is a clause, so we need the conjunction Although.
+qbc85cdecc|The storm is a noun phrase, so we need because of.
+q5e7d52fc7|I was sick is a clause, so we need the conjunction because.
+q9f4e7b067|Economic means 'related to the economy': economic growth.
+q72f0c87c8|Economical means 'not costing much money or fuel'.
+q4a07cd340|Advice is an uncountable noun, so it has no -s. Advise is the verb.
+q65fb61061|We need a past tense verb: advised. Advice is the noun.
+qd7924554a|Remind somebody to do something means 'make somebody remember'.
+q191d7a92a|Remember means to keep something in your own memory.
+qfca24a04d|Check means 'look again to make sure it is correct'. Control means 'have power over'.
+q28c08afab|A person who pays a lawyer or other professional is a client.
+q8ba9afb70|People staying at a hotel are guests.
+qbf035c79f|Money paid by the hour or week is a wage. A salary is paid monthly or yearly.
+q11d30cd74|Something you win in a contest is a prize. Price is what something costs.
+q5adacd446|A career is the work a person does over many years.
+qe771c2b1c|A short visit for work is a business trip.
+qcf8d2f73f|Journey means travel from one place to another, often a long one.|The ___ from London to Edinburgh takes over four hours by train.
+q156d00e53|Its is the possessive: the tail belongs to the dog. It's means it is.
+q7218b8dab|It's = it is: It is raining.
+qfac8e604b|Comparatives use than: cheaper than.
+q41c3c84bf|Especially means 'more than others; in particular'.
+q6700cb96f|Specially means 'for one particular purpose'.
+qbf072957b|Hard is also an adverb: work hard. Hardly means 'almost not'.
+q8eff13bc4|Hardly means 'almost not': I could almost not hear him.
+q5facafb6a|Lately means 'recently' and is often used with the present perfect.
+q8fa575a91|Alone means 'without other people'.
+q5d20e874f|Lonely describes the sad feeling of having no friends or company.
+qc1b7bcb32|The match caused the feeling, so we use the -ing adjective: exciting.
+q76aa90d54|My brother = he, so the verb is is.
+qedced9b6b|They goes with are.
+q1bbbe1f03|I goes with am.
+q78ada7e0f|Your parents is plural, so the question starts with Are.
+q741512d1b|Coffee is uncountable, so it takes a singular verb: is.
+q62b973e3b|We goes with are.
+qb30bf03db|My keys is plural, so the verb is are.
+q747416582|It goes with is.
+qae06a0104|She is singular, so use is, not are.
+q982934822|My friends is plural, so use are, not is.
+qd08888c66|An adjective cannot follow the subject directly. English needs the verb to be: I am tired.
+q5f9e3b0d3|She + present simple verb + -es: goes. Every day signals a habit.
+qd09d48f20|My parents is plural, so the verb has no -s: watch.
+q6eb1fd2f7|This is a fact, and water is singular, so the verb takes -s: boils.
+q67a98c983|He + doesn't + base verb.
+q77fe2b7f4|Your sister = she, so the question uses Does.
+q9098b2af5|A fixed timetable uses the present simple. The train is singular: leaves.
+q6244507fa|I + base verb. Usually signals the present simple.
+qc01925e0e|Tom = he, so do becomes does.
+q2cb6cc5ca|Cats is plural, so the verb has no -s: like.
+q56de0872d|She goes with is. Never comes after the verb to be.
+qe8144bf4d|My father = he, so the verb needs -s: works.
+qe4e35f3a4|After doesn't, use the base verb: like.
+qa408c89ea|Your brother = he, so the question starts with Does.
+q536fe3e66|Always walks to school means the same as goes on foot every day.
+q334a5c599|The h in hour is silent, so it starts with a vowel sound: an hour.
+qbc60f82f1|University starts with a /j/ sound, which is a consonant sound: a university.
+q7ee8cdc8c|There is only one moon, so we use the.
+q2f609e468|A job after be needs a or an. Teacher starts with a consonant sound: a.
+qc23ddb191|Both speakers know which door, so we use the.
+q49c71d739|Umbrella starts with a vowel sound, so we use an.
+q7c118e67b|Music in general is uncountable, so no article is needed.
+qc419e1796|European starts with a /j/ sound, which is a consonant sound: a European company.
+q278c0c181|The h in honest is silent, so we need an: an honest person.
+q5007cbfef|A singular job needs an article: a doctor.
+q18e742c22|Life in general takes no article: Life is too short.
+q36c62762d|The usual plural of person is people.
+q4cbc1d950|Tooth has an irregular plural: teeth.
+q5751ee8d8|Box ends in -x, so it adds -es: boxes.
+qa1c9da4c7|A consonant + y changes to -ies: city → cities.|Tokyo and London are big ___.
+qb7d833819|Child has an irregular plural: children.
+qf94d4dc60|Advice is uncountable, so it has no -s.
+q28c5e636f|Mouse has an irregular plural: mice.
+q794927143|Child has an irregular plural: children.
+q434820caa|Information is uncountable, so it has no -s.
+q0c9688621|A clock time takes at.
+q9a6e1870b|A date takes on.
+qad369a03f|A season takes in.
+q803c76536|A day of the week takes on.
+q511458c11|A year takes in.
+qbf1a7cfe4|On a surface: on the roof.
+qa34b4128c|A specific point takes at: at the bus stop.
+qbcd429269|At night is a fixed expression.
+qcce749e77|A city or town takes in.|He lives ___ Paris.
+q4691b2943|A part of the day takes in: in the afternoon.
+qbe15d3229|A day of the week takes on: on Saturday.
+q66457c1ef|A part of the day takes in: in the morning.
+q5686284db|A city takes in: in Tokyo.|She [has] lived [at] Tokyo [since] [2020].|Thành phố → in Tokyo.
+qa83dea916|People is plural, and the party is in the past, so we use were.
+qd94c59b24|Water is uncountable, so we use is.
+q74ba569bd|Eggs is plural, so the question is Are there.
+qd590d2c42|Two banks is plural, so we use are.
+qf65b05ae4|In a list, the verb agrees with the first noun: a pen, so is.
+q4133d6870|Negative sentences usually use any.
+qc69e1dbae|To say that something exists in a place, use There is, not It has.
+qa8113b92d|Places is plural, so we need There are.
+qa17d92d22|Can + base verb: run.
+qbf4bccb74|Ability in the past uses could.
+q252950fb9|Could you…? is a polite request.
+q4212e216c|The negative of can is can't, followed by a base verb.
+q4571e5558|Can't means 'not able to': I can't see anything.
+q910c41285|After can, use the base verb: speak.
+qf7daff36c|Can is followed directly by the base verb. Delete to.
+q21bfcf113|Article + adjective + noun: a beautiful voice.
+q62900b9b5|Frequency adverbs go before the main verb: usually have.
+q8361dc712|With the verb to be, the adverb comes after it: He is never late.
+q16055ef75|The adjective comes before the noun: a famous museum.
+q4535bbb4f|Frequency adverbs go before the main verb: I often go.
+q36d89f5e6|Last night is a finished past time, so we use the past simple.
+q60efcdaab|Two years ago signals the past simple: go → went.
+q331c72099|The action finished in the past: lose → lost.
+q7b0f03c43|Past simple questions with ordinary verbs use Did.
+qb94cc1dcf|They + past of be = were.
+qe695b3921|Didn't + base verb: read.
+q39a6cc9f5|When I was a child is a finished past time, so we use the past simple.
+qbf2b72d83|In March (already past) signals the past simple.
+qe854284da|I + past of be = was.
+q83e94ad88|Leave has an irregular past: left.
+q3fc66e148|After didn't, use the base verb: go.
+q13535a122|Buy has an irregular past: bought.
+qb59f2dc28|After Did, use the base verb: call.
+q2f8e92b1b|Started five years ago and still learning = have learned for five years.
+q2b7cbe2a1|The action is happening now: is sleeping.
+q4c46730f5|Look! shows it is happening now. Those people is plural: are getting off.
+qb693abe33|Know is a state verb, so it is not used in the continuous.
+q1ca3155d8|At the moment signals the present continuous.
+qcd7a6d05e|An arranged plan for the near future uses the present continuous.
+q2d8f1019f|A changing trend uses the present continuous: are getting.
+q6eee81e74|Listen! shows it is happening now.
+qce6916264|Be + -ing: is cooking.
+q4041f069b|Want is a state verb, so it is not used in the continuous: I want.
+q3afcf0812|Look! shows the action is happening now: are playing.
+q16551146f|Long adjectives form the comparative with more: more comfortable.
+q843942381|Short adjectives form the superlative with the + -est. Hot doubles the t: the hottest.
+qf7c667045|Good has an irregular comparative: better.
+q5eac83c04|Long adjectives form the superlative with the most: the most expensive.
+q4f1532c0d|Equal comparison uses as + adjective + as.
+q753f85cb8|Bad has an irregular comparative: worse.
+q376ffff6e|Short adjective + -er + than: taller than.
+q36bb1d9b5|Of all the candidates shows a superlative: the most qualified.
+q969b7cfd8|Comparatives use than, not then. Then means 'after that'.
+qa38fd9c7b|Taller is already comparative. Delete more.
+q35fa64dd1|Cheap is a short adjective, so the superlative is the cheapest.
+q6ec370598|People is countable, so we use many.
+q03c324fff|Time in this sense is uncountable, so we use much.
+q7c60d0e4a|Seats is countable, and the meaning is 'some, but not many': a few.
+qfcc6c8f5a|Polite requests and offers use some.
+qd570ae3f9|Negative sentences usually use any.
+qea2136967|Furniture is uncountable, so we use little, not few or many.
+q5a979bbb8|Information is uncountable, so we use much.
+qd9f69e0b5|Employees is a plural countable noun, so we use several.
+q00ab58c03|Money is uncountable, so we say How much.
+qe25d4a016|Homework is uncountable, so it has no -s.
+qc2bf4e8fd|Milk is uncountable, so we use much.
+qd12604384|A decision made at the moment of speaking uses will.
+q8321084a5|A plan made before now uses be going to.
+qacf9f8572|A prediction based on what you can see now uses be going to.
+qe16b69528|A prediction based on opinion (I think) uses will.
+qd0b47ac0c|Promises use will. The negative is won't.
+q4a4d3ccde|Next spring is in the future: will open.
+qb98c95e83|Will is followed by the base verb without to. Delete to.
+qb304a4758|Going to needs the verb to be: She is going to.
+q3cafb2e1e|Advice uses should.
+qd450e8a8c|Something that is not allowed uses mustn't.
+qf0773ecc1|Something that is not necessary uses don't have to.
+q5265611d6|A rule or obligation uses must.
+qf77402982|With he, have to becomes has to.
+q0f3564a4d|Must is followed by the base verb without to. Delete to.
+qb41d6c373|My mother = she, so have to becomes has to.
+q18afc1cc3|Not necessary = don't have to. Mustn't means it is not allowed.
+q977b803ac|With no noun after it, we need the possessive pronoun hers (= her umbrella).
+qeeb7e6b0d|After the verb give, we need an object pronoun: me.
+q37af8db6a|Before the noun assistant, we need a possessive adjective: her.|Ms. Brown asked ___ assistant to book a room.
+q0bcc6c80e|By + reflexive pronoun means 'without help': by themselves.
+q72a99e15f|Team is singular here, so the possessive is its. It's means it is.
+q215faac9e|Himself emphasises that he does it, not someone else.
+q67a50778a|The subject needs a subject pronoun, and I usually comes last: My brother and I.
+qb6fd08fc4|With no noun after it, we need the possessive pronoun mine.
+q7ed8882a6|The possessive is its. It's means it is.
+q2b83721ba|An experience up to now (three times) uses the present perfect.
+q874510ea6|Since 2018 shows a situation that continues to now: present perfect.
+qfb44d3de3|Questions in the present perfect often end with yet.
+q28d932390|Last summer is a finished past time, so we use the past simple.
+q14cff13a6|Just means 'a very short time ago' and goes with the present perfect.
+q4fed8916b|Ever asks about experience: Have you ever…?
+qdabf2b316|So far shows a period up to now: present perfect.
+qba6e2c008|Since + a starting point, which can be a past clause.
+q4ac81491b|For + a length of time: for ten years.
+q12e50201c|For the past five years continues up to now: present perfect.
+q4c47b3d4e|Last weekend is a finished past time, so use the past simple: I visited.
+q6cb5fe7db|Has + past participle: go → gone.
+q5063724f9|Five years is a length of time, so use for, not since.
+q2be47698e|Started in 2020 and still working = have worked here since 2020.
+qf42e31c36|The first time I have eaten it = I have never eaten it before.
+q2c76d4f42|The library is opened by someone, in the future: will be opened.
+qedbcdc3c9|The cars are made by someone: present simple passive.
+qbaee6703f|The winners are announced by someone, in the future: will be announced.
+qfb699803b|Applications are submitted by people: must be + past participle.
+q41c030e7e|Yesterday + passive: was delivered.
+q88e050dbf|The room is cleaned by the staff every morning: present simple passive.
+qe49869c3a|Present perfect passive: has been + past participle.
+q865a513d1|Customers receive the advice: are advised.
+qcc1a347e7|The museum is visited by tourists: present simple passive.
+q7392c0d78|The passive uses the past participle: written.
+q3003d0d62|Documents are sent by someone: must be sent.
+q7e2513352|Continuous passive: is being painted.
+q12790289c|The bike receives the action: My bike was stolen.
+qc76bfcb27|First conditional: If + present simple.
+q0eb74bb3e|Second conditional: If I were you.
+qf7c50c30c|Second conditional: would + base verb.
+qa5dfd9277|A general fact uses the zero conditional: present simple in both parts.
+q12f98c357|Unless means 'if not': if you don't hurry, you'll miss the bus.
+q931be81eb|First conditional: If + present simple.
+qe9aa13b6f|Second conditional: if + were.
+q9d758a650|Second conditional: If + past simple.
+q7fea113c6|The if-clause in a first conditional does not use will: If it rains.
+qe2158b96e|Second conditional: If + past simple, so have becomes had.
+q9ab8b219d|Unless already means 'if not'. Delete don't.
+qb5e46e35c|An imagined present situation uses the second conditional.
+q98fd81c16|A person as the subject of the clause: who.|The girl ___ is sitting next to Tom is my cousin.
+q9f664cc55|For a thing, we use which.
+q53941776f|For a place (= at which), we use where.
+qc30486e52|Whose shows possession: the student's father.
+q8eba25c03|People as the subject of the clause: who.
+qd11f8bef2|After a comma, use which for things, not that.
+q938b114eb|Whose shows possession: the company's products.
+qf2457d02d|People as the subject of the clause: who.
+q1c57d24c5|For a person, use who.
+q40e355d35|After a comma, use which, not that.|Paris, [that] [is] famous [for] art, [is] beautiful.
+qdc45969e1|Which already replaces the house. Delete it.
+q595526f18|Enjoy + -ing.
+q18687fdc7|Decide + to + verb.
+q6e05f8dce|Look forward to + -ing. Here to is a preposition.
+q2908ea2b6|Mind + -ing.
+q5a838ac58|Promise + to + verb.
+qbcc878978|After a preposition (for), use -ing.
+q1fc04186f|Remember to do = don't forget to do something in the future.
+q0ed783090|Suggest + -ing.
+q56ff572d7|Afford + to + verb.
+qdebbc67b6|After a preposition (before), use -ing.
+qabee56cb4|After a preposition (in), use -ing: learning.
+qa55965414|Avoid + -ing: answering.
+q2047040b9|Agree + to + verb: to help.
+qb48bd6338|The high price is a noun phrase, so we need Despite.
+qf0f790a33|The store was busy is a clause, so we need Although.
+q7d2bdaa78|The storm is a noun phrase, so we need due to.
+q033eecd49|The presentation is a noun phrase, so we need during.
+qa40ced944|You were at lunch is a clause, so we need while.
+qd247dc42c|She had little experience is a clause, so we need even though.
+qd0f852ded|The successful advertising campaign is a noun phrase, so we need because of.
+q5f0451007|Repairs are being made is a clause, so we need because.
+q83f8a388e|It was raining is a clause, so use Although, not Despite.
+q265150aa8|The heavy rain is a noun phrase, so use because of.
+qbe1fbcb8f|I was in Rome is a clause, so use While, not During.|[During] I [was] [in Rome], I [visited] many museums.
+qf171d2349|Although + clause = Despite + -ing: Despite being tired.
+qe595ee6a8|The real subject is the price (singular): is.
+qb89f90fe2|Each of + noun takes a singular verb: has.
+qe908c4a02|The number of takes a singular verb: has.
+q9f4d7e4a9|A number of + plural noun takes a plural verb: have.
+q34638a3d2|With neither…nor, the verb agrees with the nearer subject (the employees): were.
+q42a15f22d|Everyone takes a singular verb: likes.
+qc30d43b35|Information is uncountable, so the verb is singular: was.
+q3ad0feeb8|The real subject is the boxes (plural): are.
+qc3d13a1d7|Every one of takes a singular verb: has.
+q3383c032a|News is uncountable, so it takes a singular verb: is.
+qe2dddd229|After the adjective important, we need a noun: decision.
+qe78c18092|The word describes the verb drive, so we need an adverb: carefully.
+q3b306fdc9|After be (has been very), we need an adjective: successful.
+qd822934a2|Before the noun engineer, we need an adjective: qualified.
+qec21eecf1|Between has and the past participle, we need an adverb: recently.
+q878270941|After your, we need a noun: cooperation.
+q18199ca83|After be, we need an adjective: clear.
+q9a71bb224|After will, we need a base verb: train.
+q1dbc9733c|Customer satisfaction is a compound noun and the subject of the sentence.
+q06920c806|Hard is also an adverb: work hard. Hardly means 'almost not'.
+qd426cff26|The word describes the verb sings, so we need an adverb: beautifully.
+q5f7a40d9c|Before the noun road, we need an adjective: dangerous.
+qa8539db9c|And joins it to the noun help, so we need another noun: patience.
+qf4f9e5359|The train left before I arrived: past perfect.
+q9923163a4|By the time + past simple, then had + past participle.
+q9d3c96989|She saw the movie before the time she told me: had seen.
+q82201f067|He finished his homework first, then went out: had finished.
+q38762d04c|The change happened before I saw her: had changed.
+q892454278|The report was finished before the request, and it received the action: had been completed.
+q5d2feb9ff|The break-in happened before we got home: had broken.
+q2cdc32ccd|Had + past participle: go → gone.
+q1c9c214e6|Third conditional: If + had + past participle.
+q882f0bf17|Third conditional: would have + past participle.
+qf8cedc04e|Mixed conditional: a past condition with a result now uses would + verb.
+qce2a999d8|Inverted third conditional: Had + subject + past participle.
+qc518aefaa|Third conditional: if + had + past participle.
+qb094a1ba7|The if-clause does not take would. Third conditional: If I had known.
+q3e55aacd0|A result in the past needs would have + past participle: wouldn't have made.
+q7c9110c90|An imagined past situation uses the third conditional.
+q497532a9e|After said, the tense moves back: is → was.
+q1f2c87673|Reported questions use statement word order, and the tense moves back: where I worked.
+q0c8441633|Told + person + to + verb.
+q8a61fd657|A reported yes/no question uses if or whether.
+q017763f2f|After said, the tense moves back: will → would.
+qd38169ce2|Reported questions use statement word order: where I had gone.
+q3494ecded|Say is not followed directly by a person. Use told me, or just said.
+q82ba3ef0b|The tense moves back (am learning → was learning) and I becomes she.
+q9da8689bc|The documents were prepared by the lawyer (passive): prepared.
+q94b97ea2f|Employees who wish (active): wishing.
+qfee9917f0|He read the instructions first, then assembled the desk: Having read.
+q0defadf7d|The items were left by someone (passive): left.
+q1c725d294|The man who is talking (active): talking.
+qee7d72771|When + -ing, with you as the hidden subject: When travelling.
+qacacb002c|The letter was written by my grandfather (passive): written.
+q32c88915f|The mountains cannot look out of the window. The two parts need the same subject, so use a full clause: When I looked.
+qf74c5200c|A wish about the present uses the past simple: knew.
+q184d59393|A wish about the past (this morning) uses had + past participle: hadn't missed.
+qaf9c07a9f|If only + were for an unreal present.
+q9a3fb8aa8|To wish that someone else would change, use would: wouldn't make.
+q6fadfe12a|A wish about the present moves can back to could.
+q9bc7f7664|A wish about the past uses had + past participle: hadn't spent.
+qef4035b6a|To agree with a negative sentence: Neither can I.
+q04d144eac|To agree with a positive sentence with likes: so do I.
+q23f2b4386|Not only at the start of a sentence puts the auxiliary first: did she finish.
+q2f1826d63|Rarely at the start of a sentence puts the auxiliary first: have we interviewed.
+qcb4d67604|So + auxiliary + subject: so was my brother.
+q7342775c0|Never at the start of a sentence puts the auxiliary first: Never have I heard.
+q7a83d09b3|A confident guess about the past: must have.
+q104516ce3|A regret about the past: should have.
+qac0643354|Sure that it did not happen: can't have.|She ___ seen you. She was in Tokyo all week.
+q57e9d4a23|A guess you are not sure about: might have.
+qed270dcca|Should have + past participle: come.
+q2b8c96964|After must, use the base form have, never has.
+qe1b618508|Missing the connection is a result of the delay: As a result.
+q3c556302f|We are adding another positive point: Moreover.
+qe3d2d70db|Otherwise means 'if you don't do this'.
+q5eb847e8f|Popular in Asia but low sales in Europe is a contrast: However.
+q914264abc|Our firm is one example of many companies: For example.
+qac0fda342|Raising prices is a result of rising costs: Therefore.
+qb4d1aed43|Small and comfortable is a contrast, not a result: However.
+qf262599ce|A compound adjective with a number stays singular: two-year.
+q8d8448abf|A compound adjective with a number is singular and hyphenated: five-star.
+q97f1241d0|Customer service is a compound noun.
+qfc81085a4|The word describes the adjective trained, so we need an adverb: highly.
+qad3ef8808|A compound adjective with a number stays singular: fifteen-minute.
+q867b840a7|Suggest that + subject + base verb: submit.
+q93e2f1b1f|It is essential that + base verb: fasten.
+q488efb6e6|Require that + be + past participle: be paid.
+q1db1ad087|Recommend that + base verb: consult.
+q3ed24e7e1|Recommend that + base verb, even with she: drink.
+qd23d2c926|To emphasise a person, use It was … who (or that).
+qe4fd3bc4d|What-cleft: What I need is…
+q916402bd8|To emphasise a time: It was + time + that.
+qc496bafd6|What I want is… Do not add it.
+q2ae322556|Should you need… = If you need… (formal).
+q05bd06dc2|No sooner … than.
+qae7ccac08|Hardly … when.
+q70e8de3a5|Under no circumstances is already negative, and it puts the auxiliary first: should you.
+q0bd8a1ec6|Only after + phrase, then invert the main clause: did she send.
+q93f4bcc5f|After No sooner, put had before the subject: had I.
+qf0887f989|After think, so replaces the whole clause: I think so.
+q51d0aea97|The negative with hope is I hope not.
+qe6e9b17ef|Ones replaces a plural countable noun (shoes).
+q3597f7f54|The auxiliary can't stands for can't play the piano.
+q60f92a97e|After think, use so, not yes: I think so.
+q306622ae1|Young people is plural: tend to + verb.
+q5c71e653e|Be likely to + verb means 'will probably'.
+q068331373|I was wondering if… is a polite way to ask.
+q46b1379ff|The policy is singular: appears to have + past participle.
+q2953c51f7|Be likely + to + verb: to increase.
+qfb85be534|Formal style: inform somebody that…
+q8517ebd42|Do not hesitate to contact me is a fixed formal phrase.
+q8e4bfb30d|Apply for a position.
+q432afcc0c|Sincerely and Best regards are formal endings.
+qfe22f565b|A formal email does not use wanna. Use would like to.
+qc92b9b197|Before the noun handling, we need an adjective: professional.
+q5b74404ed|The word describes the verb work, so we need an adverb: efficiently.
+q2d9d77da6|After the adjective proper, we need a noun: identification.
+qd8cb73439|Between has and the past participle, we need an adverb: significantly.
+q0c1b19416|The word describes the participle located, so we need an adverb: conveniently.
+qf4c54b4d5|After her, we need a noun: appreciation.
+q835b390c9|The word describes the verb read, so we need an adverb: carefully.
+q282162ea5|So + adjective + that: informative.
+q015d79435|Be responsible for means 'have the job of'.
+qa35c8764d|After company's, we need a noun: commitment.
+q91205963a|Before the noun communication skills, we need an adjective: excellent.
+q295c47000|The word describes the comparative higher, so we need an adverb: considerably.
+q2cc0931c3|Be pleased to + verb means 'be happy to'.
+q818416328|After the adjective free, we need a noun: admission.
+q1f57755f3|The word describes the verb respond, so we need an adverb: promptly.
+q8e35e58dc|After be and the adverb financially, we need an adjective: feasible.
+q9b9badee1|The most + adjective + noun: creative.|Ms. Garcia is one of the most ___ designers in the company.
+qa0df6514a|The … of needs a noun: construction.
+q23dce62c1|The word describes the verb complete, so we need an adverb: accurately.
+q4a63faed2|The speech gave people inspiration, so we use the -ing adjective: inspiring.
+q003250e92|We describes people's feelings, so we use the -ed adjective: impressed.
+qbce8abe85|Become effective means 'start to apply'.
+q642310ced|Next week is in the future: will discuss.
+q3d3dda81d|Since + a starting point shows a period up to now: has managed.
+q2ec3d942d|Yesterday + passive: was sent.
+q909011335|Currently signals the present continuous.
+q0c0f2017d|The room receives the action, and the booking is already done: has been reserved.
+q74a189623|By the end of + a future time: future perfect, will have opened.
+q7b556e1ee|Last quarter is a finished past time: rise → rose.
+qc5715ed21|Usually + a singular subject: prepares.
+q1fbdbcb6b|Orders receive the action: are processed.
+q4cbff0ba0|An action in progress that was interrupted uses the past continuous.
+q94b122064|The policy receives the action, last Monday: was approved.
+q040c85fe6|The lights receive the action: are turned off.
+q09243420d|Before a past moment (when he retired): past perfect.
+q111ee1051|First conditional: If + present simple.
+q7cc207fd9|Floors take on: on the third floor.
+q57e11dd1d|Upon receipt means 'as soon as it is received'.
+q31242503a|Throughout + a period means 'for the whole of it'.
+qace4f7aca|A starting point in time: since.
+q2a4676b57|By means 'not later than' for a deadline.
+qbe92ed42c|Opposite means 'facing, on the other side'.
+qa3ac9a2a0|From … to … shows a time range.
+qb7c022a5d|Within + a period means 'inside that time'.
+q25ab73a84|Including works as a preposition: it adds part of a group.
+q73028805c|The director's illness is a noun phrase: because of.
+qd38b37ac5|Albeit means 'although' and is followed by an adjective or phrase. It is formal.
+qf639c2a5c|Pay in cash, but pay by card.
+q5d17f6362|Responsible for + noun or -ing.|Ms. Clark is responsible ___ training new employees.
+qc9d4fdc14|Travel insurance is a compound noun.
+qa371e91c1|Apologise for something.
+q660cb1ba6|Reply to something.
+qe56b0353d|A clause with a contrasting meaning: Although.
+q86cf9644a|Unless means 'if not'.
+qb46f43c38|Mr. Davis is on vacation is a clause: while.
+qaeb5a7347|Both … and.
+q0bebb04b1|So that shows purpose.
+q51350632f|Neither … nor.
+q1744698dd|A condition: if.|The shop offers free delivery ___ the order is over $50.
+qdfbce6ae8|Before + -ing.
+qec73534cc|Whereas contrasts two clauses.
+q2369f97b2|A condition: If.
+qe855f2441|Several unexpected problems is a noun phrase: in spite of.
+q481d8b5f7|Not only … but also.
+q87481231c|Not … until means 'only when'.
+qb1963805d|Neither … nor.
+qd66df6aea|After the preposition to, we need an object pronoun: her.
+q2aa99316d|By themselves means 'without help'.
+qf53cb1f9d|Before the noun laptop, we need a possessive adjective: his.
+q7234ca8ac|Those replaces a plural noun already mentioned (products).
+q01c05f9f3|Those who means 'the people who'.
+qb078958b6|The company is singular, so the possessive is its. It's means it is.
+q8e7a21a0f|Before the noun stay, we need a possessive adjective: their.
+qf6d3fa60b|Himself emphasises that he does it personally.
+q82f766a51|Refer to means 'look at for information'.
+q41b652bac|An airport shuttle is a bus or car that takes guests to and from the airport.
+q50fa66de4|High demand means many people want to buy it.
+q1ff61e917|Comply with rules means 'obey them'.
+q4061a0c8c|Reimburse expenses means 'pay back money someone has spent'.
+q175ecbc14|A job opening is a position that needs to be filled.
+qb895aa3f2|Extend a deadline means 'give more time'.
+qf3343171f|A warranty covers repairs: it includes them.
+qe7ce96a77|Be promoted to means 'be given a higher position'.
+q919f70cd4|Available means 'ready to help or be used'.
+q5ae51b89c|Reserve a table means 'book it in advance'.
+q1e008e717|A delayed flight leaves later than planned.
+q186138e46|Ask somebody to + base verb: present.
+q75fd03754|Qualify for means 'meet the conditions to get'.
+q72c14f519|Establish a relationship means 'build it'.
+qb592cb543|Submit a résumé means 'send it officially'.
+q92601c158|At full capacity means 'producing as much as possible'.
+qa09a2e7ff|Notify somebody means 'tell them officially'.
+q145ea6291|Proof of purchase shows that you bought something.
+q5b2345555|Expand into new markets means 'grow into them'.
+q44f4187a8|Be required to means 'must'.
+qc1cc06282|A refund is money paid back.
+q32de25783|Sales figures are the numbers that show sales.
+q9800b6669|Fully booked means there are no free rooms.
+qcef79eb79|Collaborate on means 'work together on'.
+q3f4e7bc2d|Deliver a speech means 'give a speech'.
+qbea93eac7|Refrain from + -ing means 'do not do'. It is formal.
+q2cd2c9cfd|Charge a fee means 'ask for money for a service'.
+q4d8a25f1a|Comparative + than: more participants.
+q129b9e772|The + superlative: the best.
+qe44e0752b|Much makes a comparative stronger: much lighter. Very cannot go before a comparative.
+qc566adb37|Every + singular noun: every employee.
+q1b0d57258|Complaints is countable, so we use few.
+q70a689405|The person is the object of interviewed: whom (or who, that).
+q4d7afe80f|For a place (= in which): where.
+qe5c87a24c|After a preposition (for), use -ing.
+qdf280a6cb|Look forward to + -ing.
+q60afa4de6|Decide + to + verb.
+qf8caa07a0|Wish + to + verb.
+q6fb781ab5|At the end of a period.
+q23282d5b9|Whose shows possession: the manager's ideas.
+q6bd8f00c9|Inform somebody of something.
+qb0b965c66|Be expected to means 'should happen, according to plans'.
+q02786514f|After /t/ or /d/, -ed is pronounced /ɪd/: wanted. The others end in /d/.
+q841ea56e3|After a voiceless sound such as /k/, -ed is pronounced /t/: walked. The others end in /ɪd/.
+q23f3dd78f|After a vowel sound, -ed is pronounced /d/: stayed. The others end in /t/.
+q61b0af4d9|After /t/, -ed is pronounced /ɪd/: visited. The others end in /t/.
+qb2edbec20|After /ʃ/, -ed is pronounced /t/: finished. The others end in /d/.
+q4c13a60dd|After /t/, -ed is pronounced /ɪd/: invited. The others end in /d/.
+q0d28b60f6|After /s/ (x = /ks/), -ed is pronounced /t/: mixed. The others end in /d/.
+qd5b0eff0a|After /n/, -ed is pronounced /d/: planned. The others end in /t/.
+q6ddf1e9a2|After /tʃ/, -es is pronounced /ɪz/: watches. The others end in /s/.
+q6a312a804|After a voiced sound such as /g/, -s is pronounced /z/: bags. The others end in /s/.
+q913177781|After /k/, -s is pronounced /s/: books. The others end in /z/.
+q7d6bc4597|After /s/ (x = /ks/), -es is pronounced /ɪz/: boxes. The others end in /z/.
+qf2d6ac5d9|After /θ/, -s is pronounced /s/: months. The others end in /z/.
+qddeb21451|After /dʒ/, -es is pronounced /ɪz/: bridges. The others end in /s/.
+qd68f7961f|Head has /e/. The others have /iː/.
+q5bcc5c77b|Book has /ʊ/. The others have /uː/.
+qca6ba6c2e|Cake has /eɪ/. The others have /æ/.
+q3e7691490|Like has /aɪ/. The others have /ɪ/.
+q7c081e8cf|In character, ch is pronounced /k/. The others have /tʃ/.
+q9a2291b2a|The h in hour is silent. The others have /h/.
+q35e2e5edf|Come has /ʌ/. The others have /oʊ/.
+q3b0b739c5|Think has /θ/. The others have /ð/.
+q073810d2d|In sure, s is pronounced /ʃ/. The others have /s/.
+q73168cc09|Woman has /ʊ/. The others have /ʌ/.
+qd9c1d6402|Breakfast has /e/. The others have /eɪ/.
+q808932f99|Country has /ʌ/. The others have /aʊ/.
+q59bd42a7a|Begin is stressed on the second syllable. The others are stressed on the first.
+q3f217bbbc|Teacher is stressed on the first syllable. The others are stressed on the second.
+qc56e0ef41|Hotel is stressed on the second syllable. The others are stressed on the first.
+q97cc24c66|Computer is stressed on the second syllable. The others are stressed on the first.
+q6dc6a4e4d|Important is stressed on the second syllable. The others are stressed on the first.
+q64665dfc9|Engineer is stressed on the third syllable (-eer takes the stress). The others are stressed on the first.
+q807e08fd5|Information is stressed on the third syllable, just before -tion. The others are stressed on the second.
+q44fc31db7|Economic is stressed on the third syllable, just before -ic. The others are stressed on the second.
+q1abb58768|Visit is stressed on the first syllable. The other verbs are stressed on the second.
+q6b45b9e24|Polite is stressed on the second syllable. The others are stressed on the first.
+q72767ff4a|Advertise is stressed on the first syllable. The others are stressed on the second.
+q4c7f1dc00|Volunteer is stressed on the third syllable. The others are stressed on the second, just before -ian or -tion.
+qacbcd5a73|Comfortable is stressed on the first syllable. The others are stressed on the second.
+q1243bc4d3|Population is stressed on the third syllable. The others are stressed on the second, just before -ity.
+q6b5035527|Answer is stressed on the first syllable. The others are stressed on the second.
+q2ae947aea|Japanese is stressed on the third syllable (-ese takes the stress). The others are stressed on the second.
+qb01068827|Postpone means 'move to a later time', like delay.
+qbfac9730f|Generous means 'happy to give and help', so kind and giving is closest.
+qb72ceaa3d|Essential means 'absolutely needed', like necessary.
+q944f9e4e0|Delighted means 'very happy'.
+q8f0d83440|In this sentence, quickly means 'after a short time', like soon.
+qfb83166ae|Repair means 'fix something that is broken'.
+q6ed8a78eb|Astonished means 'very surprised', like amazed.
+q37bf1e0cc|Reduce means 'make smaller', like cut.
+q17f1dd10f|Effort means 'hard work'.
+qc08aff3fe|Inform means 'tell', in a formal way.
+q9b82f2b21|The opposite of patient is impatient.
+q75ccae401|The opposite of hot is cold.
+q548311f2a|The opposite of simple is complicated.
+q36dc26aa3|The opposite of crowded is empty.
+qde547ca84|The opposite of correct is wrong.
+qa0757154c|The opposite of increase is lower.
+qb258a8b7a|The opposite of polite is rude.
+qd38c247cb|The opposite of accept is reject.
+qcc379d51d|The opposite of temporarily is permanently.
+qc5eae3739|The opposite of confident is nervous.
+p6_renovation#0|The work is in the future, and the lobby receives the action: will be renovated.
+p6_renovation#1|The sentence gives residents more practical information about the work period: the elevators still work.
+p6_renovation#2|After some, we need a noun: inconvenience.
+p6_renovation#3|The sentence adds another new feature: In addition.
+p6_order#0|Within + a period means 'inside that time': within two weeks.
+p6_order#1|After saying the item is out of stock, an apology for the delay fits best.
+p6_order#2|For customers who… means 'in the case of customers who…'.
+p6_order#3|Reply to an email.
+p6_hiring#0|Before the noun phrase marketing assistant, we need an adjective: enthusiastic.
+p6_hiring#1|It is parallel with plan (help plan … and analyze), so we need a base verb.
+p6_hiring#2|The paragraph lists requirements for candidates, so another requirement fits.
+p6_hiring#3|Candidates receive the action: are selected.
+p6_conference#0|Extended until means 'made longer up to that time'.
+p6_conference#1|The event moved because more people registered, so it needs a larger place.
+p6_conference#2|After giving the new place, directions to it fit best.
+p6_conference#3|Your ticket is singular: remains valid.
+p6_policy#0|Approval must come before the trip.
+p6_policy#1|Be + past participle (passive): be reimbursed.
+p6_policy#2|After introducing the new form, a sentence saying where to find it fits best.
+p6_policy#3|Questions about something not yet known use any: any questions.
+p6_hotel#0|It refers to the Garden Restaurant (a thing) after a comma: which.
+p6_hotel#1|The paragraph is about the pool, so a pool safety rule fits.
+p6_hotel#2|Please do not hesitate to… is a fixed formal phrase.
+p6_hotel#3|Be happy to + base verb: assist.
+p6_launch#0|Next Monday is in the future: will release.
+p6_launch#1|It is parallel with faster, so we need another comparative: easier.
+p6_launch#2|A press release often continues with the company's plans to grow.
+p6_launch#3|The first week is a noun phrase: during.
+p6_library#0|Between two points: between July and August.
+p6_library#1|After explaining how to register, information about the cost fits best.
+p6_library#2|The word describes the participle encouraged, so we need an adverb: strongly.
+p6_library#3|Please + base verb: visit.
+qc83bc8d7e||Does your brother live in London?|Anh trai bạn có sống ở London không?

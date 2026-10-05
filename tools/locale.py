@@ -230,8 +230,16 @@ def draft_value(item: dict, locale: str, provider: str, api_key: str):
         return {"title": tr(source.get("title", "")), "when": tr(source.get("when", "")), "body": tr(source.get("body", "")),
                 "examples": [tr(x) for x in examples],
                 "mistakes": [tr(m.get("why", "")) if isinstance(m, dict) else "" for m in source.get("mistakes", [])]}
-    if item["kind"] in ("questions", "passages", "topics"):
-        return ""  # no English explanation/name exists to translate from
+    if item["kind"] == "questions":
+        # Translate only the English explanation; stems and options are taught English.
+        text = source.get("expl", "")
+        return translate_text(text, {}, locale, provider, api_key) if text else ""
+    if item["kind"] == "passages":
+        return {"blanks": [translate_text(b.get("expl", ""), {}, locale, provider, api_key) if b.get("expl") else ""
+                           for b in source.get("blanks", [])]}
+    if item["kind"] == "topics":
+        name = source.get("name", "")
+        return translate_text(name, {}, locale, provider, api_key) if name else ""
     if item["kind"] == "ui":
         text = str(source)
         if VI_CHARS.search(text):

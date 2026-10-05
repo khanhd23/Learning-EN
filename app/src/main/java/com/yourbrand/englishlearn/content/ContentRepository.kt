@@ -257,6 +257,19 @@ class ContentRepository(private val context: Context) {
                 grammarValues.put(item.getString("id"), JSONObject().put("title", item.optString("title", item.getString("id"))).put("when", item.optString("when")).put("body", item.optString("body")).put("examples", examples).put("mistakes", mistakes))
             }
         }
-        return LocalePackFiles(topics.toString(), wordValues.toString(), "{}", grammarValues.toString(), "{}", "{}", "{}")
+        // Question and passage explanations: the English source "expl" fields.
+        val enQuestions = JSONObject(asset("en/questions.json"))
+        val explanations = JSONObject()
+        enQuestions.getJSONArray("questions").let { array -> for (i in 0 until array.length()) { val item = array.getJSONObject(i); explanations.put(item.getString("id"), item.optString("expl")) } }
+        val passageValues = JSONObject()
+        enQuestions.getJSONArray("passages").let { array ->
+            for (i in 0 until array.length()) {
+                val item = array.getJSONObject(i)
+                val blanks = JSONArray(); item.getJSONArray("blanks").let { bs -> for (j in 0 until bs.length()) blanks.put(bs.getJSONObject(j).optString("expl")) }
+                passageValues.put(item.getString("id"), JSONObject().put("blanks", blanks))
+            }
+        }
+        val questionValues = JSONObject().put("q", explanations).put("passages", passageValues)
+        return LocalePackFiles(topics.toString(), wordValues.toString(), "{}", grammarValues.toString(), questionValues.toString(), "{}", "{}")
     }
 }

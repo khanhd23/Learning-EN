@@ -81,6 +81,25 @@ with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "authoring", 
     GRAMMAR_EN = {k: v for k, v in json.load(_f).items() if not k.startswith("_")}
 
 
+def load_question_expl_en():
+    """id|explanation|stem override|vi override. Passage blanks use passage_id#index."""
+    rows = {}
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "authoring", "question_expl_en.txt")
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            line = line.rstrip("\r\n")
+            if not line.strip() or line.startswith("#"):
+                continue
+            cols = line.split("|") + ["", ""]
+            if cols[0] in rows:
+                raise SystemExit(f"question_expl_en.txt: duplicate id {cols[0]}")
+            rows[cols[0]] = {"expl": cols[1].strip(), "stem": cols[2].strip(), "vi": cols[3].strip()}
+    return rows
+
+
+QUESTION_EXPL_EN = load_question_expl_en()
+
+
 def apply_grammar_en(point):
     src = GRAMMAR_EN[point["id"]]
     for index, fix in src.get("exampleFix", {}).items():
@@ -482,6 +501,18 @@ def main():
         if q["id"] in seen:
             raise SystemExit(f"duplicate question: {q.get('stem')}")
         seen.add(q["id"])
+        # English explanation; a stem override fixes the wording without changing the stable id.
+        en_row = QUESTION_EXPL_EN.get(q["id"])
+        if en_row:
+            q["expl"] = en_row["expl"]
+            if en_row["stem"]:
+                q["stem"] = en_row["stem"]
+            if en_row["vi"]:
+                # For translation items (E05) the vi column is the sentence translation.
+                if q["type"] == "E05":
+                    q["vi"] = en_row["vi"]
+                else:
+                    expl = en_row["vi"]
         if q.get("level") is None:
             q["level"] = gp_level.get(q.get("gp"), 2)
         if "opts" in q and q["type"] != "E05":
@@ -540,6 +571,7 @@ def main():
         for i, b in enumerate(p["blanks"]):
             b = dict(b)
             vi["passages"][p["id"]]["blanks"].append(b.pop("_vi"))
+            b["expl"] = QUESTION_EXPL_EN[f"{p['id']}#{i}"]["expl"]
             correct = b["opts"][0]
             others = b["opts"][1:]
             random.Random(p["id"] + str(i)).shuffle(others)
