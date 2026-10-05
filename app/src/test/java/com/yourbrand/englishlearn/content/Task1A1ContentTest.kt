@@ -13,9 +13,9 @@ class Task1A1ContentTest {
     fun localeRestoresMovedQuestionFields() {
         val base = root()
         val questions = JSONObject(File(base, "en/questions.json").readText())
-        val vi = JSONObject(File(base, "i18n/vi.json").readText())
-        val translations = vi.optJSONObject("q_translation") ?: JSONObject()
-        val fixes = vi.optJSONObject("q_fix") ?: JSONObject()
+        val viQuestions = JSONObject(File(base, "i18n/vi/questions.json").readText())
+        val translations = viQuestions.optJSONObject("q_translation") ?: JSONObject()
+        val fixes = viQuestions.optJSONObject("q_fix") ?: JSONObject()
         val items = questions.getJSONArray("questions")
         for (i in 0 until items.length()) {
             val question = items.getJSONObject(i)

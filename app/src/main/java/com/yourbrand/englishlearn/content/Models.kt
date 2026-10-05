@@ -1,5 +1,16 @@
 package com.yourbrand.englishlearn.content
 
+/** JSON files making up one learner locale pack under assets/content/i18n/<locale>/. */
+data class LocalePackFiles(
+    val topics: String,
+    val words: String,
+    val confusables: String,
+    val grammar: String,
+    val questions: String,
+    val pet: String,
+    val tips: String,
+)
+
 data class Topic(val id: String, val name: String, val icon: String, val hue: Int)
 
 data class Example(val id: String, val text: String, val vi: String?, val highlight: String? = null)

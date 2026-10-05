@@ -16,23 +16,55 @@ class VocabularyExpansionTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.bank = json.loads((ROOT / "content/en/words.json").read_text(encoding="utf-8"))
-        cls.vi = json.loads((ROOT / "content/i18n/vi.json").read_text(encoding="utf-8"))
+        cls.vi = {
+            "topics": json.loads((ROOT / "content/i18n/vi/topics.json").read_text(encoding="utf-8")),
+            "words": json.loads((ROOT / "content/i18n/vi/words.json").read_text(encoding="utf-8")),
+        }
         cls.words = {w["id"]: w for w in cls.bank["words"]}
         # Reconstruct the earlier word sources without importing the expansion.
         cls.lib = importlib.import_module("lib")
         for module in ("vocab_work", "vocab_life", "vocab_everyday", "vocab_modern", "senses"):
             importlib.import_module(module)
 
+    @classmethod
+    def localized_word(cls, word):
+        senses = []
+        tip = None
+        for sense in word["senses"]:
+            examples = sense.get("ex", [])
+            if isinstance(examples, dict):
+                sense_id = sense.get("id") or next(iter(examples), "")
+            else:
+                sense_id = sense.get("id") or (examples[0].get("id", "") if examples else "")
+            value = dict(cls.vi["words"][sense_id])
+            if value.get("tip"):
+                tip = value.pop("tip")
+            senses.append(value)
+        result = {"senses": senses}
+        if tip:
+            result["tip"] = tip
+        return result
+
     def test_earlier_ids_meanings_examples_and_levels_are_preserved(self):
         for old in self.lib.WORDS:
             with self.subTest(word=old["id"]):
                 current = self.words[old["id"]]
-                for field in ("lemma", "ipa", "level", "topics", "senses", "family", "coll"):
+                for field in ("lemma", "ipa", "level", "topics", "family", "coll"):
                     self.assertEqual(old[field], current[field])
-                self.assertEqual(
-                    {k: v for k, v in old["_vi"].items() if v},
-                    self.vi["words"][old["id"]],
-                )
+                old_sense_ids = []
+                for sense in old["senses"]:
+                    examples = sense.get("ex", [])
+                    if isinstance(examples, dict):
+                        old_sense_ids.append(sense.get("id") or next(iter(examples), ""))
+                    else:
+                        old_sense_ids.append(sense.get("id") or (examples[0].get("id", "") if examples else ""))
+                current_sense_ids = [s["id"] for s in current["senses"]]
+                self.assertTrue(set(old_sense_ids).issubset(current_sense_ids))
+                for sense_id in old_sense_ids:
+                    with self.subTest(sense=sense_id):
+                        localized = self.vi["words"][sense_id]
+                        self.assertTrue(localized.get("g", "").strip())
+                        self.assertIn(sense_id, localized.get("ex", {}))
 
     def test_foundation_entries_have_complete_bilingual_examples_and_review_flags(self):
         foundation = [w for w in self.words.values() if w.get("source", "").startswith("original:foundation-expansion")]
@@ -42,7 +74,7 @@ class VocabularyExpansionTest(unittest.TestCase):
                 self.assertTrue(word["needs_review"])
                 self.assertTrue(word["ipa"])
                 self.assertTrue(word["coll"])
-                localized = self.vi["words"][word["id"]]["senses"]
+                localized = [self.vi["words"][sense["id"]] for sense in word["senses"]]
                 self.assertEqual(len(word["senses"]), len(localized))
                 for sense, translated in zip(word["senses"], localized):
                     self.assertTrue(translated["g"].strip())

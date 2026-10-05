@@ -1,7 +1,8 @@
 # Locale packs
 
-`vi.json` is the only complete, shippable locale currently. Other locale files are generated
-scaffolds: they contain every content ID but blank translations and `_meta.todo: true`.
+`vi/` is the only complete, shippable locale currently. Other locale folders are generated
+scaffolds: they contain every content ID but blank translations and a `status.json` with
+`todo: true`.
 
 A locale may be copied into the Android asset bundle only after:
 

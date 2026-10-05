@@ -13,7 +13,7 @@ write `dist/reports/task-<N>.md`, then stop.
 - [ ] Task 1D: Topics: replace catch-all topics with the controlled list  *(owner/Claude, in parallel)*
 - [ ] Task 1E: Rewrite Level 3 entries; re-level by frequency band  *(owner/Claude, in parallel)*
 - [ ] Task 1F: Grammar questions, confusables, families up to target  *(owner/Claude, in parallel)*
-- [ ] Task 2: Per-locale folder layout + review status
+- [x] Task 2: Per-locale folder layout + review status
 - [ ] Task 3: Validation rules
 - [ ] Task 4: `tools/locale.py` operations tool
 - [ ] Task 5: UI localization (English default, `values-xx`)

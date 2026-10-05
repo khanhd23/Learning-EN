@@ -1,4 +1,4 @@
-"""Validates content/en/*.json + content/i18n/vi.json. Non-zero exit on error.
+"""Validates content/en/*.json + content/i18n/vi/*.json. Non-zero exit on error.
 
 Writes content-validation-report.md and content-coverage-report.md into dist/.
 """
@@ -32,7 +32,15 @@ def main():
     words = load("content", "en", "words.json")
     grammar = load("content", "en", "grammar.json")
     qs = load("content", "en", "questions.json")
-    vi = load("content", "i18n", "vi.json")
+    vi = {
+        "topics": load("content", "i18n", "vi", "topics.json"),
+        "words": load("content", "i18n", "vi", "words.json"),
+        "conf": load("content", "i18n", "vi", "confusables.json"),
+        "grammar": load("content", "i18n", "vi", "grammar.json"),
+        **load("content", "i18n", "vi", "questions.json"),
+        "pet": load("content", "i18n", "vi", "pet.json"),
+        "tips": load("content", "i18n", "vi", "tips.json"),
+    }
 
     topic_ids = {t["id"] for t in words["topics"]}
     for t in topic_ids:
@@ -58,11 +66,11 @@ def main():
             if t not in topic_ids:
                 errors.append(f"word {w['id']}: unknown topic {t}")
             per_topic[t] += 1
-        v = vi["words"].get(w["id"])
-        if not v or len(v.get("senses", [])) != len(w["senses"]):
-            errors.append(f"word {w['id']}: vi senses mismatch")
-            continue
-        for s, sv in zip(w["senses"], v["senses"]):
+        for s in w["senses"]:
+            sv = vi["words"].get(s["id"])
+            if not sv:
+                errors.append(f"word {w['id']}: missing vi sense {s['id']}")
+                continue
             if not sv.get("g"):
                 errors.append(f"word {w['id']}: sense without gloss")
             nfc_ok(sv.get("g"), w["id"])

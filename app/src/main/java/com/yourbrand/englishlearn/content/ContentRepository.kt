@@ -39,41 +39,40 @@ object ContentParser {
     private fun JSONObject.strOrNull(k: String): String? = if (has(k) && !isNull(k)) optString(k).takeIf { it.isNotEmpty() } else null
     private inline fun <T> JSONArray?.map(f: (JSONObject) -> T): List<T> = if (this == null) emptyList() else List(length()) { f(getJSONObject(it)) }
 
-    fun parse(words: String, grammar: String, questions: String, vi: String, formats: String): Content {
-        val v = JSONObject(vi)
-        val viTopics = v.getJSONObject("topics")
-        val viWords = v.getJSONObject("words")
-        val viConf = v.getJSONObject("conf")
-        val viGrammar = v.getJSONObject("grammar")
-        val viQ = v.getJSONObject("q")
-        val viQTranslation = v.optJSONObject("q_translation") ?: JSONObject()
-        val viQFix = v.optJSONObject("q_fix") ?: JSONObject()
-        val viQNotes = v.optJSONObject("q_notes") ?: JSONObject()
-        val viP = v.getJSONObject("passages")
+    fun parse(words: String, grammar: String, questions: String, locale: LocalePackFiles, formats: String): Content {
+        val viTopics = JSONObject(locale.topics)
+        val viWords = JSONObject(locale.words)
+        val viConf = JSONObject(locale.confusables)
+        val viGrammar = JSONObject(locale.grammar)
+        val localeQuestions = JSONObject(locale.questions)
+        val viQ = localeQuestions.optJSONObject("q") ?: JSONObject()
+        val viQTranslation = localeQuestions.optJSONObject("q_translation") ?: JSONObject()
+        val viQFix = localeQuestions.optJSONObject("q_fix") ?: JSONObject()
+        val viQNotes = localeQuestions.optJSONObject("q_notes") ?: JSONObject()
+        val viP = localeQuestions.optJSONObject("passages") ?: JSONObject()
 
         val w = JSONObject(words)
         val topics = w.getJSONArray("topics").map { Topic(it.getString("id"), viTopics.optString(it.getString("id")), it.getString("icon"), it.getInt("hue")) }
         val wordList = w.getJSONArray("words").map { o ->
             val id = o.getString("id")
-            val wv = viWords.optJSONObject(id) ?: JSONObject()
-            val vSenses = wv.optJSONArray("senses")
             val senses = o.getJSONArray("senses").let { arr ->
                 List(arr.length()) { i ->
                     val s = arr.getJSONObject(i)
-                    val sv = vSenses?.optJSONObject(i) ?: JSONObject()
+                    val sv = viWords.optJSONObject(s.getString("id")) ?: JSONObject()
                     val exVi = sv.optJSONObject("ex") ?: JSONObject()
                     Sense(s.getString("id"), s.getString("pos"), s.optString("def"), s.optString("register", "neutral"), sv.optString("g"), s.getJSONArray("ex").map { e ->
                         Example(e.getString("id"), e.getString("text"), exVi.strOrNull(e.getString("id")), e.strOrNull("hl"))
                     })
                 }
             }
+            val firstLocaleSense = o.getJSONArray("senses").optJSONObject(0)?.let { viWords.optJSONObject(it.getString("id")) }
             val fam = o.optJSONObject("family")
             Word(
                 id = id, lemma = o.getString("lemma"), ipa = o.optString("ipa"), level = o.optInt("level", 1),
                 topics = o.optJSONArray("topics").strings(), senses = senses,
                 family = fam?.keys()?.asSequence()?.associateWith { fam.getString(it) }.orEmpty(),
                 collocations = o.optJSONArray("coll").strings(), confusables = o.optJSONArray("conf").strings(),
-                tip = wv.strOrNull("tip"),
+                tip = firstLocaleSense?.strOrNull("tip"),
                 tier = o.optString("tier", "bronze"),
                 forms = o.optJSONObject("forms")?.keys()?.asSequence()?.associateWith { o.getJSONObject("forms").getString(it) }.orEmpty(),
                 grammarIds = o.optJSONArray("grammarIds").strings(),
@@ -135,9 +134,9 @@ object ContentParser {
         }
         val soon = f.optJSONArray("comingSoon").map { ComingSoon(it.getString("id"), it.getString("label")) }
 
-        val petObj = v.optJSONObject("pet") ?: JSONObject()
+        val petObj = JSONObject(locale.pet)
         val pet = petObj.keys().asSequence().associateWith { petObj.getJSONArray(it).strings() }
-        val tipsObj = v.optJSONObject("tips") ?: JSONObject()
+        val tipsObj = JSONObject(locale.tips)
         val tips = tipsObj.keys().asSequence().associateWith { tipsObj.getString(it) }
 
         return Content(topics, wordList, conf, grammarList, questionList, passageList, formatList, soon, pet, tips)
@@ -151,32 +150,30 @@ class ContentRepository(private val context: Context) {
 
     private fun localePack(locale: String): String {
         val candidate = locale.trim().replace('_', '-')
-        if (candidate.isBlank() || candidate == "vi") return "i18n/vi.json"
+        if (candidate.isBlank() || candidate == "vi") return "i18n/vi"
         val candidates = listOf(candidate, candidate.substringBefore('-'))
         for (code in candidates.distinct()) {
-            val path = "i18n/$code.json"
+            val path = "i18n/$code"
             runCatching {
-                val pack = JSONObject(asset(path))
-                val meta = pack.optJSONObject("_meta") ?: return@runCatching false
+                val meta = JSONObject(asset("$path/status.json"))
                 val complete = meta.optString("status") == "complete" && !meta.optBoolean("todo", true)
                 if (complete) return path
             }
         }
-        return "i18n/vi.json"
+        return "i18n/vi"
     }
 
     /** Locale packs that are actually bundled in this build and pass the release gate. */
     fun shippableLocales(): List<String> = synchronized(this) {
         context.assets.list("content/i18n").orEmpty().asSequence()
-            .filter { it.endsWith(".json") }
-            .map { it.removeSuffix(".json") }
-            .filter { it == "vi" || localePack(it) == "i18n/$it.json" }
+            .filter { it != "market_profiles.json" && context.assets.list("content/i18n/$it").orEmpty().contains("status.json") }
+            .filter { it == "vi" || localePack(it) == "i18n/$it" }
             .distinct()
             .sortedWith(compareBy<String> { if (it == "vi") 0 else 1 }.thenBy { it })
             .toList()
     }
 
-    fun effectiveLocale(locale: String): String = localePack(locale).removePrefix("i18n/").removeSuffix(".json")
+    fun effectiveLocale(locale: String): String = localePack(locale).removePrefix("i18n/")
 
     /** Parses lazily (first call happens on a background prewarm thread at startup). */
     fun get(locale: String = "vi"): Content = synchronized(this) {
@@ -185,11 +182,21 @@ class ContentRepository(private val context: Context) {
             asset("en/words.json"),
             asset("en/grammar.json"),
             asset("en/questions.json"),
-            asset(key),
+            localeFiles(key),
             asset("exam_formats.json"),
         ).also { cached[key] = it }
     }
 
     /** True only for a locale pack that has passed the content-release gate. */
-    fun isShippable(locale: String): Boolean = localePack(locale) != "i18n/vi.json" || locale == "vi"
+    fun isShippable(locale: String): Boolean = locale == "vi" || localePack(locale) != "i18n/vi"
+
+    private fun localeFiles(path: String) = LocalePackFiles(
+        topics = asset("$path/topics.json"),
+        words = asset("$path/words.json"),
+        confusables = asset("$path/confusables.json"),
+        grammar = asset("$path/grammar.json"),
+        questions = asset("$path/questions.json"),
+        pet = asset("$path/pet.json"),
+        tips = asset("$path/tips.json"),
+    )
 }

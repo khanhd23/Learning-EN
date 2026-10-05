@@ -101,14 +101,13 @@ val copyContent = tasks.register("generateContentAssets") {
         listOf("en/words.json", "en/grammar.json", "en/questions.json", "en/relations.json").forEach {
             rootProject.file("content/$it").copyTo(File(dst, it), overwrite = true)
         }
-        // Locale packs remain outside the APK until they are complete and reviewed.
-        // This keeps draft country work available to the authoring tools without shipping blanks.
+        // Locale packs remain outside the APK until their folder status is complete.
         val localeDir = rootProject.file("content/i18n")
-        localeDir.listFiles { f -> f.extension == "json" && f.name != "README.json" }?.forEach { source ->
-            val meta = runCatching { JsonSlurper().parse(source) as Map<*, *> }.getOrNull()?.get("_meta") as? Map<*, *>
+        localeDir.listFiles { f -> f.isDirectory && File(f, "status.json").isFile }?.forEach { source ->
+            val meta = runCatching { JsonSlurper().parse(File(source, "status.json")) as Map<*, *> }.getOrNull()
             val complete = meta?.get("status") == "complete" && meta["todo"] != true
-            if (complete || source.name == "vi.json") {
-                source.copyTo(File(dst, "i18n/${source.name}"), overwrite = true)
+            if (complete || source.name == "vi") {
+                source.copyRecursively(File(dst, "i18n/${source.name}"), overwrite = true)
             }
         }
         rootProject.file("config/exam_formats.json").copyTo(File(dst, "exam_formats.json"), overwrite = true)

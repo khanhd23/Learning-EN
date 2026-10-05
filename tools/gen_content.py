@@ -1,4 +1,4 @@
-"""Compiles tools/authoring/*.py into content/en/*.json + content/i18n/vi.json.
+"""Compiles tools/authoring/*.py into content/en/*.json + content/i18n/vi/*.json.
 
 Usage: python tools/gen_content.py
 """
@@ -387,7 +387,7 @@ def main():
         passages.append(p)
 
     out_en = os.path.join(ROOT, "content", "en")
-    out_vi = os.path.join(ROOT, "content", "i18n")
+    out_vi = os.path.join(ROOT, "content", "i18n", "vi")
     os.makedirs(out_en, exist_ok=True)
     os.makedirs(out_vi, exist_ok=True)
 
@@ -458,7 +458,30 @@ def main():
         }
     }
     dump(os.path.join(out_en, "relations.json"), relations)
-    dump(os.path.join(out_vi, "vi.json"), vi)
+    dump(os.path.join(out_vi, "topics.json"), vi.get("topics", {}))
+    locale_words = {}
+    english_by_id = {word["id"]: word for word in words}
+    for word_id, word in vi.get("words", {}).items():
+        english_senses = english_by_id.get(word_id, {}).get("senses", [])
+        for index, sense in enumerate(word.get("senses", [])):
+            value = dict(sense)
+            example_ids = list(value.get("ex", {}).keys())
+            sense_id = example_ids[0] if example_ids else english_senses[index]["id"]
+            if word.get("tip"):
+                value["tip"] = word["tip"]
+            locale_words[sense_id] = value
+    dump(os.path.join(out_vi, "words.json"), locale_words)
+    dump(os.path.join(out_vi, "confusables.json"), vi.get("conf", {}))
+    dump(os.path.join(out_vi, "grammar.json"), vi.get("grammar", {}))
+    dump(os.path.join(out_vi, "questions.json"), {
+        "q": vi.get("q", {}), "q_fix": vi.get("q_fix", {}),
+        "q_translation": vi.get("q_translation", {}), "q_notes": vi.get("q_notes", {}),
+        "passages": vi.get("passages", {}), "quarantine": vi.get("quarantine", {}),
+    })
+    dump(os.path.join(out_vi, "pet.json"), vi.get("pet", {}))
+    dump(os.path.join(out_vi, "tips.json"), vi.get("tips", {}))
+    dump(os.path.join(out_vi, "ui.json"), {})
+    dump(os.path.join(out_vi, "l1_notes.json"), {})
     print(f"topics={len(topics)} words={len(words)} confusables={len(conf)} grammar={len(grammar)} "
           f"questions={len(questions)} passages={len(passages)} petMoods={len(pet)}")
 
