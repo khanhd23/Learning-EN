@@ -8,6 +8,8 @@ import os
 import re
 import sys
 import unicodedata
+import hashlib
+import xml.etree.ElementTree as ET
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 errors, warnings = [], []
@@ -28,7 +30,149 @@ def trigrams(s):
     return {s[i:i + 3] for i in range(max(1, len(s) - 2))}
 
 
+def canonical(value):
+    return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+
+
+def source_hash(value):
+    return hashlib.sha256(canonical(value).encode("utf-8")).hexdigest()[:12]
+
+
+def walk_strings(value):
+    if isinstance(value, str):
+        yield value
+    elif isinstance(value, dict):
+        for child in value.values():
+            yield from walk_strings(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from walk_strings(child)
+
+
+def tokens(value):
+    text = "\n".join(walk_strings(value))
+    return re.findall(r"\{[^{}]+\}|%\d+\$[a-zA-Z]|%[a-zA-Z]|</?[A-Za-z][^>]*>", text)
+
+
+def locale_source_maps(root):
+    en_words = load_from(root, "content", "en", "words.json")
+    en_grammar = load_from(root, "content", "en", "grammar.json")
+    en_questions = load_from(root, "content", "en", "questions.json")
+    return {
+        "topics": {x["id"]: x for x in en_words.get("topics", [])},
+        "words": {s["id"]: s for w in en_words.get("words", []) for s in w.get("senses", [])},
+        "confusables": {x["id"]: x for x in en_words.get("confusables", [])},
+        "grammar": {x["id"]: x for x in en_grammar.get("points", [])},
+        "questions": {x["id"]: x for x in en_questions.get("questions", [])},
+        "passages": {x["id"]: x for x in en_questions.get("passages", [])},
+    }
+
+
+def load_from(root, *parts):
+    with open(os.path.join(root, *parts), encoding="utf-8") as f:
+        return json.load(f)
+
+
+def strings_xml_keys(root):
+    path = os.path.join(root, "app", "src", "main", "res", "values", "strings.xml")
+    tree = ET.parse(path)
+    return {node.attrib["name"] for node in tree.getroot().findall("string")}
+
+
+def locale_rule_errors(root=ROOT):
+    """Return Task 3 errors and warnings for all folder-layout locales."""
+    maps = locale_source_maps(root)
+    errors_out, warnings_out = [], []
+    locale_root = os.path.join(root, "content", "i18n")
+    if not os.path.isdir(locale_root):
+        return ["content/i18n: missing locale directory"], []
+    forbidden = re.compile(r"(?:vietnam|viet\s+nam|vietnamese|ti[eế]ng\s+vi[eệ]t|vietnamita|vietnamesisch)", re.I)
+    file_kinds = {"topics": "topics", "words": "words", "confusables": "confusables", "grammar": "grammar", "passages": "passages"}
+    for locale in sorted(os.listdir(locale_root)):
+        path = os.path.join(locale_root, locale)
+        if not os.path.isdir(path) or locale.startswith("_"):
+            continue
+        files = {}
+        for filename, kind in file_kinds.items():
+            file_path = os.path.join(path, filename + ".json")
+            if os.path.isfile(file_path):
+                files[kind] = load_from(root, "content", "i18n", locale, filename + ".json")
+        q_path = os.path.join(path, "questions.json")
+        if os.path.isfile(q_path):
+            files["questions_file"] = load_from(root, "content", "i18n", locale, "questions.json")
+            files["questions"] = {k: v for name in ("q", "q_fix", "q_translation", "q_notes") for k, v in files["questions_file"].get(name, {}).items()}
+            files["passages"] = files["questions_file"].get("passages", {})
+        ui_path = os.path.join(path, "ui.json")
+        if os.path.isfile(ui_path):
+            files["ui"] = load_from(root, "content", "i18n", locale, "ui.json")
+
+        for kind, values in files.items():
+            if kind in ("questions_file", "ui"):
+                continue
+            if not isinstance(values, dict):
+                continue
+            source_kind = "questions" if kind == "questions" else kind
+            known = maps.get(source_kind, {})
+            for key, value in values.items():
+                if key not in known and kind not in ("pet", "tips"):
+                    errors_out.append(f"{locale}/{kind}:{key}: unknown or orphan ID")
+                    continue
+                if key in known:
+                    source = known[key]
+                    # Passage locale files contain only translated explanations; the
+                    # source passage text and options are intentionally not copied.
+                    if kind != "passages":
+                        source_tokens = sorted(tokens(source))
+                        locale_tokens = sorted(tokens(value))
+                        if source_tokens != locale_tokens:
+                            errors_out.append(f"{locale}/{kind}:{key}: placeholders/markup differ from English source")
+                    kept = re.findall(r"<keep>(.*?)</keep>", "\n".join(walk_strings(value)), re.S)
+                    source_text = "\n".join(walk_strings(source))
+                    for text in kept:
+                        if text not in source_text:
+                            errors_out.append(f"{locale}/{kind}:{key}: <keep> text is not in English source")
+                if locale != "vi" and forbidden.search("\n".join(walk_strings(value))):
+                    errors_out.append(f"{locale}/{kind}:{key}: Vietnam/Vietnamese reference")
+                raw = "\n".join(walk_strings(value))
+                if "<keep>" in raw or "</keep>" in raw:
+                    errors_out.append(f"{locale}/{kind}:{key}: leftover <keep> tag")
+                if kind == "words" and isinstance(value, dict) and isinstance(value.get("g"), str):
+                    fragments = [re.sub(r"\s+", " ", x.strip()).casefold() for x in re.split(r"[,;]", value["g"]) if x.strip()]
+                    if len(fragments) != len(set(fragments)):
+                        errors_out.append(f"{locale}/words:{key}: duplicate comma/semicolon gloss fragment")
+                    definition = source.get("def", "") if isinstance(source, dict) else ""
+                    if value["g"].strip().casefold() == str(definition).strip().casefold():
+                        warnings_out.append(f"{locale}/words:{key}: TRANSLATE gloss identical to English definition")
+                    if definition and (len(value["g"].split()) > max(8, len(definition.split()) * 2.5) or
+                                       len(value["g"].split()) < max(1, len(definition.split()) // 5)):
+                        warnings_out.append(f"{locale}/words:{key}: gloss length is unusual compared with English definition")
+
+        if "ui" in files:
+            expected = strings_xml_keys(root)
+            actual = set(files["ui"])
+            if actual != expected:
+                missing = sorted(expected - actual)
+                extra = sorted(actual - expected)
+                errors_out.append(f"{locale}/ui: keys differ from strings.xml (missing={missing[:5]}, extra={extra[:5]})")
+
+        status_path = os.path.join(path, "status.json")
+        if os.path.isfile(status_path):
+            status = load_from(root, "content", "i18n", locale, "status.json")
+            for kind, entries in status.get("entries", {}).items():
+                for key, record in entries.items():
+                    if record.get("s") != "approved":
+                        continue
+                    source_kind = "questions" if kind == "questions" else kind
+                    source = maps.get(source_kind, {}).get(key)
+                    if source is not None and record.get("src") != source_hash(source):
+                        errors_out.append(f"{locale}/{kind}:{key}: approved entry is stale")
+    return errors_out, warnings_out
+
+
 def main():
+    locale_errors, locale_warnings = locale_rule_errors()
+    errors.extend(locale_errors)
+    warnings.extend(locale_warnings)
     words = load("content", "en", "words.json")
     grammar = load("content", "en", "grammar.json")
     qs = load("content", "en", "questions.json")

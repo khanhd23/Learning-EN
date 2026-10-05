@@ -9,6 +9,7 @@ import os
 import random
 import re
 import sys
+import xml.etree.ElementTree as ET
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools", "authoring"))
@@ -44,6 +45,33 @@ def load_all_editor_rows():
     for name in sorted(names, key=lambda n: int(re.search(r"\d+", n).group())):
         rows.update(load_editor_rows(name))
     return rows
+
+
+def canonical(value):
+    return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+
+
+def source_hash(value):
+    return hashlib.sha256(canonical(value).encode("utf-8")).hexdigest()[:12]
+
+
+def refresh_vi_status(path, old_status, sources):
+    """Keep approved metadata for unchanged source; owner-refresh changed vi entries."""
+    old_entries = old_status.get("entries", {}) if isinstance(old_status, dict) else {}
+    entries = {}
+    for kind, values in sources.items():
+        previous = old_entries.get(kind, {})
+        entries[kind] = {}
+        for key, source in values.items():
+            digest = source_hash(source)
+            prior = previous.get(key, {})
+            if prior.get("src") == digest:
+                entries[kind][key] = dict(prior)
+            else:
+                entries[kind][key] = {"s": "approved", "by": "owner", "src": digest}
+    status = {"schemaVersion": 1, "locale": "vi", "status": "complete", "todo": False, "entries": entries}
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(status, f, ensure_ascii=False, separators=(",", ":"))
 
 
 EDITOR_ROWS = load_all_editor_rows()
@@ -99,7 +127,24 @@ def normalize_gloss(value):
     value = value.rstrip(".").strip()
     if value and value[0].isupper() and not value.isupper():
         value = value[0].lower() + value[1:]
-    return value
+    fragments = []
+    seen = set()
+    for fragment in re.split(r"([,;])", value):
+        if fragment in ",;":
+            if fragments and fragments[-1] != fragment:
+                fragments.append(fragment)
+            continue
+        cleaned = fragment.strip()
+        if not cleaned:
+            continue
+        key = cleaned.casefold()
+        if key in seen:
+            if fragments and fragments[-1] in ",;":
+                fragments.pop()
+            continue
+        seen.add(key)
+        fragments.append(cleaned)
+    return " ".join(fragments).replace(" ,", ",").replace(" ;", ";")
 
 
 def definition_for(word, sense, index):
@@ -480,8 +525,34 @@ def main():
     })
     dump(os.path.join(out_vi, "pet.json"), vi.get("pet", {}))
     dump(os.path.join(out_vi, "tips.json"), vi.get("tips", {}))
-    dump(os.path.join(out_vi, "ui.json"), {})
+    ui_path = os.path.join(out_vi, "ui.json")
+    old_ui = {}
+    if os.path.isfile(ui_path):
+        with open(ui_path, encoding="utf-8") as f:
+            old_ui = json.load(f)
+    strings_path = os.path.join(ROOT, "app", "src", "main", "res", "values", "strings.xml")
+    ui = {}
+    if os.path.isfile(strings_path):
+        for node in ET.parse(strings_path).getroot().findall("string"):
+            ui[node.attrib["name"]] = old_ui.get(node.attrib["name"], "")
+    dump(ui_path, ui)
     dump(os.path.join(out_vi, "l1_notes.json"), {})
+    status_path = os.path.join(out_vi, "status.json")
+    old_status = {}
+    if os.path.isfile(status_path):
+        with open(status_path, encoding="utf-8") as f:
+            old_status = json.load(f)
+    refresh_vi_status(status_path, old_status, {
+        "topics": {x["id"]: x for x in topics},
+        "words": {s["id"]: s for w in words for s in w.get("senses", [])},
+        "confusables": {x["id"]: x for x in conf},
+        "grammar": {x["id"]: x for x in grammar},
+        "questions": {x["id"]: x for x in questions},
+        "passages": {x["id"]: x for x in passages},
+        "ui": ui,
+        "pet": vi.get("pet", {}),
+        "tips": vi.get("tips", {}),
+    })
     print(f"topics={len(topics)} words={len(words)} confusables={len(conf)} grammar={len(grammar)} "
           f"questions={len(questions)} passages={len(passages)} petMoods={len(pet)}")
 
