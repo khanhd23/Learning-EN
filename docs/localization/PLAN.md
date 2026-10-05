@@ -310,7 +310,11 @@ applies the `pos` column, keeps only the editor example for a curated sense, and
 word form. `tools/check_editor_batch.py` checks a batch file before generation.
 Use `senses_editor_batch1.tsv` / `batch2.tsv` as the model for style and quality.
 
-**Remaining work for Task 1A.1: NGSL ranks 401–1000, in batches of 100 senses.**
+**Remaining work for Task 1A.1: NGSL ranks 401–1000.** Batches 3–4 (401–600) are accepted.
+Batch size from batch 5 on: **one batch for ranks 601–1000** (about 350 senses). Owner review of batch 4:
+fixed `current` (adjective "hiện tại" first), `vote` (pos), `accord` ("according to"), `wish` (example).
+Watch for these: NGSL ranks a word by its most frequent use, which is often a phrase or another part of
+speech (`according to`, `current` = now).
 For each batch `<N>` (3, 4, 5 …):
 
 1. List the core entries whose lemma has NGSL rank in the batch range (rank order; skip lemmas not in

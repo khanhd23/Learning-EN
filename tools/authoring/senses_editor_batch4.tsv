@@ -18,9 +18,9 @@ project_s1	n	a planned piece of work	dự án	Our team started a new project las
 round_s1	adj	shaped like a circle	tròn	We sat around a round table.	Chúng tôi ngồi quanh một chiếc bàn tròn.	editor 2026-10-05
 opportunity_s1	n	a good chance to do something	cơ hội	This course is a good opportunity to practice speaking.	Khóa học này là cơ hội tốt để luyện nói.	editor 2026-10-05
 road_s1	n	a way for vehicles and people to travel	đường	The road becomes busy during the morning rush.	Con đường trở nên đông đúc vào giờ cao điểm buổi sáng.	editor 2026-10-05
-accord_s1	v	to match or agree with something	phù hợp, hòa hợp	His actions do not accord with his words.	Hành động của anh ấy không phù hợp với lời nói.	editor 2026-10-05
+accord_s1	phr	according to: as said or shown by someone or something	theo (như)	According to the news, it will rain tomorrow.	Theo bản tin, ngày mai trời sẽ mưa.	editor 2026-10-05 owner fix
 list_s1	n	a series of names or things written together	danh sách	Please add your name to the list.	Vui lòng thêm tên bạn vào danh sách.	editor 2026-10-05
-wish_s1	v	to want something to happen or be true	ước, mong	I wish you a safe journey.	Tôi chúc bạn một chuyến đi an toàn.	editor 2026-10-05
+wish_s1	v	to want something to happen or be true	ước, mong	I wish I had more free time.	Tôi ước mình có nhiều thời gian rảnh hơn.	editor 2026-10-05 owner fix
 therefore_s1	adv	for that reason or as a result	vì vậy, do đó	The road is closed; therefore, we must turn back.	Con đường bị đóng nên chúng ta phải quay lại.	editor 2026-10-05
 wear_s1	v	to have clothes or accessories on your body	mặc, đeo	I wear comfortable shoes to work every day.	Tôi đi giày thoải mái đi làm mỗi ngày.	editor 2026-10-05
 fund_s1	n	money saved for a particular purpose	quỹ	The school raised funds for new computers.	Trường đã gây quỹ để mua máy tính mới.	editor 2026-10-05
@@ -42,7 +42,7 @@ trade_s1	n	the buying and selling of goods or services	thương mại, buôn bá
 risk_s1	n	the possibility of danger or loss	rủi ro	Driving too fast increases the risk of accidents.	Lái xe quá nhanh làm tăng nguy cơ tai nạn.	editor 2026-10-05
 news_s1	n	information about recent events	tin tức	I read the news every morning.	Tôi đọc tin tức mỗi buổi sáng.	editor 2026-10-05
 standard_s1	n	a level used for comparison or judgment	tiêu chuẩn	This school has a high standard of teaching.	Trường này có tiêu chuẩn giảng dạy cao.	editor 2026-10-05
-vote_s1	n	a choice made by selecting one option in an election	phiếu bầu, cuộc bỏ phiếu	Every member may vote in the meeting.	Mỗi thành viên có thể bỏ phiếu trong cuộc họp.	editor 2026-10-05
+vote_s1	v	to choose someone or something in an election	bỏ phiếu, bầu	Every member may vote in the meeting.	Mỗi thành viên có thể bỏ phiếu trong cuộc họp.	editor 2026-10-05 owner fix
 stage_s1	n	a period or step in a process	giai đoạn	The project is still at an early stage.	Dự án vẫn đang ở giai đoạn đầu.	editor 2026-10-05
 space_s1	n	an empty area available for people or things	khoảng trống, không gian	There is enough space for another chair.	Còn đủ chỗ cho một chiếc ghế khác.	editor 2026-10-05
 instead_s1	adv	in place of someone or something	thay vào đó	There was no tea, so I chose water instead.	Không có trà nên tôi chọn nước thay vào đó.	editor 2026-10-05
@@ -79,7 +79,7 @@ ground_s1	n	the solid surface of the earth	mặt đất, đất liền	The child
 animal_s1	n	a living creature that is not a plant	động vật	Every animal needs food, water, and shelter.	Mọi động vật đều cần thức ăn, nước và nơi trú ẩn.	editor 2026-10-05
 arrive_s1	v	to reach a place	đến, tới	We should arrive before the meeting starts.	Chúng ta nên đến trước khi cuộc họp bắt đầu.	editor 2026-10-05
 patient_s1	n	a person receiving medical care	bệnh nhân	The nurse checked on the patient.	Y tá đã kiểm tra bệnh nhân.	editor 2026-10-05
-current_s1	n	a flow of water, air, or electricity	dòng chảy, dòng điện	The river current moved the small boat.	Dòng nước sông đẩy chiếc thuyền nhỏ đi.	editor 2026-10-05
+current_s1	adj	happening or existing now	hiện tại, hiện nay	What is your current address?	Địa chỉ hiện tại của bạn là gì?	editor 2026-10-05 owner fix: sense 1 is now the adjective; the noun was a rare first sense
 evidence_s1	n	facts or information that show something is true	bằng chứng	There is no evidence that he broke the rules.	Không có bằng chứng anh ấy đã vi phạm quy tắc.	editor 2026-10-05
 similar_s1	adj	almost the same but not exactly	giống nhau, tương tự	The two pictures look very similar.	Hai bức tranh trông rất giống nhau.	editor 2026-10-05
 fight_s1	n	a physical or angry disagreement between people	trận đánh, cuộc cãi vã	The brothers had a fight over the toy.	Hai anh em đã cãi nhau vì món đồ chơi.	editor 2026-10-05
