@@ -32,6 +32,6 @@ for line_number, line in enumerate((ROOT / "vocab_ngsl_core.tsv").read_text(enco
         grammar_ids = json.loads(grammar_text)
     except json.JSONDecodeError as exc:
         raise ValueError(f"NGSL core row {line_number}: invalid grammarIds JSON") from exc
-    word["forms"] = {"source": source_forms} if source_forms else {}
+    word["forms"] = source_forms if isinstance(source_forms, dict) else {}
     word["grammarIds"] = grammar_ids
     word.update(needs_review=True, source=SOURCE)

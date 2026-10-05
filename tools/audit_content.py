@@ -22,6 +22,9 @@ VI_LETTERS = set("ạảãắằẳẵặấầẩẫậđẹẻẽếềểễ�
 SENTENCE = re.compile(r"""^["'(]?[A-Z0-9]""")
 WORD = re.compile(r"[A-Za-z']+")
 CATCH_ALL_SIZE = 300
+# Collocation "frames" that say nothing about how a word is really used.
+TEMPLATE_COLL = {"the x", "a x", "an x", "x something", "x together", "very x", "x example", "x today",
+                 "x enough", "use of x", "meaning of x", "x it", "x this", "x that", "x thing"}
 # Template text that only says what part of speech a word is. It is not a definition.
 PLACEHOLDER_DEFS = {
     "a word or phrase used in english", "a person, place, thing, or idea", "describing a quality or state",
@@ -143,6 +146,10 @@ def audit_word(w, gl, ranks, easy, topic_size):
         bad = sorted({c for c in ipa if c not in IPA_OK})
         if bad or ipa.startswith(".") or "/" in ipa:
             errors.append("ipa_format:" + "".join(bad))
+        letters = re.sub(r"[ˈˌː ]", "", ipa)
+        # Real IPA writes vowels with IPA symbols (æ ɛ ɪ ɑ ʌ …), so it almost never equals the spelling.
+        if len(w["lemma"]) >= 2 and letters == re.sub(r"[^a-z]", "", w["lemma"].lower()):
+            errors.append("ipa_is_spelling")
 
     max_senses = 3 if (level or 9) <= 2 else 4
     if not senses:
@@ -188,6 +195,11 @@ def audit_word(w, gl, ranks, easy, topic_size):
                 hard = [x for x in toks if x not in easy and not x.startswith(w["lemma"].split()[0].lower()[:4])]
                 if toks and len(hard) / len(toks) > 0.10:
                     warns.append(f"{tag}:example_vocab_hard")
+        colls = s.get("coll") or w.get("coll") or []
+        frames = [re.sub(r"\b" + re.escape(w["lemma"].lower()) + r"\b", "x", c.lower()).strip() for c in colls]
+        # One generic frame can be a real collocation ("very quickly"); all of them generic means filler.
+        if frames and all(f in TEMPLATE_COLL for f in frames):
+            errors.append(f"{tag}:collocation_template")
         if (level or 9) <= 3 and s.get("pos", w.get("pos")) in ("n", "v", "adj") \
                 and len(s.get("coll") or w.get("coll") or []) < 2:
             warns.append(f"{tag}:few_collocations")

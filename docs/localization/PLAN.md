@@ -385,6 +385,18 @@ dictionary-style glosses ("(thuộc) …"), and names or places added only in th
 
 **Done when:** "NGSL lemmas missing" = 0 and none of the new entries has an audit error.
 
+**Owner review of Task 1B batch 6 (2026-10-05): ACCEPTED after fixes.** Sense rows (def, gloss,
+example, translation) were good. The metadata was filler and was rewritten by the owner for all 392
+entries:
+- IPA was the spelling with a stress mark for ~110 words (`ˈwould`, `ˈwhite`, `ˈillustrate`) and wrong
+  for others (`ˈpakk`, `kat`). Write real General American IPA (`wʊd`, `waɪt`, `ˈɪləˌstreɪt`).
+- Collocations were frames ("the X", "a X", "X something", "X together", "very X", "use of X",
+  "meaning of X"). Write two collocations people actually say ("turn off", "phone call").
+- Forms were imported noise ("WHOs", "musics", "the Combine"). Only irregular forms, as a JSON object:
+  `{"past": "began", "pp": "begun"}`, `{"plural": "analyses"}`; otherwise `{}`.
+The audit now reports `ipa_is_spelling` and `collocation_template`; both must be 0 for new entries.
+(46 older entries also have spelling-as-IPA, e.g. `bed`, `ten`, `desk` — fix them in Task 1C.)
+
 ### Task 1C: Rewrite Level 1–2 entries to the standard
 
 1. Order: NGSL rank 1–2000 first, then other Level 1–2 entries.
