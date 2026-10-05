@@ -85,7 +85,7 @@ def records(root: Path) -> list[dict]:
     result = []
     for word in en["words"].get("words", []):
         for sense in word.get("senses", []):
-            result.append({"kind": "words", "key": sense["id"], "source": sense,
+            result.append({"kind": "words", "key": sense["id"], "source": sense, "lemma": word.get("lemma", ""),
                            "definition": sense.get("def", ""),
                            "example": "\n".join(x.get("text", "") for x in sense.get("ex", [])),
                            "level": word.get("level", 0), "file": "words"})
@@ -182,14 +182,21 @@ def protect_keep(text: str, source: dict) -> str:
     return text
 
 
-def translate_text(text: str, source: dict, locale: str, provider: str, api_key: str) -> str:
+VI_CHARS = re.compile(r"[ăâđêôơưạảãấầẩẫậắằẳẵặẹẻẽếềểễệỉĩịọỏõốồổỗộớờởỡợụủũứừửữựỳỷỹỵ]", re.I)
+
+
+def translate_text(text: str, source: dict, locale: str, provider: str, api_key: str, context: str = "") -> str:
     if not text.strip() or provider == "none":
         return ""
     protected = protect_keep(text, source)
     target = locale.split("-")[0]
     import requests
     if provider == "deepl":
-        response = requests.post("https://api-free.deepl.com/v2/translate", data={"text": protected, "target_lang": target.upper(), "auth_key": api_key}, timeout=30)
+        data = {"text": protected, "target_lang": target.upper()}
+        if context:
+            data["context"] = context  # DeepL uses it to pick the right sense; it is not translated
+        response = requests.post("https://api-free.deepl.com/v2/translate", data=data,
+                                 headers={"Authorization": f"DeepL-Auth-Key {api_key}"}, timeout=30)
         response.raise_for_status()
         translated = response.json()["translations"][0]["text"]
     elif provider == "google_cloud":
@@ -206,19 +213,37 @@ def draft_value(item: dict, locale: str, provider: str, api_key: str):
         return "" if item["kind"] not in ("words", "passages") else ({} if item["kind"] == "words" else {"blanks": []})
     source = item["source"]
     if item["kind"] == "words":
-        return {"g": translate_text(source.get("def", ""), source, locale, provider, api_key),
-                "ex": {x["id"]: translate_text(x.get("text", ""), x, locale, provider, api_key) for x in source.get("ex", [])}, "tip": "", "regional": {"es-ES": ""}}
+        # The gloss is a short equivalent of the headword in this sense, not a translated definition.
+        context = " ".join([source.get("def", "")] + [x.get("text", "") for x in source.get("ex", [])])
+        return {"g": translate_text(item.get("lemma", ""), {}, locale, provider, api_key, context=context),
+                "ex": {x["id"]: translate_text(x.get("text", ""), {"lemma": item.get("lemma", "")}, locale, provider, api_key)
+                       for x in source.get("ex", [])},
+                "tip": "", "regional": {"es-ES": ""}}
     if item["kind"] == "grammar":
-        return {k: translate_text(source.get(k, ""), source, locale, provider, api_key) for k in ("title", "when", "body")} | {"examples": [translate_text(x, source, locale, provider, api_key) for x in source.get("examples", [])], "mistakes": ["" for _ in source.get("mistakes", [])]}
-    if item["kind"] == "questions":
-        return translate_text(source.get("explanation", source.get("stem", "")), source, locale, provider, api_key)
-    if item["kind"] == "passages":
-        return {"blanks": [translate_text(" ".join(x.get("opts", [])), x, locale, provider, api_key) for x in source.get("blanks", [])]}
+        # English grammar points hold only formula, signals and examples; titles, explanations and
+        # mistakes have no English source yet, so they stay empty (write them, do not pivot from vi).
+        examples = [x.get("en", "") if isinstance(x, dict) else str(x) for x in source.get("examples", [])]
+        return {"title": "", "when": "", "body": "",
+                "examples": [translate_text(x, {}, locale, provider, api_key) for x in examples],
+                "mistakes": ["" for _ in source.get("mistakes", [])]}
+    if item["kind"] in ("questions", "passages", "topics"):
+        return ""  # no English explanation/name exists to translate from
     if item["kind"] == "ui":
-        return translate_text(str(source), {"value": str(source)}, locale, provider, api_key)
-    if item["kind"] == "topics":
-        return ""
+        text = str(source)
+        if VI_CHARS.search(text):
+            return ""  # the default strings.xml is still Vietnamese until Task 5; never pivot from vi
+        return translate_text(text, {"value": text}, locale, provider, api_key)
     return ""
+
+
+def has_text(value) -> bool:
+    if isinstance(value, str):
+        return bool(value.strip())
+    if isinstance(value, dict):
+        return any(has_text(v) for v in value.values())
+    if isinstance(value, list):
+        return any(has_text(v) for v in value)
+    return False
 
 
 def selected(item: dict, level: int | None, only: set[str] | None) -> bool:
@@ -259,6 +284,8 @@ def cmd_draft(root: Path, locale: str, level: int | None, only: set[str] | None,
         # The no-provider workflow must never replace the structured empty
         # scaffold with a different shape or make a network request.
         value = get_value(files, item) if provider == "none" else draft_value(item, locale, provider, api_key)
+        if provider != "none" and not has_text(value):
+            continue  # nothing could be drafted from English; keep the entry "missing"
         if item["kind"] == "questions": files["questions"].setdefault("q", {})[item["key"]] = value
         elif item["kind"] == "passages": files["questions"].setdefault("passages", {})[item["key"]] = value
         elif item["kind"] in files: files[item["kind"]][item["key"]] = value

@@ -68,3 +68,39 @@ class LocaleCycle(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DraftSources(unittest.TestCase):
+    """Drafts come from English only; nothing is drafted where no English source exists."""
+
+    def setUp(self):
+        self.calls = []
+        self.original = locale_tool.translate_text
+
+        def fake(text, source, locale, provider, api_key, context=""):
+            self.calls.append((text, context))
+            return f"<{text}>" if text.strip() else ""
+
+        locale_tool.translate_text = fake
+
+    def tearDown(self):
+        locale_tool.translate_text = self.original
+
+    def test_word_gloss_translates_headword_with_context(self):
+        item = {"kind": "words", "lemma": "bank",
+                "source": {"def": "a business that keeps money", "ex": [{"id": "bank_s1", "text": "I went to the bank."}]}}
+        value = locale_tool.draft_value(item, "es", "deepl", "key")
+        self.assertEqual(value["g"], "<bank>")
+        self.assertIn(("bank", "a business that keeps money I went to the bank."), self.calls)
+        self.assertEqual(value["ex"]["bank_s1"], "<I went to the bank.>")
+
+    def test_grammar_examples_are_dicts_and_text_fields_stay_empty(self):
+        item = {"kind": "grammar", "source": {"examples": [{"en": "I am a student.", "hl": "am"}], "mistakes": [{"wrong": "x"}]}}
+        value = locale_tool.draft_value(item, "es", "deepl", "key")
+        self.assertEqual(value["examples"], ["<I am a student.>"])
+        self.assertEqual((value["title"], value["body"], value["mistakes"]), ("", "", [""]))
+
+    def test_no_english_source_means_no_draft(self):
+        self.assertEqual(locale_tool.draft_value({"kind": "questions", "source": {"stem": "Lack of sleep can ___."}}, "es", "deepl", "k"), "")
+        self.assertEqual(locale_tool.draft_value({"kind": "ui", "source": "Nội dung học"}, "es", "deepl", "k"), "")
+        self.assertFalse(locale_tool.has_text({"g": "", "ex": {"a": ""}}))

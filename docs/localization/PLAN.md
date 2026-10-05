@@ -515,6 +515,18 @@ Add `TRANSLATE_PROVIDER` and `TRANSLATE_API_KEY` to `secrets.properties.example`
 **Done when:** a full cycle `new → draft --provider none → export → import → approve → check` works
 on a test locale `xx` in `tools/tests/`.
 
+**Owner review of Task 4 (2026-10-05): ACCEPTED after fixes to `draft`.**
+- Word gloss was drafted by translating the English *definition* (a sentence, not a gloss). Now the
+  headword is translated with the definition + example as DeepL `context`; examples are translated
+  from the English sentence.
+- Question/passage explanations were drafted from the English *question stem*; grammar drafts crashed
+  on example dicts and translated non-existent titles. No English source exists for explanations,
+  grammar titles/bodies or topic names, so `draft` leaves them `missing` (they must be written).
+- UI drafts translated the default `strings.xml`, which is Vietnamese until Task 5 (a vi→xx pivot).
+  `draft` now skips Vietnamese UI text.
+- Old tools `apply_locale_batch.py`, `draft_translate_locale.py`, `locale_report.py`, `new_locale.py`
+  removed (replaced by `tools/locale.py`). Tests added in `tools/tests/test_locale.py`.
+
 ## Task 5: UI localization
 
 1. Make `res/values/strings.xml` **English** (the fallback); move current Vietnamese text to
