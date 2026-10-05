@@ -626,6 +626,11 @@ stay in their own language in both files. Not yet checked on a device: text leng
   themselves. Topics and grammar points now carry English names/titles; English mode shows no
   example translation. Still missing in English mode: grammar explanations (written in Vietnamese
   only) — needed before Task 7 anyway.
+- Done (owner): English source explanations now exist for everything a locale must translate —
+  `tools/authoring/grammar_en.json` (when/body/why per mistake, all 38 points) and
+  `tools/authoring/question_expl_en.txt` (579 questions + 32 passage blanks). They compile into
+  `content/en/*.json` (`when`, `body`, `mistakes[].why`, `expl`), English mode shows them, and
+  `locale.py draft` translates them. Do not edit these files; report problems to the owner.
 
 ## Task 7: Spanish pilot (Level 1)
 
