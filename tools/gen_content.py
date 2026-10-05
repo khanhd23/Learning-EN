@@ -76,6 +76,88 @@ def refresh_vi_status(path, old_status, sources):
 
 EDITOR_ROWS = load_all_editor_rows()
 
+# The controlled topic taxonomy is defined by docs/content/CONTENT_STANDARD.md §5.
+# Authoring modules still use their historical topic markers; entry_corrections.tsv
+# is the reviewed, semantic assignment layer used for generated content.
+CONTROLLED_TOPICS = [
+    ("people", "family", "👪", "Gia đình"),
+    ("people", "friends_relationships", "🤝", "Bạn bè & quan hệ"),
+    ("people", "body_appearance", "🧍", "Cơ thể & ngoại hình"),
+    ("people", "feelings_personality", "😊", "Cảm xúc & tính cách"),
+    ("people", "health_illness", "🩺", "Sức khỏe & bệnh tật"),
+    ("people", "age_life_stages", "🌱", "Tuổi tác & các giai đoạn sống"),
+    ("daily_life", "home_furniture", "🏠", "Nhà cửa & nội thất"),
+    ("daily_life", "daily_routine", "🗓️", "Sinh hoạt hằng ngày"),
+    ("daily_life", "food_drink", "🍎", "Đồ ăn & thức uống"),
+    ("daily_life", "cooking", "🍳", "Nấu ăn"),
+    ("daily_life", "shopping", "🛍️", "Mua sắm"),
+    ("daily_life", "clothes", "👕", "Quần áo"),
+    ("daily_life", "money_banking", "💰", "Tiền bạc & ngân hàng"),
+    ("daily_life", "time_dates", "⏰", "Thời gian & ngày tháng"),
+    ("daily_life", "numbers_quantity", "🔢", "Số & số lượng"),
+    ("daily_life", "weather", "🌤️", "Thời tiết"),
+    ("places_travel", "city_directions", "🗺️", "Thành phố & chỉ đường"),
+    ("places_travel", "transport", "🚌", "Phương tiện đi lại"),
+    ("places_travel", "travel_holidays", "✈️", "Du lịch & kỳ nghỉ"),
+    ("places_travel", "hotel_restaurant", "🍽️", "Khách sạn & nhà hàng"),
+    ("places_travel", "nature_landscape", "🌳", "Thiên nhiên & cảnh quan"),
+    ("places_travel", "animals", "🐾", "Động vật"),
+    ("study", "school", "🏫", "Trường học"),
+    ("study", "university", "🎓", "Đại học"),
+    ("study", "language_learning", "📚", "Học ngôn ngữ"),
+    ("study", "science_basics", "🔬", "Khoa học cơ bản"),
+    ("work", "jobs", "💼", "Nghề nghiệp"),
+    ("work", "office", "🏢", "Văn phòng"),
+    ("work", "meetings", "🗣️", "Cuộc họp"),
+    ("work", "hr_recruiting", "🧑‍💼", "Nhân sự & tuyển dụng"),
+    ("work", "sales_customer", "🤲", "Bán hàng & khách hàng"),
+    ("work", "marketing", "📣", "Tiếp thị"),
+    ("work", "finance_accounting", "📊", "Tài chính & kế toán"),
+    ("work", "contracts_law", "⚖️", "Hợp đồng & pháp luật"),
+    ("work", "logistics", "📦", "Hậu cần"),
+    ("work", "it_technology", "💻", "Công nghệ thông tin"),
+    ("work", "events", "📅", "Sự kiện"),
+    ("society", "media_news", "📰", "Truyền thông & tin tức"),
+    ("society", "internet_social", "🌐", "Internet & mạng xã hội"),
+    ("society", "environment_energy", "♻️", "Môi trường & năng lượng"),
+    ("society", "government_society", "🏛️", "Chính phủ & xã hội"),
+    ("society", "arts_entertainment", "🎭", "Nghệ thuật & giải trí"),
+    ("society", "sports_fitness", "⚽", "Thể thao & thể hình"),
+    ("language", "function_words", "🔤", "Từ chức năng"),
+    ("language", "core_verbs", "▶️", "Động từ cốt lõi"),
+    ("language", "describing_things", "🎨", "Miêu tả sự vật"),
+    ("language", "linking_words", "🔗", "Từ nối"),
+    ("language", "phrasal_verbs", "↗️", "Cụm động từ"),
+    ("language", "idioms_chunks", "💬", "Thành ngữ & cụm từ"),
+]
+CONTROLLED_TOPIC_IDS = {x[1] for x in CONTROLLED_TOPICS}
+
+
+def load_topic_corrections(words):
+    path = os.path.join(ROOT, "tools", "authoring", "entry_corrections.tsv")
+    if not os.path.isfile(path):
+        raise SystemExit(f"missing topic correction file: {path}")
+    rows = {}
+    with open(path, encoding="utf-8") as f:
+        for line_no, raw in enumerate(f, 1):
+            line = raw.strip()
+            if not line or line.startswith("#"):
+                continue
+            parts = line.split("|", 1)
+            if len(parts) != 2:
+                raise SystemExit(f"bad topic correction row {line_no}")
+            word_id, topic_text = (p.strip() for p in parts)
+            topics = [x.strip() for x in topic_text.split(",") if x.strip()]
+            if word_id in rows or not 1 <= len(topics) <= 3 or any(x not in CONTROLLED_TOPIC_IDS for x in topics):
+                raise SystemExit(f"bad topic correction row {line_no}: {word_id}")
+            rows[word_id] = topics
+    expected = {w["id"] for w in words}
+    if set(rows) != expected:
+        missing = sorted(expected - set(rows))[:5]
+        extra = sorted(set(rows) - expected)[:5]
+        raise SystemExit(f"topic corrections do not cover words; missing={missing} extra={extra}")
+    return rows
+
 VI_CHARS = set("áạảãấầẩẫậắằẳẵặđẹẻẽếềểễệỉĩịọỏõốồổỗộớờởỡợụủũứừửữựỳỷỹỵ")
 
 
@@ -311,11 +393,11 @@ def main():
 
     vi = dict(topics={}, words={}, conf={}, grammar={}, q={}, passages={}, pet=pet, tips=ui_tips)
 
-    # Topics
+    # Topics: emit only the controlled taxonomy from CONTENT_STANDARD §5.
     topics = []
-    for t in lib.TOPICS:
-        vi["topics"][t["id"]] = t["vi"]
-        topics.append(dict(id=t["id"], icon=t["icon"], hue=t["hue"]))
+    for domain, topic_id, icon, vi_name in CONTROLLED_TOPICS:
+        vi["topics"][topic_id] = vi_name
+        topics.append(dict(domain=domain, id=topic_id, icon=icon))
 
     # Words
     words = []
@@ -323,6 +405,10 @@ def main():
         v = w.pop("_vi")
         vi["words"][w["id"]] = {k: val for k, val in v.items() if val}
         words.append(w)
+
+    corrections = load_topic_corrections(words)
+    for w in words:
+        w["topics"] = corrections[w["id"]]
 
     lemma_to_id = {}
     for w in words:
@@ -477,6 +563,7 @@ def main():
         with open(path, "w", encoding="utf-8") as f:
             json.dump(obj, f, ensure_ascii=False, separators=(",", ":"))
 
+    dump(os.path.join(out_en, "topics.json"), dict(topics=topics))
     dump(os.path.join(out_en, "words.json"), dict(topics=topics, words=words, confusables=conf))
     dump(os.path.join(out_en, "grammar.json"), dict(points=grammar))
     dump(os.path.join(out_en, "questions.json"), dict(questions=questions, passages=passages))
