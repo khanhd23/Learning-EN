@@ -8,6 +8,7 @@ import com.yourbrand.englishlearn.ads.AdsManager
 import com.yourbrand.englishlearn.content.Content
 import com.yourbrand.englishlearn.content.ContentRepository
 import com.yourbrand.englishlearn.core.Settings
+import com.yourbrand.englishlearn.core.AppLocale
 import com.yourbrand.englishlearn.core.Sfx
 import com.yourbrand.englishlearn.core.Tts
 import com.yourbrand.englishlearn.learning.Exercise
@@ -137,9 +138,10 @@ class EnglishApp : Application() {
         services = Services(this)
         if (!services.settings.contentLocaleChosen) {
             val systemTag = resources.configuration.locales[0]?.toLanguageTag().orEmpty()
-            val systemLocale = services.contentRepo.effectiveLocale(systemTag)
-            if (systemLocale != "vi") services.settings.contentLocale = systemLocale
+            val systemLocale = AppLocale.initialLocale(systemTag, services.contentRepo.selectableLocales())
+            services.settings.contentLocale = systemLocale
         }
+        AppLocale.apply(services.settings.contentLocale)
         AppCompatDelegate.setDefaultNightMode(services.settings.nightMode)
         // Parse content + load learning state while the first frame is drawn.
         thread(name = "prewarm", priority = Thread.NORM_PRIORITY - 1) {

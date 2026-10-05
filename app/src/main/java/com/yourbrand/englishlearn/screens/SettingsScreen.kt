@@ -11,6 +11,7 @@ import androidx.appcompat.widget.SwitchCompat
 import com.yourbrand.englishlearn.BuildConfig
 import com.yourbrand.englishlearn.MainActivity
 import com.yourbrand.englishlearn.R
+import com.yourbrand.englishlearn.core.AppLocale
 import com.yourbrand.englishlearn.notify.Reminders
 import com.yourbrand.englishlearn.pet.PetState
 import com.yourbrand.englishlearn.ui.*
@@ -31,7 +32,7 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
                 choice(g, R.string.set_language, labels, locales.indexOf(services.contentRepo.effectiveLocale(s.contentLocale)).coerceAtLeast(0)) {
                     s.contentLocale = locales[it]
                     s.contentLocaleChosen = true
-                    activity.recreate()
+                    AppLocale.apply(s.contentLocale)
                 }
             }
             choice(g, R.string.set_goal, listOf(5, 10, 15).map { str(R.string.minutes_n, it) }, listOf(5, 10, 15).indexOf(s.dailyMinutes)) { s.dailyMinutes = listOf(5, 10, 15)[it] }

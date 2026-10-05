@@ -12,6 +12,7 @@ import android.widget.ScrollView
 import android.widget.TextView
 import com.yourbrand.englishlearn.MainActivity
 import com.yourbrand.englishlearn.R
+import com.yourbrand.englishlearn.core.AppLocale
 import com.yourbrand.englishlearn.learning.Session
 import com.yourbrand.englishlearn.learning.SessionKind
 import com.yourbrand.englishlearn.pet.Mood
@@ -94,7 +95,13 @@ class OnboardingScreen(activity: MainActivity) : Screen(activity) {
             }
             fun paint() { card.background = c.rounded(c.col(if (locale == language) R.color.primary_container else R.color.surface), 16f, c.col(if (locale == language) R.color.primary else R.color.outline), if (locale == language) 2f else 1f) }
             paint()
-            card.onTap { language = locale; paint() }
+            card.onTap {
+                language = locale
+                services.settings.contentLocale = locale
+                services.settings.contentLocaleChosen = true
+                AppLocale.apply(locale)
+                paint()
+            }
             content.addView(card.margins(c, top = 10))
         }
     }
