@@ -1,0 +1,24 @@
+{
+  "applicationId": "com.engpet.learn",
+  "displayName": "EngPet: Học Tiếng Anh",
+  "shortName": "EngPet",
+  "supportEmail": "support.permitprep@gmail.com",
+  "privacyPolicyUrl": "",
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "flags": { "ads": true, "billing": false, "notifications": true },
+  "ads": {
+    "interstitialMinGapSec": 180,
+    "interstitialMaxPerDay": 3,
+    "interstitialSkipFirstSessions": 2
+  },
+  "pet": {
+    "stageCost": [100, 220, 380, 580, 820, 1100, 1450, 1850, 2300, 2800],
+    "dailyXpCap": 200,
+    "graceHours": 24,
+    "dailyDecayPercentOfStage": 15,
+    "hungerPerHalfHour": 1,
+    "mealHungerDrop": 40
+  },
+  "budgets": { "baseDownloadMb": 25, "coreContentMb": 6 }
+}

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "principle": "One lexical record can belong to many packs; never force one word into one category.",
+  "axes": {
+    "goal": ["communication", "workplace", "academic", "exam"],
+    "exam": ["toeic", "general_english", "cefr_style"],
+    "domain": ["daily_life", "people", "home", "travel", "food", "health", "education", "work", "business", "finance", "technology", "science", "environment", "law", "society", "arts", "sports", "nature", "time_numbers", "grammar_function"],
+    "usage": ["spoken", "written", "formal", "informal", "technical", "idiom", "phrasal_verb", "collocation", "function_word"],
+    "learning": ["picture_candidate", "conversation_candidate", "high_frequency", "word_family_candidate", "polysemy_candidate", "pronunciation_candidate"],
+    "review": ["needs_review", "human_verified"]
+  },
+  "rules": {
+    "communication": "NGSL/common-general membership plus daily-life, people, travel, food, home and high-frequency function words.",
+    "workplace": "BSL membership plus office, business, finance and workplace domains.",
+    "toeic": "TSL membership combined with NGSL; this is vocabulary support, not official exam content or score conversion.",
+    "academic": "NAWL membership plus education, science, research and formal-writing domains.",
+    "picture_candidate": "Concrete nouns, animals, food, objects, places, body parts and visible actions; editor confirmation required.",
+    "polysemy_candidate": "More than one sense or more than one POS; teach senses separately in context.",
+    "pronunciation_candidate": "Has IPA; a near-homophone relation still requires human pronunciation verification."
+  }
+}

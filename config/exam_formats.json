@@ -1,0 +1,43 @@
+{
+  "_note": "Human-verified facts only. null = not officially defined -> the app shows a generic 'Bài thi thử'.",
+  "formats": [
+    {
+      "id": "toeic_p5",
+      "label": "Đọc hiểu — Part 5",
+      "family": "TOEIC",
+      "description": "Câu chưa hoàn chỉnh: chọn 1 trong 4 đáp án để hoàn thành câu.",
+      "exerciseTypes": ["E02", "E11"],
+      "questionCount": 30,
+      "timeLimitMinutes": null,
+      "optionsPerQuestion": 4,
+      "source": "https://www.ets.org/toeic/about/listening-reading.html ; https://www.iibc-global.org/english/toeic/test/lr/about/format.html (Part 5: 30 questions; Reading section 100 questions / 75 minutes, no per-part time limit)"
+    },
+    {
+      "id": "toeic_p6",
+      "label": "Đọc hiểu — Part 6",
+      "family": "TOEIC",
+      "description": "Hoàn thành đoạn văn: mỗi đoạn có 4 chỗ trống (từ, cụm từ hoặc câu).",
+      "exerciseTypes": ["E03"],
+      "questionCount": 16,
+      "passages": 4,
+      "timeLimitMinutes": null,
+      "optionsPerQuestion": 4,
+      "source": "https://www.ets.org/toeic/about/listening-reading.html ; https://www.iibc-global.org/english/toeic/test/lr/about/format.html (Part 6: 16 questions, 4 per text)"
+    },
+    {
+      "id": "school",
+      "label": "Tiếng Anh phổ thông",
+      "family": "THPT",
+      "description": "Các dạng bài quen thuộc ở trường: phát âm, trọng âm, tìm lỗi sai, đồng/trái nghĩa, viết lại câu.",
+      "exerciseTypes": ["E01", "E04", "E12", "E02"],
+      "questionCount": null,
+      "timeLimitMinutes": null,
+      "optionsPerQuestion": 4,
+      "source": null
+    }
+  ],
+  "comingSoon": [
+    { "id": "toeic_p7", "label": "Đọc hiểu — Part 7" },
+    { "id": "ielts", "label": "IELTS (gói mở rộng)" }
+  ]
+}

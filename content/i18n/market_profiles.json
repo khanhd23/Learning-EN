@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "policy": "A market profile selects a reviewed learner locale; it never invents state, exam or cultural facts.",
+  "profiles": [
+    {"country":"MX","name":"Mexico","locale":"es","variant":"es-MX","rtl":false,"goals":["conversation","work","travel","school"],"status":"planned"},
+    {"country":"CO","name":"Colombia","locale":"es","variant":"es-CO","rtl":false,"goals":["conversation","work","travel","school"],"status":"planned"},
+    {"country":"ES","name":"Spain","locale":"es","variant":"es-ES","rtl":false,"goals":["conversation","work","travel","school"],"status":"planned"},
+    {"country":"BR","name":"Brazil","locale":"pt-BR","variant":"pt-BR","rtl":false,"goals":["conversation","work","travel","school"],"status":"planned"},
+    {"country":"ID","name":"Indonesia","locale":"id","variant":"id-ID","rtl":false,"goals":["conversation","work","travel","school"],"status":"planned"},
+    {"country":"IN","name":"India","locale":"hi","variant":"hi-IN","rtl":false,"goals":["conversation","work","school","competitive_exams"],"status":"planned"},
+    {"country":"AE","name":"United Arab Emirates","locale":"ar","variant":"ar-AE","rtl":true,"goals":["conversation","work","travel"],"status":"planned"},
+    {"country":"SA","name":"Saudi Arabia","locale":"ar","variant":"ar-SA","rtl":true,"goals":["conversation","work","travel"],"status":"planned"},
+    {"country":"EG","name":"Egypt","locale":"ar","variant":"ar-EG","rtl":true,"goals":["conversation","work","school"],"status":"planned"},
+    {"country":"JP","name":"Japan","locale":"ja","variant":"ja-JP","rtl":false,"goals":["conversation","work","travel","school"],"status":"planned"},
+    {"country":"KR","name":"South Korea","locale":"ko","variant":"ko-KR","rtl":false,"goals":["conversation","work","travel","school"],"status":"planned"},
+    {"country":"TH","name":"Thailand","locale":"th","variant":"th-TH","rtl":false,"goals":["conversation","work","travel","school"],"status":"planned"},
+    {"country":"FR","name":"France","locale":"fr","variant":"fr-FR","rtl":false,"goals":["conversation","work","travel","school"],"status":"planned"},
+    {"country":"CA","name":"Canada","locale":"fr","variant":"fr-CA","rtl":false,"goals":["conversation","work","travel","school"],"status":"planned"}
+  ]
+}

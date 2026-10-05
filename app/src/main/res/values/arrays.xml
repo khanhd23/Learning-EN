@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="reminder_lines">
+        <item>5 minutes today, {name} is ready to learn.</item>
+        <item>Keep your learning streak going with a quick review.</item>
+        <item>A short practice session is waiting for you.</item>
+    </string-array>
+</resources>

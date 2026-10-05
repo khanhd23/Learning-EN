@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "default": "vi",
+  "policy": "A locale is not shipped until UI is 100% translated, at least 95% of word glosses and 100% of question explanations are reviewed by a native speaker, and listing/RTL QA is complete.",
+  "targets": [
+    {"locale": "es", "language": "Spanish", "markets": ["Mexico", "Colombia", "Spain", "Latin America"], "priority": 1},
+    {"locale": "pt-BR", "language": "Portuguese (Brazil)", "markets": ["Brazil"], "priority": 1},
+    {"locale": "id", "language": "Indonesian", "markets": ["Indonesia"], "priority": 1},
+    {"locale": "hi", "language": "Hindi", "markets": ["India"], "priority": 1},
+    {"locale": "ar", "language": "Arabic", "markets": ["Middle East", "North Africa"], "priority": 1},
+    {"locale": "ja", "language": "Japanese", "markets": ["Japan"], "priority": 2},
+    {"locale": "ko", "language": "Korean", "markets": ["South Korea"], "priority": 2},
+    {"locale": "th", "language": "Thai", "markets": ["Thailand"], "priority": 2},
+    {"locale": "fr", "language": "French", "markets": ["France", "Francophone Africa", "Canada"], "priority": 2}
+  ]
+}
