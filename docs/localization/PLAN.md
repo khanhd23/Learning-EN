@@ -302,6 +302,33 @@ Redo batches 1–2 examples and glosses:
 - Batches are now **100 senses**. Before reporting, run the audit and confirm 0 of: `*_encoding_broken`,
   `example_template`, `example_translation_filler`, `editor_label_on_wordnet_text` for the batch.
 
+**Owner fix of batches 1–2 (2026-10-05): DONE — NGSL ranks 1–400 are complete.**
+The owner rewrote `senses_editor_batch1.tsv` and `senses_editor_batch2.tsv` (370 senses): UTF-8 glosses,
+corrected sense 1 and part of speech, one real example per sense, full Vietnamese translations.
+Audit for these senses: 0 errors. `gen_content.py` now loads every `senses_editor_batch<N>.tsv`,
+applies the `pos` column, keeps only the editor example for a curated sense, and highlights the real
+word form. `tools/check_editor_batch.py` checks a batch file before generation.
+Use `senses_editor_batch1.tsv` / `batch2.tsv` as the model for style and quality.
+
+**Remaining work for Task 1A.1: NGSL ranks 401–1000, in batches of 100 senses.**
+For each batch `<N>` (3, 4, 5 …):
+
+1. List the core entries whose lemma has NGSL rank in the batch range (rank order; skip lemmas not in
+   the core — Task 1B adds them).
+2. Write `tools/authoring/senses_editor_batch<N>.tsv` (UTF-8, LF, header
+   `sense_id	pos	def	vi_gloss	example	example_vi	note`). One row per sense 1. If sense 1 is not the
+   everyday meaning, put the everyday sense first (choose that sense's existing ID, or add the sense in the
+   authoring module) — never repurpose an ID for an unrelated meaning without saying so in the report.
+3. `python tools/check_editor_batch.py tools/authoring/senses_editor_batch<N>.tsv` → `problems=0`.
+4. `python tools/gen_content.py`, `python tools/validate_content.py`, `python tools/audit_content.py`:
+   0 errors on the batch's senses; no new `*_encoding_broken`, `example_template`,
+   `example_translation_filler`, `editor_label_on_wordnet_text` anywhere.
+5. `gradlew check assembleDebug` passes. Report `dist/reports/task-1A.1-batch<N>.md` (one row per sense:
+   word, pos, def, vi gloss, example, example translation). Commit `Task 1A.1 batch <N>: NGSL <from>-<to>`.
+   Stop after one batch.
+
+Tick Task 1A.1 only after the batch covering rank 1000 is accepted.
+
 ### Task 1B: Fill the NGSL gaps
 
 1. Add all 718 missing NGSL lemmas, in rank order. Function words (pronouns, modals, determiners,

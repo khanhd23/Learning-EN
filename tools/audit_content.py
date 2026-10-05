@@ -67,7 +67,7 @@ def wordnet_texts():
 WORDNET = set()
 MOJIBAKE = re.compile("\\w\\?\\w|\\?\\w|�|Ã.|Ä.|á»|áº")
 # Filler that only says "this example shows the word"; it is not a translation.
-FILLER_VI = re.compile(r"minh h.a|v. d. n.y|c.u n.y", re.I)
+FILLER_VI = re.compile(r"minh h.a", re.I)
 EX_SKELETON = collections.Counter()
 EXVI_SKELETON = collections.Counter()
 
@@ -77,6 +77,25 @@ def skeleton(text, word):
     for part in word.lower().split():
         t = re.sub(r"\b" + re.escape(part) + r"\w*", "X", t)
     return re.sub(r"\s+", " ", t).strip()
+
+
+def prepare(words, get_gloss):
+    """Fill the cross-entry state (WordNet texts, sentence skeleton counts) used by audit_word.
+
+    gen_content.py calls this too, so the tier stored in the data matches this audit.
+    """
+    WORDNET.clear()
+    WORDNET.update(wordnet_texts())
+    EX_SKELETON.clear()
+    EXVI_SKELETON.clear()
+    for w in words:
+        for s_ in w.get("senses") or []:
+            for e in s_.get("ex") or []:
+                EX_SKELETON[skeleton(e.get("text") or "", w["lemma"])] += 1
+        gl = get_gloss(w)
+        for gs in (gl or {}).get("senses") or []:
+            for tr in (gs.get("ex") or {}).values():
+                EXVI_SKELETON[skeleton(tr or "", gs.get("g") or "~")] += 1
 
 
 def has_vi(text):
@@ -201,7 +220,11 @@ def audit_word(w, gl, ranks, easy, topic_size):
             for tr in (gs.get("ex") or {}).values():
                 if MOJIBAKE.search(tr or ""):
                     errors.append(f"s{i + 1}:example_translation_encoding_broken")
-                if FILLER_VI.search(tr or "") or EXVI_SKELETON[skeleton(tr or "", gs.get("g") or "~")] > 3:
+                sk = skeleton(tr or "", gs.get("g") or "~")
+                # A repeated frame counts only when it has real fixed words around the slot
+                # ("Câu này minh họa cách dùng từ X"), not for one- or two-word translations.
+                fixed_words = [t for t in sk.split() if "X" not in t]
+                if FILLER_VI.search(tr or "") or (EXVI_SKELETON[sk] > 3 and len(fixed_words) >= 3):
                     errors.append(f"s{i + 1}:example_translation_filler")
 
     tier = "bronze" if errors else ("gold" if w.get("tier") == "gold" else "silver")
@@ -227,21 +250,13 @@ def main():
     else:
         get_gloss = lambda w: None  # noqa: E731
 
-    WORDNET.update(wordnet_texts())
     ranks = ngsl_ranks()
     easy = {k for k, r in ranks.items() if r <= 2000} | {
         "i", "you", "he", "she", "it", "we", "they", "a", "an", "the", "is", "am", "are", "was", "were",
         "my", "your", "his", "her", "our", "their", "me", "him", "us", "them", "don't", "can't", "it's", "i'm"}
     topic_size = collections.Counter(t for w in words for t in w.get("topics") or [])
 
-    for w in words:
-        for s_ in w.get("senses") or []:
-            for e in s_.get("ex") or []:
-                EX_SKELETON[skeleton(e.get("text") or "", w["lemma"])] += 1
-        gl = get_gloss(w)
-        for gs in (gl or {}).get("senses") or []:
-            for tr in (gs.get("ex") or {}).values():
-                EXVI_SKELETON[skeleton(tr or "", gs.get("g") or "~")] += 1
+    prepare(words, get_gloss)
 
     rows, err_count, warn_count = [], collections.Counter(), collections.Counter()
     tiers, tier_by_level = collections.Counter(), collections.Counter()

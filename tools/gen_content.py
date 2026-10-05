@@ -23,22 +23,69 @@ def load_editor_rows(filename):
         for line in f:
             if not line.strip() or line.startswith("sense_id\t"):
                 continue
-            sid, definition, gloss, example, example_vi, note = line.rstrip("\n").split("\t", 5)
+            cols = line.rstrip("\n").split("\t")
+            if len(cols) == 7:
+                sid, pos, definition, gloss, example, example_vi, note = cols
+            else:
+                sid, definition, gloss, example, example_vi, note = cols[:6]
+                pos = ""
             rows[sid] = {
-                "def": definition, "gloss": gloss, "example": example,
+                "pos": pos, "def": definition, "gloss": gloss, "example": example,
                 "example_vi": example_vi, "note": note,
             }
     return rows
 
 
-EDITOR_BATCH1 = load_editor_rows("senses_editor_batch1.tsv")
-EDITOR_BATCH2 = load_editor_rows("senses_editor_batch2.tsv")
+def load_all_editor_rows():
+    """Merge every tools/authoring/senses_editor_batch<N>.tsv in batch order."""
+    folder = os.path.join(ROOT, "tools", "authoring")
+    names = [n for n in os.listdir(folder) if re.fullmatch(r"senses_editor_batch\d+\.tsv", n)]
+    rows = {}
+    for name in sorted(names, key=lambda n: int(re.search(r"\d+", n).group())):
+        rows.update(load_editor_rows(name))
+    return rows
+
+
+EDITOR_ROWS = load_all_editor_rows()
 
 VI_CHARS = set("áạảãấầẩẫậắằẳẵặđẹẻẽếềểễệỉĩịọỏõốồổỗộớờởỡợụủũứừửữựỳỷỹỵ")
 
 
 def has_vi(text):
     return any(c in VI_CHARS for c in (text or "").lower())
+
+
+IRREGULAR_FORMS = {
+    "be": ["am", "is", "are", "was", "were", "been", "being"], "have": ["has", "had"],
+    "do": ["does", "did", "done"], "go": ["goes", "went", "gone"], "say": ["said"],
+    "make": ["made"], "take": ["took", "taken"], "come": ["came"], "see": ["saw", "seen"],
+    "get": ["got", "gotten"], "give": ["gave", "given"], "find": ["found"], "think": ["thought"],
+    "tell": ["told"], "become": ["became"], "leave": ["left"], "feel": ["felt"], "bring": ["brought"],
+    "begin": ["began", "begun"], "keep": ["kept"], "hold": ["held"], "write": ["wrote", "written"],
+    "stand": ["stood"], "hear": ["heard"], "let": ["let"], "mean": ["meant"], "set": ["set"],
+    "meet": ["met"], "run": ["ran"], "pay": ["paid"], "sit": ["sat"], "speak": ["spoke", "spoken"],
+    "lose": ["lost"], "fall": ["fell", "fallen"], "send": ["sent"], "build": ["built"],
+    "understand": ["understood"], "spend": ["spent"], "grow": ["grew", "grown"], "win": ["won"],
+    "buy": ["bought"], "break": ["broke", "broken"], "drive": ["drove", "driven"],
+    "read": ["read"], "put": ["put"], "learn": ["learned", "learnt"], "i": ["I"],
+}
+
+
+def highlight_form(example, lemma):
+    """Return the exact word form of `lemma` used in `example`, for highlighting."""
+    head = lemma.split()[0]
+    tokens = re.findall(r"[A-Za-z']+", example)
+    candidates = [head] + IRREGULAR_FORMS.get(head.lower(), [])
+    for tok in tokens:
+        low = tok.lower()
+        if any(low == c.lower() for c in candidates):
+            return tok
+    stem = head.lower().rstrip("e")
+    for tok in tokens:
+        low = tok.lower()
+        if low.startswith(stem) and len(low) - len(head) <= 4:
+            return tok
+    return head
 
 
 def normalize_ipa(value):
@@ -122,20 +169,22 @@ def upgrade_schema(words, vi):
             }:
                 sense["def"] = ""
                 def_source = "template"
-            curated = EDITOR_BATCH1.get(sid) if index == 0 else None
-            if index == 0 and sid in EDITOR_BATCH2:
-                curated = EDITOR_BATCH2[sid]
+            curated = EDITOR_ROWS.get(sid)
             if curated:
                 sense["def"] = curated["def"]
                 def_source = "editor"
+                if curated.get("pos"):
+                    sense["pos"] = curated["pos"]
+                # A curated sense keeps exactly one example: the editor's sentence.
+                # Older dictionary fragments attached to the same sense are dropped.
+                ex_id = ((sense.get("ex") or [{}])[0].get("id")) or sense["id"]
+                sense["ex"] = [{"id": ex_id, "text": curated["example"],
+                                "hl": highlight_form(curated["example"], word["lemma"])}]
                 locale_word = vi.get("words", {}).get(word["id"])
                 if locale_word and len(locale_word.get("senses", [])) > index:
                     locale_sense = locale_word["senses"][index]
                     locale_sense["g"] = curated["gloss"]
-                    locale_sense.setdefault("ex", {})[sense["id"]] = curated["example_vi"]
-                if sense.get("ex"):
-                    sense["ex"][0]["text"] = curated["example"]
-                    sense["ex"][0]["hl"] = word["lemma"]
+                    locale_sense["ex"] = {ex_id: curated["example_vi"]}
             sense["defSource"] = def_source
             sense.setdefault("register", "neutral")
             if def_source != "editor":
@@ -308,6 +357,7 @@ def main():
     for w in words:
         for topic in w.get("topics") or []:
             topic_size[topic] = topic_size.get(topic, 0) + 1
+    audit_content.prepare(words, lambda w: vi["words"].get(w["id"]))
     for w in words:
         errors, _, _ = audit_content.audit_word(w, vi["words"].get(w["id"]), ranks, easy, topic_size)
         w["tier"] = "bronze" if errors else "silver"
