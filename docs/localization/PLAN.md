@@ -19,6 +19,8 @@ write `dist/reports/task-<N>.md`, then stop.
 - [x] Task 4: `tools/locale.py` operations tool
 - [x] Task 5: UI localization (English default, `values-xx`)
 - [x] Task 6: Show only approved content; language picker  *(Codex)*
+- [x] Task 6.1: UI follows the chosen language  *(Codex)*
+- [ ] Task 6.2: Language sync + English-source checks  *(Codex)*
 - [ ] Task 7: Spanish pilot (Level 1)
 - [ ] Task 8: Store listings per locale
 
@@ -631,6 +633,43 @@ stay in their own language in both files. Not yet checked on a device: text leng
   `tools/authoring/question_expl_en.txt` (579 questions + 32 passage blanks). They compile into
   `content/en/*.json` (`when`, `body`, `mistakes[].why`, `expl`), English mode shows them, and
   `locale.py draft` translates them. Do not edit these files; report problems to the owner.
+
+### Task 6.1 review (owner)
+
+Accepted. `AppLocale` + `locales_config.xml` work; onboarding recreates on the language step (step 0),
+so no progress is lost. One gap, fixed in Task 6.2: on Android 13+, a language chosen in the system's
+per-app language settings is overwritten at the next launch, because `App.onCreate` always applies
+`settings.contentLocale`.
+
+## Task 6.2: Language sync + English-source checks  *(Codex, code only)*
+
+1. **System per-app language wins.** In `App.onCreate`, before `AppLocale.apply(...)`: read
+   `AppCompatDelegate.getApplicationLocales()`. If it is non-empty, map its first tag with
+   `AppLocale.initialLocale(tag, selectableLocales())`; if the result differs from
+   `settings.contentLocale`, store it (`contentLocale`, `contentLocaleChosen = true`). Only then
+   apply. Unit-test the decision as a pure function (e.g. `AppLocale.resolve(stored, systemTag,
+   selectable)`), including "system tag not selectable → keep stored".
+2. **Validation of English sources** in `tools/validate_content.py` (errors, not warnings), with
+   tests in `tools/tests/test_validate_content.py`:
+   - every grammar point in `content/en/grammar.json` has non-empty `when` and `body`, and every
+     mistake has a non-empty `why`;
+   - every question except type `E05` has a non-empty `expl`; every passage blank has `expl`;
+   - none of `title`, `when`, `body`, `why`, `expl`, topic `name` contains Vietnamese letters (use
+     the existing Vietnamese-character check).
+3. **Locale draft tests** in `tools/tests/test_locale.py` (fake provider, as in the existing tests):
+   - grammar draft translates `title`, `when`, `body`, each `why`, examples; never the formula,
+     signals or the wrong/right sentences;
+   - question draft translates only `expl` (stem and options never sent to the provider);
+     passage draft returns one translated string per blank; topic draft translates `name`;
+   - an item without an English source still drafts to empty (keep the old guarantee).
+   Rename/adjust the old tests whose names now say the fields "stay empty".
+4. Run `python tools/gen_content.py`, `python tools/validate_content.py`,
+   `python -m unittest discover -s tools/tests`, `./gradlew check assembleDebug`. All must pass on
+   the current content (the owner's English sources are complete — if a check fails on real
+   content, report it; do not edit content to make it pass).
+5. One commit: `Task 6.2: language sync and English-source checks`. Report in
+   `dist/reports/task-6.2.md`. Do not push. Do not touch `tools/authoring/*`, `content/**`,
+   `res/values*/strings.xml`.
 
 ## Task 7: Spanish pilot (Level 1)
 
