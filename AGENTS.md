@@ -71,6 +71,7 @@ session, and do not start a task until the previous one is ticked in that file.
 7. Commit all changes of the task as one git commit on `main`, message `Task <N>: <short summary>`
    (batches: `Task <N> batch <k>: …`). Never rewrite history (`reset --hard`, `rebase`, `push --force`,
    `commit --amend` on earlier tasks). If the owner rejects a task, fix it in a new commit.
+   **Never `git push`.** The owner reviews every commit first and pushes only what passes review.
 8. Stop. Do not start the next task.
 
 ## 4. Style
