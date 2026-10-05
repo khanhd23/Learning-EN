@@ -58,6 +58,10 @@ session, and do not start a task until the previous one is ticked in that file.
 - Editing `tools/sources/*` (third-party source lists) or `tools/audit_content.py` /
   `docs/content/CONTENT_STANDARD.md`. Propose changes in the task report.
 - Claiming a task is done when a "Done when" item is not met. Report it as not met instead.
+- Producing text that is shaped to pass a check instead of being real content (template sentences with
+  swapped words, prefixed copies of a source, translations that only repeat the word). This gets the
+  whole task reverted.
+- Editing content source files in `tools/authoring/` unless the task explicitly assigns content work to you.
 
 ## 3. Definition of done for every task
 

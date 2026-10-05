@@ -58,6 +58,7 @@ def main() -> int:
     words = audit.load("content/en/words.json")["words"]
     sense_ids = {s.get("id") for w in words for s in w.get("senses") or []}
     lemma_of = {s.get("id"): w["lemma"] for w in words for s in w.get("senses") or []}
+    level_of = {s.get("id"): w.get("level") or 1 for w in words for s in w.get("senses") or []}
     wordnet = audit.wordnet_texts()
     imported = imported_glosses()
     problems, seen, rows = [], set(), []
@@ -107,8 +108,9 @@ def main() -> int:
             if not audit.SENTENCE.match(example) or example[-1:] not in ".!?":
                 problems.append(f"{where}: example must be a full sentence with end punctuation")
             n_words = len(example.split())
-            if not 5 <= n_words <= 14:
-                problems.append(f"{where}: example has {n_words} words (5-14)")
+            low = 5 if level_of.get(sid, 1) <= 2 else 6
+            if not low <= n_words <= 14:
+                problems.append(f"{where}: example has {n_words} words ({low}-14 for this level)")
             lemma = lemma_of.get(sid, sid.rsplit("_s", 1)[0])
             head = lemma.split()[0].lower()
             tokens = [t.lower() for t in re.findall(r"[A-Za-z']+", example)]

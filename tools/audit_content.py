@@ -22,6 +22,8 @@ VI_LETTERS = set("ạảãắằẳẵặấầẩẫậđẹẻẽếềểễ�
 SENTENCE = re.compile(r"""^["'(]?[A-Z0-9]""")
 WORD = re.compile(r"[A-Za-z']+")
 CATCH_ALL_SIZE = 300
+# Words whose real IPA happens to match their spelling.
+IPA_EQUALS_SPELLING = {"ski"}
 # Collocation "frames" that say nothing about how a word is really used.
 TEMPLATE_COLL = {"the x", "a x", "an x", "x something", "x together", "very x", "x example", "x today",
                  "x enough", "use of x", "meaning of x", "x it", "x this", "x that", "x thing"}
@@ -70,7 +72,7 @@ def wordnet_texts():
 WORDNET = set()
 MOJIBAKE = re.compile("\\w\\?\\w|\\?\\w|�|Ã.|Ä.|á»|áº")
 # Filler that only says "this example shows the word"; it is not a translation.
-FILLER_VI = re.compile(r"minh h.a", re.I)
+FILLER_VI = re.compile(r"minh h.a (ngh.a|c.ch d.ng)|qua t. \"|khi th.o lu.n t. \"", re.I)
 EX_SKELETON = collections.Counter()
 EXVI_SKELETON = collections.Counter()
 
@@ -148,7 +150,8 @@ def audit_word(w, gl, ranks, easy, topic_size):
             errors.append("ipa_format:" + "".join(bad))
         letters = re.sub(r"[ˈˌː ]", "", ipa)
         # Real IPA writes vowels with IPA symbols (æ ɛ ɪ ɑ ʌ …), so it almost never equals the spelling.
-        if len(w["lemma"]) >= 2 and letters == re.sub(r"[^a-z]", "", w["lemma"].lower()):
+        if len(w["lemma"]) >= 2 and letters == re.sub(r"[^a-z]", "", w["lemma"].lower()) \
+                and w["lemma"].lower() not in IPA_EQUALS_SPELLING:
             errors.append("ipa_is_spelling")
 
     max_senses = 3 if (level or 9) <= 2 else 4

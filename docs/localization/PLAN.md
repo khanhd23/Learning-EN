@@ -8,11 +8,11 @@ write `dist/reports/task-<N>.md`, then stop.
 - [x] Task 0: Freeze the broken Spanish draft
 - [x] Task 1A: Schema upgrade (sense IDs, `def`, `tier`, `forms`, `hl`) + quarantine imports
 - [x] Task 1A.1: Fix Task 1A regressions (question translations, placeholder/auto definitions)
-- [ ] Task 1B: Fill the NGSL gaps (718 missing lemmas, function words first)
-- [ ] Task 1C: Rewrite Level 1–2 entries to the standard
-- [ ] Task 1D: Topics: replace catch-all topics with the controlled list
-- [ ] Task 1E: Rewrite Level 3 entries; re-level by frequency band
-- [ ] Task 1F: Grammar questions, confusables, families up to target
+- [x] Task 1B: Fill the NGSL gaps (718 missing lemmas, function words first)
+- [ ] Task 1C: Rewrite Level 1–2 entries to the standard  *(owner/Claude, in parallel — see note)*
+- [ ] Task 1D: Topics: replace catch-all topics with the controlled list  *(owner/Claude, in parallel)*
+- [ ] Task 1E: Rewrite Level 3 entries; re-level by frequency band  *(owner/Claude, in parallel)*
+- [ ] Task 1F: Grammar questions, confusables, families up to target  *(owner/Claude, in parallel)*
 - [ ] Task 2: Per-locale folder layout + review status
 - [ ] Task 3: Validation rules
 - [ ] Task 4: `tools/locale.py` operations tool
@@ -396,6 +396,22 @@ entries:
   `{"past": "began", "pp": "begun"}`, `{"plural": "analyses"}`; otherwise `{}`.
 The audit now reports `ipa_is_spelling` and `collocation_template`; both must be 0 for new entries.
 (46 older entries also have spelling-as-IPA, e.g. `bed`, `ten`, `desk` — fix them in Task 1C.)
+
+**Owner review of Task 1B batch 7 (2026-10-05): REJECTED and reverted (`6d3179f`); rewritten by the owner.**
+The Codex batch was built to pass the checks without being real content:
+- examples from one template with a random word swapped in so the repeat check would not match
+  ("The report links the bell to abroad during the study.", "The report links the hello to download…");
+- WordNet definitions with "a type of …" / "describing something that …" prefixes to dodge the WordNet check;
+- translations that only name the word ("…qua từ "bell"", "Người nói phản hồi … khi thảo luận từ…");
+- collocation frames swapped for new ones ("public X; social X" ×172, "actively X; carefully X");
+- machine IPA with misplaced stress (`hˈoʊldɝ`) and random topics (`tension` → food, `planet` → linking).
+The owner wrote all 326 entries (IPA, pos, topic, collocations, def, gloss, example, translation).
+Task 1B is done: NGSL lemmas missing = 0; all 718 new entries pass the audit.
+
+**Who does what from here.** Content writing (Tasks 1C–1F) is done by the owner with Claude, because the
+checks cannot catch every way of producing text that only looks finished. Codex continues with the code
+tasks, starting with **Task 2**, which does not depend on 1C–1F. AGENTS.md "do tasks in order" applies to
+Codex's own sequence: Task 2 → 3 → 4 → 5 → 6. Codex must not edit `tools/authoring/*` content files.
 
 ### Task 1C: Rewrite Level 1–2 entries to the standard
 

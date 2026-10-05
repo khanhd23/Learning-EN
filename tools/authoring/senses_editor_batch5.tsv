@@ -14,7 +14,7 @@ fire_s1	n	flames that burn and produce heat	đám cháy	The firefighters put out
 compare_s1	v	to look for similarities and differences	so sánh	Compare prices before you buy.	So sánh giá trước khi mua.	editor 2026-10-05
 court_s1	n	a place where legal cases are heard	tòa án	The case will go to court next month.	Vụ việc sẽ được đưa ra tòa vào tháng sau.	editor 2026-10-05
 store_s1	n	a shop that sells goods	cửa hàng	I bought fresh fruit at the local store.	Tôi mua trái cây tươi ở cửa hàng địa phương.	editor 2026-10-05
-knowledge_s1	n	information and understanding gained through learning	kiến thức	Reading improves your general knowledge.	Đọc sách giúp mở rộng kiến thức chung.	editor 2026-10-05
+knowledge_s1	n	information and understanding gained through learning	kiến thức	Reading every day improves your general knowledge.	Đọc sách mỗi ngày giúp mở rộng kiến thức chung.	editor 2026-10-05
 laugh_s1	v	to make sounds that show amusement	cười	The children laugh when the puppy jumps.	Bọn trẻ cười khi chú chó con nhảy lên.	editor 2026-10-05 [first] everyday sense
 heart_s1	n	the organ that pumps blood	tim	Exercise keeps your heart healthy.	Tập thể dục giúp tim khỏe.	editor 2026-10-05
 source_s1	n	where something comes from	nguồn	Always check the source of the news.	Luôn kiểm tra nguồn tin.	editor 2026-10-05 owner fix
@@ -97,14 +97,14 @@ occur_s1	v	to happen	xảy ra	Most accidents occur when roads are wet.	Hầu h�
 alone_s1	adj	without other people	một mình (không có ai khác)	She was alone in the classroom.	Cô ấy ở một mình trong lớp.	editor 2026-10-05
 significant_s1	adj	important or large enough to notice	đáng kể, quan trọng	There was a significant increase in sales.	Doanh số tăng đáng kể.	editor 2026-10-05
 wall_s1	n	a vertical structure that encloses or divides	tường	She put a clock on the wall.	Cô ấy treo đồng hồ lên tường.	editor 2026-10-05
-series_s1	n	a group of related things in order	loạt, chuỗi	This series has five seasons.	Bộ phim này có năm mùa.	editor 2026-10-05
+series_s1	n	a group of related things in order	loạt, chuỗi	This TV series has five seasons so far.	Bộ phim truyền hình này đến nay có năm mùa.	editor 2026-10-05
 direct_s1	v	to control or guide something	hướng dẫn, chỉ đường	A guide will direct visitors to the museum.	Một hướng dẫn viên sẽ chỉ đường cho khách đến bảo tàng.	editor 2026-10-05 owner fix
 success_s1	n	the achievement of a desired result	thành công	Hard work was the key to her success.	Làm việc chăm chỉ là chìa khóa thành công của cô ấy.	editor 2026-10-05
 tomorrow_s1	adv	the day after today	ngày mai	We are visiting our grandparents tomorrow.	Ngày mai chúng tôi sẽ thăm ông bà.	editor 2026-10-05
 director_s1	n	a person who controls a film or organization	đạo diễn, giám đốc	The director won an award.	Vị đạo diễn đã giành giải thưởng.	editor 2026-10-05
 clearly_s1	adv	in a way that is easy to understand	rõ ràng	Please explain the instructions clearly to everyone.	Vui lòng giải thích hướng dẫn rõ ràng cho mọi người.	editor 2026-10-05 owner fix
 lack_s1	v	to not have enough of something	thiếu	The project may fail because it lacks funding.	Dự án có thể thất bại vì thiếu kinh phí.	editor 2026-10-05
-review_s1	n	a report giving an opinion of a film, book, or product	bài đánh giá, nhận xét	The film got great reviews.	Bộ phim nhận được đánh giá rất tốt.	editor 2026-10-05 owner fix
+review_s1	n	a report giving an opinion of a film, book, or product	bài đánh giá, nhận xét	The new film got great reviews online.	Bộ phim mới nhận được nhiều đánh giá rất tốt trên mạng.	editor 2026-10-05 owner fix
 depend_s1	v	to need someone or something	phụ thuộc	Success can depend on careful preparation.	Thành công có thể phụ thuộc vào sự chuẩn bị kỹ lưỡng.	editor 2026-10-05
 race_s1	n	a competition to move fastest	cuộc đua	She won the race by two seconds.	Cô ấy thắng cuộc đua với cách biệt hai giây.	editor 2026-10-05
 recognize_s1	v	to know someone or something from before	nhận ra	I recognized her voice on the phone.	Tôi nhận ra giọng cô ấy qua điện thoại.	editor 2026-10-05 owner fix
@@ -114,7 +114,7 @@ department_s1	n	a section of an organization	phòng ban, bộ phận	She works i
 gain_s1	v	to get more of something	đạt được, thu được	She gained a lot of experience abroad.	Cô ấy có được nhiều kinh nghiệm ở nước ngoài.	editor 2026-10-05 owner fix
 tree_s1	n	a tall plant with a trunk	cây	A tall tree shades the garden in summer.	Một cây cao che bóng cho khu vườn vào mùa hè.	editor 2026-10-05 owner fix
 college_s1	n	a place for higher education	trường cao đẳng, đại học	My sister starts college in September.	Chị gái tôi bắt đầu học đại học vào tháng Chín.	editor 2026-10-05
-argue_s1	v	to disagree and give reasons	cãi nhau	My brothers argue about everything.	Các anh tôi cãi nhau về mọi thứ.	editor 2026-10-05
+argue_s1	v	to disagree and give reasons	cãi nhau	My two brothers argue about everything.	Hai anh trai tôi cãi nhau về mọi thứ.	editor 2026-10-05
 board_s1	n	a flat piece of wood or other material	bảng, tấm ván	Write your answer on the white board.	Hãy viết câu trả lời lên bảng trắng.	editor 2026-10-05 owner fix
 holiday_s1	n	a period when people rest or travel	kỳ nghỉ	We visited a quiet village during the holiday.	Chúng tôi thăm một ngôi làng yên tĩnh trong kỳ nghỉ.	editor 2026-10-05
 mark_s1	n	a number or letter showing how good your work is	điểm số	She got full marks on the test.	Cô ấy đạt điểm tuyệt đối bài kiểm tra.	editor 2026-10-05 owner fix
@@ -176,7 +176,7 @@ shall_s1	v	used to talk about a future action	sẽ	We shall meet outside the lib
 modern_s1	adj	belonging to the present time	hiện đại	The museum has a modern design and bright rooms.	Bảo tàng có thiết kế hiện đại và các phòng sáng.	editor 2026-10-05 [keep-gloss]
 pressure_s1	n	a force that pushes against something	áp lực, áp suất	High pressure can damage the water pipe.	Áp suất cao có thể làm hỏng ống nước.	editor 2026-10-05
 bus_s1	n	a large road vehicle for passengers	xe buýt	The last bus leaves at eleven tonight.	Chuyến xe buýt cuối rời đi lúc mười một giờ tối nay.	editor 2026-10-05 [keep-gloss]
-treatment_s1	n	medical care for an illness	sự điều trị	The treatment takes six weeks.	Việc điều trị kéo dài sáu tuần.	editor 2026-10-05
+treatment_s1	n	medical care for an illness	sự điều trị	The treatment for her knee takes six weeks.	Việc điều trị đầu gối của cô ấy kéo dài sáu tuần.	editor 2026-10-05
 conference_s1	n	a formal meeting for discussion	hội nghị	The conference will be held in the capital city.	Hội nghị sẽ được tổ chức tại thủ đô.	editor 2026-10-05 owner fix
 supply_s1	n	an amount available for use	nguồn cung	The town has a safe supply of drinking water.	Thị trấn có nguồn nước uống an toàn.	editor 2026-10-05 owner fix
 worth_s1	adj	having a particular value	đáng, có giá trị	This old camera is still worth repairing.	Chiếc máy ảnh cũ này vẫn đáng để sửa.	editor 2026-10-05 owner fix
@@ -208,7 +208,7 @@ tend_s1	v	to usually do or be something	có xu hướng	Young children tend to a
 advance_s1	v	to move forward	tiến lên, tiến bộ	The soldiers advanced slowly through the valley.	Những người lính tiến chậm qua thung lũng.	editor 2026-10-05 owner fix
 fill_s1	v	to make something full	làm đầy	Please fill the bottle with clean water.	Vui lòng đổ đầy chai bằng nước sạch.	editor 2026-10-05
 star_s1	n	a bright object in the night sky	ngôi sao	We saw a bright star above the trees.	Chúng tôi thấy một ngôi sao sáng trên những cái cây.	editor 2026-10-05 owner fix
-network_s1	n	a system of connected people or things	mạng (lưới)	The office network is down.	Mạng văn phòng đang bị sập.	editor 2026-10-05
+network_s1	n	a system of connected people or things	mạng (lưới)	The office network is down this morning.	Sáng nay mạng văn phòng bị sập.	editor 2026-10-05
 generally_s1	adv	in most cases	nói chung, thường	People generally feel better after enough sleep.	Mọi người thường cảm thấy khỏe hơn sau khi ngủ đủ.	editor 2026-10-05 owner fix
 operation_s1	n	a medical treatment in which a doctor cuts the body	ca phẫu thuật	She needs an operation on her knee.	Cô ấy cần phẫu thuật đầu gối.	editor 2026-10-05 owner fix
 match_s1	v	to be the same or look good together	hợp với, khớp với	These curtains match the color of the sofa.	Những chiếc rèm này hợp với màu của ghế sofa.	editor 2026-10-05 owner fix
@@ -256,7 +256,7 @@ profit_s1	n	money left after costs are paid	lợi nhuận	The company made a lar
 guess_s1	v	to give an answer without being sure	đoán	I guess the meeting will finish soon.	Tôi đoán cuộc họp sẽ sớm kết thúc.	editor 2026-10-05 owner fix
 fun_s1	adj	enjoyable and amusing	vui, thú vị	The cooking class was fun.	Buổi học nấu ăn rất vui.	editor 2026-10-05
 protect_s1	v	to keep someone or something safe	bảo vệ	Sunscreen helps protect your skin from burns.	Kem chống nắng giúp bảo vệ da bạn khỏi bị bỏng.	editor 2026-10-05
-resource_s1	n	a useful supply of something	tài nguyên, nguồn lực	Water is a precious resource.	Nước là tài nguyên quý giá.	editor 2026-10-05
+resource_s1	n	a useful supply of something	tài nguyên, nguồn lực	Clean water is a precious natural resource.	Nước sạch là một tài nguyên thiên nhiên quý giá.	editor 2026-10-05
 science_s1	n	the study of the natural world	khoa học	She studies science at school every morning.	Cô ấy học khoa học ở trường mỗi sáng.	editor 2026-10-05 [keep-gloss]
 balance_s1	n	the amount left in an account	số dư	Please check your account balance online.	Vui lòng kiểm tra số dư tài khoản trực tuyến.	editor 2026-10-05
 damage_s1	n	harm that makes something worse	sự thiệt hại	The storm caused serious damage to the roof.	Cơn bão gây thiệt hại nghiêm trọng cho mái nhà.	editor 2026-10-05 [keep-gloss]
@@ -269,7 +269,7 @@ reflect_s1	v	to send back light, heat, or sound	phản chiếu	The lake reflects
 exercise_s1	n	physical activity to keep healthy	sự tập thể dục, bài tập	Regular exercise is good for your heart.	Tập thể dục đều đặn tốt cho tim.	editor 2026-10-05
 useful_s1	adj	helpful for a purpose	hữu ích, có ích	This dictionary is useful for new learners.	Từ điển này hữu ích cho người học mới.	editor 2026-10-05 owner fix
 income_s1	n	money received regularly	thu nhập	His monthly income covers the rent and food.	Thu nhập hằng tháng của anh ấy đủ trả tiền thuê và thức ăn.	editor 2026-10-05 owner fix
-property_s1	n	something owned by a person or group	tài sản	Do not damage public property.	Không được làm hư hại tài sản công.	editor 2026-10-05
+property_s1	n	something owned by a person or group	tài sản	Please do not damage public property.	Vui lòng không làm hư hại tài sản công.	editor 2026-10-05
 previous_s1	adj	happening before another time	trước đó	The previous owner painted the house blue.	Chủ cũ đã sơn ngôi nhà màu xanh.	editor 2026-10-05
 dark_s1	adj	having little or no light	tối, u ám	The room became dark after the lights failed.	Căn phòng trở nên tối sau khi đèn hỏng.	editor 2026-10-05
 imagine_s1	v	to form a picture in your mind	tưởng tượng	Imagine living in a city without cars.	Hãy tưởng tượng sống trong một thành phố không có ô tô.	editor 2026-10-05 owner fix
