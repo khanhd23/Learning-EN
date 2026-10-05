@@ -136,10 +136,17 @@ class EnglishApp : Application() {
             StrictMode.setThreadPolicy(StrictMode.ThreadPolicy.Builder().detectNetwork().penaltyLog().build())
         }
         services = Services(this)
-        if (!services.settings.contentLocaleChosen) {
-            val systemTag = resources.configuration.locales[0]?.toLanguageTag().orEmpty()
-            val systemLocale = AppLocale.initialLocale(systemTag, services.contentRepo.selectableLocales())
-            services.settings.contentLocale = systemLocale
+        val selectable = services.contentRepo.selectableLocales()
+        val appLocaleTag = AppCompatDelegate.getApplicationLocales().let { locales ->
+            if (locales.isEmpty) "" else locales[0]?.toLanguageTag().orEmpty()
+        }
+        if (appLocaleTag.isNotBlank()) {
+            val systemLocale = AppLocale.resolve(services.settings.contentLocale, appLocaleTag, selectable)
+            if (systemLocale != services.settings.contentLocale) services.settings.contentLocale = systemLocale
+            services.settings.contentLocaleChosen = true
+        } else if (!services.settings.contentLocaleChosen) {
+            val deviceTag = resources.configuration.locales[0]?.toLanguageTag().orEmpty()
+            services.settings.contentLocale = AppLocale.initialLocale(deviceTag, selectable)
         }
         AppLocale.apply(services.settings.contentLocale)
         AppCompatDelegate.setDefaultNightMode(services.settings.nightMode)

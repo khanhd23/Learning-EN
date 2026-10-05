@@ -103,11 +103,39 @@ class DraftSources(unittest.TestCase):
         self.assertIn(("bank", "a business that keeps money I went to the bank."), self.calls)
         self.assertEqual(value["ex"]["bank_s1"], "<I went to the bank.>")
 
-    def test_grammar_examples_are_dicts_and_text_fields_stay_empty(self):
-        item = {"kind": "grammar", "source": {"examples": [{"en": "I am a student.", "hl": "am"}], "mistakes": [{"wrong": "x"}]}}
+    def test_grammar_draft_translates_english_source_fields_only(self):
+        item = {"kind": "grammar", "source": {
+            "title": "The title", "when": "When to use it", "body": "How it works",
+            "formula": "S + V", "signals": ["always"],
+            "examples": [{"en": "I am a student.", "hl": "am"}],
+            "mistakes": [{"wrong": "She are here.", "right": "She is here.", "why": "The subject is singular."}]
+        }}
         value = locale_tool.draft_value(item, "es", "deepl", "key")
         self.assertEqual(value["examples"], ["<I am a student.>"])
-        self.assertEqual((value["title"], value["body"], value["mistakes"]), ("", "", [""]))
+        self.assertEqual(value["title"], "<The title>")
+        self.assertEqual(value["when"], "<When to use it>")
+        self.assertEqual(value["body"], "<How it works>")
+        self.assertEqual(value["mistakes"], ["<The subject is singular.>"])
+        sent = [text for text, _ in self.calls]
+        self.assertNotIn("S + V", sent)
+        self.assertNotIn("always", sent)
+        self.assertNotIn("She are here.", sent)
+        self.assertNotIn("She is here.", sent)
+
+    def test_question_passage_and_topic_drafts_use_only_english_explanations(self):
+        question = {"kind": "questions", "source": {
+            "stem": "Choose ___", "opts": ["one", "two"], "expl": "The first option fits."
+        }}
+        self.assertEqual(locale_tool.draft_value(question, "es", "deepl", "key"), "<The first option fits.>")
+        self.assertEqual(self.calls[-1][0], "The first option fits.")
+
+        passage = {"kind": "passages", "source": {"blanks": [
+            {"expl": "First blank."}, {"expl": ""}
+        ]}}
+        self.assertEqual(locale_tool.draft_value(passage, "es", "deepl", "key"),
+                         {"blanks": ["<First blank.>", ""]})
+        topic = {"kind": "topics", "source": {"name": "Daily life"}}
+        self.assertEqual(locale_tool.draft_value(topic, "es", "deepl", "key"), "<Daily life>")
 
     def test_no_english_source_means_no_draft(self):
         self.assertEqual(locale_tool.draft_value({"kind": "questions", "source": {"stem": "Lack of sleep can ___."}}, "es", "deepl", "k"), "")

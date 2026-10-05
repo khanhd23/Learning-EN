@@ -80,6 +80,35 @@ class Task3ValidationFixtures(unittest.TestCase):
         self.assertEqual(result["by"], "owner")
         self.assertNotEqual(result["src"], "old")
 
+    def test_english_source_checks_require_explanations_and_reject_vietnamese(self):
+        self.write("content/en/grammar.json", {"points": [{
+            "id": "g1", "title": "Title", "when": "When", "body": "Body",
+            "mistakes": [{"why": "Why"}]
+        }]})
+        self.write("content/en/questions.json", {
+            "questions": [{"id": "q1", "type": "E02", "expl": "Explain"},
+                          {"id": "q2", "type": "E05"}],
+            "passages": [{"id": "p1", "blanks": [{"expl": "Blank explanation"}]}]
+        })
+        self.write("content/en/words.json", {"topics": [{"id": "daily", "name": "Daily life"}], "words": [], "confusables": []})
+        self.assertEqual(validate_content.english_source_errors(str(self.root)), [])
+
+        self.write("content/en/grammar.json", {"points": [{
+            "id": "g1", "title": "Tiếng", "when": "When", "body": "Body",
+            "mistakes": [{"why": ""}]
+        }]})
+        self.write("content/en/questions.json", {
+            "questions": [{"id": "q1", "type": "E02", "expl": ""}],
+            "passages": [{"id": "p1", "blanks": [{"expl": ""}]}]
+        })
+        self.write("content/en/words.json", {"topics": [{"id": "daily", "name": ""}], "words": [], "confusables": []})
+        errors = validate_content.english_source_errors(str(self.root))
+        self.assertTrue(any("Vietnamese character" in error for error in errors))
+        self.assertTrue(any("grammar g1.mistakes[0].why: missing" in error for error in errors))
+        self.assertTrue(any("question q1.expl: missing" in error for error in errors))
+        self.assertTrue(any("passage p1.blanks[0].expl: missing" in error for error in errors))
+        self.assertTrue(any("topic daily.name: missing" in error for error in errors))
+
 
 if __name__ == "__main__":
     unittest.main()

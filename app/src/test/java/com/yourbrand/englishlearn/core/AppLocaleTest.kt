@@ -19,4 +19,13 @@ class AppLocaleTest {
         assertEquals("pt-BR", AppLocale.languageTag("pt_BR"))
         assertEquals("en", AppLocale.languageTag(""))
     }
+
+    @Test
+    fun systemAppLocaleOverridesStoredOnlyWhenSelectable() {
+        val selectable = listOf("en", "vi")
+
+        assertEquals("en", AppLocale.resolve("vi", "en-US", selectable))
+        assertEquals("vi", AppLocale.resolve("vi", "fr-FR", selectable))
+        assertEquals("vi", AppLocale.resolve("vi", "", selectable))
+    }
 }

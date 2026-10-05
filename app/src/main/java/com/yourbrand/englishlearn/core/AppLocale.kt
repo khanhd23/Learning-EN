@@ -18,6 +18,16 @@ object AppLocale {
         return selectable.firstOrNull { it.lowercase() == language } ?: "en"
     }
 
+    /** System per-app locale overrides the stored choice only when it maps to a shipped locale. */
+    fun resolve(stored: String, systemTag: String, selectable: Collection<String>): String {
+        val normalized = systemTag.trim().replace('_', '-').lowercase()
+        if (normalized.isBlank()) return stored
+        val exact = selectable.firstOrNull { it.lowercase() == normalized }
+        if (exact != null) return exact
+        val language = normalized.substringBefore('-')
+        return selectable.firstOrNull { it.lowercase() == language } ?: stored
+    }
+
     fun apply(contentLocale: String) {
         AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(languageTag(contentLocale)))
     }

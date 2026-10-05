@@ -49,6 +49,42 @@ def walk_strings(value):
             yield from walk_strings(child)
 
 
+VI_CHARS = re.compile(r"[ăâđêôơưạảãấầẩẫậắằẳẵặẹẻẽếềểễệỉĩịọỏõốồổỗộớờởỡợụủũứừửữựỳỷỹỵ]", re.I)
+
+
+def english_source_errors(root=ROOT):
+    """Return release-blocking errors for fields that must be English sources."""
+    grammar = load_from(root, "content", "en", "grammar.json")
+    questions = load_from(root, "content", "en", "questions.json")
+    words = load_from(root, "content", "en", "words.json")
+    found = []
+
+    def require(value, where):
+        if not isinstance(value, str) or not value.strip():
+            found.append(f"{where}: missing English source")
+        elif VI_CHARS.search(value):
+            found.append(f"{where}: Vietnamese character in English source")
+
+    for point in grammar.get("points", []):
+        gid = point.get("id", "?")
+        for field in ("title", "when", "body"):
+            require(point.get(field), f"grammar {gid}.{field}")
+        for index, mistake in enumerate(point.get("mistakes", [])):
+            require(mistake.get("why") if isinstance(mistake, dict) else None,
+                    f"grammar {gid}.mistakes[{index}].why")
+
+    for question in questions.get("questions", []):
+        if question.get("type") != "E05":
+            require(question.get("expl"), f"question {question.get('id', '?')}.expl")
+    for passage in questions.get("passages", []):
+        for index, blank in enumerate(passage.get("blanks", [])):
+            require(blank.get("expl") if isinstance(blank, dict) else None,
+                    f"passage {passage.get('id', '?')}.blanks[{index}].expl")
+    for topic in words.get("topics", []):
+        require(topic.get("name"), f"topic {topic.get('id', '?')}.name")
+    return found
+
+
 def tokens(value):
     text = "\n".join(walk_strings(value))
     return re.findall(r"\{[^{}]+\}|%\d+\$[a-zA-Z]|%[a-zA-Z]|</?[A-Za-z][^>]*>", text)
@@ -173,6 +209,7 @@ def main():
     locale_errors, locale_warnings = locale_rule_errors()
     errors.extend(locale_errors)
     warnings.extend(locale_warnings)
+    errors.extend(english_source_errors())
     # UTF-8 text decoded as cp1252 ("Ná»™i dung", "EspaÃ±ol", "â€”") must never reach resources or packs.
     mojibake = re.compile("Ã[\u0080-ÿ]|á»|áº|â€|Ä‘|Æ°")
     root_path = __import__("pathlib").Path(ROOT)
