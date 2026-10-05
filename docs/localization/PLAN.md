@@ -431,6 +431,14 @@ Every data batch is reviewed by the owner before it is pushed. Content that only
   implement the drop in `gen_content.py` with a test (the sense stays in the dictionary datasets).
 - Batches of up to 400 entries. Report every changed entry in the batch report.
 
+**Owner review of Task 1D (2026-10-05): REJECTED and reverted.** The taxonomy (`content/en/topics.json`,
+Vietnamese names) and the `entry_corrections.tsv` loader in `gen_content.py` were good and can be reused
+from commit `33f7c25`. The 5,336 topic assignments were not made from meaning: fixed combinations were
+stamped by part of speech and level (almost every Level 4 adjective = `describing_things,
+government_society, events`; Level 2 nouns = `describing_things, science_basics`), and spot checks gave
+`electricity` → weather, `volunteer` → money_banking, `true` → time_dates, `toothbrush` →
+travel_holidays, `her` → school.
+
 ### Task 1C: Rewrite Level 1–2 entries to the standard
 
 1. Order: NGSL rank 1–2000 first, then other Level 1–2 entries.
