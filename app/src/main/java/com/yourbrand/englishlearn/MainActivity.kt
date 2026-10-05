@@ -142,8 +142,12 @@ class MainActivity : AppCompatActivity() {
         val img = ImageView(this).apply { setImageResource(icon); importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO }
         pill.addView(img, FrameLayout.LayoutParams(dpi(22), dpi(22), Gravity.CENTER))
         item.addView(pill, LinearLayout.LayoutParams(dpi(56), dpi(30)))
-        val tv = TextView(this).apply { setText(label); textSize = 11.5f; gravity = Gravity.CENTER; maxLines = 1 }
-        item.addView(tv, LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT).apply { topMargin = dpi(2) })
+        val tv = TextView(this).apply {
+            setText(label); textSize = 11.5f; gravity = Gravity.CENTER; maxLines = 1
+            ellipsize = android.text.TextUtils.TruncateAt.END
+            includeFontPadding = true
+        }
+        item.addView(tv, LinearLayout.LayoutParams(MATCH_PARENT, WRAP_CONTENT).apply { topMargin = dpi(2) })
         item.setOnClickListener {
             it.haptic()
             if (tab == currentTab && navigator.depth == 1) (navigator.current as? ScrollScreen)?.scrollToTop() else selectTab(tab)

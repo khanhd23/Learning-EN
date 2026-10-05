@@ -278,7 +278,8 @@ abstract class ScrollScreen(activity: MainActivity) : Screen(activity) {
         val center = FrameLayout(c)
         body = Kit.vbox(c).apply {
             val pad = c.dpi(16)
-            setPadding(pad, c.dpi(4), pad, c.dpi(bottomPadDp))
+            // Keep the first card/heading clear of the app bar on edge-to-edge devices.
+            setPadding(pad, c.dpi(16), pad, c.dpi(bottomPadDp))
             layoutParams = FrameLayout.LayoutParams(MATCH_PARENT, WRAP_CONTENT, Gravity.CENTER_HORIZONTAL)
         }
         center.addView(body)
