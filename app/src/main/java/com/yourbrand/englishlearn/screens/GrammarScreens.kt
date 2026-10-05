@@ -49,6 +49,13 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
         (1..5).forEach { lvl ->
             val pts = all.filter { it.level == lvl }
             val visible = pts.filter { gp -> when (filter) { 1 -> gp.exam; 2 -> gp.mistakes.size >= 2 && gp.tags.any { it in setOf("tense", "conjunction", "agreement", "conditional", "gerund_infinitive", "pronoun") }; else -> true } }
+            if (!services.content.isLevelAvailable(lvl)) {
+                body.addView(Kit.card(c, 14, 20, Hues.container(c, lvl * 2 - 2), null) {
+                    addView(Kit.text(c, str(R.string.level_n, lvl), R.style.Text_Title))
+                    addView(Kit.text(c, str(R.string.coming_soon), R.style.Text_Caption).margins(c, top = 4))
+                })
+                return@forEach
+            }
             if (visible.isEmpty()) return@forEach
             val mastered = pts.count { services.store.stars(it.id) > 0 }
             body.addView(Kit.card(c, 14, 20, Hues.container(c, lvl * 2 - 2), null) {

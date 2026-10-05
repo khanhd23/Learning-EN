@@ -106,6 +106,7 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
     }
 
     private fun localeLabel(locale: String): String = when (locale) {
+            "en" -> "English"
         "vi" -> str(R.string.locale_vi)
         "es" -> str(R.string.locale_es)
         "pt-BR" -> str(R.string.locale_pt_br)

@@ -19,7 +19,7 @@ import com.yourbrand.englishlearn.pet.PetView
 import com.yourbrand.englishlearn.pet.Species
 import com.yourbrand.englishlearn.ui.*
 
-/** S02 — 3 short skippable steps, then a 5-question welcome session (first question within seconds). */
+/** S02 — 4 short skippable steps, then a 5-question welcome session (first question within seconds). */
 class OnboardingScreen(activity: MainActivity) : Screen(activity) {
     override val petMode = PetMode.HIDDEN
     private var step = 0
@@ -28,12 +28,14 @@ class OnboardingScreen(activity: MainActivity) : Screen(activity) {
     private var minutes = 10
     private var species = "cat"
     private var name = ""
+    private var language = "en"
     private lateinit var content: LinearLayout
     private lateinit var dots: LinearLayout
     private lateinit var next: TextView
 
     override fun onCreateView(parent: ViewGroup): View {
         val c = ctx
+        language = services.settings.contentLocale
         if (name.isEmpty()) name = c.getString(Species.defaultNameRes(species))
         val root = Kit.vbox(c).apply { layoutParams = ViewGroup.LayoutParams(MATCH_PARENT, MATCH_PARENT) }
         val top = Kit.hbox(c) { setPadding(c.dpi(20), c.dpi(12), c.dpi(8), 0) }
@@ -42,14 +44,14 @@ class OnboardingScreen(activity: MainActivity) : Screen(activity) {
         top.addView(Kit.text(c, str(R.string.skip), R.style.Text_BodyStrong, c.col(R.color.muted)).apply {
             layoutParams = LinearLayout.LayoutParams(WRAP_CONTENT, c.dpi(48)); gravity = Gravity.CENTER
             setPadding(c.dpi(12), 0, c.dpi(12), 0)
-            onTap { if (step < 2) { step++; render() } else finish() }
+            onTap { if (step < 3) { step++; render() } else finish() }
         })
         root.addView(top)
         val scroll = ScrollView(c).apply { layoutParams = lp(MATCH_PARENT, 0, 1f) }
         content = Kit.vbox(c) { setPadding(c.dpi(20), c.dpi(8), c.dpi(20), c.dpi(20)) }
         scroll.addView(content)
         root.addView(scroll)
-        next = Kit.primary(c, str(R.string.next), 0) { if (step < 2) { step++; render() } else finish() }.apply {
+        next = Kit.primary(c, str(R.string.next), 0) { if (step < 3) { step++; render() } else finish() }.apply {
             layoutParams = lp(h = c.dpi(52)).apply { setMargins(c.dpi(20), c.dpi(8), c.dpi(20), c.dpi(20)) }
         }
         root.addView(next)
@@ -63,12 +65,13 @@ class OnboardingScreen(activity: MainActivity) : Screen(activity) {
     private fun render() {
         val c = ctx
         dots.removeAllViews()
-        repeat(3) { i -> dots.addView(View(c).apply { background = c.rounded(c.col(if (i <= step) R.color.primary else R.color.outline), 100f); layoutParams = LinearLayout.LayoutParams(c.dpi(if (i == step) 24 else 8), c.dpi(8)).apply { marginEnd = c.dpi(6) } }) }
+        repeat(4) { i -> dots.addView(View(c).apply { background = c.rounded(c.col(if (i <= step) R.color.primary else R.color.outline), 100f); layoutParams = LinearLayout.LayoutParams(c.dpi(if (i == step) 24 else 8), c.dpi(8)).apply { marginEnd = c.dpi(6) } }) }
         content.removeAllViews()
-        next.text = str(if (step < 2) R.string.next else R.string.start_learning)
+        next.text = str(if (step < 3) R.string.next else R.string.start_learning)
         when (step) {
-            0 -> stepGoals()
-            1 -> stepLevel()
+            0 -> stepLanguage()
+            1 -> stepGoals()
+            2 -> stepLevel()
             else -> stepPet()
         }
         if (!c.reduceMotion) { content.translationX = c.dp(24f); content.alpha = 0f; content.animate().translationX(0f).alpha(1f).setDuration(250).start() }
@@ -77,6 +80,38 @@ class OnboardingScreen(activity: MainActivity) : Screen(activity) {
     private fun title(t: Int, sub: Int) {
         content.addView(Kit.text(ctx, str(t), R.style.Text_Display).margins(ctx, top = 12))
         content.addView(Kit.text(ctx, str(sub), R.style.Text_Body, ctx.col(R.color.muted)).margins(ctx, top = 4, bottom = 12))
+    }
+
+    private fun stepLanguage() {
+        val c = ctx
+        title(R.string.set_language, R.string.ob_goal_sub)
+        val locales = services.contentRepo.selectableLocales()
+        if (language !in locales) language = locales.firstOrNull() ?: "en"
+        locales.forEach { locale ->
+            val card = Kit.card(c, 14, 12) {
+                isClickable = true
+                addView(Kit.text(c, "I speak: ${localeLabel(locale)}", R.style.Text_BodyStrong))
+            }
+            fun paint() { card.background = c.rounded(c.col(if (locale == language) R.color.primary_container else R.color.surface), 16f, c.col(if (locale == language) R.color.primary else R.color.outline), if (locale == language) 2f else 1f) }
+            paint()
+            card.onTap { language = locale; paint() }
+            content.addView(card.margins(c, top = 10))
+        }
+    }
+
+    private fun localeLabel(locale: String): String = when (locale) {
+        "en" -> "English"
+        "vi" -> str(R.string.locale_vi)
+        "es" -> str(R.string.locale_es)
+        "pt-BR" -> str(R.string.locale_pt_br)
+        "id" -> str(R.string.locale_id)
+        "hi" -> str(R.string.locale_hi)
+        "ar" -> str(R.string.locale_ar)
+        "ja" -> str(R.string.locale_ja)
+        "ko" -> str(R.string.locale_ko)
+        "th" -> str(R.string.locale_th)
+        "fr" -> str(R.string.locale_fr)
+        else -> locale
     }
 
     private fun stepGoals() {
@@ -171,6 +206,8 @@ class OnboardingScreen(activity: MainActivity) : Screen(activity) {
 
     private fun finish() {
         val s = services
+        s.settings.contentLocale = language
+        s.settings.contentLocaleChosen = true
         s.settings.goals = goals.ifEmpty { setOf("talk") }
         s.settings.level = level
         s.settings.dailyMinutes = minutes

@@ -17,6 +17,8 @@ class Content(
     val comingSoon: List<ComingSoon>,
     val petLines: Map<String, List<String>>,
     val tips: Map<String, String>,
+    val availableLevels: Set<Int> = (1..5).toSet(),
+    val localeSelectable: Boolean = true,
 ) {
     /** All entries, including bronze dictionary-only imports. */
     val allWords: List<Word> get() = words
@@ -31,6 +33,8 @@ class Content(
     val wordsByTopic: Map<String, List<Word>> = topics.associate { t -> t.id to words.filter { t.id in it.topics } }
     val questionsByPoint: Map<String, List<Question>> = questions.filter { it.gp != null }.groupBy { it.gp!! }
 
+    fun isLevelAvailable(level: Int): Boolean = level in availableLevels
+
     fun formatById(id: String) = formats.firstOrNull { it.id == id }
 }
 
@@ -39,7 +43,7 @@ object ContentParser {
     private fun JSONObject.strOrNull(k: String): String? = if (has(k) && !isNull(k)) optString(k).takeIf { it.isNotEmpty() } else null
     private inline fun <T> JSONArray?.map(f: (JSONObject) -> T): List<T> = if (this == null) emptyList() else List(length()) { f(getJSONObject(it)) }
 
-    fun parse(words: String, grammar: String, questions: String, locale: LocalePackFiles, formats: String): Content {
+    fun parse(words: String, grammar: String, questions: String, locale: LocalePackFiles, formats: String, approval: LocaleApproval? = null): Content {
         val viTopics = JSONObject(locale.topics)
         val viWords = JSONObject(locale.words)
         val viConf = JSONObject(locale.confusables)
@@ -53,6 +57,7 @@ object ContentParser {
 
         val w = JSONObject(words)
         val topics = w.getJSONArray("topics").map { Topic(it.getString("id"), viTopics.optString(it.getString("id")), it.getString("icon"), it.getInt("hue")) }
+            .filter { approval == null || it.id in approval.approvedTopics }
         val wordList = w.getJSONArray("words").map { o ->
             val id = o.getString("id")
             val senses = o.getJSONArray("senses").let { arr ->
@@ -78,6 +83,10 @@ object ContentParser {
                 grammarIds = o.optJSONArray("grammarIds").strings(),
             )
         }
+        val visibleWords = wordList.mapNotNull { word ->
+            val senses = word.senses.filter { approval == null || it.id in approval.approvedWords }
+            if (senses.isEmpty()) null else word.copy(senses = senses)
+        }
         val conf = w.getJSONArray("confusables").map { o ->
             val cv = viConf.optJSONObject(o.getString("id")) ?: JSONObject()
             val notes = cv.optJSONObject("notes")
@@ -86,7 +95,7 @@ object ContentParser {
                 o.optJSONArray("wordIds").let { a -> if (a == null) emptyList() else List(a.length()) { a.optString(it).takeIf { s -> s.isNotEmpty() && s != "null" } } },
                 cv.optString("tip"), notes?.keys()?.asSequence()?.associateWith { notes.getString(it) }.orEmpty(),
             )
-        }
+        }.filter { approval == null || it.id in approval.approvedConfusables }
 
         val grammarList = JSONObject(grammar).getJSONArray("points").map { o ->
             val gv = viGrammar.getJSONObject(o.getString("id"))
@@ -99,7 +108,7 @@ object ContentParser {
                 mistakes = o.getJSONArray("mistakes").map { it }.mapIndexed { i, m -> Mistake(m.getString("wrong"), m.getString("right"), mVi.getOrElse(i) { "" }) },
                 tags = o.optJSONArray("tags").strings(), exam = o.optBoolean("exam"),
             )
-        }
+        }.filter { approval == null || it.id in approval.approvedGrammar }
 
         val q = JSONObject(questions)
         val questionList = q.getJSONArray("questions").map { o ->
@@ -113,14 +122,14 @@ object ContentParser {
                 translation = viQTranslation.strOrNull(id) ?: o.strOrNull("vi"),
                 notes = viQNotes.strOrNull(id), explanation = viQ.optString(id),
             )
-        }
+        }.filter { approval == null || it.id in approval.approvedQuestions }
         val passageList = q.getJSONArray("passages").map { o ->
             val pv = viP.optJSONObject(o.getString("id"))?.optJSONArray("blanks").strings()
             Passage(
                 o.getString("id"), o.getString("title"), o.getString("text"), o.strOrNull("topic"), o.optInt("level", 3),
                 o.getJSONArray("blanks").map { it }.mapIndexed { i, b -> Blank(b.getJSONArray("opts").strings(), b.getInt("ans"), b.optString("qtype"), pv.getOrElse(i) { "" }) },
             )
-        }
+        }.filter { approval == null || it.id in approval.approvedPassages }
 
         val f = JSONObject(formats)
         val formatList = f.getJSONArray("formats").map { o ->
@@ -135,42 +144,64 @@ object ContentParser {
         val soon = f.optJSONArray("comingSoon").map { ComingSoon(it.getString("id"), it.getString("label")) }
 
         val petObj = JSONObject(locale.pet)
-        val pet = petObj.keys().asSequence().associateWith { petObj.getJSONArray(it).strings() }
+        val pet = petObj.keys().asSequence()
+            .filter { approval == null || it in approval.approvedPet }
+            .associateWith { petObj.getJSONArray(it).strings() }
         val tipsObj = JSONObject(locale.tips)
-        val tips = tipsObj.keys().asSequence().associateWith { tipsObj.getString(it) }
+        val tips = tipsObj.keys().asSequence()
+            .filter { approval == null || it in approval.approvedTips }
+            .associateWith { tipsObj.getString(it) }
 
-        return Content(topics, wordList, conf, grammarList, questionList, passageList, formatList, soon, pet, tips)
+        return Content(topics, visibleWords, conf, grammarList, questionList, passageList, formatList, soon, pet, tips,
+            approval?.availableLevels ?: (1..5).toSet(), approval?.selectable ?: true)
     }
 }
 
 class ContentRepository(private val context: Context) {
     private val cached = mutableMapOf<String, Content>()
+    private val approvalCached = mutableMapOf<String, LocaleApproval>()
 
     private fun asset(name: String) = context.assets.open("content/$name").bufferedReader().use { it.readText() }
 
     private fun localePack(locale: String): String {
         val candidate = locale.trim().replace('_', '-')
-        if (candidate.isBlank() || candidate == "vi") return "i18n/vi"
+        if (candidate.isBlank() || candidate == "en") return "en"
         val candidates = listOf(candidate, candidate.substringBefore('-'))
         for (code in candidates.distinct()) {
             val path = "i18n/$code"
-            runCatching {
-                val meta = JSONObject(asset("$path/status.json"))
-                val complete = meta.optString("status") == "complete" && !meta.optBoolean("todo", true)
-                if (complete) return path
-            }
+            if (isSelectablePath(path)) return path
         }
-        return "i18n/vi"
+        // English is the safe fallback for an unavailable learner locale. Never
+        // substitute Vietnamese content for a locale the learner did not choose.
+        return "en"
     }
 
+    private fun approval(path: String): LocaleApproval = approvalCached.getOrPut(path) {
+        ApprovalGate.evaluate(
+            JSONObject(asset("$path/status.json")),
+            JSONObject(asset("en/words.json")),
+            JSONObject(asset("en/grammar.json")),
+            JSONObject(asset("en/questions.json")),
+        )
+    }
+
+    private fun isSelectablePath(path: String): Boolean = runCatching {
+        context.assets.list("content/$path").orEmpty().contains("status.json") && approval(path).selectable
+    }.getOrDefault(false)
+
     /** Locale packs that are actually bundled in this build and pass the release gate. */
+    fun selectableLocales(): List<String> = synchronized(this) {
+        val locales = context.assets.list("content/i18n").orEmpty().asSequence()
+            .filter { it != "market_profiles.json" }
+            .filter { isSelectablePath("i18n/$it") }
+            .toMutableList()
+        locales += "en"
+        locales.distinct().sortedWith(compareBy<String> { if (it == "en") 0 else if (it == "vi") 1 else 2 }.thenBy { it })
+    }
+
+    /** Backward-compatible name used by Settings; this is now the approval-gated picker list. */
     fun shippableLocales(): List<String> = synchronized(this) {
-        context.assets.list("content/i18n").orEmpty().asSequence()
-            .filter { it != "market_profiles.json" && context.assets.list("content/i18n/$it").orEmpty().contains("status.json") }
-            .filter { it == "vi" || localePack(it) == "i18n/$it" }
-            .distinct()
-            .sortedWith(compareBy<String> { if (it == "vi") 0 else 1 }.thenBy { it })
-            .toList()
+        selectableLocales()
     }
 
     fun effectiveLocale(locale: String): String = localePack(locale).removePrefix("i18n/")
@@ -182,13 +213,14 @@ class ContentRepository(private val context: Context) {
             asset("en/words.json"),
             asset("en/grammar.json"),
             asset("en/questions.json"),
-            localeFiles(key),
+            if (key == "en") englishLocaleFiles() else localeFiles(key),
             asset("exam_formats.json"),
+            if (key == "en") null else approval(key),
         ).also { cached[key] = it }
     }
 
     /** True only for a locale pack that has passed the content-release gate. */
-    fun isShippable(locale: String): Boolean = locale == "vi" || localePack(locale) != "i18n/vi"
+    fun isShippable(locale: String): Boolean = locale == "en" || isSelectablePath("i18n/${locale.trim().replace('_', '-')}")
 
     private fun localeFiles(path: String) = LocalePackFiles(
         topics = asset("$path/topics.json"),
@@ -199,4 +231,33 @@ class ContentRepository(private val context: Context) {
         pet = asset("$path/pet.json"),
         tips = asset("$path/tips.json"),
     )
+
+    private fun englishLocaleFiles(): LocalePackFiles {
+        val words = JSONObject(asset("en/words.json"))
+        val topics = JSONObject()
+        words.getJSONArray("topics").let { array -> for (i in 0 until array.length()) { val id = array.getJSONObject(i).getString("id"); topics.put(id, id) } }
+        val wordValues = JSONObject()
+        words.getJSONArray("words").let { array ->
+            for (i in 0 until array.length()) {
+                val word = array.getJSONObject(i)
+                val senses = word.getJSONArray("senses")
+                for (j in 0 until senses.length()) {
+                    val sense = senses.getJSONObject(j)
+                    val examples = JSONObject()
+                    sense.getJSONArray("ex").let { ex -> for (k in 0 until ex.length()) { val item = ex.getJSONObject(k); examples.put(item.getString("id"), item.getString("text")) } }
+                    wordValues.put(sense.getString("id"), JSONObject().put("g", sense.optString("def")).put("ex", examples))
+                }
+            }
+        }
+        val grammarValues = JSONObject()
+        JSONObject(asset("en/grammar.json")).getJSONArray("points").let { array ->
+            for (i in 0 until array.length()) {
+                val item = array.getJSONObject(i)
+                val examples = JSONArray(); item.optJSONArray("examples")?.let { ex -> for (j in 0 until ex.length()) examples.put(ex.getJSONObject(j).optString("en")) }
+                val mistakes = JSONArray(); item.optJSONArray("mistakes")?.let { ms -> for (j in 0 until ms.length()) mistakes.put(ms.getJSONObject(j).optString("wrong")) }
+                grammarValues.put(item.getString("id"), JSONObject().put("title", item.getString("id")).put("when", "").put("body", "").put("examples", examples).put("mistakes", mistakes))
+            }
+        }
+        return LocalePackFiles(topics.toString(), wordValues.toString(), "{}", grammarValues.toString(), "{}", "{}", "{}")
+    }
 }

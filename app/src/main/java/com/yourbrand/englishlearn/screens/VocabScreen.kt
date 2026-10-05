@@ -73,13 +73,17 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
         (1..5).forEach { lvl ->
             val list = words.filter { it.level == lvl }
             val known = list.count { known(it) }
-            body.addView(Kit.clickableCard(c, 16, 12, onClick = { activity.open(WordListScreen(activity, level = lvl)) }) {
+            body.addView(Kit.clickableCard(c, 16, 12, onClick = { if (services.content.isLevelAvailable(lvl)) activity.open(WordListScreen(activity, level = lvl)) }) {
                 val r = Kit.hbox(c)
                 r.addView(Kit.text(c, str(R.string.level_n, lvl), R.style.Text_Title).apply { layoutParams = lp(0, WRAP_CONTENT, 1f) })
-                r.addView(Kit.text(c, str(R.string.words_known, known, list.size), R.style.Text_Caption))
                 addView(r)
-                addView(Kit.text(c, str(when (lvl) { 1 -> R.string.level_desc_1; 2 -> R.string.level_desc_2; 3 -> R.string.level_desc_3; 4 -> R.string.level_desc_4; else -> R.string.level_desc_5 }), R.style.Text_Caption).margins(c, top = 2))
-                addView(Bar(c).apply { color = Hues.color(c, lvl * 2); layoutParams = lp(h = c.dpi(8)).apply { topMargin = c.dpi(12) }; post { set(known / list.size.toFloat().coerceAtLeast(1f)) } })
+                if (!services.content.isLevelAvailable(lvl)) {
+                    r.addView(Kit.text(c, str(R.string.coming_soon), R.style.Text_Caption))
+                } else {
+                    r.addView(Kit.text(c, str(R.string.words_known, known, list.size), R.style.Text_Caption))
+                    addView(Kit.text(c, str(when (lvl) { 1 -> R.string.level_desc_1; 2 -> R.string.level_desc_2; 3 -> R.string.level_desc_3; 4 -> R.string.level_desc_4; else -> R.string.level_desc_5 }), R.style.Text_Caption).margins(c, top = 2))
+                    addView(Bar(c).apply { color = Hues.color(c, lvl * 2); layoutParams = lp(h = c.dpi(8)).apply { topMargin = c.dpi(12) }; post { set(known / list.size.toFloat().coerceAtLeast(1f)) } })
+                }
             })
         }
     }
