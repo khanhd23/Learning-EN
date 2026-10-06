@@ -44,9 +44,11 @@ class WordListScreen(
 
     override fun build(body: LinearLayout) {
         val c = ctx
+        val tData = System.nanoTime()
         val words = allWords()
         val st = services.store
         val known = words.count { st.item(it.key)?.mastered == true }
+        Perf.log("WordList data: ${words.size} words in ${Perf.ms(tData, System.nanoTime())}")
 
         // Header: progress + "Học chủ đề" + modes
         val head = Kit.card(c, 16, 4, topic?.let { Hues.container(c, it.hue) } ?: c.col(R.color.surface), null)
@@ -92,7 +94,7 @@ class WordListScreen(
         fun add(i: Int) { if (i > 0) card.addView(Kit.divider(c)); card.addView(wordRow(list[i])) }
         // Show one page (20 words) first; more are appended as the user nears the end.
         var count = minOf(shown, list.size)
-        if (firstBuild) addInFrames(card, count, now = 10, perFrame = 2, add = ::add) else for (i in 0 until count) add(i)
+        if (firstBuild) addInFrames(card, count, now = 8, perFrame = 2, startDelayMs = AFTER_TRANSITION_MS, add = ::add) else for (i in 0 until count) add(i)
         body.addView(card)
         val more = Kit.secondary(c, "") { loadMore?.invoke() }
         fun updateMore() { more.visibility = if (count < list.size) View.VISIBLE else View.GONE; more.text = str(R.string.show_more, list.size - count) }
@@ -135,7 +137,7 @@ class WordListScreen(
         texts.addView(MasteryDots(c, (s?.box ?: 0).coerceAtMost(5)).margins(c, top = 4))
         row.addView(texts)
         row.addView(ImageView(c).apply {
-            setImageResource(R.drawable.ic_volume); tintRes(R.color.primary)
+            setImageDrawable(icon(R.drawable.ic_volume)); tintRes(R.color.primary)
             setBackgroundResource(R.drawable.ripple_circle); val p = c.dpi(12); setPadding(p, p, p, p)
             contentDescription = str(R.string.listen)
             layoutParams = LinearLayout.LayoutParams(c.dpi(48), c.dpi(48))
@@ -143,7 +145,7 @@ class WordListScreen(
         })
         row.addView(ImageView(c).apply {
             val saved = s?.saved == true
-            setImageResource(if (saved) R.drawable.ic_bookmark else R.drawable.ic_bookmark_border); tintRes(if (saved) R.color.accent else R.color.muted)
+            setImageDrawable(icon(if (saved) R.drawable.ic_bookmark else R.drawable.ic_bookmark_border)); tintRes(if (saved) R.color.accent else R.color.muted)
             setBackgroundResource(R.drawable.ripple_circle); val p = c.dpi(12); setPadding(p, p, p, p)
             contentDescription = str(R.string.save)
             layoutParams = LinearLayout.LayoutParams(c.dpi(48), c.dpi(48))
@@ -159,6 +161,11 @@ class WordListScreen(
         row.setOnLongClickListener { it.haptic(android.view.HapticFeedbackConstants.LONG_PRESS); toggleSelect(w, row); true }
         return row
     }
+
+    // Icons are inflated once per screen and shared (each row used to inflate its own vectors).
+    private val icons = HashMap<Int, android.graphics.drawable.Drawable.ConstantState?>()
+    private fun icon(id: Int): android.graphics.drawable.Drawable? =
+        icons.getOrPut(id) { ctx.getDrawable(id)?.constantState }?.newDrawable(ctx.resources)?.mutate()
 
     private companion object { const val PAGE = 20 }
 

@@ -99,13 +99,20 @@ class Navigator(private val container: FrameLayout, private val onChanged: (Scre
     fun popTo(predicate: (Screen) -> Boolean) { while (stack.size > 1 && !predicate(stack.last())) pop() }
 
     private fun show(screen: Screen, transition: Transition, mutate: () -> Unit) {
+        val t0 = System.nanoTime()
         val outgoing = current
         val incoming = screen.create(container)
+        val t1 = System.nanoTime()
         mutate()
         outgoing?.onHidden()
         animateSwap(outgoing?.view, incoming, transition)
+        val t2 = System.nanoTime()
         screen.onShown(true)
+        val t3 = System.nanoTime()
         onChanged(screen)
+        val t4 = System.nanoTime()
+        Perf.watchFrames(screen.javaClass.simpleName)
+        Perf.log("show ${screen.javaClass.simpleName}: create=${Perf.ms(t0, t1)} swap=${Perf.ms(t1, t2)} build=${Perf.ms(t2, t3)} chrome=${Perf.ms(t3, t4)}")
     }
 
     /** Tab switch: fade-through 200 ms; push: shared-axis slide 24dp + fade 250 ms (SKILL.md 10). */

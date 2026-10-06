@@ -51,7 +51,7 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
             if (r * 2 + 1 >= topics.size) row.addView(android.view.View(c).apply { layoutParams = lp(0, 1, 1f).apply { marginStart = c.dpi(12) } })
             grid.addView(row)
         }
-        if (firstBuild) addInFrames(grid, rowCount, now = 4, perFrame = 1, add = addRow)
+        if (firstBuild) addInFrames(grid, rowCount, now = 3, perFrame = 1, startDelayMs = AFTER_TRANSITION_MS, add = addRow)
         else for (r in 0 until rowCount) addRow(r)
     }
 

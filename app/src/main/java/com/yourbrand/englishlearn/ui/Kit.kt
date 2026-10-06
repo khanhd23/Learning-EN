@@ -28,20 +28,29 @@ fun lp(w: Int = MATCH_PARENT, h: Int = WRAP_CONTENT, weight: Float = 0f) = Linea
  * long screen appears immediately instead of freezing while every view is created. Stops when
  * [host] has been removed (the screen was rebuilt or closed).
  */
-fun addInFrames(host: ViewGroup, count: Int, now: Int, perFrame: Int, onDone: () -> Unit = {}, add: (Int) -> Unit) {
+fun addInFrames(host: ViewGroup, count: Int, now: Int, perFrame: Int, startDelayMs: Long = 0, onDone: () -> Unit = {}, add: (Int) -> Unit) {
     val first = minOf(now, count)
+    val t0 = System.nanoTime()
     for (i in 0 until first) add(i)
+    Perf.log("addInFrames first $first: ${Perf.ms(t0, System.nanoTime())}")
     if (first >= count) { onDone(); return }
     var next = first
-    host.postOnAnimation(object : Runnable {
+    val step = object : Runnable {
         override fun run() {
             if (host.parent == null) return
             val end = minOf(next + perFrame, count)
+            val t = System.nanoTime()
             while (next < end) add(next++)
+            Perf.log("addInFrames chunk ${end - perFrame}..$end: ${Perf.ms(t, System.nanoTime())}")
             if (next < count) host.postOnAnimation(this) else onDone()
         }
-    })
+    }
+    // A start delay keeps the screen's slide-in animation free of extra layout work.
+    if (startDelayMs > 0) host.postDelayed({ host.postOnAnimation(step) }, startDelayMs) else host.postOnAnimation(step)
 }
+
+/** Slide-in duration of a pushed screen (Navigator) plus a frame; list fill-in waits for it. */
+const val AFTER_TRANSITION_MS = 270L
 
 fun <T : View> T.margins(ctx: Context, top: Int = 0, bottom: Int = 0, start: Int = 0, end: Int = 0): T {
     val p = (layoutParams as? ViewGroup.MarginLayoutParams) ?: lp()

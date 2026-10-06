@@ -56,13 +56,26 @@ android {
         debug {
             applicationIdSuffix = ".debug"
             buildConfigField("boolean", "FORCE_TEST_ADS", "true")
+            buildConfigField("boolean", "PERF_LOG", "true")
         }
         release {
             isMinifyEnabled = true
             isShrinkResources = true
             buildConfigField("boolean", "FORCE_TEST_ADS", "false")
+            buildConfigField("boolean", "PERF_LOG", "false")
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
             if (secrets.getProperty("signing.storeFile") != null) signingConfig = signingConfigs.getByName("release")
+        }
+        // Release-speed build for measuring on a device: R8-optimised, not debuggable, debug-signed,
+        // test ads only, perf logging on. Installs beside the debug app (.bench).
+        create("benchmark") {
+            initWith(getByName("release"))
+            applicationIdSuffix = ".bench"
+            signingConfig = signingConfigs.getByName("debug")
+            matchingFallbacks += listOf("release")
+            isDebuggable = false
+            buildConfigField("boolean", "FORCE_TEST_ADS", "true")
+            buildConfigField("boolean", "PERF_LOG", "true")
         }
     }
 
@@ -125,7 +138,7 @@ val copyContent = tasks.register("generateContentAssets") {
 tasks.matching {
     it.name.startsWith("merge") && it.name.endsWith("Assets") ||
         it.name.startsWith("lint") && it.name.contains("Analyze") ||
-        it.name.startsWith("generate") && (it.name.endsWith("LintModel") || it.name.endsWith("LintReportModel"))
+        it.name.startsWith("generate") && (it.name.endsWith("LintModel") || it.name.endsWith("LintReportModel") || it.name.endsWith("LintVitalReportModel"))
 }
     .configureEach { if (name != "generateContentAssets") dependsOn(copyContent) }
 
