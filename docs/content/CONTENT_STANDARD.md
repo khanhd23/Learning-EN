@@ -119,10 +119,10 @@ across real topics.
 | Domain | Topics |
 |---|---|
 | people | family, friends_relationships, body_appearance, feelings_personality, health_illness, age_life_stages |
-| daily_life | home_furniture, daily_routine, food_drink, cooking, shopping, clothes, money_banking, time_dates, numbers_quantity, weather |
+| daily_life | home_furniture, daily_routine, food_drink (food & cooking), shopping, clothes, money_banking, time_dates, numbers_quantity, weather |
 | places_travel | city_directions, transport, travel_holidays, hotel_restaurant, nature_landscape, animals |
-| study | school, university, language_learning, science_basics |
-| work | jobs, office, meetings, hr_recruiting, sales_customer, marketing, finance_accounting, contracts_law, logistics, it_technology, events |
+| study | education, language_learning, science_basics |
+| work | jobs, office (office & meetings), hr_recruiting, sales_customer, marketing, finance_accounting, contracts_law, logistics, it_technology, events |
 | society | media_news, internet_social, environment_energy, government_society, arts_entertainment, sports_fitness |
 | language | function_words, core_verbs, describing_things, linking_words, phrasal_verbs, idioms_chunks |
 
