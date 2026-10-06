@@ -153,6 +153,7 @@ val buildImages = tasks.register("generateImageAssets") {
         File(imageOut, "third_party_notices.txt").copyTo(File(assetDir, "third_party_notices.txt"), overwrite = true)
     }
 }
+buildImages.configure { dependsOn(copyContent) }
 tasks.matching { it.name.startsWith("merge") && it.name.endsWith("Resources") || it.name.startsWith("compile") && it.name.endsWith("Kotlin") }
     .configureEach { dependsOn(buildImages) }
 tasks.matching { it.name.startsWith("generate") && it.name.endsWith("Resources") }

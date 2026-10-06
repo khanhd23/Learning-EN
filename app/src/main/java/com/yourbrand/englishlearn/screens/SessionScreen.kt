@@ -208,6 +208,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         shownAt = SystemClock.elapsedRealtime()
         when (ex) {
             is Exercise.PictureChoice -> renderPictureChoice(ex)
+            is Exercise.PictureMatch -> renderPictureMatch(ex)
             is Exercise.Choice -> renderChoice(ex)
             is Exercise.FindError -> renderFindError(ex)
             is Exercise.WordOrder -> renderWordOrder(ex)
@@ -316,20 +317,27 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
 
     private fun renderPictureChoice(ex: Exercise.PictureChoice) {
         content.addView(instruction(ex.instruction))
-        ex.speak?.let { content.addView(speaker(it, big = true).apply { layoutParams = lp(h = ctx.dpi(72)).apply { topMargin = ctx.dpi(12) } }) }
+        if (ex.promptImage != null) {
+            val id = ctx.resources.getIdentifier(ex.promptImage, "drawable", ctx.packageName)
+            if (id != 0) content.addView(ImageView(ctx).apply {
+                setImageResource(id); contentDescription = str(R.string.ins_picture_word); scaleType = ImageView.ScaleType.CENTER_INSIDE
+                layoutParams = LinearLayout.LayoutParams(ctx.dpi(160), ctx.dpi(160)).apply { gravity = Gravity.CENTER_HORIZONTAL; topMargin = ctx.dpi(12) }
+            })
+        }
+        ex.speak?.let { content.addView(speaker(it, big = true).apply { layoutParams = lp(h = ctx.dpi(88)).apply { topMargin = ctx.dpi(12) } }); content.post { speak(it) } }
         val box = Kit.vbox(ctx).margins(ctx, top = 16)
         content.addView(box)
         var selected = -1
         val cards = ex.words.mapIndexed { i, word ->
             val card = OptionCard(ctx, i, word.lemma)
-            word.image?.let { name ->
+            if (ex.kind == Kind.E16) card.showLabel(false)
+            if (!ex.showWordOptions) word.image?.let { name ->
                 val id = ctx.resources.getIdentifier(name, "drawable", ctx.packageName)
                 if (id != 0) card.view.addView(ImageView(ctx).apply {
-                    setImageResource(id); contentDescription = word.lemma; scaleType = ImageView.ScaleType.CENTER_INSIDE
-                    layoutParams = LinearLayout.LayoutParams(ctx.dpi(48), ctx.dpi(48)).apply { marginStart = ctx.dpi(8) }
+                    setImageResource(id); contentDescription = str(R.string.ins_listen_picture); scaleType = ImageView.ScaleType.CENTER_INSIDE
+                    layoutParams = LinearLayout.LayoutParams(ctx.dpi(72), ctx.dpi(72)).apply { marginStart = ctx.dpi(8) }
                 }, 1)
             }
-            box.addView(card.view)
             card.view.onTap {
                 if (answered || !card.enabled) return@onTap
                 selected = i
@@ -339,14 +347,51 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             }
             card
         }
+        if (ex.kind == Kind.E16) {
+            ex.words.mapIndexed { i, _ -> cards[i] }.chunked(2).forEach { pair ->
+                val row = Kit.hbox(ctx)
+                pair.forEach { card -> row.addView(card.view.apply { layoutParams = LinearLayout.LayoutParams(0, ctx.dpi(128), 1f).apply { marginEnd = ctx.dpi(6); bottomMargin = ctx.dpi(8) } }) }
+                box.addView(row)
+            }
+        } else cards.forEach { box.addView(it.view) }
         cardsRef = cards
         check = {
             val ok = selected == ex.answer
             cards.forEachIndexed { j, card -> card.setState(when { j == ex.answer -> OptionCard.State.CORRECT; j == selected -> OptionCard.State.WRONG; else -> OptionCard.State.DIMMED }) }
+            if (ex.kind == Kind.E16) cards.forEach { it.showLabel(true) }
             onAnswered(ex, ok, ex.words.getOrNull(selected)?.lemma, cards[ex.answer].view,
                 correctText = ex.words[ex.answer].lemma, explanation = ex.words[ex.answer].gloss, speakText = ex.speak)
         }
         onHint = { cards.indices.filter { it != ex.answer && it != selected && cards[it].enabled }.randomOrNull()?.let { cards[it].setState(OptionCard.State.DISABLED) } }
+    }
+
+    private fun renderPictureMatch(ex: Exercise.PictureMatch) {
+        content.addView(instruction(R.string.ins_match_pictures))
+        val row = Kit.hbox(ctx) { gravity = Gravity.TOP }.margins(ctx, top = 16)
+        val left = Kit.vbox(ctx).apply { layoutParams = lp(0, WRAP_CONTENT, 1f).apply { marginEnd = ctx.dpi(6) } }
+        val right = Kit.vbox(ctx).apply { layoutParams = lp(0, WRAP_CONTENT, 1f).apply { marginStart = ctx.dpi(6) } }
+        row.addView(left); row.addView(right); content.addView(row)
+        var selectedLeft = -1; var selectedRight = -1
+        val matched = BooleanArray(ex.words.size)
+        val leftViews = mutableListOf<View>(); val rightViews = mutableListOf<TextView>()
+        fun paint() {
+            leftViews.forEachIndexed { i, v -> v.background = ctx.rounded(ctx.col(if (!matched[i] && i == selectedLeft) R.color.primary_container else if (matched[i]) R.color.success_container else R.color.surface), 14f, ctx.col(if (matched[i]) R.color.success else if (i == selectedLeft) R.color.primary else R.color.outline), 1.5f, ripple = true) }
+            rightViews.forEachIndexed { i, v -> v.background = ctx.rounded(ctx.col(if (matched[ex.solution.indexOf(i)]) R.color.success_container else if (i == selectedRight) R.color.primary_container else R.color.surface), 14f, ctx.col(if (matched[ex.solution.indexOf(i)]) R.color.success else if (i == selectedRight) R.color.primary else R.color.outline), 1.5f, ripple = true) }
+        }
+        fun pair() {
+            if (selectedLeft < 0 || selectedRight < 0) return
+            val l = selectedLeft; val r = selectedRight; selectedLeft = -1; selectedRight = -1
+            if (ex.solution[l] == r) { matched[l] = true; leftViews[l].bump(); services.sfx.play(Sfx.Sound.CORRECT); if (matched.all { it }) onAnswered(ex, true, null, leftViews[l], "", "") }
+            else { leftViews[l].shake(); rightViews[r].shake(); services.sfx.play(Sfx.Sound.WRONG) }
+            paint()
+        }
+        ex.words.forEachIndexed { i, word ->
+            val tile = Kit.hbox(ctx) { minimumHeight = ctx.dpi(72); gravity = Gravity.CENTER; layoutParams = lp().apply { bottomMargin = ctx.dpi(10) } }
+            word.image?.let { name -> ctx.resources.getIdentifier(name, "drawable", ctx.packageName).takeIf { it != 0 }?.let { tile.addView(ImageView(ctx).apply { setImageResource(it); contentDescription = str(R.string.ins_match_pictures); layoutParams = LinearLayout.LayoutParams(ctx.dpi(64), ctx.dpi(64)) }) } }
+            tile.onTap { if (!matched[i]) { selectedLeft = i; paint(); pair() } }; leftViews += tile; left.addView(tile)
+        }
+        ex.solution.indices.forEach { r -> val leftIndex = ex.solution.indexOf(r); val tv = Kit.text(ctx, ex.words[leftIndex].lemma, R.style.Text_BodyStrong).apply { gravity = Gravity.CENTER; minimumHeight = ctx.dpi(72); layoutParams = lp().apply { bottomMargin = ctx.dpi(10) }; setPadding(ctx.dpi(8), 0, ctx.dpi(8), 0); onTap { selectedRight = r; paint(); pair() } }; rightViews += tv; right.addView(tv) }
+        paint(); bottomBar.show(false)
     }
 
     private var cardsRef: List<OptionCard> = emptyList()
@@ -934,6 +979,8 @@ class OptionCard(private val ctx: android.content.Context, index: Int, text: Cha
         if (s == State.CORRECT) { mark.setImageResource(R.drawable.ic_check); mark.tintRes(R.color.success); if (!c.reduceMotion) { mark.scaleX = 0f; mark.scaleY = 0f; mark.animate().scaleX(1f).scaleY(1f).setDuration(200).setInterpolator(android.view.animation.OvershootInterpolator(3f)).start() } }
         if (s == State.WRONG) { mark.setImageResource(R.drawable.ic_close); mark.tintRes(R.color.error) }
     }
+
+    fun showLabel(show: Boolean) { label.visibility = if (show) View.VISIBLE else View.GONE }
 
     /** The correct option pulses green once after a wrong answer. */
     fun pulse() {

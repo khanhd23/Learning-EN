@@ -67,13 +67,26 @@ class ExerciseFactory(private val content: Content, private val random: Random =
     fun flashcard(w: Word) = Exercise.Flashcard(w.key, wordTags(w), w.level, w)
 
     fun picture(w: Word, kind: Kind = Kind.E15): Exercise.PictureChoice? {
-        // Off until Task 9.1 (ROADMAP): the current layouts print the answer next to each picture.
-        if (!PICTURE_EXERCISES_READY) return null
-        val others = content.lessonWords.filter { it.image != null && it.id != w.id && it.pos == w.pos }.shuffled(random).take(3)
+        val sameTopic = content.lessonWords.filter { it.image != null && it.id != w.id && it.pos == w.pos && it.topics.any { t -> t in w.topics } }
+        val samePos = content.lessonWords.filter { it.image != null && it.id != w.id && it.pos == w.pos }
+        val others = (sameTopic + samePos).distinctBy { it.image }.shuffled(random).take(3)
         if (w.image == null || others.size < 3) return null
         val words = (others + w).shuffled(random)
-        return Exercise.PictureChoice(w.key + ":" + kind.name, kind, wordTags(w) + "picture", w.level, words, words.indexOf(w), R.string.ins_choose,
-            if (kind == Kind.E16) w.lemma else null)
+        return when (kind) {
+            Kind.E15 -> Exercise.PictureChoice(w.key + ":E15", kind, wordTags(w) + "picture", w.level, words, words.indexOf(w), R.string.ins_picture_word, w.image, true)
+            Kind.E16 -> Exercise.PictureChoice(w.key + ":E16", kind, wordTags(w) + "picture", w.level, words, words.indexOf(w), R.string.ins_listen_picture, null, false, w.lemma)
+            else -> null
+        }
+    }
+
+    fun pictureMatch(w: Word): Exercise.PictureMatch? {
+        if (w.image == null) return null
+        val sameTopic = content.lessonWords.filter { it.image != null && it.id != w.id && it.topics.any { t -> t in w.topics } }
+        val samePos = content.lessonWords.filter { it.image != null && it.id != w.id && it.pos == w.pos }
+        val words = (listOf(w) + sameTopic + samePos).distinctBy { it.image }.shuffled(random).take(4)
+        if (words.size < 4) return null
+        val order = words.indices.shuffled(random)
+        return Exercise.PictureMatch("pm:" + words.joinToString(",") { it.id }, listOf("vocab_core", "picture"), words.maxOf { it.level }, words.map { it.key }, words, words.indices.map { i -> order.indexOf(i) })
     }
 
     fun spelling(w: Word): Exercise.Spelling? {
@@ -145,4 +158,3 @@ class ExerciseFactory(private val content: Content, private val random: Random =
 }
 
 /** Picture exercises (E15–E17) stay disabled until their Task 9.1 layouts ship. */
-const val PICTURE_EXERCISES_READY = false

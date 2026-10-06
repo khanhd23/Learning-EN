@@ -100,8 +100,19 @@ sealed class Exercise {
         val words: List<Word>,
         val answer: Int,
         val instruction: Int,
+        val promptImage: String? = null,
+        val showWordOptions: Boolean = false,
         val speak: String? = null,
     ) : Exercise()
+
+    data class PictureMatch(
+        override val key: String,
+        override val tags: List<String>,
+        override val level: Int,
+        val keys: List<String>,
+        val words: List<Word>,
+        val solution: List<Int>,
+    ) : Exercise() { override val kind get() = Kind.E17 }
 }
 
 /** Typed-answer grading: NFC, trim, case-insensitive, trailing punctuation ignored, 1 typo allowed for words ≥ 7 letters. */

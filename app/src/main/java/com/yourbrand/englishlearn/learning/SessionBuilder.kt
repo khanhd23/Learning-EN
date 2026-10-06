@@ -123,7 +123,8 @@ class SessionBuilder(
             VocabMode.MIXED -> {
                 val list = pick.map { factory.forWord(it, state(it.key)) }.toMutableList()
                 pick.filter { it.image != null }.shuffled(random).take(2).forEach { w ->
-                    factory.picture(w, if (random.nextBoolean()) Kind.E16 else Kind.E17)?.let { list.add(it) }
+                    if (random.nextBoolean()) factory.picture(w, Kind.E16)?.let { list.add(it) }
+                    else factory.pictureMatch(w)?.let { list.add(it) }
                 }
                 if (pick.size >= 4) factory.matching(pick.shuffled(random).take(4))?.let { list.add(list.size / 2, it) }
                 list

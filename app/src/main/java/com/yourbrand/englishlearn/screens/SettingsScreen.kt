@@ -101,7 +101,8 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
             action(g, R.string.about_disclaimer) { activity.open(TextScreen(activity, str(R.string.about_disclaimer), str(R.string.disclaimer_full))) }
             action(g, R.string.licenses) {
                 val contentLicenses = c.assets.open("content/LICENSES.md").bufferedReader(Charsets.UTF_8).use { it.readText() }
-                activity.open(TextScreen(activity, str(R.string.licenses), str(R.string.licenses_text) + "\n\n" + contentLicenses))
+                val imageNotice = runCatching { c.assets.open("content/third_party_notices.txt").bufferedReader(Charsets.UTF_8).use { it.readText() } }.getOrDefault("")
+                activity.open(TextScreen(activity, str(R.string.licenses), str(R.string.licenses_text) + "\n\n" + contentLicenses + if (imageNotice.isBlank()) "" else "\n\n" + imageNotice))
             }
             action(g, R.string.contact) {
                 runCatching { activity.startActivity(Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:${BuildConfig.SUPPORT_EMAIL}?subject=" + Uri.encode(str(R.string.app_short_name) + " feedback")))) }

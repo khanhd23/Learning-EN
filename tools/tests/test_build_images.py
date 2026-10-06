@@ -16,10 +16,10 @@ class BuildImagesTest(unittest.TestCase):
         temp = Path(tempfile.mkdtemp())
         (temp / "tools/authoring/images").mkdir(parents=True)
         (temp / "tools/authoring/word_images.tsv").write_text((root / "word_images.tsv").read_text(encoding="utf-8"), encoding="utf-8")
-        (temp / "third_party/noto-emoji").mkdir(parents=True)
-        (temp / "third_party/noto-emoji/emoji_u1f431.svg").write_text((root / "noto-emoji/emoji_u1f431.svg").read_text(encoding="utf-8"), encoding="utf-8")
-        (temp / "third_party/noto-emoji/emoji_u1f436.svg").write_text((root / "noto-emoji/emoji_u1f436.svg").read_text(encoding="utf-8"), encoding="utf-8")
-        (temp / "third_party/noto-emoji/emoji_u2600_fe0f.svg").write_text((root / "noto-emoji/emoji_u2600_fe0f.svg").read_text(encoding="utf-8"), encoding="utf-8")
+        (temp / "third_party/noto-emoji/svg").mkdir(parents=True)
+        (temp / "third_party/noto-emoji/svg/emoji_u1f431.svg").write_text((root / "noto-emoji/emoji_u1f431.svg").read_text(encoding="utf-8"), encoding="utf-8")
+        (temp / "third_party/noto-emoji/svg/emoji_u1f436.svg").write_text((root / "noto-emoji/emoji_u1f436.svg").read_text(encoding="utf-8"), encoding="utf-8")
+        (temp / "third_party/noto-emoji/svg/emoji_u2600_fe0f.svg").write_text((root / "noto-emoji/emoji_u2600_fe0f.svg").read_text(encoding="utf-8"), encoding="utf-8")
         (temp / "tools/authoring/images/tree.svg").write_text((root / "owner/tree.svg").read_text(encoding="utf-8"), encoding="utf-8")
         (temp / "tools/authoring/images/book.svg").write_text((root / "owner/book.svg").read_text(encoding="utf-8"), encoding="utf-8")
         return temp
@@ -30,27 +30,30 @@ class BuildImagesTest(unittest.TestCase):
         self.assertEqual(result["mapped"], 5)
         manifest = json.loads((out / "image_manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(set(manifest), {"cat", "dog", "sun", "tree", "book"})
-        self.assertTrue((out / "res/drawable/word_cat.xml").is_file())
+        self.assertTrue((out / "res/drawable-nodpi/word_cat.webp").is_file())
 
-    def test_missing_mapping_is_non_fatal(self):
+    def test_missing_mapping_fails(self):
         root = Path(tempfile.mkdtemp()); (root / "tools/authoring").mkdir(parents=True)
         (root / "tools/authoring/word_images.tsv").write_text("missing | 1F431 |\n", encoding="utf-8")
-        result = build_images.build(root, root / "build")
-        self.assertEqual(result["mapped"], 0)
-        self.assertEqual(result["missing"], ["missing"])
+        with self.assertRaises((ValueError, RuntimeError)): build_images.build(root, root / "build")
 
     def test_unsupported_svg_fails(self):
         root = self.fixture_root(); bad = root / "tools/authoring/images/bad.svg"
-        bad.write_text("<svg viewBox='0 0 1 1'><text>x</text></svg>", encoding="utf-8")
+        bad.write_text("<svg><path", encoding="utf-8")
         (root / "tools/authoring/word_images.tsv").write_text("bad |  | bad.svg\n", encoding="utf-8")
-        with self.assertRaises(ValueError): build_images.build(root, root / "build")
+        with self.assertRaises((ValueError, RuntimeError)): build_images.build(root, root / "build")
 
     def test_size_budget_fails(self):
         root = Path(tempfile.mkdtemp()); image_dir = root / "tools/authoring/images"
         image_dir.mkdir(parents=True)
         (root / "tools/authoring/word_images.tsv").write_text("large |  | large.svg\n", encoding="utf-8")
-        (image_dir / "large.svg").write_text("<svg viewBox='0 0 1 1'><path d='" + ("M0 0 " * (700000)) + "'/></svg>", encoding="utf-8")
-        with self.assertRaises(ValueError): build_images.build(root, root / "build")
+        (image_dir / "large.svg").write_text("<svg viewBox='0 0 1 1'><path d='M0 0'/></svg>", encoding="utf-8")
+        original = build_images.render_webp
+        build_images.render_webp = lambda _source, target: target.write_bytes(b"x" * (build_images.MAX_BYTES + 1))
+        try:
+            with self.assertRaises(ValueError): build_images.build(root, root / "build")
+        finally:
+            build_images.render_webp = original
 
 
 if __name__ == "__main__": unittest.main()

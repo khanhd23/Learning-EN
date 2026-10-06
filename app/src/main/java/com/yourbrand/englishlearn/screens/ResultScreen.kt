@@ -170,6 +170,7 @@ class ResultScreen(
             is Exercise.Flashcard -> e.word.lemma to e.word.gloss
             is Exercise.Matching -> e.left.joinToString(", ") to e.right.joinToString(", ")
             is Exercise.PictureChoice -> e.words.joinToString(", ") { it.lemma } to e.words[e.answer].lemma
+            is Exercise.PictureMatch -> e.words.joinToString(", ") { it.lemma } to e.words.joinToString(", ") { it.lemma }
         }
         return Kit.card(c, 14, 8).apply {
             addView(Kit.text(c, q, R.style.Text_Body).apply { textSize = 15f })
