@@ -45,5 +45,51 @@ class ContentDbBuilderTest(unittest.TestCase):
         path.write_text(json.dumps(value, ensure_ascii=False), encoding="utf-8")
 
 
+    def test_hash_sidecar_is_written(self):
+        with tempfile.TemporaryDirectory() as raw:
+            root = Path(raw)
+            self.fixture(root, [{"id": "one", "lemma": "one", "senses": []}])
+            output = root / "build/content.db"
+            sidecar = root / "build/content.db.sha256"
+            digest = build_content_db.build(root, output, sidecar)
+            self.assertEqual(sidecar.read_text(encoding="ascii").strip(), digest)
+
+    def test_sql_ranks_exact_match_before_limit_with_more_than_200_hits(self):
+        with tempfile.TemporaryDirectory() as raw:
+            root = Path(raw)
+            words = [{"id": f"filler_{i}", "lemma": f"gopher{i}", "level": 1, "tier": "bronze",
+                      "senses": [{"id": f"filler_{i}_s1", "pos": "n", "def": "go", "ex": []}]}
+                     for i in range(250)]
+            words.append({"id": "exact_go", "lemma": "go", "level": 1, "tier": "gold",
+                          "senses": [{"id": "exact_go_s1", "pos": "v", "def": "move", "ex": []}]})
+            self.fixture(root, words)
+            output = root / "build/content.db"
+            build_content_db.build(root, output)
+            db = sqlite3.connect(output)
+            try:
+                rows = db.execute(
+                    "SELECT w.id FROM word_fts f JOIN word w ON w.id=f.word_id "
+                    "WHERE f.locale='en' AND word_fts MATCH ? "
+                    "ORDER BY CASE WHEN w.lemma_norm=? THEN 0 WHEN w.lemma_norm LIKE ? || '%' THEN 1 "
+                    "WHEN instr(f.gloss, ?) > 0 THEN 2 ELSE 3 END, w.level, "
+                    "CASE w.tier WHEN 'gold' THEN 0 WHEN 'silver' THEN 1 ELSE 2 END, "
+                    "CASE WHEN w.ngsl_rank IS NULL THEN 2147483647 ELSE w.ngsl_rank END, w.lemma_norm LIMIT ?",
+                    ("go*", "go", "go", "go", 30),
+                ).fetchall()
+                self.assertEqual(len(rows), 30)
+                self.assertEqual(rows[0][0], "exact_go")
+            finally:
+                db.close()
+
+    @staticmethod
+    def fixture(root, words):
+        (root / "content/en").mkdir(parents=True, exist_ok=True)
+        (root / "config").mkdir(exist_ok=True)
+        ContentDbBuilderTest.write(root / "content/en/words.json", {"topics": [], "words": words})
+        ContentDbBuilderTest.write(root / "content/en/grammar.json", {"points": []})
+        ContentDbBuilderTest.write(root / "content/en/questions.json", {"questions": [], "passages": []})
+        ContentDbBuilderTest.write(root / "content/en/relations.json", {})
+        ContentDbBuilderTest.write(root / "config/exam_formats.json", {"formats": []})
+
 if __name__ == "__main__":
     unittest.main()

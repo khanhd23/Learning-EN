@@ -82,7 +82,7 @@ def insert_locale_rows(db, locale: str, folder: Path, status: dict) -> None:
                            (locale, kind, key, json_text(item), row_status))
 
 
-def build(root: Path, output: Path) -> str:
+def build(root: Path, output: Path, hash_output: Path | None = None) -> str:
     output.parent.mkdir(parents=True, exist_ok=True)
     if output.exists():
         output.unlink()
@@ -155,6 +155,9 @@ def build(root: Path, output: Path) -> str:
         db.commit()
     finally:
         db.close()
+    if hash_output is not None:
+        hash_output.parent.mkdir(parents=True, exist_ok=True)
+        hash_output.write_text(digest + "\n", encoding="ascii")
     return digest
 
 
@@ -162,8 +165,9 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--hash-output", type=Path)
     args = parser.parse_args()
-    print(json.dumps({"output": str(args.output), "content_hash": build(args.root.resolve(), args.output.resolve())}))
+    print(json.dumps({"output": str(args.output), "content_hash": build(args.root.resolve(), args.output.resolve(), args.hash_output.resolve() if args.hash_output else None)}))
     return 0
 
 

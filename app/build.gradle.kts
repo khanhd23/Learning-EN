@@ -131,6 +131,7 @@ val copyContent = tasks.register("generateContentAssets") {
         val builder = ProcessBuilder(
             "python", "tools/build_content_db.py", "--root", rootProject.projectDir.absolutePath,
             "--output", File(dst, "content.db").absolutePath,
+            "--hash-output", File(dst, "content.db.sha256").absolutePath,
         ).directory(rootProject.projectDir).inheritIO().start()
         if (builder.waitFor() != 0) error("build_content_db.py failed")
     }

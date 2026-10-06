@@ -6,6 +6,7 @@ import java.io.File
 import java.io.FileOutputStream
 import java.text.Normalizer
 import java.util.Locale
+import com.yourbrand.englishlearn.ui.Perf
 
 data class DbWordHit(val id: String, val lemma: String, val gloss: String, val level: Int, val tier: String)
 
@@ -17,33 +18,44 @@ class ContentDb(private val context: Context) {
     @Synchronized
     private fun db(): SQLiteDatabase {
         database?.takeIf { it.isOpen }?.let { return it }
+        val started = System.nanoTime()
         val tmp = File(context.cacheDir, "content.db.tmp")
-        context.assets.open("content/content.db").use { input -> FileOutputStream(tmp).use { output -> input.copyTo(output) } }
-        val expected = readMeta(tmp, "content_hash")
-        val current = if (file.isFile) runCatching { readMeta(file, "content_hash") }.getOrNull() else null
+        val expected = context.assets.open("content/content.db.sha256").bufferedReader().use { it.readText().trim() }
+        val hashFile = File(context.noBackupFilesDir, "content.db.sha256")
+        val current = if (file.isFile && hashFile.isFile) hashFile.readText().trim() else null
         if (expected != current) {
+            context.assets.open("content/content.db").use { input -> FileOutputStream(tmp).use { output -> input.copyTo(output) } }
             file.parentFile?.mkdirs()
             tmp.copyTo(file, overwrite = true)
+            hashFile.writeText(expected)
         }
         tmp.delete()
-        return SQLiteDatabase.openDatabase(file.path, null, SQLiteDatabase.OPEN_READONLY).also { database = it }
+        return SQLiteDatabase.openDatabase(file.path, null, SQLiteDatabase.OPEN_READONLY).also {
+            database = it
+            Perf.log("content db ready ${Perf.ms(started, System.nanoTime())} copied=${expected != current}")
+        }
     }
 
     fun searchWords(locale: String, query: String, limit: Int = 30): List<DbWordHit> {
         val tokens = normalize(query).split("[^\\p{L}\\p{N}]+".toRegex()).filter { it.isNotBlank() }
         if (tokens.isEmpty()) return emptyList()
         val match = tokens.joinToString(" AND ") { "$it*" }
-        val candidates = ArrayList<DbWordHit>()
+        val normalizedQuery = normalize(query)
+        val started = System.nanoTime()
+        val result = ArrayList<DbWordHit>()
         db().rawQuery(
             "SELECT f.word_id, f.lemma, f.gloss, w.level, w.tier FROM word_fts f JOIN word w ON w.id = f.word_id " +
-                "WHERE f.locale = ? AND word_fts MATCH ? LIMIT 200",
-            arrayOf(locale, match),
+                "WHERE f.locale = ? AND word_fts MATCH ? " +
+                "ORDER BY CASE WHEN w.lemma_norm = ? THEN 0 WHEN w.lemma_norm LIKE ? || '%' THEN 1 " +
+                "WHEN instr(f.gloss, ?) > 0 THEN 2 ELSE 3 END, w.level, " +
+                "CASE w.tier WHEN 'gold' THEN 0 WHEN 'silver' THEN 1 ELSE 2 END, " +
+                "CASE WHEN w.ngsl_rank IS NULL THEN 2147483647 ELSE w.ngsl_rank END, w.lemma_norm LIMIT ?",
+            arrayOf(locale, match, normalizedQuery, normalizedQuery, normalizedQuery, limit.toString()),
         ).use { cursor ->
-            while (cursor.moveToNext()) candidates += DbWordHit(cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getInt(3), cursor.getString(4))
+            while (cursor.moveToNext()) result += DbWordHit(cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getInt(3), cursor.getString(4))
         }
-        return candidates.sortedWith(compareBy<DbWordHit> {
-            when { normalize(it.lemma) == normalize(query) -> 0; normalize(it.lemma).startsWith(normalize(query)) -> 1; else -> 2 }
-        }.thenBy { it.level }.thenBy { if (it.tier == "silver" || it.tier == "gold") 0 else 1 }.thenBy { it.lemma }).take(limit)
+        Perf.log("searchWords query=${query.trim()} hits=${result.size} ${Perf.ms(started, System.nanoTime())}")
+        return result
     }
 
     fun wordsByLevel(locale: String, level: Int, limit: Int = 200): List<DbWordHit> =
@@ -72,7 +84,7 @@ class ContentDb(private val context: Context) {
     companion object {
         fun normalize(value: String): String {
             val decomposed = Normalizer.normalize(value.lowercase(Locale.ROOT), Normalizer.Form.NFD)
-            return decomposed.filter { Character.getType(it) != Character.NON_SPACING_MARK.toInt() }.replace('đ', 'd')
+            return decomposed.filter { Character.getType(it) != Character.NON_SPACING_MARK.toInt() }.replace('\u0111', 'd')
         }
     }
 }
