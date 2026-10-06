@@ -67,6 +67,8 @@ class ExerciseFactory(private val content: Content, private val random: Random =
     fun flashcard(w: Word) = Exercise.Flashcard(w.key, wordTags(w), w.level, w)
 
     fun picture(w: Word, kind: Kind = Kind.E15): Exercise.PictureChoice? {
+        // Off until Task 9.1 (ROADMAP): the current layouts print the answer next to each picture.
+        if (!PICTURE_EXERCISES_READY) return null
         val others = content.lessonWords.filter { it.image != null && it.id != w.id && it.pos == w.pos }.shuffled(random).take(3)
         if (w.image == null || others.size < 3) return null
         val words = (others + w).shuffled(random)
@@ -141,3 +143,6 @@ class ExerciseFactory(private val content: Content, private val random: Random =
         return meaning(w)
     }
 }
+
+/** Picture exercises (E15–E17) stay disabled until their Task 9.1 layouts ship. */
+const val PICTURE_EXERCISES_READY = false
