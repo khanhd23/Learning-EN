@@ -21,7 +21,9 @@ write `dist/reports/task-<N>.md`, then stop.
 - [x] Task 6: Show only approved content; language picker  *(Codex)*
 - [x] Task 6.1: UI follows the chosen language  *(Codex)*
 - [x] Task 6.2: Language sync + English-source checks  *(Codex)*
-- [ ] Task 6.3: Prebuilt content database (SQLite)  *(Codex)*
+- [x] Task 6.3: Prebuilt content database (SQLite)  *(Codex)*
+- [ ] Task 6.3.1: Content DB follow-ups (hash asset, rank before limit)  *(Codex)*
+- [ ] Phase 2 product roadmap: see `docs/ROADMAP.md` (Tasks 9–14, owner C1–C6)
 - [ ] Task 7: Spanish pilot (Level 1)
 - [ ] Task 8: Store listings per locale
 
@@ -735,6 +737,25 @@ to the database.
    search latency for `go` on a device or emulator, in `dist/reports/task-6.3.md`.
 6. Commit `Task 6.3: prebuilt content database` (after the UI commit). Do not push. Do not touch
    `tools/authoring/*`, `content/**`, `res/values*/strings.xml`.
+
+### Task 6.3 review (owner)
+
+Accepted (commits 0ed3355, 22bc446). Verified on the built DB: `đi`/`di` both find `go`; approved
+locale rows only. Follow-ups in **Task 6.3.1** (do before ROADMAP Task 9):
+
+1. `ContentDb.db()` copies the whole 6 MB asset to a temp file on every process start just to read
+   `content_hash`. Ship the hash as a tiny asset (`content/content.db.sha256`) and compare that.
+2. Ranking happens after `LIMIT 200`: `đi` matches 431 rows, so the right word can be cut before
+   ranking (it survived by luck). Rank in SQL first — exact `lemma_norm`, then prefix, then gloss,
+   then the rest; level, tier, ngsl_rank — and only then `LIMIT`. Add a test with > 200 matches.
+3. The report lacked cold-start search latency and APK size before/after; add both
+   (benchmark build: `./gradlew assembleBenchmark`).
+
+Owner fixes made on top of Task 6.3 (all committed): launch crash in the pet bubble; release crash
+(R8 stripped WorkManager's Room constructor — keep rules added); `benchmark` build type; chip rows
+and question text clipped (CENTER_VERTICAL + margin); pet jumping left; idle pet at ~20 fps; screens
+kept per tab and not rebuilt on back unless data changed; adaptive list fill-in (`addInFrames`,
+`visibleCount`); in-session pet praise. Next product work: `docs/ROADMAP.md`.
 
 ## Task 7: Spanish pilot (Level 1)
 
