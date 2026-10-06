@@ -110,18 +110,12 @@ class PetFloatingView(context: Context, private val onOpen: () -> Unit, private 
 
     fun setDescription(text: String) { disc.contentDescription = text }
 
-    /** Slides the pet up when it would cover a view tagged "petAvoid" (primary CTA, input). */
-    fun avoid(rects: List<Rect>) {
-        val me = Rect()
-        val x = disc.x.toInt(); val y = (disc.y - avoidOffset).toInt()
-        me.set(x, y, x + sizePx, y + sizePx)
-        var offset = 0f
-        for (r in rects) if (Rect.intersects(me, r)) offset = maxOf(offset, (me.bottom - r.top).toFloat() + context.dp(8f))
-        if (offset != avoidOffset) {
-            avoidOffset = offset
-            place(animate = true)
-        }
-    }
+    /**
+     * The pet no longer moves by itself: jumping away from one button kept landing it on another.
+     * It stays where it is (right side by default, or where the user dragged it).
+     */
+    @Suppress("UNUSED_PARAMETER")
+    fun avoid(rects: List<Rect>) = Unit
 
     private fun place(animate: Boolean) {
         if (bounds.isEmpty || sizePx == 0) return

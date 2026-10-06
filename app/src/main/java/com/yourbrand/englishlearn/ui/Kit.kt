@@ -137,11 +137,10 @@ object Kit {
     /** Wrapping row of chips. */
     fun flow(ctx: Context): FlowLayout = FlowLayout(ctx).apply { layoutParams = lp() }
 
-    fun hscroll(ctx: Context, content: LinearLayout): HorizontalScrollView = HorizontalScrollView(ctx).apply {
+    fun hscroll(ctx: Context, content: LinearLayout): HorizontalScrollView = BleedScrollView(ctx).apply {
         isHorizontalScrollBarEnabled = false
-        clipToPadding = false
         overScrollMode = View.OVER_SCROLL_NEVER
-        addView(content)
+        addView(content, FrameLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT))
         layoutParams = lp()
     }
 
@@ -435,5 +434,33 @@ class BottomSheet(private val activity: MainActivity) {
         s.animate().alpha(0f).setDuration(180).withEndAction { activity.overlay.removeView(s) }.start()
         p.animate().translationY(p.height.toFloat()).setDuration(180).withEndAction { activity.overlay.removeView(p) }.start()
         onDismiss?.invoke()
+    }
+}
+
+/**
+ * Horizontal row that scrolls edge to edge. It cancels the parent's side padding with negative
+ * margins and moves that padding into its content, so items line up with the page but are never
+ * cut at the padding line; vertical padding leaves room for chip outlines and the press animation.
+ * Done on attach so it also wins over a later `margins(...)` call.
+ */
+class BleedScrollView(ctx: Context) : HorizontalScrollView(ctx) {
+    override fun onAttachedToWindow() {
+        super.onAttachedToWindow()
+        val p = parent as? ViewGroup ?: return
+        val lp = layoutParams as? ViewGroup.MarginLayoutParams ?: return
+        if (lp.marginStart != -p.paddingStart || lp.marginEnd != -p.paddingEnd) {
+            lp.marginStart = -p.paddingStart; lp.marginEnd = -p.paddingEnd
+            layoutParams = lp
+        }
+        p.clipToPadding = false
+        clipToPadding = false
+        val v = context.dpi(4)
+        (getChildAt(0) as? ViewGroup)?.apply {
+            setPadding(p.paddingStart, v, p.paddingEnd, v)
+            clipToPadding = false
+            // CENTER_VERTICAL subtracts each chip's bottom margin and pushed chips above the row,
+            // so their top outline was cut off. Align to the top instead.
+            if (this is LinearLayout) gravity = Gravity.TOP or Gravity.START
+        }
     }
 }
