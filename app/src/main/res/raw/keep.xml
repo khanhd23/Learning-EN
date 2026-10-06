@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Word pictures are looked up by name at runtime (getIdentifier), so the release resource
+     shrinker cannot see them and removed all 349 images. Keep them. -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@drawable/word_*" />

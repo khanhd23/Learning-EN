@@ -106,6 +106,14 @@ exercise can appear. Owner has now vendored the 306 Noto SVGs (`third_party/noto
 4. Licenses screen: credit Noto Emoji (Apache-2.0) from `third_party_notices.txt`.
 5. Verify on the benchmark build with screenshots of E15/E16/E17 in the report.
 
+### Task 9.1 review (owner)
+
+Accepted (01f1fd1): E15/E16/E17 layouts match the spec, resvg → WebP renders Noto exactly, 349/349
+images, 896 KB. Owner fix: release/benchmark APKs contained **0** word images — they are looked up
+by name (`getIdentifier`), so the resource shrinker removed them; `res/raw/keep.xml` keeps
+`@drawable/word_*` (benchmark APK 5.97 → 6.94 MB, 349 WebP). Small follow-up for later: the
+distractor list is shuffled as a whole, so "same topic first" is lost — shuffle within each group.
+
 ### Task 10: Listen and type (dictation) + minimal pairs
 
 - **E18 dictation:** play a sentence (TTS, slow replay button), learner types it; grade per word
