@@ -249,7 +249,9 @@ class PetFloatingView(context: Context, private val onOpen: () -> Unit, private 
         val atEnd = disc.x + sizePx / 2f > (bounds.left + bounds.right) / 2f
         // Beside the pet, toward the screen centre.
         bubble.x = if (atEnd) disc.x - bw - context.dp(8f) else disc.x + sizePx + context.dp(8f)
-        bubble.y = (disc.y + sizePx / 2f - bh / 2f).coerceIn(bounds.top.toFloat(), (bounds.bottom - bh).toFloat())
+        // Bounds can still be empty on the first insets pass; never coerce into an inverted range.
+        val minY = bounds.top.toFloat()
+        bubble.y = (disc.y + sizePx / 2f - bh / 2f).coerceIn(minY, (bounds.bottom - bh).toFloat().coerceAtLeast(minY))
         bubble.pivotX = if (atEnd) bw.toFloat() else 0f
         bubble.pivotY = bh / 2f
     }
