@@ -80,10 +80,14 @@ IMAGES = {
         poly((64, 64), (64 + 34 * math.cos(math.radians(a)), 64 + 34 * math.sin(math.radians(a))),
              (64 + 34 * math.cos(math.radians(a + 50)), 64 + 34 * math.sin(math.radians(a + 50)))) for a in range(0, 360, 60))),
                 ("#F1F8E9", circle(64, 64, 5))),
-    "grapefruit": svg(("#FF9800", circle(64, 64, 46)), ("#FFE0B2", circle(64, 64, 41)), ("#F06292", "".join(
-        poly((64, 64), (64 + 36 * math.cos(math.radians(a)), 64 + 36 * math.sin(math.radians(a))),
-             (64 + 36 * math.cos(math.radians(a + 40)), 64 + 36 * math.sin(math.radians(a + 40)))) for a in range(0, 360, 45))),
-                      ("#FFE0B2", circle(64, 64, 4))),
+    # Whole fruit behind (pale yellow peel with a pink blush) + a cut half in front with thick white
+    # pith and ruby segments: bigger and paler than an orange, so it does not read as one.
+    "grapefruit": svg(("#F6D365", circle(84, 46, 34)), ("#F7A399", circle(96, 54, 18)), ("#FBE7A1", circle(74, 36, 10)),
+                      ("#F2C14E", circle(52, 76, 44)), ("#FFF6E5", circle(52, 76, 39)), ("#E8455A", "".join(
+        poly((52, 76), (52 + 33 * math.cos(math.radians(a)), 76 + 33 * math.sin(math.radians(a))),
+             (52 + 33 * math.cos(math.radians(a + 37)), 76 + 33 * math.sin(math.radians(a + 37)))) for a in range(0, 360, 45))),
+                      ("#F48691", "".join(circle(52 + 20 * math.cos(math.radians(a + 22)), 76 + 20 * math.sin(math.radians(a + 22)), 3) for a in range(0, 360, 90))),
+                      ("#FFF6E5", circle(52, 76, 5))),
     "pomegranate": svg(("#C62828", circle(64, 70, 42)), ("#E53935", circle(56, 62, 28)),
                        ("#B71C1C", poly((50, 34), (54, 18), (60, 30), (64, 14), (68, 30), (74, 18), (78, 34))),
                        ("#FFCDD2", circle(48, 56, 5))),
