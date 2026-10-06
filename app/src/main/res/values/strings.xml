@@ -179,6 +179,9 @@
     <string name="ins_listen">Listen and choose the word you hear.</string>
     <string name="ins_matching">Match each word with its meaning.</string>
     <string name="ins_meaning">What does this word mean?</string>
+    <string name="ins_picture_word">Which word matches the picture?</string>
+    <string name="ins_listen_picture">Listen and choose the picture.</string>
+    <string name="ins_match_pictures">Match each picture with its word.</string>
     <string name="ins_passage">Choose the best answer for each blank.</string>
     <string name="ins_pronunciation">Choose the word whose underlined part sounds different.</string>
     <string name="ins_reverse">Choose the English word for this meaning.</string>

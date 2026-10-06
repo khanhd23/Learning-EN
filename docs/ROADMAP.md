@@ -82,6 +82,30 @@ the file header); (2) convert real Noto SVGs, which use `circle`, `ellipse`, `re
 these to VectorDrawable (gradients via `aapt:attr`) or pre-render to WebP (≤ 128 px), keeping the
 3 MB budget; (3) fail the build if any mapped word has no image.
 
+### Task 9 review (owner) — not done; Task 9.1
+
+Pushed by mistake before review (ca0bd82); harmless because 0 images are built, so no picture
+exercise can appear. Owner has now vendored the 306 Noto SVGs (`third_party/noto-emoji/svg/`,
+`SOURCE.md`) and committed the 43 owner SVGs and instruction strings. Fix in **Task 9.1**:
+
+1. **Exercises are wrong.** E15/E16/E17 all render four option cards that show the word *and* its
+   picture, with no prompt — the answer is printed next to every picture. Required:
+   - **E15 picture → word:** one large picture (≥ 120 dp) as the prompt; four word options (text
+     only); string `ins_picture_word`.
+   - **E16 sound → picture:** big play button (auto-play once); 2×2 grid of pictures only, no text
+     until answered (then show each lemma under its picture); string `ins_listen_picture`.
+   - **E17 match pictures:** four pictures and four words, tap-to-pair like the existing Matching
+     exercise; string `ins_match_pictures`.
+   Distractors: same topic first, then same pos; never two items with the same image.
+2. **Images must render exactly.** The VectorDrawable converter rejects `ellipse`/`polygon`/
+   gradients (3 of 10 sampled Noto files) and silently ignores `transform` and `opacity`, so even
+   accepted files can draw wrong. Render every SVG (Noto and owner) to a 128 px WebP with resvg
+   (`resvg-py`, pinned in `tools/requirements.txt`) into `res/drawable-nodpi`; keep the 3 MB budget.
+3. Read Noto files from `third_party/noto-emoji/svg/`; accept `-` as the codepoint separator;
+   **fail the build** if a mapped word has no image (no silent skips).
+4. Licenses screen: credit Noto Emoji (Apache-2.0) from `third_party_notices.txt`.
+5. Verify on the benchmark build with screenshots of E15/E16/E17 in the report.
+
 ### Task 10: Listen and type (dictation) + minimal pairs
 
 - **E18 dictation:** play a sentence (TTS, slow replay button), learner types it; grade per word

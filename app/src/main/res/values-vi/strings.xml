@@ -179,6 +179,9 @@
     <string name="ins_listen">Nghe và chọn từ bạn nghe được.</string>
     <string name="ins_matching">Nối mỗi từ với nghĩa của nó.</string>
     <string name="ins_meaning">Từ này có nghĩa là gì?</string>
+    <string name="ins_picture_word">Từ nào đúng với bức hình?</string>
+    <string name="ins_listen_picture">Nghe và chọn hình đúng.</string>
+    <string name="ins_match_pictures">Nối mỗi hình với từ của nó.</string>
     <string name="ins_passage">Chọn đáp án đúng nhất cho mỗi chỗ trống.</string>
     <string name="ins_pronunciation">Chọn từ có phần gạch chân phát âm khác.</string>
     <string name="ins_reverse">Chọn từ tiếng Anh có nghĩa này.</string>
