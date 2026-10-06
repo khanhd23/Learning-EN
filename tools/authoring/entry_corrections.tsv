@@ -302,7 +302,7 @@ map|travel_holidays
 baggage_claim|travel_holidays
 guest|hotel_restaurant
 vacant|hotel_restaurant
-check_out|hotel_restaurant,phrasal_verbs||4
+check_out|hotel_restaurant,phrasal_verbs|ˌtʃek ˈaʊt|4
 front_desk|hotel_restaurant||4
 menu|hotel_restaurant
 dish|hotel_restaurant
@@ -910,65 +910,65 @@ low_key|describing_things
 awesome|describing_things,feelings_personality
 chill|unsorted
 totally|function_words
-give_up|phrasal_verbs||4
+give_up|phrasal_verbs|ˌɡɪv ˈʌp|4
 look_for|phrasal_verbs
-look_forward_to|phrasal_verbs
-find_out|phrasal_verbs||4
+look_forward_to|phrasal_verbs|lʊk ˈfɔːrwərd tuː
+find_out|phrasal_verbs|ˌfaɪnd ˈaʊt|4
 turn_on|phrasal_verbs,home_furniture
 turn_off|phrasal_verbs,home_furniture
-turn_down|phrasal_verbs
-set_up|phrasal_verbs
-figure_out|phrasal_verbs
-come_up_with|phrasal_verbs
-put_off|phrasal_verbs
-call_off|phrasal_verbs
-carry_on|phrasal_verbs
-fill_in|phrasal_verbs||4
-pick_up|phrasal_verbs||4
-show_up|phrasal_verbs
-get_over|phrasal_verbs
-break_down|phrasal_verbs
-go_on|phrasal_verbs||4
-hold_on|phrasal_verbs||4
-keep_up_with|phrasal_verbs
-run_into|phrasal_verbs
-sign_up|phrasal_verbs||4
-work_on|phrasal_verbs||4
-end_up|phrasal_verbs
-deal_with|phrasal_verbs
-point_out|phrasal_verbs
-cut_down_on|phrasal_verbs
-get_rid_of|phrasal_verbs
-piece_of_cake|idioms_chunks||4
-break_the_ice|idioms_chunks
-hit_the_books|idioms_chunks
-under_the_weather|idioms_chunks
-once_in_a_blue_moon|idioms_chunks
-cost_an_arm_and_a_leg|idioms_chunks
-hit_the_nail_on_the_head|idioms_chunks
-the_ball_is_in_your_court|idioms_chunks
-better_late_than_never|idioms_chunks
-spill_the_beans|idioms_chunks
-on_cloud_nine|idioms_chunks
-a_blessing_in_disguise|idioms_chunks
-call_it_a_day|idioms_chunks
-get_the_hang_of|idioms_chunks
-in_hot_water|idioms_chunks
-keep_an_eye_on|idioms_chunks
-let_the_cat_out_of_the_bag|idioms_chunks
-practice_makes_perfect|idioms_chunks||4
-time_flies|idioms_chunks||4
-easier_said_than_done|idioms_chunks
-on_the_same_page|idioms_chunks
-think_outside_the_box|idioms_chunks
-pull_someone_s_leg|idioms_chunks
-a_piece_of_advice|idioms_chunks
-burn_the_midnight_oil|idioms_chunks
-feel_blue|idioms_chunks
-rain_cats_and_dogs|idioms_chunks
-see_eye_to_eye|idioms_chunks
-go_the_extra_mile|idioms_chunks
-learn_by_heart|idioms_chunks
+turn_down|phrasal_verbs|ˌtɜːrn ˈdaʊn
+set_up|phrasal_verbs|ˌset ˈʌp
+figure_out|phrasal_verbs|ˌfɪɡjər ˈaʊt
+come_up_with|phrasal_verbs|ˌkʌm ˈʌp wɪð
+put_off|phrasal_verbs|ˌpʊt ˈɔːf
+call_off|phrasal_verbs|ˌkɔːl ˈɔːf
+carry_on|phrasal_verbs|ˌkæri ˈɑːn
+fill_in|phrasal_verbs,office|ˌfɪl ˈɪn|4
+pick_up|phrasal_verbs|ˌpɪk ˈʌp|4
+show_up|phrasal_verbs|ˌʃoʊ ˈʌp
+get_over|phrasal_verbs,health_illness|ˌɡet ˈoʊvər
+break_down|phrasal_verbs,transport|ˌbreɪk ˈdaʊn
+go_on|phrasal_verbs|ˌɡoʊ ˈɑːn|4
+hold_on|phrasal_verbs|ˌhoʊld ˈɑːn|4
+keep_up_with|phrasal_verbs|ˌkiːp ˈʌp wɪð
+run_into|phrasal_verbs|ˌrʌn ˈɪntuː
+sign_up|phrasal_verbs|ˌsaɪn ˈʌp|4
+work_on|phrasal_verbs|ˈwɜːrk ɑːn|4
+end_up|phrasal_verbs|ˌend ˈʌp
+deal_with|phrasal_verbs|ˈdiːl wɪð
+point_out|phrasal_verbs|ˌpɔɪnt ˈaʊt
+cut_down_on|phrasal_verbs,health_illness|ˌkʌt ˈdaʊn ɑːn
+get_rid_of|phrasal_verbs|ɡet ˈrɪd əv
+piece_of_cake|idioms_chunks|ˌpiːs əv ˈkeɪk|4
+break_the_ice|idioms_chunks|ˌbreɪk ðə ˈaɪs
+hit_the_books|idioms_chunks,education|ˌhɪt ðə ˈbʊks
+under_the_weather|idioms_chunks,health_illness|ˌʌndər ðə ˈweðər
+once_in_a_blue_moon|idioms_chunks|ˌwʌns ɪn ə ˌbluː ˈmuːn
+cost_an_arm_and_a_leg|idioms_chunks,shopping|ˌkɔːst ən ˌɑːrm ənd ə ˈleɡ
+hit_the_nail_on_the_head|idioms_chunks|ˌhɪt ðə ˈneɪl ɑːn ðə ˈhed
+the_ball_is_in_your_court|idioms_chunks|ðə ˈbɔːl ɪz ɪn jɔːr ˈkɔːrt
+better_late_than_never|idioms_chunks|ˌbetər ˌleɪt ðən ˈnevər
+spill_the_beans|idioms_chunks|ˌspɪl ðə ˈbiːnz
+on_cloud_nine|idioms_chunks,feelings_personality|ˌɑːn ˌklaʊd ˈnaɪn
+a_blessing_in_disguise|idioms_chunks|ə ˌblesɪŋ ɪn dɪsˈɡaɪz
+call_it_a_day|idioms_chunks,office|ˌkɔːl ɪt ə ˈdeɪ
+get_the_hang_of|idioms_chunks|ˌɡet ðə ˈhæŋ əv
+in_hot_water|idioms_chunks|ɪn ˌhɑːt ˈwɔːtər
+keep_an_eye_on|idioms_chunks|ˌkiːp ən ˈaɪ ɑːn
+let_the_cat_out_of_the_bag|idioms_chunks|ˌlet ðə ˈkæt aʊt əv ðə ˈbæɡ
+practice_makes_perfect|idioms_chunks|ˌpræktɪs meɪks ˈpɜːrfɪkt|4
+time_flies|idioms_chunks,time_dates|ˌtaɪm ˈflaɪz|4
+easier_said_than_done|idioms_chunks|ˌiːziər ˌsed ðən ˈdʌn
+on_the_same_page|idioms_chunks,office|ɑːn ðə ˌseɪm ˈpeɪdʒ
+think_outside_the_box|idioms_chunks|ˌθɪŋk aʊtˌsaɪd ðə ˈbɑːks
+pull_someone_s_leg|idioms_chunks|ˌpʊl ˈsʌmwʌnz ˈleɡ
+a_piece_of_advice|idioms_chunks|ə ˌpiːs əv ədˈvaɪs
+burn_the_midnight_oil|idioms_chunks,education|ˌbɜːrn ðə ˈmɪdnaɪt ˈɔɪl
+feel_blue|idioms_chunks,feelings_personality|ˌfiːl ˈbluː
+rain_cats_and_dogs|idioms_chunks,weather|ˌreɪn ˌkæts ənd ˈdɔːɡz
+see_eye_to_eye|idioms_chunks|ˌsiː ˌaɪ tə ˈaɪ
+go_the_extra_mile|idioms_chunks,office|ˌɡoʊ ði ˈekstrə ˈmaɪl
+learn_by_heart|idioms_chunks,education|ˌlɜːrn baɪ ˈhɑːrt
 say|core_verbs
 tell|core_verbs
 make|core_verbs
@@ -1821,9 +1821,9 @@ nowhere|unsorted
 differently|unsorted
 continuous|unsorted
 weekly|unsorted
-anxious|unsorted
+anxious|feelings_personality|ˈæŋkʃəs
 altogether|unsorted
-raw|unsorted
+raw|food_drink|rɔː
 genuine|unsorted
 silly|unsorted
 horrible|unsorted
@@ -1837,7 +1837,7 @@ royal|unsorted
 tender|unsorted
 ugly|unsorted
 fortunate|unsorted
-ashamed|unsorted
+ashamed|feelings_personality|əˈʃeɪmd
 it|function_words
 at|function_words
 she|function_words
@@ -2194,7 +2194,7 @@ expectation|unsorted
 employment|unsorted
 breath|unsorted
 notion|unsorted
-relief|unsorted
+relief|feelings_personality|rɪˈliːf
 blame|unsorted
 stretch|unsorted
 native|unsorted
@@ -2203,7 +2203,7 @@ vision|unsorted
 entry|unsorted
 peak|unsorted
 proportion|unsorted
-yard|unsorted
+yard|home_furniture|jɑːrd
 folk|unsorted
 mission|unsorted
 tone|unsorted
@@ -2234,7 +2234,7 @@ seed|nature_landscape|siːd
 core|unsorted
 self|unsorted
 existence|unsorted
-bone|unsorted
+bone|body_appearance|boʊn
 initiative|unsorted
 motion|unsorted
 discipline|unsorted
@@ -2251,7 +2251,7 @@ defeat|unsorted
 climate|unsorted
 exception|unsorted
 beauty|unsorted
-mouse|unsorted
+mouse|animals|maʊs
 mathematics|science_basics,education|ˌmæθəˈmætɪks
 creation|unsorted
 outline|unsorted
@@ -2259,22 +2259,22 @@ sufficient|unsorted
 luck|unsorted
 comfort|unsorted
 prospect|unsorted
-neck|unsorted
+neck|body_appearance|nek
 bet|unsorted
 examination|unsorted
 silence|unsorted
-delight|unsorted
+delight|feelings_personality|dɪˈlaɪt
 wheel|transport|wiːl
-crop|unsorted
+crop|food_drink,environment_energy|krɑːp
 minority|unsorted
 origin|unsorted
 gentleman|unsorted
 achievement|unsorted
 pension|unsorted
-wing|unsorted
+wing|animals|wɪŋ
 laughter|unsorted
 recognition|unsorted
-roof|unsorted
+roof|home_furniture|ruːf
 proof|unsorted
 soil|nature_landscape|sɔɪl
 layer|unsorted
@@ -2287,13 +2287,13 @@ ease|unsorted
 era|unsorted
 prisoner|unsorted
 cloud|nature_landscape,weather|klaʊd
-nose|unsorted
+nose|body_appearance|noʊz
 sail|transport,sports_fitness|seɪl
 disaster|unsorted
 distinction|unsorted
 satisfaction|unsorted
 sweep|daily_routine,home_furniture|swiːp
-anger|unsorted
+anger|feelings_personality|ˈæŋɡər
 stream|nature_landscape|striːm
 constantly|unsorted
 boundary|unsorted
@@ -2301,7 +2301,7 @@ ratio|unsorted
 symbol|unsorted
 demonstration|unsorted
 steel|unsorted
-cake|unsorted
+cake|food_drink|keɪk
 strain|unsorted
 trail|unsorted
 trap|unsorted
@@ -2330,18 +2330,18 @@ burden|unsorted
 resistance|unsorted
 tap|unsorted
 philosophy|unsorted
-lip|unsorted
+lip|body_appearance|lɪp
 approval|unsorted
 grab|unsorted
 tower|unsorted
 angle|science_basics|ˈæŋɡəl
-anxiety|unsorted
+anxiety|feelings_personality,health_illness|æŋˈzaɪəti
 rival|unsorted
 significance|unsorted
 custom|unsorted
 compound|unsorted
 mess|unsorted
-regret|unsorted
+regret|feelings_personality|rɪˈɡret
 margin|unsorted
 stroke|unsorted
 ruin|unsorted
@@ -2357,28 +2357,28 @@ province|unsorted
 compromise|unsorted
 glance|unsorted
 contest|unsorted
-chest|unsorted
+chest|body_appearance|tʃest
 praise|unsorted
 compensation|unsorted
 flash|unsorted
 gesture|unsorted
-joy|unsorted
+joy|feelings_personality|dʒɔɪ
 pile|unsorted
-pig|unsorted
+pig|animals|pɪɡ
 stake|unsorted
 creature|unsorted
 clothing|unsorted
 sake|unsorted
 possession|unsorted
 tale|unsorted
-pot|unsorted
-cow|unsorted
+pot|food_drink,home_furniture|pɑːt
+cow|animals|kaʊ
 scope|unsorted
-pride|unsorted
+pride|feelings_personality|praɪd
 wise|unsorted
 neglect|unsorted
 carbon|science_basics,environment_energy|ˈkɑːrbən
-cheese|unsorted
+cheese|food_drink|tʃiːz
 destruction|unsorted
 flag|unsorted
 mystery|unsorted
@@ -2390,18 +2390,18 @@ coin|unsorted
 bunch|unsorted
 sanction|unsorted
 trick|unsorted
-potato|unsorted
+potato|food_drink|pəˈteɪtoʊ
 shine|unsorted
 servant|unsorted
 excess|unsorted
 liability|unsorted
 bias|unsorted
 luxury|unsorted
-fence|unsorted
+fence|home_furniture|fens
 attraction|unsorted
 determination|unsorted
 fiction|unsorted
-carpet|unsorted
+carpet|home_furniture|ˈkɑːrpɪt
 cluster|unsorted
 confusion|unsorted
 hurry|daily_routine|ˈhɜːri
@@ -2412,15 +2412,15 @@ chase|unsorted
 lover|unsorted
 adjustment|unsorted
 stranger|unsorted
-grain|unsorted
+grain|food_drink|ɡreɪn
 probability|unsorted
 sigh|unsorted
 ownership|unsorted
 gaze|unsorted
-curtain|unsorted
+curtain|home_furniture|ˈkɜːrtən
 registration|unsorted
 listener|language_learning,media_news|ˈlɪsənər
-cheek|unsorted
+cheek|body_appearance|tʃiːk
 grin|unsorted
 hunger|unsorted
 thirst|unsorted
@@ -2471,7 +2471,7 @@ artificial|unsorted
 aspect|unsorted
 assembly|unsorted
 assert|unsorted
-bat|unsorted
+bat|animals|bæt
 binary|unsorted
 blank|unsorted
 bodily|unsorted
@@ -2505,7 +2505,7 @@ correction|unsorted
 correspondence|unsorted
 crude|unsorted
 crystal|science_basics|ˈkrɪstəl
-damp|unsorted
+damp|weather,home_furniture|dæmp
 defect|unsorted
 definite|unsorted
 delta|unsorted
@@ -2514,7 +2514,7 @@ dilemma|unsorted
 discrete|unsorted
 disturbance|unsorted
 dose|unsorted
-drain|unsorted
+drain|home_furniture|dreɪn
 duration|unsorted
 elaborate|unsorted
 ex|unsorted
@@ -2527,7 +2527,7 @@ ghost|unsorted
 gradient|unsorted
 gravity|science_basics|ˈɡrævəti
 gross|unsorted
-hawk|unsorted
+hawk|animals|hɔːk
 hedge|unsorted
 horizontal|unsorted
 hydrogen|science_basics|ˈhaɪdrədʒən
@@ -2539,10 +2539,10 @@ incline|unsorted
 induce|unsorted
 instinct|unsorted
 interfere|unsorted
-kidney|unsorted
+kidney|body_appearance,health_illness|ˈkɪdni
 leisure|unsorted
 lifetime|age_life_stages|ˈlaɪftaɪm
-liver|unsorted
+liver|body_appearance,health_illness|ˈlɪvər
 lump|unsorted
 mechanical|unsorted
 mineral|science_basics,food_drink|ˈmɪnərəl
@@ -2569,13 +2569,13 @@ pardon|unsorted
 particle|science_basics|ˈpɑːrtɪkəl
 periodic|unsorted
 plausible|unsorted
-plug|unsorted
+plug|home_furniture|plʌɡ
 plural|language_learning|ˈplʊrəl
 powder|unsorted
 pragmatic|unsorted
 prejudice|unsorted
 presume|unsorted
-prey|unsorted
+prey|animals|preɪ
 primitive|unsorted
 profound|unsorted
 pronounce|language_learning|prəˈnaʊns
@@ -2656,15 +2656,15 @@ alike|unsorted
 allowance|unsorted
 alpha|unsorted
 amid|unsorted
-appetite|unsorted
+appetite|food_drink,health_illness|ˈæpɪtaɪt
 assault|unsorted
 asylum|unsorted
 attain|unsorted
 attorney|unsorted
 automatic|unsorted
 await|unsorted
-awkward|unsorted
-basket|unsorted
+awkward|feelings_personality|ˈɔːkwərd
+basket|home_furniture,shopping|ˈbæskɪt
 behalf|unsorted
 blast|unsorted
 blend|unsorted
@@ -2846,18 +2846,18 @@ monument|unsorted||4
 cafe|unsorted||4
 ward|unsorted||4
 architect|unsorted||4
-nail|unsorted||4
+nail|home_furniture|neɪl|4
 polish|unsorted||4
 clerk|unsorted||4
-lamp|unsorted||4
+lamp|home_furniture|læmp|4
 assurance|unsorted||4
 cloth|unsorted||4
 kit|unsorted||4
 wool|clothes|wʊl|4
-bean|unsorted||4
-soup|unsorted||4
+bean|food_drink|biːn|4
+soup|food_drink|suːp|4
 beam|unsorted||4
-bench|unsorted||4
+bench|home_furniture,city_directions|bentʃ|4
 parade|unsorted||4
 compliment|unsorted||4
 costume|clothes,arts_entertainment|ˈkɑːstuːm|4
@@ -2865,9 +2865,9 @@ drum|weather||4
 jam|unsorted||4
 purse|clothes,money_banking|pɜːrs|4
 sock|clothes|sɑːk|4
-whale|unsorted||4
+whale|animals|weɪl|4
 fringe|unsorted||4
-ladder|unsorted||4
+ladder|home_furniture|ˈlædər|4
 rubber|unsorted||4
 separation|unsorted||4
 comb|daily_routine|koʊm|4
@@ -2894,7 +2894,7 @@ box|home_furniture
 bulb|unsorted||4
 cooler|unsorted||4
 fountain|unsorted||4
-juice|unsorted||4
+juice|food_drink|dʒuːs|4
 pipe|unsorted||3
 sunshine|weather,nature_landscape|ˈsʌnʃaɪn|4
 thing|describing_things
@@ -2906,7 +2906,7 @@ disagreement|unsorted||4
 grasp|unsorted||4
 master|jobs
 resignation|unsorted||4
-wrinkle|unsorted||4
+wrinkle|body_appearance,age_life_stages|ˈrɪŋkəl|4
 birthday|unsorted||4
 debit|unsorted||4
 discharge|unsorted||4
@@ -2916,7 +2916,7 @@ law|contracts_law
 statue|unsorted||4
 submission|unsorted||4
 brake|transport|breɪk|4
-candy|unsorted||4
+candy|food_drink|ˈkændi|4
 child|family,age_life_stages|tʃaɪld
 compliance|unsorted||4
 dispose|office
@@ -2924,7 +2924,7 @@ execution|unsorted||4
 farewell|unsorted||4
 scenery|nature_landscape,travel_holidays|ˈsiːnəri|4
 subway|transport|ˈsʌbweɪ|4
-tomato|unsorted||4
+tomato|food_drink|təˈmeɪtoʊ|4
 tree|weather
 compensate|office
 country|government_society,travel_holidays
@@ -2958,7 +2958,7 @@ aboard|office||4
 chancellor|unsorted||4
 impression|feelings_personality
 title|arts_entertainment|ˈtaɪtəl
-bull|unsorted||4
+bull|animals|bʊl|4
 delicate|office
 dull|office
 duty|jobs
@@ -2968,7 +2968,7 @@ majority|numbers_quantity
 member|friends_relationships
 recovery|unsorted||3
 shop|shopping
-tongue|unsorted||3
+tongue|body_appearance|tʌŋ|3
 adventure|unsorted||3
 association|office
 justice|contracts_law
@@ -2978,7 +2978,7 @@ pool|sports_fitness,hotel_restaurant
 pursuit|unsorted||4
 sew|office
 switch|home_furniture|swɪtʃ
-throat|unsorted||3
+throat|body_appearance,health_illness|θroʊt|3
 affirmative|unsorted||4
 aversion|unsorted||4
 flesh|unsorted||4
@@ -3003,7 +3003,7 @@ tradition|arts_entertainment
 treasury|unsorted||4
 agency|office
 basin|unsorted||4
-cream|unsorted||3
+cream|food_drink|kriːm|3
 depression|unsorted||3
 expression|language_learning|ɪkˈsprɛʃən
 guy|friends_relationships
@@ -3123,12 +3123,12 @@ cheat|office
 differentiate|office
 heaven|unsorted||4
 grind|unsorted||4
-horn|unsorted||4
+horn|animals|hɔːrn|4
 lick|unsorted||4
 lord|unsorted||4
 oak|nature_landscape|oʊk|4
-olive|unsorted||4
-screw|unsorted||4
+olive|food_drink|ˈɑːlɪv|4
+screw|home_furniture|skruː|4
 veil|unsorted||4
 bent|unsorted||4
 bury|unsorted||3
@@ -3165,7 +3165,7 @@ equip|office
 fury|unsorted||4
 ignorance|unsorted||4
 jack|unsorted||4
-jaw|unsorted||4
+jaw|body_appearance|dʒɔː|4
 kin|unsorted||4
 needy|office
 offer|core_verbs
@@ -3187,10 +3187,10 @@ disguise|office
 duel|unsorted||4
 glory|unsorted||4
 hostage|unsorted||4
-latte|unsorted||4
+latte|food_drink|ˈlɑːteɪ|4
 licking|unsorted||4
 meditation|unsorted||4
-pigeon|unsorted||4
+pigeon|animals|ˈpɪdʒɪn|4
 prick|unsorted||4
 relish|unsorted||4
 repose|unsorted||4
@@ -3205,7 +3205,7 @@ ado|unsorted||4
 agony|unsorted||4
 angel|unsorted||4
 bosom|unsorted||4
-calf|unsorted||4
+calf|animals|kæf|4
 canopy|unsorted||4
 click|internet_social,it_technology|klɪk|3
 continue|core_verbs
@@ -3213,15 +3213,15 @@ countenance|unsorted||4
 dirt|unsorted||4
 flame|unsorted||4
 genius|unsorted||4
-hammer|unsorted||4
-lion|unsorted||4
+hammer|home_furniture|ˈhæmər|4
+lion|animals|ˈlaɪən|4
 mercy|unsorted||4
 nut|unsorted||4
-sauce|unsorted||4
+sauce|food_drink|sɔːs|4
 scrap|unsorted||4
-stool|unsorted||4
+stool|home_furniture|stuːl|4
 tack|unsorted||4
-toe|unsorted||4
+toe|body_appearance|toʊ|4
 verse|unsorted||4
 wisp|unsorted||4
 wit|unsorted||4
@@ -3250,17 +3250,17 @@ bridle|unsorted||4
 bud|nature_landscape|bʌd|4
 chalk|unsorted||4
 cite|unsorted||3
-coconut|unsorted||4
+coconut|food_drink|ˈkoʊkənʌt|4
 concord|unsorted||4
 constant|describing_things|ˈkɑnstənt
 curiosity|unsorted||4
 decent|office
 dignity|unsorted||4
 dismiss|unsorted||3
-dough|unsorted||4
+dough|food_drink|doʊ|4
 equal|numbers_quantity
 fatal|unsorted||4
-flock|unsorted||4
+flock|animals|flɑːk|4
 govern|unsorted||3
 grease|unsorted||4
 greet|unsorted||3
@@ -3287,9 +3287,9 @@ airing|unsorted||4
 bachelor|age_life_stages,education|ˈbætʃələr|4
 banana|food_drink||4
 beginning|unsorted||4
-belly|unsorted||4
+belly|body_appearance|ˈbeli|4
 breadth|unsorted||4
-camel|unsorted||4
+camel|animals|ˈkæməl|4
 caste|unsorted||4
 chortle|unsorted||4
 clearing|unsorted||4
@@ -3300,7 +3300,7 @@ eleven|unsorted||4
 fell|unsorted||4
 fetch|unsorted||4
 fig|weather||4
-fist|unsorted||4
+fist|body_appearance|fɪst|4
 germ|unsorted||4
 heap|unsorted||4
 highness|unsorted||4
@@ -3339,7 +3339,7 @@ exclude|unsorted||3
 fame|unsorted||4
 filling|unsorted||4
 fool|unsorted||3
-frog|unsorted||4
+frog|animals|frɑːɡ|4
 haste|unsorted||4
 holler|unsorted||4
 i|function_words
@@ -3352,11 +3352,11 @@ mast|unsorted||4
 means|unsorted||4
 mischief|unsorted||4
 occur|core_verbs
-peanuts|unsorted||4
+peanuts|food_drink|ˈpiːnʌts|4
 proverb|language_learning,idioms_chunks|ˈprɑːvɜːrb|4
 puppet|unsorted||4
 rascal|unsorted||4
-rat|unsorted||3
+rat|animals|ræt|3
 reject|core_verbs
 robbery|unsorted||4
 satisfy|feelings_personality
@@ -3379,13 +3379,13 @@ feeling|unsorted||4
 fling|unsorted||4
 footing|unsorted||4
 marry|family
-melon|unsorted||4
+melon|food_drink|ˈmelən|4
 parting|unsorted||4
 partner|friends_relationships,office
 pose|unsorted||3
 proclamation|unsorted||4
 provoke|office
-socket|unsorted||4
+socket|home_furniture|ˈsɑːkɪt|4
 somebody|function_words
 uptake|unsorted||4
 weird|unsorted||3
@@ -3393,7 +3393,7 @@ ammonia|unsorted||4
 blade|unsorted||4
 capture|core_verbs
 carriage|unsorted||4
-caterpillar|unsorted||4
+caterpillar|animals|ˈkætərpɪlər|4
 clutch|unsorted||4
 debate|office
 defend|core_verbs
@@ -3410,9 +3410,9 @@ prominence|unsorted||4
 revenge|unsorted||4
 running|unsorted||4
 shame|unsorted||4
-snowfall|unsorted||4
+snowfall|weather|ˈsnoʊfɔːl|4
 tar|unsorted||4
-tornado|unsorted||4
+tornado|weather|tɔːrˈneɪdoʊ|4
 wizard|unsorted||4
 admiral|unsorted||4
 affection|unsorted||4
@@ -3421,10 +3421,10 @@ bloom|unsorted||4
 chum|unsorted||4
 cropper|unsorted||4
 dressing|unsorted||4
-eel|unsorted||4
+eel|animals|iːl|4
 jar|unsorted||4
 murmur|unsorted||4
-mushroom|unsorted||4
+mushroom|food_drink|ˈmʌʃruːm|4
 nadir|unsorted||4
 persist|office
 repression|unsorted||4
@@ -3502,7 +3502,7 @@ foil|unsorted||4
 foul|unsorted
 froth|unsorted||4
 gown|clothes|ɡaʊn|4
-gust|unsorted||4
+gust|weather|ɡʌst|4
 housing|unsorted||4
 iff|unsorted||4
 juncture|unsorted||4
@@ -3526,9 +3526,9 @@ snare|unsorted||4
 snatch|unsorted||4
 sounding|unsorted||4
 spate|unsorted||4
-spice|unsorted||4
+spice|food_drink|spaɪs|4
 standing|unsorted||4
-stew|unsorted||4
+stew|food_drink|stuː|4
 stiff|unsorted
 sting|unsorted||4
 tangle|unsorted||4
@@ -3545,7 +3545,7 @@ whence|unsorted||4
 abundance|unsorted||4
 accelerator|unsorted||4
 acoustics|unsorted||4
-almond|unsorted||4
+almond|food_drink|ˈɑːmənd|4
 ambulance|transport,health_illness|ˈæmbjələns|4
 amusement|unsorted||4
 apostle|unsorted||4
@@ -3555,9 +3555,9 @@ baptism|unsorted||4
 bladder|unsorted||4
 cant|unsorted||4
 contemplation|unsorted||4
-couch|unsorted||4
+couch|home_furniture|kaʊtʃ|4
 covering|unsorted||4
-cupboard|unsorted||4
+cupboard|home_furniture|ˈkʌbərd|4
 cynic|unsorted||4
 dart|unsorted||4
 dew|nature_landscape,weather|duː|4
@@ -3573,7 +3573,7 @@ gem|unsorted||4
 gentry|unsorted||4
 glimpse|unsorted||4
 harmony|unsorted||4
-herd|unsorted||4
+herd|animals|hɜːrd|4
 imprint|unsorted||4
 instantly|unsorted||4
 knack|unsorted||4
@@ -3595,7 +3595,7 @@ salute|unsorted||4
 scourge|unsorted||4
 siege|unsorted||4
 sixth|unsorted||4
-skull|unsorted||4
+skull|body_appearance|skʌl|4
 slant|unsorted||4
 solder|unsorted||4
 squadron|unsorted||4
@@ -3642,9 +3642,9 @@ framing|unsorted||4
 frighten|unsorted||3
 fume|unsorted||4
 funeral|age_life_stages|ˈfjuːnərəl|4
-grief|unsorted||4
+grief|feelings_personality|ɡriːf|4
 growing|unsorted||4
-hail|unsorted||4
+hail|weather|heɪl|4
 hay|unsorted||4
 heating|unsorted||4
 heave|unsorted
@@ -3692,13 +3692,13 @@ scorn|unsorted||4
 scotch|unsorted||4
 scrape|unsorted
 serpent|unsorted||4
-shark|unsorted||4
+shark|animals|ʃɑːrk|4
 shepherd|unsorted||4
 sickness|unsorted||4
 slouch|unsorted||4
 squire|unsorted||4
 stunt|unsorted||4
-thaw|unsorted||4
+thaw|weather|θɔː|4
 thinking|unsorted||4
 tiptoe|unsorted||4
 torment|unsorted||4
@@ -3708,7 +3708,7 @@ tribute|unsorted||4
 tumult|unsorted||4
 twilight|unsorted||4
 uneasiness|unsorted||4
-vinegar|unsorted||4
+vinegar|food_drink|ˈvɪnɪɡər|4
 vocation|unsorted||4
 winning|unsorted||4
 wrath|unsorted||4
@@ -3726,21 +3726,21 @@ bare|unsorted
 boiling|unsorted||4
 botch|unsorted||4
 bulkhead|unsorted||4
-chew|unsorted||4
-chop|unsorted||4
+chew|food_drink|tʃuː|4
+chop|food_drink|tʃɑːp|4
 cloak|unsorted||4
 concealment|unsorted||4
 conjecture|unsorted||4
 crux|unsorted||4
 culprit|unsorted||4
 deception|unsorted||4
-deer|unsorted||4
+deer|animals|dɪr|4
 dexterity|unsorted||4
 doomsday|unsorted||4
 doorway|unsorted||4
 eating|unsorted||4
 enmity|unsorted||4
-envy|unsorted||4
+envy|feelings_personality|ˈenvi|4
 epitome|unsorted||4
 falsetto|unsorted||4
 fir|unsorted||4
@@ -3756,7 +3756,7 @@ godfather|unsorted||4
 gravy|unsorted||4
 guardian|unsorted||4
 gush|unsorted||4
-handsome|unsorted
+handsome|body_appearance|ˈhænsəm
 harbinger|unsorted||4
 hardness|unsorted||4
 haven|unsorted||4
@@ -3778,7 +3778,7 @@ mythology|unsorted||4
 obstinacy|unsorted||4
 october|unsorted||4
 ordeal|unsorted||4
-pail|unsorted||4
+pail|home_furniture|peɪl|4
 palate|unsorted||4
 penance|unsorted||4
 persuade|unsorted||3
@@ -3842,7 +3842,7 @@ hegemony|unsorted||4
 hollow|unsorted
 litre|numbers_quantity,science_basics|ˈliːtər|4
 new_year|unsorted||4
-pancake|unsorted||4
+pancake|food_drink|ˈpænkeɪk|4
 peeling|unsorted||4
 performing|unsorted||4
 quantization|unsorted||4
@@ -3862,7 +3862,7 @@ vicious|unsorted
 agreeable|unsorted
 astronomy|science_basics|əˈstrɑːnəmi|4
 avail|unsorted||4
-bald|unsorted
+bald|body_appearance|bɔːld
 comprehend|unsorted
 holy|unsorted
 lunar|unsorted
@@ -3890,7 +3890,7 @@ aka|unsorted||4
 ampere|unsorted||4
 an|unsorted||4
 anguish|unsorted||4
-ant|unsorted||4
+ant|animals|ænt|4
 awe|unsorted||4
 compassion|unsorted||4
 dusty|unsorted
@@ -3920,7 +3920,7 @@ faithful|unsorted
 farming|unsorted||4
 friends|family||4
 frustum|unsorted||4
-furious|unsorted
+furious|feelings_personality|ˈfjʊriəs
 heed|unsorted||4
 her|unsorted||4
 huff|unsorted||4
@@ -3996,7 +3996,7 @@ midday|unsorted||4
 mighty|unsorted
 mock|unsorted||4
 overflowing|unsorted||4
-peacock|unsorted||4
+peacock|animals|ˈpiːkɑːk|4
 poop|unsorted||4
 pope|unsorted||4
 pretext|unsorted||4
@@ -4098,7 +4098,7 @@ righteous|unsorted
 solemn|unsorted
 tame|unsorted
 willing|unsorted
-worm|unsorted
+worm|animals|wɜːrm
 wretched|unsorted
 accomplished|unsorted
 according|unsorted
@@ -4108,7 +4108,7 @@ dam|unsorted
 dazzling|unsorted
 decided|unsorted
 disinterested|unsorted
-drizzle|unsorted
+drizzle|weather|ˈdrɪzəl
 exacting|unsorted
 fearful|unsorted
 fishy|unsorted
@@ -4122,11 +4122,11 @@ lour|unsorted
 lower|unsorted
 moist|unsorted
 moving|unsorted
-roast|unsorted
+roast|food_drink|roʊst
 sacred|unsorted
 savage|family
 settled|unsorted
-stormy|unsorted
+stormy|weather|ˈstɔːrmi
 stumble|unsorted
 sympathetic|unsorted
 treacherous|unsorted
@@ -4179,7 +4179,7 @@ allied|unsorted
 arduous|unsorted
 auricular|unsorted
 burrow|unsorted
-cheerful|unsorted
+cheerful|feelings_personality|ˈtʃɪrfəl
 churlish|unsorted
 clerical|unsorted
 conscientious|unsorted
@@ -4294,7 +4294,7 @@ rasp|unsorted
 regale|unsorted
 restless|unsorted
 reverend|unsorted
-rib|unsorted
+rib|body_appearance|rɪb
 rifle|unsorted
 roman|unsorted
 ruling|unsorted
@@ -4421,7 +4421,7 @@ sidereal|unsorted
 situated|unsorted
 slop|unsorted
 snort|unsorted
-sorrow|unsorted
+sorrow|feelings_personality|ˈsɑːroʊ
 splash|unsorted
 sprout|unsorted
 stern|unsorted
@@ -4495,7 +4495,7 @@ guzzle|unsorted
 have_to|unsorted
 healing|unsorted
 hem|unsorted
-hoof|unsorted
+hoof|animals|hʊf
 ignorant|unsorted
 illiterate|unsorted
 imbecile|unsorted
