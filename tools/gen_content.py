@@ -634,6 +634,24 @@ def main():
     if set(pet_en) != set(pet):
         raise SystemExit(f"pet_lines_en.json keys differ from pet_lines.py: {sorted(set(pet_en) ^ set(pet))}")
     dump(os.path.join(out_en, "pet.json"), pet_en)
+    # Sound practice (owner, ROADMAP C5): minimal pairs + dictation/shadowing that reference
+    # curated, lesson-ready example sentences (their text and translations live in words).
+    with open(os.path.join(ROOT, "tools", "authoring", "sound_en.json"), encoding="utf-8") as f:
+        sound_src = json.load(f)
+    examples = {e["id"]: (e["text"], w["level"]) for w in words if w.get("tier") == "silver"
+                for sn in w.get("senses", []) for e in sn.get("ex", [])}
+    focus_ids = {x["id"] for x in sound_src["focus"]}
+    bad = [x for x in sound_src["dictation"] + sound_src["shadowing"] if x not in examples]
+    bad += [p["id"] for p in sound_src["pairs"] if p["focus"] not in focus_ids]
+    if bad or set(sound_src["_vi_tips"]) != focus_ids:
+        raise SystemExit(f"sound_en.json: unknown or not lesson-ready ids {bad[:10]}, or vi tips do not match focus ids")
+    sound_en = {
+        "focus": sound_src["focus"],
+        "pairs": sound_src["pairs"],
+        "dictation": [{"id": x, "text": examples[x][0], "level": examples[x][1]} for x in sound_src["dictation"]],
+        "shadowing": [{"id": x, "text": examples[x][0], "level": examples[x][1]} for x in sound_src["shadowing"]],
+    }
+    dump(os.path.join(out_en, "sound.json"), sound_en)
     dump(os.path.join(out_en, "questions.json"), dict(questions=questions, passages=passages))
     # A small, reusable relation index keeps learning features independent from the word card UI.
     # It deliberately records only relations supported by authored data; no homophone is inferred.
@@ -679,6 +697,7 @@ def main():
         "passages": vi.get("passages", {}), "quarantine": vi.get("quarantine", {}),
     })
     dump(os.path.join(out_vi, "pet.json"), vi.get("pet", {}))
+    dump(os.path.join(out_vi, "sound.json"), {"focus": sound_src["_vi_tips"]})
     dump(os.path.join(out_vi, "tips.json"), vi.get("tips", {}))
     ui_path = os.path.join(out_vi, "ui.json")
     old_ui = {}
@@ -707,6 +726,7 @@ def main():
         "ui": {node.attrib["name"]: "".join(node.itertext()) for node in ET.parse(strings_path).getroot().findall("string")} if os.path.isfile(strings_path) else {},
         "pet": vi.get("pet", {}),
         "tips": vi.get("tips", {}),
+        "sound": {x["id"]: x for x in sound_en["focus"]},
     })
     print(f"topics={len(topics)} words={len(words)} confusables={len(conf)} grammar={len(grammar)} "
           f"questions={len(questions)} passages={len(passages)} petMoods={len(pet)}")

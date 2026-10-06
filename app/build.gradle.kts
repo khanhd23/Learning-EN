@@ -112,7 +112,7 @@ val copyContent = tasks.register("generateContentAssets") {
     doLast {
         contentOut.deleteRecursively()
         val dst = File(contentOut, "content").apply { mkdirs() }
-        listOf("en/words.json", "en/grammar.json", "en/questions.json", "en/relations.json", "en/pet.json").forEach {
+        listOf("en/words.json", "en/grammar.json", "en/questions.json", "en/relations.json", "en/pet.json", "en/sound.json").forEach {
             rootProject.file("content/$it").copyTo(File(dst, it), overwrite = true)
         }
         // Locale packs remain outside the APK until their folder status is complete.

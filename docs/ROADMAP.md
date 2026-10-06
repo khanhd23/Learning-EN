@@ -89,6 +89,12 @@ these to VectorDrawable (gradients via `aapt:attr`) or pre-render to WebP (≤ 1
 - **E19 minimal pair:** play one word of a pair, choose which one was said.
 - Data comes from `content/en/sound.json` (owner, C5). Tests for the grader.
 
+**Owner data delivered (C5):** `content/en/sound.json` (from `tools/authoring/sound_en.json`):
+20 sound focuses with tips, 42 minimal pairs, 132 dictation and 132 shadowing sentences
+(`{id, text, level}`; `id` is the curated example id, so its translation is in the locale's
+`words.json` `ex` map). Vietnamese tips: `content/i18n/vi/sound.json` (`focus` map), status kind
+`sound`. Task 11 uses the `shadowing` list.
+
 ### Task 11: Speaking (shadowing)
 
 - **E20 say it:** show and play a sentence, learner speaks; Android `SpeechRecognizer` (offline when

@@ -1,0 +1,649 @@
+{
+ "_doc": "Owner-written sound practice (ROADMAP C5). Pairs are spoken by TTS; dictation and shadowing reference curated example ids (text and translations come from words).",
+ "focus": [
+  {
+   "id": "i_ii",
+   "label": "/ɪ/ – /iː/",
+   "tip": "Short /ɪ/ is quick and relaxed (ship). Long /iː/ is longer, with a smile (sheep)."
+  },
+  {
+   "id": "u_uu",
+   "label": "/ʊ/ – /uː/",
+   "tip": "Short /ʊ/ is quick (full). Long /uː/ is longer, with rounded lips (fool)."
+  },
+  {
+   "id": "e_ae",
+   "label": "/e/ – /æ/",
+   "tip": "For /æ/ open your mouth wider and lower your jaw (bad); /e/ is smaller (bed)."
+  },
+  {
+   "id": "ae_uh",
+   "label": "/æ/ – /ʌ/",
+   "tip": "/æ/ is wide and front (cat); /ʌ/ is short and central, like 'uh' (cut)."
+  },
+  {
+   "id": "l_r",
+   "label": "/l/ – /r/",
+   "tip": "For /l/ the tongue touches behind the top teeth; for /r/ it curls back and touches nothing."
+  },
+  {
+   "id": "v_b",
+   "label": "/v/ – /b/",
+   "tip": "/v/: top teeth on the bottom lip, air flows (very). /b/: both lips close, then open (berry)."
+  },
+  {
+   "id": "f_v",
+   "label": "/f/ – /v/",
+   "tip": "Same mouth shape; /v/ uses your voice (van), /f/ is only air (fan)."
+  },
+  {
+   "id": "w_v",
+   "label": "/w/ – /v/",
+   "tip": "/w/: round lips, no teeth (west). /v/: top teeth touch the bottom lip (vest)."
+  },
+  {
+   "id": "th_s",
+   "label": "/θ/ – /s/",
+   "tip": "For /θ/ put your tongue between your teeth and blow (think); /s/ keeps it behind the teeth (sink)."
+  },
+  {
+   "id": "th_t",
+   "label": "/θ/ – /t/",
+   "tip": "/θ/ is soft air through the tongue and teeth (three); /t/ is a short stop (tree)."
+  },
+  {
+   "id": "dh_d",
+   "label": "/ð/ – /d/",
+   "tip": "/ð/: tongue between the teeth with voice (they); /d/: tongue behind the teeth (day)."
+  },
+  {
+   "id": "sh_ch",
+   "label": "/ʃ/ – /tʃ/",
+   "tip": "/ʃ/ is a long soft 'sh' (shoe); /tʃ/ starts with a stop, like 't' + 'sh' (chew)."
+  },
+  {
+   "id": "sh_s",
+   "label": "/ʃ/ – /s/",
+   "tip": "/ʃ/ has rounded lips and a lower sound (sheet); /s/ is a thin hiss (seat)."
+  },
+  {
+   "id": "s_z",
+   "label": "/s/ – /z/",
+   "tip": "At the end of a word, /z/ uses your voice (rise, prize); /s/ is only air (rice, price)."
+  },
+  {
+   "id": "final",
+   "label": "Final consonants",
+   "tip": "Say the last sound clearly: card, bike, life, need, white. Dropping it changes the word."
+  },
+  {
+   "id": "oo_uu",
+   "label": "/oʊ/ – /uː/",
+   "tip": "/oʊ/ moves from 'o' to 'u' (boat); /uː/ stays the same (boot)."
+  },
+  {
+   "id": "aw_er",
+   "label": "/ɔː/ – /ɜː/",
+   "tip": "/ɔː/ has round lips (walk); /ɜː/ has relaxed lips, like a long 'ơ' (work)."
+  },
+  {
+   "id": "p_b",
+   "label": "/p/ – /b/",
+   "tip": "/p/ has a puff of air and no voice (peach); /b/ uses your voice (beach)."
+  },
+  {
+   "id": "e_i",
+   "label": "/e/ – /ɪ/",
+   "tip": "/e/ is more open (desk); /ɪ/ is higher and shorter (disk)."
+  },
+  {
+   "id": "y_",
+   "label": "/j/ – no /j/",
+   "tip": "'Year' starts with a /j/ glide, like a quick 'y'; 'ear' starts with the vowel."
+  }
+ ],
+ "pairs": [
+  {
+   "id": "mp_ship_sheep",
+   "a": "ship",
+   "b": "sheep",
+   "focus": "i_ii"
+  },
+  {
+   "id": "mp_live_leave",
+   "a": "live",
+   "b": "leave",
+   "focus": "i_ii"
+  },
+  {
+   "id": "mp_sit_seat",
+   "a": "sit",
+   "b": "seat",
+   "focus": "i_ii"
+  },
+  {
+   "id": "mp_full_fool",
+   "a": "full",
+   "b": "fool",
+   "focus": "u_uu"
+  },
+  {
+   "id": "mp_pull_pool",
+   "a": "pull",
+   "b": "pool",
+   "focus": "u_uu"
+  },
+  {
+   "id": "mp_bed_bad",
+   "a": "bed",
+   "b": "bad",
+   "focus": "e_ae"
+  },
+  {
+   "id": "mp_pen_pan",
+   "a": "pen",
+   "b": "pan",
+   "focus": "e_ae"
+  },
+  {
+   "id": "mp_cat_cut",
+   "a": "cat",
+   "b": "cut",
+   "focus": "ae_uh"
+  },
+  {
+   "id": "mp_cap_cup",
+   "a": "cap",
+   "b": "cup",
+   "focus": "ae_uh"
+  },
+  {
+   "id": "mp_light_right",
+   "a": "light",
+   "b": "right",
+   "focus": "l_r"
+  },
+  {
+   "id": "mp_long_wrong",
+   "a": "long",
+   "b": "wrong",
+   "focus": "l_r"
+  },
+  {
+   "id": "mp_fly_fry",
+   "a": "fly",
+   "b": "fry",
+   "focus": "l_r"
+  },
+  {
+   "id": "mp_play_pray",
+   "a": "play",
+   "b": "pray",
+   "focus": "l_r"
+  },
+  {
+   "id": "mp_glass_grass",
+   "a": "glass",
+   "b": "grass",
+   "focus": "l_r"
+  },
+  {
+   "id": "mp_lock_rock",
+   "a": "lock",
+   "b": "rock",
+   "focus": "l_r"
+  },
+  {
+   "id": "mp_collect_correct",
+   "a": "collect",
+   "b": "correct",
+   "focus": "l_r"
+  },
+  {
+   "id": "mp_very_berry",
+   "a": "very",
+   "b": "berry",
+   "focus": "v_b"
+  },
+  {
+   "id": "mp_fan_van",
+   "a": "fan",
+   "b": "van",
+   "focus": "f_v"
+  },
+  {
+   "id": "mp_few_view",
+   "a": "few",
+   "b": "view",
+   "focus": "f_v"
+  },
+  {
+   "id": "mp_west_vest",
+   "a": "west",
+   "b": "vest",
+   "focus": "w_v"
+  },
+  {
+   "id": "mp_wet_vet",
+   "a": "wet",
+   "b": "vet",
+   "focus": "w_v"
+  },
+  {
+   "id": "mp_think_sink",
+   "a": "think",
+   "b": "sink",
+   "focus": "th_s"
+  },
+  {
+   "id": "mp_sing_thing",
+   "a": "sing",
+   "b": "thing",
+   "focus": "th_s"
+  },
+  {
+   "id": "mp_mouse_mouth",
+   "a": "mouse",
+   "b": "mouth",
+   "focus": "th_s"
+  },
+  {
+   "id": "mp_tree_three",
+   "a": "tree",
+   "b": "three",
+   "focus": "th_t"
+  },
+  {
+   "id": "mp_day_they",
+   "a": "day",
+   "b": "they",
+   "focus": "dh_d"
+  },
+  {
+   "id": "mp_shoe_chew",
+   "a": "shoe",
+   "b": "chew",
+   "focus": "sh_ch"
+  },
+  {
+   "id": "mp_ship_chip",
+   "a": "ship",
+   "b": "chip",
+   "focus": "sh_ch"
+  },
+  {
+   "id": "mp_watch_wash",
+   "a": "watch",
+   "b": "wash",
+   "focus": "sh_ch"
+  },
+  {
+   "id": "mp_sheet_seat",
+   "a": "sheet",
+   "b": "seat",
+   "focus": "sh_s"
+  },
+  {
+   "id": "mp_rice_rise",
+   "a": "rice",
+   "b": "rise",
+   "focus": "s_z"
+  },
+  {
+   "id": "mp_price_prize",
+   "a": "price",
+   "b": "prize",
+   "focus": "s_z"
+  },
+  {
+   "id": "mp_car_card",
+   "a": "car",
+   "b": "card",
+   "focus": "final"
+  },
+  {
+   "id": "mp_buy_bike",
+   "a": "buy",
+   "b": "bike",
+   "focus": "final"
+  },
+  {
+   "id": "mp_lie_life",
+   "a": "lie",
+   "b": "life",
+   "focus": "final"
+  },
+  {
+   "id": "mp_knee_need",
+   "a": "knee",
+   "b": "need",
+   "focus": "final"
+  },
+  {
+   "id": "mp_why_white",
+   "a": "why",
+   "b": "white",
+   "focus": "final"
+  },
+  {
+   "id": "mp_boat_boot",
+   "a": "boat",
+   "b": "boot",
+   "focus": "oo_uu"
+  },
+  {
+   "id": "mp_walk_work",
+   "a": "walk",
+   "b": "work",
+   "focus": "aw_er"
+  },
+  {
+   "id": "mp_beach_peach",
+   "a": "beach",
+   "b": "peach",
+   "focus": "p_b"
+  },
+  {
+   "id": "mp_desk_disk",
+   "a": "desk",
+   "b": "disk",
+   "focus": "e_i"
+  },
+  {
+   "id": "mp_ear_year",
+   "a": "ear",
+   "b": "year",
+   "focus": "y_"
+  }
+ ],
+ "dictation": [
+  "quality_s1",
+  "head_s1",
+  "song_s1",
+  "pair_s1",
+  "magazine_s1",
+  "station_s1",
+  "ride_s1",
+  "already_s1",
+  "knee_s1",
+  "pineapple_s1",
+  "science_s1",
+  "zebra_s1",
+  "excuse_s1",
+  "sunrise_s1",
+  "menu_s1",
+  "giraffe_s1",
+  "computer_s1",
+  "wife_s1",
+  "chef_s1",
+  "logo_s1",
+  "usual_s1",
+  "film_s1",
+  "shoe_s1",
+  "law_s1",
+  "shift_s1",
+  "forget_s1",
+  "left_s1",
+  "childhood_s1",
+  "boarding_pass_s1",
+  "toothpaste_s1",
+  "sample_s1",
+  "band_s1",
+  "driver_s1",
+  "sick_s1",
+  "no_worries_s1",
+  "apply_s1",
+  "studio_s1",
+  "waste_s1",
+  "jump_s1",
+  "eight_s1",
+  "deadline_s1",
+  "actual_s1",
+  "communication_s1",
+  "various_s1",
+  "leg_s1",
+  "supply_s1",
+  "distance_s1",
+  "social_s1",
+  "item_s1",
+  "radio_s1",
+  "project_s1",
+  "payment_s1",
+  "occasion_s1",
+  "land_s1",
+  "healthy_s1",
+  "headache_s1",
+  "convention_s1",
+  "and_s1",
+  "store_s1",
+  "arm_s1",
+  "image_s2",
+  "equally_s1",
+  "dream_s1",
+  "brand_new_s1",
+  "chief_s1",
+  "speech_s1",
+  "couple_s1",
+  "opposite_s1",
+  "part_time_s1",
+  "sector_s1",
+  "try_on_s1",
+  "album_s1",
+  "foreign_s1",
+  "event_s1",
+  "famous_s1",
+  "present_s1",
+  "reform_s1",
+  "lady_s1",
+  "bill_s1",
+  "wake_up_s1",
+  "unfortunately_s1",
+  "headphones_s1",
+  "reduce_s1",
+  "priority_s1",
+  "farmer_s1",
+  "coat_s1",
+  "serve_s1",
+  "police_s1",
+  "version_s1",
+  "southern_s1",
+  "should_s1",
+  "busy_s1",
+  "dollar_s1",
+  "recycle_s1",
+  "good_looking_s1",
+  "position_s3",
+  "sentence_s1",
+  "beach_s1",
+  "photograph_s1",
+  "roll_s1",
+  "class_s1",
+  "hippopotamus_s1",
+  "shock_s1",
+  "package_s2",
+  "exchange_s2",
+  "letter_s1",
+  "mechanism_s1",
+  "grapefruit_s1",
+  "weather_s1",
+  "ground_s1",
+  "machine_s1",
+  "smoke_s1",
+  "fan_s1",
+  "spicy_s1",
+  "training_s2",
+  "brain_s1",
+  "glass_s1",
+  "gene_s1",
+  "during_s1",
+  "habit_s1",
+  "constant_s1",
+  "hobby_s1",
+  "television_s1",
+  "labor_s1",
+  "stone_s1",
+  "exchange_s1",
+  "measure_s1",
+  "organize_s1",
+  "conflict_s1",
+  "hit_s1",
+  "comment_s1",
+  "order_s2"
+ ],
+ "shadowing": [
+  "turn_off_s1",
+  "sister_s1",
+  "brand_s1",
+  "message_s1",
+  "instance_s1",
+  "hungry_s1",
+  "army_s1",
+  "flood_s1",
+  "size_s1",
+  "gather_s1",
+  "metal_s1",
+  "doubt_s1",
+  "car_s1",
+  "look_for_s1",
+  "reply_s2",
+  "spot_s1",
+  "plum_s1",
+  "accountant_s1",
+  "relation_s1",
+  "group_s1",
+  "net_s1",
+  "age_s1",
+  "good_luck_s1",
+  "pet_s1",
+  "educational_s1",
+  "sounds_good_s1",
+  "officer_s1",
+  "yes_s1",
+  "invitation_s1",
+  "expensive_s1",
+  "crime_s1",
+  "former_s1",
+  "delay_s1",
+  "snow_s1",
+  "electricity_s1",
+  "decade_s1",
+  "link_s1",
+  "student_s1",
+  "speed_s1",
+  "share_s1",
+  "physical_s1",
+  "life_s1",
+  "question_s1",
+  "or_s1",
+  "room_s1",
+  "worth_s1",
+  "employer_s1",
+  "delivery_s1",
+  "helmet_s1",
+  "ad_s1",
+  "winter_s1",
+  "zipper_s1",
+  "will_s1",
+  "brother_s1",
+  "application_s1",
+  "everyone_s1",
+  "as_s1",
+  "cost_s2",
+  "pack_s1",
+  "pound_s1",
+  "jog_s1",
+  "cashier_s1",
+  "take_off_s2",
+  "scientist_s1",
+  "game_s1",
+  "branch_s1",
+  "bowl_s1",
+  "celebrate_s1",
+  "deliver_s1",
+  "hi_s1",
+  "satisfy_s1",
+  "update_s2",
+  "citizen_s1",
+  "advertise_s1",
+  "trip_s1",
+  "development_s1",
+  "cloudy_s1",
+  "air_s1",
+  "historical_s1",
+  "conversation_s1",
+  "north_s1",
+  "guest_s1",
+  "generally_s1",
+  "flower_s1",
+  "midnight_s1",
+  "limit_s1",
+  "telephone_s1",
+  "spend_s1",
+  "tail_s1",
+  "weekend_s1",
+  "percent_s1",
+  "kitchen_s1",
+  "suggestion_s1",
+  "relax_s1",
+  "attention_s1",
+  "union_s1",
+  "windy_s1",
+  "sweet_s1",
+  "owl_s1",
+  "record_s2",
+  "minute_s1",
+  "freeze_s1",
+  "post_s2",
+  "lost_s1",
+  "decrease_s1",
+  "arrive_s1",
+  "industrial_s1",
+  "child_s1",
+  "calm_s1",
+  "report_s1",
+  "pattern_s1",
+  "identity_s1",
+  "ignore_s1",
+  "perhaps_s1",
+  "guide_s2",
+  "parent_s1",
+  "remove_s1",
+  "cheap_s1",
+  "clothes_s1",
+  "tip_s1",
+  "dead_s1",
+  "ball_s1",
+  "phase_s1",
+  "happy_s1",
+  "sex_s1",
+  "lose_s2",
+  "cancer_s1",
+  "rich_s1",
+  "rock_s1",
+  "key_s1",
+  "debate_s1",
+  "quiet_s1"
+ ],
+ "_vi_tips": {
+  "i_ii": "Âm /ɪ/ ngắn, thả lỏng (ship). Âm /iː/ kéo dài, miệng hơi cười (sheep).",
+  "u_uu": "Âm /ʊ/ ngắn, nhanh (full). Âm /uː/ dài, môi tròn (fool).",
+  "e_ae": "Với /æ/ hãy mở miệng rộng, hạ hàm xuống (bad); /e/ mở hẹp hơn (bed).",
+  "ae_uh": "/æ/ mở rộng, phía trước (cat); /ʌ/ ngắn, ở giữa miệng như 'ơ' (cut).",
+  "l_r": "Với /l/ đầu lưỡi chạm sau răng trên; với /r/ lưỡi cong về sau, không chạm vào đâu.",
+  "v_b": "/v/: răng trên chạm môi dưới, hơi thoát ra (very). /b/: hai môi khép rồi bật ra (berry).",
+  "f_v": "Khẩu hình giống nhau; /v/ có rung dây thanh (van), /f/ chỉ có hơi (fan).",
+  "w_v": "/w/: tròn môi, không dùng răng (west). /v/: răng trên chạm môi dưới (vest).",
+  "th_s": "Với /θ/ đặt lưỡi giữa hai hàm răng rồi thổi hơi (think); /s/ lưỡi ở sau răng (sink).",
+  "th_t": "/θ/ là hơi thoát nhẹ qua lưỡi và răng (three); /t/ là âm bật ngắn (tree).",
+  "dh_d": "/ð/: lưỡi giữa hai răng, có rung (they); /d/: lưỡi sau răng (day).",
+  "sh_ch": "/ʃ/ là âm 'sh' kéo dài, mềm (shoe); /tʃ/ bắt đầu bằng âm chặn, như 't' + 'sh' (chew).",
+  "sh_s": "/ʃ/ tròn môi, âm trầm hơn (sheet); /s/ là tiếng xì mảnh (seat).",
+  "s_z": "Ở cuối từ, /z/ có rung dây thanh (rise, prize); /s/ chỉ có hơi (rice, price).",
+  "final": "Hãy phát âm rõ âm cuối: card, bike, life, need, white. Bỏ âm cuối là thành từ khác.",
+  "oo_uu": "/oʊ/ trượt từ 'ô' sang 'u' (boat); /uː/ giữ nguyên một âm (boot).",
+  "aw_er": "/ɔː/ môi tròn (walk); /ɜː/ môi thả lỏng như 'ơ' kéo dài (work).",
+  "p_b": "/p/ bật hơi mạnh, không rung (peach); /b/ có rung dây thanh (beach).",
+  "e_i": "/e/ mở hơn (desk); /ɪ/ cao và ngắn hơn (disk).",
+  "y_": "'Year' bắt đầu bằng âm lướt /j/ như 'd' nhẹ; 'ear' bắt đầu ngay bằng nguyên âm."
+ }
+}
