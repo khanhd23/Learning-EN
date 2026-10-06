@@ -43,7 +43,7 @@ object ContentParser {
     private fun JSONObject.strOrNull(k: String): String? = if (has(k) && !isNull(k)) optString(k).takeIf { it.isNotEmpty() } else null
     private inline fun <T> JSONArray?.map(f: (JSONObject) -> T): List<T> = if (this == null) emptyList() else List(length()) { f(getJSONObject(it)) }
 
-    fun parse(words: String, grammar: String, questions: String, locale: LocalePackFiles, formats: String, approval: LocaleApproval? = null): Content {
+    fun parse(words: String, grammar: String, questions: String, locale: LocalePackFiles, formats: String, approval: LocaleApproval? = null, images: Map<String, String> = emptyMap()): Content {
         val viTopics = JSONObject(locale.topics)
         val viWords = JSONObject(locale.words)
         val viConf = JSONObject(locale.confusables)
@@ -81,6 +81,7 @@ object ContentParser {
                 tier = o.optString("tier", "bronze"),
                 forms = o.optJSONObject("forms")?.keys()?.asSequence()?.associateWith { o.getJSONObject("forms").getString(it) }.orEmpty(),
                 grammarIds = o.optJSONArray("grammarIds").strings(),
+                image = images[id],
             )
         }
         val visibleWords = wordList.mapNotNull { word ->
@@ -163,6 +164,11 @@ class ContentRepository(private val context: Context) {
 
     private fun asset(name: String) = context.assets.open("content/$name").bufferedReader().use { it.readText() }
 
+    private fun imageManifest(): Map<String, String> = runCatching {
+        val json = JSONObject(asset("image_manifest.json"))
+        json.keys().asSequence().associateWith { json.getString(it) }
+    }.getOrDefault(emptyMap())
+
     private fun localePack(locale: String): String {
         val candidate = locale.trim().replace('_', '-')
         if (candidate.isBlank() || candidate == "en") return "en"
@@ -216,6 +222,7 @@ class ContentRepository(private val context: Context) {
             if (key == "en") englishLocaleFiles() else localeFiles(key),
             asset("exam_formats.json"),
             if (key == "en") null else approval(key),
+            imageManifest(),
         ).also { cached[key] = it }
     }
 

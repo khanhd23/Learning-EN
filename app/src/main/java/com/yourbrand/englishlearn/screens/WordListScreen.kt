@@ -128,6 +128,15 @@ class WordListScreen(
             background = c.rounded(if (w.key in selected) c.col(R.color.primary_container) else 0, 12f, ripple = true)
             isClickable = true
         }
+        w.image?.let { name ->
+            val id = c.resources.getIdentifier(name, "drawable", c.packageName)
+            if (id != 0) row.addView(ImageView(c).apply {
+                setImageResource(id)
+                contentDescription = w.lemma
+                scaleType = ImageView.ScaleType.CENTER_INSIDE
+                layoutParams = LinearLayout.LayoutParams(c.dpi(48), c.dpi(48)).apply { marginEnd = c.dpi(10) }
+            })
+        }
         val texts = Kit.vbox(c) { layoutParams = lp(0, WRAP_CONTENT, 1f) }
         val top = Kit.hbox(c)
         top.addView(Kit.text(c, w.lemma, R.style.Text_BodyStrong).apply { layoutParams = LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT) })

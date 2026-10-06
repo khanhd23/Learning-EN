@@ -83,6 +83,7 @@ android {
     androidResources { localeFilters += listOf("en", "vi") }
 
     sourceSets["main"].assets.srcDir("build/generated/contentAssets")
+    sourceSets["main"].res.srcDir("build/generated/imageAssets/res")
 
     testOptions { unitTests.isReturnDefaultValues = true }
 }
@@ -134,6 +135,31 @@ val copyContent = tasks.register("generateContentAssets") {
             "--hash-output", File(dst, "content.db.sha256").absolutePath,
         ).directory(rootProject.projectDir).inheritIO().start()
         if (builder.waitFor() != 0) error("build_content_db.py failed")
+    }
+}
+val imageOut = layout.buildDirectory.dir("generated/imageAssets").get().asFile
+val buildImages = tasks.register("generateImageAssets") {
+    group = "build"
+    description = "Builds optional word picture VectorDrawables and their manifest."
+    inputs.file(rootProject.file("tools/build_images.py"))
+    outputs.dir(imageOut)
+    doLast {
+        imageOut.deleteRecursively()
+        val process = ProcessBuilder("python", "tools/build_images.py", "--root", rootProject.projectDir.absolutePath,
+            "--output", imageOut.absolutePath).directory(rootProject.projectDir).inheritIO().start()
+        if (process.waitFor() != 0) error("build_images.py failed")
+        val assetDir = File(contentOut, "content").apply { mkdirs() }
+        File(imageOut, "image_manifest.json").copyTo(File(assetDir, "image_manifest.json"), overwrite = true)
+        File(imageOut, "third_party_notices.txt").copyTo(File(assetDir, "third_party_notices.txt"), overwrite = true)
+    }
+}
+tasks.matching { it.name.startsWith("merge") && it.name.endsWith("Resources") || it.name.startsWith("compile") && it.name.endsWith("Kotlin") }
+    .configureEach { dependsOn(buildImages) }
+tasks.matching { it.name.startsWith("generate") && it.name.endsWith("Resources") }
+    .configureEach { dependsOn(buildImages) }
+tasks.configureEach {
+    if (name != "generateImageAssets" && (name.contains("Debug") || name.contains("Benchmark") || name.contains("Release"))) {
+        dependsOn(buildImages)
     }
 }
 tasks.matching {

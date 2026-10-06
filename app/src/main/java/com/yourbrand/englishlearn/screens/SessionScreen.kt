@@ -207,6 +207,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         scroll.scrollTo(0, 0)
         shownAt = SystemClock.elapsedRealtime()
         when (ex) {
+            is Exercise.PictureChoice -> renderPictureChoice(ex)
             is Exercise.Choice -> renderChoice(ex)
             is Exercise.FindError -> renderFindError(ex)
             is Exercise.WordOrder -> renderWordOrder(ex)
@@ -311,6 +312,41 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             // Eliminate one wrong option (no penalty, only no bonus XP).
             cards.indices.filter { it != ex.answer && it != selected && cards[it].enabled }.randomOrNull()?.let { cards[it].setState(OptionCard.State.DISABLED) }
         }
+    }
+
+    private fun renderPictureChoice(ex: Exercise.PictureChoice) {
+        content.addView(instruction(ex.instruction))
+        ex.speak?.let { content.addView(speaker(it, big = true).apply { layoutParams = lp(h = ctx.dpi(72)).apply { topMargin = ctx.dpi(12) } }) }
+        val box = Kit.vbox(ctx).margins(ctx, top = 16)
+        content.addView(box)
+        var selected = -1
+        val cards = ex.words.mapIndexed { i, word ->
+            val card = OptionCard(ctx, i, word.lemma)
+            word.image?.let { name ->
+                val id = ctx.resources.getIdentifier(name, "drawable", ctx.packageName)
+                if (id != 0) card.view.addView(ImageView(ctx).apply {
+                    setImageResource(id); contentDescription = word.lemma; scaleType = ImageView.ScaleType.CENTER_INSIDE
+                    layoutParams = LinearLayout.LayoutParams(ctx.dpi(48), ctx.dpi(48)).apply { marginStart = ctx.dpi(8) }
+                }, 1)
+            }
+            box.addView(card.view)
+            card.view.onTap {
+                if (answered || !card.enabled) return@onTap
+                selected = i
+                cardsRef.forEachIndexed { j, c -> c.setState(if (j == i) OptionCard.State.SELECTED else OptionCard.State.DEFAULT) }
+                action.isEnabled = true
+                if (session.speed) check?.invoke()
+            }
+            card
+        }
+        cardsRef = cards
+        check = {
+            val ok = selected == ex.answer
+            cards.forEachIndexed { j, card -> card.setState(when { j == ex.answer -> OptionCard.State.CORRECT; j == selected -> OptionCard.State.WRONG; else -> OptionCard.State.DIMMED }) }
+            onAnswered(ex, ok, ex.words.getOrNull(selected)?.lemma, cards[ex.answer].view,
+                correctText = ex.words[ex.answer].lemma, explanation = ex.words[ex.answer].gloss, speakText = ex.speak)
+        }
+        onHint = { cards.indices.filter { it != ex.answer && it != selected && cards[it].enabled }.randomOrNull()?.let { cards[it].setState(OptionCard.State.DISABLED) } }
     }
 
     private var cardsRef: List<OptionCard> = emptyList()

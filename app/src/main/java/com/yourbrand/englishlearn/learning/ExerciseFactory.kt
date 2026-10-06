@@ -66,6 +66,14 @@ class ExerciseFactory(private val content: Content, private val random: Random =
 
     fun flashcard(w: Word) = Exercise.Flashcard(w.key, wordTags(w), w.level, w)
 
+    fun picture(w: Word, kind: Kind = Kind.E15): Exercise.PictureChoice? {
+        val others = content.lessonWords.filter { it.image != null && it.id != w.id && it.pos == w.pos }.shuffled(random).take(3)
+        if (w.image == null || others.size < 3) return null
+        val words = (others + w).shuffled(random)
+        return Exercise.PictureChoice(w.key + ":" + kind.name, kind, wordTags(w) + "picture", w.level, words, words.indexOf(w), R.string.ins_choose,
+            if (kind == Kind.E16) w.lemma else null)
+    }
+
     fun spelling(w: Word): Exercise.Spelling? {
         if (w.lemma.contains(' ') || w.lemma.length > 14 || w.lemma.length < 3) return null
         val ex = w.senses.first().examples.firstOrNull()
@@ -125,6 +133,7 @@ class ExerciseFactory(private val content: Content, private val random: Random =
         val box = state?.box ?: 0
         val options = buildList<() -> Exercise?> {
             if (box <= 1) { add { meaning(w) }; add { meaning(w) }; add { flashcard(w) } }
+            if (box <= 1) add { picture(w, Kind.E15) }
             if (box >= 1) { add { reverse(w) }; add { listening(w) }; add { cloze(w) } }
             if (box >= 2) { add { spelling(w) }; add { cloze(w) } }
         }

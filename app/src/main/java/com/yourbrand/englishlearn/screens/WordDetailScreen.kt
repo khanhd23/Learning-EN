@@ -32,6 +32,15 @@ class WordDetailScreen(activity: MainActivity, private val wordId: String) : Scr
         left.addView(Kit.text(c, w.lemma, R.style.Text_Display, sizeSp = 34f))
         left.addView(Kit.text(c, "/${w.ipa}/", R.style.Text_Body, c.col(R.color.muted)))
         head.addView(left)
+        w.image?.let { name ->
+            val id = c.resources.getIdentifier(name, "drawable", c.packageName)
+            if (id != 0) head.addView(ImageView(c).apply {
+                setImageResource(id)
+                contentDescription = w.lemma
+                scaleType = ImageView.ScaleType.CENTER_INSIDE
+                layoutParams = LinearLayout.LayoutParams(c.dpi(64), c.dpi(64)).apply { marginStart = c.dpi(8) }
+            })
+        }
         head.addView(speakerBtn(R.drawable.ic_volume, str(R.string.listen)) { services.tts.speak(w.lemma) })
         head.addView(speakerBtn(R.drawable.ic_timer, str(R.string.listen_slow)) { services.tts.speak(w.lemma, slower = true) }.apply { (layoutParams as LinearLayout.LayoutParams).marginStart = c.dpi(8) })
         body.addView(head)
