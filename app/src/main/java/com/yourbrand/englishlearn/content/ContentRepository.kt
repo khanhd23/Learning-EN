@@ -270,6 +270,6 @@ class ContentRepository(private val context: Context) {
             }
         }
         val questionValues = JSONObject().put("q", explanations).put("passages", passageValues)
-        return LocalePackFiles(topics.toString(), wordValues.toString(), "{}", grammarValues.toString(), questionValues.toString(), "{}", "{}")
+        return LocalePackFiles(topics.toString(), wordValues.toString(), "{}", grammarValues.toString(), questionValues.toString(), asset("en/pet.json"), "{}")
     }
 }

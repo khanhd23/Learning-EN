@@ -84,10 +84,20 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
     // ---- animation loop ------------------------------------------------------------------
 
     private fun ensureRunning() {
-        if (running || !isAttachedToWindow || !isShown || context.reduceMotion) return
+        if (!isAttachedToWindow || !isShown || context.reduceMotion) return
+        if (running) {
+            // A reaction while idling: wake the loop now instead of after the idle delay.
+            Choreographer.getInstance().removeFrameCallback(this)
+            Choreographer.getInstance().postFrameCallback(this)
+            return
+        }
         running = true; lastNs = 0L
         Choreographer.getInstance().postFrameCallback(this)
     }
+
+    /** True while a short reaction or a blink is playing; those run at full frame rate. */
+    private fun busy() = t - jumpStart < 0.5f || t - tiltStart < 0.45f || t - wiggleStart < 0.65f ||
+        t - chewStart < 1.25f || t < blinkUntil + 0.02f
 
     override fun doFrame(frameTimeNanos: Long) {
         if (!isAttachedToWindow || !isShown || windowVisibility != VISIBLE) { running = false; return }
@@ -96,8 +106,13 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
         t += dt
         if (t > nextBlink) { blinkUntil = t + 0.12f; nextBlink = t + 3f + Random.nextFloat() * 2f }
         invalidate()
-        Choreographer.getInstance().postFrameCallback(this)
+        // Idle breathing does not need 90–120 fps. Redrawing the pet every vsync kept the whole
+        // window rendering nonstop and made scrolling and transitions stutter. Idle runs at ~20 fps.
+        if (busy()) Choreographer.getInstance().postFrameCallback(this)
+        else Choreographer.getInstance().postFrameCallbackDelayed(this, IDLE_FRAME_MS)
     }
+
+    private companion object { const val IDLE_FRAME_MS = 50L }
 
     override fun onAttachedToWindow() { super.onAttachedToWindow(); ensureRunning() }
     override fun onDetachedFromWindow() { Choreographer.getInstance().removeFrameCallback(this); running = false; super.onDetachedFromWindow() }

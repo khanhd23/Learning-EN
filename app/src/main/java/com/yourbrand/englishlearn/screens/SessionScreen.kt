@@ -49,6 +49,8 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
     private val answers = ArrayList<Answer>()
     private var combo = 0
     private var bestCombo = 0
+    private var wrongRun = 0
+    private var cheerBubble: TextView? = null
     private var fastStreak = 0
     private var totalXp = 0
     private var shownAt = 0L
@@ -170,6 +172,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
 
     override fun onDestroy() {
         chip.removeCallbacks(speedTick); chip.removeCallbacks(timerTick); content.removeCallbacks(hintRunnable)
+        cheerBubble?.let { activity.overlay.removeView(it) }; cheerBubble = null
         services.tts.stop()
     }
 
@@ -485,6 +488,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         combo = if (allOk) combo + 1 else 0
         miniPet.mood = if (allOk) Mood.CHEER else Mood.OOPS
         miniPet.react(miniPet.mood)
+        cheer(allOk)
         content.postDelayed({ index++; render() }, 700)
     }
 
@@ -645,6 +649,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         miniPet.mood = if (almost) Mood.THINKING else if (correct) Mood.CHEER else Mood.OOPS
         miniPet.react(miniPet.mood)
         if (correct && combo in listOf(3, 5, 10)) showCombo()
+        cheer(correct)
         creditXp(xp, anchor)
         // Re-queue a wrong item once, 3–4 items later.
         if (!correct && !session.speed && ex.key !in requeued && ex !is Exercise.Matching) {
@@ -665,6 +670,59 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         val r = services.creditXp(xp)
         activity.flyXp(from, xp, miniPet)
         if (r.stageUp != null) miniPet.setFrom(services.pet.state)
+    }
+
+    /**
+     * The mini pet praises a streak (3/5/10 in a row) or a comeback after two misses, and
+     * encourages after two misses in a row. Never during timed tests; respects the bubble setting.
+     */
+    private fun cheer(correct: Boolean) {
+        val prevWrong = wrongRun
+        wrongRun = if (correct) 0 else wrongRun + 1
+        if (session.timed || !services.settings.petBubbles) return
+        val key = when {
+            correct && combo == 10 -> "S_COMBO10"
+            correct && combo == 5 -> "S_COMBO5"
+            correct && combo == 3 -> "S_COMBO3"
+            correct && prevWrong >= 2 -> "S_COMEBACK"
+            !correct && wrongRun == 2 -> "S_WRONG2"
+            else -> return
+        }
+        val line = services.content.petLines[key].orEmpty().randomOrNull()?.replace("{name}", services.pet.state.name) ?: return
+        // Let the combo badge finish first so the two never overlap.
+        val delay = if (key.startsWith("S_COMBO")) 1100L else 150L
+        miniPet.postDelayed({ if (!finished) showCheer(line) }, delay)
+    }
+
+    private fun showCheer(line: String) {
+        val c = ctx
+        cheerBubble?.let { activity.overlay.removeView(it) }
+        val loc = IntArray(2); miniPet.getLocationInWindow(loc)
+        val o = IntArray(2); activity.overlay.getLocationInWindow(o)
+        val bubble = TextView(c).apply {
+            text = line
+            textSize = 14f
+            setTextColor(c.col(R.color.on_surface))
+            maxWidth = c.dpi(220)
+            setPadding(c.dpi(12), c.dpi(8), c.dpi(12), c.dpi(8))
+            background = c.rounded(c.col(R.color.surface), 16f, c.col(R.color.outline), 1f)
+            elevation = c.dp(6f)
+            accessibilityLiveRegion = View.ACCESSIBILITY_LIVE_REGION_POLITE
+            pivotY = 0f
+        }
+        val endGap = (activity.overlay.width - (loc[0] - o[0] + miniPet.width)).coerceAtLeast(c.dpi(8))
+        activity.overlay.addView(bubble, FrameLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT, Gravity.TOP or Gravity.END).apply {
+            topMargin = loc[1] - o[1] + miniPet.height + c.dpi(6)
+            marginEnd = endGap - c.dpi(8)
+        })
+        cheerBubble = bubble
+        bubble.pop(0.7f)
+        bubble.postDelayed({
+            bubble.animate().alpha(0f).setDuration(200).withEndAction {
+                activity.overlay.removeView(bubble)
+                if (cheerBubble === bubble) cheerBubble = null
+            }.start()
+        }, 2400)
     }
 
     private fun showCombo() {

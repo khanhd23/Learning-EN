@@ -631,6 +631,12 @@ def main():
 
     dump(os.path.join(out_en, "words.json"), dict(topics=topics, words=words, confusables=conf))
     dump(os.path.join(out_en, "grammar.json"), dict(points=grammar))
+    # English pet speech (owner-written source); keys must match the Vietnamese lines.
+    with open(os.path.join(ROOT, "tools", "authoring", "pet_lines_en.json"), encoding="utf-8") as f:
+        pet_en = {k: v for k, v in json.load(f).items() if not k.startswith("_")}
+    if set(pet_en) != set(pet):
+        raise SystemExit(f"pet_lines_en.json keys differ from pet_lines.py: {sorted(set(pet_en) ^ set(pet))}")
+    dump(os.path.join(out_en, "pet.json"), pet_en)
     dump(os.path.join(out_en, "questions.json"), dict(questions=questions, passages=passages))
     # A small, reusable relation index keeps learning features independent from the word card UI.
     # It deliberately records only relations supported by authored data; no homophone is inferred.

@@ -99,7 +99,14 @@ class PetFloatingView(context: Context, private val onOpen: () -> Unit, private 
         val want = !hiddenByScreen && !keyboard && context.services.settings.petVisible
         if (want && visibility != VISIBLE) {
             visibility = VISIBLE
-            if (!context.reduceMotion) { disc.translationX = (if (isAtEnd()) 1 else -1) * context.dp(30f); disc.alpha = 0f; disc.animate().translationX(0f).alpha(1f).setDuration(220).start() }
+            // disc.x is stored as translationX, so animating translationX to 0 sent the pet to the
+            // left edge. Place it first, then slide in on the x property towards that spot.
+            place(animate = false)
+            if (!context.reduceMotion) {
+                val tx = disc.x
+                disc.x = tx + (if (isAtEnd()) 1 else -1) * context.dp(30f); disc.alpha = 0f
+                disc.animate().x(tx).alpha(1f).setDuration(220).start()
+            }
         } else if (!want && visibility == VISIBLE) {
             visibility = GONE
             hideBubbleNow()
@@ -216,14 +223,15 @@ class PetFloatingView(context: Context, private val onOpen: () -> Unit, private 
 
     @SuppressLint("ClickableViewAccessibility")
     private fun setupBubbleSwipe() {
-        var downX = 0f
+        // bubble.x lives in translationX too, so swipe relative to where the bubble already is.
+        var downX = 0f; var baseX = 0f
         bubble.setOnTouchListener { v, e ->
             when (e.actionMasked) {
-                MotionEvent.ACTION_DOWN -> { downX = e.rawX; false }
-                MotionEvent.ACTION_MOVE -> { v.translationX = e.rawX - downX; true }
+                MotionEvent.ACTION_DOWN -> { downX = e.rawX; baseX = v.x; false }
+                MotionEvent.ACTION_MOVE -> { v.x = baseX + e.rawX - downX; true }
                 MotionEvent.ACTION_UP -> {
-                    if (abs(v.translationX) > v.width / 3f) { hideBubbleNow(); true }
-                    else { v.animate().translationX(0f).setDuration(120).start(); abs(e.rawX - downX) > context.dpi(8) }
+                    if (abs(v.x - baseX) > v.width / 3f) { hideBubbleNow(); true }
+                    else { v.animate().x(baseX).setDuration(120).start(); abs(e.rawX - downX) > context.dpi(8) }
                 }
                 else -> false
             }
@@ -233,7 +241,7 @@ class PetFloatingView(context: Context, private val onOpen: () -> Unit, private 
     fun hideBubbleNow() {
         hideBubble?.let { removeCallbacks(it) }
         if (bubble.visibility != VISIBLE) return
-        bubble.animate().alpha(0f).setDuration(150).withEndAction { bubble.visibility = GONE; bubble.translationX = 0f }.start()
+        bubble.animate().alpha(0f).setDuration(150).withEndAction { bubble.visibility = GONE }.start()
     }
 
     private fun positionBubble() {
