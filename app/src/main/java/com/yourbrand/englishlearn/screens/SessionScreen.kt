@@ -266,9 +266,11 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
                 content.post { speak(ex.speak.orEmpty()) }
             }
             ex.stem.isNotBlank() -> {
-                val row = Kit.hbox(c)
+                // The top gap goes on the row: a top margin on a child of a CENTER_VERTICAL row shifts
+                // it down by half the margin past the row's bottom and clipped the descenders (y, g).
+                val row = Kit.hbox(c).margins(c, top = 10)
                 stemView = questionText(if (ex.stem.contains("___")) Spans.blank(ex.stem, null, c.col(R.color.primary), c.col(R.color.primary_container)) else Spans.underline(ex.stem)).apply {
-                    layoutParams = lp(0, WRAP_CONTENT, 1f).apply { topMargin = c.dpi(10) }
+                    layoutParams = lp(0, WRAP_CONTENT, 1f)
                     if (ex.kind == Kind.E01 && ex.wordId != null && ex.instruction == R.string.ins_meaning) { textSize = 28f * services.settings.questionScale; setTypeface(typeface, Typeface.BOLD) }
                 }
                 row.addView(stemView)
