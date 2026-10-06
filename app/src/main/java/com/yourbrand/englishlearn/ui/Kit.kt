@@ -24,29 +24,41 @@ import com.yourbrand.englishlearn.R
 fun lp(w: Int = MATCH_PARENT, h: Int = WRAP_CONTENT, weight: Float = 0f) = LinearLayout.LayoutParams(w, h, weight)
 
 /**
- * Adds items 0 until [count] to [host]: the first [now] right away, then [perFrame] per frame, so a
- * long screen appears immediately instead of freezing while every view is created. Stops when
- * [host] has been removed (the screen was rebuilt or closed).
+ * Adds items 0 until [count] to [host] without freezing the UI on any device:
+ * - the first [now] items right away (use [visibleCount] so that is just what fits on this screen);
+ * - the rest after [startDelayMs] (the slide-in), in slices bounded by time, not by count: each frame
+ *   adds items for at most [frameBudgetMs], so fast phones fill in quickly and slow ones never stall.
+ * Stops when [host] has been removed (the screen was rebuilt or closed).
  */
-fun addInFrames(host: ViewGroup, count: Int, now: Int, perFrame: Int, startDelayMs: Long = 0, onDone: () -> Unit = {}, add: (Int) -> Unit) {
+fun addInFrames(host: ViewGroup, count: Int, now: Int, startDelayMs: Long = 0, frameBudgetMs: Long = 2,
+                onDone: () -> Unit = {}, add: (Int) -> Unit) {
     val first = minOf(now, count)
     val t0 = System.nanoTime()
     for (i in 0 until first) add(i)
     Perf.log("addInFrames first $first: ${Perf.ms(t0, System.nanoTime())}")
     if (first >= count) { onDone(); return }
     var next = first
+    val budgetNs = frameBudgetMs * 1_000_000
     val step = object : Runnable {
         override fun run() {
             if (host.parent == null) return
-            val end = minOf(next + perFrame, count)
             val t = System.nanoTime()
-            while (next < end) add(next++)
-            Perf.log("addInFrames chunk ${end - perFrame}..$end: ${Perf.ms(t, System.nanoTime())}")
+            do add(next++) while (next < count && System.nanoTime() - t < budgetNs)
             if (next < count) host.postOnAnimation(this) else onDone()
         }
     }
     // A start delay keeps the screen's slide-in animation free of extra layout work.
     if (startDelayMs > 0) host.postDelayed({ host.postOnAnimation(step) }, startDelayMs) else host.postOnAnimation(step)
+}
+
+/**
+ * How many items of about [itemDp] tall fit on this device's screen below [aboveDp] of other
+ * content, plus one spare — computed from the real screen height, never a fixed number.
+ */
+fun visibleCount(ctx: Context, itemDp: Int, aboveDp: Int = 0): Int {
+    val dm = ctx.resources.displayMetrics
+    val screenDp = dm.heightPixels / dm.density
+    return ((screenDp - aboveDp) / itemDp).toInt().coerceAtLeast(1) + 1
 }
 
 /** Slide-in duration of a pushed screen (Navigator) plus a frame; list fill-in waits for it. */

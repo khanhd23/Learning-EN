@@ -94,7 +94,8 @@ class WordListScreen(
         fun add(i: Int) { if (i > 0) card.addView(Kit.divider(c)); card.addView(wordRow(list[i])) }
         // Show one page (20 words) first; more are appended as the user nears the end.
         var count = minOf(shown, list.size)
-        if (firstBuild) addInFrames(card, count, now = 8, perFrame = 2, startDelayMs = AFTER_TRANSITION_MS, add = ::add) else for (i in 0 until count) add(i)
+        // A word row is ~72dp; the progress card and filter chips take ~300dp.
+        if (firstBuild) addInFrames(card, count, now = visibleCount(c, itemDp = 72, aboveDp = 300), startDelayMs = AFTER_TRANSITION_MS, add = ::add) else for (i in 0 until count) add(i)
         body.addView(card)
         val more = Kit.secondary(c, "") { loadMore?.invoke() }
         fun updateMore() { more.visibility = if (count < list.size) View.VISIBLE else View.GONE; more.text = str(R.string.show_more, list.size - count) }
@@ -109,7 +110,7 @@ class WordListScreen(
                 val end = minOf(count + PAGE, list.size)
                 count = end; shown = maxOf(shown, count)
                 updateMore()
-                addInFrames(card, end - start, now = 2, perFrame = 2, onDone = { loading = false }) { add(start + it) }
+                addInFrames(card, end - start, now = 1, onDone = { loading = false }) { add(start + it) }
             }
         }
         scroll.setOnScrollChangeListener { _, _, y, _, _ ->

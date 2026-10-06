@@ -42,17 +42,17 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
         val grid = Kit.vbox(c)
         body.addView(grid)
         val topics = content.topics
-        val rowCount = (topics.size + 1) / 2
-        val addRow = { r: Int ->
-            val row = Kit.hbox(c) { gravity = Gravity.TOP }.margins(c, top = 12)
-            for (i in r * 2 until minOf(r * 2 + 2, topics.size)) {
-                row.addView(topicCard(topics[i]).apply { layoutParams = lp(0, WRAP_CONTENT, 1f).apply { if (i % 2 == 1) marginStart = c.dpi(12) } })
-            }
-            if (r * 2 + 1 >= topics.size) row.addView(android.view.View(c).apply { layoutParams = lp(0, 1, 1f).apply { marginStart = c.dpi(12) } })
-            grid.addView(row)
+        // Cards are added one at a time (a pair per row): one card is a small enough slice of
+        // work to fit inside a frame's time budget while the rest of the grid fills in.
+        var row: LinearLayout? = null
+        val addCard = { i: Int ->
+            if (i % 2 == 0) { row = Kit.hbox(c) { gravity = Gravity.TOP }.margins(c, top = 12); grid.addView(row) }
+            row!!.addView(topicCard(topics[i]).apply { layoutParams = lp(0, WRAP_CONTENT, 1f).apply { if (i % 2 == 1) marginStart = c.dpi(12) } })
+            if (i == topics.lastIndex && i % 2 == 0) row!!.addView(android.view.View(c).apply { layoutParams = lp(0, 1, 1f).apply { marginStart = c.dpi(12) } })
         }
-        if (firstBuild) addInFrames(grid, rowCount, now = 3, perFrame = 1, startDelayMs = AFTER_TRANSITION_MS, add = addRow)
-        else for (r in 0 until rowCount) addRow(r)
+        // A topic row (two cards) is ~150dp; the header, tabs and count line take ~200dp.
+        if (firstBuild) addInFrames(grid, topics.size, now = 2 * visibleCount(c, itemDp = 150, aboveDp = 200), startDelayMs = AFTER_TRANSITION_MS, add = addCard)
+        else for (i in topics.indices) addCard(i)
     }
 
     private fun topicCard(t: Topic): LinearLayout {
