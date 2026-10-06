@@ -37,20 +37,27 @@ class ContentDb(private val context: Context) {
     }
 
     fun searchWords(locale: String, query: String, limit: Int = 30): List<DbWordHit> {
-        val tokens = normalize(query).split("[^\\p{L}\\p{N}]+".toRegex()).filter { it.isNotBlank() }
+        val normalizedQuery = normalize(query.trim())
+        val tokens = normalizedQuery.split("[^\\p{L}\\p{N}]+".toRegex()).filter { it.isNotBlank() }
         if (tokens.isEmpty()) return emptyList()
-        val match = tokens.joinToString(" AND ") { "$it*" }
-        val normalizedQuery = normalize(query)
+        // Space = AND in every FTS4 query syntax; the literal "AND" is a search term without the
+        // enhanced syntax, which made multi-word queries ("tau dien ngam") find nothing.
+        val match = tokens.joinToString(" ") { "$it*" }
+        // A query typed with Vietnamese marks is a meaning search: rank gloss matches above English
+        // words that merely start with the same letters ("đi" -> go before dictionary).
+        val meaningFirst = normalizedQuery != query.trim().lowercase(Locale.ROOT)
+        val glossWord = "(f.gloss LIKE ?1 || ' %' OR f.gloss LIKE '% ' || ?1 OR f.gloss LIKE '% ' || ?1 || ' %')"
+        val middle = if (meaningFirst) "WHEN $glossWord THEN 2 WHEN instr(f.gloss, ?1) > 0 THEN 3 WHEN w.lemma_norm LIKE ?1 || '%' THEN 4"
+        else "WHEN w.lemma_norm LIKE ?1 || '%' THEN 2 WHEN $glossWord THEN 3 WHEN instr(f.gloss, ?1) > 0 THEN 4"
         val started = System.nanoTime()
         val result = ArrayList<DbWordHit>()
         db().rawQuery(
             "SELECT f.word_id, f.lemma, f.gloss, w.level, w.tier FROM word_fts f JOIN word w ON w.id = f.word_id " +
-                "WHERE f.locale = ? AND word_fts MATCH ? " +
-                "ORDER BY CASE WHEN w.lemma_norm = ? THEN 0 WHEN w.lemma_norm LIKE ? || '%' THEN 1 " +
-                "WHEN instr(f.gloss, ?) > 0 THEN 2 ELSE 3 END, w.level, " +
+                "WHERE f.locale = ?2 AND word_fts MATCH ?3 " +
+                "ORDER BY CASE WHEN w.lemma_norm = ?1 THEN 0 WHEN f.gloss = ?1 THEN 1 $middle ELSE 5 END, w.level, " +
                 "CASE w.tier WHEN 'gold' THEN 0 WHEN 'silver' THEN 1 ELSE 2 END, " +
-                "CASE WHEN w.ngsl_rank IS NULL THEN 2147483647 ELSE w.ngsl_rank END, w.lemma_norm LIMIT ?",
-            arrayOf(locale, match, normalizedQuery, normalizedQuery, normalizedQuery, limit.toString()),
+                "CASE WHEN w.ngsl_rank IS NULL THEN 2147483647 ELSE w.ngsl_rank END, w.lemma_norm LIMIT ?4",
+            arrayOf(normalizedQuery, locale, match, limit.toString()),
         ).use { cursor ->
             while (cursor.moveToNext()) result += DbWordHit(cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getInt(3), cursor.getString(4))
         }

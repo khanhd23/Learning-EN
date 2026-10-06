@@ -22,7 +22,7 @@ write `dist/reports/task-<N>.md`, then stop.
 - [x] Task 6.1: UI follows the chosen language  *(Codex)*
 - [x] Task 6.2: Language sync + English-source checks  *(Codex)*
 - [x] Task 6.3: Prebuilt content database (SQLite)  *(Codex)*
-- [ ] Task 6.3.1: Content DB follow-ups (hash asset, rank before limit)  *(Codex)*
+- [x] Task 6.3.1: Content DB follow-ups (hash asset, rank before limit)  *(Codex)*
 - [ ] Phase 2 product roadmap: see `docs/ROADMAP.md` (Tasks 9–14, owner C1–C6)
 - [ ] Task 7: Spanish pilot (Level 1)
 - [ ] Task 8: Store listings per locale
@@ -756,6 +756,16 @@ Owner fixes made on top of Task 6.3 (all committed): launch crash in the pet bub
 and question text clipped (CENTER_VERTICAL + margin); pet jumping left; idle pet at ~20 fps; screens
 kept per tab and not rebuilt on back unless data changed; adaptive list fill-in (`addInFrames`,
 `visibleCount`); in-session pet praise. Next product work: `docs/ROADMAP.md`.
+
+### Task 6.3.1 review (owner)
+
+Accepted (fa8b3f1): hash sidecar, ranking before `LIMIT`, test with 251 hits. Owner fix on top:
+the FTS query joined terms with `AND`, which is a literal search term without the enhanced query
+syntax, so multi-word queries ("tau dien ngam") found nothing — terms are now space-separated; a
+query typed with Vietnamese marks ranks meaning (gloss) matches above English prefix matches
+("đi" → go before dictionary). Remaining (Codex, small, with Task 9 or after): store the gloss
+with its marks too (`gloss_raw`) and rank exact-mark matches first, so "cá" ranks fish above
+"cà phê" / "cá sấu".
 
 ## Task 7: Spanish pilot (Level 1)
 
