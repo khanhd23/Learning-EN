@@ -110,3 +110,13 @@ data class ExamFormat(
 )
 
 data class ComingSoon(val id: String, val label: String)
+
+data class SoundFocus(val id: String, val label: String, val tip: String)
+data class MinimalPair(val id: String, val a: String, val b: String, val focus: String)
+data class SoundSentence(val id: String, val text: String, val level: Int)
+data class SoundData(
+    val focuses: List<SoundFocus> = emptyList(),
+    val pairs: List<MinimalPair> = emptyList(),
+    val dictation: List<SoundSentence> = emptyList(),
+    val shadowing: List<SoundSentence> = emptyList(),
+)

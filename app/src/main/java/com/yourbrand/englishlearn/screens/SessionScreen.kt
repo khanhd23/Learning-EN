@@ -215,6 +215,8 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             is Exercise.Matching -> renderMatching(ex)
             is Exercise.Flashcard -> renderFlashcard(ex)
             is Exercise.Spelling -> renderSpelling(ex)
+            is Exercise.Dictation -> renderDictation(ex)
+            is Exercise.MinimalPairChoice -> renderMinimalPair(ex)
         }
         content.staggerChildren(30)
     }
@@ -697,6 +699,58 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         }
         onHint = { if (input.text.isEmpty()) { input.setText(ex.word.lemma.take(2)); input.setSelection(input.text.length) } }
     }
+
+    private fun renderDictation(ex: Exercise.Dictation) {
+        val c = ctx
+        content.addView(instruction(R.string.type_here))
+        val play = speaker(ex.sentence, big = true).apply { layoutParams = lp(h = c.dpi(88)).apply { topMargin = c.dpi(12) } }
+        content.addView(play); content.post { speak(ex.sentence) }
+        val input = EditText(c).apply {
+            hint = str(R.string.type_here); textSize = 19f
+            inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_CAP_SENTENCES
+            imeOptions = EditorInfo.IME_ACTION_DONE; setSingleLine(false); minLines = 2
+            setPadding(c.dpi(16), c.dpi(14), c.dpi(16), c.dpi(14)); background = c.rounded(c.col(R.color.surface), 14f, c.col(R.color.outline), 1.5f)
+            layoutParams = lp().apply { topMargin = c.dpi(18) }; tag = "petAvoid"
+            addTextChangedListener(object : android.text.TextWatcher {
+                override fun afterTextChanged(s: android.text.Editable?) { action.isEnabled = !s.isNullOrBlank() && !answered }
+                override fun beforeTextChanged(s: CharSequence?, a: Int, b: Int, d: Int) {}
+                override fun onTextChanged(s: CharSequence?, a: Int, b: Int, d: Int) {}
+            })
+        }
+        content.addView(input)
+        check = {
+            val result = Grader.gradeSentence(input.text.toString(), ex.sentence)
+            input.isEnabled = false
+            input.background = c.rounded(c.col(if (result.result == Grader.Result.WRONG) R.color.error_container else R.color.success_container), 14f,
+                c.col(if (result.result == Grader.Result.WRONG) R.color.error else R.color.success), 1.5f)
+            content.addView(Kit.text(c, ex.sentence, R.style.Text_Caption, c.col(R.color.muted)).margins(c, top = 8))
+            onAnswered(ex, result.result != Grader.Result.WRONG, input.text.toString(), input, ex.sentence, ex.sentence, ex.sentence, result.result == Grader.Result.ALMOST)
+        }
+        onHint = { play.performClick() }
+    }
+
+    private fun renderMinimalPair(ex: Exercise.MinimalPairChoice) {
+        selectedOption = -1
+        content.addView(instruction(R.string.ins_listen))
+        val play = speaker(if (ex.answer == 0) ex.first else ex.second, big = true).apply { layoutParams = lp(h = ctx.dpi(88)).apply { topMargin = ctx.dpi(12) } }
+        content.addView(play); content.post { speak(if (ex.answer == 0) ex.first else ex.second) }
+        val options = listOf(ex.first, ex.second).mapIndexed { i, text -> OptionCard(ctx, i, text).also { card ->
+            content.addView(card.view.margins(ctx, top = 10)); card.view.onTap {
+                if (answered || !card.enabled) return@onTap
+                cardsRef.forEachIndexed { j, c -> c.setState(if (j == i) OptionCard.State.SELECTED else OptionCard.State.DEFAULT) }
+                selectedOption = i; action.isEnabled = true
+                if (session.speed) check?.invoke()
+            }
+        } }
+        cardsRef = options
+        check = {
+            val ok = selectedOption == ex.answer
+            options.forEachIndexed { i, card -> card.setState(when { i == ex.answer -> OptionCard.State.CORRECT; i == selectedOption -> OptionCard.State.WRONG; else -> OptionCard.State.DIMMED }) }
+            onAnswered(ex, ok, listOf(ex.first, ex.second).getOrNull(selectedOption), options[ex.answer].view, listOf(ex.first, ex.second)[ex.answer], "", if (ex.answer == 0) ex.first else ex.second)
+        }
+    }
+
+    private var selectedOption: Int = -1
 
     // ---- answering ----------------------------------------------------------------------------
 

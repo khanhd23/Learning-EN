@@ -171,6 +171,8 @@ class ResultScreen(
             is Exercise.Matching -> e.left.joinToString(", ") to e.right.joinToString(", ")
             is Exercise.PictureChoice -> e.words.joinToString(", ") { it.lemma } to e.words[e.answer].lemma
             is Exercise.PictureMatch -> e.words.joinToString(", ") { it.lemma } to e.words.joinToString(", ") { it.lemma }
+            is Exercise.Dictation -> e.sentence to e.sentence
+            is Exercise.MinimalPairChoice -> (if (e.answer == 0) e.first else e.second) to (if (e.answer == 0) e.first else e.second)
         }
         return Kit.card(c, 14, 8).apply {
             addView(Kit.text(c, q, R.style.Text_Body).apply { textSize = 15f })

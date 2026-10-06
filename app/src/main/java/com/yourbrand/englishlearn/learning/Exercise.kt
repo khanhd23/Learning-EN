@@ -5,7 +5,7 @@ import com.yourbrand.englishlearn.content.Word
 
 /** Exercise ids from SKILL.md section 7. */
 enum class Kind(val baseXp: Int) {
-    E01(4), E02(5), E03(6), E04(6), E05(6), E06(5), E07(3), E08(5), E09(4), E11(6), E12(6), E14(5), E15(5), E16(5), E17(6)
+    E01(4), E02(5), E03(6), E04(6), E05(6), E06(5), E07(3), E08(5), E09(4), E11(6), E12(6), E14(5), E15(5), E16(5), E17(6), E18(6), E19(5)
 }
 
 /** A single runtime exercise built from content by [ExerciseFactory]. */
@@ -113,11 +113,28 @@ sealed class Exercise {
         val words: List<Word>,
         val solution: List<Int>,
     ) : Exercise() { override val kind get() = Kind.E17 }
+
+    data class Dictation(
+        override val key: String,
+        override val tags: List<String>,
+        override val level: Int,
+        val sentence: String,
+    ) : Exercise() { override val kind get() = Kind.E18 }
+
+    data class MinimalPairChoice(
+        override val key: String,
+        override val tags: List<String>,
+        override val level: Int,
+        val first: String,
+        val second: String,
+        val answer: Int,
+    ) : Exercise() { override val kind get() = Kind.E19 }
 }
 
 /** Typed-answer grading: NFC, trim, case-insensitive, trailing punctuation ignored, 1 typo allowed for words ≥ 7 letters. */
 object Grader {
     enum class Result { CORRECT, ALMOST, WRONG }
+    data class SentenceResult(val result: Result, val wrongWords: List<Int>)
 
     fun normalize(s: String): String =
         java.text.Normalizer.normalize(s, java.text.Normalizer.Form.NFC).trim().lowercase()
@@ -129,6 +146,19 @@ object Grader {
         if (a == b) return Result.CORRECT
         if (b.length >= 7 && distance(a, b) <= 1) return Result.ALMOST
         return Result.WRONG
+    }
+
+    /** Grades each word independently, ignoring case and surrounding punctuation. */
+    fun gradeSentence(input: String, expected: String): SentenceResult {
+        val actual = input.trim().split(Regex("\\s+")).filter { it.isNotEmpty() }
+        val wanted = expected.trim().split(Regex("\\s+")).filter { it.isNotEmpty() }
+        val wrong = mutableListOf<Int>(); var almost = false
+        val count = maxOf(actual.size, wanted.size)
+        for (i in 0 until count) {
+            val r = if (i >= actual.size || i >= wanted.size) Result.WRONG else grade(actual[i], wanted[i])
+            if (r == Result.WRONG) wrong += i else if (r == Result.ALMOST) almost = true
+        }
+        return SentenceResult(if (wrong.isNotEmpty()) Result.WRONG else if (almost) Result.ALMOST else Result.CORRECT, wrong)
     }
 
     fun distance(a: String, b: String): Int {

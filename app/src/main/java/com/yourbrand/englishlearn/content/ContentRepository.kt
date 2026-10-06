@@ -19,6 +19,7 @@ class Content(
     val tips: Map<String, String>,
     val availableLevels: Set<Int> = (1..5).toSet(),
     val localeSelectable: Boolean = true,
+    val sound: SoundData = SoundData(),
 ) {
     /** All entries, including bronze dictionary-only imports. */
     val allWords: List<Word> get() = words
@@ -43,7 +44,7 @@ object ContentParser {
     private fun JSONObject.strOrNull(k: String): String? = if (has(k) && !isNull(k)) optString(k).takeIf { it.isNotEmpty() } else null
     private inline fun <T> JSONArray?.map(f: (JSONObject) -> T): List<T> = if (this == null) emptyList() else List(length()) { f(getJSONObject(it)) }
 
-    fun parse(words: String, grammar: String, questions: String, locale: LocalePackFiles, formats: String, approval: LocaleApproval? = null, images: Map<String, String> = emptyMap()): Content {
+    fun parse(words: String, grammar: String, questions: String, locale: LocalePackFiles, formats: String, approval: LocaleApproval? = null, images: Map<String, String> = emptyMap(), soundJson: String? = null): Content {
         val viTopics = JSONObject(locale.topics)
         val viWords = JSONObject(locale.words)
         val viConf = JSONObject(locale.confusables)
@@ -153,9 +154,20 @@ object ContentParser {
             .filter { approval == null || it in approval.approvedTips }
             .associateWith { tipsObj.getString(it) }
 
+        val sound = soundJson?.let { json ->
+            val o = JSONObject(json)
+            SoundData(
+                focuses = o.optJSONArray("focus").let { a -> if (a == null) emptyList() else List(a.length()) { i -> a.getJSONObject(i).let { SoundFocus(it.getString("id"), it.optString("label"), it.optString("tip")) } } },
+                pairs = o.optJSONArray("pairs").let { a -> if (a == null) emptyList() else List(a.length()) { i -> a.getJSONObject(i).let { MinimalPair(it.getString("id"), it.getString("a"), it.getString("b"), it.optString("focus")) } } },
+                dictation = parseSoundSentences(o.optJSONArray("dictation")),
+                shadowing = parseSoundSentences(o.optJSONArray("shadowing")),
+            )
+        } ?: SoundData()
         return Content(topics, visibleWords, conf, grammarList, questionList, passageList, formatList, soon, pet, tips,
-            approval?.availableLevels ?: (1..5).toSet(), approval?.selectable ?: true)
+            approval?.availableLevels ?: (1..5).toSet(), approval?.selectable ?: true, sound)
     }
+
+    private fun parseSoundSentences(a: JSONArray?): List<SoundSentence> = if (a == null) emptyList() else List(a.length()) { i -> a.getJSONObject(i).let { SoundSentence(it.getString("id"), it.getString("text"), it.optInt("level", 1)) } }
 }
 
 class ContentRepository(private val context: Context) {
@@ -223,6 +235,7 @@ class ContentRepository(private val context: Context) {
             asset("exam_formats.json"),
             if (key == "en") null else approval(key),
             imageManifest(),
+            runCatching { asset("en/sound.json") }.getOrNull(),
         ).also { cached[key] = it }
     }
 

@@ -4,6 +4,8 @@ import com.yourbrand.englishlearn.R
 import com.yourbrand.englishlearn.content.Content
 import com.yourbrand.englishlearn.content.Passage
 import com.yourbrand.englishlearn.content.Question
+import com.yourbrand.englishlearn.content.MinimalPair
+import com.yourbrand.englishlearn.content.SoundSentence
 import com.yourbrand.englishlearn.content.Word
 import kotlin.random.Random
 
@@ -87,6 +89,14 @@ class ExerciseFactory(private val content: Content, private val random: Random =
         if (words.size < 4) return null
         val order = words.indices.shuffled(random)
         return Exercise.PictureMatch("pm:" + words.joinToString(",") { it.id }, listOf("vocab_core", "picture"), words.maxOf { it.level }, words.map { it.key }, words, words.indices.map { i -> order.indexOf(i) })
+    }
+
+    fun dictation(item: SoundSentence): Exercise.Dictation =
+        Exercise.Dictation("d:${item.id}", listOf("sound", "dictation"), item.level, item.text)
+
+    fun minimalPair(pair: MinimalPair): Exercise.MinimalPairChoice {
+        val answer = if (random.nextBoolean()) 0 else 1
+        return Exercise.MinimalPairChoice("mp:${pair.id}:$answer", listOf("sound", "minimal_pair", "focus_${pair.focus}"), 1, pair.a, pair.b, answer)
     }
 
     fun spelling(w: Word): Exercise.Spelling? {
