@@ -43,15 +43,16 @@ class WordDetailScreen(activity: MainActivity, private val wordId: String) : Scr
         body.addView(chips)
 
         // Meanings (each sense with its own example in context)
-        val header = Kit.hbox(c).margins(c, top = 16)
-        header.addView(Kit.text(c, str(R.string.meanings, w.senses.size), R.style.Text_Section).apply { layoutParams = lp(0, WRAP_CONTENT, 1f) })
-        header.addView(Kit.chip(c, str(R.string.show_translation), showVi) { showVi = !showVi; services.settings.showTranslation = showVi; refresh() })
-        body.addView(header)
+        body.addView(Kit.text(c, str(R.string.meanings, w.senses.size), R.style.Text_Section).margins(c, top = 16))
+        val hasTranslation = w.senses.any { s -> s.examples.any { it.vi != null } }
         w.senses.forEachIndexed { i, s ->
             body.addView(Kit.card(c, 16, 10) {
                 val r = Kit.hbox(c)
                 r.addView(Kit.badge(c, "${i + 1}", c.col(R.color.primary_container), c.col(R.color.primary)))
-                r.addView(Kit.text(c, posLabel(s.pos), R.style.Text_Caption, c.col(R.color.primary)).apply { layoutParams = LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT).apply { marginStart = c.dpi(8) } })
+                r.addView(Kit.text(c, posLabel(s.pos), R.style.Text_Caption, c.col(R.color.primary)).apply { layoutParams = LinearLayout.LayoutParams(0, WRAP_CONTENT, 1f).apply { marginStart = c.dpi(8) } })
+                // Translation toggle sits inside the first meaning card, top right.
+                if (i == 0 && hasTranslation) r.addView(Kit.chip(c, str(R.string.show_translation), showVi) { showVi = !showVi; services.settings.showTranslation = showVi; refresh() }
+                    .apply { layoutParams = LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT) })
                 addView(r)
                 addView(Kit.text(c, s.gloss, R.style.Text_Title, sizeSp = 20f).margins(c, top = 6))
                 s.examples.forEach { e ->
