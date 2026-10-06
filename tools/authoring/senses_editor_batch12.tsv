@@ -1,0 +1,129 @@
+sense_id	pos	def	vi_gloss	example	example_vi	note
+truck_s1	n	a large road vehicle for carrying goods	xe tải	A big truck was parked outside the supermarket.	Một chiếc xe tải lớn đậu bên ngoài siêu thị.	owner 1C batch12
+van_s1	n	a medium-sized road vehicle for carrying goods or people	xe tải nhỏ, xe van	The delivery van arrived just after lunch.	Xe giao hàng đến ngay sau bữa trưa.	owner 1C batch12
+railway_s1	n	a track with rails for trains, or a system of trains	đường sắt	The old railway runs along the coast.	Tuyến đường sắt cũ chạy dọc bờ biển.	owner 1C batch12
+subway_s1	n	an underground railway in a city	tàu điện ngầm	I take the subway to work every morning.	Sáng nào tôi cũng đi tàu điện ngầm đi làm.	owner 1C batch12
+pilot_s1	n	a person who flies a plane	phi công	The pilot welcomed us on board the plane.	Phi công chào đón chúng tôi lên máy bay.	owner 1C batch12
+wheel_s1	n	a round object that turns to move a vehicle	bánh xe	My bike has a flat front wheel.	Bánh trước xe đạp của tôi bị xẹp.	owner 1C batch12
+motor_s1	n	a machine that makes something move or work	động cơ, mô tơ	The boat has a small electric motor.	Chiếc thuyền có một động cơ điện nhỏ.	owner 1C batch12
+brake_s1	n	the part of a vehicle that makes it slow down or stop	phanh	Press the brake gently when you go downhill.	Hãy đạp phanh nhẹ khi bạn xuống dốc.	owner 1C batch12
+ambulance_s1	n	a vehicle that takes sick or hurt people to hospital	xe cứu thương	Someone called an ambulance after the accident.	Có người đã gọi xe cứu thương sau vụ tai nạn.	owner 1C batch12
+port_s1	n	a town or place where ships load and unload	cảng	Large ships carry cars into the port.	Những con tàu lớn chở ô tô vào cảng.	owner 1C batch12 [keep-gloss]
+sail_s1	v	to travel on water in a boat or ship	đi thuyền, chèo thuyền buồm	We sailed around the island for three days.	Chúng tôi đi thuyền quanh hòn đảo trong ba ngày.	owner 1C batch12
+voyage_s1	n	a long journey by sea or in space	chuyến đi dài (bằng đường biển, vũ trụ)	The voyage across the ocean took two weeks.	Chuyến đi vượt đại dương mất hai tuần.	owner 1C batch12
+crash_s1	n	an accident in which a vehicle hits something	vụ đâm xe, tai nạn va chạm	Nobody was hurt in the car crash.	Không ai bị thương trong vụ đâm xe.	owner 1C batch12
+rail_s1	n	the train system, as a way to travel or send goods	đường sắt (phương tiện vận chuyển)	Sending goods by rail is often cheaper.	Gửi hàng bằng đường sắt thường rẻ hơn.	owner 1C batch12
+hill_s1	n	an area of high land, lower than a mountain	đồi	Our school is at the top of the hill.	Trường chúng tôi ở trên đỉnh đồi.	owner 1C batch12
+grass_s1	n	a common green plant with thin leaves that covers fields and gardens	cỏ	The children are playing on the grass.	Bọn trẻ đang chơi trên bãi cỏ.	owner 1C batch12
+soil_s1	n	the top layer of earth in which plants grow	đất (trồng trọt)	This soil is good for growing rice.	Loại đất này rất tốt để trồng lúa.	owner 1C batch12
+sky_s1	n	the space above the earth where clouds and stars are	bầu trời	The sky was clear and blue this morning.	Sáng nay bầu trời trong xanh.	owner 1C batch12
+cloud_s1	n	a white or grey mass of water drops floating in the sky	mây, đám mây	Dark clouds mean it will rain soon.	Mây đen nghĩa là trời sắp mưa.	owner 1C batch12
+moon_s1	n	the round object that moves around the earth and shines at night	mặt trăng	The moon is very bright tonight.	Tối nay trăng rất sáng.	owner 1C batch12 [keep-gloss]
+stream_s1	n	a small, narrow river	suối, dòng suối	We crossed a small stream on our walk.	Chúng tôi băng qua một con suối nhỏ khi đi dạo.	owner 1C batch12
+seed_s1	n	a small part of a plant from which a new plant grows	hạt giống, hạt	Plant the seeds in spring and water them daily.	Hãy gieo hạt vào mùa xuân và tưới nước hằng ngày.	owner 1C batch12
+root_s1	n	the part of a plant that grows under the ground	rễ cây	The roots of this tree go very deep.	Rễ của cái cây này ăn rất sâu.	owner 1C batch12
+leaf_s1	n	a flat green part that grows from a branch	lá cây	The leaves turn yellow in autumn.	Lá cây chuyển vàng vào mùa thu.	owner 1C batch12
+bud_s1	n	a young part of a plant that opens into a flower	nụ, chồi	The rose bush is covered in buds.	Bụi hoa hồng đầy những nụ hoa.	owner 1C batch12
+oak_s1	n	a large tree with hard wood that lives for a long time	cây sồi	An old oak stands in the middle of the park.	Một cây sồi già đứng giữa công viên.	owner 1C batch12
+palm_s1	n	a tall tropical tree with big leaves at the top	cây cọ	Palm trees grow along the beach.	Những cây cọ mọc dọc bãi biển.	owner 1C batch12
+volcano_s1	n	a mountain that can throw out hot melted rock and gas	núi lửa	The volcano has not erupted for a hundred years.	Ngọn núi lửa đã không phun trào suốt một trăm năm.	owner 1C batch12 [keep-gloss]
+tide_s1	n	the regular rise and fall of the sea level	thuỷ triều	You can walk to the island when the tide is low.	Bạn có thể đi bộ ra đảo khi thuỷ triều xuống.	owner 1C batch12
+reef_s1	n	a line of rock or coral just under the sea	rạn san hô, bãi đá ngầm	Many colourful fish live around the coral reef.	Nhiều loài cá sặc sỡ sống quanh rạn san hô.	owner 1C batch12
+woodland_s1	n	land covered with trees	vùng rừng, rừng cây	There is a path through the woodland behind our house.	Có một lối đi xuyên qua khu rừng sau nhà chúng tôi.	owner 1C batch12
+wilderness_s1	n	a large wild area where people do not live or farm	vùng hoang dã	They spent a week camping in the wilderness.	Họ cắm trại một tuần ở vùng hoang dã.	owner 1C batch12
+dew_s1	n	small drops of water that form on grass during the night	sương, giọt sương	The grass was wet with dew early in the morning.	Sáng sớm cỏ ướt đẫm sương.	owner 1C batch12
+frost_s1	n	a thin white layer of ice in very cold weather	sương giá	There was frost on the car windows this morning.	Sáng nay có sương giá trên kính xe.	owner 1C batch12
+mud_s1	n	soft, wet earth	bùn	His boots were covered in mud after the rain.	Đôi ủng của anh ấy dính đầy bùn sau cơn mưa.	owner 1C batch12
+sunshine_s1	n	the light and heat of the sun	ánh nắng	We sat outside and enjoyed the sunshine.	Chúng tôi ngồi ngoài trời tận hưởng ánh nắng.	owner 1C batch12
+scenery_s1	n	the natural beauty of an area, such as hills and lakes	phong cảnh	The scenery along the mountain road is beautiful.	Phong cảnh dọc con đường núi rất đẹp.	owner 1C batch12
+vegetation_s1	n	the plants that grow in a particular area	thảm thực vật, cây cỏ	The island is covered in thick green vegetation.	Hòn đảo được bao phủ bởi thảm thực vật xanh rậm rạp.	owner 1C batch12
+fossil_s1	n	the shape of an old animal or plant kept in rock	hoá thạch	Scientists found a dinosaur fossil in the desert.	Các nhà khoa học tìm thấy hoá thạch khủng long trong sa mạc.	owner 1C batch12
+slope_s1	n	ground that goes up or down	dốc, sườn dốc	We walked slowly up the steep slope.	Chúng tôi chậm rãi leo lên con dốc đứng.	owner 1C batch12
+coal_s1	n	a hard black substance from under the ground, burned to give heat	than đá	Many power stations still burn coal.	Nhiều nhà máy điện vẫn đốt than đá.	owner 1C batch12
+dust_s1	n	very small dry pieces of dirt	bụi	There is a lot of dust under the bed.	Dưới gầm giường có rất nhiều bụi.	owner 1C batch12 [keep-gloss]
+shadow_s1	n	a dark shape made when something blocks the light	cái bóng, bóng	In the evening our shadows get longer.	Buổi chiều bóng của chúng ta dài ra.	owner 1C batch12
+wake_s1	v	to stop sleeping	thức dậy, tỉnh giấc	I usually wake up at six o'clock.	Tôi thường thức dậy lúc sáu giờ.	owner 1C batch12
+bath_s1	n	the act of washing your body in a large container of water	việc tắm (bồn)	The baby has a warm bath every evening.	Tối nào em bé cũng được tắm nước ấm.	owner 1C batch12
+brush_s1	v	to clean or tidy something with a brush	chải, đánh (răng)	Brush your teeth twice a day.	Hãy đánh răng hai lần mỗi ngày.	owner 1C batch12
+wipe_s1	v	to clean a surface by moving a cloth over it	lau, chùi	Please wipe the table after dinner.	Làm ơn lau bàn sau bữa tối.	owner 1C batch12 [keep-gloss]
+chore_s1	n	a small job that you do regularly at home	việc nhà	Washing the dishes is my least favourite chore.	Rửa bát là việc nhà tôi ghét nhất.	owner 1C batch12
+toilet_s1	n	the seat used to get rid of body waste, or its room	nhà vệ sinh, bồn cầu	Excuse me, where is the toilet?	Xin lỗi, nhà vệ sinh ở đâu ạ?	owner 1C batch12
+shave_s1	v	to cut hair off your face or body with a razor	cạo (râu, lông)	My father shaves every morning before work.	Bố tôi cạo râu mỗi sáng trước khi đi làm.	owner 1C batch12
+comb_s1	n	a flat object with thin teeth for tidying hair	cái lược	She keeps a small comb in her bag.	Cô ấy để một chiếc lược nhỏ trong túi.	owner 1C batch12
+mop_s1	v	to clean a floor with a mop	lau (sàn)	I mop the kitchen floor every Sunday.	Chủ nhật nào tôi cũng lau sàn bếp.	owner 1C batch12
+hurry_s1	v	to do something or go somewhere quickly	vội, nhanh lên	Hurry up or we will miss the bus!	Nhanh lên kẻo chúng ta lỡ xe buýt!	owner 1C batch12
+sweep_s1	v	to clean a floor with a brush	quét	Can you sweep the floor before the guests arrive?	Bạn quét nhà trước khi khách đến được không?	owner 1C batch12
+take_a_nap_s1	phr	to sleep for a short time during the day	chợp mắt, ngủ trưa	I often take a nap after lunch.	Tôi thường chợp mắt sau bữa trưa.	owner 1C batch12
+birth_s1	n	the time when a baby is born	sự ra đời, sự sinh	Please write your date of birth on the form.	Vui lòng ghi ngày sinh của bạn vào mẫu đơn.	owner 1C batch12
+pregnant_s1	adj	having a baby growing inside the body	có thai, mang thai	My sister is pregnant with her first child.	Chị gái tôi đang mang thai đứa con đầu lòng.	owner 1C batch12
+wed_s1	v	to marry	cưới, kết hôn	They will wed in a small church next June.	Họ sẽ cưới ở một nhà thờ nhỏ vào tháng Sáu tới.	owner 1C batch12
+funeral_s1	n	a ceremony held after someone dies	đám tang	Many people came to his grandfather's funeral.	Rất nhiều người đến dự đám tang ông của anh ấy.	owner 1C batch12
+bachelor_s1	n	a man who has never married	người đàn ông độc thân	My uncle is still a bachelor at forty.	Chú tôi bốn mươi tuổi vẫn còn độc thân.	owner 1C batch12
+childish_s1	adj	behaving in a silly way, like a small child	trẻ con, ấu trĩ	Stop being so childish and say sorry.	Đừng trẻ con như thế nữa, hãy xin lỗi đi.	owner 1C batch12
+lifetime_s1	n	the length of time that someone is alive	cả đời, suốt đời	This is a chance of a lifetime.	Đây là cơ hội có một không hai trong đời.	owner 1C batch12
+alive_s1	adj	living, not dead	còn sống	Both of my grandparents are still alive.	Cả ông và bà tôi đều vẫn còn sống.	owner 1C batch12
+chemical_s1	n	a substance made by or used in chemistry	hoá chất	Wear gloves when you use cleaning chemicals.	Hãy đeo găng tay khi dùng hoá chất tẩy rửa.	owner 1C batch12
+liquid_s1	n	a substance like water that flows	chất lỏng	You cannot take liquids through airport security.	Bạn không được mang chất lỏng qua cửa an ninh sân bay.	owner 1C batch12
+carbon_s1	n	a chemical element found in all living things, coal and diamonds	cacbon	Trees take in carbon from the air.	Cây xanh hấp thụ cacbon từ không khí.	owner 1C batch12 [keep-gloss]
+substance_s1	n	a particular kind of solid, liquid or gas	chất	Water is the most common substance on earth.	Nước là chất phổ biến nhất trên trái đất.	owner 1C batch12
+mathematics_s1	n	the study of numbers, shapes and quantities	toán học	Mathematics is my favourite subject at school.	Toán học là môn tôi thích nhất ở trường.	owner 1C batch12
+chemistry_s1	n	the science of substances and how they change	hoá học	We do experiments in chemistry class.	Chúng tôi làm thí nghiệm trong giờ hoá học.	owner 1C batch12
+algebra_s1	n	a type of mathematics that uses letters for numbers	đại số	In algebra, x often stands for a number.	Trong đại số, x thường đại diện cho một con số.	owner 1C batch12
+gravity_s1	n	the force that pulls things towards the earth	trọng lực, lực hấp dẫn	Gravity makes an apple fall to the ground.	Trọng lực làm quả táo rơi xuống đất.	owner 1C batch12
+velocity_s1	n	the speed of something in a particular direction	vận tốc	The rocket reached a very high velocity.	Tên lửa đạt tới vận tốc rất cao.	owner 1C batch12 [keep-gloss]
+triangle_s1	n	a flat shape with three straight sides	hình tam giác	Draw a triangle with three equal sides.	Hãy vẽ một hình tam giác có ba cạnh bằng nhau.	owner 1C batch12 [keep-gloss]
+mineral_s1	n	a natural substance from the ground, also needed by the body	khoáng chất	Milk is rich in minerals such as calcium.	Sữa giàu khoáng chất như canxi.	owner 1C batch12
+hydrogen_s1	n	the lightest gas, found in water	hiđrô	Water is made of hydrogen and oxygen.	Nước được tạo thành từ hiđrô và ôxy.	owner 1C batch12
+acid_s1	n	a chemical substance that can burn or dissolve things	axit	Lemon juice contains a weak acid.	Nước chanh chứa một loại axit yếu.	owner 1C batch12 [keep-gloss]
+particle_s1	n	a very small piece of something	hạt, hạt nhỏ	Tiny particles of dust float in the air.	Những hạt bụi nhỏ li ti lơ lửng trong không khí.	owner 1C batch12
+crystal_s1	n	a small solid piece with a regular shape, like salt or ice	tinh thể	Salt forms tiny white crystals when water dries.	Muối kết thành những tinh thể trắng li ti khi nước khô.	owner 1C batch12 [keep-gloss]
+fluid_s1	n	a liquid, especially one in the body	chất lỏng, dịch	Drink plenty of fluids when you have a fever.	Hãy uống nhiều nước khi bạn bị sốt.	owner 1C batch12
+steam_s1	n	the hot gas that water becomes when it boils	hơi nước	Steam rose from the hot cup of tea.	Hơi nước bốc lên từ tách trà nóng.	owner 1C batch12
+circuit_s1	n	the complete path that electricity flows around	mạch điện	The lamp did not work because the circuit was broken.	Đèn không sáng vì mạch điện bị hở.	owner 1C batch12
+metre_s1	n	a unit for measuring length, equal to 100 centimetres	mét	The swimming pool is fifty metres long.	Bể bơi dài năm mươi mét.	owner 1C batch12 [keep-gloss]
+litre_s1	n	a unit for measuring liquid, equal to 1,000 millilitres	lít	Buy two litres of milk on your way home.	Mua hai lít sữa trên đường về nhé.	owner 1C batch12 [keep-gloss]
+inch_s1	n	a unit for measuring length, about 2.5 centimetres	inch (đơn vị đo, khoảng 2,5 cm)	My phone screen is six inches wide.	Màn hình điện thoại của tôi rộng sáu inch.	owner 1C batch12
+sphere_s1	n	a solid round shape like a ball	hình cầu, khối cầu	The earth is almost a perfect sphere.	Trái đất gần như là một khối cầu hoàn hảo.	owner 1C batch12
+angle_s1	n	the space between two lines that meet, measured in degrees	góc	A square has four angles of ninety degrees.	Hình vuông có bốn góc chín mươi độ.	owner 1C batch12 [keep-gloss]
+curve_s1	n	a line or shape that bends smoothly	đường cong, khúc cua	Drive slowly around the sharp curve.	Hãy lái chậm qua khúc cua gấp.	owner 1C batch12
+astronomy_s1	n	the study of the stars, planets and space	thiên văn học	She became interested in astronomy as a child.	Cô ấy bắt đầu yêu thích thiên văn học từ nhỏ.	owner 1C batch12 [keep-gloss]
+robot_s1	n	a machine that can do work automatically	rô-bốt, người máy	Robots build cars in this factory.	Rô-bốt lắp ráp ô tô trong nhà máy này.	owner 1C batch12
+rocket_s1	n	a vehicle that flies into space	tên lửa	The rocket carried three astronauts into space.	Tên lửa đưa ba phi hành gia vào vũ trụ.	owner 1C batch12
+verb_s1	n	a word that shows an action or state, like "run"	động từ	"Swim" is a verb, but "swimmer" is a noun.	"Swim" là động từ, còn "swimmer" là danh từ.	owner 1C batch12 [keep-gloss]
+adjective_s1	n	a word that describes a noun, such as "big" or "happy"	tính từ	Use an adjective to describe your best friend.	Hãy dùng một tính từ để miêu tả bạn thân của bạn.	owner 1C batch12
+translate_s1	v	to change words from one language into another	dịch	Can you translate this sentence into English?	Bạn dịch câu này sang tiếng Anh được không?	owner 1C batch12
+translation_s1	n	words that have been changed into another language	bản dịch, sự dịch	I read the book in translation.	Tôi đọc cuốn sách đó qua bản dịch.	owner 1C batch12
+spelling_s1	n	the way a word is written with letters	chính tả, cách viết	Check your spelling before you send the email.	Hãy kiểm tra chính tả trước khi gửi email.	owner 1C batch12
+spell_s1	v	to say or write the letters of a word in order	đánh vần	How do you spell your last name?	Họ của bạn đánh vần thế nào?	owner 1C batch12
+idiom_s1	n	a group of words with a meaning different from the single words	thành ngữ	"Break a leg" is an idiom that means "good luck".	"Break a leg" là thành ngữ có nghĩa là "chúc may mắn".	owner 1C batch12
+proverb_s1	n	a short, well-known saying that gives advice	tục ngữ	There is a proverb: practice makes perfect.	Có câu tục ngữ: có công mài sắt có ngày nên kim.	owner 1C batch12
+plural_s1	n	the form of a word used for more than one	số nhiều	The plural of "child" is "children".	Số nhiều của "child" là "children".	owner 1C batch12
+singular_s1	adj	referring to only one person or thing	số ít	"Mouse" is singular and "mice" is plural.	"Mouse" là số ít, còn "mice" là số nhiều.	owner 1C batch12
+tense_s1	n	a verb form that shows the time of an action	thì (của động từ)	We use the past tense to talk about yesterday.	Chúng ta dùng thì quá khứ để nói về hôm qua.	owner 1C batch12
+pronounce_s1	v	to say the sounds of a word	phát âm	How do you pronounce this word?	Từ này phát âm thế nào?	owner 1C batch12
+textbook_s1	n	a book used for studying a subject	sách giáo khoa	Open your textbook to page twenty.	Hãy mở sách giáo khoa ra trang hai mươi.	owner 1C batch12
+quotation_s1	n	words taken from a book or speech and repeated	câu trích dẫn	She began her talk with a famous quotation.	Cô ấy mở đầu bài nói bằng một câu trích dẫn nổi tiếng.	owner 1C batch12
+saying_s1	n	a well-known phrase that gives advice or a truth	câu nói, tục ngữ	As the saying goes, time is money.	Như người ta vẫn nói, thời gian là tiền bạc.	owner 1C batch12
+listener_s1	n	a person who listens	người nghe, thính giả	She is a good listener and never interrupts.	Cô ấy là người biết lắng nghe và không bao giờ ngắt lời.	owner 1C batch12 [keep-gloss]
+skirt_s1	n	a piece of clothing for women that hangs from the waist	chân váy	She bought a long blue skirt for the party.	Cô ấy mua một chiếc chân váy dài màu xanh để đi tiệc.	owner 1C batch12
+cap_s1	n	a soft hat with a hard part at the front	mũ lưỡi trai	He always wears a baseball cap in summer.	Mùa hè anh ấy luôn đội mũ lưỡi trai.	owner 1C batch12
+leather_s1	n	animal skin used to make shoes, bags and clothes	da thuộc	These shoes are made of real leather.	Đôi giày này làm bằng da thật.	owner 1C batch12
+silk_s1	n	a smooth, soft cloth made by silkworms	lụa	Her wedding dress was made of silk.	Váy cưới của cô ấy được may bằng lụa.	owner 1C batch12
+cotton_s1	n	a light cloth made from a plant	vải bông, vải cotton	Cotton shirts are cool in hot weather.	Áo sơ mi cotton mặc mát khi trời nóng.	owner 1C batch12
+wool_s1	n	thick soft hair from sheep, used to make warm clothes	len	My grandmother made me a wool scarf.	Bà tôi đan cho tôi một chiếc khăn len.	owner 1C batch12
+collar_s1	n	the part of a shirt or coat that goes around the neck	cổ áo	The collar of his shirt was dirty.	Cổ áo sơ mi của anh ấy bị bẩn.	owner 1C batch12 [keep-gloss]
+sock_s1	n	a soft piece of clothing worn on the foot inside a shoe	tất, vớ	I can't find the other sock.	Tôi không tìm thấy chiếc tất còn lại.	owner 1C batch12
+costume_s1	n	special clothes worn by an actor or at a party	trang phục (biểu diễn, hoá trang)	The children wore animal costumes to the party.	Bọn trẻ mặc trang phục hoá trang thành con vật đến bữa tiệc.	owner 1C batch12
+gown_s1	n	a long formal dress	váy dạ hội, áo choàng dài	She wore a beautiful red gown to the dinner.	Cô ấy mặc một chiếc váy dạ hội đỏ tuyệt đẹp đến bữa tối.	owner 1C batch12
+lace_s1	n	a string used to tie a shoe	dây giày	Tie your shoe lace before you start running.	Hãy buộc dây giày trước khi bắt đầu chạy.	owner 1C batch12
+ribbon_s1	n	a long, narrow piece of cloth used to tie things or decorate	ruy băng, dải ruy băng	She tied her hair with a pink ribbon.	Cô ấy buộc tóc bằng một dải ruy băng hồng.	owner 1C batch12
+velvet_s1	n	a soft cloth with a thick surface	vải nhung	The curtains are made of dark blue velvet.	Rèm cửa làm bằng vải nhung xanh đậm.	owner 1C batch12
+vest_s1	n	a piece of clothing without sleeves worn on the upper body	áo gi-lê, áo ba lỗ	He wore a warm vest under his jacket.	Anh ấy mặc một chiếc áo gi-lê ấm bên trong áo khoác.	owner 1C batch12
+purse_s1	n	a small bag in which you keep money and cards	ví (cầm tay)	She took some coins out of her purse.	Cô ấy lấy vài đồng xu ra khỏi ví.	owner 1C batch12
+tailor_s1	n	a person whose job is making or fixing clothes	thợ may	The tailor made the trousers shorter for me.	Người thợ may đã sửa quần ngắn lại cho tôi.	owner 1C batch12
+stitch_s1	n	one movement of a needle and thread through cloth	mũi khâu	My grandmother sews with small, neat stitches.	Bà tôi khâu bằng những mũi chỉ nhỏ và đều.	owner 1C batch12
+needle_s1	n	a thin pointed metal tool used for sewing	cây kim	I need a needle and thread to fix this button.	Tôi cần kim và chỉ để đơm lại chiếc cúc này.	owner 1C batch12
+click_s1	v	to press a mouse button or a link on a screen	nhấp, nhấn (chuột)	Click the link to open the website.	Nhấp vào đường liên kết để mở trang web.	owner 1C batch12
+web_s1	n	the system of websites on the internet	mạng (web)	You can find almost anything on the web.	Bạn có thể tìm thấy gần như mọi thứ trên mạng.	owner 1C batch12
+scan_s1	v	to copy a document or picture into a computer with a machine	quét (tài liệu)	Please scan your passport and email it to us.	Vui lòng quét hộ chiếu và gửi email cho chúng tôi.	owner 1C batch12
+swipe_s1	v	to move your finger across a screen	vuốt (màn hình)	Swipe left to see the next photo.	Vuốt sang trái để xem ảnh tiếp theo.	owner 1C batch12
