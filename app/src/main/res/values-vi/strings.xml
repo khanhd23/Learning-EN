@@ -99,7 +99,7 @@
     <string name="day_detail">Ngày %1$s: %2$d XP · %3$d phút · %4$d câu</string>
     <string name="decorate">Trang trí</string>
     <string name="disclaimer">Bài thi thử chỉ để luyện tập, không phải đề thi chính thức.</string>
-    <string name="disclaimer_full">EngPet là ứng dụng học độc lập, không liên kết với bất kỳ tổ chức thi nào, và điểm luyện tập chỉ mang tính ước lượng. Danh sách từ dựa trên các danh sách từ vựng mở; xem chi tiết trong mục Giấy phép.</string>
+    <string name="disclaimer_full">EngPet là ứng dụng học độc lập, không liên kết với bất kỳ tổ chức thi nào, và điểm luyện tập chỉ mang tính ước lượng. Danh sách từ dựa trên các danh sách từ vựng mở; xem chi tiết trong mục Giấy phép. TOEIC, IELTS và tên các kỳ thi khác là nhãn hiệu của chủ sở hữu tương ứng; EngPet không liên kết và không được các tổ chức này bảo trợ.</string>
     <string name="done">Xong</string>
     <string name="double_xp">Nhân đôi XP</string>
     <string name="double_xp_done">Bạn nhận thêm %1$d XP!</string>

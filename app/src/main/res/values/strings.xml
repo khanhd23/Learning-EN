@@ -99,7 +99,7 @@
     <string name="day_detail">Day %1$s: %2$d XP · %3$d min · %4$d answers</string>
     <string name="decorate">Decorate</string>
     <string name="disclaimer">Practice tests are for study only. They are not official exams.</string>
-    <string name="disclaimer_full">EngPet is an independent learning app. It is not connected with any exam organizer, and practice scores are only estimates. Word lists are based on open vocabulary lists; see Licenses for details.</string>
+    <string name="disclaimer_full">EngPet is an independent learning app. It is not connected with any exam organizer, and practice scores are only estimates. Word lists are based on open vocabulary lists; see Licenses for details. TOEIC, IELTS and other exam names are trademarks of their owners; EngPet is not affiliated with or endorsed by them.</string>
     <string name="done">Done</string>
     <string name="double_xp">Double your XP</string>
     <string name="double_xp_done">You earned %1$d extra XP!</string>
