@@ -79,6 +79,7 @@ class LearningStore(context: Context) : SQLiteOpenHelper(context, "learning.db",
     @Synchronized fun allItems(): List<ItemState> { ensure(); return items.values.toList() }
 
     fun saveItem(s: ItemState) {
+        com.yourbrand.englishlearn.core.DataRevision.bump()
         val cv = ContentValues().apply {
             put("k", s.key); put("box", s.box); put("due", s.due); put("seen", s.seen); put("correct", s.correct); put("wrong", s.wrong)
             put("streak", s.streak); put("last", s.last); put("saved", if (s.saved) 1 else 0); put("mistake", if (s.mistake) 1 else 0)
@@ -103,6 +104,7 @@ class LearningStore(context: Context) : SQLiteOpenHelper(context, "learning.db",
     // ---- tags ----------------------------------------------------------------------------
 
     @Synchronized fun recordTags(tagList: Collection<String>, correct: Boolean) {
+        com.yourbrand.englishlearn.core.DataRevision.bump()
         ensure()
         tagList.forEach { t ->
             val old = tags[t] ?: WeaknessAnalyzer.TagStat(t, 0, 0)
@@ -120,6 +122,7 @@ class LearningStore(context: Context) : SQLiteOpenHelper(context, "learning.db",
     @Synchronized fun allDays(): Map<Long, DayStat> { ensure(); return HashMap(days) }
 
     @Synchronized fun addToDay(key: Long, xp: Int = 0, seconds: Int = 0, answered: Int = 0, correct: Int = 0) {
+        com.yourbrand.englishlearn.core.DataRevision.bump()
         ensure()
         val d = days.getOrPut(key) { DayStat(key) }
         d.xp += xp; d.seconds += seconds; d.answered += answered; d.correct += correct
@@ -132,6 +135,7 @@ class LearningStore(context: Context) : SQLiteOpenHelper(context, "learning.db",
     @Synchronized fun stars(gp: String): Int { ensure(); return grammarStars[gp] ?: 0 }
 
     @Synchronized fun setStars(gp: String, stars: Int) {
+        com.yourbrand.englishlearn.core.DataRevision.bump()
         ensure()
         if (stars <= (grammarStars[gp] ?: 0)) return
         grammarStars[gp] = stars
@@ -143,6 +147,7 @@ class LearningStore(context: Context) : SQLiteOpenHelper(context, "learning.db",
     @Synchronized fun history(): List<HistoryEntry> { ensure(); return history.toList() }
 
     @Synchronized fun addHistory(kind: String, title: String, format: String?, total: Int, correct: Int, seconds: Int, at: Long, detail: JSONObject) {
+        com.yourbrand.englishlearn.core.DataRevision.bump()
         ensure()
         history += HistoryEntry(-1, kind, title, format, total, correct, seconds, at, detail)
         io.execute {
@@ -155,6 +160,7 @@ class LearningStore(context: Context) : SQLiteOpenHelper(context, "learning.db",
 
     /** Wipes everything (Settings → Dữ liệu → Đặt lại). */
     @Synchronized fun reset() {
+        com.yourbrand.englishlearn.core.DataRevision.bump()
         items.clear(); tags.clear(); days.clear(); grammarStars.clear(); history.clear()
         io.execute { listOf("item", "tag", "day", "gp", "history").forEach { writableDatabase.execSQL("DELETE FROM $it") } }
     }

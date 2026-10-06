@@ -157,15 +157,22 @@ class MainActivity : AppCompatActivity() {
         pill.tag = "pill"
     }
 
+    /** Hub screens are kept per tab, so switching back does not rebuild them (they refresh only
+     *  when learner data changed — see ScrollScreen.onShown). */
+    private val hubs = HashMap<Tab, Screen>()
+
     fun selectTab(tab: Tab) {
         currentTab = tab
-        navigator.reset(when (tab) {
-            Tab.TODAY -> TodayScreen(this)
-            Tab.VOCAB -> VocabScreen(this)
-            Tab.GRAMMAR -> GrammarScreen(this)
-            Tab.EXAM -> ExamScreen(this)
-            Tab.ME -> MeScreen(this)
-        })
+        val screen = hubs.getOrPut(tab) {
+            when (tab) {
+                Tab.TODAY -> TodayScreen(this)
+                Tab.VOCAB -> VocabScreen(this)
+                Tab.GRAMMAR -> GrammarScreen(this)
+                Tab.EXAM -> ExamScreen(this)
+                Tab.ME -> MeScreen(this)
+            }
+        }
+        navigator.resetTo(screen, hubs.values)
     }
 
     fun open(screen: Screen) = navigator.push(screen)

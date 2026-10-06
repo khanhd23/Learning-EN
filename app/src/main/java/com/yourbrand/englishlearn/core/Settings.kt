@@ -7,7 +7,7 @@ import org.json.JSONObject
 
 /** Small key-value settings (SharedPreferences; included in Auto Backup). */
 class Settings(context: Context) {
-    private val p = context.getSharedPreferences("settings_v1", Context.MODE_PRIVATE)
+    private val p = context.getSharedPreferences("settings_v1", Context.MODE_PRIVATE).also { DataRevision.watch(it) }
 
     private fun bool(k: String, d: Boolean) = p.getBoolean(k, d)
     private fun int(k: String, d: Int) = p.getInt(k, d)

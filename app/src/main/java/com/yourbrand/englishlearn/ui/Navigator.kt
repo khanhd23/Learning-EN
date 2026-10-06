@@ -29,6 +29,7 @@ abstract class Screen(val activity: MainActivity) {
     protected val ctx get() = activity
 
     internal fun create(parent: ViewGroup): View { view = onCreateView(parent); return view }
+    internal val hasView get() = ::view.isInitialized
     protected abstract fun onCreateView(parent: ViewGroup): View
 
     open fun onShown(firstTime: Boolean) {}
@@ -54,6 +55,27 @@ class Navigator(private val container: FrameLayout, private val onChanged: (Scre
         val old = stack.toList()
         show(screen, Transition.FADE) { stack.clear(); stack += screen }
         old.forEach { it.onDestroy() }
+    }
+
+    /**
+     * Tab switch to a kept hub screen: reuse its views (built before) instead of creating new ones.
+     * [keep] screens are not destroyed when they leave the stack.
+     */
+    fun resetTo(screen: Screen, keep: Collection<Screen>) {
+        if (!screen.hasView) {
+            val old = stack.toList()
+            show(screen, Transition.FADE) { stack.clear(); stack += screen }
+            old.filter { it !in keep }.forEach { it.onDestroy() }
+            return
+        }
+        val old = stack.toList()
+        val outgoing = current
+        stack.clear(); stack += screen
+        outgoing?.onHidden()
+        animateSwap(outgoing?.view, screen.view, Transition.FADE)
+        screen.onShown(false)
+        onChanged(screen)
+        old.filter { it !== screen && it !in keep }.forEach { it.onDestroy() }
     }
 
     fun replace(screen: Screen) {

@@ -38,12 +38,21 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
         val c = ctx
         val content = services.content
         body.addView(Kit.text(c, str(R.string.vocab_total, content.words.size, content.words.sumOf { it.senses.size }), R.style.Text_Caption).margins(c, top = 12))
-        var row: LinearLayout? = null
-        content.topics.forEachIndexed { i, t ->
-            if (i % 2 == 0) { row = Kit.hbox(c) { gravity = Gravity.TOP }.margins(c, top = 12); body.addView(row) }
-            row!!.addView(topicCard(t).apply { layoutParams = lp(0, WRAP_CONTENT, 1f).apply { if (i % 2 == 1) marginStart = c.dpi(12) } })
+        // Two cards per row; on a fresh open the first rows appear at once and the rest fill in.
+        val grid = Kit.vbox(c)
+        body.addView(grid)
+        val topics = content.topics
+        val rowCount = (topics.size + 1) / 2
+        val addRow = { r: Int ->
+            val row = Kit.hbox(c) { gravity = Gravity.TOP }.margins(c, top = 12)
+            for (i in r * 2 until minOf(r * 2 + 2, topics.size)) {
+                row.addView(topicCard(topics[i]).apply { layoutParams = lp(0, WRAP_CONTENT, 1f).apply { if (i % 2 == 1) marginStart = c.dpi(12) } })
+            }
+            if (r * 2 + 1 >= topics.size) row.addView(android.view.View(c).apply { layoutParams = lp(0, 1, 1f).apply { marginStart = c.dpi(12) } })
+            grid.addView(row)
         }
-        if (content.topics.size % 2 == 1) row?.addView(android.view.View(c).apply { layoutParams = lp(0, 1, 1f).apply { marginStart = c.dpi(12) } })
+        if (firstBuild) addInFrames(grid, rowCount, now = 4, perFrame = 1, add = addRow)
+        else for (r in 0 until rowCount) addRow(r)
     }
 
     private fun topicCard(t: Topic): LinearLayout {

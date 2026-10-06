@@ -23,6 +23,26 @@ import com.yourbrand.englishlearn.R
 
 fun lp(w: Int = MATCH_PARENT, h: Int = WRAP_CONTENT, weight: Float = 0f) = LinearLayout.LayoutParams(w, h, weight)
 
+/**
+ * Adds items 0 until [count] to [host]: the first [now] right away, then [perFrame] per frame, so a
+ * long screen appears immediately instead of freezing while every view is created. Stops when
+ * [host] has been removed (the screen was rebuilt or closed).
+ */
+fun addInFrames(host: ViewGroup, count: Int, now: Int, perFrame: Int, onDone: () -> Unit = {}, add: (Int) -> Unit) {
+    val first = minOf(now, count)
+    for (i in 0 until first) add(i)
+    if (first >= count) { onDone(); return }
+    var next = first
+    host.postOnAnimation(object : Runnable {
+        override fun run() {
+            if (host.parent == null) return
+            val end = minOf(next + perFrame, count)
+            while (next < end) add(next++)
+            if (next < count) host.postOnAnimation(this) else onDone()
+        }
+    })
+}
+
 fun <T : View> T.margins(ctx: Context, top: Int = 0, bottom: Int = 0, start: Int = 0, end: Int = 0): T {
     val p = (layoutParams as? ViewGroup.MarginLayoutParams) ?: lp()
     p.topMargin = ctx.dpi(top); p.bottomMargin = ctx.dpi(bottom); p.marginStart = ctx.dpi(start); p.marginEnd = ctx.dpi(end)
@@ -318,10 +338,21 @@ abstract class ScrollScreen(activity: MainActivity) : Screen(activity) {
 
     protected open fun headerActions(bar: LinearLayout) {}
 
+    private var builtRevision = -1L
+    /** True only while building a newly opened screen: long lists may then fill in over frames.
+     *  Rebuilds (filters, returning after changes) stay synchronous so the scroll position holds. */
+    protected var firstBuild = false
+        private set
+
     override fun onShown(firstTime: Boolean) {
+        // Coming back to an unchanged screen: keep the existing views instead of rebuilding them all.
+        if (!firstTime && builtRevision == com.yourbrand.englishlearn.core.DataRevision.value) return
         val y = scroll.scrollY
         body.removeAllViews()
+        firstBuild = firstTime
         build(body)
+        firstBuild = false
+        builtRevision = com.yourbrand.englishlearn.core.DataRevision.value
         if (firstTime) { body.staggerChildren(40); scroll.post { scroll.scrollTo(0, 0) } } else scroll.post { scroll.scrollTo(0, y) }
     }
 
@@ -334,6 +365,7 @@ abstract class ScrollScreen(activity: MainActivity) : Screen(activity) {
         val y = scroll.scrollY
         body.removeAllViews()
         build(body)
+        builtRevision = com.yourbrand.englishlearn.core.DataRevision.value
         scroll.post { scroll.scrollTo(0, y) }
     }
 }

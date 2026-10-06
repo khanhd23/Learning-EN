@@ -24,7 +24,8 @@ class WordListScreen(
     override val petMode = PetMode.FLOATING
     private var filter = -1 // -1 all · 0 new · 1 learning · 2 known · 3 saved
     private var sort = 0 // 0 default · 1 A–Z · 2 hard→easy · 3 often wrong
-    private var shown = 60
+    private var shown = PAGE
+    private var loadMore: (() -> Unit)? = null
     private val selected = LinkedHashSet<String>()
     private var selectBar: LinearLayout? = null
 
@@ -88,12 +89,31 @@ class WordListScreen(
         }
         if (list.isEmpty()) { body.addView(Kit.empty(c, "🔎", str(R.string.no_words_filter), null, null)); return }
         val card = Kit.card(c, 4, 6)
-        list.take(shown).forEachIndexed { i, w ->
-            if (i > 0) card.addView(Kit.divider(c))
-            card.addView(wordRow(w))
-        }
+        fun add(i: Int) { if (i > 0) card.addView(Kit.divider(c)); card.addView(wordRow(list[i])) }
+        // Show one page (20 words) first; more are appended as the user nears the end.
+        var count = minOf(shown, list.size)
+        if (firstBuild) addInFrames(card, count, now = 10, perFrame = 2, add = ::add) else for (i in 0 until count) add(i)
         body.addView(card)
-        if (list.size > shown) body.addView(Kit.secondary(c, str(R.string.show_more, list.size - shown)) { shown += 80; refresh() })
+        val more = Kit.secondary(c, "") { loadMore?.invoke() }
+        fun updateMore() { more.visibility = if (count < list.size) View.VISIBLE else View.GONE; more.text = str(R.string.show_more, list.size - count) }
+        updateMore()
+        body.addView(more)
+        var loading = false
+        loadMore = {
+            if (!loading && count < list.size) {
+                // Append the next page a couple of rows per frame so scrolling never stalls.
+                loading = true
+                val start = count
+                val end = minOf(count + PAGE, list.size)
+                count = end; shown = maxOf(shown, count)
+                updateMore()
+                addInFrames(card, end - start, now = 2, perFrame = 2, onDone = { loading = false }) { add(start + it) }
+            }
+        }
+        scroll.setOnScrollChangeListener { _, _, y, _, _ ->
+            val content = scroll.getChildAt(0) ?: return@setOnScrollChangeListener
+            if (content.bottom - (scroll.height + y) < c.dpi(600)) loadMore?.invoke()
+        }
     }
 
     private fun wordRow(w: Word): View {
@@ -112,10 +132,7 @@ class WordListScreen(
         texts.addView(top)
         texts.addView(Kit.ellipsize(Kit.text(c, w.senses.joinToString("; ") { it.gloss }, R.style.Text_Caption)))
         // Mastery dots 0–5
-        val dots = Kit.hbox(c).margins(c, top = 4)
-        val box = (s?.box ?: 0).coerceAtMost(5)
-        repeat(5) { i -> dots.addView(View(c).apply { background = c.rounded(c.col(if (i < box) R.color.primary else R.color.surface_variant), 100f); layoutParams = LinearLayout.LayoutParams(c.dpi(7), c.dpi(7)).apply { marginEnd = c.dpi(3) } }) }
-        texts.addView(dots)
+        texts.addView(MasteryDots(c, (s?.box ?: 0).coerceAtMost(5)).margins(c, top = 4))
         row.addView(texts)
         row.addView(ImageView(c).apply {
             setImageResource(R.drawable.ic_volume); tintRes(R.color.primary)
@@ -142,6 +159,8 @@ class WordListScreen(
         row.setOnLongClickListener { it.haptic(android.view.HapticFeedbackConstants.LONG_PRESS); toggleSelect(w, row); true }
         return row
     }
+
+    private companion object { const val PAGE = 20 }
 
     private fun toggleSelect(w: Word, row: View) {
         if (!selected.add(w.key)) selected.remove(w.key)
@@ -188,5 +207,21 @@ class WordListScreen(
     private fun study(mode: VocabMode, words: List<Word>) {
         if (words.isEmpty()) return
         activity.startSession(services.builder().words(SessionKind.TOPIC, barTitle, words, mode, if (mode == VocabMode.MATCHING) 12 else 10))
+    }
+}
+
+/** Mastery 0–5 as five dots drawn by one view (was five views with five drawables per row). */
+private class MasteryDots(ctx: android.content.Context, private val filled: Int) : View(ctx) {
+    private val on = android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG).apply { color = ctx.col(R.color.primary) }
+    private val off = android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG).apply { color = ctx.col(R.color.surface_variant) }
+    private val d = ctx.dp(7f)
+    private val gap = ctx.dp(3f)
+
+    init { layoutParams = LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT); importantForAccessibility = IMPORTANT_FOR_ACCESSIBILITY_NO }
+
+    override fun onMeasure(w: Int, h: Int) = setMeasuredDimension((5 * d + 4 * gap).toInt() + 1, d.toInt() + 1)
+
+    override fun onDraw(canvas: android.graphics.Canvas) {
+        for (i in 0 until 5) canvas.drawCircle(d / 2 + i * (d + gap), d / 2, d / 2, if (i < filled) on else off)
     }
 }

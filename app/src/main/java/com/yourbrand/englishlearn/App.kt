@@ -38,7 +38,7 @@ class Services(private val app: Application) {
 
     val content: Content get() = contentRepo.get(settings.contentLocale)
 
-    private val petPrefs = app.getSharedPreferences("pet_v1", Context.MODE_PRIVATE)
+    private val petPrefs = app.getSharedPreferences("pet_v1", Context.MODE_PRIVATE).also { com.yourbrand.englishlearn.core.DataRevision.watch(it) }
     val pet: PetEngine by lazy {
         val state = petPrefs.getString("state", null)?.let { runCatching { PetState.fromJson(JSONObject(it)) }.getOrNull() } ?: PetState()
         PetEngine(state, petConfig(), LearningStore::dayKey, ::hourOf)
