@@ -17,6 +17,8 @@ import com.yourbrand.englishlearn.learning.LearningStore
 import com.yourbrand.englishlearn.learning.Scheduler
 import com.yourbrand.englishlearn.learning.SessionBuilder
 import com.yourbrand.englishlearn.learning.WeaknessAnalyzer
+import com.yourbrand.englishlearn.learning.WeekKey
+import com.yourbrand.englishlearn.pet.PetItems
 import com.yourbrand.englishlearn.pet.BubbleScheduler
 import com.yourbrand.englishlearn.pet.PetConfig
 import com.yourbrand.englishlearn.pet.PetEngine
@@ -62,6 +64,43 @@ class Services(private val app: Application) {
     fun todayXp(): Int = store.day(today()).xp
     fun goalReached(): Boolean = todayXp() >= settings.dailyGoalXp
 
+    fun ensureWeekly(now: Long = System.currentTimeMillis()) {
+        settings.ensureWeekly(WeekKey.mondayOf(today(now)))
+    }
+
+    fun recordSpeakingAttempt(now: Long = System.currentTimeMillis()) {
+        ensureWeekly(now)
+        val d = today(now)
+        settings.weeklySpeakingDays = settings.weeklySpeakingDays + d
+    }
+
+    fun recordStoryFinished(now: Long = System.currentTimeMillis()) {
+        ensureWeekly(now)
+        settings.weeklyStories++
+    }
+
+    /** Pays each completed weekly quest once. Returns newly awarded item ids. */
+    fun claimWeeklyRewards(now: Long = System.currentTimeMillis()): List<String> {
+        ensureWeekly(now)
+        val rewards = ArrayList<String>()
+        val counts = listOf(
+            settings.weeklyNewWords to 20,
+            settings.weeklyDailyChallenges to 3,
+            settings.weeklySpeakingDays.size to 2,
+            settings.weeklyStories to 2,
+        )
+        counts.forEachIndexed { bit, pair ->
+            if (pair.first >= pair.second && settings.weeklyPaidMask and (1 shl bit) == 0) {
+                settings.weeklyPaidMask = settings.weeklyPaidMask or (1 shl bit)
+                val item = PetItems.all.filter { it.id !in pet.state.owned }.minByOrNull { it.price }
+                if (item != null) { pet.state.owned += item.id; rewards += item.id }
+                else pet.state.coins += 10
+            }
+        }
+        if (rewards.isNotEmpty()) savePet()
+        return rewards
+    }
+
     /** Consecutive days (ending today or yesterday) with at least one completed session. */
     fun streak(): Int {
         val days = store.allDays().filterValues { it.answered >= 5 }.keys
@@ -88,6 +127,11 @@ class Services(private val app: Application) {
         var xp = 0
         keys.forEach { key ->
             val s = store.itemOrNew(key)
+            if (s.isNew && key.startsWith("w:")) {
+                store.markFirstSeen(key, today(now))
+                ensureWeekly(now)
+                settings.weeklyNewWords++
+            }
             val wasDue = Scheduler.isDue(s, now)
             Scheduler.apply(s, correct, now)
             if (correct) {
@@ -105,6 +149,7 @@ class Services(private val app: Application) {
             store.saveItem(s)
         }
         store.recordTags(ex.tags.filter { !it.startsWith("topic_") }, correct)
+        claimWeeklyRewards(now)
         store.addToDay(today(now), xp = 0, answered = 1, correct = if (correct) 1 else 0)
         bubbles.lastAnswerAt = now
         return xp

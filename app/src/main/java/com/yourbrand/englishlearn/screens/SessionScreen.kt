@@ -35,6 +35,7 @@ import com.yourbrand.englishlearn.learning.Scheduler
 import com.yourbrand.englishlearn.learning.Session
 import com.yourbrand.englishlearn.learning.SessionKind
 import com.yourbrand.englishlearn.pet.Mood
+import com.yourbrand.englishlearn.pet.PetItems
 import com.yourbrand.englishlearn.pet.PetView
 import com.yourbrand.englishlearn.ui.*
 import com.yourbrand.englishlearn.ui.views.SegmentedProgress
@@ -812,6 +813,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
     private fun finishShadowAttempt(ex: Exercise.Shadowing, spoken: String) {
         if (answered) return
         shadowAttempts++
+        services.recordSpeakingAttempt()
         val result = Grader.gradeSentence(spoken, ex.sentence)
         val colors = SpannableStringBuilder()
         result.diff.expected.forEachIndexed { i, word ->
@@ -1063,13 +1065,11 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         if (session.kind == SessionKind.DAILY && services.settings.dailyChallengeDay != services.today(now)) {
             services.settings.dailyChallengeDay = services.today(now)
             services.settings.dailyChallengesCompleted++
-            services.pet.state.owned += "toy_ball"
+            services.ensureWeekly(now)
+            services.settings.weeklyDailyChallenges++
+            services.pet.state.coins += 10
             services.content.petLines["Q_DAILY_DONE"]?.randomOrNull()?.let { activity.petView.say(it.replace("{name}", services.pet.state.name), false) }
-            if (services.settings.dailyChallengesCompleted >= 3 && services.settings.weeklyQuestRewardWeek != Math.floorDiv(services.today(now) + 3, 7L)) {
-                services.settings.weeklyQuestRewardWeek = Math.floorDiv(services.today(now) + 3, 7L)
-                services.pet.state.owned += "plant_cactus"
-                services.content.petLines["Q_QUEST_DONE"]?.randomOrNull()?.let { activity.petView.say(it.replace("{name}", services.pet.state.name), false) }
-            }
+            services.claimWeeklyRewards(now).forEach { id -> PetItems.byId[id]?.let { activity.toast(str(R.string.quest_reward, str(it.nameRes))) } }
         }
         // Weekly goal → freeze token
         if (services.streak() >= 7) {

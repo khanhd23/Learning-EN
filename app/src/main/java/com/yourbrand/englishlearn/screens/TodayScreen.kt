@@ -7,6 +7,7 @@ import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import android.speech.SpeechRecognizer
 import com.yourbrand.englishlearn.MainActivity
 import com.yourbrand.englishlearn.R
 import com.yourbrand.englishlearn.Services
@@ -35,6 +36,7 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
         val c = ctx
         val s = services
         val now = System.currentTimeMillis()
+        s.ensureWeekly(now)
         val goal = s.settings.dailyGoalXp
         val xp = s.todayXp()
 
@@ -102,8 +104,10 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
         })
         body.addView(Kit.card(c, 16, 12) {
             addView(Kit.text(c, str(R.string.weekly_quests), R.style.Text_BodyStrong))
-            addView(Kit.text(c, str(R.string.quest_new_words, 20) + "  " + str(R.string.quest_progress, s.store.allItems().count { it.key.startsWith("w:") && it.seen > 0 }.coerceAtMost(20), 20), R.style.Text_Caption).margins(c, top = 6))
-            addView(Kit.text(c, str(R.string.quest_daily, 3) + "  " + str(R.string.quest_progress, s.settings.dailyChallengesCompleted.coerceAtMost(3), 3), R.style.Text_Caption).margins(c, top = 4))
+            addView(Kit.text(c, str(R.string.quest_new_words, 20) + "  " + str(R.string.quest_progress, s.store.firstSeenCount(com.yourbrand.englishlearn.learning.WeekKey.mondayOf(s.today(now))).coerceAtMost(20), 20), R.style.Text_Caption).margins(c, top = 6))
+            addView(Kit.text(c, str(R.string.quest_daily, 3) + "  " + str(R.string.quest_progress, s.settings.weeklyDailyChallenges.coerceAtMost(3), 3), R.style.Text_Caption).margins(c, top = 4))
+            if (SpeechRecognizer.isRecognitionAvailable(c)) addView(Kit.text(c, str(R.string.quest_speaking, 2) + "  " + str(R.string.quest_progress, s.settings.weeklySpeakingDays.size.coerceAtMost(2), 2), R.style.Text_Caption).margins(c, top = 4))
+            addView(Kit.text(c, str(R.string.quest_stories, 2) + "  " + str(R.string.quest_progress, s.settings.weeklyStories.coerceAtMost(2), 2), R.style.Text_Caption).margins(c, top = 4))
             addView(Kit.text(c, str(R.string.streak_shields, s.pet.state.freezeTokens), R.style.Text_Caption).margins(c, top = 4))
         })
 

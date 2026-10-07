@@ -30,13 +30,14 @@ data class DayStat(val day: Long, var xp: Int = 0, var seconds: Int = 0, var ans
  * Per-item learning state in plain SQLite (no Room, SKILL.md 3). Everything is mirrored in memory;
  * writes go to a single background thread so the UI never waits on disk.
  */
-class LearningStore(context: Context) : SQLiteOpenHelper(context, "learning.db", null, 1) {
+class LearningStore(context: Context) : SQLiteOpenHelper(context, "learning.db", null, 2) {
     private val io = Executors.newSingleThreadExecutor { r -> Thread(r, "db").apply { priority = Thread.MIN_PRIORITY } }
     private val items = HashMap<String, ItemState>()
     private val tags = HashMap<String, WeaknessAnalyzer.TagStat>()
     private val days = HashMap<Long, DayStat>()
     private val grammarStars = HashMap<String, Int>()
     private val history = ArrayList<HistoryEntry>()
+    private val firstSeen = HashMap<String, Long>()
     @Volatile private var loaded = false
 
     override fun onCreate(db: SQLiteDatabase) {
@@ -45,9 +46,12 @@ class LearningStore(context: Context) : SQLiteOpenHelper(context, "learning.db",
         db.execSQL("CREATE TABLE day(d INT PRIMARY KEY, xp INT, seconds INT, answered INT, correct INT)")
         db.execSQL("CREATE TABLE gp(id TEXT PRIMARY KEY, stars INT)")
         db.execSQL("CREATE TABLE history(id INTEGER PRIMARY KEY AUTOINCREMENT, kind TEXT, title TEXT, fmt TEXT, total INT, correct INT, seconds INT, at INT, detail TEXT)")
+        db.execSQL("CREATE TABLE first_seen(k TEXT PRIMARY KEY, day INT)")
     }
 
-    override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {}
+    override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
+        if (oldVersion < 2) db.execSQL("CREATE TABLE IF NOT EXISTS first_seen(k TEXT PRIMARY KEY, day INT)")
+    }
 
     @Synchronized
     fun load() {
@@ -67,6 +71,7 @@ class LearningStore(context: Context) : SQLiteOpenHelper(context, "learning.db",
             while (c.moveToNext()) history += HistoryEntry(c.getLong(0), c.getString(1), c.getString(2), c.getString(3), c.getInt(4), c.getInt(5), c.getInt(6), c.getLong(7),
                 runCatching { JSONObject(c.getString(8)) }.getOrElse { JSONObject() })
         }
+        db.rawQuery("SELECT k, day FROM first_seen", null).use { c -> while (c.moveToNext()) firstSeen[c.getString(0)] = c.getLong(1) }
         loaded = true
     }
 
@@ -77,6 +82,18 @@ class LearningStore(context: Context) : SQLiteOpenHelper(context, "learning.db",
     @Synchronized fun item(key: String): ItemState? { ensure(); return items[key] }
     @Synchronized fun itemOrNew(key: String): ItemState { ensure(); return items.getOrPut(key) { ItemState(key) } }
     @Synchronized fun allItems(): List<ItemState> { ensure(); return items.values.toList() }
+
+    @Synchronized fun markFirstSeen(key: String, day: Long): Boolean {
+        ensure()
+        if (key !in firstSeen) {
+            firstSeen[key] = day
+            io.execute { writableDatabase.execSQL("INSERT OR IGNORE INTO first_seen(k, day) VALUES(?,?)", arrayOf(key, day)) }
+            return true
+        }
+        return false
+    }
+
+    @Synchronized fun firstSeenCount(fromDay: Long): Int { ensure(); return firstSeen.values.count { it >= fromDay && it < fromDay + 7L } }
 
     fun saveItem(s: ItemState) {
         com.yourbrand.englishlearn.core.DataRevision.bump()
@@ -161,8 +178,8 @@ class LearningStore(context: Context) : SQLiteOpenHelper(context, "learning.db",
     /** Wipes everything (Settings → Dữ liệu → Đặt lại). */
     @Synchronized fun reset() {
         com.yourbrand.englishlearn.core.DataRevision.bump()
-        items.clear(); tags.clear(); days.clear(); grammarStars.clear(); history.clear()
-        io.execute { listOf("item", "tag", "day", "gp", "history").forEach { writableDatabase.execSQL("DELETE FROM $it") } }
+        items.clear(); tags.clear(); days.clear(); grammarStars.clear(); history.clear(); firstSeen.clear()
+        io.execute { listOf("item", "tag", "day", "gp", "history", "first_seen").forEach { writableDatabase.execSQL("DELETE FROM $it") } }
     }
 
     companion object {

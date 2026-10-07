@@ -53,6 +53,25 @@ class Settings(context: Context) {
     var dailyChallengeDay: Long get() = p.getLong("dailyChallengeDay", -1L); set(v) = put("dailyChallengeDay", v)
     var dailyChallengesCompleted: Int get() = int("dailyChallengesCompleted", 0); set(v) = put("dailyChallengesCompleted", v)
     var weeklyQuestRewardWeek: Long get() = p.getLong("weeklyQuestRewardWeek", -1L); set(v) = put(v = v, k = "weeklyQuestRewardWeek")
+    var weeklyQuestWeek: Long get() = p.getLong("weeklyQuestWeek", -1L); set(v) = put(v = v, k = "weeklyQuestWeek")
+    var weeklyNewWords: Int get() = int("weeklyNewWords", 0); set(v) = put("weeklyNewWords", v)
+    var weeklyDailyChallenges: Int get() = int("weeklyDailyChallenges", 0); set(v) = put("weeklyDailyChallenges", v)
+    var weeklySpeakingDays: Set<Long>
+        get() = (p.getStringSet("weeklySpeakingDays", emptySet()) ?: emptySet()).mapNotNull { it.toLongOrNull() }.toSet()
+        set(v) = p.edit().putStringSet("weeklySpeakingDays", v.map(Long::toString).toSet()).apply()
+    var weeklyStories: Int get() = int("weeklyStories", 0); set(v) = put("weeklyStories", v)
+    var weeklyPaidMask: Int get() = int("weeklyPaidMask", 0); set(v) = put("weeklyPaidMask", v)
+
+    /** Starts a fresh Monday-based quest ledger without changing lifetime learning data. */
+    fun ensureWeekly(week: Long) {
+        if (weeklyQuestWeek == week) return
+        weeklyQuestWeek = week
+        weeklyNewWords = 0
+        weeklyDailyChallenges = 0
+        weeklySpeakingDays = emptySet()
+        weeklyStories = 0
+        weeklyPaidMask = 0
+    }
 
     fun petPos(landscape: Boolean): Pair<Float, Float>? {
         val k = if (landscape) "petPosL" else "petPosP"

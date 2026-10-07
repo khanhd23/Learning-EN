@@ -15,6 +15,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import com.yourbrand.englishlearn.MainActivity
 import com.yourbrand.englishlearn.R
+import com.yourbrand.englishlearn.pet.PetItems
 import com.yourbrand.englishlearn.content.Story
 import com.yourbrand.englishlearn.ui.*
 import java.util.Locale
@@ -142,6 +143,8 @@ class StoryScreen(activity: MainActivity, private val story: Story) : Screen(act
 
     private fun finishStory() {
         services.creditXp((10 + correct * 2).coerceAtMost(20))
+        val rewards = services.run { recordStoryFinished(); claimWeeklyRewards() }
+        rewards.forEach { id -> PetItems.byId[id]?.let { activity.toast(str(R.string.quest_reward, str(it.nameRes))) } }
         services.pet.meal(System.currentTimeMillis(), services.goalReached())
         services.savePet()
         activity.navigator.pop()
