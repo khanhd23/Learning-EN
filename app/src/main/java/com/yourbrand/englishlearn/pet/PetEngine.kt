@@ -184,7 +184,7 @@ class PetEngine(
     /** One freeze token per completed weekly goal (week = 7-day block of local days). */
     fun onWeeklyGoal(day: Long) {
         val week = Math.floorDiv(day + 3, 7L)
-        if (state.tokenWeek != week) { state.tokenWeek = week; state.freezeTokens++ }
+        if (state.tokenWeek != week) { state.tokenWeek = week; state.freezeTokens = (state.freezeTokens + 1).coerceAtMost(2) }
     }
 
     fun buy(item: PetItem): Boolean {

@@ -5,7 +5,7 @@ import com.yourbrand.englishlearn.content.Question
 import com.yourbrand.englishlearn.content.Word
 import kotlin.random.Random
 
-enum class SessionKind { QUICK, REVIEW, WEAK, TOPIC, LEVEL, WORDS, GRAMMAR, EXAM_TYPE, BUILDER, MISTAKES, WELCOME, MEAL, CONFUSABLE, SPEED, SKIP_TEST, PLACEMENT }
+enum class SessionKind { QUICK, REVIEW, WEAK, TOPIC, LEVEL, WORDS, GRAMMAR, EXAM_TYPE, BUILDER, MISTAKES, WELCOME, MEAL, CONFUSABLE, SPEED, DAILY, SKIP_TEST, PLACEMENT }
 
 /** Vocabulary study mode chosen from the topic screen menu. */
 enum class VocabMode { MIXED, FLASHCARD, QUIZ, MATCHING, SPELLING, LISTENING }
@@ -77,6 +77,23 @@ class SessionBuilder(
         val ex = (due + weak).mapNotNull { exerciseFor(it) } + newWords.map { factory.forWord(it, null) } +
             grammarFill(n - due.size - weak.size - newWords.size, userLevel)
         return Session(SessionKind.QUICK, title, mix(ex.take(n)))
+    }
+
+    /** Five deterministic daily items, combining due and weak work with a day-varying mix. */
+    fun daily(title: String, now: Long, preferredTopics: List<String>, userLevel: Int): Session {
+        val day = LearningStore.dayKey(now)
+        val due = dueKeys(now, 5)
+        val weak = weakQuestionKeys(5, due.toSet())
+        val keys = (due + weak).distinct().take(5).toMutableList()
+        if (keys.size < 5) keys += newWords(5 - keys.size, preferredTopics, userLevel, keys.toSet()).map { it.key }
+        val exercises = keys.mapIndexedNotNull { i, key ->
+            val base = exerciseFor(key) ?: return@mapIndexedNotNull null
+            // The order and available base exercises vary by local day, while the item pool remains stable.
+            if (i % 2 == Math.floorMod(day, 2L).toInt() && key.startsWith("w:")) {
+                content.wordById[key.removePrefix("w:")]?.let { factory.forWord(it, state(key)) } ?: base
+            } else base
+        }
+        return Session(SessionKind.DAILY, title, exercises.toMutableList())
     }
 
     /** Fills a short session with grammar items at the learner's level when nothing else is available. */

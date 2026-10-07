@@ -1060,8 +1060,23 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         if (total >= 3 || correct >= 5) services.pet.meal(now, services.goalReached())
         if (session.kind == SessionKind.MEAL || session.kind == SessionKind.WELCOME || services.pet.isDozing && total >= 5) services.pet.recover()
         if (services.goalReached() && !goalBefore) services.pet.state.coins += 20
+        if (session.kind == SessionKind.DAILY && services.settings.dailyChallengeDay != services.today(now)) {
+            services.settings.dailyChallengeDay = services.today(now)
+            services.settings.dailyChallengesCompleted++
+            services.pet.state.owned += "toy_ball"
+            services.content.petLines["Q_DAILY_DONE"]?.randomOrNull()?.let { activity.petView.say(it.replace("{name}", services.pet.state.name), false) }
+            if (services.settings.dailyChallengesCompleted >= 3 && services.settings.weeklyQuestRewardWeek != Math.floorDiv(services.today(now) + 3, 7L)) {
+                services.settings.weeklyQuestRewardWeek = Math.floorDiv(services.today(now) + 3, 7L)
+                services.pet.state.owned += "plant_cactus"
+                services.content.petLines["Q_QUEST_DONE"]?.randomOrNull()?.let { activity.petView.say(it.replace("{name}", services.pet.state.name), false) }
+            }
+        }
         // Weekly goal → freeze token
-        if (services.weekDots().count { it } >= 5) services.pet.onWeeklyGoal(services.today())
+        if (services.streak() >= 7) {
+            val before = services.pet.state.freezeTokens
+            services.pet.onWeeklyGoal(services.today())
+            if (services.pet.state.freezeTokens > before) services.content.petLines["Q_FREEZE"]?.randomOrNull()?.let { activity.petView.say(it.replace("{name}", services.pet.state.name), false) }
+        }
         services.savePet()
         // Grammar stars: ≥ 80 % = 1★, ≥ 90 % = 2★, 100 % = 3★.
         session.gp?.let { gp ->

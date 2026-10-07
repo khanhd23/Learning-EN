@@ -84,6 +84,30 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
         continueCard()?.let { body.addView(it) }
 
         // 4. Due reviews
+        val dailyDone = s.settings.dailyChallengeDay == LearningStore.dayKey(now)
+        body.addView(Kit.clickableCard(c, 16, 12, c.col(R.color.accent_container), onClick = {
+            if (!dailyDone) {
+                s.content.petLines["Q_DAILY_START"]?.randomOrNull()?.let { activity.petView.say(it.replace("{name}", s.pet.state.name), false) }
+                activity.startSession(s.builder().daily(str(R.string.daily_challenge), now, s.settings.preferredTopics(), s.settings.userLevel))
+            }
+        }) {
+            orientation = LinearLayout.HORIZONTAL; gravity = Gravity.CENTER_VERTICAL
+            addView(Kit.emojiTile(c, "🎯", c.col(R.color.surface)))
+            addView(Kit.vbox(c) {
+                layoutParams = lp(0, WRAP_CONTENT, 1f).apply { marginStart = c.dpi(14) }
+                addView(Kit.text(c, str(R.string.daily_challenge), R.style.Text_BodyStrong))
+                addView(Kit.text(c, if (dailyDone) str(R.string.daily_challenge_done) else str(R.string.daily_challenge_desc), R.style.Text_Caption))
+            })
+            addView(Kit.chevron(c))
+        })
+        body.addView(Kit.card(c, 16, 12) {
+            addView(Kit.text(c, str(R.string.weekly_quests), R.style.Text_BodyStrong))
+            addView(Kit.text(c, str(R.string.quest_new_words, 20) + "  " + str(R.string.quest_progress, s.store.allItems().count { it.key.startsWith("w:") && it.seen > 0 }.coerceAtMost(20), 20), R.style.Text_Caption).margins(c, top = 6))
+            addView(Kit.text(c, str(R.string.quest_daily, 3) + "  " + str(R.string.quest_progress, s.settings.dailyChallengesCompleted.coerceAtMost(3), 3), R.style.Text_Caption).margins(c, top = 4))
+            addView(Kit.text(c, str(R.string.streak_shields, s.pet.state.freezeTokens), R.style.Text_Caption).margins(c, top = 4))
+        })
+
+        // 4. Due reviews
         val due = s.store.allItems().count { Scheduler.isDue(it, now) }
         body.addView(Kit.clickableCard(c, 16, 12, onClick = { activity.startSession(s.builder().review(str(R.string.review_now_title), now)) }) {
             orientation = LinearLayout.HORIZONTAL; gravity = Gravity.CENTER_VERTICAL

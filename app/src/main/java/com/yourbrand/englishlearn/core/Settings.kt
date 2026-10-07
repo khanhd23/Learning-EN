@@ -49,6 +49,9 @@ class Settings(context: Context) {
     var rateAskedAt: Long get() = p.getLong("rateAskedAt", 0L); set(v) = put("rateAskedAt", v)
     var lastOpenAt: Long get() = p.getLong("lastOpenAt", 0L); set(v) = put("lastOpenAt", v)
     var placementOffered: Boolean get() = bool("placementOffered", false); set(v) = put("placementOffered", v)
+    var dailyChallengeDay: Long get() = p.getLong("dailyChallengeDay", -1L); set(v) = put("dailyChallengeDay", v)
+    var dailyChallengesCompleted: Int get() = int("dailyChallengesCompleted", 0); set(v) = put("dailyChallengesCompleted", v)
+    var weeklyQuestRewardWeek: Long get() = p.getLong("weeklyQuestRewardWeek", -1L); set(v) = put(v = v, k = "weeklyQuestRewardWeek")
 
     fun petPos(landscape: Boolean): Pair<Float, Float>? {
         val k = if (landscape) "petPosL" else "petPosP"
