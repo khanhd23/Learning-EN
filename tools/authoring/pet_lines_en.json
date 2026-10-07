@@ -139,5 +139,45 @@
     "Back in the race!",
     "Great, you learned from that!",
     "Nice one, keep it up!"
+  ],
+  "Q_DAILY_START": [
+    "Today's challenge is here! Just five!",
+    "{name} has a new challenge ready!",
+    "Ready? Here's your daily challenge!",
+    "Five a day, better every day!",
+    "Any tricky ones today?",
+    "Let's do the challenge with {name}!",
+    "A new challenge is unlocked!",
+    "Quick challenge, then take a break!"
+  ],
+  "Q_DAILY_DONE": [
+    "Today's challenge is done! Great!",
+    "{name} got a reward, thank you!",
+    "Finished! See you tomorrow!",
+    "Today's challenge: conquered!",
+    "Well done! Your streak grew!",
+    "All done, {name} is so happy!",
+    "Challenge over, time to relax!",
+    "Great! A new challenge comes tomorrow!"
+  ],
+  "Q_QUEST_DONE": [
+    "Weekly quest done! Get your gift!",
+    "{name} has a new item!",
+    "Quest complete! You're amazing!",
+    "Here's your gift! Thanks for studying!",
+    "Quest done, {name} is jumping for joy!",
+    "Another quest completed!",
+    "You kept your promise to {name}!",
+    "What a great week of learning!"
+  ],
+  "Q_FREEZE": [
+    "You earned a streak shield!",
+    "A shield saved your streak!",
+    "Don't worry, your streak is safe!",
+    "{name} kept your streak for you!",
+    "With a shield, one day off is fine!",
+    "Your streak is protected!",
+    "Seven days in a row earns a shield!",
+    "Shield used. Let's learn today!"
   ]
 }

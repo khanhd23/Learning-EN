@@ -167,11 +167,27 @@ See `docs/RELEASE_CHECKLIST.md`.
 Shuffle within groups (same topic, then same part of speech) instead of shuffling the merged list,
 so "same topic first" holds. Unit test.
 
+### Task 10.1 / 9.2 / R1 review (owner)
+
+Accepted (016332e, f3da03b, e92f33f): sound practice card + one optional sound item after 3
+sessions, slow replay, focus tips through the approval gate, edit-distance dictation diff with
+tests; distractors shuffled within groups; ad content rating G, offline licenses, privacy page,
+`adult` filter from `config/blocked_senses.txt`. Owner fix: `assets/licenses/apache-2.0.txt` was
+not the verbatim license (≈1,200 characters missing, e.g. the "Notwithstanding the above" sentence
+in §5) — replaced with the official text from apache.org. **Legal texts must always be copied
+byte-for-byte from the official source, never retyped or summarised.**
+
 ### Task 11: Speaking (shadowing)
 
 - **E20 say it:** show and play a sentence, learner speaks; Android `SpeechRecognizer` (offline when
   available); compare words, colour each word green/red; never block a lesson if recognition is
   unavailable (skip the exercise, no error). Ask microphone permission only when first used.
+
+**Owner data delivered for Task 11:** strings `ins_say_it`, `tap_to_speak`, `listening_now`,
+`you_said`, `speak_again`, `mic_reason` (shown before the permission request); sentences:
+`content/en/sound.json` → `shadowing`. Match words with the dictation aligner (case/punctuation
+tolerant); E20 never blocks a session — skip it when recognition is unavailable or permission is
+denied. Show the result per word (green/red) and allow two retries.
 
 ### Task 12: Story reader
 
@@ -186,6 +202,14 @@ so "same topic first" holds. Unit test.
   reward; streak freeze earned by 7-day streaks (max 2).
 - Weekly pet quests (e.g. "learn 20 new words", "finish 2 stories", "3 days of speaking"); rewards
   are pet items. Lines from C6.
+
+**Owner data delivered for Task 13:** strings `daily_challenge`, `daily_challenge_desc`,
+`daily_challenge_done`, `weekly_quests`, `quest_new_words`, `quest_stories`, `quest_speaking`,
+`quest_daily`, `quest_progress`, `quest_reward`, `streak_shields`, `streak_shield_info`; pet lines
+`Q_DAILY_START`, `Q_DAILY_DONE`, `Q_QUEST_DONE`, `Q_FREEZE` (vi + English source). Quests this
+version: new words, daily challenges, speaking days (stories quest only after Task 12 ships).
+Rewards are existing pet shop items (no new art needed). Daily challenge card on Today, above
+"Review today".
 
 ### Task 14: Exam engine
 
