@@ -14,6 +14,7 @@ data class LocaleApproval(
     val approvedPet: Set<String>,
     val approvedTips: Set<String>,
     val approvedSound: Set<String>,
+    val approvedStories: Set<String> = emptySet(),
     val selectable: Boolean,
     val availableLevels: Set<Int>,
 )
@@ -24,7 +25,7 @@ object ApprovalGate {
     fun forEnglish(words: JSONObject, grammar: JSONObject): LocaleApproval =
         evaluate(JSONObject(), words, grammar, JSONObject())
 
-    fun evaluate(status: JSONObject, words: JSONObject, grammar: JSONObject, questions: JSONObject): LocaleApproval {
+    fun evaluate(status: JSONObject, words: JSONObject, grammar: JSONObject, questions: JSONObject, stories: JSONObject = JSONObject()): LocaleApproval {
         val entries = status.optJSONObject("entries") ?: JSONObject()
         fun rows(kind: String) = entries.optJSONObject(kind) ?: JSONObject()
         // Staleness (`src` no longer matching the English source) is rejected at build time by
@@ -79,6 +80,8 @@ object ApprovalGate {
             val item = passageArray.getJSONObject(i)
             passageSources[item.getString("id")] = item
         }
+        val storySources = linkedMapOf<String, JSONObject>()
+        stories.optJSONArray("stories")?.let { array -> for (i in 0 until array.length()) { val item = array.getJSONObject(i); storySources[item.getString("id")] = item } }
 
         fun ratio(total: List<String>, approved: Set<String>) =
             if (total.isEmpty()) 0.0 else total.count { it in approved } / total.size.toDouble()
@@ -86,6 +89,7 @@ object ApprovalGate {
         val approvedGrammar = keys("grammar", grammarSources)
         val approvedQuestions = keys("questions", questionSources)
         val approvedPassages = keys("passages", passageSources)
+        val approvedStories = keys("stories", storySources)
         val available = (1..5).filter { level ->
             ratio(wordLevels[level].orEmpty(), approvedWords) >= THRESHOLD &&
                 ratio(grammarLevels[level].orEmpty(), approvedGrammar) >= THRESHOLD
@@ -98,6 +102,7 @@ object ApprovalGate {
             approvedQuestions = approvedQuestions, approvedPassages = approvedPassages,
             approvedPet = keys("pet"), approvedTips = keys("tips"),
             approvedSound = keys("sound"),
+            approvedStories = approvedStories,
             selectable = uiApproved && 1 in available,
             availableLevels = available,
         )

@@ -72,6 +72,9 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
             addView(top)
             addView(Kit.ellipsize(Kit.text(c, t.name, R.style.Text_BodyStrong), 2).margins(c, top = 10))
             addView(Kit.text(c, str(R.string.words_known, known, words.size), R.style.Text_Caption).margins(c, top = 2))
+            services.content.stories.firstOrNull { it.topic == t.id && words.any { w -> services.store.item(w.key)?.seen ?: 0 > 0 } }?.let { story ->
+                addView(Kit.secondary(c, story.title, 14) { activity.open(StoryScreen(activity, story)) }.margins(c, top = 10))
+            }
             contentDescription = "${t.name}, ${str(R.string.words_known, known, words.size)}"
         }
     }

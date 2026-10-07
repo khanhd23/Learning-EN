@@ -10,6 +10,7 @@ data class LocalePackFiles(
     val pet: String,
     val tips: String,
     val sound: String,
+    val stories: String = "{}",
 )
 
 data class Topic(val id: String, val name: String, val icon: String, val hue: Int)
@@ -121,4 +122,15 @@ data class SoundData(
     val pairs: List<MinimalPair> = emptyList(),
     val dictation: List<SoundSentence> = emptyList(),
     val shadowing: List<SoundSentence> = emptyList(),
+)
+
+data class StoryQuestion(val question: String, val options: List<String>, val answer: Int, val explanation: String)
+data class Story(
+    val id: String,
+    val topic: String,
+    val level: Int,
+    val title: String,
+    val text: String,
+    val targets: List<String>,
+    val questions: List<StoryQuestion>,
 )
