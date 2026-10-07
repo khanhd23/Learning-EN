@@ -407,7 +407,7 @@ def upgrade_schema(words, vi):
     return formula_en
 
 MODULES = [
-    "vocab_work", "vocab_life", "vocab_everyday", "vocab_modern", "vocab_foundation", "senses", "vocab_open", "vocab_expansion", "vocab_picture", "vocab_ngsl_core", "confusables",
+    "vocab_work", "vocab_life", "vocab_everyday", "vocab_modern", "vocab_foundation", "senses", "vocab_open", "vocab_expansion", "vocab_picture", "vocab_ngsl_core", "vocab_owner", "confusables",
     "grammar_l1", "grammar_l2", "grammar_l3", "grammar_l4", "grammar_l5",
     "exam_p5", "exam_p6", "school", "pet_lines",
 ]
