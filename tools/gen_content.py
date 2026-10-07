@@ -652,6 +652,35 @@ def main():
         "shadowing": [{"id": x, "text": examples[x][0], "level": examples[x][1]} for x in sound_src["shadowing"]],
     }
     dump(os.path.join(out_en, "sound.json"), sound_en)
+    # Micro-stories (owner, ROADMAP C3): validated against lesson words.
+    with open(os.path.join(ROOT, "tools", "authoring", "stories.json"), encoding="utf-8") as f:
+        story_src = json.load(f)["stories"]
+    by_id = {w["id"]: w for w in words}
+    stories_en, stories_vi = [], {}
+    for st in story_src:
+        n_words = len(re.findall(r"[A-Za-z']+", st["text"]))
+        problems = [] if 70 <= n_words <= 130 else [f"{n_words} words"]
+        ids = []
+        for lemma in st["targets"]:
+            wid = lemma.replace(" ", "_").replace("-", "_")
+            w = by_id.get(wid)
+            if not w or w.get("tier") != "silver":
+                problems.append(f"target {lemma!r} is not a lesson word")
+                continue
+            head = lemma.split()[0].lower()
+            forms = [head] + [x.lower() for x in IRREGULAR_FORMS.get(head, [])] + ([head[:-1] + "i"] if head.endswith("y") else [])
+            if not any(re.search(r"\b" + re.escape(f[:-1] if len(f) > 4 and f.endswith("e") else f), st["text"].lower()) for f in forms):
+                problems.append(f"target {lemma!r} not found in the text")
+            ids.append(wid)
+        for q in st["questions"]:
+            if not 0 <= q["answer"] < len(q["options"]) or len(q["options"]) < 3:
+                problems.append(f"bad question {q['q']!r}")
+        if problems:
+            raise SystemExit(f"stories.json {st['id']}: {problems}")
+        stories_en.append({"id": st["id"], "topic": st["topic"], "level": st["level"], "title": st["title"], "text": st["text"],
+                           "targets": ids, "questions": [{k: q[k] for k in ("q", "options", "answer", "expl")} for q in st["questions"]]})
+        stories_vi[st["id"]] = {"title": st["title_vi"], "text": st["text_vi"], "expl": [q["expl_vi"] for q in st["questions"]]}
+    dump(os.path.join(out_en, "stories.json"), {"stories": stories_en})
     dump(os.path.join(out_en, "questions.json"), dict(questions=questions, passages=passages))
     # A small, reusable relation index keeps learning features independent from the word card UI.
     # It deliberately records only relations supported by authored data; no homophone is inferred.
@@ -698,6 +727,7 @@ def main():
     })
     dump(os.path.join(out_vi, "pet.json"), vi.get("pet", {}))
     dump(os.path.join(out_vi, "sound.json"), {"focus": sound_src["_vi_tips"]})
+    dump(os.path.join(out_vi, "stories.json"), stories_vi)
     dump(os.path.join(out_vi, "tips.json"), vi.get("tips", {}))
     ui_path = os.path.join(out_vi, "ui.json")
     old_ui = {}
@@ -727,6 +757,7 @@ def main():
         "pet": vi.get("pet", {}),
         "tips": vi.get("tips", {}),
         "sound": {x["id"]: x for x in sound_en["focus"]},
+        "stories": {x["id"]: x for x in stories_en},
     })
     print(f"topics={len(topics)} words={len(words)} confusables={len(conf)} grammar={len(grammar)} "
           f"questions={len(questions)} passages={len(passages)} petMoods={len(pet)}")

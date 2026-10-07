@@ -196,6 +196,13 @@ denied. Show the result per word (green/red) and allow two retries.
   play-all TTS with sentence highlight, then the 2–3 questions with explanations; XP and pet food.
 - Stories unlock after the topic's first lesson; the topic screen shows them.
 
+**Owner data delivered (C3):** `content/en/stories.json` (from `tools/authoring/stories.json`,
+validated by `gen_content.py`): 16 Level 1–2 stories, one per common topic, 70–130 words, American
+spelling, `targets` = lesson word ids that appear in the text, 2–3 questions each
+(`q`, `options`, `answer`, `expl`). Vietnamese pack `content/i18n/vi/stories.json`:
+`{id: {title, text, expl[]}}`, status kind `stories`. Show the translation only on demand (a
+"Translation" toggle like word detail), never by default.
+
 ### Task 13: Daily challenge and pet quests
 
 - Daily challenge: 5 mixed items from due + weak items, a different exercise mix each day, pet

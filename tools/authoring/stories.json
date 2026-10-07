@@ -1,0 +1,215 @@
+{
+ "_doc": "Owner-written micro-stories (ROADMAP C3). English is the taught text; *_vi are the Vietnamese pack. targets = lesson words of the topic used in the story (word ids). Each question: q, options, answer (index), expl (English source), expl_vi.",
+ "stories": [
+  {
+   "id": "st_family_1", "topic": "family", "level": 1,
+   "title": "Sunday at Grandma's", "title_vi": "Chủ nhật ở nhà bà",
+   "text": "Every Sunday, Mia visits her grandparents with her parents. Her grandmother cooks a big lunch, and her grandfather tells funny stories. Mia's brother, Leo, plays football with their cousin in the garden. Her baby sister sleeps on the sofa. After lunch, the whole family looks at old photos. In one photo, Mia's mother is a little girl with long hair. \"You look just like your mother!\" says Grandma. Mia smiles. She loves Sundays because the family is together, and everyone is happy.",
+   "text_vi": "Chủ nhật nào Mia cũng cùng bố mẹ đến thăm ông bà. Bà nấu một bữa trưa thịnh soạn, còn ông kể những câu chuyện vui. Em trai của Mia là Leo chơi bóng đá với anh họ trong vườn. Em gái nhỏ của cô ngủ trên ghế sô-pha. Sau bữa trưa, cả gia đình cùng xem ảnh cũ. Trong một bức ảnh, mẹ của Mia là một cô bé tóc dài. Bà nói: \"Cháu trông giống hệt mẹ cháu!\" Mia mỉm cười. Cô yêu những ngày Chủ nhật vì cả nhà được ở bên nhau và ai cũng vui vẻ.",
+   "targets": ["grandparents", "parents", "brother", "cousin", "baby", "family", "mother", "girl"],
+   "questions": [
+    {"q": "Who does Mia visit every Sunday?", "options": ["Her grandparents", "Her teacher", "Her friends"], "answer": 0,
+     "expl": "The first sentence says she visits her grandparents with her parents.", "expl_vi": "Câu đầu tiên nói cô đến thăm ông bà cùng bố mẹ."},
+    {"q": "What does Leo do after arriving?", "options": ["He sleeps on the sofa", "He plays football with his cousin", "He cooks lunch"], "answer": 1,
+     "expl": "Leo plays football with their cousin in the garden.", "expl_vi": "Leo chơi bóng đá với anh họ trong vườn."},
+    {"q": "Why does Mia love Sundays?", "options": ["She gets presents", "There is no school", "The family is together"], "answer": 2,
+     "expl": "The last sentence: she loves Sundays because the family is together.", "expl_vi": "Câu cuối: cô yêu Chủ nhật vì cả nhà được ở bên nhau."}
+   ]
+  },
+  {
+   "id": "st_food_1", "topic": "food_drink", "level": 1,
+   "title": "A Fruit Salad", "title_vi": "Món salad trái cây",
+   "text": "Anna is hungry, but she wants a healthy snack. She opens the fridge and finds a mango, two apples and a small pineapple. She also has some grapes. First, she washes the fruit. Then she cuts everything into small slices and puts it in a big bowl. She adds a little lemon juice so the apples stay fresh. The salad looks colorful and smells sweet. Anna tastes it. \"Delicious!\" she says. She shares the salad with her roommate, and they eat it on the balcony.",
+   "text_vi": "Anna đói nhưng muốn ăn vặt lành mạnh. Cô mở tủ lạnh và thấy một quả xoài, hai quả táo và một quả dứa nhỏ. Cô cũng có ít nho. Trước tiên, cô rửa hoa quả. Sau đó cô cắt mọi thứ thành lát nhỏ và cho vào một cái bát lớn. Cô thêm chút nước chanh để táo giữ được tươi. Món salad trông nhiều màu sắc và có mùi ngọt. Anna nếm thử. \"Ngon tuyệt!\" cô nói. Cô chia món salad với bạn cùng phòng, và họ ăn ngoài ban công.",
+   "targets": ["hungry", "snack", "mango", "pineapple", "grape", "slice", "lemon", "fresh", "taste", "delicious"],
+   "questions": [
+    {"q": "Why does Anna add lemon juice?", "options": ["To make it spicy", "So the apples stay fresh", "Because she has no sugar"], "answer": 1,
+     "expl": "She adds lemon juice so the apples stay fresh.", "expl_vi": "Cô thêm nước chanh để táo giữ được tươi."},
+    {"q": "Where do Anna and her roommate eat the salad?", "options": ["In the kitchen", "In a restaurant", "On the balcony"], "answer": 2,
+     "expl": "The last sentence says they eat it on the balcony.", "expl_vi": "Câu cuối nói họ ăn ngoài ban công."}
+   ]
+  },
+  {
+   "id": "st_routine_1", "topic": "daily_routine", "level": 1,
+   "title": "Ben's Busy Morning", "title_vi": "Buổi sáng bận rộn của Ben",
+   "text": "Ben's alarm rings at six o'clock, but he is very tired. He sleeps for ten more minutes. When he wakes up, it is late! He washes his face quickly and has a small breakfast of bread and milk. He puts his books in his bag and runs to the bus stop. The bus is just leaving, so Ben waves, and the driver stops for him. \"Thank you!\" says Ben. On the bus, he makes a plan: tomorrow he will go to bed early and get up on time.",
+   "text_vi": "Chuông báo thức của Ben reo lúc sáu giờ, nhưng cậu rất mệt. Cậu ngủ thêm mười phút. Khi thức dậy thì đã muộn! Cậu rửa mặt vội vàng và ăn bữa sáng nhẹ gồm bánh mì và sữa. Cậu cho sách vào cặp rồi chạy ra bến xe buýt. Xe buýt vừa định chạy, Ben vẫy tay và tài xế dừng lại chờ cậu. \"Cảm ơn bác!\" Ben nói. Trên xe, cậu lên kế hoạch: ngày mai cậu sẽ đi ngủ sớm và dậy đúng giờ.",
+   "targets": ["alarm", "sleep", "wake up", "wash", "breakfast", "plan"],
+   "questions": [
+    {"q": "Why is Ben late?", "options": ["He sleeps for ten more minutes", "The bus is late", "He cannot find his bag"], "answer": 0,
+     "expl": "He sleeps for ten more minutes after the alarm.", "expl_vi": "Cậu ngủ thêm mười phút sau khi chuông reo."},
+    {"q": "What is Ben's plan for tomorrow?", "options": ["Take a taxi", "Go to bed early", "Skip breakfast"], "answer": 1,
+     "expl": "He plans to go to bed early and get up on time.", "expl_vi": "Cậu định đi ngủ sớm và dậy đúng giờ."}
+   ]
+  },
+  {
+   "id": "st_education_1", "topic": "education", "level": 1,
+   "title": "The Vocabulary Test", "title_vi": "Bài kiểm tra từ vựng",
+   "text": "On Monday, the teacher tells the class about a vocabulary test on Friday. Lily is worried because she often makes mistakes with spelling. Her classmate, Sam, has an idea. \"Let's study together after school,\" he says. Every afternoon, they practice ten new words. Sam reads a word, and Lily writes it on the whiteboard. Then they change places. On Friday, Lily answers every question carefully. The next week, the teacher gives back the tests. Lily's score is nine out of ten. \"Great progress!\" says the teacher.",
+   "text_vi": "Thứ Hai, cô giáo thông báo với cả lớp về bài kiểm tra từ vựng vào thứ Sáu. Lily lo lắng vì cô hay mắc lỗi chính tả. Bạn cùng lớp là Sam có một ý tưởng. \"Tan học mình cùng học nhé,\" cậu nói. Chiều nào hai bạn cũng luyện mười từ mới. Sam đọc một từ, Lily viết lên bảng trắng. Rồi hai bạn đổi chỗ cho nhau. Thứ Sáu, Lily trả lời từng câu hỏi thật cẩn thận. Tuần sau, cô giáo trả bài. Lily được chín trên mười điểm. \"Tiến bộ lớn đấy!\" cô giáo nói.",
+   "targets": ["teacher", "class", "vocabulary", "test", "mistake", "classmate", "study", "practice", "whiteboard", "score", "progress"],
+   "questions": [
+    {"q": "Why is Lily worried?", "options": ["She often makes spelling mistakes", "She is new at school", "She lost her book"], "answer": 0,
+     "expl": "She is worried because she often makes mistakes with spelling.", "expl_vi": "Cô lo vì hay mắc lỗi chính tả."},
+    {"q": "What is Lily's score?", "options": ["Five out of ten", "Seven out of ten", "Nine out of ten"], "answer": 2,
+     "expl": "Her score is nine out of ten.", "expl_vi": "Cô được chín trên mười điểm."}
+   ]
+  },
+  {
+   "id": "st_shopping_1", "topic": "shopping", "level": 1,
+   "title": "The Right Size", "title_vi": "Đúng cỡ",
+   "text": "Max needs new shoes for school. He goes to a shoe store at the shopping mall with his dad. He likes a pair of white shoes, but the price is high. \"They are too expensive,\" says his dad. They look at the sale shelf and find a cheaper pair. Max tries them on, but they are too small. The shop assistant brings a bigger size. This time they fit well. Max walks around the store and smiles. His dad pays at the counter, and they go home happy.",
+   "text_vi": "Max cần giày mới để đi học. Cậu cùng bố đến một cửa hàng giày ở trung tâm mua sắm. Cậu thích một đôi giày trắng nhưng giá cao. \"Đắt quá con ạ,\" bố cậu nói. Họ xem kệ hàng giảm giá và tìm được một đôi rẻ hơn. Max đi thử nhưng giày quá chật. Nhân viên bán hàng mang ra cỡ lớn hơn. Lần này giày vừa vặn. Max đi một vòng quanh cửa hàng và mỉm cười. Bố cậu thanh toán ở quầy, và hai bố con vui vẻ về nhà.",
+   "targets": ["store", "shopping mall", "price", "expensive", "sale", "cheap", "try on", "size", "fit"],
+   "questions": [
+    {"q": "Why don't they buy the white shoes?", "options": ["They are too small", "They are too expensive", "Max doesn't like them"], "answer": 1,
+     "expl": "His dad says they are too expensive.", "expl_vi": "Bố cậu nói đôi đó quá đắt."},
+    {"q": "What is the problem with the cheaper pair at first?", "options": ["They are too small", "They are dirty", "They are the wrong colour"], "answer": 0,
+     "expl": "Max tries them on, but they are too small, so the assistant brings a bigger size.", "expl_vi": "Max đi thử nhưng giày chật, nên nhân viên mang cỡ lớn hơn."}
+   ]
+  },
+  {
+   "id": "st_weather_1", "topic": "weather", "level": 1,
+   "title": "A Change in the Weather", "title_vi": "Thời tiết đổi thay",
+   "text": "In the morning, the sky is clear and sunny. Emma and her friends go to the beach. The water is warm, and they swim for an hour. After lunch, the wind starts to blow, and dark clouds cover the sun. \"A storm is coming,\" says Emma. They pack their things quickly. Soon, heavy rain starts to fall. Emma opens her umbrella, but the wind is too strong. They run to a small café and wait inside. An hour later, the rain stops, and they see a beautiful sunset.",
+   "text_vi": "Buổi sáng trời quang đãng và nắng. Emma và các bạn đi biển. Nước ấm, họ bơi suốt một tiếng. Sau bữa trưa, gió bắt đầu thổi và mây đen che kín mặt trời. \"Bão sắp đến rồi,\" Emma nói. Họ vội thu dọn đồ đạc. Chẳng bao lâu, mưa lớn bắt đầu rơi. Emma mở ô nhưng gió quá mạnh. Họ chạy vào một quán cà phê nhỏ và chờ bên trong. Một tiếng sau, mưa tạnh và họ được ngắm một hoàng hôn tuyệt đẹp.",
+   "targets": ["sunny", "warm", "wind", "blow", "sun", "storm", "rain", "umbrella", "sunset"],
+   "questions": [
+    {"q": "What is the weather like in the morning?", "options": ["Rainy", "Clear and sunny", "Cold and windy"], "answer": 1,
+     "expl": "The first sentence says the sky is clear and sunny.", "expl_vi": "Câu đầu nói trời quang đãng và nắng."},
+    {"q": "Why can't Emma use her umbrella?", "options": ["It is broken", "She left it at home", "The wind is too strong"], "answer": 2,
+     "expl": "She opens her umbrella, but the wind is too strong.", "expl_vi": "Cô mở ô nhưng gió quá mạnh."}
+   ]
+  },
+  {
+   "id": "st_travel_1", "topic": "travel_holidays", "level": 2,
+   "title": "A Delayed Flight", "title_vi": "Chuyến bay bị hoãn",
+   "text": "Leo is excited about his first trip abroad. At the airport, he shows his passport and gets his boarding pass. Then he looks at the screen: his flight is delayed by two hours. Many passengers look unhappy, but Leo stays calm. He buys a sandwich, reads a guide book and studies the map of the city he will visit. When the plane finally takes off, the sun is setting. Leo arrives late at night, but the hotel is near the airport, so the journey ends well.",
+   "text_vi": "Leo rất háo hức với chuyến đi nước ngoài đầu tiên. Ở sân bay, cậu xuất trình hộ chiếu và nhận thẻ lên máy bay. Rồi cậu nhìn lên màn hình: chuyến bay của cậu bị hoãn hai tiếng. Nhiều hành khách trông không vui, nhưng Leo vẫn bình tĩnh. Cậu mua một chiếc bánh mì kẹp, đọc sách hướng dẫn và xem bản đồ thành phố sắp đến. Khi máy bay cuối cùng cũng cất cánh thì mặt trời đang lặn. Leo đến nơi lúc đêm khuya, nhưng khách sạn ở gần sân bay nên chuyến đi kết thúc tốt đẹp.",
+   "targets": ["trip", "passport", "boarding pass", "flight", "delayed", "passenger", "map", "take off", "journey"],
+   "questions": [
+    {"q": "How long is the flight delayed?", "options": ["Thirty minutes", "Two hours", "One day"], "answer": 1,
+     "expl": "The screen says the flight is delayed by two hours.", "expl_vi": "Màn hình báo chuyến bay bị hoãn hai tiếng."},
+    {"q": "What does Leo do while he waits?", "options": ["He goes home", "He complains to the airline", "He reads and studies a map"], "answer": 2,
+     "expl": "He buys a sandwich, reads a guide book and studies the map.", "expl_vi": "Cậu mua bánh mì, đọc sách hướng dẫn và xem bản đồ."}
+   ]
+  },
+  {
+   "id": "st_home_1", "topic": "home_furniture", "level": 1,
+   "title": "A New Apartment", "title_vi": "Căn hộ mới",
+   "text": "Sara moves into a small apartment near the city center. The living room has a big window, so it is bright and comfortable. There is a sofa, a table and two chairs. The kitchen is small, but it has a new fridge. Her bedroom has a bed, a desk and a shelf for her books. On the first day, Sara cleans the floor and hangs a clock on the wall. In the evening, she meets her neighbor, who brings her a cake. Sara feels at home.",
+   "text_vi": "Sara chuyển đến một căn hộ nhỏ gần trung tâm thành phố. Phòng khách có cửa sổ lớn nên sáng sủa và dễ chịu. Có một ghế sô-pha, một cái bàn và hai cái ghế. Bếp nhỏ nhưng có tủ lạnh mới. Phòng ngủ của cô có giường, bàn làm việc và một cái kệ để sách. Ngày đầu tiên, Sara lau sàn nhà và treo một chiếc đồng hồ lên tường. Buổi tối, cô gặp người hàng xóm mang sang tặng cô một chiếc bánh. Sara cảm thấy như ở nhà.",
+   "targets": ["apartment", "living room", "window", "comfortable", "table", "chair", "kitchen", "fridge", "bedroom", "shelf", "clock", "wall"],
+   "questions": [
+    {"q": "Why is the living room bright?", "options": ["It has many lamps", "It has a big window", "It is painted white"], "answer": 1,
+     "expl": "The living room has a big window, so it is bright.", "expl_vi": "Phòng khách có cửa sổ lớn nên sáng sủa."},
+    {"q": "What does the neighbor bring?", "options": ["A cake", "A clock", "Some flowers"], "answer": 0,
+     "expl": "Her neighbor brings her a cake.", "expl_vi": "Người hàng xóm mang tặng cô một chiếc bánh."}
+   ]
+  },
+  {
+   "id": "st_animals_1", "topic": "animals", "level": 1,
+   "title": "A Day at the Zoo", "title_vi": "Một ngày ở sở thú",
+   "text": "Tom and his little sister visit the zoo on Saturday. First, they see the elephants. One elephant sprays water with its trunk, and the children laugh. Next, they watch the monkeys jump from tree to tree. The giraffes are very tall, and they eat leaves from the top of a tree. Tom's sister likes the penguins best because they walk in a funny way. At the end of the day, they buy a small toy panda. \"Can we come again next month?\" asks his sister.",
+   "text_vi": "Tom và em gái đi sở thú vào thứ Bảy. Đầu tiên, hai anh em xem voi. Một con voi phun nước bằng vòi, bọn trẻ bật cười. Tiếp theo, chúng xem lũ khỉ nhảy từ cây này sang cây khác. Những con hươu cao cổ rất cao, chúng ăn lá trên ngọn cây. Em gái của Tom thích chim cánh cụt nhất vì chúng đi lạch bạch rất buồn cười. Cuối ngày, hai anh em mua một con gấu trúc đồ chơi nhỏ. \"Tháng sau mình lại đến nữa được không anh?\" em gái hỏi.",
+   "targets": ["elephant", "monkey", "giraffe", "penguin", "panda"],
+   "questions": [
+    {"q": "Which animal does Tom's sister like best?", "options": ["The monkeys", "The penguins", "The elephants"], "answer": 1,
+     "expl": "She likes the penguins best because they walk in a funny way.", "expl_vi": "Em thích chim cánh cụt nhất vì chúng đi buồn cười."},
+    {"q": "What do the giraffes eat?", "options": ["Leaves from the top of a tree", "Fish", "Bananas"], "answer": 0,
+     "expl": "The giraffes eat leaves from the top of a tree.", "expl_vi": "Hươu cao cổ ăn lá trên ngọn cây."}
+   ]
+  },
+  {
+   "id": "st_health_1", "topic": "health_illness", "level": 1,
+   "title": "A Visit to the Doctor", "title_vi": "Đi khám bác sĩ",
+   "text": "Nina wakes up with a headache and a sore throat. She feels tired and hot, so she stays home from work. In the afternoon, she makes an appointment at the clinic. The doctor checks her temperature. \"You have a fever and a bad cough,\" he says. He gives her some medicine and tells her to drink a lot of water and rest. Nina sleeps a lot for two days. On the third day, she feels much better and goes for a short walk in the park.",
+   "text_vi": "Nina thức dậy với cơn đau đầu và đau họng. Cô thấy mệt và nóng người nên nghỉ làm ở nhà. Buổi chiều, cô đặt lịch hẹn ở phòng khám. Bác sĩ đo nhiệt độ cho cô. \"Cô bị sốt và ho nặng,\" ông nói. Ông kê cho cô ít thuốc và dặn uống nhiều nước, nghỉ ngơi. Nina ngủ rất nhiều trong hai ngày. Đến ngày thứ ba, cô thấy khỏe hơn hẳn và đi dạo một chút trong công viên.",
+   "targets": ["headache", "tired", "appointment", "clinic", "doctor", "fever", "cough", "medicine"],
+   "questions": [
+    {"q": "Why does Nina stay home from work?", "options": ["It is a holiday", "She feels ill", "Her car is broken"], "answer": 1,
+     "expl": "She has a headache and feels tired and hot.", "expl_vi": "Cô bị đau đầu, thấy mệt và nóng người."},
+    {"q": "What does the doctor tell her to do?", "options": ["Drink water and rest", "Go back to work", "Exercise every day"], "answer": 0,
+     "expl": "He tells her to drink a lot of water and rest.", "expl_vi": "Bác sĩ dặn cô uống nhiều nước và nghỉ ngơi."}
+   ]
+  },
+  {
+   "id": "st_city_1", "topic": "city_directions", "level": 1,
+   "title": "Lost in the City", "title_vi": "Lạc giữa thành phố",
+   "text": "Kim is new in town and wants to find the museum. She walks along the main street, but soon she is lost. She asks a police officer for directions. \"Go straight to the traffic light, then turn left,\" he says. \"Cross the bridge, and the museum is next to the library.\" Kim follows his directions. The street is crowded, but she finds the bridge easily. On the other side, she sees a big old building opposite a park. It is the museum! Kim thanks the officer in her mind.",
+   "text_vi": "Kim mới đến thị trấn và muốn tìm bảo tàng. Cô đi dọc con phố chính, nhưng chẳng mấy chốc đã bị lạc. Cô hỏi đường một cảnh sát. \"Đi thẳng đến đèn giao thông rồi rẽ trái,\" anh nói. \"Qua cây cầu là thấy bảo tàng ở cạnh thư viện.\" Kim làm theo chỉ dẫn. Phố đông người nhưng cô dễ dàng tìm thấy cây cầu. Ở bên kia, cô thấy một tòa nhà cũ lớn đối diện công viên. Đó chính là bảo tàng! Kim thầm cảm ơn người cảnh sát.",
+   "targets": ["museum", "street", "lost", "police", "go straight", "traffic light", "turn left", "bridge", "next to", "library", "crowded", "opposite"],
+   "questions": [
+    {"q": "Who helps Kim?", "options": ["A shop assistant", "A police officer", "A taxi driver"], "answer": 1,
+     "expl": "She asks a police officer for directions.", "expl_vi": "Cô hỏi đường một cảnh sát."},
+    {"q": "Where is the museum?", "options": ["Next to the library", "Behind the station", "Inside the park"], "answer": 0,
+     "expl": "The officer says the museum is next to the library.", "expl_vi": "Người cảnh sát nói bảo tàng ở cạnh thư viện."}
+   ]
+  },
+  {
+   "id": "st_jobs_1", "topic": "jobs", "level": 2,
+   "title": "Two Jobs, One Dream", "title_vi": "Hai công việc, một ước mơ",
+   "text": "Sam works as a driver during the day. In the evening, he works a short shift at a café. He is often tired, but he has a dream: he wants to be an engineer. Every night, after work, he studies math for one hour. His manager at the café knows about his plan and gives him free time before exams. After three years, Sam finishes his course. Now he has a job at a small company that builds bridges. He earns more money, and he loves his career.",
+   "text_vi": "Ban ngày Sam làm tài xế. Buổi tối, anh làm một ca ngắn ở quán cà phê. Anh thường mệt, nhưng anh có một ước mơ: anh muốn trở thành kỹ sư. Tối nào sau giờ làm, anh cũng học toán một tiếng. Quản lý ở quán cà phê biết kế hoạch của anh nên cho anh nghỉ trước các kỳ thi. Sau ba năm, Sam hoàn thành khóa học. Giờ anh có việc làm ở một công ty nhỏ chuyên xây cầu. Anh kiếm được nhiều tiền hơn và yêu sự nghiệp của mình.",
+   "targets": ["driver", "shift", "engineer", "work", "manager", "job", "earn", "career"],
+   "questions": [
+    {"q": "What does Sam want to be?", "options": ["A driver", "A café manager", "An engineer"], "answer": 2,
+     "expl": "His dream is to be an engineer.", "expl_vi": "Ước mơ của anh là trở thành kỹ sư."},
+    {"q": "How does his manager help him?", "options": ["She pays for his course", "She gives him free time before exams", "She teaches him maths"], "answer": 1,
+     "expl": "The manager gives him free time before exams.", "expl_vi": "Quản lý cho anh nghỉ trước các kỳ thi."}
+   ]
+  },
+  {
+   "id": "st_restaurant_1", "topic": "hotel_restaurant", "level": 1,
+   "title": "Dinner for Two", "title_vi": "Bữa tối cho hai người",
+   "text": "It is Lily's birthday, so her brother takes her to a new restaurant. The waiter gives them the menu and a glass of water. Lily orders a fish dish, and her brother orders chicken with rice. \"Is the chicken spicy?\" he asks. \"A little,\" says the waiter. The food is delicious. For dessert, the chef sends a small cake with a candle, and the waiters sing \"Happy Birthday\". Lily is surprised and very happy. Her brother pays the bill and leaves a tip for the friendly service.",
+   "text_vi": "Hôm nay là sinh nhật Lily nên anh trai đưa cô đến một nhà hàng mới. Người phục vụ đưa họ thực đơn và một cốc nước. Lily gọi một món cá, còn anh trai gọi gà với cơm. \"Món gà có cay không?\" anh hỏi. \"Hơi cay ạ,\" người phục vụ đáp. Đồ ăn rất ngon. Đến món tráng miệng, đầu bếp gửi ra một chiếc bánh nhỏ có cắm nến, và các phục vụ hát \"Chúc mừng sinh nhật\". Lily bất ngờ và rất vui. Anh trai cô thanh toán hóa đơn và để lại tiền boa vì phục vụ thân thiện.",
+   "targets": ["restaurant", "waiter", "menu", "order", "dish", "spicy", "dessert", "chef", "tip", "service"],
+   "questions": [
+    {"q": "Why do they go to the restaurant?", "options": ["It is Lily's birthday", "Their mother is cooking", "They won a prize"], "answer": 0,
+     "expl": "It is Lily's birthday, so her brother takes her there.", "expl_vi": "Hôm đó là sinh nhật Lily nên anh trai đưa cô đi."},
+    {"q": "What does the chef send?", "options": ["A free drink", "A small cake with a candle", "A second menu"], "answer": 1,
+     "expl": "For dessert, the chef sends a small cake with a candle.", "expl_vi": "Đến món tráng miệng, đầu bếp gửi ra một chiếc bánh nhỏ có nến."}
+   ]
+  },
+  {
+   "id": "st_sports_1", "topic": "sports_fitness", "level": 1,
+   "title": "The Big Match", "title_vi": "Trận đấu lớn",
+   "text": "Our school football team has a big match on Saturday. The coach makes us run and practice every afternoon. On the day of the match, the stadium is full of fans. The other team scores first, and we feel nervous. In the second half, our captain kicks the ball hard, and it goes into the net. One to one! Five minutes before the end, I jump and score with my head. We win two to one! The coach smiles, and our fans sing all the way home.",
+   "text_vi": "Đội bóng đá của trường chúng tôi có một trận đấu lớn vào thứ Bảy. Huấn luyện viên bắt chúng tôi chạy và tập luyện mỗi buổi chiều. Ngày thi đấu, sân vận động chật kín người hâm mộ. Đội bạn ghi bàn trước, và chúng tôi thấy lo lắng. Hiệp hai, đội trưởng của chúng tôi sút bóng thật mạnh vào lưới. Một đều! Năm phút trước khi hết giờ, tôi bật lên đánh đầu ghi bàn. Chúng tôi thắng hai một! Huấn luyện viên mỉm cười, còn người hâm mộ hát suốt đường về nhà.",
+   "targets": ["football", "team", "match", "coach", "run", "stadium", "fan", "score", "ball", "net", "jump", "win"],
+   "questions": [
+    {"q": "Who scores the first goal?", "options": ["Our captain", "The other team", "The coach"], "answer": 1,
+     "expl": "The other team scores first.", "expl_vi": "Đội bạn ghi bàn trước."},
+    {"q": "What is the final score?", "options": ["One to one", "Two to one", "Two to two"], "answer": 1,
+     "expl": "We win two to one.", "expl_vi": "Chúng tôi thắng hai một."}
+   ]
+  },
+  {
+   "id": "st_clothes_1", "topic": "clothes", "level": 1,
+   "title": "What to Wear?", "title_vi": "Mặc gì đây?",
+   "text": "Today is the first day of Ana's new job, and she can't decide what to wear. First, she puts on a red dress, but it looks too formal. Then she tries jeans and a T-shirt, but they are too casual. Finally, she chooses a white shirt, dark trousers and a light jacket. She adds her favorite scarf and a pair of comfortable shoes. Her sister looks at her and says, \"Perfect style!\" Ana feels confident and leaves the house with a big smile.",
+   "text_vi": "Hôm nay là ngày đầu tiên Ana đi làm việc mới, và cô không biết nên mặc gì. Đầu tiên, cô mặc một chiếc váy đỏ nhưng trông quá trang trọng. Rồi cô thử quần bò và áo phông nhưng lại quá xuề xòa. Cuối cùng, cô chọn áo sơ mi trắng, quần tối màu và một chiếc áo khoác mỏng. Cô quàng thêm chiếc khăn yêu thích và đi một đôi giày êm chân. Chị gái nhìn cô và nói: \"Phong cách hoàn hảo!\" Ana thấy tự tin và ra khỏi nhà với nụ cười thật tươi.",
+   "targets": ["wear", "put on", "dress", "jeans", "shirt", "jacket", "scarf", "shoe", "style"],
+   "questions": [
+    {"q": "Why doesn't Ana wear the red dress?", "options": ["It is too small", "It looks too formal", "It is dirty"], "answer": 1,
+     "expl": "She puts on a red dress, but it looks too formal.", "expl_vi": "Cô mặc thử váy đỏ nhưng trông quá trang trọng."},
+    {"q": "What does her sister say?", "options": ["Perfect style!", "Change your shoes!", "You are late!"], "answer": 0,
+     "expl": "Her sister says, \"Perfect style!\"", "expl_vi": "Chị gái nói: \"Phong cách hoàn hảo!\""}
+   ]
+  },
+  {
+   "id": "st_transport_1", "topic": "transport", "level": 1,
+   "title": "Bike or Bus?", "title_vi": "Xe đạp hay xe buýt?",
+   "text": "Every morning, Omar goes to work by bus. The ride takes forty minutes because there is a lot of traffic on the road. One day, his friend says, \"Why don't you ride a bike? It's faster in the city.\" Omar buys a helmet and an old bike. On Monday, he rides to work. It takes only twenty-five minutes, and he does not wait at the bus station. He arrives a little hot, but happy. Now he takes the bus only when it rains.",
+   "text_vi": "Sáng nào Omar cũng đi làm bằng xe buýt. Chuyến đi mất bốn mươi phút vì đường rất đông xe. Một hôm, bạn anh nói: \"Sao cậu không đạp xe? Trong thành phố đi xe đạp nhanh hơn.\" Omar mua một chiếc mũ bảo hiểm và một chiếc xe đạp cũ. Thứ Hai, anh đạp xe đi làm. Chỉ mất hai mươi lăm phút, và anh không phải chờ ở bến xe buýt. Anh đến nơi hơi nóng nhưng vui vẻ. Giờ anh chỉ đi xe buýt khi trời mưa.",
+   "targets": ["bus", "ride", "traffic", "road", "helmet", "station"],
+   "questions": [
+    {"q": "Why does the bus take forty minutes?", "options": ["The bus is old", "There is a lot of traffic", "The station is far away"], "answer": 1,
+     "expl": "The ride takes forty minutes because there is a lot of traffic.", "expl_vi": "Chuyến đi mất bốn mươi phút vì đường đông xe."},
+    {"q": "When does Omar take the bus now?", "options": ["Every day", "On Mondays", "Only when it rains"], "answer": 2,
+     "expl": "Now he takes the bus only when it rains.", "expl_vi": "Giờ anh chỉ đi xe buýt khi trời mưa."}
+   ]
+  }
+ ]
+}
