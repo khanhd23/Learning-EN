@@ -91,6 +91,7 @@
     <string name="continue_label">Tiếp tục</string>
     <string name="continue_mock">Làm tiếp bài thi thử</string>
     <string name="correct_answer_is">Đáp án đúng: %1$s</string>
+    <string name="story_score">Đúng %1$d/%2$d câu</string>
     <string name="d_easy">Dễ</string>
     <string name="d_hard">Khó</string>
     <string name="d_medium">Trung bình</string>

@@ -136,7 +136,7 @@ class StoryScreen(activity: MainActivity, private val story: Story) : Screen(act
     private fun showResult() {
         body.removeAllViews()
         body.addView(Kit.text(ctx, story.title, R.style.Text_Title))
-        body.addView(Kit.text(ctx, str(R.string.correct_answer_is, "$correct/${story.questions.size}"), R.style.Text_Display).margins(ctx, top = 20))
+        body.addView(Kit.text(ctx, str(R.string.story_score, correct, story.questions.size), R.style.Text_Display).margins(ctx, top = 20))
         body.addView(Kit.primary(ctx, str(R.string.done), 18) { finishStory() }.margins(ctx, top = 18))
     }
 

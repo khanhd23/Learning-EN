@@ -226,6 +226,12 @@ coloured. **Task 12.1** (Codex):
    like sessions; show "n/m correct" at the end before returning.
 5. A weekly quest "finish stories" (Task 13) counts `finishStory()`.
 
+### Task 12.1 review (owner)
+
+Accepted (1c40dfb): translation toggle, play-all/slow with sentence highlight and tap-to-replay,
+inflected target highlights, title bar, OptionCard questions, result view. Owner fix: the result
+reused `correct_answer_is` ("Correct answer: 2/3") — new key `story_score` ("2 of 3 correct").
+
 ### Task 13: Daily challenge and pet quests
 
 - Daily challenge: 5 mixed items from due + weak items, a different exercise mix each day, pet

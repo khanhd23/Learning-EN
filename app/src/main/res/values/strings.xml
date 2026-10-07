@@ -91,6 +91,7 @@
     <string name="continue_label">Continue</string>
     <string name="continue_mock">Continue your practice test</string>
     <string name="correct_answer_is">Correct answer: %1$s</string>
+    <string name="story_score">%1$d of %2$d correct</string>
     <string name="d_easy">Easy</string>
     <string name="d_hard">Hard</string>
     <string name="d_medium">Medium</string>
