@@ -241,6 +241,22 @@ version: new words, daily challenges, speaking days (stories quest only after Ta
 Rewards are existing pet shop items (no new art needed). Daily challenge card on Today, above
 "Review today".
 
+### Task 13 review (owner) — accepted; logic fixes in Task 13.1
+
+Accepted (69f63ad): daily challenge card + deterministic 5-item session, shield cap 2, pet lines.
+Problems: "weekly" quests never reset (new words = lifetime count; daily challenges = lifetime
+counter, so after 3 ever the quest is always done); the daily reward re-adds `toy_ball` to a Set, so
+from day 2 the learner gets nothing; speaking and stories quests are missing. **Task 13.1**:
+1. Week key = Monday-based local week. Per-week counters: new words first seen this week (record a
+   first-seen day in `LearningStore` when an item stops being new), daily challenges, speaking days
+   (any E20 attempt that day), stories finished. Reset when the week changes. Unit tests for the
+   rollover.
+2. Rewards: daily challenge → coins (e.g. 10); each weekly quest → the cheapest pet item the learner
+   does not own yet, otherwise coins. Persist with `savePet()`; show `quest_reward` with the item
+   name.
+3. Quests: `quest_new_words` 20, `quest_daily` 3, `quest_speaking` 2 (hide if speech recognition is
+   unavailable), `quest_stories` 2 (Task 12). Each pays once per week; show progress per quest.
+
 ### Task 14: Exam engine
 
 - Generic exam definition in `config/exam_formats.json`: sections, item types, counts, time per
