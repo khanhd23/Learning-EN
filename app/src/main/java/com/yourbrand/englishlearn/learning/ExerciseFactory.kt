@@ -71,7 +71,7 @@ class ExerciseFactory(private val content: Content, private val random: Random =
     fun picture(w: Word, kind: Kind = Kind.E15): Exercise.PictureChoice? {
         val sameTopic = content.lessonWords.filter { it.image != null && it.id != w.id && it.pos == w.pos && it.topics.any { t -> t in w.topics } }
         val samePos = content.lessonWords.filter { it.image != null && it.id != w.id && it.pos == w.pos }
-        val others = (sameTopic + samePos).distinctBy { it.image }.shuffled(random).take(3)
+        val others = orderedPictureDistractors(sameTopic, samePos, { it.image }, random, 3)
         if (w.image == null || others.size < 3) return null
         val words = (others + w).shuffled(random)
         return when (kind) {
@@ -85,7 +85,7 @@ class ExerciseFactory(private val content: Content, private val random: Random =
         if (w.image == null) return null
         val sameTopic = content.lessonWords.filter { it.image != null && it.id != w.id && it.topics.any { t -> t in w.topics } }
         val samePos = content.lessonWords.filter { it.image != null && it.id != w.id && it.pos == w.pos }
-        val words = (listOf(w) + sameTopic + samePos).distinctBy { it.image }.shuffled(random).take(4)
+        val words = (listOf(w) + orderedPictureDistractors(sameTopic, samePos, { it.image }, random, 3)).take(4)
         if (words.size < 4) return null
         val order = words.indices.shuffled(random)
         return Exercise.PictureMatch("pm:" + words.joinToString(",") { it.id }, listOf("vocab_core", "picture"), words.maxOf { it.level }, words.map { it.key }, words, words.indices.map { i -> order.indexOf(i) })
@@ -166,5 +166,16 @@ class ExerciseFactory(private val content: Content, private val random: Random =
         return meaning(w)
     }
 }
+
+/** Shuffle each quality group independently; never let a lower-priority group outrank topic matches. */
+internal fun <T> orderedPictureDistractors(
+    sameTopic: List<T>,
+    samePartOfSpeech: List<T>,
+    image: (T) -> String?,
+    random: Random,
+    limit: Int,
+): List<T> = (sameTopic.shuffled(random) + samePartOfSpeech.shuffled(random))
+    .distinctBy(image)
+    .take(limit)
 
 /** Picture exercises (E15–E17) stay disabled until their Task 9.1 layouts ship. */
