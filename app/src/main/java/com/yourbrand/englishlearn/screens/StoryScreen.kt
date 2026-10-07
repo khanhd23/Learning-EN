@@ -64,13 +64,23 @@ class StoryScreen(activity: MainActivity, private val story: Story) : Screen(act
         body.removeAllViews()
         body.addView(Kit.text(ctx, story.title, R.style.Text_Title))
         body.addView(Kit.text(ctx, q.question, R.style.Text_Question).margins(ctx, top = 18))
+        // One answer per question: options lock after the first tap and show right/wrong.
+        var answered = false
+        val buttons = ArrayList<TextView>()
         q.options.forEachIndexed { i, option ->
-            body.addView(Kit.primary(ctx, option, 18) {
+            buttons += Kit.secondary(ctx, option, 10) {
+                if (answered) return@secondary
+                answered = true
                 val ok = i == q.answer
                 if (ok) correct++
-                body.addView(Kit.text(ctx, q.explanation, R.style.Text_Caption).margins(ctx, top = 10))
-                body.addView(Kit.primary(ctx, str(R.string.continue_label), 18) { questionIndex++; showQuestion() }.margins(ctx, top = 10))
-            }.margins(ctx, top = 10))
+                buttons.forEachIndexed { j, b ->
+                    b.isEnabled = false
+                    if (j == q.answer) b.background = ctx.rounded(ctx.col(R.color.success_container), 14f, ctx.col(R.color.success), 2f)
+                    else if (j == i) b.background = ctx.rounded(ctx.col(R.color.error_container), 14f, ctx.col(R.color.error), 2f)
+                }
+                body.addView(Kit.text(ctx, q.explanation, R.style.Text_Body).margins(ctx, top = 12))
+                body.addView(Kit.primary(ctx, str(R.string.continue_label), 16) { questionIndex++; showQuestion() })
+            }.also { body.addView(it) }
         }
     }
 

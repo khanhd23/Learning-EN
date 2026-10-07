@@ -210,6 +210,22 @@ spelling, `targets` = lesson word ids that appear in the text, 2–3 questions e
 `{id: {title, text, expl[]}}`, status kind `stories`. Show the translation only on demand (a
 "Translation" toggle like word detail), never by default.
 
+### Task 12 review (owner) — accepted with owner fix; Task 12.1
+
+Accepted (142d72a): reader, tappable target words (gloss, slow audio, save), questions with
+explanations, XP + pet meal, story buttons on topic cards. Owner fix: answer buttons stayed active —
+every extra tap added a point and another explanation; now one answer per question, right/wrong
+coloured. **Task 12.1** (Codex):
+1. **Translation toggle** (reuse `show_translation`): shows the locale `text` under the story;
+   hidden by default; remembered like word detail.
+2. **Listen to the story:** play-all button (reuse `listen`) reading sentence by sentence with the
+   current sentence highlighted; tap a sentence to replay it; `play_slow` for slow speed.
+3. Highlight targets in any form (plural, -s/-ed/-ing, irregular forms, y→i) — reuse the forms
+   logic used for example highlights; underline + tinted background, not link blue.
+4. Screen chrome like other pushed screens: back arrow + title bar; questions use `OptionCard`
+   like sessions; show "n/m correct" at the end before returning.
+5. A weekly quest "finish stories" (Task 13) counts `finishStory()`.
+
 ### Task 13: Daily challenge and pet quests
 
 - Daily challenge: 5 mixed items from due + weak items, a different exercise mix each day, pet
