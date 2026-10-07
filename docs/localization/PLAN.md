@@ -767,6 +767,16 @@ query typed with Vietnamese marks ranks meaning (gloss) matches above English pr
 with its marks too (`gloss_raw`) and rank exact-mark matches first, so "cá" ranks fish above
 "cà phê" / "cá sấu".
 
+### Task 6.3.2 review (owner)
+
+Accepted (a145b0c) with owner fixes found by testing real queries: an exact match on the *whole*
+accented gloss almost never fired ("cá" vs "cá; thịt cá"), and locale glosses were joined with a
+space ("cá thịt cá (thực phẩm)"). Now: glosses joined with "; "; ranking = typed lemma → first
+meaning equals the query → accented whole-word match → normalised matches; with marks typed the
+English lemma is compared as typed ("bàn" → table, not "ban"). Verified: cá→fish, bàn→table,
+nhà→home, ăn→eat, đi→go, go→go. Gradle now tracks `build_content_db.py` and
+`config/blocked_senses.txt` as inputs (the DB was not rebuilt after builder changes).
+
 ## Task 7: Spanish pilot (Level 1)
 
 1. `locale.py new es` → `draft es --level 1` (UI, topics, Level 1 words, Level 1 grammar, Level 1

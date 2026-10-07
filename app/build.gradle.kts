@@ -108,6 +108,8 @@ val copyContent = tasks.register("generateContentAssets") {
     inputs.dir(rootProject.file("content"))
     inputs.file(rootProject.file("config/exam_formats.json"))
     inputs.file(rootProject.file("config/app_config.json"))
+    inputs.file(rootProject.file("config/blocked_senses.txt"))
+    inputs.file(rootProject.file("tools/build_content_db.py"))
     outputs.dir(contentOut)
     doLast {
         contentOut.deleteRecursively()

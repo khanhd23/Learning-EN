@@ -47,14 +47,16 @@ class ContentDb(private val context: Context) {
         // words that merely start with the same letters ("đi" -> go before dictionary).
         val meaningFirst = normalizedQuery != query.trim().lowercase(Locale.ROOT)
         val glossWord = "(f.gloss LIKE ?1 || ' %' OR f.gloss LIKE '% ' || ?1 OR f.gloss LIKE '% ' || ?1 || ' %')"
-        val middle = if (meaningFirst) "WHEN $glossWord THEN 2 WHEN instr(f.gloss, ?1) > 0 THEN 3 WHEN w.lemma_norm LIKE ?1 || '%' THEN 4"
-        else "WHEN w.lemma_norm LIKE ?1 || '%' THEN 2 WHEN $glossWord THEN 3 WHEN instr(f.gloss, ?1) > 0 THEN 4"
+        val middle = if (meaningFirst) "WHEN $glossWord THEN 4 WHEN instr(f.gloss, ?1) > 0 THEN 5 WHEN w.lemma_norm LIKE ?1 || '%' THEN 6"
+        else "WHEN w.lemma_norm LIKE ?1 || '%' THEN 4 WHEN $glossWord THEN 5 WHEN instr(f.gloss, ?1) > 0 THEN 6"
+        // With marks typed, "bàn" must not match the English word "ban": compare the lemma as typed.
+        val exactLemma = if (meaningFirst) "WHEN lower(f.lemma) = ?5 THEN 0" else "WHEN w.lemma_norm = ?1 THEN 0"
         val started = System.nanoTime()
         val result = ArrayList<DbWordHit>()
         db().rawQuery(
             "SELECT f.word_id, f.lemma, f.gloss_raw, w.level, w.tier FROM word_fts f JOIN word w ON w.id = f.word_id " +
                 "WHERE f.locale = ?2 AND w.adult = 0 AND word_fts MATCH ?3 " +
-                "ORDER BY CASE WHEN w.lemma_norm = ?1 THEN 0 WHEN lower(f.gloss_raw) = ?5 THEN 1 WHEN f.gloss = ?1 THEN 2 $middle ELSE 6 END, w.level, " +
+                "ORDER BY CASE $exactLemma WHEN lower(f.gloss_raw) = ?5 OR lower(f.gloss_raw) LIKE ?5 || ';%' OR lower(f.gloss_raw) LIKE ?5 || ',%' THEN 1 WHEN (' ' || replace(replace(replace(replace(lower(f.gloss_raw), ',', ' '), ';', ' '), '(', ' '), ')', ' ') || ' ') LIKE '% ' || ?5 || ' %' THEN 2 WHEN f.gloss = ?1 THEN 3 $middle ELSE 7 END, w.level, " +
                 "CASE w.tier WHEN 'gold' THEN 0 WHEN 'silver' THEN 1 ELSE 2 END, " +
                 "CASE WHEN w.ngsl_rank IS NULL THEN 2147483647 ELSE w.ngsl_rank END, w.lemma_norm LIMIT ?4",
             arrayOf(normalizedQuery, locale, match, limit.toString(), query.trim().lowercase(Locale.ROOT)),

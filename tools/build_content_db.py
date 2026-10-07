@@ -160,7 +160,7 @@ def build(root: Path, output: Path, hash_output: Path | None = None) -> str:
                     first = word.get("senses", [{}])[0].get("id")
                     if approved.get(first, {}).get("s") != "approved":
                         continue
-                    gloss = " ".join(values.get(s["id"], {}).get("g", "") for s in word.get("senses", []))
+                    gloss = "; ".join(g for g in (values.get(s["id"], {}).get("g", "") for s in word.get("senses", [])) if g)
                     db.execute("INSERT INTO word_fts VALUES(?,?,?,?,?,?)", (folder.name, word["id"], normalize(word.get("lemma", "")), normalize(gloss), gloss, normalize(gloss)))
         db.commit()
     finally:
