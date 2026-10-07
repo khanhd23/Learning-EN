@@ -189,6 +189,13 @@ byte-for-byte from the official source, never retyped or summarised.**
 tolerant); E20 never blocks a session — skip it when recognition is unavailable or permission is
 denied. Show the result per word (green/red) and allow two retries.
 
+### Task 11 review (owner)
+
+Pushed before review by mistake (9298f41). Accepted with owner fixes: words said wrongly were shown
+green (only missing words were red) — the grader now reports `wrongExpected` and shadowing colours
+those red (test added); the mic dialog used `mic_reason` as its title — new `mic_title`. Data
+safety note added to `docs/RELEASE_CHECKLIST.md`.
+
 ### Task 12: Story reader
 
 - Format `content/en/stories.json` (+ locale packs through the existing approval gate).

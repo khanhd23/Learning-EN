@@ -32,6 +32,11 @@ Owner-maintained. Every item must be checked before a production release.
 - [ ] Privacy policy hosted at a public URL (required for apps with ads) and the same text in the
       app; Data safety form: AdMob collects device identifiers and approximate location for ads;
       the app itself stores learning data only on the device.
+- [ ] Microphone (Task 11): the app requests RECORD_AUDIO only for speaking practice, after an
+      in-app explanation. Data safety: audio is passed to the device's speech recognition service
+      (often Google) to turn speech into text; the app does not record, store or upload audio.
+      Say this in the privacy policy and the Data safety form ("Audio — not collected by the app,
+      processed by the system speech service").
 - [ ] Content rating questionnaire completed; dictionary entries with adult meanings are not shown
       in lessons (bronze entries are search-only; check `sex`, `horny`, `naughty` senses).
 - [ ] Release build tested on a device (`assembleBenchmark` for speed; real release signed AAB).

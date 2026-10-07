@@ -783,7 +783,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
     private fun beginShadowRecognition(ex: Exercise.Shadowing) {
         if (answered) return
         if (ContextCompat.checkSelfPermission(ctx, android.Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
-            Dialogs.confirm(ctx, str(R.string.mic_reason), str(R.string.mic_reason), str(R.string.tap_to_speak), str(R.string.cancel), onNegative = { skipUnavailableSpeech() }) {
+            Dialogs.confirm(ctx, str(R.string.mic_title), str(R.string.mic_reason), str(R.string.tap_to_speak), str(R.string.cancel), onNegative = { skipUnavailableSpeech() }) {
                 activity.requestMicrophone { granted -> if (granted) beginShadowRecognition(ex) else skipUnavailableSpeech() }
             }
             return
@@ -818,7 +818,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             if (i > 0) colors.append(" ")
             val start = colors.length
             colors.append(word)
-            colors.setSpan(ForegroundColorSpan(ctx.col(if (i in result.diff.missingExpected) R.color.error else R.color.success)), start, colors.length, 0)
+            colors.setSpan(ForegroundColorSpan(ctx.col(if (i in result.diff.missingExpected || i in result.diff.wrongExpected) R.color.error else R.color.success)), start, colors.length, 0)
         }
         content.addView(Kit.text(ctx, str(R.string.you_said, spoken), R.style.Text_Body).margins(ctx, top = 10))
         content.addView(Kit.text(ctx, colors, R.style.Text_Body).margins(ctx, top = 6))

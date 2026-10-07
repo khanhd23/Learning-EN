@@ -193,6 +193,7 @@
     <string name="listening_now">Đang nghe…</string>
     <string name="you_said">Bạn đã nói: %1$s</string>
     <string name="speak_again">Thử lại</string>
+    <string name="mic_title">Dùng micro?</string>
     <string name="mic_reason">Micro chỉ dùng để kiểm tra phát âm của bạn. Không có gì được ghi âm hay lưu lại.</string>
     <string name="daily_challenge">Thử thách mỗi ngày</string>
     <string name="daily_challenge_desc">Năm câu hỏi đa dạng. Mỗi ngày một bộ mới.</string>

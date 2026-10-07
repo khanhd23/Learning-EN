@@ -150,6 +150,8 @@ object Grader {
         val extraActual: Set<Int>,
         val missingExpected: Set<Int>,
         val almostActual: Set<Int>,
+        /** Expected-word positions that were said or written as a different word. */
+        val wrongExpected: Set<Int> = emptySet(),
     )
     data class SentenceResult(val result: Result, val wrongWords: List<Int>, val diff: SentenceDiff)
 
@@ -176,17 +178,17 @@ object Grader {
             val substitution = if (grade(actual[i], wanted[j]) == Result.CORRECT) 0 else 1
             dp[i + 1][j + 1] = minOf(dp[i][j + 1] + 1, dp[i + 1][j] + 1, dp[i][j] + substitution)
         }
-        val wrong = linkedSetOf<Int>(); val extra = linkedSetOf<Int>(); val missing = linkedSetOf<Int>(); val almost = linkedSetOf<Int>()
+        val wrong = linkedSetOf<Int>(); val wrongExp = linkedSetOf<Int>(); val extra = linkedSetOf<Int>(); val missing = linkedSetOf<Int>(); val almost = linkedSetOf<Int>()
         var i = actual.size; var j = wanted.size
         while (i > 0 || j > 0) {
             val same = i > 0 && j > 0 && grade(actual[i - 1], wanted[j - 1]) == Result.CORRECT && dp[i][j] == dp[i - 1][j - 1]
             val near = i > 0 && j > 0 && grade(actual[i - 1], wanted[j - 1]) == Result.ALMOST && dp[i][j] == dp[i - 1][j - 1] + 1
             if (same || near) { if (near) almost += i - 1; i--; j--; continue }
-            if (i > 0 && j > 0 && dp[i][j] == dp[i - 1][j - 1] + 1) { wrong += i - 1; i--; j--; continue }
+            if (i > 0 && j > 0 && dp[i][j] == dp[i - 1][j - 1] + 1) { wrong += i - 1; wrongExp += j - 1; i--; j--; continue }
             if (i > 0 && dp[i][j] == dp[i - 1][j] + 1) { extra += i - 1; i--; continue }
             missing += j - 1; j--
         }
-        val diff = SentenceDiff(actual, wanted, wrong, extra, missing, almost)
+        val diff = SentenceDiff(actual, wanted, wrong, extra, missing, almost, wrongExp)
         val allWrong = wrong + extra + missing
         return SentenceResult(if (allWrong.isNotEmpty()) Result.WRONG else if (almost.isNotEmpty()) Result.ALMOST else Result.CORRECT, wrong.toList() + extra, diff)
     }

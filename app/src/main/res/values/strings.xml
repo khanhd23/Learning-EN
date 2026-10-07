@@ -193,6 +193,7 @@
     <string name="listening_now">Listening…</string>
     <string name="you_said">You said: %1$s</string>
     <string name="speak_again">Try again</string>
+    <string name="mic_title">Use the microphone?</string>
     <string name="mic_reason">The microphone is used only to check your pronunciation. Nothing is recorded or saved.</string>
     <string name="daily_challenge">Daily challenge</string>
     <string name="daily_challenge_desc">Five mixed questions. A new set every day.</string>

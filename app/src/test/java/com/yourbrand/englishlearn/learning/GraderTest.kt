@@ -48,4 +48,10 @@ class GraderTest {
         assertTrue(result.diff.wrongActual.isNotEmpty() || result.diff.extraActual.isNotEmpty() || result.diff.missingExpected.isNotEmpty())
         assertTrue(result.diff.actual.indexOf("green") !in result.diff.wrongActual)
     }
+
+    @Test fun sentenceGradeMarksSubstitutedExpectedWord() {
+        val result = Grader.gradeSentence("I cat the bread", "I cut the bread")
+        assertEquals(Grader.Result.WRONG, result.result)
+        assertEquals(setOf(1), result.diff.wrongExpected)
+    }
 }
