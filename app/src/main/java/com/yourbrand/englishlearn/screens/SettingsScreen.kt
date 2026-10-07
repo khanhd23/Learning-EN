@@ -75,8 +75,7 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
         group(body, R.string.set_privacy) { g ->
             if (services.ads.privacyOptionsRequired) action(g, R.string.set_ad_privacy) { services.ads.showPrivacyOptions(activity) }
             action(g, R.string.privacy_policy) {
-                if (BuildConfig.PRIVACY_URL.isNotBlank()) runCatching { activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(BuildConfig.PRIVACY_URL))) }
-                else activity.open(TextScreen(activity, str(R.string.privacy_policy), str(R.string.privacy_text)))
+                activity.open(PrivacyPolicyScreen(activity, BuildConfig.PRIVACY_URL))
             }
         }
 
@@ -102,7 +101,13 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
             action(g, R.string.licenses) {
                 val contentLicenses = c.assets.open("content/LICENSES.md").bufferedReader(Charsets.UTF_8).use { it.readText() }
                 val imageNotice = runCatching { c.assets.open("content/third_party_notices.txt").bufferedReader(Charsets.UTF_8).use { it.readText() } }.getOrDefault("")
-                activity.open(TextScreen(activity, str(R.string.licenses), str(R.string.licenses_text) + "\n\n" + contentLicenses + if (imageNotice.isBlank()) "" else "\n\n" + imageNotice))
+                val apache = c.assets.open("licenses/apache-2.0.txt").bufferedReader(Charsets.UTF_8).use { it.readText() }
+                val ccBySa = c.assets.open("licenses/cc-by-sa-4.0.txt").bufferedReader(Charsets.UTF_8).use { it.readText() }
+                val text = str(R.string.licenses_text) + "\n\n" + contentLicenses +
+                    if (imageNotice.isBlank()) "" else "\n\n$imageNotice" +
+                    "\n\nApache License 2.0 (AndroidX and Noto Emoji)\n\n$apache" +
+                    "\n\nCC BY-SA 4.0 summary\n\n$ccBySa"
+                activity.open(TextScreen(activity, str(R.string.licenses), text))
             }
             action(g, R.string.contact) {
                 runCatching { activity.startActivity(Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:${BuildConfig.SUPPORT_EMAIL}?subject=" + Uri.encode(str(R.string.app_short_name) + " feedback")))) }
@@ -167,6 +172,17 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
 class TextScreen(activity: MainActivity, private val title: String, private val text: String) : ScrollScreen(activity) {
     override val barTitle: String get() = title
     override fun build(body: LinearLayout) { body.addView(Kit.text(ctx, text, R.style.Text_Body).margins(ctx, top = 8)) }
+}
+
+class PrivacyPolicyScreen(activity: MainActivity, private val publicUrl: String) : ScrollScreen(activity) {
+    override val barTitle: String get() = str(R.string.privacy_policy)
+
+    override fun build(body: LinearLayout) {
+        body.addView(Kit.text(ctx, str(R.string.privacy_text), R.style.Text_Body).margins(ctx, top = 8))
+        if (publicUrl.isNotBlank()) body.addView(Kit.secondary(ctx, str(R.string.privacy_policy), 12) {
+            runCatching { activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(publicUrl))) }
+        }.margins(ctx, top = 16))
+    }
 }
 
 /** S22 — search words, grammar points and topics. */

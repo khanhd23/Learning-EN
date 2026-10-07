@@ -8,7 +8,7 @@ import sqlite3
 import unicodedata
 from pathlib import Path
 
-SCHEMA_VERSION = "1"
+SCHEMA_VERSION = "2"
 
 
 def load(path: Path):
@@ -21,6 +21,9 @@ def canonical(value) -> str:
 
 def source_files(root: Path) -> list[Path]:
     paths = [root / "config/exam_formats.json"]
+    blocked_path = root / "config/blocked_senses.txt"
+    if blocked_path.is_file():
+        paths.append(blocked_path)
     paths += sorted((root / "content/en").glob("*.json"))
     locale_root = root / "content/i18n"
     for folder in sorted(locale_root.iterdir() if locale_root.is_dir() else []):
@@ -88,13 +91,19 @@ def build(root: Path, output: Path, hash_output: Path | None = None) -> str:
         output.unlink()
     words = load(root / "content/en/words.json")
     grammar = load(root / "content/en/grammar.json")
+    blocked_path = root / "config/blocked_senses.txt"
+    blocked = {
+        line.split("#", 1)[0].strip().lower()
+        for line in blocked_path.read_text(encoding="utf-8").splitlines()
+        if line.split("#", 1)[0].strip()
+    } if blocked_path.is_file() else set()
     digest = content_hash(root)
     db = sqlite3.connect(output)
     try:
         db.executescript("""
             CREATE TABLE meta(key TEXT PRIMARY KEY, value TEXT NOT NULL);
             CREATE TABLE word(id TEXT PRIMARY KEY, lemma TEXT NOT NULL, ipa TEXT NOT NULL, lemma_norm TEXT NOT NULL,
-                              level INTEGER NOT NULL, tier TEXT NOT NULL, ngsl_rank INTEGER,
+                              level INTEGER NOT NULL, tier TEXT NOT NULL, ngsl_rank INTEGER, adult INTEGER NOT NULL,
                               pos_list TEXT NOT NULL, topics_json TEXT NOT NULL, family_json TEXT NOT NULL,
                               forms_json TEXT NOT NULL, collocations_json TEXT NOT NULL, grammar_ids_json TEXT NOT NULL);
             CREATE TABLE sense(id TEXT PRIMARY KEY, word_id TEXT NOT NULL, ord INTEGER NOT NULL,
@@ -120,9 +129,10 @@ def build(root: Path, output: Path, hash_output: Path | None = None) -> str:
         for word in words.get("words", []):
             senses = word.get("senses", [])
             pos_list = word.get("pos") if isinstance(word.get("pos"), list) else [s.get("pos", "") for s in senses]
-            db.execute("INSERT INTO word VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)", (
+            adult = int(word["id"].lower() in blocked or word.get("lemma", "").lower() in blocked or any(s.get("id", "").lower() in blocked for s in senses))
+            db.execute("INSERT INTO word VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
                 word["id"], word.get("lemma", ""), word.get("ipa", ""), normalize(word.get("lemma", "")), word.get("level", 1),
-                word.get("tier", "bronze"), word.get("ngslRank"), json_text(pos_list), json_text(word.get("topics", [])),
+                word.get("tier", "bronze"), word.get("ngslRank"), adult, json_text(pos_list), json_text(word.get("topics", [])),
                 json_text(word.get("family", {})), json_text(word.get("forms", {})), json_text(word.get("coll", [])),
                 json_text(word.get("grammarIds", [])),
             ))

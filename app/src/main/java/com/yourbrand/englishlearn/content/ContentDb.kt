@@ -53,7 +53,7 @@ class ContentDb(private val context: Context) {
         val result = ArrayList<DbWordHit>()
         db().rawQuery(
             "SELECT f.word_id, f.lemma, f.gloss, w.level, w.tier FROM word_fts f JOIN word w ON w.id = f.word_id " +
-                "WHERE f.locale = ?2 AND word_fts MATCH ?3 " +
+                "WHERE f.locale = ?2 AND w.adult = 0 AND word_fts MATCH ?3 " +
                 "ORDER BY CASE WHEN w.lemma_norm = ?1 THEN 0 WHEN f.gloss = ?1 THEN 1 $middle ELSE 5 END, w.level, " +
                 "CASE w.tier WHEN 'gold' THEN 0 WHEN 'silver' THEN 1 ELSE 2 END, " +
                 "CASE WHEN w.ngsl_rank IS NULL THEN 2147483647 ELSE w.ngsl_rank END, w.lemma_norm LIMIT ?4",
@@ -66,13 +66,13 @@ class ContentDb(private val context: Context) {
     }
 
     fun wordsByLevel(locale: String, level: Int, limit: Int = 200): List<DbWordHit> =
-        queryWords(locale, "SELECT DISTINCT f.word_id, f.lemma, f.gloss, w.level, w.tier FROM word_fts f JOIN word w ON w.id = f.word_id WHERE f.locale = ? AND w.level = ? ORDER BY w.tier, f.lemma LIMIT ?", arrayOf(locale, level.toString(), limit.toString()))
+        queryWords(locale, "SELECT DISTINCT f.word_id, f.lemma, f.gloss, w.level, w.tier FROM word_fts f JOIN word w ON w.id = f.word_id WHERE f.locale = ? AND w.adult = 0 AND w.level = ? ORDER BY w.tier, f.lemma LIMIT ?", arrayOf(locale, level.toString(), limit.toString()))
 
     fun wordsByTopic(locale: String, topicId: String, limit: Int = 200): List<DbWordHit> =
-        queryWords(locale, "SELECT DISTINCT f.word_id, f.lemma, f.gloss, w.level, w.tier FROM word_fts f JOIN word w ON w.id = f.word_id JOIN word_topic wt ON wt.word_id = w.id WHERE f.locale = ? AND wt.topic_id = ? ORDER BY w.level, f.lemma LIMIT ?", arrayOf(locale, topicId, limit.toString()))
+        queryWords(locale, "SELECT DISTINCT f.word_id, f.lemma, f.gloss, w.level, w.tier FROM word_fts f JOIN word w ON w.id = f.word_id JOIN word_topic wt ON wt.word_id = w.id WHERE f.locale = ? AND w.adult = 0 AND wt.topic_id = ? ORDER BY w.level, f.lemma LIMIT ?", arrayOf(locale, topicId, limit.toString()))
 
     fun word(locale: String, id: String): DbWordHit? =
-        queryWords(locale, "SELECT f.word_id, f.lemma, f.gloss, w.level, w.tier FROM word_fts f JOIN word w ON w.id = f.word_id WHERE f.locale = ? AND f.word_id = ? LIMIT 1", arrayOf(locale, id)).firstOrNull()
+        queryWords(locale, "SELECT f.word_id, f.lemma, f.gloss, w.level, w.tier FROM word_fts f JOIN word w ON w.id = f.word_id WHERE f.locale = ? AND w.adult = 0 AND f.word_id = ? LIMIT 1", arrayOf(locale, id)).firstOrNull()
 
     private fun queryWords(locale: String, sql: String, args: Array<String>): List<DbWordHit> {
         val result = ArrayList<DbWordHit>()

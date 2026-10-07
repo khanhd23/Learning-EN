@@ -40,6 +40,7 @@ data class Word(
     val forms: Map<String, String> = emptyMap(),
     val grammarIds: List<String> = emptyList(),
     val image: String? = null,
+    val adult: Boolean = false,
 ) {
     val pos: String get() = senses.first().pos
     val gloss: String get() = senses.first().gloss

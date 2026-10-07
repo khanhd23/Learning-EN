@@ -33,7 +33,7 @@ class ContentDbBuilderTest(unittest.TestCase):
 
             db = sqlite3.connect(output)
             try:
-                self.assertEqual(db.execute("select value from meta where key='schema_version'").fetchone()[0], "1")
+                self.assertEqual(db.execute("select value from meta where key='schema_version'").fetchone()[0], "2")
                 self.assertEqual(db.execute("select value from meta where key='content_hash'").fetchone()[0], digest)
                 self.assertEqual(db.execute("select count(*) from word").fetchone()[0], 1)
                 self.assertEqual(db.execute("select word_id from word_fts where word_fts match 'di*'").fetchone()[0], "go")
@@ -53,6 +53,19 @@ class ContentDbBuilderTest(unittest.TestCase):
             sidecar = root / "build/content.db.sha256"
             digest = build_content_db.build(root, output, sidecar)
             self.assertEqual(sidecar.read_text(encoding="ascii").strip(), digest)
+
+    def test_blocked_sense_is_marked_adult(self):
+        with tempfile.TemporaryDirectory() as raw:
+            root = Path(raw)
+            self.fixture(root, [{"id": "adult_word", "lemma": "adultword", "senses": [{"id": "adult_s1"}]}])
+            (root / "config/blocked_senses.txt").write_text("adult_s1\n", encoding="utf-8")
+            output = root / "build/content.db"
+            build_content_db.build(root, output)
+            db = sqlite3.connect(output)
+            try:
+                self.assertEqual(db.execute("select adult from word where id='adult_word'").fetchone()[0], 1)
+            finally:
+                db.close()
 
     def test_sql_ranks_exact_match_before_limit_with_more_than_200_hits(self):
         with tempfile.TemporaryDirectory() as raw:

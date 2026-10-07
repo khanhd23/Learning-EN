@@ -15,6 +15,7 @@ import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.FullScreenContentCallback
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.RequestConfiguration
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.google.android.gms.ads.rewarded.RewardedAd
@@ -76,6 +77,11 @@ class AdsManager(private val app: Application) {
     private fun initializeIfAllowed() {
         if (!consentInfo.canRequestAds() || !initStarted.compareAndSet(false, true)) return
         thread(name = "ads-init", priority = Thread.MIN_PRIORITY) {
+            MobileAds.setRequestConfiguration(
+                RequestConfiguration.Builder()
+                    .setMaxAdContentRating(RequestConfiguration.MAX_AD_CONTENT_RATING_G)
+                    .build()
+            )
             MobileAds.initialize(app) {
                 main.post {
                     isInitialized = true

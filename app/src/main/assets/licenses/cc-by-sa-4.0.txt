@@ -1,0 +1,9 @@
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+This license permits sharing and adapting the material for any purpose,
+including commercially, provided that appropriate credit is given, a link to
+the license is provided, and changes are indicated. Adapted material must be
+distributed under the same license. No additional restrictions may be applied.
+
+Full legal code: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+License summary: https://creativecommons.org/licenses/by-sa/4.0/

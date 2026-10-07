@@ -127,6 +127,7 @@ val copyContent = tasks.register("generateContentAssets") {
         rootProject.file("config/exam_formats.json").copyTo(File(dst, "exam_formats.json"), overwrite = true)
         rootProject.file("content/i18n/market_profiles.json").copyTo(File(dst, "market_profiles.json"), overwrite = true)
         rootProject.file("config/app_config.json").copyTo(File(dst, "app_config.json"), overwrite = true)
+        rootProject.file("config/blocked_senses.txt").copyTo(File(dst, "blocked_senses.txt"), overwrite = true)
         rootProject.file("content/LICENSES.md").copyTo(File(dst, "LICENSES.md"), overwrite = true)
         rootProject.file("content/open-vocabulary-manifest.json").copyTo(File(dst, "open-vocabulary-manifest.json"), overwrite = true)
         val builder = ProcessBuilder(
