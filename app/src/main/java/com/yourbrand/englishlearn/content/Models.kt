@@ -9,6 +9,7 @@ data class LocalePackFiles(
     val questions: String,
     val pet: String,
     val tips: String,
+    val sound: String,
 )
 
 data class Topic(val id: String, val name: String, val icon: String, val hue: Int)
@@ -113,7 +114,7 @@ data class ComingSoon(val id: String, val label: String)
 
 data class SoundFocus(val id: String, val label: String, val tip: String)
 data class MinimalPair(val id: String, val a: String, val b: String, val focus: String)
-data class SoundSentence(val id: String, val text: String, val level: Int)
+data class SoundSentence(val id: String, val text: String, val level: Int, val translation: String? = null)
 data class SoundData(
     val focuses: List<SoundFocus> = emptyList(),
     val pairs: List<MinimalPair> = emptyList(),

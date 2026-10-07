@@ -13,6 +13,7 @@ data class LocaleApproval(
     val approvedPassages: Set<String>,
     val approvedPet: Set<String>,
     val approvedTips: Set<String>,
+    val approvedSound: Set<String>,
     val selectable: Boolean,
     val availableLevels: Set<Int>,
 )
@@ -96,6 +97,7 @@ object ApprovalGate {
             approvedConfusables = keys("confusables"), approvedGrammar = approvedGrammar,
             approvedQuestions = approvedQuestions, approvedPassages = approvedPassages,
             approvedPet = keys("pet"), approvedTips = keys("tips"),
+            approvedSound = keys("sound"),
             selectable = uiApproved && 1 in available,
             availableLevels = available,
         )

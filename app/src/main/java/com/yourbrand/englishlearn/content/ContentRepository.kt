@@ -44,7 +44,7 @@ object ContentParser {
     private fun JSONObject.strOrNull(k: String): String? = if (has(k) && !isNull(k)) optString(k).takeIf { it.isNotEmpty() } else null
     private inline fun <T> JSONArray?.map(f: (JSONObject) -> T): List<T> = if (this == null) emptyList() else List(length()) { f(getJSONObject(it)) }
 
-    fun parse(words: String, grammar: String, questions: String, locale: LocalePackFiles, formats: String, approval: LocaleApproval? = null, images: Map<String, String> = emptyMap(), soundJson: String? = null): Content {
+    fun parse(words: String, grammar: String, questions: String, locale: LocalePackFiles, formats: String, approval: LocaleApproval? = null, images: Map<String, String> = emptyMap(), soundJson: String? = null, soundLocaleJson: String? = null): Content {
         val viTopics = JSONObject(locale.topics)
         val viWords = JSONObject(locale.words)
         val viConf = JSONObject(locale.confusables)
@@ -55,6 +55,13 @@ object ContentParser {
         val viQFix = localeQuestions.optJSONObject("q_fix") ?: JSONObject()
         val viQNotes = localeQuestions.optJSONObject("q_notes") ?: JSONObject()
         val viP = localeQuestions.optJSONObject("passages") ?: JSONObject()
+        val soundTranslations = JSONObject(soundLocaleJson ?: locale.sound).optJSONObject("focus") ?: JSONObject()
+        val exampleTranslations = linkedMapOf<String, String>()
+        viWords.keys().forEach { senseId ->
+            viWords.optJSONObject(senseId)?.optJSONObject("ex")?.let { examples ->
+                examples.keys().forEach { exampleId -> exampleTranslations[exampleId] = examples.optString(exampleId) }
+            }
+        }
 
         val w = JSONObject(words)
         val topics = w.getJSONArray("topics").map { Topic(it.getString("id"), viTopics.optString(it.getString("id")), it.getString("icon"), it.getInt("hue")) }
@@ -157,17 +164,24 @@ object ContentParser {
         val sound = soundJson?.let { json ->
             val o = JSONObject(json)
             SoundData(
-                focuses = o.optJSONArray("focus").let { a -> if (a == null) emptyList() else List(a.length()) { i -> a.getJSONObject(i).let { SoundFocus(it.getString("id"), it.optString("label"), it.optString("tip")) } } },
                 pairs = o.optJSONArray("pairs").let { a -> if (a == null) emptyList() else List(a.length()) { i -> a.getJSONObject(i).let { MinimalPair(it.getString("id"), it.getString("a"), it.getString("b"), it.optString("focus")) } } },
-                dictation = parseSoundSentences(o.optJSONArray("dictation")),
-                shadowing = parseSoundSentences(o.optJSONArray("shadowing")),
+                dictation = parseSoundSentences(o.optJSONArray("dictation"), exampleTranslations),
+                shadowing = parseSoundSentences(o.optJSONArray("shadowing"), exampleTranslations),
+                focuses = o.optJSONArray("focus").let { a ->
+                    if (a == null) emptyList() else List(a.length()) { i ->
+                        a.getJSONObject(i).let { focus ->
+                            val id = focus.getString("id")
+                            SoundFocus(id, focus.optString("label"), soundTranslations.optString(id, focus.optString("tip")))
+                        }
+                    }.filter { approval == null || it.id in approval.approvedSound }
+                },
             )
         } ?: SoundData()
         return Content(topics, visibleWords, conf, grammarList, questionList, passageList, formatList, soon, pet, tips,
             approval?.availableLevels ?: (1..5).toSet(), approval?.selectable ?: true, sound)
     }
 
-    private fun parseSoundSentences(a: JSONArray?): List<SoundSentence> = if (a == null) emptyList() else List(a.length()) { i -> a.getJSONObject(i).let { SoundSentence(it.getString("id"), it.getString("text"), it.optInt("level", 1)) } }
+    private fun parseSoundSentences(a: JSONArray?, translations: Map<String, String>): List<SoundSentence> = if (a == null) emptyList() else List(a.length()) { i -> a.getJSONObject(i).let { SoundSentence(it.getString("id"), it.getString("text"), it.optInt("level", 1), translations[it.getString("id")]) } }
 }
 
 class ContentRepository(private val context: Context) {
@@ -236,6 +250,7 @@ class ContentRepository(private val context: Context) {
             if (key == "en") null else approval(key),
             imageManifest(),
             runCatching { asset("en/sound.json") }.getOrNull(),
+            if (key == "en") null else runCatching { asset("${key}/sound.json") }.getOrNull(),
         ).also { cached[key] = it }
     }
 
@@ -249,7 +264,8 @@ class ContentRepository(private val context: Context) {
         grammar = asset("$path/grammar.json"),
         questions = asset("$path/questions.json"),
         pet = asset("$path/pet.json"),
-        tips = asset("$path/tips.json"),
+            tips = asset("$path/tips.json"),
+        sound = asset("$path/sound.json"),
     )
 
     private fun englishLocaleFiles(): LocalePackFiles {
@@ -290,6 +306,6 @@ class ContentRepository(private val context: Context) {
             }
         }
         val questionValues = JSONObject().put("q", explanations).put("passages", passageValues)
-        return LocalePackFiles(topics.toString(), wordValues.toString(), "{}", grammarValues.toString(), questionValues.toString(), asset("en/pet.json"), "{}")
+        return LocalePackFiles(topics.toString(), wordValues.toString(), "{}", grammarValues.toString(), questionValues.toString(), asset("en/pet.json"), "{}", "{}")
     }
 }

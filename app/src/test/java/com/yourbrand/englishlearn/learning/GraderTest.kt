@@ -21,4 +21,25 @@ class GraderTest {
         val result = Grader.gradeSentence("The restauranx is known", "The restaurant is known")
         assertEquals(Grader.Result.ALMOST, result.result)
     }
+
+    @Test fun sentenceGradeAlignsMissingWordWithoutShiftingLaterWords() {
+        val result = Grader.gradeSentence("I like apples", "I really like apples")
+        assertEquals(Grader.Result.WRONG, result.result)
+        assertEquals(setOf(1), result.diff.missingExpected)
+        assertTrue(result.diff.wrongActual.isEmpty())
+    }
+
+    @Test fun sentenceGradeMarksExtraWordWithoutShiftingLaterWords() {
+        val result = Grader.gradeSentence("I really like apples", "I like apples")
+        assertEquals(Grader.Result.WRONG, result.result)
+        assertEquals(setOf(1), result.diff.extraActual)
+        assertTrue(result.diff.wrongActual.isEmpty())
+    }
+
+    @Test fun sentenceGradeReportsSwappedWordsAsAnAlignedDifference() {
+        val result = Grader.gradeSentence("blue red green", "red blue green")
+        assertEquals(Grader.Result.WRONG, result.result)
+        assertTrue(result.diff.wrongActual.isNotEmpty() || result.diff.extraActual.isNotEmpty() || result.diff.missingExpected.isNotEmpty())
+        assertTrue(result.diff.actual.indexOf("green") !in result.diff.wrongActual)
+    }
 }

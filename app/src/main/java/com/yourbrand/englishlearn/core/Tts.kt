@@ -11,7 +11,7 @@ import java.util.Locale
 class Tts(private val context: Context, private val slow: () -> Boolean) {
     private var tts: TextToSpeech? = null
     private var ready = false
-    private var pending: Pair<String, Boolean>? = null
+    private var pending: Triple<String, Boolean, Float?>? = null
     private val main = Handler(Looper.getMainLooper())
     var onState: ((speaking: Boolean) -> Unit)? = null
 
@@ -28,7 +28,7 @@ class Tts(private val context: Context, private val slow: () -> Boolean) {
                     override fun onDone(id: String?) { main.post { onState?.invoke(false) } }
                     @Deprecated("Deprecated in Java") override fun onError(id: String?) { main.post { onState?.invoke(false) } }
                 })
-                pending?.let { (t, s) -> speak(t, s) }
+                pending?.let { (t, s, rate) -> speakNow(t, s, rate) }
                 pending = null
             }
         }
@@ -38,8 +38,18 @@ class Tts(private val context: Context, private val slow: () -> Boolean) {
 
     fun speak(text: String, slower: Boolean = false) {
         init()
-        if (!ready) { pending = text to slower; return }
-        tts?.setSpeechRate(if (slower || slow()) 0.6f else 0.95f)
+        if (!ready) { pending = Triple(text, slower, null); return }
+        speakNow(text, slower, null)
+    }
+
+    fun speakSlow(text: String) {
+        init()
+        if (!ready) { pending = Triple(text, false, 0.7f); return }
+        speakNow(text, false, 0.7f)
+    }
+
+    private fun speakNow(text: String, slower: Boolean, rate: Float?) {
+        tts?.setSpeechRate(rate ?: if (slower || slow()) 0.6f else 0.95f)
         tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "u" + text.hashCode())
     }
 

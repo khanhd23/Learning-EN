@@ -55,6 +55,14 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
         body.addView(Kit.hscroll(c, row))
         body.addView(Kit.text(c, fmt.description, R.style.Text_Body).apply { textSize = 14f }.margins(c, top = 8))
 
+        if (content.sound.dictation.isNotEmpty() || content.sound.pairs.isNotEmpty()) {
+            body.addView(Kit.clickableCard(c, 6, 10, c.col(R.color.primary_container), onClick = {
+                activity.startSession(services.builder().sound(str(R.string.sound_practice)))
+            }) {
+                addView(Kit.row(c, Kit.emojiTile(c, "🔊", c.col(R.color.primary_container)), str(R.string.sound_practice), str(R.string.sound_practice_desc), Kit.chevron(c)))
+            })
+        }
+
         // 2. Practice by question type
         body.addView(Kit.section(c, str(R.string.by_type)))
         body.addView(Kit.clickableCard(c, 6, 4, onClick = { activity.open(QuestionTypeScreen(activity, fmt.id)) }) {

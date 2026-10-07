@@ -30,6 +30,7 @@ class SessionBuilder(
     private val state: (String) -> ItemState?,
     private val allStates: () -> List<ItemState>,
     private val weakTags: () -> List<String>,
+    private val sessionsDone: () -> Int = { 0 },
     private val random: Random = Random.Default,
 ) {
     private val factory = ExerciseFactory(content, random)
@@ -88,7 +89,7 @@ class SessionBuilder(
         val keys = dueKeys(now, n).ifEmpty {
             allStates().filter { it.seen > 0 }.sortedBy { it.last }.take(n).map { it.key }
         }
-        return Session(SessionKind.REVIEW, title, mix(keys.mapNotNull { exerciseFor(it) }))
+        return Session(SessionKind.REVIEW, title, addOptionalSound(mix(keys.mapNotNull { exerciseFor(it) })))
     }
 
     /** "Bữa ăn" for the pet: 5 quick items (due first, then recent, then easy new words). */
@@ -132,7 +133,8 @@ class SessionBuilder(
                 list
             }
         }
-        return Session(kind, title, if (mode == VocabMode.MIXED) mix(ex) else ex.toMutableList())
+        val result = if (mode == VocabMode.MIXED) mix(ex) else ex.toMutableList()
+        return Session(kind, title, if (kind == SessionKind.TOPIC) addOptionalSound(result) else result)
     }
 
     /** Three quick exercises for a single word (word detail → "Luyện từ này"). */
@@ -143,6 +145,12 @@ class SessionBuilder(
         val dictation = content.sound.dictation.shuffled(random).take((n + 1) / 2).map { factory.dictation(it) }
         val pairs = content.sound.pairs.shuffled(random).take(n - dictation.size).map { factory.minimalPair(it) }
         return Session(SessionKind.WORDS, title, mix(dictation + pairs))
+    }
+
+    private fun addOptionalSound(exercises: MutableList<Exercise>): MutableList<Exercise> {
+        if (sessionsDone() < 3) return exercises
+        val extra = (content.sound.dictation.map { factory.dictation(it) } + content.sound.pairs.map { factory.minimalPair(it) }).randomOrNull(random) ?: return exercises
+        return exercises.toMutableList().apply { add(random.nextInt(size + 1), extra) }
     }
 
     fun grammar(title: String, gp: String, n: Int = 10): Session {

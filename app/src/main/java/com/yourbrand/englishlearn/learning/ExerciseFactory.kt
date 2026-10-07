@@ -92,11 +92,11 @@ class ExerciseFactory(private val content: Content, private val random: Random =
     }
 
     fun dictation(item: SoundSentence): Exercise.Dictation =
-        Exercise.Dictation("d:${item.id}", listOf("sound", "dictation"), item.level, item.text)
+        Exercise.Dictation("d:${item.id}", listOf("sound", "dictation"), item.level, item.text, item.translation)
 
     fun minimalPair(pair: MinimalPair): Exercise.MinimalPairChoice {
         val answer = if (random.nextBoolean()) 0 else 1
-        return Exercise.MinimalPairChoice("mp:${pair.id}:$answer", listOf("sound", "minimal_pair", "focus_${pair.focus}"), 1, pair.a, pair.b, answer)
+        return Exercise.MinimalPairChoice("mp:${pair.id}:$answer", listOf("sound", "minimal_pair", "focus_${pair.focus}"), 1, pair.a, pair.b, answer, pair.focus)
     }
 
     fun spelling(w: Word): Exercise.Spelling? {

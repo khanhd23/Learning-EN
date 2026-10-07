@@ -119,6 +119,7 @@ sealed class Exercise {
         override val tags: List<String>,
         override val level: Int,
         val sentence: String,
+        val translation: String? = null,
     ) : Exercise() { override val kind get() = Kind.E18 }
 
     data class MinimalPairChoice(
@@ -128,13 +129,22 @@ sealed class Exercise {
         val first: String,
         val second: String,
         val answer: Int,
+        val focus: String,
     ) : Exercise() { override val kind get() = Kind.E19 }
 }
 
 /** Typed-answer grading: NFC, trim, case-insensitive, trailing punctuation ignored, 1 typo allowed for words ≥ 7 letters. */
 object Grader {
     enum class Result { CORRECT, ALMOST, WRONG }
-    data class SentenceResult(val result: Result, val wrongWords: List<Int>)
+    data class SentenceDiff(
+        val actual: List<String>,
+        val expected: List<String>,
+        val wrongActual: Set<Int>,
+        val extraActual: Set<Int>,
+        val missingExpected: Set<Int>,
+        val almostActual: Set<Int>,
+    )
+    data class SentenceResult(val result: Result, val wrongWords: List<Int>, val diff: SentenceDiff)
 
     fun normalize(s: String): String =
         java.text.Normalizer.normalize(s, java.text.Normalizer.Form.NFC).trim().lowercase()
@@ -148,17 +158,30 @@ object Grader {
         return Result.WRONG
     }
 
-    /** Grades each word independently, ignoring case and surrounding punctuation. */
+    /** Grades words using edit-distance alignment so one missing word does not shift every later word. */
     fun gradeSentence(input: String, expected: String): SentenceResult {
         val actual = input.trim().split(Regex("\\s+")).filter { it.isNotEmpty() }
         val wanted = expected.trim().split(Regex("\\s+")).filter { it.isNotEmpty() }
-        val wrong = mutableListOf<Int>(); var almost = false
-        val count = maxOf(actual.size, wanted.size)
-        for (i in 0 until count) {
-            val r = if (i >= actual.size || i >= wanted.size) Result.WRONG else grade(actual[i], wanted[i])
-            if (r == Result.WRONG) wrong += i else if (r == Result.ALMOST) almost = true
+        val dp = Array(actual.size + 1) { IntArray(wanted.size + 1) }
+        for (i in actual.indices) dp[i + 1][0] = i + 1
+        for (j in wanted.indices) dp[0][j + 1] = j + 1
+        for (i in actual.indices) for (j in wanted.indices) {
+            val substitution = if (grade(actual[i], wanted[j]) == Result.CORRECT) 0 else 1
+            dp[i + 1][j + 1] = minOf(dp[i][j + 1] + 1, dp[i + 1][j] + 1, dp[i][j] + substitution)
         }
-        return SentenceResult(if (wrong.isNotEmpty()) Result.WRONG else if (almost) Result.ALMOST else Result.CORRECT, wrong)
+        val wrong = linkedSetOf<Int>(); val extra = linkedSetOf<Int>(); val missing = linkedSetOf<Int>(); val almost = linkedSetOf<Int>()
+        var i = actual.size; var j = wanted.size
+        while (i > 0 || j > 0) {
+            val same = i > 0 && j > 0 && grade(actual[i - 1], wanted[j - 1]) == Result.CORRECT && dp[i][j] == dp[i - 1][j - 1]
+            val near = i > 0 && j > 0 && grade(actual[i - 1], wanted[j - 1]) == Result.ALMOST && dp[i][j] == dp[i - 1][j - 1] + 1
+            if (same || near) { if (near) almost += i - 1; i--; j--; continue }
+            if (i > 0 && j > 0 && dp[i][j] == dp[i - 1][j - 1] + 1) { wrong += i - 1; i--; j--; continue }
+            if (i > 0 && dp[i][j] == dp[i - 1][j] + 1) { extra += i - 1; i--; continue }
+            missing += j - 1; j--
+        }
+        val diff = SentenceDiff(actual, wanted, wrong, extra, missing, almost)
+        val allWrong = wrong + extra + missing
+        return SentenceResult(if (allWrong.isNotEmpty()) Result.WRONG else if (almost.isNotEmpty()) Result.ALMOST else Result.CORRECT, wrong.toList() + extra, diff)
     }
 
     fun distance(a: String, b: String): Int {

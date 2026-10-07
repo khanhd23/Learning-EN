@@ -52,7 +52,7 @@ class Services(private val app: Application) {
 
     fun savePet() { petPrefs.edit().putString("state", pet.state.toJson().toString()).apply() }
 
-    fun builder() = SessionBuilder(content, store::item, store::allItems, ::weakTags)
+    fun builder() = SessionBuilder(content, store::item, store::allItems, ::weakTags, { settings.sessionsDone })
 
     fun weakTags(): List<String> = WeaknessAnalyzer.rank(store.tagStats()).map { it.tag }.filter { !it.startsWith("topic_") && !it.startsWith("pos_") }
 

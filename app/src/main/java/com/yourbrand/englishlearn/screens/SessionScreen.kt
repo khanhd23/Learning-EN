@@ -5,6 +5,8 @@ import android.graphics.Typeface
 import android.net.Uri
 import android.os.SystemClock
 import android.text.InputType
+import android.text.SpannableStringBuilder
+import android.text.style.ForegroundColorSpan
 import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
@@ -702,9 +704,11 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
 
     private fun renderDictation(ex: Exercise.Dictation) {
         val c = ctx
-        content.addView(instruction(R.string.type_here))
+        content.addView(instruction(R.string.ins_dictation))
         val play = speaker(ex.sentence, big = true).apply { layoutParams = lp(h = c.dpi(88)).apply { topMargin = c.dpi(12) } }
-        content.addView(play); content.post { speak(ex.sentence) }
+        content.addView(play)
+        content.addView(Kit.secondary(c, str(R.string.play_slow), 4) { services.tts.speakSlow(ex.sentence) }.margins(c, top = 8))
+        content.post { speak(ex.sentence) }
         val input = EditText(c).apply {
             hint = str(R.string.type_here); textSize = 19f
             inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_CAP_SENTENCES
@@ -723,17 +727,20 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             input.isEnabled = false
             input.background = c.rounded(c.col(if (result.result == Grader.Result.WRONG) R.color.error_container else R.color.success_container), 14f,
                 c.col(if (result.result == Grader.Result.WRONG) R.color.error else R.color.success), 1.5f)
-            content.addView(Kit.text(c, ex.sentence, R.style.Text_Caption, c.col(R.color.muted)).margins(c, top = 8))
-            onAnswered(ex, result.result != Grader.Result.WRONG, input.text.toString(), input, ex.sentence, ex.sentence, ex.sentence, result.result == Grader.Result.ALMOST)
+            content.addView(Kit.text(c, coloredSentence(result.diff, c), R.style.Text_Body).margins(c, top = 8))
+            content.addView(Kit.text(c, coloredExpected(result.diff, c), R.style.Text_Caption, c.col(R.color.muted)).margins(c, top = 6))
+            onAnswered(ex, result.result != Grader.Result.WRONG, input.text.toString(), input, ex.sentence, ex.translation.orEmpty(), ex.sentence, result.result == Grader.Result.ALMOST)
         }
         onHint = { play.performClick() }
     }
 
     private fun renderMinimalPair(ex: Exercise.MinimalPairChoice) {
         selectedOption = -1
-        content.addView(instruction(R.string.ins_listen))
+        content.addView(instruction(R.string.ins_minimal_pair))
         val play = speaker(if (ex.answer == 0) ex.first else ex.second, big = true).apply { layoutParams = lp(h = ctx.dpi(88)).apply { topMargin = ctx.dpi(12) } }
-        content.addView(play); content.post { speak(if (ex.answer == 0) ex.first else ex.second) }
+        content.addView(play)
+        content.addView(Kit.secondary(ctx, str(R.string.play_slow), 4) { services.tts.speakSlow(if (ex.answer == 0) ex.first else ex.second) }.margins(ctx, top = 8))
+        content.post { speak(if (ex.answer == 0) ex.first else ex.second) }
         val options = listOf(ex.first, ex.second).mapIndexed { i, text -> OptionCard(ctx, i, text).also { card ->
             content.addView(card.view.margins(ctx, top = 10)); card.view.onTap {
                 if (answered || !card.enabled) return@onTap
@@ -746,8 +753,30 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         check = {
             val ok = selectedOption == ex.answer
             options.forEachIndexed { i, card -> card.setState(when { i == ex.answer -> OptionCard.State.CORRECT; i == selectedOption -> OptionCard.State.WRONG; else -> OptionCard.State.DIMMED }) }
-            onAnswered(ex, ok, listOf(ex.first, ex.second).getOrNull(selectedOption), options[ex.answer].view, listOf(ex.first, ex.second)[ex.answer], "", if (ex.answer == 0) ex.first else ex.second)
+            val tip = services.content.sound.focuses.firstOrNull { it.id == ex.focus }?.tip.orEmpty()
+            onAnswered(ex, ok, listOf(ex.first, ex.second).getOrNull(selectedOption), options[ex.answer].view, listOf(ex.first, ex.second)[ex.answer], tip.takeIf { it.isNotBlank() }?.let { str(R.string.sound_tip, it) }.orEmpty(), if (ex.answer == 0) ex.first else ex.second)
         }
+    }
+
+    private fun coloredSentence(diff: Grader.SentenceDiff, c: android.content.Context): CharSequence {
+        val out = SpannableStringBuilder()
+        diff.actual.forEachIndexed { i, word ->
+            if (out.isNotEmpty()) out.append(" ")
+            val start = out.length; out.append(word)
+            if (i in diff.wrongActual || i in diff.extraActual) out.setSpan(ForegroundColorSpan(c.col(R.color.error)), start, out.length, 0)
+            else if (i in diff.almostActual) out.setSpan(ForegroundColorSpan(c.col(R.color.warning)), start, out.length, 0)
+        }
+        return out
+    }
+
+    private fun coloredExpected(diff: Grader.SentenceDiff, c: android.content.Context): CharSequence {
+        val out = SpannableStringBuilder()
+        diff.expected.forEachIndexed { i, word ->
+            if (out.isNotEmpty()) out.append(" ")
+            val start = out.length; out.append(word)
+            if (i in diff.missingExpected) out.setSpan(ForegroundColorSpan(c.col(R.color.error)), start, out.length, 0)
+        }
+        return out
     }
 
     private var selectedOption: Int = -1
