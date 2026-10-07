@@ -33,7 +33,7 @@ class ContentDbBuilderTest(unittest.TestCase):
 
             db = sqlite3.connect(output)
             try:
-                self.assertEqual(db.execute("select value from meta where key='schema_version'").fetchone()[0], "2")
+                self.assertEqual(db.execute("select value from meta where key='schema_version'").fetchone()[0], "3")
                 self.assertEqual(db.execute("select value from meta where key='content_hash'").fetchone()[0], digest)
                 self.assertEqual(db.execute("select count(*) from word").fetchone()[0], 1)
                 self.assertEqual(db.execute("select word_id from word_fts where word_fts match 'di*'").fetchone()[0], "go")
@@ -91,6 +91,29 @@ class ContentDbBuilderTest(unittest.TestCase):
                 ).fetchall()
                 self.assertEqual(len(rows), 30)
                 self.assertEqual(rows[0][0], "exact_go")
+            finally:
+                db.close()
+
+    def test_preserves_raw_gloss_for_accent_exact_matching(self):
+        with tempfile.TemporaryDirectory() as raw:
+            root = Path(raw)
+            self.fixture(root, [
+                {"id": "fish", "lemma": "fish", "level": 1, "tier": "gold",
+                 "senses": [{"id": "fish_s1", "pos": "n", "def": "cá", "ex": []}]},
+                {"id": "coffee", "lemma": "coffee", "level": 1, "tier": "gold",
+                 "senses": [{"id": "coffee_s1", "pos": "n", "def": "cà phê", "ex": []}]},
+            ])
+            output = root / "build/content.db"
+            build_content_db.build(root, output)
+            db = sqlite3.connect(output)
+            try:
+                self.assertEqual(db.execute("select gloss_raw from word_fts where word_id='fish'").fetchone()[0], "cá")
+                rows = db.execute(
+                    "SELECT word_id FROM word_fts WHERE locale='en' AND word_fts MATCH ? "
+                    "ORDER BY CASE WHEN lower(gloss_raw)=? THEN 0 ELSE 1 END",
+                    ("ca*", "cá"),
+                ).fetchall()
+                self.assertEqual(rows[0][0], "fish")
             finally:
                 db.close()
 

@@ -8,7 +8,7 @@ import sqlite3
 import unicodedata
 from pathlib import Path
 
-SCHEMA_VERSION = "2"
+SCHEMA_VERSION = "3"
 
 
 def load(path: Path):
@@ -119,7 +119,7 @@ def build(root: Path, output: Path, hash_output: Path | None = None) -> str:
             CREATE INDEX word_level ON word(level);
             CREATE INDEX word_topic_topic ON word_topic(topic_id);
             CREATE INDEX loc_lookup ON loc(locale, kind, key);
-            CREATE VIRTUAL TABLE word_fts USING fts4(locale, word_id, lemma, gloss, body, tokenize=unicode61);
+            CREATE VIRTUAL TABLE word_fts USING fts4(locale, word_id, lemma, gloss, gloss_raw, body, tokenize=unicode61);
         """)
         db.executemany("INSERT INTO meta VALUES(?,?)", [("schema_version", SCHEMA_VERSION), ("content_hash", digest)])
         for topic in words.get("topics", []):
@@ -146,7 +146,7 @@ def build(root: Path, output: Path, hash_output: Path | None = None) -> str:
             for word in words.get("words", []):
                 gloss = " ".join(s.get("def", "") for s in word.get("senses", []))
                 body = " ".join([gloss] + [e.get("text", "") for s in word.get("senses", []) for e in s.get("ex", [])] + word.get("coll", []))
-                db.execute("INSERT INTO word_fts VALUES(?,?,?,?,?)", (locale, word["id"], normalize(word.get("lemma", "")), normalize(gloss), normalize(body)))
+                db.execute("INSERT INTO word_fts VALUES(?,?,?,?,?,?)", (locale, word["id"], normalize(word.get("lemma", "")), normalize(gloss), gloss, normalize(body)))
         locale_root = root / "content/i18n"
         for folder in sorted(locale_root.iterdir() if locale_root.is_dir() else []):
             if not folder.is_dir() or folder.name.startswith("_") or not (folder / "status.json").is_file():
@@ -161,7 +161,7 @@ def build(root: Path, output: Path, hash_output: Path | None = None) -> str:
                     if approved.get(first, {}).get("s") != "approved":
                         continue
                     gloss = " ".join(values.get(s["id"], {}).get("g", "") for s in word.get("senses", []))
-                    db.execute("INSERT INTO word_fts VALUES(?,?,?,?,?)", (folder.name, word["id"], normalize(word.get("lemma", "")), normalize(gloss), normalize(gloss)))
+                    db.execute("INSERT INTO word_fts VALUES(?,?,?,?,?,?)", (folder.name, word["id"], normalize(word.get("lemma", "")), normalize(gloss), gloss, normalize(gloss)))
         db.commit()
     finally:
         db.close()
