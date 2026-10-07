@@ -182,6 +182,12 @@
     <string name="ins_picture_word">Which word matches the picture?</string>
     <string name="ins_listen_picture">Listen and choose the picture.</string>
     <string name="ins_match_pictures">Match each picture with its word.</string>
+    <string name="ins_dictation">Listen and type what you hear.</string>
+    <string name="ins_minimal_pair">Which word do you hear?</string>
+    <string name="sound_practice">Listening &amp; pronunciation</string>
+    <string name="sound_practice_desc">Hear the difference between similar sounds and write what you hear.</string>
+    <string name="sound_tip">Tip: %1$s</string>
+    <string name="play_slow">Play slowly</string>
     <string name="ins_passage">Choose the best answer for each blank.</string>
     <string name="ins_pronunciation">Choose the word whose underlined part sounds different.</string>
     <string name="ins_reverse">Choose the English word for this meaning.</string>

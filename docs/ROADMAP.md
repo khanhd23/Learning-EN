@@ -127,6 +127,46 @@ distractor list is shuffled as a whole, so "same topic first" is lost — shuffl
 `words.json` `ex` map). Vietnamese tips: `content/i18n/vi/sound.json` (`focus` map), status kind
 `sound`. Task 11 uses the `shadowing` list.
 
+### Task 10 review (owner) — accepted with follow-up Task 10.1
+
+E18/E19 models, grader and parsing are fine and harmless, but the feature is unreachable: nothing
+calls `SessionBuilder.sound()` and sound items are never mixed into normal sessions. Fix in
+**Task 10.1**:
+
+1. **Entry point:** a card "Listening & pronunciation" (`sound_practice`, `sound_practice_desc`) on
+   the Exam/Practice hub that starts `sound()`; also mix at most one E18 or E19 into daily review and
+   topic sessions once the learner has finished 3 sessions.
+2. **Strings:** E18 instruction `ins_dictation`; E19 instruction `ins_minimal_pair`; a "slow"
+   replay button `play_slow` (TTS rate 0.7) on both. Do not use `type_here` as an instruction.
+3. **Tips:** after an E19 answer show the focus tip (`sound_tip`, text from the locale
+   `sound.json` `focus` map, English source in English mode). Load `content/i18n/<locale>/sound.json`
+   through the approval gate (status kind `sound`).
+4. **Dictation grading:** align words (edit distance / LCS), not by position — one missing word must
+   not mark every later word wrong. Show the learner's sentence with wrong/missing words coloured
+   and the correct sentence under it. Unit tests for missing, extra and swapped words.
+5. Explanation for E18 is the sentence's translation (locale `words.json` `ex` map), not the
+   sentence repeated.
+
+### Task R1: Release readiness (ads + licenses)  *(Codex, code only)*
+
+See `docs/RELEASE_CHECKLIST.md`.
+1. `RequestConfiguration`: `setMaxAdContentRating(MAX_AD_CONTENT_RATING_G)` for all ad requests;
+   keep `tagForChildDirectedTreatment` unspecified (target audience 13+).
+2. Licenses screen: add the full license texts (Apache-2.0 for AndroidX and Noto, CC BY-SA 4.0
+   summary + URL) — bundle them as assets (no network); keep `content/LICENSES.md` on top.
+3. Privacy policy: Settings → Privacy policy opens the in-app text and offers the public URL from
+   `config/app_config.json` (`privacyPolicyUrl`, owner fills it; hide the link while empty).
+4. Search must not return bronze senses tagged adult/vulgar (`sex`, `horny`, `naughty`, `cock`,
+   `bloody`, `damn`, `hell`, `ass`…): add an `adult` flag in `build_content_db.py` from a list in
+   `config/blocked_senses.txt` (owner maintains the list) and filter it in search and word lists.
+5. Release AAB build check in CI-style script: `./gradlew bundleRelease` must fail with test ad IDs
+   (already) and pass with real ones from `secrets.properties`.
+
+### Task 9.2: Picture distractors  *(Codex, small)*
+
+Shuffle within groups (same topic, then same part of speech) instead of shuffling the merged list,
+so "same topic first" holds. Unit test.
+
 ### Task 11: Speaking (shadowing)
 
 - **E20 say it:** show and play a sentence, learner speaks; Android `SpeechRecognizer` (offline when

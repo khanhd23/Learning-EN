@@ -182,6 +182,12 @@
     <string name="ins_picture_word">Từ nào đúng với bức hình?</string>
     <string name="ins_listen_picture">Nghe và chọn hình đúng.</string>
     <string name="ins_match_pictures">Nối mỗi hình với từ của nó.</string>
+    <string name="ins_dictation">Nghe và gõ lại những gì bạn nghe được.</string>
+    <string name="ins_minimal_pair">Bạn nghe thấy từ nào?</string>
+    <string name="sound_practice">Luyện nghe &amp; phát âm</string>
+    <string name="sound_practice_desc">Phân biệt các âm dễ nhầm và chép lại những gì bạn nghe.</string>
+    <string name="sound_tip">Mẹo: %1$s</string>
+    <string name="play_slow">Phát chậm</string>
     <string name="ins_passage">Chọn đáp án đúng nhất cho mỗi chỗ trống.</string>
     <string name="ins_pronunciation">Chọn từ có phần gạch chân phát âm khác.</string>
     <string name="ins_reverse">Chọn từ tiếng Anh có nghĩa này.</string>

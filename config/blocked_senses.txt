@@ -1,0 +1,15 @@
+# Owner-maintained: entries hidden from search and word lists (vulgar, sexual or slur senses, or
+# dictionary-only entries whose imported meanings are offensive or misleading).
+# One word id or sense id per line. Lesson (silver) entries are reviewed and kept unless listed.
+horny
+naughty
+cock
+damn
+ass
+bloody
+butt
+queer
+imbecile
+teat
+virgin
+poop
