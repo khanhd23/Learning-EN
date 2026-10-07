@@ -5,7 +5,7 @@ import com.yourbrand.englishlearn.content.Word
 
 /** Exercise ids from SKILL.md section 7. */
 enum class Kind(val baseXp: Int) {
-    E01(4), E02(5), E03(6), E04(6), E05(6), E06(5), E07(3), E08(5), E09(4), E11(6), E12(6), E14(5), E15(5), E16(5), E17(6), E18(6), E19(5)
+    E01(4), E02(5), E03(6), E04(6), E05(6), E06(5), E07(3), E08(5), E09(4), E11(6), E12(6), E14(5), E15(5), E16(5), E17(6), E18(6), E19(5), E20(6)
 }
 
 /** A single runtime exercise built from content by [ExerciseFactory]. */
@@ -131,6 +131,13 @@ sealed class Exercise {
         val answer: Int,
         val focus: String,
     ) : Exercise() { override val kind get() = Kind.E19 }
+
+    data class Shadowing(
+        override val key: String,
+        override val tags: List<String>,
+        override val level: Int,
+        val sentence: String,
+    ) : Exercise() { override val kind get() = Kind.E20 }
 }
 
 /** Typed-answer grading: NFC, trim, case-insensitive, trailing punctuation ignored, 1 typo allowed for words ≥ 7 letters. */

@@ -99,6 +99,9 @@ class ExerciseFactory(private val content: Content, private val random: Random =
         return Exercise.MinimalPairChoice("mp:${pair.id}:$answer", listOf("sound", "minimal_pair", "focus_${pair.focus}"), 1, pair.a, pair.b, answer, pair.focus)
     }
 
+    fun shadowing(item: SoundSentence): Exercise.Shadowing =
+        Exercise.Shadowing("sh:${item.id}", listOf("sound", "shadowing"), item.level, item.text)
+
     fun spelling(w: Word): Exercise.Spelling? {
         if (w.lemma.contains(' ') || w.lemma.length > 14 || w.lemma.length < 3) return null
         val ex = w.senses.first().examples.firstOrNull()

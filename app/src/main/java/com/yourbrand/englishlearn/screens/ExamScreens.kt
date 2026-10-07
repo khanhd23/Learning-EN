@@ -218,6 +218,7 @@ class MistakeBookScreen(activity: MainActivity) : ScrollScreen(activity) {
                     is com.yourbrand.englishlearn.learning.Exercise.PictureMatch -> ex.words.joinToString(", ") { it.lemma }
                     is com.yourbrand.englishlearn.learning.Exercise.Dictation -> ex.sentence
                     is com.yourbrand.englishlearn.learning.Exercise.MinimalPairChoice -> if (ex.answer == 0) ex.first else ex.second
+                    is com.yourbrand.englishlearn.learning.Exercise.Shadowing -> ex.sentence
                 }
                 val r = Kit.hbox(c) { setPadding(c.dpi(12), c.dpi(6), c.dpi(4), c.dpi(6)) }
                 r.addView(Kit.text(c, text, R.style.Text_Body).apply { textSize = 14f; layoutParams = lp(0, WRAP_CONTENT, 1f) })

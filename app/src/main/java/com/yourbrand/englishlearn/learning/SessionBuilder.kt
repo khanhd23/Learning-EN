@@ -40,6 +40,7 @@ class SessionBuilder(
         key.startsWith("q:") -> content.questionById[key.removePrefix("q:")]?.let { factory.question(it) }
         key.startsWith("d:") -> content.sound.dictation.firstOrNull { it.id == key.removePrefix("d:") }?.let { factory.dictation(it) }
         key.startsWith("mp:") -> content.sound.pairs.firstOrNull { "mp:${it.id}" == key.substringBeforeLast(':') }?.let { factory.minimalPair(it) }
+        key.startsWith("sh:") -> content.sound.shadowing.firstOrNull { it.id == key.removePrefix("sh:") }?.let { factory.shadowing(it) }
         key.startsWith("p:") -> key.split(':').let { p -> content.passageById[p[1]]?.let { ps -> p[2].toIntOrNull()?.takeIf { it < ps.blanks.size }?.let { i -> factory.passageBlank(ps, i) } } }
         else -> null
     }
@@ -142,9 +143,10 @@ class SessionBuilder(
         Session(SessionKind.WORDS, title, listOfNotNull(factory.meaning(w), factory.cloze(w) ?: factory.reverse(w), factory.spelling(w) ?: factory.listening(w)).toMutableList())
 
     fun sound(title: String, n: Int = 10): Session {
-        val dictation = content.sound.dictation.shuffled(random).take((n + 1) / 2).map { factory.dictation(it) }
-        val pairs = content.sound.pairs.shuffled(random).take(n - dictation.size).map { factory.minimalPair(it) }
-        return Session(SessionKind.WORDS, title, mix(dictation + pairs))
+        val dictation = content.sound.dictation.shuffled(random).take(n / 3).map { factory.dictation(it) }
+        val pairs = content.sound.pairs.shuffled(random).take(n / 3).map { factory.minimalPair(it) }
+        val shadowing = content.sound.shadowing.shuffled(random).take(n - dictation.size - pairs.size).map { factory.shadowing(it) }
+        return Session(SessionKind.WORDS, title, mix(dictation + pairs + shadowing))
     }
 
     private fun addOptionalSound(exercises: MutableList<Exercise>): MutableList<Exercise> {

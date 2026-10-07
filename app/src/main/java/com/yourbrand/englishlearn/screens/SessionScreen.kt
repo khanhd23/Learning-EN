@@ -1,9 +1,13 @@
 package com.yourbrand.englishlearn.screens
 
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.Typeface
 import android.net.Uri
 import android.os.SystemClock
+import android.speech.RecognitionListener
+import android.speech.RecognizerIntent
+import android.speech.SpeechRecognizer
 import android.text.InputType
 import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
@@ -34,6 +38,7 @@ import com.yourbrand.englishlearn.pet.Mood
 import com.yourbrand.englishlearn.pet.PetView
 import com.yourbrand.englishlearn.ui.*
 import com.yourbrand.englishlearn.ui.views.SegmentedProgress
+import androidx.core.content.ContextCompat
 
 /** Result of one answered exercise (for the result screen and review list). */
 data class Answer(val ex: Exercise, val correct: Boolean, val given: String?, val xp: Int)
@@ -76,6 +81,8 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
     private var onHint: (() -> Unit)? = null
     private val hintRunnable = Runnable { if (!answered) { hintBtn.show(onHint != null); hintBtn.enter(distanceDp = 6f) } }
     private var answered = false
+    private var recognizer: SpeechRecognizer? = null
+    private var shadowAttempts = 0
 
     // Speed round
     private var speedLeftMs = 60_000L
@@ -175,6 +182,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
     override fun onDestroy() {
         chip.removeCallbacks(speedTick); chip.removeCallbacks(timerTick); content.removeCallbacks(hintRunnable)
         cheerBubble?.let { activity.overlay.removeView(it) }; cheerBubble = null
+        recognizer?.destroy(); recognizer = null
         services.tts.stop()
     }
 
@@ -219,6 +227,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             is Exercise.Spelling -> renderSpelling(ex)
             is Exercise.Dictation -> renderDictation(ex)
             is Exercise.MinimalPairChoice -> renderMinimalPair(ex)
+            is Exercise.Shadowing -> renderShadowing(ex)
         }
         content.staggerChildren(30)
     }
@@ -756,6 +765,74 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             val tip = services.content.sound.focuses.firstOrNull { it.id == ex.focus }?.tip.orEmpty()
             onAnswered(ex, ok, listOf(ex.first, ex.second).getOrNull(selectedOption), options[ex.answer].view, listOf(ex.first, ex.second)[ex.answer], tip.takeIf { it.isNotBlank() }?.let { str(R.string.sound_tip, it) }.orEmpty(), if (ex.answer == 0) ex.first else ex.second)
         }
+    }
+
+    private fun renderShadowing(ex: Exercise.Shadowing) {
+        if (!SpeechRecognizer.isRecognitionAvailable(ctx)) { skipUnavailableSpeech(); return }
+        shadowAttempts = 0
+        content.addView(instruction(R.string.ins_say_it))
+        content.addView(questionText(ex.sentence))
+        content.addView(speaker(ex.sentence, big = true).apply { layoutParams = lp(h = ctx.dpi(76)).apply { topMargin = ctx.dpi(12) } })
+        val speakButton = Kit.primary(ctx, str(R.string.tap_to_speak), 24) { beginShadowRecognition(ex) }.margins(ctx, top = 14)
+        speakButton.tag = "shadowSpeak"
+        content.addView(speakButton)
+        content.post { speak(ex.sentence) }
+        onHint = { speakButton.performClick() }
+    }
+
+    private fun beginShadowRecognition(ex: Exercise.Shadowing) {
+        if (answered) return
+        if (ContextCompat.checkSelfPermission(ctx, android.Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+            Dialogs.confirm(ctx, str(R.string.mic_reason), str(R.string.mic_reason), str(R.string.tap_to_speak), str(R.string.cancel), onNegative = { skipUnavailableSpeech() }) {
+                activity.requestMicrophone { granted -> if (granted) beginShadowRecognition(ex) else skipUnavailableSpeech() }
+            }
+            return
+        }
+        if (recognizer == null) recognizer = SpeechRecognizer.createSpeechRecognizer(ctx)
+        val r = recognizer ?: run { skipUnavailableSpeech(); return }
+        content.findViewWithTag<TextView>("shadowSpeak")?.apply { text = str(R.string.listening_now); isEnabled = false }
+        r.setRecognitionListener(object : RecognitionListener {
+            override fun onReadyForSpeech(params: android.os.Bundle?) = Unit
+            override fun onBeginningOfSpeech() = Unit
+            override fun onRmsChanged(rmsdB: Float) = Unit
+            override fun onBufferReceived(buffer: ByteArray?) = Unit
+            override fun onEndOfSpeech() = Unit
+            override fun onError(error: Int) { finishShadowAttempt(ex, "") }
+            override fun onResults(results: android.os.Bundle?) { finishShadowAttempt(ex, results?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)?.firstOrNull().orEmpty()) }
+            override fun onPartialResults(partialResults: android.os.Bundle?) = Unit
+            override fun onEvent(eventType: Int, params: android.os.Bundle?) = Unit
+        })
+        r.startListening(Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
+            putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
+            putExtra(RecognizerIntent.EXTRA_LANGUAGE, java.util.Locale.ENGLISH.toLanguageTag())
+            putExtra(RecognizerIntent.EXTRA_PROMPT, str(R.string.listening_now))
+        })
+    }
+
+    private fun finishShadowAttempt(ex: Exercise.Shadowing, spoken: String) {
+        if (answered) return
+        shadowAttempts++
+        val result = Grader.gradeSentence(spoken, ex.sentence)
+        val colors = SpannableStringBuilder()
+        result.diff.expected.forEachIndexed { i, word ->
+            if (i > 0) colors.append(" ")
+            val start = colors.length
+            colors.append(word)
+            colors.setSpan(ForegroundColorSpan(ctx.col(if (i in result.diff.missingExpected) R.color.error else R.color.success)), start, colors.length, 0)
+        }
+        content.addView(Kit.text(ctx, str(R.string.you_said, spoken), R.style.Text_Body).margins(ctx, top = 10))
+        content.addView(Kit.text(ctx, colors, R.style.Text_Body).margins(ctx, top = 6))
+        val button = content.findViewWithTag<TextView>("shadowSpeak")
+        button?.isEnabled = true
+        if (result.result != Grader.Result.WRONG || shadowAttempts >= 3) {
+            onAnswered(ex, result.result != Grader.Result.WRONG, spoken, button ?: content, ex.sentence, "", ex.sentence, result.result == Grader.Result.ALMOST)
+        } else button?.text = str(R.string.speak_again)
+    }
+
+    private fun skipUnavailableSpeech() {
+        if (finished || index >= queue.size) return
+        queue.removeAt(index)
+        content.post { render() }
     }
 
     private fun coloredSentence(diff: Grader.SentenceDiff, c: android.content.Context): CharSequence {

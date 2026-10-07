@@ -1,6 +1,7 @@
 package com.yourbrand.englishlearn
 
 import android.animation.ValueAnimator
+import android.content.pm.PackageManager
 import android.graphics.Path
 import android.graphics.PathMeasure
 import android.graphics.Rect
@@ -21,6 +22,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import com.yourbrand.englishlearn.learning.LearningStore
 import com.yourbrand.englishlearn.learning.Session
 import com.yourbrand.englishlearn.pet.Mood
@@ -54,6 +57,24 @@ class MainActivity : AppCompatActivity() {
     private var justFinishedSession = false
     private var greetPending = false
     private var resumedAt = 0L
+    private var microphoneResult: ((Boolean) -> Unit)? = null
+
+    fun requestMicrophone(onResult: (Boolean) -> Unit) {
+        microphoneResult = onResult
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED) {
+            microphoneResult = null
+            onResult(true)
+        } else ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.RECORD_AUDIO), 42)
+    }
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == 42) {
+            val result = microphoneResult
+            microphoneResult = null
+            result?.invoke(grantResults.firstOrNull() == PackageManager.PERMISSION_GRANTED)
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()

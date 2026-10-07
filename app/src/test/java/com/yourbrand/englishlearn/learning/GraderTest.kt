@@ -5,6 +5,12 @@ import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class GraderTest {
+    @Test fun shadowingUsesSentenceAlignmentAndPunctuationTolerance() {
+        val result = Grader.gradeSentence("Please open the door.", "please open the door!")
+        assertEquals(Grader.Result.CORRECT, result.result)
+        assertTrue(result.diff.wrongActual.isEmpty())
+        assertTrue(result.diff.missingExpected.isEmpty())
+    }
     @Test fun sentenceGradeIgnoresCaseAndPunctuationPerWord() {
         val result = Grader.gradeSentence("the QUICK fox jumps.", "The quick fox jumps!")
         assertEquals(Grader.Result.CORRECT, result.result)
