@@ -24,6 +24,7 @@ class Settings(context: Context) {
     var dailyMinutes: Int get() = int("dailyMinutes", 10); set(v) = put("dailyMinutes", v)
     var newWordsPerSession: Int get() = int("newWords", 5); set(v) = put("newWords", v)
     var showTranslation: Boolean get() = bool("showVi", true); set(v) = put("showVi", v)
+    var storyShowTranslation: Boolean get() = bool("storyShowTranslation", false); set(v) = put("storyShowTranslation", v)
     /** Learner-facing content locale. Unsupported or incomplete packs safely fall back to vi. */
     var contentLocale: String get() = p.getString("contentLocale", "vi") ?: "vi"; set(v) = put("contentLocale", v)
     var contentLocaleChosen: Boolean get() = bool("contentLocaleChosen", false); set(v) = put("contentLocaleChosen", v)

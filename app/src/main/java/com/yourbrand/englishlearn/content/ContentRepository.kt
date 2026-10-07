@@ -192,7 +192,7 @@ object ContentParser {
                         val item = qs.getJSONObject(q)
                         StoryQuestion(item.getString("q"), item.getJSONArray("options").strings(), item.optInt("answer"), item.optString("expl"))
                     } } ?: emptyList()
-                    Story(id, s.optString("topic"), s.optInt("level", 1), lv?.optString("title", s.optString("title")) ?: s.optString("title"), lv?.optString("text", s.optString("text")) ?: s.optString("text"), s.optJSONArray("targets").strings(), questions)
+                    Story(id, s.optString("topic"), s.optInt("level", 1), lv?.optString("title", s.optString("title")) ?: s.optString("title"), s.optString("text"), lv?.optString("text"), s.optJSONArray("targets").strings(), questions)
                 }
             }.orEmpty().filter { approval == null || it.id in approval.approvedStories }
         }.getOrDefault(emptyList())

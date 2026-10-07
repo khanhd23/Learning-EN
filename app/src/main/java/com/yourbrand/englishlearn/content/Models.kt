@@ -131,6 +131,7 @@ data class Story(
     val level: Int,
     val title: String,
     val text: String,
+    val translation: String? = null,
     val targets: List<String>,
     val questions: List<StoryQuestion>,
 )
