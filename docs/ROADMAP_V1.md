@@ -54,12 +54,12 @@ base (Task 14).
 
 | # | Task | Before | Notes |
 |---|---|---|---|
-| P1 | Create the Google Play developer account (25 USD, identity check) | M1 | Personal or organisation; organisation skips the 12-tester rule but needs a D-U-N-S number |
-| P2 | Create the AdMob account and app, ad units (banner, interstitial, rewarded); put the IDs in `secrets.properties` (never commit) | M1 | Keep test IDs in debug |
+| P1 | ✅ Google Play developer account exists | M1 | Personal or organisation; organisation skips the 12-tester rule but needs a D-U-N-S number |
+| P2 | ✅ AdMob app and ad units created; IDs in `secrets.properties` (git-ignored) | M1 | Keep test IDs in debug |
 | P3 | Create the upload keystore; fill `signing.*` in `secrets.properties`; back up the keystore and passwords in two safe places | M1 | Use Play App Signing; losing the upload key is recoverable, losing everything is not |
 | P4a | ✅ `supportEmail` = khankstudio.support@gmail.com; policy filled (Đặng Kim Khánh, effective 2026-10-08) | M1 | Same address goes in the privacy policy and Play listing |
 | P4 | ✅ Privacy policy hosted: https://sites.google.com/view/lingomoriprivacypolicy (in `privacyPolicyUrl`) | M1 | Required for apps with ads |
-| P5 | ✅ Name: **LingoMori** (2026-10-08). Icon still to approve | M1 | Store titles per language: "LingoMori: Learn English Words", "LingoMori: Học Tiếng Anh Từ Vựng" |
+| P5 | ✅ Name: **LingoMori** (2026-10-08). Icon: panda illustration (publisher artwork), splash = panda + wordmark; Play icon `docs/store/play-icon-512.png` | M1 | Store titles per language: "LingoMori: Learn English Words", "LingoMori: Học Tiếng Anh Từ Vựng" |
 | P6 | Fill Play Console forms: Data safety, content rating, target audience 13+, ads declaration (Claude drafts every answer) | M2 | |
 | P7 | Recruit 12+ closed testers (friends, classmates, a Facebook group) and keep them for 14 days | M2 | Claude writes the invite message and a feedback form |
 | P8 | Test each build on the phone with the checklist Claude sends; report what looks wrong with a screenshot | Every build | |
@@ -134,8 +134,43 @@ scripts, `adb` commands in docs, file provider authorities, notification channel
 already LingoMori (`displayName`, `shortName`, strings). Run `assembleDebug`, `testDebugUnitTest`,
 install on a device and check the launcher label. Commit, do not push.
 
+### Task 19: Speed on cold start and heavy screens
+
+Measured on the publisher's Xiaomi (EngPerf, debug build): `show TodayScreen build=417-421ms` on cold
+start, `show VocabScreen build=149ms` (first open), `show StoryScreen create=83-100ms`, frames of
+66-100 ms right after `WordListScreen` opens. Target: no frame over 50 ms after the slide-in, Today
+first frame under 150 ms on the same phone (benchmark build).
+1. Today: build what is visible first with `addInFrames`/`visibleCount`; move anything that reads
+   the database or computes week stats off the main thread or behind the first frame.
+2. StoryScreen: find what costs 80-100 ms in `create` (text layout? spans?) and defer it.
+3. WordListScreen: the first 8 rows are fine (45 ms); smooth the frames after them (smaller
+   per-frame budget or lighter rows).
+4. Report before/after EngPerf numbers from the device or the benchmark build.
+
+### Task 20: Report a content mistake
+
+On the answer feedback panel of every exercise, on the word detail screen and on the exam review
+screen, add a small text button `report_mistake`. It opens the email app (`ACTION_SENDTO`,
+`mailto:` the `supportEmail` from `config/app_config.json`) with subject `report_mistake_subject`
+(item id) and body `report_mistake_body` (item id, screen name, versionName). No network, no
+permission, no data stored. If no email app exists, show `report_mistake_no_app` with the address.
+Strings delivered by the owner. Unit test for the subject/body builder.
+
+### Task 21: Pet speech bubble never hides content
+
+On Today the pet's bubble ("Bữa học ngon tuyệt, cảm ơn nha!") covered a weekly-quest line. Rules:
+the bubble sits beside or above the pet inside the screen; it never covers views tagged
+`petAvoid` or the focused question/options; it auto-hides after 3 s; touches pass through it
+(except a tap on the pet itself). Keep the existing praise logic.
+
+### Task 22: Run the store screenshots
+
+The Task 17 test exists but never ran. Run `StoreScreenshotTest` on a connected device or an
+emulator (1080x1920 or the closest), pull the PNGs to `dist/screenshots/`, and list any screen that
+looks wrong (cut text, empty data). Do not edit strings; report problems to the owner.
+
 ## Order
 
-Codex: 14.1 → R4 → 15 → R2 → R3 → 16 → 17 → (after M3) 18.
+Codex: 14.1 → R4 → 15 → R2 → R3 → 16 → 17 (all done) → 19 → 20 → 21 → 22 → (after M3) 18.
 Claude: A3, A7, A9 first (they unblock M1), then A1/A4/A5 in parallel batches, then A6, A8.
 Publisher: P1–P5 now (they take days to clear), P6–P7 at M2, P8 every build.

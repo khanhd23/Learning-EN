@@ -652,4 +652,8 @@
     <string name="hint_picture">Name what you see in English first, then look for that word.</string>
     <string name="hint_word_order">Find the subject and the verb first, then add the other words around them.</string>
     <string name="hint_word_order_meaning">Meaning: “%1$s”. Find the subject and the verb first, then add the other words.</string>
+    <string name="report_mistake">Report a mistake</string>
+    <string name="report_mistake_subject">LingoMori: mistake in %1$s</string>
+    <string name="report_mistake_body">Item: %1$s\nScreen: %2$s\nApp version: %3$s\n\nWhat is wrong (and the right answer if you know it):\n</string>
+    <string name="report_mistake_no_app">No email app found. Please write to %1$s</string>
 </resources>

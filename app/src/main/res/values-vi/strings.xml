@@ -652,4 +652,8 @@
     <string name="hint_picture">Gọi tên thứ bạn thấy bằng tiếng Anh trước, rồi tìm từ đó.</string>
     <string name="hint_word_order">Tìm chủ ngữ và động từ trước, rồi ghép các từ còn lại quanh chúng.</string>
     <string name="hint_word_order_meaning">Nghĩa: “%1$s”. Tìm chủ ngữ và động từ trước, rồi ghép các từ còn lại.</string>
+    <string name="report_mistake">Báo lỗi nội dung</string>
+    <string name="report_mistake_subject">LingoMori: lỗi ở %1$s</string>
+    <string name="report_mistake_body">Mục: %1$s\nMàn hình: %2$s\nPhiên bản: %3$s\n\nLỗi là gì (và đáp án đúng nếu bạn biết):\n</string>
+    <string name="report_mistake_no_app">Không tìm thấy ứng dụng email. Vui lòng gửi tới %1$s</string>
 </resources>
