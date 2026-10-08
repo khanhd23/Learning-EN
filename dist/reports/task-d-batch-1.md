@@ -8,7 +8,7 @@ Added the first original bank batch through authoring modules and `tools/gen_con
 - 4 new Part 6 passages × 4 blanks = 16 items.
 - Every new item has four options, an English source explanation, and a Vietnamese teaching explanation.
 
-The generated corpus now contains 147 Part 5 items and 12 Part 6 passages. The sectioned
+The generated corpus now contains 148 Part 5 items and 12 Part 6 passages. The sectioned
 `content/en/exams/toeic.json` bank is intentionally generated after all D batches are complete;
 the existing `toeic_p5` and `toeic_p6` formats remain unchanged during the build-out.
 
@@ -25,4 +25,3 @@ checked that every blank has one contextually valid answer. No content correctio
 - `python tools/validate_content.py` — `errors=0` (245 existing warnings).
 - `python -m unittest discover -s tools/tests` — 30 tests passed; locale `xx` errors=0.
 - `./gradlew.bat testDebugUnitTest assembleDebug` — passed.
-

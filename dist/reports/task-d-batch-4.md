@@ -5,7 +5,7 @@
 - 30 additional original Part 5 items on customer service, finance, refunds, and payment.
 - 4 additional original Part 6 passages × 4 blanks.
 
-Totals after generation: 237 Part 5 items and 24 Part 6 passages in the legacy source corpus.
+Totals after generation: 242 Part 5 items and 24 Part 6 passages in the legacy source corpus.
 
 ## Manual review after generation
 
@@ -20,4 +20,3 @@ word forms. No ambiguous answer or duplicate option was found.
 - `python tools/validate_content.py` — `errors=0` (245 existing warnings).
 - `python -m unittest discover -s tools/tests` — 30 tests passed; locale `xx` errors=0.
 - `./gradlew.bat testDebugUnitTest assembleDebug` — passed.
-

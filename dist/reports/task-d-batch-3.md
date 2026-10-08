@@ -6,7 +6,7 @@
 - 4 additional original Part 6 passages × 4 blanks.
 - English explanations and Vietnamese teaching explanations were generated from the same authored source rows.
 
-Totals after generation: 207 Part 5 items and 20 Part 6 passages in the legacy source corpus.
+Totals after generation: 211 Part 5 items and 20 Part 6 passages in the legacy source corpus.
 
 ## Manual review after generation
 
@@ -21,4 +21,3 @@ duplicate-option, or ambiguous-context issue was found.
 - `python tools/validate_content.py` — `errors=0` (245 existing warnings).
 - `python -m unittest discover -s tools/tests` — 30 tests passed; locale `xx` errors=0.
 - `./gradlew.bat testDebugUnitTest assembleDebug` — passed.
-

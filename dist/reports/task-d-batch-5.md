@@ -5,7 +5,7 @@
 - 30 additional original Part 5 items covering travel, hospitality, facilities, and technology.
 - 4 additional original Part 6 passages × 4 blanks.
 
-Totals after generation: 267 Part 5 items and 28 Part 6 passages in the legacy source corpus.
+Totals after generation: 272 Part 5 items and 28 Part 6 passages in the legacy source corpus.
 
 ## Manual review after generation
 
@@ -20,4 +20,3 @@ as coherent hotel, app, flight, and equipment notices.
 - `python tools/validate_content.py` — `errors=0` (245 existing warnings).
 - `python -m unittest discover -s tools/tests` — 30 tests passed; locale `xx` errors=0.
 - `./gradlew.bat testDebugUnitTest assembleDebug` — passed.
-

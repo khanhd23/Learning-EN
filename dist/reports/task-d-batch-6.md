@@ -5,7 +5,7 @@
 - 30 additional original Part 5 items on meetings, sales, communication, and workplace usage.
 - 4 additional original Part 6 passages × 4 blanks.
 
-Totals after generation: 297 Part 5 items and 32 Part 6 passages in the legacy source corpus.
+Totals after generation: 303 Part 5 items and 32 Part 6 passages in the legacy source corpus.
 
 ## Manual review after generation
 
@@ -19,4 +19,3 @@ layers. The generated distractors were natural and no ambiguity or duplicate opt
 - `python tools/validate_content.py` — `errors=0` (245 existing warnings).
 - `python -m unittest discover -s tools/tests` — 30 tests passed; locale `xx` errors=0.
 - `./gradlew.bat testDebugUnitTest assembleDebug` — passed.
-
