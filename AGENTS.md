@@ -7,6 +7,20 @@ each learner language is a data folder, never a fork.
 The step-by-step work plan is `docs/localization/PLAN.md`. Do the tasks in order, one task per
 session, and do not start a task until the previous one is ticked in that file.
 
+## 0. Current assignment (2026-10-08) — overrides the role rules below where they conflict
+
+The app is now **LingoMori**. The owner (Claude) is away and has handed **all remaining work, code
+and content**, to you through `docs/PLAN_FULL.md`. Follow that file:
+- You may write content and data (`tools/authoring/*`, `content/**` through the generators,
+  `config/*.json` exam/word-list entries, `res/values*/strings.xml` in English and Vietnamese)
+  for the tasks it lists, under its §2 rules. Real content only: the "shaped to pass a check" ban
+  below still applies and gets a task reverted.
+- You may add words to `IPA_EQUALS_SPELLING` in `tools/audit_content.py` only when the IPA truly
+  equals the spelling (e.g. "flu"); no other change to that file.
+- After committing a task with its report, continue with the next task in `PLAN_FULL.md` §10
+  instead of stopping, unless something is blocked or unclear: then write it in the report and stop.
+- **Still never `git push`.** The Publisher reviews the reports and pushes.
+
 ## 1. Content rules (non-negotiable)
 
 1. **English is the only source of truth.** `content/en/` holds the English core. Every learner

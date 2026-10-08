@@ -1,5 +1,7 @@
 # LingoMori (formerly EngPet) roadmap — phase 3: ship v1.0, then grow exam prep
 
+> **2026-10-08: all remaining work (code and content) is handed to Codex — see `docs/PLAN_FULL.md`.**
+
 Written 2026-10-08 by Claude after a project audit. Phase 2 details stay in `docs/ROADMAP.md`;
 exam data rules are in `docs/EXAM_DATA_PLAN.md`; release rules in `docs/RELEASE_CHECKLIST.md`.
 

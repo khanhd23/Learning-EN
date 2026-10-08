@@ -14,3 +14,6 @@ captures/
 tools/sources/*.jsonl.gz
 __pycache__/
 *.pyc
+
+# Owner/Codex batch working files (sources are the committed TSV outputs)
+tools/authoring/work/
