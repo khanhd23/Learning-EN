@@ -4,7 +4,7 @@ Effective date: 8 October 2026
 
 EngPet ("the app") is an English-learning app with a virtual pet, published on Google Play by
 Đặng Kim Khánh ("we"). This policy explains what information the app uses and why. If you have
-a question, write to khanhsphg2003@gmail.com.
+a question, write to khankstudio.support@gmail.com.
 
 ## The short version
 
@@ -100,4 +100,4 @@ tell you in the app.
 ## 10. Contact
 
 Đặng Kim Khánh
-Email: khanhsphg2003@gmail.com
+Email: khankstudio.support@gmail.com

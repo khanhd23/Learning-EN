@@ -4,7 +4,7 @@ Ngày hiệu lực: 08/10/2026
 
 EngPet ("ứng dụng") là ứng dụng học tiếng Anh cùng thú cưng ảo, do Đặng Kim Khánh ("chúng tôi")
 phát hành trên Google Play. Chính sách này giải thích ứng dụng sử dụng những thông tin nào và vì
-sao. Nếu có câu hỏi, vui lòng gửi email tới khanhsphg2003@gmail.com.
+sao. Nếu có câu hỏi, vui lòng gửi email tới khankstudio.support@gmail.com.
 
 ## Tóm tắt
 
@@ -102,4 +102,4 @@ thông báo trong ứng dụng.
 ## 10. Liên hệ
 
 Đặng Kim Khánh
-Email: khanhsphg2003@gmail.com
+Email: khankstudio.support@gmail.com
