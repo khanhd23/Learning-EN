@@ -6,6 +6,8 @@ import com.yourbrand.englishlearn.content.Passage
 import com.yourbrand.englishlearn.content.Question
 import com.yourbrand.englishlearn.content.MinimalPair
 import com.yourbrand.englishlearn.content.SoundSentence
+import com.yourbrand.englishlearn.content.ExamItem
+import com.yourbrand.englishlearn.content.ExamGroup
 import com.yourbrand.englishlearn.content.Word
 import kotlin.random.Random
 
@@ -101,6 +103,11 @@ class ExerciseFactory(private val content: Content, private val random: Random =
 
     fun shadowing(item: SoundSentence): Exercise.Shadowing =
         Exercise.Shadowing("sh:${item.id}", listOf("sound", "shadowing"), item.level, item.text)
+
+    fun exam(bank: String, item: ExamItem, group: ExamGroup?): Exercise.Choice =
+        Exercise.Choice("exam:$bank:${item.id}", Kind.E01, listOf("exam", "section_${item.section}"), item.level,
+            R.string.ins_meaning, item.stem, item.options, item.answer, item.explanation,
+            sharedPassage = group?.passage, sharedPassageTitle = group?.title, sharedGroupId = group?.id)
 
     fun spelling(w: Word): Exercise.Spelling? {
         if (w.lemma.contains(' ') || w.lemma.length > 14 || w.lemma.length < 3) return null

@@ -41,6 +41,13 @@ class SessionBuilder(
         key.startsWith("d:") -> content.sound.dictation.firstOrNull { it.id == key.removePrefix("d:") }?.let { factory.dictation(it) }
         key.startsWith("mp:") -> content.sound.pairs.firstOrNull { "mp:${it.id}" == key.substringBeforeLast(':') }?.let { factory.minimalPair(it) }
         key.startsWith("sh:") -> content.sound.shadowing.firstOrNull { it.id == key.removePrefix("sh:") }?.let { factory.shadowing(it) }
+        key.startsWith("exam:") -> key.split(':').let { p ->
+            if (p.size < 3) null else content.examBanks[p[1]]?.let { bank ->
+                val item = (bank.items.firstOrNull { it.id == p[2] } ?: bank.groups.asSequence().flatMap { it.items.asSequence() }.firstOrNull { it.id == p[2] })
+                val group = bank.groups.firstOrNull { group -> group.items.any { it.id == p[2] } }
+                item?.let { factory.exam(p[1], it, group) }
+            }
+        }
         key.startsWith("p:") -> key.split(':').let { p -> content.passageById[p[1]]?.let { ps -> p[2].toIntOrNull()?.takeIf { it < ps.blanks.size }?.let { i -> factory.passageBlank(ps, i) } } }
         else -> null
     }

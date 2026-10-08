@@ -116,6 +116,16 @@ class MockTest(
          */
         fun build(content: Content, builder: SessionBuilder, formatId: String, title: String, count: Int?, recent: Set<String>, random: Random = Random.Default): MockTest {
             val format = content.formatById(formatId)
+            if (format != null && format.sections.isNotEmpty()) {
+                val bankId = format.sections.mapNotNull { it.bank }.distinct().singleOrNull()
+                val bank = bankId?.let { content.examBanks[it] }
+                if (bank != null) {
+                    val picked = SectionedExamBuilder.build(format, bank, random)
+                    return MockTest(formatId, title, picked.map { "exam:$bankId:${it.item.id}" }, format.timeLimitMinutes?.times(60),
+                        sectionIds = picked.map { it.section }, sectionLabels = format.sections.map { it.id to it.label })
+                }
+                return MockTest(formatId, title, emptyList(), null)
+            }
             val n = count ?: format?.questionCount ?: 20
             val keys: List<String> = if (formatId == "toeic_p6") {
                 val passages = (format?.passages ?: 4).let { pc -> if (count != null) (count + 3) / 4 else pc }

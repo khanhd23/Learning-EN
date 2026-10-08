@@ -35,6 +35,8 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
     private lateinit var next: TextView
     private var tickBase = SystemClock.elapsedRealtime()
     private var submitted = false
+    private val openPassageGroups = mutableSetOf<String>()
+    private val seenPassageGroups = mutableSetOf<String>()
 
     companion object {
         fun resume(activity: MainActivity) {
@@ -138,6 +140,26 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
         content.removeAllViews()
         scroll.scrollTo(0, 0)
         val ex = exercises[i] ?: run { content.addView(Kit.text(c, "—")); return }
+        val sectionIndex = test.sectionLabels.indexOfFirst { it.first == test.sectionIds.getOrNull(i) }
+        if (sectionIndex >= 0 && (i == 0 || test.sectionIds.getOrNull(i - 1) != test.sectionIds.getOrNull(i))) {
+            content.addView(Kit.text(c, str(R.string.section_n, sectionIndex + 1, test.sectionLabels.size, test.sectionLabels[sectionIndex].second), R.style.Text_Caption).margins(c, top = 4, bottom = 8))
+        }
+        if (ex is Exercise.Choice && ex.sharedPassage != null && ex.sharedGroupId != null) {
+            val groupId = ex.sharedGroupId
+            val firstItemInGroup = seenPassageGroups.add(groupId)
+            val open = firstItemInGroup || groupId in openPassageGroups
+            content.addView(Kit.secondary(c, str(if (open) R.string.passage_hide else R.string.passage_show), 0) {
+                if (open) openPassageGroups -= groupId else openPassageGroups += groupId
+                render()
+            }.margins(c, top = 2))
+            if (open) {
+                val height = minOf((c.resources.displayMetrics.heightPixels * 0.4f).toInt(), c.dpi(280))
+                content.addView(android.widget.ScrollView(c).apply {
+                    layoutParams = lp(ViewGroup.LayoutParams.MATCH_PARENT, height).apply { topMargin = c.dpi(6); bottomMargin = c.dpi(8) }
+                    addView(Kit.card(c, 14, 10, c.col(R.color.surface_variant), null) { addView(Kit.text(c, (ex.sharedPassageTitle?.let { "$it\n\n" } ?: "") + ex.sharedPassage, R.style.Text_Body)) })
+                })
+            }
+        }
         when (ex) {
             is Exercise.Choice -> {
                 if (ex.passage != null) {
@@ -231,12 +253,20 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
             if (test.answers[k] >= 0) xp += services.recordAnswer(ex, listOf(key), ok, 5000, 0, now)
             detail.put(JSONObject().put("k", key).put("a", test.answers[k]).put("f", test.flags[k]))
         }
+        val sectionDetail = JSONArray()
+        test.sectionLabels.forEach { (id, _) ->
+            val indices = test.sectionIds.mapIndexedNotNull { i, section -> i.takeIf { section == id } }
+            sectionDetail.put(JSONObject().put("id", id).put("correct", indices.count { k ->
+                val expected = when (val ex = exercises[k]) { is Exercise.Choice -> ex.answer; is Exercise.FindError -> ex.answer; else -> -1 }
+                test.answers[k] == expected
+            }).put("total", indices.size))
+        }
         services.addStudyTime(test.elapsedSec)
         val r = services.creditXp(xp)
         if (test.answeredCount >= 5) { services.pet.meal(now, services.goalReached()); services.savePet() }
         services.settings.recentMockKeys = (test.keys + services.settings.recentMockKeys).take(test.keys.size * 2)
         val previous = services.store.history().lastOrNull { it.kind == "MOCK" && it.format == test.formatId && it.total == test.keys.size }
-        services.store.addHistory("MOCK", test.title, test.formatId, test.keys.size, correct, test.elapsedSec, now, JSONObject().put("items", detail).put("xp", r.gained))
+        services.store.addHistory("MOCK", test.title, test.formatId, test.keys.size, correct, test.elapsedSec, now, JSONObject().put("items", detail).put("sections", sectionDetail).put("xp", r.gained))
         activity.onSessionDone()
         // Interstitials never come from a mock test (policy); go straight to the result.
         services.ads.onSessionFinished(activity, lastAnswerWrong = false, fromMock = true, fromPetHome = false) {
@@ -323,6 +353,11 @@ class MockResultScreen(
             val ok = test.answers[k] == ans
             val show = when (reviewFilter) { 0 -> !ok; 1 -> test.flags[k]; else -> true }
             if (!show) return@forEachIndexed
+            if (ex is Exercise.Choice && ex.sharedPassage != null && ex.sharedGroupId != null && exercises.take(k).none { it is Exercise.Choice && it.sharedGroupId == ex.sharedGroupId }) {
+                body.addView(Kit.card(c, 14, 10, c.col(R.color.surface_variant), null) {
+                    addView(Kit.text(c, (ex.sharedPassageTitle?.let { "$it\n\n" } ?: "") + ex.sharedPassage, R.style.Text_Body))
+                })
+            }
             val (stem, opts, expl) = when (ex) {
                 is Exercise.Choice -> Triple(if (ex.passage != null) "${ex.passage.title} (${ex.blank + 1})" else ex.stem.replace("[", "").replace("]", ""), ex.options, ex.explanation)
                 is Exercise.FindError -> Triple(ex.stem.replace("[", "").replace("]", ""), Regex("\\[([^\\]]+)\\]").findAll(ex.stem).map { it.groupValues[1] }.toList(), ex.explanation + " → " + ex.fix)

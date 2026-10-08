@@ -6,6 +6,7 @@ import com.yourbrand.englishlearn.content.ExamFormat
 import com.yourbrand.englishlearn.content.ExamGroup
 import com.yourbrand.englishlearn.content.ExamItem
 import com.yourbrand.englishlearn.content.ExamSection
+import com.yourbrand.englishlearn.content.Content
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotEquals
 import org.junit.Test
@@ -24,7 +25,7 @@ class ExamEngineTest {
 
     @Test fun sectionedExamUsesCountsAndWholeGroupsInOrder() {
         val format = ExamFormat("test", "Test", "TEST", "", null, null, 10, null, listOf(
-            ExamSection("s1", "Items", "mcq", 2, listOf("E01"), emptyList(), "test"),
+            ExamSection("s1", "Items", "mcq", 2, listOf("E02"), emptyList(), "test"),
             ExamSection("s2", "Passage", "group", 2, emptyList(), emptyList(), "test"),
         ))
         val picked = SectionedExamBuilder.build(format, bank)
@@ -47,5 +48,37 @@ class ExamEngineTest {
             ExamFormat("test", "Test", "TEST", "", null, null, null, null, listOf(ExamSection("s1", "Items", "mcq", 2, listOf("E01"), emptyList(), "test"))),
             parsed,
         ).size)
+    }
+
+    @Test fun sectionedMockBuildAnswerAndResume() {
+        val format = ExamFormat("test", "Test", "TEST", "", null, null, 10, null, listOf(
+            ExamSection("s1", "Items", "mcq", 2, emptyList(), emptyList(), "test"),
+            ExamSection("s2", "Passage", "group", 2, emptyList(), emptyList(), "test"),
+        ))
+        val content = Content(emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), listOf(format), emptyList(), emptyMap(), emptyMap(), examBanks = mapOf("test" to bank))
+        val builder = SessionBuilder(content, { null }, { emptyList() }, { emptyList() })
+        val mock = MockTest.build(content, builder, "test", "Test", null, emptySet(), kotlin.random.Random(1))
+        mock.keys.forEachIndexed { i, key -> mock.answers[i] = (builder.exerciseFor(key) as Exercise.Choice).answer }
+        assertEquals(mock.keys.size, mock.answers.count { it >= 0 })
+        assertEquals(4, mock.keys.indices.count { i ->
+            mock.answers[i] == (builder.exerciseFor(mock.keys[i]) as Exercise.Choice).answer
+        })
+        val resumed = MockTest.fromJson(mock.toJson())
+        assertEquals(mock.keys, resumed.keys)
+        assertEquals(mock.sectionIds, resumed.sectionIds)
+        assertEquals(4, resumed.keys.size)
+    }
+
+    @Test fun localizedExamOverridesRequireApproval() {
+        val localized = """
+            {"s1_i1":{"stem":"Approved translated stem","expl":"Approved translated explanation"},
+             "s1_i2":{"stem":"Unapproved translated stem","expl":"Must not be used"},
+             "g1":{"passage":"Approved translated passage","title":"Approved translated title"}}
+        """.trimIndent()
+        val merged = ExamBankParser.merge(bank, localized, setOf("s1_i1", "g1"))
+        assertEquals("Approved translated stem", merged.items.first().stem)
+        assertEquals("Choose B", merged.items[1].stem)
+        assertEquals("Approved translated passage", merged.groups.first().passage)
+        assertEquals("Approved translated title", merged.groups.first().title)
     }
 }

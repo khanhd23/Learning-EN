@@ -21,6 +21,7 @@ class Content(
     val localeSelectable: Boolean = true,
     val sound: SoundData = SoundData(),
     val stories: List<Story> = emptyList(),
+    val examBanks: Map<String, ExamBank> = emptyMap(),
 ) {
     /** All entries, including bronze dictionary-only imports. */
     val allWords: List<Word> get() = words
@@ -45,7 +46,7 @@ object ContentParser {
     private fun JSONObject.strOrNull(k: String): String? = if (has(k) && !isNull(k)) optString(k).takeIf { it.isNotEmpty() } else null
     private inline fun <T> JSONArray?.map(f: (JSONObject) -> T): List<T> = if (this == null) emptyList() else List(length()) { f(getJSONObject(it)) }
 
-    fun parse(words: String, grammar: String, questions: String, locale: LocalePackFiles, formats: String, approval: LocaleApproval? = null, images: Map<String, String> = emptyMap(), soundJson: String? = null, soundLocaleJson: String? = null, blockedSenses: Set<String> = emptySet(), storiesSourceJson: String? = null): Content {
+    fun parse(words: String, grammar: String, questions: String, locale: LocalePackFiles, formats: String, approval: LocaleApproval? = null, images: Map<String, String> = emptyMap(), soundJson: String? = null, soundLocaleJson: String? = null, blockedSenses: Set<String> = emptySet(), storiesSourceJson: String? = null, examBanks: Map<String, ExamBank> = emptyMap()): Content {
         val viTopics = JSONObject(locale.topics)
         val viWords = JSONObject(locale.words)
         val viConf = JSONObject(locale.confusables)
@@ -156,6 +157,10 @@ object ContentParser {
                     section.getInt("count"), section.optJSONArray("exerciseTypes").strings(), section.optJSONArray("qtype").strings(), section.strOrNull("bank"),
                 ) } } } ?: emptyList(),
             )
+        }.filter { format ->
+            if (format.sections.isEmpty()) return@filter true
+            val banks = format.sections.mapNotNull { it.bank }.distinct()
+            banks.isNotEmpty() && banks.all { it in examBanks }
         }
         val soon = f.optJSONArray("comingSoon").map { ComingSoon(it.getString("id"), it.getString("label")) }
 
@@ -201,7 +206,7 @@ object ContentParser {
             }.orEmpty().filter { approval == null || it.id in approval.approvedStories }
         }.getOrDefault(emptyList())
         return Content(topics, visibleWords, conf, grammarList, questionList, passageList, formatList, soon, pet, tips,
-            approval?.availableLevels ?: (1..5).toSet(), approval?.selectable ?: true, sound, stories)
+            approval?.availableLevels ?: (1..5).toSet(), approval?.selectable ?: true, sound, stories, examBanks)
     }
 
     private fun parseSoundSentences(a: JSONArray?, translations: Map<String, String>): List<SoundSentence> = if (a == null) emptyList() else List(a.length()) { i -> a.getJSONObject(i).let { SoundSentence(it.getString("id"), it.getString("text"), it.optInt("level", 1), translations[it.getString("id")]) } }
@@ -284,7 +289,23 @@ class ContentRepository(private val context: Context) {
             if (key == "en") null else runCatching { asset("${key}/sound.json") }.getOrNull(),
             blockedSenses(),
             runCatching { asset("en/stories.json") }.getOrNull(),
+            loadExamBanks(key, asset("exam_formats.json"), if (key == "en") null else approval(key)),
         ).also { cached[key] = it }
+    }
+
+    private fun loadExamBanks(key: String, formatsJson: String, approval: LocaleApproval?): Map<String, ExamBank> {
+        val formats = JSONObject(formatsJson).optJSONArray("formats") ?: return emptyMap()
+        val names = (0 until formats.length()).flatMap { i ->
+            formats.getJSONObject(i).optJSONArray("sections")?.let { sections ->
+                List(sections.length()) { sections.getJSONObject(it).optString("bank") }.filter { it.isNotBlank() }
+            } ?: emptyList()
+        }.toSet()
+        return names.mapNotNull { bank ->
+            val source = runCatching { asset("en/exams/$bank.json") }.getOrNull() ?: return@mapNotNull null
+            val base = ExamBankParser.parse(source)
+            val localized = if (key == "en") null else runCatching { asset("$key/exams/$bank.json") }.getOrNull()
+            bank to ExamBankParser.merge(base, localized, approval?.approvedExams ?: emptySet())
+        }.toMap()
     }
 
     /** True only for a locale pack that has passed the content-release gate. */

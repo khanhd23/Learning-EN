@@ -15,6 +15,7 @@ data class LocaleApproval(
     val approvedTips: Set<String>,
     val approvedSound: Set<String>,
     val approvedStories: Set<String> = emptySet(),
+    val approvedExams: Set<String> = emptySet(),
     val selectable: Boolean,
     val availableLevels: Set<Int>,
 )
@@ -90,6 +91,7 @@ object ApprovalGate {
         val approvedQuestions = keys("questions", questionSources)
         val approvedPassages = keys("passages", passageSources)
         val approvedStories = keys("stories", storySources)
+        val approvedExams = rows("exams").keys().asSequence().filter { approved("exams", it) }.toSet()
         val available = (1..5).filter { level ->
             ratio(wordLevels[level].orEmpty(), approvedWords) >= THRESHOLD &&
                 ratio(grammarLevels[level].orEmpty(), approvedGrammar) >= THRESHOLD
@@ -103,6 +105,7 @@ object ApprovalGate {
             approvedPet = keys("pet"), approvedTips = keys("tips"),
             approvedSound = keys("sound"),
             approvedStories = approvedStories,
+            approvedExams = approvedExams,
             selectable = uiApproved && 1 in available,
             availableLevels = available,
         )

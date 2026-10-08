@@ -25,8 +25,7 @@ object SectionedExamBuilder {
     }
 
     private fun matches(item: ExamItem, section: com.yourbrand.englishlearn.content.ExamSection): Boolean =
-        (section.exerciseTypes.isEmpty() || section.exerciseTypes.any { it == "mcq" || it == "E01" }) &&
-            (section.qtypes.isEmpty() || item.qtype in section.qtypes)
+        section.qtypes.isEmpty() || item.qtype in section.qtypes
 
     private fun chooseGroups(section: com.yourbrand.englishlearn.content.ExamSection, groups: List<ExamGroup>, random: Random): List<PickedExamItem> {
         val shuffled = groups.shuffled(random)

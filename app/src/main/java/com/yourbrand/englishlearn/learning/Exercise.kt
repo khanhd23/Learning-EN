@@ -39,6 +39,9 @@ sealed class Exercise {
         val blank: Int = -1,
         val wordId: String? = null,
         val hint: String? = null,
+        val sharedPassage: String? = null,
+        val sharedPassageTitle: String? = null,
+        val sharedGroupId: String? = null,
     ) : Exercise()
 
     /** E04: tap the wrong part among four marked segments. */
