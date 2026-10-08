@@ -45,6 +45,51 @@
       "opts": ["b – d – a – c – e", "b – c – d – a – e", "c – b – d – e – a", "d – b – a – c – e"],
       "ans": 0,
       "expl": "The project is introduced first, followed by testing, the result, the teacher's request, and the presentation."
+    },
+    {
+      "id": "p2_arrange_01",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. Finally, we emailed the report to the youth council. b. Our team wanted to compare traffic near two bus stops. c. We discussed the results and wrote three suggestions. d. First, we chose the stops and recorded traffic for one week. e. The report helped the council plan a safer crossing.",
+      "opts": ["b – d – a – c – e", "b – a – d – c – e", "d – b – a – e – c", "b – d – c – a – e"],
+      "ans": 0,
+      "expl": "The team states its aim, chooses the locations and collects data, sends the report, discusses the results, and then gives the outcome."
+    },
+    {
+      "id": "p2_arrange_02",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. That sounds helpful. How can I reserve one? b. The library offers quiet study rooms after school. c. You can book a room at the front desk. d. I often lose focus when the hallway is noisy. e. Trying a quiet study room may help me finish my project.",
+      "opts": ["b – a – d – e – c", "b – d – a – e – c", "d – b – e – a – c", "b – d – e – c – a"],
+      "ans": 1,
+      "expl": "The speaker introduces the rooms, explains the noise problem, responds to the suggestion, says why it may help, and gives the booking method."
+    },
+    {
+      "id": "p2_arrange_03",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. Please keep the doors closed during the work. b. The elevator will be unavailable on Thursday. c. During repairs, staff will test its safety system. d. Thank you for using the stairs carefully. e. Use the stairs or the ramp beside the lobby.",
+      "opts": ["b – c – a – e – d", "b – e – c – a – d", "b – c – e – a – d", "c – b – e – d – a"],
+      "ans": 2,
+      "expl": "The notice gives the closure first, explains the reason, offers alternatives, adds a safety request, and closes politely."
+    },
+    {
+      "id": "p2_arrange_04",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. I can bring labels and two large boxes. b. Our class needs to sort donated books. c. Let's meet in the activity room at four. d. The teacher asked us to prepare them for the community sale. e. We can separate children's books from reference books.",
+      "opts": ["d – b – a – e – c", "b – d – a – c – e", "b – e – d – a – c", "d – b – e – a – c"],
+      "ans": 3,
+      "expl": "The teacher's request explains the task, the class states what it needs to do, suggests the sorting method, assigns supplies, and sets the meeting time."
+    },
+    {
+      "id": "p2_arrange_05",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. The final model used less water than the first design. b. We collected materials from the science room. c. We tested the model beside a sunny window. d. First, we sketched a simple plant-watering system. e. Then we changed the pipe after the first test.",
+      "opts": ["b – d – c – e – a", "d – b – c – e – a", "d – c – b – a – e", "b – d – e – c – a"],
+      "ans": 0,
+      "expl": "The group gathers materials, sketches the design, tests it, changes the pipe, and reports the improved result."
     }
   ],
   "groups": [
@@ -235,7 +280,7 @@
           "id": "p1_reading1_01",
           "section": "reading1",
           "level": 3,
-          "stem": "What is the passage mainly about?",
+          "stem": "What does the whole passage describe?",
           "opts": ["How libraries choose new books", "Why desk lamps are difficult to use", "A club that teaches people to repair objects", "A volunteer's job at a school"],
           "ans": 2,
           "expl": "The passage explains how the Repair Club helps residents fix objects and share skills. The other choices are too narrow or unrelated."
@@ -315,7 +360,7 @@
           "id": "p1_reading2_01",
           "section": "reading2",
           "level": 3,
-          "stem": "What is the passage mainly about?",
+          "stem": "What change does the wetland project create?",
           "opts": ["A village plan to build a new road", "A competition between farmers and fishermen", "A school trip to a distant island", "A wetland restoration project and its benefits"],
           "ans": 3,
           "expl": "The passage describes how residents restored a coastal wetland and how the project benefited nature and the community."
@@ -396,10 +441,365 @@
           "id": "p1_reading2_10",
           "section": "reading2",
           "level": 4,
-          "stem": "Which title best matches the passage?",
+          "stem": "Which title captures the wetland's change?",
           "opts": ["From Unused Land to a Living Classroom", "The Fastest Way to Build a Road", "Why All Wetlands Should Be Closed", "A Competition for Young Fishermen"],
           "ans": 0,
           "expl": "The project changed the wetland from land residents ignored into a place that protects nature and supports learning."
+        }
+      ]
+    },
+    {
+      "id": "p2_notice",
+      "section": "notice",
+      "title": "NOTICE: Quiet Study Lab",
+      "passage": "The Quiet Study Lab will open in the library from Monday. Students may use it for independent work during the final two periods. Please bring headphones for audio tasks, and keep phones on silent. A volunteer will help at the desk if you need a charger or a room key. Students can reserve a 30-minute period online. If all seats are taken, join the waiting list instead of entering another group's reserved space.",
+      "items": [
+        {
+          "id": "p2_notice_01",
+          "section": "notice",
+          "level": 3,
+          "stem": "What is the main purpose of the notice?",
+          "opts": ["To provide a quiet place for independent study", "To announce a library competition", "To sell new headphones", "To change the school timetable"],
+          "ans": 0,
+          "expl": "The notice announces the opening of a quiet study space and explains how students can use it."
+        },
+        {
+          "id": "p2_notice_02",
+          "section": "notice",
+          "level": 3,
+          "stem": "When may students use the lab?",
+          "opts": ["Before the library opens", "During the final two periods", "Only at the weekend", "After the school year ends"],
+          "ans": 1,
+          "expl": "The passage says that the lab is available during the final two periods."
+        },
+        {
+          "id": "p2_notice_03",
+          "section": "notice",
+          "level": 3,
+          "stem": "What should students bring for audio tasks?",
+          "opts": ["A room key", "A library card", "Headphones", "A printed timetable"],
+          "ans": 2,
+          "expl": "The notice specifically asks students to bring headphones for audio tasks."
+        },
+        {
+          "id": "p2_notice_04",
+          "section": "notice",
+          "level": 3,
+          "stem": "What must students do with their phones?",
+          "opts": ["Leave them at the desk", "Use them for every task", "Charge them with the volunteer", "Keep them on silent"],
+          "ans": 3,
+          "expl": "Keeping phones on silent is one of the rules for the study lab."
+        },
+        {
+          "id": "p2_notice_05",
+          "section": "notice",
+          "level": 3,
+          "stem": "What should a student do if all seats are taken?",
+          "opts": ["Join the waiting list", "Enter another group's reserved space", "Cancel the reservation system", "Ask for a room key"],
+          "ans": 0,
+          "expl": "The final sentence tells students to join the waiting list when all seats are taken."
+        },
+        {
+          "id": "p2_notice_06",
+          "section": "notice",
+          "level": 3,
+          "stem": "Who can help a student get a charger or room key?",
+          "opts": ["Another reserved group", "A volunteer at the desk", "The timetable office", "An online seller"],
+          "ans": 1,
+          "expl": "The notice says that a volunteer at the desk can help with a charger or room key."
+        }
+      ]
+    },
+    {
+      "id": "p2_leaflet",
+      "section": "leaflet",
+      "title": "LEAFLET: Repair, Reuse, Share",
+      "passage": "Repair, Reuse, Share is a free pop-up event at the community hall on Saturday morning. Volunteers can examine small household items such as lamps, bags, and loose chair legs. Bring one broken item and a short note describing the problem. Put your name on the note so the volunteer can identify it. The service is free, although donations help buy tools. Visitors may watch the repair, learn a simple skill, and take the item home when it is safe. One item is accepted from each visitor.",
+      "items": [
+        {
+          "id": "p2_leaflet_01",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "What service does the event offer?",
+          "opts": ["Free cooking lessons", "A market for new furniture", "Help repairing small household items", "Professional moving services"],
+          "ans": 2,
+          "expl": "The event offers help with small household repairs, including lamps, bags, and chair legs."
+        },
+        {
+          "id": "p2_leaflet_02",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "What should a visitor bring?",
+          "opts": ["A large piece of furniture", "A donation only", "A set of new tools", "One broken item and a note"],
+          "ans": 3,
+          "expl": "Visitors should bring one broken item and a note describing the problem."
+        },
+        {
+          "id": "p2_leaflet_03",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "Why should visitors put their names on the notes?",
+          "opts": ["So volunteers can identify the items", "So the hall can charge a fee", "So visitors can enter twice", "So the tools can be sold"],
+          "ans": 0,
+          "expl": "The passage says that a name helps the volunteer identify the item."
+        },
+        {
+          "id": "p2_leaflet_04",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "When is the event held?",
+          "opts": ["Every weekday evening", "On Saturday morning", "Only after the school year", "On Sunday night"],
+          "ans": 1,
+          "expl": "The event takes place at the community hall on Saturday morning."
+        },
+        {
+          "id": "p2_leaflet_05",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "What is true about the cost of the service?",
+          "opts": ["It requires a monthly payment", "It costs more for students", "It is free, but donations help", "It is available only with a tool rental"],
+          "ans": 2,
+          "expl": "The service is free, while donations are optional and help buy tools."
+        },
+        {
+          "id": "p2_leaflet_06",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "How many items may each visitor bring?",
+          "opts": ["Any number of items", "Two large items", "No broken items", "One item"],
+          "ans": 3,
+          "expl": "The last sentence sets a limit of one item for each visitor."
+        }
+      ]
+    },
+    {
+      "id": "p2_complete",
+      "section": "complete",
+      "title": "Text completion: A School Garden",
+      "passage": "A school garden can be more than a place to grow vegetables. Students first map the sunlight around the yard, then choose plants that can grow in each area. Before planting, they improve the soil with compost. During dry weeks, they check the soil and water only when necessary. The garden also becomes an outdoor classroom where students measure growth and observe insects.",
+      "items": [
+        {
+          "id": "p2_complete_01",
+          "section": "complete",
+          "level": 3,
+          "stem": "Before planting, students improve the soil with ...",
+          "opts": ["fresh paint", "a timetable", "plastic labels only", "compost"],
+          "ans": 3,
+          "expl": "The passage directly states that students improve the soil with compost before planting."
+        },
+        {
+          "id": "p2_complete_02",
+          "section": "complete",
+          "level": 3,
+          "stem": "Students map the sunlight so they can ...",
+          "opts": ["choose suitable places for plants", "close the garden in winter", "measure the school building", "remove all insects"],
+          "ans": 0,
+          "expl": "Mapping sunlight helps students choose plants and positions that suit each area."
+        },
+        {
+          "id": "p2_complete_03",
+          "section": "complete",
+          "level": 3,
+          "stem": "During dry weeks, students ...",
+          "opts": ["water every hour", "check the soil before watering", "move the garden indoors", "stop measuring growth"],
+          "ans": 1,
+          "expl": "Students check the soil and water only when necessary, rather than watering automatically."
+        },
+        {
+          "id": "p2_complete_04",
+          "section": "complete",
+          "level": 3,
+          "stem": "The garden becomes an outdoor classroom where students ...",
+          "opts": ["sell library books", "repair bicycles", "measure growth and observe insects", "practice driving"],
+          "ans": 2,
+          "expl": "The final sentence says that students measure growth and observe insects there."
+        },
+        {
+          "id": "p2_complete_05",
+          "section": "complete",
+          "level": 3,
+          "stem": "Which statement best summarizes the text?",
+          "opts": ["Gardens are useful only for vegetables", "Students should water plants constantly", "Insects should be removed from every garden", "Careful planning makes a garden useful for learning"],
+          "ans": 3,
+          "expl": "The text connects planning, care, and observation with the garden's educational value."
+        }
+      ]
+    },
+    {
+      "id": "p2_reading1",
+      "section": "reading1",
+      "title": "Learning Basic First Aid",
+      "passage": "The youth centre now offers a three-session course in basic first aid. A student enrolled after seeing a cyclist fall near a busy road and not knowing what to do. In the first session, the instructor teaches participants to check whether a scene is safe before helping. Later sessions cover calling emergency services, applying pressure to a small bleeding wound, and placing a breathing but unconscious person in a safe position. Participants practise with bandages and role-play cards, so they can make decisions without putting a real patient at risk. The instructor reminds the group that the course cannot replace professional medical care. Anyone who attends all three sessions receives a small wallet card showing that the course was completed.",
+      "items": [
+        {
+          "id": "p2_reading1_01",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Why did the student enrol in the course?",
+          "opts": ["The student wanted a job at the centre", "The student saw a cyclist fall and did not know what to do", "The student needed a wallet card for travel", "The student wanted to avoid all outdoor activities"],
+          "ans": 1,
+          "expl": "The passage says the student enrolled after seeing a cyclist fall and feeling unprepared to help."
+        },
+        {
+          "id": "p2_reading1_02",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What does the instructor teach first?",
+          "opts": ["How to buy a bandage", "How to write a medical report", "How to check whether a scene is safe", "How to drive to a hospital"],
+          "ans": 2,
+          "expl": "The first session begins with checking that the scene is safe before anyone gives help."
+        },
+        {
+          "id": "p2_reading1_03",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What is the purpose of applying pressure to a small wound?",
+          "opts": ["To slow the bleeding", "To make the wound invisible", "To replace professional treatment", "To measure the person's temperature"],
+          "ans": 3,
+          "expl": "Applying pressure is presented as a basic response to a small bleeding wound; it is not a replacement for medical care."
+        },
+        {
+          "id": "p2_reading1_04",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Why do participants use role-play cards?",
+          "opts": ["To practise decisions safely", "To compete for a medical job", "To avoid attending the sessions", "To design the youth centre"],
+          "ans": 0,
+          "expl": "Role-play cards let participants practise decisions without putting a real patient at risk."
+        },
+        {
+          "id": "p2_reading1_05",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What must participants do to receive the wallet card?",
+          "opts": ["Bring a cyclist to class", "Attend all three sessions", "Buy professional equipment", "Pass a driving test"],
+          "ans": 1,
+          "expl": "The final sentence states that the card is given to anyone who attends all three sessions."
+        },
+        {
+          "id": "p2_reading1_06",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What warning does the instructor give?",
+          "opts": ["The course is only about cycling", "The course replaces emergency services", "The course cannot replace professional medical care", "The course has no practical activities"],
+          "ans": 2,
+          "expl": "The instructor explicitly warns that the course cannot replace professional medical care."
+        },
+        {
+          "id": "p2_reading1_07",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Which situation is included in the later sessions?",
+          "opts": ["Repairing a bicycle", "Writing a school timetable", "Treating every illness at home", "Helping a breathing but unconscious person into a safe position"],
+          "ans": 3,
+          "expl": "The passage lists placing a breathing but unconscious person in a safe position among the later-session topics."
+        },
+        {
+          "id": "p2_reading1_08",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What would be the best title for the first-aid course?",
+          "opts": ["A Youth Centre First-Aid Course", "How to Become a Doctor", "A Cycling Competition", "Buying a Wallet Card"],
+          "ans": 0,
+          "expl": "The whole passage describes the purpose, practice, limits, and completion card of a youth-centre first-aid course."
+        }
+      ]
+    },
+    {
+      "id": "p2_reading2",
+      "section": "reading2",
+      "title": "A Small Library Roof, A Larger Lesson",
+      "passage": "When the town library needed to reduce its electricity use, the staff considered putting solar panels on the flat roof. The first concern was whether the old roof was strong enough. Engineers inspected the structure and measured how much sunlight reached it during the day. After the inspection, a small set of panels was installed near the south side, leaving space for maintenance. A display in the entrance shows how much energy the panels produce each day. On cloudy days the amount is lower, but the panels still produce some electricity. Visitors can compare the display with the library's energy use and see why turning off unused lights matters. The system cannot power the entire building, and the library still buys electricity from the grid. However, the project has become a practical lesson about renewable energy. School groups now visit, ask questions, and record the changing output in their science notebooks.",
+      "items": [
+        {
+          "id": "p2_reading2_01",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Why did the library consider installing solar panels?",
+          "opts": ["To make the roof taller", "To replace the science notebooks", "To close the building on cloudy days", "To reduce electricity use and teach visitors"],
+          "ans": 3,
+          "expl": "The first sentence links the panels with reducing electricity use, and the passage later describes their teaching value."
+        },
+        {
+          "id": "p2_reading2_02",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What was the first concern about the old roof?",
+          "opts": ["Whether it was strong enough", "Whether it had a library display", "Whether visitors liked science", "Whether the panels could be painted"],
+          "ans": 0,
+          "expl": "The staff first needed to know whether the old roof could support the installation."
+        },
+        {
+          "id": "p2_reading2_03",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What did engineers do before the installation?",
+          "opts": ["Sold electricity to visitors", "Inspected the structure and measured sunlight", "Moved the library to another building", "Removed the entrance display"],
+          "ans": 1,
+          "expl": "Engineers inspected the roof structure and measured the sunlight it received."
+        },
+        {
+          "id": "p2_reading2_04",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What can visitors see in the entrance?",
+          "opts": ["A map of every roof in town", "A list of library fines", "A display showing daily panel output", "A machine that stores all electricity"],
+          "ans": 2,
+          "expl": "The entrance display shows how much energy the panels produce each day."
+        },
+        {
+          "id": "p2_reading2_05",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What happens on cloudy days?",
+          "opts": ["The panels are removed", "The library stops recording data", "The building uses no electricity", "The panels produce a smaller amount of electricity"],
+          "ans": 3,
+          "expl": "The passage says that the output is lower on cloudy days, although the panels still produce some electricity."
+        },
+        {
+          "id": "p2_reading2_06",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What can visitors learn by comparing the display with library use?",
+          "opts": ["Why saving electricity matters", "How to build a complete roof", "Why all buildings need to close", "How to avoid recording measurements"],
+          "ans": 0,
+          "expl": "The comparison helps visitors see why turning off unused lights matters."
+        },
+        {
+          "id": "p2_reading2_07",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What limitation of the system is mentioned?",
+          "opts": ["It works only at night", "It cannot power the entire building", "It produces electricity only for visitors", "It has no space for maintenance"],
+          "ans": 1,
+          "expl": "The passage says that the system cannot power the entire building, so the library still uses grid electricity."
+        },
+        {
+          "id": "p2_reading2_08",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Why do school groups visit the library?",
+          "opts": ["To replace the engineers", "To close the solar display", "To ask questions and record changing output", "To buy new roof panels"],
+          "ans": 2,
+          "expl": "School groups visit to ask questions and record the changing output in their science notebooks."
+        },
+        {
+          "id": "p2_reading2_09",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What would be the best title for the library roof project?",
+          "opts": ["A Library Without Electricity", "The Roof That Had to Be Removed", "Why Clouds Stop All Solar Power", "A Solar Project That Teaches the Community"],
+          "ans": 3,
+          "expl": "The project both produces some energy and gives visitors a practical lesson about renewable energy."
+        },
+        {
+          "id": "p2_reading2_10",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What can be inferred about the library's approach?",
+          "opts": ["It plans to stop using the electricity grid immediately", "It is interested only in decorating the roof", "It uses data and a practical project to encourage careful energy use", "It avoids working with schools"],
+          "ans": 2,
+          "expl": "The display, energy comparisons, and school visits show an educational approach, although the library still uses grid electricity."
         }
       ]
     }
