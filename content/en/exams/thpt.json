@@ -180,6 +180,51 @@
       "opts": ["c – b – d – e – a", "b – c – d – a – e", "c – d – b – e – a", "d – c – b – a – e"],
       "ans": 0,
       "expl": "The canteen's aim leads to the survey question, data collection, presentation, and the menu decision."
+    },
+    {
+      "id": "p5_arrange_01",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. Finally, each visitor received a map of the training courses. b. Our school invited local workers to a career afternoon. c. Students first listened to short talks about different jobs. d. They then asked questions at small information tables. e. The event helped students connect subjects with future work.",
+      "opts": ["b – c – d – a – e", "c – b – d – e – a", "b – d – c – a – e", "b – c – a – e – d"],
+      "ans": 0,
+      "expl": "The event is introduced, students listen to talks, ask questions, receive the maps, and understand the wider benefit."
+    },
+    {
+      "id": "p5_arrange_02",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. I can show you the greeting used in my region. b. The exchange group is meeting after school today. c. We are going to share customs from several countries. d. That would make the activity more interesting. e. Bring one object or photograph connected with your family.",
+      "opts": ["b – a – c – e – d", "b – c – a – d – e", "c – b – e – a – d", "b – c – e – d – a"],
+      "ans": 1,
+      "expl": "The group meeting is introduced, its purpose is given, one speaker offers an example, the response follows, and the request comes last."
+    },
+    {
+      "id": "p5_arrange_03",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. Please place finished forms in the blue tray. b. The language club will hold a speaking practice session. c. Each student may choose a topic from the list. d. The teacher will give feedback at the end. e. The session starts in Room 12 at four o'clock.",
+      "opts": ["b – e – c – a – d", "e – b – c – d – a", "b – c – e – a – d", "b – e – a – c – d"],
+      "ans": 2,
+      "expl": "The announcement names the session, gives the room and time, explains topic choice, adds the form instruction, and ends with feedback."
+    },
+    {
+      "id": "p5_arrange_04",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. The results were clearer after we repeated the measurement. b. Our laboratory team wanted to test the acidity of three drinks. c. We labelled three clean containers. d. First, we used the same amount of each drink. e. Then we compared the readings on the indicator strips.",
+      "opts": ["b – d – c – e – a", "c – b – d – a – e", "b – c – d – a – e", "b – c – d – e – a"],
+      "ans": 3,
+      "expl": "The team states its aim, labels containers, uses equal amounts, compares the readings, and repeats the measurement for clarity."
+    },
+    {
+      "id": "p5_arrange_05",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. The market became easier for visitors to navigate. b. The organisers wanted to help small farmers sell directly. c. They invited producers to register their stalls online. d. First, they divided the square into clear areas. e. They placed signs for fruit, vegetables, and prepared food.",
+      "opts": ["b – d – e – c – a", "d – b – c – e – a", "b – c – d – e – a", "c – b – e – d – a"],
+      "ans": 0,
+      "expl": "The organisers state their purpose, divide the space, add signs, invite producers, and describe the result."
     }
   ],
   "groups": [
@@ -1306,6 +1351,361 @@
           "opts": ["To discuss how to improve the service", "To charge families for vegetables", "To decide who may enter school", "To replace the garden with a shop"],
           "ans": 0,
           "expl": "Monthly records help the group discuss ways to improve the food shelf."
+        }
+      ]
+    },
+    {
+      "id": "p5_notice",
+      "section": "notice",
+      "title": "NOTICE: Library Makers Evening",
+      "passage": "The library will host a Makers Evening for students who want to try simple design tools. The session begins at 5:30 on Wednesday in the upstairs study room. Bring a notebook, but do not bring food or drinks near the equipment. A librarian will demonstrate a small desktop cutter and explain how to use it safely. Students must complete the online sign-up form before attending. The group will design a paper model, and each student may take one finished model home.",
+      "items": [
+        {
+          "id": "p5_notice_01",
+          "section": "notice",
+          "level": 3,
+          "stem": "Why is the Makers Evening being held?",
+          "opts": ["To let students try simple design tools", "To sell food in the library", "To replace all study rooms", "To hold a sports meeting"],
+          "ans": 0,
+          "expl": "The event gives students a chance to try simple design tools in a safe demonstration."
+        },
+        {
+          "id": "p5_notice_02",
+          "section": "notice",
+          "level": 3,
+          "stem": "What should students bring?",
+          "opts": ["A desktop cutter", "A notebook", "Food for the group", "A finished paper model"],
+          "ans": 1,
+          "expl": "The notice asks students to bring a notebook and says not to bring food or drinks near the equipment."
+        },
+        {
+          "id": "p5_notice_03",
+          "section": "notice",
+          "level": 3,
+          "stem": "How must students sign up?",
+          "opts": ["At the sports hall", "By handing in a paper model", "Through an online form", "By asking another student"],
+          "ans": 2,
+          "expl": "Students must complete the online sign-up form before attending."
+        },
+        {
+          "id": "p5_notice_04",
+          "section": "notice",
+          "level": 3,
+          "stem": "When does the session begin?",
+          "opts": ["At 4:00 on Tuesday", "At noon on Wednesday", "At 5:30 on Thursday", "At 5:30 on Wednesday"],
+          "ans": 3,
+          "expl": "The session begins at 5:30 on Wednesday in the upstairs study room."
+        },
+        {
+          "id": "p5_notice_05",
+          "section": "notice",
+          "level": 3,
+          "stem": "What will the librarian demonstrate?",
+          "opts": ["A small desktop cutter", "A new library computer game", "A cooking machine", "A sports timer"],
+          "ans": 0,
+          "expl": "The librarian will demonstrate a small desktop cutter and explain safe use."
+        },
+        {
+          "id": "p5_notice_06",
+          "section": "notice",
+          "level": 3,
+          "stem": "Who is responsible for the safety demonstration?",
+          "opts": ["The paper model designer", "A librarian", "The sports coach", "A food seller"],
+          "ans": 1,
+          "expl": "A librarian will demonstrate the equipment and explain how to use it safely."
+        }
+      ]
+    },
+    {
+      "id": "p5_leaflet",
+      "section": "leaflet",
+      "title": "LEAFLET: Local Culture Walk",
+      "passage": "The Local Culture Walk introduces visitors to old buildings, public art, and stories from the town's first market. A guide leads the 90-minute walk from the old clock tower on Saturday morning. Wear comfortable shoes and bring a raincoat if the forecast is wet. The walk is free, but visitors must register because the guide can take only twenty people. If heavy rain is expected, the walk will be replaced by a short photo talk inside the museum. The organiser sends an email when the decision is made.",
+      "items": [
+        {
+          "id": "p5_leaflet_01",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "What activity does the leaflet advertise?",
+          "opts": ["A museum job interview", "A market cooking class", "A guided culture walk", "A building repair course"],
+          "ans": 2,
+          "expl": "The leaflet advertises a guided walk about local buildings, art, and history."
+        },
+        {
+          "id": "p5_leaflet_02",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "Where does the walk begin?",
+          "opts": ["At the public library", "Inside the market", "At the sports centre", "At the old clock tower"],
+          "ans": 3,
+          "expl": "The guide starts the walk at the old clock tower."
+        },
+        {
+          "id": "p5_leaflet_03",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "What should visitors wear?",
+          "opts": ["Comfortable shoes", "A formal uniform", "Swimming clothes", "A stage costume"],
+          "ans": 0,
+          "expl": "Visitors are advised to wear comfortable shoes for the 90-minute walk."
+        },
+        {
+          "id": "p5_leaflet_04",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "What is true about the fee?",
+          "opts": ["It is expensive for visitors", "The walk is free", "It is paid at the museum only", "It changes every hour"],
+          "ans": 1,
+          "expl": "The walk is free, although registration is required because the group is limited."
+        },
+        {
+          "id": "p5_leaflet_05",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "How long is the walk?",
+          "opts": ["Twenty minutes", "One whole day", "Ninety minutes", "Three hours"],
+          "ans": 2,
+          "expl": "The culture walk lasts 90 minutes."
+        },
+        {
+          "id": "p5_leaflet_06",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "What happens if heavy rain is expected?",
+          "opts": ["The group meets at the clock tower anyway", "The walk becomes a market", "The organiser cancels all communication", "A photo talk takes place inside the museum"],
+          "ans": 3,
+          "expl": "In heavy rain, the outdoor walk is replaced by a short photo talk inside the museum."
+        }
+      ]
+    },
+    {
+      "id": "p5_complete",
+      "section": "complete",
+      "title": "Text completion: A Balanced Study Plan",
+      "passage": "A balanced study plan starts with a clear list of deadlines. Students then divide a large assignment into smaller tasks and choose one task for each study period. Short breaks help them avoid fatigue, while the most difficult subject can be scheduled when they have the most energy. A simple checklist shows what has been completed. At the end of the week, students can review the plan and adjust it instead of trying to follow an unrealistic schedule.",
+      "items": [
+        {
+          "id": "p5_complete_01",
+          "section": "complete",
+          "level": 3,
+          "stem": "A balanced study plan starts with ...",
+          "opts": ["a long holiday", "a new school uniform", "an empty notebook", "a clear list of deadlines"],
+          "ans": 3,
+          "expl": "The passage begins by saying that a balanced plan starts with a clear list of deadlines."
+        },
+        {
+          "id": "p5_complete_02",
+          "section": "complete",
+          "level": 3,
+          "stem": "Short breaks help students ...",
+          "opts": ["avoid fatigue", "forget every deadline", "make assignments larger", "study without any plan"],
+          "ans": 0,
+          "expl": "Short breaks are included because they help students avoid fatigue."
+        },
+        {
+          "id": "p5_complete_03",
+          "section": "complete",
+          "level": 3,
+          "stem": "When should students schedule the most difficult subject?",
+          "opts": ["When they are about to sleep", "When they have the most energy", "Only after all deadlines pass", "During every short break"],
+          "ans": 1,
+          "expl": "The text recommends scheduling a difficult subject when students have the most energy."
+        },
+        {
+          "id": "p5_complete_04",
+          "section": "complete",
+          "level": 3,
+          "stem": "What shows which tasks are finished?",
+          "opts": ["A school bell", "A bus ticket", "A simple checklist", "A library map"],
+          "ans": 2,
+          "expl": "A simple checklist shows what has been completed."
+        },
+        {
+          "id": "p5_complete_05",
+          "section": "complete",
+          "level": 3,
+          "stem": "Why should students review the plan at the end of the week?",
+          "opts": ["To remove every study period", "To make all tasks harder", "To avoid looking at deadlines", "To adjust an unrealistic schedule"],
+          "ans": 3,
+          "expl": "Reviewing the plan lets students adjust it instead of following an unrealistic schedule."
+        }
+      ]
+    },
+    {
+      "id": "p5_reading1",
+      "section": "reading1",
+      "title": "Learning at an Animal Shelter",
+      "passage": "A student group spends one afternoon each week helping at an animal shelter. The students do not make medical decisions; instead, staff members show them safe tasks such as preparing food bowls, washing equipment, and recording which animals have eaten. Each bowl has a label because some animals need a special diet. At first, the students found it difficult to work with shy animals that hid when people entered. The staff advised them to move slowly and speak quietly. After several weeks, the students became more patient and organised. They also learned that cleaning is as important as feeding because a clean space helps animals stay healthy. The shelter sometimes invites the group to explain its work to visitors, but students never handle an animal without a staff member nearby. Their teacher says the experience is useful because it connects responsibility with care for living things.",
+      "items": [
+        {
+          "id": "p5_reading1_01",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Why does the student group visit the shelter?",
+          "opts": ["To make medical decisions", "To help with safe tasks and learn responsibility", "To buy animals for the school", "To replace all shelter staff"],
+          "ans": 1,
+          "expl": "The students help with safe tasks under staff guidance and learn about responsibility and care."
+        },
+        {
+          "id": "p5_reading1_02",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Which task do staff members show the students?",
+          "opts": ["Choosing medical treatments", "Taking animals home", "Preparing food bowls", "Designing a new shelter"],
+          "ans": 2,
+          "expl": "Preparing food bowls is one of the safe tasks listed in the passage."
+        },
+        {
+          "id": "p5_reading1_03",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Why does each bowl have a label?",
+          "opts": ["To decorate the shelter", "To count the visitors", "To make the animals move faster", "To show that some animals need a special diet"],
+          "ans": 3,
+          "expl": "Labels help staff and students identify the bowls for animals with special diets."
+        },
+        {
+          "id": "p5_reading1_04",
+          "section": "reading1",
+          "level": 4,
+          "stem": "How should students approach shy animals?",
+          "opts": ["Move slowly and speak quietly", "Enter quickly and make loud sounds", "Feed them without labels", "Ask visitors to chase them"],
+          "ans": 0,
+          "expl": "Staff advise students to move slowly and speak quietly around shy animals."
+        },
+        {
+          "id": "p5_reading1_05",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What did the students become after several weeks?",
+          "opts": ["Less organised and louder", "More patient and organised", "Medical decision-makers", "Visitors who never helped"],
+          "ans": 1,
+          "expl": "The passage says the students became more patient and organised after several weeks."
+        },
+        {
+          "id": "p5_reading1_06",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Why is cleaning important at the shelter?",
+          "opts": ["It makes visitors stay longer", "It replaces feeding", "It helps animals stay healthy", "It lets students make medical decisions"],
+          "ans": 2,
+          "expl": "A clean space helps animals stay healthy, so cleaning matters as much as feeding."
+        },
+        {
+          "id": "p5_reading1_07",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What rule applies when students handle an animal?",
+          "opts": ["They may handle any animal alone", "They must take the animal to school", "They may ignore the staff member", "A staff member must be nearby"],
+          "ans": 3,
+          "expl": "Students never handle an animal without a staff member nearby."
+        },
+        {
+          "id": "p5_reading1_08",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Why does the teacher value the experience?",
+          "opts": ["It connects responsibility with care for living things", "It teaches students to make medical decisions", "It removes the need for school lessons", "It guarantees that every animal is adopted"],
+          "ans": 0,
+          "expl": "The teacher values the experience because it links responsibility with care for living things."
+        }
+      ]
+    },
+    {
+      "id": "p5_reading2",
+      "section": "reading2",
+      "title": "A Community Energy Cooperative",
+      "passage": "Several neighbourhoods formed an energy cooperative after electricity costs rose and residents became interested in solar power. The group did not begin by buying panels. It first surveyed rooftops to learn which buildings received enough sunlight and which roofs needed repair. Members then contributed small amounts of money, while a local credit union provided a loan for the first installation. The panels produce the most electricity on bright days. Extra power can be stored in batteries for evening use, but the batteries are not large enough to cover every building. On cloudy days, homes continue to use the main grid. Each month, the cooperative shares a simple report showing energy produced, money spent, and repairs needed. A nearby school has joined the project as a learning partner. Students read the report, compare output in different seasons, and suggest ways to save energy at home. The cooperative is growing slowly because every new roof must be checked, but members say shared information makes long-term planning easier.",
+      "items": [
+        {
+          "id": "p5_reading2_01",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Why did the neighbourhoods form an energy cooperative?",
+          "opts": ["To build a larger school", "To stop checking rooftops", "To replace the credit union", "To respond to higher costs and interest in solar power"],
+          "ans": 3,
+          "expl": "The first sentence gives both reasons: rising electricity costs and growing interest in solar power."
+        },
+        {
+          "id": "p5_reading2_02",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What did the cooperative do before buying panels?",
+          "opts": ["It surveyed rooftops", "It closed every home", "It built batteries at school", "It spent all its money on repairs"],
+          "ans": 0,
+          "expl": "The group first surveyed rooftops to check sunlight and roof condition."
+        },
+        {
+          "id": "p5_reading2_03",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Who contributed small amounts of money?",
+          "opts": ["Only the school students", "The cooperative members", "Only the roof inspectors", "Visitors to the library"],
+          "ans": 1,
+          "expl": "Members contributed small amounts, while a credit union provided a loan."
+        },
+        {
+          "id": "p5_reading2_04",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What can the batteries do?",
+          "opts": ["Repair every roof", "Power every building for a year", "Store extra power for evening use", "Measure the amount of sunlight"],
+          "ans": 2,
+          "expl": "The batteries store extra electricity so it can be used in the evening."
+        },
+        {
+          "id": "p5_reading2_05",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What do homes use on cloudy days?",
+          "opts": ["Only stored power", "No electricity", "A school generator", "The main grid"],
+          "ans": 3,
+          "expl": "The passage says homes continue to use the main grid on cloudy days."
+        },
+        {
+          "id": "p5_reading2_06",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What does the monthly report include?",
+          "opts": ["Energy produced, money spent, and repairs needed", "Every resident's private details", "Only the weather forecast", "The price of school books"],
+          "ans": 0,
+          "expl": "The report summarises energy produced, money spent, and repairs needed."
+        },
+        {
+          "id": "p5_reading2_07",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Why is the cooperative growing slowly?",
+          "opts": ["No residents want solar power", "Every new roof must be checked", "The school has left the project", "The panels work only at night"],
+          "ans": 1,
+          "expl": "Growth is slow because the group must check every new roof before installation."
+        },
+        {
+          "id": "p5_reading2_08",
+          "section": "reading2",
+          "level": 4,
+          "stem": "How does the school take part?",
+          "opts": ["It lends money to every home", "It repairs all panels", "It reads reports and suggests ways to save energy", "It replaces the cooperative members"],
+          "ans": 2,
+          "expl": "The school is a learning partner whose students read reports and suggest energy-saving ideas."
+        },
+        {
+          "id": "p5_reading2_09",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Which title best fits the neighbourhood project?",
+          "opts": ["Why Roofs Cannot Be Checked", "A School Without Electricity", "The End of All Repairs", "Sharing Solar Power and Information"],
+          "ans": 3,
+          "expl": "The project combines shared solar equipment with shared reports and learning."
+        },
+        {
+          "id": "p5_reading2_10",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What can be inferred about the cooperative's method?",
+          "opts": ["It expects one installation to solve every energy problem", "It avoids using data", "It uses shared planning to support gradual changes", "It refuses to work with schools"],
+          "ans": 2,
+          "expl": "Roof surveys, monthly reports, and gradual growth show a method based on shared planning and data."
         }
       ]
     },
