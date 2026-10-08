@@ -21,6 +21,13 @@ class AppLocaleTest {
     }
 
     @Test
+    fun repeatedLocaleSelectionDoesNotRequestAnotherActivityRestart() {
+        assertEquals(false, AppLocale.needsApply("vi", "vi"))
+        assertEquals(false, AppLocale.needsApply("pt_BR", "pt-BR"))
+        assertEquals(true, AppLocale.needsApply("en", "vi"))
+    }
+
+    @Test
     fun systemAppLocaleOverridesStoredOnlyWhenSelectable() {
         val selectable = listOf("en", "vi")
 

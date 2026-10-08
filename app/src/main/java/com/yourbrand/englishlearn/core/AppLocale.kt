@@ -10,6 +10,10 @@ object AppLocale {
         else -> contentLocale.trim().replace('_', '-')
     }
 
+    /** True when applying [contentLocale] would change the current per-app locale. */
+    fun needsApply(currentTag: String, contentLocale: String): Boolean =
+        currentTag.trim().replace('_', '-').lowercase() != languageTag(contentLocale).lowercase()
+
     fun initialLocale(deviceTag: String, selectable: Collection<String>): String {
         val normalized = deviceTag.trim().replace('_', '-').lowercase()
         val exact = selectable.firstOrNull { it.lowercase() == normalized }
@@ -29,6 +33,10 @@ object AppLocale {
     }
 
     fun apply(contentLocale: String) {
-        AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(languageTag(contentLocale)))
+        val desired = languageTag(contentLocale)
+        val current = AppCompatDelegate.getApplicationLocales()
+        val currentTag = if (current.isEmpty) "" else current[0]?.toLanguageTag().orEmpty()
+        if (!needsApply(currentTag, desired)) return
+        AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(desired))
     }
 }

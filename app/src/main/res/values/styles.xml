@@ -6,6 +6,7 @@
         <item name="colorControlActivated">@color/primary</item>
         <item name="colorControlNormal">@color/muted</item>
         <item name="android:windowBackground">@color/bg</item>
+        <item name="android:windowSplashScreenBackground" tools:targetApi="31">@color/bg</item>
         <item name="android:textColorPrimary">@color/on_surface</item>
         <item name="android:textColorSecondary">@color/muted</item>
         <item name="android:fontFamily">sans-serif</item>

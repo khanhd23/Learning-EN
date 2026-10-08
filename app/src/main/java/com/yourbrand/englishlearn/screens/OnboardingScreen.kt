@@ -99,8 +99,11 @@ class OnboardingScreen(activity: MainActivity) : Screen(activity) {
                 language = locale
                 services.settings.contentLocale = locale
                 services.settings.contentLocaleChosen = true
-                AppLocale.apply(locale)
                 paint()
+                // Paint the selected card first. AppCompat may recreate the activity while
+                // applying the per-app locale; posting keeps the selection visible in the
+                // current frame instead of flashing the old screen before the restart.
+                card.post { if (language == locale) AppLocale.apply(locale) }
             }
             content.addView(card.margins(c, top = 10))
         }
