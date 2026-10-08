@@ -21,7 +21,7 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
     override fun headerActions(bar: LinearLayout) = HubHeader.build(this, bar, str(R.string.tab_exam))
 
     private var formatId: String
-        get() = services.settings.examGoal?.takeIf { id -> services.content.formatById(id) != null } ?: if ("toeic" in services.settings.goals) "toeic_p5" else "school"
+        get() = services.settings.examGoal?.takeIf { id -> services.content.formatById(id) != null } ?: if ("toeic" in services.settings.goals) "toeic" else "school"
         set(v) { services.settings.examGoal = v }
 
     override fun build(body: LinearLayout) {
@@ -139,14 +139,17 @@ class QuestionTypeScreen(activity: MainActivity, private val fmt: String) : Scro
         val chips = Kit.hbox(c)
         listOf(R.string.d_easy, R.string.d_medium, R.string.d_hard, R.string.d_mixed).forEachIndexed { i, l -> chips.addView(Kit.chip(c, str(l), difficulty == i) { difficulty = i; refresh() }) }
         body.addView(Kit.hscroll(c, chips).margins(c, top = 4))
-        val types: List<Pair<String?, Int>> = if (fmt == "toeic_p6") {
+        val types: List<Pair<String?, Int>> = if (fmt == "toeic") {
+            val bank = services.content.examBanks["toeic"]
+            listOf("p5" to (bank?.items?.count { it.section == "p5" } ?: 0), "p6" to (bank?.groups?.sumOf { it.items.size } ?: 0))
+        } else if (fmt == "toeic_p6") {
             services.content.passages.flatMap { it.blanks }.groupBy { it.qtype }.map { it.key to it.value.size } + listOf<Pair<String?, Int>>(null to services.content.passages.sumOf { it.blanks.size })
         } else {
             val pool = services.builder().examPool(fmt).filter { it.type != "E05" }
             pool.groupBy { it.qtype ?: if (it.type == "E04") "error" else if (it.type == "E12") "transform" else "vocab" }.map { it.key to it.value.size }.sortedByDescending { it.second }
         }
         types.forEach { (qt, count) ->
-            val keys = if (fmt == "toeic_p6") services.content.passages.flatMap { p -> p.blanks.indices.filter { qt == null || p.blanks[it].qtype == qt }.map { p.key(it) } }
+            val keys = if (fmt == "toeic") emptyList() else if (fmt == "toeic_p6") services.content.passages.flatMap { p -> p.blanks.indices.filter { qt == null || p.blanks[it].qtype == qt }.map { p.key(it) } }
             else services.builder().examPool(fmt).filter { q -> (q.qtype ?: if (q.type == "E04") "error" else if (q.type == "E12") "transform" else "vocab") == qt }.map { it.key }
             val st = keys.mapNotNull { services.store.item(it) }.filter { it.seen > 0 }
             val acc = if (st.isEmpty()) null else st.sumOf { it.correct } * 100 / st.sumOf { it.seen }.coerceAtLeast(1)

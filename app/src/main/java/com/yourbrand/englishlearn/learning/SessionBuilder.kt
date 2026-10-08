@@ -214,7 +214,16 @@ class SessionBuilder(
 
     /** Practice by exam question type (S11). difficulty: 0 easy · 1 medium · 2 hard · 3 mixed. */
     fun examType(title: String, fmt: String, qtype: String?, difficulty: Int, n: Int = 10): Session {
-        val ex = if (fmt == "toeic_p6") {
+        val ex = if (fmt == "toeic") {
+            val bank = content.examBanks["toeic"]
+            val selected = if (qtype == "p6") {
+                bank?.groups.orEmpty().flatMap { group -> group.items.map { it to group } }
+            } else {
+                bank?.items.orEmpty().filter { qtype == null || it.section == qtype }.map { it to null }
+            }
+            selected.filter { (item, _) -> when (difficulty) { 0 -> item.level <= 2; 1 -> item.level == 3; 2 -> item.level >= 4; else -> true } }
+                .ifEmpty { selected }.shuffled(random).take(n).map { (item, group) -> factory.exam("toeic", item, group) }
+        } else if (fmt == "toeic_p6") {
             content.passages.flatMap { p -> p.blanks.indices.filter { qtype == null || p.blanks[it].qtype == qtype }.map { p to it } }
                 .sortedBy { (p, i) -> if (state(p.key(i))?.isNew != false) 0 else 1 }.take(n * 2).shuffled(random).take(n)
                 .sortedWith(compareBy({ it.first.id }, { it.second })).map { (p, i) -> factory.passageBlank(p, i) }

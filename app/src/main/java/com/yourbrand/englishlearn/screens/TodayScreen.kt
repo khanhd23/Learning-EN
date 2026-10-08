@@ -163,8 +163,9 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
         planRow(plan, str(R.string.plan_grammar, gp?.title ?: ""), todayHist.any { it.kind == "GRAMMAR" }) { gp?.let { activity.open(GrammarLessonScreen(activity, it.id)) } }
         val examLabel = if ("toeic" in s.settings.goals) str(R.string.plan_part5) else str(R.string.plan_school)
         planRow(plan, examLabel, todayHist.any { it.kind == "EXAM_TYPE" || it.kind == "BUILDER" || it.kind == "MOCK" }) {
-            val fmt = if ("toeic" in s.settings.goals) "toeic_p5" else "school"
-            activity.startSession(s.builder().examType(examLabel, fmt, null, 3, 5))
+            val fmt = if ("toeic" in s.settings.goals) "toeic" else "school"
+            val section = if (fmt == "toeic") "p5" else null
+            activity.startSession(s.builder().examType(examLabel, fmt, section, 3, 5))
         }
         body.addView(plan)
 

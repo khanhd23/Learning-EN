@@ -786,6 +786,12 @@ def main():
         "sound": {x["id"]: x for x in sound_en["focus"]},
         "stories": {x["id"]: x for x in stories_en},
     })
+    # The sectioned TOEIC bank is a generated view of the same P5/P6 corpus.
+    # Rebuild it after every content generation so it cannot drift from the
+    # reviewed authoring source.
+    if os.path.isfile(os.path.join(ROOT, "tools", "build_toeic_bank.py")) and os.path.isfile(os.path.join(ROOT, "config", "exam_formats.json")):
+        import build_toeic_bank
+        build_toeic_bank.main()
     print(f"topics={len(topics)} words={len(words)} confusables={len(conf)} grammar={len(grammar)} "
           f"questions={len(questions)} passages={len(passages)} petMoods={len(pet)}")
 

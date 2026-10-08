@@ -81,4 +81,20 @@ class ExamEngineTest {
         assertEquals("Approved translated passage", merged.groups.first().passage)
         assertEquals("Approved translated title", merged.groups.first().title)
     }
+
+    @Test fun toeicPracticeReadsPartFiveAndPartSixFromTheSectionedBank() {
+        val toeic = ExamBank(
+            listOf(ExamItem("p5_1", "p5", 2, "Choose", listOf("A", "B", "C", "D"), 0, "P5 explanation")),
+            listOf(ExamGroup("p6_1", "p6", "A shared passage {1}.", "Notice", listOf(
+                ExamItem("p6_1_1", "p6", 3, "Choose", listOf("A", "B", "C", "D"), 1, "P6 explanation"),
+            )))
+        )
+        val content = Content(emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyMap(), emptyMap(), examBanks = mapOf("toeic" to toeic))
+        val builder = SessionBuilder(content, { null }, { emptyList() }, { emptyList() })
+        val p5 = builder.examType("Part 5", "toeic", "p5", 3, 1).exercises.single() as Exercise.Choice
+        val p6 = builder.examType("Part 6", "toeic", "p6", 3, 1).exercises.single() as Exercise.Choice
+        assertEquals("exam:toeic:p5_1", p5.key)
+        assertEquals("exam:toeic:p6_1_1", p6.key)
+        assertEquals("A shared passage {1}.", p6.sharedPassage)
+    }
 }
