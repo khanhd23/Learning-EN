@@ -299,7 +299,60 @@ Done when: TOEIC P5/P6 and the school format work as before, a sectioned format 
 runs end to end in unit tests, validate passes, `assembleDebug` and `testDebugUnitTest` pass.
 Commit, do not push.
 
+### Task 14 review (owner) — accepted as a base; wiring in Task 14.1
+
+Accepted (2220c51): `ExamSection`, `ExamBankParser`, `SectionedExamBuilder` (whole groups, exact
+fill), section scores on the result screen, optional bank copy in Gradle, bank checks in
+`validate_content.py`, tests pass. Not usable in the app yet: nothing loads a bank,
+`MockTest.build`/`ExamScreen` never call `SectionedExamBuilder`, there is no passage view, the vi
+bank is never read, per-section scores are not saved in history. Bug: `matches()` tests
+`section.exerciseTypes.any { it == "mcq" || it == "E01" }`, so a section with
+`"exerciseTypes": ["E02"]` never gets an item.
+
+### Task 14.1: Wire the exam engine into the app
+
+1. `ContentRepository` loads every `en/exams/<bank>.json` that a format uses (lazy, once) and
+   merges `i18n/<locale>/exams/<bank>.json` (`{id: {expl, stem?, passage?}}`, approved only, like
+   `questions`). Missing bank = the format card is hidden, never a crash.
+2. `MockTest.build`: if the format has `sections`, use `SectionedExamBuilder`; keys look like
+   `exam:<bank>:<itemId>`; store `sectionIds`/`sectionLabels` (already in the JSON). Resume works.
+3. Fix `matches()`: drop the `exerciseTypes` test for bank items (banks have no E-types); keep the
+   `qtype` filter.
+4. Passage view: for items with a group, show the passage in a card above the question, max 40 %
+   of the screen height, scrollable, with `passage_show` / `passage_hide`. Do not repeat the
+   passage on every item of the same group unless the learner opens it. Show `section_n` at the
+   start of each section.
+5. Review screen: show the passage above grouped items; explanation from the vi bank if present,
+   else English `expl`.
+6. History JSON: save `sections: [{id, correct, total}]`; old rows still load.
+7. Test: a format with two sections from the test bank runs `build → answer → result` in a unit
+   test; keys round-trip through `toJson/fromJson`.
+
+Strings already added by the owner: `passage_show`, `passage_hide`, `section_n`.
+
+### Task 15: Exam word lists
+
+Owner data delivered: `config/word_lists.json` (lists, labels, credits), CEFR sources in
+`tools/sources/cefrj-vocabulary-profile-1.5.csv` and `octanove-vocabulary-profile-c1c2-1.0.csv`,
+strings `word_lists`, `word_lists_desc`, `n_of_m_ready`, `learn_list`, `list_source`.
+
+1. `tools/gen_content.py`: give every word `lists` (subset of `ngsl`, `nawl`, `bsl`, `tsl`) and
+   `cefr` (A1–C2 or absent). Match by lemma (lowercase; CEFR headwords like `a.m./am` split on
+   `/`); when CEFR has several rows for one lemma, prefer the row whose pos matches the word's pos,
+   else the lowest level. Reuse `load_list` from `tools/tag_master_packs.py` (move it into a shared
+   helper). Add both fields to `build_content_db.py` (indexed columns) and to `Models.kt`.
+2. Words tab: a `word_lists` section (after topics) with one card per list from the config: emoji,
+   label, `n_of_m_ready` (silver words in the list / all words in the list that exist in the
+   dictionary). Tap opens a list screen like a topic screen (progressive rendering, same as topics)
+   with a `learn_list` button that starts a lesson from silver words of that list only (new words
+   first, then due reviews). Show `list_source` with the credit at the bottom.
+3. Onboarding goal (if the learner picked an exam goal) pre-selects the matching list on Today.
+4. Validate: every list id unique, every `sources` value is a known list, every `cefr` value is
+   A1–C2. Unit test for the CEFR matching rules.
+
+Done when validate, `testDebugUnitTest`, `assembleDebug` pass. Commit, do not push.
+
 ### Order
 
-Task 6.3 review (owner) → 9 → 10 → 12 → 13 → 11 → 14. Owner work runs in parallel:
+Task 6.3 review (owner) → 9 → 10 → 12 → 13 → 11 → 14 → 14.1 → 15. Owner work runs in parallel:
 C1 now, C2 before Task 9 ships, C5 before 10, C3 before 12, C4 before 14.

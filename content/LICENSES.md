@@ -16,6 +16,13 @@ List (NAWL), the Business Service List (BSL) and the TOEIC Service List (TSL), b
 Brent Culligan and Joseph Phillips (newgeneralservicelist.com).
 License: CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/
 
+2a. CEFR-J Wordlist and Octanove Vocabulary Profile
+CEFR levels used for the exam word lists come from the CEFR-J Wordlist Version 1.5, compiled by
+Yukio Tono, Tokyo University of Foreign Studies (www.cefr-j.org), free for commercial use with
+citation, obtained through Open Language Profiles (github.com/openlanguageprofiles/olp-en-cefrj);
+and the Octanove Vocabulary Profile C1/C2 1.0 by Octanove Labs, License: CC BY-SA 4.0,
+https://creativecommons.org/licenses/by-sa/4.0/
+
 3. WordNet 3.0
 Some English dictionary definitions were drafted from WordNet 3.0.
 WordNet Release 3.0. This software and database is being provided to you, the LICENSEE, by

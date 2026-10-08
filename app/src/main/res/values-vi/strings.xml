@@ -626,4 +626,12 @@
     <string name="ob_language_title">Bạn nói ngôn ngữ nào?</string>
     <string name="ob_language_sub">Nghĩa và giải thích sẽ hiển thị bằng ngôn ngữ này.</string>
     <string name="i_speak">Tôi nói %1$s</string>
+    <string name="word_lists">Từ vựng theo kỳ thi</string>
+    <string name="word_lists_desc">Những từ hay gặp nhất trong từng kỳ thi</string>
+    <string name="n_of_m_ready">%1$d/%2$d từ đã sẵn sàng</string>
+    <string name="learn_list">Học danh sách này</string>
+    <string name="list_source">Nguồn: %1$s</string>
+    <string name="passage_show">Xem đoạn văn</string>
+    <string name="passage_hide">Ẩn đoạn văn</string>
+    <string name="section_n">Phần %1$d/%2$d: %3$s</string>
 </resources>

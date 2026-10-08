@@ -626,4 +626,12 @@
     <string name="ob_language_title">Which language do you speak?</string>
     <string name="ob_language_sub">Meanings and explanations will appear in this language.</string>
     <string name="i_speak">I speak %1$s</string>
+    <string name="word_lists">Exam word lists</string>
+    <string name="word_lists_desc">The words each exam uses most</string>
+    <string name="n_of_m_ready">%1$d of %2$d words ready</string>
+    <string name="learn_list">Learn this list</string>
+    <string name="list_source">Source: %1$s</string>
+    <string name="passage_show">Show passage</string>
+    <string name="passage_hide">Hide passage</string>
+    <string name="section_n">Section %1$d of %2$d: %3$s</string>
 </resources>

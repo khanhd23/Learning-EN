@@ -1,0 +1,12 @@
+{
+  "_note": "Owner data. Each list selects words by list membership (tools/sources) and/or CEFR level. Labels are shown as-is; counts are computed, never hard-coded.",
+  "lists": [
+    {"id": "toeic", "family": "TOEIC", "label": "TOEIC 1,250 words", "emoji": "💼", "sources": ["tsl"], "cefr": [], "credit": "TOEIC Service List (Browne & Culligan), CC BY-SA 4.0"},
+    {"id": "thpt", "family": "THPT", "label": "High school exam (A2–B1)", "emoji": "🎓", "sources": [], "cefr": ["A1", "A2", "B1"], "credit": "CEFR-J Wordlist 1.5 (Tono Laboratory, TUFS)"},
+    {"id": "vstep_b1", "family": "VSTEP", "label": "VSTEP level 3 (B1)", "emoji": "🇻🇳", "sources": [], "cefr": ["B1"], "credit": "CEFR-J Wordlist 1.5 (Tono Laboratory, TUFS)"},
+    {"id": "vstep_b2", "family": "VSTEP", "label": "VSTEP level 4 (B2)", "emoji": "📈", "sources": [], "cefr": ["B2"], "credit": "CEFR-J Wordlist 1.5 (Tono Laboratory, TUFS)"},
+    {"id": "ielts_academic", "family": "IELTS", "label": "IELTS academic words", "emoji": "🏛️", "sources": ["nawl"], "cefr": [], "credit": "New Academic Word List (Browne, Culligan & Phillips), CC BY-SA 4.0"},
+    {"id": "business", "family": "Business", "label": "Business English", "emoji": "📊", "sources": ["bsl"], "cefr": [], "credit": "Business Service List (Browne & Culligan), CC BY-SA 4.0"},
+    {"id": "key_pet", "family": "Cambridge", "label": "Key and Preliminary (A2–B1)", "emoji": "🔑", "sources": [], "cefr": ["A2", "B1"], "credit": "CEFR-J Wordlist 1.5 (Tono Laboratory, TUFS)"}
+  ]
+}
