@@ -5,6 +5,7 @@ import android.content.pm.PackageManager
 import android.graphics.Path
 import android.graphics.PathMeasure
 import android.graphics.Rect
+import android.content.res.Configuration
 import android.os.Bundle
 import android.view.Gravity
 import android.view.View
@@ -51,6 +52,8 @@ class MainActivity : AppCompatActivity() {
     val sheets = mutableListOf<BottomSheet>()
 
     private var currentTab = Tab.TODAY
+    /** Per-app UI language the views were built with; a change rebuilds them in place. */
+    private var localeTag = ""
     private var bannerLoaded = false
     var bottomInset = 0
         private set
@@ -79,6 +82,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
+        localeTag = resources.configuration.locales[0].toLanguageTag()
         buildRoot()
         setContentView(rootFrame)
 
@@ -105,6 +109,35 @@ class MainActivity : AppCompatActivity() {
             services.ads.gatherConsent(this) { loadBanner() }
             services.ads.preloadRewarded()
         }
+    }
+
+    /**
+     * The manifest handles locale changes, so picking a language (AppLocale.apply) no longer
+     * destroys and recreates the activity (a dark flash). Rebuild the views in the new language
+     * instead: bottom bar labels, every screen on the stack; hubs not on screen are dropped and
+     * rebuilt on their next visit.
+     */
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        val tag = newConfig.locales[0].toLanguageTag()
+        if (tag == localeTag) return
+        localeTag = tag
+        relocalize()
+    }
+
+    private fun relocalize() {
+        if (!::navigator.isInitialized) return
+        val onStack = navigator.screens.toSet()
+        hubs.entries.removeAll { (_, screen) -> (screen !in onStack).also { gone -> if (gone) screen.onDestroy() } }
+        bottomNav.removeAllViews()
+        navItems.clear()
+        addNav(Tab.TODAY, R.drawable.ic_sun, R.string.tab_today)
+        addNav(Tab.VOCAB, R.drawable.ic_book, R.string.tab_vocab)
+        addNav(Tab.GRAMMAR, R.drawable.ic_structure, R.string.tab_grammar)
+        addNav(Tab.EXAM, R.drawable.ic_target, R.string.tab_exam)
+        addNav(Tab.ME, R.drawable.ic_person, R.string.tab_me)
+        navigator.rebuildViews()
+        updateChrome()
     }
 
     // ---- layout ------------------------------------------------------------------------------

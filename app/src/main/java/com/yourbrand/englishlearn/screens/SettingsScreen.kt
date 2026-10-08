@@ -8,6 +8,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.SwitchCompat
+import com.yourbrand.englishlearn.core.Settings
 import com.yourbrand.englishlearn.BuildConfig
 import com.yourbrand.englishlearn.MainActivity
 import com.yourbrand.englishlearn.R
@@ -39,7 +40,7 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
                     AppLocale.apply(s.contentLocale)
                 }
             }
-            choice(g, R.string.set_goal, listOf(5, 10, 15).map { str(R.string.minutes_n, it) }, listOf(5, 10, 15).indexOf(s.dailyMinutes)) { s.dailyMinutes = listOf(5, 10, 15)[it] }
+            choice(g, R.string.set_goal, Settings.DAILY_MINUTES.map { str(R.string.minutes_n, it) }, Settings.DAILY_MINUTES.indexOf(s.dailyMinutes).coerceAtLeast(0)) { s.dailyMinutes = Settings.DAILY_MINUTES[it] }
             choice(g, R.string.set_new_words, listOf("3", "5", "8"), listOf(3, 5, 8).indexOf(s.newWordsPerSession)) { s.newWordsPerSession = listOf(3, 5, 8)[it] }
             choice(g, R.string.set_level, listOf(R.string.lvl_beginner, R.string.lvl_basic, R.string.lvl_inter, R.string.lvl_upper).map { str(it) }, s.level) { s.level = it }
             toggle(g, R.string.set_translation, s.showTranslation) { s.showTranslation = it }

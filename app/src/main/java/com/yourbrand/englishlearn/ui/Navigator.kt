@@ -95,6 +95,25 @@ class Navigator(private val container: FrameLayout, private val onChanged: (Scre
         return true
     }
 
+    /**
+     * Rebuilds the views of every screen on the stack in place (after a per-app locale change),
+     * keeping each screen's state. Only the top screen stays visible; no transition, no flash.
+     */
+    fun rebuildViews() {
+        val top = current ?: return
+        stack.forEach { screen ->
+            val old = if (screen.hasView) screen.view else null
+            screen.onHidden()
+            val fresh = screen.create(container)
+            old?.let { it.animate().cancel(); container.removeView(it) }
+            container.addView(fresh, FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT))
+            fresh.visibility = if (screen === top) View.VISIBLE else View.INVISIBLE
+            screen.onShown(true)
+            if (screen !== top) screen.onHidden()
+        }
+        onChanged(top)
+    }
+
     /** Pops until [predicate] matches the top screen (or only the root is left). */
     fun popTo(predicate: (Screen) -> Boolean) { while (stack.size > 1 && !predicate(stack.last())) pop() }
 

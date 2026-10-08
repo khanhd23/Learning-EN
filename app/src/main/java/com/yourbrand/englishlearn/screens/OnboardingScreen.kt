@@ -10,6 +10,7 @@ import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
+import com.yourbrand.englishlearn.core.Settings
 import com.yourbrand.englishlearn.MainActivity
 import com.yourbrand.englishlearn.R
 import com.yourbrand.englishlearn.core.AppLocale
@@ -26,7 +27,7 @@ class OnboardingScreen(activity: MainActivity) : Screen(activity) {
     private var step = 0
     private val goals = linkedSetOf<String>()
     private var level = 1
-    private var minutes = 10
+    private var minutes = 15
     private var species = "cat"
     private var name = ""
     private var language = "en"
@@ -164,9 +165,11 @@ class OnboardingScreen(activity: MainActivity) : Screen(activity) {
         content.addView(box)
         content.addView(Kit.text(c, str(R.string.placement_later), R.style.Text_Caption).margins(c, top = 8))
         content.addView(Kit.text(c, str(R.string.ob_time), R.style.Text_BodyStrong).margins(c, top = 20))
-        content.addView(Kit.hbox(c).also { r ->
+        // Flow row, not a baseline-aligned hbox: the bold selected chip shifted the baseline and
+        // the row clipped the chips' top and bottom edges.
+        content.addView(Kit.flow(c).also { r ->
             val chips = ArrayList<TextView>()
-            listOf(5, 10, 15).forEach { m -> chips += Kit.chip(c, str(R.string.minutes_n, m), m == minutes) { minutes = m; chips.forEachIndexed { j, v -> Kit.styleChip(v, listOf(5, 10, 15)[j] == m) } }.also { r.addView(it) } }
+            Settings.DAILY_MINUTES.forEach { m -> chips += Kit.chip(c, str(R.string.minutes_n, m), m == minutes) { minutes = m; chips.forEachIndexed { j, v -> Kit.styleChip(v, Settings.DAILY_MINUTES[j] == m) } }.also { r.addView(it) } }
         }.margins(c, top = 8))
     }
 

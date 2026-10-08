@@ -7,6 +7,11 @@ import org.json.JSONObject
 
 /** Small key-value settings (SharedPreferences; included in Auto Backup). */
 class Settings(context: Context) {
+    companion object {
+        /** Daily study time choices (onboarding and settings). */
+        val DAILY_MINUTES = listOf(15, 30, 60)
+    }
+
     private val p = context.getSharedPreferences("settings_v1", Context.MODE_PRIVATE).also { DataRevision.watch(it) }
 
     private fun bool(k: String, d: Boolean) = p.getBoolean(k, d)
@@ -21,7 +26,8 @@ class Settings(context: Context) {
     var goals: Set<String> get() = p.getStringSet("goals", emptySet()) ?: emptySet(); set(v) = p.edit().putStringSet("goals", v).apply()
     /** 0 beginner · 1 basic · 2 intermediate · 3 upper. */
     var level: Int get() = int("level", 1); set(v) = put("level", v)
-    var dailyMinutes: Int get() = int("dailyMinutes", 10); set(v) = put("dailyMinutes", v)
+    /** Daily study time, one of [DAILY_MINUTES]; older 5/10-minute choices read as 15. */
+    var dailyMinutes: Int get() = int("dailyMinutes", 15).let { m -> DAILY_MINUTES.firstOrNull { it >= m } ?: DAILY_MINUTES.last() }; set(v) = put("dailyMinutes", v)
     var newWordsPerSession: Int get() = int("newWords", 5); set(v) = put("newWords", v)
     var showTranslation: Boolean get() = bool("showVi", true); set(v) = put("showVi", v)
     var storyShowTranslation: Boolean get() = bool("storyShowTranslation", false); set(v) = put("storyShowTranslation", v)
@@ -103,7 +109,8 @@ class Settings(context: Context) {
 
     var bubblesHiddenDay: Long get() = p.getLong("bubblesHiddenDay", -1); set(v) = put("bubblesHiddenDay", v)
 
-    val dailyGoalXp: Int get() = dailyMinutes * 6
+    /** Daily XP goal; stays within the pet's daily XP cap (200) so 60 minutes is reachable. */
+    val dailyGoalXp: Int get() = when (dailyMinutes) { 15 -> 60; 30 -> 120; else -> 200 }
     val userLevel: Int get() = (level + 1).coerceIn(1, 5)
     val questionScale: Float get() = when (textSize) { 1 -> 1.25f; 2 -> 1.5f; else -> 1f }
 
