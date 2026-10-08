@@ -427,7 +427,7 @@ def upgrade_schema(words, vi):
 MODULES = [
     "vocab_work", "vocab_life", "vocab_everyday", "vocab_modern", "vocab_foundation", "senses", "vocab_open", "vocab_expansion", "vocab_picture", "vocab_ngsl_core", "vocab_owner", "confusables",
     "grammar_l1", "grammar_l2", "grammar_l3", "grammar_l4", "grammar_l5",
-    "exam_p5", "exam_p6", "school", "pet_lines",
+    "exam_p5", "exam_p6", "exam_p5_d1", "exam_p6_d1", "school", "pet_lines",
 ]
 
 
@@ -515,12 +515,15 @@ def main():
         if q.get("topic"):
             q["topic"] = LEGACY_TOPIC_MAP.get(q["topic"], q["topic"])
         expl = q.pop("_vi")
+        expl_en = q.pop("_en_expl", "")
         q["id"] = qid(q)
         if q["id"] in seen:
             raise SystemExit(f"duplicate question: {q.get('stem')}")
         seen.add(q["id"])
         # English explanation; a stem override fixes the wording without changing the stable id.
         en_row = QUESTION_EXPL_EN.get(q["id"])
+        if expl_en:
+            q["expl"] = expl_en
         if en_row:
             q["expl"] = en_row["expl"]
             if en_row["stem"]:
@@ -591,7 +594,8 @@ def main():
         for i, b in enumerate(p["blanks"]):
             b = dict(b)
             vi["passages"][p["id"]]["blanks"].append(b.pop("_vi"))
-            b["expl"] = QUESTION_EXPL_EN[f"{p['id']}#{i}"]["expl"]
+            expl_en = b.pop("_en_expl", "")
+            b["expl"] = expl_en or QUESTION_EXPL_EN[f"{p['id']}#{i}"]["expl"]
             correct = b["opts"][0]
             others = b["opts"][1:]
             random.Random(p["id"] + str(i)).shuffle(others)

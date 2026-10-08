@@ -138,14 +138,30 @@ def O(sentence, vi, **kw):
 
 def P5(stem, opts, qtype, expl, topic=None, level=3, **kw):
     """TOEIC Part 5-style item (original). Correct option first."""
+    # New bank entries may carry their English explanation next to the
+    # Vietnamese teaching explanation.  Keeping it in authoring data lets the
+    # generator produce both locale layers without hand-editing generated JSON.
+    expl_en = kw.pop("expl_en", None)
+    if expl_en:
+        kw["_en_expl"] = expl_en
     return C(stem, opts, expl, fmt="toeic_p5", qtype=qtype, topic=topic, level=level, gp=kw.pop("gp", None), **kw)
 
 
 def P6(pid, title, text, blanks, topic=None, level=3):
     """Part 6-style passage. text has {1}..{4}; blanks: [(opts_correct_first, qtype, expl_vi)]."""
     assert all("{%d}" % (i + 1) in text for i in range(len(blanks))), pid
-    PASSAGES.append(dict(id=pid, title=title, text=nfc(text), topic=topic, level=level,
-                         blanks=[dict(opts=list(o), qtype=q, _vi=nfc(e)) for o, q, e in blanks]))
+    values = []
+    for blank in blanks:
+        if len(blank) == 3:
+            o, q, e = blank
+            en = None
+        else:
+            o, q, e, en = blank
+        row = dict(opts=list(o), qtype=q, _vi=nfc(e))
+        if en:
+            row["_en_expl"] = nfc(en)
+        values.append(row)
+    PASSAGES.append(dict(id=pid, title=title, text=nfc(text), topic=topic, level=level, blanks=values))
 
 
 def PR(words, expl, level=2):
