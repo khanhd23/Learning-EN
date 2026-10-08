@@ -1,6 +1,8 @@
 <resources>
     <!-- Design tokens (SKILL.md 4.1) -->
     <color name="bg">#FFF8F0</color>
+    <!-- Splash stays cream in dark mode too: the black panda would vanish on the dark bg. -->
+    <color name="splash_bg">#FFF8F0</color>
     <color name="surface">#FFFFFF</color>
     <color name="surface_variant">#F6EBDD</color>
     <color name="on_surface">#2B2118</color>
