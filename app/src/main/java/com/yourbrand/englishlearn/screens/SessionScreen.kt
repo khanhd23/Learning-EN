@@ -74,6 +74,8 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
     private lateinit var scroll: ScrollView
     private lateinit var action: TextView
     private lateinit var hintBtn: TextView
+    private var hintPanel: LinearLayout? = null
+    private var hintText: TextView? = null
     private lateinit var panel: LinearLayout
     private lateinit var bottomBar: LinearLayout
 
@@ -149,7 +151,14 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         col.addView(scroll)
 
         bottomBar = Kit.hbox(c) { setPadding(c.dpi(20), c.dpi(8), c.dpi(20), c.dpi(16)) }
-        hintBtn = Kit.secondary(c, "💡") { onHint?.invoke(); hintBtn.show(false); hintUsed = true }.apply {
+        hintBtn = Kit.secondary(c, "💡") {
+            onHint?.invoke()
+            // Keep the used hint visible as feedback instead of making the only hint affordance
+            // disappear before the learner can see what changed.
+            hintBtn.isEnabled = false
+            hintBtn.alpha = 0.5f
+            hintUsed = true
+        }.apply {
             layoutParams = LinearLayout.LayoutParams(c.dpi(56), c.dpi(52)).apply { marginEnd = c.dpi(10) }
             contentDescription = str(R.string.hint)
             visibility = View.GONE
@@ -205,6 +214,8 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         hintUsed = false
         check = null; onHint = null
         hintBtn.show(false)
+        hintBtn.isEnabled = true
+        hintBtn.alpha = 1f
         content.removeCallbacks(hintRunnable)
         content.postDelayed(hintRunnable, 8000)
         panel.show(false)
@@ -215,6 +226,19 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         progress.setCurrent(index)
         miniPet.mood = Mood.IDLE
         content.removeAllViews()
+        val hintBox = Kit.vbox(ctx) {
+            setPadding(ctx.dpi(14), ctx.dpi(12), ctx.dpi(14), ctx.dpi(12))
+            layoutParams = lp().apply { topMargin = ctx.dpi(12); bottomMargin = ctx.dpi(4) }
+        }.apply {
+            background = ctx.rounded(ctx.col(R.color.primary_container), 14f)
+            visibility = View.GONE
+        }
+        hintBox.addView(Kit.text(ctx, "💡 ${str(R.string.hint)}", R.style.Text_BodyStrong))
+        val hintBody = Kit.text(ctx, "", R.style.Text_Body).apply { textSize = 15f }
+        hintText = hintBody
+        hintBox.addView(hintBody)
+        hintPanel = hintBox
+        content.addView(hintBox)
         scroll.scrollTo(0, 0)
         shownAt = SystemClock.elapsedRealtime()
         when (ex) {
@@ -231,6 +255,14 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             is Exercise.Shadowing -> renderShadowing(ex)
         }
         content.staggerChildren(30)
+    }
+
+    private fun showHint(text: CharSequence?) {
+        val value = text?.toString()?.trim().orEmpty()
+        if (value.isBlank()) return
+        hintText?.text = value
+        hintPanel?.show(true)
+        hintPanel?.enter(distanceDp = 4f)
     }
 
     private fun instruction(res: Int): TextView = Kit.text(ctx, str(res), R.style.Text_Caption).apply { textSize = 14f }
@@ -324,8 +356,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             onAnswered(ex, ok, ex.options.getOrNull(selected), cards[ex.answer].view, correctText = ex.options[ex.answer], explanation = ex.explanation, speakText = ex.speak)
         }
         onHint = {
-            // Eliminate one wrong option (no penalty, only no bonus XP).
-            cards.indices.filter { it != ex.answer && it != selected && cards[it].enabled }.randomOrNull()?.let { cards[it].setState(OptionCard.State.DISABLED) }
+            showHint(listOfNotNull(ex.hint, ex.explanation.takeIf { it.isNotBlank() }).joinToString("\n"))
         }
     }
 
@@ -376,7 +407,10 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             onAnswered(ex, ok, ex.words.getOrNull(selected)?.lemma, cards[ex.answer].view,
                 correctText = ex.words[ex.answer].lemma, explanation = ex.words[ex.answer].gloss, speakText = ex.speak)
         }
-        onHint = { cards.indices.filter { it != ex.answer && it != selected && cards[it].enabled }.randomOrNull()?.let { cards[it].setState(OptionCard.State.DISABLED) } }
+        onHint = {
+            val answer = ex.words.getOrNull(ex.answer)
+            showHint(answer?.let { "${it.lemma} · ${it.gloss}" })
+        }
     }
 
     private fun renderPictureMatch(ex: Exercise.PictureMatch) {
@@ -459,7 +493,11 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             if (ok) segs[ex.answer].bump() else segs.getOrNull(selected)?.shake()
             onAnswered(ex, ok, segs.getOrNull(selected)?.text?.toString(), segs[ex.answer], correctText = str(R.string.fix_to, segs[ex.answer].text, ex.fix), explanation = ex.explanation)
         }
-        onHint = { letters.text = str(R.string.hint_find_error) }
+        onHint = {
+            val hint = str(R.string.hint_find_error)
+            letters.text = hint
+            showHint(hint)
+        }
     }
 
     // -- Word order (E05) --
@@ -510,9 +548,8 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             onAnswered(ex, ok, built.joinToString(" ") { it.text }, answerArea, correctText = ex.sentence, explanation = "", speakText = ex.sentence)
         }
         onHint = {
-            // Place the first correct chip.
             val first = Grader.chips(ex.sentence).firstOrNull()
-            if (built.isEmpty() && first != null) (0 until pool.childCount).map { pool.getChildAt(it) as TextView }.firstOrNull { it.text == first && it.alpha == 1f }?.performClick()
+            showHint(ex.translation ?: first)
         }
     }
 
@@ -709,7 +746,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             onAnswered(ex, ok, input.text.toString(), input, correctText = ex.word.lemma + " /" + ex.word.ipa + "/", explanation = ex.word.allGlosses,
                 speakText = ex.word.lemma, almost = r == Grader.Result.ALMOST)
         }
-        onHint = { if (input.text.isEmpty()) { input.setText(ex.word.lemma.take(2)); input.setSelection(input.text.length) } }
+        onHint = { showHint(ex.word.lemma.take(2)) }
     }
 
     private fun renderDictation(ex: Exercise.Dictation) {
@@ -741,7 +778,10 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             content.addView(Kit.text(c, coloredExpected(result.diff, c), R.style.Text_Caption, c.col(R.color.muted)).margins(c, top = 6))
             onAnswered(ex, result.result != Grader.Result.WRONG, input.text.toString(), input, ex.sentence, ex.translation.orEmpty(), ex.sentence, result.result == Grader.Result.ALMOST)
         }
-        onHint = { play.performClick() }
+        onHint = {
+            play.performClick()
+            showHint(ex.translation)
+        }
     }
 
     private fun renderMinimalPair(ex: Exercise.MinimalPairChoice) {
@@ -766,6 +806,11 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             val tip = services.content.sound.focuses.firstOrNull { it.id == ex.focus }?.tip.orEmpty()
             onAnswered(ex, ok, listOf(ex.first, ex.second).getOrNull(selectedOption), options[ex.answer].view, listOf(ex.first, ex.second)[ex.answer], tip.takeIf { it.isNotBlank() }?.let { str(R.string.sound_tip, it) }.orEmpty(), if (ex.answer == 0) ex.first else ex.second)
         }
+        onHint = {
+            val tip = services.content.sound.focuses.firstOrNull { it.id == ex.focus }?.tip.orEmpty()
+            showHint(tip.takeIf { it.isNotBlank() }?.let { str(R.string.sound_tip, it) } ?: str(R.string.play_slow))
+            play.performClick()
+        }
     }
 
     private fun renderShadowing(ex: Exercise.Shadowing) {
@@ -778,7 +823,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         speakButton.tag = "shadowSpeak"
         content.addView(speakButton)
         content.post { speak(ex.sentence) }
-        onHint = { speakButton.performClick() }
+        onHint = { speakButton.performClick(); showHint(ex.sentence) }
     }
 
     private fun beginShadowRecognition(ex: Exercise.Shadowing) {
