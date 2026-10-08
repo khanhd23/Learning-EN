@@ -106,7 +106,7 @@ class ExerciseFactory(private val content: Content, private val random: Random =
 
     fun exam(bank: String, item: ExamItem, group: ExamGroup?): Exercise.Choice =
         Exercise.Choice("exam:$bank:${item.id}", Kind.E01, listOf("exam", "section_${item.section}"), item.level,
-            R.string.ins_meaning, item.stem, item.options, item.answer, item.explanation,
+            R.string.ins_choose, item.stem, item.options, item.answer, item.explanation,
             sharedPassage = group?.passage, sharedPassageTitle = group?.title, sharedGroupId = group?.id)
 
     fun spelling(w: Word): Exercise.Spelling? {

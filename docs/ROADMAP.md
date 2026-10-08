@@ -333,6 +333,16 @@ bank is never read, per-section scores are not saved in history. Bug: `matches()
 
 Strings already added by the owner: `passage_show`, `passage_hide`, `section_n`.
 
+### Task 14.1 / R4 review (owner) — accepted with owner fixes
+
+Accepted 9179d42 (banks loaded and merged with approved vi overrides, `matches()` fixed, section
+headers, passage card, per-section history) and 1c3918d (application id
+`com.khankstudio.lingomori`, verified on a device). Owner fixes: the passage collapsed again when the
+screen re-rendered after an answer (now opens once per group and keeps the learner's choice);
+exam items used the `ins_meaning` instruction, now `ins_choose`. 46d910e (locale flicker) did not
+stop the activity restart; replaced by the owner fix in 95ed924 (manifest handles locale changes,
+views rebuilt in place).
+
 ### Task 15: Exam word lists
 
 Owner data delivered: `config/word_lists.json` (lists, labels, credits), CEFR sources in

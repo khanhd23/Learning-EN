@@ -146,8 +146,10 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
         }
         if (ex is Exercise.Choice && ex.sharedPassage != null && ex.sharedGroupId != null) {
             val groupId = ex.sharedGroupId
-            val firstItemInGroup = seenPassageGroups.add(groupId)
-            val open = firstItemInGroup || groupId in openPassageGroups
+            // Open the first time the group appears; after that it stays as the learner left it
+            // (re-rendering after an answer must not collapse it).
+            if (seenPassageGroups.add(groupId)) openPassageGroups += groupId
+            val open = groupId in openPassageGroups
             content.addView(Kit.secondary(c, str(if (open) R.string.passage_hide else R.string.passage_show), 0) {
                 if (open) openPassageGroups -= groupId else openPassageGroups += groupId
                 render()
