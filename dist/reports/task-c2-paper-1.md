@@ -14,10 +14,13 @@ banks. The paper follows the C1 format and contains 40 unique questions:
 | **Total** | **40** |
 
 All questions have four options, one answer key, an English explanation, and a Vietnamese
-explanation. The answer-key distribution is A=11, B=10, C=9, D=10; no answer letter is
+explanation. After manual QA, the answer-key distribution is A=12, B=11, C=9, D=8; no answer letter is
 above 35%. The Vietnamese file contains explanations for all 40 question IDs. The passages,
 notices, leaflet, and distractors are original practice content and contain no copied exam
 material.
+
+Manual QA corrected the Repair Club inference key, the wetland-view key, the `its` reference
+question, and an unnecessarily gendered distractor.
 
 ## Verification
 

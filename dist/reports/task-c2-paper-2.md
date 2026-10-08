@@ -14,10 +14,12 @@ exam banks. Paper 2 contains 40 unique questions in the six configured sections:
 | **Total** | **40** |
 
 Every Paper 2 item has four options, one checked answer key, an English explanation, and a
-Vietnamese explanation. The answer-key distribution is A=10, B=9, C=10, D=11; no answer
+Vietnamese explanation. After manual QA, the answer-key distribution is A=11, B=9, C=10, D=10; no answer
 letter is above 35%. The Vietnamese file contains explanations for all 40 new question IDs.
 The bank now has 80 unique question stems across Papers 1 and 2. The passages, notices,
 leaflet, and distractors are original practice content and contain no copied exam material.
+
+Manual QA corrected the first-aid question about the purpose of applying pressure to a wound.
 
 ## Verification
 

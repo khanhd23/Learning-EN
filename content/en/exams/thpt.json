@@ -142,8 +142,8 @@
       "level": 3,
       "stem": "Choose the best order for the lines: a. The final display showed how much waste the club had reused. b. Our art club wanted to make a display from old packaging. c. We collected clean boxes and sorted them by material. d. First, we drew a plan for the shapes and colours. e. The display stayed in the hallway for one month.",
       "opts": ["b – c – d – a – e", "b – d – c – a – e", "d – b – a – c – e", "b – c – a – e – d"],
-      "ans": 0,
-      "expl": "The club states its aim, collects and sorts materials, plans the design, reports the result, and displays it."
+      "ans": 1,
+      "expl": "The club states its aim, plans the design, collects and sorts materials, reports the result, and displays it."
     },
     {
       "id": "p4_arrange_02",
@@ -160,7 +160,7 @@
       "level": 3,
       "stem": "Choose the best order for the lines: a. Please arrive fifteen minutes early for registration. b. The youth theatre will present a new play on Saturday. c. Tickets can be collected at the community hall. d. We hope you enjoy the performance. e. The show begins at 7:30 in the evening.",
       "opts": ["b – e – a – c – d", "a – b – e – c – d", "b – a – e – c – d", "b – e – c – d – a"],
-      "ans": 2,
+      "ans": 0,
       "expl": "The invitation announces the play, gives the start time, adds the arrival instruction, explains ticket collection, and closes warmly."
     },
     {
@@ -169,8 +169,8 @@
       "level": 3,
       "stem": "Choose the best order for the lines: a. We will compare the readings at the end of the month. b. Our science class is building a small weather station. c. The station can record rainfall and wind speed. d. First, we checked the instructions and assembled the sensors. e. Everyone will take turns checking the display.",
       "opts": ["b – d – c – e – a", "d – b – e – c – a", "b – c – d – a – e", "d – b – c – e – a"],
-      "ans": 3,
-      "expl": "The class introduces the station, describes its purpose, assigns regular checks, and then says when the readings will be compared."
+      "ans": 0,
+      "expl": "The class introduces the station, checks the instructions, describes its purpose, assigns regular checks, and then says when the readings will be compared."
     },
     {
       "id": "p4_arrange_05",
@@ -200,12 +200,12 @@
       "expl": "The group meeting is introduced, its purpose is given, one speaker offers an example, the response follows, and the request comes last."
     },
     {
-      "id": "p5_arrange_03",
+          "id": "p5_arrange_03",
       "section": "arrange",
       "level": 3,
       "stem": "Choose the best order for the lines: a. Please place finished forms in the blue tray. b. The language club will hold a speaking practice session. c. Each student may choose a topic from the list. d. The teacher will give feedback at the end. e. The session starts in Room 12 at four o'clock.",
       "opts": ["b – e – c – a – d", "e – b – c – d – a", "b – c – e – a – d", "b – e – a – c – d"],
-      "ans": 2,
+      "ans": 0,
       "expl": "The announcement names the session, gives the room and time, explains topic choice, adds the form instruction, and ends with feedback."
     },
     {
@@ -258,7 +258,7 @@
           "level": 2,
           "stem": "The garden clean-up will take place ___ Friday afternoon.",
           "opts": ["at", "in", "on", "by"],
-          "ans": 2,
+          "ans": 0,
           "expl": "We use on with a day such as Friday. At is used for a time, in for a longer period, and by gives a deadline."
         },
         {
@@ -425,7 +425,7 @@
           "section": "reading1",
           "level": 3,
           "stem": "Why did the student take the lamp to the club?",
-          "opts": ["She wanted to buy a new tool", "She needed a library book", "She wanted to throw it away", "She wanted to learn whether it could be fixed"],
+          "opts": ["The student wanted to buy a new tool", "The student needed a library book", "The student wanted to throw it away", "The student wanted to learn whether it could be fixed"],
           "ans": 3,
           "expl": "The student first considered throwing the lamp away, but then took it to the club after receiving advice so the lamp could be fixed."
         },
@@ -462,7 +462,7 @@
           "level": 4,
           "stem": "What does the passage imply about the Repair Club?",
           "opts": ["It accepts every object without checking it", "It is useful only for professional engineers", "It combines repair with community learning", "It replaces the public library's normal services"],
-          "ans": 3,
+          "ans": 2,
           "expl": "The club repairs objects and lets residents share practical skills, so it combines repair with learning. The other statements contradict the passage."
         },
         {
@@ -549,7 +549,7 @@
           "id": "p1_reading2_07",
           "section": "reading2",
           "level": 4,
-          "stem": "The word it in paragraph 1 refers to ___.",
+          "stem": "The word its in paragraph 1 refers to ___.",
           "opts": ["the village", "the wetland", "the storm", "the group"],
           "ans": 1,
           "expl": "Its ability refers back to the wetland, which was becoming less able to support fish and birds."
@@ -569,7 +569,7 @@
           "level": 4,
           "stem": "How do residents view the wetland now?",
           "opts": ["As land that should be sold", "As a natural barrier and learning place", "As a dangerous road", "As a private fishing club"],
-          "ans": 3,
+          "ans": 1,
           "expl": "Residents now see the wetland as a natural barrier, a fish nursery, and an outdoor classroom."
         },
         {
@@ -790,7 +790,7 @@
           "level": 4,
           "stem": "What is the purpose of applying pressure to a small wound?",
           "opts": ["To slow the bleeding", "To make the wound invisible", "To replace professional treatment", "To measure the person's temperature"],
-          "ans": 3,
+          "ans": 0,
           "expl": "Applying pressure is presented as a basic response to a small bleeding wound; it is not a replacement for medical care."
         },
         {
