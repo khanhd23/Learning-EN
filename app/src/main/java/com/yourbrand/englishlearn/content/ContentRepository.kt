@@ -151,6 +151,10 @@ object ContentParser {
                 if (!o.has("passages") || o.isNull("passages")) null else o.optInt("passages"),
                 if (o.isNull("timeLimitMinutes")) null else o.optInt("timeLimitMinutes"),
                 o.strOrNull("source"),
+                o.optJSONArray("sections")?.let { a -> List(a.length()) { i -> a.getJSONObject(i).let { section -> ExamSection(
+                    section.getString("id"), section.optString("label", section.getString("id")), section.optString("itemType", "mcq"),
+                    section.getInt("count"), section.optJSONArray("exerciseTypes").strings(), section.optJSONArray("qtype").strings(), section.strOrNull("bank"),
+                ) } } } ?: emptyList(),
             )
         }
         val soon = f.optJSONArray("comingSoon").map { ComingSoon(it.getString("id"), it.getString("label")) }

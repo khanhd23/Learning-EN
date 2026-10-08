@@ -275,6 +275,14 @@ class MockResultScreen(
             }
         })
         // Estimated level — explicitly NOT an official score.
+        if (test.sectionIds.isNotEmpty() && test.sectionLabels.isNotEmpty()) {
+            body.addView(Kit.section(c, str(R.string.by_skill)))
+            test.sectionLabels.forEach { (id, label) ->
+                val indices = test.sectionIds.mapIndexedNotNull { i, section -> i.takeIf { section == id } }
+                val sectionCorrect = indices.count { test.answers[it] == answerOf(exercises[it]) }
+                body.addView(Kit.text(c, "$label  $sectionCorrect/${indices.size}", R.style.Text_Body).margins(c, bottom = 6))
+            }
+        }
         val est = str(when { pct >= 90 -> R.string.est_5; pct >= 75 -> R.string.est_4; pct >= 55 -> R.string.est_3; pct >= 35 -> R.string.est_2; else -> R.string.est_1 })
         body.addView(Kit.card(c, 16, 12) {
             addView(Kit.text(c, str(R.string.est_level), R.style.Text_Caption))

@@ -109,6 +109,63 @@ def load_from(root, *parts):
         return json.load(f)
 
 
+def exam_bank_errors(root=ROOT):
+    """Validate optional sectioned exam banks; owner data is allowed to be absent."""
+    exams = os.path.join(root, "content", "en", "exams")
+    if not os.path.isdir(exams):
+        return []
+    formats = load_from(root, "config", "exam_formats.json")
+    by_bank = {}
+    for fmt in formats.get("formats", []):
+        for section in fmt.get("sections", []):
+            if section.get("bank"):
+                by_bank.setdefault(section["bank"], []).append((fmt, section))
+    found = []
+    for path in sorted(os.listdir(exams)):
+        if not path.endswith(".json"):
+            continue
+        bank_id = path[:-5]
+        bank = load_from(root, "content", "en", "exams", path)
+        items = bank.get("items", [])
+        groups = bank.get("groups", [])
+        ids = set()
+        for item in items:
+            if item.get("id") in ids:
+                found.append(f"exam {bank_id}: duplicate id {item.get('id')}")
+            ids.add(item.get("id"))
+            if len(item.get("opts", [])) != 4 or not 0 <= item.get("ans", -1) < len(item.get("opts", [])):
+                found.append(f"exam {bank_id}/{item.get('id')}: needs 4 options and a valid answer")
+        for group in groups:
+            if group.get("id") in ids:
+                found.append(f"exam {bank_id}: duplicate id {group.get('id')}")
+            ids.add(group.get("id"))
+            if not group.get("items"):
+                found.append(f"exam {bank_id}/{group.get('id')}: group is empty")
+            for item in group.get("items", []):
+                if len(item.get("opts", [])) != 4 or not 0 <= item.get("ans", -1) < len(item.get("opts", [])):
+                    found.append(f"exam {bank_id}/{item.get('id')}: needs 4 options and a valid answer")
+        uses = by_bank.get(bank_id, [])
+        sections = {s.get("id") for _, s in uses}
+        for item in items:
+            if item.get("section") not in sections:
+                found.append(f"exam {bank_id}/{item.get('id')}: section is not declared by a format")
+        for group in groups:
+            if group.get("section") not in sections:
+                found.append(f"exam {bank_id}/{group.get('id')}: section is not declared by a format")
+        for fmt, section in uses:
+            if section.get("itemType", "mcq") == "group":
+                available = sorted(len(g.get("items", [])) for g in groups if g.get("section") == section.get("id"))
+                target = section.get("count", 0)
+                reachable = {0}
+                for size in available:
+                    reachable |= {n + size for n in list(reachable) if n + size <= target}
+                if target not in reachable:
+                    found.append(f"exam {bank_id}/{section.get('id')}: group count cannot be filled")
+            elif sum(1 for item in items if item.get("section") == section.get("id")) < section.get("count", 0):
+                found.append(f"exam {bank_id}/{section.get('id')}: item count cannot be filled")
+    return found
+
+
 def strings_xml_keys(root):
     path = os.path.join(root, "app", "src", "main", "res", "values", "strings.xml")
     tree = ET.parse(path)
@@ -210,6 +267,7 @@ def main():
     errors.extend(locale_errors)
     warnings.extend(locale_warnings)
     errors.extend(english_source_errors())
+    errors.extend(exam_bank_errors())
     # UTF-8 text decoded as cp1252 ("Ná»™i dung", "EspaÃ±ol", "â€”") must never reach resources or packs.
     mojibake = re.compile("Ã[\u0080-ÿ]|á»|áº|â€|Ä‘|Æ°")
     root_path = __import__("pathlib").Path(ROOT)

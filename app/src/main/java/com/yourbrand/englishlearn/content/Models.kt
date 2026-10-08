@@ -110,7 +110,22 @@ data class ExamFormat(
     val passages: Int?,
     val timeLimitMinutes: Int?,
     val source: String?,
+    val sections: List<ExamSection> = emptyList(),
 )
+
+data class ExamSection(
+    val id: String,
+    val label: String,
+    val itemType: String,
+    val count: Int,
+    val exerciseTypes: List<String>,
+    val qtypes: List<String>,
+    val bank: String?,
+)
+
+data class ExamItem(val id: String, val section: String, val level: Int, val stem: String, val options: List<String>, val answer: Int, val explanation: String, val qtype: String? = null)
+data class ExamGroup(val id: String, val section: String, val passage: String, val title: String?, val items: List<ExamItem>)
+data class ExamBank(val items: List<ExamItem>, val groups: List<ExamGroup>)
 
 data class ComingSoon(val id: String, val label: String)
 

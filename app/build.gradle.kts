@@ -119,6 +119,8 @@ val copyContent = tasks.register("generateContentAssets") {
             .forEach {
             rootProject.file("content/$it").copyTo(File(dst, it), overwrite = true)
         }
+        rootProject.file("content/en/exams").takeIf { it.isDirectory }?.copyRecursively(File(dst, "en/exams"), overwrite = true)
+        rootProject.file("content/i18n/vi/exams").takeIf { it.isDirectory }?.copyRecursively(File(dst, "i18n/vi/exams"), overwrite = true)
         // Locale packs remain outside the APK until their folder status is complete.
         val localeDir = rootProject.file("content/i18n")
         localeDir.listFiles { f -> f.isDirectory && File(f, "status.json").isFile }?.forEach { source ->
