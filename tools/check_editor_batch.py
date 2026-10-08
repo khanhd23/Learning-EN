@@ -113,7 +113,7 @@ def main() -> int:
                 problems.append(f"{where}: example has {n_words} words ({low}-14 for this level)")
             lemma = lemma_of.get(sid, sid.rsplit("_s", 1)[0])
             head = lemma.split()[0].lower()
-            tokens = [t.lower() for t in re.findall(r"[A-Za-z']+", example)]
+            tokens = [t.lower() for t in re.findall(r"[A-Za-z'-]+", example)]
             forms = {f.lower() for f in IRREGULAR_FORMS.get(head, [])}
             if not any(t.startswith(head[:max(2, len(head) - 2)]) or t in forms for t in tokens):
                 problems.append(f"{where}: example does not seem to contain '{lemma}' (check irregular forms)")

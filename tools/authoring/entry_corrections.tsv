@@ -43,7 +43,7 @@ wage|hr_recruiting
 benefit|hr_recruiting
 promote|marketing,hr_recruiting|prəˈmoʊt
 resign|hr_recruiting
-retire|hr_recruiting
+retire|hr_recruiting,age_life_stages
 employee|hr_recruiting
 employer|hr_recruiting
 position|hr_recruiting
@@ -57,7 +57,7 @@ personnel|hr_recruiting
 reference|hr_recruiting
 vacancy|hr_recruiting
 workforce|hr_recruiting
-apply_for|hr_recruiting||4
+apply_for|hr_recruiting,phrasal_verbs|əˈplaɪ fər|4
 leave|core_verbs,hr_recruiting|liːv
 incentive|hr_recruiting
 account|money_banking
@@ -261,7 +261,7 @@ customer_service|shopping||4
 shopping_mall|shopping
 brand_new|shopping
 second_hand|shopping||4
-try_on|clothes,shopping
+try_on|clothes,shopping,phrasal_verbs
 size|shopping
 fit|shopping,sports_fitness
 suit|clothes,shopping|suːt
@@ -294,7 +294,7 @@ sightseeing|travel_holidays
 tourist|travel_holidays
 journey|travel_holidays
 traffic_jam|travel_holidays
-check_in|travel_holidays||4
+check_in|travel_holidays,hotel_restaurant,phrasal_verbs|ˌtʃek ˈɪn|4
 abroad|travel_holidays|əˈbrɔːd
 accommodation|travel_holidays
 guide|travel_holidays
@@ -347,7 +347,7 @@ keynote|events
 attendee|events
 booth|events
 catering|events
-anniversary|events
+anniversary|events,age_life_stages
 celebrate|events
 announce|events
 award|events|əˈwɔːrd
@@ -359,7 +359,7 @@ hardware|it_technology
 download|it_technology
 upload|it_technology
 password|it_technology
-log_in|it_technology||4
+log_in|it_technology,phrasal_verbs|ˌlɔːɡ ˈɪn|4
 device|it_technology
 network|it_technology
 data|it_technology
@@ -443,7 +443,7 @@ lesson|education
 homework|education
 exam|education
 degree|education,weather|dɪˈɡriː
-graduate|education
+graduate|education,age_life_stages
 scholarship|education
 tuition|education
 certificate|education
@@ -521,7 +521,7 @@ announcement|media_news
 censor|media_news,government_society|ˈsensər
 trending|media_news
 live|media_news
-wake_up|daily_routine
+wake_up|daily_routine,phrasal_verbs
 breakfast|food_drink,daily_routine
 grocery|shopping,food_drink
 laundry|daily_routine,home_furniture
@@ -535,7 +535,7 @@ relax|daily_routine
 busy|daily_routine
 tired|feelings_personality,health_illness
 errand|daily_routine
-hang_out|unsorted||4
+hang_out|friends_relationships,phrasal_verbs|ˌhæŋ ˈaʊt|4
 take_a_nap|daily_routine|teɪk ə ˈnæp|4
 dishes|home_furniture,food_drink
 fridge|home_furniture
@@ -544,8 +544,8 @@ traffic|transport,city_directions
 on_time|time_dates
 in_a_hurry|unsorted||4
 get_along_with|unsorted
-look_after|unsorted||4
-run_out_of|unsorted
+look_after|family,phrasal_verbs|ˌlʊk ˈæftər|4
+run_out_of|shopping,phrasal_verbs|ˌrʌn ˈaʊt əv
 analyze|academic_words,office|ˈænəlaɪz
 theory|academic_words
 hypothesis|science_basics,academic_words|haɪˈpɑːθəsɪs
@@ -583,19 +583,19 @@ husband|family
 wife|family
 relative|family|ˈrelətɪv
 raise|family
-bring_up|family
+bring_up|family,age_life_stages,phrasal_verbs|ˌbrɪŋ ˈʌp
 get_married|family||4
-divorce|family
-engaged|family
+divorce|family,age_life_stages
+engaged|family,age_life_stages|ɪnˈɡeɪdʒd
 relationship|family
 close|describing_things,core_verbs
 trust|family
 support|family
 argue|family
-generation|family
+generation|family,age_life_stages
 only_child|family||4
 twin|family
-take_after|family
+take_after|family,phrasal_verbs|ˌteɪk ˈæftər
 look_up_to|family
 crush|family
 date|time_dates,friends_relationships
@@ -699,7 +699,7 @@ tournament|sports_fitness,events|ˈtʊrnəmənt
 referee|sports_fitness
 stadium|sports_fitness
 fan|sports_fitness
-work_out|sports_fitness||4
+work_out|sports_fitness,phrasal_verbs|ˌwɜːrk ˈaʊt|4
 jog|sports_fitness
 gym|sports_fitness
 muscle|sports_fitness,body_appearance|ˈmʌsəl
@@ -709,7 +709,7 @@ medal|sports_fitness
 draw|sports_fitness
 injured|sports_fitness
 cheer|sports_fitness
-warm_up|sports_fitness||4
+warm_up|sports_fitness,phrasal_verbs|ˌwɔːrm ˈʌp|4
 badminton|sports_fitness
 movie|arts_entertainment
 actor|arts_entertainment,jobs
@@ -812,8 +812,8 @@ trendy|clothes
 loose|clothes,describing_things|luːs
 tight|clothes,describing_things|taɪt
 wear|clothes
-put_on|clothes
-take_off|clothes,travel_holidays
+put_on|clothes,phrasal_verbs
+take_off|clothes,travel_holidays,phrasal_verbs
 pocket|clothes
 sleeve|clothes
 button|clothes
@@ -885,7 +885,7 @@ my_bad|unsorted||4
 fair_enough|unsorted
 it_s_up_to_you|unsorted||4
 i_m_down|unsorted
-hang_on|unsorted||4
+hang_on|phrasal_verbs|ˌhæŋ ˈɑːn|4
 no_way|unsorted||4
 for_real|unsorted
 same_here|unsorted||4
@@ -894,7 +894,7 @@ take_it_easy|unsorted||4
 good_luck|idioms_chunks
 you_got_this|unsorted||4
 long_time_no_see|unsorted||4
-catch_up|unsorted
+catch_up|education,phrasal_verbs|ˌkætʃ ˈʌp
 my_treat|unsorted
 i_m_in|unsorted||4
 that_makes_sense|unsorted
@@ -1296,7 +1296,7 @@ add|core_verbs|æd
 pass|core_verbs
 agree|core_verbs|əˈɡri
 carry|core_verbs
-die|core_verbs,health_illness
+die|core_verbs,health_illness,age_life_stages
 bear|core_verbs
 join|core_verbs
 please|function_words
@@ -2120,7 +2120,7 @@ rain|weather|reɪn
 mass|numbers_quantity
 failure|describing_things
 bottom|describing_things
-marriage|family
+marriage|family,age_life_stages
 plane|transport
 lady|friends_relationships
 strength|body_appearance
@@ -3378,7 +3378,7 @@ essential|describing_things
 feeling|unsorted||4
 fling|unsorted||4
 footing|unsorted||4
-marry|family
+marry|family,age_life_stages
 melon|food_drink|ˈmelən|4
 parting|unsorted||4
 partner|friends_relationships,office
@@ -4364,7 +4364,7 @@ garish|unsorted
 gaunt|unsorted
 gorgeous|unsorted
 gravitate|unsorted
-groom|unsorted
+groom|family,events,age_life_stages|ɡruːm
 grunt|unsorted
 heavenly|unsorted
 humming|unsorted
@@ -4879,7 +4879,7 @@ identity|government_society
 seriously|function_words
 investor|finance_accounting
 lovely|describing_things
-youth|family
+youth|family,age_life_stages
 increasingly|function_words
 ourselves|function_words
 conservative|government_society
@@ -5014,7 +5014,7 @@ dominate|core_verbs
 typically|function_words
 peer|education
 acquisition|finance_accounting
-retirement|hr_recruiting
+retirement|hr_recruiting,age_life_stages
 respectively|linking_words
 variation|academic_words
 ultimately|linking_words
@@ -5026,7 +5026,7 @@ framework|academic_words
 zone|city_directions
 equivalent|academic_words
 enterprise|office
-elderly|family
+elderly|family,age_life_stages
 contemporary|arts_entertainment
 gate|travel_holidays
 beer|food_drink
@@ -5098,7 +5098,7 @@ iron|home_furniture
 ally|government_society
 quantity|numbers_quantity
 bend|body_appearance
-mature|feelings_personality
+mature|feelings_personality,age_life_stages
 briefly|time_dates
 disturb|home_furniture
 newly|time_dates
@@ -5120,13 +5120,13 @@ tube|home_furniture
 characterize|academic_words
 specify|office
 operator|jobs
-infant|family
+infant|family,age_life_stages
 wrap|home_furniture
 specialize|jobs
 precisely|function_words
 offense|contracts_law
 detect|it_technology
-teenager|family
+teenager|family,age_life_stages
 moderate|describing_things
 musician|arts_entertainment
 shower|home_furniture
@@ -5374,11 +5374,11 @@ rug|home_furniture|rʌɡ|2
 vase|home_furniture|veɪs|2
 candle|home_furniture,events|ˈkændəl|2
 newborn|age_life_stages,family|ˈnuːbɔːrn|3
-grandchild|family|ˈɡræntʃaɪld|2
+grandchild|family,age_life_stages|ˈɡræntʃaɪld|2
 grandson|family|ˈɡrænsʌn|2
 granddaughter|family|ˈɡrændɔːtər|2
 retiree|age_life_stages|rɪˌtaɪəˈriː|3
-wedding|family,events|ˈwedɪŋ|2
+wedding|family,events,age_life_stages|ˈwedɪŋ|2
 honeymoon|family,travel_holidays|ˈhʌnimuːn|3
 lunchbox|food_drink,education|ˈlʌntʃbɑːks|2
 waitress|hotel_restaurant,jobs|ˈweɪtrəs|2
@@ -5397,3 +5397,26 @@ spam|internet_social|spæm|3
 tablet|it_technology|ˈtæblət|2
 earphones|it_technology|ˈɪrfoʊnz|2
 microphone|it_technology,arts_entertainment|ˈmaɪkrəfoʊn|3
+grow_up|phrasal_verbs,age_life_stages|ˌɡroʊ ˈʌp|1
+get_up|phrasal_verbs,daily_routine|ˌɡet ˈʌp|1
+look_up|phrasal_verbs,language_learning|ˌlʊk ˈʌp|2
+calm_down|phrasal_verbs,feelings_personality|ˌkɑːm ˈdaʊn|2
+get_along|phrasal_verbs,friends_relationships|ˌɡet əˈlɔːŋ|3
+sort_out|phrasal_verbs,office|ˌsɔːrt ˈaʊt|3
+turn_up|phrasal_verbs,events|ˌtɜːrn ˈʌp|3
+drop_off|phrasal_verbs,transport|ˌdrɑːp ˈɔːf|3
+fall_apart|phrasal_verbs,describing_things|ˌfɔːl əˈpɑːrt|4
+give_back|phrasal_verbs|ˌɡɪv ˈbæk|2
+come_back|phrasal_verbs,travel_holidays|ˌkʌm ˈbæk|1
+take_care_of|phrasal_verbs,family|ˌteɪk ˈker əv|2
+adolescent|age_life_stages|ˌædəˈlesənt|4
+adulthood|age_life_stages|ˈædʌlthʊd|4
+middle_aged|age_life_stages,body_appearance|ˌmɪdəl ˈeɪdʒd|3
+puberty|age_life_stages,health_illness|ˈpjuːbərti|4
+widow|age_life_stages,family|ˈwɪdoʊ|3
+kindergarten|age_life_stages,education|ˈkɪndərɡɑːrtən|2
+graduation|age_life_stages,education,events|ˌɡrædʒuˈeɪʃən|3
+bride|age_life_stages,family,events|braɪd|3
+lifespan|age_life_stages,health_illness|ˈlaɪfspæn|4
+orphan|age_life_stages,family|ˈɔːrfən|3
+elder|age_life_stages,family|ˈeldər|3
