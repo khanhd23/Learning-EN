@@ -59,7 +59,7 @@ base (Task 14).
 | P3 | Create the upload keystore; fill `signing.*` in `secrets.properties`; back up the keystore and passwords in two safe places | M1 | Use Play App Signing; losing the upload key is recoverable, losing everything is not |
 | P4a | ✅ `supportEmail` = khankstudio.support@gmail.com; policy filled (Đặng Kim Khánh, effective 2026-10-08) | M1 | Same address goes in the privacy policy and Play listing |
 | P4 | ✅ Privacy policy hosted: https://sites.google.com/view/lingomoriprivacypolicy (in `privacyPolicyUrl`) | M1 | Required for apps with ads |
-| P5 | ✅ Name: **LingoMori** (2026-10-08). Icon: panda illustration (publisher artwork), splash = panda + wordmark; Play icon `docs/store/play-icon-512.png` | M1 | Store titles per language: "LingoMori: Learn English Words", "LingoMori: Học Tiếng Anh Từ Vựng" |
+| P5 | ✅ Name: **LingoMori** (2026-10-08). Icon: panda illustration (publisher artwork), splash = panda + wordmark; Play icon `docs/store/play-icon-512.png` | M1 | Store titles per language: "LingoMori: Learn English Words", "LingoMori: Từ Vựng Tiếng Anh" |
 | P6 | Fill Play Console forms: Data safety, content rating, target audience 13+, ads declaration (Claude drafts every answer) | M2 | |
 | P7 | Recruit 12+ closed testers (friends, classmates, a Facebook group) and keep them for 14 days | M2 | Claude writes the invite message and a feedback form |
 | P8 | Test each build on the phone with the checklist Claude sends; report what looks wrong with a screenshot | Every build | |
@@ -76,7 +76,7 @@ base (Task 14).
 | A5 | TOEIC: move P5/P6 to a bank on the engine; 300 P5 items and 40 P6 texts | M2 |
 | A6 | Stories to 30 (Level 1–3), pictures to 500 | M2 |
 | A7 | ✅ `docs/store/privacy-policy.md` (+ `.vi.md`), `docs/store/play-console-answers.md`; in-app `privacy_text` updated | M1 |
-| A8 | Store listing EN + VI: short and full description, feature list, trademark notice, 5 app-name options, screenshot captions | M2 |
+| A8 | ✅ `docs/store/listing.md`: titles, short/full descriptions EN + VI (13+ wording), trademark notice, screenshot order and captions | M2 |
 | A9 | ✅ `docs/store/device-test-checklist.md`, `docs/store/tester-invite.md` (release notes per build later) | M1 |
 | A10 | Review every Codex commit before push; keep this roadmap and the release checklist current | Always |
 
