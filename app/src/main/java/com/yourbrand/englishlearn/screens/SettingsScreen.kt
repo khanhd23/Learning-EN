@@ -104,10 +104,12 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
                 val imageNotice = runCatching { c.assets.open("content/third_party_notices.txt").bufferedReader(Charsets.UTF_8).use { it.readText() } }.getOrDefault("")
                 val apache = c.assets.open("licenses/apache-2.0.txt").bufferedReader(Charsets.UTF_8).use { it.readText() }
                 val ccBySa = c.assets.open("licenses/cc-by-sa-4.0.txt").bufferedReader(Charsets.UTF_8).use { it.readText() }
+                val dependencyLicenses = runCatching { c.assets.open("licenses/dependencies.txt").bufferedReader(Charsets.UTF_8).use { it.readText() } }.getOrDefault("")
                 val text = str(R.string.licenses_text) + "\n\n" + contentLicenses +
                     if (imageNotice.isBlank()) "" else "\n\n$imageNotice" +
                     "\n\nApache License 2.0 (AndroidX and Noto Emoji)\n\n$apache" +
-                    "\n\nCC BY-SA 4.0 summary\n\n$ccBySa"
+                    "\n\nCC BY-SA 4.0 summary\n\n$ccBySa" +
+                    if (dependencyLicenses.isBlank()) "" else "\n\n$dependencyLicenses"
                 activity.open(TextScreen(activity, str(R.string.licenses), text))
             }
             action(g, R.string.contact) {

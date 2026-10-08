@@ -83,6 +83,7 @@ android {
     androidResources { localeFilters += listOf("en", "vi") }
 
     sourceSets["main"].assets.srcDir("build/generated/contentAssets")
+    sourceSets["main"].assets.srcDir("build/generated/licenseAssets")
     sourceSets["main"].res.srcDir("build/generated/imageAssets/res")
 
     testOptions { unitTests.isReturnDefaultValues = true }
@@ -96,6 +97,24 @@ dependencies {
     implementation(libs.ump)
     testImplementation(libs.junit)
     testImplementation(libs.org.json)
+}
+
+val licenseOut = layout.buildDirectory.dir("generated/licenseAssets").get().asFile
+val buildLicenseAssets = tasks.register("generateLicenseAssets") {
+    group = "build"
+    description = "Bundles dependency license and notice texts for the offline Licenses screen."
+    inputs.file(rootProject.file("tools/build_license_assets.py"))
+    outputs.dir(licenseOut)
+    doLast {
+        licenseOut.deleteRecursively()
+        val artifacts = configurations.getByName("releaseRuntimeClasspath").resolvedConfiguration.resolvedArtifacts
+            .map { "${it.moduleVersion.id.group}:${it.name}:${it.moduleVersion.id.version}=${it.file.absolutePath}" }
+        val command = mutableListOf("python", "tools/build_license_assets.py", "--root", rootProject.projectDir.absolutePath,
+            "--output", File(licenseOut, "licenses/dependencies.txt").absolutePath)
+        command.addAll(artifacts)
+        val process = ProcessBuilder(command).directory(rootProject.projectDir).inheritIO().start()
+        if (process.waitFor() != 0) error("build_license_assets.py failed")
+    }
 }
 
 // ---------------------------------------------------------------------------------------------
@@ -165,6 +184,8 @@ val buildImages = tasks.register("generateImageAssets") {
 buildImages.configure { dependsOn(copyContent) }
 tasks.matching { it.name.startsWith("merge") && it.name.endsWith("Resources") || it.name.startsWith("compile") && it.name.endsWith("Kotlin") }
     .configureEach { dependsOn(buildImages) }
+tasks.matching { it.name.startsWith("merge") && it.name.endsWith("Assets") }
+    .configureEach { dependsOn(buildLicenseAssets) }
 tasks.matching { it.name.startsWith("generate") && it.name.endsWith("Resources") }
     .configureEach { dependsOn(buildImages) }
 tasks.configureEach {
