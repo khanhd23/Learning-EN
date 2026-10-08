@@ -453,13 +453,24 @@ class BottomSheet(private val activity: MainActivity) {
         val sc = ScrollView(c).apply { addView(content); isVerticalScrollBarEnabled = false }
         p.addView(sc, lp())
         val maxH = (c.resources.displayMetrics.heightPixels * 0.85f).toInt()
+        // Hidden until measured: the old post{} ran after the first draw, so the panel flashed at
+        // its final place for a frame and then jumped down before sliding up.
+        p.visibility = View.INVISIBLE
         overlay.addView(p, FrameLayout.LayoutParams(MATCH_PARENT, WRAP_CONTENT, Gravity.BOTTOM))
-        p.post {
-            if (p.height > maxH) p.layoutParams = (p.layoutParams as FrameLayout.LayoutParams).apply { height = maxH }
-            p.translationY = p.height.toFloat()
-            p.animate().translationY(0f).setDuration(220).setInterpolator(android.view.animation.DecelerateInterpolator()).start()
-        }
-        s.animate().alpha(1f).setDuration(220).start()
+        p.viewTreeObserver.addOnPreDrawListener(object : android.view.ViewTreeObserver.OnPreDrawListener {
+            override fun onPreDraw(): Boolean {
+                if (p.height > maxH) {
+                    p.layoutParams = (p.layoutParams as FrameLayout.LayoutParams).apply { height = maxH }
+                    return false // lay out again at the capped height, then come back here
+                }
+                p.viewTreeObserver.removeOnPreDrawListener(this)
+                p.translationY = p.height.toFloat()
+                p.visibility = View.VISIBLE
+                p.animate().translationY(0f).setDuration(220).setInterpolator(android.view.animation.DecelerateInterpolator()).withLayer().start()
+                s.animate().alpha(1f).setDuration(220).start()
+                return true
+            }
+        })
         // Drag down to dismiss (on the handle area / panel).
         var startY = 0f
         p.setOnTouchListener { v, e ->
@@ -485,7 +496,7 @@ class BottomSheet(private val activity: MainActivity) {
         activity.sheets -= this
         if (activity.sheets.isEmpty()) activity.petView.setBlocked(false)
         s.animate().alpha(0f).setDuration(180).withEndAction { activity.overlay.removeView(s) }.start()
-        p.animate().translationY(p.height.toFloat()).setDuration(180).withEndAction { activity.overlay.removeView(p) }.start()
+        p.animate().translationY(p.height.toFloat()).setDuration(180).withLayer().withEndAction { activity.overlay.removeView(p) }.start()
         onDismiss?.invoke()
     }
 }
