@@ -43,6 +43,7 @@ class PetFloatingView(context: Context, private val onOpen: () -> Unit, private 
     private var avoidOffset = 0f
     private var savedPos: Pair<Float, Float>? = null // fractions (x: 0 start / 1 end, y of bounds)
     private var hideBubble: Runnable? = null
+    private val avoidRects = ArrayList<Rect>()
 
     init {
         clipChildren = false
@@ -61,7 +62,10 @@ class PetFloatingView(context: Context, private val onOpen: () -> Unit, private 
             elevation = context.dp(8f)
             visibility = GONE
             accessibilityLiveRegion = View.ACCESSIBILITY_LIVE_REGION_POLITE
-            setOnClickListener { hideBubbleNow(); onOpen() }
+            // This is visual/announced content only. It must not become a touch target above the
+            // screen; only the pet disc itself handles taps.
+            isClickable = false
+            isFocusable = false
         }
         addView(bubble, LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT))
         isFocusable = false
@@ -121,8 +125,11 @@ class PetFloatingView(context: Context, private val onOpen: () -> Unit, private 
      * The pet no longer moves by itself: jumping away from one button kept landing it on another.
      * It stays where it is (right side by default, or where the user dragged it).
      */
-    @Suppress("UNUSED_PARAMETER")
-    fun avoid(rects: List<Rect>) = Unit
+    fun avoid(rects: List<Rect>) {
+        avoidRects.clear()
+        avoidRects.addAll(rects.map(::Rect))
+        post { positionBubble() }
+    }
 
     private fun place(animate: Boolean) {
         if (bounds.isEmpty || sizePx == 0) return
@@ -208,6 +215,7 @@ class PetFloatingView(context: Context, private val onOpen: () -> Unit, private 
 
     fun say(text: String, iconOnly: Boolean) {
         if (visibility != VISIBLE || blocked || iconOnly) { if (!iconOnly) return else { pet.react(Mood.HI); return } }
+        bubble.animate().cancel()
         bubble.text = text
         bubble.visibility = VISIBLE
         bubble.alpha = 0f
@@ -216,26 +224,7 @@ class PetFloatingView(context: Context, private val onOpen: () -> Unit, private 
         bubble.animate().alpha(1f).scaleX(1f).scaleY(1f).setDuration(150).start()
         bubble.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED)
         hideBubble?.let { removeCallbacks(it) }
-        val big = resources.configuration.fontScale >= 1.3f
-        hideBubble = Runnable { hideBubbleNow() }.also { postDelayed(it, if (big) 6000 else 4000) }
-        setupBubbleSwipe()
-    }
-
-    @SuppressLint("ClickableViewAccessibility")
-    private fun setupBubbleSwipe() {
-        // bubble.x lives in translationX too, so swipe relative to where the bubble already is.
-        var downX = 0f; var baseX = 0f
-        bubble.setOnTouchListener { v, e ->
-            when (e.actionMasked) {
-                MotionEvent.ACTION_DOWN -> { downX = e.rawX; baseX = v.x; false }
-                MotionEvent.ACTION_MOVE -> { v.x = baseX + e.rawX - downX; true }
-                MotionEvent.ACTION_UP -> {
-                    if (abs(v.x - baseX) > v.width / 3f) { hideBubbleNow(); true }
-                    else { v.animate().x(baseX).setDuration(120).start(); abs(e.rawX - downX) > context.dpi(8) }
-                }
-                else -> false
-            }
-        }
+        hideBubble = Runnable { hideBubbleNow() }.also { postDelayed(it, 3_000L) }
     }
 
     fun hideBubbleNow() {
@@ -249,11 +238,22 @@ class PetFloatingView(context: Context, private val onOpen: () -> Unit, private 
         bubble.measure(MeasureSpec.makeMeasureSpec(context.dpi(220), MeasureSpec.AT_MOST), MeasureSpec.UNSPECIFIED)
         val bw = bubble.measuredWidth; val bh = bubble.measuredHeight
         val atEnd = disc.x + sizePx / 2f > (bounds.left + bounds.right) / 2f
-        // Beside the pet, toward the screen centre.
-        bubble.x = if (atEnd) disc.x - bw - context.dp(8f) else disc.x + sizePx + context.dp(8f)
-        // Bounds can still be empty on the first insets pass; never coerce into an inverted range.
-        val minY = bounds.top.toFloat()
-        bubble.y = (disc.y + sizePx / 2f - bh / 2f).coerceIn(minY, (bounds.bottom - bh).toFloat().coerceAtLeast(minY))
+        val petRect = BubbleBox(disc.x.toInt(), disc.y.toInt(), (disc.x + sizePx).toInt(), (disc.y + sizePx).toInt())
+        val placement = PetBubblePlacement.find(
+            BubbleBox(bounds.left, bounds.top, bounds.right, bounds.bottom),
+            petRect,
+            bw,
+            bh,
+            avoidRects.map { BubbleBox(it.left, it.top, it.right, it.bottom) },
+            context.dp(8f).toInt(),
+        )
+        if (placement == null) {
+            // Never cover learning content just to keep the message visible.
+            hideBubbleNow()
+            return
+        }
+        bubble.x = placement.left.toFloat()
+        bubble.y = placement.top.toFloat()
         bubble.pivotX = if (atEnd) bw.toFloat() else 0f
         bubble.pivotY = bh / 2f
     }

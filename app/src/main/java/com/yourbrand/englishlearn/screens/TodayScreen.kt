@@ -115,7 +115,7 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
             if (SpeechRecognizer.isRecognitionAvailable(c)) weeklyRow(this, str(R.string.quest_speaking, 2) + "  " + str(R.string.quest_progress, speakingDays, 2), speakingDays >= 2)
             weeklyRow(this, str(R.string.quest_stories, 2) + "  " + str(R.string.quest_progress, stories, 2), stories >= 2)
             addView(Kit.text(c, str(R.string.streak_shields, s.pet.state.freezeTokens), R.style.Text_Caption).margins(c, top = 4))
-        })
+        }.apply { tag = "petAvoid" })
 
         val token = ++deferredBuildToken
         body.postOnAnimation {
