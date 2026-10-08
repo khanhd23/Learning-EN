@@ -129,7 +129,7 @@ class WordListScreen(
         val c = ctx
         val s = services.store.item(w.key)
         val row = Kit.hbox(c) {
-            minimumHeight = c.dpi(64)
+            minimumHeight = c.dpi(78)
             setPadding(c.dpi(12), c.dpi(8), c.dpi(4), c.dpi(8))
             background = c.rounded(if (w.key in selected) c.col(R.color.primary_container) else 0, 12f, ripple = true)
             isClickable = true
@@ -148,6 +148,7 @@ class WordListScreen(
         top.addView(Kit.text(c, w.lemma, R.style.Text_BodyStrong).apply { layoutParams = LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT) })
         top.addView(Kit.text(c, " " + w.senses.joinToString("/") { it.pos }.let { if (it.length > 12) w.pos else it }, R.style.Text_Caption, c.col(R.color.primary)).apply { layoutParams = LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT) })
         texts.addView(top)
+        texts.addView(Kit.text(c, "/${w.ipa}/", R.style.Text_Caption, c.col(R.color.muted)))
         texts.addView(Kit.ellipsize(Kit.text(c, w.senses.joinToString("; ") { it.gloss }, R.style.Text_Caption)))
         // Mastery dots 0–5
         texts.addView(MasteryDots(c, (s?.box ?: 0).coerceAtMost(5)).margins(c, top = 4))
