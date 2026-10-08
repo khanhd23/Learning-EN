@@ -265,10 +265,39 @@ from day 2 the learner gets nothing; speaking and stories quests are missing. **
 
 ### Task 14: Exam engine
 
-- Generic exam definition in `config/exam_formats.json`: sections, item types, counts, time per
-  section, scoring/band tables — only owner-verified values; `null` stays "not officially
-  defined". Timed mode, review screen with explanations, history per exam.
-- First exam: THPT (once C4 delivers the bank). The existing TOEIC P5/P6 move onto the engine.
+Already in the app (do not rebuild): format picker, timer (`timeLimitSec`), resume, flags, result
+screen with review filters, history, mistake book. Missing: exams made of several **sections**, and
+exam-specific **banks** with shared passages. THPT (the owner is writing it under C4) needs both.
+
+1. **Sections in `config/exam_formats.json`** (optional; a format without `sections` keeps working
+   exactly as today). Shape:
+   `"sections": [{"id": "s1", "label": "...", "itemType": "mcq" | "group", "count": 6,
+   "exerciseTypes": ["E02"], "qtype": ["..."], "bank": "thpt"}]`. Read the counts from the
+   config, never from code. A mock runs sections in order with one timer for the whole exam
+   (`timeLimitMinutes` stays the exam total; `null` = untimed).
+2. **Exam banks**: `content/en/exams/<bank>.json` plus `content/i18n/vi/exams/<bank>.json`
+   (explanations and translations, status kind `exams`, same approval gate as `questions`). Shape:
+   `{"items": [{"id", "section", "level", "stem", "opts", "ans", "expl"}],
+   "groups": [{"id", "section", "passage", "title"?, "items": [ ...same item shape... ]}]}`.
+   A `group` shows the passage once (scrollable, pinned above the question on the same screen,
+   with a toggle to collapse it) and then its 4–8 items in order. Picking questions: whole groups
+   for `group` sections, never a random part of a group. Include the bank files in the
+   `generateContentAssets` copy list with the same exists-filter you used for `stories.json`.
+3. **Result screen**: add a score for each section (`correct/total`) above the existing
+   breakdowns. Mock history keeps the overall score; also save per-section scores in the history
+   JSON. Old history rows (without sections) must still load.
+4. **Validation**: `tools/validate_content.py` checks the banks: unique ids, `ans` in range, 4
+   options, every `section` exists in the format that uses the bank, each `group` has 1+ items,
+   every section's `count` can be filled. Unit tests for picking whole groups and for loading
+   formats with and without sections.
+5. **Placeholder**: until the owner's bank arrives, add a test-only bank in
+   `app/src/test/resources` for the unit tests. Do not create `content/en/exams/thpt.json` and do
+   not write any THPT facts, counts or questions yourself: the owner provides the format entry
+   and the bank.
+
+Done when: TOEIC P5/P6 and the school format work as before, a sectioned format from the test bank
+runs end to end in unit tests, validate passes, `assembleDebug` and `testDebugUnitTest` pass.
+Commit, do not push.
 
 ### Order
 
