@@ -90,6 +90,51 @@
       "opts": ["b – d – c – e – a", "d – b – c – e – a", "d – c – b – a – e", "b – d – e – c – a"],
       "ans": 0,
       "expl": "The group gathers materials, sketches the design, tests it, changes the pipe, and reports the improved result."
+    },
+    {
+      "id": "p3_arrange_01",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. We placed the labels beside each object. b. The museum asked our class to prepare a local-history display. c. Visitors could then understand how the objects were used. d. First, we researched the objects with the curator. e. We checked the labels before opening the room.",
+      "opts": ["b – d – a – e – c", "b – a – d – e – c", "d – b – e – a – c", "b – d – e – c – a"],
+      "ans": 0,
+      "expl": "The request comes first, followed by research, label writing, a final check, and the benefit for visitors."
+    },
+    {
+      "id": "p3_arrange_02",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. That will make the trip shorter. b. The city has added a bus stop near the sports centre. c. I usually walk twenty minutes from the old stop. d. You can check the new timetable online. e. I can now take the bus after practice.",
+      "opts": ["b – a – c – e – d", "b – c – a – e – d", "c – b – e – a – d", "b – c – e – d – a"],
+      "ans": 1,
+      "expl": "The new stop is introduced, the current difficulty is explained, the speaker responds to the benefit, describes the result, and gives the timetable source."
+    },
+    {
+      "id": "p3_arrange_03",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. Please return the costumes to the labelled boxes. b. The school performance will begin at seven. c. The cast should arrive by six for a sound check. d. Thank you for helping the backstage team. e. Families may enter through the main gate.",
+      "opts": ["b – e – c – a – d", "c – b – e – a – d", "b – c – e – a – d", "b – c – a – e – d"],
+      "ans": 2,
+      "expl": "The notice gives the performance time, arrival time, entry route, a backstage instruction, and a polite closing."
+    },
+    {
+      "id": "p3_arrange_04",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. I can bring gloves and a watering can. b. The residents want to plant trees beside the footpath. c. We should choose native trees for the dry soil. d. The gardening group will meet on Sunday morning. e. Then we can water the new trees together.",
+      "opts": ["b – c – d – a – e", "d – b – c – e – a", "b – d – a – c – e", "d – b – c – a – e"],
+      "ans": 3,
+      "expl": "The plan introduces the goal, gives the meeting time, chooses suitable trees, assigns supplies, and ends with watering them."
+    },
+    {
+      "id": "p3_arrange_05",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. The second test used less water than the first. b. We measured the water left in each container. c. Our science group wanted to compare two watering methods. d. First, we prepared equal soil samples. e. We shared the results with the class.",
+      "opts": ["c – d – b – a – e", "d – c – b – a – e", "c – b – d – e – a", "b – c – d – a – e"],
+      "ans": 0,
+      "expl": "The group states its purpose, prepares equal samples, measures the result, reports the comparison, and shares the findings."
     }
   ],
   "groups": [
@@ -702,6 +747,361 @@
           "opts": ["A Youth Centre First-Aid Course", "How to Become a Doctor", "A Cycling Competition", "Buying a Wallet Card"],
           "ans": 0,
           "expl": "The whole passage describes the purpose, practice, limits, and completion card of a youth-centre first-aid course."
+        }
+      ]
+    },
+    {
+      "id": "p3_notice",
+      "section": "notice",
+      "title": "NOTICE: Bike Check Morning",
+      "passage": "Bike Check Morning will take place beside the sports hall this Friday from 8:00 to 11:00. Students may bring one bicycle for a free safety check. Volunteer mechanics will inspect the brakes, tyres, and lights. Write your name and class on the form before joining the line. Minor adjustments can be made on site. If a bicycle needs a replacement part, the volunteer will describe the problem but will not sell the part. Wear a helmet when riding home.",
+      "items": [
+        {
+          "id": "p3_notice_01",
+          "section": "notice",
+          "level": 3,
+          "stem": "What is the main purpose of Bike Check Morning?",
+          "opts": ["To offer free bicycle safety checks", "To sell helmets to every student", "To organise a sports competition", "To teach students to drive cars"],
+          "ans": 0,
+          "expl": "The event provides a free safety check for bicycles; it is not a sales event or a competition."
+        },
+        {
+          "id": "p3_notice_02",
+          "section": "notice",
+          "level": 3,
+          "stem": "When will the checks take place?",
+          "opts": ["On Friday afternoon", "On Friday morning from 8:00 to 11:00", "Every evening after practice", "At the weekend only"],
+          "ans": 1,
+          "expl": "The notice gives the time as Friday from 8:00 to 11:00."
+        },
+        {
+          "id": "p3_notice_03",
+          "section": "notice",
+          "level": 3,
+          "stem": "Which parts will the volunteer mechanics inspect?",
+          "opts": ["The seat, basket, and bell", "The frame, pedals, and chain", "The brakes, tyres, and lights", "The helmet, shoes, and backpack"],
+          "ans": 2,
+          "expl": "The passage lists brakes, tyres, and lights as the parts to be inspected."
+        },
+        {
+          "id": "p3_notice_04",
+          "section": "notice",
+          "level": 3,
+          "stem": "What will happen if a bicycle needs a replacement part?",
+          "opts": ["The volunteer will throw it away", "The student must leave school", "The volunteer will provide the part immediately", "The volunteer will describe the problem"],
+          "ans": 3,
+          "expl": "The volunteer will explain the problem but will not sell or provide the replacement part."
+        },
+        {
+          "id": "p3_notice_05",
+          "section": "notice",
+          "level": 3,
+          "stem": "What may each student bring for a check?",
+          "opts": ["One bicycle", "Two replacement parts", "A car and a bicycle", "Only a helmet"],
+          "ans": 0,
+          "expl": "The notice allows each student to bring one bicycle for the check."
+        },
+        {
+          "id": "p3_notice_06",
+          "section": "notice",
+          "level": 3,
+          "stem": "What should students wear when riding home?",
+          "opts": ["A school uniform only", "A helmet", "A mechanic's apron", "A reflective backpack"],
+          "ans": 1,
+          "expl": "The final sentence advises students to wear a helmet when riding home."
+        }
+      ]
+    },
+    {
+      "id": "p3_leaflet",
+      "section": "leaflet",
+      "title": "LEAFLET: Weekend Food Lab",
+      "passage": "At the Weekend Food Lab, teenagers learn to prepare one simple, healthy meal with local ingredients. The class is held in the community kitchen on Sunday afternoon. Bring a clean water bottle and tell the organiser about any food allergy when you reserve a place. The recipe uses seasonal vegetables and beans, so it is suitable for people who want less meat. The class is free, but places are limited. After cooking, participants eat together and receive a recipe card to use at home.",
+      "items": [
+        {
+          "id": "p3_leaflet_01",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "What do teenagers learn at the Weekend Food Lab?",
+          "opts": ["How to run a restaurant", "How to grow every ingredient", "How to prepare a simple healthy meal", "How to sell cooking equipment"],
+          "ans": 2,
+          "expl": "The leaflet says that teenagers learn to prepare one simple, healthy meal."
+        },
+        {
+          "id": "p3_leaflet_02",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "What should participants bring?",
+          "opts": ["A full meal for the group", "A bag of meat", "A professional knife set", "A clean water bottle"],
+          "ans": 3,
+          "expl": "Participants should bring a clean water bottle; the kitchen supplies the recipe ingredients."
+        },
+        {
+          "id": "p3_leaflet_03",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "Why should a participant tell the organiser about an allergy?",
+          "opts": ["So the organiser can consider the participant's safety", "So the participant can leave before cooking", "So the organiser can sell a different recipe", "So the class can become longer"],
+          "ans": 0,
+          "expl": "Knowing about an allergy lets the organiser consider the participant's safety before the class."
+        },
+        {
+          "id": "p3_leaflet_04",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "When is the class held?",
+          "opts": ["On Saturday evening", "On Sunday afternoon", "Every weekday morning", "At the end of the school year"],
+          "ans": 1,
+          "expl": "The class takes place in the community kitchen on Sunday afternoon."
+        },
+        {
+          "id": "p3_leaflet_05",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "What is true about the class?",
+          "opts": ["Everyone can attend without reserving", "It teaches only meat recipes", "It is free but has limited places", "It takes place in a restaurant"],
+          "ans": 2,
+          "expl": "The class is free, but the leaflet warns that places are limited."
+        },
+        {
+          "id": "p3_leaflet_06",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "What do participants receive after cooking?",
+          "opts": ["A kitchen job", "A basket of vegetables", "A second free class", "A recipe card"],
+          "ans": 3,
+          "expl": "Each participant receives a recipe card after cooking and eating together."
+        }
+      ]
+    },
+    {
+      "id": "p3_complete",
+      "section": "complete",
+      "title": "Text completion: A Digital Archive",
+      "passage": "The school history club is creating a digital archive of old photographs. Students first ask families for permission to scan the pictures. They save each file with a clear name that includes the year and event. A second copy is stored in a separate location so the work is not lost if one computer fails. Students also write a short description for each photograph. The archive will help future classes learn about school life from different periods.",
+      "items": [
+        {
+          "id": "p3_complete_01",
+          "section": "complete",
+          "level": 3,
+          "stem": "Before scanning photographs, students ask families for ...",
+          "opts": ["new cameras", "a history exam", "a second computer", "permission"],
+          "ans": 3,
+          "expl": "The passage says students ask families for permission before scanning their photographs."
+        },
+        {
+          "id": "p3_complete_02",
+          "section": "complete",
+          "level": 3,
+          "stem": "A clear file name includes ...",
+          "opts": ["the year and event", "the scanner's price", "the student's home address", "the weather forecast"],
+          "ans": 0,
+          "expl": "Students name each file with the year and event so it can be understood later."
+        },
+        {
+          "id": "p3_complete_03",
+          "section": "complete",
+          "level": 3,
+          "stem": "Why is a second copy stored elsewhere?",
+          "opts": ["To make the photographs less clear", "To prevent the work being lost if a computer fails", "To remove the original permission", "To make every file private"],
+          "ans": 1,
+          "expl": "A separate copy protects the archive if one computer stops working."
+        },
+        {
+          "id": "p3_complete_04",
+          "section": "complete",
+          "level": 3,
+          "stem": "What do students write for each photograph?",
+          "opts": ["A new family name", "A computer password", "A short description", "A list of camera shops"],
+          "ans": 2,
+          "expl": "The students add a short description to explain what each photograph shows."
+        },
+        {
+          "id": "p3_complete_05",
+          "section": "complete",
+          "level": 3,
+          "stem": "What is the main benefit of the archive?",
+          "opts": ["It lets students avoid history", "It replaces every family photograph", "It makes old computers work", "It helps future classes learn about school life"],
+          "ans": 3,
+          "expl": "The final sentence gives the archive's purpose: helping future classes learn about school life."
+        }
+      ]
+    },
+    {
+      "id": "p3_reading1",
+      "section": "reading1",
+      "title": "A Small Radio, Many Voices",
+      "passage": "The community centre has started a short radio programme made by teenagers. The idea came from a group that wanted local residents to hear about activities that were not advertised online. Each week, two students interview a volunteer, a coach, or a small business owner. They record the interview in a quiet room and edit out long pauses, but they do not change the speaker's meaning. A teacher checks names and dates before the programme is uploaded. One episode explained how a bicycle workshop reuses old parts, while another introduced free music lessons. The students say that preparing questions is harder than speaking into the microphone. However, listeners have sent messages suggesting future guests, so the group now plans its schedule with the community. The programme is short, but it gives young people practice in research, listening, and clear communication.",
+      "items": [
+        {
+          "id": "p3_reading1_01",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Why did the teenagers start the radio programme?",
+          "opts": ["They wanted to sell microphones", "They wanted residents to hear about activities not advertised online", "They wanted to replace the community centre", "They wanted to avoid speaking with adults"],
+          "ans": 1,
+          "expl": "The group wanted to share information about local activities that were not advertised online."
+        },
+        {
+          "id": "p3_reading1_02",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Who may be interviewed on the programme?",
+          "opts": ["Only professional radio hosts", "Only family members", "A volunteer, coach, or small business owner", "Only students from one class"],
+          "ans": 2,
+          "expl": "The passage lists a volunteer, a coach, and a small business owner as possible guests."
+        },
+        {
+          "id": "p3_reading1_03",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What do the students edit out of an interview?",
+          "opts": ["The speaker's name", "The meaning of an answer", "Long pauses", "Every difficult question"],
+          "ans": 3,
+          "expl": "They remove long pauses, while keeping the speaker's meaning unchanged."
+        },
+        {
+          "id": "p3_reading1_04",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Why does a teacher check names and dates?",
+          "opts": ["To check important information before uploading", "To choose the music for every episode", "To shorten the community centre's schedule", "To stop listeners sending messages"],
+          "ans": 0,
+          "expl": "The teacher checks names and dates so the programme does not upload incorrect basic information."
+        },
+        {
+          "id": "p3_reading1_05",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What did one episode explain?",
+          "opts": ["How to become a radio teacher", "How a bicycle workshop reuses old parts", "How to build a new community centre", "How to advertise an online shop"],
+          "ans": 1,
+          "expl": "One episode described how a bicycle workshop reuses old parts."
+        },
+        {
+          "id": "p3_reading1_06",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What do the students find harder than speaking into the microphone?",
+          "opts": ["Finding a quiet room", "Uploading an audio file", "Preparing questions", "Listening to music lessons"],
+          "ans": 2,
+          "expl": "The students say that preparing questions is harder than speaking into the microphone."
+        },
+        {
+          "id": "p3_reading1_07",
+          "section": "reading1",
+          "level": 4,
+          "stem": "How have listeners influenced the programme?",
+          "opts": ["They have stopped the interviews", "They have bought the recording room", "They have removed the teacher's checks", "They have suggested future guests"],
+          "ans": 3,
+          "expl": "Listeners sent messages suggesting guests, so the group now plans with the community."
+        },
+        {
+          "id": "p3_reading1_08",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What skills does the programme help teenagers practise?",
+          "opts": ["Research, listening, and clear communication", "Only professional acting", "Repairing every bicycle", "Selling online advertisements"],
+          "ans": 0,
+          "expl": "The final sentence identifies research, listening, and clear communication as the main skills."
+        }
+      ]
+    },
+    {
+      "id": "p3_reading2",
+      "section": "reading2",
+      "title": "Cooling a Concrete Courtyard",
+      "passage": "During hot months, the concrete courtyard behind a secondary school became uncomfortable by midday. The school could not remove the whole surface because it was used for sports and assemblies, so a student group studied smaller changes. They measured the temperature in sunny and shaded places and noticed that the metal benches were especially hot. With help from the caretaker, they planted shade trees along one edge and placed light-coloured covers over two benches. They also painted a narrow section with a surface that reflects more sunlight. After several weeks, measurements showed that the covered benches were cooler, while the trees had not yet grown large enough to change the temperature across the courtyard. The school plans to water the trees during dry periods and collect more data next summer. The project taught students that a useful solution can combine immediate changes with improvements that take time.",
+      "items": [
+        {
+          "id": "p3_reading2_01",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Why could the school not remove all the concrete?",
+          "opts": ["The students wanted more metal benches", "The caretaker refused to help", "The trees needed concrete soil", "The courtyard was used for sports and assemblies"],
+          "ans": 3,
+          "expl": "The courtyard had to remain partly concrete because it was used for sports and assemblies."
+        },
+        {
+          "id": "p3_reading2_02",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What did the students measure first?",
+          "opts": ["The temperature in sunny and shaded places", "The height of every school building", "The amount of paint in the store", "The number of assemblies each year"],
+          "ans": 0,
+          "expl": "The group began by measuring temperatures in sunny and shaded parts of the courtyard."
+        },
+        {
+          "id": "p3_reading2_03",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Which objects were especially hot?",
+          "opts": ["The tree roots", "The metal benches", "The sports shoes", "The light-coloured covers"],
+          "ans": 1,
+          "expl": "The students noticed that the metal benches were especially hot at midday."
+        },
+        {
+          "id": "p3_reading2_04",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What did the light-coloured covers do?",
+          "opts": ["They removed the sports area", "They made the trees grow immediately", "They helped the benches become cooler", "They increased the midday temperature"],
+          "ans": 2,
+          "expl": "Later measurements showed that the covered benches were cooler."
+        },
+        {
+          "id": "p3_reading2_05",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Why had the shade trees not changed the whole courtyard yet?",
+          "opts": ["They were planted in the sports hall", "They were painted a light colour", "They were removed after one week", "They had not grown large enough"],
+          "ans": 3,
+          "expl": "The trees were still too small to change the temperature across the entire courtyard."
+        },
+        {
+          "id": "p3_reading2_06",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What does the school plan to do next summer?",
+          "opts": ["Collect more temperature data", "Remove the courtyard", "Stop watering the trees", "Cover every school wall"],
+          "ans": 0,
+          "expl": "The school plans to collect more data next summer while caring for the trees."
+        },
+        {
+          "id": "p3_reading2_07",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What is one immediate change in the project?",
+          "opts": ["The trees provide complete shade", "Covers make two benches cooler", "The concrete is removed", "The school builds a new sports hall"],
+          "ans": 1,
+          "expl": "The covered benches became cooler within the first weeks, so this was an immediate change."
+        },
+        {
+          "id": "p3_reading2_08",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What helped the students carry out the changes?",
+          "opts": ["A new school timetable", "A private sports team", "The caretaker's assistance", "A competition between classes"],
+          "ans": 2,
+          "expl": "The passage says the students worked with help from the caretaker."
+        },
+        {
+          "id": "p3_reading2_09",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What lesson did the project teach?",
+          "opts": ["Only expensive solutions work", "Data is unnecessary for school projects", "Trees always grow in one week", "A useful solution can combine quick and long-term changes"],
+          "ans": 3,
+          "expl": "The conclusion contrasts cooler benches now with trees that may help later, showing the value of combining time scales."
+        },
+        {
+          "id": "p3_reading2_10",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Which statement best summarises the courtyard project?",
+          "opts": ["Students tested several practical ways to reduce heat", "The school closed the courtyard permanently", "The caretaker painted every bench", "The project focused only on sports results"],
+          "ans": 0,
+          "expl": "The group measured heat and tried trees, covers, and reflective paint as practical improvements."
         }
       ]
     },
