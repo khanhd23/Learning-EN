@@ -801,7 +801,7 @@ REWRITE item written so the reviewer can focus on them.
    screenshots captured with that locale. Only for selectable locales.
 2. `app_config.json`: `displayName` per locale (vi "EngPet: Học Tiếng Anh", en "EngPet: Learn English",
    es "EngPet: Aprende Inglés", pt-BR "EngPet: Aprenda Inglês"); app name in `strings.xml` per locale.
-3. One applicationId for all locales (`com.engpet.learn`). No per-country apps.
+3. One applicationId for all locales (`com.khankstudio.lingomori`). No per-country apps.
 
 ---
 
