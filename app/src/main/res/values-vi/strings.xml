@@ -617,10 +617,10 @@
     <string name="pet_item_neck_scarf">Khăn quàng</string>
     <string name="pet_item_neck_medal">Huy chương</string>
     <string name="species_cat">Mèo</string>
-    <string name="species_dog">Chó</string>
+    <string name="species_panda">Gấu trúc</string>
     <string name="species_dragon">Rồng</string>
     <string name="pet_default_cat">Mít</string>
-    <string name="pet_default_dog">Bông</string>
+    <string name="pet_default_panda">Bánh Bao</string>
     <string name="pet_default_dragon">Lửa</string>
     <string name="locale_en">English</string>
     <string name="ob_language_title">Bạn nói ngôn ngữ nào?</string>

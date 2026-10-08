@@ -77,7 +77,7 @@ object PetItems {
 }
 /** Species are cosmetic. Original designs (no franchise look-alikes). */
 object Species {
-    val all = listOf("cat", "dog", "dragon")
-    fun nameRes(s: String) = when (s) { "dog" -> R.string.species_dog; "dragon" -> R.string.species_dragon; else -> R.string.species_cat }
-    fun defaultNameRes(s: String) = when (s) { "dog" -> R.string.pet_default_dog; "dragon" -> R.string.pet_default_dragon; else -> R.string.pet_default_cat }
+    val all = listOf("cat", "panda", "dragon")
+    fun nameRes(s: String) = when (s) { "panda" -> R.string.species_panda; "dragon" -> R.string.species_dragon; else -> R.string.species_cat }
+    fun defaultNameRes(s: String) = when (s) { "panda" -> R.string.pet_default_panda; "dragon" -> R.string.pet_default_dragon; else -> R.string.pet_default_cat }
 }

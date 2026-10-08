@@ -53,7 +53,7 @@ data class PetState(
 
     companion object {
         fun fromJson(o: JSONObject): PetState = PetState(
-            species = o.optString("species", "cat"), name = o.optString("name", "Miu"), stage = o.optInt("stage", 1),
+            species = o.optString("species", "cat").let { if (it == "dog") "panda" else it }, name = o.optString("name", "Miu"), stage = o.optInt("stage", 1),
             stageXp = o.optInt("stageXp"), totalXp = o.optInt("totalXp"), recoverableXp = o.optInt("recoverable"),
             lastStudyAt = o.optLong("lastStudyAt"), lastDecayDay = o.optLong("lastDecayDay", -1), lastSeenAt = o.optLong("lastSeenAt"),
             mealAt = o.optLong("mealAt"), hungerAtMeal = o.optInt("hungerAtMeal", 30), xpDay = o.optLong("xpDay", -1), xpToday = o.optInt("xpToday"),

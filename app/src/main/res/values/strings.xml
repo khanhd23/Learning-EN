@@ -617,10 +617,10 @@
     <string name="pet_item_neck_scarf">Scarf</string>
     <string name="pet_item_neck_medal">Medal</string>
     <string name="species_cat">Cat</string>
-    <string name="species_dog">Dog</string>
+    <string name="species_panda">Panda</string>
     <string name="species_dragon">Dragon</string>
     <string name="pet_default_cat">Mia</string>
-    <string name="pet_default_dog">Max</string>
+    <string name="pet_default_panda">Bao</string>
     <string name="pet_default_dragon">Ember</string>
     <string name="locale_en">English</string>
     <string name="ob_language_title">Which language do you speak?</string>

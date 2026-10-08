@@ -129,7 +129,7 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
     private fun palette(): Palette {
         val s = (stage - 1) / 9f
         return when (species) {
-            "dog" -> Palette(mix(0xFFEBCB9F.toInt(), 0xFFE3B47C.toInt(), s), 0xFFB07A4A.toInt(), 0xFFFFF4E4.toInt(), 0xFFF2A7A0.toInt(), 0xFF3B7DD8.toInt())
+            "panda" -> Palette(0xFFFFFDF9.toInt(), 0xFF2A2A2E.toInt(), 0xFFF3EEE6.toInt(), 0xFFF5A3AE.toInt(), 0xFF3FAF6A.toInt())
             "dragon" -> Palette(mix(0xFF8ED9A8.toInt(), 0xFF4FC383.toInt(), s), 0xFF2F8F5E.toInt(), 0xFFF3F8C8.toInt(), 0xFFF7D06B.toInt(), 0xFFF5A623.toInt())
             else -> Palette(mix(0xFFFFC768.toInt(), 0xFFFFA93A.toInt(), s), 0xFFE07F1F.toInt(), 0xFFFFEED3.toInt(), 0xFFF7A1A8.toInt(), 0xFFD6487E.toInt())
         }
@@ -215,8 +215,8 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
             stroke.color = 0x33000000; stroke.strokeWidth = 0.8f
             for (i in 0..2) { val y = bodyCy - bodyH * 0.2f + i * bodyH * 0.35f; canvas.drawLine(50f - bw * 0.35f, y, 50f + bw * 0.35f, y, stroke) }
         }
-        // Feet
-        p.color = c(pal.main)
+        // Feet (black for the panda)
+        p.color = c(if (species == "panda") pal.dark else pal.main)
         canvas.drawOval(50f - bw * 0.72f, 86f, 50f - bw * 0.18f, 94f, p)
         canvas.drawOval(50f + bw * 0.18f, 86f, 50f + bw * 0.72f, 94f, p)
         if (!silhouette) {
@@ -224,8 +224,8 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
             canvas.drawCircle(50f - bw * 0.45f, 91f, 1.4f, p)
             canvas.drawCircle(50f + bw * 0.45f, 91f, 1.4f, p)
         }
-        // Little arms
-        p.color = c(pal.main)
+        // Little arms (black for the panda)
+        p.color = c(if (species == "panda") pal.dark else pal.main)
         canvas.drawOval(50f - bw * 0.95f, bodyCy - bodyH * 0.35f, 50f - bw * 0.55f, bodyCy + bodyH * 0.25f, p)
         canvas.drawOval(50f + bw * 0.55f, bodyCy - bodyH * 0.35f, 50f + bw * 0.95f, bodyCy + bodyH * 0.25f, p)
         canvas.restore()
@@ -267,11 +267,10 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
         val wag = if (context.reduceMotion) 0f else sin(t * (if (mood == Mood.CHEER || mood == Mood.CELEBRATE || mood == Mood.HI) 14f else 3f)) * 6f
         stroke.color = c(pal.main)
         when (species) {
-            "dog" -> {
-                stroke.strokeWidth = 6f
-                path.reset(); path.moveTo(50f + bodyW * 0.8f, bodyCy + 2f)
-                path.quadTo(50f + bodyW * 1.25f, bodyCy - 8f + wag, 50f + bodyW * 1.15f, bodyCy - 16f + wag)
-                canvas.drawPath(path, stroke)
+            "panda" -> {
+                // Short round tail.
+                p.color = c(pal.main)
+                canvas.drawCircle(50f + bodyW * 0.88f, bodyCy + 4f + wag * 0.15f, 4.5f, p)
             }
             "dragon" -> {
                 p.color = c(pal.main)
@@ -362,15 +361,15 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
     }
 
     private fun drawEarsFront(canvas: Canvas, pal: Palette, cy: Float, r: Float, s: Float) {
-        if (species == "dog") {
-            val flop = if (context.reduceMotion) 0f else sin(t * 2.2f) * 2f
-            p.color = c(pal.dark)
+        if (species == "panda") {
+            // Round black ears, drawn over the head's top edge.
             for (side in listOf(-1f, 1f)) {
-                canvas.save()
-                canvas.rotate(side * (18f + flop), 50f + side * r * 0.85f, cy - r * 0.5f)
-                rect.set(50f + side * r * 0.85f - r * 0.28f, cy - r * 0.65f, 50f + side * r * 0.85f + r * 0.28f, cy + r * 0.45f)
-                canvas.drawOval(rect, p)
-                canvas.restore()
+                p.color = c(pal.dark)
+                canvas.drawCircle(50f + side * r * 0.74f, cy - r * 0.74f, r * 0.33f, p)
+                if (!silhouette) {
+                    p.color = c(0xFF4A4A50.toInt())
+                    canvas.drawCircle(50f + side * r * 0.74f, cy - r * 0.74f, r * 0.15f, p)
+                }
             }
         }
         if (species == "dragon") {
@@ -390,9 +389,18 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
                 stroke.color = c(pal.dark); stroke.strokeWidth = 1.8f
                 for (i in -1..1) canvas.drawLine(50f + i * 4.5f, cy - r * 0.88f, 50f + i * 3.5f, cy - r * 0.62f, stroke)
             }
-            "dog" -> if (stage >= 3) {
-                p.color = c(mix(pal.dark, pal.main, 0.35f))
-                canvas.drawOval(50f + r * 0.1f, cy - r * 0.55f, 50f + r * 0.72f, cy + r * 0.05f, p)
+            "panda" -> {
+                // Black eye patches, tilted outwards, with a small white disc so the eyes stay visible.
+                val ex = r * 0.42f; val ey = cy - r * 0.1f
+                for (side in listOf(-1f, 1f)) {
+                    canvas.save()
+                    canvas.rotate(side * 28f, 50f + side * ex, ey)
+                    p.color = c(pal.dark)
+                    canvas.drawOval(50f + side * ex - r * 0.25f, ey - r * 0.33f, 50f + side * ex + r * 0.25f, ey + r * 0.33f, p)
+                    canvas.restore()
+                    p.color = Color.WHITE
+                    canvas.drawCircle(50f + side * ex, ey, r * 0.22f, p)
+                }
             }
         }
     }
@@ -451,7 +459,7 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
         p.alpha = 255
 
         // Nose
-        p.color = if (species == "dog") dark else c(mix(pal.inner, dark, 0.3f))
+        p.color = if (species == "panda") dark else c(mix(pal.inner, dark, 0.3f))
         canvas.drawOval(50f - r * 0.09f, cy + r * 0.16f, 50f + r * 0.09f, cy + r * 0.27f, p)
 
         // Mouth
