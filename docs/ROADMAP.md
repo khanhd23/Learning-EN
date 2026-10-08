@@ -362,6 +362,13 @@ Follow-up for Codex (**Task R2.1**): the R2 report said "+242 bytes", but
 identical licence texts and keep one copy per licence with the list of artifacts that use it; target
 < 150 KB uncompressed. Report the real compressed size from `unzip -lv`.
 
+### Task R2.1 review (owner) — accepted with owner fix
+
+f389ab5 grouped every MIT/LGPL/MPL/… text by licence family and kept only the first text, which drops
+the other libraries' copyright lines (MIT/BSD require each notice). Owner fix: only Apache-2.0 shares
+one text (NOTICE chunks stay); everything else merges only when the text is identical. Result:
+`dependencies.txt` 232,949 B uncompressed, 54,959 B in the release APK, 8 MIT texts kept.
+
 ### Task 15: Exam word lists
 
 Owner data delivered: `config/word_lists.json` (lists, labels, credits), CEFR sources in

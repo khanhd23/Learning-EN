@@ -149,7 +149,10 @@ def build(root: Path, output: Path, artifacts: list[str]) -> dict[str, int]:
         for entry_name, text in entries:
             for label, license_text in _chunks(text, entry_name):
                 family = _family(label, license_text)
-                key = f"family:{family}" if family else f"text:{hashlib.sha256(_normalised(license_text).encode('utf-8')).hexdigest()}"
+                # Only Apache-2.0 shares one text (identical wording; copyright lives in NOTICE
+                # chunks, which are kept). MIT/BSD-style texts carry their own copyright lines,
+                # so they merge only when the text is identical.
+                key = "family:Apache-2.0" if family == "Apache-2.0" else f"text:{hashlib.sha256(_normalised(license_text).encode('utf-8')).hexdigest()}"
                 record = grouped.setdefault(key, {"text": license_text, "labels": set(), "artifacts": set(), "family": family})
                 record["labels"].add(label)
                 record["artifacts"].add(coordinate)
