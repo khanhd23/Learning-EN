@@ -63,6 +63,7 @@ sealed class Exercise {
         val sentence: String,
         val chips: List<String>,
         val translation: String?,
+        val explanation: String = "",
     ) : Exercise() { override val kind get() = Kind.E05 }
 
     /** E06: match 4 words with their meanings. All words share one exercise; keys hold each word. */

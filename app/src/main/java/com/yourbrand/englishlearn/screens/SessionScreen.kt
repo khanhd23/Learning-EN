@@ -549,7 +549,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         }
         onHint = {
             val first = Grader.chips(ex.sentence).firstOrNull()
-            showHint(ex.translation ?: first)
+            showHint(ex.explanation.takeIf { it.isNotBlank() } ?: ex.translation ?: first)
         }
     }
 

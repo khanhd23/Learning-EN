@@ -137,7 +137,7 @@ class ExerciseFactory(private val content: Content, private val random: Random =
         "E05" -> Exercise.WordOrder(q.key, q.tags, q.level, q.stem, Grader.chips(q.stem).shuffled(random).let { c ->
             // Never show the chips already in the right order.
             if (c.joinToString(" ") == q.stem && c.size > 1) c.reversed() else c
-        }, q.translation)
+        }, q.translation, q.explanation)
         else -> {
             val instruction = when {
                 q.qtype == "pronunciation" -> R.string.ins_pronunciation

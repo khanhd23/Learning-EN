@@ -613,4 +613,65 @@ p6_library#0|Between two points: between July and August.
 p6_library#1|After explaining how to register, information about the cost fits best.
 p6_library#2|The word describes the participle encouraged, so we need an adverb: strongly.
 p6_library#3|Please + base verb: visit.
-qc83bc8d7e||Does your brother live in London?|Anh trai bạn có sống ở London không?
+qc83bc8d7e|Does starts a present-simple question, so the main verb stays in the base form live.|Does your brother live in London?|Anh trai bạn có sống ở London không?
+q98ee39bf2|Present-simple be question: put Are before you, followed by the adjective ready.|Are you ready for the test?|Bạn đã sẵn sàng cho bài kiểm tra chưa?
+q4bdfdaf1a|Sister is singular, so use is. A singular countable job noun needs the article a.|My sister is a nurse.
+q84e3821c0|They is plural, so use are. The negative form is are not, or aren't.|They are not at school today.
+qf20013c29|With she in the present simple, the verb takes third-person -s: drinks.|She usually drinks tea in the morning.
+qc8c168466|We is plural, so use do not, or don't, before the base verb go.|We don't go to school on Sundays.
+q01af0661d|Idea begins with a vowel sound, so use an before the singular noun.|I have an idea.
+q80baf0280|The phrase on the table describes which book. Mine is a possessive pronoun, so it can stand alone after is.|The book on the table is mine.
+q957d79819|Tourists is plural, so use there are. Many is followed by a plural countable noun.|There are many tourists in the city.
+qef9ec6c7d|Class is singular, so the present-simple verb takes -s: starts. Use at with a precise clock time.|The class starts at seven in the morning.
+q85f0f4ed4|Use the past simple met for a finished event. Use on with a particular day and in with a month.|We met on a rainy day in October.
+q9dd056ef8|Cat is singular, so use there is. Under tells us the cat's position relative to the table.|There is a cat under the table.
+qc3bca6897|Restaurants is plural, so the question begins Are there. Any is common in questions about an unspecified amount.|Are there any good restaurants near here?
+q0890d0677|Can is a modal verb, so it is followed by the base verb play. The phrase play the guitar names the instrument.|Can you play the guitar?
+qb56e6a656|Could makes a polite request and is followed by the base verb speak. More slowly uses the adverb slowly to describe speaking.|Could you speak more slowly, please?
+q90958fcb1|Use the past simple met for a finished event. At school gives the place, and ten years ago gives a finished time in the past.|I met my best friend at school ten years ago.
+q7a4fa6719|With she in the present simple, wear becomes wears. Always usually comes before the main verb.|She always wears a black hat.
+q49f87dd0d|Be going to plus the base verb visit expresses a future plan. The time phrase next week places it in the future.|We are going to visit our grandparents next week.
+q71e403765|Bought is the past form of buy for a completed event. Expensive starts with a vowel sound, so use an before watch.|He bought an expensive watch for his father.
+q7e8a689a9|Use the past simple went for a completed trip. Last Sunday is a finished time expression, so no present-perfect form is needed.|We went to the beach last Sunday.
+q60b602816|Did already marks the past tense, so the main verb returns to the base form enjoy.|Did you enjoy the concert?
+q0d35c55b7|Didn't is did not, so it carries the past tense and must be followed by the base form have.|She didn't have breakfast this morning.
+q741e1ea14|The question asks about an action happening now, so use present continuous: are plus doing.|What are you doing right now?
+q65e319514|Present continuous can describe a temporary situation around now. With my sister, use is working.|My sister is working from home this week.
+q2ad4dfc05|Use the superlative highest to compare Everest with every other mountain in the world. The superlative normally takes the.|Mount Everest is the highest mountain in the world.
+q4eac795c9|Use the comparative adjective bigger for a comparison between two rooms, followed by than and the comparison yours.|My room is bigger than yours.
+qd86c83db4|Apples is countable and plural, so a few means a small positive number. Use are with there.|There are a few apples in the basket.
+q46110ee61|Help is uncountable here, so use a little for a small positive amount. A little comes before the noun.|I need a little help with this.
+qa0aa1eea3|Be going to plus learn expresses an intention or plan. Ten new words is the object, and every day gives the routine time.|I'm going to learn ten new words every day.
+qdf47e8f55|Will plus the base verb help expresses a future decision or promise. The base form follows will.|Don't worry, I will help you.
+qc4bfcb7b3|Should is a modal verb, so it is followed by the base form practice. Every day gives the recommended routine.|You should practice speaking every day.
+q3269e8a4e|Their shows possession before house. Ours is a possessive pronoun that replaces our house after the comparison.|Their house is bigger than ours.
+q3a54419d9|Taught myself uses a reflexive pronoun because the subject and the person receiving the action are the same.|I taught myself to play the guitar.
+qe6c6a6c05|Present perfect have been asks about experience up to now. Ever is common in questions about whether something has happened at any time.|Have you ever been to Japan?
+qdb6f72600|Present perfect have finished connects a completed action with now. Just means the action happened very recently.|I have just finished my homework.
+q096bbd640|This is present simple passive: the office receives the action, so use is plus the past participle cleaned.|The office is cleaned every evening.
+q5fbe594b4|This is future passive: the results receive the action, so use will be plus the past participle announced.|The results will be announced tomorrow.
+q9e9f70e7b|In a first conditional, use present simple after if. The result here is an imperative: just call me.|If you need help, just call me.
+q857e0e0a1|This is a second conditional for an imaginary situation. Use past simple won after if and would plus the base verb do in the result.|What would you do if you won the lottery?
+q4c8881a49|That introduces a relative clause describing the book. The present continuous am reading shows the action in progress now.|The book that I am reading is very interesting.
+q4dc93fef1|Who introduces a relative clause about a person and acts as the subject of helped.|She is the teacher who helped me most.
+qbb4f99147|A preposition such as about is followed by a noun or gerund. Therefore use changing, not the infinitive change.|I'm thinking about changing my job.
+q152740bb4|Want is followed by to plus the base verb. Become is the base form after to.|She wants to become a doctor.
+qd3a81576f|Despite is followed by a noun phrase, not a complete clause. The traffic is the noun phrase, and arrived is the main verb.|Despite the traffic, we arrived on time.
+q035a598d7|Each is grammatically singular even when it refers to several students, so use has.|Each of the students has a different idea.
+q6d54ecdc5|Correctly is an adverb modifying the verb answered. The past form answered matches the completed action.|She answered all the questions correctly.
+qbfa9c3680|Use past perfect had never seen for the earlier experience, followed by simple past went for the later event.|I had never seen snow before I went to Japan.
+q150d2e107|By the time introduces a later past reference point, so the earlier event uses past perfect had ended.|By the time we arrived, the party had ended.
+q743b4928e|This is a third conditional about an unreal past condition: past perfect after if and would have plus the past participle bought in the result.|If I had saved more money, I would have bought that laptop.
+qd3f4eb61d|In reported yes-or-no questions, use if and normal statement word order: I liked, not did I like.|She asked me if I liked spicy food.
+q2d973c5f3|Standing at the door is a reduced relative clause meaning who is standing at the door. The -ing form describes the man.|The man standing at the door is my uncle.
+qda7272011|Wish plus past simple describes a present situation that is unreal or not as good as desired. Had expresses possession here.|I wish I had more free time.
+q52d542fc9|Neither do I agrees with a negative statement. Do is the auxiliary for the present simple, and the subject comes after it.|She doesn't eat meat, and neither do I.
+q9d74537a6|Should have plus the past participle brought refers to an expected action that did not happen, often expressing regret or criticism.|You should have brought an umbrella.
+q79dda5592|However connects two contrasting independent sentences. Put a full stop before it and a comma after it.|The food was cheap. However, it was delicious.
+qc4b9917ec|Highly is an adverb modifying the adjective experienced. The adverb comes before the adjective in this phrase.|Our highly experienced team will help you.
+q1e73d8245|Suggest that can take the base form in a formal recommendation: he apply, not he applies or he to apply.|I suggest that he apply for the scholarship.
+q4cb4b498d|This is a cleft sentence. It was my teacher who identifies the person responsible for encouraging me.|It was my teacher who encouraged me to read more.
+q480fb3fb0|Should you need is an inverted formal conditional meaning if you need. In this pattern, should comes before the subject.|Should you need any help, please ask our staff.
+q1cc07b910|Wanted to call uses the infinitive after wanted. Forgot to avoids repeating call you, so the final to stands for to call you.|I wanted to call you, but I forgot to.
+qf46ec4852|Has been canceled is present perfect passive: the meeting received the action, and the result is relevant now.|It seems that the meeting has been canceled.
+qc7e698228|Look forward to is a fixed expression. Here to is a preposition, so it is followed by the gerund hearing.|We look forward to hearing from you.
