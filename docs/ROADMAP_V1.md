@@ -147,6 +147,14 @@ first frame under 150 ms on the same phone (benchmark build).
    per-frame budget or lighter rows).
 4. Report before/after EngPerf numbers from the device or the benchmark build.
 
+### Task 19 review (owner) — accepted
+
+841c691: Today defers the lower cards past the first frame, StoryScreen caches sentence splitting
+and target regexes and fills sentences over frames, WordList counts mastery in one call and uses a
+1 ms frame budget. Tests and build pass. Not yet measured on the device (Codex had none); the owner
+measures it on the publisher's phone. Note: this commit reached GitHub before the review (owner
+pushed it together with batch 24); reviewed right after, no change needed.
+
 ### Task 20: Report a content mistake
 
 On the answer feedback panel of every exercise, on the word detail screen and on the exam review
