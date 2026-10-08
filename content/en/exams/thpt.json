@@ -1,0 +1,407 @@
+{
+  "paper": 1,
+  "items": [
+    {
+      "id": "p1_arrange_01",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. I am glad you liked it. b. Thanks for helping me choose it. c. Your presentation was excellent. d. The examples made the topic easy to understand. e. I spent all weekend preparing it.",
+      "opts": ["c – d – e – b – a", "c – e – d – b – a", "e – c – d – a – b", "d – c – e – a – b"],
+      "ans": 0,
+      "expl": "The order starts with the compliment, adds its reason, explains the preparation, and then gives the thanks and reply. The other orders break the conversation's logical sequence."
+    },
+    {
+      "id": "p1_arrange_02",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. Finally, we tested the soil and planted native flowers. b. Our class wanted to improve the empty space behind the library. c. The librarian helped us design a small garden. d. We first removed litter and measured the area. e. The garden now attracts bees and makes the space brighter.",
+      "opts": ["b – d – c – a – e", "b – c – d – a – e", "d – b – c – e – a", "c – b – d – a – e"],
+      "ans": 1,
+      "expl": "The purpose comes first, followed by the design, the first action, the final planting step, and the result. The other orders place a later action before its preparation."
+    },
+    {
+      "id": "p1_arrange_03",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. Please find the updated timetable attached. b. Dear students, c. The change affects the afternoon science classes. d. Thank you for your understanding. e. The laboratory will be closed on Tuesday for repairs.",
+      "opts": ["b – a – e – c – d", "b – e – d – c – a", "b – e – c – a – d", "e – b – c – d – a"],
+      "ans": 2,
+      "expl": "An announcement opens with the greeting, gives the main change, explains its effect, points to the attachment, and closes politely."
+    },
+    {
+      "id": "p1_arrange_04",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. That sounds useful. How can I join? b. Our neighborhood is starting a weekend repair club. c. You can register through the community website. d. Volunteers will fix small household items together. e. I have a broken lamp, so I would like to help.",
+      "opts": ["b – a – d – e – c", "d – b – a – c – e", "b – a – e – d – c", "b – d – a – e – c"],
+      "ans": 3,
+      "expl": "The speaker introduces the club, describes it, receives interest, hears the reason for joining, and gives the registration method."
+    },
+    {
+      "id": "p1_arrange_05",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. The results showed that the new filter removed more plastic. b. We compared two water filters in our science project. c. Our teacher asked us to explain the difference. d. We recorded the amount of plastic after each test. e. We presented our findings to the class.",
+      "opts": ["b – d – a – c – e", "b – c – d – a – e", "c – b – d – e – a", "d – b – a – c – e"],
+      "ans": 0,
+      "expl": "The project is introduced first, followed by testing, the result, the teacher's request, and the presentation."
+    }
+  ],
+  "groups": [
+    {
+      "id": "p1_notice",
+      "section": "notice",
+      "title": "Notice: Green Week Challenge",
+      "passage": "GREEN WEEK CHALLENGE\nOur school will hold a Green Week Challenge from Monday to Friday. Classes can reduce waste by bringing reusable bottles, sorting paper and plastic, and turning off lights when rooms are empty. On Friday afternoon, volunteers will clean the garden and record each class's results. The class with the highest score will receive a small library award. Students who cannot join the clean-up may submit a photograph of an eco-friendly action through the school website.",
+      "items": [
+        {
+          "id": "p1_notice_01",
+          "section": "notice",
+          "level": 2,
+          "stem": "The notice is mainly intended to ___ students to join an environmental challenge.",
+          "opts": ["invite", "forbid", "test", "replace"],
+          "ans": 0,
+          "expl": "The notice invites students to take part in Green Week. The other choices do not describe the purpose of the announcement."
+        },
+        {
+          "id": "p1_notice_02",
+          "section": "notice",
+          "level": 2,
+          "stem": "Students are encouraged to bring reusable ___.",
+          "opts": ["lights", "bottles", "photographs", "awards"],
+          "ans": 1,
+          "expl": "The passage specifically mentions reusable bottles. Lights, photographs, and awards are mentioned in different contexts."
+        },
+        {
+          "id": "p1_notice_03",
+          "section": "notice",
+          "level": 2,
+          "stem": "The garden clean-up will take place ___ Friday afternoon.",
+          "opts": ["at", "in", "on", "by"],
+          "ans": 2,
+          "expl": "We use on with a day such as Friday. At is used for a time, in for a longer period, and by gives a deadline."
+        },
+        {
+          "id": "p1_notice_04",
+          "section": "notice",
+          "level": 3,
+          "stem": "The class with the highest score will receive ___.",
+          "opts": ["a photograph", "a reusable bottle", "a garden", "a library award"],
+          "ans": 3,
+          "expl": "The final sentence says that the highest-scoring class will receive a small library award. The other options are not prizes."
+        },
+        {
+          "id": "p1_notice_05",
+          "section": "notice",
+          "level": 3,
+          "stem": "Students who miss the clean-up can still take part by ___.",
+          "opts": ["submitting a photograph", "turning off every light", "sorting the award", "closing the website"],
+          "ans": 0,
+          "expl": "The notice allows absent students to submit a photograph of an eco-friendly action. The other options do not express this alternative."
+        },
+        {
+          "id": "p1_notice_06",
+          "section": "notice",
+          "level": 3,
+          "stem": "The word reduce in the notice is closest in meaning to ___.",
+          "opts": ["collect more", "use less", "throw away", "write down"],
+          "ans": 1,
+          "expl": "To reduce waste means to use or create less waste. The other choices do not have the same meaning."
+        }
+      ]
+    },
+    {
+      "id": "p1_leaflet",
+      "section": "leaflet",
+      "title": "Move More, Feel Better",
+      "passage": "MOVE MORE, FEEL BETTER\nA free health afternoon for teenagers\nSaturday, 18 May | 2:00–5:00 p.m. | Riverside Youth Centre\nTry a short dance class, learn how to plan a balanced snack, and speak with a nurse about healthy sleep. Wear comfortable clothes and bring a water bottle. Places in the dance class are limited, so register online before Thursday. The event is designed for beginners; no special fitness experience is required. Parents may attend the final fifteen-minute information session.",
+      "items": [
+        {
+          "id": "p1_leaflet_01",
+          "section": "leaflet",
+          "level": 2,
+          "stem": "What is the main purpose of the leaflet?",
+          "opts": ["To sell sports equipment", "To announce a school examination", "To advertise a free health event", "To compare several nurses"],
+          "ans": 2,
+          "expl": "The leaflet provides details about a free health afternoon for teenagers. It is not selling equipment or announcing an exam."
+        },
+        {
+          "id": "p1_leaflet_02",
+          "section": "leaflet",
+          "level": 2,
+          "stem": "Participants should bring ___.",
+          "opts": ["a parent", "special equipment", "a finished snack", "a water bottle"],
+          "ans": 3,
+          "expl": "The leaflet tells participants to bring a water bottle. Parents may attend later, but they are not required equipment."
+        },
+        {
+          "id": "p1_leaflet_03",
+          "section": "leaflet",
+          "level": 2,
+          "stem": "Why should teenagers register before Thursday?",
+          "opts": ["The dance class has limited places", "The centre closes on Friday", "The nurse is unavailable later", "The snack class is cancelled"],
+          "ans": 0,
+          "expl": "Registration is requested because places in the dance class are limited. The leaflet gives no other reason."
+        },
+        {
+          "id": "p1_leaflet_04",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "The event is suitable for people who ___.",
+          "opts": ["already train professionally", "are new to exercise", "need a medical appointment", "want to sell snacks"],
+          "ans": 1,
+          "expl": "The event is designed for beginners, so people new to exercise can attend. The other options are not stated."
+        },
+        {
+          "id": "p1_leaflet_05",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "Parents may attend ___.",
+          "opts": ["the dance class only", "the whole afternoon for free meals", "the final information session", "the online registration"],
+          "ans": 2,
+          "expl": "Parents may attend the final fifteen-minute information session. The leaflet does not offer them the other activities."
+        },
+        {
+          "id": "p1_leaflet_06",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "The word comfortable is closest in meaning to ___.",
+          "opts": ["expensive", "formal", "newly bought", "easy to wear"],
+          "ans": 3,
+          "expl": "Comfortable clothes are easy to wear without causing discomfort. The other choices do not match the meaning here."
+        }
+      ]
+    },
+    {
+      "id": "p1_complete",
+      "section": "complete",
+      "title": "A Better Way to Recycle Phones",
+      "passage": "Many old phones are left in drawers even though they contain useful materials. Our school has started a phone-recycling project to collect unused devices. Students can bring phones to the office, where volunteers will remove personal data before sending them to a certified recycler. The project helps protect privacy and keeps electronic waste out of landfills. It also teaches students that a small action can support a more sustainable community.",
+      "items": [
+        {
+          "id": "p1_complete_01",
+          "section": "complete",
+          "level": 3,
+          "stem": "The project collects phones that are ___.",
+          "opts": ["certified", "unused", "private", "sustainable"],
+          "ans": 1,
+          "expl": "The first sentence says that old phones are left in drawers, and the project collects unused devices. Certified describes the recycler, not the phones."
+        },
+        {
+          "id": "p1_complete_02",
+          "section": "complete",
+          "level": 3,
+          "stem": "Before recycling, volunteers will remove ___.",
+          "opts": ["the office", "the landfill", "personal data", "useful materials"],
+          "ans": 2,
+          "expl": "Volunteers remove personal data to protect privacy. They do not remove the office or the landfill."
+        },
+        {
+          "id": "p1_complete_03",
+          "section": "complete",
+          "level": 3,
+          "stem": "The project helps keep electronic waste out of ___.",
+          "opts": ["drawers", "offices", "communities", "landfills"],
+          "ans": 3,
+          "expl": "The passage directly states that recycling keeps electronic waste out of landfills. The other places are not the intended answer."
+        },
+        {
+          "id": "p1_complete_04",
+          "section": "complete",
+          "level": 3,
+          "stem": "The project teaches students that a small action can ___.",
+          "opts": ["support a sustainable community", "delete every old phone", "replace the school office", "certify a recycler"],
+          "ans": 0,
+          "expl": "The final sentence says that a small action can support a more sustainable community. The other options are too broad or change the meaning."
+        },
+        {
+          "id": "p1_complete_05",
+          "section": "complete",
+          "level": 3,
+          "stem": "The word certified is closest in meaning to ___.",
+          "opts": ["privately owned", "officially approved", "reused at school", "stored in a drawer"],
+          "ans": 1,
+          "expl": "A certified recycler is officially approved to do the work. The other choices describe ownership, location, or reuse, not approval."
+        }
+      ]
+    },
+    {
+      "id": "p1_reading1",
+      "section": "reading1",
+      "title": "The Repair Club",
+      "passage": "When a desk lamp stopped working, a student almost threw it away. A neighbor suggested taking it to the Saturday Repair Club at the public library. The club is run by volunteers who teach visitors how to fix small household objects instead of replacing them immediately. The student learned that a loose wire was the problem. With guidance, the student repaired the lamp and took it home that afternoon.\n\nThe club does not promise to repair every object. Volunteers first check whether an item can be fixed safely and whether the necessary tools are available. They also explain when a professional repair is needed. In addition to saving useful objects, the club gives residents a chance to share practical skills. The student now visits twice a month, not only to repair things but also to help younger visitors learn.",
+      "items": [
+        {
+          "id": "p1_reading1_01",
+          "section": "reading1",
+          "level": 3,
+          "stem": "What is the passage mainly about?",
+          "opts": ["How libraries choose new books", "Why desk lamps are difficult to use", "A club that teaches people to repair objects", "A volunteer's job at a school"],
+          "ans": 2,
+          "expl": "The passage explains how the Repair Club helps residents fix objects and share skills. The other choices are too narrow or unrelated."
+        },
+        {
+          "id": "p1_reading1_02",
+          "section": "reading1",
+          "level": 3,
+          "stem": "Why did the student take the lamp to the club?",
+          "opts": ["She wanted to buy a new tool", "She needed a library book", "She wanted to throw it away", "She wanted to learn whether it could be fixed"],
+          "ans": 3,
+          "expl": "The student first considered throwing the lamp away, but then took it to the club after receiving advice so the lamp could be fixed."
+        },
+        {
+          "id": "p1_reading1_03",
+          "section": "reading1",
+          "level": 3,
+          "stem": "What problem did the student find in the lamp?",
+          "opts": ["A loose wire", "A missing book", "A broken table", "A dangerous tool"],
+          "ans": 0,
+          "expl": "The passage directly identifies a loose wire as the cause of the lamp's problem."
+        },
+        {
+          "id": "p1_reading1_04",
+          "section": "reading1",
+          "level": 3,
+          "stem": "Volunteers check an object before repairing it in order to ___.",
+          "opts": ["sell it to visitors", "decide whether repair is safe and possible", "teach the owner a new language", "make the library busier"],
+          "ans": 1,
+          "expl": "They check safety and tool availability before accepting an object. The other choices are not purposes mentioned in the passage."
+        },
+        {
+          "id": "p1_reading1_05",
+          "section": "reading1",
+          "level": 3,
+          "stem": "The word them in paragraph 1 refers to ___.",
+          "opts": ["volunteers", "visitors", "small household objects", "younger visitors"],
+          "ans": 2,
+          "expl": "In instead of replacing them, them refers to the small household objects that people bring to the club."
+        },
+        {
+          "id": "p1_reading1_06",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What does the passage imply about the Repair Club?",
+          "opts": ["It accepts every object without checking it", "It is useful only for professional engineers", "It combines repair with community learning", "It replaces the public library's normal services"],
+          "ans": 3,
+          "expl": "The club repairs objects and lets residents share practical skills, so it combines repair with learning. The other statements contradict the passage."
+        },
+        {
+          "id": "p1_reading1_07",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Why does the student now visit twice a month?",
+          "opts": ["To repair objects and help younger visitors", "To borrow a different lamp each week", "To replace the volunteers", "To sell household tools"],
+          "ans": 0,
+          "expl": "The final sentence gives both reasons: the student repairs things and helps younger visitors learn."
+        },
+        {
+          "id": "p1_reading1_08",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Which statement is NOT true according to the passage?",
+          "opts": ["The student repaired the lamp with guidance.", "The club guarantees that every object will be repaired.", "Volunteers may recommend professional repair.", "The club meets at a public library."],
+          "ans": 1,
+          "expl": "The passage says the club does not promise to repair every object, so the guarantee is not true. The other statements are supported."
+        }
+      ]
+    },
+    {
+      "id": "p1_reading2",
+      "section": "reading2",
+      "title": "Restoring a Coastal Wetland",
+      "passage": "For many years, a coastal wetland near a village became smaller as rubbish blocked its water channels and young trees were cut down. The wetland still protected nearby houses from some storm water, but its ability to support fish and birds was weakening. In 2022, local students began working with farmers, fishermen, and a conservation group to restore it.\n\nThe group first mapped the channels and recorded which areas held water during different tides. Students then collected rubbish and planted mangrove seedlings in places where the soil was suitable. Farmers helped build a simple path so visitors would not walk across new plants. After two rainy seasons, the wetland held water for longer, and more birds were seen there.\n\nThe project has not solved every problem. Some plastic still arrives from upstream, and the seedlings need protection. However, the work changed how residents viewed the wetland. Instead of seeing it as unused land, they now regard it as a natural barrier, a nursery for young fish, and an outdoor classroom for the village school.",
+      "items": [
+        {
+          "id": "p1_reading2_01",
+          "section": "reading2",
+          "level": 3,
+          "stem": "What is the passage mainly about?",
+          "opts": ["A village plan to build a new road", "A competition between farmers and fishermen", "A school trip to a distant island", "A wetland restoration project and its benefits"],
+          "ans": 3,
+          "expl": "The passage describes how residents restored a coastal wetland and how the project benefited nature and the community."
+        },
+        {
+          "id": "p1_reading2_02",
+          "section": "reading2",
+          "level": 3,
+          "stem": "What had weakened the wetland before the project?",
+          "opts": ["Blocked channels and cut trees", "Too many outdoor classes", "A lack of fishermen", "Excessive rainfall only"],
+          "ans": 0,
+          "expl": "The first paragraph identifies rubbish blocking the channels and the cutting of young trees as problems."
+        },
+        {
+          "id": "p1_reading2_03",
+          "section": "reading2",
+          "level": 3,
+          "stem": "Why did students map the channels?",
+          "opts": ["To choose a place for a classroom", "To understand where water stayed", "To count visitors during holidays", "To measure the height of the trees"],
+          "ans": 1,
+          "expl": "The group mapped channels and recorded areas holding water during different tides, so they could understand the wetland's water flow."
+        },
+        {
+          "id": "p1_reading2_04",
+          "section": "reading2",
+          "level": 3,
+          "stem": "Where were mangrove seedlings planted?",
+          "opts": ["On the village road", "Inside the school building", "In suitable soil", "Across the visitor path"],
+          "ans": 2,
+          "expl": "The passage says that students planted seedlings in places where the soil was suitable."
+        },
+        {
+          "id": "p1_reading2_05",
+          "section": "reading2",
+          "level": 3,
+          "stem": "Why did farmers help build a path?",
+          "opts": ["To connect the wetland to an island", "To carry fish to the market", "To remove all upstream plastic", "To stop visitors walking on new plants"],
+          "ans": 3,
+          "expl": "The path kept visitors from walking across the new plants. The other options are not the reason given."
+        },
+        {
+          "id": "p1_reading2_06",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What change was observed after two rainy seasons?",
+          "opts": ["The wetland held water longer and attracted more birds", "The wetland disappeared completely", "The village stopped farming", "The seedlings were moved to the school"],
+          "ans": 0,
+          "expl": "After two rainy seasons, the wetland held water for longer and more birds were seen there."
+        },
+        {
+          "id": "p1_reading2_07",
+          "section": "reading2",
+          "level": 4,
+          "stem": "The word it in paragraph 1 refers to ___.",
+          "opts": ["the village", "the wetland", "the storm", "the group"],
+          "ans": 1,
+          "expl": "Its ability refers back to the wetland, which was becoming less able to support fish and birds."
+        },
+        {
+          "id": "p1_reading2_08",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What problem remains after the project?",
+          "opts": ["No birds have returned", "The village has no school", "Some plastic still comes from upstream", "All channels are still blocked"],
+          "ans": 2,
+          "expl": "The final paragraph says that some plastic still arrives from upstream and seedlings still need protection."
+        },
+        {
+          "id": "p1_reading2_09",
+          "section": "reading2",
+          "level": 4,
+          "stem": "How do residents view the wetland now?",
+          "opts": ["As land that should be sold", "As a natural barrier and learning place", "As a dangerous road", "As a private fishing club"],
+          "ans": 3,
+          "expl": "Residents now see the wetland as a natural barrier, a fish nursery, and an outdoor classroom."
+        },
+        {
+          "id": "p1_reading2_10",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Which title best matches the passage?",
+          "opts": ["From Unused Land to a Living Classroom", "The Fastest Way to Build a Road", "Why All Wetlands Should Be Closed", "A Competition for Young Fishermen"],
+          "ans": 0,
+          "expl": "The project changed the wetland from land residents ignored into a place that protects nature and supports learning."
+        }
+      ]
+    }
+  ]
+}
