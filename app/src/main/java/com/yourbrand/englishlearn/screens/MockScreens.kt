@@ -1,7 +1,9 @@
 package com.yourbrand.englishlearn.screens
 
+import android.content.Intent
 import android.graphics.Typeface
 import android.os.SystemClock
+import android.net.Uri
 import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
@@ -12,8 +14,10 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
+import com.yourbrand.englishlearn.BuildConfig
 import com.yourbrand.englishlearn.MainActivity
 import com.yourbrand.englishlearn.R
+import com.yourbrand.englishlearn.core.MistakeReport
 import com.yourbrand.englishlearn.services
 import com.yourbrand.englishlearn.learning.Exercise
 import com.yourbrand.englishlearn.learning.MockTest
@@ -372,11 +376,18 @@ class MockResultScreen(
                 if (given < 0) addView(Kit.text(c, str(R.string.unanswered), R.style.Text_Caption, c.col(R.color.warning)).margins(c, top = 4))
                 addView(Kit.text(c, "✓ " + opts.getOrElse(ans) { "" }.replace("[", "").replace("]", ""), R.style.Text_BodyStrong, c.col(R.color.success)).margins(c, top = 2))
                 if (expl.isNotBlank()) addView(Kit.text(c, expl, R.style.Text_Caption).margins(c, top = 4))
+                addView(Kit.secondary(c, str(R.string.report_mistake), 8) { report(ex.key) }.margins(c, top = 8))
             })
         }
         body.addView(Kit.secondary(c, str(R.string.go_home), 20) { activity.selectTab(Tab.EXAM) })
         val pending = services.pet.state.pendingStageUp
         if (pending > 0) body.postDelayed({ if (activity.navigator.current === this) activity.showStageUp(pending) }, 1200)
+    }
+
+    private fun report(key: String) {
+        val email = MistakeReport.build(key, "MockResultScreen", BuildConfig.VERSION_NAME, str(R.string.report_mistake_subject), str(R.string.report_mistake_body))
+        val uri = Uri.parse("mailto:${BuildConfig.SUPPORT_EMAIL}?subject=" + Uri.encode(email.subject) + "&body=" + Uri.encode(email.body))
+        runCatching { activity.startActivity(Intent(Intent.ACTION_SENDTO, uri)) }.onFailure { activity.toast(str(R.string.report_mistake_no_app, BuildConfig.SUPPORT_EMAIL)) }
     }
 
     private fun barRow(label: String, ok: Int, total: Int): View {

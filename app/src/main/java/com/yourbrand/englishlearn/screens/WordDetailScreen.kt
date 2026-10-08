@@ -11,6 +11,7 @@ import com.yourbrand.englishlearn.BuildConfig
 import com.yourbrand.englishlearn.MainActivity
 import com.yourbrand.englishlearn.R
 import com.yourbrand.englishlearn.content.Word
+import com.yourbrand.englishlearn.core.MistakeReport
 import com.yourbrand.englishlearn.ui.*
 import com.yourbrand.englishlearn.ui.views.Bar
 
@@ -136,9 +137,11 @@ class WordDetailScreen(activity: MainActivity, private val wordId: String) : Scr
         val actions = Kit.hbox(c).margins(c, top = 20)
         actions.addView(Kit.secondary(c, if (saved) "🔖 " + str(R.string.saved) else "🔖 " + str(R.string.save), 0) { services.store.toggleSaved(w.key); refresh() }.apply { layoutParams = lp(0, c.dpi(52), 1f) })
         actions.addView(Kit.secondary(c, "🚩 " + str(R.string.report), 0) {
-            val uri = Uri.parse("mailto:${BuildConfig.SUPPORT_EMAIL}?subject=" + Uri.encode(str(R.string.report_subject, w.key)))
-            runCatching { activity.startActivity(Intent(Intent.ACTION_SENDTO, uri)) }
+            val email = MistakeReport.build(w.key, "WordDetailScreen", BuildConfig.VERSION_NAME, str(R.string.report_mistake_subject), str(R.string.report_mistake_body))
+            val uri = Uri.parse("mailto:${BuildConfig.SUPPORT_EMAIL}?subject=" + Uri.encode(email.subject) + "&body=" + Uri.encode(email.body))
+            runCatching { activity.startActivity(Intent(Intent.ACTION_SENDTO, uri)) }.onFailure { activity.toast(str(R.string.report_mistake_no_app, BuildConfig.SUPPORT_EMAIL)) }
         }.apply { layoutParams = lp(0, c.dpi(52), 1f).apply { marginStart = c.dpi(10) } })
+        (actions.getChildAt(1) as? TextView)?.text = "🚩 " + str(R.string.report_mistake)
         body.addView(actions)
         body.addView(Kit.primary(c, str(R.string.practice_this_word), 12) { activity.startSession(services.builder().singleWord(w.lemma, w)) }.apply { tag = "petAvoid" })
     }
