@@ -355,9 +355,8 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             if (ex.stem.contains("___") && stemView != null && ex.passage == null) stemView.text = Spans.blank(ex.stem, ex.options[ex.answer], c.col(if (ok) R.color.success else R.color.primary), c.col(if (ok) R.color.success_container else R.color.primary_container))
             onAnswered(ex, ok, ex.options.getOrNull(selected), cards[ex.answer].view, correctText = ex.options[ex.answer], explanation = ex.explanation, speakText = ex.speak)
         }
-        onHint = {
-            showHint(listOfNotNull(ex.hint, ex.explanation.takeIf { it.isNotBlank() }).joinToString("\n"))
-        }
+        // 💡 = how to solve: never the explanation (it names the answer) and never removing options.
+        onHint = { showHint(ex.method ?: ex.methodContext?.let { str(R.string.hint_context, it) } ?: str(R.string.hint_generic)) }
     }
 
     private fun renderPictureChoice(ex: Exercise.PictureChoice) {
@@ -407,10 +406,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             onAnswered(ex, ok, ex.words.getOrNull(selected)?.lemma, cards[ex.answer].view,
                 correctText = ex.words[ex.answer].lemma, explanation = ex.words[ex.answer].gloss, speakText = ex.speak)
         }
-        onHint = {
-            val answer = ex.words.getOrNull(ex.answer)
-            showHint(answer?.let { "${it.lemma} · ${it.gloss}" })
-        }
+        onHint = { showHint(ex.methodContext?.let { str(R.string.hint_context, it) } ?: str(R.string.hint_picture)) }
     }
 
     private fun renderPictureMatch(ex: Exercise.PictureMatch) {
@@ -545,12 +541,10 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             val ok = Grader.sameSentence(built.map { it.text.toString() }, ex.sentence)
             answerArea.background = c.rounded(c.col(if (ok) R.color.success_container else R.color.error_container), 14f, c.col(if (ok) R.color.success else R.color.error), 1.5f)
             if (ok) answerArea.bump() else answerArea.shake()
-            onAnswered(ex, ok, built.joinToString(" ") { it.text }, answerArea, correctText = ex.sentence, explanation = "", speakText = ex.sentence)
+            onAnswered(ex, ok, built.joinToString(" ") { it.text }, answerArea, correctText = ex.sentence, explanation = ex.explanation, speakText = ex.sentence)
         }
-        onHint = {
-            val first = Grader.chips(ex.sentence).firstOrNull()
-            showHint(ex.explanation.takeIf { it.isNotBlank() } ?: ex.translation ?: first)
-        }
+        // 💡 = the meaning plus the method; the explanation is shown after answering.
+        onHint = { showHint(ex.translation?.let { str(R.string.hint_word_order_meaning, it) } ?: str(R.string.hint_word_order)) }
     }
 
     // -- Matching (E06) --

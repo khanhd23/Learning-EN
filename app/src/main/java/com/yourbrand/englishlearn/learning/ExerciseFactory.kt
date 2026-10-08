@@ -21,6 +21,20 @@ class ExerciseFactory(private val content: Content, private val random: Random =
 
     private fun wordTags(w: Word) = listOf("vocab_core", "pos_${w.pos}") + w.topics.take(1).map { "topic_$it" }
 
+    /** 💡 hints teach how to solve: question-type tip, else the grammar point's formula. */
+    private fun methodFor(qtype: String?, gp: String?): String? =
+        qtype?.let { content.tips[it] } ?: gp?.let { id -> content.grammarById[id]?.let { "${it.title}: ${it.formula}" } }
+
+    private fun example(w: Word): String? = w.senses.firstOrNull()?.examples?.firstOrNull()?.text?.takeIf { it.isNotBlank() }
+
+    /** The word's example with the word itself blanked, or null when it cannot be found safely. */
+    private fun blanked(w: Word): String? {
+        val ex = example(w) ?: return null
+        val head = w.lemma.split(' ').first()
+        val re = Regex("(?i)\\b" + Regex.escape(head) + "[a-z]*\\b")
+        return if (re.containsMatchIn(ex)) re.replace(ex, "___") else null
+    }
+
     /** Distractor words: same part of speech, similar level, different meaning. */
     private fun distractors(w: Word, n: Int = 3, pool: List<Word> = content.lessonWords): List<Word> {
         val glosses = HashSet<String>().apply { add(w.gloss.lowercase()) }
@@ -45,14 +59,14 @@ class ExerciseFactory(private val content: Content, private val random: Random =
     fun meaning(w: Word): Exercise.Choice {
         val (opts, ans) = withAnswer(w.gloss, distractors(w).map { it.gloss })
         return Exercise.Choice(w.key, Kind.E01, wordTags(w), w.level, R.string.ins_meaning, w.lemma, opts, ans,
-            explanation = explainWord(w), speak = w.lemma, wordId = w.id, hint = "(${w.pos}) ${w.ipa}")
+            explanation = explainWord(w), speak = w.lemma, wordId = w.id, hint = "(${w.pos}) ${w.ipa}", methodContext = example(w))
     }
 
     /** E01 reversed: Vietnamese meaning → English word. */
     fun reverse(w: Word): Exercise.Choice {
         val (opts, ans) = withAnswer(w.lemma, distractors(w).map { it.lemma })
         return Exercise.Choice(w.key, Kind.E01, wordTags(w), w.level, R.string.ins_reverse, w.gloss, opts, ans,
-            explanation = explainWord(w), speak = w.lemma, wordId = w.id)
+            explanation = explainWord(w), speak = w.lemma, wordId = w.id, methodContext = blanked(w))
     }
 
     /** E09 listening-lite: hear the word, pick its spelling. */
@@ -82,7 +96,7 @@ class ExerciseFactory(private val content: Content, private val random: Random =
         if (w.image == null || others.size < 3) return null
         val words = (others + w).shuffled(random)
         return when (kind) {
-            Kind.E15 -> Exercise.PictureChoice(w.key + ":E15", kind, wordTags(w) + "picture", w.level, words, words.indexOf(w), R.string.ins_picture_word, w.image, true)
+            Kind.E15 -> Exercise.PictureChoice(w.key + ":E15", kind, wordTags(w) + "picture", w.level, words, words.indexOf(w), R.string.ins_picture_word, w.image, true, methodContext = blanked(w))
             Kind.E16 -> Exercise.PictureChoice(w.key + ":E16", kind, wordTags(w) + "picture", w.level, words, words.indexOf(w), R.string.ins_listen_picture, null, false, w.lemma)
             else -> null
         }
@@ -157,7 +171,7 @@ class ExerciseFactory(private val content: Content, private val random: Random =
             val marked = q.qtype == "pronunciation" || q.qtype == "stress"
             Exercise.Choice(q.key, kind, q.tags, q.level, instruction, q.stem, q.options, q.answer, q.explanation,
                 speak = if (marked) null else q.stem.replace("___", q.options[q.answer]).replace("[", "").replace("]", "").ifBlank { null },
-                optionsMarked = marked)
+                optionsMarked = marked, method = methodFor(q.qtype, q.gp))
         }
     }
 
@@ -165,7 +179,7 @@ class ExerciseFactory(private val content: Content, private val random: Random =
         val b = p.blanks[i]
         return Exercise.Choice(p.key(i), Kind.E02, listOf("passage", b.qtype), p.level,
             if (b.qtype == "sentence") R.string.ins_sentence else R.string.ins_passage, p.title, b.options, b.answer, b.explanation,
-            passage = p, blank = i)
+            passage = p, blank = i, method = methodFor(b.qtype, null))
     }
 
     /** A varied set of exercises for one word, by how well it is known. */

@@ -647,4 +647,9 @@
     <string name="restore_bad_file">This file is not an LingoMori backup or it is damaged.</string>
     <string name="restore_newer_version">This backup was made by a newer version of LingoMori. Update the app first.</string>
     <string name="topic_story">Short story</string>
+    <string name="hint_generic">Read the whole sentence first, find the key words around the blank, then check which option fits both the grammar and the meaning.</string>
+    <string name="hint_context">Guess from this sentence: “%1$s”</string>
+    <string name="hint_picture">Name what you see in English first, then look for that word.</string>
+    <string name="hint_word_order">Find the subject and the verb first, then add the other words around them.</string>
+    <string name="hint_word_order_meaning">Meaning: “%1$s”. Find the subject and the verb first, then add the other words.</string>
 </resources>

@@ -343,6 +343,25 @@ exam items used the `ins_meaning` instruction, now `ins_choose`. 46d910e (locale
 stop the activity restart; replaced by the owner fix in 95ed924 (manifest handles locale changes,
 views rebuilt in place).
 
+### Review of Tasks 15, R2, R3, 16, 17 and extra commits (owner, 2026-10-08)
+
+Accepted: 8b09dbe Task 15 (only `lists`/`cefr` added; silver unchanged at 4,018), 8425a68 R2,
+2b03cc9 R3, 1193412 Task 16, 49a5f30 Task 17, 4c9f519 (weekly quest ticks), f99247e (girl/daughter
+distractors), fa73533 + b335e76 (IPA on word rows, IPA screen). 50b94f3: 62 E05 explanations are
+correct English; Vietnamese versions still missing (owner to write).
+
+Owner fixes: c15ad4b turned 💡 into "show the explanation before answering" (gave the answer away)
+and the picture hint showed the answer word. Rule from the publisher: **a hint teaches how to solve;
+it never removes options and never reveals the answer.** Now: `Exercise.Choice.method` = question-type
+tip (`tips`) or grammar formula; word items show a context sentence (answer blanked when it is the
+answer); word order shows the meaning + method; explanations only after answering. Strings
+`hint_generic`, `hint_context`, `hint_picture`, `hint_word_order`, `hint_word_order_meaning`.
+
+Follow-up for Codex (**Task R2.1**): the R2 report said "+242 bytes", but
+`assets/licenses/dependencies.txt` is 4.07 MB (431 KB compressed) in the release APK. De-duplicate
+identical licence texts and keep one copy per licence with the list of artifacts that use it; target
+< 150 KB uncompressed. Report the real compressed size from `unzip -lv`.
+
 ### Task 15: Exam word lists
 
 Owner data delivered: `config/word_lists.json` (lists, labels, credits), CEFR sources in

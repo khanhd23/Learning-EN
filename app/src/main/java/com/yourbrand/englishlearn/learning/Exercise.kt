@@ -39,6 +39,10 @@ sealed class Exercise {
         val blank: Int = -1,
         val wordId: String? = null,
         val hint: String? = null,
+        /** 💡 how to solve (question-type tip or grammar formula); never the answer. */
+        val method: String? = null,
+        /** 💡 context sentence for word items (the target word blanked when it is the answer). */
+        val methodContext: String? = null,
         val sharedPassage: String? = null,
         val sharedPassageTitle: String? = null,
         val sharedGroupId: String? = null,
@@ -107,6 +111,8 @@ sealed class Exercise {
         val promptImage: String? = null,
         val showWordOptions: Boolean = false,
         val speak: String? = null,
+        /** 💡 context sentence with the target word blanked. */
+        val methodContext: String? = null,
     ) : Exercise()
 
     data class PictureMatch(

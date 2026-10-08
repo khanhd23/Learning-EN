@@ -647,4 +647,9 @@
     <string name="restore_bad_file">Tệp này không phải bản sao lưu LingoMori hoặc đã bị hỏng.</string>
     <string name="restore_newer_version">Bản sao lưu này được tạo bởi phiên bản LingoMori mới hơn. Hãy cập nhật ứng dụng trước.</string>
     <string name="topic_story">Truyện ngắn</string>
+    <string name="hint_generic">Đọc cả câu trước, tìm từ khóa quanh chỗ trống, rồi xem đáp án nào hợp cả ngữ pháp lẫn nghĩa.</string>
+    <string name="hint_context">Đoán từ câu này: “%1$s”</string>
+    <string name="hint_picture">Gọi tên thứ bạn thấy bằng tiếng Anh trước, rồi tìm từ đó.</string>
+    <string name="hint_word_order">Tìm chủ ngữ và động từ trước, rồi ghép các từ còn lại quanh chúng.</string>
+    <string name="hint_word_order_meaning">Nghĩa: “%1$s”. Tìm chủ ngữ và động từ trước, rồi ghép các từ còn lại.</string>
 </resources>
