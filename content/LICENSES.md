@@ -23,6 +23,11 @@ citation, obtained through Open Language Profiles (github.com/openlanguageprofil
 and the Octanove Vocabulary Profile C1/C2 1.0 by Octanove Labs, License: CC BY-SA 4.0,
 https://creativecommons.org/licenses/by-sa/4.0/
 
+2b. Fredoka (app logo lettering)
+The "LingoMori" lettering in the app logo is drawn from glyph outlines of the Fredoka font,
+Copyright 2016 The Fredoka Project Authors (https://github.com/hafontia/Fredoka-One).
+License: SIL Open Font License 1.1, https://openfontlicense.org
+
 3. WordNet 3.0
 Some English dictionary definitions were drafted from WordNet 3.0.
 WordNet Release 3.0. This software and database is being provided to you, the LICENSEE, by

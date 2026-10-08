@@ -135,6 +135,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.Theme_App) // leave the launch (splash) theme
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         localeTag = resources.configuration.locales[0].toLanguageTag()
