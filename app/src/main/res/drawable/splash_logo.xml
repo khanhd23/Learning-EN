@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Splash logo (288dp; Android 12+ shows only the centre 192dp circle): the panda illustration
-     (splash_panda.webp, 112dp, transparent) above the LingoMori wordmark. -->
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/splash_wordmark" />
-    <item android:width="112dp" android:height="112dp" android:top="60dp" android:gravity="top|center_horizontal">
-        <bitmap android:src="@drawable/splash_panda" android:filter="true" android:antialias="true" />
-    </item>
-</layer-list>
+<!-- Splash logo: ONE bitmap (panda + LingoMori wordmark, 288dp canvas, transparent, content inside
+     a 176dp circle) so every launcher scales both parts together. Two layers scaled unevenly on
+     MIUI: the panda grew over the wordmark and was cut off. -->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/splash_logo_img"
+    android:gravity="center"
+    android:filter="true"
+    android:antialias="true" />
