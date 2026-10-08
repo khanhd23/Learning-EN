@@ -40,7 +40,7 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
         body.addView(Kit.text(c, str(R.string.vocab_total, content.words.size, content.words.sumOf { it.senses.size }), R.style.Text_Caption).margins(c, top = 12))
         if (content.sound.dictation.isNotEmpty() || content.sound.pairs.isNotEmpty() || content.sound.shadowing.isNotEmpty()) {
             body.addView(Kit.clickableCard(c, 6, 10, c.col(R.color.primary_container), onClick = {
-                activity.startSession(services.builder().sound(str(R.string.sound_practice)))
+                activity.open(IpaScreen(activity))
             }) {
                 addView(Kit.row(c, Kit.emojiTile(c, "🔊", c.col(R.color.surface)), str(R.string.sound_practice), str(R.string.sound_practice_desc), Kit.chevron(c)))
             })
