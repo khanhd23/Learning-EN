@@ -19,17 +19,68 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
     override val allowsBanner = true
     override val petMode = PetMode.FLOATING
     private var page = 0
+    /** Topic order for this visit: recently opened first, then the default order. Frozen so a
+     *  card never jumps away under the learner's finger when they come back from a topic; it is
+     *  recomputed on a segment switch and when the Words tab is entered again. */
+    private var topicOrder: List<Topic>? = null
+    /** Next topics build fills the grid over frames (segment switch, tab entry). */
+    private var progressiveNext = false
+
+    private fun orderedTopics(): List<Topic> {
+        val opened = services.settings.topicOpenedAt
+        val all = services.content.topics
+        return all.filter { it.id in opened }.sortedByDescending { opened[it.id] } + all.filter { it.id !in opened }
+    }
+
+    /** Called when the Words tab is entered: apply the latest "recent first" order. */
+    fun onTabEntered() {
+        if (page != 0 || !hasView) return
+        val fresh = orderedTopics()
+        if (fresh.map { it.id } == topicOrder?.map { it.id }) return
+        topicOrder = fresh
+        progressiveNext = true
+        refresh()
+        scrollToTop()
+    }
 
     override fun headerActions(bar: LinearLayout) = HubHeader.build(this, bar, str(R.string.tab_vocab))
 
+    /** Built segment pages, kept while the data is unchanged: switching segments only toggles
+     *  visibility (rebuilding the 47 topic cards on every switch took up to 400 ms). */
+    private var pages = arrayOfNulls<LinearLayout>(3)
+    private lateinit var pageHost: LinearLayout
+
     override fun build(body: LinearLayout) {
-        val c = ctx
-        body.addView(segmented(listOf(str(R.string.by_topic), str(R.string.by_level), str(R.string.mine)), page) { page = it; refresh() }.margins(c, top = 4))
+        pages = arrayOfNulls(3)
+        body.addView(segmentBar())
+        pageHost = Kit.vbox(ctx)
+        body.addView(pageHost)
+        showPage()
+    }
+
+    private fun segmentBar(): LinearLayout =
+        segmented(listOf(str(R.string.by_topic), str(R.string.by_level), str(R.string.mine)), page) { selectPage(it) }.margins(ctx, top = 4)
+
+    private fun selectPage(p: Int) {
+        page = p
+        progressiveNext = true // a page built on demand fills in over frames
+        body.removeViewAt(0)
+        body.addView(segmentBar(), 0)
+        showPage()
+    }
+
+    private fun showPage() {
+        pages.forEachIndexed { i, v -> v?.visibility = if (i == page) android.view.View.VISIBLE else android.view.View.GONE }
+        if (pages[page] != null) return
+        val host = Kit.vbox(ctx)
+        pages[page] = host
+        pageHost.addView(host)
         when (page) {
-            0 -> topics(body)
-            1 -> levels(body)
-            else -> mine(body)
+            0 -> topics(host)
+            1 -> levels(host)
+            else -> mine(host)
         }
+        progressiveNext = false
     }
 
     private fun known(w: Word) = services.store.item(w.key)?.mastered == true
@@ -48,7 +99,7 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
         // Two cards per row; on a fresh open the first rows appear at once and the rest fill in.
         val grid = Kit.vbox(c)
         body.addView(grid)
-        val topics = content.topics
+        val topics = topicOrder ?: orderedTopics().also { topicOrder = it }
         // Cards are added one at a time (a pair per row): one card is a small enough slice of
         // work to fit inside a frame's time budget while the rest of the grid fills in.
         var row: LinearLayout? = null
@@ -58,8 +109,12 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
             if (i == topics.lastIndex && i % 2 == 0) row!!.addView(android.view.View(c).apply { layoutParams = lp(0, 1, 1f).apply { marginStart = c.dpi(12) } })
         }
         // A topic row (two cards) is ~150dp; the header, tabs and count line take ~200dp.
-        if (firstBuild) addInFrames(grid, topics.size, now = 2 * visibleCount(c, itemDp = 150, aboveDp = 200), startDelayMs = AFTER_TRANSITION_MS, add = addCard)
+        // Fill over frames on first open, segment switch and tab entry (building all 47 cards in
+        // one frame took up to 400 ms); a plain return keeps the synchronous build so the scroll
+        // position holds.
+        if (firstBuild || progressiveNext) addInFrames(grid, topics.size, now = 2 * visibleCount(c, itemDp = 150, aboveDp = 200), startDelayMs = if (firstBuild) AFTER_TRANSITION_MS else 0, add = addCard)
         else for (i in topics.indices) addCard(i)
+        progressiveNext = false
         wordLists(body)
     }
 
@@ -85,7 +140,7 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
         val c = ctx
         val words = services.content.wordsByTopic[t.id].orEmpty()
         val known = words.count { known(it) }
-        return Kit.clickableCard(c, 14, 0, Hues.container(c, t.hue), onClick = { activity.open(WordListScreen(activity, topicId = t.id)) }) {
+        return Kit.clickableCard(c, 14, 0, Hues.container(c, t.hue), onClick = { services.settings.topicOpened(t.id, System.currentTimeMillis()); activity.open(WordListScreen(activity, topicId = t.id)) }) {
             minimumHeight = c.dpi(138)
             val top = Kit.hbox(c)
             top.addView(Kit.text(c, t.icon, sizeSp = 26f).apply { layoutParams = lp(0, WRAP_CONTENT, 1f) })
@@ -134,7 +189,7 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
             Triple(R.string.mine_known, "⭐", st.filter { it.mastered }),
         )
         if (st.isEmpty()) {
-            body.addView(Kit.empty(c, "📚", str(R.string.mine_empty), str(R.string.start_learning)) { page = 0; refresh() })
+            body.addView(Kit.empty(c, "📚", str(R.string.mine_empty), str(R.string.start_learning)) { selectPage(0) })
             return
         }
         groups.forEach { (label, emoji, list) ->

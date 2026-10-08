@@ -281,6 +281,7 @@ class MainActivity : AppCompatActivity() {
                 Tab.ME -> MeScreen(this)
             }
         }
+        if (tab == Tab.VOCAB) (screen as? VocabScreen)?.onTabEntered()
         navigator.resetTo(screen, hubs.values)
     }
 

@@ -50,6 +50,13 @@ class Settings(context: Context) {
     var reminderHour: Int get() = int("reminderHour", 20); set(v) = put("reminderHour", v)
     var notifAsked: Boolean get() = bool("notifAsked", false); set(v) = put("notifAsked", v)
     var examGoal: String? get() = p.getString("examGoal", null); set(v) = put("examGoal", v)
+    /** UI-only state (ordering), kept out of [DataRevision]'s watched prefs: writing it must not
+     *  make hub screens rebuild when the learner comes back. */
+    private val ui = context.getSharedPreferences("ui_state_v1", Context.MODE_PRIVATE)
+    /** Topic id → last time the learner opened it; the Words tab lists recent topics first. */
+    val topicOpenedAt: Map<String, Long>
+        get() = ui.getString("topicOpenedAt", null)?.let { s -> runCatching { JSONObject(s).let { o -> o.keys().asSequence().associateWith { o.getLong(it) } } }.getOrNull() } ?: emptyMap()
+    fun topicOpened(id: String, at: Long) = ui.edit().putString("topicOpenedAt", JSONObject(topicOpenedAt + (id to at)).toString()).apply()
     var examDate: Long get() = p.getLong("examDate", 0L); set(v) = put("examDate", v)
     var sessionsDone: Int get() = int("sessionsDone", 0); set(v) = put("sessionsDone", v)
     var goodSessions: Int get() = int("goodSessions", 0); set(v) = put("goodSessions", v)
