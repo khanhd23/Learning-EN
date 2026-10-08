@@ -67,6 +67,14 @@ class WordListScreen(
         btns.addView(Kit.secondary(c, "⋯", 0) { modeMenu(words) }.apply { layoutParams = LinearLayout.LayoutParams(c.dpi(64), c.dpi(52)).apply { marginStart = c.dpi(10) }; contentDescription = str(R.string.study_modes) })
         head.addView(btns)
         body.addView(head)
+        // Topic stories (unlocked once a word of the topic has been seen), below the header.
+        if (topicId != null && words.any { w -> (services.store.item(w.key)?.seen ?: 0) > 0 }) {
+            services.content.stories.filter { it.topic == topicId }.forEach { story ->
+                body.addView(Kit.clickableCard(c, 4, 8, onClick = { activity.open(StoryScreen(activity, story)) }) {
+                    addView(Kit.row(c, Kit.emojiTile(c, "📖", c.col(R.color.surface_variant), 40, 20f), story.title, str(R.string.topic_story), Kit.chevron(c)))
+                }.margins(c, top = 10))
+            }
+        }
 
         // Filters + sort
         val chips = Kit.hbox(c)
