@@ -4,6 +4,9 @@ import android.content.Intent
 import com.yourbrand.englishlearn.MainActivity
 import com.yourbrand.englishlearn.learning.LearningStore
 import com.yourbrand.englishlearn.learning.MockTest
+import com.yourbrand.englishlearn.learning.ExerciseFactory
+import com.yourbrand.englishlearn.learning.Session
+import com.yourbrand.englishlearn.learning.SessionKind
 import com.yourbrand.englishlearn.learning.Scheduler
 import com.yourbrand.englishlearn.services
 import com.yourbrand.englishlearn.ui.Tab
@@ -31,9 +34,18 @@ object DemoMode {
             "vocab" -> a.selectTab(Tab.VOCAB)
             "topic" -> { a.selectTab(Tab.VOCAB); a.open(WordListScreen(a, topicId = "office")) }
             "word" -> { a.selectTab(Tab.VOCAB); a.open(WordDetailScreen(a, "interest")) }
+            "explanation" -> { a.selectTab(Tab.VOCAB); a.open(WordDetailScreen(a, "interest")) }
             "grammar" -> a.selectTab(Tab.GRAMMAR)
             "lesson" -> { a.selectTab(Tab.GRAMMAR); a.open(GrammarLessonScreen(a, "present_perfect")) }
             "exam" -> a.selectTab(Tab.EXAM)
+            "picture" -> {
+                val factory = ExerciseFactory(s.content)
+                val word = s.content.lessonWords.firstOrNull { it.image != null }
+                val picture = word?.let { factory.picture(it) }
+                if (picture != null) { a.selectTab(Tab.TODAY); a.startSession(Session(SessionKind.WORDS, "Picture practice", mutableListOf(picture))) }
+                else a.selectTab(Tab.VOCAB)
+            }
+            "story" -> { a.selectTab(Tab.VOCAB); s.content.stories.firstOrNull()?.let { a.open(StoryScreen(a, it)) } }
             "me" -> a.selectTab(Tab.ME)
             "settings" -> { a.selectTab(Tab.ME); a.open(SettingsScreen(a)) }
             "licenses" -> { a.selectTab(Tab.ME); a.open(SettingsScreen(a)); (a.navigator.current as? SettingsScreen)?.openLicenses() }
