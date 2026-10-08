@@ -34,6 +34,25 @@
       "timeLimitMinutes": null,
       "optionsPerQuestion": 4,
       "source": null
+    },
+    {
+      "id": "thpt",
+      "label": "Đề thi tốt nghiệp THPT",
+      "family": "THPT",
+      "description": "40 câu trắc nghiệm, 50 phút: thông báo, tờ rơi, sắp xếp, điền đoạn và hai bài đọc.",
+      "exerciseTypes": ["E02"],
+      "questionCount": 40,
+      "timeLimitMinutes": 50,
+      "optionsPerQuestion": 4,
+      "source": "https://vqa.moet.gov.vn/vi/news/thong-bao/cau-truc-dinh-dang-de-thi-tot-nghiep-thpt-tu-nam-2025-74.html",
+      "sections": [
+        {"id": "notice", "label": "Thông báo", "itemType": "group", "count": 6, "bank": "thpt"},
+        {"id": "leaflet", "label": "Tờ rơi, quảng cáo", "itemType": "group", "count": 6, "bank": "thpt"},
+        {"id": "arrange", "label": "Sắp xếp câu", "itemType": "mcq", "count": 5, "bank": "thpt"},
+        {"id": "complete", "label": "Điền vào đoạn văn", "itemType": "group", "count": 5, "bank": "thpt"},
+        {"id": "reading1", "label": "Đọc hiểu 1", "itemType": "group", "count": 8, "bank": "thpt"},
+        {"id": "reading2", "label": "Đọc hiểu 2", "itemType": "group", "count": 10, "bank": "thpt"}
+      ]
     }
   ],
   "comingSoon": [
