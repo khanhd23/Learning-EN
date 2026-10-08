@@ -363,7 +363,7 @@
     <string name="preset_saved">Đã lưu bài luyện</string>
     <string name="prev">Trước</string>
     <string name="privacy_policy">Chính sách quyền riêng tư</string>
-    <string name="privacy_text">EngPet chỉ lưu tiến độ học trên thiết bị này. Ứng dụng không yêu cầu tài khoản và không thu thập tên của bạn. Ứng dụng hiển thị quảng cáo của Google AdMob, có thể sử dụng mã quảng cáo của thiết bị; bạn có thể xem lựa chọn quảng cáo trong Cài đặt. Nhắc nhở là tùy chọn và có thể tắt bất cứ lúc nào.</string>
+    <string name="privacy_text">EngPet chỉ lưu tiến độ học trên thiết bị này; chúng tôi không có máy chủ và không cần tài khoản. Android có thể đưa dữ liệu vào bản sao lưu Google của chính bạn. Ứng dụng hiển thị quảng cáo Google AdMob, có thể thu thập mã quảng cáo, địa chỉ IP và tương tác với quảng cáo; bạn xem lựa chọn quảng cáo trong Cài đặt. Micrô chỉ dùng cho luyện nói: dịch vụ giọng nói của điện thoại chuyển lời nói thành chữ, ứng dụng không ghi âm hay lưu âm thanh. Lời nhắc là tùy chọn. Chính sách đầy đủ ở liên kết bên dưới.</string>
     <string name="quick_session">Học nhanh</string>
     <string name="quiet_hours">Không gửi nhắc nhở từ 22:00 đến 08:00.</string>
     <string name="quit_keep">Học tiếp</string>
@@ -634,4 +634,16 @@
     <string name="passage_show">Xem đoạn văn</string>
     <string name="passage_hide">Ẩn đoạn văn</string>
     <string name="section_n">Phần %1$d/%2$d: %3$s</string>
+    <string name="backup_title">Sao lưu tiến độ</string>
+    <string name="backup_desc">Lưu từ đã học, lịch sử bài thi và thú cưng vào một tệp</string>
+    <string name="backup_done">Đã lưu tiến độ</string>
+    <string name="backup_failed">Không lưu được tệp. Hãy thử chọn nơi khác.</string>
+    <string name="restore_title">Khôi phục tiến độ</string>
+    <string name="restore_desc">Nạp tiến độ từ tệp sao lưu</string>
+    <string name="restore_confirm_title">Thay tiến độ hiện tại?</string>
+    <string name="restore_confirm_msg">Bản sao lưu ngày %1$s có %2$d từ, %3$d bài thi và thú cưng cấp %4$d. Tiến độ hiện tại trên điện thoại này sẽ bị thay thế.</string>
+    <string name="restore_replace">Thay thế</string>
+    <string name="restore_done">Đã khôi phục tiến độ</string>
+    <string name="restore_bad_file">Tệp này không phải bản sao lưu EngPet hoặc đã bị hỏng.</string>
+    <string name="restore_newer_version">Bản sao lưu này được tạo bởi phiên bản EngPet mới hơn. Hãy cập nhật ứng dụng trước.</string>
 </resources>

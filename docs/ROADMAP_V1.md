@@ -57,6 +57,7 @@ base (Task 14).
 | P1 | Create the Google Play developer account (25 USD, identity check) | M1 | Personal or organisation; organisation skips the 12-tester rule but needs a D-U-N-S number |
 | P2 | Create the AdMob account and app, ad units (banner, interstitial, rewarded); put the IDs in `secrets.properties` (never commit) | M1 | Keep test IDs in debug |
 | P3 | Create the upload keystore; fill `signing.*` in `secrets.properties`; back up the keystore and passwords in two safe places | M1 | Use Play App Signing; losing the upload key is recoverable, losing everything is not |
+| P4a | Fix `supportEmail` in `config/app_config.json`: it is `support.permitprep@gmail.com` (another app's address); use an EngPet address | M1 | Same address goes in the privacy policy and Play listing |
 | P4 | Host the privacy policy (Claude writes it) at a public URL, e.g. GitHub Pages or Google Sites; put the URL in `config/app_config.json` `privacyPolicyUrl` | M1 | Required for apps with ads |
 | P5 | Choose the final app name and approve the icon (no exam names or logos) | M1 | Claude proposes 5 names with a trademark search |
 | P6 | Fill Play Console forms: Data safety, content rating, target audience 13+, ads declaration (Claude drafts every answer) | M2 | |
@@ -70,13 +71,13 @@ base (Task 14).
 |---|---|---|
 | A1 | Words: the 808 missing TOEIC words and the 76 search-only ones (≈6 batches) | M2 |
 | A2 | Words: CEFR A1–B1 missing words (THPT, KET, PET), then B2 (VSTEP); retire archaic group-C words | M4 |
-| A3 | Topics: phrasal verbs and life stages to 40+ words | M1 |
+| A3 | ✅ Topics: phrasal verbs 57, life stages 62 (batch 22); smallest topic now 42 | M1 |
 | A4 | THPT: verify the format against the MOET sample paper, add the `sections` format entry, write papers 1–2 (M1) and 3–5 (M2), with vi explanations | M2 |
 | A5 | TOEIC: move P5/P6 to a bank on the engine; 300 P5 items and 40 P6 texts | M2 |
 | A6 | Stories to 30 (Level 1–3), pictures to 500 | M2 |
-| A7 | Privacy policy (EN + VI), Data safety answers, content rating answers, ads declaration | M1 |
+| A7 | ✅ `docs/store/privacy-policy.md` (+ `.vi.md`), `docs/store/play-console-answers.md`; in-app `privacy_text` updated | M1 |
 | A8 | Store listing EN + VI: short and full description, feature list, trademark notice, 5 app-name options, screenshot captions | M2 |
-| A9 | Device test checklist per build; tester invite and feedback form; release notes | M1 |
+| A9 | ✅ `docs/store/device-test-checklist.md`, `docs/store/tester-invite.md` (release notes per build later) | M1 |
 | A10 | Review every Codex commit before push; keep this roadmap and the release checklist current | Always |
 
 ## Codex tasks
@@ -106,8 +107,10 @@ Settings → "Back up progress" writes one JSON file (learning items, history, p
 quests) through the system file picker (`ACTION_CREATE_DOCUMENT`); "Restore" reads it
 (`ACTION_OPEN_DOCUMENT`), shows what will be replaced, and asks to confirm. Version the file
 format; reject files from a newer version with a clear message. No permissions, no network.
-Unit tests for round trip and for an old-version file. Strings: Claude adds them before the task
-starts (`backup_*`, `restore_*`).
+Unit tests for round trip and for an old-version file. Strings delivered: `backup_title`,
+`backup_desc`, `backup_done`, `backup_failed`, `restore_title`, `restore_desc`,
+`restore_confirm_title`, `restore_confirm_msg` (date, words, tests, pet level), `restore_replace`,
+`restore_done`, `restore_bad_file`, `restore_newer_version`.
 
 ### Task 17: Store screenshots
 

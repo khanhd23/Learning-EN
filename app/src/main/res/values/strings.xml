@@ -363,7 +363,7 @@
     <string name="preset_saved">Practice saved</string>
     <string name="prev">Previous</string>
     <string name="privacy_policy">Privacy policy</string>
-    <string name="privacy_text">EngPet stores your learning progress only on this device. We do not ask for an account or collect your name. The app shows ads from Google AdMob, which may use your device\'s advertising ID; you can review ad choices in Settings. Reminders are optional and you can turn them off at any time.</string>
+    <string name="privacy_text">EngPet stores your learning progress only on this device; we have no server and no account. Android may include it in your own Google backup. The app shows ads from Google AdMob, which may collect your advertising ID, IP address and ad interactions; you can review ad choices in Settings. The microphone is used only for speaking practice: your phone's speech service turns speech into text, and the app never records or keeps audio. Reminders are optional. The full policy is at the link below.</string>
     <string name="quick_session">Quick session</string>
     <string name="quiet_hours">Reminders are never sent between 22:00 and 08:00.</string>
     <string name="quit_keep">Keep going</string>
@@ -634,4 +634,16 @@
     <string name="passage_show">Show passage</string>
     <string name="passage_hide">Hide passage</string>
     <string name="section_n">Section %1$d of %2$d: %3$s</string>
+    <string name="backup_title">Back up progress</string>
+    <string name="backup_desc">Save your words, test history and pet to a file</string>
+    <string name="backup_done">Progress saved</string>
+    <string name="backup_failed">Could not save the file. Try another place.</string>
+    <string name="restore_title">Restore progress</string>
+    <string name="restore_desc">Load progress from a backup file</string>
+    <string name="restore_confirm_title">Replace your progress?</string>
+    <string name="restore_confirm_msg">The backup from %1$s has %2$d words, %3$d tests and a level %4$d pet. Your current progress on this phone will be replaced.</string>
+    <string name="restore_replace">Replace</string>
+    <string name="restore_done">Progress restored</string>
+    <string name="restore_bad_file">This file is not an EngPet backup or it is damaged.</string>
+    <string name="restore_newer_version">This backup was made by a newer version of EngPet. Update the app first.</string>
 </resources>
