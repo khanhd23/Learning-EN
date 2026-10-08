@@ -98,7 +98,8 @@ with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "authoring", 
 
 
 def load_question_expl_en():
-    """id|explanation|stem override|vi override. Passage blanks use passage_id#index."""
+    """id|explanation|stem override|vi override|vi explanation (word order items, where the vi
+    column is the sentence translation). Passage blanks use passage_id#index."""
     rows = {}
     path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "authoring", "question_expl_en.txt")
     with open(path, encoding="utf-8") as f:
@@ -106,10 +107,10 @@ def load_question_expl_en():
             line = line.rstrip("\r\n")
             if not line.strip() or line.startswith("#"):
                 continue
-            cols = line.split("|") + ["", ""]
+            cols = line.split("|") + ["", "", ""]
             if cols[0] in rows:
                 raise SystemExit(f"question_expl_en.txt: duplicate id {cols[0]}")
-            rows[cols[0]] = {"expl": cols[1].strip(), "stem": cols[2].strip(), "vi": cols[3].strip()}
+            rows[cols[0]] = {"expl": cols[1].strip(), "stem": cols[2].strip(), "vi": cols[3].strip(), "vi_expl": cols[4].strip()}
     return rows
 
 
@@ -527,6 +528,8 @@ def main():
                     q["vi"] = en_row["vi"]
                 else:
                     expl = en_row["vi"]
+            if en_row["vi_expl"]:
+                expl = en_row["vi_expl"]
         if q.get("level") is None:
             q["level"] = gp_level.get(q.get("gp"), 2)
         if "opts" in q and q["type"] != "E05":
