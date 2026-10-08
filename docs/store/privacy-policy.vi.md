@@ -1,10 +1,10 @@
 # Chính sách quyền riêng tư của EngPet
 
-Ngày hiệu lực: {EFFECTIVE_DATE}
+Ngày hiệu lực: 08/10/2026
 
-EngPet ("ứng dụng") là ứng dụng học tiếng Anh cùng thú cưng ảo, do {DEVELOPER_NAME} ("chúng tôi")
+EngPet ("ứng dụng") là ứng dụng học tiếng Anh cùng thú cưng ảo, do Đặng Kim Khánh ("chúng tôi")
 phát hành trên Google Play. Chính sách này giải thích ứng dụng sử dụng những thông tin nào và vì
-sao. Nếu có câu hỏi, vui lòng gửi email tới {CONTACT_EMAIL}.
+sao. Nếu có câu hỏi, vui lòng gửi email tới khanhsphg2003@gmail.com.
 
 ## Tóm tắt
 
@@ -101,5 +101,5 @@ thông báo trong ứng dụng.
 
 ## 10. Liên hệ
 
-{DEVELOPER_NAME}
-Email: {CONTACT_EMAIL}
+Đặng Kim Khánh
+Email: khanhsphg2003@gmail.com

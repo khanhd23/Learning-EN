@@ -57,7 +57,7 @@ base (Task 14).
 | P1 | Create the Google Play developer account (25 USD, identity check) | M1 | Personal or organisation; organisation skips the 12-tester rule but needs a D-U-N-S number |
 | P2 | Create the AdMob account and app, ad units (banner, interstitial, rewarded); put the IDs in `secrets.properties` (never commit) | M1 | Keep test IDs in debug |
 | P3 | Create the upload keystore; fill `signing.*` in `secrets.properties`; back up the keystore and passwords in two safe places | M1 | Use Play App Signing; losing the upload key is recoverable, losing everything is not |
-| P4a | Fix `supportEmail` in `config/app_config.json`: it is `support.permitprep@gmail.com` (another app's address); use an EngPet address | M1 | Same address goes in the privacy policy and Play listing |
+| P4a | ✅ `supportEmail` = khanhsphg2003@gmail.com; policy filled (Đặng Kim Khánh, effective 2026-10-08) | M1 | Same address goes in the privacy policy and Play listing |
 | P4 | Host the privacy policy (Claude writes it) at a public URL, e.g. GitHub Pages or Google Sites; put the URL in `config/app_config.json` `privacyPolicyUrl` | M1 | Required for apps with ads |
 | P5 | Choose the final app name and approve the icon (no exam names or logos) | M1 | Claude proposes 5 names with a trademark search |
 | P6 | Fill Play Console forms: Data safety, content rating, target audience 13+, ads declaration (Claude drafts every answer) | M2 | |

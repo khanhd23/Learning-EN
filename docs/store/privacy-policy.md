@@ -1,10 +1,10 @@
 # EngPet Privacy Policy
 
-Effective date: {EFFECTIVE_DATE}
+Effective date: 8 October 2026
 
 EngPet ("the app") is an English-learning app with a virtual pet, published on Google Play by
-{DEVELOPER_NAME} ("we"). This policy explains what information the app uses and why. If you have
-a question, write to {CONTACT_EMAIL}.
+Đặng Kim Khánh ("we"). This policy explains what information the app uses and why. If you have
+a question, write to khanhsphg2003@gmail.com.
 
 ## The short version
 
@@ -99,5 +99,5 @@ tell you in the app.
 
 ## 10. Contact
 
-{DEVELOPER_NAME}
-Email: {CONTACT_EMAIL}
+Đặng Kim Khánh
+Email: khanhsphg2003@gmail.com
