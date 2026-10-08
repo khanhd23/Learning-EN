@@ -102,12 +102,17 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
             })
             addView(Kit.chevron(c))
         })
+        val week = com.yourbrand.englishlearn.learning.WeekKey.mondayOf(s.today(now))
+        val newWords = s.store.firstSeenCount(week).coerceAtMost(20)
+        val dailyChallenges = s.settings.weeklyDailyChallenges.coerceAtMost(3)
+        val speakingDays = s.settings.weeklySpeakingDays.size.coerceAtMost(2)
+        val stories = s.settings.weeklyStories.coerceAtMost(2)
         body.addView(Kit.card(c, 16, 12) {
             addView(Kit.text(c, str(R.string.weekly_quests), R.style.Text_BodyStrong))
-            addView(Kit.text(c, str(R.string.quest_new_words, 20) + "  " + str(R.string.quest_progress, s.store.firstSeenCount(com.yourbrand.englishlearn.learning.WeekKey.mondayOf(s.today(now))).coerceAtMost(20), 20), R.style.Text_Caption).margins(c, top = 6))
-            addView(Kit.text(c, str(R.string.quest_daily, 3) + "  " + str(R.string.quest_progress, s.settings.weeklyDailyChallenges.coerceAtMost(3), 3), R.style.Text_Caption).margins(c, top = 4))
-            if (SpeechRecognizer.isRecognitionAvailable(c)) addView(Kit.text(c, str(R.string.quest_speaking, 2) + "  " + str(R.string.quest_progress, s.settings.weeklySpeakingDays.size.coerceAtMost(2), 2), R.style.Text_Caption).margins(c, top = 4))
-            addView(Kit.text(c, str(R.string.quest_stories, 2) + "  " + str(R.string.quest_progress, s.settings.weeklyStories.coerceAtMost(2), 2), R.style.Text_Caption).margins(c, top = 4))
+            weeklyRow(this, str(R.string.quest_new_words, 20) + "  " + str(R.string.quest_progress, newWords, 20), newWords >= 20)
+            weeklyRow(this, str(R.string.quest_daily, 3) + "  " + str(R.string.quest_progress, dailyChallenges, 3), dailyChallenges >= 3)
+            if (SpeechRecognizer.isRecognitionAvailable(c)) weeklyRow(this, str(R.string.quest_speaking, 2) + "  " + str(R.string.quest_progress, speakingDays, 2), speakingDays >= 2)
+            weeklyRow(this, str(R.string.quest_stories, 2) + "  " + str(R.string.quest_progress, stories, 2), stories >= 2)
             addView(Kit.text(c, str(R.string.streak_shields, s.pet.state.freezeTokens), R.style.Text_Caption).margins(c, top = 4))
         })
 
@@ -231,6 +236,28 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
             if (done) (getChildAt(1) as LinearLayout).getChildAt(0).let { (it as TextView).paintFlags = it.paintFlags or android.graphics.Paint.STRIKE_THRU_TEXT_FLAG; it.alpha = 0.6f }
         })
         if (done && !ctx.reduceMotion) { check.scaleX = 0f; check.scaleY = 0f; check.animate().scaleX(1f).scaleY(1f).setStartDelay(300).setDuration(200).start() }
+    }
+
+    private fun weeklyRow(parent: LinearLayout, text: String, done: Boolean) {
+        val c = ctx
+        val check = if (done) ImageView(c).apply {
+            setImageResource(R.drawable.ic_check)
+            tint(c.col(R.color.on_primary))
+            background = c.rounded(c.col(R.color.success), 100f)
+            val p = c.dpi(5); setPadding(p, p, p, p)
+            layoutParams = LinearLayout.LayoutParams(c.dpi(28), c.dpi(28))
+        } else null
+        val row = Kit.row(c, null, text, trailing = check)
+        parent.addView(row)
+        if (done) {
+            val title = (row.getChildAt(0) as LinearLayout).getChildAt(0) as TextView
+            title.paintFlags = title.paintFlags or android.graphics.Paint.STRIKE_THRU_TEXT_FLAG
+            title.alpha = 0.6f
+            if (!c.reduceMotion && check != null) {
+                check.scaleX = 0f; check.scaleY = 0f
+                check.animate().scaleX(1f).scaleY(1f).setStartDelay(300).setDuration(200).start()
+            }
+        }
     }
 
     private fun topicForPlan() = services.settings.preferredTopics().ifEmpty { services.content.topics.map { it.id } }
