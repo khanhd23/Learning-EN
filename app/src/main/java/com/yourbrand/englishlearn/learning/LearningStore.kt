@@ -82,6 +82,10 @@ class LearningStore(context: Context) : SQLiteOpenHelper(context, "learning.db",
     @Synchronized fun item(key: String): ItemState? { ensure(); return items[key] }
     @Synchronized fun itemOrNew(key: String): ItemState { ensure(); return items.getOrPut(key) { ItemState(key) } }
     @Synchronized fun allItems(): List<ItemState> { ensure(); return items.values.toList() }
+    @Synchronized fun masteredCount(keys: Collection<String>): Int {
+        ensure()
+        return keys.count { items[it]?.mastered == true }
+    }
 
     @Synchronized fun markFirstSeen(key: String, day: Long): Boolean {
         ensure()

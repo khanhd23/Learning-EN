@@ -371,7 +371,9 @@ abstract class ScrollScreen(activity: MainActivity) : Screen(activity) {
         val y = scroll.scrollY
         body.removeAllViews()
         firstBuild = firstTime
+        val buildStarted = System.nanoTime()
         build(body)
+        Perf.log("${javaClass.simpleName} build=${Perf.ms(buildStarted, System.nanoTime())} first=$firstTime")
         firstBuild = false
         builtRevision = com.yourbrand.englishlearn.core.DataRevision.value
         if (firstTime) { body.staggerChildren(40); scroll.post { scroll.scrollTo(0, 0) } } else scroll.post { scroll.scrollTo(0, y) }

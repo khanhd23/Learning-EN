@@ -24,6 +24,7 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
     override val tab = Tab.TODAY
     override val allowsBanner = true
     override val petMode = PetMode.FLOATING
+    private var deferredBuildToken = 0L
 
     override fun headerActions(bar: LinearLayout) = HubHeader.build(this, bar, greeting())
 
@@ -116,6 +117,9 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
             addView(Kit.text(c, str(R.string.streak_shields, s.pet.state.freezeTokens), R.style.Text_Caption).margins(c, top = 4))
         })
 
+        val token = ++deferredBuildToken
+        body.postOnAnimation {
+            if (token != deferredBuildToken || !body.isAttachedToWindow) return@postOnAnimation
         // 4. Due reviews
         val due = s.store.allItems().count { Scheduler.isDue(it, now) }
         body.addView(Kit.clickableCard(c, 16, 12, onClick = { activity.startSession(s.builder().review(str(R.string.review_now_title), now)) }) {
@@ -222,6 +226,8 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
             })
         }
     }
+
+        }
 
     private fun planRow(parent: LinearLayout, text: String, done: Boolean, onClick: () -> Unit) {
         val c = ctx

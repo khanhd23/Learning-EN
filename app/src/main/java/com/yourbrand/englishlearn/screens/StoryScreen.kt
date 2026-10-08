@@ -30,6 +30,21 @@ class StoryScreen(activity: MainActivity, private val story: Story) : Screen(act
     private val sentenceViews = ArrayList<TextView>()
     private var translationVisible = services.settings.storyShowTranslation
     private var playingSlow = false
+    private var renderToken = 0L
+    private val sentences: List<String> by lazy { story.text.split(Regex("(?<=[.!?])\\s+")).filter { it.isNotBlank() } }
+    private data class TargetPattern(val wordId: String, val regex: Regex)
+    private val targetPatterns: List<TargetPattern> by lazy {
+        story.targets.mapNotNull { id -> services.content.wordById[id] }.mapNotNull { word ->
+            val forms = buildSet {
+                add(word.lemma); word.forms.values.forEach { add(it) }
+                val base = word.lemma.lowercase(Locale.ROOT)
+                add(base + "s"); add(base + "ed"); add(base + "ing")
+                if (base.endsWith("y") && base.length > 1) { add(base.dropLast(1) + "ies"); add(base.dropLast(1) + "ied") }
+                if (base.endsWith("e")) add(base.dropLast(1) + "ing")
+            }.filter { it.isNotBlank() }.joinToString("|") { Regex.escape(it) }
+            forms.takeIf { it.isNotEmpty() }?.let { TargetPattern(word.id, Regex("(?i)(?<![A-Za-z'])($it)(?![A-Za-z'])")) }
+        }
+    }
 
     override fun onCreateView(parent: ViewGroup): View {
         val root = Kit.vbox(ctx)
@@ -44,37 +59,34 @@ class StoryScreen(activity: MainActivity, private val story: Story) : Screen(act
     }
 
     private fun renderReader() {
+        val renderStarted = System.nanoTime()
         body.removeAllViews(); sentenceViews.clear(); currentSentence = -1
+        val token = ++renderToken
         val actions = Kit.hbox(ctx) { gravity = Gravity.CENTER_VERTICAL }
         story.translation?.let { actions.addView(Kit.chip(ctx, str(R.string.show_translation), translationVisible) { translationVisible = !translationVisible; services.settings.storyShowTranslation = translationVisible; renderReader() }) }
         actions.addView(Kit.secondary(ctx, str(R.string.listen), 8) { playAll(false) })
         actions.addView(Kit.secondary(ctx, str(R.string.play_slow), 8) { playAll(true) }.apply { layoutParams = (layoutParams as LinearLayout.LayoutParams).apply { marginStart = ctx.dpi(6) } })
         body.addView(actions)
-        storySentences().forEachIndexed { i, sentence ->
-            val view = highlightedSentence(sentence, i).margins(ctx, top = 10)
-            sentenceViews += view; body.addView(view)
+        addInFrames(body, sentences.size, now = visibleCount(ctx, itemDp = 56, aboveDp = 96), frameBudgetMs = 2,
+            onDone = {
+                if (token != renderToken || !body.isAttachedToWindow) return@addInFrames
+                if (translationVisible && !story.translation.isNullOrBlank()) body.addView(Kit.text(ctx, story.translation, R.style.Text_Caption).margins(ctx, top = 12))
+                body.addView(Kit.primary(ctx, str(R.string.continue_label), 18) { if (story.questions.isEmpty()) finishStory() else showQuestion() }.margins(ctx, top = 18))
+            }) { i ->
+            if (token == renderToken) {
+                val view = highlightedSentence(sentences[i], i).margins(ctx, top = 10)
+                sentenceViews += view; body.addView(view)
+            }
         }
-        if (translationVisible && !story.translation.isNullOrBlank()) body.addView(Kit.text(ctx, story.translation, R.style.Text_Caption).margins(ctx, top = 12))
-        body.addView(Kit.primary(ctx, str(R.string.continue_label), 18) { if (story.questions.isEmpty()) finishStory() else showQuestion() }.margins(ctx, top = 18))
+        Perf.log("StoryScreen reader setup=${Perf.ms(renderStarted, System.nanoTime())} sentences=${sentences.size}")
     }
-
-    private fun storySentences(): List<String> = story.text.split(Regex("(?<=[.!?])\\s+")).filter { it.isNotBlank() }
 
     private fun highlightedSentence(text: String, index: Int): TextView {
         val out = SpannableStringBuilder(text)
-        val words = story.targets.mapNotNull { id -> services.content.wordById[id] }
-        words.forEach { word ->
-            val forms = buildSet {
-                add(word.lemma); word.forms.values.forEach { add(it) }
-                val base = word.lemma.lowercase(Locale.ROOT)
-                add(base + "s"); add(base + "ed"); add(base + "ing")
-                if (base.endsWith("y") && base.length > 1) { add(base.dropLast(1) + "ies"); add(base.dropLast(1) + "ied") }
-                if (base.endsWith("e")) add(base.dropLast(1) + "ing")
-            }.filter { it.isNotBlank() }.joinToString("|") { Regex.escape(it) }
-            val regex = Regex("(?i)(?<![A-Za-z'])($forms)(?![A-Za-z'])")
-            regex.findAll(text).forEach { match ->
+        targetPatterns.forEach { pattern ->
+            pattern.regex.findAll(text).forEach { match ->
                 out.setSpan(object : ClickableSpan() {
-                    override fun onClick(widget: View) { showWord(word.id) }
+                    override fun onClick(widget: View) { showWord(pattern.wordId) }
                     override fun updateDrawState(ds: android.text.TextPaint) { ds.color = ctx.col(R.color.on_surface); ds.isUnderlineText = true }
                 }, match.range.first, match.range.last + 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
                 out.setSpan(BackgroundColorSpan(ctx.col(R.color.primary_container)), match.range.first, match.range.last + 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
@@ -90,7 +102,6 @@ class StoryScreen(activity: MainActivity, private val story: Story) : Screen(act
 
     private fun playAll(slow: Boolean) {
         playingSlow = slow
-        val sentences = storySentences()
         services.tts.speakSentences(sentences, slow) { index ->
             currentSentence = index
             sentenceViews.forEachIndexed { i, view -> view.setBackgroundColor(if (i == index) ctx.col(R.color.info_container) else Color.TRANSPARENT) }
