@@ -427,7 +427,7 @@ def upgrade_schema(words, vi):
 MODULES = [
     "vocab_work", "vocab_life", "vocab_everyday", "vocab_modern", "vocab_foundation", "senses", "vocab_open", "vocab_expansion", "vocab_picture", "vocab_ngsl_core", "vocab_owner", "confusables",
     "grammar_l1", "grammar_l2", "grammar_l3", "grammar_l4", "grammar_l5",
-    "exam_p5", "exam_p6", "exam_p5_d1", "exam_p6_d1", "exam_p5_d2", "exam_p6_d2", "exam_p5_d3", "exam_p6_d3", "exam_p5_d4", "exam_p6_d4", "school", "pet_lines",
+    "exam_p5", "exam_p6", "exam_p5_d1", "exam_p6_d1", "exam_p5_d2", "exam_p6_d2", "exam_p5_d3", "exam_p6_d3", "exam_p5_d4", "exam_p6_d4", "exam_p5_d5", "exam_p6_d5", "school", "pet_lines",
 ]
 
 
