@@ -1,14 +1,14 @@
 Content sources and licenses
 
-EngPet's lessons, explanations, questions, grammar notes, pet art, sounds and user interface are
-original work of the EngPet team, except for the sources below.
+LingoMori's lessons, explanations, questions, grammar notes, pet art, sounds and user interface are
+original work of the LingoMori team, except for the sources below.
 
 1. Vietnamese Wiktionary
 Some Vietnamese meanings and example sentences in the dictionary were adapted from Vietnamese
 Wiktionary (vi.wiktionary.org), by its contributors, obtained through Wiktextract (kaikki.org).
 License: Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0),
 https://creativecommons.org/licenses/by-sa/4.0/
-EngPet's adapted dictionary data is shared under the same license (CC BY-SA 4.0).
+LingoMori's adapted dictionary data is shared under the same license (CC BY-SA 4.0).
 
 2. NGSL word lists
 Word levels and frequency ranks use the New General Service List (NGSL), the New Academic Word
@@ -46,7 +46,7 @@ remain with Princeton University and LICENSEE agrees to preserve same.
 4. Noto Emoji
 Word pictures marked as emoji come from Noto Emoji by Google (github.com/googlefonts/noto-emoji).
 License: Apache License 2.0, https://www.apache.org/licenses/LICENSE-2.0
-Other word pictures were drawn by the EngPet team.
+Other word pictures were drawn by the LingoMori team.
 
 5. Software libraries
 AndroidX libraries: Apache License 2.0. Google Mobile Ads SDK and User Messaging Platform:
@@ -55,5 +55,5 @@ Google terms of service. Text-to-speech uses the voice engine installed on your 
 Trademarks
 TOEIC is a registered trademark of ETS. IELTS is a registered trademark of the British Council,
 IDP: IELTS Australia and Cambridge University Press & Assessment. Other exam names belong to their
-owners. EngPet is not affiliated with, endorsed or approved by any of them. All practice questions
-are original and written for EngPet.
+owners. LingoMori is not affiliated with, endorsed or approved by any of them. All practice questions
+are original and written for LingoMori.

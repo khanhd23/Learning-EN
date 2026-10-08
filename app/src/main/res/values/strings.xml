@@ -46,7 +46,7 @@
     <string name="achievements">Achievements</string>
     <string name="ad_loading">Loading the video, please wait…</string>
     <string name="all_types">All question types</string>
-    <string name="app_short_name">EngPet</string>
+    <string name="app_short_name">LingoMori</string>
     <string name="b_count">Number of questions</string>
     <string name="b_level">Level</string>
     <string name="b_mode">Mode</string>
@@ -100,7 +100,7 @@
     <string name="day_detail">Day %1$s: %2$d XP · %3$d min · %4$d answers</string>
     <string name="decorate">Decorate</string>
     <string name="disclaimer">Practice tests are for study only. They are not official exams.</string>
-    <string name="disclaimer_full">EngPet is an independent learning app. It is not connected with any exam organizer, and practice scores are only estimates. Word lists are based on open vocabulary lists; see Licenses for details. TOEIC, IELTS and other exam names are trademarks of their owners; EngPet is not affiliated with or endorsed by them.</string>
+    <string name="disclaimer_full">LingoMori is an independent learning app. It is not connected with any exam organizer, and practice scores are only estimates. Word lists are based on open vocabulary lists; see Licenses for details. TOEIC, IELTS and other exam names are trademarks of their owners; LingoMori is not affiliated with or endorsed by them.</string>
     <string name="done">Done</string>
     <string name="double_xp">Double your XP</string>
     <string name="double_xp_done">You earned %1$d extra XP!</string>
@@ -228,7 +228,7 @@
     <string name="level_desc_5">Advanced and formal words.</string>
     <string name="level_n">Level %1$d</string>
     <string name="licenses">Licenses</string>
-    <string name="licenses_text">EngPet uses open data and libraries. The sources and their licenses are listed below.</string>
+    <string name="licenses_text">LingoMori uses open data and libraries. The sources and their licenses are listed below.</string>
     <string name="listen">Listen</string>
     <string name="listen_slow">Listen slowly</string>
     <string name="locked_msg">Finish the earlier lessons first, or take a short test to skip ahead.</string>
@@ -363,7 +363,7 @@
     <string name="preset_saved">Practice saved</string>
     <string name="prev">Previous</string>
     <string name="privacy_policy">Privacy policy</string>
-    <string name="privacy_text">EngPet stores your learning progress only on this device; we have no server and no account. Android may include it in your own Google backup. The app shows ads from Google AdMob, which may collect your advertising ID, IP address and ad interactions; you can review ad choices in Settings. The microphone is used only for speaking practice: your phone's speech service turns speech into text, and the app never records or keeps audio. Reminders are optional. The full policy is at the link below.</string>
+    <string name="privacy_text">LingoMori stores your learning progress only on this device; we have no server and no account. Android may include it in your own Google backup. The app shows ads from Google AdMob, which may collect your advertising ID, IP address and ad interactions; you can review ad choices in Settings. The microphone is used only for speaking practice: your phone's speech service turns speech into text, and the app never records or keeps audio. Reminders are optional. The full policy is at the link below.</string>
     <string name="quick_session">Quick session</string>
     <string name="quiet_hours">Reminders are never sent between 22:00 and 08:00.</string>
     <string name="quit_keep">Keep going</string>
@@ -374,8 +374,8 @@
     <string name="rate_easy">Easy</string>
     <string name="rate_good">Good</string>
     <string name="rate_hard">Hard</string>
-    <string name="rate_msg">If you enjoy EngPet, a quick rating helps other learners find it.</string>
-    <string name="rate_title">Enjoying EngPet?</string>
+    <string name="rate_msg">If you enjoy LingoMori, a quick rating helps other learners find it.</string>
+    <string name="rate_title">Enjoying LingoMori?</string>
     <string name="rate_yes">Rate now</string>
     <string name="recent_searches">Recent searches</string>
     <string name="redo_all">Redo all (%1$d)</string>
@@ -644,6 +644,6 @@
     <string name="restore_confirm_msg">The backup from %1$s has %2$d words, %3$d tests and a level %4$d pet. Your current progress on this phone will be replaced.</string>
     <string name="restore_replace">Replace</string>
     <string name="restore_done">Progress restored</string>
-    <string name="restore_bad_file">This file is not an EngPet backup or it is damaged.</string>
-    <string name="restore_newer_version">This backup was made by a newer version of EngPet. Update the app first.</string>
+    <string name="restore_bad_file">This file is not an LingoMori backup or it is damaged.</string>
+    <string name="restore_newer_version">This backup was made by a newer version of LingoMori. Update the app first.</string>
 </resources>

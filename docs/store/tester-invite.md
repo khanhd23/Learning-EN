@@ -2,7 +2,7 @@
 
 ## Invite message (Vietnamese, for friends, classes, Facebook groups)
 
-Mình đang làm **EngPet**, app học tiếng Anh có thú cưng ảo: học từ vựng bằng hình, âm thanh,
+Mình đang làm **LingoMori**, app học tiếng Anh có thú cưng ảo: học từ vựng bằng hình, âm thanh,
 truyện ngắn, luyện đề THPT/TOEIC, giải thích bằng tiếng Việt, dùng được không cần mạng.
 
 Mình cần **12 bạn dùng thử trong 14 ngày** để Google cho phép phát hành chính thức. Bạn chỉ cần:
@@ -16,7 +16,7 @@ App miễn phí, không cần tạo tài khoản, không lấy thông tin cá nh
 
 ## Invite message (English)
 
-I'm building **EngPet**, an English-learning app with a virtual pet: words with pictures and
+I'm building **LingoMori**, an English-learning app with a virtual pet: words with pictures and
 sound, short stories, exam practice with explanations, and it works offline. Google requires
 **12 testers for 14 days** before the public release. Send me the Gmail address you use on your
 Android phone, join with the link I send back, install from Google Play, and **keep the app

@@ -1,4 +1,4 @@
-# EngPet roadmap — phase 3: ship v1.0, then grow exam prep
+# LingoMori (formerly EngPet) roadmap — phase 3: ship v1.0, then grow exam prep
 
 Written 2026-10-08 by Claude after a project audit. Phase 2 details stay in `docs/ROADMAP.md`;
 exam data rules are in `docs/EXAM_DATA_PLAN.md`; release rules in `docs/RELEASE_CHECKLIST.md`.
@@ -59,7 +59,7 @@ base (Task 14).
 | P3 | Create the upload keystore; fill `signing.*` in `secrets.properties`; back up the keystore and passwords in two safe places | M1 | Use Play App Signing; losing the upload key is recoverable, losing everything is not |
 | P4a | ✅ `supportEmail` = khankstudio.support@gmail.com; policy filled (Đặng Kim Khánh, effective 2026-10-08) | M1 | Same address goes in the privacy policy and Play listing |
 | P4 | Host the privacy policy (Claude writes it) at a public URL, e.g. GitHub Pages or Google Sites; put the URL in `config/app_config.json` `privacyPolicyUrl` | M1 | Required for apps with ads |
-| P5 | Choose the final app name and approve the icon (no exam names or logos) | M1 | Claude proposes 5 names with a trademark search |
+| P5 | ✅ Name: **LingoMori** (2026-10-08). Icon still to approve | M1 | Store titles per language: "LingoMori: Learn English Words", "LingoMori: Học Tiếng Anh Từ Vựng" |
 | P6 | Fill Play Console forms: Data safety, content rating, target audience 13+, ads declaration (Claude drafts every answer) | M2 | |
 | P7 | Recruit 12+ closed testers (friends, classmates, a Facebook group) and keep them for 14 days | M2 | Claude writes the invite message and a feedback form |
 | P8 | Test each build on the phone with the checklist Claude sends; report what looks wrong with a screenshot | Every build | |
@@ -125,8 +125,17 @@ Item type `listen_mcq` for banks: the stem is spoken by the device TTS (voice an
 item, replay button, max 2 plays in timed mode), options shown as text. Used later for TOEIC
 Part 2 style and Key listening Part 1 style. Owner provides the scripts.
 
+### Task R4: Rename the package (before the first upload)
+
+Change `applicationId` in `config/app_config.json` from `com.engpet.learn` to
+`com.khankstudio.lingomori` (debug `.debug`, benchmark `.bench` suffixes stay). Keep the Kotlin
+namespace/package as is unless it is trivial. Update anything that hard-codes the old id (tests,
+scripts, `adb` commands in docs, file provider authorities, notification channels). The app name is
+already LingoMori (`displayName`, `shortName`, strings). Run `assembleDebug`, `testDebugUnitTest`,
+install on a device and check the launcher label. Commit, do not push.
+
 ## Order
 
-Codex: 14.1 → 15 → R2 → R3 → 16 → 17 → (after M3) 18.
+Codex: 14.1 → R4 → 15 → R2 → R3 → 16 → 17 → (after M3) 18.
 Claude: A3, A7, A9 first (they unblock M1), then A1/A4/A5 in parallel batches, then A6, A8.
 Publisher: P1–P5 now (they take days to clear), P6–P7 at M2, P8 every build.

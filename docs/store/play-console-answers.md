@@ -60,6 +60,6 @@ No / None / None.
 ## Store settings
 
 - App category: **Education**.
-- Contact email: the support email in `config/app_config.json` (must be the EngPet address, not
+- Contact email: the support email in `config/app_config.json` (must be the LingoMori address, not
   another app's).
 - Tags: Education, Language learning.

@@ -1,8 +1,8 @@
-# EngPet Privacy Policy
+# LingoMori Privacy Policy
 
 Effective date: 8 October 2026
 
-EngPet ("the app") is an English-learning app with a virtual pet, published on Google Play by
+LingoMori ("the app") is an English-learning app with a virtual pet, published on Google Play by
 Đặng Kim Khánh ("we"). This policy explains what information the app uses and why. If you have
 a question, write to khankstudio.support@gmail.com.
 
@@ -71,7 +71,7 @@ and the consent form.
 
 ## 6. Children
 
-EngPet is made for learners aged 13 and older and is not directed at children under 13. We do not
+LingoMori is made for learners aged 13 and older and is not directed at children under 13. We do not
 knowingly collect personal information from children. If you believe a child has provided
 personal information through the app, contact us and we will help.
 

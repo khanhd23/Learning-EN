@@ -46,7 +46,7 @@
     <string name="achievements">Thành tích</string>
     <string name="ad_loading">Đang tải video, vui lòng chờ…</string>
     <string name="all_types">Tất cả dạng câu hỏi</string>
-    <string name="app_short_name">EngPet</string>
+    <string name="app_short_name">LingoMori</string>
     <string name="b_count">Số câu hỏi</string>
     <string name="b_level">Cấp độ</string>
     <string name="b_mode">Chế độ</string>
@@ -100,7 +100,7 @@
     <string name="day_detail">Ngày %1$s: %2$d XP · %3$d phút · %4$d câu</string>
     <string name="decorate">Trang trí</string>
     <string name="disclaimer">Bài thi thử chỉ để luyện tập, không phải đề thi chính thức.</string>
-    <string name="disclaimer_full">EngPet là ứng dụng học độc lập, không liên kết với bất kỳ tổ chức thi nào, và điểm luyện tập chỉ mang tính ước lượng. Danh sách từ dựa trên các danh sách từ vựng mở; xem chi tiết trong mục Giấy phép. TOEIC, IELTS và tên các kỳ thi khác là nhãn hiệu của chủ sở hữu tương ứng; EngPet không liên kết và không được các tổ chức này bảo trợ.</string>
+    <string name="disclaimer_full">LingoMori là ứng dụng học độc lập, không liên kết với bất kỳ tổ chức thi nào, và điểm luyện tập chỉ mang tính ước lượng. Danh sách từ dựa trên các danh sách từ vựng mở; xem chi tiết trong mục Giấy phép. TOEIC, IELTS và tên các kỳ thi khác là nhãn hiệu của chủ sở hữu tương ứng; LingoMori không liên kết và không được các tổ chức này bảo trợ.</string>
     <string name="done">Xong</string>
     <string name="double_xp">Nhân đôi XP</string>
     <string name="double_xp_done">Bạn nhận thêm %1$d XP!</string>
@@ -228,7 +228,7 @@
     <string name="level_desc_5">Từ nâng cao và trang trọng.</string>
     <string name="level_n">Cấp %1$d</string>
     <string name="licenses">Giấy phép</string>
-    <string name="licenses_text">EngPet sử dụng dữ liệu và thư viện mở. Nguồn và giấy phép được liệt kê bên dưới.</string>
+    <string name="licenses_text">LingoMori sử dụng dữ liệu và thư viện mở. Nguồn và giấy phép được liệt kê bên dưới.</string>
     <string name="listen">Nghe</string>
     <string name="listen_slow">Nghe chậm</string>
     <string name="locked_msg">Hãy học xong các bài trước, hoặc làm bài kiểm tra ngắn để học vượt.</string>
@@ -363,7 +363,7 @@
     <string name="preset_saved">Đã lưu bài luyện</string>
     <string name="prev">Trước</string>
     <string name="privacy_policy">Chính sách quyền riêng tư</string>
-    <string name="privacy_text">EngPet chỉ lưu tiến độ học trên thiết bị này; chúng tôi không có máy chủ và không cần tài khoản. Android có thể đưa dữ liệu vào bản sao lưu Google của chính bạn. Ứng dụng hiển thị quảng cáo Google AdMob, có thể thu thập mã quảng cáo, địa chỉ IP và tương tác với quảng cáo; bạn xem lựa chọn quảng cáo trong Cài đặt. Micrô chỉ dùng cho luyện nói: dịch vụ giọng nói của điện thoại chuyển lời nói thành chữ, ứng dụng không ghi âm hay lưu âm thanh. Lời nhắc là tùy chọn. Chính sách đầy đủ ở liên kết bên dưới.</string>
+    <string name="privacy_text">LingoMori chỉ lưu tiến độ học trên thiết bị này; chúng tôi không có máy chủ và không cần tài khoản. Android có thể đưa dữ liệu vào bản sao lưu Google của chính bạn. Ứng dụng hiển thị quảng cáo Google AdMob, có thể thu thập mã quảng cáo, địa chỉ IP và tương tác với quảng cáo; bạn xem lựa chọn quảng cáo trong Cài đặt. Micrô chỉ dùng cho luyện nói: dịch vụ giọng nói của điện thoại chuyển lời nói thành chữ, ứng dụng không ghi âm hay lưu âm thanh. Lời nhắc là tùy chọn. Chính sách đầy đủ ở liên kết bên dưới.</string>
     <string name="quick_session">Học nhanh</string>
     <string name="quiet_hours">Không gửi nhắc nhở từ 22:00 đến 08:00.</string>
     <string name="quit_keep">Học tiếp</string>
@@ -374,8 +374,8 @@
     <string name="rate_easy">Dễ</string>
     <string name="rate_good">Ổn</string>
     <string name="rate_hard">Khó</string>
-    <string name="rate_msg">Nếu bạn thích EngPet, một lượt đánh giá sẽ giúp người học khác tìm thấy ứng dụng.</string>
-    <string name="rate_title">Bạn thích EngPet chứ?</string>
+    <string name="rate_msg">Nếu bạn thích LingoMori, một lượt đánh giá sẽ giúp người học khác tìm thấy ứng dụng.</string>
+    <string name="rate_title">Bạn thích LingoMori chứ?</string>
     <string name="rate_yes">Đánh giá ngay</string>
     <string name="recent_searches">Tìm kiếm gần đây</string>
     <string name="redo_all">Làm lại tất cả (%1$d)</string>
@@ -644,6 +644,6 @@
     <string name="restore_confirm_msg">Bản sao lưu ngày %1$s có %2$d từ, %3$d bài thi và thú cưng cấp %4$d. Tiến độ hiện tại trên điện thoại này sẽ bị thay thế.</string>
     <string name="restore_replace">Thay thế</string>
     <string name="restore_done">Đã khôi phục tiến độ</string>
-    <string name="restore_bad_file">Tệp này không phải bản sao lưu EngPet hoặc đã bị hỏng.</string>
-    <string name="restore_newer_version">Bản sao lưu này được tạo bởi phiên bản EngPet mới hơn. Hãy cập nhật ứng dụng trước.</string>
+    <string name="restore_bad_file">Tệp này không phải bản sao lưu LingoMori hoặc đã bị hỏng.</string>
+    <string name="restore_newer_version">Bản sao lưu này được tạo bởi phiên bản LingoMori mới hơn. Hãy cập nhật ứng dụng trước.</string>
 </resources>

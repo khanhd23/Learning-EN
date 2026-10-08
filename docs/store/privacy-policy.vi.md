@@ -1,8 +1,8 @@
-# Chính sách quyền riêng tư của EngPet
+# Chính sách quyền riêng tư của LingoMori
 
 Ngày hiệu lực: 08/10/2026
 
-EngPet ("ứng dụng") là ứng dụng học tiếng Anh cùng thú cưng ảo, do Đặng Kim Khánh ("chúng tôi")
+LingoMori ("ứng dụng") là ứng dụng học tiếng Anh cùng thú cưng ảo, do Đặng Kim Khánh ("chúng tôi")
 phát hành trên Google Play. Chính sách này giải thích ứng dụng sử dụng những thông tin nào và vì
 sao. Nếu có câu hỏi, vui lòng gửi email tới khankstudio.support@gmail.com.
 
@@ -73,7 +73,7 @@ quảng cáo và biểu mẫu xin đồng ý.
 
 ## 6. Trẻ em
 
-EngPet dành cho người học từ 13 tuổi trở lên và không hướng tới trẻ em dưới 13 tuổi. Chúng tôi
+LingoMori dành cho người học từ 13 tuổi trở lên và không hướng tới trẻ em dưới 13 tuổi. Chúng tôi
 không cố ý thu thập thông tin cá nhân của trẻ em. Nếu bạn cho rằng một trẻ em đã cung cấp thông tin
 cá nhân qua ứng dụng, hãy liên hệ để chúng tôi hỗ trợ.
 
