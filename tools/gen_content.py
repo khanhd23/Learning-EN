@@ -201,13 +201,14 @@ def load_topic_corrections(words):
             wid, topic_text = parts[0], parts[1] if len(parts) > 1 else ""
             ipa = parts[2].strip() if len(parts) > 2 else ""
             level = parts[3].strip() if len(parts) > 3 else ""
+            collocations = parts[4].strip() if len(parts) > 4 else ""
             if level and level not in {"1", "2", "3", "4", "5"}:
                 raise SystemExit(f"entry_corrections.tsv line {n}: bad level {level!r}")
             topics = [t.strip() for t in topic_text.split(",") if t.strip()]
             ok = topics == [UNSORTED] or (1 <= len(topics) <= 3 and all(t in CONTROLLED_TOPIC_IDS for t in topics))
             if not ok or wid in rows:
                 raise SystemExit(f"entry_corrections.tsv line {n}: bad row {line!r}")
-            rows[wid] = (topics, ipa, int(level) if level else None)
+            rows[wid] = (topics, ipa, int(level) if level else None, collocations)
     missing = [w["id"] for w in words if w["id"] not in rows]
     if missing:
         raise SystemExit(f"entry_corrections.tsv has no topic for: {missing[:10]} (+{max(0, len(missing) - 10)})")
@@ -464,12 +465,14 @@ def main():
 
     corrections = load_topic_corrections(words)
     for w in words:
-        w["topics"], ipa, level = corrections[w["id"]]
+        w["topics"], ipa, level, collocations = corrections[w["id"]]
         if ipa:
             w["ipa"] = ipa
         if level and level != w["level"]:
             w["levelReason"] = f"set by NGSL band (was Level {w['level']})"
             w["level"] = level
+        if collocations == "-":
+            w["coll"] = []
 
     lemma_to_id = {}
     for w in words:

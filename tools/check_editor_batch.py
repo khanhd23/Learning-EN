@@ -11,6 +11,7 @@ import collections
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,12 +20,18 @@ import audit_content as audit  # noqa: E402
 from gen_content import IRREGULAR_FORMS  # noqa: E402
 
 POS = {"n", "v", "adj", "adv", "prep", "conj", "pron", "det", "article", "interj", "phr", "idiom"}
+TOKEN = re.compile(r"[^\W_]+(?:['-][^\W_]+)*", re.UNICODE)
 VI_NAMES = re.compile(r"\b(Lan|Nam|Hoa|Minh|Mai|Tuấn|Hùng|Hà Nội|Hanoi|Da Nang|Đà Nẵng|Saigon|Sài Gòn|"
                       r"Vietnam|Việt Nam|Hue|Huế|Haiduong)\b")
 
 
 def norm(text):
     return re.sub(r"[\s.;,]+", " ", (text or "").lower()).strip()
+
+
+def fold(text):
+    """Compare learner words without letting accents break form detection."""
+    return unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode().lower()
 
 
 def imported_glosses():
@@ -113,9 +120,10 @@ def main() -> int:
                 problems.append(f"{where}: example has {n_words} words ({low}-14 for this level)")
             lemma = lemma_of.get(sid, sid.rsplit("_s", 1)[0])
             head = lemma.split()[0].lower()
-            tokens = [t.lower() for t in re.findall(r"[A-Za-z'-]+", example)]
-            forms = {f.lower() for f in IRREGULAR_FORMS.get(head, [])}
-            if not any(t.startswith(head[:max(2, len(head) - 2)]) or t in forms for t in tokens):
+            tokens = [t.lower() for t in TOKEN.findall(example)]
+            forms = {fold(f) for f in IRREGULAR_FORMS.get(head, [])}
+            head_prefix = fold(head[:max(2, len(head) - 2)])
+            if not any(fold(t).startswith(head_prefix) or fold(t) in forms for t in tokens):
                 problems.append(f"{where}: example does not seem to contain '{lemma}' (check irregular forms)")
             if VI_NAMES.search(example):
                 problems.append(f"{where}: example uses a Vietnamese name or place; content/en is L1-neutral")
