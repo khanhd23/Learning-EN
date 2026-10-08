@@ -135,6 +135,51 @@
       "opts": ["c – d – b – a – e", "d – c – b – a – e", "c – b – d – e – a", "b – c – d – a – e"],
       "ans": 0,
       "expl": "The group states its purpose, prepares equal samples, measures the result, reports the comparison, and shares the findings."
+    },
+    {
+      "id": "p4_arrange_01",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. The final display showed how much waste the club had reused. b. Our art club wanted to make a display from old packaging. c. We collected clean boxes and sorted them by material. d. First, we drew a plan for the shapes and colours. e. The display stayed in the hallway for one month.",
+      "opts": ["b – c – d – a – e", "b – d – c – a – e", "d – b – a – c – e", "b – c – a – e – d"],
+      "ans": 0,
+      "expl": "The club states its aim, collects and sorts materials, plans the design, reports the result, and displays it."
+    },
+    {
+      "id": "p4_arrange_02",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. That should give more people a chance to find useful books. b. The library is starting a monthly book exchange. c. Bring a book in good condition to the front desk. d. I have several novels that I no longer read. e. You can take another book after the librarian records your donation.",
+      "opts": ["b – a – d – e – c", "b – d – a – e – c", "d – b – c – a – e", "b – d – e – c – a"],
+      "ans": 1,
+      "expl": "The exchange is introduced, the speaker mentions unused novels, responds to the idea, explains the result, and gives the donation instruction."
+    },
+    {
+      "id": "p4_arrange_03",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. Please arrive fifteen minutes early for registration. b. The youth theatre will present a new play on Saturday. c. Tickets can be collected at the community hall. d. We hope you enjoy the performance. e. The show begins at 7:30 in the evening.",
+      "opts": ["b – e – a – c – d", "a – b – e – c – d", "b – a – e – c – d", "b – e – c – d – a"],
+      "ans": 2,
+      "expl": "The invitation announces the play, gives the start time, adds the arrival instruction, explains ticket collection, and closes warmly."
+    },
+    {
+      "id": "p4_arrange_04",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. We will compare the readings at the end of the month. b. Our science class is building a small weather station. c. The station can record rainfall and wind speed. d. First, we checked the instructions and assembled the sensors. e. Everyone will take turns checking the display.",
+      "opts": ["b – d – c – e – a", "d – b – e – c – a", "b – c – d – a – e", "d – b – c – e – a"],
+      "ans": 3,
+      "expl": "The class introduces the station, describes its purpose, assigns regular checks, and then says when the readings will be compared."
+    },
+    {
+      "id": "p4_arrange_05",
+      "section": "arrange",
+      "level": 3,
+      "stem": "Choose the best order for the lines: a. The results helped the canteen plan a smaller menu. b. We asked students which lunch choices they finished most often. c. The canteen team wanted to reduce food waste. d. We collected the answers during one school week. e. We presented the survey to the canteen team.",
+      "opts": ["c – b – d – e – a", "b – c – d – a – e", "c – d – b – e – a", "d – c – b – a – e"],
+      "ans": 0,
+      "expl": "The canteen's aim leads to the survey question, data collection, presentation, and the menu decision."
     }
   ],
   "groups": [
@@ -1004,6 +1049,361 @@
           "opts": ["Research, listening, and clear communication", "Only professional acting", "Repairing every bicycle", "Selling online advertisements"],
           "ans": 0,
           "expl": "The final sentence identifies research, listening, and clear communication as the main skills."
+        }
+      ]
+    },
+    {
+      "id": "p4_notice",
+      "section": "notice",
+      "title": "NOTICE: Hot Weather Safety",
+      "passage": "During the hot-weather period, the school will keep the water station beside the gym open all day. Students should carry a refillable bottle and take breaks in the shade after outdoor activities. From 11:30 to 14:00, sports clubs must use the indoor hall unless a teacher approves another plan. If you feel dizzy or unusually tired, move to a cool place and tell an adult immediately. The school nurse can check students who do not feel better after resting.",
+      "items": [
+        {
+          "id": "p4_notice_01",
+          "section": "notice",
+          "level": 3,
+          "stem": "Why was the hot-weather notice issued?",
+          "opts": ["To give advice for staying safe in hot weather", "To announce a new sports competition", "To close the school nurse's room", "To sell refillable bottles"],
+          "ans": 0,
+          "expl": "The notice gives practical advice about water, shade, outdoor activities, and what to do when feeling unwell."
+        },
+        {
+          "id": "p4_notice_02",
+          "section": "notice",
+          "level": 3,
+          "stem": "When must sports clubs normally use the indoor hall?",
+          "opts": ["Before the first lesson", "From 11:30 to 14:00", "After the nurse closes", "Only at the weekend"],
+          "ans": 1,
+          "expl": "The notice says sports clubs must use the indoor hall from 11:30 to 14:00 unless a teacher approves another plan."
+        },
+        {
+          "id": "p4_notice_03",
+          "section": "notice",
+          "level": 3,
+          "stem": "What should students carry?",
+          "opts": ["A sports trophy", "A classroom key", "A refillable bottle", "A heavy blanket"],
+          "ans": 2,
+          "expl": "Students are advised to carry a refillable bottle and use the water station."
+        },
+        {
+          "id": "p4_notice_04",
+          "section": "notice",
+          "level": 3,
+          "stem": "What should a dizzy student do first?",
+          "opts": ["Continue the outdoor activity", "Run to the sports field", "Drink only after school", "Move to a cool place and tell an adult"],
+          "ans": 3,
+          "expl": "The notice instructs a dizzy student to move somewhere cool and tell an adult immediately."
+        },
+        {
+          "id": "p4_notice_05",
+          "section": "notice",
+          "level": 3,
+          "stem": "Where is the water station?",
+          "opts": ["Beside the gym", "Inside the library", "Near the main gate", "In the nurse's office"],
+          "ans": 0,
+          "expl": "The water station is beside the gym and remains open all day."
+        },
+        {
+          "id": "p4_notice_06",
+          "section": "notice",
+          "level": 3,
+          "stem": "Who can check a student who still feels unwell after resting?",
+          "opts": ["The sports club captain", "The school nurse", "The library volunteer", "A ticket seller"],
+          "ans": 1,
+          "expl": "The final sentence says that the school nurse can check students who do not improve after resting."
+        }
+      ]
+    },
+    {
+      "id": "p4_leaflet",
+      "section": "leaflet",
+      "title": "LEAFLET: Young Makers Workshop",
+      "passage": "The Young Makers Workshop invites people aged 13 to 17 to build a useful object from safe, reusable materials. This month's project is a desk organiser made from cardboard tubes and a small wooden board. The workshop runs on Saturday afternoon at the public library. Bring a notebook and wear closed shoes. Tools and materials are provided, and the session is free, but participants must register online because the room has only twelve places. At the end, each maker may take the organiser home.",
+      "items": [
+        {
+          "id": "p4_leaflet_01",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "What do participants build this month?",
+          "opts": ["A wooden bicycle", "A library shelf", "A desk organiser", "A metal lamp"],
+          "ans": 2,
+          "expl": "The leaflet identifies a desk organiser as this month's project."
+        },
+        {
+          "id": "p4_leaflet_02",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "How do participants register?",
+          "opts": ["By calling a sports club", "By asking at school", "By arriving without notice", "Online"],
+          "ans": 3,
+          "expl": "Participants must register online because the workshop has only twelve places."
+        },
+        {
+          "id": "p4_leaflet_03",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "What should a participant bring?",
+          "opts": ["A notebook", "All the workshop tools", "A finished organiser", "A wooden board for every student"],
+          "ans": 0,
+          "expl": "The leaflet asks participants to bring a notebook; tools and materials are provided."
+        },
+        {
+          "id": "p4_leaflet_04",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "What is true about the workshop fee?",
+          "opts": ["It is charged only to library members", "The session is free", "It depends on the size of the organiser", "It must be paid in tools"],
+          "ans": 1,
+          "expl": "The session is free, although registration is required because places are limited."
+        },
+        {
+          "id": "p4_leaflet_05",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "Who is invited to the workshop?",
+          "opts": ["Children under ten", "Professional carpenters", "People aged 13 to 17", "Only library employees"],
+          "ans": 2,
+          "expl": "The invitation is for people aged 13 to 17."
+        },
+        {
+          "id": "p4_leaflet_06",
+          "section": "leaflet",
+          "level": 3,
+          "stem": "What may each maker do at the end?",
+          "opts": ["Keep all the library tools", "Register another person", "Change the project into a shelf", "Take the organiser home"],
+          "ans": 3,
+          "expl": "Each maker may take the completed desk organiser home."
+        }
+      ]
+    },
+    {
+      "id": "p4_complete",
+      "section": "complete",
+      "title": "Text completion: Greener Travel",
+      "passage": "The student council wants to make travel to school more sustainable. It first surveys how students normally arrive and then maps safe walking routes. The council suggests a shared bicycle area near the gate and asks the town to improve a crossing. Students who live too far away can share a car with other families. The council will compare the number of journeys made by each method after one month and use the results to plan its next campaign.",
+      "items": [
+        {
+          "id": "p4_complete_01",
+          "section": "complete",
+          "level": 3,
+          "stem": "The student council wants travel to school to be more ...",
+          "opts": ["expensive", "private", "competitive", "sustainable"],
+          "ans": 3,
+          "expl": "The first sentence states that the council wants to make school travel more sustainable."
+        },
+        {
+          "id": "p4_complete_02",
+          "section": "complete",
+          "level": 3,
+          "stem": "What does the council survey first?",
+          "opts": ["How students normally arrive", "The price of every bicycle", "The colour of the school gate", "The number of town buses at night"],
+          "ans": 0,
+          "expl": "The council begins by surveying how students normally travel to school."
+        },
+        {
+          "id": "p4_complete_03",
+          "section": "complete",
+          "level": 3,
+          "stem": "What does the council map?",
+          "opts": ["Car parking fees", "Safe walking routes", "The size of family cars", "The school timetable"],
+          "ans": 1,
+          "expl": "After the survey, the council maps safe walking routes."
+        },
+        {
+          "id": "p4_complete_04",
+          "section": "complete",
+          "level": 3,
+          "stem": "What is suggested near the school gate?",
+          "opts": ["A new library", "A private road", "A shared bicycle area", "A second classroom"],
+          "ans": 2,
+          "expl": "The council suggests a shared bicycle area near the gate."
+        },
+        {
+          "id": "p4_complete_05",
+          "section": "complete",
+          "level": 3,
+          "stem": "When will the council compare the travel methods?",
+          "opts": ["Before the survey begins", "Only during winter", "After the school closes", "After one month"],
+          "ans": 3,
+          "expl": "The final sentence says that the comparison will happen after one month."
+        }
+      ]
+    },
+    {
+      "id": "p4_reading1",
+      "section": "reading1",
+      "title": "From Garden to Food Shelf",
+      "passage": "A group of students has turned an unused corner of the school garden into a food shelf project. They grow herbs and quick-growing vegetables, then place the extra produce in a small cooled cabinet near the community centre. Families can take what they need without filling in a form. The students originally expected the cabinet to be empty every evening, but some days a few vegetables remain. They learned that people are more likely to use the shelf when a sign explains how long the produce will stay fresh. A volunteer checks the cabinet before closing and removes anything damaged. The school also invites local gardeners to add clean, labelled produce. The project does not provide every kind of food, but it gives students experience in growing, sharing, and reducing waste. At the end of each month, the group records the amount placed in the cabinet and discusses how to improve the service.",
+      "items": [
+        {
+          "id": "p4_reading1_01",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What did the students turn into a food shelf project?",
+          "opts": ["An unused corner of the school garden", "A closed classroom", "A sports changing room", "A town bus stop"],
+          "ans": 0,
+          "expl": "The project uses an unused corner of the school garden and a cabinet near the community centre."
+        },
+        {
+          "id": "p4_reading1_02",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Where is the extra produce placed?",
+          "opts": ["In a teacher's office", "In a small cooled cabinet near the community centre", "At the school gate without a sign", "Inside a sports bag"],
+          "ans": 1,
+          "expl": "The students place extra produce in a small cooled cabinet near the community centre."
+        },
+        {
+          "id": "p4_reading1_03",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What can families do at the shelf?",
+          "opts": ["Buy every vegetable in the garden", "Reserve the cabinet for a week", "Take what they need without filling in a form", "Ask students to cook a meal"],
+          "ans": 2,
+          "expl": "Families can take the available produce without completing a form."
+        },
+        {
+          "id": "p4_reading1_04",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What did the students learn about the sign?",
+          "opts": ["It can explain how long the produce stays fresh", "It should list every family in town", "It replaces the cooled cabinet", "It makes vegetables grow faster"],
+          "ans": 0,
+          "expl": "The students learned that a sign about freshness makes people more likely to use the shelf."
+        },
+        {
+          "id": "p4_reading1_05",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Who checks the cabinet before closing?",
+          "opts": ["A bus driver", "A volunteer", "A shop owner", "A school visitor"],
+          "ans": 1,
+          "expl": "A volunteer checks the cabinet and removes damaged produce before closing."
+        },
+        {
+          "id": "p4_reading1_06",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What may local gardeners do?",
+          "opts": ["Close the community centre", "Take the cabinet away", "Add clean, labelled produce", "Change the school timetable"],
+          "ans": 2,
+          "expl": "Local gardeners are invited to add produce that is clean and labelled."
+        },
+        {
+          "id": "p4_reading1_07",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What does the project not provide?",
+          "opts": ["Any vegetables at all", "Experience with gardening", "A way to reduce waste", "Every kind of food"],
+          "ans": 3,
+          "expl": "The passage admits that the project does not provide every kind of food, although it offers several benefits."
+        },
+        {
+          "id": "p4_reading1_08",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Why does the group record the amount of produce each month?",
+          "opts": ["To discuss how to improve the service", "To charge families for vegetables", "To decide who may enter school", "To replace the garden with a shop"],
+          "ans": 0,
+          "expl": "Monthly records help the group discuss ways to improve the food shelf."
+        }
+      ]
+    },
+    {
+      "id": "p4_reading2",
+      "section": "reading2",
+      "title": "Tracking a Restored Riverbank",
+      "passage": "A riverside town restored a narrow strip of riverbank that had become muddy and bare after repeated floods. Instead of covering it with concrete, the town worked with students and residents to plant native grasses and small trees. The plants were chosen because their roots can hold soil, while a few shallow pools were left for insects and birds. Volunteers placed simple markers along the bank and measured the water level after heavy rain. In the first month, some young plants were washed away, so the group added stakes and protected the weakest areas with a low fence. By the next rainy season, more roots had developed and the soil moved less. The riverbank is not completely stable, and the town still checks it after storms. However, the project has created a greener walking route and a place where school groups can observe how plants help protect the edge of a river. The records are shared at monthly meetings so residents can suggest further changes.",
+      "items": [
+        {
+          "id": "p4_reading2_01",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Why did the town avoid covering the riverbank with concrete?",
+          "opts": ["The river had no water", "Residents wanted a car park", "The students disliked measuring water", "The project aimed to restore a greener river edge"],
+          "ans": 3,
+          "expl": "The town planted native vegetation and created a walking route instead of covering the bank with concrete."
+        },
+        {
+          "id": "p4_reading2_02",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Why were native grasses and trees selected?",
+          "opts": ["Their roots can hold soil", "They grow only on concrete", "They prevent all insects", "They need no water after planting"],
+          "ans": 0,
+          "expl": "The passage explains that their roots can hold the riverbank soil."
+        },
+        {
+          "id": "p4_reading2_03",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What else was left along the bank?",
+          "opts": ["A wide road", "A few shallow pools", "A row of shops", "A concrete wall"],
+          "ans": 1,
+          "expl": "A few shallow pools were left for insects and birds."
+        },
+        {
+          "id": "p4_reading2_04",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What did volunteers measure after heavy rain?",
+          "opts": ["The height of every tree", "The number of walkers", "The water level", "The price of native plants"],
+          "ans": 2,
+          "expl": "Volunteers used markers and measured the water level after heavy rain."
+        },
+        {
+          "id": "p4_reading2_05",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Why were stakes and a low fence added?",
+          "opts": ["To create a sports field", "To block all school groups", "To replace the plants", "To protect weak young plants"],
+          "ans": 3,
+          "expl": "Some young plants were washed away, so the extra protection was added around the weakest areas."
+        },
+        {
+          "id": "p4_reading2_06",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What had improved by the next rainy season?",
+          "opts": ["More roots had developed and less soil moved", "The riverbank had become a concrete road", "All plants had disappeared", "The town had stopped checking after storms"],
+          "ans": 0,
+          "expl": "By the next rainy season, stronger roots meant that less soil moved."
+        },
+        {
+          "id": "p4_reading2_07",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What limitation remains?",
+          "opts": ["No plants can grow there", "The riverbank is not completely stable", "Residents cannot see the river", "The town has no records"],
+          "ans": 1,
+          "expl": "The passage says the bank is not completely stable and still needs checks after storms."
+        },
+        {
+          "id": "p4_reading2_08",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What can school groups observe?",
+          "opts": ["How to build a concrete wall", "How to close a walking route", "How plants help protect a river edge", "How to remove all insects"],
+          "ans": 2,
+          "expl": "The restored bank gives school groups a place to observe how plants protect the river's edge."
+        },
+        {
+          "id": "p4_reading2_09",
+          "section": "reading2",
+          "level": 4,
+          "stem": "How are the records used?",
+          "opts": ["They are hidden from residents", "They are used to sell the riverbank", "They replace all storm checks", "They are shared at meetings for further suggestions"],
+          "ans": 3,
+          "expl": "Residents discuss the records at monthly meetings and can suggest further changes."
+        },
+        {
+          "id": "p4_reading2_10",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Which statement best describes the restoration?",
+          "opts": ["It combined planting, measurement, and follow-up protection", "It solved every flood problem in one month", "It removed the river from the town", "It focused only on making a road"],
+          "ans": 0,
+          "expl": "The town planted vegetation, measured changes, and added protection when early problems appeared."
         }
       ]
     },
