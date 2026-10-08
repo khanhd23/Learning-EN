@@ -100,23 +100,29 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
         group(body, R.string.set_about) { g ->
             action(g, R.string.about_disclaimer) { activity.open(TextScreen(activity, str(R.string.about_disclaimer), str(R.string.disclaimer_full))) }
             action(g, R.string.licenses) {
-                val contentLicenses = c.assets.open("content/LICENSES.md").bufferedReader(Charsets.UTF_8).use { it.readText() }
-                val imageNotice = runCatching { c.assets.open("content/third_party_notices.txt").bufferedReader(Charsets.UTF_8).use { it.readText() } }.getOrDefault("")
-                val apache = c.assets.open("licenses/apache-2.0.txt").bufferedReader(Charsets.UTF_8).use { it.readText() }
-                val ccBySa = c.assets.open("licenses/cc-by-sa-4.0.txt").bufferedReader(Charsets.UTF_8).use { it.readText() }
-                val dependencyLicenses = runCatching { c.assets.open("licenses/dependencies.txt").bufferedReader(Charsets.UTF_8).use { it.readText() } }.getOrDefault("")
-                val text = str(R.string.licenses_text) + "\n\n" + contentLicenses +
-                    if (imageNotice.isBlank()) "" else "\n\n$imageNotice" +
-                    "\n\nApache License 2.0 (AndroidX and Noto Emoji)\n\n$apache" +
-                    "\n\nCC BY-SA 4.0 summary\n\n$ccBySa" +
-                    if (dependencyLicenses.isBlank()) "" else "\n\n$dependencyLicenses"
-                activity.open(TextScreen(activity, str(R.string.licenses), text))
+                openLicenses()
             }
             action(g, R.string.contact) {
                 runCatching { activity.startActivity(Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:${BuildConfig.SUPPORT_EMAIL}?subject=" + Uri.encode(str(R.string.app_short_name) + " feedback")))) }
             }
             g.addView(Kit.text(c, str(R.string.version, BuildConfig.VERSION_NAME), R.style.Text_Caption).apply { setPadding(c.dpi(12), c.dpi(8), c.dpi(12), c.dpi(12)) })
         }
+    }
+
+    /** Opens the complete offline license catalogue; used by the release smoke test too. */
+    fun openLicenses() {
+        val c = ctx
+        val contentLicenses = c.assets.open("content/LICENSES.md").bufferedReader(Charsets.UTF_8).use { it.readText() }
+        val imageNotice = runCatching { c.assets.open("content/third_party_notices.txt").bufferedReader(Charsets.UTF_8).use { it.readText() } }.getOrDefault("")
+        val apache = c.assets.open("licenses/apache-2.0.txt").bufferedReader(Charsets.UTF_8).use { it.readText() }
+        val ccBySa = c.assets.open("licenses/cc-by-sa-4.0.txt").bufferedReader(Charsets.UTF_8).use { it.readText() }
+        val dependencyLicenses = runCatching { c.assets.open("licenses/dependencies.txt").bufferedReader(Charsets.UTF_8).use { it.readText() } }.getOrDefault("")
+        val text = str(R.string.licenses_text) + "\n\n" + contentLicenses +
+            if (imageNotice.isBlank()) "" else "\n\n$imageNotice" +
+            "\n\nApache License 2.0 (AndroidX and Noto Emoji)\n\n$apache" +
+            "\n\nCC BY-SA 4.0 summary\n\n$ccBySa" +
+            if (dependencyLicenses.isBlank()) "" else "\n\n$dependencyLicenses"
+        activity.open(TextScreen(activity, str(R.string.licenses), text))
     }
 
     private fun localeLabel(locale: String): String = when (locale) {

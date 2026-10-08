@@ -35,6 +35,8 @@ object DemoMode {
             "lesson" -> { a.selectTab(Tab.GRAMMAR); a.open(GrammarLessonScreen(a, "present_perfect")) }
             "exam" -> a.selectTab(Tab.EXAM)
             "me" -> a.selectTab(Tab.ME)
+            "settings" -> { a.selectTab(Tab.ME); a.open(SettingsScreen(a)) }
+            "licenses" -> { a.selectTab(Tab.ME); a.open(SettingsScreen(a)); (a.navigator.current as? SettingsScreen)?.openLicenses() }
             "session" -> { a.selectTab(Tab.TODAY); a.startSession(b.examType("Part 5", "toeic_p5", "pos", 3)) }
             "passage" -> { a.selectTab(Tab.EXAM); a.startSession(b.examType("Part 6", "toeic_p6", null, 3)) }
             "mock" -> { a.selectTab(Tab.EXAM); a.open(MockScreen(a, MockTest.build(s.content, b, "toeic_p5", "Part 5", 10, emptySet()))) }

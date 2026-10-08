@@ -30,6 +30,7 @@ android {
         targetSdk = 37
         versionCode = (appConfig["versionCode"] as Number).toInt()
         versionName = appConfig["versionName"].toString()
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         resValue("string", "app_name", appConfig["displayName"].toString().replace("'", "\\'"))
         resValue("string", "app_short_name", appConfig["shortName"].toString().replace("'", "\\'"))
         manifestPlaceholders["admobAppId"] = secrets.getProperty("admob.appId") ?: testAppId
@@ -97,6 +98,9 @@ dependencies {
     implementation(libs.ump)
     testImplementation(libs.junit)
     testImplementation(libs.org.json)
+    androidTestImplementation("androidx.test:runner:1.7.0")
+    androidTestImplementation("androidx.test.ext:junit:1.3.0")
+    androidTestImplementation("androidx.test:core:1.7.0")
 }
 
 val licenseOut = layout.buildDirectory.dir("generated/licenseAssets").get().asFile
@@ -195,10 +199,17 @@ tasks.configureEach {
 }
 tasks.matching {
     it.name.startsWith("merge") && it.name.endsWith("Assets") ||
+        it.name.endsWith("LintModel") || it.name.endsWith("LintReportModel") || it.name.endsWith("LintVitalReportModel") ||
         it.name.startsWith("lint") && it.name.contains("Analyze") ||
         it.name.startsWith("generate") && (it.name.endsWith("LintModel") || it.name.endsWith("LintReportModel") || it.name.endsWith("LintVitalReportModel"))
 }
-    .configureEach { if (name != "generateContentAssets") dependsOn(copyContent) }
+    .configureEach {
+        if (name != "generateContentAssets") dependsOn(copyContent)
+        if (name.startsWith("lint") && name.contains("Analyze") ||
+            name.endsWith("LintModel") || name.endsWith("LintReportModel") || name.endsWith("LintVitalReportModel")) {
+            dependsOn(buildLicenseAssets)
+        }
+    }
 
 val validateContent = tasks.register<Exec>("validateContent") {
     group = "verification"

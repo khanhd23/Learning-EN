@@ -180,7 +180,16 @@ class EnglishApp : Application() {
     override fun onCreate() {
         super.onCreate()
         if (BuildConfig.DEBUG) {
-            StrictMode.setThreadPolicy(StrictMode.ThreadPolicy.Builder().detectNetwork().penaltyLog().build())
+            // Startup content/database prewarming is explicitly on `prewarm`; logging both disk
+            // and network violations keeps accidental main-thread work visible in debug builds.
+            StrictMode.setThreadPolicy(
+                StrictMode.ThreadPolicy.Builder()
+                    .detectDiskReads()
+                    .detectDiskWrites()
+                    .detectNetwork()
+                    .penaltyLog()
+                    .build()
+            )
         }
         services = Services(this)
         val selectable = services.contentRepo.selectableLocales()

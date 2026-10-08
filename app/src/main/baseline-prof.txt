@@ -1,0 +1,5 @@
+# App startup and the first Words-tab navigation path.
+HSPLcom/yourbrand/englishlearn/EnglishApp;->onCreate()V
+HSPLcom/yourbrand/englishlearn/MainActivity;->onCreate(Landroid/os/Bundle;)V
+HSPLcom/yourbrand/englishlearn/MainActivity;->selectTab(Lcom/yourbrand/englishlearn/ui/Tab;)V
+HSPLcom/yourbrand/englishlearn/screens/VocabScreen;-><init>(Lcom/yourbrand/englishlearn/MainActivity;)V
