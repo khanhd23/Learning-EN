@@ -109,13 +109,16 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
             if (i == topics.lastIndex && i % 2 == 0) row!!.addView(android.view.View(c).apply { layoutParams = lp(0, 1, 1f).apply { marginStart = c.dpi(12) } })
         }
         // A topic row (two cards) is ~150dp; the header, tabs and count line take ~200dp.
-        // Fill over frames on first open, segment switch and tab entry (building all 47 cards in
-        // one frame took up to 400 ms); a plain return keeps the synchronous build so the scroll
-        // position holds.
-        if (firstBuild || progressiveNext) addInFrames(grid, topics.size, now = 2 * visibleCount(c, itemDp = 150, aboveDp = 200), startDelayMs = if (firstBuild) AFTER_TRANSITION_MS else 0, add = addCard)
-        else for (i in topics.indices) addCard(i)
+        // Every build draws 4 rows (8 cards) at once and fills the rest over frames. When the
+        // learner was scrolled further down, the rows above and on screen come first so the
+        // scroll position holds; building all 47 cards in one frame took up to 400 ms.
+        val rowPx = c.dpi(150)
+        val onScreen = 2 * ((scroll.scrollY + c.resources.displayMetrics.heightPixels) / rowPx + 1)
+        val now = if (scroll.scrollY > 0) maxOf(8, onScreen) else 8
+        // Exam word lists go below the grid once it is complete, so they never show up early and
+        // then get pushed down by the rows filling in.
+        addInFrames(grid, topics.size, now = now, startDelayMs = if (firstBuild) AFTER_TRANSITION_MS else 0, onDone = { wordLists(body) }, add = addCard)
         progressiveNext = false
-        wordLists(body)
     }
 
     private fun wordLists(body: LinearLayout) {
