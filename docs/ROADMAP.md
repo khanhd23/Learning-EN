@@ -1,5 +1,8 @@
 # EngPet roadmap — phase 2: be the most fun way to learn (and pass exams)
 
+> **Current plan: `docs/ROADMAP_V1.md` (phase 3: ship v1.0, roles Publisher / Claude / Codex).**
+> This file keeps the phase 2 specs (Tasks 9–15) that phase 3 refers to.
+
 Read `AGENTS.md` first. Roles do not change: **Codex writes code and tests only; the owner (Claude)
 writes all content, data, images-as-data and UI text.** One commit per task, report in
 `dist/reports/<task>.md`, never push. The localization plan (`docs/localization/PLAN.md`) still
