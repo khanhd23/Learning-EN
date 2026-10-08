@@ -363,7 +363,7 @@
     <string name="preset_saved">Practice saved</string>
     <string name="prev">Previous</string>
     <string name="privacy_policy">Privacy policy</string>
-    <string name="privacy_text">LingoMori stores your learning progress only on this device; we have no server and no account. Android may include it in your own Google backup. The app shows ads from Google AdMob, which may collect your advertising ID, IP address and ad interactions; you can review ad choices in Settings. The microphone is used only for speaking practice: your phone's speech service turns speech into text, and the app never records or keeps audio. Reminders are optional. The full policy is at the link below.</string>
+    <string name="privacy_text">LingoMori stores your learning progress only on this device; we have no server and no account. Android may include it in your own Google backup. The app shows ads from Google AdMob, which may collect your advertising ID, IP address and ad interactions; you can review ad choices in Settings. The microphone is used only for speaking practice: your phone\'s speech service turns speech into text, and the app never records or keeps audio. Reminders are optional. The full policy is at the link below.</string>
     <string name="quick_session">Quick session</string>
     <string name="quiet_hours">Reminders are never sent between 22:00 and 08:00.</string>
     <string name="quit_keep">Keep going</string>

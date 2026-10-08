@@ -3,7 +3,7 @@
   "displayName": "LingoMori",
   "shortName": "LingoMori",
   "supportEmail": "khankstudio.support@gmail.com",
-  "privacyPolicyUrl": "",
+  "privacyPolicyUrl": "https://sites.google.com/view/lingomoriprivacypolicy",
   "versionCode": 1,
   "versionName": "1.0.0",
   "flags": { "ads": true, "billing": false, "notifications": true },

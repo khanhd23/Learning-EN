@@ -58,7 +58,7 @@ base (Task 14).
 | P2 | Create the AdMob account and app, ad units (banner, interstitial, rewarded); put the IDs in `secrets.properties` (never commit) | M1 | Keep test IDs in debug |
 | P3 | Create the upload keystore; fill `signing.*` in `secrets.properties`; back up the keystore and passwords in two safe places | M1 | Use Play App Signing; losing the upload key is recoverable, losing everything is not |
 | P4a | ✅ `supportEmail` = khankstudio.support@gmail.com; policy filled (Đặng Kim Khánh, effective 2026-10-08) | M1 | Same address goes in the privacy policy and Play listing |
-| P4 | Host the privacy policy (Claude writes it) at a public URL, e.g. GitHub Pages or Google Sites; put the URL in `config/app_config.json` `privacyPolicyUrl` | M1 | Required for apps with ads |
+| P4 | ✅ Privacy policy hosted: https://sites.google.com/view/lingomoriprivacypolicy (in `privacyPolicyUrl`) | M1 | Required for apps with ads |
 | P5 | ✅ Name: **LingoMori** (2026-10-08). Icon still to approve | M1 | Store titles per language: "LingoMori: Learn English Words", "LingoMori: Học Tiếng Anh Từ Vựng" |
 | P6 | Fill Play Console forms: Data safety, content rating, target audience 13+, ads declaration (Claude drafts every answer) | M2 | |
 | P7 | Recruit 12+ closed testers (friends, classmates, a Facebook group) and keep them for 14 days | M2 | Claude writes the invite message and a feedback form |
