@@ -99,7 +99,7 @@ dependencies {
 }
 
 // ---------------------------------------------------------------------------------------------
-// Content: content/en/*.json + shippable content/i18n packs + config/exam_formats.json -> assets/
+// Content: content/en/*.json + shippable content/i18n packs + config metadata -> assets/
 // ---------------------------------------------------------------------------------------------
 val contentOut = layout.buildDirectory.dir("generated/contentAssets").get().asFile
 val copyContent = tasks.register("generateContentAssets") {
@@ -107,6 +107,7 @@ val copyContent = tasks.register("generateContentAssets") {
     description = "Bundles the validated content packs into assets/content."
     inputs.dir(rootProject.file("content"))
     inputs.file(rootProject.file("config/exam_formats.json"))
+    inputs.file(rootProject.file("config/word_lists.json"))
     inputs.file(rootProject.file("config/app_config.json"))
     inputs.file(rootProject.file("config/blocked_senses.txt"))
     inputs.file(rootProject.file("tools/build_content_db.py"))
@@ -131,6 +132,7 @@ val copyContent = tasks.register("generateContentAssets") {
             }
         }
         rootProject.file("config/exam_formats.json").copyTo(File(dst, "exam_formats.json"), overwrite = true)
+        rootProject.file("config/word_lists.json").copyTo(File(dst, "word_lists.json"), overwrite = true)
         rootProject.file("content/i18n/market_profiles.json").copyTo(File(dst, "market_profiles.json"), overwrite = true)
         rootProject.file("config/app_config.json").copyTo(File(dst, "app_config.json"), overwrite = true)
         rootProject.file("config/blocked_senses.txt").copyTo(File(dst, "blocked_senses.txt"), overwrite = true)

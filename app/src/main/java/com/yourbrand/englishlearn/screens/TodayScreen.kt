@@ -140,9 +140,15 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
         val todayKey = LearningStore.dayKey(now)
         val todayHist = s.store.history().filter { LearningStore.dayKey(it.at) == todayKey }
         val topic = topicForPlan()
-        planRow(plan, str(R.string.plan_words, s.settings.newWordsPerSession * 2, topic?.name ?: ""), todayHist.any { it.kind in listOf("QUICK", "TOPIC", "WORDS", "WELCOME", "MEAL") }) {
-            val t = topic ?: return@planRow
-            activity.startSession(s.builder().words(SessionKind.TOPIC, t.name, s.content.wordsByTopic[t.id].orEmpty(), com.yourbrand.englishlearn.learning.VocabMode.MIXED))
+        val list = selectedListForPlan()
+        planRow(plan, str(R.string.plan_words, s.settings.newWordsPerSession * 2, list?.label ?: topic?.name ?: ""), todayHist.any { it.kind in listOf("QUICK", "TOPIC", "WORDS", "WELCOME", "MEAL") }) {
+            if (list != null) {
+                val words = s.content.wordsByList[list.id].orEmpty().filter { it.tier == "silver" }
+                activity.startSession(s.builder().words(SessionKind.WORDS, list.label, words, com.yourbrand.englishlearn.learning.VocabMode.MIXED, newFirst = true))
+            } else {
+                val t = topic ?: return@planRow
+                activity.startSession(s.builder().words(SessionKind.TOPIC, t.name, s.content.wordsByTopic[t.id].orEmpty(), com.yourbrand.englishlearn.learning.VocabMode.MIXED))
+            }
         }
         val gp = nextGrammarPoint()
         planRow(plan, str(R.string.plan_grammar, gp?.title ?: ""), todayHist.any { it.kind == "GRAMMAR" }) { gp?.let { activity.open(GrammarLessonScreen(activity, it.id)) } }
@@ -229,6 +235,13 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
 
     private fun topicForPlan() = services.settings.preferredTopics().ifEmpty { services.content.topics.map { it.id } }
         .let { ids -> ids[Math.floorMod(services.today(), ids.size.toLong()).toInt()] }.let { services.content.topicById[it] }
+
+    private fun selectedListForPlan() = when {
+        "toeic" in services.settings.goals -> "toeic"
+        "ielts" in services.settings.goals -> "ielts_academic"
+        "work" in services.settings.goals -> "business"
+        else -> null
+    }?.let { id -> services.content.wordLists.firstOrNull { it.id == id } }
 
     private fun nextGrammarPoint() = services.content.grammar.firstOrNull { services.store.stars(it.id) == 0 }
 

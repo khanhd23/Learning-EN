@@ -8,7 +8,7 @@ import sqlite3
 import unicodedata
 from pathlib import Path
 
-SCHEMA_VERSION = "3"
+SCHEMA_VERSION = "4"
 
 
 def load(path: Path):
@@ -21,6 +21,9 @@ def canonical(value) -> str:
 
 def source_files(root: Path) -> list[Path]:
     paths = [root / "config/exam_formats.json"]
+    word_lists_path = root / "config/word_lists.json"
+    if word_lists_path.is_file():
+        paths.append(word_lists_path)
     blocked_path = root / "config/blocked_senses.txt"
     if blocked_path.is_file():
         paths.append(blocked_path)
@@ -105,7 +108,8 @@ def build(root: Path, output: Path, hash_output: Path | None = None) -> str:
             CREATE TABLE word(id TEXT PRIMARY KEY, lemma TEXT NOT NULL, ipa TEXT NOT NULL, lemma_norm TEXT NOT NULL,
                               level INTEGER NOT NULL, tier TEXT NOT NULL, ngsl_rank INTEGER, adult INTEGER NOT NULL,
                               pos_list TEXT NOT NULL, topics_json TEXT NOT NULL, family_json TEXT NOT NULL,
-                              forms_json TEXT NOT NULL, collocations_json TEXT NOT NULL, grammar_ids_json TEXT NOT NULL);
+                              forms_json TEXT NOT NULL, collocations_json TEXT NOT NULL, grammar_ids_json TEXT NOT NULL,
+                              lists_json TEXT NOT NULL, cefr TEXT);
             CREATE TABLE sense(id TEXT PRIMARY KEY, word_id TEXT NOT NULL, ord INTEGER NOT NULL,
                                pos TEXT NOT NULL, def TEXT NOT NULL, register TEXT NOT NULL);
             CREATE TABLE example(id TEXT PRIMARY KEY, sense_id TEXT NOT NULL, ord INTEGER NOT NULL,
@@ -117,7 +121,10 @@ def build(root: Path, output: Path, hash_output: Path | None = None) -> str:
             CREATE TABLE loc(locale TEXT NOT NULL, kind TEXT NOT NULL, key TEXT NOT NULL,
                              value_json TEXT NOT NULL, status TEXT NOT NULL, PRIMARY KEY(locale, kind, key));
             CREATE INDEX word_level ON word(level);
+            CREATE INDEX word_cefr ON word(cefr);
             CREATE INDEX word_topic_topic ON word_topic(topic_id);
+            CREATE TABLE word_list(word_id TEXT NOT NULL, list_id TEXT NOT NULL, PRIMARY KEY(word_id, list_id));
+            CREATE INDEX word_list_list ON word_list(list_id);
             CREATE INDEX loc_lookup ON loc(locale, kind, key);
             CREATE VIRTUAL TABLE word_fts USING fts4(locale, word_id, lemma, gloss, gloss_raw, body, tokenize=unicode61);
         """)
@@ -130,12 +137,14 @@ def build(root: Path, output: Path, hash_output: Path | None = None) -> str:
             senses = word.get("senses", [])
             pos_list = word.get("pos") if isinstance(word.get("pos"), list) else [s.get("pos", "") for s in senses]
             adult = int(word["id"].lower() in blocked or word.get("lemma", "").lower() in blocked or any(s.get("id", "").lower() in blocked for s in senses))
-            db.execute("INSERT INTO word VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
+            db.execute("INSERT INTO word VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
                 word["id"], word.get("lemma", ""), word.get("ipa", ""), normalize(word.get("lemma", "")), word.get("level", 1),
                 word.get("tier", "bronze"), word.get("ngslRank"), adult, json_text(pos_list), json_text(word.get("topics", [])),
                 json_text(word.get("family", {})), json_text(word.get("forms", {})), json_text(word.get("coll", [])),
-                json_text(word.get("grammarIds", [])),
+                json_text(word.get("grammarIds", [])), json_text(word.get("lists", [])), word.get("cefr"),
             ))
+            for list_id in word.get("lists", []):
+                db.execute("INSERT OR IGNORE INTO word_list VALUES(?,?)", (word["id"], list_id))
             for order, sense in enumerate(senses):
                 db.execute("INSERT INTO sense VALUES(?,?,?,?,?,?)", (sense["id"], word["id"], order, sense.get("pos", ""), sense.get("def", ""), sense.get("register", "neutral")))
                 for ex_order, example in enumerate(sense.get("ex", [])):

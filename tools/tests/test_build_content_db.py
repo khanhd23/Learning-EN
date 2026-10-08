@@ -33,7 +33,7 @@ class ContentDbBuilderTest(unittest.TestCase):
 
             db = sqlite3.connect(output)
             try:
-                self.assertEqual(db.execute("select value from meta where key='schema_version'").fetchone()[0], "3")
+                self.assertEqual(db.execute("select value from meta where key='schema_version'").fetchone()[0], "4")
                 self.assertEqual(db.execute("select value from meta where key='content_hash'").fetchone()[0], digest)
                 self.assertEqual(db.execute("select count(*) from word").fetchone()[0], 1)
                 self.assertEqual(db.execute("select word_id from word_fts where word_fts match 'di*'").fetchone()[0], "go")

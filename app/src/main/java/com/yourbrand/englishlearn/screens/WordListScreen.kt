@@ -20,6 +20,7 @@ class WordListScreen(
     private val level: Int? = null,
     private val keys: List<String>? = null,
     private val title: String? = null,
+    private val listId: String? = null,
 ) : ScrollScreen(activity) {
     override val petMode = PetMode.FLOATING
     private var filter = -1 // -1 all · 0 new · 1 learning · 2 known · 3 saved
@@ -30,11 +31,13 @@ class WordListScreen(
     private var selectBar: LinearLayout? = null
 
     private val topic get() = topicId?.let { services.content.topicById[it] }
-    override val barTitle: String get() = title ?: topic?.let { "${it.icon} ${it.name}" } ?: level?.let { str(R.string.level_n, it) } ?: ""
+    private val wordList get() = listId?.let { id -> services.content.wordLists.firstOrNull { it.id == id } }
+    override val barTitle: String get() = title ?: wordList?.let { "${it.emoji} ${it.label}" } ?: topic?.let { "${it.icon} ${it.name}" } ?: level?.let { str(R.string.level_n, it) } ?: ""
 
     private fun allWords(): List<Word> {
         val c = services.content
         return when {
+            listId != null -> c.wordsByList[listId].orEmpty()
             topicId != null -> c.wordsByTopic[topicId].orEmpty()
             level != null -> c.words.filter { it.level == level }
             keys != null -> keys.mapNotNull { c.wordById[it.removePrefix("w:")] }
@@ -60,7 +63,7 @@ class WordListScreen(
             post { set(known / words.size.toFloat().coerceAtLeast(1f)) }
         })
         val btns = Kit.hbox(c).margins(c, top = 14)
-        btns.addView(Kit.primary(c, str(R.string.learn_topic), 0) { study(VocabMode.MIXED, words) }.apply { layoutParams = lp(0, c.dpi(52), 1f); tag = "petAvoid" })
+        btns.addView(Kit.primary(c, str(if (listId != null) R.string.learn_list else R.string.learn_topic), 0) { study(VocabMode.MIXED, words) }.apply { layoutParams = lp(0, c.dpi(52), 1f); tag = "petAvoid" })
         btns.addView(Kit.secondary(c, "⋯", 0) { modeMenu(words) }.apply { layoutParams = LinearLayout.LayoutParams(c.dpi(64), c.dpi(52)).apply { marginStart = c.dpi(10) }; contentDescription = str(R.string.study_modes) })
         head.addView(btns)
         body.addView(head)
@@ -101,6 +104,9 @@ class WordListScreen(
         fun updateMore() { more.visibility = if (count < list.size) View.VISIBLE else View.GONE; more.text = str(R.string.show_more, list.size - count) }
         updateMore()
         body.addView(more)
+        wordList?.credit?.takeIf { it.isNotBlank() }?.let { credit ->
+            body.addView(Kit.text(c, str(R.string.list_source, credit), R.style.Text_Caption).margins(c, top = 18, bottom = 12))
+        }
         var loading = false
         loadMore = {
             if (!loading && count < list.size) {
@@ -222,8 +228,9 @@ class WordListScreen(
     }
 
     private fun study(mode: VocabMode, words: List<Word>) {
-        if (words.isEmpty()) return
-        activity.startSession(services.builder().words(SessionKind.TOPIC, barTitle, words, mode, if (mode == VocabMode.MATCHING) 12 else 10))
+        val candidates = if (listId != null) words.filter { it.tier == "silver" } else words
+        if (candidates.isEmpty()) return
+        activity.startSession(services.builder().words(if (listId != null) SessionKind.WORDS else SessionKind.TOPIC, barTitle, candidates, mode, if (mode == VocabMode.MATCHING) 12 else 10, newFirst = listId != null))
     }
 }
 

@@ -53,6 +53,25 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
         // A topic row (two cards) is ~150dp; the header, tabs and count line take ~200dp.
         if (firstBuild) addInFrames(grid, topics.size, now = 2 * visibleCount(c, itemDp = 150, aboveDp = 200), startDelayMs = AFTER_TRANSITION_MS, add = addCard)
         else for (i in topics.indices) addCard(i)
+        wordLists(body)
+    }
+
+    private fun wordLists(body: LinearLayout) {
+        val c = ctx
+        val content = services.content
+        if (content.wordLists.isEmpty()) return
+        body.addView(Kit.section(c, str(R.string.word_lists)))
+        body.addView(Kit.text(c, str(R.string.word_lists_desc), R.style.Text_Caption))
+        val grid = Kit.vbox(c).margins(c, top = 4)
+        body.addView(grid)
+        content.wordLists.forEach { definition ->
+            val words = content.wordsByList[definition.id].orEmpty()
+            val ready = words.count { it.tier == "silver" }
+            grid.addView(Kit.clickableCard(c, 14, 8, onClick = { activity.open(WordListScreen(activity, listId = definition.id)) }) {
+                addView(Kit.row(c, Kit.emojiTile(c, definition.emoji, c.col(R.color.surface_variant)),
+                    definition.label, str(R.string.n_of_m_ready, ready, words.size), Kit.chevron(c)))
+            })
+        }
     }
 
     private fun topicCard(t: Topic): LinearLayout {

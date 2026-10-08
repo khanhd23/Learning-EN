@@ -14,6 +14,7 @@ import xml.etree.ElementTree as ET
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools", "authoring"))
 import lib  # noqa: E402
+from word_lists import load_all_lists, load_cefr_rows, match_cefr  # noqa: E402
 
 DEFS_PATH = os.path.join(ROOT, "tools", "sources", "wordnet_defs.json")
 with open(DEFS_PATH, encoding="utf-8") as f:
@@ -75,6 +76,21 @@ def refresh_vi_status(path, old_status, sources):
 
 
 EDITOR_ROWS = load_all_editor_rows()
+WORD_LISTS = load_all_lists()
+CEFR_ROWS = load_cefr_rows()
+
+
+def add_word_list_metadata(words):
+    """Attach owner-provided list and CEFR fields without changing word content."""
+    for word in words:
+        lemma = word.get("lemma", "")
+        word["lists"] = sorted(name for name, values in WORD_LISTS.items() if lemma.casefold() in values)
+        pos = (word.get("senses") or [{}])[0].get("pos", "")
+        cefr = match_cefr(lemma, pos, CEFR_ROWS)
+        if cefr:
+            word["cefr"] = cefr
+        else:
+            word.pop("cefr", None)
 
 # English source explanations for grammar points (owner-written): when, body, and why per mistake.
 with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "authoring", "grammar_en.json"), encoding="utf-8") as _f:
@@ -470,6 +486,7 @@ def main():
                 next(w for w in words if w["id"] == wid).setdefault("conf", []).append(c["id"])
 
     formula_en = upgrade_schema(words, vi)
+    add_word_list_metadata(words)
 
     # Grammar
     grammar = []

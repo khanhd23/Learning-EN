@@ -1,10 +1,10 @@
 """Attach reusable multi-axis tags and emit focused learning-pack manifests."""
 import collections
-import csv
 import gzip
 import json
-import re
 from pathlib import Path
+
+from word_lists import load_all_lists
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "content/datasets"
@@ -22,15 +22,8 @@ DOMAIN_HINTS = {
 BAD = {"proper_name", "name", "abbrev", "character", "prefix", "suffix"}
 
 
-def load_list(name):
-    path = ROOT / "tools/sources" / name
-    if name.endswith(".csv"):
-        return {r["Lemma"].casefold() for r in csv.DictReader(path.read_text(encoding="utf-8-sig").splitlines()) if r.get("Lemma")}
-    return {re.sub(r"^\d+\.\s*", "", x).strip().casefold() for x in path.read_text(encoding="utf-8-sig").splitlines() if re.search(r"[A-Za-z]", x) and not x.startswith("The ")}
-
-
 def main():
-    lists = {"ngsl": load_list("ngsl.csv"), "nawl": load_list("nawl.txt"), "bsl": load_list("bsl.txt"), "tsl": load_list("tsl.txt")}
+    lists = load_all_lists(ROOT)
     counts = collections.Counter()
     pack_counts = collections.Counter()
     records = 0

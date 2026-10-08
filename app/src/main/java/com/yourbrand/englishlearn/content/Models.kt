@@ -42,6 +42,8 @@ data class Word(
     val grammarIds: List<String> = emptyList(),
     val image: String? = null,
     val adult: Boolean = false,
+    val lists: List<String> = emptyList(),
+    val cefr: String? = null,
 ) {
     val pos: String get() = senses.first().pos
     val gloss: String get() = senses.first().gloss
@@ -126,6 +128,16 @@ data class ExamSection(
 data class ExamItem(val id: String, val section: String, val level: Int, val stem: String, val options: List<String>, val answer: Int, val explanation: String, val qtype: String? = null)
 data class ExamGroup(val id: String, val section: String, val passage: String, val title: String?, val items: List<ExamItem>)
 data class ExamBank(val items: List<ExamItem>, val groups: List<ExamGroup>)
+
+data class WordListDefinition(
+    val id: String,
+    val family: String,
+    val label: String,
+    val emoji: String,
+    val sources: List<String>,
+    val cefr: List<String>,
+    val credit: String,
+)
 
 data class ComingSoon(val id: String, val label: String)
 

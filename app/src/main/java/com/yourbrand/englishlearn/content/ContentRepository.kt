@@ -22,6 +22,7 @@ class Content(
     val sound: SoundData = SoundData(),
     val stories: List<Story> = emptyList(),
     val examBanks: Map<String, ExamBank> = emptyMap(),
+    val wordLists: List<WordListDefinition> = emptyList(),
 ) {
     /** All entries, including bronze dictionary-only imports. */
     val allWords: List<Word> get() = words
@@ -34,6 +35,7 @@ class Content(
     val passageById = passages.associateBy { it.id }
     val confusableById = confusables.associateBy { it.id }
     val wordsByTopic: Map<String, List<Word>> = topics.associate { t -> t.id to words.filter { !it.adult && t.id in it.topics } }
+    val wordsByList: Map<String, List<Word>> = wordLists.associate { list -> list.id to words.filter { !it.adult && list.id in it.lists } }
     val questionsByPoint: Map<String, List<Question>> = questions.filter { it.gp != null }.groupBy { it.gp!! }
 
     fun isLevelAvailable(level: Int): Boolean = level in availableLevels
@@ -46,7 +48,7 @@ object ContentParser {
     private fun JSONObject.strOrNull(k: String): String? = if (has(k) && !isNull(k)) optString(k).takeIf { it.isNotEmpty() } else null
     private inline fun <T> JSONArray?.map(f: (JSONObject) -> T): List<T> = if (this == null) emptyList() else List(length()) { f(getJSONObject(it)) }
 
-    fun parse(words: String, grammar: String, questions: String, locale: LocalePackFiles, formats: String, approval: LocaleApproval? = null, images: Map<String, String> = emptyMap(), soundJson: String? = null, soundLocaleJson: String? = null, blockedSenses: Set<String> = emptySet(), storiesSourceJson: String? = null, examBanks: Map<String, ExamBank> = emptyMap()): Content {
+    fun parse(words: String, grammar: String, questions: String, locale: LocalePackFiles, formats: String, approval: LocaleApproval? = null, images: Map<String, String> = emptyMap(), soundJson: String? = null, soundLocaleJson: String? = null, blockedSenses: Set<String> = emptySet(), storiesSourceJson: String? = null, examBanks: Map<String, ExamBank> = emptyMap(), wordListsJson: String? = null): Content {
         val viTopics = JSONObject(locale.topics)
         val viWords = JSONObject(locale.words)
         val viConf = JSONObject(locale.confusables)
@@ -93,6 +95,8 @@ object ContentParser {
                 grammarIds = o.optJSONArray("grammarIds").strings(),
                 image = images[id],
                 adult = id.lowercase() in blockedSenses || o.getString("lemma").lowercase() in blockedSenses || o.getJSONArray("senses").map { it.getString("id") }.any { it.lowercase() in blockedSenses },
+                lists = o.optJSONArray("lists").strings(),
+                cefr = o.strOrNull("cefr"),
             )
         }
         val visibleWords = wordList.mapNotNull { word ->
@@ -205,8 +209,14 @@ object ContentParser {
                 }
             }.orEmpty().filter { approval == null || it.id in approval.approvedStories }
         }.getOrDefault(emptyList())
+        val wordLists = runCatching {
+            val array = JSONObject(wordListsJson ?: "{}").optJSONArray("lists") ?: JSONArray()
+            List(array.length()) { i -> array.getJSONObject(i).let { item ->
+                WordListDefinition(item.getString("id"), item.optString("family"), item.optString("label"), item.optString("emoji"), item.optJSONArray("sources").strings(), item.optJSONArray("cefr").strings(), item.optString("credit"))
+            } }
+        }.getOrDefault(emptyList())
         return Content(topics, visibleWords, conf, grammarList, questionList, passageList, formatList, soon, pet, tips,
-            approval?.availableLevels ?: (1..5).toSet(), approval?.selectable ?: true, sound, stories, examBanks)
+            approval?.availableLevels ?: (1..5).toSet(), approval?.selectable ?: true, sound, stories, examBanks, wordLists)
     }
 
     private fun parseSoundSentences(a: JSONArray?, translations: Map<String, String>): List<SoundSentence> = if (a == null) emptyList() else List(a.length()) { i -> a.getJSONObject(i).let { SoundSentence(it.getString("id"), it.getString("text"), it.optInt("level", 1), translations[it.getString("id")]) } }
@@ -290,6 +300,7 @@ class ContentRepository(private val context: Context) {
             blockedSenses(),
             runCatching { asset("en/stories.json") }.getOrNull(),
             loadExamBanks(key, asset("exam_formats.json"), if (key == "en") null else approval(key)),
+            wordListsJson = runCatching { asset("word_lists.json") }.getOrNull(),
         ).also { cached[key] = it }
     }
 

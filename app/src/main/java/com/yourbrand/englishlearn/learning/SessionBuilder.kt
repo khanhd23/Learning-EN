@@ -138,10 +138,21 @@ class SessionBuilder(
         return Session(SessionKind.WEAK, title, mix(ex))
     }
 
-    fun words(kind: SessionKind, title: String, words: List<Word>, mode: VocabMode, n: Int = 10): Session {
-        val pick = words.sortedWith(compareBy<Word> { (state(it.key)?.box ?: 0) >= Scheduler.MASTER_BOX }
-            .thenBy { if (state(it.key)?.let { s -> Scheduler.isDue(s, System.currentTimeMillis()) } == true) 0 else 1 }
-            .thenBy { random.nextInt(1000) }).take(n)
+    fun words(kind: SessionKind, title: String, words: List<Word>, mode: VocabMode, n: Int = 10, newFirst: Boolean = false): Session {
+        val now = System.currentTimeMillis()
+        val pick = if (newFirst) {
+            val fresh = words.filter { state(it.key)?.isNew != false }.shuffled(random)
+            val due = words.filter { candidate ->
+                val item = state(candidate.key)
+                item != null && !item.isNew && Scheduler.isDue(item, now)
+            }.sortedBy { state(it.key)?.due ?: Long.MAX_VALUE }
+            val rest = words.filter { it !in fresh && it !in due }.shuffled(random)
+            (fresh + due + rest).take(n)
+        } else {
+            words.sortedWith(compareBy<Word> { (state(it.key)?.box ?: 0) >= Scheduler.MASTER_BOX }
+                .thenBy { if (state(it.key)?.let { s -> Scheduler.isDue(s, now) } == true) 0 else 1 }
+                .thenBy { random.nextInt(1000) }).take(n)
+        }
         val ex: List<Exercise> = when (mode) {
             VocabMode.FLASHCARD -> pick.map { factory.flashcard(it) }
             VocabMode.QUIZ -> pick.map { if (random.nextBoolean()) factory.meaning(it) else factory.reverse(it) }

@@ -166,6 +166,37 @@ def exam_bank_errors(root=ROOT):
     return found
 
 
+def word_list_errors(root=ROOT):
+    """Validate the owner-supplied exam-list config and generated word metadata."""
+    path = os.path.join(root, "config", "word_lists.json")
+    if not os.path.isfile(path):
+        return ["config/word_lists.json: missing"]
+    config = load_from(root, "config", "word_lists.json")
+    known_lists = {"ngsl", "nawl", "bsl", "tsl"}
+    known_cefr = {"A1", "A2", "B1", "B2", "C1", "C2"}
+    found = []
+    ids = set()
+    for item in config.get("lists", []):
+        list_id = item.get("id", "")
+        if not list_id or list_id in ids:
+            found.append(f"config/word_lists.json: duplicate or empty list id {list_id!r}")
+        ids.add(list_id)
+        unknown_sources = set(item.get("sources", [])) - known_lists
+        if unknown_sources:
+            found.append(f"word list {list_id}: unknown sources {sorted(unknown_sources)}")
+        unknown_cefr = set(item.get("cefr", [])) - known_cefr
+        if unknown_cefr:
+            found.append(f"word list {list_id}: unknown CEFR levels {sorted(unknown_cefr)}")
+    words = load_from(root, "content", "en", "words.json").get("words", [])
+    for word in words:
+        lists = word.get("lists", [])
+        if not isinstance(lists, list) or not set(lists) <= known_lists or len(lists) != len(set(lists)):
+            found.append(f"word {word.get('id', '?')}: invalid lists metadata")
+        if "cefr" in word and word["cefr"] not in known_cefr:
+            found.append(f"word {word.get('id', '?')}: invalid CEFR {word['cefr']!r}")
+    return found
+
+
 def strings_xml_keys(root):
     path = os.path.join(root, "app", "src", "main", "res", "values", "strings.xml")
     tree = ET.parse(path)
@@ -268,6 +299,7 @@ def main():
     warnings.extend(locale_warnings)
     errors.extend(english_source_errors())
     errors.extend(exam_bank_errors())
+    errors.extend(word_list_errors())
     # UTF-8 text decoded as cp1252 ("Ná»™i dung", "EspaÃ±ol", "â€”") must never reach resources or packs.
     mojibake = re.compile("Ã[\u0080-ÿ]|á»|áº|â€|Ä‘|Æ°")
     root_path = __import__("pathlib").Path(ROOT)
