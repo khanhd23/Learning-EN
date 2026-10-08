@@ -6,7 +6,10 @@ import android.graphics.Path
 import android.graphics.PathMeasure
 import android.graphics.Rect
 import android.content.res.Configuration
+import android.net.Uri
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
@@ -19,6 +22,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.addCallback
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -27,6 +31,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.yourbrand.englishlearn.learning.LearningStore
 import com.yourbrand.englishlearn.learning.Session
+import com.yourbrand.englishlearn.core.ProgressBackup
 import com.yourbrand.englishlearn.pet.Mood
 import com.yourbrand.englishlearn.pet.PetFloatingView
 import com.yourbrand.englishlearn.pet.PetMoodResolver
@@ -34,6 +39,10 @@ import com.yourbrand.englishlearn.pet.PetView
 import com.yourbrand.englishlearn.screens.*
 import com.yourbrand.englishlearn.ui.*
 import com.yourbrand.englishlearn.ui.views.ParticleView
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
+import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
     lateinit var navigator: Navigator
@@ -61,6 +70,52 @@ class MainActivity : AppCompatActivity() {
     private var greetPending = false
     private var resumedAt = 0L
     private var microphoneResult: ((Boolean) -> Unit)? = null
+    private val mainHandler = Handler(Looper.getMainLooper())
+
+    private val createBackup = registerForActivityResult(ActivityResultContracts.CreateDocument("application/json")) { uri ->
+        if (uri == null) return@registerForActivityResult
+        thread(name = "backup-write") {
+            runCatching {
+                contentResolver.openOutputStream(uri)?.use { output ->
+                    output.write(services.exportProgress().toString(2).toByteArray(Charsets.UTF_8))
+                } ?: error("no output")
+            }.onSuccess { mainHandler.post { toast(getString(R.string.backup_done)) } }
+                .onFailure { mainHandler.post { toast(getString(R.string.backup_failed)) } }
+        }
+    }
+
+    private val openBackup = registerForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
+        if (uri == null) return@registerForActivityResult
+        thread(name = "backup-read") {
+            try {
+                val raw = contentResolver.openInputStream(uri)?.bufferedReader(Charsets.UTF_8)?.use { it.readText() } ?: error("no input")
+                val root = ProgressBackup.parse(raw)
+                val summary = ProgressBackup.summary(root)
+                mainHandler.post {
+                    if (isFinishing || isDestroyed) return@post
+                    val date = if (summary.createdAt > 0) SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date(summary.createdAt)) else "?"
+                    Dialogs.confirm(this, getString(R.string.restore_confirm_title), getString(R.string.restore_confirm_msg, date, summary.wordCount, summary.testCount, summary.petStage), getString(R.string.restore_replace), onPositive = {
+                        runCatching { services.restoreProgress(root) }
+                            .onSuccess { toast(getString(R.string.restore_done)) }
+                            .onFailure { toast(getString(R.string.restore_bad_file)) }
+                    })
+                }
+            } catch (e: ProgressBackup.NewerBackupException) {
+                mainHandler.post { toast(getString(R.string.restore_newer_version)) }
+            } catch (_: Throwable) {
+                mainHandler.post { toast(getString(R.string.restore_bad_file)) }
+            }
+        }
+    }
+
+    fun startBackup() {
+        val stamp = SimpleDateFormat("yyyy-MM-dd", Locale.US).format(Date())
+        createBackup.launch("lingomori-progress-$stamp.json")
+    }
+
+    fun startRestore() {
+        openBackup.launch(arrayOf("application/json", "text/plain", "application/octet-stream"))
+    }
 
     fun requestMicrophone(onResult: (Boolean) -> Unit) {
         microphoneResult = onResult

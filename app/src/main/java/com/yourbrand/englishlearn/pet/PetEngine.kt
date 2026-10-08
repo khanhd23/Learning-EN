@@ -36,6 +36,14 @@ data class PetState(
     val equipped: MutableMap<String, String> = mutableMapOf(),
     var created: Boolean = false,
 ) {
+    fun replaceFrom(other: PetState) {
+        species = other.species; name = other.name; stage = other.stage; stageXp = other.stageXp; totalXp = other.totalXp
+        recoverableXp = other.recoverableXp; lastStudyAt = other.lastStudyAt; lastDecayDay = other.lastDecayDay; lastSeenAt = other.lastSeenAt
+        mealAt = other.mealAt; hungerAtMeal = other.hungerAtMeal; xpDay = other.xpDay; xpToday = other.xpToday; coins = other.coins
+        freezeTokens = other.freezeTokens; tokenWeek = other.tokenWeek; pendingStageUp = other.pendingStageUp; created = other.created
+        owned.clear(); owned.addAll(other.owned); equipped.clear(); equipped.putAll(other.equipped)
+    }
+
     fun toJson(): JSONObject = JSONObject()
         .put("species", species).put("name", name).put("stage", stage).put("stageXp", stageXp).put("totalXp", totalXp)
         .put("recoverable", recoverableXp).put("lastStudyAt", lastStudyAt).put("lastDecayDay", lastDecayDay).put("lastSeenAt", lastSeenAt)

@@ -134,4 +134,33 @@ class Settings(context: Context) {
     }.distinct()
 
     fun clearAll() = p.edit().clear().apply()
+
+    /** Includes preferences and weekly quest counters in a portable JSON object. */
+    fun exportJson(): JSONObject {
+        val out = JSONObject()
+        p.all.forEach { (key, value) ->
+            when (value) {
+                is Set<*> -> out.put(key, JSONArray(value.map { it.toString() }))
+                else -> out.put(key, value)
+            }
+        }
+        return out
+    }
+
+    fun restoreJson(input: JSONObject) {
+        val edit = p.edit().clear()
+        input.keys().forEach { key ->
+            val value = input.get(key)
+            when (value) {
+                is JSONArray -> edit.putStringSet(key, buildSet { for (i in 0 until value.length()) add(value.getString(i)) })
+                is Boolean -> edit.putBoolean(key, value)
+                is Int -> edit.putInt(key, value)
+                is Long -> edit.putLong(key, value)
+                is Float -> edit.putFloat(key, value)
+                is Double -> edit.putFloat(key, value.toFloat())
+                else -> edit.putString(key, value.toString())
+            }
+        }
+        edit.apply()
+    }
 }

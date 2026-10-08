@@ -12,6 +12,7 @@ import com.yourbrand.englishlearn.core.Settings
 import com.yourbrand.englishlearn.core.AppLocale
 import com.yourbrand.englishlearn.core.Sfx
 import com.yourbrand.englishlearn.core.Tts
+import com.yourbrand.englishlearn.core.ProgressBackup
 import com.yourbrand.englishlearn.learning.Exercise
 import com.yourbrand.englishlearn.learning.LearningStore
 import com.yourbrand.englishlearn.learning.Scheduler
@@ -53,6 +54,17 @@ class Services(private val app: Application) {
     }.getOrElse { PetConfig() }
 
     fun savePet() { petPrefs.edit().putString("state", pet.state.toJson().toString()).apply() }
+
+    fun exportProgress(now: Long = System.currentTimeMillis()): JSONObject = ProgressBackup.create(
+        now, settings.exportJson(), store.exportJson(), pet.state.toJson()
+    )
+
+    fun restoreProgress(root: JSONObject) {
+        settings.restoreJson(root.getJSONObject("settings"))
+        store.restoreJson(root.getJSONObject("learning"))
+        pet.state.replaceFrom(PetState.fromJson(root.getJSONObject("pet")))
+        savePet()
+    }
 
     fun builder() = SessionBuilder(content, store::item, store::allItems, ::weakTags, { settings.sessionsDone })
 

@@ -175,6 +175,80 @@ class LearningStore(context: Context) : SQLiteOpenHelper(context, "learning.db",
         }
     }
 
+    @Synchronized fun exportJson(): JSONObject {
+        ensure()
+        val out = JSONObject()
+        out.put("items", JSONArray().also { array -> items.values.forEach { s ->
+            array.put(JSONObject().put("key", s.key).put("box", s.box).put("due", s.due).put("seen", s.seen)
+                .put("correct", s.correct).put("wrong", s.wrong).put("streak", s.streak).put("last", s.last)
+                .put("saved", s.saved).put("mistake", s.mistake).put("lastWrongAt", s.lastWrongAt)
+                .put("rewardDay", s.rewardDay).put("rewardCount", s.rewardCount))
+        } })
+        out.put("tags", JSONArray().also { array -> tags.values.forEach { t -> array.put(JSONObject().put("tag", t.tag).put("attempts", t.attempts).put("wrong", t.wrong)) } })
+        out.put("days", JSONArray().also { array -> days.values.forEach { d -> array.put(JSONObject().put("day", d.day).put("xp", d.xp).put("seconds", d.seconds).put("answered", d.answered).put("correct", d.correct)) } })
+        out.put("grammarStars", JSONObject().also { objectValue -> grammarStars.forEach { (id, stars) -> objectValue.put(id, stars) } })
+        out.put("firstSeen", JSONObject().also { objectValue -> firstSeen.forEach { (key, day) -> objectValue.put(key, day) } })
+        out.put("history", JSONArray().also { array -> history.forEach { h ->
+            array.put(JSONObject().put("kind", h.kind).put("title", h.title).put("format", h.format)
+                .put("total", h.total).put("correct", h.correct).put("seconds", h.seconds).put("at", h.at).put("detail", h.detail))
+        } })
+        return out
+    }
+
+    @Synchronized fun restoreJson(input: JSONObject) {
+        val restoredItems = parseItems(input.optJSONArray("items"))
+        val restoredTags = HashMap<String, WeaknessAnalyzer.TagStat>()
+        input.optJSONArray("tags")?.let { array -> for (i in 0 until array.length()) array.getJSONObject(i).let { o ->
+            restoredTags[o.getString("tag")] = WeaknessAnalyzer.TagStat(o.getString("tag"), o.optInt("attempts"), o.optInt("wrong"))
+        } }
+        val restoredDays = HashMap<Long, DayStat>()
+        input.optJSONArray("days")?.let { array -> for (i in 0 until array.length()) array.getJSONObject(i).let { o ->
+            restoredDays[o.getLong("day")] = DayStat(o.getLong("day"), o.optInt("xp"), o.optInt("seconds"), o.optInt("answered"), o.optInt("correct"))
+        } }
+        val restoredGrammar = HashMap<String, Int>()
+        input.optJSONObject("grammarStars")?.let { o -> o.keys().forEach { restoredGrammar[it] = o.optInt(it) } }
+        val restoredFirstSeen = HashMap<String, Long>()
+        input.optJSONObject("firstSeen")?.let { o -> o.keys().forEach { restoredFirstSeen[it] = o.optLong(it) } }
+        val restoredHistory = ArrayList<HistoryEntry>()
+        input.optJSONArray("history")?.let { array -> for (i in 0 until array.length()) array.getJSONObject(i).let { o ->
+            restoredHistory += HistoryEntry(-1, o.optString("kind"), o.optString("title"), o.optString("format").takeIf { it != "" && it != "null" },
+                o.optInt("total"), o.optInt("correct"), o.optInt("seconds"), o.optLong("at"), o.optJSONObject("detail") ?: JSONObject())
+        } }
+        items.clear(); items.putAll(restoredItems)
+        tags.clear(); tags.putAll(restoredTags)
+        days.clear(); days.putAll(restoredDays)
+        grammarStars.clear(); grammarStars.putAll(restoredGrammar)
+        firstSeen.clear(); firstSeen.putAll(restoredFirstSeen)
+        history.clear(); history.addAll(restoredHistory)
+        loaded = true
+        com.yourbrand.englishlearn.core.DataRevision.bump()
+        io.execute {
+            val db = writableDatabase
+            db.beginTransaction()
+            try {
+                listOf("item", "tag", "day", "gp", "history", "first_seen").forEach { db.execSQL("DELETE FROM $it") }
+                items.values.forEach { s -> db.execSQL("INSERT INTO item VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)", arrayOf(s.key, s.box, s.due, s.seen, s.correct, s.wrong, s.streak, s.last, if (s.saved) 1 else 0, if (s.mistake) 1 else 0, s.lastWrongAt, s.rewardDay, s.rewardCount)) }
+                tags.values.forEach { t -> db.execSQL("INSERT INTO tag VALUES(?,?,?)", arrayOf(t.tag, t.attempts, t.wrong)) }
+                days.values.forEach { d -> db.execSQL("INSERT INTO day VALUES(?,?,?,?,?)", arrayOf(d.day, d.xp, d.seconds, d.answered, d.correct)) }
+                grammarStars.forEach { (id, stars) -> db.execSQL("INSERT INTO gp VALUES(?,?)", arrayOf(id, stars)) }
+                firstSeen.forEach { (key, day) -> db.execSQL("INSERT INTO first_seen VALUES(?,?)", arrayOf(key, day)) }
+                history.forEach { h -> db.execSQL("INSERT INTO history(kind,title,fmt,total,correct,seconds,at,detail) VALUES(?,?,?,?,?,?,?,?)", arrayOf(h.kind, h.title, h.format, h.total, h.correct, h.seconds, h.at, h.detail.toString())) }
+                db.setTransactionSuccessful()
+            } finally { db.endTransaction() }
+        }
+    }
+
+    private fun parseItems(array: JSONArray?): HashMap<String, ItemState> {
+        val out = HashMap<String, ItemState>()
+        if (array == null) return out
+        for (i in 0 until array.length()) array.getJSONObject(i).let { o ->
+            val s = ItemState(o.getString("key"), o.optInt("box"), o.optLong("due"), o.optInt("seen"), o.optInt("correct"), o.optInt("wrong"),
+                o.optInt("streak"), o.optLong("last"), o.optBoolean("saved"), o.optBoolean("mistake"), o.optLong("lastWrongAt"), o.optLong("rewardDay", -1), o.optInt("rewardCount"))
+            out[s.key] = s
+        }
+        return out
+    }
+
     /** Wipes everything (Settings → Dữ liệu → Đặt lại). */
     @Synchronized fun reset() {
         com.yourbrand.englishlearn.core.DataRevision.bump()

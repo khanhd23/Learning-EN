@@ -82,6 +82,8 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
 
         group(body, R.string.set_data) { g ->
             g.addView(Kit.text(c, str(R.string.backup_info), R.style.Text_Caption).apply { setPadding(c.dpi(12), c.dpi(8), c.dpi(12), c.dpi(8)) })
+            action(g, R.string.backup_title) { activity.startBackup() }
+            action(g, R.string.restore_title) { activity.startRestore() }
             action(g, R.string.reset_progress, destructive = true) {
                 Dialogs.confirm(c, str(R.string.reset_title), str(R.string.reset_msg), str(R.string.reset_confirm), destructive = true) {
                     services.store.reset()
