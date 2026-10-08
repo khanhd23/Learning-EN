@@ -11,6 +11,11 @@ import com.yourbrand.englishlearn.content.ExamGroup
 import com.yourbrand.englishlearn.content.Word
 import kotlin.random.Random
 
+private val overlappingMeaningPairs = setOf(setOf("girl", "daughter"))
+
+internal fun meaningDistractorAllowed(answerId: String, candidateId: String): Boolean =
+    setOf(answerId, candidateId) !in overlappingMeaningPairs
+
 /** Builds runtime exercises from content. Every word gives many exercise types for free. */
 class ExerciseFactory(private val content: Content, private val random: Random = Random.Default) {
 
@@ -20,9 +25,9 @@ class ExerciseFactory(private val content: Content, private val random: Random =
     private fun distractors(w: Word, n: Int = 3, pool: List<Word> = content.lessonWords): List<Word> {
         val glosses = HashSet<String>().apply { add(w.gloss.lowercase()) }
         val lemmas = HashSet<String>().apply { add(w.lemma.lowercase()) }
-        val same = pool.filter { it.id != w.id && it.pos == w.pos }.shuffled(random)
+        val same = pool.filter { it.id != w.id && it.pos == w.pos && meaningDistractorAllowed(w.id, it.id) }.shuffled(random)
             .sortedBy { kotlin.math.abs(it.level - w.level) + if (it.topics.any { t -> t in w.topics }) 0 else 1 }
-        val any = pool.filter { it.id != w.id }.shuffled(random)
+        val any = pool.filter { it.id != w.id && meaningDistractorAllowed(w.id, it.id) }.shuffled(random)
         val out = ArrayList<Word>()
         for (c in same.take(40) + any.take(40)) {
             if (out.size == n) break
