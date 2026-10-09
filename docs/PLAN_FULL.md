@@ -83,9 +83,9 @@ Find gaps any time: `python tools/word_gaps.py tsl` and `python tools/word_gaps.
 ## 3. Phase A — code tasks (now)
 
 Specs in `docs/ROADMAP_V1.md`.
-- **Task 20** Report a content mistake (in progress).
-- **Task 21** Pet speech bubble never hides content.
-- **Task 22** Run the store screenshots (needs a device or emulator; if none, say so and stop).
+- **Task 20** Report a content mistake (complete; manually reviewed and committed).
+- **Task 21** Pet speech bubble never hides content (complete; manually reviewed and committed).
+- **Task 22** Run the store screenshots (deferred to the final device pass; needs a device or emulator).
 
 Done when: all three committed with reports; tests and build pass.
 
@@ -184,9 +184,9 @@ Cambridge KET/PET, CEFR B2 words, more interface languages through the locale pi
 
 ## 10. Order for Codex
 
-A (20 → 21 → 22) → B1 (TOEIC words) → C1 (THPT format) → C2 (THPT papers 1–5) → B2 (CEFR A1–B1,
+A (20 → 21) → B1 (TOEIC words) → C1 (THPT format) → C2 (THPT papers 1–5) → B2 (CEFR A1–B1,
 alternate one word batch with one THPT paper) → D (TOEIC bank) → E (stories, pictures) → F step 2
-when the Publisher has the keystore → G.
+when the Publisher has the keystore → 22 (final device screenshot pass) → G.
 
 ## 11. Publisher checklist (last)
 
