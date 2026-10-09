@@ -3325,7 +3325,7 @@ travelling|unsorted||4
 trifle|unsorted||4
 trimming|unsorted||4
 velvet|clothes|ˈvelvɪt|4
-wax|unsorted||4
+wax|home_furniture|wæks|4
 wipe|daily_routine,home_furniture|waɪp|3
 assure|core_verbs,sales_customer|əˈʃʊr|3
 beggar|unsorted||4
@@ -3413,7 +3413,7 @@ shame|feelings_personality|ʃeɪm|4
 snowfall|weather|ˈsnoʊfɔːl|4
 tar|unsorted||4
 tornado|weather|tɔːrˈneɪdoʊ|4
-wizard|unsorted||4
+wizard|arts_entertainment|ˈwɪzəd|4
 admiral|unsorted||4
 affection|feelings_personality,friends_relationships|əˈfekʃn|4
 artery|unsorted||4
@@ -3601,7 +3601,7 @@ solder|unsorted||4
 squadron|unsorted||4
 temperance|unsorted||4
 trepidation|unsorted||4
-turning|unsorted||4
+turning|city_directions|ˈtɜːnɪŋ|4
 advanced|describing_things,education
 advent|unsorted||4
 affectation|unsorted||4
@@ -3832,7 +3832,7 @@ nonplus|unsorted||4
 queer|unsorted
 reside|unsorted
 servile|unsorted
-vain|unsorted
+vain|feelings_personality|veɪn
 whip|unsorted
 camping|travel_holidays,nature_landscape||4
 casing|unsorted||4
@@ -3947,7 +3947,7 @@ troubled|unsorted
 utmost|unsorted||4
 verve|unsorted||4
 vortex|unsorted||4
-working|unsorted
+working|jobs,it_technology|ˈwɜːkɪŋ
 acquaint|unsorted
 acquit|unsorted
 adieu|unsorted||4
@@ -4024,7 +4024,7 @@ strife|unsorted||4
 stroll|unsorted||4
 surname|family||4
 tantrum|unsorted||4
-telegram|unsorted||4
+telegram|media_news|ˈtelɪɡræm|4
 thud|unsorted||4
 tom|unsorted||4
 tremulous|unsorted
@@ -4034,7 +4034,7 @@ veneration|unsorted||4
 vim|unsorted||4
 voyage|transport,travel_holidays|ˈvɔɪɪdʒ|4
 wager|unsorted||4
-warrior|unsorted||4
+warrior|government_society,arts_entertainment|ˈwɒriə|4
 whereabouts|unsorted||4
 wince|unsorted||4
 wont|unsorted||4
@@ -4127,11 +4127,11 @@ sacred|government_society|ˈseɪkrɪd
 savage|family
 settled|unsorted
 stormy|weather|ˈstɔːrmi
-stumble|unsorted
+stumble|core_verbs,daily_routine|ˈstʌmbəl
 sympathetic|unsorted
 treacherous|unsorted
 tuff|it_technology
-useless|unsorted
+useless|describing_things|ˈjuːsləs
 weep|feelings_personality|wiːp
 ascend|unsorted
 assured|unsorted
@@ -4163,14 +4163,14 @@ respectable|describing_things|rɪˈspektəbəl
 ruddy|unsorted
 skew|unsorted
 slender|unsorted
-stricken|unsorted
-stubborn|unsorted
+stricken|health_illness,feelings_personality|ˈstrɪkən
+stubborn|feelings_personality|ˈstʌbən
 subside|unsorted
 troublesome|unsorted
 utter|unsorted
 vicarious|unsorted
 vigorous|unsorted
-vivid|unsorted
+vivid|describing_things,arts_entertainment|ˈvɪvɪd
 wicked|unsorted
 abjure|unsorted
 accredit|unsorted
@@ -4309,7 +4309,7 @@ sturdy|unsorted
 supple|unsorted
 swipe|internet_social|swaɪp
 taut|unsorted
-tease|unsorted
+tease|friends_relationships,feelings_personality|tiːz
 touring|unsorted
 trenchant|unsorted
 unjust|unsorted
@@ -4317,7 +4317,7 @@ untouched|unsorted
 vomit|unsorted
 wade|unsorted
 wheedle|unsorted
-whistle|unsorted
+whistle|sports_fitness,arts_entertainment|ˈwɪsəl
 winnow|unsorted
 worldly|unsorted
 abridge|unsorted
@@ -4515,7 +4515,7 @@ marked|describing_things|mɑːkt
 mightily|unsorted
 mossy|unsorted
 obstinate|unsorted
-overwhelming|unsorted
+overwhelming|feelings_personality|ˌəʊvəˈwelmɪŋ
 packed|unsorted
 paste|unsorted
 polished|unsorted
