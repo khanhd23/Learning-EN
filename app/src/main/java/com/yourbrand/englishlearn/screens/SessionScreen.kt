@@ -251,6 +251,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             is Exercise.Matching -> renderMatching(ex)
             is Exercise.Flashcard -> renderFlashcard(ex)
             is Exercise.Spelling -> renderSpelling(ex)
+            is Exercise.ExamText -> renderExamText(ex)
             is Exercise.Dictation -> renderDictation(ex)
             is Exercise.MinimalPairChoice -> renderMinimalPair(ex)
             is Exercise.Shadowing -> renderShadowing(ex)
@@ -760,6 +761,47 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
                 speakText = ex.word.lemma, almost = r == Grader.Result.ALMOST)
         }
         onHint = { showHint(ex.word.lemma.take(2)) }
+    }
+
+    /** A genuine exam open-cloze item: one word, no distractor options. */
+    private fun renderExamText(ex: Exercise.ExamText) {
+        val c = ctx
+        ex.sharedPassage?.let { passage ->
+            content.addView(Kit.card(c, 14, 10, c.col(R.color.surface_variant), null) {
+                addView(Kit.text(c, (ex.sharedPassageTitle?.let { "$it\n\n" } ?: "") + passage, R.style.Text_Body))
+            })
+        }
+        content.addView(instruction(ex.instruction))
+        content.addView(questionText(ex.stem).margins(c, top = 10))
+        val input = EditText(c).apply {
+            hint = str(R.string.type_here)
+            textSize = 20f
+            inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS or InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
+            imeOptions = EditorInfo.IME_ACTION_DONE
+            setSingleLine()
+            setPadding(c.dpi(16), c.dpi(14), c.dpi(16), c.dpi(14))
+            background = c.rounded(c.col(R.color.surface), 14f, c.col(R.color.outline), 1.5f)
+            layoutParams = lp().apply { topMargin = c.dpi(18) }
+            tag = "petAvoid"
+            addTextChangedListener(object : android.text.TextWatcher {
+                override fun afterTextChanged(s: android.text.Editable?) { action.isEnabled = !s.isNullOrBlank() && !answered }
+                override fun beforeTextChanged(s: CharSequence?, a: Int, b: Int, d: Int) {}
+                override fun onTextChanged(s: CharSequence?, a: Int, b: Int, d: Int) {}
+            })
+            setOnEditorActionListener { _, id, _ -> if (id == EditorInfo.IME_ACTION_DONE && action.isEnabled) { onAction(); true } else false }
+        }
+        content.addView(input)
+        input.post { input.requestFocus(); (c.getSystemService(android.content.Context.INPUT_METHOD_SERVICE) as InputMethodManager).showSoftInput(input, 0) }
+        check = {
+            val result = Grader.grade(input.text.toString(), ex.answer)
+            input.isEnabled = false
+            input.background = c.rounded(c.col(if (result == Grader.Result.WRONG) R.color.error_container else R.color.success_container), 14f,
+                c.col(if (result == Grader.Result.WRONG) R.color.error else R.color.success), 1.5f)
+            (c.getSystemService(android.content.Context.INPUT_METHOD_SERVICE) as InputMethodManager).hideSoftInputFromWindow(input.windowToken, 0)
+            if (result == Grader.Result.WRONG) input.shake() else input.bump()
+            onAnswered(ex, result != Grader.Result.WRONG, input.text.toString(), input, ex.answer, ex.explanation, almost = result == Grader.Result.ALMOST)
+        }
+        onHint = { showHint(str(R.string.hint_generic)) }
     }
 
     private fun renderDictation(ex: Exercise.Dictation) {

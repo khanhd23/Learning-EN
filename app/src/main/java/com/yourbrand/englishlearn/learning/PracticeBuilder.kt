@@ -88,8 +88,9 @@ class MockTest(
     var current: Int = 0,
     val sectionIds: List<String> = emptyList(),
     val sectionLabels: List<Pair<String, String>> = emptyList(),
+    val textAnswers: Array<String> = Array(keys.size) { "" },
 ) {
-    val answeredCount: Int get() = answers.count { it >= 0 }
+    val answeredCount: Int get() = answers.indices.count { answers[it] >= 0 || textAnswers.getOrNull(it).orEmpty().isNotBlank() }
 
     fun toJson(): org.json.JSONObject = org.json.JSONObject()
         .put("fmt", formatId).put("title", title).put("keys", org.json.JSONArray(keys)).put("limit", timeLimitSec ?: -1)
@@ -97,6 +98,7 @@ class MockTest(
         .put("elapsed", elapsedSec).put("current", current)
         .put("sectionIds", org.json.JSONArray(sectionIds))
         .put("sectionLabels", org.json.JSONArray().also { a -> sectionLabels.forEach { a.put(org.json.JSONObject().put("id", it.first).put("label", it.second)) } })
+        .put("textAnswers", org.json.JSONArray(textAnswers.toList()))
 
     companion object {
         fun fromJson(o: org.json.JSONObject): MockTest {
@@ -104,10 +106,12 @@ class MockTest(
             val keys = List(k.length()) { k.getString(it) }
             val a = o.getJSONArray("answers")
             val f = o.getJSONArray("flags")
+            val ta = o.optJSONArray("textAnswers")
             return MockTest(o.getString("fmt"), o.getString("title"), keys, o.optInt("limit", -1).takeIf { it > 0 },
                 IntArray(keys.size) { a.optInt(it, -1) }, BooleanArray(keys.size) { f.optBoolean(it) }, o.optInt("elapsed"), o.optInt("current"),
                 o.optJSONArray("sectionIds")?.let { ids -> List(ids.length()) { ids.getString(it) } } ?: emptyList(),
-                o.optJSONArray("sectionLabels")?.let { labels -> List(labels.length()) { labels.getJSONObject(it).let { x -> x.getString("id") to x.getString("label") } } } ?: emptyList())
+                o.optJSONArray("sectionLabels")?.let { labels -> List(labels.length()) { labels.getJSONObject(it).let { x -> x.getString("id") to x.getString("label") } } } ?: emptyList(),
+                Array(keys.size) { ta?.optString(it, "").orEmpty() })
         }
 
         /**

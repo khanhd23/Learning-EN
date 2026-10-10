@@ -4,6 +4,7 @@ import android.content.Intent
 import android.graphics.Typeface
 import android.os.SystemClock
 import android.net.Uri
+import android.text.InputType
 import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
@@ -14,12 +15,14 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
+import android.widget.EditText
 import com.yourbrand.englishlearn.BuildConfig
 import com.yourbrand.englishlearn.MainActivity
 import com.yourbrand.englishlearn.R
 import com.yourbrand.englishlearn.core.MistakeReport
 import com.yourbrand.englishlearn.services
 import com.yourbrand.englishlearn.learning.Exercise
+import com.yourbrand.englishlearn.learning.Grader
 import com.yourbrand.englishlearn.learning.MockTest
 import com.yourbrand.englishlearn.ui.*
 import com.yourbrand.englishlearn.ui.views.Bar
@@ -148,8 +151,13 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
         if (sectionIndex >= 0 && (i == 0 || test.sectionIds.getOrNull(i - 1) != test.sectionIds.getOrNull(i))) {
             content.addView(Kit.text(c, str(R.string.section_n, sectionIndex + 1, test.sectionLabels.size, test.sectionLabels[sectionIndex].second), R.style.Text_Caption).margins(c, top = 4, bottom = 8))
         }
-        if (ex is Exercise.Choice && ex.sharedPassage != null && ex.sharedGroupId != null) {
-            val groupId = ex.sharedGroupId
+        val shared = when (ex) {
+            is Exercise.Choice -> Triple(ex.sharedGroupId, ex.sharedPassageTitle, ex.sharedPassage)
+            is Exercise.ExamText -> Triple(ex.sharedGroupId, ex.sharedPassageTitle, ex.sharedPassage)
+            else -> null
+        }
+        if (shared?.first != null && shared.third != null) {
+            val groupId = shared.first!!
             // Open the first time the group appears; after that it stays as the learner left it
             // (re-rendering after an answer must not collapse it).
             if (seenPassageGroups.add(groupId)) openPassageGroups += groupId
@@ -162,7 +170,7 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
                 val height = minOf((c.resources.displayMetrics.heightPixels * 0.4f).toInt(), c.dpi(280))
                 content.addView(android.widget.ScrollView(c).apply {
                     layoutParams = lp(ViewGroup.LayoutParams.MATCH_PARENT, height).apply { topMargin = c.dpi(6); bottomMargin = c.dpi(8) }
-                    addView(Kit.card(c, 14, 10, c.col(R.color.surface_variant), null) { addView(Kit.text(c, (ex.sharedPassageTitle?.let { "$it\n\n" } ?: "") + ex.sharedPassage, R.style.Text_Body)) })
+                    addView(Kit.card(c, 14, 10, c.col(R.color.surface_variant), null) { addView(Kit.text(c, (shared.second?.let { "$it\n\n" } ?: "") + shared.third, R.style.Text_Body)) })
                 })
             }
         }
@@ -207,6 +215,25 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
                     content.post { playOptions(false) }
                 }
             }
+            is Exercise.ExamText -> {
+                content.addView(Kit.text(c, str(ex.instruction), R.style.Text_Caption))
+                content.addView(Kit.text(c, ex.stem, R.style.Text_Question).margins(c, top = 8))
+                content.addView(EditText(c).apply {
+                    hint = str(R.string.type_here)
+                    textSize = 19f
+                    inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS or InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
+                    setSingleLine()
+                    setPadding(c.dpi(16), c.dpi(14), c.dpi(16), c.dpi(14))
+                    background = c.rounded(c.col(R.color.surface), 14f, c.col(R.color.outline), 1.5f)
+                    layoutParams = lp().apply { topMargin = c.dpi(18) }
+                    setText(test.textAnswers[i])
+                    addTextChangedListener(object : android.text.TextWatcher {
+                        override fun afterTextChanged(s: android.text.Editable?) { test.textAnswers[i] = s?.toString().orEmpty(); save() }
+                        override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+                        override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+                    })
+                })
+            }
             is Exercise.FindError -> {
                 content.addView(Kit.text(c, str(R.string.ins_find_error), R.style.Text_Caption))
                 content.addView(Kit.text(c, Spans.underline(ex.stem), R.style.Text_Question).margins(c, top = 8))
@@ -234,7 +261,7 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
             box.addView(Kit.text(c, str(R.string.palette_legend, test.answeredCount, test.keys.size), R.style.Text_Caption).margins(c, top = 2, bottom = 8))
             val flow = Kit.flow(c)
             test.keys.indices.forEach { k ->
-                val answered = test.answers[k] >= 0
+                val answered = test.answers[k] >= 0 || test.textAnswers.getOrNull(k).orEmpty().isNotBlank()
                 flow.addView(TextView(c).apply {
                     text = "${k + 1}"; gravity = Gravity.CENTER; textSize = 15f
                     setTypeface(typeface, Typeface.BOLD)
@@ -267,17 +294,24 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
         test.keys.forEachIndexed { k, key ->
             val ex = exercises[k] ?: return@forEachIndexed
             val ans = when (ex) { is Exercise.Choice -> ex.answer; is Exercise.FindError -> ex.answer; else -> -1 }
-            val ok = test.answers[k] == ans
+            val ok = when (ex) {
+                is Exercise.ExamText -> Grader.grade(test.textAnswers[k], ex.answer) != Grader.Result.WRONG
+                else -> test.answers[k] == ans
+            }
             if (ok) correct++
-            if (test.answers[k] >= 0) xp += services.recordAnswer(ex, listOf(key), ok, 5000, 0, now)
-            detail.put(JSONObject().put("k", key).put("a", test.answers[k]).put("f", test.flags[k]))
+            if (test.answers[k] >= 0 || test.textAnswers[k].isNotBlank()) xp += services.recordAnswer(ex, listOf(key), ok, 5000, 0, now)
+            detail.put(JSONObject().put("k", key).put("a", test.answers[k]).put("text", test.textAnswers[k]).put("f", test.flags[k]))
         }
         val sectionDetail = JSONArray()
         test.sectionLabels.forEach { (id, _) ->
             val indices = test.sectionIds.mapIndexedNotNull { i, section -> i.takeIf { section == id } }
             sectionDetail.put(JSONObject().put("id", id).put("correct", indices.count { k ->
-                val expected = when (val ex = exercises[k]) { is Exercise.Choice -> ex.answer; is Exercise.FindError -> ex.answer; else -> -1 }
-                test.answers[k] == expected
+                when (val ex = exercises[k]) {
+                    is Exercise.ExamText -> Grader.grade(test.textAnswers[k], ex.answer) != Grader.Result.WRONG
+                    is Exercise.Choice -> test.answers[k] == ex.answer
+                    is Exercise.FindError -> test.answers[k] == ex.answer
+                    else -> false
+                }
             }).put("total", indices.size))
         }
         services.addStudyTime(test.elapsedSec)
@@ -308,6 +342,13 @@ class MockResultScreen(
     private var reviewFilter = 0 // 0 wrong · 1 flagged · 2 all
 
     private fun answerOf(ex: Exercise?) = when (ex) { is Exercise.Choice -> ex.answer; is Exercise.FindError -> ex.answer; else -> -1 }
+    private fun correctAt(index: Int): Boolean = when (val ex = exercises[index]) {
+        is Exercise.ExamText -> Grader.grade(test.textAnswers[index], ex.answer) != Grader.Result.WRONG
+        is Exercise.Choice -> test.answers[index] == ex.answer
+        is Exercise.FindError -> test.answers[index] == ex.answer
+        else -> false
+    }
+    private fun answeredAt(index: Int): Boolean = test.answers[index] >= 0 || test.textAnswers.getOrNull(index).orEmpty().isNotBlank()
 
     override fun build(body: LinearLayout) {
         val c = ctx
@@ -328,7 +369,7 @@ class MockResultScreen(
             body.addView(Kit.section(c, str(R.string.by_skill)))
             test.sectionLabels.forEach { (id, label) ->
                 val indices = test.sectionIds.mapIndexedNotNull { i, section -> i.takeIf { section == id } }
-                val sectionCorrect = indices.count { test.answers[it] == answerOf(exercises[it]) }
+                val sectionCorrect = indices.count(::correctAt)
                 body.addView(Kit.text(c, "$label  $sectionCorrect/${indices.size}", R.style.Text_Body).margins(c, bottom = 6))
             }
         }
@@ -345,7 +386,7 @@ class MockResultScreen(
         val byType = HashMap<String, IntArray>()
         exercises.forEachIndexed { k, ex ->
             ex ?: return@forEachIndexed
-            val ok = test.answers[k] == answerOf(ex)
+            val ok = correctAt(k)
             ex.tags.filter { TagNames.has(it) }.forEach { t -> byTag.getOrPut(t) { IntArray(2) }.let { it[0]++; if (ok) it[1]++ } }
             val type = str(when (ex) { is Exercise.FindError -> R.string.type_error; is Exercise.Choice -> if (ex.passage != null) R.string.type_passage else if (ex.optionsMarked) R.string.type_sound else R.string.type_choice; else -> R.string.type_choice })
             byType.getOrPut(type) { IntArray(2) }.let { it[0]++; if (ok) it[1]++ }
@@ -369,25 +410,44 @@ class MockResultScreen(
         exercises.forEachIndexed { k, ex ->
             ex ?: return@forEachIndexed
             val ans = answerOf(ex)
-            val ok = test.answers[k] == ans
+            val ok = correctAt(k)
             val show = when (reviewFilter) { 0 -> !ok; 1 -> test.flags[k]; else -> true }
             if (!show) return@forEachIndexed
-            if (ex is Exercise.Choice && ex.sharedPassage != null && ex.sharedGroupId != null && exercises.take(k).none { it is Exercise.Choice && it.sharedGroupId == ex.sharedGroupId }) {
+            val shared = when (ex) {
+                is Exercise.Choice -> Triple(ex.sharedGroupId, ex.sharedPassageTitle, ex.sharedPassage)
+                is Exercise.ExamText -> Triple(ex.sharedGroupId, ex.sharedPassageTitle, ex.sharedPassage)
+                else -> null
+            }
+            if (shared?.first != null && shared.third != null && exercises.take(k).none {
+                    when (it) {
+                        is Exercise.Choice -> it.sharedGroupId == shared.first
+                        is Exercise.ExamText -> it.sharedGroupId == shared.first
+                        else -> false
+                    }
+                }) {
                 body.addView(Kit.card(c, 14, 10, c.col(R.color.surface_variant), null) {
-                    addView(Kit.text(c, (ex.sharedPassageTitle?.let { "$it\n\n" } ?: "") + ex.sharedPassage, R.style.Text_Body))
+                    addView(Kit.text(c, (shared.second?.let { "$it\n\n" } ?: "") + shared.third, R.style.Text_Body))
                 })
             }
             val (stem, opts, expl) = when (ex) {
                 is Exercise.Choice -> Triple(if (ex.passage != null) "${ex.passage.title} (${ex.blank + 1})" else ex.stem.replace("[", "").replace("]", ""), ex.options, ex.explanation)
+                is Exercise.ExamText -> Triple(ex.stem, listOf(ex.answer), ex.explanation)
                 is Exercise.FindError -> Triple(ex.stem.replace("[", "").replace("]", ""), Regex("\\[([^\\]]+)\\]").findAll(ex.stem).map { it.groupValues[1] }.toList(), ex.explanation + " → " + ex.fix)
                 else -> Triple("", emptyList(), "")
             }
             body.addView(Kit.card(c, 14, 10) {
                 addView(Kit.text(c, "${k + 1}. $stem", R.style.Text_Body).apply { textSize = 15f })
                 val given = test.answers[k]
-                if (given >= 0 && !ok) addView(Kit.text(c, "✗ " + opts.getOrElse(given) { "" }.replace("[", "").replace("]", ""), R.style.Text_Caption, c.col(R.color.error)).margins(c, top = 4))
-                if (given < 0) addView(Kit.text(c, str(R.string.unanswered), R.style.Text_Caption, c.col(R.color.warning)).margins(c, top = 4))
-                addView(Kit.text(c, "✓ " + opts.getOrElse(ans) { "" }.replace("[", "").replace("]", ""), R.style.Text_BodyStrong, c.col(R.color.success)).margins(c, top = 2))
+                if (ex is Exercise.ExamText) {
+                    val typed = test.textAnswers[k]
+                    if (typed.isNotBlank() && !ok) addView(Kit.text(c, "✗ $typed", R.style.Text_Caption, c.col(R.color.error)).margins(c, top = 4))
+                    if (typed.isBlank()) addView(Kit.text(c, str(R.string.unanswered), R.style.Text_Caption, c.col(R.color.warning)).margins(c, top = 4))
+                    addView(Kit.text(c, "✓ ${ex.answer}", R.style.Text_BodyStrong, c.col(R.color.success)).margins(c, top = 2))
+                } else {
+                    if (given >= 0 && !ok) addView(Kit.text(c, "✗ " + opts.getOrElse(given) { "" }.replace("[", "").replace("]", ""), R.style.Text_Caption, c.col(R.color.error)).margins(c, top = 4))
+                    if (given < 0) addView(Kit.text(c, str(R.string.unanswered), R.style.Text_Caption, c.col(R.color.warning)).margins(c, top = 4))
+                    addView(Kit.text(c, "✓ " + opts.getOrElse(ans) { "" }.replace("[", "").replace("]", ""), R.style.Text_BodyStrong, c.col(R.color.success)).margins(c, top = 2))
+                }
                 if (expl.isNotBlank()) addView(Kit.text(c, expl, R.style.Text_Caption).margins(c, top = 4))
                 addView(Kit.secondary(c, str(R.string.report_mistake), 8) { report(ex.key) }.margins(c, top = 8))
             })

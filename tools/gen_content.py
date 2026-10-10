@@ -794,7 +794,10 @@ def main():
     if os.path.isfile(os.path.join(ROOT, "tools", "build_toeic_bank.py")) and os.path.isfile(os.path.join(ROOT, "config", "exam_formats.json")):
         import build_toeic_bank
         build_toeic_bank.main()
-    if os.path.isfile(os.path.join(ROOT, "tools", "build_exam_banks.py")) and os.path.isfile(os.path.join(ROOT, "tools", "authoring", "exam_vstep.json")):
+    if os.path.isfile(os.path.join(ROOT, "tools", "build_exam_banks.py")) and (
+        os.path.isfile(os.path.join(ROOT, "tools", "authoring", "exam_vstep.json"))
+        or os.path.isfile(os.path.join(ROOT, "tools", "authoring", "exam_ket.json"))
+    ):
         import build_exam_banks
         build_exam_banks.main()
     print(f"topics={len(topics)} words={len(words)} confusables={len(conf)} grammar={len(grammar)} "

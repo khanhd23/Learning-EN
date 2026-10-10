@@ -1,0 +1,327 @@
+[
+  {
+    "id": "ket_p1_part1", "paper": "1", "section": "part1", "title": "Everyday notices", "title_vi": "Thông báo hằng ngày", "source": "original:exam-expansion-2026",
+    "passage": "A. CAFE: Soup is served from 12:30 today, not at noon.\nB. SPORTS HALL: Please wear indoor shoes on the wooden floor.\nC. BUS STOP: Route 6 leaves from stop 4 at 8:10.\nD. CITY MUSEUM: Student tickets are sold at the side desk.\nE. SCIENCE CLUB: This week's meeting is Thursday, not Wednesday.\nF. MARKET: This stall accepts cards but not cash.",
+    "passage_vi": "A. QUÁN CÀ PHÊ: Hôm nay súp được phục vụ từ 12:30, không phải buổi trưa.\nB. NHÀ THI ĐẤU: Hãy đi giày trong nhà trên sàn gỗ.\nC. TRẠM XE BUÝT: Tuyến 6 khởi hành từ điểm dừng số 4 lúc 8:10.\nD. BẢO TÀNG THÀNH PHỐ: Vé học sinh được bán ở quầy bên hông.\nE. CÂU LẠC BỘ KHOA HỌC: Tuần này câu lạc bộ họp vào thứ Năm, không phải thứ Tư.\nF. CHỢ: Quầy này nhận thẻ nhưng không nhận tiền mặt.",
+    "items": [
+      {"id":"ket1_p1_q1","stem":"What time can customers get soup today?","opts":["At 11:30.","At 12:00.","At 12:30."],"ans":2,"expl":"The notice changes soup service to 12:30.","vi_expl":"Thông báo nói rõ giờ phục vụ súp được đổi sang 12:30."},
+      {"id":"ket1_p1_q2","stem":"What should people wear in the sports hall?","opts":["Indoor shoes.","Wooden shoes.","Outdoor boots."],"ans":0,"expl":"Indoor shoes protect the wooden floor and are required.","vi_expl":"Giày trong nhà được yêu cầu để bảo vệ sàn gỗ."},
+      {"id":"ket1_p1_q3","stem":"Where should someone wait for Route 6?","opts":["At stop 4.","At the museum.","At the market."],"ans":0,"expl":"The bus notice names stop 4.","vi_expl":"Thông báo xe buýt chỉ điểm dừng số 4."},
+      {"id":"ket1_p1_q4","stem":"Where can a student buy a museum ticket?","opts":["At the main entrance.","At the side desk.","On the bus."],"ans":1,"expl":"Student tickets are sold at the side desk.","vi_expl":"Vé học sinh được bán ở quầy bên hông."},
+      {"id":"ket1_p1_q5","stem":"When is the science club meeting this week?","opts":["Tuesday.","Wednesday.","Thursday."],"ans":2,"expl":"The notice says Thursday instead of Wednesday.","vi_expl":"Thông báo đổi buổi họp từ thứ Tư sang thứ Năm."},
+      {"id":"ket1_p1_q6","stem":"How can a customer pay at the market stall?","opts":["With a card.","With cash only.","By bus ticket."],"ans":0,"expl":"The stall accepts cards and does not accept cash.","vi_expl":"Quầy nhận thanh toán bằng thẻ và không nhận tiền mặt."}
+    ]
+  },
+  {
+    "id": "ket1_part2", "paper": "1", "section": "part2", "title": "Choose a club", "title_vi": "Chọn câu lạc bộ", "source": "original:exam-expansion-2026",
+    "passage": "A River Rowing Club\nMeet on Saturday mornings. Learn water safety and practise in pairs. Boats and life jackets are provided.\n\nB Craft Cabin\nWork with wood, paper and paint on weekday afternoons. Members make small gifts and take their projects home.\n\nC Star Lab\nExplore the night sky on clear Friday evenings. The club lends telescopes and explains how to find planets and constellations.",
+    "passage_vi": "A Câu lạc bộ Chèo thuyền\nGặp nhau vào sáng thứ Bảy. Học an toàn dưới nước và luyện tập theo cặp. Câu lạc bộ có thuyền và áo phao.\n\nB Xưởng Thủ công\nLàm việc với gỗ, giấy và màu vào các buổi chiều trong tuần. Thành viên làm quà nhỏ và mang sản phẩm về.\n\nC Phòng Thí nghiệm Sao\nKhám phá bầu trời đêm vào tối thứ Sáu quang mây. Câu lạc bộ cho mượn kính thiên văn và chỉ cách tìm hành tinh, chòm sao.",
+    "items": [
+      {"id":"ket1_p2_q1","stem":"I want to make something I can give to a friend.","opts":["A","B","C"],"ans":1,"expl":"Craft Cabin members make small gifts and take them home.","vi_expl":"Xưởng Thủ công cho thành viên làm quà nhỏ rồi mang về."},
+      {"id":"ket1_p2_q2","stem":"I am free only on Friday evenings and like astronomy.","opts":["A","B","C"],"ans":2,"expl":"Star Lab meets on clear Friday evenings and studies the sky.","vi_expl":"Phòng Thí nghiệm Sao họp tối thứ Sáu và học về bầu trời."},
+      {"id":"ket1_p2_q3","stem":"I would like to learn how to stay safe on water.","opts":["A","B","C"],"ans":0,"expl":"River Rowing Club teaches water safety.","vi_expl":"Câu lạc bộ Chèo thuyền dạy kỹ năng an toàn dưới nước."},
+      {"id":"ket1_p2_q4","stem":"I prefer an activity on a weekday afternoon.","opts":["A","B","C"],"ans":1,"expl":"Craft Cabin works on weekday afternoons.","vi_expl":"Xưởng Thủ công hoạt động vào các buổi chiều trong tuần."},
+      {"id":"ket1_p2_q5","stem":"I have never used a telescope but want to try one.","opts":["A","B","C"],"ans":2,"expl":"Star Lab lends telescopes to its members.","vi_expl":"Phòng Thí nghiệm Sao cho thành viên mượn kính thiên văn."},
+      {"id":"ket1_p2_q6","stem":"I want to exercise with another person, not alone.","opts":["A","B","C"],"ans":0,"expl":"Rowing practice is done in pairs.","vi_expl":"Buổi chèo thuyền luyện tập theo cặp."},
+      {"id":"ket1_p2_q7","stem":"I enjoy painting and want to keep my work.","opts":["A","B","C"],"ans":1,"expl":"Craft Cabin uses paint and lets members take projects home.","vi_expl":"Xưởng dùng màu và cho thành viên mang sản phẩm về."}
+    ]
+  },
+  {
+    "id": "ket1_part3", "paper": "1", "section": "part3", "title": "The repair afternoon", "title_vi": "Buổi chiều sửa chữa", "source": "original:exam-expansion-2026",
+    "passage": "When the library announced a repair afternoon, Mina took her old alarm clock there. She had stopped using it because the bell was silent, although the clock still showed the correct time. A volunteer called Ben opened the back and found a loose wire. He let Mina hold the lamp while he joined the wire again. The repair took ten minutes.\n\nMina then noticed a table covered with broken toys. Another volunteer was teaching children to replace wheels and buttons. Mina had planned to go home, but she stayed to help a younger child fix a wooden train. Before leaving, she wrote the repair group's next meeting in her calendar. She liked the idea that an object could be useful again instead of becoming rubbish.",
+    "passage_vi": "Khi thư viện thông báo có buổi sửa đồ, Mina mang chiếc đồng hồ báo thức cũ đến đó. Cô không dùng nó vì chuông đã im, dù đồng hồ vẫn chỉ đúng giờ. Một tình nguyện viên tên Ben mở nắp sau và thấy một sợi dây bị lỏng. Ben để Mina cầm đèn trong khi anh nối lại dây. Việc sửa mất mười phút.\n\nSau đó Mina thấy một chiếc bàn đầy đồ chơi hỏng. Một tình nguyện viên khác đang dạy trẻ thay bánh xe và nút bấm. Mina định về nhà nhưng ở lại giúp một em nhỏ sửa tàu gỗ. Trước khi đi, cô ghi lịch họp tiếp theo của nhóm sửa chữa vào lịch. Cô thích ý tưởng đồ vật có thể được dùng lại thay vì trở thành rác.",
+    "items": [
+      {"id":"ket1_p3_q1","stem":"Why had Mina stopped using the alarm clock?","opts":["It showed the wrong time.","Its bell did not work.","Its lamp was missing."],"ans":1,"expl":"The passage says the clock was accurate but its bell was silent.","vi_expl":"Đồng hồ vẫn đúng giờ nhưng chuông không kêu, nên Mina ngừng dùng."},
+      {"id":"ket1_p3_q2","stem":"What did Mina hold for Ben?","opts":["A wire.","A calendar.","A lamp."],"ans":2,"expl":"Ben asked Mina to hold the lamp while he repaired the wire.","vi_expl":"Mina cầm đèn để Ben nối lại dây."},
+      {"id":"ket1_p3_q3","stem":"What did Mina do after repairing the clock?","opts":["She helped with a toy.","She went straight home.","She bought a new train."],"ans":0,"expl":"She stayed and helped a child fix a wooden train.","vi_expl":"Cô ở lại giúp một em nhỏ sửa tàu gỗ."},
+      {"id":"ket1_p3_q4","stem":"What did Mina write in her calendar?","opts":["A child's birthday.","The next repair meeting.","The library closing time."],"ans":1,"expl":"She recorded when the repair group would meet again.","vi_expl":"Cô ghi thời gian nhóm sửa chữa họp lần sau."},
+      {"id":"ket1_p3_q5","stem":"What did Mina like about repairing things?","opts":["It made objects useful again.","It always took an hour.","It produced new rubbish."],"ans":0,"expl":"She liked reusing objects instead of throwing them away.","vi_expl":"Cô thích việc dùng lại đồ vật thay vì vứt chúng đi."}
+    ]
+  },
+  {
+    "id": "ket1_part4", "paper": "1", "section": "part4", "title": "How bees share work", "title_vi": "Cách ong chia việc", "source": "original:exam-expansion-2026",
+    "passage": "A honeybee colony works like a small town. The queen lays eggs, while worker bees look after the young and collect food. When a worker finds flowers, it returns to the nest and moves in a special way. This movement helps other bees discover the direction of the flowers.\n\nBees also need water, especially on hot days. They do not drink all of it themselves. Some workers carry water home and spread tiny drops inside the nest. The drops cool the air when they evaporate. A colony can therefore change its behaviour when the weather changes.",
+    "passage_vi": "Một đàn ong mật hoạt động như một thị trấn nhỏ. Ong chúa đẻ trứng, còn ong thợ chăm ong non và đi lấy thức ăn. Khi một con ong thợ tìm thấy hoa, nó quay về tổ và chuyển động theo cách đặc biệt. Động tác này giúp các con ong khác biết hướng đến những bông hoa.\n\nOng cũng cần nước, nhất là vào ngày nóng. Chúng không uống hết nước mà một số ong thợ mang nước về tổ và rải những giọt nhỏ bên trong. Khi bay hơi, các giọt nước làm mát không khí. Vì thế đàn ong có thể thay đổi cách hoạt động khi thời tiết thay đổi.",
+    "items": [
+      {"id":"ket1_p4_q1","stem":"The queen's main job is to ___.","opts":["lay eggs","find flowers","cool the nest"],"ans":0,"expl":"The passage says the queen lays eggs.","vi_expl":"Đoạn văn nói ong chúa có nhiệm vụ đẻ trứng."},
+      {"id":"ket1_p4_q2","stem":"How do other bees learn where flowers are?","opts":["By watching a worker's movement.","By following a river.","By listening to rain."],"ans":0,"expl":"A worker's special movement shows the direction of the flowers.","vi_expl":"Động tác đặc biệt của ong thợ chỉ hướng đến hoa."},
+      {"id":"ket1_p4_q3","stem":"When do bees especially need water?","opts":["On cold nights.","On hot days.","After flowers close."],"ans":1,"expl":"The text says bees need water especially on hot days.","vi_expl":"Ong đặc biệt cần nước vào những ngày nóng."},
+      {"id":"ket1_p4_q4","stem":"What do some workers do with water?","opts":["They carry it to the nest.","They turn it into food.","They give it to the queen only."],"ans":0,"expl":"Some workers carry water home and spread it inside the nest.","vi_expl":"Một số ong thợ mang nước về và rải nước trong tổ."},
+      {"id":"ket1_p4_q5","stem":"Why do tiny drops cool the nest?","opts":["They melt the flowers.","They evaporate in the air.","They make more eggs."],"ans":1,"expl":"Cooling happens when the water drops evaporate.","vi_expl":"Nước làm mát khi các giọt nước bay hơi."},
+      {"id":"ket1_p4_q6","stem":"What can a colony do when the weather changes?","opts":["Change its behaviour.","Stop needing food.","Move every flower."],"ans":0,"expl":"The final sentence says the colony can change its behaviour.","vi_expl":"Câu cuối cho biết đàn ong có thể thay đổi cách hoạt động."}
+    ]
+  },
+  {
+    "id": "ket1_part5", "paper": "1", "section": "part5", "title": "A note about the camping trip", "title_vi": "Lời nhắn về chuyến cắm trại", "source": "original:exam-expansion-2026",
+    "passage": "Hi Leo,\n\nThe camping trip is next Saturday, so I am writing to remind you about a few things. We will meet (1) ___ the station at 8:00. Please bring a raincoat (2) ___ the forecast may change. I have a spare tent, but you need (3) ___ bring a sleeping bag. The walk to the lake takes two hours, (4) ___ pack some water. We can cook dinner together when we (5) ___ there. If you have questions, send (6) ___ a message tonight.\n\nSee you,\nNora",
+    "passage_vi": "Chào Leo,\n\nChuyến cắm trại là thứ Bảy tới nên mình nhắc bạn vài điều. Chúng ta sẽ gặp nhau (1) ___ nhà ga lúc 8:00. Hãy mang áo mưa (2) ___ dự báo có thể thay đổi. Mình có lều dự phòng nhưng bạn cần (3) ___ mang túi ngủ. Đường đi bộ đến hồ mất hai giờ, (4) ___ hãy mang nước. Chúng ta có thể cùng nấu bữa tối khi (5) ___ đến nơi. Nếu có câu hỏi, hãy gửi cho mình (6) ___ tin nhắn tối nay.\n\nHẹn gặp bạn,\nNora",
+    "items": [
+      {"id":"ket1_p5_q1","stem":"Gap 1: Write one word.","answerText":"at","expl":"The phrase is “meet at the station”.","vi_expl":"Cụm đúng là “meet at the station” (gặp tại nhà ga)."},
+      {"id":"ket1_p5_q2","stem":"Gap 2: Write one word.","answerText":"because","expl":"Because introduces the reason for bringing a raincoat.","vi_expl":"Because giới thiệu lý do cần mang áo mưa."},
+      {"id":"ket1_p5_q3","stem":"Gap 3: Write one word.","answerText":"to","expl":"The structure is “need to bring”.","vi_expl":"Cấu trúc đúng là “need to bring”."},
+      {"id":"ket1_p5_q4","stem":"Gap 4: Write one word.","answerText":"so","expl":"So connects the long walk with the advice to pack water.","vi_expl":"So nối việc đi bộ lâu với lời khuyên mang nước."},
+      {"id":"ket1_p5_q5","stem":"Gap 5: Write one word.","answerText":"are","expl":"The phrase is “when we are there”.","vi_expl":"Cụm đúng là “when we are there”."},
+      {"id":"ket1_p5_q6","stem":"Gap 6: Write one word.","answerText":"me","expl":"The object pronoun after “send” is “me”.","vi_expl":"Sau động từ “send”, đại từ tân ngữ đúng là “me”."}
+    ]
+  },
+  {
+    "id": "ket2_part1", "paper": "2", "section": "part1", "title": "Town information", "title_vi": "Thông tin trong thị trấn", "source": "original:exam-expansion-2026",
+    "passage": "A. SWIMMING POOL: The shallow pool is closed until Tuesday for cleaning.\nB. TRAIN OFFICE: Buy weekend tickets online before Friday evening.\nC. PARK: Dogs must stay on the lead near the children's play area.\nD. BOOKSHOP: New travel guides are on the top floor.\nE. SCHOOL OFFICE: Parents can collect lost property after 3:00.\nF. CINEMA: The 6:20 film starts in Screen 2 tonight.",
+    "passage_vi": "A. BỂ BƠI: Bể nông đóng cửa đến thứ Ba để vệ sinh.\nB. VĂN PHÒNG TÀU: Hãy mua vé cuối tuần trực tuyến trước tối thứ Sáu.\nC. CÔNG VIÊN: Chó phải được dắt dây gần khu vui chơi trẻ em.\nD. HIỆU SÁCH: Sách hướng dẫn du lịch mới ở tầng trên cùng.\nE. VĂN PHÒNG TRƯỜNG: Phụ huynh có thể nhận đồ thất lạc sau 3:00.\nF. RẠP CHIẾU PHIM: Phim lúc 6:20 tối nay chiếu ở Phòng 2.",
+    "items": [
+      {"id":"ket2_p1_q1","stem":"Which part of the pool is unavailable?","opts":["The deep pool.","The shallow pool.","The changing room."],"ans":1,"expl":"The notice says the shallow pool is closed.","vi_expl":"Thông báo nói bể nông đang đóng cửa."},
+      {"id":"ket2_p1_q2","stem":"When should weekend train tickets be bought online?","opts":["Before Friday evening.","On Saturday morning.","After the journey."],"ans":0,"expl":"The train office asks people to buy them before Friday evening.","vi_expl":"Vé cuối tuần cần được mua trước tối thứ Sáu."},
+      {"id":"ket2_p1_q3","stem":"Where must dogs be on leads?","opts":["Near the play area.","On the top floor.","Inside the cinema."],"ans":0,"expl":"The park rule applies near the children's play area.","vi_expl":"Quy định áp dụng gần khu vui chơi trẻ em."},
+      {"id":"ket2_p1_q4","stem":"Where are the new travel guides?","opts":["In the school office.","On the top floor.","By the station."],"ans":1,"expl":"The bookshop places them on the top floor.","vi_expl":"Hiệu sách đặt sách mới ở tầng trên cùng."},
+      {"id":"ket2_p1_q5","stem":"When can parents collect lost property?","opts":["Before lunch.","After 3:00.","Only on Sunday."],"ans":1,"expl":"Parents can collect it after 3:00.","vi_expl":"Phụ huynh có thể nhận đồ sau 3:00."},
+      {"id":"ket2_p1_q6","stem":"Which screen shows the film at 6:20?","opts":["Screen 1.","Screen 2.","The outdoor screen."],"ans":1,"expl":"The cinema notice names Screen 2.","vi_expl":"Thông báo rạp nêu Phòng 2."}
+    ]
+  },
+  {
+    "id": "ket2_part2", "paper": "2", "section": "part2", "title": "Weekend workshops", "title_vi": "Các buổi học cuối tuần", "source": "original:exam-expansion-2026",
+    "passage": "A Garden Workshop\nSaturday morning: plant herbs, learn to make compost and take home a small pot.\n\nB Photo Walk\nSaturday afternoon: practise taking pictures around old streets. Bring a camera or phone; the leader gives feedback.\n\nC Cooking Table\nSunday afternoon: prepare three simple vegetarian dishes. Ingredients and aprons are supplied.",
+    "passage_vi": "A Buổi học Làm vườn\nSáng thứ Bảy: trồng rau thơm, học làm phân ủ và mang về một chậu nhỏ.\n\nB Đi bộ Chụp ảnh\nChiều thứ Bảy: luyện chụp ảnh quanh các phố cũ. Mang máy ảnh hoặc điện thoại; người hướng dẫn góp ý.\n\nC Bàn Bếp\nChiều Chủ nhật: nấu ba món chay đơn giản. Ban tổ chức cung cấp nguyên liệu và tạp dề.",
+    "items": [
+      {"id":"ket2_p2_q1","stem":"I want to learn how to grow herbs.","opts":["A","B","C"],"ans":0,"expl":"The Garden Workshop teaches participants to plant herbs.","vi_expl":"Buổi học Làm vườn dạy trồng rau thơm."},
+      {"id":"ket2_p2_q2","stem":"I have a phone and want advice about my pictures.","opts":["A","B","C"],"ans":1,"expl":"The Photo Walk accepts phones and gives feedback.","vi_expl":"Đi bộ Chụp ảnh nhận điện thoại và có góp ý."},
+      {"id":"ket2_p2_q3","stem":"I cannot come on Saturday.","opts":["A","B","C"],"ans":2,"expl":"Cooking Table is the only Sunday workshop.","vi_expl":"Bàn Bếp là buổi học duy nhất vào Chủ nhật."},
+      {"id":"ket2_p2_q4","stem":"I would like to take a plant home.","opts":["A","B","C"],"ans":0,"expl":"Garden Workshop includes a small pot to take home.","vi_expl":"Buổi học Làm vườn có chậu nhỏ mang về."},
+      {"id":"ket2_p2_q5","stem":"I do not own a camera.","opts":["A","B","C"],"ans":1,"expl":"The Photo Walk says a phone can be used instead of a camera.","vi_expl":"Đi bộ Chụp ảnh cho phép dùng điện thoại thay máy ảnh."},
+      {"id":"ket2_p2_q6","stem":"I want to cook without meat and do not have an apron.","opts":["A","B","C"],"ans":2,"expl":"Cooking Table prepares vegetarian food and supplies aprons.","vi_expl":"Bàn Bếp nấu món chay và cung cấp tạp dề."},
+      {"id":"ket2_p2_q7","stem":"I would like to use garden waste usefully.","opts":["A","B","C"],"ans":0,"expl":"The Garden Workshop teaches compost making.","vi_expl":"Buổi học Làm vườn dạy cách làm phân ủ."}
+    ]
+  },
+  {
+    "id": "ket2_part3", "paper": "2", "section": "part3", "title": "A new route home", "title_vi": "Một đường về mới", "source": "original:exam-expansion-2026",
+    "passage": "For years, Joel cycled home beside the river. In spring, however, a bridge repair closed his usual path. At first he was annoyed because the new route seemed much longer. His sister suggested following the signs through the community garden instead.\n\nThe garden path added only six minutes, and it had two advantages. It was quieter than the road and passed a water tap. Joel stopped there on warm afternoons to fill his bottle. He also met gardeners who gave him tomatoes at the end of the season. When the bridge reopened, Joel tried his old route once, but he chose the garden path the next day. The repair had helped him discover a safer and friendlier journey.",
+    "passage_vi": "Nhiều năm, Joel đạp xe về nhà bên cạnh con sông. Tuy nhiên vào mùa xuân, việc sửa cầu khiến lối quen thuộc bị đóng. Ban đầu cậu khó chịu vì tuyến mới có vẻ dài hơn nhiều. Chị gái gợi ý đi theo các biển chỉ dẫn qua vườn cộng đồng.\n\nLối qua vườn chỉ thêm sáu phút và có hai ưu điểm. Nó yên tĩnh hơn đường lớn và đi qua một vòi nước. Vào những buổi chiều ấm, Joel dừng lại để đổ đầy chai. Cậu cũng gặp những người làm vườn, họ tặng cà chua vào cuối mùa. Khi cầu mở lại, Joel thử đường cũ một lần nhưng hôm sau chọn lối qua vườn. Việc sửa cầu giúp cậu phát hiện một hành trình an toàn và thân thiện hơn.",
+    "items": [
+      {"id":"ket2_p3_q1","stem":"Why was Joel's usual route closed?","opts":["A bridge was being repaired.","The river was too high.","The garden was being built."],"ans":0,"expl":"The bridge repair closed the path beside the river.","vi_expl":"Lối ven sông đóng vì cây cầu đang được sửa."},
+      {"id":"ket2_p3_q2","stem":"Who suggested the garden path?","opts":["A gardener.","Joel's sister.","A road worker."],"ans":1,"expl":"Joel's sister suggested following the garden signs.","vi_expl":"Chị gái của Joel gợi ý lối qua vườn."},
+      {"id":"ket2_p3_q3","stem":"How much longer was the new route?","opts":["Six minutes.","An hour.","The passage does not say."],"ans":0,"expl":"The garden path added only six minutes.","vi_expl":"Lối mới chỉ thêm sáu phút."},
+      {"id":"ket2_p3_q4","stem":"What did Joel use at the garden?","opts":["A water tap.","A bicycle shop.","A bridge."],"ans":0,"expl":"He used the water tap to fill his bottle.","vi_expl":"Cậu dùng vòi nước để đổ đầy chai."},
+      {"id":"ket2_p3_q5","stem":"Why did Joel continue using the garden path?","opts":["It was safer and more pleasant.","It was shorter than every road.","It led to a train station."],"ans":0,"expl":"He found the garden route safer and friendlier.","vi_expl":"Cậu thấy lối qua vườn an toàn và dễ chịu hơn."}
+    ]
+  },
+  {
+    "id": "ket2_part4", "paper": "2", "section": "part4", "title": "Why leaves change colour", "title_vi": "Vì sao lá đổi màu", "source": "original:exam-expansion-2026",
+    "passage": "Leaves look green because they contain a substance that catches light for the tree. In autumn, days become shorter and the tree begins to prepare for winter. It stops making as much of the green substance, so other colours that were hidden become easier to see.\n\nYellow colours were already present in many leaves. Red colours can appear when a leaf makes new substances before it falls. Weather also matters: bright days and cool nights often make red leaves stronger, while heavy rain may wash colour away quickly.",
+    "passage_vi": "Lá có màu xanh vì chứa một chất hấp thụ ánh sáng cho cây. Vào mùa thu, ngày ngắn hơn và cây bắt đầu chuẩn bị cho mùa đông. Cây tạo ít chất xanh hơn nên những màu vốn bị che khuất trở nên dễ thấy.\n\nMàu vàng đã có sẵn trong nhiều chiếc lá. Màu đỏ có thể xuất hiện khi lá tạo ra các chất mới trước khi rụng. Thời tiết cũng có ảnh hưởng: ngày sáng và đêm mát thường làm màu đỏ đậm hơn, còn mưa lớn có thể nhanh chóng rửa trôi màu.",
+    "items": [
+      {"id":"ket2_p4_q1","stem":"Leaves are green because they contain a substance that catches ___.","opts":["light","rain","wind"],"ans":0,"expl":"The substance catches light for the tree.","vi_expl":"Chất trong lá hấp thụ ánh sáng cho cây."},
+      {"id":"ket2_p4_q2","stem":"What happens when autumn days become shorter?","opts":["Trees make less green substance.","Trees grow taller immediately.","Leaves become wet."],"ans":0,"expl":"Shorter days make the tree reduce its green substance.","vi_expl":"Ngày ngắn khiến cây giảm việc tạo chất xanh."},
+      {"id":"ket2_p4_q3","stem":"Which colour was already in many leaves?","opts":["Red.","Yellow.","Purple."],"ans":1,"expl":"The passage says yellow was already present.","vi_expl":"Đoạn văn nói màu vàng đã có sẵn trong nhiều lá."},
+      {"id":"ket2_p4_q4","stem":"When can red colours appear?","opts":["Before a leaf falls.","Only under heavy rain.","After a tree is cut."],"ans":0,"expl":"A leaf may make red substances before it falls.","vi_expl":"Lá có thể tạo chất đỏ trước khi rụng."},
+      {"id":"ket2_p4_q5","stem":"What weather often makes red leaves stronger?","opts":["Bright days and cool nights.","Dark days and warm nights.","Continuous heavy rain."],"ans":0,"expl":"Bright days and cool nights are linked with stronger red colour.","vi_expl":"Ngày sáng và đêm mát thường làm màu đỏ đậm hơn."},
+      {"id":"ket2_p4_q6","stem":"What may heavy rain do?","opts":["Wash colour away.","Make leaves stay green forever.","Shorten the tree."],"ans":0,"expl":"Heavy rain may quickly wash the colour away.","vi_expl":"Mưa lớn có thể nhanh chóng rửa trôi màu."}
+    ]
+  },
+  {
+    "id": "ket2_part5", "paper": "2", "section": "part5", "title": "A music lesson", "title_vi": "Một buổi học nhạc", "source": "original:exam-expansion-2026",
+    "passage": "Dear Ana,\n\nI enjoyed the music lesson yesterday. Our teacher asked us (1) ___ bring a small instrument, so I took my recorder. We played a tune (2) ___ everyone knew from school. I was nervous (3) ___ I had never played it with other people. After a few minutes, I felt better. The teacher said that listening (4) ___ the group was as important as playing loudly. We practised until the tune sounded (5) ___ one voice. I hope you can join us (6) ___ week.\n\nLove,\nMai",
+    "passage_vi": "Ana thân mến,\n\nMình rất thích buổi học nhạc hôm qua. Giáo viên yêu cầu chúng mình (1) ___ mang một nhạc cụ nhỏ nên mình mang sáo dọc. Chúng mình chơi một giai điệu (2) ___ mọi người đều biết từ trường. Mình lo lắng (3) ___ chưa từng chơi cùng người khác. Sau vài phút, mình thấy dễ chịu hơn. Giáo viên nói lắng nghe (4) ___ cả nhóm cũng quan trọng như chơi to. Chúng mình luyện tập đến khi giai điệu nghe như (5) ___ một giọng. Mình mong tuần (6) ___ bạn có thể tham gia.\n\nThân,\nMai",
+    "items": [
+      {"id":"ket2_p5_q1","stem":"Gap 1: Write one word.","answerText":"to","expl":"The infinitive is “asked us to bring”.","vi_expl":"Động từ nguyên mẫu dùng sau “asked us” là “to bring”."},
+      {"id":"ket2_p5_q2","stem":"Gap 2: Write one word.","answerText":"that","expl":"That introduces the relative clause describing the tune.","vi_expl":"That mở đầu mệnh đề bổ nghĩa cho giai điệu."},
+      {"id":"ket2_p5_q3","stem":"Gap 3: Write one word.","answerText":"because","expl":"Because gives the reason Mai felt nervous.","vi_expl":"Because nêu lý do Mai lo lắng."},
+      {"id":"ket2_p5_q4","stem":"Gap 4: Write one word.","answerText":"to","expl":"The phrase is “listening to the group”.","vi_expl":"Cụm đúng là “listening to the group”."},
+      {"id":"ket2_p5_q5","stem":"Gap 5: Write one word.","answerText":"like","expl":"The phrase “sounded like one voice” compares the sound.","vi_expl":"Cụm “sounded like one voice” diễn tả sự so sánh."},
+      {"id":"ket2_p5_q6","stem":"Gap 6: Write one word.","answerText":"next","expl":"The natural phrase is “next week”.","vi_expl":"Cụm thời gian đúng là “next week”."}
+    ]
+  },
+  {
+    "id": "ket3_part1", "paper": "3", "section": "part1", "title": "At the community centre", "title_vi": "Ở trung tâm cộng đồng", "source": "original:exam-expansion-2026",
+    "passage": "A. NOTICEBOARD: The language exchange has moved to Room 5.\nB. CAFETERIA: Please put used cups on the tray by the door.\nC. ART ROOM: Clay must be kept covered when you leave.\nD. RECEPTION: Visitors for the chess club should sign in here.\nE. LIFT: This lift stops only on floors 1, 3 and 5.\nF. GYM: The last class ends at 9:15; please leave quietly.",
+    "passage_vi": "A. BẢNG THÔNG BÁO: Buổi trao đổi ngôn ngữ chuyển sang Phòng 5.\nB. CĂNG TIN: Hãy đặt cốc đã dùng lên khay cạnh cửa.\nC. PHÒNG NGHỆ THUẬT: Hãy đậy đất sét khi bạn rời đi.\nD. LỄ TÂN: Khách đến câu lạc bộ cờ phải đăng ký tại đây.\nE. THANG MÁY: Thang máy này chỉ dừng ở tầng 1, 3 và 5.\nF. PHÒNG TẬP: Lớp cuối kết thúc lúc 9:15; hãy rời đi yên lặng.",
+    "items": [
+      {"id":"ket3_p1_q1","stem":"Where is the language exchange now?","opts":["Room 3.","Room 5.","The reception desk."],"ans":1,"expl":"It has moved to Room 5.","vi_expl":"Buổi trao đổi ngôn ngữ chuyển sang Phòng 5."},
+      {"id":"ket3_p1_q2","stem":"Where should used cups go?","opts":["On the tray by the door.","Under the table.","In the art room."],"ans":0,"expl":"The cafeteria asks visitors to put them on the tray by the door.","vi_expl":"Căng tin yêu cầu đặt cốc lên khay cạnh cửa."},
+      {"id":"ket3_p1_q3","stem":"What should people do with clay before leaving?","opts":["Paint it red.","Keep it covered.","Take it to reception."],"ans":1,"expl":"Clay must be kept covered.","vi_expl":"Đất sét phải được đậy lại."},
+      {"id":"ket3_p1_q4","stem":"Who should sign in at reception?","opts":["Chess club visitors.","Lift passengers.","Art teachers."],"ans":0,"expl":"Visitors for the chess club sign in at reception.","vi_expl":"Khách đến câu lạc bộ cờ đăng ký ở lễ tân."},
+      {"id":"ket3_p1_q5","stem":"Which floors does the lift stop at?","opts":["1, 3 and 5.","1, 2 and 3.","2, 4 and 6."],"ans":0,"expl":"The lift stops only on floors 1, 3 and 5.","vi_expl":"Thang máy chỉ dừng ở tầng 1, 3 và 5."},
+      {"id":"ket3_p1_q6","stem":"What should people do after the last gym class?","opts":["Leave quietly.","Start another class.","Use the lift twice."],"ans":0,"expl":"The gym asks people to leave quietly after 9:15.","vi_expl":"Phòng tập yêu cầu rời đi yên lặng sau 9:15."}
+    ]
+  },
+  {
+    "id": "ket3_part2", "paper": "3", "section": "part2", "title": "Find a quiet place", "title_vi": "Tìm một nơi yên tĩnh", "source": "original:exam-expansion-2026",
+    "passage": "A Hill Library\nA small library with silent desks, free internet and a view of the park. It closes at 6 p.m.\n\nB Greenhouse Café\nA calm café beside the market. Customers may work at shared tables until 8 p.m.; drinks are available.\n\nC Boat House\nA bright room by the lake for groups. It has a large table and opens late, but it can be noisy when boats arrive.",
+    "passage_vi": "A Thư viện Đồi\nMột thư viện nhỏ có bàn yên tĩnh, internet miễn phí và tầm nhìn ra công viên. Thư viện đóng cửa lúc 6 giờ tối.\n\nB Quán Cà phê Nhà kính\nMột quán yên tĩnh cạnh chợ. Khách có thể làm việc ở bàn chung đến 8 giờ tối; quán có đồ uống.\n\nC Nhà Thuyền\nMột phòng sáng cạnh hồ dành cho nhóm. Phòng có bàn lớn và mở cửa muộn nhưng có thể ồn khi thuyền đến.",
+    "items": [
+      {"id":"ket3_p2_q1","stem":"I need free internet and complete silence.","opts":["A","B","C"],"ans":0,"expl":"Hill Library offers free internet and silent desks.","vi_expl":"Thư viện Đồi có internet miễn phí và bàn yên tĩnh."},
+      {"id":"ket3_p2_q2","stem":"I want to work after 7 p.m. and buy a drink.","opts":["A","B","C"],"ans":1,"expl":"Greenhouse Café stays open until 8 p.m. and serves drinks.","vi_expl":"Quán Nhà kính mở đến 8 giờ và có đồ uống."},
+      {"id":"ket3_p2_q3","stem":"We are a group and need one large table.","opts":["A","B","C"],"ans":2,"expl":"Boat House has a large table for groups.","vi_expl":"Nhà Thuyền có bàn lớn dành cho nhóm."},
+      {"id":"ket3_p2_q4","stem":"I would like to look at trees while I study.","opts":["A","B","C"],"ans":0,"expl":"Hill Library has a view of the park.","vi_expl":"Thư viện Đồi nhìn ra công viên."},
+      {"id":"ket3_p2_q5","stem":"Noise from arriving boats would not bother me.","opts":["A","B","C"],"ans":2,"expl":"Boat House can become noisy when boats arrive.","vi_expl":"Nhà Thuyền có thể ồn khi thuyền đến."},
+      {"id":"ket3_p2_q6","stem":"I can study only until six o'clock.","opts":["A","B","C"],"ans":0,"expl":"Hill Library closes at 6 p.m.","vi_expl":"Thư viện Đồi đóng cửa lúc 6 giờ tối."},
+      {"id":"ket3_p2_q7","stem":"I prefer a place beside a market.","opts":["A","B","C"],"ans":1,"expl":"Greenhouse Café is beside the market.","vi_expl":"Quán Nhà kính nằm cạnh chợ."}
+    ]
+  },
+  {
+    "id": "ket3_part3", "paper": "3", "section": "part3", "title": "The borrowed bicycle", "title_vi": "Chiếc xe đạp mượn", "source": "original:exam-expansion-2026",
+    "passage": "On Saturday, Priya borrowed a bicycle from the town centre to visit her aunt. The green bicycle felt comfortable, but Priya discovered that its front light did not work when the sky grew dark. She stopped at a small shop and bought a cheap battery.\n\nAt her aunt's house, Priya explained what had happened. Her aunt said that the rental company normally checked every light, so Priya should report the problem. Priya sent a message with the bicycle number before riding home. The company replied that another customer had returned it only an hour earlier. They thanked Priya and offered her a free hour on her next rental. Priya was glad she had reported the fault instead of leaving it for someone else.",
+    "passage_vi": "Thứ Bảy, Priya mượn một chiếc xe đạp ở trung tâm thị trấn để đến thăm dì. Chiếc xe màu xanh lá rất dễ đi nhưng khi trời tối, Priya phát hiện đèn trước không hoạt động. Cô dừng ở một cửa hàng nhỏ và mua một cục pin rẻ.\n\nỞ nhà dì, Priya kể chuyện. Dì nói công ty cho thuê thường kiểm tra mọi đèn nên Priya nên báo sự cố. Priya gửi tin nhắn kèm số xe trước khi đạp về. Công ty trả lời rằng một khách khác vừa trả xe một giờ trước. Họ cảm ơn Priya và tặng cô một giờ thuê miễn phí lần sau. Priya vui vì đã báo lỗi thay vì để người khác gặp vấn đề.",
+    "items": [
+      {"id":"ket3_p3_q1","stem":"What problem did the bicycle have?","opts":["Its front light did not work.","Its seat was green.","Its battery was expensive."],"ans":0,"expl":"The front light failed when it became dark.","vi_expl":"Đèn trước không hoạt động khi trời tối."},
+      {"id":"ket3_p3_q2","stem":"What did Priya buy?","opts":["A new bicycle.","A battery.","A message."],"ans":1,"expl":"She bought a battery at a small shop.","vi_expl":"Cô mua một cục pin ở cửa hàng nhỏ."},
+      {"id":"ket3_p3_q3","stem":"What did her aunt advise her to do?","opts":["Keep the bicycle.","Report the problem.","Ride only in daylight."],"ans":1,"expl":"Her aunt said Priya should tell the rental company.","vi_expl":"Dì khuyên Priya báo cho công ty cho thuê."},
+      {"id":"ket3_p3_q4","stem":"Why did the company thank Priya?","opts":["She found a new customer.","She reported a fault.","She returned the bike early."],"ans":1,"expl":"Priya reported the broken light, helping the company notice the fault.","vi_expl":"Priya báo đèn hỏng nên công ty biết về sự cố."},
+      {"id":"ket3_p3_q5","stem":"What did Priya receive?","opts":["A free hour next time.","A green lamp.","A refund for the battery."],"ans":0,"expl":"The company offered a free hour on her next rental.","vi_expl":"Công ty tặng cô một giờ thuê miễn phí lần sau."}
+    ]
+  },
+  {
+    "id": "ket3_part4", "paper": "3", "section": "part4", "title": "The work of earthworms", "title_vi": "Công việc của giun đất", "source": "original:exam-expansion-2026",
+    "passage": "Earthworms spend much of their time under the soil. As they move, they make narrow tunnels. These tunnels let air and water reach plant roots more easily. Earthworms also eat dead leaves and other small pieces of plant material.\n\nAfter food passes through an earthworm, it leaves the body as a dark, rich material. Gardeners value this material because it adds nutrients to the soil. Earthworms prefer damp ground, but they cannot live in a place that is completely full of water. A healthy garden therefore needs both moisture and spaces for air.",
+    "passage_vi": "Giun đất dành phần lớn thời gian dưới đất. Khi di chuyển, chúng tạo những đường hầm hẹp. Đường hầm giúp không khí và nước đến rễ cây dễ hơn. Giun đất cũng ăn lá khô và những mảnh nhỏ của cây.\n\nSau khi thức ăn đi qua cơ thể giun, nó thải ra một chất sẫm màu và giàu dinh dưỡng. Người làm vườn coi trọng chất này vì nó bổ sung chất dinh dưỡng cho đất. Giun thích đất ẩm nhưng không thể sống ở nơi ngập hoàn toàn. Vì vậy vườn khỏe cần cả độ ẩm và khoảng không cho không khí.",
+    "items": [
+      {"id":"ket3_p4_q1","stem":"What do earthworm tunnels allow to reach roots?","opts":["Air and water.","Sunlight and leaves.","Only warm soil."],"ans":0,"expl":"Tunnels help air and water reach plant roots.","vi_expl":"Đường hầm giúp không khí và nước đến rễ cây."},
+      {"id":"ket3_p4_q2","stem":"What do earthworms eat?","opts":["Living birds.","Dead leaves and plant pieces.","Fresh stones."],"ans":1,"expl":"They eat dead leaves and small plant material.","vi_expl":"Giun ăn lá khô và mảnh nhỏ của cây."},
+      {"id":"ket3_p4_q3","stem":"Why do gardeners value earthworm material?","opts":["It adds nutrients to soil.","It removes all water.","It makes tunnels disappear."],"ans":0,"expl":"The dark material is rich and adds nutrients.","vi_expl":"Chất sẫm màu giàu dinh dưỡng và bổ sung chất cho đất."},
+      {"id":"ket3_p4_q4","stem":"What kind of ground do earthworms prefer?","opts":["Damp ground.","Completely dry ground.","Ground full of water."],"ans":0,"expl":"Earthworms prefer damp ground but not flooding.","vi_expl":"Giun thích đất ẩm nhưng không thích đất ngập."},
+      {"id":"ket3_p4_q5","stem":"What cannot earthworms live in?","opts":["A garden with air.","A place completely full of water.","Soil with plant roots."],"ans":1,"expl":"They cannot live where the soil is completely full of water.","vi_expl":"Giun không thể sống ở nơi đất ngập hoàn toàn."},
+      {"id":"ket3_p4_q6","stem":"What does a healthy garden need?","opts":["Moisture and air spaces.","Only a lot of water.","Only dry leaves."],"ans":0,"expl":"The final sentence names both moisture and air spaces.","vi_expl":"Câu cuối nêu cả độ ẩm và khoảng không cho không khí."}
+    ]
+  },
+  {
+    "id": "ket3_part5", "paper": "3", "section": "part5", "title": "An early train", "title_vi": "Chuyến tàu sớm", "source": "original:exam-expansion-2026",
+    "passage": "Hello Sam,\n\nOur train leaves early tomorrow, so let us meet (1) ___ the ticket machine at 6:15. I checked the timetable (2) ___ the website last night. The train is usually quiet (3) ___ this hour. Bring a jacket because the station can be cold (4) ___ the morning. I will carry the map, but please bring (5) ___ own ticket. We should arrive before the museum (6) ___ .\n\nBest,\nLinh",
+    "passage_vi": "Chào Sam,\n\nTàu của chúng ta khởi hành sớm vào ngày mai nên hãy gặp nhau (1) ___ máy bán vé lúc 6:15. Tối qua mình đã kiểm tra lịch tàu (2) ___ trang web. Tàu thường yên tĩnh (3) ___ giờ này. Hãy mang áo khoác vì nhà ga có thể lạnh (4) ___ buổi sáng. Mình sẽ mang bản đồ nhưng bạn nhớ mang vé (5) ___ của mình. Chúng ta nên đến trước khi bảo tàng (6) ___ .\n\nThân,\nLinh",
+    "items": [
+      {"id":"ket3_p5_q1","stem":"Gap 1: Write one word.","answerText":"by","expl":"The meeting place is by the ticket machine.","vi_expl":"Địa điểm gặp là cạnh máy bán vé: “by the ticket machine”."},
+      {"id":"ket3_p5_q2","stem":"Gap 2: Write one word.","answerText":"on","expl":"The timetable was checked on the website.","vi_expl":"Lịch tàu được kiểm tra trên trang web: “on the website”."},
+      {"id":"ket3_p5_q3","stem":"Gap 3: Write one word.","answerText":"at","expl":"The phrase is “at this hour”.","vi_expl":"Cụm đúng là “at this hour”."},
+      {"id":"ket3_p5_q4","stem":"Gap 4: Write one word.","answerText":"in","expl":"The phrase is “in the morning”.","vi_expl":"Cụm thời gian đúng là “in the morning”."},
+      {"id":"ket3_p5_q5","stem":"Gap 5: Write one word.","answerText":"your","expl":"The possessive adjective is needed before “own ticket”.","vi_expl":"Cần tính từ sở hữu trước “own ticket” là “your”."},
+      {"id":"ket3_p5_q6","stem":"Gap 6: Write one word.","answerText":"opens","expl":"The museum is singular, so the present form is “opens”.","vi_expl":"Chủ ngữ “museum” số ít nên dùng “opens”."}
+    ]
+  },
+  {
+    "id": "ket4_part1", "paper": "4", "section": "part1", "title": "School day notices", "title_vi": "Thông báo trong ngày học", "source": "original:exam-expansion-2026",
+    "passage": "A. MUSIC ROOM: Please return headphones before the lunch bell.\nB. SCHOOL BUS: The afternoon bus leaves from the north gate today.\nC. CAFÉ: The fruit salad is half price after 4 p.m.\nD. COMPUTER ROOM: Save your work before asking for help.\nE. SPORTS FIELD: Football practice is cancelled because the grass is wet.\nF. MAIN HALL: The drama group is selling tickets during the break.",
+    "passage_vi": "A. PHÒNG NHẠC: Hãy trả tai nghe trước hồi chuông ăn trưa.\nB. XE BUÝT TRƯỜNG: Xe buýt buổi chiều hôm nay khởi hành từ cổng phía bắc.\nC. QUÁN ĂN: Sa lát hoa quả giảm nửa giá sau 4 giờ chiều.\nD. PHÒNG MÁY TÍNH: Hãy lưu bài trước khi nhờ trợ giúp.\nE. SÂN THỂ THAO: Buổi tập bóng đá bị hủy vì cỏ ướt.\nF. SẢNH CHÍNH: Nhóm kịch bán vé trong giờ nghỉ.",
+    "items": [
+      {"id":"ket4_p1_q1","stem":"When should headphones be returned?","opts":["Before lunch.","After school.","Next Monday."],"ans":0,"expl":"Headphones must be returned before the lunch bell.","vi_expl":"Tai nghe phải được trả trước hồi chuông ăn trưa."},
+      {"id":"ket4_p1_q2","stem":"Where will the afternoon bus leave from?","opts":["The south gate.","The north gate.","The main hall."],"ans":1,"expl":"The bus leaves from the north gate today.","vi_expl":"Xe buýt hôm nay khởi hành từ cổng phía bắc."},
+      {"id":"ket4_p1_q3","stem":"When is fruit salad half price?","opts":["Before 4 p.m.","At lunchtime only.","After 4 p.m."],"ans":2,"expl":"The café offers the discount after 4 p.m.","vi_expl":"Quán giảm giá sau 4 giờ chiều."},
+      {"id":"ket4_p1_q4","stem":"What should students do before asking for computer help?","opts":["Save their work.","Turn off the room.","Return headphones."],"ans":0,"expl":"The computer room asks students to save work first.","vi_expl":"Phòng máy tính yêu cầu lưu bài trước."},
+      {"id":"ket4_p1_q5","stem":"Why is football practice cancelled?","opts":["The field is wet.","The tickets are sold.","The bus is late."],"ans":0,"expl":"The grass is wet, so practice is cancelled.","vi_expl":"Cỏ ướt nên buổi tập bị hủy."},
+      {"id":"ket4_p1_q6","stem":"When can students buy drama tickets?","opts":["During the break.","Before breakfast.","After the football practice."],"ans":0,"expl":"The drama group sells tickets during the break.","vi_expl":"Nhóm kịch bán vé trong giờ nghỉ."}
+    ]
+  },
+  {
+    "id": "ket4_part2", "paper": "4", "section": "part2", "title": "Places to eat", "title_vi": "Nơi ăn uống", "source": "original:exam-expansion-2026",
+    "passage": "A Corner Bakery\nFresh bread and simple sandwiches. It opens at 6 a.m. and has a few seats outside.\n\nB Orange Kitchen\nA family restaurant serving warm meals. It has a children's menu and accepts bookings for large groups.\n\nC Night Noodles\nA small takeaway open until midnight. Customers choose noodles and vegetables at the counter; there are no tables.",
+    "passage_vi": "A Tiệm Bánh Góc Phố\nBánh mì tươi và bánh kẹp đơn giản. Tiệm mở lúc 6 giờ sáng và có vài chỗ ngồi bên ngoài.\n\nB Bếp Cam\nNhà hàng gia đình phục vụ món nóng. Nhà hàng có thực đơn trẻ em và nhận đặt chỗ cho nhóm đông.\n\nC Mì Đêm\nMột quán mang đi nhỏ mở đến nửa đêm. Khách chọn mì và rau tại quầy; quán không có bàn.",
+    "items": [
+      {"id":"ket4_p2_q1","stem":"I need breakfast before 7 a.m.","opts":["A","B","C"],"ans":0,"expl":"Corner Bakery opens at 6 a.m.","vi_expl":"Tiệm Bánh Góc Phố mở cửa từ 6 giờ sáng."},
+      {"id":"ket4_p2_q2","stem":"We are a large group and want to reserve seats.","opts":["A","B","C"],"ans":1,"expl":"Orange Kitchen accepts bookings for large groups.","vi_expl":"Bếp Cam nhận đặt chỗ cho nhóm đông."},
+      {"id":"ket4_p2_q3","stem":"I want to choose vegetables and take the food home late at night.","opts":["A","B","C"],"ans":2,"expl":"Night Noodles lets customers choose vegetables and stays open until midnight.","vi_expl":"Mì Đêm cho chọn rau và mở đến nửa đêm."},
+      {"id":"ket4_p2_q4","stem":"My young child needs a suitable meal.","opts":["A","B","C"],"ans":1,"expl":"Orange Kitchen has a children's menu.","vi_expl":"Bếp Cam có thực đơn trẻ em."},
+      {"id":"ket4_p2_q5","stem":"I would like to sit outside.","opts":["A","B","C"],"ans":0,"expl":"Corner Bakery has a few seats outside.","vi_expl":"Tiệm Bánh Góc Phố có vài chỗ ngồi bên ngoài."},
+      {"id":"ket4_p2_q6","stem":"I do not need a chair because I am taking the meal away.","opts":["A","B","C"],"ans":2,"expl":"Night Noodles is a takeaway with no tables.","vi_expl":"Mì Đêm là quán mang đi và không có bàn."},
+      {"id":"ket4_p2_q7","stem":"I want a warm meal with my family.","opts":["A","B","C"],"ans":1,"expl":"Orange Kitchen is a family restaurant serving warm meals.","vi_expl":"Bếp Cam là nhà hàng gia đình có món nóng."}
+    ]
+  },
+  {
+    "id": "ket4_part3", "paper": "4", "section": "part3", "title": "The school garden", "title_vi": "Khu vườn của trường", "source": "original:exam-expansion-2026",
+    "passage": "The school garden began with three empty boxes behind the science room. Their teacher, Ms Patel, asked students what they wanted to grow. They chose lettuce, beans and strawberries because these plants could be used in the cafeteria.\n\nAt first, the students watered the boxes every day. Then a rainy week arrived and they learned to check the soil before adding water. In June, birds ate several strawberries, so the class made a light net from old string. The garden did not produce enough food for the whole school, but it taught students to plan and care for living things. They decided to keep it during the summer with a weekly volunteer rota.",
+    "passage_vi": "Khu vườn của trường bắt đầu với ba chiếc hộp trống phía sau phòng khoa học. Cô giáo Patel hỏi học sinh muốn trồng gì. Các em chọn xà lách, đậu và dâu tây vì những cây này có thể dùng trong căng tin.\n\nBan đầu, học sinh tưới các hộp mỗi ngày. Sau đó có một tuần mưa và các em học cách kiểm tra đất trước khi tưới. Tháng Sáu, chim ăn mất vài quả dâu nên cả lớp làm một tấm lưới nhẹ từ dây cũ. Vườn không tạo đủ thức ăn cho cả trường nhưng dạy học sinh lập kế hoạch và chăm sóc sinh vật. Các em quyết định duy trì vườn vào mùa hè theo lịch tình nguyện mỗi tuần.",
+    "items": [
+      {"id":"ket4_p3_q1","stem":"Where was the garden started?","opts":["Behind the science room.","Inside the cafeteria.","Beside the sports field."],"ans":0,"expl":"The first boxes were behind the science room.","vi_expl":"Những chiếc hộp đầu tiên ở phía sau phòng khoa học."},
+      {"id":"ket4_p3_q2","stem":"Why did students choose lettuce, beans and strawberries?","opts":["They grew in winter.","The cafeteria could use them.","Birds preferred them."],"ans":1,"expl":"The plants could be used in the cafeteria.","vi_expl":"Những cây này có thể được dùng trong căng tin."},
+      {"id":"ket4_p3_q3","stem":"What did the rainy week teach the students?","opts":["To water twice a day.","To check the soil first.","To remove the boxes."],"ans":1,"expl":"They learned to check the soil before adding water.","vi_expl":"Các em học cách kiểm tra đất trước khi tưới."},
+      {"id":"ket4_p3_q4","stem":"How did the class protect the strawberries?","opts":["With old string and a net.","By moving them indoors.","By feeding the birds."],"ans":0,"expl":"They made a light net from old string.","vi_expl":"Cả lớp làm lưới nhẹ từ dây cũ."},
+      {"id":"ket4_p3_q5","stem":"What will happen to the garden in summer?","opts":["It will be sold.","Volunteers will care for it weekly.","It will produce food for everyone."],"ans":1,"expl":"The class planned a weekly volunteer rota.","vi_expl":"Lớp lập lịch tình nguyện chăm sóc vườn hằng tuần."}
+    ]
+  },
+  {
+    "id": "ket4_part4", "paper": "4", "section": "part4", "title": "Making paper from old newspapers", "title_vi": "Làm giấy từ báo cũ", "source": "original:exam-expansion-2026",
+    "passage": "People can make new paper from old newspapers at home. First, tear the paper into small pieces and soak them in warm water. After several hours, the pieces become soft. A blender can turn them into a thick mixture, but it should be used carefully.\n\nNext, spread the mixture across a flat screen. Lift the screen slowly so the water can run away. The wet sheet needs to dry for a day or two. It will not look exactly like shop paper, but it can be used for cards, labels and small pictures. Adding flower petals gives the finished paper a different appearance.",
+    "passage_vi": "Mọi người có thể làm giấy mới từ báo cũ tại nhà. Trước tiên, xé giấy thành mảnh nhỏ và ngâm trong nước ấm. Sau vài giờ, các mảnh giấy mềm ra. Có thể dùng máy xay để biến chúng thành hỗn hợp đặc nhưng cần dùng cẩn thận.\n\nTiếp theo, trải hỗn hợp lên một tấm lưới phẳng. Từ từ nhấc lưới để nước chảy đi. Tờ giấy ướt cần khô trong một hoặc hai ngày. Giấy không giống hẳn giấy bán trong cửa hàng nhưng dùng được để làm thiệp, nhãn và tranh nhỏ. Thêm cánh hoa sẽ tạo vẻ khác cho giấy thành phẩm.",
+    "items": [
+      {"id":"ket4_p4_q1","stem":"What should be done to the paper first?","opts":["Tear and soak it.","Paint it green.","Dry it for two days."],"ans":0,"expl":"The first step is tearing the paper and soaking it.","vi_expl":"Bước đầu là xé giấy rồi ngâm giấy."},
+      {"id":"ket4_p4_q2","stem":"When do the paper pieces become soft?","opts":["After several hours in water.","Before they are torn.","After they are labelled."],"ans":0,"expl":"They become soft after soaking for several hours.","vi_expl":"Giấy mềm sau khi ngâm vài giờ."},
+      {"id":"ket4_p4_q3","stem":"What turns the pieces into a thick mixture?","opts":["A screen.","A blender.","A label."],"ans":1,"expl":"A blender makes the thick mixture.","vi_expl":"Máy xay tạo ra hỗn hợp đặc."},
+      {"id":"ket4_p4_q4","stem":"Why is the screen lifted slowly?","opts":["So water can run away.","So petals can grow.","So the paper stays wet."],"ans":0,"expl":"Lifting it slowly lets water run away.","vi_expl":"Nhấc chậm để nước chảy đi."},
+      {"id":"ket4_p4_q5","stem":"What can the homemade paper be used for?","opts":["Cards and labels.","Warm soup.","A blender."],"ans":0,"expl":"The passage lists cards, labels and small pictures.","vi_expl":"Giấy có thể dùng làm thiệp, nhãn và tranh nhỏ."},
+      {"id":"ket4_p4_q6","stem":"What can flower petals change?","opts":["The paper's appearance.","The water's temperature.","The screen's size."],"ans":0,"expl":"Petals give the finished paper a different appearance.","vi_expl":"Cánh hoa làm thay đổi vẻ ngoài của giấy."}
+    ]
+  },
+  {
+    "id": "ket4_part5", "paper": "4", "section": "part5", "title": "A lost scarf", "title_vi": "Chiếc khăn bị thất lạc", "source": "original:exam-expansion-2026",
+    "passage": "Dear office,\n\nI think I left my scarf on the bus (1) ___ Tuesday afternoon. It is blue (2) ___ has small white stars. I noticed it was missing when I got (3) ___ the bus. I called the bus company, (4) ___ nobody has found it yet. Could you tell (5) ___ whether the lost-property desk is open tomorrow? I would be grateful (6) ___ you could check the waiting room too.\n\nThank you,\nOwen",
+    "passage_vi": "Kính gửi văn phòng,\n\nMình nghĩ đã để quên khăn trên xe buýt (1) ___ chiều thứ Ba. Khăn màu xanh (2) ___ có những ngôi sao trắng nhỏ. Mình nhận ra khăn bị mất khi bước (3) ___ xe. Mình đã gọi công ty xe buýt (4) ___ chưa ai tìm thấy. Bạn có thể cho (5) ___ biết quầy đồ thất lạc có mở ngày mai không? Mình sẽ rất biết ơn (6) ___ bạn kiểm tra cả phòng chờ.\n\nCảm ơn,\nOwen",
+    "items": [
+      {"id":"ket4_p5_q1","stem":"Gap 1: Write one word.","answerText":"on","expl":"The day is introduced with “on Tuesday”.","vi_expl":"Ngày trong tuần đi với giới từ “on”."},
+      {"id":"ket4_p5_q2","stem":"Gap 2: Write one word.","answerText":"and","expl":"And joins the colour with the second description.","vi_expl":"And nối màu với đặc điểm thứ hai."},
+      {"id":"ket4_p5_q3","stem":"Gap 3: Write one word.","answerText":"off","expl":"The phrase is “get off the bus”.","vi_expl":"Cụm đúng là “get off the bus” (xuống xe)."},
+      {"id":"ket4_p5_q4","stem":"Gap 4: Write one word.","answerText":"but","expl":"But contrasts the call with the unsuccessful search.","vi_expl":"But nối việc đã gọi với kết quả chưa tìm thấy."},
+      {"id":"ket4_p5_q5","stem":"Gap 5: Write one word.","answerText":"me","expl":"The phrase is “tell me”.","vi_expl":"Cụm đúng là “tell me”."},
+      {"id":"ket4_p5_q6","stem":"Gap 6: Write one word.","answerText":"if","expl":"If introduces the requested condition.","vi_expl":"If mở đầu điều kiện trong lời nhờ."}
+    ]
+  },
+  {
+    "id": "ket5_part1", "paper": "5", "section": "part1", "title": "Travel and free time", "title_vi": "Du lịch và thời gian rảnh", "source": "original:exam-expansion-2026",
+    "passage": "A. HOSTEL: Breakfast is served downstairs until 9:30.\nB. TOUR DESK: The walking tour now begins outside the fountain.\nC. BEACH: Please do not swim beyond the yellow flags.\nD. TRAIN: Passengers for Lakeside should use platform 6.\nE. BIKE HIRE: Return bicycles beside the red sign, not at reception.\nF. GALLERY: The evening talk has been moved to Saturday.",
+    "passage_vi": "A. NHÀ NGHỈ: Bữa sáng được phục vụ ở tầng dưới đến 9:30.\nB. QUẦY DU LỊCH: Chuyến đi bộ nay bắt đầu bên ngoài đài phun nước.\nC. BÃI BIỂN: Không bơi qua những lá cờ vàng.\nD. TÀU HỎA: Hành khách đi Lakeside dùng sân ga số 6.\nE. THUÊ XE ĐẠP: Trả xe cạnh biển đỏ, không phải ở lễ tân.\nF. PHÒNG TRANH: Buổi nói chuyện tối được chuyển sang thứ Bảy.",
+    "items": [
+      {"id":"ket5_p1_q1","stem":"Where is breakfast served?","opts":["Downstairs.","Outside the fountain.","At reception."],"ans":0,"expl":"The hostel serves breakfast downstairs.","vi_expl":"Nhà nghỉ phục vụ bữa sáng ở tầng dưới."},
+      {"id":"ket5_p1_q2","stem":"Where does the walking tour start now?","opts":["By the red sign.","Outside the fountain.","At platform 6."],"ans":1,"expl":"The tour starts outside the fountain.","vi_expl":"Chuyến đi bộ bắt đầu bên ngoài đài phun nước."},
+      {"id":"ket5_p1_q3","stem":"Where must swimmers stop?","opts":["At the yellow flags.","At the gallery.","At the hostel."],"ans":0,"expl":"Swimmers must not go beyond the yellow flags.","vi_expl":"Người bơi không được vượt qua cờ vàng."},
+      {"id":"ket5_p1_q4","stem":"Which platform is for Lakeside?","opts":["Platform 4.","Platform 5.","Platform 6."],"ans":2,"expl":"The train notice names platform 6.","vi_expl":"Thông báo tàu nêu sân ga số 6."},
+      {"id":"ket5_p1_q5","stem":"Where should hired bicycles be returned?","opts":["Beside the red sign.","At the fountain.","At reception."],"ans":0,"expl":"Bicycles should be returned beside the red sign.","vi_expl":"Xe đạp phải trả cạnh biển đỏ."},
+      {"id":"ket5_p1_q6","stem":"When is the gallery talk now?","opts":["Friday evening.","Saturday.","Sunday morning."],"ans":1,"expl":"The evening talk has moved to Saturday.","vi_expl":"Buổi nói chuyện được chuyển sang thứ Bảy."}
+    ]
+  },
+  {
+    "id": "ket5_part2", "paper": "5", "section": "part2", "title": "Activities for visitors", "title_vi": "Hoạt động cho khách", "source": "original:exam-expansion-2026",
+    "passage": "A Forest Walk\nA guide leads a gentle walk on marked paths. It starts early and includes a short break beside a stream.\n\nB Market Class\nVisitors learn to make a local fruit drink. The class takes place indoors in the afternoon, and everyone receives the recipe.\n\nC Kayak Hire\nHire a kayak for the afternoon and explore the quiet bay. You must be able to swim; safety equipment is provided.",
+    "passage_vi": "A Đi bộ trong Rừng\nHướng dẫn viên dẫn một chuyến đi nhẹ trên các lối có đánh dấu. Chuyến đi bắt đầu sớm và có nghỉ ngắn bên suối.\n\nB Lớp học ở Chợ\nKhách học làm đồ uống từ trái cây địa phương. Lớp diễn ra trong nhà vào buổi chiều và ai cũng nhận công thức.\n\nC Thuê Thuyền kayak\nThuê kayak vào buổi chiều để khám phá vịnh yên tĩnh. Bạn phải biết bơi; dụng cụ an toàn được cung cấp.",
+    "items": [
+      {"id":"ket5_p2_q1","stem":"I want a quiet walk with a guide.","opts":["A","B","C"],"ans":0,"expl":"The Forest Walk is guided and uses quiet marked paths.","vi_expl":"Đi bộ trong Rừng có hướng dẫn viên và lối đi yên tĩnh."},
+      {"id":"ket5_p2_q2","stem":"I can come only in the afternoon and want to stay indoors.","opts":["A","B","C"],"ans":1,"expl":"Market Class takes place indoors in the afternoon.","vi_expl":"Lớp học ở Chợ diễn ra trong nhà vào buổi chiều."},
+      {"id":"ket5_p2_q3","stem":"I can swim and want to be on the water.","opts":["A","B","C"],"ans":2,"expl":"Kayak Hire is on the water and requires swimming ability.","vi_expl":"Thuê Kayak ở trên nước và yêu cầu biết bơi."},
+      {"id":"ket5_p2_q4","stem":"I would like to take a recipe home.","opts":["A","B","C"],"ans":1,"expl":"Every Market Class visitor receives the recipe.","vi_expl":"Mỗi khách học ở Chợ đều nhận được công thức."},
+      {"id":"ket5_p2_q5","stem":"I want to rest beside running water during a walk.","opts":["A","B","C"],"ans":0,"expl":"The Forest Walk has a break beside a stream.","vi_expl":"Đi bộ trong Rừng có giờ nghỉ bên suối."},
+      {"id":"ket5_p2_q6","stem":"I need safety equipment for my activity.","opts":["A","B","C"],"ans":2,"expl":"Kayak Hire provides safety equipment.","vi_expl":"Dịch vụ thuê kayak cung cấp dụng cụ an toàn."},
+      {"id":"ket5_p2_q7","stem":"I do not want a difficult outdoor activity.","opts":["A","B","C"],"ans":0,"expl":"The Forest Walk is described as gentle and uses marked paths.","vi_expl":"Đi bộ trong Rừng là hoạt động nhẹ trên lối có đánh dấu."}
+    ]
+  },
+  {
+    "id": "ket5_part3", "paper": "5", "section": "part3", "title": "The community radio", "title_vi": "Đài phát thanh cộng đồng", "source": "original:exam-expansion-2026",
+    "passage": "Every Wednesday afternoon, a small group meets in the old station to make a community radio programme. The group began when Arlo's grandmother said that neighbours needed a place to share useful news. At first, Arlo only carried cables, but he soon learned to ask questions and edit short recordings.\n\nThe programme now includes weather, local events and an interview. Last week, a gardener explained how to save water, and a baker announced a free bread-making class. The group records on Wednesday but broadcasts on Friday morning. Arlo likes the work because each programme teaches him something new. He hopes to interview the town's oldest resident next month.",
+    "passage_vi": "Mỗi chiều thứ Tư, một nhóm nhỏ gặp nhau ở nhà ga cũ để làm chương trình phát thanh cộng đồng. Nhóm bắt đầu khi bà của Arlo nói hàng xóm cần nơi chia sẻ tin hữu ích. Ban đầu Arlo chỉ mang dây cáp nhưng sớm học cách đặt câu hỏi và biên tập bản ghi ngắn.\n\nChương trình nay có thời tiết, sự kiện địa phương và một cuộc phỏng vấn. Tuần trước, một người làm vườn giải thích cách tiết kiệm nước còn một thợ làm bánh thông báo lớp làm bánh miễn phí. Nhóm thu âm vào thứ Tư nhưng phát sóng sáng thứ Sáu. Arlo thích công việc vì mỗi chương trình dạy cậu điều mới. Cậu hy vọng tháng sau được phỏng vấn người lớn tuổi nhất thị trấn.",
+    "items": [
+      {"id":"ket5_p3_q1","stem":"Why did the radio group begin?","opts":["A grandmother wanted useful local news shared.","A baker needed a new shop.","The station needed more cables."],"ans":0,"expl":"Arlo's grandmother wanted neighbours to share useful news.","vi_expl":"Bà Arlo muốn hàng xóm có nơi chia sẻ tin hữu ích."},
+      {"id":"ket5_p3_q2","stem":"What did Arlo do at first?","opts":["He interviewed residents.","He carried cables.","He presented the weather."],"ans":1,"expl":"At first, Arlo only carried cables.","vi_expl":"Ban đầu Arlo chỉ mang dây cáp."},
+      {"id":"ket5_p3_q3","stem":"Which topic did the gardener discuss?","opts":["Saving water.","Making bread.","Old stations."],"ans":0,"expl":"The gardener explained how to save water.","vi_expl":"Người làm vườn nói về cách tiết kiệm nước."},
+      {"id":"ket5_p3_q4","stem":"When is the programme broadcast?","opts":["Wednesday afternoon.","Thursday evening.","Friday morning."],"ans":2,"expl":"The group records on Wednesday and broadcasts on Friday morning.","vi_expl":"Nhóm thu âm thứ Tư và phát sóng sáng thứ Sáu."},
+      {"id":"ket5_p3_q5","stem":"Who does Arlo hope to interview?","opts":["The oldest resident.","His grandmother's baker.","The weather reporter."],"ans":0,"expl":"He hopes to interview the town's oldest resident.","vi_expl":"Cậu hy vọng phỏng vấn người lớn tuổi nhất thị trấn."}
+    ]
+  },
+  {
+    "id": "ket5_part4", "paper": "5", "section": "part4", "title": "Why some birds travel", "title_vi": "Vì sao một số loài chim di chuyển", "source": "original:exam-expansion-2026",
+    "passage": "Some birds move to a different place when the season changes. They may travel because their usual food becomes difficult to find, or because cold weather makes survival harder. The journey can be long, and birds need to store energy before they leave.\n\nBirds do not all travel in the same way. Some fly during the day and rest at night; others travel after dark. Young birds often learn the route by following older birds. Scientists study these journeys by placing tiny, safe bands on birds and recording where they are later seen.",
+    "passage_vi": "Một số loài chim chuyển đến nơi khác khi mùa thay đổi. Chúng có thể di chuyển vì thức ăn quen thuộc khó tìm hoặc thời tiết lạnh khiến việc sống sót khó hơn. Hành trình có thể dài nên chim cần tích trữ năng lượng trước khi đi.\n\nKhông phải loài chim nào cũng di chuyển giống nhau. Một số bay ban ngày và nghỉ ban đêm; số khác đi sau khi trời tối. Chim non thường học đường đi bằng cách theo chim lớn. Các nhà khoa học nghiên cứu những hành trình này bằng cách đeo vòng nhỏ, an toàn và ghi lại nơi nhìn thấy chim sau đó.",
+    "items": [
+      {"id":"ket5_p4_q1","stem":"Why may birds move when seasons change?","opts":["Food may be harder to find.","Their wings become shorter.","They want to build a nest in a shop."],"ans":0,"expl":"Seasonal movement can happen when usual food is difficult to find.","vi_expl":"Chim có thể di chuyển khi thức ăn quen thuộc khó tìm."},
+      {"id":"ket5_p4_q2","stem":"What do birds need before a long journey?","opts":["Stored energy.","New feathers from scientists.","A road map."],"ans":0,"expl":"Birds need to store energy before travelling.","vi_expl":"Chim cần tích trữ năng lượng trước chuyến đi."},
+      {"id":"ket5_p4_q3","stem":"When do some birds travel?","opts":["Only at midday.","After dark.","Only in winter mornings."],"ans":1,"expl":"Some birds travel after dark.","vi_expl":"Một số loài chim di chuyển sau khi trời tối."},
+      {"id":"ket5_p4_q4","stem":"How do young birds often learn a route?","opts":["By following older birds.","By reading a sign.","By staying in one nest."],"ans":0,"expl":"Young birds often follow older birds.","vi_expl":"Chim non thường đi theo chim lớn."},
+      {"id":"ket5_p4_q5","stem":"What do scientists put on some birds?","opts":["Tiny safe bands.","Heavy bags.","Bright shoes."],"ans":0,"expl":"Scientists place tiny, safe bands on birds.","vi_expl":"Các nhà khoa học đeo vòng nhỏ, an toàn cho chim."},
+      {"id":"ket5_p4_q6","stem":"What do scientists record?","opts":["Where birds are seen later.","How loudly birds sing at home.","The price of bird food."],"ans":0,"expl":"They record where banded birds are later seen.","vi_expl":"Họ ghi lại nơi nhìn thấy chim sau đó."}
+    ]
+  },
+  {
+    "id": "ket5_part5", "paper": "5", "section": "part5", "title": "Planning a picnic", "title_vi": "Lên kế hoạch dã ngoại", "source": "original:exam-expansion-2026",
+    "passage": "Hi Tom,\n\nThe weather looks good, so shall we have a picnic (1) ___ Sunday? I can bring bread and fruit, (2) ___ you could bring some cheese. The park is close (3) ___ the lake, but it gets busy at midday. Let us meet early (4) ___ find a quiet place. I will bring a blanket, and please remember (5) ___ bring cups. If it rains, we (6) ___ eat at my house instead.\n\nSee you,\nRina",
+    "passage_vi": "Chào Tom,\n\nThời tiết có vẻ đẹp, vậy Chủ nhật này chúng ta dã ngoại (1) ___ nhé? Mình có thể mang bánh mì và hoa quả, (2) ___ bạn mang phô mai nhé. Công viên gần (3) ___ hồ nhưng đông vào buổi trưa. Hãy gặp nhau sớm (4) ___ tìm chỗ yên tĩnh. Mình sẽ mang chăn, còn bạn nhớ (5) ___ mang cốc. Nếu trời mưa, chúng ta (6) ___ ăn ở nhà mình.\n\nHẹn gặp,\nRina",
+    "items": [
+      {"id":"ket5_p5_q1","stem":"Gap 1: Write one word.","answerText":"on","expl":"Days of the week use “on”.","vi_expl":"Ngày trong tuần đi với giới từ “on”."},
+      {"id":"ket5_p5_q2","stem":"Gap 2: Write one word.","answerText":"and","expl":"And joins the two picnic suggestions.","vi_expl":"And nối hai đề xuất chuẩn bị đồ ăn."},
+      {"id":"ket5_p5_q3","stem":"Gap 3: Write one word.","answerText":"to","expl":"The phrase is “close to the lake”.","vi_expl":"Cụm đúng là “close to the lake”."},
+      {"id":"ket5_p5_q4","stem":"Gap 4: Write one word.","answerText":"to","expl":"The purpose is expressed by “to find”.","vi_expl":"Mục đích được diễn đạt bằng “to find”."},
+      {"id":"ket5_p5_q5","stem":"Gap 5: Write one word.","answerText":"to","expl":"The phrase is “remember to bring”.","vi_expl":"Cụm đúng là “remember to bring”."},
+      {"id":"ket5_p5_q6","stem":"Gap 6: Write one word.","answerText":"can","expl":"Can expresses the possible plan if it rains.","vi_expl":"Can diễn tả kế hoạch có thể thực hiện nếu trời mưa."}
+    ]
+  }
+]

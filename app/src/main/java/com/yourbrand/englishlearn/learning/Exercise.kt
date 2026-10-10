@@ -52,6 +52,20 @@ sealed class Exercise {
         val audioPrompt: String? = null,
     ) : Exercise()
 
+    /** A genuine exam open-cloze response: the learner types one word, with no choices shown. */
+    data class ExamText(
+        override val key: String,
+        override val tags: List<String>,
+        override val level: Int,
+        val instruction: Int,
+        val stem: String,
+        val answer: String,
+        val explanation: String,
+        val sharedPassage: String? = null,
+        val sharedPassageTitle: String? = null,
+        val sharedGroupId: String? = null,
+    ) : Exercise() { override val kind get() = Kind.E08 }
+
     /** E04: tap the wrong part among four marked segments. */
     data class FindError(
         override val key: String,

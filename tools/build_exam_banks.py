@@ -8,6 +8,7 @@ import random
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VSTEP_SECTIONS = {"reading1", "reading2", "reading3", "reading4"}
+KET_SECTIONS = {"part1", "part2", "part3", "part4", "part5"}
 
 
 def read_json(*parts):
@@ -88,6 +89,89 @@ def build_vstep():
     return {"items": [], "groups": groups}, locale
 
 
+def build_ket():
+    """Build five original A2 Key Reading practice papers.
+
+    Cambridge's official format page is used only for the part counts and task types;
+    every passage, option, answer and explanation lives in our authoring file.
+    """
+    raw_groups = read_json("tools", "authoring", "exam_ket.json")
+    groups = []
+    locale = {}
+    seen = set()
+    by_paper = {}
+    for raw_group in raw_groups:
+        group_id = raw_group.get("id", "")
+        section = raw_group.get("section", "")
+        paper = str(raw_group.get("paper", ""))
+        if not group_id or group_id in seen:
+            raise ValueError(f"KET duplicate or empty group id: {group_id!r}")
+        if section not in KET_SECTIONS or paper not in {"1", "2", "3", "4", "5"}:
+            raise ValueError(f"KET group {group_id} has an invalid section or paper")
+        if raw_group.get("source") != "original:exam-expansion-2026":
+            raise ValueError(f"KET group {group_id} must be original")
+        if not raw_group.get("passage") or not raw_group.get("passage_vi"):
+            raise ValueError(f"KET group {group_id} needs English and Vietnamese passages")
+        items = raw_group.get("items", [])
+        expected = {"part1": 6, "part2": 7, "part3": 5, "part4": 6, "part5": 6}[section]
+        if len(items) != expected:
+            raise ValueError(f"KET group {group_id} needs {expected} questions")
+        seen.add(group_id)
+        by_paper.setdefault(paper, set()).add(section)
+        output_items = []
+        for item_raw in items:
+            item_id = item_raw.get("id", "")
+            if not item_id or item_id in seen:
+                raise ValueError(f"KET duplicate or empty item id: {item_id!r}")
+            if not item_raw.get("stem") or not item_raw.get("expl") or not item_raw.get("vi_expl"):
+                raise ValueError(f"KET item {item_id} is missing stem or explanation")
+            answer_text = item_raw.get("answerText")
+            options = item_raw.get("opts", [])
+            answer = item_raw.get("ans")
+            if answer_text:
+                if options or answer is not None:
+                    raise ValueError(f"KET open cloze {item_id} must have answerText only")
+            else:
+                if len(options) != 3 or not isinstance(answer, int) or not 0 <= answer < 3:
+                    raise ValueError(f"KET item {item_id} needs three options and a valid answer")
+            seen.add(item_id)
+            out = {
+                "id": item_id,
+                "section": section,
+                "level": item_raw.get("level", 2),
+                "stem": item_raw["stem"],
+                "expl": item_raw["expl"],
+                "qtype": f"a2_{section}",
+            }
+            if answer_text:
+                out["opts"] = []
+                out["ans"] = -1
+                out["answerText"] = answer_text
+            else:
+                order = list(range(3))
+                random.Random(item_id).shuffle(order)
+                out["opts"] = [options[index] for index in order]
+                out["ans"] = order.index(answer)
+            output_items.append(out)
+            locale[item_id] = {"expl": item_raw["vi_expl"]}
+        groups.append({
+            "id": group_id,
+            "section": section,
+            "title": raw_group.get("title"),
+            "passage": raw_group["passage"],
+            "items": output_items,
+            "set": paper,
+        })
+        locale[group_id] = {
+            "title": raw_group.get("title_vi", ""),
+            "passage": raw_group["passage_vi"],
+        }
+    expected = {str(paper): KET_SECTIONS for paper in range(1, 6)}
+    if by_paper != expected:
+        raise ValueError(f"KET needs five sections in each of five papers, found {by_paper}")
+    return {"items": [], "groups": groups}, locale
+
+
 def update_status(locale):
     path = os.path.join(ROOT, "content", "i18n", "vi", "status.json")
     status = read_json("content", "i18n", "vi", "status.json")
@@ -105,11 +189,16 @@ def update_status(locale):
 
 
 def main():
-    bank, locale = build_vstep()
-    write_json(os.path.join(ROOT, "content", "en", "exams", "vstep.json"), bank)
-    write_json(os.path.join(ROOT, "content", "i18n", "vi", "exams", "vstep.json"), locale)
-    update_status(locale)
-    print(f"vstep_passages={len(bank['groups'])} vstep_items={sum(len(g['items']) for g in bank['groups'])}")
+    vstep, vstep_locale = build_vstep()
+    ket, ket_locale = build_ket()
+    write_json(os.path.join(ROOT, "content", "en", "exams", "vstep.json"), vstep)
+    write_json(os.path.join(ROOT, "content", "i18n", "vi", "exams", "vstep.json"), vstep_locale)
+    write_json(os.path.join(ROOT, "content", "en", "exams", "ket.json"), ket)
+    write_json(os.path.join(ROOT, "content", "i18n", "vi", "exams", "ket.json"), ket_locale)
+    update_status(vstep_locale)
+    update_status(ket_locale)
+    print(f"vstep_passages={len(vstep['groups'])} vstep_items={sum(len(g['items']) for g in vstep['groups'])}")
+    print(f"ket_passages={len(ket['groups'])} ket_items={sum(len(g['items']) for g in ket['groups'])}")
 
 
 if __name__ == "__main__":

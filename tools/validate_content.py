@@ -129,13 +129,22 @@ def exam_bank_errors(root=ROOT):
         items = bank.get("items", [])
         groups = bank.get("groups", [])
         ids = set()
+        def item_errors(item, label):
+            qtype = item.get("qtype")
+            if item.get("answerText") is not None:
+                if not isinstance(item.get("answerText"), str) or not item.get("answerText").strip() or item.get("opts", []) or item.get("ans") != -1:
+                    return [f"exam {bank_id}/{label}: open cloze needs answerText, opts=[], ans=-1"]
+                return []
+            expected_options = 3 if qtype and qtype.startswith("a2_") or qtype == "listen_p2" else 4
+            if len(item.get("opts", [])) != expected_options or not 0 <= item.get("ans", -1) < len(item.get("opts", [])):
+                return [f"exam {bank_id}/{label}: needs {expected_options} options and a valid answer"]
+            return []
+
         for item in items:
             if item.get("id") in ids:
                 found.append(f"exam {bank_id}: duplicate id {item.get('id')}")
             ids.add(item.get("id"))
-            expected_options = 3 if item.get("qtype") == "listen_p2" else 4
-            if len(item.get("opts", [])) != expected_options or not 0 <= item.get("ans", -1) < len(item.get("opts", [])):
-                found.append(f"exam {bank_id}/{item.get('id')}: needs {expected_options} options and a valid answer")
+            found.extend(item_errors(item, item.get("id")))
         for group in groups:
             if group.get("id") in ids:
                 found.append(f"exam {bank_id}: duplicate id {group.get('id')}")
@@ -143,9 +152,7 @@ def exam_bank_errors(root=ROOT):
             if not group.get("items"):
                 found.append(f"exam {bank_id}/{group.get('id')}: group is empty")
             for item in group.get("items", []):
-                expected_options = 3 if item.get("qtype") == "listen_p2" else 4
-                if len(item.get("opts", [])) != expected_options or not 0 <= item.get("ans", -1) < len(item.get("opts", [])):
-                    found.append(f"exam {bank_id}/{item.get('id')}: needs {expected_options} options and a valid answer")
+                found.extend(item_errors(item, item.get("id")))
         uses = by_bank.get(bank_id, [])
         sections = {s.get("id") for _, s in uses}
         for item in items:

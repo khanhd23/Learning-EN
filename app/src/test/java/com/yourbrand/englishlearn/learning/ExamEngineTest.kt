@@ -186,4 +186,18 @@ class ExamEngineTest {
         assertEquals("exam:toeic_p7:p7_1_q1", exercise.key)
         assertEquals("A short notice", exercise.sharedPassage)
     }
+
+    @Test fun openClozeExamItemBuildsAsTypedExerciseAndPersists() {
+        val item = ExamItem("ket_p5_1", "part5", 2, "Gap 1: Write one word.", emptyList(), -1, "Use at.", "a2_part5", "at")
+        val content = Content(emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyMap(), emptyMap(), examBanks = mapOf("ket" to ExamBank(listOf(item), emptyList())))
+        val builder = SessionBuilder(content, { null }, { emptyList() }, { emptyList() })
+        val exercise = builder.exerciseFor("exam:ket:ket_p5_1")
+        assertTrue(exercise is Exercise.ExamText)
+        assertEquals("at", (exercise as Exercise.ExamText).answer)
+
+        val mock = MockTest("ket_reading_1", "KET", listOf(exercise.key), null, textAnswers = arrayOf("at"))
+        val resumed = MockTest.fromJson(mock.toJson())
+        assertEquals(1, resumed.answeredCount)
+        assertEquals("at", resumed.textAnswers.single())
+    }
 }

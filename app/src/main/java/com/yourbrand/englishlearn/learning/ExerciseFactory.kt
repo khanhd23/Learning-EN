@@ -123,7 +123,19 @@ class ExerciseFactory(private val content: Content, private val random: Random =
     fun shadowing(item: SoundSentence): Exercise.Shadowing =
         Exercise.Shadowing("sh:${item.id}", listOf("sound", "shadowing"), item.level, item.text)
 
-    fun exam(bank: String, item: ExamItem, group: ExamGroup?): Exercise.Choice {
+    fun exam(bank: String, item: ExamItem, group: ExamGroup?): Exercise {
+        if (item.answerText != null) return Exercise.ExamText(
+            key = "exam:$bank:${item.id}",
+            tags = listOf("exam", "section_${item.section}", "open_cloze"),
+            level = item.level,
+            instruction = R.string.ins_cloze,
+            stem = item.stem,
+            answer = item.answerText,
+            explanation = item.explanation,
+            sharedPassage = group?.passage,
+            sharedPassageTitle = group?.title,
+            sharedGroupId = group?.id,
+        )
         val partOneListening = item.qtype == "listen_p1"
         val partTwoListening = item.qtype == "listen_p2"
         val partThreeListening = item.qtype == "listen_p3"

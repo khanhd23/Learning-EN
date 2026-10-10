@@ -166,6 +166,7 @@ class ResultScreen(
             is Exercise.Choice -> (if (e.passage != null) e.passage.title + " (${e.blank + 1})" else e.stem.ifBlank { e.speak ?: "" }).replace("[", "").replace("]", "") to e.options[e.answer]
             is Exercise.FindError -> e.stem.replace("[", "").replace("]", "") to e.fix
             is Exercise.WordOrder -> (e.translation ?: "") to e.sentence
+            is Exercise.ExamText -> e.stem to e.answer
             is Exercise.Spelling -> e.gloss to e.word.lemma
             is Exercise.Flashcard -> e.word.lemma to e.word.gloss
             is Exercise.Matching -> e.left.joinToString(", ") to e.right.joinToString(", ")

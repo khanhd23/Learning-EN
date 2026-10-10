@@ -262,6 +262,7 @@ class MistakeBookScreen(activity: MainActivity) : ScrollScreen(activity) {
                     is com.yourbrand.englishlearn.learning.Exercise.Spelling -> ex.gloss + "  →  " + ex.word.lemma
                     is com.yourbrand.englishlearn.learning.Exercise.Flashcard -> ex.word.lemma
                     is com.yourbrand.englishlearn.learning.Exercise.WordOrder -> ex.sentence
+                    is com.yourbrand.englishlearn.learning.Exercise.ExamText -> ex.stem + "  →  " + ex.answer
                     is com.yourbrand.englishlearn.learning.Exercise.Matching -> ex.left.joinToString()
                     is com.yourbrand.englishlearn.learning.Exercise.PictureChoice -> ex.words[ex.answer].lemma
                     is com.yourbrand.englishlearn.learning.Exercise.PictureMatch -> ex.words.joinToString(", ") { it.lemma }

@@ -1,0 +1,2240 @@
+{
+  "items": [],
+  "groups": [
+    {
+      "id": "ket_p1_part1",
+      "section": "part1",
+      "title": "Everyday notices",
+      "passage": "A. CAFE: Soup is served from 12:30 today, not at noon.\nB. SPORTS HALL: Please wear indoor shoes on the wooden floor.\nC. BUS STOP: Route 6 leaves from stop 4 at 8:10.\nD. CITY MUSEUM: Student tickets are sold at the side desk.\nE. SCIENCE CLUB: This week's meeting is Thursday, not Wednesday.\nF. MARKET: This stall accepts cards but not cash.",
+      "items": [
+        {
+          "id": "ket1_p1_q1",
+          "section": "part1",
+          "level": 2,
+          "stem": "What time can customers get soup today?",
+          "expl": "The notice changes soup service to 12:30.",
+          "qtype": "a2_part1",
+          "opts": [
+            "At 12:00.",
+            "At 11:30.",
+            "At 12:30."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket1_p1_q2",
+          "section": "part1",
+          "level": 2,
+          "stem": "What should people wear in the sports hall?",
+          "expl": "Indoor shoes protect the wooden floor and are required.",
+          "qtype": "a2_part1",
+          "opts": [
+            "Outdoor boots.",
+            "Indoor shoes.",
+            "Wooden shoes."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket1_p1_q3",
+          "section": "part1",
+          "level": 2,
+          "stem": "Where should someone wait for Route 6?",
+          "expl": "The bus notice names stop 4.",
+          "qtype": "a2_part1",
+          "opts": [
+            "At the market.",
+            "At the museum.",
+            "At stop 4."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket1_p1_q4",
+          "section": "part1",
+          "level": 2,
+          "stem": "Where can a student buy a museum ticket?",
+          "expl": "Student tickets are sold at the side desk.",
+          "qtype": "a2_part1",
+          "opts": [
+            "At the side desk.",
+            "On the bus.",
+            "At the main entrance."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket1_p1_q5",
+          "section": "part1",
+          "level": 2,
+          "stem": "When is the science club meeting this week?",
+          "expl": "The notice says Thursday instead of Wednesday.",
+          "qtype": "a2_part1",
+          "opts": [
+            "Tuesday.",
+            "Wednesday.",
+            "Thursday."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket1_p1_q6",
+          "section": "part1",
+          "level": 2,
+          "stem": "How can a customer pay at the market stall?",
+          "expl": "The stall accepts cards and does not accept cash.",
+          "qtype": "a2_part1",
+          "opts": [
+            "By bus ticket.",
+            "With cash only.",
+            "With a card."
+          ],
+          "ans": 2
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "ket1_part2",
+      "section": "part2",
+      "title": "Choose a club",
+      "passage": "A River Rowing Club\nMeet on Saturday mornings. Learn water safety and practise in pairs. Boats and life jackets are provided.\n\nB Craft Cabin\nWork with wood, paper and paint on weekday afternoons. Members make small gifts and take their projects home.\n\nC Star Lab\nExplore the night sky on clear Friday evenings. The club lends telescopes and explains how to find planets and constellations.",
+      "items": [
+        {
+          "id": "ket1_p2_q1",
+          "section": "part2",
+          "level": 2,
+          "stem": "I want to make something I can give to a friend.",
+          "expl": "Craft Cabin members make small gifts and take them home.",
+          "qtype": "a2_part2",
+          "opts": [
+            "B",
+            "C",
+            "A"
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket1_p2_q2",
+          "section": "part2",
+          "level": 2,
+          "stem": "I am free only on Friday evenings and like astronomy.",
+          "expl": "Star Lab meets on clear Friday evenings and studies the sky.",
+          "qtype": "a2_part2",
+          "opts": [
+            "B",
+            "C",
+            "A"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket1_p2_q3",
+          "section": "part2",
+          "level": 2,
+          "stem": "I would like to learn how to stay safe on water.",
+          "expl": "River Rowing Club teaches water safety.",
+          "qtype": "a2_part2",
+          "opts": [
+            "B",
+            "C",
+            "A"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket1_p2_q4",
+          "section": "part2",
+          "level": 2,
+          "stem": "I prefer an activity on a weekday afternoon.",
+          "expl": "Craft Cabin works on weekday afternoons.",
+          "qtype": "a2_part2",
+          "opts": [
+            "A",
+            "C",
+            "B"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket1_p2_q5",
+          "section": "part2",
+          "level": 2,
+          "stem": "I have never used a telescope but want to try one.",
+          "expl": "Star Lab lends telescopes to its members.",
+          "qtype": "a2_part2",
+          "opts": [
+            "C",
+            "A",
+            "B"
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket1_p2_q6",
+          "section": "part2",
+          "level": 2,
+          "stem": "I want to exercise with another person, not alone.",
+          "expl": "Rowing practice is done in pairs.",
+          "qtype": "a2_part2",
+          "opts": [
+            "A",
+            "C",
+            "B"
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket1_p2_q7",
+          "section": "part2",
+          "level": 2,
+          "stem": "I enjoy painting and want to keep my work.",
+          "expl": "Craft Cabin uses paint and lets members take projects home.",
+          "qtype": "a2_part2",
+          "opts": [
+            "B",
+            "A",
+            "C"
+          ],
+          "ans": 0
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "ket1_part3",
+      "section": "part3",
+      "title": "The repair afternoon",
+      "passage": "When the library announced a repair afternoon, Mina took her old alarm clock there. She had stopped using it because the bell was silent, although the clock still showed the correct time. A volunteer called Ben opened the back and found a loose wire. He let Mina hold the lamp while he joined the wire again. The repair took ten minutes.\n\nMina then noticed a table covered with broken toys. Another volunteer was teaching children to replace wheels and buttons. Mina had planned to go home, but she stayed to help a younger child fix a wooden train. Before leaving, she wrote the repair group's next meeting in her calendar. She liked the idea that an object could be useful again instead of becoming rubbish.",
+      "items": [
+        {
+          "id": "ket1_p3_q1",
+          "section": "part3",
+          "level": 2,
+          "stem": "Why had Mina stopped using the alarm clock?",
+          "expl": "The passage says the clock was accurate but its bell was silent.",
+          "qtype": "a2_part3",
+          "opts": [
+            "It showed the wrong time.",
+            "Its lamp was missing.",
+            "Its bell did not work."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket1_p3_q2",
+          "section": "part3",
+          "level": 2,
+          "stem": "What did Mina hold for Ben?",
+          "expl": "Ben asked Mina to hold the lamp while he repaired the wire.",
+          "qtype": "a2_part3",
+          "opts": [
+            "A wire.",
+            "A lamp.",
+            "A calendar."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket1_p3_q3",
+          "section": "part3",
+          "level": 2,
+          "stem": "What did Mina do after repairing the clock?",
+          "expl": "She stayed and helped a child fix a wooden train.",
+          "qtype": "a2_part3",
+          "opts": [
+            "She helped with a toy.",
+            "She bought a new train.",
+            "She went straight home."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket1_p3_q4",
+          "section": "part3",
+          "level": 2,
+          "stem": "What did Mina write in her calendar?",
+          "expl": "She recorded when the repair group would meet again.",
+          "qtype": "a2_part3",
+          "opts": [
+            "The next repair meeting.",
+            "The library closing time.",
+            "A child's birthday."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket1_p3_q5",
+          "section": "part3",
+          "level": 2,
+          "stem": "What did Mina like about repairing things?",
+          "expl": "She liked reusing objects instead of throwing them away.",
+          "qtype": "a2_part3",
+          "opts": [
+            "It always took an hour.",
+            "It made objects useful again.",
+            "It produced new rubbish."
+          ],
+          "ans": 1
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "ket1_part4",
+      "section": "part4",
+      "title": "How bees share work",
+      "passage": "A honeybee colony works like a small town. The queen lays eggs, while worker bees look after the young and collect food. When a worker finds flowers, it returns to the nest and moves in a special way. This movement helps other bees discover the direction of the flowers.\n\nBees also need water, especially on hot days. They do not drink all of it themselves. Some workers carry water home and spread tiny drops inside the nest. The drops cool the air when they evaporate. A colony can therefore change its behaviour when the weather changes.",
+      "items": [
+        {
+          "id": "ket1_p4_q1",
+          "section": "part4",
+          "level": 2,
+          "stem": "The queen's main job is to ___.",
+          "expl": "The passage says the queen lays eggs.",
+          "qtype": "a2_part4",
+          "opts": [
+            "lay eggs",
+            "find flowers",
+            "cool the nest"
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket1_p4_q2",
+          "section": "part4",
+          "level": 2,
+          "stem": "How do other bees learn where flowers are?",
+          "expl": "A worker's special movement shows the direction of the flowers.",
+          "qtype": "a2_part4",
+          "opts": [
+            "By following a river.",
+            "By listening to rain.",
+            "By watching a worker's movement."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket1_p4_q3",
+          "section": "part4",
+          "level": 2,
+          "stem": "When do bees especially need water?",
+          "expl": "The text says bees need water especially on hot days.",
+          "qtype": "a2_part4",
+          "opts": [
+            "After flowers close.",
+            "On cold nights.",
+            "On hot days."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket1_p4_q4",
+          "section": "part4",
+          "level": 2,
+          "stem": "What do some workers do with water?",
+          "expl": "Some workers carry water home and spread it inside the nest.",
+          "qtype": "a2_part4",
+          "opts": [
+            "They carry it to the nest.",
+            "They turn it into food.",
+            "They give it to the queen only."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket1_p4_q5",
+          "section": "part4",
+          "level": 2,
+          "stem": "Why do tiny drops cool the nest?",
+          "expl": "Cooling happens when the water drops evaporate.",
+          "qtype": "a2_part4",
+          "opts": [
+            "They melt the flowers.",
+            "They evaporate in the air.",
+            "They make more eggs."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket1_p4_q6",
+          "section": "part4",
+          "level": 2,
+          "stem": "What can a colony do when the weather changes?",
+          "expl": "The final sentence says the colony can change its behaviour.",
+          "qtype": "a2_part4",
+          "opts": [
+            "Move every flower.",
+            "Change its behaviour.",
+            "Stop needing food."
+          ],
+          "ans": 1
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "ket1_part5",
+      "section": "part5",
+      "title": "A note about the camping trip",
+      "passage": "Hi Leo,\n\nThe camping trip is next Saturday, so I am writing to remind you about a few things. We will meet (1) ___ the station at 8:00. Please bring a raincoat (2) ___ the forecast may change. I have a spare tent, but you need (3) ___ bring a sleeping bag. The walk to the lake takes two hours, (4) ___ pack some water. We can cook dinner together when we (5) ___ there. If you have questions, send (6) ___ a message tonight.\n\nSee you,\nNora",
+      "items": [
+        {
+          "id": "ket1_p5_q1",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 1: Write one word.",
+          "expl": "The phrase is “meet at the station”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "at"
+        },
+        {
+          "id": "ket1_p5_q2",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 2: Write one word.",
+          "expl": "Because introduces the reason for bringing a raincoat.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "because"
+        },
+        {
+          "id": "ket1_p5_q3",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 3: Write one word.",
+          "expl": "The structure is “need to bring”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "to"
+        },
+        {
+          "id": "ket1_p5_q4",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 4: Write one word.",
+          "expl": "So connects the long walk with the advice to pack water.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "so"
+        },
+        {
+          "id": "ket1_p5_q5",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 5: Write one word.",
+          "expl": "The phrase is “when we are there”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "are"
+        },
+        {
+          "id": "ket1_p5_q6",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 6: Write one word.",
+          "expl": "The object pronoun after “send” is “me”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "me"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "ket2_part1",
+      "section": "part1",
+      "title": "Town information",
+      "passage": "A. SWIMMING POOL: The shallow pool is closed until Tuesday for cleaning.\nB. TRAIN OFFICE: Buy weekend tickets online before Friday evening.\nC. PARK: Dogs must stay on the lead near the children's play area.\nD. BOOKSHOP: New travel guides are on the top floor.\nE. SCHOOL OFFICE: Parents can collect lost property after 3:00.\nF. CINEMA: The 6:20 film starts in Screen 2 tonight.",
+      "items": [
+        {
+          "id": "ket2_p1_q1",
+          "section": "part1",
+          "level": 2,
+          "stem": "Which part of the pool is unavailable?",
+          "expl": "The notice says the shallow pool is closed.",
+          "qtype": "a2_part1",
+          "opts": [
+            "The shallow pool.",
+            "The changing room.",
+            "The deep pool."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket2_p1_q2",
+          "section": "part1",
+          "level": 2,
+          "stem": "When should weekend train tickets be bought online?",
+          "expl": "The train office asks people to buy them before Friday evening.",
+          "qtype": "a2_part1",
+          "opts": [
+            "After the journey.",
+            "Before Friday evening.",
+            "On Saturday morning."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket2_p1_q3",
+          "section": "part1",
+          "level": 2,
+          "stem": "Where must dogs be on leads?",
+          "expl": "The park rule applies near the children's play area.",
+          "qtype": "a2_part1",
+          "opts": [
+            "On the top floor.",
+            "Near the play area.",
+            "Inside the cinema."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket2_p1_q4",
+          "section": "part1",
+          "level": 2,
+          "stem": "Where are the new travel guides?",
+          "expl": "The bookshop places them on the top floor.",
+          "qtype": "a2_part1",
+          "opts": [
+            "In the school office.",
+            "On the top floor.",
+            "By the station."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket2_p1_q5",
+          "section": "part1",
+          "level": 2,
+          "stem": "When can parents collect lost property?",
+          "expl": "Parents can collect it after 3:00.",
+          "qtype": "a2_part1",
+          "opts": [
+            "Before lunch.",
+            "After 3:00.",
+            "Only on Sunday."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket2_p1_q6",
+          "section": "part1",
+          "level": 2,
+          "stem": "Which screen shows the film at 6:20?",
+          "expl": "The cinema notice names Screen 2.",
+          "qtype": "a2_part1",
+          "opts": [
+            "The outdoor screen.",
+            "Screen 1.",
+            "Screen 2."
+          ],
+          "ans": 2
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "ket2_part2",
+      "section": "part2",
+      "title": "Weekend workshops",
+      "passage": "A Garden Workshop\nSaturday morning: plant herbs, learn to make compost and take home a small pot.\n\nB Photo Walk\nSaturday afternoon: practise taking pictures around old streets. Bring a camera or phone; the leader gives feedback.\n\nC Cooking Table\nSunday afternoon: prepare three simple vegetarian dishes. Ingredients and aprons are supplied.",
+      "items": [
+        {
+          "id": "ket2_p2_q1",
+          "section": "part2",
+          "level": 2,
+          "stem": "I want to learn how to grow herbs.",
+          "expl": "The Garden Workshop teaches participants to plant herbs.",
+          "qtype": "a2_part2",
+          "opts": [
+            "B",
+            "C",
+            "A"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket2_p2_q2",
+          "section": "part2",
+          "level": 2,
+          "stem": "I have a phone and want advice about my pictures.",
+          "expl": "The Photo Walk accepts phones and gives feedback.",
+          "qtype": "a2_part2",
+          "opts": [
+            "A",
+            "B",
+            "C"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket2_p2_q3",
+          "section": "part2",
+          "level": 2,
+          "stem": "I cannot come on Saturday.",
+          "expl": "Cooking Table is the only Sunday workshop.",
+          "qtype": "a2_part2",
+          "opts": [
+            "A",
+            "B",
+            "C"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket2_p2_q4",
+          "section": "part2",
+          "level": 2,
+          "stem": "I would like to take a plant home.",
+          "expl": "Garden Workshop includes a small pot to take home.",
+          "qtype": "a2_part2",
+          "opts": [
+            "B",
+            "C",
+            "A"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket2_p2_q5",
+          "section": "part2",
+          "level": 2,
+          "stem": "I do not own a camera.",
+          "expl": "The Photo Walk says a phone can be used instead of a camera.",
+          "qtype": "a2_part2",
+          "opts": [
+            "C",
+            "A",
+            "B"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket2_p2_q6",
+          "section": "part2",
+          "level": 2,
+          "stem": "I want to cook without meat and do not have an apron.",
+          "expl": "Cooking Table prepares vegetarian food and supplies aprons.",
+          "qtype": "a2_part2",
+          "opts": [
+            "B",
+            "A",
+            "C"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket2_p2_q7",
+          "section": "part2",
+          "level": 2,
+          "stem": "I would like to use garden waste usefully.",
+          "expl": "The Garden Workshop teaches compost making.",
+          "qtype": "a2_part2",
+          "opts": [
+            "A",
+            "C",
+            "B"
+          ],
+          "ans": 0
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "ket2_part3",
+      "section": "part3",
+      "title": "A new route home",
+      "passage": "For years, Joel cycled home beside the river. In spring, however, a bridge repair closed his usual path. At first he was annoyed because the new route seemed much longer. His sister suggested following the signs through the community garden instead.\n\nThe garden path added only six minutes, and it had two advantages. It was quieter than the road and passed a water tap. Joel stopped there on warm afternoons to fill his bottle. He also met gardeners who gave him tomatoes at the end of the season. When the bridge reopened, Joel tried his old route once, but he chose the garden path the next day. The repair had helped him discover a safer and friendlier journey.",
+      "items": [
+        {
+          "id": "ket2_p3_q1",
+          "section": "part3",
+          "level": 2,
+          "stem": "Why was Joel's usual route closed?",
+          "expl": "The bridge repair closed the path beside the river.",
+          "qtype": "a2_part3",
+          "opts": [
+            "A bridge was being repaired.",
+            "The river was too high.",
+            "The garden was being built."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket2_p3_q2",
+          "section": "part3",
+          "level": 2,
+          "stem": "Who suggested the garden path?",
+          "expl": "Joel's sister suggested following the garden signs.",
+          "qtype": "a2_part3",
+          "opts": [
+            "A gardener.",
+            "Joel's sister.",
+            "A road worker."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket2_p3_q3",
+          "section": "part3",
+          "level": 2,
+          "stem": "How much longer was the new route?",
+          "expl": "The garden path added only six minutes.",
+          "qtype": "a2_part3",
+          "opts": [
+            "Six minutes.",
+            "The passage does not say.",
+            "An hour."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket2_p3_q4",
+          "section": "part3",
+          "level": 2,
+          "stem": "What did Joel use at the garden?",
+          "expl": "He used the water tap to fill his bottle.",
+          "qtype": "a2_part3",
+          "opts": [
+            "A bicycle shop.",
+            "A bridge.",
+            "A water tap."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket2_p3_q5",
+          "section": "part3",
+          "level": 2,
+          "stem": "Why did Joel continue using the garden path?",
+          "expl": "He found the garden route safer and friendlier.",
+          "qtype": "a2_part3",
+          "opts": [
+            "It was shorter than every road.",
+            "It was safer and more pleasant.",
+            "It led to a train station."
+          ],
+          "ans": 1
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "ket2_part4",
+      "section": "part4",
+      "title": "Why leaves change colour",
+      "passage": "Leaves look green because they contain a substance that catches light for the tree. In autumn, days become shorter and the tree begins to prepare for winter. It stops making as much of the green substance, so other colours that were hidden become easier to see.\n\nYellow colours were already present in many leaves. Red colours can appear when a leaf makes new substances before it falls. Weather also matters: bright days and cool nights often make red leaves stronger, while heavy rain may wash colour away quickly.",
+      "items": [
+        {
+          "id": "ket2_p4_q1",
+          "section": "part4",
+          "level": 2,
+          "stem": "Leaves are green because they contain a substance that catches ___.",
+          "expl": "The substance catches light for the tree.",
+          "qtype": "a2_part4",
+          "opts": [
+            "rain",
+            "wind",
+            "light"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket2_p4_q2",
+          "section": "part4",
+          "level": 2,
+          "stem": "What happens when autumn days become shorter?",
+          "expl": "Shorter days make the tree reduce its green substance.",
+          "qtype": "a2_part4",
+          "opts": [
+            "Leaves become wet.",
+            "Trees grow taller immediately.",
+            "Trees make less green substance."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket2_p4_q3",
+          "section": "part4",
+          "level": 2,
+          "stem": "Which colour was already in many leaves?",
+          "expl": "The passage says yellow was already present.",
+          "qtype": "a2_part4",
+          "opts": [
+            "Purple.",
+            "Red.",
+            "Yellow."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket2_p4_q4",
+          "section": "part4",
+          "level": 2,
+          "stem": "When can red colours appear?",
+          "expl": "A leaf may make red substances before it falls.",
+          "qtype": "a2_part4",
+          "opts": [
+            "After a tree is cut.",
+            "Only under heavy rain.",
+            "Before a leaf falls."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket2_p4_q5",
+          "section": "part4",
+          "level": 2,
+          "stem": "What weather often makes red leaves stronger?",
+          "expl": "Bright days and cool nights are linked with stronger red colour.",
+          "qtype": "a2_part4",
+          "opts": [
+            "Bright days and cool nights.",
+            "Continuous heavy rain.",
+            "Dark days and warm nights."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket2_p4_q6",
+          "section": "part4",
+          "level": 2,
+          "stem": "What may heavy rain do?",
+          "expl": "Heavy rain may quickly wash the colour away.",
+          "qtype": "a2_part4",
+          "opts": [
+            "Shorten the tree.",
+            "Make leaves stay green forever.",
+            "Wash colour away."
+          ],
+          "ans": 2
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "ket2_part5",
+      "section": "part5",
+      "title": "A music lesson",
+      "passage": "Dear Ana,\n\nI enjoyed the music lesson yesterday. Our teacher asked us (1) ___ bring a small instrument, so I took my recorder. We played a tune (2) ___ everyone knew from school. I was nervous (3) ___ I had never played it with other people. After a few minutes, I felt better. The teacher said that listening (4) ___ the group was as important as playing loudly. We practised until the tune sounded (5) ___ one voice. I hope you can join us (6) ___ week.\n\nLove,\nMai",
+      "items": [
+        {
+          "id": "ket2_p5_q1",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 1: Write one word.",
+          "expl": "The infinitive is “asked us to bring”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "to"
+        },
+        {
+          "id": "ket2_p5_q2",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 2: Write one word.",
+          "expl": "That introduces the relative clause describing the tune.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "that"
+        },
+        {
+          "id": "ket2_p5_q3",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 3: Write one word.",
+          "expl": "Because gives the reason Mai felt nervous.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "because"
+        },
+        {
+          "id": "ket2_p5_q4",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 4: Write one word.",
+          "expl": "The phrase is “listening to the group”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "to"
+        },
+        {
+          "id": "ket2_p5_q5",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 5: Write one word.",
+          "expl": "The phrase “sounded like one voice” compares the sound.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "like"
+        },
+        {
+          "id": "ket2_p5_q6",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 6: Write one word.",
+          "expl": "The natural phrase is “next week”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "next"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "ket3_part1",
+      "section": "part1",
+      "title": "At the community centre",
+      "passage": "A. NOTICEBOARD: The language exchange has moved to Room 5.\nB. CAFETERIA: Please put used cups on the tray by the door.\nC. ART ROOM: Clay must be kept covered when you leave.\nD. RECEPTION: Visitors for the chess club should sign in here.\nE. LIFT: This lift stops only on floors 1, 3 and 5.\nF. GYM: The last class ends at 9:15; please leave quietly.",
+      "items": [
+        {
+          "id": "ket3_p1_q1",
+          "section": "part1",
+          "level": 2,
+          "stem": "Where is the language exchange now?",
+          "expl": "It has moved to Room 5.",
+          "qtype": "a2_part1",
+          "opts": [
+            "Room 3.",
+            "The reception desk.",
+            "Room 5."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket3_p1_q2",
+          "section": "part1",
+          "level": 2,
+          "stem": "Where should used cups go?",
+          "expl": "The cafeteria asks visitors to put them on the tray by the door.",
+          "qtype": "a2_part1",
+          "opts": [
+            "Under the table.",
+            "On the tray by the door.",
+            "In the art room."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket3_p1_q3",
+          "section": "part1",
+          "level": 2,
+          "stem": "What should people do with clay before leaving?",
+          "expl": "Clay must be kept covered.",
+          "qtype": "a2_part1",
+          "opts": [
+            "Keep it covered.",
+            "Paint it red.",
+            "Take it to reception."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket3_p1_q4",
+          "section": "part1",
+          "level": 2,
+          "stem": "Who should sign in at reception?",
+          "expl": "Visitors for the chess club sign in at reception.",
+          "qtype": "a2_part1",
+          "opts": [
+            "Chess club visitors.",
+            "Art teachers.",
+            "Lift passengers."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket3_p1_q5",
+          "section": "part1",
+          "level": 2,
+          "stem": "Which floors does the lift stop at?",
+          "expl": "The lift stops only on floors 1, 3 and 5.",
+          "qtype": "a2_part1",
+          "opts": [
+            "1, 3 and 5.",
+            "2, 4 and 6.",
+            "1, 2 and 3."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket3_p1_q6",
+          "section": "part1",
+          "level": 2,
+          "stem": "What should people do after the last gym class?",
+          "expl": "The gym asks people to leave quietly after 9:15.",
+          "qtype": "a2_part1",
+          "opts": [
+            "Start another class.",
+            "Use the lift twice.",
+            "Leave quietly."
+          ],
+          "ans": 2
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "ket3_part2",
+      "section": "part2",
+      "title": "Find a quiet place",
+      "passage": "A Hill Library\nA small library with silent desks, free internet and a view of the park. It closes at 6 p.m.\n\nB Greenhouse Café\nA calm café beside the market. Customers may work at shared tables until 8 p.m.; drinks are available.\n\nC Boat House\nA bright room by the lake for groups. It has a large table and opens late, but it can be noisy when boats arrive.",
+      "items": [
+        {
+          "id": "ket3_p2_q1",
+          "section": "part2",
+          "level": 2,
+          "stem": "I need free internet and complete silence.",
+          "expl": "Hill Library offers free internet and silent desks.",
+          "qtype": "a2_part2",
+          "opts": [
+            "C",
+            "B",
+            "A"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket3_p2_q2",
+          "section": "part2",
+          "level": 2,
+          "stem": "I want to work after 7 p.m. and buy a drink.",
+          "expl": "Greenhouse Café stays open until 8 p.m. and serves drinks.",
+          "qtype": "a2_part2",
+          "opts": [
+            "B",
+            "C",
+            "A"
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket3_p2_q3",
+          "section": "part2",
+          "level": 2,
+          "stem": "We are a group and need one large table.",
+          "expl": "Boat House has a large table for groups.",
+          "qtype": "a2_part2",
+          "opts": [
+            "B",
+            "A",
+            "C"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket3_p2_q4",
+          "section": "part2",
+          "level": 2,
+          "stem": "I would like to look at trees while I study.",
+          "expl": "Hill Library has a view of the park.",
+          "qtype": "a2_part2",
+          "opts": [
+            "C",
+            "B",
+            "A"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket3_p2_q5",
+          "section": "part2",
+          "level": 2,
+          "stem": "Noise from arriving boats would not bother me.",
+          "expl": "Boat House can become noisy when boats arrive.",
+          "qtype": "a2_part2",
+          "opts": [
+            "C",
+            "B",
+            "A"
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket3_p2_q6",
+          "section": "part2",
+          "level": 2,
+          "stem": "I can study only until six o'clock.",
+          "expl": "Hill Library closes at 6 p.m.",
+          "qtype": "a2_part2",
+          "opts": [
+            "A",
+            "B",
+            "C"
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket3_p2_q7",
+          "section": "part2",
+          "level": 2,
+          "stem": "I prefer a place beside a market.",
+          "expl": "Greenhouse Café is beside the market.",
+          "qtype": "a2_part2",
+          "opts": [
+            "A",
+            "C",
+            "B"
+          ],
+          "ans": 2
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "ket3_part3",
+      "section": "part3",
+      "title": "The borrowed bicycle",
+      "passage": "On Saturday, Priya borrowed a bicycle from the town centre to visit her aunt. The green bicycle felt comfortable, but Priya discovered that its front light did not work when the sky grew dark. She stopped at a small shop and bought a cheap battery.\n\nAt her aunt's house, Priya explained what had happened. Her aunt said that the rental company normally checked every light, so Priya should report the problem. Priya sent a message with the bicycle number before riding home. The company replied that another customer had returned it only an hour earlier. They thanked Priya and offered her a free hour on her next rental. Priya was glad she had reported the fault instead of leaving it for someone else.",
+      "items": [
+        {
+          "id": "ket3_p3_q1",
+          "section": "part3",
+          "level": 2,
+          "stem": "What problem did the bicycle have?",
+          "expl": "The front light failed when it became dark.",
+          "qtype": "a2_part3",
+          "opts": [
+            "Its seat was green.",
+            "Its front light did not work.",
+            "Its battery was expensive."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket3_p3_q2",
+          "section": "part3",
+          "level": 2,
+          "stem": "What did Priya buy?",
+          "expl": "She bought a battery at a small shop.",
+          "qtype": "a2_part3",
+          "opts": [
+            "A new bicycle.",
+            "A battery.",
+            "A message."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket3_p3_q3",
+          "section": "part3",
+          "level": 2,
+          "stem": "What did her aunt advise her to do?",
+          "expl": "Her aunt said Priya should tell the rental company.",
+          "qtype": "a2_part3",
+          "opts": [
+            "Keep the bicycle.",
+            "Ride only in daylight.",
+            "Report the problem."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket3_p3_q4",
+          "section": "part3",
+          "level": 2,
+          "stem": "Why did the company thank Priya?",
+          "expl": "Priya reported the broken light, helping the company notice the fault.",
+          "qtype": "a2_part3",
+          "opts": [
+            "She reported a fault.",
+            "She returned the bike early.",
+            "She found a new customer."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket3_p3_q5",
+          "section": "part3",
+          "level": 2,
+          "stem": "What did Priya receive?",
+          "expl": "The company offered a free hour on her next rental.",
+          "qtype": "a2_part3",
+          "opts": [
+            "A green lamp.",
+            "A refund for the battery.",
+            "A free hour next time."
+          ],
+          "ans": 2
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "ket3_part4",
+      "section": "part4",
+      "title": "The work of earthworms",
+      "passage": "Earthworms spend much of their time under the soil. As they move, they make narrow tunnels. These tunnels let air and water reach plant roots more easily. Earthworms also eat dead leaves and other small pieces of plant material.\n\nAfter food passes through an earthworm, it leaves the body as a dark, rich material. Gardeners value this material because it adds nutrients to the soil. Earthworms prefer damp ground, but they cannot live in a place that is completely full of water. A healthy garden therefore needs both moisture and spaces for air.",
+      "items": [
+        {
+          "id": "ket3_p4_q1",
+          "section": "part4",
+          "level": 2,
+          "stem": "What do earthworm tunnels allow to reach roots?",
+          "expl": "Tunnels help air and water reach plant roots.",
+          "qtype": "a2_part4",
+          "opts": [
+            "Only warm soil.",
+            "Sunlight and leaves.",
+            "Air and water."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket3_p4_q2",
+          "section": "part4",
+          "level": 2,
+          "stem": "What do earthworms eat?",
+          "expl": "They eat dead leaves and small plant material.",
+          "qtype": "a2_part4",
+          "opts": [
+            "Dead leaves and plant pieces.",
+            "Living birds.",
+            "Fresh stones."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket3_p4_q3",
+          "section": "part4",
+          "level": 2,
+          "stem": "Why do gardeners value earthworm material?",
+          "expl": "The dark material is rich and adds nutrients.",
+          "qtype": "a2_part4",
+          "opts": [
+            "It makes tunnels disappear.",
+            "It adds nutrients to soil.",
+            "It removes all water."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket3_p4_q4",
+          "section": "part4",
+          "level": 2,
+          "stem": "What kind of ground do earthworms prefer?",
+          "expl": "Earthworms prefer damp ground but not flooding.",
+          "qtype": "a2_part4",
+          "opts": [
+            "Completely dry ground.",
+            "Damp ground.",
+            "Ground full of water."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket3_p4_q5",
+          "section": "part4",
+          "level": 2,
+          "stem": "What cannot earthworms live in?",
+          "expl": "They cannot live where the soil is completely full of water.",
+          "qtype": "a2_part4",
+          "opts": [
+            "A place completely full of water.",
+            "Soil with plant roots.",
+            "A garden with air."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket3_p4_q6",
+          "section": "part4",
+          "level": 2,
+          "stem": "What does a healthy garden need?",
+          "expl": "The final sentence names both moisture and air spaces.",
+          "qtype": "a2_part4",
+          "opts": [
+            "Only dry leaves.",
+            "Moisture and air spaces.",
+            "Only a lot of water."
+          ],
+          "ans": 1
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "ket3_part5",
+      "section": "part5",
+      "title": "An early train",
+      "passage": "Hello Sam,\n\nOur train leaves early tomorrow, so let us meet (1) ___ the ticket machine at 6:15. I checked the timetable (2) ___ the website last night. The train is usually quiet (3) ___ this hour. Bring a jacket because the station can be cold (4) ___ the morning. I will carry the map, but please bring (5) ___ own ticket. We should arrive before the museum (6) ___ .\n\nBest,\nLinh",
+      "items": [
+        {
+          "id": "ket3_p5_q1",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 1: Write one word.",
+          "expl": "The meeting place is by the ticket machine.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "by"
+        },
+        {
+          "id": "ket3_p5_q2",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 2: Write one word.",
+          "expl": "The timetable was checked on the website.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "on"
+        },
+        {
+          "id": "ket3_p5_q3",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 3: Write one word.",
+          "expl": "The phrase is “at this hour”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "at"
+        },
+        {
+          "id": "ket3_p5_q4",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 4: Write one word.",
+          "expl": "The phrase is “in the morning”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "in"
+        },
+        {
+          "id": "ket3_p5_q5",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 5: Write one word.",
+          "expl": "The possessive adjective is needed before “own ticket”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "your"
+        },
+        {
+          "id": "ket3_p5_q6",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 6: Write one word.",
+          "expl": "The museum is singular, so the present form is “opens”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "opens"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "ket4_part1",
+      "section": "part1",
+      "title": "School day notices",
+      "passage": "A. MUSIC ROOM: Please return headphones before the lunch bell.\nB. SCHOOL BUS: The afternoon bus leaves from the north gate today.\nC. CAFÉ: The fruit salad is half price after 4 p.m.\nD. COMPUTER ROOM: Save your work before asking for help.\nE. SPORTS FIELD: Football practice is cancelled because the grass is wet.\nF. MAIN HALL: The drama group is selling tickets during the break.",
+      "items": [
+        {
+          "id": "ket4_p1_q1",
+          "section": "part1",
+          "level": 2,
+          "stem": "When should headphones be returned?",
+          "expl": "Headphones must be returned before the lunch bell.",
+          "qtype": "a2_part1",
+          "opts": [
+            "Before lunch.",
+            "Next Monday.",
+            "After school."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket4_p1_q2",
+          "section": "part1",
+          "level": 2,
+          "stem": "Where will the afternoon bus leave from?",
+          "expl": "The bus leaves from the north gate today.",
+          "qtype": "a2_part1",
+          "opts": [
+            "The main hall.",
+            "The north gate.",
+            "The south gate."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket4_p1_q3",
+          "section": "part1",
+          "level": 2,
+          "stem": "When is fruit salad half price?",
+          "expl": "The café offers the discount after 4 p.m.",
+          "qtype": "a2_part1",
+          "opts": [
+            "After 4 p.m.",
+            "At lunchtime only.",
+            "Before 4 p.m."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket4_p1_q4",
+          "section": "part1",
+          "level": 2,
+          "stem": "What should students do before asking for computer help?",
+          "expl": "The computer room asks students to save work first.",
+          "qtype": "a2_part1",
+          "opts": [
+            "Save their work.",
+            "Turn off the room.",
+            "Return headphones."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket4_p1_q5",
+          "section": "part1",
+          "level": 2,
+          "stem": "Why is football practice cancelled?",
+          "expl": "The grass is wet, so practice is cancelled.",
+          "qtype": "a2_part1",
+          "opts": [
+            "The tickets are sold.",
+            "The field is wet.",
+            "The bus is late."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket4_p1_q6",
+          "section": "part1",
+          "level": 2,
+          "stem": "When can students buy drama tickets?",
+          "expl": "The drama group sells tickets during the break.",
+          "qtype": "a2_part1",
+          "opts": [
+            "After the football practice.",
+            "Before breakfast.",
+            "During the break."
+          ],
+          "ans": 2
+        }
+      ],
+      "set": "4"
+    },
+    {
+      "id": "ket4_part2",
+      "section": "part2",
+      "title": "Places to eat",
+      "passage": "A Corner Bakery\nFresh bread and simple sandwiches. It opens at 6 a.m. and has a few seats outside.\n\nB Orange Kitchen\nA family restaurant serving warm meals. It has a children's menu and accepts bookings for large groups.\n\nC Night Noodles\nA small takeaway open until midnight. Customers choose noodles and vegetables at the counter; there are no tables.",
+      "items": [
+        {
+          "id": "ket4_p2_q1",
+          "section": "part2",
+          "level": 2,
+          "stem": "I need breakfast before 7 a.m.",
+          "expl": "Corner Bakery opens at 6 a.m.",
+          "qtype": "a2_part2",
+          "opts": [
+            "B",
+            "C",
+            "A"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket4_p2_q2",
+          "section": "part2",
+          "level": 2,
+          "stem": "We are a large group and want to reserve seats.",
+          "expl": "Orange Kitchen accepts bookings for large groups.",
+          "qtype": "a2_part2",
+          "opts": [
+            "A",
+            "C",
+            "B"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket4_p2_q3",
+          "section": "part2",
+          "level": 2,
+          "stem": "I want to choose vegetables and take the food home late at night.",
+          "expl": "Night Noodles lets customers choose vegetables and stays open until midnight.",
+          "qtype": "a2_part2",
+          "opts": [
+            "B",
+            "C",
+            "A"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket4_p2_q4",
+          "section": "part2",
+          "level": 2,
+          "stem": "My young child needs a suitable meal.",
+          "expl": "Orange Kitchen has a children's menu.",
+          "qtype": "a2_part2",
+          "opts": [
+            "C",
+            "A",
+            "B"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket4_p2_q5",
+          "section": "part2",
+          "level": 2,
+          "stem": "I would like to sit outside.",
+          "expl": "Corner Bakery has a few seats outside.",
+          "qtype": "a2_part2",
+          "opts": [
+            "B",
+            "C",
+            "A"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket4_p2_q6",
+          "section": "part2",
+          "level": 2,
+          "stem": "I do not need a chair because I am taking the meal away.",
+          "expl": "Night Noodles is a takeaway with no tables.",
+          "qtype": "a2_part2",
+          "opts": [
+            "B",
+            "C",
+            "A"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket4_p2_q7",
+          "section": "part2",
+          "level": 2,
+          "stem": "I want a warm meal with my family.",
+          "expl": "Orange Kitchen is a family restaurant serving warm meals.",
+          "qtype": "a2_part2",
+          "opts": [
+            "C",
+            "B",
+            "A"
+          ],
+          "ans": 1
+        }
+      ],
+      "set": "4"
+    },
+    {
+      "id": "ket4_part3",
+      "section": "part3",
+      "title": "The school garden",
+      "passage": "The school garden began with three empty boxes behind the science room. Their teacher, Ms Patel, asked students what they wanted to grow. They chose lettuce, beans and strawberries because these plants could be used in the cafeteria.\n\nAt first, the students watered the boxes every day. Then a rainy week arrived and they learned to check the soil before adding water. In June, birds ate several strawberries, so the class made a light net from old string. The garden did not produce enough food for the whole school, but it taught students to plan and care for living things. They decided to keep it during the summer with a weekly volunteer rota.",
+      "items": [
+        {
+          "id": "ket4_p3_q1",
+          "section": "part3",
+          "level": 2,
+          "stem": "Where was the garden started?",
+          "expl": "The first boxes were behind the science room.",
+          "qtype": "a2_part3",
+          "opts": [
+            "Inside the cafeteria.",
+            "Behind the science room.",
+            "Beside the sports field."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket4_p3_q2",
+          "section": "part3",
+          "level": 2,
+          "stem": "Why did students choose lettuce, beans and strawberries?",
+          "expl": "The plants could be used in the cafeteria.",
+          "qtype": "a2_part3",
+          "opts": [
+            "Birds preferred them.",
+            "The cafeteria could use them.",
+            "They grew in winter."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket4_p3_q3",
+          "section": "part3",
+          "level": 2,
+          "stem": "What did the rainy week teach the students?",
+          "expl": "They learned to check the soil before adding water.",
+          "qtype": "a2_part3",
+          "opts": [
+            "To remove the boxes.",
+            "To check the soil first.",
+            "To water twice a day."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket4_p3_q4",
+          "section": "part3",
+          "level": 2,
+          "stem": "How did the class protect the strawberries?",
+          "expl": "They made a light net from old string.",
+          "qtype": "a2_part3",
+          "opts": [
+            "With old string and a net.",
+            "By moving them indoors.",
+            "By feeding the birds."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket4_p3_q5",
+          "section": "part3",
+          "level": 2,
+          "stem": "What will happen to the garden in summer?",
+          "expl": "The class planned a weekly volunteer rota.",
+          "qtype": "a2_part3",
+          "opts": [
+            "It will produce food for everyone.",
+            "Volunteers will care for it weekly.",
+            "It will be sold."
+          ],
+          "ans": 1
+        }
+      ],
+      "set": "4"
+    },
+    {
+      "id": "ket4_part4",
+      "section": "part4",
+      "title": "Making paper from old newspapers",
+      "passage": "People can make new paper from old newspapers at home. First, tear the paper into small pieces and soak them in warm water. After several hours, the pieces become soft. A blender can turn them into a thick mixture, but it should be used carefully.\n\nNext, spread the mixture across a flat screen. Lift the screen slowly so the water can run away. The wet sheet needs to dry for a day or two. It will not look exactly like shop paper, but it can be used for cards, labels and small pictures. Adding flower petals gives the finished paper a different appearance.",
+      "items": [
+        {
+          "id": "ket4_p4_q1",
+          "section": "part4",
+          "level": 2,
+          "stem": "What should be done to the paper first?",
+          "expl": "The first step is tearing the paper and soaking it.",
+          "qtype": "a2_part4",
+          "opts": [
+            "Paint it green.",
+            "Dry it for two days.",
+            "Tear and soak it."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket4_p4_q2",
+          "section": "part4",
+          "level": 2,
+          "stem": "When do the paper pieces become soft?",
+          "expl": "They become soft after soaking for several hours.",
+          "qtype": "a2_part4",
+          "opts": [
+            "Before they are torn.",
+            "After they are labelled.",
+            "After several hours in water."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket4_p4_q3",
+          "section": "part4",
+          "level": 2,
+          "stem": "What turns the pieces into a thick mixture?",
+          "expl": "A blender makes the thick mixture.",
+          "qtype": "a2_part4",
+          "opts": [
+            "A label.",
+            "A screen.",
+            "A blender."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket4_p4_q4",
+          "section": "part4",
+          "level": 2,
+          "stem": "Why is the screen lifted slowly?",
+          "expl": "Lifting it slowly lets water run away.",
+          "qtype": "a2_part4",
+          "opts": [
+            "So water can run away.",
+            "So petals can grow.",
+            "So the paper stays wet."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket4_p4_q5",
+          "section": "part4",
+          "level": 2,
+          "stem": "What can the homemade paper be used for?",
+          "expl": "The passage lists cards, labels and small pictures.",
+          "qtype": "a2_part4",
+          "opts": [
+            "Cards and labels.",
+            "A blender.",
+            "Warm soup."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket4_p4_q6",
+          "section": "part4",
+          "level": 2,
+          "stem": "What can flower petals change?",
+          "expl": "Petals give the finished paper a different appearance.",
+          "qtype": "a2_part4",
+          "opts": [
+            "The water's temperature.",
+            "The paper's appearance.",
+            "The screen's size."
+          ],
+          "ans": 1
+        }
+      ],
+      "set": "4"
+    },
+    {
+      "id": "ket4_part5",
+      "section": "part5",
+      "title": "A lost scarf",
+      "passage": "Dear office,\n\nI think I left my scarf on the bus (1) ___ Tuesday afternoon. It is blue (2) ___ has small white stars. I noticed it was missing when I got (3) ___ the bus. I called the bus company, (4) ___ nobody has found it yet. Could you tell (5) ___ whether the lost-property desk is open tomorrow? I would be grateful (6) ___ you could check the waiting room too.\n\nThank you,\nOwen",
+      "items": [
+        {
+          "id": "ket4_p5_q1",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 1: Write one word.",
+          "expl": "The day is introduced with “on Tuesday”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "on"
+        },
+        {
+          "id": "ket4_p5_q2",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 2: Write one word.",
+          "expl": "And joins the colour with the second description.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "and"
+        },
+        {
+          "id": "ket4_p5_q3",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 3: Write one word.",
+          "expl": "The phrase is “get off the bus”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "off"
+        },
+        {
+          "id": "ket4_p5_q4",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 4: Write one word.",
+          "expl": "But contrasts the call with the unsuccessful search.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "but"
+        },
+        {
+          "id": "ket4_p5_q5",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 5: Write one word.",
+          "expl": "The phrase is “tell me”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "me"
+        },
+        {
+          "id": "ket4_p5_q6",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 6: Write one word.",
+          "expl": "If introduces the requested condition.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "if"
+        }
+      ],
+      "set": "4"
+    },
+    {
+      "id": "ket5_part1",
+      "section": "part1",
+      "title": "Travel and free time",
+      "passage": "A. HOSTEL: Breakfast is served downstairs until 9:30.\nB. TOUR DESK: The walking tour now begins outside the fountain.\nC. BEACH: Please do not swim beyond the yellow flags.\nD. TRAIN: Passengers for Lakeside should use platform 6.\nE. BIKE HIRE: Return bicycles beside the red sign, not at reception.\nF. GALLERY: The evening talk has been moved to Saturday.",
+      "items": [
+        {
+          "id": "ket5_p1_q1",
+          "section": "part1",
+          "level": 2,
+          "stem": "Where is breakfast served?",
+          "expl": "The hostel serves breakfast downstairs.",
+          "qtype": "a2_part1",
+          "opts": [
+            "At reception.",
+            "Downstairs.",
+            "Outside the fountain."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket5_p1_q2",
+          "section": "part1",
+          "level": 2,
+          "stem": "Where does the walking tour start now?",
+          "expl": "The tour starts outside the fountain.",
+          "qtype": "a2_part1",
+          "opts": [
+            "Outside the fountain.",
+            "At platform 6.",
+            "By the red sign."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket5_p1_q3",
+          "section": "part1",
+          "level": 2,
+          "stem": "Where must swimmers stop?",
+          "expl": "Swimmers must not go beyond the yellow flags.",
+          "qtype": "a2_part1",
+          "opts": [
+            "At the hostel.",
+            "At the gallery.",
+            "At the yellow flags."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket5_p1_q4",
+          "section": "part1",
+          "level": 2,
+          "stem": "Which platform is for Lakeside?",
+          "expl": "The train notice names platform 6.",
+          "qtype": "a2_part1",
+          "opts": [
+            "Platform 5.",
+            "Platform 4.",
+            "Platform 6."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket5_p1_q5",
+          "section": "part1",
+          "level": 2,
+          "stem": "Where should hired bicycles be returned?",
+          "expl": "Bicycles should be returned beside the red sign.",
+          "qtype": "a2_part1",
+          "opts": [
+            "At reception.",
+            "At the fountain.",
+            "Beside the red sign."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket5_p1_q6",
+          "section": "part1",
+          "level": 2,
+          "stem": "When is the gallery talk now?",
+          "expl": "The evening talk has moved to Saturday.",
+          "qtype": "a2_part1",
+          "opts": [
+            "Friday evening.",
+            "Saturday.",
+            "Sunday morning."
+          ],
+          "ans": 1
+        }
+      ],
+      "set": "5"
+    },
+    {
+      "id": "ket5_part2",
+      "section": "part2",
+      "title": "Activities for visitors",
+      "passage": "A Forest Walk\nA guide leads a gentle walk on marked paths. It starts early and includes a short break beside a stream.\n\nB Market Class\nVisitors learn to make a local fruit drink. The class takes place indoors in the afternoon, and everyone receives the recipe.\n\nC Kayak Hire\nHire a kayak for the afternoon and explore the quiet bay. You must be able to swim; safety equipment is provided.",
+      "items": [
+        {
+          "id": "ket5_p2_q1",
+          "section": "part2",
+          "level": 2,
+          "stem": "I want a quiet walk with a guide.",
+          "expl": "The Forest Walk is guided and uses quiet marked paths.",
+          "qtype": "a2_part2",
+          "opts": [
+            "B",
+            "A",
+            "C"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket5_p2_q2",
+          "section": "part2",
+          "level": 2,
+          "stem": "I can come only in the afternoon and want to stay indoors.",
+          "expl": "Market Class takes place indoors in the afternoon.",
+          "qtype": "a2_part2",
+          "opts": [
+            "A",
+            "C",
+            "B"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket5_p2_q3",
+          "section": "part2",
+          "level": 2,
+          "stem": "I can swim and want to be on the water.",
+          "expl": "Kayak Hire is on the water and requires swimming ability.",
+          "qtype": "a2_part2",
+          "opts": [
+            "A",
+            "B",
+            "C"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket5_p2_q4",
+          "section": "part2",
+          "level": 2,
+          "stem": "I would like to take a recipe home.",
+          "expl": "Every Market Class visitor receives the recipe.",
+          "qtype": "a2_part2",
+          "opts": [
+            "B",
+            "C",
+            "A"
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket5_p2_q5",
+          "section": "part2",
+          "level": 2,
+          "stem": "I want to rest beside running water during a walk.",
+          "expl": "The Forest Walk has a break beside a stream.",
+          "qtype": "a2_part2",
+          "opts": [
+            "C",
+            "A",
+            "B"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket5_p2_q6",
+          "section": "part2",
+          "level": 2,
+          "stem": "I need safety equipment for my activity.",
+          "expl": "Kayak Hire provides safety equipment.",
+          "qtype": "a2_part2",
+          "opts": [
+            "A",
+            "B",
+            "C"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket5_p2_q7",
+          "section": "part2",
+          "level": 2,
+          "stem": "I do not want a difficult outdoor activity.",
+          "expl": "The Forest Walk is described as gentle and uses marked paths.",
+          "qtype": "a2_part2",
+          "opts": [
+            "A",
+            "B",
+            "C"
+          ],
+          "ans": 0
+        }
+      ],
+      "set": "5"
+    },
+    {
+      "id": "ket5_part3",
+      "section": "part3",
+      "title": "The community radio",
+      "passage": "Every Wednesday afternoon, a small group meets in the old station to make a community radio programme. The group began when Arlo's grandmother said that neighbours needed a place to share useful news. At first, Arlo only carried cables, but he soon learned to ask questions and edit short recordings.\n\nThe programme now includes weather, local events and an interview. Last week, a gardener explained how to save water, and a baker announced a free bread-making class. The group records on Wednesday but broadcasts on Friday morning. Arlo likes the work because each programme teaches him something new. He hopes to interview the town's oldest resident next month.",
+      "items": [
+        {
+          "id": "ket5_p3_q1",
+          "section": "part3",
+          "level": 2,
+          "stem": "Why did the radio group begin?",
+          "expl": "Arlo's grandmother wanted neighbours to share useful news.",
+          "qtype": "a2_part3",
+          "opts": [
+            "The station needed more cables.",
+            "A baker needed a new shop.",
+            "A grandmother wanted useful local news shared."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket5_p3_q2",
+          "section": "part3",
+          "level": 2,
+          "stem": "What did Arlo do at first?",
+          "expl": "At first, Arlo only carried cables.",
+          "qtype": "a2_part3",
+          "opts": [
+            "He interviewed residents.",
+            "He presented the weather.",
+            "He carried cables."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket5_p3_q3",
+          "section": "part3",
+          "level": 2,
+          "stem": "Which topic did the gardener discuss?",
+          "expl": "The gardener explained how to save water.",
+          "qtype": "a2_part3",
+          "opts": [
+            "Making bread.",
+            "Old stations.",
+            "Saving water."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket5_p3_q4",
+          "section": "part3",
+          "level": 2,
+          "stem": "When is the programme broadcast?",
+          "expl": "The group records on Wednesday and broadcasts on Friday morning.",
+          "qtype": "a2_part3",
+          "opts": [
+            "Thursday evening.",
+            "Wednesday afternoon.",
+            "Friday morning."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket5_p3_q5",
+          "section": "part3",
+          "level": 2,
+          "stem": "Who does Arlo hope to interview?",
+          "expl": "He hopes to interview the town's oldest resident.",
+          "qtype": "a2_part3",
+          "opts": [
+            "The oldest resident.",
+            "His grandmother's baker.",
+            "The weather reporter."
+          ],
+          "ans": 0
+        }
+      ],
+      "set": "5"
+    },
+    {
+      "id": "ket5_part4",
+      "section": "part4",
+      "title": "Why some birds travel",
+      "passage": "Some birds move to a different place when the season changes. They may travel because their usual food becomes difficult to find, or because cold weather makes survival harder. The journey can be long, and birds need to store energy before they leave.\n\nBirds do not all travel in the same way. Some fly during the day and rest at night; others travel after dark. Young birds often learn the route by following older birds. Scientists study these journeys by placing tiny, safe bands on birds and recording where they are later seen.",
+      "items": [
+        {
+          "id": "ket5_p4_q1",
+          "section": "part4",
+          "level": 2,
+          "stem": "Why may birds move when seasons change?",
+          "expl": "Seasonal movement can happen when usual food is difficult to find.",
+          "qtype": "a2_part4",
+          "opts": [
+            "They want to build a nest in a shop.",
+            "Their wings become shorter.",
+            "Food may be harder to find."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket5_p4_q2",
+          "section": "part4",
+          "level": 2,
+          "stem": "What do birds need before a long journey?",
+          "expl": "Birds need to store energy before travelling.",
+          "qtype": "a2_part4",
+          "opts": [
+            "Stored energy.",
+            "A road map.",
+            "New feathers from scientists."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "ket5_p4_q3",
+          "section": "part4",
+          "level": 2,
+          "stem": "When do some birds travel?",
+          "expl": "Some birds travel after dark.",
+          "qtype": "a2_part4",
+          "opts": [
+            "Only at midday.",
+            "After dark.",
+            "Only in winter mornings."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "ket5_p4_q4",
+          "section": "part4",
+          "level": 2,
+          "stem": "How do young birds often learn a route?",
+          "expl": "Young birds often follow older birds.",
+          "qtype": "a2_part4",
+          "opts": [
+            "By reading a sign.",
+            "By staying in one nest.",
+            "By following older birds."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket5_p4_q5",
+          "section": "part4",
+          "level": 2,
+          "stem": "What do scientists put on some birds?",
+          "expl": "Scientists place tiny, safe bands on birds.",
+          "qtype": "a2_part4",
+          "opts": [
+            "Heavy bags.",
+            "Bright shoes.",
+            "Tiny safe bands."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "ket5_p4_q6",
+          "section": "part4",
+          "level": 2,
+          "stem": "What do scientists record?",
+          "expl": "They record where banded birds are later seen.",
+          "qtype": "a2_part4",
+          "opts": [
+            "How loudly birds sing at home.",
+            "The price of bird food.",
+            "Where birds are seen later."
+          ],
+          "ans": 2
+        }
+      ],
+      "set": "5"
+    },
+    {
+      "id": "ket5_part5",
+      "section": "part5",
+      "title": "Planning a picnic",
+      "passage": "Hi Tom,\n\nThe weather looks good, so shall we have a picnic (1) ___ Sunday? I can bring bread and fruit, (2) ___ you could bring some cheese. The park is close (3) ___ the lake, but it gets busy at midday. Let us meet early (4) ___ find a quiet place. I will bring a blanket, and please remember (5) ___ bring cups. If it rains, we (6) ___ eat at my house instead.\n\nSee you,\nRina",
+      "items": [
+        {
+          "id": "ket5_p5_q1",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 1: Write one word.",
+          "expl": "Days of the week use “on”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "on"
+        },
+        {
+          "id": "ket5_p5_q2",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 2: Write one word.",
+          "expl": "And joins the two picnic suggestions.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "and"
+        },
+        {
+          "id": "ket5_p5_q3",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 3: Write one word.",
+          "expl": "The phrase is “close to the lake”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "to"
+        },
+        {
+          "id": "ket5_p5_q4",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 4: Write one word.",
+          "expl": "The purpose is expressed by “to find”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "to"
+        },
+        {
+          "id": "ket5_p5_q5",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 5: Write one word.",
+          "expl": "The phrase is “remember to bring”.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "to"
+        },
+        {
+          "id": "ket5_p5_q6",
+          "section": "part5",
+          "level": 2,
+          "stem": "Gap 6: Write one word.",
+          "expl": "Can expresses the possible plan if it rains.",
+          "qtype": "a2_part5",
+          "opts": [],
+          "ans": -1,
+          "answerText": "can"
+        }
+      ],
+      "set": "5"
+    }
+  ]
+}
