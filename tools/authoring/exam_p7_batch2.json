@@ -1,0 +1,162 @@
+[
+  {
+    "id": "p7_original_single_006",
+    "section": "p7",
+    "kind": "single",
+    "level": 3,
+    "source": "original:exam-expansion-2026",
+    "title": "Meeting room notice",
+    "title_vi": "Thông báo phòng họp",
+    "passage": "NOTICE TO GUESTS\n\nThe Maple Court Hotel's second-floor meeting rooms will be unavailable on Tuesday from 6:00 to 11:00 a.m. while the carpets are cleaned. Events scheduled during that period will be held in the Garden Room on the first floor. Guests attending the morning workshop should enter through the west doors, which open at 7:30. The elevators will continue to operate normally. Coffee and fruit will be available in the Garden Room from 8:15, but lunch arrangements will not change. Please ask the front desk if you need help finding the temporary room.",
+    "passage_vi": "THÔNG BÁO CHO KHÁCH\n\nCác phòng họp ở tầng hai của Khách sạn Maple Court sẽ không sử dụng được vào thứ Ba từ 6:00 đến 11:00 sáng để làm sạch thảm. Các sự kiện diễn ra trong thời gian đó sẽ được chuyển sang Phòng Vườn ở tầng một. Khách tham dự hội thảo buổi sáng nên đi qua cửa phía tây, mở lúc 7:30. Thang máy vẫn hoạt động bình thường. Cà phê và trái cây sẽ có tại Phòng Vườn từ 8:15, nhưng việc ăn trưa không thay đổi. Vui lòng hỏi quầy lễ tân nếu cần tìm phòng tạm thời.",
+    "items": [
+      {"id": "p7_original_single_006_q1", "stem": "Why will the second-floor rooms be unavailable?", "opts": ["A meeting is taking place there.", "The carpets are being cleaned.", "The elevators need repairs.", "Lunch is being prepared there."], "ans": 1, "expl": "The notice says the carpets will be cleaned on Tuesday morning.", "vi_expl": "Thông báo nói rằng thảm sẽ được làm sạch vào sáng thứ Ba."},
+      {"id": "p7_original_single_006_q2", "stem": "Where will the morning events be held?", "opts": ["In the west lobby", "On the second floor", "In the Garden Room", "At the front desk"], "ans": 2, "expl": "Events scheduled during the cleaning will move to the Garden Room on the first floor.", "vi_expl": "Các sự kiện trong thời gian làm sạch sẽ chuyển sang Phòng Vườn ở tầng một."},
+      {"id": "p7_original_single_006_q3", "stem": "What will remain unchanged?", "opts": ["The lunch arrangements", "The carpet schedule", "The west doors' opening time", "The location of the morning workshop"], "ans": 0, "expl": "The notice specifically says that lunch arrangements will not change.", "vi_expl": "Thông báo nêu rõ việc ăn trưa sẽ không thay đổi."}
+    ]
+  },
+  {
+    "id": "p7_original_single_007",
+    "section": "p7",
+    "kind": "single",
+    "level": 3,
+    "source": "original:exam-expansion-2026",
+    "title": "Museum gallery closure",
+    "title_vi": "Đóng cửa phòng trưng bày",
+    "passage": "CITY HISTORY MUSEUM\n\nThe west gallery will close from November 3 through November 10 so that a new lighting system can be installed. Visitors may still enter the museum through the main entrance and visit the east gallery, the archive display, and the museum shop. The Saturday walking tour will begin in the lobby as usual, but its final stop will be the archive display rather than the west gallery. Tickets purchased for the west-gallery evening talk may be exchanged for a talk on November 17. To arrange an exchange, contact the events desk by November 8.",
+    "passage_vi": "BẢO TÀNG LỊCH SỬ THÀNH PHỐ\n\nPhòng trưng bày phía tây sẽ đóng cửa từ ngày 3 đến ngày 10 tháng 11 để lắp hệ thống chiếu sáng mới. Khách vẫn có thể vào bảo tàng qua cổng chính và tham quan phòng phía đông, khu trưng bày lưu trữ cùng cửa hàng bảo tàng. Chuyến đi bộ ngày thứ Bảy vẫn bắt đầu ở sảnh, nhưng điểm cuối sẽ là khu trưng bày lưu trữ thay vì phòng phía tây. Vé đã mua cho buổi nói chuyện buổi tối ở phòng phía tây có thể đổi sang buổi ngày 17 tháng 11. Để đổi vé, hãy liên hệ quầy sự kiện trước ngày 8 tháng 11.",
+    "items": [
+      {"id": "p7_original_single_007_q1", "stem": "What will happen in the west gallery?", "opts": ["A walking tour will start there.", "A lighting system will be installed.", "An archive display will open.", "The museum shop will move there."], "ans": 1, "expl": "The gallery will close so that a new lighting system can be installed.", "vi_expl": "Phòng trưng bày đóng cửa để lắp hệ thống chiếu sáng mới."},
+      {"id": "p7_original_single_007_q2", "stem": "What is true about the Saturday walking tour?", "opts": ["It has been canceled.", "It will start at the archive display.", "It will end at the archive display.", "It is only for evening visitors."], "ans": 2, "expl": "The tour still starts in the lobby, but its final stop will be the archive display.", "vi_expl": "Chuyến đi vẫn bắt đầu ở sảnh, nhưng điểm cuối sẽ là khu trưng bày lưu trữ."},
+      {"id": "p7_original_single_007_q3", "stem": "When must visitors contact the events desk to exchange a ticket?", "opts": ["By November 3", "By November 8", "By November 10", "By November 17"], "ans": 1, "expl": "The notice gives November 8 as the deadline for arranging an exchange.", "vi_expl": "Thông báo đưa ra ngày 8 tháng 11 là hạn chót để sắp xếp đổi vé."}
+    ]
+  },
+  {
+    "id": "p7_original_double_008",
+    "section": "p7",
+    "kind": "double",
+    "level": 3,
+    "source": "original:exam-expansion-2026",
+    "title": "Courier collection request",
+    "title_vi": "Yêu cầu lấy hàng của công ty chuyển phát",
+    "passage": "Message 1\nTo: Swiftway Couriers\nFrom: Omar Bell\nSubject: Collection request\n\nCould you collect two cartons from our office on Thursday instead of Friday? The cartons contain printed training manuals and will be ready at the reception desk after 3:00 p.m. The delivery address is unchanged from our account. Please confirm whether the earlier collection is possible; our client needs the manuals by Monday morning.\n\nMessage 2\nTo: Omar Bell\nFrom: Swiftway Couriers\nSubject: Re: Collection request\n\nWe can send a driver on Thursday between 4:00 and 5:00 p.m. Please attach the two labels that are available in your online account and write the total carton count on each label. The driver will call the reception desk on arrival. The usual Friday collection will remain on the schedule unless you cancel it before noon tomorrow.",
+    "passage_vi": "Tin nhắn 1\nĐến: Swiftway Couriers\nTừ: Omar Bell\nChủ đề: Yêu cầu lấy hàng\n\nBạn có thể lấy hai thùng hàng tại văn phòng chúng tôi vào thứ Năm thay vì thứ Sáu không? Các thùng chứa tài liệu đào tạo in sẵn và sẽ sẵn sàng ở quầy lễ tân sau 3:00 chiều. Địa chỉ giao hàng không thay đổi so với tài khoản của chúng tôi. Vui lòng xác nhận liệu có thể lấy sớm hơn không; khách hàng cần tài liệu trước sáng thứ Hai.\n\nTin nhắn 2\nĐến: Omar Bell\nTừ: Swiftway Couriers\nChủ đề: Trả lời: Yêu cầu lấy hàng\n\nChúng tôi có thể cử tài xế đến vào thứ Năm trong khoảng 4:00–5:00 chiều. Vui lòng dán hai nhãn có sẵn trong tài khoản trực tuyến và ghi tổng số thùng lên mỗi nhãn. Tài xế sẽ gọi cho quầy lễ tân khi đến. Lịch lấy hàng thường lệ vào thứ Sáu vẫn được giữ, trừ khi bạn hủy trước trưa ngày mai.",
+    "items": [
+      {"id": "p7_original_double_008_q1", "stem": "Why does Omar want the cartons collected earlier?", "opts": ["The office will close on Friday.", "The labels will expire on Thursday.", "A client needs the manuals by Monday.", "The delivery address will change."], "ans": 2, "expl": "Omar says that his client needs the manuals by Monday morning.", "vi_expl": "Omar nói khách hàng cần tài liệu trước sáng thứ Hai."},
+      {"id": "p7_original_double_008_q2", "stem": "What should Omar write on each label?", "opts": ["The delivery address", "The total carton count", "The driver's telephone number", "The collection date"], "ans": 1, "expl": "Swiftway asks Omar to write the total carton count on each label.", "vi_expl": "Swiftway yêu cầu Omar ghi tổng số thùng lên mỗi nhãn."},
+      {"id": "p7_original_double_008_q3", "stem": "What will happen to the Friday collection?", "opts": ["It will be moved to Monday.", "It will be canceled automatically.", "It will remain scheduled unless Omar cancels it.", "It will collect the cartons after 5:00 p.m."], "ans": 2, "expl": "The reply says the Friday collection remains scheduled unless Omar cancels it before noon.", "vi_expl": "Thư trả lời nói lịch thứ Sáu vẫn được giữ, trừ khi Omar hủy trước buổi trưa."}
+    ]
+  },
+  {
+    "id": "p7_original_triple_009",
+    "section": "p7",
+    "kind": "triple",
+    "level": 3,
+    "source": "original:exam-expansion-2026",
+    "title": "Farmers' market stall",
+    "title_vi": "Quầy hàng ở chợ nông sản",
+    "passage": "RESERVATION FORM\nVendor: Hilltop Honey\nMarket date: June 8\nStall: C7\nProducts: jars of honey and beeswax candles\n\nMARKET NOTICE\nThe Saturday market will open to the public at 9:00 a.m. Vendors may enter through the east gate from 7:00. Because the central walkway will be painted, stalls C1–C8 will be reached by the temporary path beside the fountain. Keep boxes within your stall boundary.\n\nMESSAGE FROM THE ORGANIZER\nHilltop Honey may use the small table stored behind the information tent. Please place it beside stall C7 before 7:30. The vendor also requested shade for the candle display, so set up the table under the blue canopy rather than beside the fountain.",
+    "passage_vi": "PHIẾU ĐẶT QUẦY\nNgười bán: Hilltop Honey\nNgày chợ: 8 tháng 6\nQuầy: C7\nSản phẩm: lọ mật ong và nến sáp ong\n\nTHÔNG BÁO CỦA CHỢ\nChợ thứ Bảy mở cửa cho công chúng lúc 9:00 sáng. Người bán có thể vào qua cổng phía đông từ 7:00. Vì lối đi trung tâm sẽ được sơn, các quầy C1–C8 sẽ được tiếp cận bằng lối tạm cạnh đài phun nước. Hãy giữ thùng hàng trong phạm vi quầy.\n\nTIN NHẮN TỪ BAN TỔ CHỨC\nHilltop Honey có thể sử dụng chiếc bàn nhỏ được cất sau lều thông tin. Vui lòng đặt bàn cạnh quầy C7 trước 7:30. Người bán cũng yêu cầu có bóng râm cho khu trưng bày nến, vì vậy hãy dựng bàn dưới mái che màu xanh thay vì cạnh đài phun nước.",
+    "items": [
+      {"id": "p7_original_triple_009_q1", "stem": "What products will Hilltop Honey sell?", "opts": ["Fruit and flowers", "Honey and beeswax candles", "Paint and small tables", "Information guides and boxes"], "ans": 1, "expl": "The reservation form lists jars of honey and beeswax candles.", "vi_expl": "Phiếu đặt quầy liệt kê lọ mật ong và nến sáp ong."},
+      {"id": "p7_original_triple_009_q2", "stem": "How should shoppers reach stalls C1–C8?", "opts": ["Through the west gate", "By the central walkway", "Along the temporary path", "Behind the information tent"], "ans": 2, "expl": "The market notice directs people to the temporary path beside the fountain.", "vi_expl": "Thông báo hướng dẫn mọi người đi theo lối tạm cạnh đài phun nước."},
+      {"id": "p7_original_triple_009_q3", "stem": "Why should the table be placed under the blue canopy?", "opts": ["To keep boxes within the stall", "To give the candle display some shade", "To keep shoppers away from the fountain", "To make the information tent easier to find"], "ans": 1, "expl": "The organizer says the vendor requested shade for the candle display.", "vi_expl": "Ban tổ chức nói người bán yêu cầu bóng râm cho khu trưng bày nến."}
+    ]
+  },
+  {
+    "id": "p7_original_single_010",
+    "section": "p7",
+    "kind": "single",
+    "level": 3,
+    "source": "original:exam-expansion-2026",
+    "title": "Training feedback form",
+    "title_vi": "Phiếu phản hồi đào tạo",
+    "passage": "STAFF DEVELOPMENT UPDATE\n\nEmployees who attended the customer-service workshop on April 6 are asked to complete the online feedback form by April 12. The form takes about five minutes and includes questions about the pace of the workshop, the usefulness of the role-play activities, and topics for a future session. The training team will summarize the responses for the department meeting on April 19. Individual comments will not be linked to names in that summary. Employees who could not attend may register for the repeat workshop through the staff portal.",
+    "passage_vi": "CẬP NHẬT PHÁT TRIỂN NHÂN VIÊN\n\nNhân viên đã tham dự hội thảo dịch vụ khách hàng ngày 6 tháng 4 được yêu cầu hoàn thành phiếu phản hồi trực tuyến trước ngày 12 tháng 4. Phiếu mất khoảng năm phút và có câu hỏi về tốc độ hội thảo, mức độ hữu ích của hoạt động đóng vai và chủ đề cho buổi sau. Đội ngũ đào tạo sẽ tổng hợp phản hồi cho cuộc họp bộ phận ngày 19 tháng 4. Trong bản tổng hợp, nhận xét cá nhân sẽ không gắn với tên. Nhân viên không tham dự có thể đăng ký buổi học lại qua cổng thông tin nhân viên.",
+    "items": [
+      {"id": "p7_original_single_010_q1", "stem": "Who is asked to complete the feedback form?", "opts": ["Employees who attended the workshop", "Members of the training team", "Department meeting organizers", "Employees who registered but did not attend"], "ans": 0, "expl": "The update addresses employees who attended the April 6 workshop.", "vi_expl": "Thông báo hướng đến những nhân viên đã tham dự hội thảo ngày 6 tháng 4."},
+      {"id": "p7_original_single_010_q2", "stem": "What will the training team do with the responses?", "opts": ["Publish each employee's name", "Use them in a department meeting", "Cancel the repeat workshop", "Send them to customers"], "ans": 1, "expl": "The responses will be summarized for the department meeting on April 19.", "vi_expl": "Các phản hồi sẽ được tổng hợp cho cuộc họp bộ phận ngày 19 tháng 4."},
+      {"id": "p7_original_single_010_q3", "stem": "What can employees who missed the workshop do?", "opts": ["Request a private interview", "Attend the department meeting", "Register for a repeat session", "Edit the online feedback form"], "ans": 2, "expl": "Employees who could not attend may register for the repeat workshop.", "vi_expl": "Nhân viên không thể tham dự có thể đăng ký buổi hội thảo học lại."}
+    ]
+  },
+  {
+    "id": "p7_original_double_011",
+    "section": "p7",
+    "kind": "double",
+    "level": 3,
+    "source": "original:exam-expansion-2026",
+    "title": "Evening course registration",
+    "title_vi": "Đăng ký khóa học buổi tối",
+    "passage": "COURSE PAGE\nThe Lakeside College evening course “Introduction to Digital Photography” meets on Mondays for four weeks, beginning August 5. The course fee includes access to the equipment room during class, but students should bring a memory card. The first class will cover camera settings and will not include an outdoor assignment.\n\nADVISER'S MESSAGE\nHello Mai,\n\nYour registration form reached us, but the payment section was blank. We have held a place for you until July 28. You may pay online through the student portal or bring a completed form to the registration office. Once payment is recorded, we will send the room number and equipment-room rules.\n\nRegards,\nJon Bell, Evening Programs",
+    "passage_vi": "TRANG KHÓA HỌC\nKhóa học buổi tối “Nhập môn Nhiếp ảnh Kỹ thuật số” của Lakeside College học vào thứ Hai trong bốn tuần, bắt đầu ngày 5 tháng 8. Học phí bao gồm quyền sử dụng phòng thiết bị trong giờ học, nhưng sinh viên nên mang thẻ nhớ. Buổi đầu sẽ học các cài đặt máy ảnh và không có bài tập ngoài trời.\n\nTIN NHẮN CỦA CỐ VẤN\nChào Mai,\n\nPhiếu đăng ký của em đã đến, nhưng phần thanh toán bị bỏ trống. Chúng tôi giữ chỗ cho em đến ngày 28 tháng 7. Em có thể thanh toán trực tuyến qua cổng sinh viên hoặc mang phiếu đã điền đầy đủ đến văn phòng đăng ký. Sau khi ghi nhận thanh toán, chúng tôi sẽ gửi số phòng và quy định sử dụng phòng thiết bị.\n\nTrân trọng,\nJon Bell, Chương trình buổi tối",
+    "items": [
+      {"id": "p7_original_double_011_q1", "stem": "What is included in the course fee?", "opts": ["A memory card", "An outdoor assignment", "Use of the equipment room", "Four private lessons"], "ans": 2, "expl": "The course page says the fee includes access to the equipment room during class.", "vi_expl": "Trang khóa học nói học phí bao gồm quyền sử dụng phòng thiết bị trong giờ học."},
+      {"id": "p7_original_double_011_q2", "stem": "What problem does Jon mention?", "opts": ["Mai selected the wrong course.", "Mai did not pay the course fee.", "The equipment room is closed.", "The first class was postponed."], "ans": 1, "expl": "Jon says that the payment section of Mai's registration form was blank.", "vi_expl": "Jon nói phần thanh toán trong phiếu đăng ký của Mai bị bỏ trống."},
+      {"id": "p7_original_double_011_q3", "stem": "What will the college send after payment is recorded?", "opts": ["A memory card and a camera", "An outdoor assignment", "The room number and equipment rules", "A new registration form"], "ans": 2, "expl": "The adviser will send the room number and equipment-room rules after payment is recorded.", "vi_expl": "Cố vấn sẽ gửi số phòng và quy định sử dụng phòng thiết bị sau khi ghi nhận thanh toán."}
+    ]
+  },
+  {
+    "id": "p7_original_single_012",
+    "section": "p7",
+    "kind": "single",
+    "level": 3,
+    "source": "original:exam-expansion-2026",
+    "title": "Repair shop collection hours",
+    "title_vi": "Giờ nhận đồ tại cửa hàng sửa chữa",
+    "passage": "NOTICE\n\nCustomers collecting repaired appliances from BrightFix may use the side entrance this week because the main entrance is being repainted. The side entrance is open from 10:00 a.m. to 6:00 p.m., Monday through Saturday. Please bring the collection receipt or the text message that contains your repair number. Items not collected within seven days will be moved to the storage room. If you cannot collect an item on time, call the shop before the seventh day to arrange a later date. The repair desk itself continues to operate at the main counter.",
+    "passage_vi": "THÔNG BÁO\n\nKhách nhận thiết bị đã sửa tại BrightFix có thể dùng lối vào bên hông trong tuần này vì lối vào chính đang được sơn lại. Lối bên hông mở từ 10:00 sáng đến 6:00 tối, thứ Hai đến thứ Bảy. Vui lòng mang phiếu nhận hàng hoặc tin nhắn có số sửa chữa. Những món đồ không được nhận trong vòng bảy ngày sẽ được chuyển vào phòng lưu trữ. Nếu không thể nhận đúng hạn, hãy gọi cho cửa hàng trước ngày thứ bảy để sắp xếp ngày khác. Quầy sửa chữa vẫn hoạt động tại quầy chính.",
+    "items": [
+      {"id": "p7_original_single_012_q1", "stem": "Why should customers use the side entrance?", "opts": ["The repair desk has moved there.", "The main entrance is being repainted.", "The storage room is full.", "The main counter opens later."], "ans": 1, "expl": "The main entrance is being repainted, so customers collecting items should use the side entrance.", "vi_expl": "Lối vào chính đang được sơn lại nên khách nhận đồ nên dùng lối bên hông."},
+      {"id": "p7_original_single_012_q2", "stem": "What must customers bring?", "opts": ["A new appliance", "A storage-room key", "A receipt or repair-number message", "A painting permit"], "ans": 2, "expl": "Customers are asked to bring the collection receipt or the message with their repair number.", "vi_expl": "Khách được yêu cầu mang phiếu nhận hàng hoặc tin nhắn có số sửa chữa."},
+      {"id": "p7_original_single_012_q3", "stem": "What should a customer do if collection will be late?", "opts": ["Wait outside the shop", "Call before the seventh day", "Use the main entrance after 6 p.m.", "Move the item to the storage room"], "ans": 1, "expl": "The notice asks customers to call before the seventh day to arrange a later date.", "vi_expl": "Thông báo yêu cầu khách gọi trước ngày thứ bảy để sắp xếp ngày nhận khác."}
+    ]
+  },
+  {
+    "id": "p7_original_triple_013",
+    "section": "p7",
+    "kind": "triple",
+    "level": 4,
+    "source": "original:exam-expansion-2026",
+    "title": "Community theatre evening",
+    "title_vi": "Buổi diễn ở nhà hát cộng đồng",
+    "passage": "TICKET CONFIRMATION\nPerformance: The Lantern Room\nDate: Friday, March 22\nTime: 7:30 p.m.\nSeats: H12 and H13\n\nVENUE NOTICE\nThe theatre doors will open at 7:00. Guests may collect printed programs at the lobby table. Because the lobby is small, large bags must be left at the coat desk. The performance will begin promptly at 7:30, and late arrivals may enter only during the first pause.\n\nSTAFF MESSAGE\nPlease place the reserved-seat sign near row H and keep two programs at the box office for the guests listed under the booking name Bell. The coat desk will close fifteen minutes after the performance ends, so remind guests to collect their belongings before leaving.",
+    "passage_vi": "XÁC NHẬN VÉ\nBuổi diễn: The Lantern Room\nNgày: Thứ Sáu, 22 tháng 3\nGiờ: 7:30 tối\nGhế: H12 và H13\n\nTHÔNG BÁO CỦA ĐỊA ĐIỂM\nCửa nhà hát mở lúc 7:00. Khách có thể lấy chương trình in tại bàn ở sảnh. Vì sảnh nhỏ, túi lớn phải để tại quầy gửi áo khoác. Buổi diễn bắt đầu đúng 7:30, khách đến muộn chỉ được vào trong giờ tạm dừng đầu tiên.\n\nTIN NHẮN CHO NHÂN VIÊN\nVui lòng đặt biển ghế đã đặt gần dãy H và giữ hai chương trình tại quầy vé cho những khách có tên đặt chỗ là Bell. Quầy gửi áo khoác sẽ đóng sau khi buổi diễn kết thúc mười lăm phút, vì vậy hãy nhắc khách lấy đồ trước khi rời đi.",
+    "items": [
+      {"id": "p7_original_triple_013_q1", "stem": "Which seats are reserved?", "opts": ["G12 and G13", "H12 and H13", "H7 and H8", "Two seats at the box office"], "ans": 1, "expl": "The ticket confirmation lists seats H12 and H13.", "vi_expl": "Xác nhận vé liệt kê ghế H12 và H13."},
+      {"id": "p7_original_triple_013_q2", "stem": "What may late arrivals do?", "opts": ["Enter during the first pause", "Wait at the coat desk until closing", "Collect a program before the doors open", "Move to the reserved seats immediately"], "ans": 0, "expl": "The venue notice says late arrivals may enter during the first pause.", "vi_expl": "Thông báo cho biết khách đến muộn có thể vào trong giờ tạm dừng đầu tiên."},
+      {"id": "p7_original_triple_013_q3", "stem": "Why should staff remind guests about the coat desk?", "opts": ["It contains the printed programs.", "It will move near row H.", "It closes fifteen minutes after the show.", "It is reserved for guests named Bell."], "ans": 2, "expl": "The staff message says the coat desk closes fifteen minutes after the performance.", "vi_expl": "Tin nhắn cho nhân viên nói quầy gửi áo khoác đóng sau buổi diễn mười lăm phút."}
+    ]
+  },
+  {
+    "id": "p7_original_double_014",
+    "section": "p7",
+    "kind": "double",
+    "level": 3,
+    "source": "original:exam-expansion-2026",
+    "title": "Catering order change",
+    "title_vi": "Thay đổi đơn đặt tiệc",
+    "passage": "Order form\nClient: Northline Design\nEvent: Staff breakfast\nDate: January 16\nGuests: 28\nRequested items: fruit cups, oat rolls, tea\nDelivery time: 8:00 a.m.\n\nCaterer's reply\nThank you for your order. We can deliver the breakfast at 8:00, but our supplier cannot provide oat rolls on January 16. We can replace them with whole-grain muffins at the same price. Please confirm the substitution by January 10. The fruit cups and tea will be prepared as requested. Our driver will call the contact person when arriving at the building's loading entrance.",
+    "passage_vi": "Phiếu đặt hàng\nKhách hàng: Northline Design\nSự kiện: Bữa sáng cho nhân viên\nNgày: 16 tháng 1\nSố khách: 28\nMón yêu cầu: cốc trái cây, bánh cuộn yến mạch, trà\nGiờ giao: 8:00 sáng\n\nTrả lời của nhà cung cấp\nCảm ơn bạn đã đặt hàng. Chúng tôi có thể giao bữa sáng lúc 8:00, nhưng nhà cung cấp không thể cung cấp bánh cuộn yến mạch vào ngày 16 tháng 1. Chúng tôi có thể thay bằng bánh muffin ngũ cốc nguyên hạt với cùng mức giá. Vui lòng xác nhận thay thế trước ngày 10 tháng 1. Cốc trái cây và trà sẽ được chuẩn bị như yêu cầu. Tài xế sẽ gọi cho người liên hệ khi đến lối bốc hàng của tòa nhà.",
+    "items": [
+      {"id": "p7_original_double_014_q1", "stem": "How many people will attend the breakfast?", "opts": ["16", "28", "80", "82"], "ans": 1, "expl": "The order form lists 28 guests.", "vi_expl": "Phiếu đặt hàng ghi có 28 khách."},
+      {"id": "p7_original_double_014_q2", "stem": "What substitution does the caterer propose?", "opts": ["Tea for fruit cups", "Fruit cups for muffins", "Whole-grain muffins for oat rolls", "Oat rolls for tea"], "ans": 2, "expl": "The caterer proposes replacing oat rolls with whole-grain muffins at the same price.", "vi_expl": "Nhà cung cấp đề xuất thay bánh cuộn yến mạch bằng muffin ngũ cốc nguyên hạt với cùng giá."},
+      {"id": "p7_original_double_014_q3", "stem": "When must Northline Design confirm the change?", "opts": ["By January 8", "By January 10", "On January 16", "After the driver calls"], "ans": 1, "expl": "The reply asks for confirmation by January 10.", "vi_expl": "Thư trả lời yêu cầu xác nhận trước ngày 10 tháng 1."}
+    ]
+  },
+  {
+    "id": "p7_original_single_015",
+    "section": "p7",
+    "kind": "single",
+    "level": 3,
+    "source": "original:exam-expansion-2026",
+    "title": "Office recycling drive",
+    "title_vi": "Đợt thu gom tái chế ở văn phòng",
+    "passage": "OFFICE NOTICE\n\nThe Green Desk team will collect used batteries and small electronic accessories in the lobby from Monday through Wednesday. Collection boxes will be available beside the visitor sign-in table. Please place batteries in a separate bag and remove personal labels from old accessories before dropping them off. The team cannot accept large appliances, printer cartridges, or liquids. A summary of the amount collected will be posted on the staff noticeboard next Friday. Employees who have questions about acceptable items should email Green Desk before bringing them to the lobby.",
+    "passage_vi": "THÔNG BÁO VĂN PHÒNG\n\nNhóm Green Desk sẽ thu gom pin đã dùng và phụ kiện điện tử nhỏ tại sảnh từ thứ Hai đến thứ Tư. Các thùng thu gom sẽ đặt cạnh bàn đăng ký khách. Vui lòng để pin trong túi riêng và bóc nhãn cá nhân khỏi phụ kiện cũ trước khi mang đến. Nhóm không nhận thiết bị lớn, hộp mực máy in hoặc chất lỏng. Bản tổng kết số lượng thu gom sẽ được dán trên bảng thông báo nhân viên vào thứ Sáu tuần tới. Nhân viên có câu hỏi về đồ được nhận nên gửi email cho Green Desk trước khi mang đến sảnh.",
+    "items": [
+      {"id": "p7_original_single_015_q1", "stem": "Where will the collection boxes be placed?", "opts": ["Beside the staff noticeboard", "Inside the recycling team's office", "Beside the visitor sign-in table", "Near the printer room"], "ans": 2, "expl": "The boxes will be beside the visitor sign-in table in the lobby.", "vi_expl": "Các thùng thu gom sẽ đặt cạnh bàn đăng ký khách ở sảnh."},
+      {"id": "p7_original_single_015_q2", "stem": "What cannot be donated?", "opts": ["Used batteries", "Small electronic accessories", "Large appliances", "Accessories without labels"], "ans": 2, "expl": "The notice lists large appliances among the items the team cannot accept.", "vi_expl": "Thông báo liệt kê thiết bị lớn trong nhóm đồ mà nhóm không thể nhận."},
+      {"id": "p7_original_single_015_q3", "stem": "When will the collection summary be posted?", "opts": ["Next Monday", "Next Wednesday", "Next Friday", "At the end of the month"], "ans": 2, "expl": "The summary will be posted next Friday.", "vi_expl": "Bản tổng kết sẽ được dán vào thứ Sáu tuần tới."}
+    ]
+  }
+]

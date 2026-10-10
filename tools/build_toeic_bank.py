@@ -7,6 +7,7 @@ are reproducible generated artifacts.
 import hashlib
 import json
 import os
+import re
 import sys
 
 
@@ -19,13 +20,18 @@ def read_json(*parts):
 
 
 def read_authoring_p7():
-    path = os.path.join(ROOT, "tools", "authoring", "exam_p7.json")
-    if not os.path.isfile(path):
-        return []
-    value = read_json("tools", "authoring", "exam_p7.json")
-    if not isinstance(value, list):
-        raise ValueError("exam_p7.json must contain a list")
-    return value
+    folder = os.path.join(ROOT, "tools", "authoring")
+    names = sorted(
+        name for name in os.listdir(folder)
+        if re.fullmatch(r"exam_p7(?:_batch\d+)?\.json", name)
+    )
+    groups = []
+    for name in names:
+        value = read_json("tools", "authoring", name)
+        if not isinstance(value, list):
+            raise ValueError(f"{name} must contain a list")
+        groups.extend(value)
+    return groups
 
 
 def write_json(path, value):
