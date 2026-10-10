@@ -52,7 +52,8 @@
           "expl": "The final sentence says that volunteers with time may move the seed trays back into the shed.",
           "qtype": "p7_single"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_single_002",
@@ -105,7 +106,8 @@
           "expl": "Employees are asked to share the existing spaces until six additional racks are added in June.",
           "qtype": "p7_single"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_single_003",
@@ -158,7 +160,8 @@
           "expl": "The final paragraph asks participants to contact the center at least one week before the first class.",
           "qtype": "p7_single"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_double_004",
@@ -211,7 +214,8 @@
           "expl": "The reply says that a courier will collect the folders from the reception desk.",
           "qtype": "p7_double"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_triple_005",
@@ -264,7 +268,8 @@
           "expl": "The staff message says that the bakery requested the outlet for its coffee machine.",
           "qtype": "p7_triple"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_single_006",
@@ -317,7 +322,8 @@
           "expl": "The notice specifically says that lunch arrangements will not change.",
           "qtype": "p7_single"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_single_007",
@@ -370,7 +376,8 @@
           "expl": "The notice gives November 8 as the deadline for arranging an exchange.",
           "qtype": "p7_single"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_double_008",
@@ -423,7 +430,8 @@
           "expl": "The reply says the Friday collection remains scheduled unless Omar cancels it before noon.",
           "qtype": "p7_double"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_triple_009",
@@ -476,7 +484,8 @@
           "expl": "The organizer says the vendor requested shade for the candle display.",
           "qtype": "p7_triple"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_single_010",
@@ -529,7 +538,8 @@
           "expl": "Employees who could not attend may register for the repeat workshop.",
           "qtype": "p7_single"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_double_011",
@@ -582,7 +592,8 @@
           "expl": "The adviser will send the room number and equipment-room rules after payment is recorded.",
           "qtype": "p7_double"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_single_012",
@@ -635,7 +646,8 @@
           "expl": "The notice asks customers to call before the seventh day to arrange a later date.",
           "qtype": "p7_single"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_triple_013",
@@ -688,7 +700,8 @@
           "expl": "The staff message says the coat desk closes fifteen minutes after the performance.",
           "qtype": "p7_triple"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_double_014",
@@ -741,7 +754,8 @@
           "expl": "The reply asks for confirmation by January 10.",
           "qtype": "p7_double"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_single_015",
@@ -794,7 +808,8 @@
           "expl": "The summary will be posted next Friday.",
           "qtype": "p7_single"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_single_016",
@@ -847,7 +862,8 @@
           "expl": "Groups reserved for July 6 may move their event to Room 3 without an additional fee.",
           "qtype": "p7_single"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_double_017",
@@ -900,7 +916,8 @@
           "expl": "Passengers needing luggage assistance should arrive at least twenty minutes early and speak to the platform attendant.",
           "qtype": "p7_double"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_triple_018",
@@ -953,7 +970,8 @@
           "expl": "The staff note says to call customers whose orders include two or more copies first.",
           "qtype": "p7_triple"
         }
-      ]
+      ],
+      "set": "1"
     },
     {
       "id": "p7_original_single_019",
@@ -1006,7 +1024,8 @@
           "expl": "The local server will be disconnected during the move, so employees should use the shared drive.",
           "qtype": "p7_single"
         }
-      ]
+      ],
+      "set": "2"
     },
     {
       "id": "p7_original_double_020",
@@ -1059,7 +1078,1844 @@
           "expl": "Printed name badges will be available at the registration table.",
           "qtype": "p7_double"
         }
-      ]
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p7_original_single_021",
+      "section": "p7",
+      "title": "Clinic appointment reminder",
+      "passage": "APPOINTMENT REMINDER\n\nLena Ortiz has an appointment with Dr. Chen at Greenway Clinic on Tuesday, March 12, at 2:30 p.m. Patients should check in at the front desk ten minutes early. Because the clinic is repainting the east hallway, visitors should use the west entrance after noon. Lena should bring her insurance card and the medication list she prepared during her last visit. The clinic asks patients who need to reschedule to call before 10:00 a.m. on the appointment day.",
+      "items": [
+        {
+          "id": "p7_original_single_021_q1",
+          "section": "p7",
+          "level": 3,
+          "stem": "When is Lena's appointment?",
+          "opts": [
+            "Monday morning",
+            "Tuesday afternoon",
+            "Wednesday afternoon",
+            "Thursday morning"
+          ],
+          "ans": 1,
+          "expl": "The reminder schedules Lena's appointment for Tuesday, March 12, at 2:30 p.m.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_021_q2",
+          "section": "p7",
+          "level": 3,
+          "stem": "Which entrance should visitors use after noon?",
+          "opts": [
+            "The east entrance",
+            "The main parking entrance",
+            "The west entrance",
+            "The staff entrance"
+          ],
+          "ans": 2,
+          "expl": "Visitors should use the west entrance while the east hallway is being repainted.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_021_q3",
+          "section": "p7",
+          "level": 3,
+          "stem": "What should Lena bring?",
+          "opts": [
+            "A new appointment form",
+            "Her insurance card and medication list",
+            "Paint supplies",
+            "A letter from the front desk"
+          ],
+          "ans": 1,
+          "expl": "The reminder asks Lena to bring her insurance card and medication list.",
+          "qtype": "p7_single"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p7_original_double_022",
+      "section": "p7",
+      "title": "Hotel booking change",
+      "passage": "BOOKING RECORD\nGuest: Omar Bell\nRoom: Garden View, two nights\nArrival: Friday, June 14\nBreakfast: Included\n\nHOTEL MESSAGE\nThe Garden View room reserved for Omar will be unavailable because a plumbing repair has taken longer than expected. The hotel can offer a Courtyard room at the same rate, or Omar may move the reservation to Saturday without a change fee. Breakfast will still be included with either option. Please reply by Wednesday evening so the front desk can prepare the room and update the arrival list.",
+      "items": [
+        {
+          "id": "p7_original_double_022_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "What was included in Omar's booking?",
+          "opts": [
+            "Airport transportation",
+            "A garden tour",
+            "Breakfast",
+            "A late checkout"
+          ],
+          "ans": 2,
+          "expl": "The booking record says breakfast is included.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_022_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "Why is the original room unavailable?",
+          "opts": [
+            "The garden is closed.",
+            "A plumbing repair is unfinished.",
+            "The arrival list is full.",
+            "The rate has changed."
+          ],
+          "ans": 1,
+          "expl": "The hotel says the plumbing repair has taken longer than expected.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_022_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "What must Omar do by Wednesday evening?",
+          "opts": [
+            "Pay a change fee",
+            "Choose a breakfast time",
+            "Reply to the hotel",
+            "Collect a room key"
+          ],
+          "ans": 2,
+          "expl": "Omar should reply by Wednesday evening so the hotel can prepare for his arrival.",
+          "qtype": "p7_double"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p7_original_triple_023",
+      "section": "p7",
+      "title": "Library order and author talk",
+      "passage": "LIBRARY ORDER\nPatel Learning Center\nOrder: six copies of River Signals\nRequested pickup: Monday afternoon\n\nEVENT NOTICE\nWriter Hana Brooks will discuss River Signals at the Patel Learning Center on Monday at 5:30 p.m. The discussion is open to readers, but seats must be reserved online. Ordered copies will be placed at the information desk after the event. The center will keep unclaimed copies for five business days.\n\nSTAFF MESSAGE\nThe publisher has confirmed that the shipment will arrive Monday morning. Please separate the six copies for the learning center and place the pickup slips inside the order envelope. If the delivery arrives after noon, call the center director before opening the event room.",
+      "items": [
+        {
+          "id": "p7_original_triple_023_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "How many copies did the learning center order?",
+          "opts": [
+            "Five",
+            "Six",
+            "Seven",
+            "Eight"
+          ],
+          "ans": 1,
+          "expl": "The library order is for six copies of River Signals.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_023_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "What must readers do to attend the discussion?",
+          "opts": [
+            "Buy a book at the desk",
+            "Reserve a seat online",
+            "Arrive before noon",
+            "Bring an order envelope"
+          ],
+          "ans": 1,
+          "expl": "The event notice says seats must be reserved online.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_023_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "What should staff do if the delivery is late?",
+          "opts": [
+            "Cancel the discussion",
+            "Return the books",
+            "Call the center director",
+            "Move the event online"
+          ],
+          "ans": 2,
+          "expl": "Staff should call the center director if the delivery arrives after noon.",
+          "qtype": "p7_triple"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p7_original_single_024",
+      "section": "p7",
+      "title": "Campus shuttle update",
+      "passage": "CAMPUS SHUTTLE UPDATE\n\nThe north loop shuttle will use a temporary stop beside the sports center from April 2 through April 6. The usual stop near the science building is closed while a sidewalk is repaired. Buses will leave the temporary stop every twenty minutes between 7:00 a.m. and 6:00 p.m. The south loop is unchanged. Students carrying large project materials may request the driver's help when boarding, but bicycles cannot be taken on the shuttle during the temporary arrangement.",
+      "items": [
+        {
+          "id": "p7_original_single_024_q1",
+          "section": "p7",
+          "level": 3,
+          "stem": "Where will the north loop stop temporarily?",
+          "opts": [
+            "Beside the sports center",
+            "Inside the science building",
+            "At the south loop",
+            "Near the main library"
+          ],
+          "ans": 0,
+          "expl": "The temporary north loop stop is beside the sports center.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_024_q2",
+          "section": "p7",
+          "level": 3,
+          "stem": "Why is the usual stop closed?",
+          "opts": [
+            "A bus is being repaired.",
+            "A sidewalk is being repaired.",
+            "The sports center is full.",
+            "The route is changing permanently."
+          ],
+          "ans": 1,
+          "expl": "The usual stop is closed while a sidewalk near the science building is repaired.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_024_q3",
+          "section": "p7",
+          "level": 3,
+          "stem": "What cannot passengers take on the shuttle during this period?",
+          "opts": [
+            "Project notes",
+            "Small bags",
+            "Bicycles",
+            "Water bottles"
+          ],
+          "ans": 2,
+          "expl": "Bicycles cannot be taken on the shuttle during the temporary arrangement.",
+          "qtype": "p7_single"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p7_original_double_025",
+      "section": "p7",
+      "title": "Equipment repair request",
+      "passage": "REPAIR REQUEST\nCustomer: Priya Shah\nItem: office label printer\nProblem: labels feed unevenly\nPreferred visit: Thursday morning\n\nTECHNICIAN EMAIL\nHello Priya,\n\nI can visit your office on Thursday between 9:00 and 10:30 a.m. Please leave the printer connected to the power outlet and place a sample of the damaged labels beside it. I will bring a replacement roller. If the repair requires a part that is not in my van, I will order it and send you an estimated delivery date before leaving.\n\nRegards,\nMarco Ruiz",
+      "items": [
+        {
+          "id": "p7_original_double_025_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "What problem does Priya report?",
+          "opts": [
+            "The printer has no power.",
+            "Labels feed unevenly.",
+            "The office has no sample labels.",
+            "The replacement roller is missing."
+          ],
+          "ans": 1,
+          "expl": "The repair request says the labels feed unevenly.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_025_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "What should Priya leave beside the printer?",
+          "opts": [
+            "A power outlet",
+            "A delivery estimate",
+            "A damaged label sample",
+            "A spare van part"
+          ],
+          "ans": 2,
+          "expl": "Marco asks Priya to place a sample of the damaged labels beside the printer.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_025_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "What will Marco do if he needs an unavailable part?",
+          "opts": [
+            "Cancel the visit",
+            "Order the part",
+            "Move the office",
+            "Replace the labels himself"
+          ],
+          "ans": 1,
+          "expl": "Marco will order a part that is not in his van.",
+          "qtype": "p7_double"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p7_original_single_026",
+      "section": "p7",
+      "title": "Farmers market notice",
+      "passage": "FARMERS MARKET NOTICE\n\nThe Riverbend Farmers Market will move indoors to the community hall this Saturday because strong winds are expected. The market will open at 9:00 a.m. and close at 1:00 p.m. Vendors must enter through the rear loading door between 7:30 and 8:30 to set up. Customers may bring reusable bags, but the hall has limited bicycle parking. The music performance planned for the market will be held next Saturday instead.",
+      "items": [
+        {
+          "id": "p7_original_single_026_q1",
+          "section": "p7",
+          "level": 3,
+          "stem": "Why will the market move indoors?",
+          "opts": [
+            "The hall has more vendors.",
+            "Strong winds are expected.",
+            "The music is too loud.",
+            "Bicycle parking is full."
+          ],
+          "ans": 1,
+          "expl": "The market will move indoors because strong winds are expected.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_026_q2",
+          "section": "p7",
+          "level": 3,
+          "stem": "When must vendors enter to set up?",
+          "opts": [
+            "Before 7:00",
+            "Between 7:30 and 8:30",
+            "At 9:00 exactly",
+            "After 1:00"
+          ],
+          "ans": 1,
+          "expl": "Vendors must enter through the rear door between 7:30 and 8:30.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_026_q3",
+          "section": "p7",
+          "level": 3,
+          "stem": "When will the music performance take place?",
+          "opts": [
+            "This Friday",
+            "This Saturday morning",
+            "Next Saturday",
+            "Next month"
+          ],
+          "ans": 2,
+          "expl": "The music performance has been moved to next Saturday.",
+          "qtype": "p7_single"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p7_original_triple_027",
+      "section": "p7",
+      "title": "Catering order and pickup",
+      "passage": "CATERING ORDER\nCustomer: Westfield Design\nEvent: Thursday lunch\nOrder: 24 vegetable wraps and fruit cups\nPickup time: 11:30 a.m.\n\nKITCHEN NOTE\nThe kitchen has prepared the fruit cups in chilled containers. The wraps will be packed separately so they stay fresh during transport. Westfield Design may use the side entrance for pickup because the front counter will be busy with breakfast customers.\n\nCUSTOMER MESSAGE\nPlease confirm that the delivery van has enough space for two insulated boxes. If Westfield needs to change the pickup time, contact the kitchen before 10:00 a.m. on Thursday. A printed receipt will be placed inside the first box.",
+      "items": [
+        {
+          "id": "p7_original_triple_027_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "What did Westfield Design order?",
+          "opts": [
+            "Breakfast sandwiches and coffee",
+            "Vegetable wraps and fruit cups",
+            "Two insulated delivery vans",
+            "Printed kitchen receipts"
+          ],
+          "ans": 1,
+          "expl": "The catering order is for vegetable wraps and fruit cups.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_027_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "Why will the wraps be packed separately?",
+          "opts": [
+            "To make them easier to count",
+            "To keep them fresh during transport",
+            "To fit them in the front counter",
+            "To include the printed receipt"
+          ],
+          "ans": 1,
+          "expl": "The kitchen will pack the wraps separately so they stay fresh during transport.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_027_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "What should the customer confirm?",
+          "opts": [
+            "The number of breakfast customers",
+            "The van's available space",
+            "The color of the side entrance",
+            "The price of the receipt"
+          ],
+          "ans": 1,
+          "expl": "The customer should confirm that the van has space for two insulated boxes.",
+          "qtype": "p7_triple"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p7_original_double_028",
+      "section": "p7",
+      "title": "Museum membership renewal",
+      "passage": "MEMBERSHIP RECORD\nMember: Isaac Green\nPlan: Family annual membership\nExpires: September 30\nBenefits: four guest passes\n\nMUSEUM EMAIL\nThe City History Museum will close its west gallery for lighting work from October 3 to October 10. Members may still use the east gallery and the reading room during that week. Isaac can renew his family membership online before September 30 or at the visitor desk on his next visit. Guest passes remain valid after renewal, but unused passes from this year cannot be carried into a new membership year.",
+      "items": [
+        {
+          "id": "p7_original_double_028_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "How many guest passes are included?",
+          "opts": [
+            "Two",
+            "Three",
+            "Four",
+            "Five"
+          ],
+          "ans": 2,
+          "expl": "Isaac's membership plan includes four guest passes.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_028_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "Which area may members use during the west gallery closure?",
+          "opts": [
+            "Only the west gallery",
+            "The east gallery and reading room",
+            "The lighting workshop",
+            "The visitor desk after closing"
+          ],
+          "ans": 1,
+          "expl": "Members may use the east gallery and reading room during the closure.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_028_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "What happens to unused passes from this year?",
+          "opts": [
+            "They become museum tickets for life.",
+            "They are carried into the new year.",
+            "They cannot be carried into the new year.",
+            "They are exchanged for lighting repairs."
+          ],
+          "ans": 2,
+          "expl": "Unused passes from the current year cannot be carried into the new membership year.",
+          "qtype": "p7_double"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p7_original_single_029",
+      "section": "p7",
+      "title": "Staff training schedule",
+      "passage": "STAFF TRAINING SCHEDULE\n\nNew customer-service training will take place in Room 204 on Wednesday, May 8. The morning group begins at 8:30, and the afternoon group begins at 1:30. Employees should bring their current name badge and complete the short online survey before arriving. Coffee will be available, but lunch will not be provided. Staff who cannot attend their assigned group should email the training coordinator by Monday.",
+      "items": [
+        {
+          "id": "p7_original_single_029_q1",
+          "section": "p7",
+          "level": 3,
+          "stem": "Where will the training take place?",
+          "opts": [
+            "In Room 104",
+            "In Room 204",
+            "At the coffee station",
+            "Online only"
+          ],
+          "ans": 1,
+          "expl": "The schedule places the training in Room 204.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_029_q2",
+          "section": "p7",
+          "level": 3,
+          "stem": "What should employees complete before arriving?",
+          "opts": [
+            "A lunch order",
+            "A new name badge",
+            "An online survey",
+            "A room reservation"
+          ],
+          "ans": 2,
+          "expl": "Employees should complete the short online survey before arriving.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_029_q3",
+          "section": "p7",
+          "level": 3,
+          "stem": "When should an employee who cannot attend email the coordinator?",
+          "opts": [
+            "By Monday",
+            "On Wednesday morning",
+            "After lunch",
+            "At the end of May"
+          ],
+          "ans": 0,
+          "expl": "The notice asks unavailable staff to email by Monday.",
+          "qtype": "p7_single"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p7_original_double_030",
+      "section": "p7",
+      "title": "Travel bag policy update",
+      "passage": "TRAVEL RESERVATION\nTraveler: Mei Foster\nRoute: Lakeside to Northport\nDeparture: 7:15 a.m.\nChecked bags: one\n\nCARRIER NOTICE\nPassengers on the Lakeside route may check one bag without charge. A second bag costs an additional fee and must be registered at least one hour before departure. The baggage desk will open at 5:45 a.m. on Monday. Small musical instruments may be carried into the cabin if they fit beneath a seat; larger instruments must be checked and placed in a protective case.",
+      "items": [
+        {
+          "id": "p7_original_double_030_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "How many bags may passengers check without charge?",
+          "opts": [
+            "None",
+            "One",
+            "Two",
+            "Three"
+          ],
+          "ans": 1,
+          "expl": "The carrier allows one checked bag without charge.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_030_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "When must a second bag be registered?",
+          "opts": [
+            "After arrival",
+            "At the end of the trip",
+            "At least one hour before departure",
+            "Only after the flight leaves"
+          ],
+          "ans": 2,
+          "expl": "A second bag must be registered at least one hour before departure.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_030_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "What may a passenger do with a small musical instrument?",
+          "opts": [
+            "Carry it into the cabin",
+            "Leave it at the baggage desk",
+            "Send it without a case",
+            "Put it in a second checked bag"
+          ],
+          "ans": 0,
+          "expl": "A small instrument may be carried into the cabin if it fits beneath a seat.",
+          "qtype": "p7_double"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p7_original_triple_031",
+      "section": "p7",
+      "title": "Community garden workday",
+      "passage": "GARDEN SIGN-UP\nVolunteer: Ruth Kim\nTask: herb-bed preparation\nShift: Saturday, 8:00–10:00 a.m.\nMeeting point: tool shed\n\nGARDEN COORDINATOR'S NOTE\nThe workday will begin with a short safety briefing beside the tool shed. Volunteers should wear closed shoes and bring a water bottle. The garden will supply gloves, hand tools, and compost. Children may attend only with an adult who remains on site.\n\nWEATHER MESSAGE\nLight rain is expected early Saturday, but the workday will continue unless the coordinator posts a cancellation by 7:00 a.m. If the ground is too wet for the herb beds, volunteers will clean the greenhouse shelves instead.",
+      "items": [
+        {
+          "id": "p7_original_triple_031_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "Where will volunteers meet?",
+          "opts": [
+            "At the greenhouse",
+            "Beside the tool shed",
+            "At the herb market",
+            "Near the parking gate"
+          ],
+          "ans": 1,
+          "expl": "Ruth's sign-up lists the tool shed as the meeting point.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_031_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "What will the garden provide?",
+          "opts": [
+            "Closed shoes",
+            "Water bottles",
+            "Gloves and hand tools",
+            "Adult supervisors"
+          ],
+          "ans": 2,
+          "expl": "The garden will supply gloves, hand tools, and compost.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_031_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "What will volunteers do if the soil is too wet?",
+          "opts": [
+            "Plant herbs indoors",
+            "Cancel the entire season",
+            "Clean greenhouse shelves",
+            "Move the meeting to Sunday"
+          ],
+          "ans": 2,
+          "expl": "If the ground is too wet, volunteers will clean the greenhouse shelves.",
+          "qtype": "p7_triple"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p7_original_single_032",
+      "section": "p7",
+      "title": "Pharmacy collection notice",
+      "passage": "PHARMACY NOTICE\n\nA prescription for Daniel Reed is ready at the Oak Pharmacy counter. Daniel may collect it after 3:00 p.m. on Thursday by showing photo identification. The pharmacy will keep the prescription for seven days. Customers who cannot visit during counter hours may ask a family member to collect it, but the family member must bring a copy of Daniel's identification and the collection code printed on the receipt.\n\nCounter hours: 8:00 a.m.–6:00 p.m.",
+      "items": [
+        {
+          "id": "p7_original_single_032_q1",
+          "section": "p7",
+          "level": 3,
+          "stem": "When may Daniel collect the prescription?",
+          "opts": [
+            "Before 8:00 on Thursday",
+            "After 3:00 p.m. on Thursday",
+            "Only next month",
+            "After the pharmacy closes"
+          ],
+          "ans": 1,
+          "expl": "Daniel may collect the prescription after 3:00 p.m. on Thursday.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_032_q2",
+          "section": "p7",
+          "level": 3,
+          "stem": "What must Daniel show?",
+          "opts": [
+            "A family letter",
+            "Photo identification",
+            "A new prescription",
+            "A pharmacy schedule"
+          ],
+          "ans": 1,
+          "expl": "Daniel must show photo identification when collecting the prescription.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_032_q3",
+          "section": "p7",
+          "level": 3,
+          "stem": "What must a family member bring when collecting for Daniel?",
+          "opts": [
+            "A copy of Daniel's identification and the collection code",
+            "Only a phone number",
+            "A new payment card",
+            "The pharmacy key"
+          ],
+          "ans": 0,
+          "expl": "A family member needs a copy of Daniel's identification and the collection code.",
+          "qtype": "p7_single"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p7_original_double_033",
+      "section": "p7",
+      "title": "Software subscription change",
+      "passage": "ACCOUNT SUMMARY\nCustomer: Northline Studio\nPlan: Team Basic\nRenewal date: August 1\nSeats: eight\n\nSERVICE EMAIL\nNorthline Studio may change to Team Plus before its renewal date. Team Plus includes shared project templates and twelve seats, but it does not include the Basic plan's monthly training call. The account owner can compare the plans in the billing panel. Changes made after August 1 will apply to the following month, and unused Basic-plan credits will not be refunded.",
+      "items": [
+        {
+          "id": "p7_original_double_033_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "How many seats does Northline Studio currently have?",
+          "opts": [
+            "Six",
+            "Eight",
+            "Ten",
+            "Twelve"
+          ],
+          "ans": 1,
+          "expl": "The account summary lists eight seats on Team Basic.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_033_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "What does Team Plus include?",
+          "opts": [
+            "A monthly training call",
+            "Shared project templates",
+            "A refund for unused credits",
+            "A renewal after August 1"
+          ],
+          "ans": 1,
+          "expl": "Team Plus includes shared project templates and twelve seats.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_033_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "What happens to changes made after August 1?",
+          "opts": [
+            "They apply to the following month.",
+            "They are immediately refunded.",
+            "They cancel the account.",
+            "They add a training call."
+          ],
+          "ans": 0,
+          "expl": "Changes made after August 1 apply to the following month.",
+          "qtype": "p7_double"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p7_original_single_034",
+      "section": "p7",
+      "title": "Workshop registration",
+      "passage": "WORKSHOP REGISTRATION\n\nThe Harbor Skills Center is accepting registrations for a Saturday workshop on basic bicycle maintenance. The class runs from 10:00 a.m. to noon and includes a demonstration, but participants should bring their own bicycle for the practice portion. The center supplies tools and safety glasses. Registration closes when twelve places are filled. Participants who cancel by Thursday may transfer their place to a friend.",
+      "items": [
+        {
+          "id": "p7_original_single_034_q1",
+          "section": "p7",
+          "level": 3,
+          "stem": "What should participants bring?",
+          "opts": [
+            "Their own bicycle",
+            "A set of safety glasses",
+            "Twelve tools",
+            "A friend's registration"
+          ],
+          "ans": 0,
+          "expl": "Participants should bring their own bicycle for the practice portion.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_034_q2",
+          "section": "p7",
+          "level": 3,
+          "stem": "What does the center provide?",
+          "opts": [
+            "Bicycles",
+            "Tools and safety glasses",
+            "Lunch",
+            "A repair certificate"
+          ],
+          "ans": 1,
+          "expl": "The center supplies tools and safety glasses.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_034_q3",
+          "section": "p7",
+          "level": 3,
+          "stem": "When may a participant transfer a place?",
+          "opts": [
+            "After the workshop ends",
+            "By Thursday if they cancel",
+            "Only when twelve people register",
+            "On the practice day"
+          ],
+          "ans": 1,
+          "expl": "A participant who cancels by Thursday may transfer the place to a friend.",
+          "qtype": "p7_single"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p7_original_triple_035",
+      "section": "p7",
+      "title": "Theater ticket collection",
+      "passage": "TICKET ORDER\nCustomer: Nora Wells\nShow: The Glass Orchard\nTickets: three balcony seats\nCollection: theater box office\n\nTHEATER ANNOUNCEMENT\nThe Glass Orchard begins at 7:30 p.m. on Friday. The box office opens at 5:30, and balcony ticket holders may enter through the north doors. A pre-show talk will take place in the lobby at 6:45. The theater recommends collecting tickets before the talk because the box office may become busy.\n\nFRONT-OF-HOUSE NOTE\nNora's order is paid in full. Place the three tickets in an envelope marked Wells and keep it at the box office until 7:00. After that time, move unclaimed envelopes to the information desk beside the north doors.",
+      "items": [
+        {
+          "id": "p7_original_triple_035_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "How many tickets did Nora order?",
+          "opts": [
+            "Two",
+            "Three",
+            "Four",
+            "Seven"
+          ],
+          "ans": 1,
+          "expl": "Nora's order is for three balcony seats.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_035_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "Why does the theater recommend collecting tickets early?",
+          "opts": [
+            "The north doors close at 6:45.",
+            "The talk is outside.",
+            "The box office may become busy.",
+            "The show starts at 5:30."
+          ],
+          "ans": 2,
+          "expl": "The theater says the box office may become busy before the show.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_035_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "Where will an unclaimed envelope go after 7:00?",
+          "opts": [
+            "To the balcony",
+            "To the lobby stage",
+            "To the information desk",
+            "Back to the customer"
+          ],
+          "ans": 2,
+          "expl": "Unclaimed envelopes move to the information desk beside the north doors after 7:00.",
+          "qtype": "p7_triple"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p7_original_double_036",
+      "section": "p7",
+      "title": "Coworking room booking",
+      "passage": "ROOM BOOKING\nMember: Arjun Patel\nRoom: Cedar meeting room\nDate: Tuesday\nBooking: 2:00–4:00 p.m.\nEquipment: screen and whiteboard\n\nSPACE MANAGER'S MESSAGE\nThe Cedar room's screen is being replaced on Tuesday morning. The room will be available at 2:00, but the replacement screen may not be installed until 3:00. Arjun may use the whiteboard immediately or move the booking to the Maple room, which has a working screen. There is no charge for changing rooms. Please tell the front desk which option he prefers by noon on Tuesday.",
+      "items": [
+        {
+          "id": "p7_original_double_036_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "When is Arjun's room booked?",
+          "opts": [
+            "Monday morning",
+            "Tuesday from 2:00 to 4:00",
+            "Tuesday from 3:00 to 5:00",
+            "Wednesday afternoon"
+          ],
+          "ans": 1,
+          "expl": "The booking record lists Tuesday from 2:00 to 4:00 p.m.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_036_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "What may not be ready at 2:00?",
+          "opts": [
+            "The Cedar room",
+            "The front desk",
+            "The replacement screen",
+            "The whiteboard"
+          ],
+          "ans": 2,
+          "expl": "The replacement screen may not be installed until 3:00.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_036_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "What must Arjun tell the front desk?",
+          "opts": [
+            "Whether he wants Maple or Cedar",
+            "The screen's purchase price",
+            "The manager's work hours",
+            "The number of whiteboards"
+          ],
+          "ans": 0,
+          "expl": "Arjun should tell the front desk which room option he prefers.",
+          "qtype": "p7_double"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p7_original_single_037",
+      "section": "p7",
+      "title": "Bike rental instructions",
+      "passage": "BIKE RENTAL INSTRUCTIONS\n\nCustomers renting a Harbor Wheel bicycle must collect a helmet and a lock at the dock before leaving. Rentals are charged by the hour, and the first thirty minutes are included in the daily pass. Return bicycles to any Harbor Wheel dock before 9:00 p.m. If a dock is full, use the app to find the nearest available dock instead of leaving the bicycle on the sidewalk.",
+      "items": [
+        {
+          "id": "p7_original_single_037_q1",
+          "section": "p7",
+          "level": 3,
+          "stem": "What must renters collect before leaving?",
+          "opts": [
+            "A map and a daily pass",
+            "A helmet and a lock",
+            "A phone charger",
+            "A sidewalk permit"
+          ],
+          "ans": 1,
+          "expl": "Renters must collect a helmet and a lock at the dock.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_037_q2",
+          "section": "p7",
+          "level": 3,
+          "stem": "What is included in the daily pass?",
+          "opts": [
+            "The first thirty minutes",
+            "A full day of hourly charges",
+            "A replacement bicycle",
+            "A second helmet"
+          ],
+          "ans": 0,
+          "expl": "The first thirty minutes are included in the daily pass.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_037_q3",
+          "section": "p7",
+          "level": 3,
+          "stem": "What should a renter do if a dock is full?",
+          "opts": [
+            "Leave the bicycle on the sidewalk",
+            "Return it the next morning",
+            "Use the app to find another dock",
+            "Remove the dock sign"
+          ],
+          "ans": 2,
+          "expl": "The instructions say to use the app to find the nearest available dock.",
+          "qtype": "p7_single"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p7_original_double_038",
+      "section": "p7",
+      "title": "Volunteer shift swap",
+      "passage": "VOLUNTEER SCHEDULE\nVolunteer: Evan Ross\nAssignment: welcome desk\nShift: Sunday, 9:00 a.m.–noon\nLocation: Eastside Food Hub\n\nCOORDINATOR'S EMAIL\nEvan has asked to exchange his Sunday shift because of a family appointment. Mira Lopez can cover the welcome desk from 9:00 to 10:30, but she cannot stay after that. The coordinator has asked Evan to find another volunteer for the remaining ninety minutes and update the shared schedule before Friday afternoon. The food hub will provide name badges at the welcome desk.",
+      "items": [
+        {
+          "id": "p7_original_double_038_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "Why does Evan want to exchange his shift?",
+          "opts": [
+            "He has a family appointment.",
+            "The welcome desk is closed.",
+            "He needs a name badge.",
+            "The schedule is missing."
+          ],
+          "ans": 0,
+          "expl": "Evan wants to exchange the shift because of a family appointment.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_038_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "How long can Mira cover the shift?",
+          "opts": [
+            "Thirty minutes",
+            "Ninety minutes",
+            "Two hours",
+            "The entire morning"
+          ],
+          "ans": 1,
+          "expl": "Mira can cover from 9:00 to 10:30, which is ninety minutes.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_038_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "What must Evan update?",
+          "opts": [
+            "The food menu",
+            "The shared schedule",
+            "The name badge design",
+            "The family appointment"
+          ],
+          "ans": 1,
+          "expl": "Evan must update the shared schedule before Friday afternoon.",
+          "qtype": "p7_double"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p7_original_triple_039",
+      "section": "p7",
+      "title": "School art fair",
+      "passage": "ART FAIR REGISTRATION\nStudent: Maya Ortiz\nProject: recycled-paper sculpture\nDisplay table: B12\nSetup time: Friday, 3:30 p.m.\n\nPARENT NOTICE\nThe school art fair will open to families at 5:00 p.m. on Friday in the gym. Students may bring one guest during setup, but all sculptures must remain on the assigned tables. A short awards presentation will start at 6:15 near the stage. Visitors may vote for a display using a paper ballot at the entrance.\n\nTEACHER MESSAGE\nMaya's table is close to the gym doors, so please keep the walkway clear. Bring the sculpture in a box and remove the box before families arrive. The art club will provide table labels and clips.",
+      "items": [
+        {
+          "id": "p7_original_triple_039_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "Where is Maya's project assigned?",
+          "opts": [
+            "Table A12",
+            "Table B12",
+            "Near the stage",
+            "At the entrance"
+          ],
+          "ans": 1,
+          "expl": "Maya's registration assigns her project to table B12.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_039_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "When will the awards presentation begin?",
+          "opts": [
+            "At 3:30",
+            "At 5:00",
+            "At 6:15",
+            "After the fair closes"
+          ],
+          "ans": 2,
+          "expl": "The parent notice says the awards presentation starts at 6:15.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_039_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "What should Maya do with the box?",
+          "opts": [
+            "Use it as the display table",
+            "Leave it by the gym door",
+            "Remove it before families arrive",
+            "Give it to the art club"
+          ],
+          "ans": 2,
+          "expl": "The teacher asks Maya to remove the box before families arrive.",
+          "qtype": "p7_triple"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p7_original_single_040",
+      "section": "p7",
+      "title": "Package delivery instruction",
+      "passage": "DELIVERY INSTRUCTION\n\nA package for Jun Park will arrive at the Elm Street apartment building on Monday. The courier should use the side entrance and leave the package with the building manager if Jun is not home. The package contains a glass item, so it must not be placed in the parcel locker. Jun can collect it from the manager after showing the delivery message on his phone.",
+      "items": [
+        {
+          "id": "p7_original_single_040_q1",
+          "section": "p7",
+          "level": 3,
+          "stem": "Which entrance should the courier use?",
+          "opts": [
+            "The roof entrance",
+            "The side entrance",
+            "The parcel locker",
+            "The parking exit"
+          ],
+          "ans": 1,
+          "expl": "The delivery instruction tells the courier to use the side entrance.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_040_q2",
+          "section": "p7",
+          "level": 3,
+          "stem": "Why cannot the package go into the parcel locker?",
+          "opts": [
+            "Jun is not home.",
+            "The manager is away.",
+            "It contains a glass item.",
+            "The locker is beside the entrance."
+          ],
+          "ans": 2,
+          "expl": "The package contains a glass item, so it must not be placed in the locker.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_040_q3",
+          "section": "p7",
+          "level": 3,
+          "stem": "What should Jun show when collecting the package?",
+          "opts": [
+            "A building key",
+            "The delivery message on his phone",
+            "A parcel locker receipt",
+            "A glass repair bill"
+          ],
+          "ans": 1,
+          "expl": "Jun can collect the package after showing the delivery message on his phone.",
+          "qtype": "p7_single"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p7_original_double_041",
+      "section": "p7",
+      "title": "Hotel maintenance notice",
+      "passage": "GUEST RECORD\nGuest: Sofia Lane\nRoom: 418\nStay: Monday–Wednesday\nRequest: extra towels\n\nHOTEL NOTICE\nWater service on the fourth floor will be interrupted from 1:00 to 3:00 p.m. on Tuesday for valve testing. Guests should fill bottles before 1:00 and use the lobby restrooms during the interruption. Housekeeping will deliver Sofia's extra towels before noon. The hotel restaurant will remain open, but its kitchen will serve a shorter menu between 1:00 and 2:30.",
+      "items": [
+        {
+          "id": "p7_original_double_041_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "What did Sofia request?",
+          "opts": [
+            "A room change",
+            "Extra towels",
+            "A shorter menu",
+            "A valve test"
+          ],
+          "ans": 1,
+          "expl": "Sofia's guest record lists a request for extra towels.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_041_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "Why will water service be interrupted?",
+          "opts": [
+            "For valve testing",
+            "For restaurant cleaning",
+            "For a room change",
+            "For towel delivery"
+          ],
+          "ans": 0,
+          "expl": "The hotel will interrupt water service for valve testing.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_041_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "What will the restaurant do during part of the interruption?",
+          "opts": [
+            "Close completely",
+            "Serve a shorter menu",
+            "Move to the fourth floor",
+            "Deliver towels"
+          ],
+          "ans": 1,
+          "expl": "The restaurant will stay open with a shorter menu from 1:00 to 2:30.",
+          "qtype": "p7_double"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p7_original_triple_042",
+      "section": "p7",
+      "title": "Cafe catering pickup",
+      "passage": "CATERING ORDER\nClient: Oakridge Tutors\nOrder: 18 iced teas and 18 lemon scones\nPickup: Monday, 8:15 a.m.\n\nCAFE MESSAGE\nThe drinks will be sealed in a carrier with the client name on the lid. The scones will be packed in two boxes because one box cannot hold eighteen without crushing them. Oakridge Tutors should bring a vehicle with a flat space for the carrier. The order may be paid at pickup by card or by the account credit already on file.\n\nSTAFF NOTE\nPlace the order beside the pastry case, not near the espresso machine. If the client has not arrived by 8:30, call the number in the order record so the drinks can be kept cold.",
+      "items": [
+        {
+          "id": "p7_original_triple_042_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "What is included in the order?",
+          "opts": [
+            "Eighteen iced teas and scones",
+            "Eighteen coffees and cakes",
+            "Two espresso machines",
+            "A pastry case"
+          ],
+          "ans": 0,
+          "expl": "The order includes eighteen iced teas and eighteen lemon scones.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_042_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "Why will the scones be packed in two boxes?",
+          "opts": [
+            "The client ordered two flavors.",
+            "One box could crush them.",
+            "The boxes keep drinks cold.",
+            "The pastry case is full."
+          ],
+          "ans": 1,
+          "expl": "Two boxes are needed so one box does not crush eighteen scones.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_042_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "What should staff do if the client is late?",
+          "opts": [
+            "Move the order outside",
+            "Call the number in the order record",
+            "Open the pastry case",
+            "Cancel the account credit"
+          ],
+          "ans": 1,
+          "expl": "Staff should call the number in the order record if the client has not arrived by 8:30.",
+          "qtype": "p7_triple"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p7_original_single_043",
+      "section": "p7",
+      "title": "Gym class change",
+      "passage": "GYM CLASS UPDATE\n\nThe Thursday evening yoga class will meet in Studio 2 this week instead of Studio 1. Members should bring their own mat because the studio supply is being cleaned. The instructor will begin at 6:15 p.m. as usual. Members who arrive early may wait in the lounge, but they should not enter Studio 2 before the previous class leaves.",
+      "items": [
+        {
+          "id": "p7_original_single_043_q1",
+          "section": "p7",
+          "level": 3,
+          "stem": "Where will the class meet this week?",
+          "opts": [
+            "Studio 1",
+            "Studio 2",
+            "The lounge",
+            "The cleaning room"
+          ],
+          "ans": 1,
+          "expl": "The class will meet in Studio 2 this week.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_043_q2",
+          "section": "p7",
+          "level": 3,
+          "stem": "Why should members bring their own mat?",
+          "opts": [
+            "The class is outdoors.",
+            "The studio supply is being cleaned.",
+            "The instructor changed the time.",
+            "The lounge is closed."
+          ],
+          "ans": 1,
+          "expl": "The studio's mats are being cleaned, so members should bring their own.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_043_q3",
+          "section": "p7",
+          "level": 3,
+          "stem": "Where may early arrivals wait?",
+          "opts": [
+            "In Studio 2",
+            "In Studio 1",
+            "In the lounge",
+            "At the instructor's desk"
+          ],
+          "ans": 2,
+          "expl": "Members who arrive early may wait in the lounge.",
+          "qtype": "p7_single"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p7_original_double_044",
+      "section": "p7",
+      "title": "Bus pass renewal",
+      "passage": "PASS ACCOUNT\nRider: Celia Morris\nPass: monthly network pass\nExpiry: October 31\nAuto-renewal: off\n\nTRANSIT OFFICE EMAIL\nCelia's monthly pass will expire at the end of October because auto-renewal is turned off. She may renew online through October 31 or at the Central Station office. The station office will close at 3:00 p.m. on Friday for staff training. A renewed pass becomes active immediately, but a replacement card can be collected only after Celia receives a confirmation email.",
+      "items": [
+        {
+          "id": "p7_original_double_044_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "Why will Celia's pass expire?",
+          "opts": [
+            "The network is closed.",
+            "Auto-renewal is turned off.",
+            "She lost the confirmation email.",
+            "The station office is training staff."
+          ],
+          "ans": 1,
+          "expl": "The pass will expire because auto-renewal is turned off.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_044_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "When will the station office close on Friday?",
+          "opts": [
+            "At noon",
+            "At 1:00 p.m.",
+            "At 3:00 p.m.",
+            "At 5:00 p.m."
+          ],
+          "ans": 2,
+          "expl": "The station office will close at 3:00 p.m. on Friday.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_044_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "When can Celia collect a replacement card?",
+          "opts": [
+            "Before renewing",
+            "After receiving a confirmation email",
+            "Only next October",
+            "Before the office opens"
+          ],
+          "ans": 1,
+          "expl": "Celia can collect the replacement card after receiving a confirmation email.",
+          "qtype": "p7_double"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p7_original_triple_045",
+      "section": "p7",
+      "title": "Newspaper delivery pause",
+      "passage": "SUBSCRIPTION RECORD\nSubscriber: Liam Grant\nPlan: weekend print edition\nDelivery address: 8 Hill Road\nPause requested: July 20–21\n\nPUBLISHER MESSAGE\nThe weekend edition will not be delivered to 8 Hill Road while Liam is away. The two paused issues will be added to the end of his subscription, so the renewal date will move by two weeks. Digital access remains active during the pause. Liam should contact the circulation desk if the next delivery has not arrived by 10:00 a.m.\n\nCIRCULATION NOTE\nMark the account as a vacation pause, not a cancellation. Leave the delivery instructions unchanged because Liam will return to the same address on Monday evening.",
+      "items": [
+        {
+          "id": "p7_original_triple_045_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "What type of subscription does Liam have?",
+          "opts": [
+            "Daily digital news",
+            "Weekend print edition",
+            "Monthly magazine only",
+            "A delivery service"
+          ],
+          "ans": 1,
+          "expl": "Liam's record lists a weekend print-edition plan.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_045_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "What happens to the two paused issues?",
+          "opts": [
+            "They are canceled.",
+            "They are sent to a new address.",
+            "They are added to the end of the subscription.",
+            "They become digital-only issues."
+          ],
+          "ans": 2,
+          "expl": "The two paused issues will be added to the end of Liam's subscription.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_045_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "How should staff mark the account?",
+          "opts": [
+            "As a cancellation",
+            "As a new delivery",
+            "As a vacation pause",
+            "As a digital upgrade"
+          ],
+          "ans": 2,
+          "expl": "The circulation note says to mark the account as a vacation pause.",
+          "qtype": "p7_triple"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p7_original_single_046",
+      "section": "p7",
+      "title": "Apartment laundry schedule",
+      "passage": "LAUNDRY ROOM NOTICE\n\nThe laundry room in Building C will be closed from 9:00 a.m. to noon on Tuesday for ventilation cleaning. Residents may use the machines in Building B during that period by entering code 4821 at the side door. Please remove clothing promptly because the Building B room has only four machines. The Building C room will reopen at noon, and a maintenance worker will post a new cleaning schedule beside the payment machine.",
+      "items": [
+        {
+          "id": "p7_original_single_046_q1",
+          "section": "p7",
+          "level": 3,
+          "stem": "Why will the Building C laundry room close?",
+          "opts": [
+            "For ventilation cleaning",
+            "For a payment change",
+            "For a new side door",
+            "For four new machines"
+          ],
+          "ans": 0,
+          "expl": "The room will close for ventilation cleaning.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_046_q2",
+          "section": "p7",
+          "level": 3,
+          "stem": "What code opens the Building B side door?",
+          "opts": [
+            "2481",
+            "4821",
+            "4812",
+            "8421"
+          ],
+          "ans": 1,
+          "expl": "Residents should enter code 4821 at the Building B side door.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_046_q3",
+          "section": "p7",
+          "level": 3,
+          "stem": "Why should residents remove clothing promptly?",
+          "opts": [
+            "The payment machine is broken.",
+            "Building B has only four machines.",
+            "Building C closes at noon.",
+            "The code expires at 9:00."
+          ],
+          "ans": 1,
+          "expl": "Prompt removal is requested because the Building B room has only four machines.",
+          "qtype": "p7_single"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p7_original_double_047",
+      "section": "p7",
+      "title": "Conference room equipment",
+      "passage": "ROOM RESERVATION\nTeam: Brightline Analytics\nRoom: Summit 3\nMeeting: 1:00–3:00 p.m.\nRequested equipment: projector\n\nFACILITIES EMAIL\nThe projector in Summit 3 is being serviced and will not be available on Thursday. Facilities can place a large monitor in the room instead. Brightline may bring its own laptop, but the HDMI cable must be requested before 11:00 a.m. The room reservation remains unchanged. If the team needs a projector, Summit 1 is available from 1:30 to 3:00.",
+      "items": [
+        {
+          "id": "p7_original_double_047_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "What equipment is unavailable in Summit 3?",
+          "opts": [
+            "A laptop",
+            "An HDMI cable",
+            "A projector",
+            "A large monitor"
+          ],
+          "ans": 2,
+          "expl": "The projector in Summit 3 will not be available on Thursday.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_047_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "What must Brightline request before 11:00 a.m.?",
+          "opts": [
+            "A room reservation",
+            "An HDMI cable",
+            "A projector repair",
+            "A new meeting time"
+          ],
+          "ans": 1,
+          "expl": "Brightline must request the HDMI cable before 11:00 a.m.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_047_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "When is Summit 1 available?",
+          "opts": [
+            "From noon to 1:00",
+            "From 1:00 to 2:00",
+            "From 1:30 to 3:00",
+            "After 3:00 only"
+          ],
+          "ans": 2,
+          "expl": "Summit 1 is available from 1:30 to 3:00.",
+          "qtype": "p7_double"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p7_original_triple_048",
+      "section": "p7",
+      "title": "Community theater audition",
+      "passage": "AUDITION SIGN-UP\nApplicant: Theo Martin\nRole requested: narrator\nAudition slot: Wednesday, 6:20 p.m.\nCheck-in: 6:00 p.m.\n\nDIRECTOR'S NOTICE\nAuditions for The Lantern Path will take place in the small theater. Applicants should prepare a two-minute reading and bring a copy of their schedule for rehearsal planning. No costumes are needed. The director will post the callback list outside the rehearsal room by Friday evening.\n\nPRODUCTION MESSAGE\nThe rehearsal period begins June 3 and normally meets Monday and Wednesday nights. Applicants who cannot attend both nights should mention the conflict at check-in. Theo's narrator slot is still reserved, but late arrivals may be asked to read after the scheduled group.",
+      "items": [
+        {
+          "id": "p7_original_triple_048_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "What role does Theo want?",
+          "opts": [
+            "The director",
+            "The narrator",
+            "The rehearsal manager",
+            "The costume designer"
+          ],
+          "ans": 1,
+          "expl": "Theo's sign-up lists the narrator role.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_048_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "What should applicants bring for rehearsal planning?",
+          "opts": [
+            "A costume",
+            "A theater ticket",
+            "A copy of their schedule",
+            "A rehearsal-room key"
+          ],
+          "ans": 2,
+          "expl": "Applicants should bring a copy of their schedule.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_048_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "When will the callback list be posted?",
+          "opts": [
+            "By Wednesday noon",
+            "Before Friday evening",
+            "On June 3 only",
+            "After the final rehearsal"
+          ],
+          "ans": 1,
+          "expl": "The director will post the callback list by Friday evening.",
+          "qtype": "p7_triple"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p7_original_single_049",
+      "section": "p7",
+      "title": "Garden workshop tools",
+      "passage": "GARDEN WORKSHOP NOTE\n\nParticipants in Saturday's container-garden workshop should bring one clean container with a drainage hole. The community greenhouse will provide soil, seedlings, and hand trowels. Because the workshop takes place on a narrow bench, participants should not bring large bags. The session ends at noon, and participants may take their planted containers home afterward.",
+      "items": [
+        {
+          "id": "p7_original_single_049_q1",
+          "section": "p7",
+          "level": 3,
+          "stem": "What should participants bring?",
+          "opts": [
+            "A clean container with drainage",
+            "A bag of soil",
+            "A large bench",
+            "A greenhouse key"
+          ],
+          "ans": 0,
+          "expl": "Participants should bring one clean container with a drainage hole.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_049_q2",
+          "section": "p7",
+          "level": 3,
+          "stem": "What will the greenhouse provide?",
+          "opts": [
+            "Large bags",
+            "Soil and seedlings",
+            "A lunch meal",
+            "Finished containers"
+          ],
+          "ans": 1,
+          "expl": "The greenhouse will provide soil, seedlings, and hand trowels.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_049_q3",
+          "section": "p7",
+          "level": 3,
+          "stem": "What may participants do after the workshop?",
+          "opts": [
+            "Take their planted containers home",
+            "Store bags on the bench",
+            "Close the greenhouse",
+            "Sell the seedlings"
+          ],
+          "ans": 0,
+          "expl": "Participants may take their planted containers home after the session.",
+          "qtype": "p7_single"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p7_original_double_050",
+      "section": "p7",
+      "title": "Train museum visit",
+      "passage": "VISITOR RESERVATION\nVisitor: Ana Silva\nGroup: two adults and one child\nDate: Saturday, November 9\nEntry time: 10:30 a.m.\n\nMUSEUM EMAIL\nThe Train Heritage Museum has reserved three entry passes for Ana's group. The restoration workshop will be open from 11:00 to noon, but the viewing platform will close at 12:30 for a private tour. Visitors may bring packed snacks to the picnic yard. Strollers are available at the welcome desk on a first-come, first-served basis.",
+      "items": [
+        {
+          "id": "p7_original_double_050_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "How many entry passes are reserved?",
+          "opts": [
+            "Two",
+            "Three",
+            "Four",
+            "Five"
+          ],
+          "ans": 1,
+          "expl": "The museum reserved three entry passes for Ana's group.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_050_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "When will the restoration workshop be open?",
+          "opts": [
+            "From 10:30 to 11:00",
+            "From 11:00 to noon",
+            "From noon to 12:30",
+            "After the private tour"
+          ],
+          "ans": 1,
+          "expl": "The restoration workshop will be open from 11:00 to noon.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_050_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "What is available on a first-come, first-served basis?",
+          "opts": [
+            "Picnic snacks",
+            "Viewing platforms",
+            "Strollers",
+            "Private tours"
+          ],
+          "ans": 2,
+          "expl": "Strollers are available at the welcome desk on a first-come, first-served basis.",
+          "qtype": "p7_double"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p7_original_triple_051",
+      "section": "p7",
+      "title": "Online course completion",
+      "passage": "COURSE RECORD\nLearner: Jonah Price\nCourse: Practical Data Notes\nFinal module: Module 6\nDeadline: Sunday\n\nINSTRUCTOR MESSAGE\nJonah has completed Modules 1 through 5. Module 6 includes a short video, a reading, and one submitted reflection. The reflection may be edited until Sunday at 11:59 p.m. The course platform will issue a completion badge after the instructor reviews the reflection, usually within three business days.\n\nSUPPORT NOTE\nIf the video will not load, download the transcript from the materials panel and report the problem using the help form. Do not submit the reflection by email because it must be linked to the course record.",
+      "items": [
+        {
+          "id": "p7_original_triple_051_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "Which modules has Jonah completed?",
+          "opts": [
+            "Only Module 6",
+            "Modules 1 through 5",
+            "Modules 2 through 6",
+            "All future modules"
+          ],
+          "ans": 1,
+          "expl": "The instructor message says Jonah completed Modules 1 through 5.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_051_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "Until when may Jonah edit the reflection?",
+          "opts": [
+            "Friday at noon",
+            "Sunday at 11:59 p.m.",
+            "Three business days later",
+            "After the badge is issued"
+          ],
+          "ans": 1,
+          "expl": "The reflection may be edited until Sunday at 11:59 p.m.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_051_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "Why should Jonah not email the reflection?",
+          "opts": [
+            "The instructor has no email.",
+            "It must be linked to the course record.",
+            "The video is still loading.",
+            "The deadline is Friday."
+          ],
+          "ans": 1,
+          "expl": "The reflection must be submitted through the platform so it links to the course record.",
+          "qtype": "p7_triple"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p7_original_single_052",
+      "section": "p7",
+      "title": "Shipping delay notice",
+      "passage": "SHIPPING NOTICE\n\nA parcel for Blue Finch Studio has been delayed because a sorting machine stopped working. The new estimated delivery date is Thursday, one day later than planned. The recipient may track the parcel using the code in the dispatch email. If the parcel has not arrived by Friday evening, contact the carrier through its online support form rather than sending a second order.",
+      "items": [
+        {
+          "id": "p7_original_single_052_q1",
+          "section": "p7",
+          "level": 3,
+          "stem": "Why has the parcel been delayed?",
+          "opts": [
+            "The recipient changed the address.",
+            "A sorting machine stopped working.",
+            "The support form is closed.",
+            "A second order was sent."
+          ],
+          "ans": 1,
+          "expl": "The parcel was delayed because a sorting machine stopped working.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_052_q2",
+          "section": "p7",
+          "level": 3,
+          "stem": "When is the new estimated delivery date?",
+          "opts": [
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "ans": 1,
+          "expl": "The new estimated delivery date is Thursday.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_052_q3",
+          "section": "p7",
+          "level": 3,
+          "stem": "What should the recipient do if the parcel is missing on Friday evening?",
+          "opts": [
+            "Send a second order",
+            "Call the sorting machine",
+            "Use the online support form",
+            "Change the delivery date"
+          ],
+          "ans": 2,
+          "expl": "The notice asks the recipient to contact the carrier through its online support form.",
+          "qtype": "p7_single"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p7_original_double_053",
+      "section": "p7",
+      "title": "Clinic billing question",
+      "passage": "BILLING RECORD\nPatient: Elise Wong\nVisit: nutrition consultation\nInvoice date: Monday\nPayment status: pending\n\nCLINIC EMAIL\nThe clinic has sent Elise an itemized invoice for her nutrition consultation. The insurance estimate is still being processed, so the balance shown may change. Elise does not need to pay before the estimate is complete. If the insurer requests a missing document, the billing office will email her. Questions about the invoice should be sent through the secure patient portal.",
+      "items": [
+        {
+          "id": "p7_original_double_053_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "What kind of invoice did Elise receive?",
+          "opts": [
+            "An itemized invoice",
+            "A travel invoice",
+            "A final insurance card",
+            "A hospital schedule"
+          ],
+          "ans": 0,
+          "expl": "The clinic sent Elise an itemized invoice for the consultation.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_053_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "Why may the balance change?",
+          "opts": [
+            "The visit was canceled.",
+            "The insurance estimate is still being processed.",
+            "The portal is not secure.",
+            "The invoice date is next month."
+          ],
+          "ans": 1,
+          "expl": "The balance may change while the insurance estimate is being processed.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_053_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "Where should Elise send billing questions?",
+          "opts": [
+            "By regular mail",
+            "Through the secure patient portal",
+            "To the insurer's lobby",
+            "On the invoice envelope"
+          ],
+          "ans": 1,
+          "expl": "Billing questions should be sent through the secure patient portal.",
+          "qtype": "p7_double"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p7_original_triple_054",
+      "section": "p7",
+      "title": "Bookstore return request",
+      "passage": "PURCHASE RECORD\nCustomer: Grace Lin\nItem: Atlas of Quiet Places\nPurchase date: April 4\nReceipt number: 7192\n\nBOOKSTORE POLICY\nUnused books may be returned within fourteen days with a receipt. Books with writing or highlighting cannot be returned. Online orders may be returned at the store desk or by mail, but the customer must include the order number. Refunds go back to the original payment method.\n\nCUSTOMER MESSAGE\nGrace says the atlas arrived with a torn cover and has not been marked. Please inspect the cover at the service desk. If the damage is confirmed, offer an exchange first; if Grace prefers a refund, record the receipt number and return the payment to the original card.",
+      "items": [
+        {
+          "id": "p7_original_triple_054_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "When was the atlas purchased?",
+          "opts": [
+            "April 4",
+            "April 14",
+            "May 4",
+            "May 14"
+          ],
+          "ans": 0,
+          "expl": "The purchase record lists April 4 as the purchase date.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_054_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "What condition prevents a book from being returned?",
+          "opts": [
+            "A torn cover only",
+            "Writing or highlighting in the book",
+            "An online order number",
+            "A printed receipt"
+          ],
+          "ans": 1,
+          "expl": "Books with writing or highlighting cannot be returned under the policy.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_054_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "What should the service desk offer first if the damage is confirmed?",
+          "opts": [
+            "An exchange",
+            "A second receipt",
+            "A mailing address",
+            "A new purchase date"
+          ],
+          "ans": 0,
+          "expl": "The customer message asks staff to offer an exchange first.",
+          "qtype": "p7_triple"
+        }
+      ],
+      "set": "3"
     }
   ]
 }

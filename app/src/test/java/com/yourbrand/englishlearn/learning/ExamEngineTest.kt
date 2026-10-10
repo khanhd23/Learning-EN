@@ -41,6 +41,22 @@ class ExamEngineTest {
         assertEquals(2, picked.size)
     }
 
+    @Test fun groupSetSelectionKeepsPracticePapersDisjoint() {
+        fun group(id: String, set: String) = ExamGroup(id, "p7", "Passage $id", id, listOf(
+            ExamItem("${id}_1", "p7", 3, "Question $id", listOf("A", "B", "C", "D"), 0, "Explanation"),
+            ExamItem("${id}_2", "p7", 3, "Question $id 2", listOf("A", "B", "C", "D"), 1, "Explanation"),
+        ), set)
+        val papers = ExamBank(emptyList(), listOf(group("a1", "1"), group("a2", "1"), group("b1", "2"), group("b2", "2")))
+        fun paper(set: String) = SectionedExamBuilder.build(
+            ExamFormat("p7_$set", "Paper $set", "TEST", "", 4, null, null, null,
+                listOf(ExamSection("p7", "Part 7", "group", 4, emptyList(), emptyList(), "p7", set))),
+            papers,
+        )
+        assertEquals(setOf("a1_1", "a1_2", "a2_1", "a2_2"), paper("1").map { it.id }.toSet())
+        assertEquals(setOf("b1_1", "b1_2", "b2_1", "b2_2"), paper("2").map { it.id }.toSet())
+        assertEquals(emptySet<String>(), paper("1").map { it.id }.toSet() intersect paper("2").map { it.id }.toSet())
+    }
+
     @Test fun testBankFixtureParsesAndRuns() {
         val json = javaClass.classLoader!!.getResource("sectioned_exam_bank.json")!!.readText()
         val parsed = ExamBankParser.parse(json)

@@ -104,11 +104,11 @@ def add_item(item, ids):
 
 
 def build_p7(groups, existing_ids):
-    """Build the original Part 7 preview bank from owner-authored source data."""
+    """Build the original Part 7 bank and stable, non-overlapping practice sets."""
     output_groups = []
     locale = {}
     ids = set(existing_ids)
-    for group in groups:
+    for group_index, group in enumerate(groups):
         group_id = group.get("id", "")
         if not group_id or group_id in ids:
             raise ValueError(f"duplicate or empty Part 7 group id: {group_id!r}")
@@ -134,6 +134,9 @@ def build_p7(groups, existing_ids):
         output_groups.append({
             "id": group_id, "section": "p7", "title": group.get("title"),
             "passage": group["passage"], "items": group_items,
+            # Three fixed sets of 18 three-question groups make three complete
+            # 54-question practices without sharing an item between sets.
+            "set": group.get("set") or str(group_index // 18 + 1),
         })
         locale[group_id] = {"title": group.get("title_vi", ""), "passage": group["passage_vi"]}
     return {"items": [], "groups": output_groups}, locale
@@ -169,7 +172,7 @@ def main():
     write_json(os.path.join(ROOT, "content", "i18n", "vi", "exams", "toeic_p7.json"), p7_locale)
     update_status({**locale, **p7_locale})
     print(f"toeic_p5={len(bank['items'])} toeic_p6_passages={len(bank['groups'])} toeic_p6_items={sum(len(g['items']) for g in bank['groups'])}")
-    print(f"toeic_p7_preview_passages={len(p7['groups'])} toeic_p7_preview_items={sum(len(g['items']) for g in p7['groups'])}")
+    print(f"toeic_p7_passages={len(p7['groups'])} toeic_p7_items={sum(len(g['items']) for g in p7['groups'])}")
 
 
 if __name__ == "__main__":

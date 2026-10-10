@@ -21,7 +21,13 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
     override fun headerActions(bar: LinearLayout) = HubHeader.build(this, bar, str(R.string.tab_exam))
 
     private var formatId: String
-        get() = services.settings.examGoal?.takeIf { id -> services.content.formatById(id) != null } ?: if ("toeic" in services.settings.goals) "toeic" else "school"
+        get() = services.settings.examGoal?.let { id ->
+            when {
+                services.content.formatById(id) != null -> id
+                id == "toeic_p7_practice" -> "toeic_p7_practice_1"
+                else -> null
+            }
+        } ?: if ("toeic" in services.settings.goals) "toeic" else "school"
         set(v) { services.settings.examGoal = v }
 
     override fun build(body: LinearLayout) {

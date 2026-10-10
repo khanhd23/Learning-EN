@@ -15,7 +15,7 @@ object ExamBankParser {
             val o = a.getJSONObject(i)
             val section = o.getString("section")
             val groupItems = o.getJSONArray("items").let { values -> List(values.length()) { item(values.getJSONObject(it), section) } }
-            ExamGroup(o.getString("id"), section, o.getString("passage"), o.optString("title").takeIf { it.isNotBlank() }, groupItems)
+            ExamGroup(o.getString("id"), section, o.getString("passage"), o.optString("title").takeIf { it.isNotBlank() }, groupItems, o.optString("set").takeIf { it.isNotBlank() })
         } } ?: emptyList()
         return ExamBank(items, groups)
     }

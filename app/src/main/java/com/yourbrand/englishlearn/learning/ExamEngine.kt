@@ -14,7 +14,7 @@ object SectionedExamBuilder {
         require(format.sections.isNotEmpty()) { "format has no sections" }
         return format.sections.flatMap { section ->
             val items = bank.items.filter { it.section == section.id && matches(it, section) }
-            val groups = bank.groups.filter { it.section == section.id }
+            val groups = bank.groups.filter { it.section == section.id && (section.groupSet == null || it.set == section.groupSet) }
             when (section.itemType) {
                 "group" -> chooseGroups(section, groups, random)
                 else -> items.shuffled(random).take(section.count).map { PickedExamItem(it.id, section.id, it) }

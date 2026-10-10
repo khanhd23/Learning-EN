@@ -158,7 +158,7 @@ object ContentParser {
                 o.strOrNull("source"),
                 o.optJSONArray("sections")?.let { a -> List(a.length()) { i -> a.getJSONObject(i).let { section -> ExamSection(
                     section.getString("id"), section.optString("label", section.getString("id")), section.optString("itemType", "mcq"),
-                    section.getInt("count"), section.optJSONArray("exerciseTypes").strings(), section.optJSONArray("qtype").strings(), section.strOrNull("bank"),
+                    section.getInt("count"), section.optJSONArray("exerciseTypes").strings(), section.optJSONArray("qtype").strings(), section.strOrNull("bank"), section.strOrNull("groupSet"),
                 ) } } } ?: emptyList(),
             )
         }.filter { format ->

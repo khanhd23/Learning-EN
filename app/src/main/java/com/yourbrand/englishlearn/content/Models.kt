@@ -123,10 +123,11 @@ data class ExamSection(
     val exerciseTypes: List<String>,
     val qtypes: List<String>,
     val bank: String?,
+    val groupSet: String? = null,
 )
 
 data class ExamItem(val id: String, val section: String, val level: Int, val stem: String, val options: List<String>, val answer: Int, val explanation: String, val qtype: String? = null)
-data class ExamGroup(val id: String, val section: String, val passage: String, val title: String?, val items: List<ExamItem>)
+data class ExamGroup(val id: String, val section: String, val passage: String, val title: String?, val items: List<ExamItem>, val set: String? = null)
 data class ExamBank(val items: List<ExamItem>, val groups: List<ExamGroup>)
 
 data class WordListDefinition(
