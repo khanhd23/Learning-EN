@@ -568,6 +568,54 @@
         {"id": "reading1", "label": "Passage 1", "itemType": "group", "count": 5, "bank": "ielts", "groupSet": "5", "qtype": ["ielts_short_reading"]},
         {"id": "reading2", "label": "Passage 2", "itemType": "group", "count": 5, "bank": "ielts", "groupSet": "5", "qtype": ["ielts_short_reading"]}
       ]
+    },
+    {
+      "id": "ielts_reading_full_1",
+      "label": "IELTS Academic full reading practice 1",
+      "family": "IELTS Academic original practice",
+      "description": "Original 40-question, three-passage IELTS-style Reading practice. Four-option questions are used for study; this is not an official IELTS paper and does not estimate a band score.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 40,
+      "timeLimitMinutes": 60,
+      "optionsPerQuestion": 4,
+      "source": "https://ielts.org/take-a-test/test-types/ielts-academic (format context only)",
+      "sections": [
+        {"id": "reading1", "label": "Passage 1", "itemType": "group", "count": 13, "bank": "ielts_full", "groupSet": "1", "qtype": ["ielts_full_reading"]},
+        {"id": "reading2", "label": "Passage 2", "itemType": "group", "count": 13, "bank": "ielts_full", "groupSet": "1", "qtype": ["ielts_full_reading"]},
+        {"id": "reading3", "label": "Passage 3", "itemType": "group", "count": 14, "bank": "ielts_full", "groupSet": "1", "qtype": ["ielts_full_reading"]}
+      ]
+    },
+    {
+      "id": "ielts_reading_full_2",
+      "label": "IELTS Academic full reading practice 2",
+      "family": "IELTS Academic original practice",
+      "description": "Original 40-question, three-passage IELTS-style Reading practice. Four-option questions are used for study; this is not an official IELTS paper and does not estimate a band score.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 40,
+      "timeLimitMinutes": 60,
+      "optionsPerQuestion": 4,
+      "source": "https://ielts.org/take-a-test/test-types/ielts-academic (format context only)",
+      "sections": [
+        {"id": "reading1", "label": "Passage 1", "itemType": "group", "count": 13, "bank": "ielts_full", "groupSet": "2", "qtype": ["ielts_full_reading"]},
+        {"id": "reading2", "label": "Passage 2", "itemType": "group", "count": 13, "bank": "ielts_full", "groupSet": "2", "qtype": ["ielts_full_reading"]},
+        {"id": "reading3", "label": "Passage 3", "itemType": "group", "count": 14, "bank": "ielts_full", "groupSet": "2", "qtype": ["ielts_full_reading"]}
+      ]
+    },
+    {
+      "id": "ielts_reading_full_3",
+      "label": "IELTS Academic full reading practice 3",
+      "family": "IELTS Academic original practice",
+      "description": "Original 40-question, three-passage IELTS-style Reading practice. Four-option questions are used for study; this is not an official IELTS paper and does not estimate a band score.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 40,
+      "timeLimitMinutes": 60,
+      "optionsPerQuestion": 4,
+      "source": "https://ielts.org/take-a-test/test-types/ielts-academic (format context only)",
+      "sections": [
+        {"id": "reading1", "label": "Passage 1", "itemType": "group", "count": 13, "bank": "ielts_full", "groupSet": "3", "qtype": ["ielts_full_reading"]},
+        {"id": "reading2", "label": "Passage 2", "itemType": "group", "count": 13, "bank": "ielts_full", "groupSet": "3", "qtype": ["ielts_full_reading"]},
+        {"id": "reading3", "label": "Passage 3", "itemType": "group", "count": 14, "bank": "ielts_full", "groupSet": "3", "qtype": ["ielts_full_reading"]}
+      ]
     }
   ],
   "comingSoon": []
