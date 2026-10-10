@@ -36,7 +36,6 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
         set(v) { services.settings.examGoal = v }
 
     private var selectedFamily: String? = null
-    private var selectedPartKey: String? = null
 
     override fun build(body: LinearLayout) {
         val c = ctx
@@ -52,7 +51,6 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
         families.forEach { (key, groupFormats) ->
             familyChips.addView(Kit.chip(c, familyLabel(key), key == currentFamily) {
                 selectedFamily = key
-                selectedPartKey = null
                 groupFormats.firstOrNull()?.let { formatId = it.id }
                 refresh()
             })
@@ -61,8 +59,7 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
 
         val familyFormats = families.firstOrNull { it.first == currentFamily }?.second.orEmpty()
         val toeicParts = if (currentFamily == "TOEIC") ExamPartCatalog.toeic(familyFormats) else emptyList()
-        val selectedPart = selectedPartKey?.let { key -> toeicParts.firstOrNull { it.key == key } }
-        val showFormatDetails = toeicParts.isEmpty() || selectedPart != null
+        val showFormatDetails = toeicParts.isEmpty()
 
         if (toeicParts.isEmpty()) {
             body.addView(Kit.section(c, familyLabel(currentFamily), topDp = 14))
@@ -74,13 +71,6 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
                     body.addView(Kit.section(c, if (mode == ExamPartMode.LISTENING) str(R.string.exam_listening) else str(R.string.exam_reading), topDp = 14))
                     parts.forEach { partCard(body, it) }
                 }
-            }
-            selectedPart?.let { part ->
-                body.addView(Kit.section(c, str(R.string.exam_part_sets_title, partLabel(part)), topDp = 16))
-                body.addView(Kit.card(c, 6, 6) {
-                    addView(Kit.row(c, null, str(R.string.exam_part_guide), ExamFormatText.description(c, part.formats.first())))
-                })
-                part.formats.forEach { formatCard(body, it, it.id == fmt.id) }
             }
         }
 
@@ -176,10 +166,8 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
 
     private fun partCard(body: LinearLayout, part: ExamPart) {
         val c = ctx
-        body.addView(Kit.clickableCard(c, 4, 6, if (part.key == selectedPartKey) c.col(R.color.primary_container) else c.col(R.color.surface), onClick = {
-            selectedPartKey = part.key
-            part.formats.firstOrNull()?.let { formatId = it.id }
-            refresh()
+        body.addView(Kit.clickableCard(c, 4, 6, onClick = {
+            activity.open(ExamPartScreen(activity, part.key))
         }) {
             addView(Kit.row(
                 c,
@@ -236,6 +224,66 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
 }
 
 /** S11 — practice by question type (with tips card and difficulty picker). */
+/** Detail screen for one exam part: choose a practice set, then read the shared guide. */
+class ExamPartScreen(activity: MainActivity, private val partKey: String) : ScrollScreen(activity) {
+    override val petMode = PetMode.FLOATING
+    override val barTitle: String get() = partLabel()
+
+    override fun build(body: LinearLayout) {
+        val c = ctx
+        val part = ExamPartCatalog.toeic(services.content.formats).firstOrNull { it.key == partKey }
+        if (part == null) {
+            body.addView(Kit.text(c, str(R.string.nothing_to_practice), R.style.Text_Body))
+            return
+        }
+
+        body.addView(Kit.section(c, str(R.string.exam_part_sets_title, partLabel()), topDp = 4))
+        part.formats.forEach { practiceCard(body, it) }
+
+        body.addView(Kit.section(c, str(R.string.exam_part_guide), topDp = 20))
+        body.addView(Kit.card(c, 6, 6) {
+            addView(Kit.text(c, ExamFormatText.description(c, part.formats.first()), R.style.Text_Body))
+        })
+    }
+
+    private fun practiceCard(body: LinearLayout, format: ExamFormat) {
+        val c = ctx
+        val title = ExamFormatText.label(c, format)
+        val hist = services.store.history().filter { it.kind == "MOCK" && it.format == format.id }
+        val n = format.questionCount ?: 20
+        val last = hist.lastOrNull()?.let { "${it.correct}/${it.total}" } ?: "—"
+        val best = hist.maxByOrNull { it.percent }?.let { "${it.correct}/${it.total}" } ?: "—"
+        val time = format.timeLimitMinutes?.let { str(R.string.minutes_n, it) } ?: str(R.string.untimed)
+        body.addView(Kit.clickableCard(c, 6, 10, onClick = { start(format, title) }) {
+            addView(Kit.row(c, null, title, str(R.string.test_meta, n, time, last, best), Kit.chevron(c)))
+        })
+    }
+
+    private fun start(format: ExamFormat, title: String) {
+        if (services.settings.mockInProgress != null) {
+            Dialogs.confirm(ctx, str(R.string.mock_in_progress), str(R.string.mock_in_progress_msg), str(R.string.continue_label), str(R.string.start_new),
+                onNegative = { services.settings.mockInProgress = null; start(format, title) }) { MockScreen.resume(activity) }
+            return
+        }
+        val test = MockTest.build(services.content, services.builder(), format.id, title, null, services.settings.recentMockKeys.toSet())
+        if (test.keys.isEmpty()) { activity.toast(str(R.string.nothing_to_practice)); return }
+        activity.open(MockScreen(activity, test))
+    }
+
+    private fun partLabel(): String = when (partKey) {
+        "p1" -> str(R.string.exam_part1)
+        "p2" -> str(R.string.exam_part2)
+        "p3" -> str(R.string.exam_part3)
+        "p4" -> str(R.string.exam_part4)
+        "p5" -> str(R.string.exam_part5)
+        "p6" -> str(R.string.exam_part6)
+        "p7" -> str(R.string.exam_part7)
+        "full_reading" -> str(R.string.exam_full_reading)
+        "reading_bank" -> str(R.string.exam_reading_bank)
+        else -> partKey
+    }
+}
+
 class QuestionTypeScreen(activity: MainActivity, private val fmt: String) : ScrollScreen(activity) {
     override val petMode = PetMode.FLOATING
     override val barTitle: String get() = services.content.formatById(fmt)?.let { ExamFormatText.label(ctx, it) } ?: str(R.string.by_type_title)
