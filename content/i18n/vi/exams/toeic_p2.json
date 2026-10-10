@@ -208,5 +208,404 @@
   "p2_original_set5_006": {
     "title": "Câu hỏi 6",
     "passage": "Việc sửa chữa sẽ mất bao lâu?"
+  },
+  "p2_original_set1_007_q1": {
+    "expl": "Câu hỏi hỏi giờ mở cửa, nên tám giờ là câu trả lời phù hợp."
+  },
+  "p2_original_set1_007": {
+    "title": "Câu hỏi 7",
+    "passage": "Phòng khám mở cửa lúc mấy giờ?"
+  },
+  "p2_original_set1_008_q1": {
+    "expl": "Lời nhờ được đồng ý bằng lời hứa gửi chương trình họp sau bữa trưa."
+  },
+  "p2_original_set1_008": {
+    "title": "Câu hỏi 8",
+    "passage": "Bạn có thể gửi chương trình họp qua email không?"
+  },
+  "p2_original_set1_009_q1": {
+    "expl": "Câu hỏi hỏi lý do, và việc đang bảo trì giải thích cho cổng đóng."
+  },
+  "p2_original_set1_009": {
+    "title": "Câu hỏi 9",
+    "passage": "Tại sao cổng lại đóng?"
+  },
+  "p2_original_set1_010_q1": {
+    "expl": "Câu hỏi hỏi địa điểm, nên bàn của lễ tân là câu trả lời phù hợp."
+  },
+  "p2_original_set1_010": {
+    "title": "Câu hỏi 10",
+    "passage": "Tôi nên để những biểu mẫu này ở đâu?"
+  },
+  "p2_original_set1_011_q1": {
+    "expl": "Câu hỏi có–không được trả lời bằng việc xác nhận đặt phòng và nêu thời gian."
+  },
+  "p2_original_set1_011": {
+    "title": "Câu hỏi 11",
+    "passage": "Bạn đã đặt phòng họp chưa?"
+  },
+  "p2_original_set1_012_q1": {
+    "expl": "Lời mời được nhận lời tự nhiên bằng câu 'Tôi rất muốn, cảm ơn.'"
+  },
+  "p2_original_set1_012": {
+    "title": "Câu hỏi 12",
+    "passage": "Bạn có muốn tham gia chuyến đi bộ tham quan không?"
+  },
+  "p2_original_set1_013_q1": {
+    "expl": "Câu hỏi hỏi giờ khởi hành, nên 7:45 trả lời trực tiếp."
+  },
+  "p2_original_set1_013": {
+    "title": "Câu hỏi 13",
+    "passage": "Phà khởi hành lúc mấy giờ?"
+  },
+  "p2_original_set1_014_q1": {
+    "expl": "Câu hỏi hỏi ai, nên quản lý cơ sở vật chất là câu trả lời phù hợp."
+  },
+  "p2_original_set1_014": {
+    "title": "Câu hỏi 14",
+    "passage": "Ai sẽ mở khóa phòng thu?"
+  },
+  "p2_original_set1_015_q1": {
+    "expl": "Câu hỏi hỏi cách thực hiện, và cổng thông tin khách hàng là phương thức phù hợp."
+  },
+  "p2_original_set1_015": {
+    "title": "Câu hỏi 15",
+    "passage": "Tôi có thể cập nhật địa chỉ bằng cách nào?"
+  },
+  "p2_original_set1_016_q1": {
+    "expl": "Câu hỏi có–không được trả lời bằng việc xác nhận hộp hàng không bị hư hại."
+  },
+  "p2_original_set1_016": {
+    "title": "Câu hỏi 16",
+    "passage": "Bưu kiện có đến an toàn không?"
+  },
+  "p2_original_set1_017_q1": {
+    "expl": "Câu hỏi hỏi lý do, và việc tòa nhà tiết kiệm năng lượng giải thích đèn mờ."
+  },
+  "p2_original_set1_017": {
+    "title": "Câu hỏi 17",
+    "passage": "Tại sao đèn lại mờ?"
+  },
+  "p2_original_set1_018_q1": {
+    "expl": "Lời nhờ được đồng ý bằng lời hứa sẽ đặt chỗ ngay."
+  },
+  "p2_original_set1_018": {
+    "title": "Câu hỏi 18",
+    "passage": "Bạn có thể đặt trước hai chỗ không?"
+  },
+  "p2_original_set1_019_q1": {
+    "expl": "Câu hỏi hỏi địa điểm, và vị trí cạnh hiệu thuốc trả lời đúng."
+  },
+  "p2_original_set1_019": {
+    "title": "Câu hỏi 19",
+    "passage": "Cây ATM gần nhất ở đâu?"
+  },
+  "p2_original_set1_020_q1": {
+    "expl": "Câu hỏi hỏi thời hạn, nên 'Trước chiều thứ Sáu' là câu trả lời phù hợp."
+  },
+  "p2_original_set1_020": {
+    "title": "Câu hỏi 20",
+    "passage": "Khi nào chúng ta nên nộp bản đề xuất?"
+  },
+  "p2_original_set1_021_q1": {
+    "expl": "Câu trả lời giải đáp tình trạng bằng cách nêu thời điểm dự kiến lắp đặt."
+  },
+  "p2_original_set1_021": {
+    "title": "Câu hỏi 21",
+    "passage": "Những biển báo mới chưa sẵn sàng sao?"
+  },
+  "p2_original_set1_022_q1": {
+    "expl": "Câu hỏi hỏi xe buýt nào, nên Tuyến 18 xác định đúng tuyến."
+  },
+  "p2_original_set1_022": {
+    "title": "Câu hỏi 22",
+    "passage": "Xe buýt nào đi đến trung tâm nghệ thuật?"
+  },
+  "p2_original_set1_023_q1": {
+    "expl": "Câu hỏi hỏi số lượng, và bốn là số lượng được yêu cầu."
+  },
+  "p2_original_set1_023": {
+    "title": "Câu hỏi 23",
+    "passage": "Bạn cần bao nhiêu bản sao?"
+  },
+  "p2_original_set1_024_q1": {
+    "expl": "Câu hỏi có–không được trả lời bằng điều kiện để Lena tham dự."
+  },
+  "p2_original_set1_024": {
+    "title": "Câu hỏi 24",
+    "passage": "Lena có thể tham dự buổi báo cáo không?"
+  },
+  "p2_original_set1_025_q1": {
+    "expl": "Câu hỏi hỏi nguyên nhân, và hơi nước từ bếp giải thích chuông báo động."
+  },
+  "p2_original_set1_025": {
+    "title": "Câu hỏi 25",
+    "passage": "Điều gì đã khiến chuông báo động kêu?"
+  },
+  "p2_original_set2_007_q1": {
+    "expl": "Câu hỏi hỏi địa điểm, nên cạnh quầy chăm sóc khách hàng là câu trả lời phù hợp."
+  },
+  "p2_original_set2_007": {
+    "title": "Câu hỏi 7",
+    "passage": "Tôi có thể tìm quầy đồ thất lạc ở đâu?"
+  },
+  "p2_original_set2_008_q1": {
+    "expl": "Câu hỏi có–không được trả lời bằng việc xác nhận sẽ gửi trước cuộc họp chiều."
+  },
+  "p2_original_set2_008": {
+    "title": "Câu hỏi 8",
+    "passage": "Nhà thiết kế sẽ gửi bản nháp hôm nay chứ?"
+  },
+  "p2_original_set2_009_q1": {
+    "expl": "Câu hỏi hỏi lý do, và đại lộ bị chặn vì lễ hội đường phố giải thích việc đổi tuyến."
+  },
+  "p2_original_set2_009": {
+    "title": "Câu hỏi 9",
+    "passage": "Tại sao xe buýt đổi tuyến?"
+  },
+  "p2_original_set2_010_q1": {
+    "expl": "Lời xin phép được đồng ý bằng cách đưa chiếc cáp trên bàn."
+  },
+  "p2_original_set2_010": {
+    "title": "Câu hỏi 10",
+    "passage": "Tôi có thể mượn cáp sạc không?"
+  },
+  "p2_original_set2_011_q1": {
+    "expl": "Câu hỏi hỏi thời điểm, nên sáng thứ Tư tuần tới là câu trả lời phù hợp."
+  },
+  "p2_original_set2_011": {
+    "title": "Câu hỏi 11",
+    "passage": "Khi nào kiểm tra thiết bị?"
+  },
+  "p2_original_set2_012_q1": {
+    "expl": "Lời đề nghị được đồng ý bằng câu 'Nghe hay đấy.'"
+  },
+  "p2_original_set2_012": {
+    "title": "Câu hỏi 12",
+    "passage": "Chúng ta có nên gọi món chay không?"
+  },
+  "p2_original_set2_013_q1": {
+    "expl": "Câu hỏi hỏi ai, nên Priya từ nhóm tài chính là người trình bày."
+  },
+  "p2_original_set2_013": {
+    "title": "Câu hỏi 13",
+    "passage": "Ai sẽ trình bày số liệu bán hàng?"
+  },
+  "p2_original_set2_014_q1": {
+    "expl": "Câu hỏi có–không được trả lời bằng giờ đóng cửa sớm."
+  },
+  "p2_original_set2_014": {
+    "title": "Câu hỏi 14",
+    "passage": "Hôm nay thư viện có đóng cửa sớm không?"
+  },
+  "p2_original_set2_015_q1": {
+    "expl": "Câu hỏi hỏi cách thức, và mua qua trang web của địa điểm tổ chức là câu trả lời phù hợp."
+  },
+  "p2_original_set2_015": {
+    "title": "Câu hỏi 15",
+    "passage": "Bạn đã lấy vé xem hòa nhạc bằng cách nào?"
+  },
+  "p2_original_set2_016_q1": {
+    "expl": "Câu hỏi hỏi địa điểm, nên máy tính bảng cạnh lối vào là nơi đăng ký."
+  },
+  "p2_original_set2_016": {
+    "title": "Câu hỏi 16",
+    "passage": "Khách nên đăng ký ở đâu?"
+  },
+  "p2_original_set2_017_q1": {
+    "expl": "Câu hỏi hỏi lý do, và việc kỹ thuật viên kiểm tra cửa giải thích thang máy dừng."
+  },
+  "p2_original_set2_017": {
+    "title": "Câu hỏi 17",
+    "passage": "Tại sao thang máy dừng lại?"
+  },
+  "p2_original_set2_018_q1": {
+    "expl": "Lời nhờ được đồng ý bằng lời hứa sẽ nhắn cho Omar."
+  },
+  "p2_original_set2_018": {
+    "title": "Câu hỏi 18",
+    "passage": "Bạn có thể nhắc Omar về hạn chót không?"
+  },
+  "p2_original_set2_019_q1": {
+    "expl": "Câu hỏi hỏi chiếc áo nào, nên chiếc màu xám cạnh bục giảng là câu trả lời."
+  },
+  "p2_original_set2_019": {
+    "title": "Câu hỏi 19",
+    "passage": "Chiếc áo khoác nào là của diễn giả khách mời?"
+  },
+  "p2_original_set2_020_q1": {
+    "expl": "Câu hỏi có–không được trả lời bằng việc xác nhận thẻ đã ở trong túi."
+  },
+  "p2_original_set2_020": {
+    "title": "Câu hỏi 20",
+    "passage": "Bạn đã in thẻ lên máy bay chưa?"
+  },
+  "p2_original_set2_021_q1": {
+    "expl": "Câu hỏi hỏi nên mang gì, nên sổ tay và bút chì là câu trả lời."
+  },
+  "p2_original_set2_021": {
+    "title": "Câu hỏi 21",
+    "passage": "Tôi nên mang gì đến buổi hội thảo?"
+  },
+  "p2_original_set2_022_q1": {
+    "expl": "Lời đề nghị được giải thích bằng lý do đường bên cạnh ít xe hơn."
+  },
+  "p2_original_set2_022": {
+    "title": "Câu hỏi 22",
+    "passage": "Tại sao chúng ta không đi đường bên cạnh?"
+  },
+  "p2_original_set2_023_q1": {
+    "expl": "Câu hỏi hỏi thời điểm, nên khoảng trưa ngày mai là câu trả lời phù hợp."
+  },
+  "p2_original_set2_023": {
+    "title": "Câu hỏi 23",
+    "passage": "Khi nào đội sửa chữa sẽ đến?"
+  },
+  "p2_original_set2_024_q1": {
+    "expl": "Câu trả lời xác nhận hóa đơn đến hạn trong tuần và nêu hạn thanh toán."
+  },
+  "p2_original_set2_024": {
+    "title": "Câu hỏi 24",
+    "passage": "Hóa đơn không đến hạn trong tuần này sao?"
+  },
+  "p2_original_set2_025_q1": {
+    "expl": "Câu hỏi hỏi số lượng, nên hai mươi ba là con số phù hợp."
+  },
+  "p2_original_set2_025": {
+    "title": "Câu hỏi 25",
+    "passage": "Có bao nhiêu tình nguyện viên đã đăng ký?"
+  },
+  "p2_original_set3_007_q1": {
+    "expl": "Câu hỏi hỏi mật khẩu, và thẻ chào mừng cho biết nơi in mật khẩu."
+  },
+  "p2_original_set3_007": {
+    "title": "Câu hỏi 7",
+    "passage": "Mật khẩu của mạng khách là gì?"
+  },
+  "p2_original_set3_008_q1": {
+    "expl": "Lời nhờ được đồng ý bằng lời hứa sẽ tắt ngay."
+  },
+  "p2_original_set3_008": {
+    "title": "Câu hỏi 8",
+    "passage": "Bạn có thể tắt máy chiếu không?"
+  },
+  "p2_original_set3_009_q1": {
+    "expl": "Câu hỏi hỏi lý do, và việc sửa lối đi giải thích khu vườn đóng cửa."
+  },
+  "p2_original_set3_009": {
+    "title": "Câu hỏi 9",
+    "passage": "Tại sao khu vườn đóng cửa?"
+  },
+  "p2_original_set3_010_q1": {
+    "expl": "Câu hỏi hỏi địa điểm, nên ngăn kéo cạnh cửa là câu trả lời phù hợp."
+  },
+  "p2_original_set3_010": {
+    "title": "Câu hỏi 10",
+    "passage": "Bạn đã để chìa khóa dự phòng ở đâu?"
+  },
+  "p2_original_set3_011_q1": {
+    "expl": "Câu hỏi có–không được trả lời bằng việc xác nhận thiệp đã được gửi hôm qua."
+  },
+  "p2_original_set3_011": {
+    "title": "Câu hỏi 11",
+    "passage": "Thiệp mời đã được gửi qua bưu điện chưa?"
+  },
+  "p2_original_set3_012_q1": {
+    "expl": "Câu hỏi lựa chọn được trả lời bằng việc chọn nước ép."
+  },
+  "p2_original_set3_012": {
+    "title": "Câu hỏi 12",
+    "passage": "Bạn thích trà hay nước ép hơn?"
+  },
+  "p2_original_set3_013_q1": {
+    "expl": "Câu hỏi hỏi ai, nên lớp nghệ thuật địa phương là người thiết kế."
+  },
+  "p2_original_set3_013": {
+    "title": "Câu hỏi 13",
+    "passage": "Ai đã thiết kế bức tranh tường cộng đồng?"
+  },
+  "p2_original_set3_014_q1": {
+    "expl": "Câu hỏi có–không được trả lời bằng việc nói tàu kết thúc ở ga Central."
+  },
+  "p2_original_set3_014": {
+    "title": "Câu hỏi 14",
+    "passage": "Tàu này có dừng ở Harbor Square không?"
+  },
+  "p2_original_set3_015_q1": {
+    "expl": "Câu hỏi hỏi cách đăng ký, nên điền biểu mẫu trên trang sự kiện là đúng."
+  },
+  "p2_original_set3_015": {
+    "title": "Câu hỏi 15",
+    "passage": "Tôi có thể đăng ký hội thảo bằng cách nào?"
+  },
+  "p2_original_set3_016_q1": {
+    "expl": "Câu hỏi hỏi địa điểm, nên cạnh lối vào khu bốc dỡ là câu trả lời."
+  },
+  "p2_original_set3_016": {
+    "title": "Câu hỏi 16",
+    "passage": "Thùng tái chế ở đâu?"
+  },
+  "p2_original_set3_017_q1": {
+    "expl": "Câu hỏi hỏi lý do, và căn phòng cần thêm không khí trong lành giải thích việc mở cửa."
+  },
+  "p2_original_set3_017": {
+    "title": "Câu hỏi 17",
+    "passage": "Tại sao các cửa sổ lại mở?"
+  },
+  "p2_original_set3_018_q1": {
+    "expl": "Lời nhờ được đồng ý bằng lời hứa kiểm tra micrô trước buổi nói chuyện."
+  },
+  "p2_original_set3_018": {
+    "title": "Câu hỏi 18",
+    "passage": "Bạn có thể kiểm tra micrô không?"
+  },
+  "p2_original_set3_019_q1": {
+    "expl": "Câu hỏi hỏi lịch tưới, nên cách một buổi sáng tưới một lần là câu trả lời phù hợp."
+  },
+  "p2_original_set3_019": {
+    "title": "Câu hỏi 19",
+    "passage": "Khi nào chúng ta nên tưới cây mới?"
+  },
+  "p2_original_set3_020_q1": {
+    "expl": "Câu hỏi có–không được trả lời bằng việc xác nhận đặt vé trực tuyến vẫn mở."
+  },
+  "p2_original_set3_020": {
+    "title": "Câu hỏi 20",
+    "passage": "Vé bảo tàng vẫn còn không?"
+  },
+  "p2_original_set3_021_q1": {
+    "expl": "Câu hỏi hỏi thư mục nào, và nhãn xác định đúng thư mục cần lưu trữ."
+  },
+  "p2_original_set3_021": {
+    "title": "Câu hỏi 21",
+    "passage": "Tôi nên lưu trữ thư mục nào?"
+  },
+  "p2_original_set3_022_q1": {
+    "expl": "Câu hỏi hỏi lý do, và chuyến tàu bị trễ giải thích việc lỡ cuộc gọi."
+  },
+  "p2_original_set3_022": {
+    "title": "Câu hỏi 22",
+    "passage": "Tại sao Nora lỡ cuộc gọi?"
+  },
+  "p2_original_set3_023_q1": {
+    "expl": "Lời đề nghị được đồng ý và kèm theo thời gian gặp."
+  },
+  "p2_original_set3_023": {
+    "title": "Câu hỏi 23",
+    "passage": "Chúng ta có thể gặp nhau cạnh đài phun nước không?"
+  },
+  "p2_original_set3_024_q1": {
+    "expl": "Câu hỏi hỏi tần suất, nên lịch vào thứ Bảy đầu tiên mỗi tháng là câu trả lời."
+  },
+  "p2_original_set3_024": {
+    "title": "Câu hỏi 24",
+    "passage": "Chợ trong khu phố được tổ chức bao lâu một lần?"
+  },
+  "p2_original_set3_025_q1": {
+    "expl": "Câu trả lời giải thích trực tiếp rằng cửa được để mở cho chuyến giao hàng."
+  },
+  "p2_original_set3_025": {
+    "title": "Câu hỏi 25",
+    "passage": "Bạn đã không khóa cửa bên sao?"
   }
 }

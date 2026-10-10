@@ -690,6 +690,1317 @@
         }
       ],
       "set": "5"
+    },
+    {
+      "id": "p2_original_set1_007",
+      "section": "p2",
+      "title": "Question 7",
+      "passage": "When does the clinic open?",
+      "items": [
+        {
+          "id": "p2_original_set1_007_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "At eight o'clock.",
+            "In the waiting room.",
+            "For new patients."
+          ],
+          "ans": 0,
+          "expl": "The question asks for an opening time, so eight o'clock is the appropriate response.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_008",
+      "section": "p2",
+      "title": "Question 8",
+      "passage": "Could you email the agenda?",
+      "items": [
+        {
+          "id": "p2_original_set1_008_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "In the blue folder.",
+            "Certainly, after lunch.",
+            "Two copies."
+          ],
+          "ans": 1,
+          "expl": "The request is accepted with a promise to email the agenda after lunch.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_009",
+      "section": "p2",
+      "title": "Question 9",
+      "passage": "Why is the gate closed?",
+      "items": [
+        {
+          "id": "p2_original_set1_009_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Near the east lot.",
+            "At six this evening.",
+            "Because maintenance is underway."
+          ],
+          "ans": 2,
+          "expl": "The question asks for a reason, and ongoing maintenance explains the closed gate.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_010",
+      "section": "p2",
+      "title": "Question 10",
+      "passage": "Where should I leave these forms?",
+      "items": [
+        {
+          "id": "p2_original_set1_010_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "On the receptionist's desk.",
+            "Before noon.",
+            "Three signatures."
+          ],
+          "ans": 0,
+          "expl": "The question asks for a location, so the receptionist's desk is the relevant response.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_011",
+      "section": "p2",
+      "title": "Question 11",
+      "passage": "Have you booked the conference room?",
+      "items": [
+        {
+          "id": "p2_original_set1_011_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "At the west wing.",
+            "Yes, for Thursday afternoon.",
+            "With twelve chairs."
+          ],
+          "ans": 1,
+          "expl": "The yes-or-no question is answered by confirming the reservation and giving its time.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_012",
+      "section": "p2",
+      "title": "Question 12",
+      "passage": "Would you like to join the walking tour?",
+      "items": [
+        {
+          "id": "p2_original_set1_012_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "At the museum entrance.",
+            "For about an hour.",
+            "I'd love to, thanks."
+          ],
+          "ans": 2,
+          "expl": "The invitation is accepted naturally with 'I'd love to, thanks.'",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_013",
+      "section": "p2",
+      "title": "Question 13",
+      "passage": "What time does the ferry depart?",
+      "items": [
+        {
+          "id": "p2_original_set1_013_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "At 7:45.",
+            "From Pier 2.",
+            "With the morning crew."
+          ],
+          "ans": 0,
+          "expl": "The question asks for a departure time, so 7:45 answers it directly.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_014",
+      "section": "p2",
+      "title": "Question 14",
+      "passage": "Who will unlock the studio?",
+      "items": [
+        {
+          "id": "p2_original_set1_014_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "At nine o'clock.",
+            "The facilities manager.",
+            "In the west building."
+          ],
+          "ans": 1,
+          "expl": "The question asks who, so the facilities manager is the appropriate response.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_015",
+      "section": "p2",
+      "title": "Question 15",
+      "passage": "How can I update my address?",
+      "items": [
+        {
+          "id": "p2_original_set1_015_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "On the new form.",
+            "By next Tuesday.",
+            "Use the customer portal."
+          ],
+          "ans": 2,
+          "expl": "The question asks for a method, and the customer portal provides that method.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_016",
+      "section": "p2",
+      "title": "Question 16",
+      "passage": "Did the parcel arrive safely?",
+      "items": [
+        {
+          "id": "p2_original_set1_016_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Yes, the box is undamaged.",
+            "At the front desk.",
+            "A tracking number."
+          ],
+          "ans": 0,
+          "expl": "The yes-or-no question is answered by confirming that the box is undamaged.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_017",
+      "section": "p2",
+      "title": "Question 17",
+      "passage": "Why are the lights dim?",
+      "items": [
+        {
+          "id": "p2_original_set1_017_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "In the ceiling.",
+            "The building is saving energy.",
+            "Since last night."
+          ],
+          "ans": 1,
+          "expl": "The question asks for a reason, and saving energy explains the dim lights.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_018",
+      "section": "p2",
+      "title": "Question 18",
+      "passage": "Could you reserve two seats?",
+      "items": [
+        {
+          "id": "p2_original_set1_018_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Near the aisle.",
+            "For the matinee.",
+            "Of course, I'll call now."
+          ],
+          "ans": 2,
+          "expl": "The request is accepted with an immediate promise to make the reservation.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_019",
+      "section": "p2",
+      "title": "Question 19",
+      "passage": "Where is the nearest cash machine?",
+      "items": [
+        {
+          "id": "p2_original_set1_019_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Beside the pharmacy.",
+            "At ten dollars.",
+            "With my card."
+          ],
+          "ans": 0,
+          "expl": "The question asks for a location, and beside the pharmacy identifies it.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_020",
+      "section": "p2",
+      "title": "Question 20",
+      "passage": "When should we submit the proposal?",
+      "items": [
+        {
+          "id": "p2_original_set1_020_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "In the shared drive.",
+            "By Friday afternoon.",
+            "With three charts."
+          ],
+          "ans": 1,
+          "expl": "The question asks when, so 'By Friday afternoon' gives the deadline.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_021",
+      "section": "p2",
+      "title": "Question 21",
+      "passage": "Aren't the new signs ready?",
+      "items": [
+        {
+          "id": "p2_original_set1_021_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Near the entrance.",
+            "In red and white.",
+            "They should be installed tomorrow."
+          ],
+          "ans": 2,
+          "expl": "The response addresses the status question by giving the expected installation time.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_022",
+      "section": "p2",
+      "title": "Question 22",
+      "passage": "Which bus goes to the art center?",
+      "items": [
+        {
+          "id": "p2_original_set1_022_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Route 18.",
+            "At the next stop.",
+            "For a school group."
+          ],
+          "ans": 0,
+          "expl": "The question asks which bus, and Route 18 identifies the route.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_023",
+      "section": "p2",
+      "title": "Question 23",
+      "passage": "How many copies do you need?",
+      "items": [
+        {
+          "id": "p2_original_set1_023_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "In the supply room.",
+            "Just four, please.",
+            "Before the meeting."
+          ],
+          "ans": 1,
+          "expl": "The question asks for a quantity, and four is the requested number.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_024",
+      "section": "p2",
+      "title": "Question 24",
+      "passage": "Can Lena attend the briefing?",
+      "items": [
+        {
+          "id": "p2_original_set1_024_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "At the downtown branch.",
+            "With a visitor badge.",
+            "Yes, if her shift ends early."
+          ],
+          "ans": 2,
+          "expl": "The yes-or-no question is answered with a condition for Lena's attendance.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set1_025",
+      "section": "p2",
+      "title": "Question 25",
+      "passage": "What caused the alarm?",
+      "items": [
+        {
+          "id": "p2_original_set1_025_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Steam from the kitchen.",
+            "In the hallway.",
+            "At ten o'clock."
+          ],
+          "ans": 0,
+          "expl": "The question asks for a cause, and kitchen steam explains the alarm.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p2_original_set2_007",
+      "section": "p2",
+      "title": "Question 7",
+      "passage": "Where can I find the lost-and-found desk?",
+      "items": [
+        {
+          "id": "p2_original_set2_007_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Next to customer service.",
+            "At 3:30.",
+            "With my umbrella."
+          ],
+          "ans": 0,
+          "expl": "The question asks for a location, and next to customer service gives it.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_008",
+      "section": "p2",
+      "title": "Question 8",
+      "passage": "Will the designer send a draft today?",
+      "items": [
+        {
+          "id": "p2_original_set2_008_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "In the design folder.",
+            "Yes, before the afternoon meeting.",
+            "Three pages long."
+          ],
+          "ans": 1,
+          "expl": "The yes-or-no question is answered by confirming delivery before the meeting.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_009",
+      "section": "p2",
+      "title": "Question 9",
+      "passage": "Why did the bus change routes?",
+      "items": [
+        {
+          "id": "p2_original_set2_009_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "At the terminal.",
+            "For twenty minutes.",
+            "A street festival blocked the avenue."
+          ],
+          "ans": 2,
+          "expl": "The question asks for a reason, and the blocked avenue explains the route change.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_010",
+      "section": "p2",
+      "title": "Question 10",
+      "passage": "Could I borrow a charging cable?",
+      "items": [
+        {
+          "id": "p2_original_set2_010_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Sure, take the one on the table.",
+            "For my phone case.",
+            "At the help desk."
+          ],
+          "ans": 0,
+          "expl": "The request is accepted by offering the cable on the table.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_011",
+      "section": "p2",
+      "title": "Question 11",
+      "passage": "When is the equipment inspection?",
+      "items": [
+        {
+          "id": "p2_original_set2_011_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "In the workshop.",
+            "Next Wednesday morning.",
+            "With a checklist."
+          ],
+          "ans": 1,
+          "expl": "The question asks when, so next Wednesday morning supplies the time.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_012",
+      "section": "p2",
+      "title": "Question 12",
+      "passage": "Shall we order the vegetarian option?",
+      "items": [
+        {
+          "id": "p2_original_set2_012_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "From the caterer.",
+            "At the side table.",
+            "That sounds good to me."
+          ],
+          "ans": 2,
+          "expl": "The suggestion is accepted with 'That sounds good to me.'",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_013",
+      "section": "p2",
+      "title": "Question 13",
+      "passage": "Who is presenting the sales figures?",
+      "items": [
+        {
+          "id": "p2_original_set2_013_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Priya from the finance team.",
+            "At ten thirty.",
+            "In the second folder."
+          ],
+          "ans": 0,
+          "expl": "The question asks who, so Priya from finance identifies the presenter.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_014",
+      "section": "p2",
+      "title": "Question 14",
+      "passage": "Does the library close early today?",
+      "items": [
+        {
+          "id": "p2_original_set2_014_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Near the student center.",
+            "Yes, at four o'clock.",
+            "With a study group."
+          ],
+          "ans": 1,
+          "expl": "The yes-or-no question is answered by giving the early closing time.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_015",
+      "section": "p2",
+      "title": "Question 15",
+      "passage": "How did you get the concert tickets?",
+      "items": [
+        {
+          "id": "p2_original_set2_015_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "For two seats.",
+            "On Saturday night.",
+            "I bought them through the venue's website."
+          ],
+          "ans": 2,
+          "expl": "The question asks how, and buying through the venue's website explains the method.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_016",
+      "section": "p2",
+      "title": "Question 16",
+      "passage": "Where should visitors sign in?",
+      "items": [
+        {
+          "id": "p2_original_set2_016_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "At the tablet by the entrance.",
+            "For the morning tour.",
+            "With a blue pen."
+          ],
+          "ans": 0,
+          "expl": "The question asks for a location, and the tablet by the entrance is the sign-in point.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_017",
+      "section": "p2",
+      "title": "Question 17",
+      "passage": "Why is the elevator stopped?",
+      "items": [
+        {
+          "id": "p2_original_set2_017_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "On the third floor.",
+            "A technician is checking the doors.",
+            "At the service desk."
+          ],
+          "ans": 1,
+          "expl": "The question asks for a reason, and a technician checking the doors explains the stop.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_018",
+      "section": "p2",
+      "title": "Question 18",
+      "passage": "Could you remind Omar about the deadline?",
+      "items": [
+        {
+          "id": "p2_original_set2_018_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "On the project board.",
+            "For two weeks.",
+            "Sure, I'll message him this afternoon."
+          ],
+          "ans": 2,
+          "expl": "The request is accepted with a promise to message Omar.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_019",
+      "section": "p2",
+      "title": "Question 19",
+      "passage": "Which jacket belongs to the guest speaker?",
+      "items": [
+        {
+          "id": "p2_original_set2_019_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "The gray one beside the lectern.",
+            "At the registration table.",
+            "For tomorrow's session."
+          ],
+          "ans": 0,
+          "expl": "The question asks which jacket, and the gray one beside the lectern identifies it.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_020",
+      "section": "p2",
+      "title": "Question 20",
+      "passage": "Have you printed the boarding passes?",
+      "items": [
+        {
+          "id": "p2_original_set2_020_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "At the airport counter.",
+            "Yes, they are in my bag.",
+            "Two passengers."
+          ],
+          "ans": 1,
+          "expl": "The yes-or-no question is answered by confirming the passes are in the bag.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_021",
+      "section": "p2",
+      "title": "Question 21",
+      "passage": "What should I bring to the workshop?",
+      "items": [
+        {
+          "id": "p2_original_set2_021_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "In the training room.",
+            "For three hours.",
+            "A notebook and a pencil."
+          ],
+          "ans": 2,
+          "expl": "The question asks what to bring, and a notebook and pencil answer it.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_022",
+      "section": "p2",
+      "title": "Question 22",
+      "passage": "Why don't we take the side street?",
+      "items": [
+        {
+          "id": "p2_original_set2_022_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "It has less traffic.",
+            "At the next corner.",
+            "With our bicycles."
+          ],
+          "ans": 0,
+          "expl": "The suggestion is supported by the reason that the side street has less traffic.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_023",
+      "section": "p2",
+      "title": "Question 23",
+      "passage": "When will the repair team arrive?",
+      "items": [
+        {
+          "id": "p2_original_set2_023_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "In the parking area.",
+            "Around noon tomorrow.",
+            "For the broken window."
+          ],
+          "ans": 1,
+          "expl": "The question asks when, and around noon tomorrow gives the arrival time.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_024",
+      "section": "p2",
+      "title": "Question 24",
+      "passage": "Isn't the invoice due this week?",
+      "items": [
+        {
+          "id": "p2_original_set2_024_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "In the accounting folder.",
+            "With the supplier.",
+            "Yes, it must be paid by Thursday."
+          ],
+          "ans": 2,
+          "expl": "The response confirms the due week and gives the payment deadline.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set2_025",
+      "section": "p2",
+      "title": "Question 25",
+      "passage": "How many volunteers signed up?",
+      "items": [
+        {
+          "id": "p2_original_set2_025_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Twenty-three so far.",
+            "At the community hall.",
+            "Since last spring."
+          ],
+          "ans": 0,
+          "expl": "The question asks for a number, and twenty-three gives the count.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p2_original_set3_007",
+      "section": "p2",
+      "title": "Question 7",
+      "passage": "What is the password for the guest network?",
+      "items": [
+        {
+          "id": "p2_original_set3_007_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "It is printed on the welcome card.",
+            "In the lobby.",
+            "For visiting speakers."
+          ],
+          "ans": 0,
+          "expl": "The question asks for the password, and the welcome card tells where it is printed.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_008",
+      "section": "p2",
+      "title": "Question 8",
+      "passage": "Could you turn off the projector?",
+      "items": [
+        {
+          "id": "p2_original_set3_008_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "In the meeting room.",
+            "No problem, I'll do it now.",
+            "For the training session."
+          ],
+          "ans": 1,
+          "expl": "The request is accepted with an immediate promise to turn it off.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_009",
+      "section": "p2",
+      "title": "Question 9",
+      "passage": "Why is the garden closed?",
+      "items": [
+        {
+          "id": "p2_original_set3_009_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Near the fountain.",
+            "Until five o'clock.",
+            "The grounds crew is replacing the walkway."
+          ],
+          "ans": 2,
+          "expl": "The question asks for a reason, and walkway repairs explain the closure.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_010",
+      "section": "p2",
+      "title": "Question 10",
+      "passage": "Where did you put the spare keys?",
+      "items": [
+        {
+          "id": "p2_original_set3_010_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "In the drawer by the door.",
+            "For the landlord.",
+            "At the end of the month."
+          ],
+          "ans": 0,
+          "expl": "The question asks for a location, and the drawer by the door identifies it.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_011",
+      "section": "p2",
+      "title": "Question 11",
+      "passage": "Have the invitations been mailed?",
+      "items": [
+        {
+          "id": "p2_original_set3_011_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "To the new members.",
+            "Yes, they went out yesterday.",
+            "From the print shop."
+          ],
+          "ans": 1,
+          "expl": "The yes-or-no question is answered by confirming that the invitations were mailed yesterday.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_012",
+      "section": "p2",
+      "title": "Question 12",
+      "passage": "Would you prefer tea or juice?",
+      "items": [
+        {
+          "id": "p2_original_set3_012_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "On the kitchen shelf.",
+            "For the afternoon break.",
+            "Juice, please."
+          ],
+          "ans": 2,
+          "expl": "The choice question is answered by selecting juice.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_013",
+      "section": "p2",
+      "title": "Question 13",
+      "passage": "Who designed the community mural?",
+      "items": [
+        {
+          "id": "p2_original_set3_013_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "A local art class.",
+            "On the south wall.",
+            "Last summer."
+          ],
+          "ans": 0,
+          "expl": "The question asks who, and a local art class identifies the designer.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_014",
+      "section": "p2",
+      "title": "Question 14",
+      "passage": "Does this train stop at Harbor Square?",
+      "items": [
+        {
+          "id": "p2_original_set3_014_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "On platform four.",
+            "No, it ends at Central Station.",
+            "In about fifteen minutes."
+          ],
+          "ans": 1,
+          "expl": "The yes-or-no question is answered by explaining where the train ends instead.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_015",
+      "section": "p2",
+      "title": "Question 15",
+      "passage": "How can I register for the seminar?",
+      "items": [
+        {
+          "id": "p2_original_set3_015_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "At the main auditorium.",
+            "By next month.",
+            "Complete the form on the event page."
+          ],
+          "ans": 2,
+          "expl": "The question asks for a method, and completing the online event form gives it.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_016",
+      "section": "p2",
+      "title": "Question 16",
+      "passage": "Where is the recycling bin?",
+      "items": [
+        {
+          "id": "p2_original_set3_016_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Beside the loading entrance.",
+            "For glass bottles.",
+            "Every Thursday."
+          ],
+          "ans": 0,
+          "expl": "The question asks for a location, and beside the loading entrance identifies it.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_017",
+      "section": "p2",
+      "title": "Question 17",
+      "passage": "Why are the windows open?",
+      "items": [
+        {
+          "id": "p2_original_set3_017_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "On the second floor.",
+            "The room needs more fresh air.",
+            "Before the guests arrive."
+          ],
+          "ans": 1,
+          "expl": "The question asks for a reason, and the need for fresh air explains the open windows.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_018",
+      "section": "p2",
+      "title": "Question 18",
+      "passage": "Could you check the microphone?",
+      "items": [
+        {
+          "id": "p2_original_set3_018_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "At the podium.",
+            "For twenty minutes.",
+            "Certainly, I will test it before the talk."
+          ],
+          "ans": 2,
+          "expl": "The request is accepted with a promise to test the microphone before the talk.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_019",
+      "section": "p2",
+      "title": "Question 19",
+      "passage": "When should we water the new plants?",
+      "items": [
+        {
+          "id": "p2_original_set3_019_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Every other morning.",
+            "Near the back fence.",
+            "With a small can."
+          ],
+          "ans": 0,
+          "expl": "The question asks how often or when, and every other morning gives a schedule.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_020",
+      "section": "p2",
+      "title": "Question 20",
+      "passage": "Are the museum tickets still available?",
+      "items": [
+        {
+          "id": "p2_original_set3_020_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "At the ticket counter.",
+            "Yes, online reservations remain open.",
+            "For the guided tour."
+          ],
+          "ans": 1,
+          "expl": "The yes-or-no question is answered by confirming that online reservations remain open.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_021",
+      "section": "p2",
+      "title": "Question 21",
+      "passage": "Which folder should I archive?",
+      "items": [
+        {
+          "id": "p2_original_set3_021_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "In the cabinet.",
+            "At the end of the week.",
+            "The one marked \"Completed projects.\""
+          ],
+          "ans": 2,
+          "expl": "The question asks which folder, and the label identifies the correct one.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_022",
+      "section": "p2",
+      "title": "Question 22",
+      "passage": "Why did Nora miss the call?",
+      "items": [
+        {
+          "id": "p2_original_set3_022_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Her train was delayed.",
+            "At the usual time.",
+            "With her manager."
+          ],
+          "ans": 0,
+          "expl": "The question asks for a reason, and a delayed train explains the missed call.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_023",
+      "section": "p2",
+      "title": "Question 23",
+      "passage": "Could we meet by the fountain?",
+      "items": [
+        {
+          "id": "p2_original_set3_023_q1",
+          "section": "p2",
+          "level": 2,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Near the park gate.",
+            "Yes, at two o'clock.",
+            "For a short walk."
+          ],
+          "ans": 1,
+          "expl": "The request is accepted and a meeting time is provided.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_024",
+      "section": "p2",
+      "title": "Question 24",
+      "passage": "How often is the neighborhood market held?",
+      "items": [
+        {
+          "id": "p2_original_set3_024_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "Near the river.",
+            "With local vendors.",
+            "It runs on the first Saturday of each month."
+          ],
+          "ans": 2,
+          "expl": "The question asks how often, and the first Saturday schedule gives the frequency.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p2_original_set3_025",
+      "section": "p2",
+      "title": "Question 25",
+      "passage": "Didn't you lock the side door?",
+      "items": [
+        {
+          "id": "p2_original_set3_025_q1",
+          "section": "p2",
+          "level": 3,
+          "stem": "Choose the best response.",
+          "opts": [
+            "No, I left it open for the delivery.",
+            "By the loading dock.",
+            "At the end of the shift."
+          ],
+          "ans": 0,
+          "expl": "The response directly explains that the door was left open for a delivery.",
+          "qtype": "listen_p2"
+        }
+      ],
+      "set": "3"
     }
   ]
 }

@@ -1,0 +1,1428 @@
+[
+  {
+    "id": "p2_original_set1_007",
+    "section": "p2",
+    "level": 2,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 7",
+    "title_vi": "Câu hỏi 7",
+    "passage": "When does the clinic open?",
+    "passage_vi": "Phòng khám mở cửa lúc mấy giờ?",
+    "items": [
+      {
+        "id": "p2_original_set1_007_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "At eight o'clock.",
+          "In the waiting room.",
+          "For new patients."
+        ],
+        "ans": 0,
+        "expl": "The question asks for an opening time, so eight o'clock is the appropriate response.",
+        "vi_expl": "Câu hỏi hỏi giờ mở cửa, nên tám giờ là câu trả lời phù hợp."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_008",
+    "section": "p2",
+    "level": 2,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 8",
+    "title_vi": "Câu hỏi 8",
+    "passage": "Could you email the agenda?",
+    "passage_vi": "Bạn có thể gửi chương trình họp qua email không?",
+    "items": [
+      {
+        "id": "p2_original_set1_008_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "In the blue folder.",
+          "Certainly, after lunch.",
+          "Two copies."
+        ],
+        "ans": 1,
+        "expl": "The request is accepted with a promise to email the agenda after lunch.",
+        "vi_expl": "Lời nhờ được đồng ý bằng lời hứa gửi chương trình họp sau bữa trưa."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_009",
+    "section": "p2",
+    "level": 2,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 9",
+    "title_vi": "Câu hỏi 9",
+    "passage": "Why is the gate closed?",
+    "passage_vi": "Tại sao cổng lại đóng?",
+    "items": [
+      {
+        "id": "p2_original_set1_009_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Near the east lot.",
+          "At six this evening.",
+          "Because maintenance is underway."
+        ],
+        "ans": 2,
+        "expl": "The question asks for a reason, and ongoing maintenance explains the closed gate.",
+        "vi_expl": "Câu hỏi hỏi lý do, và việc đang bảo trì giải thích cho cổng đóng."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_010",
+    "section": "p2",
+    "level": 2,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 10",
+    "title_vi": "Câu hỏi 10",
+    "passage": "Where should I leave these forms?",
+    "passage_vi": "Tôi nên để những biểu mẫu này ở đâu?",
+    "items": [
+      {
+        "id": "p2_original_set1_010_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "On the receptionist's desk.",
+          "Before noon.",
+          "Three signatures."
+        ],
+        "ans": 0,
+        "expl": "The question asks for a location, so the receptionist's desk is the relevant response.",
+        "vi_expl": "Câu hỏi hỏi địa điểm, nên bàn của lễ tân là câu trả lời phù hợp."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_011",
+    "section": "p2",
+    "level": 3,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 11",
+    "title_vi": "Câu hỏi 11",
+    "passage": "Have you booked the conference room?",
+    "passage_vi": "Bạn đã đặt phòng họp chưa?",
+    "items": [
+      {
+        "id": "p2_original_set1_011_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "At the west wing.",
+          "Yes, for Thursday afternoon.",
+          "With twelve chairs."
+        ],
+        "ans": 1,
+        "expl": "The yes-or-no question is answered by confirming the reservation and giving its time.",
+        "vi_expl": "Câu hỏi có–không được trả lời bằng việc xác nhận đặt phòng và nêu thời gian."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_012",
+    "section": "p2",
+    "level": 3,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 12",
+    "title_vi": "Câu hỏi 12",
+    "passage": "Would you like to join the walking tour?",
+    "passage_vi": "Bạn có muốn tham gia chuyến đi bộ tham quan không?",
+    "items": [
+      {
+        "id": "p2_original_set1_012_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "At the museum entrance.",
+          "For about an hour.",
+          "I'd love to, thanks."
+        ],
+        "ans": 2,
+        "expl": "The invitation is accepted naturally with 'I'd love to, thanks.'",
+        "vi_expl": "Lời mời được nhận lời tự nhiên bằng câu 'Tôi rất muốn, cảm ơn.'"
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_013",
+    "section": "p2",
+    "level": 2,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 13",
+    "title_vi": "Câu hỏi 13",
+    "passage": "What time does the ferry depart?",
+    "passage_vi": "Phà khởi hành lúc mấy giờ?",
+    "items": [
+      {
+        "id": "p2_original_set1_013_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "At 7:45.",
+          "From Pier 2.",
+          "With the morning crew."
+        ],
+        "ans": 0,
+        "expl": "The question asks for a departure time, so 7:45 answers it directly.",
+        "vi_expl": "Câu hỏi hỏi giờ khởi hành, nên 7:45 trả lời trực tiếp."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_014",
+    "section": "p2",
+    "level": 3,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 14",
+    "title_vi": "Câu hỏi 14",
+    "passage": "Who will unlock the studio?",
+    "passage_vi": "Ai sẽ mở khóa phòng thu?",
+    "items": [
+      {
+        "id": "p2_original_set1_014_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "At nine o'clock.",
+          "The facilities manager.",
+          "In the west building."
+        ],
+        "ans": 1,
+        "expl": "The question asks who, so the facilities manager is the appropriate response.",
+        "vi_expl": "Câu hỏi hỏi ai, nên quản lý cơ sở vật chất là câu trả lời phù hợp."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_015",
+    "section": "p2",
+    "level": 3,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 15",
+    "title_vi": "Câu hỏi 15",
+    "passage": "How can I update my address?",
+    "passage_vi": "Tôi có thể cập nhật địa chỉ bằng cách nào?",
+    "items": [
+      {
+        "id": "p2_original_set1_015_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "On the new form.",
+          "By next Tuesday.",
+          "Use the customer portal."
+        ],
+        "ans": 2,
+        "expl": "The question asks for a method, and the customer portal provides that method.",
+        "vi_expl": "Câu hỏi hỏi cách thực hiện, và cổng thông tin khách hàng là phương thức phù hợp."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_016",
+    "section": "p2",
+    "level": 2,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 16",
+    "title_vi": "Câu hỏi 16",
+    "passage": "Did the parcel arrive safely?",
+    "passage_vi": "Bưu kiện có đến an toàn không?",
+    "items": [
+      {
+        "id": "p2_original_set1_016_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Yes, the box is undamaged.",
+          "At the front desk.",
+          "A tracking number."
+        ],
+        "ans": 0,
+        "expl": "The yes-or-no question is answered by confirming that the box is undamaged.",
+        "vi_expl": "Câu hỏi có–không được trả lời bằng việc xác nhận hộp hàng không bị hư hại."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_017",
+    "section": "p2",
+    "level": 3,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 17",
+    "title_vi": "Câu hỏi 17",
+    "passage": "Why are the lights dim?",
+    "passage_vi": "Tại sao đèn lại mờ?",
+    "items": [
+      {
+        "id": "p2_original_set1_017_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "In the ceiling.",
+          "The building is saving energy.",
+          "Since last night."
+        ],
+        "ans": 1,
+        "expl": "The question asks for a reason, and saving energy explains the dim lights.",
+        "vi_expl": "Câu hỏi hỏi lý do, và việc tòa nhà tiết kiệm năng lượng giải thích đèn mờ."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_018",
+    "section": "p2",
+    "level": 3,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 18",
+    "title_vi": "Câu hỏi 18",
+    "passage": "Could you reserve two seats?",
+    "passage_vi": "Bạn có thể đặt trước hai chỗ không?",
+    "items": [
+      {
+        "id": "p2_original_set1_018_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Near the aisle.",
+          "For the matinee.",
+          "Of course, I'll call now."
+        ],
+        "ans": 2,
+        "expl": "The request is accepted with an immediate promise to make the reservation.",
+        "vi_expl": "Lời nhờ được đồng ý bằng lời hứa sẽ đặt chỗ ngay."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_019",
+    "section": "p2",
+    "level": 2,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 19",
+    "title_vi": "Câu hỏi 19",
+    "passage": "Where is the nearest cash machine?",
+    "passage_vi": "Cây ATM gần nhất ở đâu?",
+    "items": [
+      {
+        "id": "p2_original_set1_019_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Beside the pharmacy.",
+          "At ten dollars.",
+          "With my card."
+        ],
+        "ans": 0,
+        "expl": "The question asks for a location, and beside the pharmacy identifies it.",
+        "vi_expl": "Câu hỏi hỏi địa điểm, và vị trí cạnh hiệu thuốc trả lời đúng."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_020",
+    "section": "p2",
+    "level": 3,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 20",
+    "title_vi": "Câu hỏi 20",
+    "passage": "When should we submit the proposal?",
+    "passage_vi": "Khi nào chúng ta nên nộp bản đề xuất?",
+    "items": [
+      {
+        "id": "p2_original_set1_020_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "In the shared drive.",
+          "By Friday afternoon.",
+          "With three charts."
+        ],
+        "ans": 1,
+        "expl": "The question asks when, so 'By Friday afternoon' gives the deadline.",
+        "vi_expl": "Câu hỏi hỏi thời hạn, nên 'Trước chiều thứ Sáu' là câu trả lời phù hợp."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_021",
+    "section": "p2",
+    "level": 3,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 21",
+    "title_vi": "Câu hỏi 21",
+    "passage": "Aren't the new signs ready?",
+    "passage_vi": "Những biển báo mới chưa sẵn sàng sao?",
+    "items": [
+      {
+        "id": "p2_original_set1_021_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Near the entrance.",
+          "In red and white.",
+          "They should be installed tomorrow."
+        ],
+        "ans": 2,
+        "expl": "The response addresses the status question by giving the expected installation time.",
+        "vi_expl": "Câu trả lời giải đáp tình trạng bằng cách nêu thời điểm dự kiến lắp đặt."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_022",
+    "section": "p2",
+    "level": 2,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 22",
+    "title_vi": "Câu hỏi 22",
+    "passage": "Which bus goes to the art center?",
+    "passage_vi": "Xe buýt nào đi đến trung tâm nghệ thuật?",
+    "items": [
+      {
+        "id": "p2_original_set1_022_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Route 18.",
+          "At the next stop.",
+          "For a school group."
+        ],
+        "ans": 0,
+        "expl": "The question asks which bus, and Route 18 identifies the route.",
+        "vi_expl": "Câu hỏi hỏi xe buýt nào, nên Tuyến 18 xác định đúng tuyến."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_023",
+    "section": "p2",
+    "level": 2,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 23",
+    "title_vi": "Câu hỏi 23",
+    "passage": "How many copies do you need?",
+    "passage_vi": "Bạn cần bao nhiêu bản sao?",
+    "items": [
+      {
+        "id": "p2_original_set1_023_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "In the supply room.",
+          "Just four, please.",
+          "Before the meeting."
+        ],
+        "ans": 1,
+        "expl": "The question asks for a quantity, and four is the requested number.",
+        "vi_expl": "Câu hỏi hỏi số lượng, và bốn là số lượng được yêu cầu."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_024",
+    "section": "p2",
+    "level": 3,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 24",
+    "title_vi": "Câu hỏi 24",
+    "passage": "Can Lena attend the briefing?",
+    "passage_vi": "Lena có thể tham dự buổi báo cáo không?",
+    "items": [
+      {
+        "id": "p2_original_set1_024_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "At the downtown branch.",
+          "With a visitor badge.",
+          "Yes, if her shift ends early."
+        ],
+        "ans": 2,
+        "expl": "The yes-or-no question is answered with a condition for Lena's attendance.",
+        "vi_expl": "Câu hỏi có–không được trả lời bằng điều kiện để Lena tham dự."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set1_025",
+    "section": "p2",
+    "level": 3,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 25",
+    "title_vi": "Câu hỏi 25",
+    "passage": "What caused the alarm?",
+    "passage_vi": "Điều gì đã khiến chuông báo động kêu?",
+    "items": [
+      {
+        "id": "p2_original_set1_025_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Steam from the kitchen.",
+          "In the hallway.",
+          "At ten o'clock."
+        ],
+        "ans": 0,
+        "expl": "The question asks for a cause, and kitchen steam explains the alarm.",
+        "vi_expl": "Câu hỏi hỏi nguyên nhân, và hơi nước từ bếp giải thích chuông báo động."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_007",
+    "section": "p2",
+    "level": 2,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 7",
+    "title_vi": "Câu hỏi 7",
+    "passage": "Where can I find the lost-and-found desk?",
+    "passage_vi": "Tôi có thể tìm quầy đồ thất lạc ở đâu?",
+    "items": [
+      {
+        "id": "p2_original_set2_007_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Next to customer service.",
+          "At 3:30.",
+          "With my umbrella."
+        ],
+        "ans": 0,
+        "expl": "The question asks for a location, and next to customer service gives it.",
+        "vi_expl": "Câu hỏi hỏi địa điểm, nên cạnh quầy chăm sóc khách hàng là câu trả lời phù hợp."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_008",
+    "section": "p2",
+    "level": 3,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 8",
+    "title_vi": "Câu hỏi 8",
+    "passage": "Will the designer send a draft today?",
+    "passage_vi": "Nhà thiết kế sẽ gửi bản nháp hôm nay chứ?",
+    "items": [
+      {
+        "id": "p2_original_set2_008_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "In the design folder.",
+          "Yes, before the afternoon meeting.",
+          "Three pages long."
+        ],
+        "ans": 1,
+        "expl": "The yes-or-no question is answered by confirming delivery before the meeting.",
+        "vi_expl": "Câu hỏi có–không được trả lời bằng việc xác nhận sẽ gửi trước cuộc họp chiều."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_009",
+    "section": "p2",
+    "level": 3,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 9",
+    "title_vi": "Câu hỏi 9",
+    "passage": "Why did the bus change routes?",
+    "passage_vi": "Tại sao xe buýt đổi tuyến?",
+    "items": [
+      {
+        "id": "p2_original_set2_009_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "At the terminal.",
+          "For twenty minutes.",
+          "A street festival blocked the avenue."
+        ],
+        "ans": 2,
+        "expl": "The question asks for a reason, and the blocked avenue explains the route change.",
+        "vi_expl": "Câu hỏi hỏi lý do, và đại lộ bị chặn vì lễ hội đường phố giải thích việc đổi tuyến."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_010",
+    "section": "p2",
+    "level": 2,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 10",
+    "title_vi": "Câu hỏi 10",
+    "passage": "Could I borrow a charging cable?",
+    "passage_vi": "Tôi có thể mượn cáp sạc không?",
+    "items": [
+      {
+        "id": "p2_original_set2_010_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Sure, take the one on the table.",
+          "For my phone case.",
+          "At the help desk."
+        ],
+        "ans": 0,
+        "expl": "The request is accepted by offering the cable on the table.",
+        "vi_expl": "Lời xin phép được đồng ý bằng cách đưa chiếc cáp trên bàn."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_011",
+    "section": "p2",
+    "level": 3,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 11",
+    "title_vi": "Câu hỏi 11",
+    "passage": "When is the equipment inspection?",
+    "passage_vi": "Khi nào kiểm tra thiết bị?",
+    "items": [
+      {
+        "id": "p2_original_set2_011_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "In the workshop.",
+          "Next Wednesday morning.",
+          "With a checklist."
+        ],
+        "ans": 1,
+        "expl": "The question asks when, so next Wednesday morning supplies the time.",
+        "vi_expl": "Câu hỏi hỏi thời điểm, nên sáng thứ Tư tuần tới là câu trả lời phù hợp."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_012",
+    "section": "p2",
+    "level": 2,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 12",
+    "title_vi": "Câu hỏi 12",
+    "passage": "Shall we order the vegetarian option?",
+    "passage_vi": "Chúng ta có nên gọi món chay không?",
+    "items": [
+      {
+        "id": "p2_original_set2_012_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "From the caterer.",
+          "At the side table.",
+          "That sounds good to me."
+        ],
+        "ans": 2,
+        "expl": "The suggestion is accepted with 'That sounds good to me.'",
+        "vi_expl": "Lời đề nghị được đồng ý bằng câu 'Nghe hay đấy.'"
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_013",
+    "section": "p2",
+    "level": 3,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 13",
+    "title_vi": "Câu hỏi 13",
+    "passage": "Who is presenting the sales figures?",
+    "passage_vi": "Ai sẽ trình bày số liệu bán hàng?",
+    "items": [
+      {
+        "id": "p2_original_set2_013_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Priya from the finance team.",
+          "At ten thirty.",
+          "In the second folder."
+        ],
+        "ans": 0,
+        "expl": "The question asks who, so Priya from finance identifies the presenter.",
+        "vi_expl": "Câu hỏi hỏi ai, nên Priya từ nhóm tài chính là người trình bày."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_014",
+    "section": "p2",
+    "level": 2,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 14",
+    "title_vi": "Câu hỏi 14",
+    "passage": "Does the library close early today?",
+    "passage_vi": "Hôm nay thư viện có đóng cửa sớm không?",
+    "items": [
+      {
+        "id": "p2_original_set2_014_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Near the student center.",
+          "Yes, at four o'clock.",
+          "With a study group."
+        ],
+        "ans": 1,
+        "expl": "The yes-or-no question is answered by giving the early closing time.",
+        "vi_expl": "Câu hỏi có–không được trả lời bằng giờ đóng cửa sớm."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_015",
+    "section": "p2",
+    "level": 3,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 15",
+    "title_vi": "Câu hỏi 15",
+    "passage": "How did you get the concert tickets?",
+    "passage_vi": "Bạn đã lấy vé xem hòa nhạc bằng cách nào?",
+    "items": [
+      {
+        "id": "p2_original_set2_015_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "For two seats.",
+          "On Saturday night.",
+          "I bought them through the venue's website."
+        ],
+        "ans": 2,
+        "expl": "The question asks how, and buying through the venue's website explains the method.",
+        "vi_expl": "Câu hỏi hỏi cách thức, và mua qua trang web của địa điểm tổ chức là câu trả lời phù hợp."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_016",
+    "section": "p2",
+    "level": 2,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 16",
+    "title_vi": "Câu hỏi 16",
+    "passage": "Where should visitors sign in?",
+    "passage_vi": "Khách nên đăng ký ở đâu?",
+    "items": [
+      {
+        "id": "p2_original_set2_016_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "At the tablet by the entrance.",
+          "For the morning tour.",
+          "With a blue pen."
+        ],
+        "ans": 0,
+        "expl": "The question asks for a location, and the tablet by the entrance is the sign-in point.",
+        "vi_expl": "Câu hỏi hỏi địa điểm, nên máy tính bảng cạnh lối vào là nơi đăng ký."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_017",
+    "section": "p2",
+    "level": 3,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 17",
+    "title_vi": "Câu hỏi 17",
+    "passage": "Why is the elevator stopped?",
+    "passage_vi": "Tại sao thang máy dừng lại?",
+    "items": [
+      {
+        "id": "p2_original_set2_017_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "On the third floor.",
+          "A technician is checking the doors.",
+          "At the service desk."
+        ],
+        "ans": 1,
+        "expl": "The question asks for a reason, and a technician checking the doors explains the stop.",
+        "vi_expl": "Câu hỏi hỏi lý do, và việc kỹ thuật viên kiểm tra cửa giải thích thang máy dừng."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_018",
+    "section": "p2",
+    "level": 3,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 18",
+    "title_vi": "Câu hỏi 18",
+    "passage": "Could you remind Omar about the deadline?",
+    "passage_vi": "Bạn có thể nhắc Omar về hạn chót không?",
+    "items": [
+      {
+        "id": "p2_original_set2_018_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "On the project board.",
+          "For two weeks.",
+          "Sure, I'll message him this afternoon."
+        ],
+        "ans": 2,
+        "expl": "The request is accepted with a promise to message Omar.",
+        "vi_expl": "Lời nhờ được đồng ý bằng lời hứa sẽ nhắn cho Omar."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_019",
+    "section": "p2",
+    "level": 2,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 19",
+    "title_vi": "Câu hỏi 19",
+    "passage": "Which jacket belongs to the guest speaker?",
+    "passage_vi": "Chiếc áo khoác nào là của diễn giả khách mời?",
+    "items": [
+      {
+        "id": "p2_original_set2_019_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "The gray one beside the lectern.",
+          "At the registration table.",
+          "For tomorrow's session."
+        ],
+        "ans": 0,
+        "expl": "The question asks which jacket, and the gray one beside the lectern identifies it.",
+        "vi_expl": "Câu hỏi hỏi chiếc áo nào, nên chiếc màu xám cạnh bục giảng là câu trả lời."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_020",
+    "section": "p2",
+    "level": 2,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 20",
+    "title_vi": "Câu hỏi 20",
+    "passage": "Have you printed the boarding passes?",
+    "passage_vi": "Bạn đã in thẻ lên máy bay chưa?",
+    "items": [
+      {
+        "id": "p2_original_set2_020_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "At the airport counter.",
+          "Yes, they are in my bag.",
+          "Two passengers."
+        ],
+        "ans": 1,
+        "expl": "The yes-or-no question is answered by confirming the passes are in the bag.",
+        "vi_expl": "Câu hỏi có–không được trả lời bằng việc xác nhận thẻ đã ở trong túi."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_021",
+    "section": "p2",
+    "level": 3,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 21",
+    "title_vi": "Câu hỏi 21",
+    "passage": "What should I bring to the workshop?",
+    "passage_vi": "Tôi nên mang gì đến buổi hội thảo?",
+    "items": [
+      {
+        "id": "p2_original_set2_021_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "In the training room.",
+          "For three hours.",
+          "A notebook and a pencil."
+        ],
+        "ans": 2,
+        "expl": "The question asks what to bring, and a notebook and pencil answer it.",
+        "vi_expl": "Câu hỏi hỏi nên mang gì, nên sổ tay và bút chì là câu trả lời."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_022",
+    "section": "p2",
+    "level": 2,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 22",
+    "title_vi": "Câu hỏi 22",
+    "passage": "Why don't we take the side street?",
+    "passage_vi": "Tại sao chúng ta không đi đường bên cạnh?",
+    "items": [
+      {
+        "id": "p2_original_set2_022_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "It has less traffic.",
+          "At the next corner.",
+          "With our bicycles."
+        ],
+        "ans": 0,
+        "expl": "The suggestion is supported by the reason that the side street has less traffic.",
+        "vi_expl": "Lời đề nghị được giải thích bằng lý do đường bên cạnh ít xe hơn."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_023",
+    "section": "p2",
+    "level": 3,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 23",
+    "title_vi": "Câu hỏi 23",
+    "passage": "When will the repair team arrive?",
+    "passage_vi": "Khi nào đội sửa chữa sẽ đến?",
+    "items": [
+      {
+        "id": "p2_original_set2_023_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "In the parking area.",
+          "Around noon tomorrow.",
+          "For the broken window."
+        ],
+        "ans": 1,
+        "expl": "The question asks when, and around noon tomorrow gives the arrival time.",
+        "vi_expl": "Câu hỏi hỏi thời điểm, nên khoảng trưa ngày mai là câu trả lời phù hợp."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_024",
+    "section": "p2",
+    "level": 3,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 24",
+    "title_vi": "Câu hỏi 24",
+    "passage": "Isn't the invoice due this week?",
+    "passage_vi": "Hóa đơn không đến hạn trong tuần này sao?",
+    "items": [
+      {
+        "id": "p2_original_set2_024_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "In the accounting folder.",
+          "With the supplier.",
+          "Yes, it must be paid by Thursday."
+        ],
+        "ans": 2,
+        "expl": "The response confirms the due week and gives the payment deadline.",
+        "vi_expl": "Câu trả lời xác nhận hóa đơn đến hạn trong tuần và nêu hạn thanh toán."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set2_025",
+    "section": "p2",
+    "level": 2,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 25",
+    "title_vi": "Câu hỏi 25",
+    "passage": "How many volunteers signed up?",
+    "passage_vi": "Có bao nhiêu tình nguyện viên đã đăng ký?",
+    "items": [
+      {
+        "id": "p2_original_set2_025_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Twenty-three so far.",
+          "At the community hall.",
+          "Since last spring."
+        ],
+        "ans": 0,
+        "expl": "The question asks for a number, and twenty-three gives the count.",
+        "vi_expl": "Câu hỏi hỏi số lượng, nên hai mươi ba là con số phù hợp."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_007",
+    "section": "p2",
+    "level": 2,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 7",
+    "title_vi": "Câu hỏi 7",
+    "passage": "What is the password for the guest network?",
+    "passage_vi": "Mật khẩu của mạng khách là gì?",
+    "items": [
+      {
+        "id": "p2_original_set3_007_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "It is printed on the welcome card.",
+          "In the lobby.",
+          "For visiting speakers."
+        ],
+        "ans": 0,
+        "expl": "The question asks for the password, and the welcome card tells where it is printed.",
+        "vi_expl": "Câu hỏi hỏi mật khẩu, và thẻ chào mừng cho biết nơi in mật khẩu."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_008",
+    "section": "p2",
+    "level": 2,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 8",
+    "title_vi": "Câu hỏi 8",
+    "passage": "Could you turn off the projector?",
+    "passage_vi": "Bạn có thể tắt máy chiếu không?",
+    "items": [
+      {
+        "id": "p2_original_set3_008_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "In the meeting room.",
+          "No problem, I'll do it now.",
+          "For the training session."
+        ],
+        "ans": 1,
+        "expl": "The request is accepted with an immediate promise to turn it off.",
+        "vi_expl": "Lời nhờ được đồng ý bằng lời hứa sẽ tắt ngay."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_009",
+    "section": "p2",
+    "level": 3,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 9",
+    "title_vi": "Câu hỏi 9",
+    "passage": "Why is the garden closed?",
+    "passage_vi": "Tại sao khu vườn đóng cửa?",
+    "items": [
+      {
+        "id": "p2_original_set3_009_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Near the fountain.",
+          "Until five o'clock.",
+          "The grounds crew is replacing the walkway."
+        ],
+        "ans": 2,
+        "expl": "The question asks for a reason, and walkway repairs explain the closure.",
+        "vi_expl": "Câu hỏi hỏi lý do, và việc sửa lối đi giải thích khu vườn đóng cửa."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_010",
+    "section": "p2",
+    "level": 2,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 10",
+    "title_vi": "Câu hỏi 10",
+    "passage": "Where did you put the spare keys?",
+    "passage_vi": "Bạn đã để chìa khóa dự phòng ở đâu?",
+    "items": [
+      {
+        "id": "p2_original_set3_010_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "In the drawer by the door.",
+          "For the landlord.",
+          "At the end of the month."
+        ],
+        "ans": 0,
+        "expl": "The question asks for a location, and the drawer by the door identifies it.",
+        "vi_expl": "Câu hỏi hỏi địa điểm, nên ngăn kéo cạnh cửa là câu trả lời phù hợp."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_011",
+    "section": "p2",
+    "level": 2,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 11",
+    "title_vi": "Câu hỏi 11",
+    "passage": "Have the invitations been mailed?",
+    "passage_vi": "Thiệp mời đã được gửi qua bưu điện chưa?",
+    "items": [
+      {
+        "id": "p2_original_set3_011_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "To the new members.",
+          "Yes, they went out yesterday.",
+          "From the print shop."
+        ],
+        "ans": 1,
+        "expl": "The yes-or-no question is answered by confirming that the invitations were mailed yesterday.",
+        "vi_expl": "Câu hỏi có–không được trả lời bằng việc xác nhận thiệp đã được gửi hôm qua."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_012",
+    "section": "p2",
+    "level": 2,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 12",
+    "title_vi": "Câu hỏi 12",
+    "passage": "Would you prefer tea or juice?",
+    "passage_vi": "Bạn thích trà hay nước ép hơn?",
+    "items": [
+      {
+        "id": "p2_original_set3_012_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "On the kitchen shelf.",
+          "For the afternoon break.",
+          "Juice, please."
+        ],
+        "ans": 2,
+        "expl": "The choice question is answered by selecting juice.",
+        "vi_expl": "Câu hỏi lựa chọn được trả lời bằng việc chọn nước ép."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_013",
+    "section": "p2",
+    "level": 3,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 13",
+    "title_vi": "Câu hỏi 13",
+    "passage": "Who designed the community mural?",
+    "passage_vi": "Ai đã thiết kế bức tranh tường cộng đồng?",
+    "items": [
+      {
+        "id": "p2_original_set3_013_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "A local art class.",
+          "On the south wall.",
+          "Last summer."
+        ],
+        "ans": 0,
+        "expl": "The question asks who, and a local art class identifies the designer.",
+        "vi_expl": "Câu hỏi hỏi ai, nên lớp nghệ thuật địa phương là người thiết kế."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_014",
+    "section": "p2",
+    "level": 3,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 14",
+    "title_vi": "Câu hỏi 14",
+    "passage": "Does this train stop at Harbor Square?",
+    "passage_vi": "Tàu này có dừng ở Harbor Square không?",
+    "items": [
+      {
+        "id": "p2_original_set3_014_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "On platform four.",
+          "No, it ends at Central Station.",
+          "In about fifteen minutes."
+        ],
+        "ans": 1,
+        "expl": "The yes-or-no question is answered by explaining where the train ends instead.",
+        "vi_expl": "Câu hỏi có–không được trả lời bằng việc nói tàu kết thúc ở ga Central."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_015",
+    "section": "p2",
+    "level": 2,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 15",
+    "title_vi": "Câu hỏi 15",
+    "passage": "How can I register for the seminar?",
+    "passage_vi": "Tôi có thể đăng ký hội thảo bằng cách nào?",
+    "items": [
+      {
+        "id": "p2_original_set3_015_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "At the main auditorium.",
+          "By next month.",
+          "Complete the form on the event page."
+        ],
+        "ans": 2,
+        "expl": "The question asks for a method, and completing the online event form gives it.",
+        "vi_expl": "Câu hỏi hỏi cách đăng ký, nên điền biểu mẫu trên trang sự kiện là đúng."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_016",
+    "section": "p2",
+    "level": 2,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 16",
+    "title_vi": "Câu hỏi 16",
+    "passage": "Where is the recycling bin?",
+    "passage_vi": "Thùng tái chế ở đâu?",
+    "items": [
+      {
+        "id": "p2_original_set3_016_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Beside the loading entrance.",
+          "For glass bottles.",
+          "Every Thursday."
+        ],
+        "ans": 0,
+        "expl": "The question asks for a location, and beside the loading entrance identifies it.",
+        "vi_expl": "Câu hỏi hỏi địa điểm, nên cạnh lối vào khu bốc dỡ là câu trả lời."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_017",
+    "section": "p2",
+    "level": 3,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 17",
+    "title_vi": "Câu hỏi 17",
+    "passage": "Why are the windows open?",
+    "passage_vi": "Tại sao các cửa sổ lại mở?",
+    "items": [
+      {
+        "id": "p2_original_set3_017_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "On the second floor.",
+          "The room needs more fresh air.",
+          "Before the guests arrive."
+        ],
+        "ans": 1,
+        "expl": "The question asks for a reason, and the need for fresh air explains the open windows.",
+        "vi_expl": "Câu hỏi hỏi lý do, và căn phòng cần thêm không khí trong lành giải thích việc mở cửa."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_018",
+    "section": "p2",
+    "level": 3,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 18",
+    "title_vi": "Câu hỏi 18",
+    "passage": "Could you check the microphone?",
+    "passage_vi": "Bạn có thể kiểm tra micrô không?",
+    "items": [
+      {
+        "id": "p2_original_set3_018_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "At the podium.",
+          "For twenty minutes.",
+          "Certainly, I will test it before the talk."
+        ],
+        "ans": 2,
+        "expl": "The request is accepted with a promise to test the microphone before the talk.",
+        "vi_expl": "Lời nhờ được đồng ý bằng lời hứa kiểm tra micrô trước buổi nói chuyện."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_019",
+    "section": "p2",
+    "level": 2,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 19",
+    "title_vi": "Câu hỏi 19",
+    "passage": "When should we water the new plants?",
+    "passage_vi": "Khi nào chúng ta nên tưới cây mới?",
+    "items": [
+      {
+        "id": "p2_original_set3_019_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Every other morning.",
+          "Near the back fence.",
+          "With a small can."
+        ],
+        "ans": 0,
+        "expl": "The question asks how often or when, and every other morning gives a schedule.",
+        "vi_expl": "Câu hỏi hỏi lịch tưới, nên cách một buổi sáng tưới một lần là câu trả lời phù hợp."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_020",
+    "section": "p2",
+    "level": 3,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 20",
+    "title_vi": "Câu hỏi 20",
+    "passage": "Are the museum tickets still available?",
+    "passage_vi": "Vé bảo tàng vẫn còn không?",
+    "items": [
+      {
+        "id": "p2_original_set3_020_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "At the ticket counter.",
+          "Yes, online reservations remain open.",
+          "For the guided tour."
+        ],
+        "ans": 1,
+        "expl": "The yes-or-no question is answered by confirming that online reservations remain open.",
+        "vi_expl": "Câu hỏi có–không được trả lời bằng việc xác nhận đặt vé trực tuyến vẫn mở."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_021",
+    "section": "p2",
+    "level": 3,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 21",
+    "title_vi": "Câu hỏi 21",
+    "passage": "Which folder should I archive?",
+    "passage_vi": "Tôi nên lưu trữ thư mục nào?",
+    "items": [
+      {
+        "id": "p2_original_set3_021_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "In the cabinet.",
+          "At the end of the week.",
+          "The one marked \"Completed projects.\""
+        ],
+        "ans": 2,
+        "expl": "The question asks which folder, and the label identifies the correct one.",
+        "vi_expl": "Câu hỏi hỏi thư mục nào, và nhãn xác định đúng thư mục cần lưu trữ."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_022",
+    "section": "p2",
+    "level": 2,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 22",
+    "title_vi": "Câu hỏi 22",
+    "passage": "Why did Nora miss the call?",
+    "passage_vi": "Tại sao Nora lỡ cuộc gọi?",
+    "items": [
+      {
+        "id": "p2_original_set3_022_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Her train was delayed.",
+          "At the usual time.",
+          "With her manager."
+        ],
+        "ans": 0,
+        "expl": "The question asks for a reason, and a delayed train explains the missed call.",
+        "vi_expl": "Câu hỏi hỏi lý do, và chuyến tàu bị trễ giải thích việc lỡ cuộc gọi."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_023",
+    "section": "p2",
+    "level": 2,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 23",
+    "title_vi": "Câu hỏi 23",
+    "passage": "Could we meet by the fountain?",
+    "passage_vi": "Chúng ta có thể gặp nhau cạnh đài phun nước không?",
+    "items": [
+      {
+        "id": "p2_original_set3_023_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Near the park gate.",
+          "Yes, at two o'clock.",
+          "For a short walk."
+        ],
+        "ans": 1,
+        "expl": "The request is accepted and a meeting time is provided.",
+        "vi_expl": "Lời đề nghị được đồng ý và kèm theo thời gian gặp."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_024",
+    "section": "p2",
+    "level": 3,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 24",
+    "title_vi": "Câu hỏi 24",
+    "passage": "How often is the neighborhood market held?",
+    "passage_vi": "Chợ trong khu phố được tổ chức bao lâu một lần?",
+    "items": [
+      {
+        "id": "p2_original_set3_024_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "Near the river.",
+          "With local vendors.",
+          "It runs on the first Saturday of each month."
+        ],
+        "ans": 2,
+        "expl": "The question asks how often, and the first Saturday schedule gives the frequency.",
+        "vi_expl": "Câu hỏi hỏi tần suất, nên lịch vào thứ Bảy đầu tiên mỗi tháng là câu trả lời."
+      }
+    ]
+  },
+  {
+    "id": "p2_original_set3_025",
+    "section": "p2",
+    "level": 3,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "Question 25",
+    "title_vi": "Câu hỏi 25",
+    "passage": "Didn't you lock the side door?",
+    "passage_vi": "Bạn đã không khóa cửa bên sao?",
+    "items": [
+      {
+        "id": "p2_original_set3_025_q1",
+        "stem": "Choose the best response.",
+        "opts": [
+          "No, I left it open for the delivery.",
+          "By the loading dock.",
+          "At the end of the shift."
+        ],
+        "ans": 0,
+        "expl": "The response directly explains that the door was left open for a delivery.",
+        "vi_expl": "Câu trả lời giải thích trực tiếp rằng cửa được để mở cho chuyến giao hàng."
+      }
+    ]
+  }
+]
+

@@ -187,12 +187,12 @@
       "family": "TOEIC-style practice",
       "description": "Original question-and-response prompts; device TTS reads the question and each response. Not an official TOEIC test.",
       "exerciseTypes": ["E09"],
-      "questionCount": 6,
+      "questionCount": 25,
       "timeLimitMinutes": null,
       "optionsPerQuestion": 3,
       "source": "https://www.ets.org/toeic/about/listening-reading.html (format reference only)",
       "sections": [
-        {"id": "p2", "label": "Part 2 listening practice", "itemType": "group", "count": 6, "bank": "toeic_p2", "groupSet": "1", "qtype": ["listen_p2"]}
+        {"id": "p2", "label": "Part 2 listening practice", "itemType": "group", "count": 25, "bank": "toeic_p2", "groupSet": "1", "qtype": ["listen_p2"]}
       ]
     },
     {
@@ -201,12 +201,12 @@
       "family": "TOEIC-style practice",
       "description": "Original question-and-response prompts; device TTS reads the question and each response. Not an official TOEIC test.",
       "exerciseTypes": ["E09"],
-      "questionCount": 6,
+      "questionCount": 25,
       "timeLimitMinutes": null,
       "optionsPerQuestion": 3,
       "source": "https://www.ets.org/toeic/about/listening-reading.html (format reference only)",
       "sections": [
-        {"id": "p2", "label": "Part 2 listening practice", "itemType": "group", "count": 6, "bank": "toeic_p2", "groupSet": "2", "qtype": ["listen_p2"]}
+        {"id": "p2", "label": "Part 2 listening practice", "itemType": "group", "count": 25, "bank": "toeic_p2", "groupSet": "2", "qtype": ["listen_p2"]}
       ]
     },
     {
@@ -215,40 +215,12 @@
       "family": "TOEIC-style practice",
       "description": "Original question-and-response prompts; device TTS reads the question and each response. Not an official TOEIC test.",
       "exerciseTypes": ["E09"],
-      "questionCount": 6,
+      "questionCount": 25,
       "timeLimitMinutes": null,
       "optionsPerQuestion": 3,
       "source": "https://www.ets.org/toeic/about/listening-reading.html (format reference only)",
       "sections": [
-        {"id": "p2", "label": "Part 2 listening practice", "itemType": "group", "count": 6, "bank": "toeic_p2", "groupSet": "3", "qtype": ["listen_p2"]}
-      ]
-    },
-    {
-      "id": "toeic_p2_practice_4",
-      "label": "TOEIC-style Listening Part 2 — Practice 4",
-      "family": "TOEIC-style practice",
-      "description": "Original question-and-response prompts; device TTS reads the question and each response. Not an official TOEIC test.",
-      "exerciseTypes": ["E09"],
-      "questionCount": 6,
-      "timeLimitMinutes": null,
-      "optionsPerQuestion": 3,
-      "source": "https://www.ets.org/toeic/about/listening-reading.html (format reference only)",
-      "sections": [
-        {"id": "p2", "label": "Part 2 listening practice", "itemType": "group", "count": 6, "bank": "toeic_p2", "groupSet": "4", "qtype": ["listen_p2"]}
-      ]
-    },
-    {
-      "id": "toeic_p2_practice_5",
-      "label": "TOEIC-style Listening Part 2 — Practice 5",
-      "family": "TOEIC-style practice",
-      "description": "Original question-and-response prompts; device TTS reads the question and each response. Not an official TOEIC test.",
-      "exerciseTypes": ["E09"],
-      "questionCount": 6,
-      "timeLimitMinutes": null,
-      "optionsPerQuestion": 3,
-      "source": "https://www.ets.org/toeic/about/listening-reading.html (format reference only)",
-      "sections": [
-        {"id": "p2", "label": "Part 2 listening practice", "itemType": "group", "count": 6, "bank": "toeic_p2", "groupSet": "5", "qtype": ["listen_p2"]}
+        {"id": "p2", "label": "Part 2 listening practice", "itemType": "group", "count": 25, "bank": "toeic_p2", "groupSet": "3", "qtype": ["listen_p2"]}
       ]
     }
   ],

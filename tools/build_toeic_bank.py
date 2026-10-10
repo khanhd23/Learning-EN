@@ -251,8 +251,15 @@ def build_p2(groups):
             "passage": group["passage"], "items": [item], "set": set_id,
         })
         locale[group_id] = {"title": group.get("title_vi", ""), "passage": group["passage_vi"]}
-    if set(by_set) != {"1", "2", "3", "4", "5"} or any(count != 6 for count in by_set.values()):
-        raise ValueError(f"Part 2 needs five sets of six groups, found {by_set}")
+    required_sets = {"1": 25, "2": 25, "3": 25}
+    legacy_sets = {"4": 6, "5": 6}
+    expected_sets = {**required_sets, **legacy_sets}
+    if any(by_set.get(set_id) != count for set_id, count in required_sets.items()):
+        raise ValueError(f"Part 2 needs three complete sets of 25 groups, found {by_set}")
+    if any(by_set.get(set_id, count) != count for set_id, count in legacy_sets.items()):
+        raise ValueError(f"Part 2 legacy sets must retain six groups, found {by_set}")
+    if set(by_set) - set(expected_sets):
+        raise ValueError(f"Part 2 contains an unknown set, found {by_set}")
     return {"items": [], "groups": output_groups}, locale
 
 
