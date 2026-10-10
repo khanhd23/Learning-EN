@@ -7,6 +7,9 @@ import com.yourbrand.englishlearn.MainActivity
 import com.yourbrand.englishlearn.R
 import com.yourbrand.englishlearn.content.ExamFormat
 import com.yourbrand.englishlearn.learning.ExamCatalog
+import com.yourbrand.englishlearn.learning.ExamPart
+import com.yourbrand.englishlearn.learning.ExamPartCatalog
+import com.yourbrand.englishlearn.learning.ExamPartMode
 import com.yourbrand.englishlearn.learning.ExamFormatText
 import com.yourbrand.englishlearn.learning.MockTest
 import com.yourbrand.englishlearn.learning.SessionKind
@@ -33,15 +36,14 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
         set(v) { services.settings.examGoal = v }
 
     private var selectedFamily: String? = null
+    private var selectedPartKey: String? = null
 
     override fun build(body: LinearLayout) {
         val c = ctx
         val content = services.content
         val fmt = content.formatById(formatId) ?: content.formats.first()
 
-        // 1. Choose an exam family, then a specific practice set.
-        body.addView(Kit.text(c, str(R.string.choose_format), R.style.Text_Caption).margins(c, top = 4))
-        body.addView(Kit.text(c, str(R.string.exam_catalog_sub), R.style.Text_Body).margins(c, top = 4))
+        // 1. Choose an exam family, then drill into a part and its practice sets.
         val families = ExamCatalog.families(content.formats)
         val currentFamily = selectedFamily?.takeIf { key -> families.any { it.first == key } }
             ?: ExamCatalog.groupKey(fmt.family)
@@ -50,6 +52,7 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
         families.forEach { (key, groupFormats) ->
             familyChips.addView(Kit.chip(c, familyLabel(key), key == currentFamily) {
                 selectedFamily = key
+                selectedPartKey = null
                 groupFormats.firstOrNull()?.let { formatId = it.id }
                 refresh()
             })
@@ -57,27 +60,44 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
         body.addView(Kit.hscroll(c, familyChips).margins(c, top = 10))
 
         val familyFormats = families.firstOrNull { it.first == currentFamily }?.second.orEmpty()
-        body.addView(Kit.section(c, familyLabel(currentFamily), topDp = 14))
-        familyFormats.forEach { f ->
-            val sel = f.id == fmt.id
-            body.addView(Kit.clickableCard(c, 4, 6, if (sel) c.col(R.color.primary_container) else c.col(R.color.surface), onClick = {
-                formatId = f.id
-                refresh()
-            }) {
-                if (sel) background = c.rounded(c.col(R.color.primary_container), 16f, c.col(R.color.primary), 1.5f)
-                addView(Kit.row(c, null, ExamFormatText.label(c, f), formatMeta(f), Kit.chevron(c)))
-            })
-        }
-        body.addView(Kit.text(c, ExamFormatText.description(c, fmt), R.style.Text_Body).apply { textSize = 14f }.margins(c, top = 8))
+        val toeicParts = if (currentFamily == "TOEIC") ExamPartCatalog.toeic(familyFormats) else emptyList()
+        val selectedPart = selectedPartKey?.let { key -> toeicParts.firstOrNull { it.key == key } }
+        val showFormatDetails = toeicParts.isEmpty() || selectedPart != null
 
-        if (fmt.sections.isNotEmpty()) {
-            body.addView(Kit.section(c, str(R.string.exam_sections), topDp = 16))
-            body.addView(Kit.card(c, 4, 6) {
-                fmt.sections.forEachIndexed { index, section ->
-                    if (index > 0) addView(Kit.divider(c))
-                    addView(Kit.row(c, Kit.badge(c, section.count.toString(), c.col(R.color.primary_container), c.col(R.color.primary)), ExamFormatText.sectionLabel(c, section), str(R.string.n_questions, section.count)))
+        if (toeicParts.isEmpty()) {
+            body.addView(Kit.section(c, familyLabel(currentFamily), topDp = 14))
+            familyFormats.forEach { formatCard(body, it, it.id == fmt.id) }
+        } else {
+            listOf(ExamPartMode.LISTENING, ExamPartMode.READING).forEach { mode ->
+                val parts = toeicParts.filter { it.mode == mode }
+                if (parts.isNotEmpty()) {
+                    body.addView(Kit.section(c, if (mode == ExamPartMode.LISTENING) str(R.string.exam_listening) else str(R.string.exam_reading), topDp = 14))
+                    parts.forEach { partCard(body, it) }
                 }
-            })
+            }
+            selectedPart?.let { part ->
+                body.addView(Kit.section(c, str(R.string.exam_part_sets_title, partLabel(part)), topDp = 16))
+                body.addView(Kit.card(c, 6, 6) {
+                    addView(Kit.row(c, null, str(R.string.exam_part_guide), ExamFormatText.description(c, part.formats.first())))
+                })
+                part.formats.forEach { formatCard(body, it, it.id == fmt.id) }
+            }
+        }
+
+        if (showFormatDetails) {
+            if (toeicParts.isEmpty()) {
+                body.addView(Kit.text(c, ExamFormatText.description(c, fmt), R.style.Text_Body).apply { textSize = 14f }.margins(c, top = 8))
+            }
+
+            if (fmt.sections.isNotEmpty()) {
+                body.addView(Kit.section(c, str(R.string.exam_sections), topDp = 16))
+                body.addView(Kit.card(c, 4, 6) {
+                    fmt.sections.forEachIndexed { index, section ->
+                        if (index > 0) addView(Kit.divider(c))
+                        addView(Kit.row(c, Kit.badge(c, section.count.toString(), c.col(R.color.primary_container), c.col(R.color.primary)), ExamFormatText.sectionLabel(c, section), str(R.string.n_questions, section.count)))
+                    }
+                })
+            }
         }
 
         if (content.sound.dictation.isNotEmpty() || content.sound.pairs.isNotEmpty()) {
@@ -88,7 +108,8 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
             })
         }
 
-        // 2. Practice by question type
+        if (showFormatDetails) {
+            // 2. Practice by question type
         body.addView(Kit.section(c, str(R.string.by_type)))
         body.addView(Kit.clickableCard(c, 6, 4, onClick = { activity.open(QuestionTypeScreen(activity, fmt.id)) }) {
             addView(Kit.row(c, Kit.emojiTile(c, "🧩", c.col(R.color.info_container)), str(R.string.by_type_title), str(R.string.by_type_sub), Kit.chevron(c)))
@@ -105,6 +126,8 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
         testCard(body, "⏱️", str(R.string.mini_test, 10), fmt, 10, hist.filter { it.total == 10 })
         testCard(body, "📝", str(R.string.mini_test, 20), fmt, 20, hist.filter { it.total == 20 })
         testCard(body, "🏁", if (fmt.questionCount != null) str(R.string.part_test, ExamFormatText.label(c, fmt)) else str(R.string.generic_test), fmt, null, hist.filter { it.total != 10 && it.total != 20 })
+
+        }
 
         // 5. Mistake book
         val mistakes = services.store.allItems().count { it.mistake }
@@ -138,6 +161,47 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
         "KET" -> str(R.string.exam_ket)
         "PET" -> str(R.string.exam_pet)
         else -> key.ifBlank { str(R.string.exam_other) }
+    }
+
+    private fun formatCard(body: LinearLayout, format: ExamFormat, selected: Boolean) {
+        val c = ctx
+        body.addView(Kit.clickableCard(c, 4, 6, if (selected) c.col(R.color.primary_container) else c.col(R.color.surface), onClick = {
+            formatId = format.id
+            refresh()
+        }) {
+            if (selected) background = c.rounded(c.col(R.color.primary_container), 16f, c.col(R.color.primary), 1.5f)
+            addView(Kit.row(c, null, ExamFormatText.label(c, format), formatMeta(format), Kit.chevron(c)))
+        })
+    }
+
+    private fun partCard(body: LinearLayout, part: ExamPart) {
+        val c = ctx
+        body.addView(Kit.clickableCard(c, 4, 6, if (part.key == selectedPartKey) c.col(R.color.primary_container) else c.col(R.color.surface), onClick = {
+            selectedPartKey = part.key
+            part.formats.firstOrNull()?.let { formatId = it.id }
+            refresh()
+        }) {
+            addView(Kit.row(
+                c,
+                Kit.badge(c, part.formats.size.toString(), c.col(R.color.primary_container), c.col(R.color.primary)),
+                partLabel(part),
+                str(R.string.exam_practice_sets_n, part.formats.size),
+                Kit.chevron(c),
+            ))
+        })
+    }
+
+    private fun partLabel(part: ExamPart): String = when (part.key) {
+        "p1" -> str(R.string.exam_part1)
+        "p2" -> str(R.string.exam_part2)
+        "p3" -> str(R.string.exam_part3)
+        "p4" -> str(R.string.exam_part4)
+        "p5" -> str(R.string.exam_part5)
+        "p6" -> str(R.string.exam_part6)
+        "p7" -> str(R.string.exam_part7)
+        "full_reading" -> str(R.string.exam_full_reading)
+        "reading_bank" -> str(R.string.exam_reading_bank)
+        else -> part.key
     }
 
     private fun formatMeta(format: ExamFormat): String {
