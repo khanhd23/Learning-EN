@@ -1,0 +1,362 @@
+{
+  "pet1_p1_q1": {
+    "expl": "Câu lạc bộ đổi điểm xuất phát sang cổng phía tây."
+  },
+  "pet1_p1_q2": {
+    "expl": "Bếp có sẵn nguyên liệu nhưng yêu cầu tình nguyện viên mang tạp dề."
+  },
+  "pet1_p1_q3": {
+    "expl": "Việc sửa cầu khiến tuyến xe buýt đổi đường."
+  },
+  "pet1_p1_q4": {
+    "expl": "Tiệm giặt sẽ quyên góp quần áo vào thứ Hai."
+  },
+  "pet1_p1_q5": {
+    "expl": "Lớp học bị lùi một tuần."
+  },
+  "pet1_part1": {
+    "title": "Tin nhắn quanh thị trấn",
+    "passage": "A. CÂU LẠC BỘ XE ĐẠP: Chuyến đi Chủ nhật bắt đầu ở cổng phía tây, không phải nhà ga.\nB. BẾP CỘNG ĐỒNG: Tình nguyện viên nên mang tạp dề; nguyên liệu đã có.\nC. VĂN PHÒNG XE BUÝT: Tuyến 12 đi đường khác vì cầu đang sửa.\nD. TIỆM GIẶT: Quần áo còn lại sau thứ Sáu sẽ được quyên góp vào thứ Hai.\nE. CỬA HÀNG NHẠC: Lớp guitar bắt đầu muộn hơn dự kiến một tuần."
+  },
+  "pet1_p2_q1": {
+    "expl": "Quán Sửa chữa dạy cách sửa đồ gia dụng."
+  },
+  "pet1_p2_q2": {
+    "expl": "Hoạt động Dọn sông diễn ra ngoài trời sáng Chủ nhật."
+  },
+  "pet1_p2_q3": {
+    "expl": "Nhóm Điện ảnh xem và thảo luận về phim quốc tế."
+  },
+  "pet1_p2_q4": {
+    "expl": "Quán Sửa chữa có sẵn dụng cụ."
+  },
+  "pet1_p2_q5": {
+    "expl": "Dọn sông nhặt rác dọc bờ sông."
+  },
+  "pet1_part2": {
+    "title": "Chọn hoạt động",
+    "passage": "A. Quán Sửa chữa\nMang một đồ gia dụng hỏng đến sáng thứ Bảy. Tình nguyện viên có dụng cụ và có thể chỉ cách sửa.\n\nB. Dọn sông\nLàm việc ngoài trời sáng Chủ nhật, nhặt rác dọc bờ sông. Có găng tay và túi.\n\nC. Nhóm Điện ảnh\nXem phim quốc tế tối thứ Năm rồi thảo luận. Thành viên bình chọn phim sau."
+  },
+  "pet1_p3_q1": {
+    "expl": "Luca chưa từng dùng chiếc lò mới."
+  },
+  "pet1_p3_q2": {
+    "expl": "Đoạn văn nói Luca đã quên men."
+  },
+  "pet1_p3_q3": {
+    "expl": "Cậu nướng các lát bánh với tỏi và rau thơm."
+  },
+  "pet1_p3_q4": {
+    "expl": "Họ thích thành phẩm giòn hơn bánh mì thường."
+  },
+  "pet1_p3_q5": {
+    "expl": "Cậu ghi men ở đầu danh sách để lần sau không quên."
+  },
+  "pet1_part3": {
+    "title": "Một sai lầm có ích",
+    "passage": "Luca hứa làm bánh mì cho những người ở cùng nhà dù chưa từng dùng lò mới. Cậu đọc công thức hai lần, trộn nguyên liệu rồi cho bột vào lò. Mười phút sau, cậu nhận ra đã quên men. Bánh bị dẹt và cứng.\n\nThay vì vứt đi, Luca cắt bánh thành lát mỏng rồi nướng với tỏi và rau thơm. Những người ở cùng thích thành phẩm giòn hơn bánh mì thường. Họ gợi ý đặt tên là bánh nướng Luca. Luca vẫn muốn làm bánh mì đúng cách nên ghi “men” ở đầu danh sách mua hàng. Cậu học được rằng sai lầm có thể trở nên hữu ích nếu ta nhìn nó theo cách khác."
+  },
+  "pet1_p4_q1": {
+    "expl": "Hướng dẫn viên giải thích lối phía đông đã đóng."
+  },
+  "pet1_p4_q2": {
+    "expl": "Lối phía tây đi qua chòi quan sát chim."
+  },
+  "pet1_p4_q3": {
+    "expl": "Mây đen xuất hiện báo hiệu trời sắp mưa."
+  },
+  "pet1_p4_q4": {
+    "expl": "Cả lớp quay về trung tâm du khách."
+  },
+  "pet1_p4_q5": {
+    "expl": "Cả lớp xem ảnh động vật trong lúc trời mưa."
+  },
+  "pet1_part4": {
+    "title": "Một ngày ở hồ",
+    "passage": "Lớp chúng tôi đến hồ trước những khách khác. Hướng dẫn viên đưa bản đồ và giải thích lối phía đông đóng cửa. Chúng tôi theo lối phía tây, đi qua một chòi quan sát chim nhỏ.\n\nBuổi trưa chúng tôi ăn bên hồ. Sau đó mây đen xuất hiện nên hướng dẫn viên đổi kế hoạch. Chúng tôi quay về trung tâm thay vì leo đồi. Mưa bắt đầu khi cả lớp ở trong nhà, và buổi chiều được dành để xem ảnh động vật địa phương."
+  },
+  "pet1_p5_q1": {
+    "expl": "Cấu trúc đúng là “offered to show her”."
+  },
+  "pet1_p5_q2": {
+    "expl": "Because nêu lý do Hana vui."
+  },
+  "pet1_p5_q3": {
+    "expl": "Cụm đúng là “walked to the market”."
+  },
+  "pet1_p5_q4": {
+    "expl": "So sánh hơn dùng “busier than”."
+  },
+  "pet1_p5_q5": {
+    "expl": "Thức ăn đến từ các trang trại địa phương."
+  },
+  "pet1_p5_q6": {
+    "expl": "Because giải thích lý do Hana sẽ quay lại."
+  },
+  "pet1_part5": {
+    "title": "Người hàng xóm mới",
+    "passage": "Khi Hana chuyển vào căn hộ, người hàng xóm đề nghị (1) ___ cho cô những nơi mua sắm tốt nhất. Hana vui (2) ___ tòa nhà gần chợ. Thứ Bảy, họ cùng đi bộ (3) ___ đó. Chợ đông hơn (4) ___ Hana nghĩ nhưng cô tìm được mọi thứ cần. Người hàng xóm cũng giải thích quầy nào bán thức ăn (5) ___ các trang trại địa phương. Hana quyết định tuần sau quay lại (6) ___ cô muốn thử bánh mì tươi."
+  },
+  "pet1_p6_q1": {
+    "expl": "Ngày trong tuần đi với giới từ “on”."
+  },
+  "pet1_p6_q2": {
+    "expl": "Địa điểm gặp là tại quán cà phê: “at”."
+  },
+  "pet1_p6_q3": {
+    "expl": "Because nêu lý do cần mang áo khoác."
+  },
+  "pet1_p6_q4": {
+    "expl": "And nối hai việc Mara sẽ làm."
+  },
+  "pet1_p6_q5": {
+    "expl": "Họ nên về nhà trước hoàng hôn: “before”."
+  },
+  "pet1_p6_q6": {
+    "expl": "Cụm đúng là “tell me”."
+  },
+  "pet1_part6": {
+    "title": "Tin nhắn về chuyến đi bộ",
+    "passage": "Chào Jo,\n\nBạn rảnh (1) ___ thứ Bảy không? Mình định đi bộ qua đồi. Chúng ta có thể gặp (2) ___ quán cà phê lúc chín giờ. Đường không khó nhưng hãy mang áo khoác (3) ___ thời tiết có thể lạnh. Mình đã kiểm tra bản đồ (4) ___ sẽ mang bộ sơ cứu. Chúng ta nên về nhà (5) ___ hoàng hôn. Hãy cho (6) ___ biết bạn có thể đi không.\n\nMara"
+  },
+  "pet2_p1_q1": {
+    "expl": "Buổi diễn bắt đầu lúc 7:30, sớm hơn thường lệ."
+  },
+  "pet2_p1_q2": {
+    "expl": "Bưu điện chuyển bưu kiện sang phòng bên."
+  },
+  "pet2_p1_q3": {
+    "expl": "Thành viên phải đặt làn trước khi bơi."
+  },
+  "pet2_p1_q4": {
+    "expl": "Tuần này trứng tươi đến vào thứ Tư."
+  },
+  "pet2_p1_q5": {
+    "expl": "Máy nhận xu và thẻ nhưng không nhận tiền giấy."
+  },
+  "pet2_part1": {
+    "title": "Thông báo ngắn",
+    "passage": "A. NHÀ HÁT: Buổi diễn tối nay bắt đầu lúc 7:30, sớm hơn thường lệ nửa giờ.\nB. BƯU ĐIỆN: Bưu kiện đến nhận nay được giữ ở phòng bên.\nC. CÂU LẠC BỘ BƠI: Thành viên phải đặt làn trước khi dùng hồ.\nD. CỬA HÀNG NÔNG TRẠI: Trứng tươi đến vào thứ Tư, không phải thứ Ba tuần này.\nE. NHÀ GA: Máy bán vé nhận xu và thẻ nhưng không nhận tiền giấy."
+  },
+  "pet2_p2_q1": {
+    "expl": "Khóa Kỹ năng Số dạy cách dùng biểu mẫu trực tuyến."
+  },
+  "pet2_p2_q2": {
+    "expl": "Lớp Ngôn ngữ luyện hội thoại và không giao bài về nhà."
+  },
+  "pet2_p2_q3": {
+    "expl": "Lớp Lịch sử Địa phương thăm các tòa nhà lịch sử."
+  },
+  "pet2_p2_q4": {
+    "expl": "Kỹ năng Số học vào sáng thứ Bảy."
+  },
+  "pet2_p2_q5": {
+    "expl": "Lịch sử Địa phương có các chuyến thăm và cần đi bộ."
+  },
+  "pet2_part2": {
+    "title": "Khóa học cho người lớn",
+    "passage": "A. Lớp Ngôn ngữ Buổi tối\nLuyện hội thoại theo nhóm nhỏ vào tối thứ Ba. Giáo viên không giao bài tập về nhà.\n\nB. Kỹ năng Số\nHọc sắp xếp tệp, dùng biểu mẫu trực tuyến và bảo vệ mật khẩu. Học sáng thứ Bảy.\n\nC. Lịch sử Địa phương\nNghe thuyết trình và thăm hai tòa nhà lịch sử vào chiều thứ Tư. Cần đi bộ một chút."
+  },
+  "pet2_p3_q1": {
+    "expl": "Họ muốn trung tâm thị trấn sôi động hơn vào mùa đông."
+  },
+  "pet2_p3_q2": {
+    "expl": "Con đường phải thông cho xe cấp cứu."
+  },
+  "pet2_p3_q3": {
+    "expl": "Mưa lớn khiến một số người bán không đến."
+  },
+  "pet2_p3_q4": {
+    "expl": "Họ chuyển bàn vào lối đi có mái."
+  },
+  "pet2_p3_q5": {
+    "expl": "Một quầy được miễn phí cho tổ chức từ thiện địa phương."
+  },
+  "pet2_part3": {
+    "title": "Dự án chợ đêm",
+    "passage": "Một nhóm chủ cửa hàng trẻ muốn trung tâm thị trấn sôi động hơn vào mùa đông. Họ đề xuất chợ đêm có quầy đồ ăn, hàng thủ công và âm nhạc. Hội đồng đồng ý với điều kiện nhóm phải giữ đường thông cho xe cấp cứu.\n\nChợ đầu tiên nhỏ hơn dự kiến vì mưa lớn khiến vài người bán không đến. Những người có mặt chuyển bàn vào lối đi có mái. Khách vẫn thích sự kiện và hỏi khi nào chợ tiếp theo diễn ra. Ban tổ chức học cách chuẩn bị phương án thời tiết xấu. Nay họ tổ chức chợ mỗi tháng và miễn phí một quầy cho tổ chức từ thiện địa phương."
+  },
+  "pet2_p4_q1": {
+    "expl": "Cô kiểm tra lịch vào tối hôm trước."
+  },
+  "pet2_p4_q2": {
+    "expl": "Gió mạnh làm phà bị hoãn."
+  },
+  "pet2_p4_q3": {
+    "expl": "Hành khách gợi ý đi xe buýt đến cảng khác."
+  },
+  "pet2_p4_q4": {
+    "expl": "Cô đến muộn nên lỡ chuyến tham quan đầu tiên."
+  },
+  "pet2_p4_q5": {
+    "expl": "Chuyến thứ hai ít người và hướng dẫn viên trả lời câu hỏi."
+  },
+  "pet2_part4": {
+    "title": "Một kế hoạch đi lại thay đổi",
+    "passage": "Maya định đến đảo bằng phà. Tối hôm trước cô kiểm tra lịch và xếp một túi nhỏ. Ở bến cảng, thông báo cho biết phà sẽ bị hoãn vì gió mạnh.\n\nMaya định về nhà nhưng một hành khách khác gợi ý đi xe buýt đến cảng khác. Xe buýt đắt hơn nhưng khởi hành nhanh. Maya đến đảo muộn hơn dự kiến và lỡ chuyến tham quan bảo tàng đầu tiên. Cô không thất vọng lâu vì chuyến thứ hai ít người hơn và hướng dẫn viên trả lời mọi câu hỏi."
+  },
+  "pet2_p5_q1": {
+    "expl": "Nervous nghĩa là lo lắng khi ở gần nước sâu."
+  },
+  "pet2_p5_q2": {
+    "expl": "Cụm đúng là “began with simple exercises”."
+  },
+  "pet2_p5_q3": {
+    "expl": "“More confident” diễn tả sự tự tin tăng dần."
+  },
+  "pet2_p5_q4": {
+    "expl": "When giới thiệu tình huống nuốt nước."
+  },
+  "pet2_p5_q5": {
+    "expl": "Cụm đúng là “without stopping”."
+  },
+  "pet2_p5_q6": {
+    "expl": "Cụm đúng là “progress she had made”."
+  },
+  "pet2_part5": {
+    "title": "Học bơi",
+    "passage": "Nina luôn muốn học bơi nhưng cảm thấy (1) ___ khi ở gần nước sâu. Người hướng dẫn bắt đầu (2) ___ các bài thở đơn giản ở khu nước nông. Nina luyện tập mỗi tuần và dần trở nên (3) ___ tự tin. Người hướng dẫn cũng dạy cách bình tĩnh (4) ___ cô nuốt nước. Sau ba tháng, Nina có thể bơi qua hồ mà (5) ___ dừng lại. Cô tự hào về tiến bộ đã (6) ___."
+  },
+  "pet2_p6_q1": {
+    "expl": "Khóa học ở trung tâm cộng đồng: “at”."
+  },
+  "pet2_p6_q2": {
+    "expl": "Buổi tối gắn với thứ cụ thể dùng “on”."
+  },
+  "pet2_p6_q3": {
+    "expl": "Cấu trúc đúng là “learn how to prepare”."
+  },
+  "pet2_p6_q4": {
+    "expl": "Which thay cho món súp và nối mệnh đề quan hệ."
+  },
+  "pet2_p6_q5": {
+    "expl": "If nêu điều kiện được mang bạn đến."
+  },
+  "pet2_p6_q6": {
+    "expl": "Cụm đúng là “next week”."
+  },
+  "pet2_part6": {
+    "title": "Tin nhắn về khóa học",
+    "passage": "Chào Ben,\n\nMình đã tham gia khóa nấu ăn (1) ___ trung tâm cộng đồng. Khóa học diễn ra (2) ___ tối thứ Tư và kết thúc lúc chín giờ. Mỗi tuần chúng mình học cách (3) ___ một món khác. Tối qua chúng mình nấu súp, (4) ___ ai cũng thích. Giáo viên nói có thể mang bạn đến (5) ___ báo trước. Bạn có muốn đến vào (6) ___ không?\n\nEva"
+  },
+  "pet3_p1_q1": {
+    "expl": "Phòng trên tầng đóng cửa hôm nay."
+  },
+  "pet3_p1_q2": {
+    "expl": "Túi thất lạc được nhận ở quầy thông tin của bến xe."
+  },
+  "pet3_p1_q3": {
+    "expl": "Sân 2 trống sau 5 giờ chiều."
+  },
+  "pet3_p1_q4": {
+    "expl": "Tiệm bánh yêu cầu đặt trước ba ngày."
+  },
+  "pet3_p1_q5": {
+    "expl": "Lối đi quanh hồ đã mở lại sau khi sửa."
+  },
+  "pet3_part1": {
+    "title": "Tin nhắn trong thành phố",
+    "passage": "A. PHÒNG TRANH: Hôm nay vào cửa miễn phí nhưng phòng trên tầng đóng cửa.\nB. BẾN XE BUÝT: Túi thất lạc có thể nhận ở quầy thông tin.\nC. CÂU LẠC BỘ QUẦN VỢT: Sân 2 trống sau 5 giờ chiều, không phải trước bữa trưa.\nD. TIỆM BÁNH: Hãy đặt bánh mừng trước ba ngày.\nE. VĂN PHÒNG CÔNG VIÊN: Lối đi quanh hồ đã mở lại sau khi sửa."
+  },
+  "pet3_p2_q1": {
+    "expl": "Phòng Đọc yên lặng và đóng cửa lúc 5 giờ."
+  },
+  "pet3_p2_q2": {
+    "expl": "Quán Cà phê có ổ cắm ở mọi bàn và có nhạc."
+  },
+  "pet3_p2_q3": {
+    "expl": "Nhân viên Không gian Sáng tạo có thể hỗ trợ thiết bị."
+  },
+  "pet3_p2_q4": {
+    "expl": "Phòng Đọc có báo in."
+  },
+  "pet3_p2_q5": {
+    "expl": "Quán Cà phê mở đến 9 giờ và có đồ uống."
+  },
+  "pet3_part2": {
+    "title": "Nơi học tập",
+    "passage": "A. Không gian Sáng tạo\nDùng máy tính và dụng cụ cơ bản để làm dự án. Nhân viên hỗ trợ thiết bị nhưng khách phải đặt bàn.\n\nB. Phòng Đọc\nPhòng yên lặng có bàn và báo in. Phòng đóng lúc 5 giờ chiều và không cho mang đồ ăn.\n\nC. Quán Cà phê Học tập\nLàm việc cùng đồ uống đến 9 giờ tối. Có nhạc nền và ổ cắm ở mọi bàn."
+  },
+  "pet3_p3_q1": {
+    "expl": "Tariq làm việc ở thủy cung."
+  },
+  "pet3_p3_q2": {
+    "expl": "Bài nói của Tariq về vấn đề nhựa trong biển."
+  },
+  "pet3_p3_q3": {
+    "expl": "Tariq nghe tiếng giao hàng cho cửa hàng bên dưới."
+  },
+  "pet3_p3_q4": {
+    "expl": "Ngọn hải đăng mở cửa cho khách vào thứ Bảy."
+  },
+  "pet3_p3_q5": {
+    "expl": "Thủy cung dự định tổ chức sự kiện ban đêm."
+  },
+  "pet3_part3": {
+    "title": "Lá thư từ bờ biển",
+    "passage": "Sam thân mến,\n\nTuần trước mình đến Port Ellis làm việc ở thủy cung. Mình tưởng thị trấn yên tĩnh nhưng có nhiều việc hơn mình nghĩ. Mỗi sáng mình giúp cho hải cẩu ăn, và hai lần một tuần mình nói ngắn cho khách về nhựa trong biển.\n\nCăn hộ nhỏ nhưng sáng. Nó ở trên một cửa hàng bán dụng cụ đánh cá nên đôi khi mình nghe tiếng giao hàng trước bữa sáng. Cuối tuần mình đi dọc bến cảng. Điều tuyệt nhất là ngọn hải đăng cũ mở cửa vào thứ Bảy. Bạn nên đến tháng Tám vì thủy cung dự định tổ chức sự kiện ban đêm lúc đó.\n\nThân,\nTariq"
+  },
+  "pet3_p4_q1": {
+    "expl": "Cán ô bị gãy khi Rosa mở ô."
+  },
+  "pet3_p4_q2": {
+    "expl": "Một người lạ che ô lớn cho cô."
+  },
+  "pet3_p4_q3": {
+    "expl": "Quản lý rạp giữ ô ở quầy vé."
+  },
+  "pet3_p4_q4": {
+    "expl": "Cô phát hiện cán chỉ bị lỏng và có thể sửa."
+  },
+  "pet3_p4_q5": {
+    "expl": "Cô chọn sửa ô thay vì mua ô mới."
+  },
+  "pet3_part4": {
+    "title": "Chiếc ô bị quên",
+    "passage": "Sau khi rời rạp chiếu phim, Rosa nhận ra trời bắt đầu mưa. Cô mở ô nhưng cán ô bị gãy. Một người lạ cho cô đứng dưới chiếc ô lớn của anh đến trạm xe buýt.\n\nRosa cảm ơn anh rồi đi xe về nhà. Hôm sau cô quay lại rạp hỏi xem có ai tìm thấy chiếc ô không. Quản lý giữ nó ở quầy vé. Rosa ngạc nhiên vì cán chỉ bị lỏng; nó có thể sửa được. Cô quyết định sửa thay vì mua chiếc khác."
+  },
+  "pet3_p5_q1": {
+    "expl": "Thành ngữ đúng là “give me a hand” (giúp tôi)."
+  },
+  "pet3_p5_q2": {
+    "expl": "Đồng xu mắc là vấn đề của máy."
+  },
+  "pet3_p5_q3": {
+    "expl": "So chỉ kết quả là máy hoạt động lại."
+  },
+  "pet3_p5_q4": {
+    "expl": "But nối lời đề nghị với việc từ chối."
+  },
+  "pet3_p5_q5": {
+    "expl": "While diễn tả khoảng thời gian anh đi vắng."
+  },
+  "pet3_p5_q6": {
+    "expl": "Sau “cost of” dùng danh động từ “calling”."
+  },
+  "pet3_part5": {
+    "title": "Người hàng xóm tốt bụng",
+    "passage": "Khi máy giặt ngừng hoạt động, tôi hỏi hàng xóm liệu anh có thể (1) ___ tôi một tay không. Anh đến với hộp dụng cụ nhỏ và nhanh chóng tìm ra (2) ___ . Một đồng xu mắc trong bộ lọc. Anh lấy nó ra (3) ___ máy lại hoạt động. Tôi muốn trả tiền nhưng (4) ___ anh từ chối. Thay vào đó, anh nhờ tôi tưới cây (5) ___ anh đi vắng. Tôi vui lòng giúp vì anh đã giúp tôi không phải trả chi phí (6) ___ dịch vụ sửa chữa."
+  },
+  "pet3_p6_q1": {
+    "expl": "Đội gặp nhau trên sân: “on the field”."
+  },
+  "pet3_p6_q2": {
+    "expl": "That mở đầu mệnh đề mô tả đôi giày."
+  },
+  "pet3_p6_q3": {
+    "expl": "So nối thông tin về nước với lời khuyên mang mũ."
+  },
+  "pet3_p6_q4": {
+    "expl": "Giờ cụ thể đi với “at”."
+  },
+  "pet3_p6_q5": {
+    "expl": "Cụm đúng là “tell me”."
+  },
+  "pet3_p6_q6": {
+    "expl": "Sự kiện nên kết thúc trước giờ ăn trưa."
+  },
+  "pet3_part6": {
+    "title": "Lời nhắn về ngày thể thao",
+    "passage": "Các em thân mến,\n\nNgày thể thao là thứ Sáu tới và chúng ta cần gặp nhau (1) ___ sân lúc tám giờ. Hãy đi giày (2) ___ thoải mái để chạy. Trường sẽ cung cấp nước (3) ___ hãy mang mũ nếu nắng gắt. Sự kiện đầu tiên bắt đầu (4) ___ tám rưỡi. Cô sẽ giữ danh sách tên nên hãy báo (5) ___ nếu em đổi nội dung. Chúng ta nên kết thúc (6) ___ giờ ăn trưa.\n\nCô Lee"
+  }
+}

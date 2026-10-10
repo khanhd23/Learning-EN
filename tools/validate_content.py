@@ -135,7 +135,7 @@ def exam_bank_errors(root=ROOT):
                 if not isinstance(item.get("answerText"), str) or not item.get("answerText").strip() or item.get("opts", []) or item.get("ans") != -1:
                     return [f"exam {bank_id}/{label}: open cloze needs answerText, opts=[], ans=-1"]
                 return []
-            expected_options = 3 if qtype and qtype.startswith("a2_") or qtype == "listen_p2" else 4
+            expected_options = 3 if qtype and (qtype.startswith("a2_") or qtype.startswith("b1_")) or qtype == "listen_p2" else 4
             if len(item.get("opts", [])) != expected_options or not 0 <= item.get("ans", -1) < len(item.get("opts", [])):
                 return [f"exam {bank_id}/{label}: needs {expected_options} options and a valid answer"]
             return []

@@ -388,6 +388,63 @@
         {"id": "part4", "label": "Part 4 · Multiple-choice cloze", "itemType": "group", "count": 6, "bank": "ket", "groupSet": "5", "qtype": ["a2_part4"]},
         {"id": "part5", "label": "Part 5 · Open cloze", "itemType": "group", "count": 6, "bank": "ket", "groupSet": "5", "qtype": ["a2_part5"]}
       ]
+    },
+    {
+      "id": "pet_reading_1",
+      "label": "B1 Preliminary Reading practice 1",
+      "family": "Cambridge B1 Preliminary",
+      "description": "Original Reading-only practice: 32 questions in six parts. It is not an official Cambridge paper; writing, listening and speaking are not scored here.",
+      "exerciseTypes": ["E01", "E08"],
+      "questionCount": 32,
+      "timeLimitMinutes": 45,
+      "optionsPerQuestion": 3,
+      "source": "https://www.cambridgeenglish.org/exams-and-tests/preliminary/exam-format/ (format reference only)",
+      "sections": [
+        {"id": "part1", "label": "Part 1 · Short texts", "itemType": "group", "count": 5, "bank": "pet", "groupSet": "1", "qtype": ["b1_part1"]},
+        {"id": "part2", "label": "Part 2 · Matching", "itemType": "group", "count": 5, "bank": "pet", "groupSet": "1", "qtype": ["b1_part2"]},
+        {"id": "part3", "label": "Part 3 · Long text", "itemType": "group", "count": 5, "bank": "pet", "groupSet": "1", "qtype": ["b1_part3"]},
+        {"id": "part4", "label": "Part 4 · Multiple choice", "itemType": "group", "count": 5, "bank": "pet", "groupSet": "1", "qtype": ["b1_part4"]},
+        {"id": "part5", "label": "Part 5 · Multiple-choice cloze", "itemType": "group", "count": 6, "bank": "pet", "groupSet": "1", "qtype": ["b1_part5"]},
+        {"id": "part6", "label": "Part 6 · Open cloze", "itemType": "group", "count": 6, "bank": "pet", "groupSet": "1", "qtype": ["b1_part6"]}
+      ]
+    },
+    {
+      "id": "pet_reading_2",
+      "label": "B1 Preliminary Reading practice 2",
+      "family": "Cambridge B1 Preliminary",
+      "description": "Original Reading-only practice: 32 questions in six parts. It is not an official Cambridge paper; writing, listening and speaking are not scored here.",
+      "exerciseTypes": ["E01", "E08"],
+      "questionCount": 32,
+      "timeLimitMinutes": 45,
+      "optionsPerQuestion": 3,
+      "source": "https://www.cambridgeenglish.org/exams-and-tests/preliminary/exam-format/ (format reference only)",
+      "sections": [
+        {"id": "part1", "label": "Part 1 · Short texts", "itemType": "group", "count": 5, "bank": "pet", "groupSet": "2", "qtype": ["b1_part1"]},
+        {"id": "part2", "label": "Part 2 · Matching", "itemType": "group", "count": 5, "bank": "pet", "groupSet": "2", "qtype": ["b1_part2"]},
+        {"id": "part3", "label": "Part 3 · Long text", "itemType": "group", "count": 5, "bank": "pet", "groupSet": "2", "qtype": ["b1_part3"]},
+        {"id": "part4", "label": "Part 4 · Multiple choice", "itemType": "group", "count": 5, "bank": "pet", "groupSet": "2", "qtype": ["b1_part4"]},
+        {"id": "part5", "label": "Part 5 · Multiple-choice cloze", "itemType": "group", "count": 6, "bank": "pet", "groupSet": "2", "qtype": ["b1_part5"]},
+        {"id": "part6", "label": "Part 6 · Open cloze", "itemType": "group", "count": 6, "bank": "pet", "groupSet": "2", "qtype": ["b1_part6"]}
+      ]
+    },
+    {
+      "id": "pet_reading_3",
+      "label": "B1 Preliminary Reading practice 3",
+      "family": "Cambridge B1 Preliminary",
+      "description": "Original Reading-only practice: 32 questions in six parts. It is not an official Cambridge paper; writing, listening and speaking are not scored here.",
+      "exerciseTypes": ["E01", "E08"],
+      "questionCount": 32,
+      "timeLimitMinutes": 45,
+      "optionsPerQuestion": 3,
+      "source": "https://www.cambridgeenglish.org/exams-and-tests/preliminary/exam-format/ (format reference only)",
+      "sections": [
+        {"id": "part1", "label": "Part 1 · Short texts", "itemType": "group", "count": 5, "bank": "pet", "groupSet": "3", "qtype": ["b1_part1"]},
+        {"id": "part2", "label": "Part 2 · Matching", "itemType": "group", "count": 5, "bank": "pet", "groupSet": "3", "qtype": ["b1_part2"]},
+        {"id": "part3", "label": "Part 3 · Long text", "itemType": "group", "count": 5, "bank": "pet", "groupSet": "3", "qtype": ["b1_part3"]},
+        {"id": "part4", "label": "Part 4 · Multiple choice", "itemType": "group", "count": 5, "bank": "pet", "groupSet": "3", "qtype": ["b1_part4"]},
+        {"id": "part5", "label": "Part 5 · Multiple-choice cloze", "itemType": "group", "count": 6, "bank": "pet", "groupSet": "3", "qtype": ["b1_part5"]},
+        {"id": "part6", "label": "Part 6 · Open cloze", "itemType": "group", "count": 6, "bank": "pet", "groupSet": "3", "qtype": ["b1_part6"]}
+      ]
     }
   ],
   "comingSoon": [

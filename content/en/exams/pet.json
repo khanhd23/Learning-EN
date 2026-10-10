@@ -1,0 +1,1457 @@
+{
+  "items": [],
+  "groups": [
+    {
+      "id": "pet1_part1",
+      "section": "part1",
+      "title": "Messages around town",
+      "passage": "A. CYCLING CLUB: The Sunday ride will start at the west gate, not the station.\nB. COMMUNITY KITCHEN: Volunteers should bring an apron; ingredients are provided.\nC. BUS OFFICE: Route 12 is using a different road because of bridge work.\nD. LAUNDRY: Clothes left after Friday will be donated on Monday.\nE. MUSIC SHOP: Guitar lessons begin one week later than planned.",
+      "items": [
+        {
+          "id": "pet1_p1_q1",
+          "section": "part1",
+          "level": 3,
+          "stem": "Where will the Sunday cycling ride start?",
+          "expl": "The club has moved the starting point to the west gate.",
+          "qtype": "b1_part1",
+          "opts": [
+            "At the station.",
+            "At the west gate.",
+            "At the bridge."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet1_p1_q2",
+          "section": "part1",
+          "level": 3,
+          "stem": "What should kitchen volunteers bring?",
+          "expl": "The kitchen supplies ingredients but asks volunteers to bring an apron.",
+          "qtype": "b1_part1",
+          "opts": [
+            "A new recipe.",
+            "Ingredients.",
+            "An apron."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet1_p1_q3",
+          "section": "part1",
+          "level": 3,
+          "stem": "Why is Route 12 using another road?",
+          "expl": "Bridge work has changed the bus route.",
+          "qtype": "b1_part1",
+          "opts": [
+            "The driver is late.",
+            "A bridge is being repaired.",
+            "The station is closed."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet1_p1_q4",
+          "section": "part1",
+          "level": 3,
+          "stem": "What will happen to clothes left after Friday?",
+          "expl": "The laundry will donate them on Monday.",
+          "qtype": "b1_part1",
+          "opts": [
+            "They will be donated.",
+            "They will be washed again.",
+            "They will be returned on Sunday."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "pet1_p1_q5",
+          "section": "part1",
+          "level": 3,
+          "stem": "When will guitar lessons begin?",
+          "expl": "The lessons have been delayed by one week.",
+          "qtype": "b1_part1",
+          "opts": [
+            "At the station.",
+            "A week later.",
+            "A week earlier."
+          ],
+          "ans": 1
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "pet1_part2",
+      "section": "part2",
+      "title": "Choose an activity",
+      "passage": "A. Repair Café\nBring a broken household object on Saturday morning. Volunteers have tools and can show you how to fix it.\n\nB. River Clean-up\nWork outdoors on Sunday morning, collecting rubbish along the river. Gloves and bags are supplied.\n\nC. Film Circle\nWatch an international film on Thursday evening and discuss it afterwards. Members vote on the next film.",
+      "items": [
+        {
+          "id": "pet1_p2_q1",
+          "section": "part2",
+          "level": 3,
+          "stem": "I want to learn how to repair my kettle.",
+          "expl": "Repair Café teaches people to fix household objects.",
+          "qtype": "b1_part2",
+          "opts": [
+            "C",
+            "A",
+            "B"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet1_p2_q2",
+          "section": "part2",
+          "level": 3,
+          "stem": "I can work outside only on Sunday morning.",
+          "expl": "River Clean-up takes place outdoors on Sunday morning.",
+          "qtype": "b1_part2",
+          "opts": [
+            "A",
+            "B",
+            "C"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet1_p2_q3",
+          "section": "part2",
+          "level": 3,
+          "stem": "I enjoy watching films and talking about them.",
+          "expl": "Film Circle watches and discusses an international film.",
+          "qtype": "b1_part2",
+          "opts": [
+            "B",
+            "A",
+            "C"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet1_p2_q4",
+          "section": "part2",
+          "level": 3,
+          "stem": "I do not have any tools at home.",
+          "expl": "The Repair Café provides tools.",
+          "qtype": "b1_part2",
+          "opts": [
+            "C",
+            "B",
+            "A"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet1_p2_q5",
+          "section": "part2",
+          "level": 3,
+          "stem": "I would like to help make a river cleaner.",
+          "expl": "River Clean-up collects rubbish along the river.",
+          "qtype": "b1_part2",
+          "opts": [
+            "B",
+            "A",
+            "C"
+          ],
+          "ans": 0
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "pet1_part3",
+      "section": "part3",
+      "title": "A useful mistake",
+      "passage": "Luca had promised to bake bread for his flatmates, although he had never used the new oven. He read the recipe twice, mixed the ingredients and put the dough in the oven. Ten minutes later, he noticed that he had forgotten the yeast. The bread was flat and hard.\n\nInstead of throwing it away, Luca cut it into thin pieces and toasted them with garlic and herbs. His flatmates liked the crunchy result more than ordinary bread. They suggested calling it Luca's toast. Luca still wanted to bake proper bread, so he wrote “yeast” at the top of his shopping list. He learned that a mistake can become useful when you stop and look at it differently.",
+      "items": [
+        {
+          "id": "pet1_p3_q1",
+          "section": "part3",
+          "level": 3,
+          "stem": "What had Luca never used before?",
+          "expl": "Luca had never used the new oven.",
+          "qtype": "b1_part3",
+          "opts": [
+            "The new oven.",
+            "The recipe.",
+            "The shopping list."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "pet1_p3_q2",
+          "section": "part3",
+          "level": 3,
+          "stem": "Why was the bread flat?",
+          "expl": "The passage says Luca forgot the yeast.",
+          "qtype": "b1_part3",
+          "opts": [
+            "He forgot the yeast.",
+            "He used too much garlic.",
+            "The oven was cold."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "pet1_p3_q3",
+          "section": "part3",
+          "level": 3,
+          "stem": "What did Luca make from the bread?",
+          "expl": "He toasted thin pieces with garlic and herbs.",
+          "qtype": "b1_part3",
+          "opts": [
+            "Crunchy toast.",
+            "A shopping list.",
+            "A new oven."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "pet1_p3_q4",
+          "section": "part3",
+          "level": 3,
+          "stem": "How did Luca's flatmates feel about the result?",
+          "expl": "They liked the crunchy result more than ordinary bread.",
+          "qtype": "b1_part3",
+          "opts": [
+            "They did not taste it.",
+            "They disliked it.",
+            "They preferred it to ordinary bread."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet1_p3_q5",
+          "section": "part3",
+          "level": 3,
+          "stem": "What did Luca put on his shopping list?",
+          "expl": "He wrote yeast at the top of his list for next time.",
+          "qtype": "b1_part3",
+          "opts": [
+            "Garlic bread.",
+            "A flatmate.",
+            "Yeast."
+          ],
+          "ans": 2
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "pet1_part4",
+      "section": "part4",
+      "title": "A day at the lake",
+      "passage": "Our class arrived at the lake before the other visitors. The guide showed us a map and explained that the eastern path was closed. We followed the western path, which passed a small bird-watching shelter.\n\nAt midday we ate beside the water. Afterwards, dark clouds appeared, so the guide changed the plan. We returned to the visitor centre rather than climbing the hill. The rain began while we were inside, and we spent the afternoon looking at photographs of local wildlife.",
+      "items": [
+        {
+          "id": "pet1_p4_q1",
+          "section": "part4",
+          "level": 3,
+          "stem": "The guide first explained ___.",
+          "expl": "The guide explained that the eastern path was closed.",
+          "qtype": "b1_part4",
+          "opts": [
+            "why birds were noisy",
+            "where to buy lunch",
+            "which path was closed"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet1_p4_q2",
+          "section": "part4",
+          "level": 3,
+          "stem": "The western path went past ___.",
+          "expl": "It passed a small shelter for watching birds.",
+          "qtype": "b1_part4",
+          "opts": [
+            "a high hill",
+            "a bird-watching shelter",
+            "a visitor centre"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet1_p4_q3",
+          "section": "part4",
+          "level": 3,
+          "stem": "Why did the guide change the afternoon plan?",
+          "expl": "Dark clouds suggested that rain was coming.",
+          "qtype": "b1_part4",
+          "opts": [
+            "Dark clouds appeared.",
+            "The lake was empty.",
+            "The class got lost."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "pet1_p4_q4",
+          "section": "part4",
+          "level": 3,
+          "stem": "Where did the class go instead of climbing the hill?",
+          "expl": "They returned to the visitor centre.",
+          "qtype": "b1_part4",
+          "opts": [
+            "Into the lake.",
+            "Back to the visitor centre.",
+            "To the eastern path."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet1_p4_q5",
+          "section": "part4",
+          "level": 3,
+          "stem": "What did the class do in the afternoon?",
+          "expl": "They looked at photographs while the rain fell.",
+          "qtype": "b1_part4",
+          "opts": [
+            "They climbed the hill.",
+            "They opened the eastern path.",
+            "They watched wildlife photographs."
+          ],
+          "ans": 2
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "pet1_part5",
+      "section": "part5",
+      "title": "A new neighbour",
+      "passage": "When Hana moved into the apartment, her neighbour offered to (1) ___ her the best places to shop. Hana was pleased (2) ___ the building was close to a market. On Saturday, they walked there (3) ___ . The market was busier (4) ___ Hana expected, but she found everything she needed. Her neighbour also explained which stalls sold food (5) ___ local farms. Hana decided to return the following week, (6) ___ she wanted to try the fresh bread.",
+      "items": [
+        {
+          "id": "pet1_p5_q1",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 1: Choose the correct word.",
+          "expl": "The structure is “offered to show her”.",
+          "qtype": "b1_part5",
+          "opts": [
+            "show",
+            "showing",
+            "shown"
+          ],
+          "ans": 0
+        },
+        {
+          "id": "pet1_p5_q2",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 2: Choose the correct word.",
+          "expl": "Because gives the reason Hana was pleased.",
+          "qtype": "b1_part5",
+          "opts": [
+            "unless",
+            "because",
+            "although"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet1_p5_q3",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 3: Choose the correct word.",
+          "expl": "The phrase is “walked to the market”.",
+          "qtype": "b1_part5",
+          "opts": [
+            "at",
+            "to",
+            "in"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet1_p5_q4",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 4: Choose the correct word.",
+          "expl": "The comparative form uses “busier than”.",
+          "qtype": "b1_part5",
+          "opts": [
+            "that",
+            "as",
+            "than"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet1_p5_q5",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 5: Choose the correct word.",
+          "expl": "Food comes from local farms.",
+          "qtype": "b1_part5",
+          "opts": [
+            "over",
+            "into",
+            "from"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet1_p5_q6",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 6: Choose the correct word.",
+          "expl": "Because explains why Hana will return.",
+          "qtype": "b1_part5",
+          "opts": [
+            "but",
+            "because",
+            "so"
+          ],
+          "ans": 1
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "pet1_part6",
+      "section": "part6",
+      "title": "Message about a walk",
+      "passage": "Hi Jo,\n\nAre you free (1) ___ Saturday? I am planning a walk through the hills. We can meet (2) ___ the café at nine. The path is not difficult, but bring a coat (3) ___ the weather may turn cold. I have checked the map (4) ___ I will carry a first-aid kit. We should be home (5) ___ sunset. Please tell (6) ___ if you can come.\n\nMara",
+      "items": [
+        {
+          "id": "pet1_p6_q1",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 1: Write one word.",
+          "expl": "A day uses the preposition “on”.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "on"
+        },
+        {
+          "id": "pet1_p6_q2",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 2: Write one word.",
+          "expl": "The meeting place is at the café.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "at"
+        },
+        {
+          "id": "pet1_p6_q3",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 3: Write one word.",
+          "expl": "Because gives the reason for bringing a coat.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "because"
+        },
+        {
+          "id": "pet1_p6_q4",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 4: Write one word.",
+          "expl": "And joins the two things Mara will do.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "and"
+        },
+        {
+          "id": "pet1_p6_q5",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 5: Write one word.",
+          "expl": "They should arrive home before sunset.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "before"
+        },
+        {
+          "id": "pet1_p6_q6",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 6: Write one word.",
+          "expl": "The phrase is “tell me”.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "me"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "pet2_part1",
+      "section": "part1",
+      "title": "Short notices",
+      "passage": "A. THEATRE: Tonight's performance begins at 7:30, half an hour earlier than usual.\nB. POST OFFICE: Parcels for collection are now kept in the side room.\nC. SWIMMING CLUB: Members must book a lane before using the pool.\nD. FARM SHOP: Fresh eggs arrive on Wednesday, not Tuesday this week.\nE. TRAIN STATION: The ticket machine accepts coins and cards but not notes.",
+      "items": [
+        {
+          "id": "pet2_p1_q1",
+          "section": "part1",
+          "level": 3,
+          "stem": "What time does tonight's performance begin?",
+          "expl": "The performance starts at 7:30, earlier than usual.",
+          "qtype": "b1_part1",
+          "opts": [
+            "7:30",
+            "7:00",
+            "8:00"
+          ],
+          "ans": 0
+        },
+        {
+          "id": "pet2_p1_q2",
+          "section": "part1",
+          "level": 3,
+          "stem": "Where are collected parcels kept?",
+          "expl": "The post office has moved parcels to the side room.",
+          "qtype": "b1_part1",
+          "opts": [
+            "At the station.",
+            "In the side room.",
+            "In the main hall."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet2_p1_q3",
+          "section": "part1",
+          "level": 3,
+          "stem": "What must swimming-club members do first?",
+          "expl": "Members must book a lane before using the pool.",
+          "qtype": "b1_part1",
+          "opts": [
+            "Buy eggs.",
+            "Book a lane.",
+            "Use the ticket machine."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet2_p1_q4",
+          "section": "part1",
+          "level": 3,
+          "stem": "When will fresh eggs arrive this week?",
+          "expl": "Eggs arrive on Wednesday this week.",
+          "qtype": "b1_part1",
+          "opts": [
+            "Friday.",
+            "Tuesday.",
+            "Wednesday."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet2_p1_q5",
+          "section": "part1",
+          "level": 3,
+          "stem": "What cannot be used in the station ticket machine?",
+          "expl": "The machine accepts coins and cards, but not notes.",
+          "qtype": "b1_part1",
+          "opts": [
+            "Notes.",
+            "Cards.",
+            "Coins."
+          ],
+          "ans": 0
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "pet2_part2",
+      "section": "part2",
+      "title": "Courses for adults",
+      "passage": "A. Evening Language Class\nPractise conversation in small groups on Tuesday evenings. The teacher sets no homework.\n\nB. Digital Skills\nLearn how to organise files, use online forms and protect passwords. Classes are on Saturday mornings.\n\nC. Local History\nListen to talks and visit two historic buildings on Wednesday afternoons. Some walking is required.",
+      "items": [
+        {
+          "id": "pet2_p2_q1",
+          "section": "part2",
+          "level": 3,
+          "stem": "I need help with online forms.",
+          "expl": "Digital Skills includes online forms.",
+          "qtype": "b1_part2",
+          "opts": [
+            "B",
+            "C",
+            "A"
+          ],
+          "ans": 0
+        },
+        {
+          "id": "pet2_p2_q2",
+          "section": "part2",
+          "level": 3,
+          "stem": "I want to practise speaking and have no time for homework.",
+          "expl": "The Evening Language Class practises conversation and sets no homework.",
+          "qtype": "b1_part2",
+          "opts": [
+            "C",
+            "B",
+            "A"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet2_p2_q3",
+          "section": "part2",
+          "level": 3,
+          "stem": "I am interested in old buildings.",
+          "expl": "Local History visits historic buildings.",
+          "qtype": "b1_part2",
+          "opts": [
+            "B",
+            "A",
+            "C"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet2_p2_q4",
+          "section": "part2",
+          "level": 3,
+          "stem": "I can attend only on Saturday morning.",
+          "expl": "Digital Skills meets on Saturday mornings.",
+          "qtype": "b1_part2",
+          "opts": [
+            "A",
+            "B",
+            "C"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet2_p2_q5",
+          "section": "part2",
+          "level": 3,
+          "stem": "I would like to learn about my town while walking a little.",
+          "expl": "Local History includes visits and some walking.",
+          "qtype": "b1_part2",
+          "opts": [
+            "B",
+            "C",
+            "A"
+          ],
+          "ans": 1
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "pet2_part3",
+      "section": "part3",
+      "title": "The night market project",
+      "passage": "A group of young shop owners wanted to make the town centre livelier in winter. They proposed a night market with food stalls, handmade goods and music. The council agreed, but only if the group kept the street clear for emergency vehicles.\n\nThe first market was smaller than expected because heavy rain kept some sellers away. Those who came moved their tables under a covered walkway. Visitors still enjoyed the event, and several people asked when the next one would be. The organisers learned to prepare a wet-weather plan. They now hold the market once a month and give one stall free to a local charity.",
+      "items": [
+        {
+          "id": "pet2_p3_q1",
+          "section": "part3",
+          "level": 3,
+          "stem": "Why did the shop owners suggest a night market?",
+          "expl": "They wanted the town centre to be livelier in winter.",
+          "qtype": "b1_part3",
+          "opts": [
+            "To close the town street.",
+            "To make the centre livelier in winter.",
+            "To sell emergency vehicles."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet2_p3_q2",
+          "section": "part3",
+          "level": 3,
+          "stem": "What condition did the council make?",
+          "expl": "The street had to stay clear for emergency vehicles.",
+          "qtype": "b1_part3",
+          "opts": [
+            "The market had to close monthly.",
+            "Every stall had to sell food.",
+            "The street had to remain clear."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet2_p3_q3",
+          "section": "part3",
+          "level": 3,
+          "stem": "Why was the first market small?",
+          "expl": "Heavy rain kept some sellers away.",
+          "qtype": "b1_part3",
+          "opts": [
+            "Some sellers stayed away because of rain.",
+            "Visitors disliked the music.",
+            "The council refused the plan."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "pet2_p3_q4",
+          "section": "part3",
+          "level": 3,
+          "stem": "Where did some sellers put their tables?",
+          "expl": "They moved tables under a covered walkway.",
+          "qtype": "b1_part3",
+          "opts": [
+            "At the council office.",
+            "Under a covered walkway.",
+            "Inside an emergency vehicle."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet2_p3_q5",
+          "section": "part3",
+          "level": 3,
+          "stem": "What does the market now do for a charity?",
+          "expl": "One stall is free to a local charity.",
+          "qtype": "b1_part3",
+          "opts": [
+            "It closes the street.",
+            "It sells its building.",
+            "It gives one stall free."
+          ],
+          "ans": 2
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "pet2_part4",
+      "section": "part4",
+      "title": "A changed travel plan",
+      "passage": "Maya planned to visit the island by ferry. She checked the timetable the night before and packed a small bag. At the harbour, a notice announced that the ferry would be delayed because of strong winds.\n\nMaya considered going home, but another passenger suggested a bus to a different harbour. The bus cost more, yet it left quickly. Maya arrived on the island later than planned and missed the first museum tour. She was not disappointed for long: the second tour was smaller, and the guide answered all her questions.",
+      "items": [
+        {
+          "id": "pet2_p4_q1",
+          "section": "part4",
+          "level": 3,
+          "stem": "Maya checked the ferry timetable ___.",
+          "expl": "She checked it the night before travelling.",
+          "qtype": "b1_part4",
+          "opts": [
+            "the previous night",
+            "at the harbour",
+            "on the island"
+          ],
+          "ans": 0
+        },
+        {
+          "id": "pet2_p4_q2",
+          "section": "part4",
+          "level": 3,
+          "stem": "Why was the ferry delayed?",
+          "expl": "Strong winds caused the ferry delay.",
+          "qtype": "b1_part4",
+          "opts": [
+            "The museum was full.",
+            "There were strong winds.",
+            "The bus was late."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet2_p4_q3",
+          "section": "part4",
+          "level": 3,
+          "stem": "What did another passenger suggest?",
+          "expl": "The passenger suggested taking a bus to a different harbour.",
+          "qtype": "b1_part4",
+          "opts": [
+            "A different bus route.",
+            "A bus to another harbour.",
+            "A museum tour."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet2_p4_q4",
+          "section": "part4",
+          "level": 3,
+          "stem": "What did Maya miss?",
+          "expl": "She arrived too late for the first museum tour.",
+          "qtype": "b1_part4",
+          "opts": [
+            "The first museum tour.",
+            "The small bag.",
+            "The ferry home."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "pet2_p4_q5",
+          "section": "part4",
+          "level": 3,
+          "stem": "Why did Maya enjoy the second tour?",
+          "expl": "The second tour was smaller and the guide answered questions.",
+          "qtype": "b1_part4",
+          "opts": [
+            "It was cheaper.",
+            "It was smaller and allowed questions.",
+            "It used a ferry."
+          ],
+          "ans": 1
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "pet2_part5",
+      "section": "part5",
+      "title": "Learning to swim",
+      "passage": "Nina had always wanted to learn to swim, but she felt (1) ___ near deep water. Her instructor began (2) ___ simple breathing exercises in the shallow end. Nina practised every week and gradually became (3) ___ confident. The instructor also taught her how to stay calm (4) ___ she swallowed water. After three months, Nina could swim across the pool (5) ___ stopping. She was proud of the progress she had (6) ___.",
+      "items": [
+        {
+          "id": "pet2_p5_q1",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 1: Choose the correct word.",
+          "expl": "Nervous means worried or afraid near deep water.",
+          "qtype": "b1_part5",
+          "opts": [
+            "nervous",
+            "normal",
+            "narrow"
+          ],
+          "ans": 0
+        },
+        {
+          "id": "pet2_p5_q2",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 2: Choose the correct word.",
+          "expl": "The instructor began with simple exercises.",
+          "qtype": "b1_part5",
+          "opts": [
+            "with",
+            "over",
+            "from"
+          ],
+          "ans": 0
+        },
+        {
+          "id": "pet2_p5_q3",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 3: Choose the correct word.",
+          "expl": "“More confident” shows gradual improvement.",
+          "qtype": "b1_part5",
+          "opts": [
+            "many",
+            "most",
+            "more"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet2_p5_q4",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 4: Choose the correct word.",
+          "expl": "When introduces the situation of swallowing water.",
+          "qtype": "b1_part5",
+          "opts": [
+            "unless",
+            "when",
+            "while"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet2_p5_q5",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 5: Choose the correct word.",
+          "expl": "The phrase is “without stopping”.",
+          "qtype": "b1_part5",
+          "opts": [
+            "during",
+            "among",
+            "without"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet2_p5_q6",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 6: Choose the correct word.",
+          "expl": "The phrase is “progress she had made”.",
+          "qtype": "b1_part5",
+          "opts": [
+            "made",
+            "done",
+            "taken"
+          ],
+          "ans": 0
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "pet2_part6",
+      "section": "part6",
+      "title": "A message about a course",
+      "passage": "Hi Ben,\n\nI have joined a cooking course (1) ___ the community centre. It takes place (2) ___ Wednesday evenings and finishes at nine. We learn how (3) ___ prepare a different dish each week. Last night we cooked soup, (4) ___ everyone enjoyed. The teacher says we can bring a friend (5) ___ we tell her first. Would you like to come (6) ___ week?\n\nEva",
+      "items": [
+        {
+          "id": "pet2_p6_q1",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 1: Write one word.",
+          "expl": "The course is at the community centre.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "at"
+        },
+        {
+          "id": "pet2_p6_q2",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 2: Write one word.",
+          "expl": "An evening on a named day uses “on”.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "on"
+        },
+        {
+          "id": "pet2_p6_q3",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 3: Write one word.",
+          "expl": "The structure is “learn how to prepare”.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "to"
+        },
+        {
+          "id": "pet2_p6_q4",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 4: Write one word.",
+          "expl": "Which refers to the soup and joins the relative clause.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "which"
+        },
+        {
+          "id": "pet2_p6_q5",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 5: Write one word.",
+          "expl": "If introduces the condition for bringing a friend.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "if"
+        },
+        {
+          "id": "pet2_p6_q6",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 6: Write one word.",
+          "expl": "The phrase is “next week”.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "next"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "pet3_part1",
+      "section": "part1",
+      "title": "Messages in the city",
+      "passage": "A. GALLERY: The entrance is free today, but the upstairs room is closed.\nB. BUS DEPOT: Lost bags can be collected from the information desk.\nC. TENNIS CLUB: Court 2 is available after 5 p.m., not before lunch.\nD. BAKERY: Please order celebration cakes three days in advance.\nE. PARK OFFICE: The lake path is open again after repair work.",
+      "items": [
+        {
+          "id": "pet3_p1_q1",
+          "section": "part1",
+          "level": 3,
+          "stem": "Which part of the gallery is closed?",
+          "expl": "The upstairs room is closed today.",
+          "qtype": "b1_part1",
+          "opts": [
+            "The entrance.",
+            "The upstairs room.",
+            "The information desk."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet3_p1_q2",
+          "section": "part1",
+          "level": 3,
+          "stem": "Where can a lost bag be collected?",
+          "expl": "Lost bags are collected from the bus depot information desk.",
+          "qtype": "b1_part1",
+          "opts": [
+            "At the gallery entrance.",
+            "At the information desk.",
+            "At Court 2."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet3_p1_q3",
+          "section": "part1",
+          "level": 3,
+          "stem": "When can people use Court 2?",
+          "expl": "Court 2 is available after 5 p.m.",
+          "qtype": "b1_part1",
+          "opts": [
+            "After 5 p.m.",
+            "Before lunch.",
+            "During repair work."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "pet3_p1_q4",
+          "section": "part1",
+          "level": 3,
+          "stem": "How early should celebration cakes be ordered?",
+          "expl": "The bakery asks for three days' notice.",
+          "qtype": "b1_part1",
+          "opts": [
+            "After the party.",
+            "Three days before.",
+            "At lunchtime."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet3_p1_q5",
+          "section": "part1",
+          "level": 3,
+          "stem": "What is open again?",
+          "expl": "The park's lake path has reopened after repairs.",
+          "qtype": "b1_part1",
+          "opts": [
+            "The upstairs room.",
+            "The lake path.",
+            "The bus desk."
+          ],
+          "ans": 1
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "pet3_part2",
+      "section": "part2",
+      "title": "Places to study",
+      "passage": "A. Makerspace\nUse computers and basic tools to build a project. Staff can help with equipment, but visitors must book a table.\n\nB. Reading Room\nA silent room with desks and printed newspapers. It closes at 5 p.m. and does not allow food.\n\nC. Study Café\nWork with a drink until 9 p.m. Background music is played, and power sockets are available at every table.",
+      "items": [
+        {
+          "id": "pet3_p2_q1",
+          "section": "part2",
+          "level": 3,
+          "stem": "I need a silent place and will leave before five.",
+          "expl": "Reading Room is silent and closes at 5 p.m.",
+          "qtype": "b1_part2",
+          "opts": [
+            "C",
+            "B",
+            "A"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet3_p2_q2",
+          "section": "part2",
+          "level": 3,
+          "stem": "I need a power socket and do not mind music.",
+          "expl": "Study Café has sockets at every table and plays music.",
+          "qtype": "b1_part2",
+          "opts": [
+            "B",
+            "A",
+            "C"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet3_p2_q3",
+          "section": "part2",
+          "level": 3,
+          "stem": "I want staff to help me use tools.",
+          "expl": "Makerspace staff can help with equipment.",
+          "qtype": "b1_part2",
+          "opts": [
+            "B",
+            "A",
+            "C"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet3_p2_q4",
+          "section": "part2",
+          "level": 3,
+          "stem": "I want to read printed newspapers.",
+          "expl": "Reading Room provides printed newspapers.",
+          "qtype": "b1_part2",
+          "opts": [
+            "C",
+            "A",
+            "B"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet3_p2_q5",
+          "section": "part2",
+          "level": 3,
+          "stem": "I can stay until nine and would like a drink.",
+          "expl": "Study Café stays open until 9 p.m. and serves drinks.",
+          "qtype": "b1_part2",
+          "opts": [
+            "A",
+            "B",
+            "C"
+          ],
+          "ans": 2
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "pet3_part3",
+      "section": "part3",
+      "title": "A letter from the coast",
+      "passage": "Dear Sam,\n\nI arrived in Port Ellis last week to work at an aquarium. I expected the town to be quiet, but there is more to do than I imagined. Every morning I help feed the seals, and twice a week I give visitors a short talk about plastic in the sea.\n\nMy flat is small but bright. It is above a shop that sells fishing equipment, so I sometimes hear deliveries before breakfast. At weekends I walk along the harbour. The best part is the old lighthouse, which is open to visitors on Saturdays. You should come in August; the aquarium is planning a night event then.\n\nBest wishes,\nTariq",
+      "items": [
+        {
+          "id": "pet3_p3_q1",
+          "section": "part3",
+          "level": 3,
+          "stem": "Where does Tariq work?",
+          "expl": "Tariq works at the aquarium.",
+          "qtype": "b1_part3",
+          "opts": [
+            "At the lighthouse.",
+            "At a fishing shop.",
+            "At an aquarium."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet3_p3_q2",
+          "section": "part3",
+          "level": 3,
+          "stem": "What does Tariq talk to visitors about?",
+          "expl": "His talks explain the problem of plastic in the sea.",
+          "qtype": "b1_part3",
+          "opts": [
+            "Plastic in the sea.",
+            "Fishing equipment.",
+            "Breakfast deliveries."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "pet3_p3_q3",
+          "section": "part3",
+          "level": 3,
+          "stem": "Why does Tariq sometimes wake early?",
+          "expl": "Deliveries to the shop below can be heard before breakfast.",
+          "qtype": "b1_part3",
+          "opts": [
+            "He hears shop deliveries.",
+            "He walks along the harbour.",
+            "The lighthouse opens early."
+          ],
+          "ans": 0
+        },
+        {
+          "id": "pet3_p3_q4",
+          "section": "part3",
+          "level": 3,
+          "stem": "When can visitors enter the old lighthouse?",
+          "expl": "The lighthouse is open to visitors on Saturdays.",
+          "qtype": "b1_part3",
+          "opts": [
+            "Every morning.",
+            "On Saturdays.",
+            "Only in August."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet3_p3_q5",
+          "section": "part3",
+          "level": 3,
+          "stem": "What will happen at the aquarium in August?",
+          "expl": "The aquarium is planning a night event.",
+          "qtype": "b1_part3",
+          "opts": [
+            "A fishing competition.",
+            "A night event.",
+            "A new shop opening."
+          ],
+          "ans": 1
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "pet3_part4",
+      "section": "part4",
+      "title": "The forgotten umbrella",
+      "passage": "After leaving the cinema, Rosa noticed that rain had started. She opened her umbrella, but the handle broke. A stranger offered her a place under his large umbrella until they reached the bus stop.\n\nRosa thanked him and took the bus home. The next day she returned to the cinema to ask whether anyone had found her umbrella. The manager had kept it at the ticket desk. Rosa was surprised that the handle had only come loose; it could be repaired. She decided to repair it rather than buy another one.",
+      "items": [
+        {
+          "id": "pet3_p4_q1",
+          "section": "part4",
+          "level": 3,
+          "stem": "What happened when Rosa opened her umbrella?",
+          "expl": "The umbrella handle broke when she opened it.",
+          "qtype": "b1_part4",
+          "opts": [
+            "The bus arrived.",
+            "The handle broke.",
+            "The cinema closed."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet3_p4_q2",
+          "section": "part4",
+          "level": 3,
+          "stem": "Who helped Rosa reach the bus stop?",
+          "expl": "A stranger shared a large umbrella with her.",
+          "qtype": "b1_part4",
+          "opts": [
+            "The bus driver.",
+            "A stranger.",
+            "The cinema manager."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet3_p4_q3",
+          "section": "part4",
+          "level": 3,
+          "stem": "Where was the umbrella the next day?",
+          "expl": "The cinema manager had kept it at the ticket desk.",
+          "qtype": "b1_part4",
+          "opts": [
+            "On the bus.",
+            "At the ticket desk.",
+            "Under a tree."
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet3_p4_q4",
+          "section": "part4",
+          "level": 3,
+          "stem": "What surprised Rosa?",
+          "expl": "She discovered that the handle was loose rather than permanently broken.",
+          "qtype": "b1_part4",
+          "opts": [
+            "The cinema was free.",
+            "The rain stopped.",
+            "The handle could be repaired."
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet3_p4_q5",
+          "section": "part4",
+          "level": 3,
+          "stem": "What did Rosa decide to do?",
+          "expl": "She chose to repair it instead of buying another.",
+          "qtype": "b1_part4",
+          "opts": [
+            "Leave it at the cinema.",
+            "Buy two umbrellas.",
+            "Repair her umbrella."
+          ],
+          "ans": 2
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "pet3_part5",
+      "section": "part5",
+      "title": "A helpful neighbour",
+      "passage": "When my washing machine stopped working, I asked my neighbour whether he could (1) ___ me a hand. He arrived with a small box of tools and quickly found the (2) ___ . A coin had become stuck in the filter. He removed it, (3) ___ the machine worked again. I wanted to pay him, (4) ___ he refused. Instead, he asked me to water his plants (5) ___ he was away. I was happy to help, because he had saved me the cost of (6) ___ a repair service.",
+      "items": [
+        {
+          "id": "pet3_p5_q1",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 1: Choose the correct word.",
+          "expl": "The expression is “give me a hand”.",
+          "qtype": "b1_part5",
+          "opts": [
+            "give",
+            "make",
+            "do"
+          ],
+          "ans": 0
+        },
+        {
+          "id": "pet3_p5_q2",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 2: Choose the correct word.",
+          "expl": "A stuck coin was the problem.",
+          "qtype": "b1_part5",
+          "opts": [
+            "permission",
+            "problem",
+            "pattern"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet3_p5_q3",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 3: Choose the correct word.",
+          "expl": "So shows the result: the machine worked again.",
+          "qtype": "b1_part5",
+          "opts": [
+            "unless",
+            "though",
+            "so"
+          ],
+          "ans": 2
+        },
+        {
+          "id": "pet3_p5_q4",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 4: Choose the correct word.",
+          "expl": "But contrasts the offer with the refusal.",
+          "qtype": "b1_part5",
+          "opts": [
+            "if",
+            "but",
+            "because"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet3_p5_q5",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 5: Choose the correct word.",
+          "expl": "While describes the time he was away.",
+          "qtype": "b1_part5",
+          "opts": [
+            "than",
+            "while",
+            "until"
+          ],
+          "ans": 1
+        },
+        {
+          "id": "pet3_p5_q6",
+          "section": "part5",
+          "level": 3,
+          "stem": "Gap 6: Choose the correct word.",
+          "expl": "The phrase is “the cost of calling a service”.",
+          "qtype": "b1_part5",
+          "opts": [
+            "call",
+            "calling",
+            "called"
+          ],
+          "ans": 1
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "pet3_part6",
+      "section": "part6",
+      "title": "A sports day note",
+      "passage": "Dear team,\n\nSports day is next Friday, and we need to meet (1) ___ the field at eight. Please wear shoes (2) ___ are comfortable for running. The school will provide water, (3) ___ bring a hat if the sun is strong. Our first event begins (4) ___ half past eight. I will keep the list of names, so tell (5) ___ if you change your event. We should finish (6) ___ lunchtime.\n\nMs Lee",
+      "items": [
+        {
+          "id": "pet3_p6_q1",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 1: Write one word.",
+          "expl": "The team meets on the field.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "on"
+        },
+        {
+          "id": "pet3_p6_q2",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 2: Write one word.",
+          "expl": "That introduces the relative clause describing the shoes.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "that"
+        },
+        {
+          "id": "pet3_p6_q3",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 3: Write one word.",
+          "expl": "So introduces advice based on strong sun.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "so"
+        },
+        {
+          "id": "pet3_p6_q4",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 4: Write one word.",
+          "expl": "A clock time uses “at”.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "at"
+        },
+        {
+          "id": "pet3_p6_q5",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 5: Write one word.",
+          "expl": "The phrase is “tell me”.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "me"
+        },
+        {
+          "id": "pet3_p6_q6",
+          "section": "part6",
+          "level": 3,
+          "stem": "Gap 6: Write one word.",
+          "expl": "The event should finish before lunchtime.",
+          "qtype": "b1_part6",
+          "opts": [],
+          "ans": -1,
+          "answerText": "before"
+        }
+      ],
+      "set": "3"
+    }
+  ]
+}
