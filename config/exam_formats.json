@@ -445,9 +445,82 @@
         {"id": "part5", "label": "Part 5 · Multiple-choice cloze", "itemType": "group", "count": 6, "bank": "pet", "groupSet": "3", "qtype": ["b1_part5"]},
         {"id": "part6", "label": "Part 6 · Open cloze", "itemType": "group", "count": 6, "bank": "pet", "groupSet": "3", "qtype": ["b1_part6"]}
       ]
+    },
+    {
+      "id": "ielts_short_reading_1",
+      "label": "IELTS Academic short reading practice 1",
+      "family": "IELTS Academic practice",
+      "description": "Original short-reading practice: 10 questions in two passages. It is not an official IELTS paper and does not estimate a band score.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 10,
+      "timeLimitMinutes": 30,
+      "optionsPerQuestion": 4,
+      "source": "https://ielts.org/take-a-test/test-types/ielts-academic (format context only)",
+      "sections": [
+        {"id": "reading1", "label": "Passage 1", "itemType": "group", "count": 5, "bank": "ielts", "groupSet": "1", "qtype": ["ielts_short_reading"]},
+        {"id": "reading2", "label": "Passage 2", "itemType": "group", "count": 5, "bank": "ielts", "groupSet": "1", "qtype": ["ielts_short_reading"]}
+      ]
+    },
+    {
+      "id": "ielts_short_reading_2",
+      "label": "IELTS Academic short reading practice 2",
+      "family": "IELTS Academic practice",
+      "description": "Original short-reading practice: 10 questions in two passages. It is not an official IELTS paper and does not estimate a band score.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 10,
+      "timeLimitMinutes": 30,
+      "optionsPerQuestion": 4,
+      "source": "https://ielts.org/take-a-test/test-types/ielts-academic (format context only)",
+      "sections": [
+        {"id": "reading1", "label": "Passage 1", "itemType": "group", "count": 5, "bank": "ielts", "groupSet": "2", "qtype": ["ielts_short_reading"]},
+        {"id": "reading2", "label": "Passage 2", "itemType": "group", "count": 5, "bank": "ielts", "groupSet": "2", "qtype": ["ielts_short_reading"]}
+      ]
+    },
+    {
+      "id": "ielts_short_reading_3",
+      "label": "IELTS Academic short reading practice 3",
+      "family": "IELTS Academic practice",
+      "description": "Original short-reading practice: 10 questions in two passages. It is not an official IELTS paper and does not estimate a band score.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 10,
+      "timeLimitMinutes": 30,
+      "optionsPerQuestion": 4,
+      "source": "https://ielts.org/take-a-test/test-types/ielts-academic (format context only)",
+      "sections": [
+        {"id": "reading1", "label": "Passage 1", "itemType": "group", "count": 5, "bank": "ielts", "groupSet": "3", "qtype": ["ielts_short_reading"]},
+        {"id": "reading2", "label": "Passage 2", "itemType": "group", "count": 5, "bank": "ielts", "groupSet": "3", "qtype": ["ielts_short_reading"]}
+      ]
+    },
+    {
+      "id": "ielts_short_reading_4",
+      "label": "IELTS Academic short reading practice 4",
+      "family": "IELTS Academic practice",
+      "description": "Original short-reading practice: 10 questions in two passages. It is not an official IELTS paper and does not estimate a band score.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 10,
+      "timeLimitMinutes": 30,
+      "optionsPerQuestion": 4,
+      "source": "https://ielts.org/take-a-test/test-types/ielts-academic (format context only)",
+      "sections": [
+        {"id": "reading1", "label": "Passage 1", "itemType": "group", "count": 5, "bank": "ielts", "groupSet": "4", "qtype": ["ielts_short_reading"]},
+        {"id": "reading2", "label": "Passage 2", "itemType": "group", "count": 5, "bank": "ielts", "groupSet": "4", "qtype": ["ielts_short_reading"]}
+      ]
+    },
+    {
+      "id": "ielts_short_reading_5",
+      "label": "IELTS Academic short reading practice 5",
+      "family": "IELTS Academic practice",
+      "description": "Original short-reading practice: 10 questions in two passages. It is not an official IELTS paper and does not estimate a band score.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 10,
+      "timeLimitMinutes": 30,
+      "optionsPerQuestion": 4,
+      "source": "https://ielts.org/take-a-test/test-types/ielts-academic (format context only)",
+      "sections": [
+        {"id": "reading1", "label": "Passage 1", "itemType": "group", "count": 5, "bank": "ielts", "groupSet": "5", "qtype": ["ielts_short_reading"]},
+        {"id": "reading2", "label": "Passage 2", "itemType": "group", "count": 5, "bank": "ielts", "groupSet": "5", "qtype": ["ielts_short_reading"]}
+      ]
     }
   ],
-  "comingSoon": [
-    { "id": "ielts", "label": "IELTS (gói mở rộng)" }
-  ]
+  "comingSoon": []
 }

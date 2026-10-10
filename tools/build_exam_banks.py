@@ -10,6 +10,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VSTEP_SECTIONS = {"reading1", "reading2", "reading3", "reading4"}
 KET_SECTIONS = {"part1", "part2", "part3", "part4", "part5"}
 PET_SECTIONS = {"part1", "part2", "part3", "part4", "part5", "part6"}
+IELTS_SECTIONS = {"reading1", "reading2"}
 
 
 def read_json(*parts):
@@ -233,6 +234,73 @@ def build_pet():
     return {"items": [], "groups": groups}, locale
 
 
+def build_ielts():
+    """Build five original IELTS-style short-reading mini papers."""
+    raw_groups = read_json("tools", "authoring", "exam_ielts.json")
+    groups = []
+    locale = {}
+    seen = set()
+    by_paper = {}
+    for raw_group in raw_groups:
+        group_id = raw_group.get("id", "")
+        section = raw_group.get("section", "")
+        paper = str(raw_group.get("paper", ""))
+        if not group_id or group_id in seen:
+            raise ValueError(f"IELTS duplicate or empty group id: {group_id!r}")
+        if section not in IELTS_SECTIONS or paper not in {"1", "2", "3", "4", "5"}:
+            raise ValueError(f"IELTS group {group_id} has an invalid section or paper")
+        if raw_group.get("source") != "original:exam-expansion-2026":
+            raise ValueError(f"IELTS group {group_id} must be original")
+        if not raw_group.get("passage") or not raw_group.get("passage_vi"):
+            raise ValueError(f"IELTS group {group_id} needs English and Vietnamese passages")
+        items = raw_group.get("items", [])
+        if len(items) != 5:
+            raise ValueError(f"IELTS group {group_id} needs exactly 5 questions")
+        seen.add(group_id)
+        by_paper.setdefault(paper, set()).add(section)
+        output_items = []
+        for item_raw in items:
+            item_id = item_raw.get("id", "")
+            if not item_id or item_id in seen:
+                raise ValueError(f"IELTS duplicate or empty item id: {item_id!r}")
+            options = item_raw.get("opts", [])
+            answer = item_raw.get("ans")
+            if len(options) != 4 or not isinstance(answer, int) or not 0 <= answer < 4:
+                raise ValueError(f"IELTS item {item_id} needs four options and a valid answer")
+            if not item_raw.get("stem") or not item_raw.get("expl") or not item_raw.get("vi_expl"):
+                raise ValueError(f"IELTS item {item_id} is missing stem or explanation")
+            seen.add(item_id)
+            order = list(range(4))
+            random.Random(item_id).shuffle(order)
+            output_items.append({
+                "id": item_id,
+                "section": section,
+                "level": item_raw.get("level", 4),
+                "stem": item_raw["stem"],
+                "opts": [options[index] for index in order],
+                "ans": order.index(answer),
+                "expl": item_raw["expl"],
+                "qtype": "ielts_short_reading",
+            })
+            locale[item_id] = {"expl": item_raw["vi_expl"]}
+        groups.append({
+            "id": group_id,
+            "section": section,
+            "title": raw_group.get("title"),
+            "passage": raw_group["passage"],
+            "items": output_items,
+            "set": paper,
+        })
+        locale[group_id] = {
+            "title": raw_group.get("title_vi", ""),
+            "passage": raw_group["passage_vi"],
+        }
+    expected = {str(paper): IELTS_SECTIONS for paper in range(1, 6)}
+    if by_paper != expected:
+        raise ValueError(f"IELTS needs two sections in each of five papers, found {by_paper}")
+    return {"items": [], "groups": groups}, locale
+
+
 def update_status(locale):
     path = os.path.join(ROOT, "content", "i18n", "vi", "status.json")
     status = read_json("content", "i18n", "vi", "status.json")
@@ -253,18 +321,23 @@ def main():
     vstep, vstep_locale = build_vstep()
     ket, ket_locale = build_ket()
     pet, pet_locale = build_pet()
+    ielts, ielts_locale = build_ielts()
     write_json(os.path.join(ROOT, "content", "en", "exams", "vstep.json"), vstep)
     write_json(os.path.join(ROOT, "content", "i18n", "vi", "exams", "vstep.json"), vstep_locale)
     write_json(os.path.join(ROOT, "content", "en", "exams", "ket.json"), ket)
     write_json(os.path.join(ROOT, "content", "i18n", "vi", "exams", "ket.json"), ket_locale)
     write_json(os.path.join(ROOT, "content", "en", "exams", "pet.json"), pet)
     write_json(os.path.join(ROOT, "content", "i18n", "vi", "exams", "pet.json"), pet_locale)
+    write_json(os.path.join(ROOT, "content", "en", "exams", "ielts.json"), ielts)
+    write_json(os.path.join(ROOT, "content", "i18n", "vi", "exams", "ielts.json"), ielts_locale)
     update_status(vstep_locale)
     update_status(ket_locale)
     update_status(pet_locale)
+    update_status(ielts_locale)
     print(f"vstep_passages={len(vstep['groups'])} vstep_items={sum(len(g['items']) for g in vstep['groups'])}")
     print(f"ket_passages={len(ket['groups'])} ket_items={sum(len(g['items']) for g in ket['groups'])}")
     print(f"pet_passages={len(pet['groups'])} pet_items={sum(len(g['items']) for g in pet['groups'])}")
+    print(f"ielts_passages={len(ielts['groups'])} ielts_items={sum(len(g['items']) for g in ielts['groups'])}")
 
 
 if __name__ == "__main__":

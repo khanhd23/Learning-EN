@@ -1,0 +1,845 @@
+{
+  "items": [],
+  "groups": [
+    {
+      "id": "ielts1_reading1",
+      "section": "reading1",
+      "title": "Cooling cities with green roofs",
+      "passage": "Green roofs are not simply gardens placed on top of buildings. A shallow layer of plants and soil can lower the temperature of a roof in summer, while the soil slows rainwater as it runs towards drains. Researchers in one city found that buildings with green roofs used less energy for cooling during hot weeks. The benefits are not identical everywhere: a roof needs enough sunlight, and older structures may need strengthening before soil is added. For this reason, planners often begin with public buildings, where access is easier. Some roofs are designed for wildlife, but many are not open to visitors because their surfaces must be protected. Green roofs therefore work best as part of a wider plan rather than as a single answer to urban heat.",
+      "items": [
+        {
+          "id": "ielts1_r1_q1",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What is the main purpose of the passage?",
+          "opts": [
+            "To explain how green roofs can help cities and what limits them",
+            "To compare the prices of different roofs",
+            "To argue that all city roofs should be opened to visitors",
+            "To describe a tour of a public building"
+          ],
+          "ans": 0,
+          "expl": "The passage explains cooling and water benefits, then notes sunlight, structural and access limits.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts1_r1_q2",
+          "section": "reading1",
+          "level": 4,
+          "stem": "How does the soil on a green roof help during rain?",
+          "opts": [
+            "It removes the need for drains",
+            "It slows water on its way to drains",
+            "It changes rainwater into drinking water",
+            "It directs water into the building"
+          ],
+          "ans": 1,
+          "expl": "The passage says the soil slows rainwater as it runs towards drains.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts1_r1_q3",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What can be inferred about many wildlife-friendly roofs?",
+          "opts": [
+            "They are always on old buildings",
+            "They require no sunlight",
+            "They use more cooling energy",
+            "They are not usually available for visitors"
+          ],
+          "ans": 3,
+          "expl": "The passage says many roofs designed for wildlife are not open to visitors because their surfaces need protection.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts1_r1_q4",
+          "section": "reading1",
+          "level": 4,
+          "stem": "In the passage, what does “shallow” mean?",
+          "opts": [
+            "Very wide",
+            "Very expensive",
+            "Far from the ground",
+            "Not deep"
+          ],
+          "ans": 3,
+          "expl": "A shallow layer has little depth, so it is not deep.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts1_r1_q5",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Why may planners start with public buildings?",
+          "opts": [
+            "They receive no sunlight",
+            "Public buildings need no repairs",
+            "They are always open at night",
+            "They are easier to access"
+          ],
+          "ans": 3,
+          "expl": "The passage directly gives easier access as the reason for starting with public buildings.",
+          "qtype": "ielts_short_reading"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "ielts1_reading2",
+      "section": "reading2",
+      "title": "The repair café movement",
+      "passage": "Repair cafés bring volunteers and local residents together to fix household objects that might otherwise be thrown away. A visitor may arrive with a lamp, a jacket or a small appliance, while a volunteer provides advice and basic tools. The aim is not to offer a free replacement service. Visitors are encouraged to take part so that they understand the fault and can make a similar repair later. Many groups also record the objects they save, which helps them show how much waste they divert from landfill. Repair cafés cannot solve every problem: some electrical faults are unsafe for beginners, and a missing part may be impossible to obtain. Even so, the meetings create a social benefit. People who would not normally meet exchange practical knowledge while extending the life of ordinary possessions.",
+      "items": [
+        {
+          "id": "ielts1_r2_q1",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What is the main aim of a repair café?",
+          "opts": [
+            "To provide professional electrical certification",
+            "To teach people to repair items and reduce waste",
+            "To collect objects for a museum",
+            "To sell new household objects"
+          ],
+          "ans": 1,
+          "expl": "Visitors join repairs, learn from volunteers and help keep objects out of landfill.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts1_r2_q2",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What are visitors encouraged to do?",
+          "opts": [
+            "Bring only electrical appliances",
+            "Take part in the repair",
+            "Buy a replacement before arriving",
+            "Watch silently from another room"
+          ],
+          "ans": 1,
+          "expl": "The passage says visitors are encouraged to take part so they understand the fault.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts1_r2_q3",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Why do some groups record the objects they save?",
+          "opts": [
+            "To find a larger building",
+            "To decide which volunteers may attend",
+            "To demonstrate the amount of waste diverted",
+            "To calculate the price of a new lamp"
+          ],
+          "ans": 2,
+          "expl": "Records help groups show how much waste they divert from landfill.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts1_r2_q4",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Which problem is mentioned as a limitation?",
+          "opts": [
+            "Landfill sites are too far away",
+            "Some electrical faults may be unsafe",
+            "All visitors arrive with clothing",
+            "Volunteers refuse to share tools"
+          ],
+          "ans": 1,
+          "expl": "The passage warns that some electrical faults are unsafe for beginners.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts1_r2_q5",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What social effect do repair cafés have?",
+          "opts": [
+            "They make ordinary possessions less useful",
+            "They bring people together to exchange knowledge",
+            "They stop people from learning practical skills",
+            "They replace every local shop"
+          ],
+          "ans": 1,
+          "expl": "The final sentence says people meet and exchange practical knowledge.",
+          "qtype": "ielts_short_reading"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "ielts2_reading1",
+      "section": "reading1",
+      "title": "Trees and the urban climate",
+      "passage": "A row of street trees can do more than make a road attractive. Leaves provide shade, and water released from them can cool the air on warm days. Trees also slow rain before it reaches paved surfaces, where water often runs quickly into drains. However, planting a tree is not a complete climate policy. The wrong species may damage pavements with its roots, while a young tree needs several years of watering before it can provide much shade. City workers therefore need to match trees to soil, space and local weather. In some neighbourhoods, residents help by watering new trees and reporting damage. This shared care matters because a tree lost in its first year represents wasted work as well as a lost future benefit.",
+      "items": [
+        {
+          "id": "ielts2_r1_q1",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Which benefit of trees is mentioned?",
+          "opts": [
+            "They can shade streets and cool air",
+            "They make all roads dry",
+            "They grow well without water",
+            "They remove the need for city workers"
+          ],
+          "ans": 0,
+          "expl": "The passage mentions shade and cooling from water released by leaves.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts2_r1_q2",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Why can paved surfaces increase rainwater flow?",
+          "opts": [
+            "They are covered by leaves",
+            "Water runs quickly across them",
+            "They absorb all the water",
+            "They make trees grow faster"
+          ],
+          "ans": 1,
+          "expl": "The passage contrasts soil with paved surfaces, where water often runs quickly into drains.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts2_r1_q3",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What must city workers consider when choosing trees?",
+          "opts": [
+            "The number of nearby shops",
+            "How quickly a tree can be cut down",
+            "Only the colour of the leaves",
+            "Soil, available space and local weather"
+          ],
+          "ans": 3,
+          "expl": "The passage lists soil, space and local weather as the factors to match.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts2_r1_q4",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Why is a young tree watered for several years?",
+          "opts": [
+            "To keep pavements dry",
+            "To make its leaves colourful",
+            "To help it provide future shade",
+            "To prevent it from having roots"
+          ],
+          "ans": 2,
+          "expl": "A young tree needs watering before it can provide much shade, so care supports its future benefit.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts2_r1_q5",
+          "section": "reading1",
+          "level": 4,
+          "stem": "In the final sentence, what does “shared care” refer to?",
+          "opts": [
+            "Workers removing every tree",
+            "Weather changing across the city",
+            "Residents watering trees and reporting damage",
+            "Drivers avoiding paved roads"
+          ],
+          "ans": 2,
+          "expl": "It refers to residents helping with watering and damage reports.",
+          "qtype": "ielts_short_reading"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "ielts2_reading2",
+      "section": "reading2",
+      "title": "Why people ferment food",
+      "passage": "Fermentation is an old way of changing food through the activity of microorganisms. In vegetables, these organisms can produce acids that make the food taste sharp and slow the growth of some harmful microbes. Fermentation does not mean that a food will remain safe forever. Clean containers, suitable salt levels and cool storage may still be necessary, depending on the recipe. The process also creates flavours that cannot be produced by simply heating a food. This is one reason why fermented products appear in many culinary traditions, from sour vegetables to cultured milk. Modern cooks sometimes use controlled temperatures to make results more consistent, but the basic principle remains similar to methods used in home kitchens for generations.",
+      "items": [
+        {
+          "id": "ielts2_r2_q1",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What causes food to change during fermentation?",
+          "opts": [
+            "Only exposure to sunlight",
+            "The removal of all water",
+            "The activity of microorganisms",
+            "A metal container"
+          ],
+          "ans": 2,
+          "expl": "The first sentence identifies microorganisms as the cause of the change.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts2_r2_q2",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What can acids produced in fermented vegetables do?",
+          "opts": [
+            "Stop all future spoilage",
+            "Remove the need for clean containers",
+            "Slow some harmful microbes",
+            "Make the food taste less sharp"
+          ],
+          "ans": 2,
+          "expl": "The passage says acids make the taste sharp and slow the growth of some harmful microbes.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts2_r2_q3",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What does the passage warn about fermentation?",
+          "opts": [
+            "It always requires a modern machine",
+            "It makes food safe forever",
+            "It does not remove every safety concern",
+            "It can only be used for milk"
+          ],
+          "ans": 2,
+          "expl": "The passage directly says fermentation does not mean food remains safe forever.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts2_r2_q4",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Why do modern cooks sometimes control temperature?",
+          "opts": [
+            "To remove all microorganisms",
+            "To make results more consistent",
+            "To avoid creating any flavour",
+            "To replace salt in every recipe"
+          ],
+          "ans": 1,
+          "expl": "Controlled temperature is mentioned as a way to make results more consistent.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts2_r2_q5",
+          "section": "reading2",
+          "level": 4,
+          "stem": "The word “cultured” in the passage is closest in meaning to:",
+          "opts": [
+            "heated until dry",
+            "served completely raw",
+            "stored without a container",
+            "grown with microorganisms"
+          ],
+          "ans": 3,
+          "expl": "In cultured milk, microorganisms are used to change the milk.",
+          "qtype": "ielts_short_reading"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "ielts3_reading1",
+      "section": "reading1",
+      "title": "Restoring mangrove edges",
+      "passage": "Mangroves grow where rivers meet the sea and their tangled roots hold soft coastal soil in place. They also provide shelter for young fish and reduce the force of waves during storms. Restoration projects do not simply plant as many trees as possible. Teams first examine tides, water channels and the species that were present before the area was damaged. If a blocked channel is left unchanged, new seedlings may be flooded too often or receive too little water. Local residents can help monitor the shore and protect young plants from animals or accidental trampling. A restored mangrove may take years to become a complex habitat, so success is measured through survival and new growth rather than by the number of seedlings planted on the first day.",
+      "items": [
+        {
+          "id": "ielts3_r1_q1",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Where do mangroves commonly grow?",
+          "opts": [
+            "Only beside underground lakes",
+            "On dry mountain tops",
+            "Where rivers meet the sea",
+            "Inside city buildings"
+          ],
+          "ans": 2,
+          "expl": "The passage opens by locating mangroves where rivers meet the sea.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts3_r1_q2",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What do mangrove roots help to do?",
+          "opts": [
+            "Increase the force of waves",
+            "Dry every water channel",
+            "Remove young fish from the shore",
+            "Hold coastal soil in place"
+          ],
+          "ans": 3,
+          "expl": "Their tangled roots hold soft coastal soil in place.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts3_r1_q3",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Why do restoration teams examine water channels?",
+          "opts": [
+            "Channels are used to count storms",
+            "Channels determine whether seedlings get suitable water",
+            "Channels show the age of local residents",
+            "Channels prevent all animal movement"
+          ],
+          "ans": 1,
+          "expl": "A blocked channel can leave seedlings too wet or too dry, so water flow must be examined.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts3_r1_q4",
+          "section": "reading1",
+          "level": 4,
+          "stem": "How can local residents support a restoration project?",
+          "opts": [
+            "By removing every seedling",
+            "By monitoring the shore and protecting young plants",
+            "By measuring only the first day's planting",
+            "By blocking all tides"
+          ],
+          "ans": 1,
+          "expl": "The passage gives monitoring and protecting young plants as ways residents can help.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts3_r1_q5",
+          "section": "reading1",
+          "level": 4,
+          "stem": "How is long-term success measured?",
+          "opts": [
+            "By plant survival and new growth",
+            "By the colour of the water",
+            "By the number of workers hired",
+            "By the length of the first meeting"
+          ],
+          "ans": 0,
+          "expl": "The final sentence contrasts survival and new growth with the first-day seedling count.",
+          "qtype": "ielts_short_reading"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "ielts3_reading2",
+      "section": "reading2",
+      "title": "Libraries of things",
+      "passage": "Some public libraries now lend useful objects as well as books. A library of things may offer sewing machines, camping equipment or tools for home repairs. The service is intended for people who need an item occasionally but do not want to buy and store it permanently. Members usually borrow objects for a limited period and return them so others can use them. This model can save money and reduce the number of rarely used products in homes. It also requires careful management. Staff must check that objects are safe, explain how unfamiliar equipment works and replace missing parts. Libraries do not lend every object: items that are too dangerous, fragile or difficult to maintain are usually excluded. The scheme succeeds when borrowing is convenient and responsibility is shared.",
+      "items": [
+        {
+          "id": "ielts3_r2_q1",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Why might someone use a library of things?",
+          "opts": [
+            "They read no books at all",
+            "They want to buy more storage space",
+            "They need an item only occasionally",
+            "They want to keep tools permanently"
+          ],
+          "ans": 2,
+          "expl": "The service is for people who need an item occasionally without buying and storing it.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts3_r2_q2",
+          "section": "reading2",
+          "level": 4,
+          "stem": "How does the model help reduce products in homes?",
+          "opts": [
+            "One borrowed item can be used by many people",
+            "It limits all home repairs",
+            "Every member receives a new product",
+            "It encourages people to discard working tools"
+          ],
+          "ans": 0,
+          "expl": "An object is returned and shared instead of being bought by each person.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts3_r2_q3",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What must staff do with unfamiliar equipment?",
+          "opts": [
+            "Explain how it works",
+            "Sell it immediately",
+            "Use it for camping only",
+            "Hide it from members"
+          ],
+          "ans": 0,
+          "expl": "Staff must explain how unfamiliar equipment works.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts3_r2_q4",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Which objects are usually excluded?",
+          "opts": [
+            "Objects that are dangerous or hard to maintain",
+            "Safe sewing machines",
+            "All printed books",
+            "Items that can be returned"
+          ],
+          "ans": 0,
+          "expl": "The passage excludes objects that are too dangerous, fragile or difficult to maintain.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts3_r2_q5",
+          "section": "reading2",
+          "level": 4,
+          "stem": "According to the passage, what supports the scheme?",
+          "opts": [
+            "No safety checks",
+            "Longer storage in every home",
+            "Permanent ownership by one member",
+            "Convenient borrowing and shared responsibility"
+          ],
+          "ans": 3,
+          "expl": "The final sentence names convenience and shared responsibility as conditions for success.",
+          "qtype": "ielts_short_reading"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "ielts4_reading1",
+      "section": "reading1",
+      "title": "Evening light and sleep",
+      "passage": "Light helps the human body keep track of day and night. Bright light in the morning can support alertness, while darkness in the evening tells the body that rest is approaching. This does not mean that every lamp or screen has the same effect. The intensity, timing and distance of a light source all matter. A person reading a dim book light may receive less light than someone sitting close to a bright screen. Researchers therefore advise people to consider the whole evening environment rather than blame one device. Keeping a regular bedtime, reducing strong light before sleep and getting daylight during the day are simple habits that may help. They cannot replace medical advice for persistent sleep problems, but they can make the daily pattern of light more predictable.",
+      "items": [
+        {
+          "id": "ielts4_r1_q1",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What role can morning light play?",
+          "opts": [
+            "It can support alertness",
+            "It always causes sleep",
+            "It removes the need for darkness",
+            "It makes every screen dimmer"
+          ],
+          "ans": 0,
+          "expl": "The passage says bright morning light can support alertness.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts4_r1_q2",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Which three features of a light source are said to matter?",
+          "opts": [
+            "Heat, sound and weight",
+            "Intensity, timing and distance",
+            "Size, shape and age",
+            "Colour, price and brand"
+          ],
+          "ans": 1,
+          "expl": "The passage lists intensity, timing and distance.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts4_r1_q3",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Why does the passage compare a book light with a screen?",
+          "opts": [
+            "To illustrate how distance and intensity can differ",
+            "To prove that books damage sleep",
+            "To show that all devices are equally bright",
+            "To explain how to repair a screen"
+          ],
+          "ans": 0,
+          "expl": "The comparison shows that a nearby bright screen can provide more light than a dim book light.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts4_r1_q4",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What does “persistent” sleep trouble mean?",
+          "opts": [
+            "Sleep trouble caused by travel only",
+            "A predictable bedtime",
+            "A short afternoon nap",
+            "Sleep trouble that continues"
+          ],
+          "ans": 3,
+          "expl": "Persistent means continuing for a long time or repeatedly.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts4_r1_q5",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Which habit is recommended?",
+          "opts": [
+            "Getting daylight during the day",
+            "Using the strongest lamp before sleep",
+            "Ignoring long-term sleep problems",
+            "Changing bedtime every night"
+          ],
+          "ans": 0,
+          "expl": "Getting daylight during the day is one of the simple habits listed.",
+          "qtype": "ielts_short_reading"
+        }
+      ],
+      "set": "4"
+    },
+    {
+      "id": "ielts4_reading2",
+      "section": "reading2",
+      "title": "Amateur astronomy",
+      "passage": "Amateur astronomers contribute to science even when they do not work at an observatory. A small telescope can reveal the changing position of a planet, and a camera can record a brief event that professionals might not see. Many amateurs join organised projects in which observations are checked against reports from other locations. This makes the data more useful than an isolated photograph. Equipment is not the only requirement. Observers need patience, a dark enough site and a record of the time and conditions. Clouds may prevent a planned observation, but a failed evening is not necessarily wasted: it can teach beginners how local weather changes. By sharing careful records rather than dramatic guesses, amateur groups can support research and help the public understand how evidence is collected.",
+      "items": [
+        {
+          "id": "ielts4_r2_q1",
+          "section": "reading2",
+          "level": 4,
+          "stem": "How can an amateur astronomer contribute to science?",
+          "opts": [
+            "By avoiding organised projects",
+            "By recording observations carefully",
+            "By guessing without evidence",
+            "By working only in a professional observatory"
+          ],
+          "ans": 1,
+          "expl": "The passage describes careful observations and records as useful contributions.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts4_r2_q2",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Why are observations from several locations useful?",
+          "opts": [
+            "They remove the need to record time",
+            "They guarantee clear weather",
+            "They make every photograph dramatic",
+            "They can be checked against one another"
+          ],
+          "ans": 3,
+          "expl": "Organised projects compare reports from different locations.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts4_r2_q3",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Which condition does an observer need?",
+          "opts": [
+            "A professional job title",
+            "A guaranteed cloudless sky",
+            "A brightly lit shopping centre",
+            "A dark enough site"
+          ],
+          "ans": 3,
+          "expl": "The passage lists a dark enough site among the requirements.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts4_r2_q4",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What can a failed observing evening teach beginners?",
+          "opts": [
+            "How local weather changes",
+            "That equipment is unnecessary",
+            "How to avoid keeping records",
+            "That clouds never move"
+          ],
+          "ans": 0,
+          "expl": "The passage says a failed evening can teach beginners about local weather.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts4_r2_q5",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What contrast does the final sentence make?",
+          "opts": [
+            "Professionals should avoid public explanations",
+            "Clouds are better than darkness",
+            "Careful records are better than dramatic guesses",
+            "Cameras are better than telescopes"
+          ],
+          "ans": 2,
+          "expl": "The final sentence contrasts careful records with dramatic guesses.",
+          "qtype": "ielts_short_reading"
+        }
+      ],
+      "set": "4"
+    },
+    {
+      "id": "ielts5_reading1",
+      "section": "reading1",
+      "title": "Small renewable grids",
+      "passage": "A small renewable grid links local electricity users with sources such as solar panels, batteries and sometimes a wind turbine. It can continue supplying essential buildings when a larger network is interrupted, provided that demand is managed carefully. A school might use stored energy for lights and communications, while postponing less urgent activities. The system is not automatically independent of the national grid. On cloudy days or during a long calm period, it may need additional power, and batteries have a limited capacity. Engineers therefore study local weather and patterns of use before choosing equipment. The value of a small grid is its flexibility: it can reduce pressure on the wider network and help a community practise responding to interruptions, even when it cannot provide every unit of electricity on its own.",
+      "items": [
+        {
+          "id": "ielts5_r1_q1",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What can a small renewable grid do during a larger network interruption?",
+          "opts": [
+            "Guarantee unlimited electricity",
+            "Stop schools from communicating",
+            "Remove all batteries from the system",
+            "Supply essential buildings if demand is managed"
+          ],
+          "ans": 3,
+          "expl": "The passage says it can continue supplying essential buildings when demand is managed carefully.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts5_r1_q2",
+          "section": "reading1",
+          "level": 4,
+          "stem": "Why might a school postpone some activities?",
+          "opts": [
+            "To use stored energy for less important tasks first",
+            "To save stored energy for lights and communication",
+            "Because solar panels cannot produce any power",
+            "Because the national grid is always available"
+          ],
+          "ans": 1,
+          "expl": "The example says stored energy is used for lights and communications while less urgent activities are postponed.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts5_r1_q3",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What limits the system's ability to work alone?",
+          "opts": [
+            "Cloudy weather and limited battery capacity",
+            "The existence of a wind turbine",
+            "The number of communication devices",
+            "The colour of school lights"
+          ],
+          "ans": 0,
+          "expl": "Cloudy days can reduce generation, and batteries have limited capacity.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts5_r1_q4",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What do engineers study before choosing equipment?",
+          "opts": [
+            "Only the age of the school",
+            "The colour of nearby buildings",
+            "The names of all electricity users",
+            "Local weather and patterns of use"
+          ],
+          "ans": 3,
+          "expl": "The passage explicitly names local weather and use patterns.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts5_r1_q5",
+          "section": "reading1",
+          "level": 4,
+          "stem": "What is the main value of a small grid according to the passage?",
+          "opts": [
+            "Its flexibility during interruptions",
+            "Its unlimited battery storage",
+            "Its ability to replace every national network",
+            "Its need for no planning"
+          ],
+          "ans": 0,
+          "expl": "The final sentence identifies flexibility as the value of the system.",
+          "qtype": "ielts_short_reading"
+        }
+      ],
+      "set": "5"
+    },
+    {
+      "id": "ielts5_reading2",
+      "section": "reading2",
+      "title": "Making room for urban rivers",
+      "passage": "For decades, some towns treated rivers as channels to be straightened and hidden beneath roads. More recent projects have taken a different approach: they give a river more room to spread during heavy rain. A wider floodplain can include parks, paths and wetlands that temporarily hold water, reducing pressure on homes downstream. This approach does not mean removing every wall or allowing water to flow wherever it chooses. Engineers still protect bridges and buildings, while planners decide which areas can safely flood. Residents may initially worry that a wetland will look untidy, but native plants can provide habitat and need less maintenance than a formal lawn. The best projects combine flood protection with public space, making the river visible without pretending that flooding can be eliminated completely.",
+      "items": [
+        {
+          "id": "ielts5_r2_q1",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What is the newer approach to urban rivers?",
+          "opts": [
+            "Hide every river beneath a road",
+            "Give rivers more room during heavy rain",
+            "Remove all bridges",
+            "Straighten every channel without planning"
+          ],
+          "ans": 1,
+          "expl": "The passage contrasts older hidden channels with giving rivers more room to spread.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts5_r2_q2",
+          "section": "reading2",
+          "level": 4,
+          "stem": "How can a wider floodplain help homes downstream?",
+          "opts": [
+            "It prevents native plants from growing",
+            "It temporarily holds water and reduces pressure",
+            "It replaces every public path",
+            "It sends all water directly into houses"
+          ],
+          "ans": 1,
+          "expl": "Parks, paths and wetlands in a wider floodplain can temporarily hold water and reduce pressure downstream.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts5_r2_q3",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What do engineers continue to protect?",
+          "opts": [
+            "All hidden channels",
+            "Only temporary paths",
+            "Every formal lawn",
+            "Bridges and buildings"
+          ],
+          "ans": 3,
+          "expl": "The passage says engineers still protect bridges and buildings.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts5_r2_q4",
+          "section": "reading2",
+          "level": 4,
+          "stem": "Why might native plants be useful in a wetland?",
+          "opts": [
+            "They require more cutting",
+            "They make water flow underground",
+            "They eliminate every flood",
+            "They need less maintenance than a formal lawn"
+          ],
+          "ans": 3,
+          "expl": "Native plants can provide habitat and need less maintenance than a formal lawn.",
+          "qtype": "ielts_short_reading"
+        },
+        {
+          "id": "ielts5_r2_q5",
+          "section": "reading2",
+          "level": 4,
+          "stem": "What does the final sentence suggest about flooding?",
+          "opts": [
+            "It should be ignored",
+            "Projects can reduce risk but cannot remove it entirely",
+            "It happens only where parks exist",
+            "It can be completely eliminated"
+          ],
+          "ans": 1,
+          "expl": "The final sentence says good projects do not pretend that flooding can be eliminated completely.",
+          "qtype": "ielts_short_reading"
+        }
+      ],
+      "set": "5"
+    }
+  ]
+}

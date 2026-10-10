@@ -798,6 +798,7 @@ def main():
         os.path.isfile(os.path.join(ROOT, "tools", "authoring", "exam_vstep.json"))
         or os.path.isfile(os.path.join(ROOT, "tools", "authoring", "exam_ket.json"))
         or os.path.isfile(os.path.join(ROOT, "tools", "authoring", "exam_pet.json"))
+        or os.path.isfile(os.path.join(ROOT, "tools", "authoring", "exam_ielts.json"))
     ):
         import build_exam_banks
         build_exam_banks.main()
