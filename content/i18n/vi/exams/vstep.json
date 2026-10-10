@@ -1,0 +1,410 @@
+{
+  "vstep_s1_r1_q01": {
+    "expl": "Đoạn văn mô tả lợi ích về thực phẩm, nhiệt độ, nước và quan hệ xã hội của vườn trên mái trong thành phố."
+  },
+  "vstep_s1_r1_q02": {
+    "expl": "Đoạn văn nói các khu vườn có thể cung cấp rau thơm và rau lá."
+  },
+  "vstep_s1_r1_q03": {
+    "expl": "Cây cối che phủ các bề mặt tối hấp thụ nhiệt nên có thể làm giảm nhiệt ở bên dưới."
+  },
+  "vstep_s1_r1_q04": {
+    "expl": "Extra weight nghĩa là trọng lượng được thêm vào ngoài trọng lượng ban đầu."
+  },
+  "vstep_s1_r1_q05": {
+    "expl": "Kỹ sư phải kiểm tra khả năng chịu trọng lượng tăng thêm của mái nhà."
+  },
+  "vstep_s1_r1_q06": {
+    "expl": "Khu chung cư trong ví dụ hứng nước mưa vào bể để dùng trong những tuần khô."
+  },
+  "vstep_s1_r1_q07": {
+    "expl": "They chỉ những cư dân hiện cùng tưới cây và trao đổi kinh nghiệm."
+  },
+  "vstep_s1_r1_q08": {
+    "expl": "Những hàng xóm trước đây hiếm gặp bắt đầu chia sẻ công việc và kinh nghiệm."
+  },
+  "vstep_s1_r1_q09": {
+    "expl": "Cư dân cho rằng lợi ích lớn nhất là có một nơi yên tĩnh để cùng làm việc."
+  },
+  "vstep_s1_r1_q10": {
+    "expl": "Nhận ra sự thay đổi theo mùa được nêu như một trải nghiệm bổ sung mà khu vườn đem lại."
+  },
+  "vstep_set1_reading1": {
+    "title": "Vườn trên mái ở các thành phố đông đúc",
+    "passage": "Khi các thành phố trở nên đông đúc hơn, một số cư dân biến những mái nhà chưa sử dụng thành vườn. Những khu vườn này không thay thế các trang trại lớn nhưng có thể cung cấp rau thơm và rau lá cho các gia đình gần đó. Cây cối cũng che phủ những bề mặt tối hấp thụ nhiệt, vì vậy mái xanh có thể làm các phòng bên dưới dễ chịu hơn vào mùa hè. Một dự án thành công cần nhiều hơn đất và hạt giống. Kỹ sư phải kiểm tra mái có chịu được trọng lượng tăng thêm không, còn người làm vườn phải tính cách đưa nước đến cây. Ở một khu chung cư, cư dân hứng nước mưa vào bể và dùng trong những tuần khô. Dự án cũng thay đổi quan hệ giữa hàng xóm: những người hiếm khi gặp nhau giờ cùng tưới cây và trao đổi kinh nghiệm. Tuy nhiên, lợi ích lớn nhất không phải lượng thức ăn tạo ra. Cư dân nói khu vườn cho họ một nơi yên tĩnh để cùng làm việc và nhận ra sự thay đổi của các mùa."
+  },
+  "vstep_s1_r2_q01": {
+    "expl": "Đoạn văn giải thích nguyên nhân sinh học, lối sống và đề xuất giải pháp cho cá nhân lẫn nhà trường."
+  },
+  "vstep_s1_r2_q02": {
+    "expl": "Tín hiệu buồn ngủ tự nhiên của cơ thể thường đến muộn hơn trong tuổi vị thành niên."
+  },
+  "vstep_s1_r2_q03": {
+    "expl": "Đoạn văn nêu màn hình, tin nhắn, bài tập và cuối tuần thất thường, không nêu tập thể dục buổi sáng."
+  },
+  "vstep_s1_r2_q04": {
+    "expl": "Catch up về giấc ngủ nghĩa là ngủ thêm sau đó để bù phần thiếu."
+  },
+  "vstep_s1_r2_q05": {
+    "expl": "Các nhà nghiên cứu khuyên duy trì thói quen ổn định thay vì ngủ bù nhiều vào cuối tuần."
+  },
+  "vstep_s1_r2_q06": {
+    "expl": "Đoạn văn gợi ý để điện thoại xa giường."
+  },
+  "vstep_s1_r2_q07": {
+    "expl": "Reset ở đây nghĩa là điều chỉnh lại đồng hồ cơ thể."
+  },
+  "vstep_s1_r2_q08": {
+    "expl": "Tác giả nói trường học không thể tự giải quyết nhưng có thể hỗ trợ thói quen lành mạnh hơn."
+  },
+  "vstep_s1_r2_q09": {
+    "expl": "Câu cuối nhấn mạnh giấc ngủ hỗ trợ khả năng học tập."
+  },
+  "vstep_s1_r2_q10": {
+    "expl": "Đoạn văn khuyên dời giờ ngủ sớm hơn mười lăm phút sau vài đêm."
+  },
+  "vstep_set1_reading2": {
+    "title": "Vì sao thanh thiếu niên cần ngủ đều đặn",
+    "passage": "Nhiều thanh thiếu niên khó ngủ sớm dù biết sáng hôm sau phải đi học. Trong giai đoạn vị thành niên, tín hiệu buồn ngủ tự nhiên của cơ thể thường đến muộn hơn so với thời thơ ấu. Sự thay đổi này có thể khiến học sinh vẫn tỉnh lúc mười giờ nhưng mệt lúc bảy giờ. Tuy nhiên, sinh học chỉ là một phần vấn đề. Màn hình sáng, tin nhắn khuya, bài tập và lịch cuối tuần thất thường có thể đẩy giờ ngủ muộn hơn. Các nhà nghiên cứu giấc ngủ khuyên nên duy trì thói quen ổn định thay vì cố ngủ bù thật nhiều vào thứ Bảy. Học sinh có thể bắt đầu bằng cách dời giờ ngủ sớm hơn mười lăm phút sau vài đêm và để điện thoại xa giường. Ánh sáng buổi sáng cũng giúp điều chỉnh đồng hồ cơ thể. Trường học không thể tự giải quyết vấn đề, nhưng giờ bắt đầu muộn hơn, lượng bài tập hợp lý và bài học về giấc ngủ có thể hỗ trợ thói quen lành mạnh hơn. Ngủ đủ không phải phần thưởng sau khi làm xong mọi việc; đó là một điều kiện giúp việc học diễn ra."
+  },
+  "vstep_s1_r3_q01": {
+    "expl": "Các buổi gặp kết hợp hỗ trợ sửa chữa tình nguyện với việc học và trò chuyện."
+  },
+  "vstep_s1_r3_q02": {
+    "expl": "Tên gọi mô tả không gian xã hội thân thiện, không phải yêu cầu mua cà phê."
+  },
+  "vstep_s1_r3_q03": {
+    "expl": "Khách được khuyến khích ở cạnh món đồ của mình để học quy trình."
+  },
+  "vstep_s1_r3_q04": {
+    "expl": "Một số món cần linh kiện phải đặt sau."
+  },
+  "vstep_s1_r3_q05": {
+    "expl": "Lacks nghĩa là không có đủ."
+  },
+  "vstep_s1_r3_q06": {
+    "expl": "Việc ghi chép giúp ban tổ chức biết khu phố còn thiếu kỹ năng nào."
+  },
+  "vstep_s1_r3_q07": {
+    "expl": "Họ giải thích khi nào một món đồ không thể được sửa an toàn."
+  },
+  "vstep_s1_r3_q08": {
+    "expl": "Its chỉ dự án, mà ban tổ chức của dự án cho rằng giáo dục rất quan trọng."
+  },
+  "vstep_s1_r3_q09": {
+    "expl": "Kỹ năng học được có thể dùng để giúp hàng xóm hoặc dạy trẻ."
+  },
+  "vstep_s1_r3_q10": {
+    "expl": "Một số việc sửa cần linh kiện đặt sau nên không phải sửa chữa nào cũng xong ngay."
+  },
+  "vstep_set1_reading3": {
+    "title": "Quán sửa chữa và kỹ năng địa phương",
+    "passage": "Quán sửa chữa là một buổi gặp hằng tháng, nơi mọi người mang đồ gia dụng hỏng đến và cố sửa với sự giúp đỡ của tình nguyện viên. Tên gọi không có nghĩa khách phải mua cà phê; nó chỉ một nơi thân thiện kết hợp sửa chữa với trò chuyện. Tại một buổi gặp ở Northbridge, tình nguyện viên làm việc với đèn, máy nướng bánh, hai chiếc xe đạp và một cặp sách rách. Khách được khuyến khích ở bên cạnh món đồ để học quy trình. Một số đồ được sửa trong vài phút, trong khi những món khác cần linh kiện phải đặt sau. Ban tổ chức ghi lại kết quả không phải để cạnh tranh với doanh nghiệp chuyên nghiệp mà để biết khu phố còn thiếu kỹ năng nào. Họ cũng giải thích khi nào một món đồ không an toàn để sửa. Dự án giảm rác thải, nhưng ban tổ chức nói giáo dục cũng quan trọng không kém. Người học được cách thay phanh xe đạp có thể sau đó sửa ghế cho hàng xóm hoặc dạy trẻ dùng dụng cụ an toàn."
+  },
+  "vstep_s1_r4_q01": {
+    "expl": "Việc chặt rừng ngập mặn khiến bờ biển kém được bảo vệ trước sóng."
+  },
+  "vstep_s1_r4_q02": {
+    "expl": "Ngư dân giúp lập bản đồ những nơi nước vẫn chảy tự nhiên."
+  },
+  "vstep_s1_r4_q03": {
+    "expl": "Mở lại kênh là một phần của việc khôi phục dòng chảy tự nhiên ở bờ biển."
+  },
+  "vstep_s1_r4_q04": {
+    "expl": "Tolerate ở đây nghĩa là chịu đựng hoặc sống được trong điều kiện mặn khác nhau."
+  },
+  "vstep_s1_r4_q05": {
+    "expl": "Các loài khác nhau mọc ở độ cao và chịu độ mặn khác nhau."
+  },
+  "vstep_s1_r4_q06": {
+    "expl": "Bùn tích tụ quanh rễ và cua quay lại là dấu hiệu phục hồi ban đầu."
+  },
+  "vstep_s1_r4_q07": {
+    "expl": "Dân làng điều chỉnh các kênh sau mưa lớn."
+  },
+  "vstep_s1_r4_q08": {
+    "expl": "Its success nói đến thành công của dự án phục hồi."
+  },
+  "vstep_s1_r4_q09": {
+    "expl": "Câu cuối xác định thành công qua kết quả sinh thái và bảo vệ lâu dài."
+  },
+  "vstep_s1_r4_q10": {
+    "expl": "Đoạn văn nêu dấu hiệu tích cực nhưng nhấn mạnh việc theo dõi và điều chỉnh vẫn tiếp tục."
+  },
+  "vstep_set1_reading4": {
+    "title": "Phục hồi bờ biển có rừng ngập mặn",
+    "passage": "Trong nhiều thập kỷ, một ngôi làng ven biển chặt rừng ngập mặn để lấy chỗ cho ao và đường. Thay đổi này đem lại thu nhập ngắn hạn nhưng cũng khiến bờ biển dễ bị sóng tác động hơn. Trong một cơn bão lớn, nước tràn vào những ngôi nhà trước đây được rễ cây rối bảo vệ. Nhóm phục hồi không chỉ trồng hàng nghìn cây con rồi bỏ đó. Trước hết, ngư dân địa phương giúp lập bản đồ những nơi nước vẫn chảy tự nhiên. Sau đó, công nhân mở lại các kênh nhỏ và bảo vệ cây non khỏi động vật ăn cỏ. Nhóm chọn vài loài đước vì chúng mọc ở các độ cao khác nhau và chịu được độ mặn khác nhau. Sau hai năm, cây mới vẫn nhỏ nhưng bùn đã tích tụ quanh rễ và cua quay trở lại. Dự án chưa kết thúc: dân làng đo tỷ lệ sống, dọn nhựa và điều chỉnh kênh sau mưa lớn. Thành công không được đánh giá bằng một ngày trồng cây mà bằng khả năng bờ biển hỗ trợ động vật và bảo vệ nhà cửa theo thời gian."
+  },
+  "vstep_s2_r1_q01": {
+    "expl": "Đoạn văn giải thích lý do, cách thức thư viện cho mượn dụng cụ và những điều thư viện đã biết được."
+  },
+  "vstep_s2_r1_q02": {
+    "expl": "Dịch vụ giúp người chỉ thỉnh thoảng cần dụng cụ nhưng không muốn mua."
+  },
+  "vstep_s2_r1_q03": {
+    "expl": "Thành viên phải xem hướng dẫn an toàn ngắn trước khi mượn dụng cụ điện."
+  },
+  "vstep_s2_r1_q04": {
+    "expl": "Occasional nghĩa là thỉnh thoảng xảy ra, không thường xuyên."
+  },
+  "vstep_s2_r1_q05": {
+    "expl": "Thư viện kiểm tra mỗi món trước khi cho người mượn tiếp theo mượn."
+  },
+  "vstep_s2_r1_q06": {
+    "expl": "Ghi chép ban đầu cho thấy dụng cụ làm vườn được mượn nhiều nhất vào mùa xuân."
+  },
+  "vstep_s2_r1_q07": {
+    "expl": "Thủ thư nói người mượn được khuyến khích sửa đồ gia dụng thay vì thay mới."
+  },
+  "vstep_s2_r1_q08": {
+    "expl": "Câu hỏi của người mượn về dụng cụ lạ đã dẫn đến các buổi hướng dẫn thực hành."
+  },
+  "vstep_s2_r1_q09": {
+    "expl": "It chỉ dịch vụ cho mượn dụng cụ, dịch vụ đã dẫn đến các buổi hướng dẫn thực hành."
+  },
+  "vstep_s2_r1_q10": {
+    "expl": "Câu cuối cho biết thư viện sẽ khảo sát người dùng trước."
+  },
+  "vstep_set2_reading1": {
+    "title": "Thư viện cho mượn dụng cụ",
+    "passage": "Một thư viện công cộng ở Westford bắt đầu cho mượn dụng cụ bên cạnh sách. Bộ dụng cụ gồm máy khoan, máy may, bơm xe đạp và vài bộ dụng cụ làm vườn. Chương trình dành cho cư dân cần một món đồ cho công việc thỉnh thoảng nhưng không muốn mua thứ phần lớn thời gian sẽ nằm trong tủ. Trước khi mượn dụng cụ điện, thành viên xem một buổi hướng dẫn an toàn ngắn. Mỗi món có thời hạn trả và thư viện kiểm tra trước khi cho người tiếp theo mượn. Ghi chép ban đầu cho thấy dụng cụ làm vườn được mượn nhiều nhất vào mùa xuân, còn máy may được mượn quanh năm. Thủ thư nói dịch vụ khuyến khích mọi người sửa thay vì thay mới đồ gia dụng. Dịch vụ cũng dẫn đến các buổi hướng dẫn thực hành vì người mượn thường hỏi cách dùng dụng cụ lạ. Thư viện dự định khảo sát người dùng trước khi mở rộng bộ sưu tập."
+  },
+  "vstep_s2_r2_q01": {
+    "expl": "Thay đổi bắt đầu sau khi nhà ăn phát hiện nhiều thức ăn bị bỏ đi."
+  },
+  "vstep_s2_r2_q02": {
+    "expl": "Nhân viên cân thức ăn thừa thay vì ước lượng."
+  },
+  "vstep_s2_r2_q03": {
+    "expl": "Ghi chép liên hệ lượng rác cao nhất với những ngày có hai món phụ tương tự."
+  },
+  "vstep_s2_r2_q04": {
+    "expl": "Rotating choice là lựa chọn thay đổi luân phiên thường xuyên."
+  },
+  "vstep_s2_r2_q05": {
+    "expl": "Sinh viên được mời bắt đầu với khẩu phần nhỏ và lấy thêm nếu cần."
+  },
+  "vstep_s2_r2_q06": {
+    "expl": "Một số sinh viên hiểu lời mời là cho phép lấy quá nhiều."
+  },
+  "vstep_s2_r2_q07": {
+    "expl": "Lượng thức ăn bị bỏ đi giảm sau hai điều chỉnh đó."
+  },
+  "vstep_s2_r2_q08": {
+    "expl": "Thực phẩm dư an toàn được đưa cho tủ lạnh cộng đồng."
+  },
+  "vstep_s2_r2_q09": {
+    "expl": "Its results chỉ kết quả của một ý tưởng hoặc biện pháp."
+  },
+  "vstep_s2_r2_q10": {
+    "expl": "Quản lý kết luận cần đo lường để kiểm tra ý tưởng có hiệu quả hay không."
+  },
+  "vstep_set2_reading2": {
+    "title": "Nhà bếp trong trường giảm lãng phí thực phẩm",
+    "passage": "Một nhà ăn đại học thay đổi hệ thống bếp sau khi phát hiện mỗi tối một lượng lớn cơm và rau đã nấu bị bỏ đi. Trước hết, quản lý yêu cầu nhân viên cân thức ăn thừa trong hai tuần thay vì đoán lượng lãng phí. Ghi chép cho thấy rác thực phẩm cao nhất vào những ngày thực đơn có hai món phụ tương tự nhau. Vì vậy, nhà ăn thay một món bằng lựa chọn nhỏ luân phiên và đặt biển gần hàng lấy thức ăn để giải thích thay đổi. Sinh viên cũng được mời lấy khẩu phần nhỏ hơn và lấy thêm nếu vẫn đói. Việc này không giảm rác ngay vì ban đầu một số sinh viên hiểu lời mời là được lấy quá nhiều. Sau khi nhân viên chỉnh cách viết và đo khẩu phần cẩn thận hơn, lượng thức ăn bỏ đi giảm. Thực phẩm không thể phục vụ an toàn được thu gom cho nghiên cứu thức ăn chăn nuôi, còn phần dư an toàn được đưa cho tủ lạnh cộng đồng. Quản lý nói đo lường quan trọng vì một ý tưởng hấp dẫn có thể thất bại nếu không kiểm tra kết quả."
+  },
+  "vstep_s2_r3_q01": {
+    "expl": "Dự án nhằm nhận ra những thay đổi cần nghiên cứu thêm, không phải lập danh sách đầy đủ."
+  },
+  "vstep_s2_r3_q02": {
+    "expl": "Tuyến cố định và cùng thời điểm hằng tháng giúp so sánh quan sát tốt hơn."
+  },
+  "vstep_s2_r3_q03": {
+    "expl": "Họ ghi chú thời tiết, tiếng ồn và số người ở gần."
+  },
+  "vstep_s2_r3_q04": {
+    "expl": "Sinh viên phát hiện các công viên đó có cây già hơn và nhiều loại cây bụi hơn."
+  },
+  "vstep_s2_r3_q05": {
+    "expl": "Habitat nghĩa là môi trường sống của động vật."
+  },
+  "vstep_s2_r3_q06": {
+    "expl": "Đoạn văn nói rõ kết quả không chứng minh giao thông có lợi cho chim ở mọi nơi."
+  },
+  "vstep_s2_r3_q07": {
+    "expl": "Ảnh được yêu cầu khi tình nguyện viên không chắc về việc nhận diện."
+  },
+  "vstep_s2_r3_q08": {
+    "expl": "They chỉ các sinh viên đã phát hiện đặc điểm của công viên."
+  },
+  "vstep_s2_r3_q09": {
+    "expl": "Các nhà nghiên cứu hy vọng quan sát sẽ định hướng kế hoạch trồng cây."
+  },
+  "vstep_s2_r3_q10": {
+    "expl": "Các nhà nghiên cứu cảnh báo một mùa không thể giải thích xu hướng dài hạn."
+  },
+  "vstep_set2_reading3": {
+    "title": "Sinh viên theo dõi chim trong thành phố",
+    "passage": "Một nhóm sinh viên sinh học lập dự án theo dõi chim ở vài công viên thành phố. Mục tiêu của họ không phải lập danh sách đầy đủ mọi loài chim trong vùng mà là nhận ra những thay đổi đáng được nghiên cứu thêm. Tình nguyện viên chọn một tuyến cố định và đi vào cùng thời điểm mỗi tháng. Họ ghi lại những con chim có thể nhận diện chắc chắn và ghi chú thời tiết, tiếng ồn cùng số người ở gần. Ban đầu sinh viên ngạc nhiên vì công viên cạnh đường đông đôi khi có nhiều loài hơn nơi yên tĩnh. Sau đó họ phát hiện các công viên này có cây già hơn và nhiều loại cây bụi hơn. Kết quả không chứng minh giao thông có lợi cho chim; nó gợi ý môi trường sống có thể quan trọng hơn tiếng ồn ở một số nơi. Để hồ sơ tốt hơn, nhóm tổ chức buổi nhận diện và chỉ yêu cầu tình nguyện viên tải ảnh khi không chắc. Các nhà nghiên cứu hy vọng quan sát sẽ định hướng kế hoạch trồng cây nhưng cảnh báo dữ liệu một mùa không thể giải thích xu hướng dài hạn."
+  },
+  "vstep_s2_r4_q01": {
+    "expl": "Đoạn văn mô tả những thay đổi giúp không gian có cả cộng đồng và sự kiểm soát yên tĩnh."
+  },
+  "vstep_s2_r4_q02": {
+    "expl": "Nhiều người làm việc tại nhà muốn có ranh giới rõ giữa công việc và đời sống riêng."
+  },
+  "vstep_s2_r4_q03": {
+    "expl": "Một số thành viên cần internet ổn định hoặc bàn để gọi video thỉnh thoảng."
+  },
+  "vstep_s2_r4_q04": {
+    "expl": "Suit ở đây nghĩa là phù hợp với."
+  },
+  "vstep_s2_r4_q05": {
+    "expl": "Quản lý đưa ra giờ yên tĩnh buổi sáng cùng các thay đổi khác."
+  },
+  "vstep_s2_r4_q06": {
+    "expl": "Buồng điện thoại được đặt gần lối vào."
+  },
+  "vstep_s2_r4_q07": {
+    "expl": "Thay đổi giúp thành viên dễ chọn giữa trò chuyện và làm việc tập trung hơn."
+  },
+  "vstep_s2_r4_q08": {
+    "expl": "Its value chỉ giá trị của một không gian làm việc chung thành công."
+  },
+  "vstep_s2_r4_q09": {
+    "expl": "Thành viên chia sẻ kinh nghiệm trong bữa trưa hằng tuần."
+  },
+  "vstep_s2_r4_q10": {
+    "expl": "Câu cuối nói giá trị nằm ở việc giúp mọi người thay đổi cách làm việc trong ngày."
+  },
+  "vstep_set2_reading4": {
+    "title": "Không gian làm việc chung và sự tập trung",
+    "passage": "Không gian làm việc chung thường được quảng cáo là nơi những người làm việc độc lập trao đổi ý tưởng. Tuy nhiên, khảo sát thành viên ở ba không gian nhỏ cho thấy trò chuyện không phải lý do duy nhất mọi người tham gia. Nhiều thành viên làm việc tại nhà và muốn có ranh giới rõ giữa công việc và đời sống riêng. Những người khác cần kết nối internet ổn định hoặc bàn làm việc để thỉnh thoảng gọi video. Quản lý nhận ra phòng mở không phù hợp với mọi nhiệm vụ. Họ đưa ra giờ yên tĩnh buổi sáng, đặt buồng điện thoại gần lối vào và thêm phòng nhỏ cho các cuộc họp trực tuyến. Những thay đổi này không xóa bỏ trò chuyện mà giúp thành viên dễ chọn môi trường mình cần hơn. Thành viên vẫn chia sẻ kinh nghiệm trong bữa trưa hằng tuần và tập trung trong giờ yên tĩnh. Khảo sát gợi ý không gian chung thành công cần cả cộng đồng lẫn quyền kiểm soát. Giá trị không chỉ nằm ở việc đưa mọi người vào một tòa nhà mà ở khả năng giúp họ thay đổi cách làm việc trong ngày."
+  },
+  "vstep_s3_r1_q01": {
+    "expl": "Đoạn văn giải thích các yếu tố về hiệu quả, điều kiện địa phương và bảo dưỡng khi chọn bộ lọc."
+  },
+  "vstep_s3_r1_q02": {
+    "expl": "Công suất không cho biết bộ lọc loại bỏ được những chất nào."
+  },
+  "vstep_s3_r1_q03": {
+    "expl": "Gia đình nên biết nước của mình có gì trước khi chọn bộ lọc."
+  },
+  "vstep_s3_r1_q04": {
+    "expl": "Verified performance là hiệu quả đã được kiểm tra và có bằng chứng hỗ trợ."
+  },
+  "vstep_s3_r1_q05": {
+    "expl": "Lõi không thay đúng lịch có thể làm bộ lọc kém hiệu quả."
+  },
+  "vstep_s3_r1_q06": {
+    "expl": "Một số sản phẩm có cảm biến báo khi cần thay lõi."
+  },
+  "vstep_s3_r1_q07": {
+    "expl": "Chuyên gia khuyên người tiêu dùng đọc hướng dẫn sản phẩm."
+  },
+  "vstep_s3_r1_q08": {
+    "expl": "They chỉ các chuyên gia, những người chỉ ra rằng nước đóng chai không mặc nhiên an toàn hơn."
+  },
+  "vstep_s3_r1_q09": {
+    "expl": "Đoạn văn nói rõ nước đóng chai không mặc nhiên an toàn hơn."
+  },
+  "vstep_s3_r1_q10": {
+    "expl": "Câu cuối nêu điều kiện nước, hiệu quả và việc bảo dưỡng, không nêu màu bếp."
+  },
+  "vstep_set3_reading1": {
+    "title": "Chọn bộ lọc nước gia đình",
+    "passage": "Khi mua bộ lọc nước, một gia đình có thể chú ý đến số lít mà sản phẩm xử lý được. Con số đó hữu ích nhưng không trả lời mọi câu hỏi quan trọng. Các bộ lọc khác nhau loại bỏ các chất khác nhau, và bộ lọc được thiết kế để xử lý mùi vị khó chịu có thể không loại bỏ một hóa chất cụ thể. Gia đình trước hết nên biết nước của mình có gì rồi kiểm tra những tuyên bố nào của bộ lọc đã được thử nghiệm để hỗ trợ. Bảo dưỡng cũng quan trọng không kém. Lõi không được thay đúng lịch có thể kém hiệu quả, còn bộ lọc bị bỏ bê thậm chí ảnh hưởng chất lượng nước. Một số sản phẩm có cảm biến báo khi cần thay lõi, số khác dựa vào lịch nhắc. Chuyên gia khuyên người tiêu dùng đọc hướng dẫn thay vì cho rằng giá cao đảm bảo bảo vệ tốt hơn. Họ cũng chỉ ra nước đóng chai không mặc nhiên an toàn hơn. Lựa chọn tốt nhất phụ thuộc vào điều kiện nước địa phương, hiệu quả đã được kiểm chứng và mức sẵn sàng bảo dưỡng thiết bị của gia đình."
+  },
+  "vstep_s3_r2_q01": {
+    "expl": "Đoạn văn mô tả chương trình giúp việc tham quan bảo tàng dễ dự đoán và dễ tiếp cận hơn."
+  },
+  "vstep_s3_r2_q02": {
+    "expl": "Bảo tàng hạ ánh sáng và giới hạn số khách vào một số buổi sáng."
+  },
+  "vstep_s3_r2_q03": {
+    "expl": "Bản đồ cho biết những nơi khách có thể nghỉ."
+  },
+  "vstep_s3_r2_q04": {
+    "expl": "Textures nghĩa là đặc điểm hoặc cảm giác của bề mặt."
+  },
+  "vstep_s3_r2_q05": {
+    "expl": "Khách có thể chọn đeo tai nghe."
+  },
+  "vstep_s3_r2_q06": {
+    "expl": "Các hiện vật vẫn được trưng bày; chương trình thay đổi điều kiện xung quanh."
+  },
+  "vstep_s3_r2_q07": {
+    "expl": "Giữ giờ cũ cho thấy chương trình yên tĩnh là lựa chọn bổ sung, không phải trải nghiệm duy nhất."
+  },
+  "vstep_s3_r2_q08": {
+    "expl": "Its collections nghĩa là các bộ sưu tập của bảo tàng."
+  },
+  "vstep_s3_r2_q09": {
+    "expl": "Phản hồi cho thấy thông tin trước về chuyến tham quan đặc biệt có giá trị."
+  },
+  "vstep_s3_r2_q10": {
+    "expl": "Bảo tàng sẽ quyết định có biến chương trình thành hoạt động thường xuyên hay không."
+  },
+  "vstep_set3_reading2": {
+    "title": "Giúp bảo tàng dễ trải nghiệm hơn",
+    "passage": "Các bảo tàng truyền thống thường mong khách đọc nhãn, nhìn hiện vật và đi yên lặng từ phòng này sang phòng khác. Một bảo tàng ở Lakeside đang thử cách tiếp cận rộng hơn cho những khách thấy không gian đông đúc hoặc quá nhiều hình ảnh khó chịu. Vào một số buổi sáng, bảo tàng hạ ánh sáng, giới hạn số khách và phát bản đồ in cho biết nơi có thể nghỉ. Nhân viên cũng mô tả ngắn những âm thanh và kết cấu quan trọng, còn khách có thể chọn đeo tai nghe. Chương trình không phải một triển lãm riêng; các hiện vật vẫn được trưng bày như cũ. Một số khách không gặp khó khăn về giác quan hoan nghênh không khí yên tĩnh hơn, nhưng bảo tàng vẫn giữ giờ mở cửa ban đầu. Ban tổ chức nói khả năng tiếp cận không có nghĩa tạo một trải nghiệm hoàn hảo cho mọi người. Thay vào đó, bảo tàng có thể cung cấp nhiều cách tiếp cận bộ sưu tập. Phiếu phản hồi cho thấy khách đặc biệt coi trọng việc biết trước điều gì sẽ chờ đợi mình. Bảo tàng sẽ dùng phản hồi để quyết định có biến chương trình thành hoạt động thường xuyên không."
+  },
+  "vstep_s3_r3_q01": {
+    "expl": "Thử nghiệm thu thập bằng chứng trước khi đưa ra quyết định giao thông rộng hơn."
+  },
+  "vstep_s3_r3_q02": {
+    "expl": "Rào thấp ngăn làn xe đạp với ô tô."
+  },
+  "vstep_s3_r3_q03": {
+    "expl": "Khu bốc dỡ được chuyển sang đường bên."
+  },
+  "vstep_s3_r3_q04": {
+    "expl": "Convenient nghĩa là thuận tiện, dễ sử dụng."
+  },
+  "vstep_s3_r3_q05": {
+    "expl": "Hội đồng đếm người đi bộ, xe đạp, ô tô và lượt giao hàng."
+  },
+  "vstep_s3_r3_q06": {
+    "expl": "Quan sát ban đầu cho thấy nhiều người đi xe đạp hơn vào giờ đông."
+  },
+  "vstep_s3_r3_q07": {
+    "expl": "Tài xế cần lên kế hoạch nhưng chưa báo hành trình dài hơn."
+  },
+  "vstep_s3_r3_q08": {
+    "expl": "It chỉ thử nghiệm, thứ được thực hiện để cung cấp bằng chứng."
+  },
+  "vstep_s3_r3_q09": {
+    "expl": "Lối đi cho xe khẩn cấp là một trong các yếu tố được xem xét."
+  },
+  "vstep_s3_r3_q10": {
+    "expl": "Hội đồng chưa quyết định có giữ làn đường lâu dài hay không."
+  },
+  "vstep_set3_reading3": {
+    "title": "Thử nghiệm làn đường xe đạp được bảo vệ",
+    "passage": "Hội đồng thành phố lắp một làn xe đạp được bảo vệ trên con đường nối hai khu dân cư với chợ và ga tàu. Làn đường được ngăn với ô tô bằng rào thấp, còn khu bốc dỡ được chuyển sang đường bên. Trước khi thử nghiệm, một số chủ cửa hàng lo khách sẽ thấy con đường kém thuận tiện hơn. Vì vậy, hội đồng đếm người đi bộ, xe đạp, ô tô và lượt giao hàng trong bốn tuần trước thay đổi và sẽ đếm lại sau sáu tháng. Quan sát ban đầu cho thấy nhiều người đi xe đạp hơn vào giờ đông, trong khi giao thông ô tô chỉ thay đổi nhẹ. Tài xế giao hàng nói khu đường bên cần lên kế hoạch nhưng không báo hành trình dài hơn. Hội đồng chưa quyết định có giữ làn đường lâu dài không. Họ sẽ xem xét hồ sơ an toàn, thời gian đi lại, phản hồi doanh nghiệp và lối đi cho xe khẩn cấp. Quan chức nhấn mạnh một con đường không thể giải quyết mọi vấn đề giao thông; thử nghiệm nhằm cung cấp bằng chứng cho thảo luận rộng hơn."
+  },
+  "vstep_s3_r4_q01": {
+    "expl": "Họ so sánh phố có cây trưởng thành với phố gần đó ít bóng râm."
+  },
+  "vstep_s3_r4_q02": {
+    "expl": "Họ đo nhiệt độ không khí và ghi lại vật liệu phủ mặt đất."
+  },
+  "vstep_s3_r4_q03": {
+    "expl": "Các tòa nhà cao chặn phần lớn nắng chiều ở con phố hẹp."
+  },
+  "vstep_s3_r4_q04": {
+    "expl": "Mature trees là những cây đã trưởng thành."
+  },
+  "vstep_s3_r4_q05": {
+    "expl": "Cây tạo khác biệt lớn hơn ở khu vực rộng thoáng tiếp xúc với nắng trực tiếp."
+  },
+  "vstep_s3_r4_q06": {
+    "expl": "Bóng cây bảo vệ mặt đường và tường gần đó khỏi nắng trực tiếp."
+  },
+  "vstep_s3_r4_q07": {
+    "expl": "Một số rễ có thể làm hỏng ống ngầm nên cần chọn loài cẩn thận."
+  },
+  "vstep_s3_r4_q08": {
+    "expl": "They chỉ các nhà nghiên cứu, những người khuyên kết hợp nhiều biện pháp."
+  },
+  "vstep_s3_r4_q09": {
+    "expl": "Bề mặt phản chiếu là một biện pháp bổ sung được khuyến nghị."
+  },
+  "vstep_s3_r4_q10": {
+    "expl": "Câu cuối nói một loài cây không nhất thiết hiệu quả như nhau ở mọi nơi."
+  },
+  "vstep_set3_reading4": {
+    "title": "Cây xanh và nhiệt độ đô thị",
+    "passage": "Các nhà nghiên cứu về nhiệt độ mùa hè ở Riverton so sánh những con phố có cây trưởng thành với các phố gần đó ít bóng râm. Họ đo nhiệt độ không khí tại vài điểm trong ngày và ghi lại vật liệu phủ mặt đất. Các phố có hàng cây nhìn chung mát hơn nhưng mức chênh lệch không giống nhau ở mọi nơi. Một con phố hẹp có các tòa nhà cao nhận ít nắng chiều và vẫn khá mát dù có ít cây. Ở khu vực rộng và thoáng, cây tạo khác biệt lớn hơn vì bóng cây bảo vệ mặt đường và tường gần đó khỏi ánh nắng trực tiếp. Các nhà nghiên cứu cảnh báo trồng cây không phải giải pháp duy nhất. Cần chọn loài cẩn thận vì một số rễ có thể làm hỏng ống ngầm, còn cây non cần nước trong những năm đầu. Họ khuyên kết hợp cây với bề mặt phản chiếu, trạm xe buýt có bóng và thiết kế tòa nhà cho phép không khí lưu thông. Nghiên cứu đưa ra hướng dẫn hữu ích nhưng không khẳng định một loài cây sẽ hiệu quả như nhau ở mọi khu phố."
+  }
+}

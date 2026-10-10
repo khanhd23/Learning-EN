@@ -112,6 +112,54 @@
       ]
     },
     {
+      "id": "vstep_practice_1",
+      "label": "VSTEP-style Reading — Practice 1",
+      "family": "VSTEP",
+      "description": "Bài luyện đọc nguyên bản theo cấu trúc VSTEP: 4 bài đọc, 40 câu trong 60 phút. Không phải đề VSTEP chính thức.",
+      "questionCount": 40,
+      "timeLimitMinutes": 60,
+      "optionsPerQuestion": 4,
+      "source": "https://vstep.vnu.edu.vn/files/uploads/2020/12/Dinh-dang-VSTEP.3-5.pdf (format reference only)",
+      "sections": [
+        {"id": "reading1", "label": "Reading 1", "itemType": "group", "count": 10, "bank": "vstep", "groupSet": "1", "qtype": ["vstep_reading"]},
+        {"id": "reading2", "label": "Reading 2", "itemType": "group", "count": 10, "bank": "vstep", "groupSet": "1", "qtype": ["vstep_reading"]},
+        {"id": "reading3", "label": "Reading 3", "itemType": "group", "count": 10, "bank": "vstep", "groupSet": "1", "qtype": ["vstep_reading"]},
+        {"id": "reading4", "label": "Reading 4", "itemType": "group", "count": 10, "bank": "vstep", "groupSet": "1", "qtype": ["vstep_reading"]}
+      ]
+    },
+    {
+      "id": "vstep_practice_2",
+      "label": "VSTEP-style Reading — Practice 2",
+      "family": "VSTEP",
+      "description": "Bài luyện đọc nguyên bản theo cấu trúc VSTEP: 4 bài đọc, 40 câu trong 60 phút. Không phải đề VSTEP chính thức.",
+      "questionCount": 40,
+      "timeLimitMinutes": 60,
+      "optionsPerQuestion": 4,
+      "source": "https://vstep.vnu.edu.vn/files/uploads/2020/12/Dinh-dang-VSTEP.3-5.pdf (format reference only)",
+      "sections": [
+        {"id": "reading1", "label": "Reading 1", "itemType": "group", "count": 10, "bank": "vstep", "groupSet": "2", "qtype": ["vstep_reading"]},
+        {"id": "reading2", "label": "Reading 2", "itemType": "group", "count": 10, "bank": "vstep", "groupSet": "2", "qtype": ["vstep_reading"]},
+        {"id": "reading3", "label": "Reading 3", "itemType": "group", "count": 10, "bank": "vstep", "groupSet": "2", "qtype": ["vstep_reading"]},
+        {"id": "reading4", "label": "Reading 4", "itemType": "group", "count": 10, "bank": "vstep", "groupSet": "2", "qtype": ["vstep_reading"]}
+      ]
+    },
+    {
+      "id": "vstep_practice_3",
+      "label": "VSTEP-style Reading — Practice 3",
+      "family": "VSTEP",
+      "description": "Bài luyện đọc nguyên bản theo cấu trúc VSTEP: 4 bài đọc, 40 câu trong 60 phút. Không phải đề VSTEP chính thức.",
+      "questionCount": 40,
+      "timeLimitMinutes": 60,
+      "optionsPerQuestion": 4,
+      "source": "https://vstep.vnu.edu.vn/files/uploads/2020/12/Dinh-dang-VSTEP.3-5.pdf (format reference only)",
+      "sections": [
+        {"id": "reading1", "label": "Reading 1", "itemType": "group", "count": 10, "bank": "vstep", "groupSet": "3", "qtype": ["vstep_reading"]},
+        {"id": "reading2", "label": "Reading 2", "itemType": "group", "count": 10, "bank": "vstep", "groupSet": "3", "qtype": ["vstep_reading"]},
+        {"id": "reading3", "label": "Reading 3", "itemType": "group", "count": 10, "bank": "vstep", "groupSet": "3", "qtype": ["vstep_reading"]},
+        {"id": "reading4", "label": "Reading 4", "itemType": "group", "count": 10, "bank": "vstep", "groupSet": "3", "qtype": ["vstep_reading"]}
+      ]
+    },
+    {
       "id": "toeic_p1_practice_1",
       "label": "TOEIC-style Listening Part 1 — Practice 1",
       "family": "TOEIC-style practice",
