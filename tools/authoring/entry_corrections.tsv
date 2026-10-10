@@ -542,7 +542,7 @@ fridge|home_furniture
 alarm|home_furniture,daily_routine
 traffic|transport,city_directions
 on_time|time_dates
-in_a_hurry|unsorted||4
+in_a_hurry|idioms_chunks||4
 get_along_with|friends_relationships
 look_after|family,phrasal_verbs|ˌlʊk ˈæftər|4
 run_out_of|shopping,phrasal_verbs|ˌrʌn ˈaʊt əv
@@ -881,31 +881,31 @@ battery|internet_social
 app|it_technology
 algorithm|internet_social
 no_worries|idioms_chunks
-my_bad|unsorted||4
+my_bad|idioms_chunks||4
 fair_enough|idioms_chunks
-it_s_up_to_you|unsorted||4
+it_s_up_to_you|idioms_chunks||4
 i_m_down|idioms_chunks
 hang_on|phrasal_verbs|ˌhæŋ ˈɑːn|4
-no_way|unsorted||4
+no_way|idioms_chunks||4
 for_real|idioms_chunks
-same_here|unsorted||4
+same_here|idioms_chunks||4
 what_s_up|idioms_chunks
-take_it_easy|unsorted||4
+take_it_easy|idioms_chunks||4
 good_luck|idioms_chunks
-you_got_this|unsorted||4
-long_time_no_see|unsorted||4
+you_got_this|idioms_chunks||4
+long_time_no_see|idioms_chunks||4
 catch_up|education,phrasal_verbs|ˌkætʃ ˈʌp
 my_treat|idioms_chunks
-i_m_in|unsorted||4
+i_m_in|idioms_chunks||4
 that_makes_sense|idioms_chunks
-i_m_on_my_way|unsorted||4
-never_mind|unsorted||4
+i_m_on_my_way|idioms_chunks||4
+never_mind|idioms_chunks||4
 how_come|idioms_chunks
-by_the_way|unsorted||4
-i_m_kidding|unsorted||4
+by_the_way|idioms_chunks||4
+i_m_kidding|idioms_chunks||4
 sounds_good|idioms_chunks
-cheers|unsorted||4
-hit_me_up|unsorted
+cheers|idioms_chunks||4
+hit_me_up|idioms_chunks
 low_key|describing_things
 awesome|describing_things,feelings_personality
 chill|feelings_personality
@@ -1200,7 +1200,7 @@ among|function_words
 than|linking_words
 then|linking_words,time_dates
 its|function_words
-it_s|unsorted||4
+it_s|function_words||4
 especially|linking_words
 specially|describing_things|ˈspeʃəli
 however|linking_words

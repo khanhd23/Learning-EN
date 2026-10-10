@@ -2,13 +2,10 @@
 
 ## Scope
 
-Reviewed the 43 Level 3 entries that had real audit failures in the existing dictionary pack. Added owner-written English definitions, Vietnamese glosses and natural example sentences in `tools/authoring/senses_editor_batch128.tsv`. Reassigned the affected catch-all entries to controlled topics in `entry_corrections.tsv`:
-
-- `get_along_with` → `friends_relationships`
-- everyday expressions → `idioms_chunks`
-- `chill` → `feelings_personality`
-- `somewhat` and `bloody` → `describing_things`
-- `damn` → `feelings_personality`
+Reviewed the 43 Level 3 entries that had real audit failures in the existing dictionary pack.
+Added owner-written English definitions, Vietnamese glosses and natural example sentences in
+`tools/authoring/senses_editor_batch128.tsv`. Reassigned affected catch-all entries to
+controlled topics in `entry_corrections.tsv`.
 
 No audit or validation rule was changed. The editor batch was checked before regeneration.
 
@@ -23,7 +20,11 @@ No audit or validation rule was changed. The editor batch was checked before reg
 | Validate errors | 0 | 0 |
 | Validate warnings | 244 | 242 |
 
-All remaining audit errors are in 1,069 bronze Level 4–5 entries, none of which has `sourceLists`; they remain search-only long-tail entries under the roadmap's B4 rule. They were not deleted or forced into lessons. The remaining validate warnings are gloss-length heuristics, not invalid translations; they need individual language review rather than mechanical shortening.
+At the time of this report, 1,026 of the remaining bronze rows came from the `tagged-master`
+source archive and 43 were internal entries later handled by cleanup batch 129. The archive
+rows remain search-only long-tail entries under the roadmap's B4 rule; they were not deleted or
+forced into lessons. The remaining validate warnings are gloss-length heuristics, not invalid
+translations; they need individual language review rather than mechanical shortening.
 
 ## Verification
 
