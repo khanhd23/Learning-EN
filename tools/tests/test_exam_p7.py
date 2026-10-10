@@ -34,6 +34,15 @@ class OriginalPart7BankTest(unittest.TestCase):
         self.assertEqual(sum(len(group["items"]) for group in build_toeic_bank.read_authoring_p7()), sum(len(group["items"]) for group in data["groups"]))
         self.assertTrue(all(group["section"] == "p7" for group in data["groups"]))
 
+    def test_full_practice_section_can_select_54_questions_by_group(self):
+        data = json.loads((ROOT / "content/en/exams/toeic_p7.json").read_text(encoding="utf-8"))
+        sizes = [len(group["items"]) for group in data["groups"]]
+        reachable = {0}
+        for size in sizes:
+            reachable |= {total + size for total in tuple(reachable) if total + size <= 54}
+        self.assertIn(54, reachable)
+        self.assertGreaterEqual(sum(sizes), 54)
+
 
 if __name__ == "__main__":
     unittest.main()

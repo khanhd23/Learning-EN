@@ -1,0 +1,82 @@
+[
+  {
+    "id": "p7_original_single_016",
+    "section": "p7",
+    "kind": "single",
+    "level": 3,
+    "source": "original:exam-expansion-2026",
+    "title": "Community room reservation",
+    "title_vi": "Đặt phòng cộng đồng",
+    "passage": "COMMUNITY CENTER UPDATE\n\nThe Oak Street Community Center has changed the reservation procedure for its meeting rooms. Groups requesting a room on a Saturday must submit the online form at least ten days in advance. Requests received later may be accepted if a room is still free, but confirmation is not guaranteed. The large hall will be closed on July 6 for floor repairs. Groups that reserved it for that date may move their event to Room 3 without paying an additional fee. The center's reception desk can answer questions about room capacity from 9:00 a.m. to 5:00 p.m. on weekdays.",
+    "passage_vi": "CẬP NHẬT CỦA TRUNG TÂM CỘNG ĐỒNG\n\nTrung tâm Cộng đồng Oak Street đã thay đổi quy trình đặt phòng họp. Nhóm muốn đặt phòng vào thứ Bảy phải gửi biểu mẫu trực tuyến trước ít nhất mười ngày. Yêu cầu gửi muộn hơn có thể được chấp nhận nếu còn phòng trống, nhưng không được đảm bảo. Hội trường lớn sẽ đóng cửa ngày 6 tháng 7 để sửa sàn. Nhóm đã đặt phòng vào ngày đó có thể chuyển sự kiện sang Phòng 3 mà không phải trả thêm phí. Quầy lễ tân của trung tâm có thể trả lời câu hỏi về sức chứa phòng từ 9:00 đến 17:00 các ngày trong tuần.",
+    "items": [
+      {"id": "p7_original_single_016_q1", "stem": "What must a group do to request a Saturday room?", "opts": ["Call the reception desk on Saturday", "Submit an online form ten days in advance", "Pay an additional fee for Room 3", "Visit the center after 5:00 p.m."], "ans": 1, "expl": "Saturday requests must be submitted through the online form at least ten days in advance.", "vi_expl": "Yêu cầu phòng thứ Bảy phải được gửi qua biểu mẫu trực tuyến trước ít nhất mười ngày."},
+      {"id": "p7_original_single_016_q2", "stem": "Why will the large hall be closed on July 6?", "opts": ["Its capacity is being checked.", "The center is changing its reservation system.", "The floor is being repaired.", "A group has canceled its event."], "ans": 2, "expl": "The notice says that the large hall will close for floor repairs.", "vi_expl": "Thông báo nói hội trường lớn đóng cửa để sửa sàn."},
+      {"id": "p7_original_single_016_q3", "stem": "What can groups with a July 6 reservation do?", "opts": ["Use Room 3 without an extra fee", "Submit a second form ten days later", "Ask for a weekend refund only", "Use the large hall after 5:00 p.m."], "ans": 0, "expl": "Groups reserved for July 6 may move their event to Room 3 without an additional fee.", "vi_expl": "Nhóm đã đặt ngày 6 tháng 7 có thể chuyển sự kiện sang Phòng 3 mà không mất thêm phí."}
+    ]
+  },
+  {
+    "id": "p7_original_double_017",
+    "section": "p7",
+    "kind": "double",
+    "level": 4,
+    "source": "original:exam-expansion-2026",
+    "title": "Rail trip change",
+    "title_vi": "Thay đổi chuyến tàu",
+    "passage": "TRAVEL CONFIRMATION\nPassenger: Nia Cole\nRoute: Westport to Glenhaven\nDeparture: 6:40 a.m., Monday\nSeat: 14A\n\nSERVICE MESSAGE\nThe 6:40 a.m. service will depart from platform 4 instead of platform 2 on Monday because maintenance work is taking place near the east end of the station. The departure time is unchanged. Passengers who need assistance with large luggage should arrive at least twenty minutes early and speak to the platform attendant. The café beside platform 4 will open at 6:00, but the waiting room near platform 2 will remain closed until the work is complete.",
+    "passage_vi": "XÁC NHẬN CHUYẾN ĐI\nHành khách: Nia Cole\nTuyến: Westport đến Glenhaven\nKhởi hành: 6:40 sáng, thứ Hai\nGhế: 14A\n\nTHÔNG BÁO DỊCH VỤ\nChuyến 6:40 sáng sẽ khởi hành từ sân ga 4 thay vì sân ga 2 vào thứ Hai vì công việc bảo trì diễn ra gần đầu phía đông của nhà ga. Giờ khởi hành không đổi. Hành khách cần hỗ trợ với hành lý lớn nên đến sớm ít nhất hai mươi phút và nói với nhân viên sân ga. Quán cà phê cạnh sân ga 4 mở lúc 6:00, nhưng phòng chờ gần sân ga 2 vẫn đóng cho đến khi công việc hoàn tất.",
+    "items": [
+      {"id": "p7_original_double_017_q1", "stem": "What is indicated on the travel confirmation?", "opts": ["Nia will depart on Tuesday.", "Nia has seat 14A.", "Nia will use platform 2.", "Nia is traveling to Westport from Glenhaven."], "ans": 1, "expl": "The confirmation lists seat 14A for Nia Cole.", "vi_expl": "Xác nhận chuyến đi ghi Nia Cole ngồi ghế 14A."},
+      {"id": "p7_original_double_017_q2", "stem": "Why will the train use a different platform?", "opts": ["The departure time has changed.", "The café is being renovated.", "Maintenance work is under way.", "The waiting room is too small."], "ans": 2, "expl": "The service message says maintenance work near the east end requires the platform change.", "vi_expl": "Thông báo nói công việc bảo trì gần đầu phía đông khiến chuyến tàu đổi sân ga."},
+      {"id": "p7_original_double_017_q3", "stem": "What should passengers with large luggage do?", "opts": ["Wait in the closed room", "Arrive early and speak to an attendant", "Board at platform 2", "Use the café before 6:00"], "ans": 1, "expl": "Passengers needing luggage assistance should arrive at least twenty minutes early and speak to the platform attendant.", "vi_expl": "Hành khách cần hỗ trợ hành lý nên đến sớm ít nhất hai mươi phút và nói với nhân viên sân ga."}
+    ]
+  },
+  {
+    "id": "p7_original_triple_018",
+    "section": "p7",
+    "kind": "triple",
+    "level": 4,
+    "source": "original:exam-expansion-2026",
+    "title": "Book order and author visit",
+    "title_vi": "Đơn đặt sách và buổi gặp tác giả",
+    "passage": "ORDER RECORD\nCustomer: Elena Park\nItems: two copies of Coastal Paths\nPickup location: Harbor Bookshop\n\nBOOKSHOP ANNOUNCEMENT\nAuthor Mina Vale will speak about Coastal Paths at 6:00 p.m. on Thursday. The event is free, but seating is limited. Customers who ordered the book may collect their copies from the service counter after the talk. Uncollected orders will be held for seven days.\n\nSTAFF NOTE\nThe shipment of Coastal Paths will arrive on Wednesday afternoon rather than Tuesday. Please keep Elena Park's two copies behind the service counter and attach the pickup notice to the order. If the shipment is delayed again, call customers whose orders include two or more copies first.",
+    "passage_vi": "HỒ SƠ ĐẶT HÀNG\nKhách hàng: Elena Park\nMặt hàng: hai bản Coastal Paths\nNơi nhận: Harbor Bookshop\n\nTHÔNG BÁO CỦA HIỆU SÁCH\nTác giả Mina Vale sẽ nói về Coastal Paths lúc 6:00 tối thứ Năm. Sự kiện miễn phí nhưng số chỗ có hạn. Khách đã đặt sách có thể nhận bản của mình tại quầy dịch vụ sau buổi nói chuyện. Đơn chưa nhận sẽ được giữ trong bảy ngày.\n\nGHI CHÚ CHO NHÂN VIÊN\nLô Coastal Paths sẽ đến vào chiều thứ Tư thay vì thứ Ba. Vui lòng giữ hai bản của Elena Park phía sau quầy dịch vụ và gắn thông báo nhận hàng vào đơn. Nếu lô hàng lại bị trễ, hãy gọi trước cho khách có đơn gồm từ hai bản trở lên.",
+    "items": [
+      {"id": "p7_original_triple_018_q1", "stem": "What has Elena Park ordered?", "opts": ["One ticket to the author event", "Two copies of a book", "Two seats at the service counter", "A shipment for the bookshop"], "ans": 1, "expl": "The order record lists two copies of Coastal Paths.", "vi_expl": "Hồ sơ đặt hàng ghi Elena đặt hai bản Coastal Paths."},
+      {"id": "p7_original_triple_018_q2", "stem": "When may customers collect their books?", "opts": ["Before the shipment arrives", "After the author's talk", "Seven days before the event", "On Tuesday morning only"], "ans": 1, "expl": "The announcement says ordered books may be collected after the talk.", "vi_expl": "Thông báo nói khách có thể nhận sách đã đặt sau buổi nói chuyện."},
+      {"id": "p7_original_triple_018_q3", "stem": "What should staff do if the shipment is delayed again?", "opts": ["Cancel all orders", "Call customers with larger orders first", "Move the event to Wednesday", "Give every customer a free ticket"], "ans": 1, "expl": "The staff note says to call customers whose orders include two or more copies first.", "vi_expl": "Ghi chú yêu cầu gọi trước cho khách có đơn gồm từ hai bản trở lên."}
+    ]
+  },
+  {
+    "id": "p7_original_single_019",
+    "section": "p7",
+    "kind": "single",
+    "level": 3,
+    "source": "original:exam-expansion-2026",
+    "title": "Office move instructions",
+    "title_vi": "Hướng dẫn chuyển văn phòng",
+    "passage": "OFFICE MOVE PLAN\n\nThe design department will move to the third floor during the weekend of February 8–9. Employees should label boxes with their name and the number of the new desk. The moving team will transport monitors and chairs, but employees must carry personal items themselves. The current printer room will be unavailable after 4:00 p.m. on Friday. A temporary printer will be placed beside the reception desk on Monday morning. Please save files to the shared drive before leaving on Friday; the department's local server will be disconnected during the move.",
+    "passage_vi": "KẾ HOẠCH CHUYỂN VĂN PHÒNG\n\nBộ phận thiết kế sẽ chuyển lên tầng ba vào cuối tuần 8–9 tháng 2. Nhân viên nên dán nhãn lên hộp bằng tên mình và số bàn mới. Đội chuyển đồ sẽ vận chuyển màn hình và ghế, nhưng nhân viên phải tự mang đồ cá nhân. Phòng máy in hiện tại sẽ không sử dụng được sau 4:00 chiều thứ Sáu. Một máy in tạm sẽ đặt cạnh quầy lễ tân vào sáng thứ Hai. Vui lòng lưu tệp vào ổ đĩa chung trước khi rời đi thứ Sáu; máy chủ nội bộ của bộ phận sẽ bị ngắt trong thời gian chuyển.",
+    "items": [
+      {"id": "p7_original_single_019_q1", "stem": "What should employees put on their boxes?", "opts": ["The moving team's address", "Their name and new desk number", "The printer room's closing time", "A shared-drive password"], "ans": 1, "expl": "Employees should label boxes with their name and the number of the new desk.", "vi_expl": "Nhân viên nên dán tên mình và số bàn mới lên các hộp."},
+      {"id": "p7_original_single_019_q2", "stem": "What must employees transport themselves?", "opts": ["Monitors", "Chairs", "Personal items", "Temporary printers"], "ans": 2, "expl": "The moving team will transport monitors and chairs, while employees carry personal items themselves.", "vi_expl": "Đội chuyển đồ vận chuyển màn hình và ghế, còn nhân viên tự mang đồ cá nhân."},
+      {"id": "p7_original_single_019_q3", "stem": "Why should employees save files to the shared drive?", "opts": ["The local server will be disconnected.", "The new printer needs the files.", "The reception desk will move.", "The moving team cannot carry boxes."], "ans": 0, "expl": "The local server will be disconnected during the move, so employees should use the shared drive.", "vi_expl": "Máy chủ nội bộ sẽ bị ngắt trong lúc chuyển nên nhân viên cần dùng ổ đĩa chung."}
+    ]
+  },
+  {
+    "id": "p7_original_double_020",
+    "section": "p7",
+    "kind": "double",
+    "level": 4,
+    "source": "original:exam-expansion-2026",
+    "title": "Conference registration",
+    "title_vi": "Đăng ký hội nghị",
+    "passage": "REGISTRATION RECORD\nAttendee: Tomas Reed\nEvent: Small Business Forum\nDate: May 3\nPackage: Full day, including lunch\nWorkshop choice: Building a budget\n\nORGANIZER'S EMAIL\nHello Tomas,\n\nThe forum will be held at the Riverside Hall. Registration opens at 8:15 a.m., and the first talk begins at 9:00. Your workshop choice has been recorded. If you would like to change to the afternoon workshop on customer communication, reply before April 20. Dietary requests may also be updated until that date. Printed name badges will be available at the registration table; digital copies will not be sent in advance.\n\nRegards,\nForum Office",
+    "passage_vi": "HỒ SƠ ĐĂNG KÝ\nNgười tham dự: Tomas Reed\nSự kiện: Diễn đàn Doanh nghiệp Nhỏ\nNgày: 3 tháng 5\nGói: Cả ngày, bao gồm bữa trưa\nLựa chọn hội thảo: Lập ngân sách\n\nEMAIL CỦA BAN TỔ CHỨC\nChào Tomas,\n\nDiễn đàn sẽ tổ chức tại Riverside Hall. Đăng ký mở lúc 8:15 sáng và bài nói đầu tiên bắt đầu lúc 9:00. Lựa chọn hội thảo của bạn đã được ghi nhận. Nếu muốn đổi sang hội thảo buổi chiều về giao tiếp với khách hàng, hãy trả lời trước ngày 20 tháng 4. Yêu cầu ăn uống cũng có thể cập nhật đến ngày đó. Thẻ tên in sẵn sẽ có tại bàn đăng ký; bản điện tử sẽ không được gửi trước.\n\nTrân trọng,\nVăn phòng Diễn đàn",
+    "items": [
+      {"id": "p7_original_double_020_q1", "stem": "What does Tomas's package include?", "opts": ["An afternoon workshop only", "Lunch and a full day at the forum", "A digital name badge", "A customer communication course"], "ans": 1, "expl": "The registration record says Tomas selected the full-day package including lunch.", "vi_expl": "Hồ sơ đăng ký cho biết Tomas chọn gói cả ngày bao gồm bữa trưa."},
+      {"id": "p7_original_double_020_q2", "stem": "What can Tomas change before April 20?", "opts": ["The forum location", "The date of the first talk", "His workshop choice", "The name on the badge after the event"], "ans": 2, "expl": "The organizer says Tomas may change to the afternoon workshop before April 20.", "vi_expl": "Ban tổ chức nói Tomas có thể đổi sang hội thảo buổi chiều trước ngày 20 tháng 4."},
+      {"id": "p7_original_double_020_q3", "stem": "Where will Tomas get his name badge?", "opts": ["By email before the forum", "At the registration table", "Inside the lunch package", "From the workshop speaker"], "ans": 1, "expl": "Printed name badges will be available at the registration table.", "vi_expl": "Thẻ tên in sẵn sẽ có tại bàn đăng ký."}
+    ]
+  }
+]
