@@ -1,0 +1,200 @@
+{
+  "items": [],
+  "groups": [
+    {
+      "id": "p3_example_001",
+      "section": "p3",
+      "title": "A hotel reservation",
+      "passage": "Man: I am calling to confirm my reservation for next Tuesday. Woman: I see it here. You requested a room with two beds for three nights. Man: That is right, and I will arrive after nine in the evening.",
+      "items": [
+        {
+          "id": "p3_example_001_q1",
+          "section": "p3",
+          "level": 3,
+          "stem": "What are the speakers mainly discussing?",
+          "opts": [
+            "A hotel reservation",
+            "A restaurant menu",
+            "A train schedule",
+            "A business meeting"
+          ],
+          "ans": 0,
+          "expl": "The man is confirming the details of his hotel reservation.",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_001_q2",
+          "section": "p3",
+          "level": 3,
+          "stem": "When does the man expect to arrive?",
+          "opts": [
+            "Before noon",
+            "At six in the morning",
+            "After nine in the evening",
+            "The following Tuesday"
+          ],
+          "ans": 2,
+          "expl": "He says that he will arrive after nine in the evening.",
+          "qtype": "listen_p3"
+        }
+      ],
+      "set": "examples"
+    },
+    {
+      "id": "p3_example_002",
+      "section": "p3",
+      "title": "A noisy printer",
+      "passage": "Woman: The printer on the second floor is making a strange noise again. Man: I noticed that this morning. I will move the spare printer there while the technician checks it. Woman: Great. I need to print the visitor badges before lunch.",
+      "items": [
+        {
+          "id": "p3_example_002_q1",
+          "section": "p3",
+          "level": 3,
+          "stem": "What problem does the woman mention?",
+          "opts": [
+            "A printer is making an unusual noise.",
+            "The visitor badges are missing.",
+            "The technician arrived late.",
+            "The second floor is closed."
+          ],
+          "ans": 0,
+          "expl": "She says that the printer is making a strange noise.",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_002_q2",
+          "section": "p3",
+          "level": 3,
+          "stem": "What will the man do?",
+          "opts": [
+            "Order new badges",
+            "Move a spare printer",
+            "Call the visitors",
+            "Repair the elevator"
+          ],
+          "ans": 1,
+          "expl": "He will move the spare printer to the second floor.",
+          "qtype": "listen_p3"
+        }
+      ],
+      "set": "examples"
+    },
+    {
+      "id": "p3_example_003",
+      "section": "p3",
+      "title": "A community workshop",
+      "passage": "Man: Have you registered for Saturday's bicycle workshop? Woman: Not yet. Is there still space? Man: Yes, but the organizer moved it from the park to the recreation hall because rain is expected. Woman: Then I will sign up tonight.",
+      "items": [
+        {
+          "id": "p3_example_003_q1",
+          "section": "p3",
+          "level": 3,
+          "stem": "What is the woman asking about?",
+          "opts": [
+            "Available places in a workshop",
+            "The price of a bicycle",
+            "A park's opening hours",
+            "A weather report"
+          ],
+          "ans": 0,
+          "expl": "She asks whether there is still space in the workshop.",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_003_q2",
+          "section": "p3",
+          "level": 3,
+          "stem": "Why was the location changed?",
+          "opts": [
+            "The park is being repaired.",
+            "The hall has better bicycles.",
+            "Rain is expected.",
+            "The organizer moved away."
+          ],
+          "ans": 2,
+          "expl": "The workshop was moved indoors because rain is expected.",
+          "qtype": "listen_p3"
+        }
+      ],
+      "set": "examples"
+    },
+    {
+      "id": "p3_example_004",
+      "section": "p3",
+      "title": "A train reservation",
+      "passage": "Woman: I would like to change my train reservation to Friday morning. Man: The eight-thirty train is full, but I can reserve a seat on the ten o'clock service. Woman: That works. Does it stop at Riverside? Man: Yes, and it arrives there at eleven fifteen.",
+      "items": [
+        {
+          "id": "p3_example_004_q1",
+          "section": "p3",
+          "level": 4,
+          "stem": "What does the woman want to change?",
+          "opts": [
+            "Her train reservation",
+            "Her hotel address",
+            "Her work schedule",
+            "Her meeting room"
+          ],
+          "ans": 0,
+          "expl": "She wants to change her reservation to a different train.",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_004_q2",
+          "section": "p3",
+          "level": 4,
+          "stem": "What time will the available train leave?",
+          "opts": [
+            "8:30",
+            "10:00",
+            "11:15",
+            "Friday evening"
+          ],
+          "ans": 1,
+          "expl": "The available service leaves at ten o'clock.",
+          "qtype": "listen_p3"
+        }
+      ],
+      "set": "examples"
+    },
+    {
+      "id": "p3_example_005",
+      "section": "p3",
+      "title": "Catering for a meeting",
+      "passage": "Man: The client meeting has been extended to the afternoon. Could you arrange a light lunch? Woman: I can do that. How many people should I plan for? Man: Twelve, including the two visitors. Please include vegetarian sandwiches. Woman: I will contact the café now.",
+      "items": [
+        {
+          "id": "p3_example_005_q1",
+          "section": "p3",
+          "level": 4,
+          "stem": "Why is lunch being arranged?",
+          "opts": [
+            "A meeting will last into the afternoon.",
+            "A café is opening nearby.",
+            "Two employees are leaving early.",
+            "A visitor requested a tour."
+          ],
+          "ans": 0,
+          "expl": "The meeting has been extended, so lunch is needed.",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_005_q2",
+          "section": "p3",
+          "level": 4,
+          "stem": "What special food should be included?",
+          "opts": [
+            "Fruit desserts",
+            "Vegetarian sandwiches",
+            "Hot soup",
+            "Gluten-free cake"
+          ],
+          "ans": 1,
+          "expl": "The man specifically requests vegetarian sandwiches.",
+          "qtype": "listen_p3"
+        }
+      ],
+      "set": "examples"
+    }
+  ]
+}

@@ -137,4 +137,26 @@ class ExamEngineTest {
         assertEquals("Where is the meeting?", exercise.audioPrompt)
         assertEquals(3, exercise.options.size)
     }
+
+    @Test fun partThreePracticeReadsEnglishConversationAndQuestion() {
+        val p3 = ExamBank(emptyList(), listOf(ExamGroup("p3_1", "p3", "Bản dịch hội thoại", "Hội thoại", listOf(
+            ExamItem("p3_1_q1", "p3", 2, "What are they discussing?", listOf("A", "B", "C", "D"), 0, "Explanation", "listen_p3")
+        ), "examples", "Man: What are they discussing?")))
+        val content = Content(emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyMap(), emptyMap(), examBanks = mapOf("toeic_p3" to p3))
+        val builder = SessionBuilder(content, { null }, { emptyList() }, { emptyList() })
+        val exercise = builder.examType("Part 3", "toeic_p3_examples", null, 3, 1).exercises.single() as Exercise.Choice
+        assertTrue(exercise.audioOptions)
+        assertEquals("Man: What are they discussing? What are they discussing?", exercise.audioPrompt)
+    }
+
+    @Test fun partFourPracticeReadsEnglishTalkAndQuestion() {
+        val p4 = ExamBank(emptyList(), listOf(ExamGroup("p4_1", "p4", "Bản dịch bài nói", "Bài nói", listOf(
+            ExamItem("p4_1_q1", "p4", 2, "When will it begin?", listOf("A", "B", "C", "D"), 1, "Explanation", "listen_p4")
+        ), "examples", "The talk begins at noon.")))
+        val content = Content(emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyMap(), emptyMap(), examBanks = mapOf("toeic_p4" to p4))
+        val builder = SessionBuilder(content, { null }, { emptyList() }, { emptyList() })
+        val exercise = builder.examType("Part 4", "toeic_p4_examples", null, 3, 1).exercises.single() as Exercise.Choice
+        assertTrue(exercise.audioOptions)
+        assertEquals("The talk begins at noon. When will it begin?", exercise.audioPrompt)
+    }
 }

@@ -152,10 +152,14 @@ class QuestionTypeScreen(activity: MainActivity, private val fmt: String) : Scro
             services.content.passages.flatMap { it.blanks }.groupBy { it.qtype }.map { it.key to it.value.size } + listOf<Pair<String?, Int>>(null to services.content.passages.sumOf { it.blanks.size })
         } else if (fmt.startsWith("toeic_p1_practice_")) {
             val set = fmt.substringAfterLast('_')
-            listOf(null to (services.content.examBanks["toeic_p1"]?.groups.orEmpty().filter { it.set == set }.sumOf { it.items.size }))
+            listOf("listen_p1" to (services.content.examBanks["toeic_p1"]?.groups.orEmpty().filter { it.set == set }.sumOf { it.items.size }))
         } else if (fmt.startsWith("toeic_p2_practice_")) {
             val set = fmt.substringAfterLast('_')
-            listOf(null to (services.content.examBanks["toeic_p2"]?.groups.orEmpty().filter { it.set == set }.sumOf { it.items.size }))
+            listOf("listen_p2" to (services.content.examBanks["toeic_p2"]?.groups.orEmpty().filter { it.set == set }.sumOf { it.items.size }))
+        } else if (fmt == "toeic_p3_examples" || fmt == "toeic_p4_examples") {
+            val bankId = if (fmt == "toeic_p3_examples") "toeic_p3" else "toeic_p4"
+            val qtype = if (fmt == "toeic_p3_examples") "listen_p3" else "listen_p4"
+            listOf(qtype to (services.content.examBanks[bankId]?.groups.orEmpty().filter { it.set == "examples" }.sumOf { it.items.size }))
         } else {
             val pool = services.builder().examPool(fmt).filter { it.type != "E05" }
             pool.groupBy { it.qtype ?: if (it.type == "E04") "error" else if (it.type == "E12") "transform" else "vocab" }.map { it.key to it.value.size }.sortedByDescending { it.second }
@@ -172,10 +176,15 @@ class QuestionTypeScreen(activity: MainActivity, private val fmt: String) : Scro
                 services.content.examBanks["toeic_p2"]?.groups.orEmpty().filter { it.set == set }
                     .flatMap { group -> group.items.filter { qt == null || it.qtype == qt }.map { "exam:toeic_p2:${it.id}" } }
             }
+            else if (fmt == "toeic_p3_examples" || fmt == "toeic_p4_examples") {
+                val bankId = if (fmt == "toeic_p3_examples") "toeic_p3" else "toeic_p4"
+                services.content.examBanks[bankId]?.groups.orEmpty().filter { it.set == "examples" }
+                    .flatMap { group -> group.items.filter { qt == null || it.qtype == qt }.map { "exam:$bankId:${it.id}" } }
+            }
             else services.builder().examPool(fmt).filter { q -> (q.qtype ?: if (q.type == "E04") "error" else if (q.type == "E12") "transform" else "vocab") == qt }.map { it.key }
             val st = keys.mapNotNull { services.store.item(it) }.filter { it.seen > 0 }
             val acc = if (st.isEmpty()) null else st.sumOf { it.correct } * 100 / st.sumOf { it.seen }.coerceAtLeast(1)
-            val label = if (qt == null) str(R.string.all_types) else TagNames.label(c, qt)
+            val label = if (qt == null) str(R.string.all_types) else services.content.formatById(fmt)?.sections?.firstOrNull { qt in it.qtypes }?.label ?: TagNames.label(c, qt)
             body.addView(Kit.card(c, 16, 12) {
                 val r = Kit.hbox(c)
                 r.addView(Kit.vbox(c) {

@@ -159,4 +159,15 @@ QTYPE_TIPS = {
     "antonym": "Tìm nghĩa của từ gạch chân trong ngữ cảnh, rồi chọn từ TRÁI nghĩa. Cẩn thận phương án là từ đồng nghĩa (bẫy).",
     "error": "Kiểm tra lần lượt: chia động từ, từ loại, giới từ, đại từ, so sánh. Lỗi thường nằm ở chỗ 'nghe quen tai' theo tiếng Việt.",
     "transform": "Câu viết lại phải giữ nguyên nghĩa, kể cả thì và mức độ chắc chắn. Loại các câu đổi nghĩa phủ định/khẳng định.",
+    "listen_p1": "Cách làm: nghe câu mô tả và đối chiếu người, vật, vị trí và hành động trong cảnh. Mẹo: ghi nhận động từ chính và loại ngay phương án thêm chi tiết không có trong mô tả.",
+    "listen_p2": "Cách làm: xác định từ hỏi hoặc mục đích của câu hỏi rồi nghe đủ ba phản hồi. Mẹo: đừng chọn chỉ vì lặp lại một từ trong câu hỏi; đáp án đúng phải trả lời đúng ý.",
+    "listen_p3": "Cách làm: đọc nhanh câu hỏi và dự đoán ai, việc gì, thời gian hoặc địa điểm cần nghe trong đoạn hội thoại. Mẹo: theo dõi sự thay đổi kế hoạch và lý do, vì đáp án thường diễn đạt lại chứ không lặp nguyên văn.",
+    "listen_p4": "Cách làm: đọc trước câu hỏi, xác định chủ đề và thông tin cần lấy trong bài nói. Mẹo: chú ý câu chuyển ý, con số, thời gian và hành động tiếp theo; không suy luận thêm ngoài nội dung nghe được.",
+}
+
+QTYPE_TIPS_EN = {
+    "listen_p1": "How: listen for the person, object, location, and main action in the scene. Tip: note the main verb and reject choices that add details not stated in the prompt.",
+    "listen_p2": "How: identify the question word or purpose, then listen to all three responses. Tip: do not choose an option just because it repeats a word from the question; it must answer the meaning.",
+    "listen_p3": "How: preview the questions and predict the people, purpose, time, or place you need to hear in the conversation. Tip: track changes of plan and reasons because correct answers often paraphrase the audio.",
+    "listen_p4": "How: preview the questions, identify the topic, and listen for the requested detail in the talk. Tip: watch for transitions, numbers, times, and next actions; do not add information that was not heard.",
 }

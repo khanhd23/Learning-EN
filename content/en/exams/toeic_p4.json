@@ -1,0 +1,200 @@
+{
+  "items": [],
+  "groups": [
+    {
+      "id": "p4_example_001",
+      "section": "p4",
+      "title": "Library orientation",
+      "passage": "Welcome to the Northside Library. New members can borrow up to five books for three weeks. Please use the self-service desk near the entrance to check items out. If you need help finding a title, ask at the information counter on the left.",
+      "items": [
+        {
+          "id": "p4_example_001_q1",
+          "section": "p4",
+          "level": 3,
+          "stem": "What is the purpose of the announcement?",
+          "opts": [
+            "To explain library procedures",
+            "To advertise a book sale",
+            "To announce a holiday closure",
+            "To recruit information clerks"
+          ],
+          "ans": 0,
+          "expl": "The speaker explains borrowing and assistance procedures for new members.",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_001_q2",
+          "section": "p4",
+          "level": 3,
+          "stem": "Where should listeners go for help finding a title?",
+          "opts": [
+            "To the entrance",
+            "To the self-service desk",
+            "To the left-side information counter",
+            "To the book return room"
+          ],
+          "ans": 2,
+          "expl": "The information counter on the left helps members find titles.",
+          "qtype": "listen_p4"
+        }
+      ],
+      "set": "examples"
+    },
+    {
+      "id": "p4_example_002",
+      "section": "p4",
+      "title": "Museum exhibit announcement",
+      "passage": "The coastal photography exhibit will close early this Thursday for a lighting upgrade. Visitors may enter until four o'clock, and the final tour will begin at four fifteen. The exhibit will reopen at its regular time on Friday morning.",
+      "items": [
+        {
+          "id": "p4_example_002_q1",
+          "section": "p4",
+          "level": 3,
+          "stem": "Why will the exhibit close early?",
+          "opts": [
+            "For a lighting upgrade",
+            "For a private lecture",
+            "Because of a storm",
+            "To move the photographs"
+          ],
+          "ans": 0,
+          "expl": "The exhibit will close early while its lighting is upgraded.",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_002_q2",
+          "section": "p4",
+          "level": 3,
+          "stem": "When will the exhibit reopen?",
+          "opts": [
+            "Thursday at four",
+            "Thursday at four fifteen",
+            "Friday morning",
+            "Friday afternoon"
+          ],
+          "ans": 2,
+          "expl": "It will reopen at the regular time on Friday morning.",
+          "qtype": "listen_p4"
+        }
+      ],
+      "set": "examples"
+    },
+    {
+      "id": "p4_example_003",
+      "section": "p4",
+      "title": "Airport gate change",
+      "passage": "Attention, passengers on Flight 218 to Denver: the departure gate has changed from B12 to C4. Boarding will begin at 6:40 near the central information screen. Please allow extra time to walk to the new gate, which is in the east concourse.",
+      "items": [
+        {
+          "id": "p4_example_003_q1",
+          "section": "p4",
+          "level": 3,
+          "stem": "What has changed?",
+          "opts": [
+            "The flight destination",
+            "The departure gate",
+            "The boarding time",
+            "The information screen"
+          ],
+          "ans": 1,
+          "expl": "The announcement says that the departure gate changed to C4.",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_003_q2",
+          "section": "p4",
+          "level": 3,
+          "stem": "What are passengers advised to do?",
+          "opts": [
+            "Arrive at the airport tomorrow",
+            "Use the west concourse",
+            "Allow extra walking time",
+            "Check a larger suitcase"
+          ],
+          "ans": 2,
+          "expl": "Passengers should allow extra time to walk to the new gate.",
+          "qtype": "listen_p4"
+        }
+      ],
+      "set": "examples"
+    },
+    {
+      "id": "p4_example_004",
+      "section": "p4",
+      "title": "A training webinar",
+      "passage": "Our customer-service webinar will take place next Wednesday at noon. Employees can join from the training portal using the link in today's email. Please register by Monday so that we can send the workbook before the session. A recording will be available afterward.",
+      "items": [
+        {
+          "id": "p4_example_004_q1",
+          "section": "p4",
+          "level": 4,
+          "stem": "When will the webinar take place?",
+          "opts": [
+            "This Monday morning",
+            "Next Wednesday at noon",
+            "Next Thursday afternoon",
+            "After the workbook arrives"
+          ],
+          "ans": 1,
+          "expl": "The webinar is scheduled for next Wednesday at noon.",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_004_q2",
+          "section": "p4",
+          "level": 4,
+          "stem": "Why should employees register by Monday?",
+          "opts": [
+            "To receive the workbook before the session",
+            "To reserve a training room",
+            "To change the webinar topic",
+            "To receive a recording immediately"
+          ],
+          "ans": 0,
+          "expl": "Registration by Monday allows the workbook to be sent before the session.",
+          "qtype": "listen_p4"
+        }
+      ],
+      "set": "examples"
+    },
+    {
+      "id": "p4_example_005",
+      "section": "p4",
+      "title": "A recycling reminder",
+      "passage": "The Green Street collection truck will visit this neighborhood on Tuesday morning instead of Wednesday this week. Residents should place clean paper and cardboard in the blue bins by 7 a.m. Glass containers belong in the separate green bin. Please keep bags out of both containers.",
+      "items": [
+        {
+          "id": "p4_example_005_q1",
+          "section": "p4",
+          "level": 4,
+          "stem": "What is different this week?",
+          "opts": [
+            "The truck will come on Tuesday.",
+            "Glass will be collected at night.",
+            "Blue bins are being replaced.",
+            "Residents must use paper bags."
+          ],
+          "ans": 0,
+          "expl": "The collection visit is on Tuesday instead of Wednesday this week.",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_005_q2",
+          "section": "p4",
+          "level": 4,
+          "stem": "Where should glass containers be placed?",
+          "opts": [
+            "In the blue bin",
+            "In the separate green bin",
+            "Beside the collection truck",
+            "In a paper bag"
+          ],
+          "ans": 1,
+          "expl": "Glass containers belong in the separate green bin.",
+          "qtype": "listen_p4"
+        }
+      ],
+      "set": "examples"
+    }
+  ]
+}

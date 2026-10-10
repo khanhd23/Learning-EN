@@ -15,7 +15,8 @@ object ExamBankParser {
             val o = a.getJSONObject(i)
             val section = o.getString("section")
             val groupItems = o.getJSONArray("items").let { values -> List(values.length()) { item(values.getJSONObject(it), section) } }
-            ExamGroup(o.getString("id"), section, o.getString("passage"), o.optString("title").takeIf { it.isNotBlank() }, groupItems, o.optString("set").takeIf { it.isNotBlank() })
+            val passage = o.getString("passage")
+            ExamGroup(o.getString("id"), section, passage, o.optString("title").takeIf { it.isNotBlank() }, groupItems, o.optString("set").takeIf { it.isNotBlank() }, passage)
         } } ?: emptyList()
         return ExamBank(items, groups)
     }
@@ -33,6 +34,7 @@ object ExamBankParser {
         return ExamBank(base.items.map(::item), base.groups.map { group ->
             group.copy(
                 passage = override(group.id, "passage", group.passage),
+                audioPassage = group.audioPassage ?: group.passage,
                 title = override(group.id, "title", group.title ?: "").takeIf { it.isNotBlank() },
                 items = group.items.map(::item),
             )

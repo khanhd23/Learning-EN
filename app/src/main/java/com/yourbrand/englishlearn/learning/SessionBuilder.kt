@@ -239,6 +239,12 @@ class SessionBuilder(
                 .filter { it.set == set }
                 .flatMap { group -> group.items.filter { qtype == null || it.qtype == qtype }.map { it to group } }
             selected.shuffled(random).take(n).map { (item, group) -> factory.exam("toeic_p2", item, group) }
+        } else if (fmt == "toeic_p3_examples" || fmt == "toeic_p4_examples") {
+            val bankId = if (fmt == "toeic_p3_examples") "toeic_p3" else "toeic_p4"
+            val selected = content.examBanks[bankId]?.groups.orEmpty()
+                .filter { it.set == "examples" }
+                .flatMap { group -> group.items.filter { qtype == null || it.qtype == qtype }.map { it to group } }
+            selected.shuffled(random).take(n).map { (item, group) -> factory.exam(bankId, item, group) }
         } else {
             val pool = examPool(fmt).filter { qtype == null || it.qtype == qtype }
             val byLevel = when (difficulty) { 0 -> pool.filter { it.level <= 2 }; 1 -> pool.filter { it.level == 3 }; 2 -> pool.filter { it.level >= 4 }; else -> pool }

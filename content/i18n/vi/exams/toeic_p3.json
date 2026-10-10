@@ -1,0 +1,52 @@
+{
+  "p3_example_001_q1": {
+    "expl": "Người đàn ông đang xác nhận các chi tiết của đặt phòng khách sạn."
+  },
+  "p3_example_001_q2": {
+    "expl": "Anh ấy nói mình sẽ đến sau chín giờ tối."
+  },
+  "p3_example_001": {
+    "title": "Đặt phòng khách sạn",
+    "passage": "Nam: Tôi gọi để xác nhận đặt phòng vào thứ Ba tuần tới. Nữ: Tôi thấy thông tin rồi. Anh đã yêu cầu phòng có hai giường trong ba đêm. Nam: Đúng vậy, và tôi sẽ đến sau chín giờ tối."
+  },
+  "p3_example_002_q1": {
+    "expl": "Cô ấy nói máy in đang phát ra tiếng động lạ."
+  },
+  "p3_example_002_q2": {
+    "expl": "Anh ấy sẽ chuyển máy in dự phòng lên tầng hai."
+  },
+  "p3_example_002": {
+    "title": "Chiếc máy in ồn",
+    "passage": "Nữ: Máy in ở tầng hai lại phát ra tiếng động lạ. Nam: Sáng nay tôi cũng nhận ra điều đó. Tôi sẽ chuyển máy in dự phòng lên đó trong lúc kỹ thuật viên kiểm tra máy. Nữ: Tốt quá. Tôi cần in thẻ khách trước bữa trưa."
+  },
+  "p3_example_003_q1": {
+    "expl": "Cô ấy hỏi liệu buổi hướng dẫn còn chỗ hay không."
+  },
+  "p3_example_003_q2": {
+    "expl": "Buổi hướng dẫn được chuyển vào trong nhà vì dự báo có mưa."
+  },
+  "p3_example_003": {
+    "title": "Buổi hướng dẫn cộng đồng",
+    "passage": "Nam: Bạn đã đăng ký buổi hướng dẫn xe đạp vào thứ Bảy chưa? Nữ: Chưa. Vẫn còn chỗ chứ? Nam: Còn, nhưng ban tổ chức đã chuyển địa điểm từ công viên sang nhà sinh hoạt vì dự báo có mưa. Nữ: Vậy tối nay tôi sẽ đăng ký."
+  },
+  "p3_example_004_q1": {
+    "expl": "Cô ấy muốn đổi đặt chỗ sang một chuyến tàu khác."
+  },
+  "p3_example_004_q2": {
+    "expl": "Chuyến còn chỗ khởi hành lúc mười giờ."
+  },
+  "p3_example_004": {
+    "title": "Đặt chỗ tàu",
+    "passage": "Nữ: Tôi muốn đổi đặt chỗ tàu sang sáng thứ Sáu. Nam: Chuyến tàu lúc tám giờ rưỡi đã kín chỗ, nhưng tôi có thể đặt một chỗ trên chuyến lúc mười giờ. Nữ: Được đấy. Chuyến đó có dừng ở Riverside không? Nam: Có, và tàu đến đó lúc mười một giờ mười lăm."
+  },
+  "p3_example_005_q1": {
+    "expl": "Cuộc họp kéo dài nên cần chuẩn bị bữa trưa."
+  },
+  "p3_example_005_q2": {
+    "expl": "Người đàn ông yêu cầu cụ thể bánh mì kẹp chay."
+  },
+  "p3_example_005": {
+    "title": "Đặt đồ ăn cho cuộc họp",
+    "passage": "Nam: Cuộc họp với khách hàng đã kéo dài đến buổi chiều. Bạn có thể chuẩn bị một bữa trưa nhẹ không? Nữ: Tôi làm được. Tôi nên chuẩn bị cho bao nhiêu người? Nam: Mười hai người, gồm cả hai vị khách. Hãy thêm bánh mì kẹp chay. Nữ: Tôi sẽ liên hệ quán cà phê ngay."
+  }
+}

@@ -115,7 +115,7 @@
       "id": "toeic_p1_practice_1",
       "label": "TOEIC-style Listening Part 1 — Practice 1",
       "family": "TOEIC-style practice",
-      "description": "Original image-free scene prompts; device TTS reads each answer sentence. Not an official TOEIC test.",
+      "description": "How: listen for the person, object, location, and action described. Tip: focus on the main verb and reject details the scene never states. Original examples; not an official TOEIC test.",
       "exerciseTypes": ["E09"],
       "questionCount": 6,
       "timeLimitMinutes": null,
@@ -129,7 +129,7 @@
       "id": "toeic_p1_practice_2",
       "label": "TOEIC-style Listening Part 1 — Practice 2",
       "family": "TOEIC-style practice",
-      "description": "Original image-free scene prompts; device TTS reads each answer sentence. Not an official TOEIC test.",
+      "description": "How: listen for the person, object, location, and action described. Tip: focus on the main verb and reject details the scene never states. Original examples; not an official TOEIC test.",
       "exerciseTypes": ["E09"],
       "questionCount": 6,
       "timeLimitMinutes": null,
@@ -143,7 +143,7 @@
       "id": "toeic_p1_practice_3",
       "label": "TOEIC-style Listening Part 1 — Practice 3",
       "family": "TOEIC-style practice",
-      "description": "Original image-free scene prompts; device TTS reads each answer sentence. Not an official TOEIC test.",
+      "description": "How: listen for the person, object, location, and action described. Tip: focus on the main verb and reject details the scene never states. Original examples; not an official TOEIC test.",
       "exerciseTypes": ["E09"],
       "questionCount": 6,
       "timeLimitMinutes": null,
@@ -157,7 +157,7 @@
       "id": "toeic_p1_practice_4",
       "label": "TOEIC-style Listening Part 1 — Practice 4",
       "family": "TOEIC-style practice",
-      "description": "Original image-free scene prompts; device TTS reads each answer sentence. Not an official TOEIC test.",
+      "description": "How: listen for the person, object, location, and action described. Tip: focus on the main verb and reject details the scene never states. Original examples; not an official TOEIC test.",
       "exerciseTypes": ["E09"],
       "questionCount": 6,
       "timeLimitMinutes": null,
@@ -171,7 +171,7 @@
       "id": "toeic_p1_practice_5",
       "label": "TOEIC-style Listening Part 1 — Practice 5",
       "family": "TOEIC-style practice",
-      "description": "Original image-free scene prompts; device TTS reads each answer sentence. Not an official TOEIC test.",
+      "description": "How: listen for the person, object, location, and action described. Tip: focus on the main verb and reject details the scene never states. Original examples; not an official TOEIC test.",
       "exerciseTypes": ["E09"],
       "questionCount": 6,
       "timeLimitMinutes": null,
@@ -185,7 +185,7 @@
       "id": "toeic_p2_practice_1",
       "label": "TOEIC-style Listening Part 2 — Practice 1",
       "family": "TOEIC-style practice",
-      "description": "Original question-and-response prompts; device TTS reads the question and each response. Not an official TOEIC test.",
+      "description": "How: identify the question purpose, then listen to all three responses. Tip: choose the response that answers the meaning, not merely one that repeats a word. Original examples; not an official TOEIC test.",
       "exerciseTypes": ["E09"],
       "questionCount": 25,
       "timeLimitMinutes": null,
@@ -199,7 +199,7 @@
       "id": "toeic_p2_practice_2",
       "label": "TOEIC-style Listening Part 2 — Practice 2",
       "family": "TOEIC-style practice",
-      "description": "Original question-and-response prompts; device TTS reads the question and each response. Not an official TOEIC test.",
+      "description": "How: identify the question purpose, then listen to all three responses. Tip: choose the response that answers the meaning, not merely one that repeats a word. Original examples; not an official TOEIC test.",
       "exerciseTypes": ["E09"],
       "questionCount": 25,
       "timeLimitMinutes": null,
@@ -213,7 +213,7 @@
       "id": "toeic_p2_practice_3",
       "label": "TOEIC-style Listening Part 2 — Practice 3",
       "family": "TOEIC-style practice",
-      "description": "Original question-and-response prompts; device TTS reads the question and each response. Not an official TOEIC test.",
+      "description": "How: identify the question purpose, then listen to all three responses. Tip: choose the response that answers the meaning, not merely one that repeats a word. Original examples; not an official TOEIC test.",
       "exerciseTypes": ["E09"],
       "questionCount": 25,
       "timeLimitMinutes": null,
@@ -221,6 +221,34 @@
       "source": "https://www.ets.org/toeic/about/listening-reading.html (format reference only)",
       "sections": [
         {"id": "p2", "label": "Part 2 listening practice", "itemType": "group", "count": 25, "bank": "toeic_p2", "groupSet": "3", "qtype": ["listen_p2"]}
+      ]
+    },
+    {
+      "id": "toeic_p3_examples",
+      "label": "TOEIC-style Listening Part 3 — Examples",
+      "family": "TOEIC-style practice",
+      "description": "How: preview the questions and predict the people, purpose, time, or place you need to hear. Tip: track changes of plan and reasons because correct answers often paraphrase the audio. Ten original examples; not an official TOEIC test.",
+      "exerciseTypes": ["E09"],
+      "questionCount": 10,
+      "timeLimitMinutes": null,
+      "optionsPerQuestion": 4,
+      "source": "https://www.ets.org/toeic/about/listening-reading.html (format reference only)",
+      "sections": [
+        {"id": "p3", "label": "Part 3 examples", "itemType": "group", "count": 10, "bank": "toeic_p3", "groupSet": "examples", "qtype": ["listen_p3"]}
+      ]
+    },
+    {
+      "id": "toeic_p4_examples",
+      "label": "TOEIC-style Listening Part 4 — Examples",
+      "family": "TOEIC-style practice",
+      "description": "How: preview the questions, identify the topic, and listen for the requested detail in the talk. Tip: watch for transitions, numbers, times, and next actions; do not add information that was not heard. Ten original examples; not an official TOEIC test.",
+      "exerciseTypes": ["E09"],
+      "questionCount": 10,
+      "timeLimitMinutes": null,
+      "optionsPerQuestion": 4,
+      "source": "https://www.ets.org/toeic/about/listening-reading.html (format reference only)",
+      "sections": [
+        {"id": "p4", "label": "Part 4 examples", "itemType": "group", "count": 10, "bank": "toeic_p4", "groupSet": "examples", "qtype": ["listen_p4"]}
       ]
     }
   ],

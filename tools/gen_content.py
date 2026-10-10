@@ -447,6 +447,7 @@ def main():
             print(f"(skip missing module {m})")
     pet = next((getattr(m, "PET_LINES") for m in loaded if hasattr(m, "PET_LINES")), {})
     ui_tips = next((getattr(m, "QTYPE_TIPS") for m in loaded if hasattr(m, "QTYPE_TIPS")), {})
+    ui_tips_en = next((getattr(m, "QTYPE_TIPS_EN") for m in loaded if hasattr(m, "QTYPE_TIPS_EN")), {})
 
     vi = dict(topics={}, words={}, conf={}, grammar={}, q={}, passages={}, pet=pet, tips=ui_tips)
 
@@ -661,6 +662,7 @@ def main():
     if set(pet_en) != set(pet):
         raise SystemExit(f"pet_lines_en.json keys differ from pet_lines.py: {sorted(set(pet_en) ^ set(pet))}")
     dump(os.path.join(out_en, "pet.json"), pet_en)
+    dump(os.path.join(out_en, "tips.json"), ui_tips_en)
     # Sound practice (owner, ROADMAP C5): minimal pairs + dictation/shadowing that reference
     # curated, lesson-ready example sentences (their text and translations live in words).
     with open(os.path.join(ROOT, "tools", "authoring", "sound_en.json"), encoding="utf-8") as f:
