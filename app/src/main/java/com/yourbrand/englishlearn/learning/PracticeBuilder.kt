@@ -116,6 +116,20 @@ class MockTest(
          */
         fun build(content: Content, builder: SessionBuilder, formatId: String, title: String, count: Int?, recent: Set<String>, random: Random = Random.Default): MockTest {
             val format = content.formatById(formatId)
+            if (formatId.startsWith("toeic_p7_practice_") && count != null && format != null) {
+                val section = format.sections.firstOrNull { it.id == "p7" }
+                val bank = section?.bank?.let { content.examBanks[it] }
+                if (section != null && bank != null) {
+                    val set = section.groupSet
+                    val selected = bank.groups
+                        .filter { set == null || it.set == set }
+                        .flatMap { group -> group.items.filter { section.qtypes.isEmpty() || it.qtype in section.qtypes }.map { it to group } }
+                        .shuffled(random)
+                        .take(count)
+                    return MockTest(formatId, title, selected.map { "exam:${section.bank}:${it.first.id}" }, null,
+                        sectionIds = selected.map { section.id }, sectionLabels = listOf(section.id to section.label))
+                }
+            }
             if (format != null && format.sections.isNotEmpty()) {
                 val bankId = format.sections.mapNotNull { it.bank }.distinct().singleOrNull()
                 val bank = bankId?.let { content.examBanks[it] }

@@ -86,6 +86,22 @@ class ExamEngineTest {
         assertEquals(4, resumed.keys.size)
     }
 
+    @Test fun partSevenMiniTestUsesTenQuestionsButKeepsPassageLookup() {
+        val groups = (1..4).map { number ->
+            ExamGroup("p7_$number", "p7", "Passage $number", "Notice", (1..3).map { question ->
+                ExamItem("p7_${number}_q$question", "p7", 3, "Question $number-$question", listOf("A", "B", "C", "D"), 0, "Explanation", "p7_single")
+            }, "1")
+        }
+        val format = ExamFormat("toeic_p7_practice_1", "Part 7", "TOEIC-style practice", "", 54, null, null, null,
+            listOf(ExamSection("p7", "Part 7 practice", "group", 54, listOf("E01"), listOf("p7_single", "p7_double", "p7_triple"), "toeic_p7", "1")))
+        val content = Content(emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), listOf(format), emptyList(), emptyMap(), emptyMap(), examBanks = mapOf("toeic_p7" to ExamBank(emptyList(), groups)))
+        val builder = SessionBuilder(content, { null }, { emptyList() }, { emptyList() })
+        val mock = MockTest.build(content, builder, "toeic_p7_practice_1", "Part 7 sample", 10, emptySet(), kotlin.random.Random(1))
+        assertEquals(10, mock.keys.size)
+        assertEquals(10, mock.sectionIds.size)
+        assertTrue(mock.keys.all { (builder.exerciseFor(it) as Exercise.Choice).sharedPassage?.startsWith("Passage ") == true })
+    }
+
     @Test fun localizedExamOverridesRequireApproval() {
         val localized = """
             {"s1_i1":{"stem":"Approved translated stem","expl":"Approved translated explanation"},
