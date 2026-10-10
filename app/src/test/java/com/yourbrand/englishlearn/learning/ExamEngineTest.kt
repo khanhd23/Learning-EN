@@ -159,4 +159,15 @@ class ExamEngineTest {
         assertTrue(exercise.audioOptions)
         assertEquals("The talk begins at noon. When will it begin?", exercise.audioPrompt)
     }
+
+    @Test fun partSevenPracticeCanFilterByPassageType() {
+        val p7 = ExamBank(emptyList(), listOf(ExamGroup("p7_1", "p7", "A short notice", "Notice", listOf(
+            ExamItem("p7_1_q1", "p7", 3, "What is announced?", listOf("A", "B", "C", "D"), 0, "Explanation", "p7_single")
+        ), "1")))
+        val content = Content(emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyMap(), emptyMap(), examBanks = mapOf("toeic_p7" to p7))
+        val builder = SessionBuilder(content, { null }, { emptyList() }, { emptyList() })
+        val exercise = builder.examType("Part 7", "toeic_p7_practice_1", "p7_single", 3, 1).exercises.single() as Exercise.Choice
+        assertEquals("exam:toeic_p7:p7_1_q1", exercise.key)
+        assertEquals("A short notice", exercise.sharedPassage)
+    }
 }

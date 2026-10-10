@@ -43,6 +43,20 @@ class OriginalPart34ExamplesTest(unittest.TestCase):
             self.assertEqual(10, fmt["sections"][0]["count"])
             self.assertEqual([f"listen_{section}"], fmt["sections"][0]["qtype"])
 
+    def test_toeic_parts_five_to_seven_have_method_and_tip_content(self):
+        formats = json.loads((ROOT / "config/exam_formats.json").read_text(encoding="utf-8"))["formats"]
+        by_id = {item["id"]: item for item in formats}
+        for part in ("toeic_p5", "toeic_p6"):
+            self.assertIn("Cách làm", by_id[part]["description"])
+        for part in ("toeic_p7_practice_1", "toeic_p7_practice_2", "toeic_p7_practice_3"):
+            self.assertIn("Cách làm", by_id[part]["description"])
+            self.assertEqual(["p7_single", "p7_double", "p7_triple"], by_id[part]["sections"][0]["qtype"])
+        en = json.loads((ROOT / "content/en/tips.json").read_text(encoding="utf-8"))
+        vi = json.loads((ROOT / "content/i18n/vi/tips.json").read_text(encoding="utf-8"))
+        for key in ("p5_method", "p6_method", "p7_method", "p7_single", "p7_double", "p7_triple"):
+            self.assertTrue(en.get(key))
+            self.assertTrue(vi.get(key))
+
 
 if __name__ == "__main__":
     unittest.main()

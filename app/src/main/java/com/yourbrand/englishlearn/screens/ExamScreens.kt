@@ -160,6 +160,10 @@ class QuestionTypeScreen(activity: MainActivity, private val fmt: String) : Scro
             val bankId = if (fmt == "toeic_p3_examples") "toeic_p3" else "toeic_p4"
             val qtype = if (fmt == "toeic_p3_examples") "listen_p3" else "listen_p4"
             listOf(qtype to (services.content.examBanks[bankId]?.groups.orEmpty().filter { it.set == "examples" }.sumOf { it.items.size }))
+        } else if (fmt.startsWith("toeic_p7_practice_")) {
+            val set = fmt.substringAfterLast('_')
+            services.content.examBanks["toeic_p7"]?.groups.orEmpty().filter { it.set == set }
+                .flatMap { it.items }.groupBy { it.qtype }.map { it.key to it.value.size }
         } else {
             val pool = services.builder().examPool(fmt).filter { it.type != "E05" }
             pool.groupBy { it.qtype ?: if (it.type == "E04") "error" else if (it.type == "E12") "transform" else "vocab" }.map { it.key to it.value.size }.sortedByDescending { it.second }
@@ -181,6 +185,11 @@ class QuestionTypeScreen(activity: MainActivity, private val fmt: String) : Scro
                 services.content.examBanks[bankId]?.groups.orEmpty().filter { it.set == "examples" }
                     .flatMap { group -> group.items.filter { qt == null || it.qtype == qt }.map { "exam:$bankId:${it.id}" } }
             }
+            else if (fmt.startsWith("toeic_p7_practice_")) {
+                val set = fmt.substringAfterLast('_')
+                services.content.examBanks["toeic_p7"]?.groups.orEmpty().filter { it.set == set }
+                    .flatMap { group -> group.items.filter { qt == null || it.qtype == qt }.map { "exam:toeic_p7:${it.id}" } }
+            }
             else services.builder().examPool(fmt).filter { q -> (q.qtype ?: if (q.type == "E04") "error" else if (q.type == "E12") "transform" else "vocab") == qt }.map { it.key }
             val st = keys.mapNotNull { services.store.item(it) }.filter { it.seen > 0 }
             val acc = if (st.isEmpty()) null else st.sumOf { it.correct } * 100 / st.sumOf { it.seen }.coerceAtLeast(1)
@@ -201,7 +210,13 @@ class QuestionTypeScreen(activity: MainActivity, private val fmt: String) : Scro
     /** "Mẹo nhận diện" card, then a 10-question session. */
     private fun tips(qt: String?, label: String) {
         val c = ctx
-        val tip = qt?.let { services.content.tips[it] }
+        val partTipKey = when {
+            fmt == "toeic_p5" -> "p5_method"
+            fmt == "toeic_p6" -> "p6_method"
+            fmt.startsWith("toeic_p7_practice_") -> "p7_method"
+            else -> null
+        }
+        val tip = qt?.let { services.content.tips[it] } ?: partTipKey?.let { services.content.tips[it] }
         val start = { activity.startSession(services.builder().examType(label, fmt, qt, difficulty)) }
         if (tip == null) { start(); return }
         val sheet = BottomSheet(activity)

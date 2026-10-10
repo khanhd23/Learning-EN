@@ -163,6 +163,12 @@ QTYPE_TIPS = {
     "listen_p2": "Cách làm: xác định từ hỏi hoặc mục đích của câu hỏi rồi nghe đủ ba phản hồi. Mẹo: đừng chọn chỉ vì lặp lại một từ trong câu hỏi; đáp án đúng phải trả lời đúng ý.",
     "listen_p3": "Cách làm: đọc nhanh câu hỏi và dự đoán ai, việc gì, thời gian hoặc địa điểm cần nghe trong đoạn hội thoại. Mẹo: theo dõi sự thay đổi kế hoạch và lý do, vì đáp án thường diễn đạt lại chứ không lặp nguyên văn.",
     "listen_p4": "Cách làm: đọc trước câu hỏi, xác định chủ đề và thông tin cần lấy trong bài nói. Mẹo: chú ý câu chuyển ý, con số, thời gian và hành động tiếp theo; không suy luận thêm ngoài nội dung nghe được.",
+    "p5_method": "Cách làm Part 5: đọc toàn câu, xác định chỗ trống cần từ loại, thì, giới từ hay cụm từ rồi loại đáp án sai. Mẹo: nhìn cấu trúc trước, sau đó mới xét nghĩa và collocation; không dịch từng từ.",
+    "p6_method": "Cách làm Part 6: đọc nhanh mục đích và mạch đoạn văn, rồi đọc cả câu trước và sau chỗ trống. Mẹo: câu nối cần đúng quan hệ ý, đại từ phải có từ tham chiếu rõ, còn từ vựng phải đúng ngữ pháp và collocation.",
+    "p7_method": "Cách làm Part 7: đọc tiêu đề, người gửi, ngày và câu hỏi trước; sau đó tìm chi tiết trong văn bản và đối chiếu cách diễn đạt lại. Mẹo: câu chi tiết cần từ khóa, câu suy luận cần bằng chứng trong bài, không dùng kiến thức ngoài.",
+    "p7_single": "Đoạn đơn: xác định loại văn bản và mục đích trước, sau đó tìm dòng chứa thông tin được hỏi. Mẹo: đối chiếu cả câu trước và sau từ khóa để tránh bẫy thay đổi thời gian hoặc đối tượng.",
+    "p7_double": "Hai đoạn: đọc câu hỏi để biết thông tin nằm ở đoạn nào, rồi nối tên, ngày, số liệu hoặc hành động giữa hai văn bản. Mẹo: chỉ kết luận khi cả hai đoạn cùng hỗ trợ đáp án.",
+    "p7_triple": "Ba đoạn: lập nhanh bản đồ người viết, mục đích và mốc thời gian của từng đoạn trước khi tìm chi tiết. Mẹo: câu hỏi liên kết thường yêu cầu ghép thông tin từ hai đoạn trở lên, không chọn đáp án chỉ đúng với một đoạn.",
 }
 
 QTYPE_TIPS_EN = {
@@ -170,4 +176,10 @@ QTYPE_TIPS_EN = {
     "listen_p2": "How: identify the question word or purpose, then listen to all three responses. Tip: do not choose an option just because it repeats a word from the question; it must answer the meaning.",
     "listen_p3": "How: preview the questions and predict the people, purpose, time, or place you need to hear in the conversation. Tip: track changes of plan and reasons because correct answers often paraphrase the audio.",
     "listen_p4": "How: preview the questions, identify the topic, and listen for the requested detail in the talk. Tip: watch for transitions, numbers, times, and next actions; do not add information that was not heard.",
+    "p5_method": "Part 5: read the whole sentence, identify whether the blank needs a word form, tense, preposition, or collocation, then eliminate wrong choices. Tip: check structure before meaning and do not translate every word.",
+    "p6_method": "Part 6: skim the paragraph's purpose and flow, then read the sentences before and after the blank. Tip: a sentence choice must connect the ideas, a pronoun needs a clear reference, and vocabulary must fit grammar and collocation.",
+    "p7_method": "Part 7: preview the title, sender, date, and questions, then locate details and compare paraphrases in the text. Tip: detail questions need textual evidence, and inference questions must not rely on outside knowledge.",
+    "p7_single": "Single passage: identify the document type and purpose, then locate the lines containing the requested detail. Tip: read around the keyword to avoid traps involving a changed time or subject.",
+    "p7_double": "Double passage: use the question to decide which text contains each detail, then connect names, dates, numbers, or actions across both texts. Tip: choose an answer only when both texts support it.",
+    "p7_triple": "Triple passage: map each writer, purpose, and time point before searching for details. Tip: linked questions require evidence from at least two texts, not an answer supported by only one.",
 }
