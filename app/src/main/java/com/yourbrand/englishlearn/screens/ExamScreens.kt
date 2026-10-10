@@ -6,6 +6,7 @@ import android.widget.LinearLayout
 import com.yourbrand.englishlearn.MainActivity
 import com.yourbrand.englishlearn.R
 import com.yourbrand.englishlearn.content.ExamFormat
+import com.yourbrand.englishlearn.learning.ExamCatalog
 import com.yourbrand.englishlearn.learning.MockTest
 import com.yourbrand.englishlearn.learning.SessionKind
 import com.yourbrand.englishlearn.ui.*
@@ -30,36 +31,53 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
         } ?: if ("toeic" in services.settings.goals) "toeic" else "school"
         set(v) { services.settings.examGoal = v }
 
+    private var selectedFamily: String? = null
+
     override fun build(body: LinearLayout) {
         val c = ctx
         val content = services.content
         val fmt = content.formatById(formatId) ?: content.formats.first()
 
-        // 1. Choose exam / format
+        // 1. Choose an exam family, then a specific practice set.
         body.addView(Kit.text(c, str(R.string.choose_format), R.style.Text_Caption).margins(c, top = 4))
-        val row = Kit.hbox(c) { gravity = Gravity.TOP }
-        content.formats.forEach { f ->
+        body.addView(Kit.text(c, str(R.string.exam_catalog_sub), R.style.Text_Body).margins(c, top = 4))
+        val families = ExamCatalog.families(content.formats)
+        val currentFamily = selectedFamily?.takeIf { key -> families.any { it.first == key } }
+            ?: ExamCatalog.groupKey(fmt.family)
+        selectedFamily = currentFamily
+        val familyChips = Kit.hbox(c)
+        families.forEach { (key, groupFormats) ->
+            familyChips.addView(Kit.chip(c, familyLabel(key), key == currentFamily) {
+                selectedFamily = key
+                groupFormats.firstOrNull()?.let { formatId = it.id }
+                refresh()
+            })
+        }
+        body.addView(Kit.hscroll(c, familyChips).margins(c, top = 10))
+
+        val familyFormats = families.firstOrNull { it.first == currentFamily }?.second.orEmpty()
+        body.addView(Kit.section(c, familyLabel(currentFamily), topDp = 14))
+        familyFormats.forEach { f ->
             val sel = f.id == fmt.id
-            row.addView(Kit.clickableCard(c, 14, 8, if (sel) c.col(R.color.primary_container) else c.col(R.color.surface), onClick = { formatId = f.id; refresh() }) {
-                layoutParams = LinearLayout.LayoutParams(c.dpi(178), WRAP_CONTENT).apply { marginEnd = c.dpi(10) }
-                minimumHeight = c.dpi(118)
-                if (sel) background = c.rounded(c.col(R.color.primary_container), 16f, c.col(R.color.primary), 2f)
-                addView(Kit.text(c, f.family, R.style.Text_Caption, c.col(R.color.primary)))
-                addView(Kit.text(c, f.label, R.style.Text_BodyStrong).margins(c, top = 2))
-                addView(Kit.ellipsize(Kit.text(c, f.questionCount?.let { str(R.string.n_questions, it) } ?: str(R.string.generic_test), R.style.Text_Caption), 2).margins(c, top = 4))
+            body.addView(Kit.clickableCard(c, 4, 6, if (sel) c.col(R.color.primary_container) else c.col(R.color.surface), onClick = {
+                formatId = f.id
+                refresh()
+            }) {
+                if (sel) background = c.rounded(c.col(R.color.primary_container), 16f, c.col(R.color.primary), 1.5f)
+                addView(Kit.row(c, null, f.label, formatMeta(f), Kit.chevron(c)))
             })
         }
-        content.comingSoon.forEach { s ->
-            row.addView(Kit.card(c, 14, 8, c.col(R.color.surface_variant), null) {
-                layoutParams = LinearLayout.LayoutParams(c.dpi(150), WRAP_CONTENT).apply { marginEnd = c.dpi(10) }
-                minimumHeight = c.dpi(118)
-                alpha = 0.7f
-                addView(Kit.text(c, s.label, R.style.Text_BodyStrong))
-                addView(Kit.text(c, str(R.string.coming_soon), R.style.Text_Caption).margins(c, top = 4))
-            })
-        }
-        body.addView(Kit.hscroll(c, row))
         body.addView(Kit.text(c, fmt.description, R.style.Text_Body).apply { textSize = 14f }.margins(c, top = 8))
+
+        if (fmt.sections.isNotEmpty()) {
+            body.addView(Kit.section(c, str(R.string.exam_sections), topDp = 16))
+            body.addView(Kit.card(c, 4, 6) {
+                fmt.sections.forEachIndexed { index, section ->
+                    if (index > 0) addView(Kit.divider(c))
+                    addView(Kit.row(c, Kit.badge(c, section.count.toString(), c.col(R.color.primary_container), c.col(R.color.primary)), section.label, str(R.string.n_questions, section.count)))
+                }
+            })
+        }
 
         if (content.sound.dictation.isNotEmpty() || content.sound.pairs.isNotEmpty()) {
             body.addView(Kit.clickableCard(c, 6, 10, c.col(R.color.primary_container), onClick = {
@@ -109,6 +127,24 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
         }
 
         body.addView(Kit.text(c, str(R.string.disclaimer), R.style.Text_Caption).apply { textSize = 11f; gravity = Gravity.CENTER }.margins(c, top = 24))
+    }
+
+    private fun familyLabel(key: String): String = when (key) {
+        "TOEIC" -> str(R.string.exam_toeic)
+        "IELTS" -> str(R.string.exam_ielts)
+        "VSTEP" -> str(R.string.exam_vstep)
+        "THPT" -> str(R.string.exam_thpt)
+        "KET" -> str(R.string.exam_ket)
+        "PET" -> str(R.string.exam_pet)
+        else -> key.ifBlank { str(R.string.exam_other) }
+    }
+
+    private fun formatMeta(format: ExamFormat): String {
+        val parts = buildList {
+            format.questionCount?.let { add(str(R.string.n_questions, it)) }
+            format.timeLimitMinutes?.let { add(str(R.string.minutes_n, it)) }
+        }
+        return parts.ifEmpty { listOf(str(R.string.generic_test)) }.joinToString(" · ")
     }
 
     private fun testCard(body: LinearLayout, emoji: String, title: String, fmt: ExamFormat, count: Int?, hist: List<com.yourbrand.englishlearn.learning.HistoryEntry>) {

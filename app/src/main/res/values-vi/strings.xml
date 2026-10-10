@@ -123,6 +123,15 @@
     <string name="exam_date">Ngày thi</string>
     <string name="exam_focus">Hôm nay tập trung: %1$s</string>
     <string name="exam_goal">Mục tiêu thi</string>
+    <string name="exam_catalog_sub">Chọn kỳ thi, rồi chọn bộ đề luyện.</string>
+    <string name="exam_sections">Nội dung của bộ luyện này</string>
+    <string name="exam_toeic">TOEIC</string>
+    <string name="exam_ielts">IELTS</string>
+    <string name="exam_vstep">VSTEP</string>
+    <string name="exam_thpt">Thi tốt nghiệp THPT</string>
+    <string name="exam_ket">A2 Key (KET)</string>
+    <string name="exam_pet">B1 Preliminary (PET)</string>
+    <string name="exam_other">Kỳ thi khác</string>
     <string name="exam_type">Kỳ thi</string>
     <string name="examples_tap">Chạm vào ví dụ để nghe.</string>
     <string name="f_all">Tất cả</string>

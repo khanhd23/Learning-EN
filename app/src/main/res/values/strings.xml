@@ -123,6 +123,15 @@
     <string name="exam_date">Exam date</string>
     <string name="exam_focus">Focus today: %1$s</string>
     <string name="exam_goal">Exam goal</string>
+    <string name="exam_catalog_sub">Choose an exam, then a practice set.</string>
+    <string name="exam_sections">What this practice covers</string>
+    <string name="exam_toeic">TOEIC</string>
+    <string name="exam_ielts">IELTS</string>
+    <string name="exam_vstep">VSTEP</string>
+    <string name="exam_thpt">High school exam</string>
+    <string name="exam_ket">A2 Key (KET)</string>
+    <string name="exam_pet">B1 Preliminary (PET)</string>
+    <string name="exam_other">Other exams</string>
     <string name="exam_type">Exam</string>
     <string name="examples_tap">Tap an example to hear it.</string>
     <string name="f_all">All</string>
