@@ -7,6 +7,7 @@ import com.yourbrand.englishlearn.MainActivity
 import com.yourbrand.englishlearn.R
 import com.yourbrand.englishlearn.content.ExamFormat
 import com.yourbrand.englishlearn.learning.ExamCatalog
+import com.yourbrand.englishlearn.learning.ExamFormatText
 import com.yourbrand.englishlearn.learning.MockTest
 import com.yourbrand.englishlearn.learning.SessionKind
 import com.yourbrand.englishlearn.ui.*
@@ -64,17 +65,17 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
                 refresh()
             }) {
                 if (sel) background = c.rounded(c.col(R.color.primary_container), 16f, c.col(R.color.primary), 1.5f)
-                addView(Kit.row(c, null, f.label, formatMeta(f), Kit.chevron(c)))
+                addView(Kit.row(c, null, ExamFormatText.label(c, f), formatMeta(f), Kit.chevron(c)))
             })
         }
-        body.addView(Kit.text(c, fmt.description, R.style.Text_Body).apply { textSize = 14f }.margins(c, top = 8))
+        body.addView(Kit.text(c, ExamFormatText.description(c, fmt), R.style.Text_Body).apply { textSize = 14f }.margins(c, top = 8))
 
         if (fmt.sections.isNotEmpty()) {
             body.addView(Kit.section(c, str(R.string.exam_sections), topDp = 16))
             body.addView(Kit.card(c, 4, 6) {
                 fmt.sections.forEachIndexed { index, section ->
                     if (index > 0) addView(Kit.divider(c))
-                    addView(Kit.row(c, Kit.badge(c, section.count.toString(), c.col(R.color.primary_container), c.col(R.color.primary)), section.label, str(R.string.n_questions, section.count)))
+                    addView(Kit.row(c, Kit.badge(c, section.count.toString(), c.col(R.color.primary_container), c.col(R.color.primary)), ExamFormatText.sectionLabel(c, section), str(R.string.n_questions, section.count)))
                 }
             })
         }
@@ -103,7 +104,7 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
         val hist = services.store.history().filter { it.kind == "MOCK" && it.format == fmt.id }
         testCard(body, "⏱️", str(R.string.mini_test, 10), fmt, 10, hist.filter { it.total == 10 })
         testCard(body, "📝", str(R.string.mini_test, 20), fmt, 20, hist.filter { it.total == 20 })
-        testCard(body, "🏁", if (fmt.questionCount != null) str(R.string.part_test, fmt.label) else str(R.string.generic_test), fmt, null, hist.filter { it.total != 10 && it.total != 20 })
+        testCard(body, "🏁", if (fmt.questionCount != null) str(R.string.part_test, ExamFormatText.label(c, fmt)) else str(R.string.generic_test), fmt, null, hist.filter { it.total != 10 && it.total != 20 })
 
         // 5. Mistake book
         val mistakes = services.store.allItems().count { it.mistake }
@@ -173,7 +174,7 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
 /** S11 — practice by question type (with tips card and difficulty picker). */
 class QuestionTypeScreen(activity: MainActivity, private val fmt: String) : ScrollScreen(activity) {
     override val petMode = PetMode.FLOATING
-    override val barTitle: String get() = services.content.formatById(fmt)?.label ?: str(R.string.by_type_title)
+    override val barTitle: String get() = services.content.formatById(fmt)?.let { ExamFormatText.label(ctx, it) } ?: str(R.string.by_type_title)
     private var difficulty = 3
 
     override fun build(body: LinearLayout) {
@@ -229,7 +230,7 @@ class QuestionTypeScreen(activity: MainActivity, private val fmt: String) : Scro
             else services.builder().examPool(fmt).filter { q -> (q.qtype ?: if (q.type == "E04") "error" else if (q.type == "E12") "transform" else "vocab") == qt }.map { it.key }
             val st = keys.mapNotNull { services.store.item(it) }.filter { it.seen > 0 }
             val acc = if (st.isEmpty()) null else st.sumOf { it.correct } * 100 / st.sumOf { it.seen }.coerceAtLeast(1)
-            val label = if (qt == null) str(R.string.all_types) else services.content.formatById(fmt)?.sections?.firstOrNull { qt in it.qtypes }?.label ?: TagNames.label(c, qt)
+            val label = if (qt == null) str(R.string.all_types) else services.content.formatById(fmt)?.sections?.firstOrNull { qt in it.qtypes }?.let { ExamFormatText.sectionLabel(c, it) } ?: TagNames.label(c, qt)
             body.addView(Kit.card(c, 16, 12) {
                 val r = Kit.hbox(c)
                 r.addView(Kit.vbox(c) {

@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import com.yourbrand.englishlearn.MainActivity
 import com.yourbrand.englishlearn.R
+import com.yourbrand.englishlearn.learning.ExamFormatText
 import com.yourbrand.englishlearn.learning.WeaknessAnalyzer
 import com.yourbrand.englishlearn.ui.*
 import com.yourbrand.englishlearn.ui.views.Bar
@@ -138,7 +139,7 @@ class MeScreen(activity: MainActivity) : ScrollScreen(activity) {
 
         // Exam goal
         body.addView(Kit.section(c, str(R.string.exam_goal)))
-        val goalFmt = s.settings.examGoal?.let { s.content.formatById(it)?.label } ?: str(R.string.not_set)
+        val goalFmt = s.settings.examGoal?.let { s.content.formatById(it)?.let { format -> ExamFormatText.label(c, format) } } ?: str(R.string.not_set)
         val date = s.settings.examDate.takeIf { it > 0 }?.let { DateFormat.getDateInstance(DateFormat.MEDIUM).format(Date(it)) } ?: str(R.string.not_set)
         body.addView(Kit.card(c, 6, 4) {
             addView(Kit.row(c, Kit.emojiTile(c, "🎯", c.col(R.color.primary_container)), str(R.string.exam_type), goalFmt, Kit.chevron(c)) { pickExam() })
@@ -160,7 +161,7 @@ class MeScreen(activity: MainActivity) : ScrollScreen(activity) {
         sheet.show { box ->
             box.addView(Kit.text(ctx, str(R.string.exam_type), R.style.Text_Title))
             services.content.formats.forEach { f ->
-                box.addView(Kit.row(ctx, null, f.label, f.family, if (services.settings.examGoal == f.id) Kit.icon(ctx, R.drawable.ic_check, ctx.col(R.color.primary)) else null) {
+                box.addView(Kit.row(ctx, null, ExamFormatText.label(ctx, f), f.family, if (services.settings.examGoal == f.id) Kit.icon(ctx, R.drawable.ic_check, ctx.col(R.color.primary)) else null) {
                     services.settings.examGoal = f.id; sheet.dismiss(); refresh()
                 })
             }
