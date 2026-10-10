@@ -58,6 +58,41 @@ class ExamEngineTest {
         assertEquals(emptySet<String>(), paper("1").map { it.id }.toSet() intersect paper("2").map { it.id }.toSet())
     }
 
+    @Test fun mixedBankFormatKeepsSectionsAndKeysInTheirSourceBanks() {
+        val p5 = ExamBank(listOf(
+            ExamItem("p5_set1_a", "p5", 3, "P5 A", listOf("A", "B", "C", "D"), 0, "Explanation").copy(set = "1"),
+            ExamItem("p5_set2_a", "p5", 3, "P5 B", listOf("A", "B", "C", "D"), 0, "Explanation").copy(set = "2"),
+        ), emptyList())
+        val p6 = ExamBank(emptyList(), listOf(ExamGroup("p6_set1", "p6", "Passage", "P6", listOf(
+            ExamItem("p6_set1_a", "p6", 3, "P6 A", listOf("A", "B", "C", "D"), 0, "Explanation"),
+            ExamItem("p6_set1_b", "p6", 3, "P6 B", listOf("A", "B", "C", "D"), 0, "Explanation"),
+        ), "1")))
+        val p7 = ExamBank(emptyList(), listOf(ExamGroup("p7_set1", "p7", "Passage", "P7", listOf(
+            ExamItem("p7_set1_a", "p7", 3, "P7 A", listOf("A", "B", "C", "D"), 0, "Explanation", "p7_single"),
+            ExamItem("p7_set1_b", "p7", 3, "P7 B", listOf("A", "B", "C", "D"), 0, "Explanation", "p7_single"),
+        ), "1")))
+        val format = ExamFormat("mixed", "Mixed", "TEST", "", 6, null, 75, null, listOf(
+            ExamSection("p5", "Part 5", "mcq", 1, emptyList(), emptyList(), "p5", "1"),
+            ExamSection("p6", "Part 6", "group", 2, emptyList(), emptyList(), "p6", "1"),
+            ExamSection("p7", "Part 7", "group", 2, emptyList(), listOf("p7_single"), "p7", "1"),
+        ))
+
+        val picked = SectionedExamBuilder.build(format, mapOf("p5" to p5, "p6" to p6, "p7" to p7), kotlin.random.Random(7))
+        assertEquals(5, picked.size)
+        assertEquals(listOf("p5", "p6", "p6", "p7", "p7"), picked.map { it.bank })
+        assertTrue(picked.none { it.item.id == "p5_set2_a" })
+
+        val content = Content(
+            emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(),
+            listOf(format), emptyList(), emptyMap(), emptyMap(),
+            examBanks = mapOf("p5" to p5, "p6" to p6, "p7" to p7),
+        )
+        val builder = SessionBuilder(content, { null }, { emptyList() }, { emptyList() })
+        val mock = MockTest.build(content, builder, "mixed", "Mixed", null, emptySet(), kotlin.random.Random(7))
+        assertEquals(5, mock.keys.size)
+        assertTrue(mock.keys.all { it.startsWith("exam:p5:") || it.startsWith("exam:p6:") || it.startsWith("exam:p7:") })
+    }
+
     @Test fun testBankFixtureParsesAndRuns() {
         val json = javaClass.classLoader!!.getResource("sectioned_exam_bank.json")!!.readText()
         val parsed = ExamBankParser.parse(json)

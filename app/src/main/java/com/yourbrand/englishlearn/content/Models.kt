@@ -137,6 +137,8 @@ data class ExamItem(
     val qtype: String? = null,
     /** Non-null for genuine one-word open-cloze items; such items have no options. */
     val answerText: String? = null,
+    /** Optional deterministic paper set used when a format draws from a shared bank. */
+    val set: String? = null,
 )
 data class ExamGroup(val id: String, val section: String, val passage: String, val title: String?, val items: List<ExamItem>, val set: String? = null, val audioPassage: String? = null)
 data class ExamBank(val items: List<ExamItem>, val groups: List<ExamGroup>)

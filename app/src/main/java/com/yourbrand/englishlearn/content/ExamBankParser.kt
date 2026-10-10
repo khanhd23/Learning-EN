@@ -10,6 +10,7 @@ object ExamBankParser {
             o.getString("id"), section, o.optInt("level", 1), o.optString("stem"), o.optJSONArray("opts")?.let { a -> List(a.length()) { a.getString(it) } } ?: emptyList(),
             o.optInt("ans", -1), o.optString("expl"), o.optString("qtype").takeIf { it.isNotBlank() },
             o.optString("answerText").takeIf { it.isNotBlank() },
+            o.optString("set").takeIf { it.isNotBlank() },
         )
         val items = root.optJSONArray("items")?.let { a -> List(a.length()) { item(a.getJSONObject(it)) } } ?: emptyList()
         val groups = root.optJSONArray("groups")?.let { a -> List(a.length()) { i ->

@@ -135,11 +135,15 @@ class MockTest(
                 }
             }
             if (format != null && format.sections.isNotEmpty()) {
-                val bankId = format.sections.mapNotNull { it.bank }.distinct().singleOrNull()
-                val bank = bankId?.let { content.examBanks[it] }
-                if (bank != null) {
-                    val picked = SectionedExamBuilder.build(format, bank, random)
-                    return MockTest(formatId, title, picked.map { "exam:$bankId:${it.item.id}" }, format.timeLimitMinutes?.times(60),
+                val bankIds = format.sections.mapNotNull { it.bank }.distinct()
+                val banks = bankIds.mapNotNull { id -> content.examBanks[id]?.let { id to it } }.toMap()
+                if (bankIds.isNotEmpty() && banks.size == bankIds.size) {
+                    val picked = if (bankIds.size == 1) {
+                        SectionedExamBuilder.build(format, banks.getValue(bankIds.single()), random)
+                    } else {
+                        SectionedExamBuilder.build(format, banks, random)
+                    }
+                    return MockTest(formatId, title, picked.map { "exam:${it.bank ?: bankIds.single()}:${it.item.id}" }, format.timeLimitMinutes?.times(60),
                         sectionIds = picked.map { it.section }, sectionLabels = format.sections.map { it.id to it.label })
                 }
                 return MockTest(formatId, title, emptyList(), null)

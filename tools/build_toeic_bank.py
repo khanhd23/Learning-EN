@@ -99,12 +99,14 @@ def build_bank(questions, locale_questions):
     items = []
     locale = {}
     ids = set()
-    for q in p5:
+    for index, q in enumerate(p5):
         item = {
             "id": q["id"], "section": "p5", "level": q.get("level", 3),
             "stem": q["stem"], "opts": q["opts"], "ans": q["ans"],
             "expl": q.get("expl", ""), "qtype": q.get("qtype"),
         }
+        if index < 90:
+            item["set"] = str(index // 30 + 1)
         add_item(item, ids)
         items.append(item)
         explanation = vi_q.get(q["id"])
@@ -113,7 +115,7 @@ def build_bank(questions, locale_questions):
         locale[q["id"]] = {"expl": explanation}
 
     groups = []
-    for passage in passages:
+    for passage_index, passage in enumerate(passages):
         p_id = passage["id"]
         vi_blanks = vi_passages.get(p_id, {}).get("blanks", [])
         if len(passage.get("blanks", [])) != 4 or len(vi_blanks) != 4:
@@ -134,6 +136,7 @@ def build_bank(questions, locale_questions):
         groups.append({
             "id": p_id, "section": "p6", "title": passage.get("title"),
             "passage": passage["text"], "items": group_items,
+            "set": str(passage_index // 4 + 1) if passage_index < 12 else None,
         })
     return {"items": items, "groups": groups}, locale
 
