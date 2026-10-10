@@ -18,6 +18,16 @@ def read_json(*parts):
         return json.load(handle)
 
 
+def read_authoring_p7():
+    path = os.path.join(ROOT, "tools", "authoring", "exam_p7.json")
+    if not os.path.isfile(path):
+        return []
+    value = read_json("tools", "authoring", "exam_p7.json")
+    if not isinstance(value, list):
+        raise ValueError("exam_p7.json must contain a list")
+    return value
+
+
 def write_json(path, value):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as handle:
@@ -87,6 +97,42 @@ def add_item(item, ids):
         raise ValueError(f"missing English explanation for {item['id']}")
 
 
+def build_p7(groups, existing_ids):
+    """Build the original Part 7 preview bank from owner-authored source data."""
+    output_groups = []
+    locale = {}
+    ids = set(existing_ids)
+    for group in groups:
+        group_id = group.get("id", "")
+        if not group_id or group_id in ids:
+            raise ValueError(f"duplicate or empty Part 7 group id: {group_id!r}")
+        if group.get("section") != "p7" or not group.get("source", "").startswith("original:"):
+            raise ValueError(f"Part 7 group {group_id} must be original and use section p7")
+        if not group.get("passage") or not group.get("passage_vi"):
+            raise ValueError(f"Part 7 group {group_id} needs English and Vietnamese passages")
+        ids.add(group_id)
+        group_items = []
+        for raw in group.get("items", []):
+            item = {
+                "id": raw["id"], "section": "p7", "level": raw.get("level", group.get("level", 3)),
+                "stem": raw["stem"], "opts": raw["opts"], "ans": raw["ans"],
+                "expl": raw.get("expl", ""), "qtype": f"p7_{group.get('kind', 'single')}",
+            }
+            add_item(item, ids)
+            group_items.append(item)
+            if not raw.get("vi_expl"):
+                raise ValueError(f"missing Vietnamese explanation for {raw['id']}")
+            locale[item["id"]] = {"expl": raw["vi_expl"]}
+        if not group_items:
+            raise ValueError(f"Part 7 group {group_id} is empty")
+        output_groups.append({
+            "id": group_id, "section": "p7", "title": group.get("title"),
+            "passage": group["passage"], "items": group_items,
+        })
+        locale[group_id] = {"title": group.get("title_vi", ""), "passage": group["passage_vi"]}
+    return {"items": [], "groups": output_groups}, locale
+
+
 def update_status(locale):
     path = os.path.join(ROOT, "content", "i18n", "vi", "status.json")
     status = read_json("content", "i18n", "vi", "status.json")
@@ -111,8 +157,13 @@ def main():
     )
     write_json(os.path.join(ROOT, "content", "en", "exams", "toeic.json"), bank)
     write_json(os.path.join(ROOT, "content", "i18n", "vi", "exams", "toeic.json"), locale)
-    update_status(locale)
+
+    p7, p7_locale = build_p7(read_authoring_p7(), set())
+    write_json(os.path.join(ROOT, "content", "en", "exams", "toeic_p7.json"), p7)
+    write_json(os.path.join(ROOT, "content", "i18n", "vi", "exams", "toeic_p7.json"), p7_locale)
+    update_status({**locale, **p7_locale})
     print(f"toeic_p5={len(bank['items'])} toeic_p6_passages={len(bank['groups'])} toeic_p6_items={sum(len(g['items']) for g in bank['groups'])}")
+    print(f"toeic_p7_preview_passages={len(p7['groups'])} toeic_p7_preview_items={sum(len(g['items']) for g in p7['groups'])}")
 
 
 if __name__ == "__main__":

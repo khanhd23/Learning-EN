@@ -1,0 +1,270 @@
+{
+  "items": [],
+  "groups": [
+    {
+      "id": "p7_original_single_001",
+      "section": "p7",
+      "title": "Volunteer meeting moved",
+      "passage": "To: Community Garden Volunteers\nFrom: Lena Ortiz, Garden Coordinator\nSubject: Tuesday meeting\n\nThe volunteer meeting planned for Tuesday will take place in the library's small conference room instead of the garden shed. The shed's heating system is being repaired, and the work is expected to continue through Wednesday. Please bring the plant labels that were distributed last week. We will use them to decide which beds need new signs. The meeting will begin at 6:30 p.m. and should finish before 7:30. Afterward, anyone who has time may help move the seed trays back into the shed.\n\nThank you,\nLena",
+      "items": [
+        {
+          "id": "p7_original_single_001_q1",
+          "section": "p7",
+          "level": 3,
+          "stem": "Why will the meeting be held in the library?",
+          "opts": [
+            "The garden is being redesigned.",
+            "The shed is undergoing repairs.",
+            "The library needs new signs.",
+            "The volunteers requested a larger room."
+          ],
+          "ans": 1,
+          "expl": "The notice says that the shed's heating system is being repaired, so the meeting has been moved to the library.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_001_q2",
+          "section": "p7",
+          "level": 3,
+          "stem": "What are volunteers asked to bring?",
+          "opts": [
+            "Seed trays",
+            "Heating equipment",
+            "Plant labels",
+            "Library cards"
+          ],
+          "ans": 2,
+          "expl": "Lena asks volunteers to bring the plant labels distributed the previous week.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_001_q3",
+          "section": "p7",
+          "level": 3,
+          "stem": "What may volunteers do after the meeting?",
+          "opts": [
+            "Repair the heating system",
+            "Move seed trays",
+            "Print new plant labels",
+            "Clean the library"
+          ],
+          "ans": 1,
+          "expl": "The final sentence says that volunteers with time may move the seed trays back into the shed.",
+          "qtype": "p7_single"
+        }
+      ]
+    },
+    {
+      "id": "p7_original_single_002",
+      "section": "p7",
+      "title": "A new bicycle area",
+      "passage": "To: All Staff\nFrom: Miguel Santos, Facilities\nSubject: Bicycle storage\nDate: May 12\n\nStarting Monday, employees may leave bicycles in the covered area beside the west entrance. The old rack near the loading bay will be removed on Friday because delivery vehicles need more space there. A key card is not required for the covered area, but bicycles must be secured to a rack and may not block the emergency exit. Facilities will add six racks during the first week of June. Until then, please share the existing spaces and do not leave helmets on the floor. Questions about the new arrangement should be sent to Facilities before Thursday.\n\nMiguel",
+      "items": [
+        {
+          "id": "p7_original_single_002_q1",
+          "section": "p7",
+          "level": 3,
+          "stem": "Why will the old bicycle rack be removed?",
+          "opts": [
+            "It is difficult to reach.",
+            "It is near an emergency exit.",
+            "Delivery vehicles need more room.",
+            "New racks will be installed there."
+          ],
+          "ans": 2,
+          "expl": "The notice explains that delivery vehicles need more space near the loading bay.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_002_q2",
+          "section": "p7",
+          "level": 3,
+          "stem": "What is true about the covered area?",
+          "opts": [
+            "It requires a key card.",
+            "It is beside the west entrance.",
+            "It is reserved for visitors.",
+            "It will close in June."
+          ],
+          "ans": 1,
+          "expl": "The second paragraph states that the covered area is beside the west entrance.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_002_q3",
+          "section": "p7",
+          "level": 3,
+          "stem": "What should employees do until the new racks are installed?",
+          "opts": [
+            "Park near the loading bay.",
+            "Keep helmets in the office.",
+            "Share the current spaces.",
+            "Request a key card from Facilities."
+          ],
+          "ans": 2,
+          "expl": "Employees are asked to share the existing spaces until six additional racks are added in June.",
+          "qtype": "p7_single"
+        }
+      ]
+    },
+    {
+      "id": "p7_original_single_003",
+      "section": "p7",
+      "title": "Evening workshop registration",
+      "passage": "RIVERDALE LEARNING CENTER\n\nA three-week workshop on practical spreadsheet skills will begin on September 4. Classes will meet on Wednesday evenings from 7:00 to 8:30 in Room 204. Participants should bring a laptop with a spreadsheet program installed. The center will provide practice files and a printed reference guide. Registration is limited to eighteen people, and places are assigned in the order that complete forms are received. The fee includes all three sessions. To request an accessibility arrangement, contact the center at least one week before the first class.\n\nRegistration desk hours: Monday–Friday, 9:00 a.m.–4:00 p.m.",
+      "items": [
+        {
+          "id": "p7_original_single_003_q1",
+          "section": "p7",
+          "level": 3,
+          "stem": "What is provided by the learning center?",
+          "opts": [
+            "Laptop computers",
+            "Spreadsheet software",
+            "Practice files",
+            "Transportation to the center"
+          ],
+          "ans": 2,
+          "expl": "The notice says that the center will provide practice files and a printed reference guide.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_003_q2",
+          "section": "p7",
+          "level": 3,
+          "stem": "How are places in the workshop assigned?",
+          "opts": [
+            "By attendance at an interview",
+            "By the order of complete registrations",
+            "By spreadsheet experience",
+            "By weekly payment date"
+          ],
+          "ans": 1,
+          "expl": "Places are assigned in the order that complete registration forms are received.",
+          "qtype": "p7_single"
+        },
+        {
+          "id": "p7_original_single_003_q3",
+          "section": "p7",
+          "level": 3,
+          "stem": "When should a participant request an accessibility arrangement?",
+          "opts": [
+            "On the evening of the first class",
+            "After the third session",
+            "At least one week before the first class",
+            "During registration desk hours on Friday"
+          ],
+          "ans": 2,
+          "expl": "The final paragraph asks participants to contact the center at least one week before the first class.",
+          "qtype": "p7_single"
+        }
+      ]
+    },
+    {
+      "id": "p7_original_double_004",
+      "section": "p7",
+      "title": "Office supply order",
+      "passage": "Message 1\nTo: Greenline Office Supplies\nFrom: Priya Nair\nSubject: Order 4816\n\nOur order arrived this morning, but the package contains twenty blue folders instead of the twenty green folders listed on our order form. We need the green folders for a training session next Friday. The pens and labels in the same package are correct. Could you arrange an exchange and let us know whether the courier can collect the blue folders before Wednesday?\n\nMessage 2\nTo: Priya Nair\nFrom: Daniel Wu, Greenline Office Supplies\nSubject: Re: Order 4816\n\nThank you for reporting the packing error. We will send the green folders by Tuesday afternoon at no additional charge. A courier will collect the blue folders from your reception desk on Wednesday morning. Please leave them in the original box and attach the enclosed return label. The corrected invoice will be emailed after the collection is scanned.\n\nDaniel",
+      "items": [
+        {
+          "id": "p7_original_double_004_q1",
+          "section": "p7",
+          "level": 3,
+          "stem": "What problem does Priya report?",
+          "opts": [
+            "Some labels are missing.",
+            "The order arrived late.",
+            "The folders have the wrong color.",
+            "The invoice includes an extra fee."
+          ],
+          "ans": 2,
+          "expl": "Priya says that blue folders arrived instead of the green folders on the order form.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_004_q2",
+          "section": "p7",
+          "level": 3,
+          "stem": "When will the replacement folders be sent?",
+          "opts": [
+            "Monday morning",
+            "Tuesday afternoon",
+            "Wednesday morning",
+            "Friday afternoon"
+          ],
+          "ans": 1,
+          "expl": "Daniel promises to send the green folders by Tuesday afternoon.",
+          "qtype": "p7_double"
+        },
+        {
+          "id": "p7_original_double_004_q3",
+          "section": "p7",
+          "level": 3,
+          "stem": "What are Priya's employees asked to do with the blue folders?",
+          "opts": [
+            "Use them at the training session",
+            "Put them in a new box",
+            "Leave them at the reception desk",
+            "Send them to the training center"
+          ],
+          "ans": 2,
+          "expl": "The reply says that a courier will collect the folders from the reception desk.",
+          "qtype": "p7_double"
+        }
+      ]
+    },
+    {
+      "id": "p7_original_triple_005",
+      "section": "p7",
+      "title": "Market stall schedule",
+      "passage": "MARKET STALL RESERVATION\nVendor: Cedar Street Bakery\nEvent: Saturday Makers' Market\nDate: October 19\nReserved space: B12\nSet-up window: 7:00–8:00 a.m.\n\nEVENT NOTICE\nBecause of a delivery of folding tables, vendors in rows A and B must use the north gate for set-up. The south gate will open to shoppers at 8:30 a.m. Vendors may not unload vehicles in the pedestrian lane. A market assistant will be available near the north gate until 8:15 a.m.\n\nMESSAGE TO STAFF\nPlease place Cedar Street Bakery's sign beside stall B12 before the first customers arrive. The bakery requested access to a power outlet, so reserve the outlet nearest the stall for its coffee machine. Do not move the outlet covers; the facilities team will check them after the market closes.",
+      "items": [
+        {
+          "id": "p7_original_triple_005_q1",
+          "section": "p7",
+          "level": 4,
+          "stem": "What is indicated on the reservation form?",
+          "opts": [
+            "The bakery will sell tables.",
+            "The bakery has space B12.",
+            "The event will take place on Friday.",
+            "The bakery must use the south gate."
+          ],
+          "ans": 1,
+          "expl": "The reservation form lists B12 as Cedar Street Bakery's reserved space.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_005_q2",
+          "section": "p7",
+          "level": 4,
+          "stem": "What must vendors in row B do?",
+          "opts": [
+            "Open the south gate",
+            "Unload in the pedestrian lane",
+            "Use the north gate for set-up",
+            "Leave before 8:15 a.m."
+          ],
+          "ans": 2,
+          "expl": "The event notice directs vendors in rows A and B to use the north gate for set-up.",
+          "qtype": "p7_triple"
+        },
+        {
+          "id": "p7_original_triple_005_q3",
+          "section": "p7",
+          "level": 4,
+          "stem": "Why should an outlet near stall B12 be reserved?",
+          "opts": [
+            "The staff need to charge radios.",
+            "A coffee machine will use it.",
+            "The facilities team will replace it.",
+            "Customers will need a meeting place."
+          ],
+          "ans": 1,
+          "expl": "The staff message says that the bakery requested the outlet for its coffee machine.",
+          "qtype": "p7_triple"
+        }
+      ]
+    }
+  ]
+}

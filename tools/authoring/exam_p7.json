@@ -1,0 +1,187 @@
+[
+  {
+    "id": "p7_original_single_001",
+    "section": "p7",
+    "kind": "single",
+    "level": 3,
+    "source": "original:exam-expansion-2026",
+    "title": "Volunteer meeting moved",
+    "title_vi": "Cuộc họp tình nguyện viên được chuyển lịch",
+    "passage": "To: Community Garden Volunteers\nFrom: Lena Ortiz, Garden Coordinator\nSubject: Tuesday meeting\n\nThe volunteer meeting planned for Tuesday will take place in the library's small conference room instead of the garden shed. The shed's heating system is being repaired, and the work is expected to continue through Wednesday. Please bring the plant labels that were distributed last week. We will use them to decide which beds need new signs. The meeting will begin at 6:30 p.m. and should finish before 7:30. Afterward, anyone who has time may help move the seed trays back into the shed.\n\nThank you,\nLena",
+    "passage_vi": "Đến: Các tình nguyện viên Vườn Cộng đồng\nTừ: Lena Ortiz, Điều phối viên khu vườn\nChủ đề: Cuộc họp thứ Ba\n\nCuộc họp tình nguyện viên dự kiến vào thứ Ba sẽ diễn ra tại phòng họp nhỏ của thư viện thay vì nhà kho trong vườn. Hệ thống sưởi của nhà kho đang được sửa và dự kiến công việc kéo dài đến thứ Tư. Vui lòng mang theo các nhãn cây đã phát tuần trước. Chúng ta sẽ dùng chúng để quyết định luống nào cần biển mới. Cuộc họp bắt đầu lúc 6:30 tối và dự kiến kết thúc trước 7:30. Sau đó, ai có thời gian có thể giúp chuyển các khay cây giống trở lại nhà kho.",
+    "items": [
+      {
+        "id": "p7_original_single_001_q1",
+        "stem": "Why will the meeting be held in the library?",
+        "opts": ["The garden is being redesigned.", "The shed is undergoing repairs.", "The library needs new signs.", "The volunteers requested a larger room."],
+        "ans": 1,
+        "expl": "The notice says that the shed's heating system is being repaired, so the meeting has been moved to the library.",
+        "vi_expl": "Thông báo cho biết hệ thống sưởi của nhà kho đang được sửa, nên cuộc họp được chuyển sang thư viện."
+      },
+      {
+        "id": "p7_original_single_001_q2",
+        "stem": "What are volunteers asked to bring?",
+        "opts": ["Seed trays", "Heating equipment", "Plant labels", "Library cards"],
+        "ans": 2,
+        "expl": "Lena asks volunteers to bring the plant labels distributed the previous week.",
+        "vi_expl": "Lena yêu cầu các tình nguyện viên mang theo những nhãn cây đã được phát vào tuần trước."
+      },
+      {
+        "id": "p7_original_single_001_q3",
+        "stem": "What may volunteers do after the meeting?",
+        "opts": ["Repair the heating system", "Move seed trays", "Print new plant labels", "Clean the library"],
+        "ans": 1,
+        "expl": "The final sentence says that volunteers with time may move the seed trays back into the shed.",
+        "vi_expl": "Câu cuối nói rằng những người còn thời gian có thể chuyển các khay cây giống trở lại nhà kho."
+      }
+    ]
+  },
+  {
+    "id": "p7_original_single_002",
+    "section": "p7",
+    "kind": "single",
+    "level": 3,
+    "source": "original:exam-expansion-2026",
+    "title": "A new bicycle area",
+    "title_vi": "Khu vực để xe đạp mới",
+    "passage": "To: All Staff\nFrom: Miguel Santos, Facilities\nSubject: Bicycle storage\nDate: May 12\n\nStarting Monday, employees may leave bicycles in the covered area beside the west entrance. The old rack near the loading bay will be removed on Friday because delivery vehicles need more space there. A key card is not required for the covered area, but bicycles must be secured to a rack and may not block the emergency exit. Facilities will add six racks during the first week of June. Until then, please share the existing spaces and do not leave helmets on the floor. Questions about the new arrangement should be sent to Facilities before Thursday.\n\nMiguel",
+    "passage_vi": "Đến: Toàn thể nhân viên\nTừ: Miguel Santos, Bộ phận Cơ sở vật chất\nChủ đề: Khu vực để xe đạp\nNgày: 12 tháng 5\n\nTừ thứ Hai, nhân viên có thể để xe đạp trong khu vực có mái che cạnh lối vào phía tây. Giá để xe cũ gần khu vực bốc hàng sẽ được tháo vào thứ Sáu vì xe giao hàng cần thêm không gian ở đó. Khu vực có mái che không cần thẻ ra vào, nhưng xe đạp phải được khóa vào giá và không được chắn lối thoát hiểm. Bộ phận Cơ sở vật chất sẽ lắp thêm sáu giá trong tuần đầu tháng Sáu. Cho đến lúc đó, vui lòng dùng chung các chỗ hiện có và không để mũ bảo hiểm trên sàn. Mọi câu hỏi về cách sắp xếp mới nên được gửi đến bộ phận này trước thứ Năm.",
+    "items": [
+      {
+        "id": "p7_original_single_002_q1",
+        "stem": "Why will the old bicycle rack be removed?",
+        "opts": ["It is difficult to reach.", "It is near an emergency exit.", "Delivery vehicles need more room.", "New racks will be installed there."],
+        "ans": 2,
+        "expl": "The notice explains that delivery vehicles need more space near the loading bay.",
+        "vi_expl": "Thông báo giải thích rằng xe giao hàng cần thêm không gian gần khu vực bốc hàng."
+      },
+      {
+        "id": "p7_original_single_002_q2",
+        "stem": "What is true about the covered area?",
+        "opts": ["It requires a key card.", "It is beside the west entrance.", "It is reserved for visitors.", "It will close in June."],
+        "ans": 1,
+        "expl": "The second paragraph states that the covered area is beside the west entrance.",
+        "vi_expl": "Đoạn thứ hai nêu rõ khu vực có mái che nằm cạnh lối vào phía tây."
+      },
+      {
+        "id": "p7_original_single_002_q3",
+        "stem": "What should employees do until the new racks are installed?",
+        "opts": ["Park near the loading bay.", "Keep helmets in the office.", "Share the current spaces.", "Request a key card from Facilities."],
+        "ans": 2,
+        "expl": "Employees are asked to share the existing spaces until six additional racks are added in June.",
+        "vi_expl": "Nhân viên được yêu cầu dùng chung các chỗ hiện có cho đến khi sáu giá mới được lắp vào tháng Sáu."
+      }
+    ]
+  },
+  {
+    "id": "p7_original_single_003",
+    "section": "p7",
+    "kind": "single",
+    "level": 3,
+    "source": "original:exam-expansion-2026",
+    "title": "Evening workshop registration",
+    "title_vi": "Đăng ký hội thảo buổi tối",
+    "passage": "RIVERDALE LEARNING CENTER\n\nA three-week workshop on practical spreadsheet skills will begin on September 4. Classes will meet on Wednesday evenings from 7:00 to 8:30 in Room 204. Participants should bring a laptop with a spreadsheet program installed. The center will provide practice files and a printed reference guide. Registration is limited to eighteen people, and places are assigned in the order that complete forms are received. The fee includes all three sessions. To request an accessibility arrangement, contact the center at least one week before the first class.\n\nRegistration desk hours: Monday–Friday, 9:00 a.m.–4:00 p.m.",
+    "passage_vi": "TRUNG TÂM HỌC TẬP RIVERDALE\n\nMột hội thảo kéo dài ba tuần về kỹ năng bảng tính thực tế sẽ bắt đầu vào ngày 4 tháng 9. Lớp học diễn ra vào tối thứ Tư từ 7:00 đến 8:30 tại Phòng 204. Người tham gia nên mang theo máy tính xách tay đã cài chương trình bảng tính. Trung tâm sẽ cung cấp các tệp thực hành và một tài liệu tham khảo in sẵn. Hội thảo giới hạn mười tám người và chỗ được phân theo thứ tự nhận được phiếu đăng ký đầy đủ. Lệ phí bao gồm cả ba buổi học. Nếu cần sắp xếp hỗ trợ tiếp cận, hãy liên hệ với trung tâm ít nhất một tuần trước buổi học đầu tiên.\n\nGiờ làm việc của quầy đăng ký: Thứ Hai–Thứ Sáu, 9:00–16:00.",
+    "items": [
+      {
+        "id": "p7_original_single_003_q1",
+        "stem": "What is provided by the learning center?",
+        "opts": ["Laptop computers", "Spreadsheet software", "Practice files", "Transportation to the center"],
+        "ans": 2,
+        "expl": "The notice says that the center will provide practice files and a printed reference guide.",
+        "vi_expl": "Thông báo nói rằng trung tâm sẽ cung cấp các tệp thực hành và tài liệu tham khảo in sẵn."
+      },
+      {
+        "id": "p7_original_single_003_q2",
+        "stem": "How are places in the workshop assigned?",
+        "opts": ["By attendance at an interview", "By the order of complete registrations", "By spreadsheet experience", "By weekly payment date"],
+        "ans": 1,
+        "expl": "Places are assigned in the order that complete registration forms are received.",
+        "vi_expl": "Chỗ được phân theo thứ tự trung tâm nhận được các phiếu đăng ký đầy đủ."
+      },
+      {
+        "id": "p7_original_single_003_q3",
+        "stem": "When should a participant request an accessibility arrangement?",
+        "opts": ["On the evening of the first class", "After the third session", "At least one week before the first class", "During registration desk hours on Friday"],
+        "ans": 2,
+        "expl": "The final paragraph asks participants to contact the center at least one week before the first class.",
+        "vi_expl": "Đoạn cuối yêu cầu người tham gia liên hệ với trung tâm ít nhất một tuần trước buổi học đầu tiên."
+      }
+    ]
+  },
+  {
+    "id": "p7_original_double_004",
+    "section": "p7",
+    "kind": "double",
+    "level": 3,
+    "source": "original:exam-expansion-2026",
+    "title": "Office supply order",
+    "title_vi": "Đơn hàng văn phòng phẩm",
+    "passage": "Message 1\nTo: Greenline Office Supplies\nFrom: Priya Nair\nSubject: Order 4816\n\nOur order arrived this morning, but the package contains twenty blue folders instead of the twenty green folders listed on our order form. We need the green folders for a training session next Friday. The pens and labels in the same package are correct. Could you arrange an exchange and let us know whether the courier can collect the blue folders before Wednesday?\n\nMessage 2\nTo: Priya Nair\nFrom: Daniel Wu, Greenline Office Supplies\nSubject: Re: Order 4816\n\nThank you for reporting the packing error. We will send the green folders by Tuesday afternoon at no additional charge. A courier will collect the blue folders from your reception desk on Wednesday morning. Please leave them in the original box and attach the enclosed return label. The corrected invoice will be emailed after the collection is scanned.\n\nDaniel",
+    "passage_vi": "Tin nhắn 1\nĐến: Greenline Office Supplies\nTừ: Priya Nair\nChủ đề: Đơn hàng 4816\n\nĐơn hàng của chúng tôi đến vào sáng nay, nhưng gói hàng có hai mươi bìa hồ sơ màu xanh thay vì hai mươi bìa màu xanh lá như trong phiếu đặt hàng. Chúng tôi cần bìa xanh lá cho buổi đào tạo vào thứ Sáu tuần tới. Bút và nhãn trong cùng gói hàng đều đúng. Bạn có thể sắp xếp đổi hàng và cho biết liệu người giao hàng có thể lấy bìa xanh trước thứ Tư không?\n\nTin nhắn 2\nĐến: Priya Nair\nTừ: Daniel Wu, Greenline Office Supplies\nChủ đề: Trả lời: Đơn hàng 4816\n\nCảm ơn bạn đã báo lỗi đóng gói. Chúng tôi sẽ gửi bìa xanh lá vào chiều thứ Ba mà không tính thêm phí. Người giao hàng sẽ lấy bìa xanh tại quầy lễ tân của bạn vào sáng thứ Tư. Vui lòng để chúng trong hộp ban đầu và dán nhãn trả hàng kèm theo. Hóa đơn đã chỉnh sửa sẽ được gửi qua email sau khi việc nhận hàng được quét.",
+    "items": [
+      {
+        "id": "p7_original_double_004_q1",
+        "stem": "What problem does Priya report?",
+        "opts": ["Some labels are missing.", "The order arrived late.", "The folders have the wrong color.", "The invoice includes an extra fee."],
+        "ans": 2,
+        "expl": "Priya says that blue folders arrived instead of the green folders on the order form.",
+        "vi_expl": "Priya cho biết các bìa màu xanh được giao thay vì bìa màu xanh lá trong phiếu đặt hàng."
+      },
+      {
+        "id": "p7_original_double_004_q2",
+        "stem": "When will the replacement folders be sent?",
+        "opts": ["Monday morning", "Tuesday afternoon", "Wednesday morning", "Friday afternoon"],
+        "ans": 1,
+        "expl": "Daniel promises to send the green folders by Tuesday afternoon.",
+        "vi_expl": "Daniel hứa sẽ gửi các bìa màu xanh lá vào chiều thứ Ba."
+      },
+      {
+        "id": "p7_original_double_004_q3",
+        "stem": "What are Priya's employees asked to do with the blue folders?",
+        "opts": ["Use them at the training session", "Put them in a new box", "Leave them at the reception desk", "Send them to the training center"],
+        "ans": 2,
+        "expl": "The reply says that a courier will collect the folders from the reception desk.",
+        "vi_expl": "Thư trả lời nói rằng người giao hàng sẽ lấy các bìa hồ sơ tại quầy lễ tân."
+      }
+    ]
+  },
+  {
+    "id": "p7_original_triple_005",
+    "section": "p7",
+    "kind": "triple",
+    "level": 4,
+    "source": "original:exam-expansion-2026",
+    "title": "Market stall schedule",
+    "title_vi": "Lịch các quầy ở chợ",
+    "passage": "MARKET STALL RESERVATION\nVendor: Cedar Street Bakery\nEvent: Saturday Makers' Market\nDate: October 19\nReserved space: B12\nSet-up window: 7:00–8:00 a.m.\n\nEVENT NOTICE\nBecause of a delivery of folding tables, vendors in rows A and B must use the north gate for set-up. The south gate will open to shoppers at 8:30 a.m. Vendors may not unload vehicles in the pedestrian lane. A market assistant will be available near the north gate until 8:15 a.m.\n\nMESSAGE TO STAFF\nPlease place Cedar Street Bakery's sign beside stall B12 before the first customers arrive. The bakery requested access to a power outlet, so reserve the outlet nearest the stall for its coffee machine. Do not move the outlet covers; the facilities team will check them after the market closes.",
+    "passage_vi": "PHIẾU ĐẶT QUẦY\nNgười bán: Cedar Street Bakery\nSự kiện: Chợ Đồ thủ công Thứ Bảy\nNgày: 19 tháng 10\nVị trí đặt: B12\nKhung giờ dựng quầy: 7:00–8:00 sáng\n\nTHÔNG BÁO SỰ KIỆN\nDo có chuyến giao bàn gấp, người bán ở các dãy A và B phải dùng cổng phía bắc để dựng quầy. Cổng phía nam sẽ mở cho khách mua hàng lúc 8:30 sáng. Người bán không được dỡ hàng trong làn đường dành cho người đi bộ. Một nhân viên hỗ trợ sẽ có mặt gần cổng phía bắc đến 8:15 sáng.\n\nTIN NHẮN GỬI NHÂN VIÊN\nVui lòng đặt biển của Cedar Street Bakery cạnh quầy B12 trước khi khách đầu tiên đến. Tiệm bánh yêu cầu sử dụng ổ cắm điện, vì vậy hãy giữ ổ cắm gần quầy nhất cho máy pha cà phê của tiệm. Không di chuyển nắp ổ cắm; đội cơ sở vật chất sẽ kiểm tra chúng sau khi chợ đóng cửa.",
+    "items": [
+      {
+        "id": "p7_original_triple_005_q1",
+        "stem": "What is indicated on the reservation form?",
+        "opts": ["The bakery will sell tables.", "The bakery has space B12.", "The event will take place on Friday.", "The bakery must use the south gate."],
+        "ans": 1,
+        "expl": "The reservation form lists B12 as Cedar Street Bakery's reserved space.",
+        "vi_expl": "Phiếu đặt quầy ghi vị trí B12 là chỗ đã đặt của Cedar Street Bakery."
+      },
+      {
+        "id": "p7_original_triple_005_q2",
+        "stem": "What must vendors in row B do?",
+        "opts": ["Open the south gate", "Unload in the pedestrian lane", "Use the north gate for set-up", "Leave before 8:15 a.m."],
+        "ans": 2,
+        "expl": "The event notice directs vendors in rows A and B to use the north gate for set-up.",
+        "vi_expl": "Thông báo sự kiện yêu cầu người bán ở dãy A và B dùng cổng phía bắc để dựng quầy."
+      },
+      {
+        "id": "p7_original_triple_005_q3",
+        "stem": "Why should an outlet near stall B12 be reserved?",
+        "opts": ["The staff need to charge radios.", "A coffee machine will use it.", "The facilities team will replace it.", "Customers will need a meeting place."],
+        "ans": 1,
+        "expl": "The staff message says that the bakery requested the outlet for its coffee machine.",
+        "vi_expl": "Tin nhắn cho nhân viên nói rằng tiệm bánh yêu cầu ổ cắm cho máy pha cà phê."
+      }
+    ]
+  }
+]
