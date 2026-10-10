@@ -125,11 +125,13 @@ class ExerciseFactory(private val content: Content, private val random: Random =
 
     fun exam(bank: String, item: ExamItem, group: ExamGroup?): Exercise.Choice {
         val partOneListening = item.qtype == "listen_p1"
-        return Exercise.Choice("exam:$bank:${item.id}", if (partOneListening) Kind.E09 else Kind.E01,
-            listOf("exam", "section_${item.section}") + if (partOneListening) listOf("listening", "part1") else emptyList(), item.level,
-            if (partOneListening) R.string.ins_listen else R.string.ins_choose, item.stem, item.options, item.answer, item.explanation,
+        val partTwoListening = item.qtype == "listen_p2"
+        val listening = partOneListening || partTwoListening
+        return Exercise.Choice("exam:$bank:${item.id}", if (listening) Kind.E09 else Kind.E01,
+            listOf("exam", "section_${item.section}") + if (listening) listOf("listening", item.section) else emptyList(), item.level,
+            if (listening) R.string.ins_listen else R.string.ins_choose, item.stem, item.options, item.answer, item.explanation,
             sharedPassage = group?.passage, sharedPassageTitle = group?.title, sharedGroupId = group?.id,
-            audioOptions = partOneListening)
+            audioOptions = listening, audioPrompt = group?.passage.takeIf { partTwoListening })
     }
 
     fun spelling(w: Word): Exercise.Spelling? {

@@ -1,0 +1,212 @@
+{
+  "p2_original_set1_001_q1": {
+    "expl": "Câu hỏi yêu cầu địa điểm, nên 'Ở phòng 204' là câu trả lời phù hợp."
+  },
+  "p2_original_set1_001": {
+    "title": "Câu hỏi 1",
+    "passage": "Cuộc họp nhân viên ở đâu?"
+  },
+  "p2_original_set1_002_q1": {
+    "expl": "Câu hỏi hỏi thời điểm hàng đến, nên 'Sáng thứ Năm' là câu trả lời về thời gian."
+  },
+  "p2_original_set1_002": {
+    "title": "Câu hỏi 2",
+    "passage": "Khi nào hàng giao sẽ đến?"
+  },
+  "p2_original_set1_003_q1": {
+    "expl": "Câu hỏi hỏi ai phê duyệt ngân sách, nên cần tên của một người."
+  },
+  "p2_original_set1_003": {
+    "title": "Câu hỏi 3",
+    "passage": "Ai đã phê duyệt ngân sách?"
+  },
+  "p2_original_set1_004_q1": {
+    "expl": "Câu hỏi hỏi lý do, và máy in không hoạt động vì đang được sửa."
+  },
+  "p2_original_set1_004": {
+    "title": "Câu hỏi 4",
+    "passage": "Tại sao máy in không hoạt động?"
+  },
+  "p2_original_set1_005_q1": {
+    "expl": "Câu hỏi hỏi cách đặt tủ đồ, nên biểu mẫu trực tuyến là phương thức phù hợp."
+  },
+  "p2_original_set1_005": {
+    "title": "Câu hỏi 5",
+    "passage": "Tôi có thể đặt trước tủ đồ bằng cách nào?"
+  },
+  "p2_original_set1_006_q1": {
+    "expl": "Lời mời được đáp lại tự nhiên bằng cách nhận lời: 'Có, làm ơn.'"
+  },
+  "p2_original_set1_006": {
+    "title": "Câu hỏi 6",
+    "passage": "Bạn có muốn uống cà phê không?"
+  },
+  "p2_original_set2_001_q1": {
+    "expl": "Câu hỏi có–không được trả lời trực tiếp bằng việc xác nhận Jordan đã gửi vào sáng nay."
+  },
+  "p2_original_set2_001": {
+    "title": "Câu hỏi 1",
+    "passage": "Jordan đã gửi hóa đơn chưa?"
+  },
+  "p2_original_set2_002_q1": {
+    "expl": "Câu hỏi hỏi chuyến tàu nào, nên 'Chuyến tốc hành lúc 8:20' xác định đúng chuyến."
+  },
+  "p2_original_set2_002": {
+    "title": "Câu hỏi 2",
+    "passage": "Tôi nên đi chuyến tàu nào?"
+  },
+  "p2_original_set2_003_q1": {
+    "expl": "Lời đề nghị hỏi có thể dời họp không; 'Được, chiều thứ Sáu' vừa nhận lời vừa nêu thời gian."
+  },
+  "p2_original_set2_003": {
+    "title": "Câu hỏi 3",
+    "passage": "Bạn có thể dời cuộc họp không?"
+  },
+  "p2_original_set2_004_q1": {
+    "expl": "Câu hỏi hỏi công tắc điều khiển gì, nên 'Đèn hành lang' là vật được điều khiển."
+  },
+  "p2_original_set2_004": {
+    "title": "Câu hỏi 4",
+    "passage": "Công tắc này điều khiển gì?"
+  },
+  "p2_original_set2_005_q1": {
+    "expl": "Câu hỏi có–không được trả lời rằng khách chưa đến vì bị kẹt xe."
+  },
+  "p2_original_set2_005": {
+    "title": "Câu hỏi 5",
+    "passage": "Khách đã đến chưa?"
+  },
+  "p2_original_set2_006_q1": {
+    "expl": "Câu hỏi hỏi lý do, và cuộc hẹn với nha sĩ giải thích tại sao Maya rời đi sớm."
+  },
+  "p2_original_set2_006": {
+    "title": "Câu hỏi 6",
+    "passage": "Tại sao Maya rời đi sớm?"
+  },
+  "p2_original_set3_001_q1": {
+    "expl": "Lời nhờ được đáp lại bằng cách đồng ý và nêu thời hạn hữu ích."
+  },
+  "p2_original_set3_001": {
+    "title": "Câu hỏi 1",
+    "passage": "Bạn có thể xem lại báo cáo này không?"
+  },
+  "p2_original_set3_002_q1": {
+    "expl": "Câu hỏi hỏi địa điểm đỗ xe, nên 'Phía sau thư viện' là câu trả lời phù hợp."
+  },
+  "p2_original_set3_002": {
+    "title": "Câu hỏi 2",
+    "passage": "Khách nên đỗ xe ở đâu?"
+  },
+  "p2_original_set3_003_q1": {
+    "expl": "Câu hỏi có–không được trả lời bằng việc giải thích bảo tàng đóng cửa vào thứ Hai."
+  },
+  "p2_original_set3_003": {
+    "title": "Câu hỏi 3",
+    "passage": "Bảo tàng có mở cửa vào thứ Hai không?"
+  },
+  "p2_original_set3_004_q1": {
+    "expl": "Câu hỏi hỏi tần suất, nên 'Mỗi quý một lần' là câu trả lời đúng dạng."
+  },
+  "p2_original_set3_004": {
+    "title": "Câu hỏi 4",
+    "passage": "Các buổi diễn tập an toàn được tổ chức bao lâu một lần?"
+  },
+  "p2_original_set3_005_q1": {
+    "expl": "Câu hỏi hỏi ai hướng dẫn buổi định hướng, nên cần tên và bộ phận của người đó."
+  },
+  "p2_original_set3_005": {
+    "title": "Câu hỏi 5",
+    "passage": "Ai đang hướng dẫn buổi định hướng?"
+  },
+  "p2_original_set3_006_q1": {
+    "expl": "Lời xin phép được đáp lại tự nhiên bằng cách đồng ý và đưa bộ sạc."
+  },
+  "p2_original_set3_006": {
+    "title": "Câu hỏi 6",
+    "passage": "Tôi có thể mượn bộ sạc của bạn không?"
+  },
+  "p2_original_set4_001_q1": {
+    "expl": "Lời đề nghị được đáp lại bằng lý do gọi đồ ăn: căng tin hôm nay đóng cửa."
+  },
+  "p2_original_set4_001": {
+    "title": "Câu hỏi 1",
+    "passage": "Tại sao chúng ta không gọi đồ ăn trưa?"
+  },
+  "p2_original_set4_002_q1": {
+    "expl": "Câu hỏi hỏi thời điểm bắt đầu, nên 'Lúc chín giờ rưỡi' là câu trả lời về thời gian."
+  },
+  "p2_original_set4_002": {
+    "title": "Câu hỏi 2",
+    "passage": "Buổi hội thảo bắt đầu khi nào?"
+  },
+  "p2_original_set4_003_q1": {
+    "expl": "Câu hỏi có–không được trả lời bằng việc xác nhận đặt bàn và nêu tên đặt bàn."
+  },
+  "p2_original_set4_003": {
+    "title": "Câu hỏi 3",
+    "passage": "Bạn đã đặt bàn chưa?"
+  },
+  "p2_original_set4_004_q1": {
+    "expl": "Câu hỏi hỏi thư mục nào, nên 'Thư mục màu xanh trên kệ' xác định đúng thư mục."
+  },
+  "p2_original_set4_004": {
+    "title": "Câu hỏi 4",
+    "passage": "Thư mục nào chứa các hợp đồng?"
+  },
+  "p2_original_set4_005_q1": {
+    "expl": "Câu hỏi có–không được trả lời rằng chuyến đi diễn ra tối nay, không phải buổi sáng."
+  },
+  "p2_original_set4_005": {
+    "title": "Câu hỏi 5",
+    "passage": "Bạn có đi chuyến bay buổi sáng không?"
+  },
+  "p2_original_set4_006_q1": {
+    "expl": "Lời hỏi muốn giúp gì được đáp lại bằng yêu cầu dịch vụ: trả lại áo khoác."
+  },
+  "p2_original_set4_006": {
+    "title": "Câu hỏi 6",
+    "passage": "Tôi có thể giúp gì cho bạn?"
+  },
+  "p2_original_set5_001_q1": {
+    "expl": "Lời nhờ được đáp lại bằng cách đồng ý vặn nhỏ nhạc."
+  },
+  "p2_original_set5_001": {
+    "title": "Câu hỏi 1",
+    "passage": "Bạn có thể vặn nhỏ nhạc được không?"
+  },
+  "p2_original_set5_002_q1": {
+    "expl": "Câu hỏi hỏi nguyên nhân, và sự cố tín hiệu trên tuyến giải thích cho việc chậm trễ."
+  },
+  "p2_original_set5_002": {
+    "title": "Câu hỏi 2",
+    "passage": "Điều gì đã gây ra sự chậm trễ?"
+  },
+  "p2_original_set5_003_q1": {
+    "expl": "Câu hỏi hỏi có thấy chìa khóa không, nên vị trí bên cạnh đèn là câu trả lời phù hợp."
+  },
+  "p2_original_set5_003": {
+    "title": "Câu hỏi 3",
+    "passage": "Bạn có thấy chìa khóa của tôi không?"
+  },
+  "p2_original_set5_004_q1": {
+    "expl": "Câu hỏi hỏi nơi in mẫu đơn, nên vị trí của máy photocopy là câu trả lời phù hợp."
+  },
+  "p2_original_set5_004": {
+    "title": "Câu hỏi 4",
+    "passage": "Tôi có thể in mẫu đơn này ở đâu?"
+  },
+  "p2_original_set5_005_q1": {
+    "expl": "Lời đề nghị được đáp lại bằng việc đồng ý mời Ana."
+  },
+  "p2_original_set5_005": {
+    "title": "Câu hỏi 5",
+    "passage": "Chúng ta có nên mời Ana không?"
+  },
+  "p2_original_set5_006_q1": {
+    "expl": "Câu hỏi hỏi khoảng thời gian, nên 'Khoảng hai ngày' là câu trả lời đúng dạng."
+  },
+  "p2_original_set5_006": {
+    "title": "Câu hỏi 6",
+    "passage": "Việc sửa chữa sẽ mất bao lâu?"
+  }
+}

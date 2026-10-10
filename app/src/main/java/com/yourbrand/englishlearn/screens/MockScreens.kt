@@ -195,9 +195,11 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
                 content.addView(box)
                 if (ex.audioOptions) {
                     fun playOptions(slower: Boolean) {
-                        services.tts.speakSentences(ex.options, slower) { index ->
+                        val sentences = listOfNotNull(ex.audioPrompt) + ex.options
+                        services.tts.speakSentences(sentences, slower) { index ->
+                            val optionIndex = index - if (ex.audioPrompt != null) 1 else 0
                             if (test.answers[i] < 0) cards.forEachIndexed { j, card ->
-                                card.setState(if (j == index) OptionCard.State.PLAYING else OptionCard.State.DEFAULT)
+                                card.setState(if (j == optionIndex) OptionCard.State.PLAYING else OptionCard.State.DEFAULT)
                             }
                         }
                     }

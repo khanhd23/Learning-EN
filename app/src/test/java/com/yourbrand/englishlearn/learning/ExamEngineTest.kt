@@ -125,4 +125,16 @@ class ExamEngineTest {
         assertTrue(exercise.audioOptions)
         assertEquals(listOf("A sentence", "B sentence", "C sentence", "D sentence"), exercise.options)
     }
+
+    @Test fun partTwoPracticeReadsPromptBeforeThreeResponses() {
+        val p2 = ExamBank(emptyList(), listOf(ExamGroup("p2_1", "p2", "Where is the meeting?", "Question", listOf(
+            ExamItem("p2_1_q1", "p2", 2, "Choose the best response.", listOf("In Room 2", "At noon", "Next week"), 0, "Explanation", "listen_p2")
+        ), "1")))
+        val content = Content(emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyMap(), emptyMap(), examBanks = mapOf("toeic_p2" to p2))
+        val builder = SessionBuilder(content, { null }, { emptyList() }, { emptyList() })
+        val exercise = builder.examType("Part 2", "toeic_p2_practice_1", null, 3, 1).exercises.single() as Exercise.Choice
+        assertTrue(exercise.audioOptions)
+        assertEquals("Where is the meeting?", exercise.audioPrompt)
+        assertEquals(3, exercise.options.size)
+    }
 }

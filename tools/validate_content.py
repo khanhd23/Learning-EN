@@ -133,8 +133,9 @@ def exam_bank_errors(root=ROOT):
             if item.get("id") in ids:
                 found.append(f"exam {bank_id}: duplicate id {item.get('id')}")
             ids.add(item.get("id"))
-            if len(item.get("opts", [])) != 4 or not 0 <= item.get("ans", -1) < len(item.get("opts", [])):
-                found.append(f"exam {bank_id}/{item.get('id')}: needs 4 options and a valid answer")
+            expected_options = 3 if item.get("qtype") == "listen_p2" else 4
+            if len(item.get("opts", [])) != expected_options or not 0 <= item.get("ans", -1) < len(item.get("opts", [])):
+                found.append(f"exam {bank_id}/{item.get('id')}: needs {expected_options} options and a valid answer")
         for group in groups:
             if group.get("id") in ids:
                 found.append(f"exam {bank_id}: duplicate id {group.get('id')}")
@@ -142,8 +143,9 @@ def exam_bank_errors(root=ROOT):
             if not group.get("items"):
                 found.append(f"exam {bank_id}/{group.get('id')}: group is empty")
             for item in group.get("items", []):
-                if len(item.get("opts", [])) != 4 or not 0 <= item.get("ans", -1) < len(item.get("opts", [])):
-                    found.append(f"exam {bank_id}/{item.get('id')}: needs 4 options and a valid answer")
+                expected_options = 3 if item.get("qtype") == "listen_p2" else 4
+                if len(item.get("opts", [])) != expected_options or not 0 <= item.get("ans", -1) < len(item.get("opts", [])):
+                    found.append(f"exam {bank_id}/{item.get('id')}: needs {expected_options} options and a valid answer")
         uses = by_bank.get(bank_id, [])
         sections = {s.get("id") for _, s in uses}
         for item in items:

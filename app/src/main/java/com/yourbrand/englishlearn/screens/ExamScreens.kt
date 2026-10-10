@@ -153,6 +153,9 @@ class QuestionTypeScreen(activity: MainActivity, private val fmt: String) : Scro
         } else if (fmt.startsWith("toeic_p1_practice_")) {
             val set = fmt.substringAfterLast('_')
             listOf(null to (services.content.examBanks["toeic_p1"]?.groups.orEmpty().filter { it.set == set }.sumOf { it.items.size }))
+        } else if (fmt.startsWith("toeic_p2_practice_")) {
+            val set = fmt.substringAfterLast('_')
+            listOf(null to (services.content.examBanks["toeic_p2"]?.groups.orEmpty().filter { it.set == set }.sumOf { it.items.size }))
         } else {
             val pool = services.builder().examPool(fmt).filter { it.type != "E05" }
             pool.groupBy { it.qtype ?: if (it.type == "E04") "error" else if (it.type == "E12") "transform" else "vocab" }.map { it.key to it.value.size }.sortedByDescending { it.second }
@@ -163,6 +166,11 @@ class QuestionTypeScreen(activity: MainActivity, private val fmt: String) : Scro
                 val set = fmt.substringAfterLast('_')
                 services.content.examBanks["toeic_p1"]?.groups.orEmpty().filter { it.set == set }
                     .flatMap { group -> group.items.filter { qt == null || it.qtype == qt }.map { "exam:toeic_p1:${it.id}" } }
+            }
+            else if (fmt.startsWith("toeic_p2_practice_")) {
+                val set = fmt.substringAfterLast('_')
+                services.content.examBanks["toeic_p2"]?.groups.orEmpty().filter { it.set == set }
+                    .flatMap { group -> group.items.filter { qt == null || it.qtype == qt }.map { "exam:toeic_p2:${it.id}" } }
             }
             else services.builder().examPool(fmt).filter { q -> (q.qtype ?: if (q.type == "E04") "error" else if (q.type == "E12") "transform" else "vocab") == qt }.map { it.key }
             val st = keys.mapNotNull { services.store.item(it) }.filter { it.seen > 0 }

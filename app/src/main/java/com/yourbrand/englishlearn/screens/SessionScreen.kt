@@ -353,9 +353,11 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         cardsRef = cards
         if (ex.audioOptions) {
             fun playOptions(slower: Boolean) {
-                services.tts.speakSentences(ex.options, slower) { index ->
+                val sentences = listOfNotNull(ex.audioPrompt) + ex.options
+                services.tts.speakSentences(sentences, slower) { index ->
+                    val optionIndex = index - if (ex.audioPrompt != null) 1 else 0
                     if (!answered && selected < 0) {
-                        cards.forEachIndexed { i, card -> card.setState(if (i == index) OptionCard.State.PLAYING else OptionCard.State.DEFAULT) }
+                        cards.forEachIndexed { i, card -> card.setState(if (i == optionIndex) OptionCard.State.PLAYING else OptionCard.State.DEFAULT) }
                     }
                 }
             }

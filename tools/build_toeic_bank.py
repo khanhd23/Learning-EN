@@ -49,6 +49,21 @@ def read_authoring_p1():
     return groups
 
 
+def read_authoring_p2():
+    folder = os.path.join(ROOT, "tools", "authoring")
+    names = sorted(
+        name for name in os.listdir(folder)
+        if re.fullmatch(r"exam_p2(?:_batch\d+)?\.json", name)
+    )
+    groups = []
+    for name in names:
+        value = read_json("tools", "authoring", name)
+        if not isinstance(value, list):
+            raise ValueError(f"{name} must contain a list")
+        groups.extend(value)
+    return groups
+
+
 def write_json(path, value):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as handle:
@@ -108,11 +123,11 @@ def build_bank(questions, locale_questions):
     return {"items": items, "groups": groups}, locale
 
 
-def add_item(item, ids):
+def add_item(item, ids, options_count=4):
     if item["id"] in ids:
         raise ValueError(f"duplicate TOEIC bank id {item['id']}")
     ids.add(item["id"])
-    if len(item["opts"]) != 4 or not 0 <= item["ans"] < 4:
+    if len(item["opts"]) != options_count or not 0 <= item["ans"] < options_count:
         raise ValueError(f"invalid options or answer for {item['id']}")
     if not item["expl"]:
         raise ValueError(f"missing English explanation for {item['id']}")
@@ -199,6 +214,48 @@ def build_p1(groups):
     return {"items": [], "groups": output_groups}, locale
 
 
+def build_p2(groups):
+    """Build original, image-free Part 2-style question-response sets."""
+    output_groups = []
+    locale = {}
+    ids = set()
+    by_set = {}
+    for group in groups:
+        group_id = group.get("id", "")
+        if not group_id or group_id in ids:
+            raise ValueError(f"duplicate or empty Part 2 group id: {group_id!r}")
+        if group.get("section") != "p2" or not group.get("source", "").startswith("original:"):
+            raise ValueError(f"Part 2 group {group_id} must be original and use section p2")
+        if not group.get("passage") or not group.get("passage_vi"):
+            raise ValueError(f"Part 2 group {group_id} needs English and Vietnamese questions")
+        set_id = str(group.get("set") or "")
+        if set_id not in {"1", "2", "3", "4", "5"}:
+            raise ValueError(f"Part 2 group {group_id} must use set 1-5")
+        ids.add(group_id)
+        by_set[set_id] = by_set.get(set_id, 0) + 1
+        raw_items = group.get("items", [])
+        if len(raw_items) != 1:
+            raise ValueError(f"Part 2 group {group_id} must contain exactly one item")
+        raw = raw_items[0]
+        item = {
+            "id": raw["id"], "section": "p2", "level": raw.get("level", group.get("level", 3)),
+            "stem": raw["stem"], "opts": raw["opts"], "ans": raw["ans"],
+            "expl": raw.get("expl", ""), "qtype": "listen_p2",
+        }
+        add_item(item, ids, options_count=3)
+        if not raw.get("vi_expl"):
+            raise ValueError(f"missing Vietnamese explanation for {raw['id']}")
+        locale[raw["id"]] = {"expl": raw["vi_expl"]}
+        output_groups.append({
+            "id": group_id, "section": "p2", "title": group.get("title"),
+            "passage": group["passage"], "items": [item], "set": set_id,
+        })
+        locale[group_id] = {"title": group.get("title_vi", ""), "passage": group["passage_vi"]}
+    if set(by_set) != {"1", "2", "3", "4", "5"} or any(count != 6 for count in by_set.values()):
+        raise ValueError(f"Part 2 needs five sets of six groups, found {by_set}")
+    return {"items": [], "groups": output_groups}, locale
+
+
 def update_status(locale):
     path = os.path.join(ROOT, "content", "i18n", "vi", "status.json")
     status = read_json("content", "i18n", "vi", "status.json")
@@ -230,10 +287,14 @@ def main():
     p1, p1_locale = build_p1(read_authoring_p1())
     write_json(os.path.join(ROOT, "content", "en", "exams", "toeic_p1.json"), p1)
     write_json(os.path.join(ROOT, "content", "i18n", "vi", "exams", "toeic_p1.json"), p1_locale)
-    update_status({**locale, **p7_locale, **p1_locale})
+    p2, p2_locale = build_p2(read_authoring_p2())
+    write_json(os.path.join(ROOT, "content", "en", "exams", "toeic_p2.json"), p2)
+    write_json(os.path.join(ROOT, "content", "i18n", "vi", "exams", "toeic_p2.json"), p2_locale)
+    update_status({**locale, **p7_locale, **p1_locale, **p2_locale})
     print(f"toeic_p5={len(bank['items'])} toeic_p6_passages={len(bank['groups'])} toeic_p6_items={sum(len(g['items']) for g in bank['groups'])}")
     print(f"toeic_p7_passages={len(p7['groups'])} toeic_p7_items={sum(len(g['items']) for g in p7['groups'])}")
     print(f"toeic_p1_passages={len(p1['groups'])} toeic_p1_items={sum(len(g['items']) for g in p1['groups'])}")
+    print(f"toeic_p2_passages={len(p2['groups'])} toeic_p2_items={sum(len(g['items']) for g in p2['groups'])}")
 
 
 if __name__ == "__main__":
