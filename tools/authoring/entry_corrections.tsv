@@ -543,7 +543,7 @@ alarm|home_furniture,daily_routine
 traffic|transport,city_directions
 on_time|time_dates
 in_a_hurry|unsorted||4
-get_along_with|unsorted
+get_along_with|friends_relationships
 look_after|family,phrasal_verbs|ˌlʊk ˈæftər|4
 run_out_of|shopping,phrasal_verbs|ˌrʌn ˈaʊt əv
 analyze|academic_words,office|ˈænəlaɪz
@@ -882,12 +882,12 @@ app|it_technology
 algorithm|internet_social
 no_worries|idioms_chunks
 my_bad|unsorted||4
-fair_enough|unsorted
+fair_enough|idioms_chunks
 it_s_up_to_you|unsorted||4
-i_m_down|unsorted
+i_m_down|idioms_chunks
 hang_on|phrasal_verbs|ˌhæŋ ˈɑːn|4
 no_way|unsorted||4
-for_real|unsorted
+for_real|idioms_chunks
 same_here|unsorted||4
 what_s_up|idioms_chunks
 take_it_easy|unsorted||4
@@ -895,12 +895,12 @@ good_luck|idioms_chunks
 you_got_this|unsorted||4
 long_time_no_see|unsorted||4
 catch_up|education,phrasal_verbs|ˌkætʃ ˈʌp
-my_treat|unsorted
+my_treat|idioms_chunks
 i_m_in|unsorted||4
-that_makes_sense|unsorted
+that_makes_sense|idioms_chunks
 i_m_on_my_way|unsorted||4
 never_mind|unsorted||4
-how_come|unsorted
+how_come|idioms_chunks
 by_the_way|unsorted||4
 i_m_kidding|unsorted||4
 sounds_good|idioms_chunks
@@ -908,7 +908,7 @@ cheers|unsorted||4
 hit_me_up|unsorted
 low_key|describing_things
 awesome|describing_things,feelings_personality
-chill|unsorted
+chill|feelings_personality
 totally|function_words
 give_up|phrasal_verbs|ˌɡɪv ˈʌp|4
 look_for|phrasal_verbs
@@ -1474,7 +1474,7 @@ twist|core_verbs|twɪst
 strengthen|core_verbs|ˈstreŋkθən
 fold|core_verbs,clothes|foʊld
 pretend|core_verbs|prɪˈtend
-damn|unsorted
+damn|feelings_personality
 compose|arts_entertainment|kəmˈpoʊz
 regulate|government_society,contracts_law|ˈreɡjəleɪt
 reckon|core_verbs|ˈrekən
@@ -1705,7 +1705,7 @@ mental|health_illness|ˈmentəl
 chemical|science_basics|ˈkemɪkəl
 considerable|describing_things|kənˈsɪdərəbəl
 surely|function_words|ˈʃʊrli
-somewhat|unsorted
+somewhat|describing_things
 somehow|function_words|ˈsʌmhaʊ
 thin|describing_things,body_appearance|θɪn
 latter|function_words|ˈlætər
@@ -3369,7 +3369,7 @@ accession|unsorted||4
 behave|core_verbs,feelings_personality|bɪˈheɪv|3
 berry|food_drink||4
 blessing|feelings_personality|ˈblesɪŋ|4
-bloody|unsorted||3
+bloody|describing_things||3
 breeding|animals|ˈbriːdɪŋ|4
 discredit|unsorted||4
 elect|government_society

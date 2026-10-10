@@ -1,0 +1,44 @@
+sense_id	pos	def	vi_gloss	example	example_vi	note
+in_charge_of_s1	phr	responsible for managing a person or task	phụ trách	Ms. Park is in charge of the new project.	Cô Park phụ trách dự án mới.	owner cleanup batch128
+in_stock_s1	phr	available in a shop or warehouse	còn hàng	The blue jacket is in stock today.	Chiếc áo khoác xanh hôm nay vẫn còn hàng.	owner cleanup batch128
+loyalty_card_s1	n	a card that records purchases and may give rewards	thẻ thành viên	She used her loyalty card to collect points.	Cô ấy dùng thẻ thành viên để tích điểm.	owner cleanup batch128
+import_s1	v	to bring goods into a country from abroad	nhập khẩu	The country imports coffee from several regions.	Đất nước đó nhập khẩu cà phê từ nhiều vùng.	owner cleanup batch128
+free_of_charge_s1	adj	available without payment	miễn phí	Delivery is free of charge for orders over fifty dollars.	Đơn hàng trên năm mươi đô la được giao miễn phí.	owner cleanup batch128
+destination_s1	n	the place where someone or something is going	điểm đến	The train reached its destination before sunset.	Đoàn tàu đến điểm đích trước khi mặt trời lặn.	owner cleanup batch128
+baggage_claim_s1	n	the area where passengers collect checked luggage	khu nhận hành lý	We waited at baggage claim for two suitcases.	Chúng tôi chờ hai chiếc va-li ở khu nhận hành lý.	owner cleanup batch128
+room_service_s1	n	a hotel service that brings food or drinks to a guest's room	dịch vụ phòng	We ordered room service after the late flight.	Chúng tôi gọi dịch vụ phòng sau chuyến bay muộn.	owner cleanup batch128
+in_advance_s1	adv	before a particular time or event	trước	Please book the seats in advance.	Vui lòng đặt chỗ trước.	owner cleanup batch128
+check_up_s1	n	a medical examination to make sure someone is healthy	lần khám sức khỏe	I have a check-up with my doctor next week.	Tuần tới tôi có lịch khám sức khỏe với bác sĩ.	owner cleanup batch128
+motivated_s1	adj	having a strong reason or desire to do something	có động lực	The motivated team finished the project early.	Nhóm có động lực đã hoàn thành dự án sớm.	owner cleanup batch128
+climate_change_s1	n	long-term changes in the Earth's climate	biến đổi khí hậu	Climate change is affecting coastal communities.	Biến đổi khí hậu đang ảnh hưởng đến các cộng đồng ven biển.	owner cleanup batch128
+eco_friendly_s1	adj	designed to cause little harm to the environment	thân thiện với môi trường	The hotel uses eco-friendly cleaning products.	Khách sạn sử dụng các sản phẩm tẩy rửa thân thiện với môi trường.	owner cleanup batch128
+fake_news_s1	n	false information presented as news	tin giả	The editor warned readers about fake news.	Biên tập viên cảnh báo độc giả về tin giả.	owner cleanup batch128
+viral_s1	adj	quickly and widely shared online	lan truyền mạnh	The short video went viral overnight.	Đoạn video ngắn lan truyền mạnh chỉ sau một đêm.	owner cleanup batch128
+trending_s1	adj	currently popular or widely discussed online	đang thịnh hành	The app shows which topics are trending today.	Ứng dụng cho biết những chủ đề nào đang thịnh hành hôm nay.	owner cleanup batch128
+get_along_with_s1	phr	to have a friendly relationship with someone	hòa thuận với	I get along with my new neighbours.	Tôi hòa thuận với những người hàng xóm mới.	owner cleanup batch128
+sibling_s1	n	a brother or sister	anh chị em ruột	My youngest sibling starts university this autumn.	Người em nhỏ nhất của tôi bắt đầu học đại học vào mùa thu này.	owner cleanup batch128
+stressed_out_s1	adj	very worried or tired because of pressure	căng thẳng	She felt stressed out before the exam.	Cô ấy cảm thấy căng thẳng trước kỳ thi.	owner cleanup batch128
+leftovers_s1	n	food that remains after a meal	đồ ăn thừa	We packed the leftovers for tomorrow's lunch.	Chúng tôi đóng gói đồ ăn thừa cho bữa trưa ngày mai.	owner cleanup batch128
+starving_s1	adj	extremely hungry	đói cồn cào	I was starving after the long hike.	Tôi đói cồn cào sau chuyến đi bộ đường dài.	owner cleanup batch128
+injured_s1	adj	hurt physically, especially in an accident or sport	bị thương	The injured player left the field with help.	Cầu thủ bị thương rời sân với sự trợ giúp.	owner cleanup batch128
+lyrics_s1	n	the words of a song	lời bài hát	She wrote the lyrics in a notebook.	Cô ấy viết lời bài hát vào một cuốn sổ.	owner cleanup batch128
+trailer_s1	n	a short film or video advertising a longer film	đoạn giới thiệu phim	The new trailer made the audience curious.	Đoạn giới thiệu phim mới khiến khán giả tò mò.	owner cleanup batch128
+streaming_s1	n	the delivery of audio or video over the internet as it plays	việc phát trực tuyến	Streaming has changed how people watch documentaries.	Việc phát trực tuyến đã thay đổi cách mọi người xem phim tài liệu.	owner cleanup batch128
+fan_club_s1	n	an organized group of people who admire a performer or team	câu lạc bộ người hâm mộ	The fan club organized a charity event.	Câu lạc bộ người hâm mộ tổ chức một sự kiện từ thiện.	owner cleanup batch128
+blink_s1	v	to close and open the eyes quickly	chớp mắt	Try not to blink while the photographer adjusts the camera.	Cố đừng chớp mắt khi nhiếp ảnh gia chỉnh máy ảnh.	owner cleanup batch128
+yawn_s1	v	to open the mouth wide when tired or bored	ngáp	He began to yawn during the late meeting.	Anh ấy bắt đầu ngáp trong cuộc họp muộn.	owner cleanup batch128
+paw_s1	n	the foot of an animal with claws or pads	bàn chân động vật	The puppy placed one paw on my shoe.	Chú chó con đặt một bàn chân lên giày của tôi.	owner cleanup batch128
+rush_hour_s1	n	a period when roads and public transport are especially busy	giờ cao điểm	The bus is slow during the morning rush hour.	Xe buýt chạy chậm vào giờ cao điểm buổi sáng.	owner cleanup batch128
+content_creator_s1	n	a person who makes material for online audiences	người sáng tạo nội dung	The content creator posted a pronunciation lesson.	Người sáng tạo nội dung đăng một bài học phát âm.	owner cleanup batch128
+go_viral_s1	phr	to become widely shared or noticed online	lan truyền trên mạng	The interview went viral after one memorable answer.	Cuộc phỏng vấn lan truyền trên mạng sau một câu trả lời đáng nhớ.	owner cleanup batch128
+screen_time_s1	n	the amount of time spent using a screen-based device	thời gian dùng màn hình	The app helps parents track daily screen time.	Ứng dụng giúp cha mẹ theo dõi thời gian dùng màn hình hằng ngày.	owner cleanup batch128
+fair_enough_s1	idiom	used to say that you accept or understand what someone has said	được thôi; cũng hợp lý	Fair enough; we can try again tomorrow.	Được thôi; ngày mai chúng ta có thể thử lại.	owner cleanup batch128
+i_m_down_s1	idiom	used to say that you agree to do something	tôi đồng ý	I'm down, so I will join the walk.	Tôi đồng ý nên sẽ tham gia buổi đi bộ.	owner cleanup batch128
+for_real_s1	phr	used to emphasize that something is true or serious	thật đấy; nghiêm túc	Are you for real about moving to another city?	Bạn nghiêm túc về việc chuyển đến thành phố khác à?	owner cleanup batch128
+my_treat_s1	phr	used to say that you will pay for something	để tôi trả	Don't worry about the coffee; it's my treat.	Đừng lo tiền cà phê; để tôi trả.	owner cleanup batch128
+that_makes_sense_s1	phr	used to say that something is understandable or logical	nghe hợp lý	That makes sense now that you have explained the rule.	Bây giờ bạn đã giải thích quy tắc, điều đó nghe hợp lý.	owner cleanup batch128
+how_come_s1	phr	used to ask why something has happened	sao lại; tại sao	How come you left the meeting so early?	Sao bạn rời cuộc họp sớm vậy?	owner cleanup batch128
+chill_s2	adj	relaxed and calm, especially in a social situation	thoải mái; bình tĩnh	My boss is pretty chill about small mistakes.	Sếp tôi khá thoải mái với những lỗi nhỏ.	owner cleanup batch128
+damn_s1	v	to condemn someone or something strongly	nguyền rủa; kết tội	The judge refused to damn the accused without evidence.	Thẩm phán từ chối kết tội bị cáo khi chưa có bằng chứng.	owner cleanup batch128
+somewhat_s1	adv	to some degree, but not completely	hơi; phần nào	The instructions were somewhat unclear to new volunteers.	Hướng dẫn hơi khó hiểu với những tình nguyện viên mới.	owner cleanup batch128
+bloody_s1	adj	covered with or containing blood	dính máu	The nurse cleaned the bloody bandage.	Y tá làm sạch miếng băng dính máu.	owner cleanup batch128
