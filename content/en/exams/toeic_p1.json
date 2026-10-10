@@ -1,0 +1,725 @@
+{
+  "items": [],
+  "groups": [
+    {
+      "id": "p1_original_set1_001",
+      "section": "p1",
+      "title": "A package at the front desk",
+      "passage": "Scene prompt: A receptionist is placing a small package on the counter while a visitor waits beside the desk.",
+      "items": [
+        {
+          "id": "p1_original_set1_001_q1",
+          "section": "p1",
+          "level": 2,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "A visitor is waiting at a desk.",
+            "The receptionist is shelving books.",
+            "The package has been loaded onto a truck.",
+            "The counter is being removed."
+          ],
+          "ans": 0,
+          "expl": "The scene says that a visitor is waiting beside the receptionist's desk.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p1_original_set1_002",
+      "section": "p1",
+      "title": "Chairs in a meeting room",
+      "passage": "Scene prompt: Two employees are arranging chairs in rows before a meeting, and a projector is already on the table.",
+      "items": [
+        {
+          "id": "p1_original_set1_002_q1",
+          "section": "p1",
+          "level": 2,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The projector is being repaired outside.",
+            "The employees are arranging chairs.",
+            "A meeting has been cancelled.",
+            "The chairs are being sold."
+          ],
+          "ans": 1,
+          "expl": "The scene describes two employees arranging chairs before a meeting.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p1_original_set1_003",
+      "section": "p1",
+      "title": "A bicycle by the entrance",
+      "passage": "Scene prompt: A bicycle is leaning against a rack near a building entrance, and a helmet hangs from its handlebar.",
+      "items": [
+        {
+          "id": "p1_original_set1_003_q1",
+          "section": "p1",
+          "level": 2,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The bicycle is being carried upstairs.",
+            "The rack has been moved indoors.",
+            "A helmet is hanging from a bicycle.",
+            "The entrance is being painted."
+          ],
+          "ans": 2,
+          "expl": "The helmet is hanging from the bicycle's handlebar near the entrance.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p1_original_set1_004",
+      "section": "p1",
+      "title": "A garden watering can",
+      "passage": "Scene prompt: A gardener is watering a row of herbs beside a low fence on a sunny morning.",
+      "items": [
+        {
+          "id": "p1_original_set1_004_q1",
+          "section": "p1",
+          "level": 3,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The fence is being delivered.",
+            "The gardener is repairing a roof.",
+            "The morning market has closed.",
+            "The herbs are being watered."
+          ],
+          "ans": 3,
+          "expl": "The gardener is watering the herbs beside the fence.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p1_original_set1_005",
+      "section": "p1",
+      "title": "A full shopping cart",
+      "passage": "Scene prompt: A shopper is pushing a cart filled with vegetables through a grocery aisle.",
+      "items": [
+        {
+          "id": "p1_original_set1_005_q1",
+          "section": "p1",
+          "level": 3,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The shopper is pushing a loaded cart.",
+            "The aisle is being cleaned after closing.",
+            "The vegetables are growing beside the cart.",
+            "A cashier is assembling the shelves."
+          ],
+          "ans": 0,
+          "expl": "The shopper is pushing a cart filled with vegetables through the aisle.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p1_original_set1_006",
+      "section": "p1",
+      "title": "A covered café table",
+      "passage": "Scene prompt: A café worker is wiping an outdoor table while several chairs remain under a striped awning.",
+      "items": [
+        {
+          "id": "p1_original_set1_006_q1",
+          "section": "p1",
+          "level": 3,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The chairs are being stored in a truck.",
+            "The worker is wiping a table.",
+            "The awning has been taken down.",
+            "Customers are moving the café indoors."
+          ],
+          "ans": 1,
+          "expl": "The café worker is wiping the outdoor table under the awning.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p1_original_set2_001",
+      "section": "p1",
+      "title": "A train platform sign",
+      "passage": "Scene prompt: A traveler is reading a departure board while a train waits on the next platform.",
+      "items": [
+        {
+          "id": "p1_original_set2_001_q1",
+          "section": "p1",
+          "level": 2,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The traveler is reading a departure board.",
+            "The train has left the station.",
+            "The platform is being painted.",
+            "A conductor is selling the sign."
+          ],
+          "ans": 0,
+          "expl": "The traveler is reading the departure board beside the waiting train.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p1_original_set2_002",
+      "section": "p1",
+      "title": "Boxes in a storeroom",
+      "passage": "Scene prompt: Cardboard boxes are stacked near a storeroom door, and one worker is checking a label.",
+      "items": [
+        {
+          "id": "p1_original_set2_002_q1",
+          "section": "p1",
+          "level": 2,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The boxes are being flattened for recycling.",
+            "A worker is checking a label.",
+            "The door has been removed from the storeroom.",
+            "The storeroom is being used as a kitchen."
+          ],
+          "ans": 1,
+          "expl": "One worker is checking a label on the boxes near the storeroom door.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p1_original_set2_003",
+      "section": "p1",
+      "title": "A bench beside a pond",
+      "passage": "Scene prompt: A woman is sitting on a bench beside a pond, with an open notebook resting beside her.",
+      "items": [
+        {
+          "id": "p1_original_set2_003_q1",
+          "section": "p1",
+          "level": 2,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The bench is being delivered by boat.",
+            "The pond is being emptied.",
+            "A notebook is open beside the woman.",
+            "The woman is painting the bench."
+          ],
+          "ans": 2,
+          "expl": "An open notebook is resting beside the woman on the bench.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p1_original_set2_004",
+      "section": "p1",
+      "title": "A display of handmade cups",
+      "passage": "Scene prompt: A shop owner is arranging handmade cups on a wooden display shelf.",
+      "items": [
+        {
+          "id": "p1_original_set2_004_q1",
+          "section": "p1",
+          "level": 3,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The cups are being washed in a sink.",
+            "The shelf has been packed into a box.",
+            "Customers are drinking from every cup.",
+            "The shop owner is arranging a display."
+          ],
+          "ans": 3,
+          "expl": "The shop owner is arranging the cups on the display shelf.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p1_original_set2_005",
+      "section": "p1",
+      "title": "A bus at a curb",
+      "passage": "Scene prompt: A city bus is stopped at the curb while passengers line up near the front door.",
+      "items": [
+        {
+          "id": "p1_original_set2_005_q1",
+          "section": "p1",
+          "level": 3,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "Passengers are lining up to board a bus.",
+            "The bus is being washed in a garage.",
+            "The curb has been moved to the station.",
+            "Passengers are unloading bicycles from a boat."
+          ],
+          "ans": 0,
+          "expl": "Passengers are lined up near the front door of the stopped bus.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p1_original_set2_006",
+      "section": "p1",
+      "title": "A chart on a whiteboard",
+      "passage": "Scene prompt: A manager is pointing to a chart on a whiteboard while three colleagues take notes.",
+      "items": [
+        {
+          "id": "p1_original_set2_006_q1",
+          "section": "p1",
+          "level": 3,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The whiteboard is being delivered.",
+            "The colleagues are taking notes.",
+            "The manager is erasing the office floor.",
+            "The chart has been printed on a ticket."
+          ],
+          "ans": 1,
+          "expl": "Three colleagues are taking notes as the manager points to the chart.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "2"
+    },
+    {
+      "id": "p1_original_set3_001",
+      "section": "p1",
+      "title": "A lamp in a reading corner",
+      "passage": "Scene prompt: A floor lamp is standing beside an armchair, and a book is open on a small table.",
+      "items": [
+        {
+          "id": "p1_original_set3_001_q1",
+          "section": "p1",
+          "level": 2,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "A book is open on a small table.",
+            "The lamp is being carried outside.",
+            "The armchair is being repaired in a factory.",
+            "The table has been folded into a lamp."
+          ],
+          "ans": 0,
+          "expl": "The open book is on the small table beside the armchair.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p1_original_set3_002",
+      "section": "p1",
+      "title": "A repair shop counter",
+      "passage": "Scene prompt: A technician is examining a phone on a counter while a customer waits nearby.",
+      "items": [
+        {
+          "id": "p1_original_set3_002_q1",
+          "section": "p1",
+          "level": 2,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The customer is installing a counter.",
+            "The technician is examining a phone.",
+            "The phone has been mailed to a customer.",
+            "The counter is being painted blue."
+          ],
+          "ans": 1,
+          "expl": "The technician is examining a phone on the repair counter.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p1_original_set3_003",
+      "section": "p1",
+      "title": "A row of umbrellas",
+      "passage": "Scene prompt: Several umbrellas are standing in a rack near a wet doorway.",
+      "items": [
+        {
+          "id": "p1_original_set3_003_q1",
+          "section": "p1",
+          "level": 2,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The doorway is being moved upstairs.",
+            "A worker is sewing the wet floor.",
+            "The umbrellas are standing in a rack.",
+            "The rack is being used as a table."
+          ],
+          "ans": 2,
+          "expl": "Several umbrellas are standing in the rack near the wet doorway.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p1_original_set3_004",
+      "section": "p1",
+      "title": "A map beside a trail",
+      "passage": "Scene prompt: A hiker is studying a map beside a marked trail while a water bottle rests on a rock.",
+      "items": [
+        {
+          "id": "p1_original_set3_004_q1",
+          "section": "p1",
+          "level": 3,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The trail is being paved with bottles.",
+            "The rock has been moved into a backpack.",
+            "The map is being washed in a stream.",
+            "The hiker is studying a map."
+          ],
+          "ans": 3,
+          "expl": "The hiker is studying a map beside the marked trail.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p1_original_set3_005",
+      "section": "p1",
+      "title": "A bakery tray",
+      "passage": "Scene prompt: A baker is carrying a tray of rolls from an oven toward a cooling rack.",
+      "items": [
+        {
+          "id": "p1_original_set3_005_q1",
+          "section": "p1",
+          "level": 3,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The rolls are being taken from an oven.",
+            "The cooling rack is being sold at a market.",
+            "The baker is planting wheat.",
+            "The tray has been placed in a mailbox."
+          ],
+          "ans": 0,
+          "expl": "The baker is carrying rolls from the oven toward the cooling rack.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p1_original_set3_006",
+      "section": "p1",
+      "title": "A sign at a community hall",
+      "passage": "Scene prompt: A volunteer is attaching a sign to a notice board outside a community hall.",
+      "items": [
+        {
+          "id": "p1_original_set3_006_q1",
+          "section": "p1",
+          "level": 3,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The community hall is being demolished.",
+            "A volunteer is attaching a sign.",
+            "The notice board is inside a taxi.",
+            "The sign has been removed from a wall."
+          ],
+          "ans": 1,
+          "expl": "The volunteer is attaching a sign to the outdoor notice board.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "3"
+    },
+    {
+      "id": "p1_original_set4_001",
+      "section": "p1",
+      "title": "A library return slot",
+      "passage": "Scene prompt: A student is placing a book through a library return slot while another student carries a stack of books.",
+      "items": [
+        {
+          "id": "p1_original_set4_001_q1",
+          "section": "p1",
+          "level": 2,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "A student is returning a book.",
+            "The library books are being planted.",
+            "The return slot is being painted by a driver.",
+            "The students are building a bookshelf outdoors."
+          ],
+          "ans": 0,
+          "expl": "The student is placing a book through the library return slot.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "4"
+    },
+    {
+      "id": "p1_original_set4_002",
+      "section": "p1",
+      "title": "A printer in an office",
+      "passage": "Scene prompt: An employee is collecting printed pages from a printer while a folder lies open on the desk.",
+      "items": [
+        {
+          "id": "p1_original_set4_002_q1",
+          "section": "p1",
+          "level": 2,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The folder is being mailed from a post office.",
+            "The employee is collecting printed pages.",
+            "The printer is being carried into a garden.",
+            "The desk has been emptied for a meeting."
+          ],
+          "ans": 1,
+          "expl": "The employee is collecting pages from the printer beside the open folder.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "4"
+    },
+    {
+      "id": "p1_original_set4_003",
+      "section": "p1",
+      "title": "A boat at a dock",
+      "passage": "Scene prompt: A small boat is tied to a dock, and a life jacket is hanging from a post.",
+      "items": [
+        {
+          "id": "p1_original_set4_003_q1",
+          "section": "p1",
+          "level": 2,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The boat is being stored in a library.",
+            "The dock is being folded into a jacket.",
+            "A life jacket is hanging from a post.",
+            "A swimmer is tying a post to a cloud."
+          ],
+          "ans": 2,
+          "expl": "The life jacket is hanging from a post beside the docked boat.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "4"
+    },
+    {
+      "id": "p1_original_set4_004",
+      "section": "p1",
+      "title": "A science demonstration",
+      "passage": "Scene prompt: A teacher is demonstrating a simple experiment while students watch from their desks.",
+      "items": [
+        {
+          "id": "p1_original_set4_004_q1",
+          "section": "p1",
+          "level": 3,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The desks are being delivered to a laboratory.",
+            "The teacher is closing the school for the day.",
+            "The experiment has been packed in a suitcase.",
+            "The students are watching a demonstration."
+          ],
+          "ans": 3,
+          "expl": "The students are watching while the teacher demonstrates an experiment.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "4"
+    },
+    {
+      "id": "p1_original_set4_005",
+      "section": "p1",
+      "title": "A coat on a hanger",
+      "passage": "Scene prompt: A coat is hanging on a rack near a doorway, and a scarf has been placed on the bench below it.",
+      "items": [
+        {
+          "id": "p1_original_set4_005_q1",
+          "section": "p1",
+          "level": 3,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "A coat is hanging near a doorway.",
+            "The bench is being used to repair a roof.",
+            "The scarf is being woven on the rack.",
+            "The doorway has been moved to a closet."
+          ],
+          "ans": 0,
+          "expl": "The coat is hanging on a rack near the doorway.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "4"
+    },
+    {
+      "id": "p1_original_set4_006",
+      "section": "p1",
+      "title": "A market weighing table",
+      "passage": "Scene prompt: A vendor is weighing oranges on a scale while paper bags are arranged beside the table.",
+      "items": [
+        {
+          "id": "p1_original_set4_006_q1",
+          "section": "p1",
+          "level": 3,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The paper bags are being recycled into fruit.",
+            "The vendor is weighing oranges.",
+            "The table is being moved onto a bus.",
+            "The scale is being painted by a customer."
+          ],
+          "ans": 1,
+          "expl": "The vendor is weighing oranges on the scale beside the paper bags.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "4"
+    },
+    {
+      "id": "p1_original_set5_001",
+      "section": "p1",
+      "title": "A folded map on a desk",
+      "passage": "Scene prompt: A folded map is spread across a desk, with a pencil resting on one corner.",
+      "items": [
+        {
+          "id": "p1_original_set5_001_q1",
+          "section": "p1",
+          "level": 2,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "A pencil is resting on a map.",
+            "The desk is being carried through a river.",
+            "The map is being printed on a shirt.",
+            "A traveler is folding the pencil."
+          ],
+          "ans": 0,
+          "expl": "The pencil is resting on one corner of the map spread across the desk.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "5"
+    },
+    {
+      "id": "p1_original_set5_002",
+      "section": "p1",
+      "title": "A clean window",
+      "passage": "Scene prompt: A cleaner is wiping a large window while a bucket and cloth stand on the floor nearby.",
+      "items": [
+        {
+          "id": "p1_original_set5_002_q1",
+          "section": "p1",
+          "level": 2,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The bucket is being shipped by train.",
+            "The window is being cleaned.",
+            "The cleaner is planting a window.",
+            "The cloth has been hung from a tree."
+          ],
+          "ans": 1,
+          "expl": "The cleaner is wiping the large window near the bucket and cloth.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "5"
+    },
+    {
+      "id": "p1_original_set5_003",
+      "section": "p1",
+      "title": "A menu at a restaurant",
+      "passage": "Scene prompt: A server is placing menus on a table while a vase of flowers stands in the center.",
+      "items": [
+        {
+          "id": "p1_original_set5_003_q1",
+          "section": "p1",
+          "level": 2,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The flowers are being delivered by a waiter on a bicycle.",
+            "The table is being removed from the restaurant.",
+            "Menus are being placed on a table.",
+            "The server is washing dishes in the street."
+          ],
+          "ans": 2,
+          "expl": "The server is placing menus on the table beside the vase of flowers.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "5"
+    },
+    {
+      "id": "p1_original_set5_004",
+      "section": "p1",
+      "title": "A delivery at an apartment",
+      "passage": "Scene prompt: A delivery worker is carrying a parcel toward an apartment entrance while a resident opens the door.",
+      "items": [
+        {
+          "id": "p1_original_set5_004_q1",
+          "section": "p1",
+          "level": 3,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The parcel is being stored in a bakery oven.",
+            "The delivery worker is repairing the apartment roof.",
+            "The entrance has been closed for painting.",
+            "A resident is opening an apartment door."
+          ],
+          "ans": 3,
+          "expl": "The resident is opening the apartment door as the delivery worker approaches with a parcel.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "5"
+    },
+    {
+      "id": "p1_original_set5_005",
+      "section": "p1",
+      "title": "A notice beside an elevator",
+      "passage": "Scene prompt: A building manager is posting a notice beside an elevator while two residents read it.",
+      "items": [
+        {
+          "id": "p1_original_set5_005_q1",
+          "section": "p1",
+          "level": 3,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "Two residents are reading a notice.",
+            "The elevator is being delivered to the building.",
+            "The manager is cleaning a bicycle.",
+            "The notice has been thrown into a mailbox."
+          ],
+          "ans": 0,
+          "expl": "Two residents are reading the notice that the manager has posted beside the elevator.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "5"
+    },
+    {
+      "id": "p1_original_set5_006",
+      "section": "p1",
+      "title": "A clock in a workshop",
+      "passage": "Scene prompt: A clockmaker is adjusting a wall clock while small tools are arranged on a workbench.",
+      "items": [
+        {
+          "id": "p1_original_set5_006_q1",
+          "section": "p1",
+          "level": 3,
+          "stem": "Which statement best matches the scene?",
+          "opts": [
+            "The tools are being planted in a workshop garden.",
+            "The clockmaker is adjusting a wall clock.",
+            "The workbench is being used as a train platform.",
+            "The clock has been packed into a paper bag."
+          ],
+          "ans": 1,
+          "expl": "The clockmaker is adjusting the wall clock above the workbench.",
+          "qtype": "listen_p1"
+        }
+      ],
+      "set": "5"
+    }
+  ]
+}

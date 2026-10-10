@@ -34,6 +34,21 @@ def read_authoring_p7():
     return groups
 
 
+def read_authoring_p1():
+    folder = os.path.join(ROOT, "tools", "authoring")
+    names = sorted(
+        name for name in os.listdir(folder)
+        if re.fullmatch(r"exam_p1(?:_batch\d+)?\.json", name)
+    )
+    groups = []
+    for name in names:
+        value = read_json("tools", "authoring", name)
+        if not isinstance(value, list):
+            raise ValueError(f"{name} must contain a list")
+        groups.extend(value)
+    return groups
+
+
 def write_json(path, value):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as handle:
@@ -142,6 +157,48 @@ def build_p7(groups, existing_ids):
     return {"items": [], "groups": output_groups}, locale
 
 
+def build_p1(groups):
+    """Build original, image-free Part 1-style listening practice sets."""
+    output_groups = []
+    locale = {}
+    ids = set()
+    by_set = {}
+    for group in groups:
+        group_id = group.get("id", "")
+        if not group_id or group_id in ids:
+            raise ValueError(f"duplicate or empty Part 1 group id: {group_id!r}")
+        if group.get("section") != "p1" or not group.get("source", "").startswith("original:"):
+            raise ValueError(f"Part 1 group {group_id} must be original and use section p1")
+        if not group.get("passage") or not group.get("passage_vi"):
+            raise ValueError(f"Part 1 group {group_id} needs English and Vietnamese scene prompts")
+        set_id = str(group.get("set") or "")
+        if set_id not in {"1", "2", "3", "4", "5"}:
+            raise ValueError(f"Part 1 group {group_id} must use set 1-5")
+        ids.add(group_id)
+        by_set[set_id] = by_set.get(set_id, 0) + 1
+        raw_items = group.get("items", [])
+        if len(raw_items) != 1:
+            raise ValueError(f"Part 1 group {group_id} must contain exactly one item")
+        raw = raw_items[0]
+        item = {
+            "id": raw["id"], "section": "p1", "level": raw.get("level", group.get("level", 3)),
+            "stem": raw["stem"], "opts": raw["opts"], "ans": raw["ans"],
+            "expl": raw.get("expl", ""), "qtype": "listen_p1",
+        }
+        add_item(item, ids)
+        if not raw.get("vi_expl"):
+            raise ValueError(f"missing Vietnamese explanation for {raw['id']}")
+        locale[raw["id"]] = {"expl": raw["vi_expl"]}
+        output_groups.append({
+            "id": group_id, "section": "p1", "title": group.get("title"),
+            "passage": group["passage"], "items": [item], "set": set_id,
+        })
+        locale[group_id] = {"title": group.get("title_vi", ""), "passage": group["passage_vi"]}
+    if set(by_set) != {"1", "2", "3", "4", "5"} or any(count != 6 for count in by_set.values()):
+        raise ValueError(f"Part 1 needs five sets of six groups, found {by_set}")
+    return {"items": [], "groups": output_groups}, locale
+
+
 def update_status(locale):
     path = os.path.join(ROOT, "content", "i18n", "vi", "status.json")
     status = read_json("content", "i18n", "vi", "status.json")
@@ -170,9 +227,13 @@ def main():
     p7, p7_locale = build_p7(read_authoring_p7(), set())
     write_json(os.path.join(ROOT, "content", "en", "exams", "toeic_p7.json"), p7)
     write_json(os.path.join(ROOT, "content", "i18n", "vi", "exams", "toeic_p7.json"), p7_locale)
-    update_status({**locale, **p7_locale})
+    p1, p1_locale = build_p1(read_authoring_p1())
+    write_json(os.path.join(ROOT, "content", "en", "exams", "toeic_p1.json"), p1)
+    write_json(os.path.join(ROOT, "content", "i18n", "vi", "exams", "toeic_p1.json"), p1_locale)
+    update_status({**locale, **p7_locale, **p1_locale})
     print(f"toeic_p5={len(bank['items'])} toeic_p6_passages={len(bank['groups'])} toeic_p6_items={sum(len(g['items']) for g in bank['groups'])}")
     print(f"toeic_p7_passages={len(p7['groups'])} toeic_p7_items={sum(len(g['items']) for g in p7['groups'])}")
+    print(f"toeic_p1_passages={len(p1['groups'])} toeic_p1_items={sum(len(g['items']) for g in p1['groups'])}")
 
 
 if __name__ == "__main__":

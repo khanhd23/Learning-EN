@@ -1,0 +1,422 @@
+[
+  {
+    "id": "p1_original_set1_001",
+    "section": "p1",
+    "level": 2,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "A package at the front desk",
+    "title_vi": "Một gói hàng ở quầy lễ tân",
+    "passage": "Scene prompt: A receptionist is placing a small package on the counter while a visitor waits beside the desk.",
+    "passage_vi": "Mô tả cảnh: Một nhân viên lễ tân đang đặt một gói hàng nhỏ lên quầy trong khi một khách đang chờ bên cạnh bàn.",
+    "items": [
+      {"id": "p1_original_set1_001_q1", "stem": "Which statement best matches the scene?", "opts": ["A visitor is waiting at a desk.", "The receptionist is shelving books.", "The package has been loaded onto a truck.", "The counter is being removed."], "ans": 0, "expl": "The scene says that a visitor is waiting beside the receptionist's desk.", "vi_expl": "Mô tả cho biết một vị khách đang chờ bên cạnh bàn của nhân viên lễ tân."}
+    ]
+  },
+  {
+    "id": "p1_original_set1_002",
+    "section": "p1",
+    "level": 2,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "Chairs in a meeting room",
+    "title_vi": "Ghế trong phòng họp",
+    "passage": "Scene prompt: Two employees are arranging chairs in rows before a meeting, and a projector is already on the table.",
+    "passage_vi": "Mô tả cảnh: Hai nhân viên đang xếp ghế thành hàng trước cuộc họp, còn máy chiếu đã ở trên bàn.",
+    "items": [
+      {"id": "p1_original_set1_002_q1", "stem": "Which statement best matches the scene?", "opts": ["The projector is being repaired outside.", "The employees are arranging chairs.", "A meeting has been cancelled.", "The chairs are being sold."], "ans": 1, "expl": "The scene describes two employees arranging chairs before a meeting.", "vi_expl": "Mô tả nói hai nhân viên đang xếp ghế trước một cuộc họp."}
+    ]
+  },
+  {
+    "id": "p1_original_set1_003",
+    "section": "p1",
+    "level": 2,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "A bicycle by the entrance",
+    "title_vi": "Xe đạp bên lối vào",
+    "passage": "Scene prompt: A bicycle is leaning against a rack near a building entrance, and a helmet hangs from its handlebar.",
+    "passage_vi": "Mô tả cảnh: Một chiếc xe đạp đang tựa vào giá gần lối vào tòa nhà, còn một chiếc mũ bảo hiểm treo trên tay lái.",
+    "items": [
+      {"id": "p1_original_set1_003_q1", "stem": "Which statement best matches the scene?", "opts": ["The bicycle is being carried upstairs.", "The rack has been moved indoors.", "A helmet is hanging from a bicycle.", "The entrance is being painted."], "ans": 2, "expl": "The helmet is hanging from the bicycle's handlebar near the entrance.", "vi_expl": "Chiếc mũ bảo hiểm đang treo trên tay lái của xe đạp gần lối vào."}
+    ]
+  },
+  {
+    "id": "p1_original_set1_004",
+    "section": "p1",
+    "level": 3,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "A garden watering can",
+    "title_vi": "Bình tưới trong vườn",
+    "passage": "Scene prompt: A gardener is watering a row of herbs beside a low fence on a sunny morning.",
+    "passage_vi": "Mô tả cảnh: Một người làm vườn đang tưới một hàng cây gia vị bên cạnh hàng rào thấp vào buổi sáng nắng.",
+    "items": [
+      {"id": "p1_original_set1_004_q1", "stem": "Which statement best matches the scene?", "opts": ["The fence is being delivered.", "The gardener is repairing a roof.", "The morning market has closed.", "The herbs are being watered."], "ans": 3, "expl": "The gardener is watering the herbs beside the fence.", "vi_expl": "Người làm vườn đang tưới hàng cây gia vị bên cạnh hàng rào."}
+    ]
+  },
+  {
+    "id": "p1_original_set1_005",
+    "section": "p1",
+    "level": 3,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "A full shopping cart",
+    "title_vi": "Xe đẩy mua hàng đầy",
+    "passage": "Scene prompt: A shopper is pushing a cart filled with vegetables through a grocery aisle.",
+    "passage_vi": "Mô tả cảnh: Một người mua hàng đang đẩy xe đầy rau qua lối đi trong cửa hàng tạp hóa.",
+    "items": [
+      {"id": "p1_original_set1_005_q1", "stem": "Which statement best matches the scene?", "opts": ["The shopper is pushing a loaded cart.", "The aisle is being cleaned after closing.", "The vegetables are growing beside the cart.", "A cashier is assembling the shelves."], "ans": 0, "expl": "The shopper is pushing a cart filled with vegetables through the aisle.", "vi_expl": "Người mua hàng đang đẩy một chiếc xe đầy rau qua lối đi."}
+    ]
+  },
+  {
+    "id": "p1_original_set1_006",
+    "section": "p1",
+    "level": 3,
+    "set": "1",
+    "source": "original:exam-expansion-2026",
+    "title": "A covered café table",
+    "title_vi": "Bàn cà phê có mái che",
+    "passage": "Scene prompt: A café worker is wiping an outdoor table while several chairs remain under a striped awning.",
+    "passage_vi": "Mô tả cảnh: Một nhân viên quán cà phê đang lau chiếc bàn ngoài trời trong khi vài chiếc ghế vẫn ở dưới mái hiên sọc.",
+    "items": [
+      {"id": "p1_original_set1_006_q1", "stem": "Which statement best matches the scene?", "opts": ["The chairs are being stored in a truck.", "The worker is wiping a table.", "The awning has been taken down.", "Customers are moving the café indoors."], "ans": 1, "expl": "The café worker is wiping the outdoor table under the awning.", "vi_expl": "Nhân viên quán cà phê đang lau chiếc bàn ngoài trời dưới mái hiên."}
+    ]
+  },
+  {
+    "id": "p1_original_set2_001",
+    "section": "p1",
+    "level": 2,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "A train platform sign",
+    "title_vi": "Biển báo ở sân ga",
+    "passage": "Scene prompt: A traveler is reading a departure board while a train waits on the next platform.",
+    "passage_vi": "Mô tả cảnh: Một hành khách đang đọc bảng giờ khởi hành trong khi một đoàn tàu chờ ở sân ga kế bên.",
+    "items": [
+      {"id": "p1_original_set2_001_q1", "stem": "Which statement best matches the scene?", "opts": ["The traveler is reading a departure board.", "The train has left the station.", "The platform is being painted.", "A conductor is selling the sign."], "ans": 0, "expl": "The traveler is reading the departure board beside the waiting train.", "vi_expl": "Hành khách đang đọc bảng giờ khởi hành bên cạnh đoàn tàu đang chờ."}
+    ]
+  },
+  {
+    "id": "p1_original_set2_002",
+    "section": "p1",
+    "level": 2,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "Boxes in a storeroom",
+    "title_vi": "Thùng hàng trong kho",
+    "passage": "Scene prompt: Cardboard boxes are stacked near a storeroom door, and one worker is checking a label.",
+    "passage_vi": "Mô tả cảnh: Các thùng bìa được xếp gần cửa kho, còn một nhân viên đang kiểm tra nhãn.",
+    "items": [
+      {"id": "p1_original_set2_002_q1", "stem": "Which statement best matches the scene?", "opts": ["The boxes are being flattened for recycling.", "A worker is checking a label.", "The door has been removed from the storeroom.", "The storeroom is being used as a kitchen."], "ans": 1, "expl": "One worker is checking a label on the boxes near the storeroom door.", "vi_expl": "Một nhân viên đang kiểm tra nhãn trên các thùng gần cửa kho."}
+    ]
+  },
+  {
+    "id": "p1_original_set2_003",
+    "section": "p1",
+    "level": 2,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "A bench beside a pond",
+    "title_vi": "Ghế dài bên ao",
+    "passage": "Scene prompt: A woman is sitting on a bench beside a pond, with an open notebook resting beside her.",
+    "passage_vi": "Mô tả cảnh: Một phụ nữ đang ngồi trên ghế dài bên ao, với một quyển sổ mở đặt bên cạnh.",
+    "items": [
+      {"id": "p1_original_set2_003_q1", "stem": "Which statement best matches the scene?", "opts": ["The bench is being delivered by boat.", "The pond is being emptied.", "A notebook is open beside the woman.", "The woman is painting the bench."], "ans": 2, "expl": "An open notebook is resting beside the woman on the bench.", "vi_expl": "Một quyển sổ mở đang đặt bên cạnh người phụ nữ trên ghế dài."}
+    ]
+  },
+  {
+    "id": "p1_original_set2_004",
+    "section": "p1",
+    "level": 3,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "A display of handmade cups",
+    "title_vi": "Kệ trưng bày cốc thủ công",
+    "passage": "Scene prompt: A shop owner is arranging handmade cups on a wooden display shelf.",
+    "passage_vi": "Mô tả cảnh: Một chủ cửa hàng đang sắp xếp những chiếc cốc thủ công trên kệ gỗ trưng bày.",
+    "items": [
+      {"id": "p1_original_set2_004_q1", "stem": "Which statement best matches the scene?", "opts": ["The cups are being washed in a sink.", "The shelf has been packed into a box.", "Customers are drinking from every cup.", "The shop owner is arranging a display."], "ans": 3, "expl": "The shop owner is arranging the cups on the display shelf.", "vi_expl": "Chủ cửa hàng đang sắp xếp những chiếc cốc trên kệ trưng bày."}
+    ]
+  },
+  {
+    "id": "p1_original_set2_005",
+    "section": "p1",
+    "level": 3,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "A bus at a curb",
+    "title_vi": "Xe buýt bên lề đường",
+    "passage": "Scene prompt: A city bus is stopped at the curb while passengers line up near the front door.",
+    "passage_vi": "Mô tả cảnh: Một chiếc xe buýt thành phố đang dừng bên lề đường trong khi hành khách xếp hàng gần cửa trước.",
+    "items": [
+      {"id": "p1_original_set2_005_q1", "stem": "Which statement best matches the scene?", "opts": ["Passengers are lining up to board a bus.", "The bus is being washed in a garage.", "The curb has been moved to the station.", "Passengers are unloading bicycles from a boat."], "ans": 0, "expl": "Passengers are lined up near the front door of the stopped bus.", "vi_expl": "Hành khách đang xếp hàng gần cửa trước của chiếc xe buýt đang dừng."}
+    ]
+  },
+  {
+    "id": "p1_original_set2_006",
+    "section": "p1",
+    "level": 3,
+    "set": "2",
+    "source": "original:exam-expansion-2026",
+    "title": "A chart on a whiteboard",
+    "title_vi": "Biểu đồ trên bảng trắng",
+    "passage": "Scene prompt: A manager is pointing to a chart on a whiteboard while three colleagues take notes.",
+    "passage_vi": "Mô tả cảnh: Một quản lý đang chỉ vào biểu đồ trên bảng trắng trong khi ba đồng nghiệp ghi chép.",
+    "items": [
+      {"id": "p1_original_set2_006_q1", "stem": "Which statement best matches the scene?", "opts": ["The whiteboard is being delivered.", "The colleagues are taking notes.", "The manager is erasing the office floor.", "The chart has been printed on a ticket."], "ans": 1, "expl": "Three colleagues are taking notes as the manager points to the chart.", "vi_expl": "Ba đồng nghiệp đang ghi chép khi người quản lý chỉ vào biểu đồ."}
+    ]
+  },
+  {
+    "id": "p1_original_set3_001",
+    "section": "p1",
+    "level": 2,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "A lamp in a reading corner",
+    "title_vi": "Đèn trong góc đọc sách",
+    "passage": "Scene prompt: A floor lamp is standing beside an armchair, and a book is open on a small table.",
+    "passage_vi": "Mô tả cảnh: Một chiếc đèn đứng ở cạnh ghế bành, còn một quyển sách mở trên chiếc bàn nhỏ.",
+    "items": [
+      {"id": "p1_original_set3_001_q1", "stem": "Which statement best matches the scene?", "opts": ["A book is open on a small table.", "The lamp is being carried outside.", "The armchair is being repaired in a factory.", "The table has been folded into a lamp."], "ans": 0, "expl": "The open book is on the small table beside the armchair.", "vi_expl": "Quyển sách mở đang ở trên chiếc bàn nhỏ bên cạnh ghế bành."}
+    ]
+  },
+  {
+    "id": "p1_original_set3_002",
+    "section": "p1",
+    "level": 2,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "A repair shop counter",
+    "title_vi": "Quầy của cửa hàng sửa chữa",
+    "passage": "Scene prompt: A technician is examining a phone on a counter while a customer waits nearby.",
+    "passage_vi": "Mô tả cảnh: Một kỹ thuật viên đang kiểm tra điện thoại trên quầy trong khi một khách hàng chờ gần đó.",
+    "items": [
+      {"id": "p1_original_set3_002_q1", "stem": "Which statement best matches the scene?", "opts": ["The customer is installing a counter.", "The technician is examining a phone.", "The phone has been mailed to a customer.", "The counter is being painted blue."], "ans": 1, "expl": "The technician is examining a phone on the repair counter.", "vi_expl": "Kỹ thuật viên đang kiểm tra một chiếc điện thoại trên quầy sửa chữa."}
+    ]
+  },
+  {
+    "id": "p1_original_set3_003",
+    "section": "p1",
+    "level": 2,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "A row of umbrellas",
+    "title_vi": "Hàng ô dù",
+    "passage": "Scene prompt: Several umbrellas are standing in a rack near a wet doorway.",
+    "passage_vi": "Mô tả cảnh: Một số chiếc ô đang đứng trong giá gần một lối vào ướt.",
+    "items": [
+      {"id": "p1_original_set3_003_q1", "stem": "Which statement best matches the scene?", "opts": ["The doorway is being moved upstairs.", "A worker is sewing the wet floor.", "The umbrellas are standing in a rack.", "The rack is being used as a table."], "ans": 2, "expl": "Several umbrellas are standing in the rack near the wet doorway.", "vi_expl": "Một số chiếc ô đang đứng trong giá gần lối vào ướt."}
+    ]
+  },
+  {
+    "id": "p1_original_set3_004",
+    "section": "p1",
+    "level": 3,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "A map beside a trail",
+    "title_vi": "Bản đồ cạnh lối mòn",
+    "passage": "Scene prompt: A hiker is studying a map beside a marked trail while a water bottle rests on a rock.",
+    "passage_vi": "Mô tả cảnh: Một người đi bộ đường dài đang xem bản đồ cạnh lối mòn có đánh dấu, còn chai nước đặt trên tảng đá.",
+    "items": [
+      {"id": "p1_original_set3_004_q1", "stem": "Which statement best matches the scene?", "opts": ["The trail is being paved with bottles.", "The rock has been moved into a backpack.", "The map is being washed in a stream.", "The hiker is studying a map."], "ans": 3, "expl": "The hiker is studying a map beside the marked trail.", "vi_expl": "Người đi bộ đường dài đang xem bản đồ cạnh lối mòn có đánh dấu."}
+    ]
+  },
+  {
+    "id": "p1_original_set3_005",
+    "section": "p1",
+    "level": 3,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "A bakery tray",
+    "title_vi": "Khay bánh trong tiệm",
+    "passage": "Scene prompt: A baker is carrying a tray of rolls from an oven toward a cooling rack.",
+    "passage_vi": "Mô tả cảnh: Một thợ làm bánh đang mang khay bánh mì tròn từ lò nướng đến giá làm nguội.",
+    "items": [
+      {"id": "p1_original_set3_005_q1", "stem": "Which statement best matches the scene?", "opts": ["The rolls are being taken from an oven.", "The cooling rack is being sold at a market.", "The baker is planting wheat.", "The tray has been placed in a mailbox."], "ans": 0, "expl": "The baker is carrying rolls from the oven toward the cooling rack.", "vi_expl": "Thợ làm bánh đang mang bánh mì tròn từ lò nướng đến giá làm nguội."}
+    ]
+  },
+  {
+    "id": "p1_original_set3_006",
+    "section": "p1",
+    "level": 3,
+    "set": "3",
+    "source": "original:exam-expansion-2026",
+    "title": "A sign at a community hall",
+    "title_vi": "Biển báo ở nhà sinh hoạt cộng đồng",
+    "passage": "Scene prompt: A volunteer is attaching a sign to a notice board outside a community hall.",
+    "passage_vi": "Mô tả cảnh: Một tình nguyện viên đang gắn biển lên bảng thông báo bên ngoài nhà sinh hoạt cộng đồng.",
+    "items": [
+      {"id": "p1_original_set3_006_q1", "stem": "Which statement best matches the scene?", "opts": ["The community hall is being demolished.", "A volunteer is attaching a sign.", "The notice board is inside a taxi.", "The sign has been removed from a wall."], "ans": 1, "expl": "The volunteer is attaching a sign to the outdoor notice board.", "vi_expl": "Tình nguyện viên đang gắn biển lên bảng thông báo bên ngoài."}
+    ]
+  },
+  {
+    "id": "p1_original_set4_001",
+    "section": "p1",
+    "level": 2,
+    "set": "4",
+    "source": "original:exam-expansion-2026",
+    "title": "A library return slot",
+    "title_vi": "Khe trả sách ở thư viện",
+    "passage": "Scene prompt: A student is placing a book through a library return slot while another student carries a stack of books.",
+    "passage_vi": "Mô tả cảnh: Một sinh viên đang đặt sách qua khe trả sách của thư viện trong khi sinh viên khác mang một chồng sách.",
+    "items": [
+      {"id": "p1_original_set4_001_q1", "stem": "Which statement best matches the scene?", "opts": ["A student is returning a book.", "The library books are being planted.", "The return slot is being painted by a driver.", "The students are building a bookshelf outdoors."], "ans": 0, "expl": "The student is placing a book through the library return slot.", "vi_expl": "Sinh viên đang đặt một quyển sách qua khe trả sách của thư viện."}
+    ]
+  },
+  {
+    "id": "p1_original_set4_002",
+    "section": "p1",
+    "level": 2,
+    "set": "4",
+    "source": "original:exam-expansion-2026",
+    "title": "A printer in an office",
+    "title_vi": "Máy in trong văn phòng",
+    "passage": "Scene prompt: An employee is collecting printed pages from a printer while a folder lies open on the desk.",
+    "passage_vi": "Mô tả cảnh: Một nhân viên đang lấy các trang đã in từ máy in trong khi một tập hồ sơ mở trên bàn.",
+    "items": [
+      {"id": "p1_original_set4_002_q1", "stem": "Which statement best matches the scene?", "opts": ["The folder is being mailed from a post office.", "The employee is collecting printed pages.", "The printer is being carried into a garden.", "The desk has been emptied for a meeting."], "ans": 1, "expl": "The employee is collecting pages from the printer beside the open folder.", "vi_expl": "Nhân viên đang lấy các trang từ máy in bên cạnh tập hồ sơ mở."}
+    ]
+  },
+  {
+    "id": "p1_original_set4_003",
+    "section": "p1",
+    "level": 2,
+    "set": "4",
+    "source": "original:exam-expansion-2026",
+    "title": "A boat at a dock",
+    "title_vi": "Thuyền ở bến",
+    "passage": "Scene prompt: A small boat is tied to a dock, and a life jacket is hanging from a post.",
+    "passage_vi": "Mô tả cảnh: Một chiếc thuyền nhỏ được buộc vào bến, còn áo phao treo trên một chiếc cọc.",
+    "items": [
+      {"id": "p1_original_set4_003_q1", "stem": "Which statement best matches the scene?", "opts": ["The boat is being stored in a library.", "The dock is being folded into a jacket.", "A life jacket is hanging from a post.", "A swimmer is tying a post to a cloud."], "ans": 2, "expl": "The life jacket is hanging from a post beside the docked boat.", "vi_expl": "Áo phao đang treo trên chiếc cọc bên cạnh thuyền đã buộc ở bến."}
+    ]
+  },
+  {
+    "id": "p1_original_set4_004",
+    "section": "p1",
+    "level": 3,
+    "set": "4",
+    "source": "original:exam-expansion-2026",
+    "title": "A science demonstration",
+    "title_vi": "Buổi minh họa khoa học",
+    "passage": "Scene prompt: A teacher is demonstrating a simple experiment while students watch from their desks.",
+    "passage_vi": "Mô tả cảnh: Một giáo viên đang minh họa thí nghiệm đơn giản trong khi học sinh quan sát từ bàn của mình.",
+    "items": [
+      {"id": "p1_original_set4_004_q1", "stem": "Which statement best matches the scene?", "opts": ["The desks are being delivered to a laboratory.", "The teacher is closing the school for the day.", "The experiment has been packed in a suitcase.", "The students are watching a demonstration."], "ans": 3, "expl": "The students are watching while the teacher demonstrates an experiment.", "vi_expl": "Học sinh đang quan sát khi giáo viên minh họa một thí nghiệm."}
+    ]
+  },
+  {
+    "id": "p1_original_set4_005",
+    "section": "p1",
+    "level": 3,
+    "set": "4",
+    "source": "original:exam-expansion-2026",
+    "title": "A coat on a hanger",
+    "title_vi": "Áo khoác trên móc",
+    "passage": "Scene prompt: A coat is hanging on a rack near a doorway, and a scarf has been placed on the bench below it.",
+    "passage_vi": "Mô tả cảnh: Một chiếc áo khoác đang treo trên giá gần lối vào, còn khăn quàng được đặt trên ghế dài bên dưới.",
+    "items": [
+      {"id": "p1_original_set4_005_q1", "stem": "Which statement best matches the scene?", "opts": ["A coat is hanging near a doorway.", "The bench is being used to repair a roof.", "The scarf is being woven on the rack.", "The doorway has been moved to a closet."], "ans": 0, "expl": "The coat is hanging on a rack near the doorway.", "vi_expl": "Áo khoác đang treo trên giá gần lối vào."}
+    ]
+  },
+  {
+    "id": "p1_original_set4_006",
+    "section": "p1",
+    "level": 3,
+    "set": "4",
+    "source": "original:exam-expansion-2026",
+    "title": "A market weighing table",
+    "title_vi": "Bàn cân ở chợ",
+    "passage": "Scene prompt: A vendor is weighing oranges on a scale while paper bags are arranged beside the table.",
+    "passage_vi": "Mô tả cảnh: Một người bán hàng đang cân cam trên cân trong khi các túi giấy được xếp cạnh bàn.",
+    "items": [
+      {"id": "p1_original_set4_006_q1", "stem": "Which statement best matches the scene?", "opts": ["The paper bags are being recycled into fruit.", "The vendor is weighing oranges.", "The table is being moved onto a bus.", "The scale is being painted by a customer."], "ans": 1, "expl": "The vendor is weighing oranges on the scale beside the paper bags.", "vi_expl": "Người bán hàng đang cân cam trên chiếc cân cạnh các túi giấy."}
+    ]
+  },
+  {
+    "id": "p1_original_set5_001",
+    "section": "p1",
+    "level": 2,
+    "set": "5",
+    "source": "original:exam-expansion-2026",
+    "title": "A folded map on a desk",
+    "title_vi": "Bản đồ gấp trên bàn",
+    "passage": "Scene prompt: A folded map is spread across a desk, with a pencil resting on one corner.",
+    "passage_vi": "Mô tả cảnh: Một bản đồ gấp được trải trên bàn, với một cây bút chì đặt ở một góc.",
+    "items": [
+      {"id": "p1_original_set5_001_q1", "stem": "Which statement best matches the scene?", "opts": ["A pencil is resting on a map.", "The desk is being carried through a river.", "The map is being printed on a shirt.", "A traveler is folding the pencil."], "ans": 0, "expl": "The pencil is resting on one corner of the map spread across the desk.", "vi_expl": "Cây bút chì đang đặt ở một góc của bản đồ trải trên bàn."}
+    ]
+  },
+  {
+    "id": "p1_original_set5_002",
+    "section": "p1",
+    "level": 2,
+    "set": "5",
+    "source": "original:exam-expansion-2026",
+    "title": "A clean window",
+    "title_vi": "Cửa sổ sạch",
+    "passage": "Scene prompt: A cleaner is wiping a large window while a bucket and cloth stand on the floor nearby.",
+    "passage_vi": "Mô tả cảnh: Một nhân viên vệ sinh đang lau cửa sổ lớn trong khi xô và khăn ở trên sàn gần đó.",
+    "items": [
+      {"id": "p1_original_set5_002_q1", "stem": "Which statement best matches the scene?", "opts": ["The bucket is being shipped by train.", "The window is being cleaned.", "The cleaner is planting a window.", "The cloth has been hung from a tree."], "ans": 1, "expl": "The cleaner is wiping the large window near the bucket and cloth.", "vi_expl": "Nhân viên vệ sinh đang lau cửa sổ lớn gần chiếc xô và khăn."}
+    ]
+  },
+  {
+    "id": "p1_original_set5_003",
+    "section": "p1",
+    "level": 2,
+    "set": "5",
+    "source": "original:exam-expansion-2026",
+    "title": "A menu at a restaurant",
+    "title_vi": "Thực đơn trong nhà hàng",
+    "passage": "Scene prompt: A server is placing menus on a table while a vase of flowers stands in the center.",
+    "passage_vi": "Mô tả cảnh: Một nhân viên phục vụ đang đặt thực đơn lên bàn trong khi một lọ hoa ở giữa bàn.",
+    "items": [
+      {"id": "p1_original_set5_003_q1", "stem": "Which statement best matches the scene?", "opts": ["The flowers are being delivered by a waiter on a bicycle.", "The table is being removed from the restaurant.", "Menus are being placed on a table.", "The server is washing dishes in the street."], "ans": 2, "expl": "The server is placing menus on the table beside the vase of flowers.", "vi_expl": "Nhân viên phục vụ đang đặt thực đơn lên bàn cạnh lọ hoa."}
+    ]
+  },
+  {
+    "id": "p1_original_set5_004",
+    "section": "p1",
+    "level": 3,
+    "set": "5",
+    "source": "original:exam-expansion-2026",
+    "title": "A delivery at an apartment",
+    "title_vi": "Giao hàng tại căn hộ",
+    "passage": "Scene prompt: A delivery worker is carrying a parcel toward an apartment entrance while a resident opens the door.",
+    "passage_vi": "Mô tả cảnh: Một nhân viên giao hàng đang mang gói hàng về phía lối vào căn hộ trong khi một cư dân mở cửa.",
+    "items": [
+      {"id": "p1_original_set5_004_q1", "stem": "Which statement best matches the scene?", "opts": ["The parcel is being stored in a bakery oven.", "The delivery worker is repairing the apartment roof.", "The entrance has been closed for painting.", "A resident is opening an apartment door."], "ans": 3, "expl": "The resident is opening the apartment door as the delivery worker approaches with a parcel.", "vi_expl": "Cư dân đang mở cửa căn hộ khi nhân viên giao hàng mang gói hàng đến."}
+    ]
+  },
+  {
+    "id": "p1_original_set5_005",
+    "section": "p1",
+    "level": 3,
+    "set": "5",
+    "source": "original:exam-expansion-2026",
+    "title": "A notice beside an elevator",
+    "title_vi": "Thông báo cạnh thang máy",
+    "passage": "Scene prompt: A building manager is posting a notice beside an elevator while two residents read it.",
+    "passage_vi": "Mô tả cảnh: Một quản lý tòa nhà đang dán thông báo cạnh thang máy trong khi hai cư dân đọc thông báo đó.",
+    "items": [
+      {"id": "p1_original_set5_005_q1", "stem": "Which statement best matches the scene?", "opts": ["Two residents are reading a notice.", "The elevator is being delivered to the building.", "The manager is cleaning a bicycle.", "The notice has been thrown into a mailbox."], "ans": 0, "expl": "Two residents are reading the notice that the manager has posted beside the elevator.", "vi_expl": "Hai cư dân đang đọc thông báo mà quản lý vừa dán cạnh thang máy."}
+    ]
+  },
+  {
+    "id": "p1_original_set5_006",
+    "section": "p1",
+    "level": 3,
+    "set": "5",
+    "source": "original:exam-expansion-2026",
+    "title": "A clock in a workshop",
+    "title_vi": "Đồng hồ trong xưởng",
+    "passage": "Scene prompt: A clockmaker is adjusting a wall clock while small tools are arranged on a workbench.",
+    "passage_vi": "Mô tả cảnh: Một thợ sửa đồng hồ đang chỉnh đồng hồ treo tường trong khi các dụng cụ nhỏ được xếp trên bàn làm việc.",
+    "items": [
+      {"id": "p1_original_set5_006_q1", "stem": "Which statement best matches the scene?", "opts": ["The tools are being planted in a workshop garden.", "The clockmaker is adjusting a wall clock.", "The workbench is being used as a train platform.", "The clock has been packed into a paper bag."], "ans": 1, "expl": "The clockmaker is adjusting the wall clock above the workbench.", "vi_expl": "Thợ sửa đồng hồ đang chỉnh chiếc đồng hồ treo tường phía trên bàn làm việc."}
+    ]
+  }
+]

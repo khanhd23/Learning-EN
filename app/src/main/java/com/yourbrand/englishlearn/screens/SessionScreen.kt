@@ -292,6 +292,11 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
 
     private fun renderChoice(ex: Exercise.Choice) {
         val c = ctx
+        if (ex.sharedPassage != null) {
+            content.addView(Kit.card(c, 14, 10, c.col(R.color.surface_variant), null) {
+                addView(Kit.text(c, (ex.sharedPassageTitle?.let { "$it\n\n" } ?: "") + ex.sharedPassage, R.style.Text_Body))
+            })
+        }
         content.addView(instruction(ex.instruction))
         var stemView: TextView? = null
         when {
@@ -346,6 +351,17 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             }
         }
         cardsRef = cards
+        if (ex.audioOptions) {
+            fun playOptions(slower: Boolean) {
+                services.tts.speakSentences(ex.options, slower) { index ->
+                    if (!answered && selected < 0) {
+                        cards.forEachIndexed { i, card -> card.setState(if (i == index) OptionCard.State.PLAYING else OptionCard.State.DEFAULT) }
+                    }
+                }
+            }
+            content.addView(Kit.secondary(c, str(R.string.play_slow), 4) { playOptions(true) }.margins(c, top = 2))
+            content.post { playOptions(false) }
+        }
         check = {
             val ok = selected == ex.answer
             cards.forEachIndexed { j, oc ->
@@ -1146,7 +1162,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
 
 /** Answer option with the states from SKILL.md 4.4 (default · selected · correct · wrong · dimmed · disabled). */
 class OptionCard(private val ctx: android.content.Context, index: Int, text: CharSequence) {
-    enum class State { DEFAULT, SELECTED, CORRECT, WRONG, DIMMED, DISABLED }
+    enum class State { DEFAULT, PLAYING, SELECTED, CORRECT, WRONG, DIMMED, DISABLED }
 
     val view: LinearLayout
     private val letter: TextView
@@ -1181,14 +1197,15 @@ class OptionCard(private val ctx: android.content.Context, index: Int, text: Cha
     fun setState(s: State) {
         val c = ctx
         val (fill, stroke, strokeW) = when (s) {
+            State.PLAYING -> Triple(R.color.info_container, R.color.info, 2f)
             State.SELECTED -> Triple(R.color.primary_container, R.color.primary, 2f)
             State.CORRECT -> Triple(R.color.success_container, R.color.success, 2f)
             State.WRONG -> Triple(R.color.error_container, R.color.error, 2f)
             else -> Triple(R.color.surface, R.color.outline, 1.5f)
         }
         view.background = c.rounded(c.col(fill), 16f, c.col(stroke), strokeW, ripple = s == State.DEFAULT || s == State.SELECTED)
-        letter.background = c.rounded(c.col(when (s) { State.SELECTED -> R.color.primary; State.CORRECT -> R.color.success; State.WRONG -> R.color.error; else -> R.color.surface_variant }), 100f)
-        letter.setTextColor(c.col(if (s == State.SELECTED || s == State.CORRECT || s == State.WRONG) R.color.on_primary else R.color.on_surface))
+        letter.background = c.rounded(c.col(when (s) { State.PLAYING -> R.color.info; State.SELECTED -> R.color.primary; State.CORRECT -> R.color.success; State.WRONG -> R.color.error; else -> R.color.surface_variant }), 100f)
+        letter.setTextColor(c.col(if (s == State.PLAYING || s == State.SELECTED || s == State.CORRECT || s == State.WRONG) R.color.on_primary else R.color.on_surface))
         view.alpha = when (s) { State.DIMMED -> 0.6f; State.DISABLED -> 0.38f; else -> 1f }
         enabled = s != State.DISABLED
         mark.show(s == State.CORRECT || s == State.WRONG)

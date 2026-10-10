@@ -9,6 +9,7 @@ import com.yourbrand.englishlearn.content.ExamSection
 import com.yourbrand.englishlearn.content.Content
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotEquals
+import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class ExamEngineTest {
@@ -112,5 +113,16 @@ class ExamEngineTest {
         assertEquals("exam:toeic:p5_1", p5.key)
         assertEquals("exam:toeic:p6_1_1", p6.key)
         assertEquals("A shared passage {1}.", p6.sharedPassage)
+    }
+
+    @Test fun partOnePracticeMarksAllOptionsForSequentialTts() {
+        val p1 = ExamBank(emptyList(), listOf(ExamGroup("p1_1", "p1", "Scene prompt", "Scene", listOf(
+            ExamItem("p1_1_q1", "p1", 2, "Choose", listOf("A sentence", "B sentence", "C sentence", "D sentence"), 0, "Explanation", "listen_p1")
+        ), "1")))
+        val content = Content(emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyMap(), emptyMap(), examBanks = mapOf("toeic_p1" to p1))
+        val builder = SessionBuilder(content, { null }, { emptyList() }, { emptyList() })
+        val exercise = builder.examType("Part 1", "toeic_p1_practice_1", null, 3, 1).exercises.single() as Exercise.Choice
+        assertTrue(exercise.audioOptions)
+        assertEquals(listOf("A sentence", "B sentence", "C sentence", "D sentence"), exercise.options)
     }
 }

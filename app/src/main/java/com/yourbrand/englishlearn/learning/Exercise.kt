@@ -46,6 +46,8 @@ sealed class Exercise {
         val sharedPassage: String? = null,
         val sharedPassageTitle: String? = null,
         val sharedGroupId: String? = null,
+        /** Part 1-style listening: read every answer sentence in order and highlight it. */
+        val audioOptions: Boolean = false,
     ) : Exercise()
 
     /** E04: tap the wrong part among four marked segments. */

@@ -114,7 +114,7 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
 
     override fun onPause() { save() }
     override fun onResume() { tickBase = SystemClock.elapsedRealtime() }
-    override fun onDestroy() { timer.removeCallbacks(tick) }
+    override fun onDestroy() { timer.removeCallbacks(tick); services.tts.stop() }
     override fun onBack(): Boolean { askClose(); return true }
 
     private fun save() { if (!submitted) services.settings.mockInProgress = test.toJson() }
@@ -193,6 +193,17 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
                     box.addView(card.view)
                 }
                 content.addView(box)
+                if (ex.audioOptions) {
+                    fun playOptions(slower: Boolean) {
+                        services.tts.speakSentences(ex.options, slower) { index ->
+                            if (test.answers[i] < 0) cards.forEachIndexed { j, card ->
+                                card.setState(if (j == index) OptionCard.State.PLAYING else OptionCard.State.DEFAULT)
+                            }
+                        }
+                    }
+                    content.addView(Kit.secondary(c, str(R.string.play_slow), 4) { playOptions(true) }.margins(c, top = 2))
+                    content.post { playOptions(false) }
+                }
             }
             is Exercise.FindError -> {
                 content.addView(Kit.text(c, str(R.string.ins_find_error), R.style.Text_Caption))

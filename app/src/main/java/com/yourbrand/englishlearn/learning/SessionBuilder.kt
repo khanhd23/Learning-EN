@@ -227,6 +227,12 @@ class SessionBuilder(
             content.passages.flatMap { p -> p.blanks.indices.filter { qtype == null || p.blanks[it].qtype == qtype }.map { p to it } }
                 .sortedBy { (p, i) -> if (state(p.key(i))?.isNew != false) 0 else 1 }.take(n * 2).shuffled(random).take(n)
                 .sortedWith(compareBy({ it.first.id }, { it.second })).map { (p, i) -> factory.passageBlank(p, i) }
+        } else if (fmt.startsWith("toeic_p1_practice_")) {
+            val set = fmt.substringAfterLast('_')
+            val selected = content.examBanks["toeic_p1"]?.groups.orEmpty()
+                .filter { it.set == set }
+                .flatMap { group -> group.items.filter { qtype == null || it.qtype == qtype }.map { it to group } }
+            selected.shuffled(random).take(n).map { (item, group) -> factory.exam("toeic_p1", item, group) }
         } else {
             val pool = examPool(fmt).filter { qtype == null || it.qtype == qtype }
             val byLevel = when (difficulty) { 0 -> pool.filter { it.level <= 2 }; 1 -> pool.filter { it.level == 3 }; 2 -> pool.filter { it.level >= 4 }; else -> pool }

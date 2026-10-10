@@ -150,12 +150,20 @@ class QuestionTypeScreen(activity: MainActivity, private val fmt: String) : Scro
             listOf("p5" to (bank?.items?.count { it.section == "p5" } ?: 0), "p6" to (bank?.groups?.sumOf { it.items.size } ?: 0))
         } else if (fmt == "toeic_p6") {
             services.content.passages.flatMap { it.blanks }.groupBy { it.qtype }.map { it.key to it.value.size } + listOf<Pair<String?, Int>>(null to services.content.passages.sumOf { it.blanks.size })
+        } else if (fmt.startsWith("toeic_p1_practice_")) {
+            val set = fmt.substringAfterLast('_')
+            listOf(null to (services.content.examBanks["toeic_p1"]?.groups.orEmpty().filter { it.set == set }.sumOf { it.items.size }))
         } else {
             val pool = services.builder().examPool(fmt).filter { it.type != "E05" }
             pool.groupBy { it.qtype ?: if (it.type == "E04") "error" else if (it.type == "E12") "transform" else "vocab" }.map { it.key to it.value.size }.sortedByDescending { it.second }
         }
         types.forEach { (qt, count) ->
             val keys = if (fmt == "toeic") emptyList() else if (fmt == "toeic_p6") services.content.passages.flatMap { p -> p.blanks.indices.filter { qt == null || p.blanks[it].qtype == qt }.map { p.key(it) } }
+            else if (fmt.startsWith("toeic_p1_practice_")) {
+                val set = fmt.substringAfterLast('_')
+                services.content.examBanks["toeic_p1"]?.groups.orEmpty().filter { it.set == set }
+                    .flatMap { group -> group.items.filter { qt == null || it.qtype == qt }.map { "exam:toeic_p1:${it.id}" } }
+            }
             else services.builder().examPool(fmt).filter { q -> (q.qtype ?: if (q.type == "E04") "error" else if (q.type == "E12") "transform" else "vocab") == qt }.map { it.key }
             val st = keys.mapNotNull { services.store.item(it) }.filter { it.seen > 0 }
             val acc = if (st.isEmpty()) null else st.sumOf { it.correct } * 100 / st.sumOf { it.seen }.coerceAtLeast(1)
