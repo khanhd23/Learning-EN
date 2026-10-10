@@ -10,6 +10,7 @@ import com.yourbrand.englishlearn.learning.ExamCatalog
 import com.yourbrand.englishlearn.learning.ExamPart
 import com.yourbrand.englishlearn.learning.ExamPartCatalog
 import com.yourbrand.englishlearn.learning.ExamPartMode
+import com.yourbrand.englishlearn.learning.ExamPartSet
 import com.yourbrand.englishlearn.learning.ExamFormatText
 import com.yourbrand.englishlearn.learning.MockTest
 import com.yourbrand.englishlearn.learning.SessionKind
@@ -187,7 +188,6 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
         "p5" -> str(R.string.exam_part5)
         "p6" -> str(R.string.exam_part6)
         "p7" -> str(R.string.exam_part7)
-        "full_reading" -> str(R.string.exam_full_reading)
         "reading_bank" -> str(R.string.exam_reading_bank)
         else -> part.key
     }
@@ -238,34 +238,39 @@ class ExamPartScreen(activity: MainActivity, private val partKey: String) : Scro
         }
 
         body.addView(Kit.section(c, str(R.string.exam_part_sets_title, partLabel()), topDp = 4))
-        part.formats.forEach { practiceCard(body, it) }
+        part.sets.forEach { practiceCard(body, it) }
 
         body.addView(Kit.section(c, str(R.string.exam_part_guide), topDp = 20))
+        val guideFormat = services.content.formatById("toeic_$partKey") ?: part.formats.first()
         body.addView(Kit.card(c, 6, 6) {
-            addView(Kit.text(c, ExamFormatText.description(c, part.formats.first()), R.style.Text_Body))
+            addView(Kit.text(c, ExamFormatText.description(c, guideFormat), R.style.Text_Body))
         })
     }
 
-    private fun practiceCard(body: LinearLayout, format: ExamFormat) {
+    private fun practiceCard(body: LinearLayout, set: ExamPartSet) {
         val c = ctx
-        val title = ExamFormatText.label(c, format)
+        val format = set.format
+        val title = ExamFormatText.label(c, format) + set.sectionId?.let { " · ${partLabel()}" }.orEmpty()
         val hist = services.store.history().filter { it.kind == "MOCK" && it.format == format.id }
-        val n = format.questionCount ?: 20
+        val n = set.sectionId?.let { sectionId -> format.sections.firstOrNull { it.id == sectionId }?.count }
+            ?: format.questionCount ?: 20
         val last = hist.lastOrNull()?.let { "${it.correct}/${it.total}" } ?: "—"
         val best = hist.maxByOrNull { it.percent }?.let { "${it.correct}/${it.total}" } ?: "—"
-        val time = format.timeLimitMinutes?.let { str(R.string.minutes_n, it) } ?: str(R.string.untimed)
-        body.addView(Kit.clickableCard(c, 6, 10, onClick = { start(format, title) }) {
+        val time = if (set.sectionId != null) str(R.string.untimed) else format.timeLimitMinutes?.let { str(R.string.minutes_n, it) } ?: str(R.string.untimed)
+        body.addView(Kit.clickableCard(c, 6, 10, onClick = { start(set, title) }) {
             addView(Kit.row(c, null, title, str(R.string.test_meta, n, time, last, best), Kit.chevron(c)))
         })
     }
 
-    private fun start(format: ExamFormat, title: String) {
+    private fun start(set: ExamPartSet, title: String) {
         if (services.settings.mockInProgress != null) {
             Dialogs.confirm(ctx, str(R.string.mock_in_progress), str(R.string.mock_in_progress_msg), str(R.string.continue_label), str(R.string.start_new),
-                onNegative = { services.settings.mockInProgress = null; start(format, title) }) { MockScreen.resume(activity) }
+                onNegative = { services.settings.mockInProgress = null; start(set, title) }) { MockScreen.resume(activity) }
             return
         }
-        val test = MockTest.build(services.content, services.builder(), format.id, title, null, services.settings.recentMockKeys.toSet())
+        val test = set.sectionId?.let { sectionId ->
+            MockTest.buildSection(services.content, set.format.id, sectionId, title)
+        } ?: MockTest.build(services.content, services.builder(), set.format.id, title, null, services.settings.recentMockKeys.toSet())
         if (test.keys.isEmpty()) { activity.toast(str(R.string.nothing_to_practice)); return }
         activity.open(MockScreen(activity, test))
     }
@@ -278,7 +283,6 @@ class ExamPartScreen(activity: MainActivity, private val partKey: String) : Scro
         "p5" -> str(R.string.exam_part5)
         "p6" -> str(R.string.exam_part6)
         "p7" -> str(R.string.exam_part7)
-        "full_reading" -> str(R.string.exam_full_reading)
         "reading_bank" -> str(R.string.exam_reading_bank)
         else -> partKey
     }

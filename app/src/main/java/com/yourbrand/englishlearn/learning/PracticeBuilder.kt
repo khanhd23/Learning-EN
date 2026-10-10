@@ -168,5 +168,20 @@ class MockTest(
             val limit = if (count == null) format?.timeLimitMinutes?.times(60) else null
             return MockTest(formatId, title, keys, limit)
         }
+
+        /** Builds one section from a multi-section paper without exposing the other sections. */
+        fun buildSection(content: Content, formatId: String, sectionId: String, title: String, random: Random = Random.Default): MockTest {
+            val format = content.formatById(formatId)
+            val section = format?.sections?.firstOrNull { it.id == sectionId }
+            val bankId = section?.bank
+            val bank = bankId?.let { content.examBanks[it] }
+            if (format == null || section == null || bank == null || bankId == null) {
+                return MockTest(formatId, title, emptyList(), null)
+            }
+            val sectionFormat = format.copy(questionCount = section.count, sections = listOf(section))
+            val picked = SectionedExamBuilder.build(sectionFormat, mapOf(bankId to bank), random)
+            return MockTest(formatId, title, picked.map { "exam:${it.bank ?: bankId}:${it.item.id}" }, null,
+                sectionIds = picked.map { it.section }, sectionLabels = listOf(section.id to section.label))
+        }
     }
 }

@@ -137,6 +137,29 @@ class ExamEngineTest {
         assertTrue(mock.keys.all { (builder.exerciseFor(it) as Exercise.Choice).sharedPassage?.startsWith("Passage ") == true })
     }
 
+    @Test fun sectionPracticeUsesOnlyTheRequestedPartFromAFullReadingPaper() {
+        val p5 = ExamBank(listOf(
+            ExamItem("p5_1", "p5", 2, "Question 1", listOf("A", "B", "C", "D"), 0, "Explanation"),
+            ExamItem("p5_2", "p5", 2, "Question 2", listOf("A", "B", "C", "D"), 1, "Explanation"),
+        ), emptyList())
+        val p6 = ExamBank(emptyList(), listOf(ExamGroup("p6_1", "p6", "Passage", "P6", listOf(
+            ExamItem("p6_1_1", "p6", 2, "Question", listOf("A", "B", "C", "D"), 0, "Explanation"),
+        ))))
+        val format = ExamFormat("reading_1", "Reading 1", "TOEIC", "", 3, null, 75, null, listOf(
+            ExamSection("p5", "Part 5", "mcq", 2, emptyList(), emptyList(), "p5"),
+            ExamSection("p6", "Part 6", "group", 1, emptyList(), emptyList(), "p6"),
+        ))
+        val content = Content(
+            emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), emptyList(), listOf(format), emptyList(), emptyMap(), emptyMap(),
+            examBanks = mapOf("p5" to p5, "p6" to p6),
+        )
+
+        val mock = MockTest.buildSection(content, "reading_1", "p5", "Reading 1 · Part 5", kotlin.random.Random(1))
+
+        assertEquals(setOf("exam:p5:p5_1", "exam:p5:p5_2"), mock.keys.toSet())
+        assertEquals(listOf("p5", "p5"), mock.sectionIds)
+    }
+
     @Test fun localizedExamOverridesRequireApproval() {
         val localized = """
             {"s1_i1":{"stem":"Approved translated stem","expl":"Approved translated explanation"},
