@@ -23,8 +23,12 @@ object ExamPartCatalog {
     fun toeic(formats: List<ExamFormat>): List<ExamPart> = listOfNotNull(
         part(formats, "p1", ExamPartMode.LISTENING) { it.id.startsWith("toeic_p1_practice_") },
         part(formats, "p2", ExamPartMode.LISTENING) { it.id.startsWith("toeic_p2_practice_") },
-        part(formats, "p3", ExamPartMode.LISTENING) { it.id == "toeic_p3_examples" },
-        part(formats, "p4", ExamPartMode.LISTENING) { it.id == "toeic_p4_examples" },
+        part(formats, "p3", ExamPartMode.LISTENING) {
+            it.id == "toeic_p3_examples" || it.id.startsWith("toeic_p3_practice_")
+        },
+        part(formats, "p4", ExamPartMode.LISTENING) {
+            it.id == "toeic_p4_examples" || it.id.startsWith("toeic_p4_practice_")
+        },
         part(formats, "p5", ExamPartMode.READING) {
             it.id.startsWith("toeic_reading_")
         }.withSectionForFullReading("p5"),

@@ -5,7 +5,7 @@
       "id": "p4_example_001",
       "section": "p4",
       "title": "Library orientation",
-      "passage": "Welcome to the Northside Library. New members can borrow up to five books for three weeks. Please use the self-service desk near the entrance to check items out. If you need help finding a title, ask at the information counter on the left.",
+      "passage": "Welcome to the Northside Library. New members can borrow up to five books for three weeks. Please use the self-service desk near the entrance to check items out. If you need help finding a title, ask at the information counter on the left. The library also offers a free digital catalog workshop on the first Saturday of each month. You can register online or speak with a librarian after this orientation.",
       "items": [
         {
           "id": "p4_example_001_q1",
@@ -20,7 +20,8 @@
           ],
           "ans": 0,
           "expl": "The speaker explains borrowing and assistance procedures for new members.",
-          "qtype": "listen_p4"
+          "qtype": "listen_p4",
+          "evidence": "New members can borrow up to five books for three weeks"
         },
         {
           "id": "p4_example_001_q2",
@@ -29,22 +30,39 @@
           "stem": "Where should listeners go for help finding a title?",
           "opts": [
             "To the entrance",
-            "To the self-service desk",
             "To the left-side information counter",
+            "To the self-service desk",
             "To the book return room"
           ],
-          "ans": 2,
+          "ans": 1,
           "expl": "The information counter on the left helps members find titles.",
-          "qtype": "listen_p4"
+          "qtype": "listen_p4",
+          "evidence": "ask at the information counter on the left"
+        },
+        {
+          "id": "p4_example_001_q3",
+          "section": "p4",
+          "level": 3,
+          "stem": "How often is the digital catalog workshop offered?",
+          "opts": [
+            "Every weekday",
+            "Twice a year",
+            "Once a month",
+            "Only during orientation"
+          ],
+          "ans": 2,
+          "expl": "The speaker says the free workshop is held on the first Saturday of each month.",
+          "qtype": "listen_p4",
+          "evidence": "on the first Saturday of each month"
         }
       ],
-      "set": "examples"
+      "set": "1"
     },
     {
       "id": "p4_example_002",
       "section": "p4",
       "title": "Museum exhibit announcement",
-      "passage": "The coastal photography exhibit will close early this Thursday for a lighting upgrade. Visitors may enter until four o'clock, and the final tour will begin at four fifteen. The exhibit will reopen at its regular time on Friday morning.",
+      "passage": "The coastal photography exhibit will close early this Thursday for a lighting upgrade. Visitors may enter until four o'clock, and the final tour will begin at four fifteen. The exhibit will reopen at its regular time on Friday morning. Tickets purchased for Thursday evening may be used on another day this week, or visitors may request a refund at the front desk. Please check the museum website before traveling because the schedule may change if the electrical work takes longer than expected.",
       "items": [
         {
           "id": "p4_example_002_q1",
@@ -52,14 +70,15 @@
           "level": 3,
           "stem": "Why will the exhibit close early?",
           "opts": [
-            "For a lighting upgrade",
+            "To move the photographs",
             "For a private lecture",
             "Because of a storm",
-            "To move the photographs"
+            "For a lighting upgrade"
           ],
-          "ans": 0,
+          "ans": 3,
           "expl": "The exhibit will close early while its lighting is upgraded.",
-          "qtype": "listen_p4"
+          "qtype": "listen_p4",
+          "evidence": "close early this Thursday for a lighting upgrade"
         },
         {
           "id": "p4_example_002_q2",
@@ -67,23 +86,40 @@
           "level": 3,
           "stem": "When will the exhibit reopen?",
           "opts": [
-            "Thursday at four",
-            "Thursday at four fifteen",
             "Friday morning",
+            "Thursday at four fifteen",
+            "Thursday at four",
             "Friday afternoon"
           ],
-          "ans": 2,
+          "ans": 0,
           "expl": "It will reopen at the regular time on Friday morning.",
-          "qtype": "listen_p4"
+          "qtype": "listen_p4",
+          "evidence": "reopen at its regular time on Friday morning"
+        },
+        {
+          "id": "p4_example_002_q3",
+          "section": "p4",
+          "level": 3,
+          "stem": "What can visitors do with Thursday evening tickets?",
+          "opts": [
+            "Exchange them for a book",
+            "Use them on another day",
+            "Give them to the electrician",
+            "Use them only after midnight"
+          ],
+          "ans": 1,
+          "expl": "The speaker says Thursday evening tickets may be used on another day that week.",
+          "qtype": "listen_p4",
+          "evidence": "may be used on another day this week"
         }
       ],
-      "set": "examples"
+      "set": "1"
     },
     {
       "id": "p4_example_003",
       "section": "p4",
       "title": "Airport gate change",
-      "passage": "Attention, passengers on Flight 218 to Denver: the departure gate has changed from B12 to C4. Boarding will begin at 6:40 near the central information screen. Please allow extra time to walk to the new gate, which is in the east concourse.",
+      "passage": "Attention, passengers on Flight 218 to Denver: the departure gate has changed from B12 to C4. Boarding will begin at 6:40 near the central information screen. Please allow extra time to walk to the new gate, which is in the east concourse. Passengers who need assistance should speak with an airline representative before leaving the central hall. The flight is still scheduled to depart at seven fifteen, and the checked-baggage counter will close at six twenty.",
       "items": [
         {
           "id": "p4_example_003_q1",
@@ -92,37 +128,55 @@
           "stem": "What has changed?",
           "opts": [
             "The flight destination",
-            "The departure gate",
             "The boarding time",
+            "The departure gate",
             "The information screen"
           ],
-          "ans": 1,
+          "ans": 2,
           "expl": "The announcement says that the departure gate changed to C4.",
-          "qtype": "listen_p4"
+          "qtype": "listen_p4",
+          "evidence": "the departure gate has changed from B12 to C4"
         },
         {
           "id": "p4_example_003_q2",
           "section": "p4",
           "level": 3,
-          "stem": "What are passengers advised to do?",
+          "stem": "When will boarding begin?",
           "opts": [
-            "Arrive at the airport tomorrow",
-            "Use the west concourse",
-            "Allow extra walking time",
-            "Check a larger suitcase"
+            "At six o'clock",
+            "At eight twenty",
+            "At seven fifteen",
+            "At 6:40"
           ],
-          "ans": 2,
-          "expl": "Passengers should allow extra time to walk to the new gate.",
-          "qtype": "listen_p4"
+          "ans": 3,
+          "expl": "Boarding will begin at 6:40 near the central information screen.",
+          "qtype": "listen_p4",
+          "evidence": "Boarding will begin at 6:40"
+        },
+        {
+          "id": "p4_example_003_q3",
+          "section": "p4",
+          "level": 3,
+          "stem": "Where is the new gate located?",
+          "opts": [
+            "In the east concourse",
+            "Near the baggage counter",
+            "In the west terminal",
+            "Outside the central hall"
+          ],
+          "ans": 0,
+          "expl": "The speaker says that the new gate is in the east concourse.",
+          "qtype": "listen_p4",
+          "evidence": "the new gate, which is in the east concourse"
         }
       ],
-      "set": "examples"
+      "set": "1"
     },
     {
       "id": "p4_example_004",
       "section": "p4",
       "title": "A training webinar",
-      "passage": "Our customer-service webinar will take place next Wednesday at noon. Employees can join from the training portal using the link in today's email. Please register by Monday so that we can send the workbook before the session. A recording will be available afterward.",
+      "passage": "Our customer-service webinar will take place next Wednesday at noon. Employees can join from the training portal using the link in today's email. Please register by Monday so that we can send the workbook before the session. A recording will be available afterward. The presenter will demonstrate the new returns system and leave fifteen minutes for questions. If you cannot attend live, send your questions to the training team by Tuesday afternoon so they can be answered during the session.",
       "items": [
         {
           "id": "p4_example_004_q1",
@@ -137,7 +191,8 @@
           ],
           "ans": 1,
           "expl": "The webinar is scheduled for next Wednesday at noon.",
-          "qtype": "listen_p4"
+          "qtype": "listen_p4",
+          "evidence": "webinar will take place next Wednesday at noon"
         },
         {
           "id": "p4_example_004_q2",
@@ -145,23 +200,40 @@
           "level": 4,
           "stem": "Why should employees register by Monday?",
           "opts": [
-            "To receive the workbook before the session",
-            "To reserve a training room",
             "To change the webinar topic",
+            "To reserve a training room",
+            "To receive the workbook before the session",
             "To receive a recording immediately"
           ],
-          "ans": 0,
+          "ans": 2,
           "expl": "Registration by Monday allows the workbook to be sent before the session.",
-          "qtype": "listen_p4"
+          "qtype": "listen_p4",
+          "evidence": "register by Monday so that we can send the workbook before the session"
+        },
+        {
+          "id": "p4_example_004_q3",
+          "section": "p4",
+          "level": 4,
+          "stem": "What will the presenter demonstrate?",
+          "opts": [
+            "A new delivery vehicle",
+            "A revised holiday schedule",
+            "The employee training portal",
+            "The new returns system"
+          ],
+          "ans": 3,
+          "expl": "The presenter will demonstrate the new returns system.",
+          "qtype": "listen_p4",
+          "evidence": "The presenter will demonstrate the new returns system"
         }
       ],
-      "set": "examples"
+      "set": "1"
     },
     {
       "id": "p4_example_005",
       "section": "p4",
       "title": "A recycling reminder",
-      "passage": "The Green Street collection truck will visit this neighborhood on Tuesday morning instead of Wednesday this week. Residents should place clean paper and cardboard in the blue bins by 7 a.m. Glass containers belong in the separate green bin. Please keep bags out of both containers.",
+      "passage": "The Green Street collection truck will visit this neighborhood on Tuesday morning instead of Wednesday this week. Residents should place clean paper and cardboard in the blue bins by 7 a.m. Glass containers belong in the separate green bin. Please keep bags out of both containers. The city will collect large boxes only if they are flattened and tied together. Residents who need a replacement bin can request one through the municipal website before Monday evening.",
       "items": [
         {
           "id": "p4_example_005_q1",
@@ -176,7 +248,8 @@
           ],
           "ans": 0,
           "expl": "The collection visit is on Tuesday instead of Wednesday this week.",
-          "qtype": "listen_p4"
+          "qtype": "listen_p4",
+          "evidence": "on Tuesday morning instead of Wednesday this week"
         },
         {
           "id": "p4_example_005_q2",
@@ -191,10 +264,1432 @@
           ],
           "ans": 1,
           "expl": "Glass containers belong in the separate green bin.",
-          "qtype": "listen_p4"
+          "qtype": "listen_p4",
+          "evidence": "Glass containers belong in the separate green bin"
+        },
+        {
+          "id": "p4_example_005_q3",
+          "section": "p4",
+          "level": 4,
+          "stem": "What must residents do with large boxes?",
+          "opts": [
+            "Put them in a green bin",
+            "Leave them beside the truck",
+            "Flatten and tie them together",
+            "Send them to the municipal office"
+          ],
+          "ans": 2,
+          "expl": "Large boxes will be collected when they are flattened and tied together.",
+          "qtype": "listen_p4",
+          "evidence": "only if they are flattened and tied together"
         }
       ],
-      "set": "examples"
+      "set": "1"
+    },
+    {
+      "id": "p4_example_006",
+      "section": "p4",
+      "title": "A clinic appointment reminder",
+      "passage": "This is a reminder from Riverside Dental Clinic for patients scheduled this Friday. The clinic will open at eight, but please arrive fifteen minutes before your appointment to complete the updated health form. Bring your insurance card and a photo ID. Patients who need to change an appointment should call before Thursday afternoon because Friday appointments are nearly full. The clinic entrance is temporarily on Pine Street while the main lobby is being painted. Follow the blue signs from the parking area.",
+      "items": [
+        {
+          "id": "p4_example_006_q1",
+          "section": "p4",
+          "level": 3,
+          "stem": "What should patients bring?",
+          "opts": [
+            "A parking permit and a map",
+            "A new appointment letter",
+            "A paint sample and a health report",
+            "An insurance card and photo ID"
+          ],
+          "ans": 3,
+          "expl": "Patients are asked to bring their insurance card and a photo ID.",
+          "qtype": "listen_p4",
+          "evidence": "Bring your insurance card and a photo ID"
+        },
+        {
+          "id": "p4_example_006_q2",
+          "section": "p4",
+          "level": 3,
+          "stem": "When should patients arrive?",
+          "opts": [
+            "Fifteen minutes before the appointment",
+            "At noon on Thursday",
+            "After the main lobby opens",
+            "At the end of Friday"
+          ],
+          "ans": 0,
+          "expl": "Patients should arrive fifteen minutes before their appointment.",
+          "qtype": "listen_p4",
+          "evidence": "arrive fifteen minutes before your appointment"
+        },
+        {
+          "id": "p4_example_006_q3",
+          "section": "p4",
+          "level": 3,
+          "stem": "Where is the temporary entrance?",
+          "opts": [
+            "On Riverside Avenue",
+            "On Pine Street",
+            "Beside the main lobby",
+            "Near the blue parking office"
+          ],
+          "ans": 1,
+          "expl": "The temporary entrance is on Pine Street while the lobby is painted.",
+          "qtype": "listen_p4",
+          "evidence": "clinic entrance is temporarily on Pine Street"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p4_example_007",
+      "section": "p4",
+      "title": "Hotel facilities notice",
+      "passage": "Good morning, guests. The rooftop pool will be closed tomorrow from nine until noon for routine maintenance. During that time, guests may use the indoor pool on the second floor. Breakfast is served in the garden restaurant until ten thirty, and the fitness center remains open twenty-four hours with room-key access. If you have booked a private event on the rooftop, please contact the events desk before six this evening to confirm the revised setup time. We apologize for the inconvenience.",
+      "items": [
+        {
+          "id": "p4_example_007_q1",
+          "section": "p4",
+          "level": 4,
+          "stem": "Why will the rooftop pool close?",
+          "opts": [
+            "Because of a food delivery",
+            "For a private wedding",
+            "For routine maintenance",
+            "To prepare the garden restaurant"
+          ],
+          "ans": 2,
+          "expl": "The rooftop pool will close for routine maintenance.",
+          "qtype": "listen_p4",
+          "evidence": "closed tomorrow from nine until noon for routine maintenance"
+        },
+        {
+          "id": "p4_example_007_q2",
+          "section": "p4",
+          "level": 4,
+          "stem": "What can guests use during the closure?",
+          "opts": [
+            "The rooftop restaurant",
+            "The garden gym",
+            "The events desk",
+            "The indoor pool"
+          ],
+          "ans": 3,
+          "expl": "Guests may use the indoor pool on the second floor.",
+          "qtype": "listen_p4",
+          "evidence": "guests may use the indoor pool on the second floor"
+        },
+        {
+          "id": "p4_example_007_q3",
+          "section": "p4",
+          "level": 4,
+          "stem": "What should event organizers do?",
+          "opts": [
+            "Contact the events desk",
+            "Book a room-key lesson",
+            "Leave the hotel by six",
+            "Move breakfast to the rooftop"
+          ],
+          "ans": 0,
+          "expl": "People with rooftop events should contact the events desk before six.",
+          "qtype": "listen_p4",
+          "evidence": "please contact the events desk before six this evening"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p4_example_008",
+      "section": "p4",
+      "title": "Traffic report",
+      "passage": "Here is the morning traffic report for drivers heading downtown. A delivery truck has broken down in the right lane of the Harbor Bridge, so traffic is moving slowly toward the city center. The delay is currently about twenty minutes. Drivers can avoid the bridge by taking the Oak Street exit and following signs for the riverside road. The left lane remains open, but emergency crews are working near the center divider. We will provide another update after the eight-thirty news. Please allow extra time if you are traveling to the airport.",
+      "items": [
+        {
+          "id": "p4_example_008_q1",
+          "section": "p4",
+          "level": 4,
+          "stem": "What is causing the delay?",
+          "opts": [
+            "An airport closure",
+            "A broken-down delivery truck",
+            "Road construction on Oak Street",
+            "A news broadcast"
+          ],
+          "ans": 1,
+          "expl": "A delivery truck has broken down in the right lane of the Harbor Bridge.",
+          "qtype": "listen_p4",
+          "evidence": "A delivery truck has broken down in the right lane of the Harbor Bridge"
+        },
+        {
+          "id": "p4_example_008_q2",
+          "section": "p4",
+          "level": 4,
+          "stem": "How long is the delay?",
+          "opts": [
+            "About ten minutes",
+            "Until eight-thirty tomorrow",
+            "About twenty minutes",
+            "The entire morning"
+          ],
+          "ans": 2,
+          "expl": "The report estimates the delay at about twenty minutes.",
+          "qtype": "listen_p4",
+          "evidence": "The delay is currently about twenty minutes"
+        },
+        {
+          "id": "p4_example_008_q3",
+          "section": "p4",
+          "level": 4,
+          "stem": "What route is recommended?",
+          "opts": [
+            "The road beside the center divider",
+            "The airport service road",
+            "The Harbor Bridge right lane",
+            "The riverside road via Oak Street"
+          ],
+          "ans": 3,
+          "expl": "Drivers can take the Oak Street exit and follow the riverside road.",
+          "qtype": "listen_p4",
+          "evidence": "taking the Oak Street exit and following signs for the riverside road"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p4_example_009",
+      "section": "p4",
+      "title": "A company training message",
+      "passage": "This message is for everyone registered for Friday's inventory training. The session has moved from Room 204 to an online meeting because the air-conditioning system is being repaired. Use the meeting link in the calendar invitation, and enter your employee number as the temporary password. The trainer will distribute a spreadsheet exercise during the session. Please complete it by Monday and upload it to the training portal. If you have technical problems, call the IT help desk before Friday morning so the team can test your computer.",
+      "items": [
+        {
+          "id": "p4_example_009_q1",
+          "section": "p4",
+          "level": 4,
+          "stem": "Why has the training moved online?",
+          "opts": [
+            "The air-conditioning system is being repaired",
+            "The trainer is traveling",
+            "The spreadsheet is incomplete",
+            "The IT desk has moved"
+          ],
+          "ans": 0,
+          "expl": "The session moved online because the air-conditioning system is being repaired.",
+          "qtype": "listen_p4",
+          "evidence": "the air-conditioning system is being repaired"
+        },
+        {
+          "id": "p4_example_009_q2",
+          "section": "p4",
+          "level": 4,
+          "stem": "What should participants use as the temporary password?",
+          "opts": [
+            "The room number",
+            "Their employee number",
+            "The trainer's name",
+            "The spreadsheet title"
+          ],
+          "ans": 1,
+          "expl": "Participants should enter their employee number as the temporary password.",
+          "qtype": "listen_p4",
+          "evidence": "enter your employee number as the temporary password"
+        },
+        {
+          "id": "p4_example_009_q3",
+          "section": "p4",
+          "level": 4,
+          "stem": "When is the exercise due?",
+          "opts": [
+            "Before Friday morning",
+            "During the first meeting",
+            "By Monday",
+            "At the end of the month"
+          ],
+          "ans": 2,
+          "expl": "The spreadsheet exercise should be completed by Monday.",
+          "qtype": "listen_p4",
+          "evidence": "Please complete it by Monday"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p4_example_010",
+      "section": "p4",
+      "title": "A weekend farmers market",
+      "passage": "The Riverside Farmers Market will open this Saturday at nine o'clock in the plaza beside the public fountain. More than forty local vendors will sell fruit, bread, prepared meals, and handmade crafts. Visitors should bring reusable bags because the market will not provide plastic bags. The information tent can exchange large bills for smaller ones, but vendors may accept only cash. Parking is available in the garage behind the community center, and a free shuttle will run every twenty minutes from the train station between eight thirty and noon.",
+      "items": [
+        {
+          "id": "p4_example_010_q1",
+          "section": "p4",
+          "level": 3,
+          "stem": "When will the market open?",
+          "opts": [
+            "At 8:30",
+            "At noon",
+            "At 10:00",
+            "At 9:00"
+          ],
+          "ans": 3,
+          "expl": "The market will open this Saturday at nine o'clock.",
+          "qtype": "listen_p4",
+          "evidence": "will open this Saturday at nine o'clock"
+        },
+        {
+          "id": "p4_example_010_q2",
+          "section": "p4",
+          "level": 3,
+          "stem": "What should visitors bring?",
+          "opts": [
+            "Reusable bags",
+            "A parking ticket",
+            "A train schedule",
+            "Plastic containers"
+          ],
+          "ans": 0,
+          "expl": "Visitors should bring reusable bags because plastic bags will not be provided.",
+          "qtype": "listen_p4",
+          "evidence": "Visitors should bring reusable bags"
+        },
+        {
+          "id": "p4_example_010_q3",
+          "section": "p4",
+          "level": 3,
+          "stem": "Where is the parking garage?",
+          "opts": [
+            "Beside the public fountain",
+            "Behind the community center",
+            "Inside the train station",
+            "At the information tent"
+          ],
+          "ans": 1,
+          "expl": "The parking garage is behind the community center.",
+          "qtype": "listen_p4",
+          "evidence": "Parking is available in the garage behind the community center"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p4_example_011",
+      "section": "p4",
+      "level": 3,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "A weather advisory",
+      "passage": "Good afternoon. The coastal weather service has issued a wind advisory for tonight. Residents near the harbor should secure outdoor furniture and avoid the waterfront after eight o'clock. The ferry company has not cancelled service, but passengers should check the departure board before leaving home. Tomorrow morning, winds are expected to weaken. The city will post another update at six a.m. If the advisory continues, the public works department may close the pier temporarily.",
+      "items": [
+        {
+          "id": "p4_example_011_q1",
+          "stem": "What is the announcement mainly about?",
+          "opts": [
+            "A coastal wind advisory",
+            "A ferry ticket sale",
+            "A harbor festival",
+            "A new furniture store"
+          ],
+          "ans": 0,
+          "expl": "The speaker announces a wind advisory for the coast.",
+          "evidence": "issued a wind advisory",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_011_q2",
+          "stem": "What should residents near the harbor do?",
+          "opts": [
+            "Visit the pier after eight",
+            "Secure outdoor furniture",
+            "Cancel all ferry trips",
+            "Call the weather service"
+          ],
+          "ans": 1,
+          "expl": "They should secure outdoor furniture.",
+          "evidence": "secure outdoor furniture",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_011_q3",
+          "stem": "When will the city post another update?",
+          "opts": [
+            "At eight tonight",
+            "At midnight",
+            "At six a.m.",
+            "At noon tomorrow"
+          ],
+          "ans": 2,
+          "expl": "The next update will be posted at six a.m.",
+          "evidence": "post another update at six a.m.",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_012",
+      "section": "p4",
+      "level": 4,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "A radio traffic report",
+      "passage": "Here is the morning traffic report. An accident is blocking two lanes on the northbound expressway near Exit 14. Drivers heading to the airport should use the river road instead, although that route is moving slowly. The transportation department expects the expressway lanes to reopen before ten o'clock. A shuttle bus from the downtown station is operating normally. We will provide another report after the eight-thirty news.",
+      "items": [
+        {
+          "id": "p4_example_012_q1",
+          "stem": "What is causing a delay?",
+          "opts": [
+            "Road construction at the airport",
+            "A river road closure",
+            "A broken shuttle bus",
+            "An accident on the expressway"
+          ],
+          "ans": 3,
+          "expl": "An accident is blocking two lanes on the expressway.",
+          "evidence": "An accident is blocking two lanes",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_012_q2",
+          "stem": "What route is recommended for airport drivers?",
+          "opts": [
+            "The river road",
+            "The northbound expressway",
+            "The downtown station",
+            "Exit 14 only"
+          ],
+          "ans": 0,
+          "expl": "Drivers should use the river road instead.",
+          "evidence": "use the river road instead",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_012_q3",
+          "stem": "When will another report be provided?",
+          "opts": [
+            "Before sunrise",
+            "After the eight-thirty news",
+            "At ten o'clock",
+            "At lunchtime"
+          ],
+          "ans": 1,
+          "expl": "The station will provide another report after the eight-thirty news.",
+          "evidence": "after the eight-thirty news",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_013",
+      "section": "p4",
+      "level": 3,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "A company town hall",
+      "passage": "Welcome to this month's company town hall. Our chief operations officer will discuss the new flexible-work policy at two p.m. in the auditorium. Employees who work remotely can join through the internal video link sent this morning. Please submit questions through the online form before the presentation begins. After the policy discussion, the benefits team will explain changes to the health plan. A recording and written summary will be posted on the employee portal tomorrow afternoon.",
+      "items": [
+        {
+          "id": "p4_example_013_q1",
+          "stem": "What will the chief operations officer discuss?",
+          "opts": [
+            "A health-plan claim",
+            "A video-production plan",
+            "A flexible-work policy",
+            "A new employee portal"
+          ],
+          "ans": 2,
+          "expl": "The main presentation concerns the new flexible-work policy.",
+          "evidence": "new flexible-work policy",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_013_q2",
+          "stem": "How can remote employees join?",
+          "opts": [
+            "By visiting the benefits desk",
+            "Through a public website",
+            "By calling the auditorium",
+            "Through an internal video link"
+          ],
+          "ans": 3,
+          "expl": "Remote employees can join through the internal video link.",
+          "evidence": "join through the internal video link",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_013_q3",
+          "stem": "When will a written summary be posted?",
+          "opts": [
+            "Tomorrow afternoon",
+            "At two p.m.",
+            "This morning",
+            "Next month"
+          ],
+          "ans": 0,
+          "expl": "The summary will be posted tomorrow afternoon.",
+          "evidence": "posted on the employee portal tomorrow afternoon",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_014",
+      "section": "p4",
+      "level": 3,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "An airport baggage notice",
+      "passage": "Passengers arriving on Flight 642 should collect their luggage at Carousel 5. One suitcase from an earlier flight was placed at Carousel 4 by mistake, so travelers should check the baggage screens carefully. If your bag does not appear, visit the service counter beside Door B before leaving the arrivals area. The airport has also announced that the elevator near Carousel 5 is closed for maintenance. Passengers who need assistance may ask an employee to direct them to the elevator at the opposite end of the hall.",
+      "items": [
+        {
+          "id": "p4_example_014_q1",
+          "stem": "Where should passengers from Flight 642 collect luggage?",
+          "opts": [
+            "At Carousel 4",
+            "At Carousel 5",
+            "Beside Door B",
+            "At the opposite hall"
+          ],
+          "ans": 1,
+          "expl": "Their luggage should be collected at Carousel 5.",
+          "evidence": "collect their luggage at Carousel 5",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_014_q2",
+          "stem": "What should passengers do if a bag is missing?",
+          "opts": [
+            "Leave the arrivals area",
+            "Use the closed elevator",
+            "Visit the service counter",
+            "Call the earlier flight"
+          ],
+          "ans": 2,
+          "expl": "They should visit the service counter beside Door B.",
+          "evidence": "visit the service counter beside Door B",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_014_q3",
+          "stem": "Why is one elevator unavailable?",
+          "opts": [
+            "It is being cleaned.",
+            "It is near the wrong carousel.",
+            "It is reserved for staff.",
+            "It is under maintenance."
+          ],
+          "ans": 3,
+          "expl": "The elevator near Carousel 5 is closed for maintenance.",
+          "evidence": "closed for maintenance",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_015",
+      "section": "p4",
+      "level": 4,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "A fitness center announcement",
+      "passage": "The Riverside Fitness Center will close the indoor pool next Monday for annual cleaning. Members may use the outdoor pool from seven in the morning until sunset, weather permitting. The swimming instructor has moved all Monday lessons to Court 2, where members should meet five minutes early. The weight room and locker rooms will remain open as usual. Pool members can check the center's app on Tuesday to see when the indoor pool will reopen.",
+      "items": [
+        {
+          "id": "p4_example_015_q1",
+          "stem": "What will happen next Monday?",
+          "opts": [
+            "The indoor pool will close.",
+            "The entire center will close.",
+            "The outdoor pool will be cleaned.",
+            "The weight room will move."
+          ],
+          "ans": 0,
+          "expl": "The indoor pool will close for annual cleaning.",
+          "evidence": "close the indoor pool next Monday",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_015_q2",
+          "stem": "Where will Monday lessons take place?",
+          "opts": [
+            "In the indoor pool",
+            "On Court 2",
+            "At the outdoor pool",
+            "In the weight room"
+          ],
+          "ans": 1,
+          "expl": "Monday lessons have been moved to Court 2.",
+          "evidence": "moved all Monday lessons to Court 2",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_015_q3",
+          "stem": "When can members check the reopening information?",
+          "opts": [
+            "On Monday morning",
+            "At sunset",
+            "On Tuesday",
+            "Next month"
+          ],
+          "ans": 2,
+          "expl": "Members can check the app on Tuesday.",
+          "evidence": "check the center's app on Tuesday",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_016",
+      "section": "p4",
+      "level": 3,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "A software update",
+      "passage": "This is a reminder for all staff using the customer database. The system will be unavailable from 9 p.m. until midnight while the technology team installs an update. Please save open records before nine and do not begin a new customer entry during the maintenance period. The update will add a faster search tool and a new report filter. A short guide will appear on the support portal tomorrow. If you have an urgent request tonight, send it to the technology desk by email.",
+      "items": [
+        {
+          "id": "p4_example_016_q1",
+          "stem": "Why will the database be unavailable?",
+          "opts": [
+            "A customer audit is scheduled.",
+            "The support portal is closed.",
+            "A report filter was removed.",
+            "An update will be installed."
+          ],
+          "ans": 3,
+          "expl": "The technology team will install an update.",
+          "evidence": "installs an update",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_016_q2",
+          "stem": "What should staff do before nine?",
+          "opts": [
+            "Save open records",
+            "Start a new entry",
+            "Delete old reports",
+            "Print the support guide"
+          ],
+          "ans": 0,
+          "expl": "Staff should save open records before the system becomes unavailable.",
+          "evidence": "save open records before nine",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_016_q3",
+          "stem": "What will the update add?",
+          "opts": [
+            "A new customer service desk",
+            "A faster search tool",
+            "A second database",
+            "An email schedule"
+          ],
+          "ans": 1,
+          "expl": "The update will add a faster search tool and a report filter.",
+          "evidence": "add a faster search tool",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_017",
+      "section": "p4",
+      "level": 3,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "A hotel breakfast notice",
+      "passage": "Guests staying at the Maple Hotel can now enter the breakfast room from 6:30 to 10:00 on weekdays. On Saturday, breakfast will begin at 7:00 because the kitchen staff will attend a safety meeting. Guests with early airport departures may request a takeaway box at the front desk before nine the previous evening. The restaurant is on the ground floor beside the garden entrance. Please remember that hot drinks are available only inside the restaurant, not in the lobby.",
+      "items": [
+        {
+          "id": "p4_example_017_q1",
+          "stem": "When does weekday breakfast begin?",
+          "opts": [
+            "At 6:00",
+            "At 7:00",
+            "At 6:30",
+            "At 10:00"
+          ],
+          "ans": 2,
+          "expl": "Weekday breakfast begins at 6:30.",
+          "evidence": "from 6:30 to 10:00 on weekdays",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_017_q2",
+          "stem": "Why will Saturday breakfast begin later?",
+          "opts": [
+            "The garden entrance is closed.",
+            "The restaurant is being painted.",
+            "Guests requested a later meal.",
+            "The kitchen staff has a safety meeting."
+          ],
+          "ans": 3,
+          "expl": "The kitchen staff will attend a safety meeting.",
+          "evidence": "kitchen staff will attend a safety meeting",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_017_q3",
+          "stem": "Where can early travelers request a takeaway box?",
+          "opts": [
+            "At the front desk",
+            "In the garden",
+            "In the lobby restaurant",
+            "At the airport"
+          ],
+          "ans": 0,
+          "expl": "They can request one at the front desk.",
+          "evidence": "request a takeaway box at the front desk",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_018",
+      "section": "p4",
+      "level": 4,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "Warehouse safety reminder",
+      "passage": "Before today's loading shift begins, please remember the warehouse safety procedure. Drivers must stop their vehicles completely at the yellow line before entering the loading zone. Staff moving boxes should wear gloves and use the marked walking lane. The north loading door is closed because its warning light is being repaired, so use the central door instead. Supervisors will inspect the area at 3 p.m. and record any blocked lanes. Report damaged equipment to the floor manager immediately.",
+      "items": [
+        {
+          "id": "p4_example_018_q1",
+          "stem": "What should drivers do at the yellow line?",
+          "opts": [
+            "Park for the day",
+            "Stop completely",
+            "Move to the north door",
+            "Call the floor manager"
+          ],
+          "ans": 1,
+          "expl": "Drivers must stop completely at the yellow line.",
+          "evidence": "stop their vehicles completely",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_018_q2",
+          "stem": "Which door should staff use?",
+          "opts": [
+            "The north loading door",
+            "The garden door",
+            "The central door",
+            "The staff entrance"
+          ],
+          "ans": 2,
+          "expl": "The north loading door is closed, so staff should use the central door.",
+          "evidence": "use the central door instead",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_018_q3",
+          "stem": "What will supervisors do at 3 p.m.?",
+          "opts": [
+            "Repair the warning light",
+            "Train new drivers",
+            "Load the vehicles",
+            "Inspect the area"
+          ],
+          "ans": 3,
+          "expl": "Supervisors will inspect the area and record blocked lanes.",
+          "evidence": "inspect the area at 3 p.m.",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_019",
+      "section": "p4",
+      "level": 3,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "A community lecture",
+      "passage": "This evening's community lecture on urban gardening will begin at 7 p.m. in the East Hall. The speaker has asked attendees to bring a notebook because there will be a short planning activity after the presentation. Seats are available without reservation, but the hall can hold only eighty people. The community center will provide water near the entrance. After the lecture, participants may sign up for Saturday's garden tour at the information table. The tour is free, but registration is required.",
+      "items": [
+        {
+          "id": "p4_example_019_q1",
+          "stem": "What is the lecture about?",
+          "opts": [
+            "Urban gardening",
+            "Water safety",
+            "Community transportation",
+            "Hall reservations"
+          ],
+          "ans": 0,
+          "expl": "The lecture concerns urban gardening.",
+          "evidence": "lecture on urban gardening",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_019_q2",
+          "stem": "What should attendees bring?",
+          "opts": [
+            "A gardening tool",
+            "A notebook",
+            "A reservation card",
+            "A water bottle from home"
+          ],
+          "ans": 1,
+          "expl": "The speaker asks attendees to bring a notebook.",
+          "evidence": "bring a notebook",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_019_q3",
+          "stem": "Where can participants register for the garden tour?",
+          "opts": [
+            "At the East Hall stage",
+            "Near the water station",
+            "At the information table",
+            "At the Saturday garden"
+          ],
+          "ans": 2,
+          "expl": "Registration will be available at the information table.",
+          "evidence": "sign up for Saturday's garden tour at the information table",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_020",
+      "section": "p4",
+      "level": 3,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "A restaurant opening",
+      "passage": "The Harbor Table restaurant will open for dinner service this Friday at 5:30. The lunch menu will not be available until next week while the kitchen staff completes training. Customers may make reservations through the restaurant website or by calling the host stand after noon. A parking area behind the building is available to diners, but spaces are limited. The restaurant will offer a complimentary dessert to the first twenty reservations on Friday evening. Please note that the entrance is on Bay Street, not on the waterfront walkway.",
+      "items": [
+        {
+          "id": "p4_example_020_q1",
+          "stem": "When will the restaurant open for dinner?",
+          "opts": [
+            "Next month",
+            "This Friday at noon",
+            "Next week at 5:30",
+            "This Friday at 5:30"
+          ],
+          "ans": 3,
+          "expl": "Dinner service will begin this Friday at 5:30.",
+          "evidence": "open for dinner service this Friday at 5:30",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_020_q2",
+          "stem": "How can customers make reservations?",
+          "opts": [
+            "Through the website or by phone",
+            "Only at the parking area",
+            "At the waterfront walkway",
+            "Only during lunch"
+          ],
+          "ans": 0,
+          "expl": "Reservations can be made through the website or by calling the host stand.",
+          "evidence": "through the restaurant website or by calling",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_020_q3",
+          "stem": "What will the first twenty Friday reservations receive?",
+          "opts": [
+            "Free parking for a month",
+            "A complimentary dessert",
+            "A lunch menu",
+            "A waterfront table"
+          ],
+          "ans": 1,
+          "expl": "The first twenty reservations receive a complimentary dessert.",
+          "evidence": "complimentary dessert to the first twenty reservations",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_021",
+      "section": "p4",
+      "level": 4,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A museum audio guide",
+      "passage": "Visitors to the West Gallery can borrow an audio guide at the desk beside the main entrance. The guide is available in four languages and includes a route for the new sculpture exhibit. Please return the device before visiting the café because it may not be taken into the outdoor garden. The final guided tour leaves at 4:30, but visitors using the audio guide may remain until the gallery closes at six. A staff member will explain how to select a language when the device is issued.",
+      "items": [
+        {
+          "id": "p4_example_021_q1",
+          "stem": "Where can visitors borrow an audio guide?",
+          "opts": [
+            "Beside the main entrance",
+            "At the café",
+            "In the outdoor garden",
+            "At the final tour"
+          ],
+          "ans": 0,
+          "expl": "The audio guide desk is beside the main entrance.",
+          "evidence": "desk beside the main entrance",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_021_q2",
+          "stem": "How many languages does the guide include?",
+          "opts": [
+            "Two",
+            "Four",
+            "Three",
+            "Six"
+          ],
+          "ans": 1,
+          "expl": "The guide is available in four languages.",
+          "evidence": "available in four languages",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_021_q3",
+          "stem": "When must visitors return the device?",
+          "opts": [
+            "Before entering the gallery",
+            "At 4:30 only",
+            "Before visiting the café",
+            "At noon"
+          ],
+          "ans": 2,
+          "expl": "The device must be returned before visitors go to the café.",
+          "evidence": "return the device before visiting the café",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_022",
+      "section": "p4",
+      "level": 3,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A clinic instruction",
+      "passage": "Patients visiting the Riverside Clinic for a blood test should check in at the laboratory counter on the second floor. Please avoid eating for eight hours before the appointment, although water is permitted. Bring your identification card and the test request from your doctor. The laboratory opens at 7 a.m., but appointments after 9:30 may experience a longer wait. If you need to change your appointment, call the scheduling office at least one day in advance. Results will be sent to the requesting doctor within three business days.",
+      "items": [
+        {
+          "id": "p4_example_022_q1",
+          "stem": "Where should blood-test patients check in?",
+          "opts": [
+            "At the main pharmacy",
+            "On the first floor",
+            "In the doctor's office",
+            "At the laboratory counter"
+          ],
+          "ans": 3,
+          "expl": "They should check in at the laboratory counter on the second floor.",
+          "evidence": "laboratory counter on the second floor",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_022_q2",
+          "stem": "What may patients drink before the appointment?",
+          "opts": [
+            "Water",
+            "Juice",
+            "Coffee",
+            "Milk"
+          ],
+          "ans": 0,
+          "expl": "Water is permitted during the fasting period.",
+          "evidence": "although water is permitted",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_022_q3",
+          "stem": "When will results be sent?",
+          "opts": [
+            "Within three hours",
+            "Within three business days",
+            "Within one business day",
+            "At the next appointment"
+          ],
+          "ans": 1,
+          "expl": "Results will be sent within three business days.",
+          "evidence": "within three business days",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_023",
+      "section": "p4",
+      "level": 3,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A transit service notice",
+      "passage": "Passengers on the Green Line should use buses between Central Station and Park Street this weekend. Track maintenance will close that section from Saturday morning through Sunday night. Trains will continue to run between Park Street and the northern stations. Replacement buses will stop outside each closed station, but they may take up to fifteen minutes longer than the train. Passengers traveling to the museum should exit at Park Street and follow the signs to the museum district. Regular train service is expected to resume Monday.",
+      "items": [
+        {
+          "id": "p4_example_023_q1",
+          "stem": "Why will buses replace trains on part of the Green Line?",
+          "opts": [
+            "A station is being expanded.",
+            "The museum is closed.",
+            "Track maintenance is scheduled.",
+            "A bus driver is unavailable."
+          ],
+          "ans": 2,
+          "expl": "Track maintenance will close the section.",
+          "evidence": "Track maintenance will close that section",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_023_q2",
+          "stem": "Where should museum visitors exit?",
+          "opts": [
+            "At Central Station",
+            "Outside the bus garage",
+            "At the northern stations",
+            "At Park Street"
+          ],
+          "ans": 3,
+          "expl": "They should exit at Park Street.",
+          "evidence": "exit at Park Street",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_023_q3",
+          "stem": "When is regular train service expected to resume?",
+          "opts": [
+            "Monday",
+            "Sunday afternoon",
+            "Saturday morning",
+            "Next month"
+          ],
+          "ans": 0,
+          "expl": "Regular service is expected to resume Monday.",
+          "evidence": "resume Monday",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_024",
+      "section": "p4",
+      "level": 4,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A school announcement",
+      "passage": "Students who registered for the science field trip should meet outside the library at 8:15 on Thursday. The buses will leave at 8:30, and late students will need to arrange their own transportation. Bring a packed lunch, a water bottle, and the permission form signed by a parent or guardian. The weather forecast calls for rain, so a light jacket is recommended. The group will return to school at approximately 4 p.m. Students with questions about the trip should speak with Ms. Ortega before Wednesday afternoon.",
+      "items": [
+        {
+          "id": "p4_example_024_q1",
+          "stem": "Where should students meet?",
+          "opts": [
+            "At the science museum",
+            "Outside the library",
+            "Beside the buses at four",
+            "In Ms. Ortega's office"
+          ],
+          "ans": 1,
+          "expl": "Students should meet outside the library.",
+          "evidence": "meet outside the library",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_024_q2",
+          "stem": "What must students bring?",
+          "opts": [
+            "A camera only",
+            "A school uniform",
+            "A signed permission form",
+            "A train ticket"
+          ],
+          "ans": 2,
+          "expl": "They must bring a permission form signed by a parent or guardian.",
+          "evidence": "permission form signed by a parent or guardian",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_024_q3",
+          "stem": "Why is a light jacket recommended?",
+          "opts": [
+            "The buses are cold.",
+            "The library is being repaired.",
+            "The trip ends late.",
+            "Rain is expected."
+          ],
+          "ans": 3,
+          "expl": "The forecast calls for rain.",
+          "evidence": "weather forecast calls for rain",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_025",
+      "section": "p4",
+      "level": 3,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A retail promotion",
+      "passage": "Customers at Greenway Home Goods can receive a ten-dollar discount on purchases of kitchen equipment this weekend. The offer applies only to items priced above fifty dollars and cannot be combined with another coupon. Members of the store's loyalty program may use the discount on Saturday or Sunday, while other customers may use it on Sunday only. To receive the discount, present the promotion code at the checkout counter before payment. The code is printed in this week's store newsletter and is not available at the customer-service desk.",
+      "items": [
+        {
+          "id": "p4_example_025_q1",
+          "stem": "What does the promotion offer?",
+          "opts": [
+            "A ten-dollar discount",
+            "A free kitchen item",
+            "A loyalty membership",
+            "A newsletter subscription"
+          ],
+          "ans": 0,
+          "expl": "The promotion offers a ten-dollar discount.",
+          "evidence": "receive a ten-dollar discount",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_025_q2",
+          "stem": "Which customers may use the discount on Saturday?",
+          "opts": [
+            "All customers",
+            "Only loyalty-program members",
+            "Only new customers",
+            "Customers with another coupon"
+          ],
+          "ans": 1,
+          "expl": "Only loyalty-program members may use it on Saturday.",
+          "evidence": "Members of the store's loyalty program may use",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_025_q3",
+          "stem": "Where is the promotion code printed?",
+          "opts": [
+            "At the customer-service desk",
+            "On every kitchen item",
+            "In the store newsletter",
+            "At the checkout counter"
+          ],
+          "ans": 2,
+          "expl": "The code is printed in the weekly store newsletter.",
+          "evidence": "printed in this week's store newsletter",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_026",
+      "section": "p4",
+      "level": 3,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A construction notice",
+      "passage": "The east entrance of the office complex will be closed from Monday through Wednesday while workers replace the front steps. Employees should enter through the west entrance and allow extra time to walk to the elevators. Visitors should use the temporary reception desk in the parking-lot building. Deliveries will be accepted at the service entrance on Oak Street between 9 and 11 each morning. The construction crew will remove the safety barriers after an inspection on Wednesday evening. The east entrance is expected to reopen Thursday.",
+      "items": [
+        {
+          "id": "p4_example_026_q1",
+          "stem": "Why will the east entrance close?",
+          "opts": [
+            "The elevators are being replaced.",
+            "The reception desk is moving permanently.",
+            "The parking lot is being expanded.",
+            "The front steps are being replaced."
+          ],
+          "ans": 3,
+          "expl": "Workers will replace the front steps.",
+          "evidence": "replace the front steps",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_026_q2",
+          "stem": "Where should visitors go?",
+          "opts": [
+            "The temporary reception desk",
+            "The west elevators",
+            "The east entrance",
+            "Oak Street after noon"
+          ],
+          "ans": 0,
+          "expl": "Visitors should use the temporary reception desk in the parking-lot building.",
+          "evidence": "temporary reception desk",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_026_q3",
+          "stem": "When is the east entrance expected to reopen?",
+          "opts": [
+            "Monday",
+            "Thursday",
+            "Wednesday morning",
+            "Next month"
+          ],
+          "ans": 1,
+          "expl": "The entrance is expected to reopen Thursday.",
+          "evidence": "expected to reopen Thursday",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_027",
+      "section": "p4",
+      "level": 4,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A city park closure",
+      "passage": "The rose garden in Central Park will be closed for maintenance from Tuesday morning until Friday afternoon. Workers will replace several damaged paths and install new signs. The playground and tennis courts will remain open, but visitors should use the north gate because the south gate is part of the work area. A free gardening demonstration planned for Wednesday has been moved to the community greenhouse on Lake Road. The park office will publish a new map online this evening. Visitors may still walk around the lake as usual.",
+      "items": [
+        {
+          "id": "p4_example_027_q1",
+          "stem": "What will workers do in the rose garden?",
+          "opts": [
+            "Close the playground",
+            "Build a tennis court",
+            "Replace paths and signs",
+            "Move the park office"
+          ],
+          "ans": 2,
+          "expl": "Workers will replace damaged paths and install new signs.",
+          "evidence": "replace several damaged paths and install new signs",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_027_q2",
+          "stem": "Which gate should visitors use?",
+          "opts": [
+            "The south gate",
+            "The lake gate",
+            "The greenhouse gate",
+            "The north gate"
+          ],
+          "ans": 3,
+          "expl": "Visitors should use the north gate.",
+          "evidence": "use the north gate",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_027_q3",
+          "stem": "Where will the gardening demonstration take place?",
+          "opts": [
+            "At the community greenhouse",
+            "In the rose garden",
+            "Beside the tennis courts",
+            "At the park office"
+          ],
+          "ans": 0,
+          "expl": "The demonstration has moved to the community greenhouse.",
+          "evidence": "moved to the community greenhouse",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_028",
+      "section": "p4",
+      "level": 3,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A conference keynote",
+      "passage": "The keynote address at the Innovation Forum will begin at 9:15 in the Grand Ballroom. Attendees should enter through the north doors because the south doors will be used for equipment delivery. The speaker will discuss small-business technology and will answer questions for fifteen minutes afterward. Headsets for simultaneous translation are available at the information table. Please return headsets there after the session. The next session begins at 11:00 in Room 3, and signs will direct attendees from the ballroom.",
+      "items": [
+        {
+          "id": "p4_example_028_q1",
+          "stem": "Where will the keynote address take place?",
+          "opts": [
+            "In Room 3",
+            "In the Grand Ballroom",
+            "At the information table",
+            "At the south doors"
+          ],
+          "ans": 1,
+          "expl": "The keynote will take place in the Grand Ballroom.",
+          "evidence": "begin at 9:15 in the Grand Ballroom",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_028_q2",
+          "stem": "Why should attendees use the north doors?",
+          "opts": [
+            "The south doors need repairs.",
+            "The north doors lead to Room 3.",
+            "The south doors are for equipment delivery.",
+            "The speaker will enter there."
+          ],
+          "ans": 2,
+          "expl": "The south doors will be used for equipment delivery.",
+          "evidence": "south doors will be used for equipment delivery",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_028_q3",
+          "stem": "Where should translation headsets be returned?",
+          "opts": [
+            "To Room 3",
+            "To the north doors",
+            "To the ballroom stage",
+            "To the information table"
+          ],
+          "ans": 3,
+          "expl": "Attendees should return them to the information table.",
+          "evidence": "return headsets there",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_029",
+      "section": "p4",
+      "level": 3,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A utility bill reminder",
+      "passage": "Customers who receive paper utility bills can now sign up for automatic payment through the City Utilities website. The service will withdraw the amount due on the date printed on each bill. Customers must enter their account number and bank information, and enrollment takes up to two business days. Those who prefer to pay in person can visit the service center on Pine Street from 8 a.m. to 4 p.m. Monday through Friday. The service center will be closed this Thursday for staff training, but online payments will remain available.",
+      "items": [
+        {
+          "id": "p4_example_029_q1",
+          "stem": "What new service is available?",
+          "opts": [
+            "Automatic bill payment",
+            "A new utility line",
+            "A paper-bill discount",
+            "A staff training course"
+          ],
+          "ans": 0,
+          "expl": "Customers can sign up for automatic payment online.",
+          "evidence": "sign up for automatic payment",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_029_q2",
+          "stem": "How long can enrollment take?",
+          "opts": [
+            "One hour",
+            "Two business days",
+            "One business day",
+            "One week"
+          ],
+          "ans": 1,
+          "expl": "Enrollment takes up to two business days.",
+          "evidence": "takes up to two business days",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_029_q3",
+          "stem": "Why will the service center close Thursday?",
+          "opts": [
+            "For a public holiday",
+            "For a website update",
+            "For staff training",
+            "For a payment inspection"
+          ],
+          "ans": 2,
+          "expl": "The center will close for staff training.",
+          "evidence": "closed this Thursday for staff training",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "p4_example_030",
+      "section": "p4",
+      "level": 4,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A theater performance",
+      "passage": "Tonight's performance of The River Path will begin at 7:30 in the Main Theater. The doors will open at 7:00, and late arrivals may be seated only during a suitable pause. Patrons who purchased tickets online should collect them at the box office using the confirmation number in their email. The theater café will remain open during intermission, but food and drinks cannot be taken into the auditorium. After the performance, the director will speak with the audience for twenty minutes in the lobby. Please keep your ticket if you plan to attend the discussion.",
+      "items": [
+        {
+          "id": "p4_example_030_q1",
+          "stem": "When will the performance begin?",
+          "opts": [
+            "At 6:30",
+            "At 7:00",
+            "At 8:00",
+            "At 7:30"
+          ],
+          "ans": 3,
+          "expl": "The performance will begin at 7:30.",
+          "evidence": "begin at 7:30",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_030_q2",
+          "stem": "Where should online ticket buyers collect tickets?",
+          "opts": [
+            "At the box office",
+            "At the lobby discussion",
+            "At the theater café",
+            "Inside the auditorium"
+          ],
+          "ans": 0,
+          "expl": "They should collect tickets at the box office.",
+          "evidence": "collect them at the box office",
+          "section": "p4",
+          "qtype": "listen_p4"
+        },
+        {
+          "id": "p4_example_030_q3",
+          "stem": "What will happen after the performance?",
+          "opts": [
+            "The café will close permanently.",
+            "The director will speak with the audience.",
+            "Late arrivals will be seated.",
+            "The box office will print new tickets."
+          ],
+          "ans": 1,
+          "expl": "The director will speak with the audience in the lobby.",
+          "evidence": "director will speak with the audience",
+          "section": "p4",
+          "qtype": "listen_p4"
+        }
+      ]
     }
   ]
 }

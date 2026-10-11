@@ -4,8 +4,8 @@
     {
       "id": "p3_example_001",
       "section": "p3",
-      "title": "A hotel reservation",
-      "passage": "Man: I am calling to confirm my reservation for next Tuesday. Woman: I see it here. You requested a room with two beds for three nights. Man: That is right, and I will arrive after nine in the evening.",
+      "title": "A staff workshop moves rooms",
+      "passage": "Maya: Daniel, have you confirmed the room for Tuesday's staff workshop? Daniel: I did, but the training room has a ceiling leak, so Facilities closed it this morning. Maya: Can we use Conference Room B instead? Daniel: Yes, although the projector there is being repaired. Maya: I can bring the portable projector from my office. Daniel: That would help. The room is available, but the workshop will start at 9:30 rather than 9:00. Maya: Then I will email the attendees about both changes before lunch. Daniel: Good. Please mention that coffee will still be served outside the room.",
       "items": [
         {
           "id": "p3_example_001_q1",
@@ -13,38 +13,56 @@
           "level": 3,
           "stem": "What are the speakers mainly discussing?",
           "opts": [
-            "A hotel reservation",
-            "A restaurant menu",
-            "A train schedule",
-            "A business meeting"
+            "A staff workshop",
+            "A building inspection",
+            "A coffee order",
+            "A repair invoice"
           ],
           "ans": 0,
-          "expl": "The man is confirming the details of his hotel reservation.",
-          "qtype": "listen_p3"
+          "expl": "They are arranging a new room and start time for Tuesday's staff workshop.",
+          "qtype": "listen_p3",
+          "evidence": "Tuesday's staff workshop"
         },
         {
           "id": "p3_example_001_q2",
           "section": "p3",
           "level": 3,
-          "stem": "When does the man expect to arrive?",
+          "stem": "Why will the workshop change rooms?",
           "opts": [
-            "Before noon",
-            "At six in the morning",
-            "After nine in the evening",
-            "The following Tuesday"
+            "The room is being painted.",
+            "The ceiling has a leak.",
+            "The attendees requested a larger table.",
+            "The coffee service was cancelled."
+          ],
+          "ans": 1,
+          "expl": "Daniel says that a ceiling leak caused Facilities to close the training room.",
+          "qtype": "listen_p3",
+          "evidence": "the training room has a ceiling leak"
+        },
+        {
+          "id": "p3_example_001_q3",
+          "section": "p3",
+          "level": 3,
+          "stem": "What will Maya probably do before lunch?",
+          "opts": [
+            "Repair a projector",
+            "Order coffee",
+            "Contact the attendees",
+            "Inspect the ceiling"
           ],
           "ans": 2,
-          "expl": "He says that he will arrive after nine in the evening.",
-          "qtype": "listen_p3"
+          "expl": "Maya says she will email the attendees about the room and time changes.",
+          "qtype": "listen_p3",
+          "evidence": "I will email the attendees about both changes before lunch"
         }
       ],
-      "set": "examples"
+      "set": "1"
     },
     {
       "id": "p3_example_002",
       "section": "p3",
-      "title": "A noisy printer",
-      "passage": "Woman: The printer on the second floor is making a strange noise again. Man: I noticed that this morning. I will move the spare printer there while the technician checks it. Woman: Great. I need to print the visitor badges before lunch.",
+      "title": "A delayed brochure shipment",
+      "passage": "Woman: The brochures for Friday's open house have not arrived yet. Man: I thought the supplier sent them on Monday. Woman: They did, but the delivery truck was held at the regional distribution center because of a storm. Man: That is inconvenient. How many brochures do we need for the event? Woman: Five hundred, and the supplier says a local courier can bring them tomorrow afternoon. Man: Please confirm that the order still contains the new building map. Woman: I will check the proof and ask the supplier for a tracking update. Man: Thanks. If the shipment arrives early, store it beside the reception desk.",
       "items": [
         {
           "id": "p3_example_002_q1",
@@ -52,149 +70,2133 @@
           "level": 3,
           "stem": "What problem does the woman mention?",
           "opts": [
-            "A printer is making an unusual noise.",
-            "The visitor badges are missing.",
-            "The technician arrived late.",
-            "The second floor is closed."
+            "The reception desk has moved.",
+            "The open house was cancelled.",
+            "The building map is missing.",
+            "A brochure shipment is late."
           ],
-          "ans": 0,
-          "expl": "She says that the printer is making a strange noise.",
-          "qtype": "listen_p3"
+          "ans": 3,
+          "expl": "She says that the brochures for Friday's event have not arrived.",
+          "qtype": "listen_p3",
+          "evidence": "The brochures for Friday's open house have not arrived yet"
         },
         {
           "id": "p3_example_002_q2",
           "section": "p3",
           "level": 3,
-          "stem": "What will the man do?",
+          "stem": "Why was the shipment held?",
           "opts": [
-            "Order new badges",
-            "Move a spare printer",
-            "Call the visitors",
-            "Repair the elevator"
+            "A storm affected the distribution center.",
+            "The map needed approval.",
+            "The supplier changed its address.",
+            "The courier lost the order."
+          ],
+          "ans": 0,
+          "expl": "The truck was held at the distribution center because of a storm.",
+          "qtype": "listen_p3",
+          "evidence": "the delivery truck was held at the regional distribution center because of a storm"
+        },
+        {
+          "id": "p3_example_002_q3",
+          "section": "p3",
+          "level": 3,
+          "stem": "What will the woman check?",
+          "opts": [
+            "The reception desk schedule",
+            "The brochure proof",
+            "The weather forecast",
+            "The event seating plan"
           ],
           "ans": 1,
-          "expl": "He will move the spare printer to the second floor.",
-          "qtype": "listen_p3"
+          "expl": "She will check the proof to make sure the new building map is included.",
+          "qtype": "listen_p3",
+          "evidence": "I will check the proof"
         }
       ],
-      "set": "examples"
+      "set": "1"
     },
     {
       "id": "p3_example_003",
       "section": "p3",
-      "title": "A community workshop",
-      "passage": "Man: Have you registered for Saturday's bicycle workshop? Woman: Not yet. Is there still space? Man: Yes, but the organizer moved it from the park to the recreation hall because rain is expected. Woman: Then I will sign up tonight.",
+      "title": "Online inventory training",
+      "passage": "Man: Did you receive the link for Thursday's inventory-system training? Woman: No, I registered yesterday, but the confirmation message has not arrived. Man: The instructor moved the session online because she will be traveling. Woman: Then I will need my laptop rather than the training-room computer. Man: Right, and the system requires the latest version of the browser. Woman: Mine may be out of date. Man: The IT desk can update it before Thursday. Woman: I will bring the laptop there this afternoon. Man: Good idea. The online session begins at two, and the instructor will send the meeting link to everyone who registered.",
       "items": [
         {
           "id": "p3_example_003_q1",
           "section": "p3",
           "level": 3,
-          "stem": "What is the woman asking about?",
+          "stem": "Why is the woman contacting the man?",
           "opts": [
-            "Available places in a workshop",
-            "The price of a bicycle",
-            "A park's opening hours",
-            "A weather report"
+            "To reserve a meeting room",
+            "To report a damaged laptop",
+            "To ask about a training session",
+            "To change an inventory order"
           ],
-          "ans": 0,
-          "expl": "She asks whether there is still space in the workshop.",
-          "qtype": "listen_p3"
+          "ans": 2,
+          "expl": "She has not received the confirmation link for the inventory-system training.",
+          "qtype": "listen_p3",
+          "evidence": "the confirmation message has not arrived"
         },
         {
           "id": "p3_example_003_q2",
           "section": "p3",
           "level": 3,
-          "stem": "Why was the location changed?",
+          "stem": "What does the man recommend?",
           "opts": [
-            "The park is being repaired.",
-            "The hall has better bicycles.",
-            "Rain is expected.",
-            "The organizer moved away."
+            "Buying a new printer",
+            "Printing the meeting link",
+            "Calling the instructor",
+            "Updating a browser"
           ],
-          "ans": 2,
-          "expl": "The workshop was moved indoors because rain is expected.",
-          "qtype": "listen_p3"
+          "ans": 3,
+          "expl": "He says the IT desk can update the browser on her laptop.",
+          "qtype": "listen_p3",
+          "evidence": "the system requires the latest version of the browser"
+        },
+        {
+          "id": "p3_example_003_q3",
+          "section": "p3",
+          "level": 3,
+          "stem": "When will the woman probably visit the IT desk?",
+          "opts": [
+            "This afternoon",
+            "Thursday morning",
+            "After the training",
+            "Next week"
+          ],
+          "ans": 0,
+          "expl": "She says she will take her laptop to the IT desk this afternoon.",
+          "qtype": "listen_p3",
+          "evidence": "I will bring the laptop there this afternoon"
         }
       ],
-      "set": "examples"
+      "set": "1"
     },
     {
       "id": "p3_example_004",
       "section": "p3",
-      "title": "A train reservation",
-      "passage": "Woman: I would like to change my train reservation to Friday morning. Man: The eight-thirty train is full, but I can reserve a seat on the ten o'clock service. Woman: That works. Does it stop at Riverside? Man: Yes, and it arrives there at eleven fifteen.",
+      "title": "A client lunch reservation",
+      "passage": "Woman: Have you made the reservation for Friday's lunch with the new client? Man: Yes, I booked a table at the Green Street restaurant for twelve-thirty. Woman: One of the visitors has a severe nut allergy. Could you tell the restaurant before we arrive? Man: I will call them again and ask the chef to recommend safe dishes. Woman: Thanks. The client will come directly from the airport, so she may be a few minutes late. Man: Should I arrange a company car? Woman: No, she has already booked a taxi. I will meet the visitors in the lobby and walk them to the restaurant. Man: Then I will send you the reservation details and the restaurant's phone number.",
       "items": [
         {
           "id": "p3_example_004_q1",
           "section": "p3",
-          "level": 4,
-          "stem": "What does the woman want to change?",
+          "level": 3,
+          "stem": "What are the speakers planning?",
           "opts": [
-            "Her train reservation",
-            "Her hotel address",
-            "Her work schedule",
-            "Her meeting room"
+            "An airport tour",
+            "A client lunch",
+            "A menu redesign",
+            "A taxi service"
           ],
-          "ans": 0,
-          "expl": "She wants to change her reservation to a different train.",
-          "qtype": "listen_p3"
+          "ans": 1,
+          "expl": "They are arranging details for lunch with a new client.",
+          "qtype": "listen_p3",
+          "evidence": "reservation for Friday's lunch with the new client"
         },
         {
           "id": "p3_example_004_q2",
           "section": "p3",
-          "level": 4,
-          "stem": "What time will the available train leave?",
+          "level": 3,
+          "stem": "What special request will the man make?",
           "opts": [
-            "8:30",
-            "10:00",
-            "11:15",
-            "Friday evening"
+            "A later reservation",
+            "A private taxi",
+            "Food without nuts",
+            "A table near the lobby"
           ],
-          "ans": 1,
-          "expl": "The available service leaves at ten o'clock.",
-          "qtype": "listen_p3"
+          "ans": 2,
+          "expl": "He will tell the restaurant about a visitor's severe nut allergy.",
+          "qtype": "listen_p3",
+          "evidence": "One of the visitors has a severe nut allergy"
+        },
+        {
+          "id": "p3_example_004_q3",
+          "section": "p3",
+          "level": 3,
+          "stem": "Where will the woman meet the visitors?",
+          "opts": [
+            "At the airport",
+            "In the restaurant kitchen",
+            "Beside the taxi stand",
+            "In the company lobby"
+          ],
+          "ans": 3,
+          "expl": "She says she will meet them in the lobby and walk them to the restaurant.",
+          "qtype": "listen_p3",
+          "evidence": "I will meet the visitors in the lobby"
         }
       ],
-      "set": "examples"
+      "set": "1"
     },
     {
       "id": "p3_example_005",
       "section": "p3",
-      "title": "Catering for a meeting",
-      "passage": "Man: The client meeting has been extended to the afternoon. Could you arrange a light lunch? Woman: I can do that. How many people should I plan for? Man: Twelve, including the two visitors. Please include vegetarian sandwiches. Woman: I will contact the café now.",
+      "title": "Elevator maintenance",
+      "passage": "Man: I saw the notice about the elevators. Is the west elevator being repaired today? Woman: Yes. Facilities will inspect it from seven until ten on Monday morning. Man: We have several visitors arriving at eight. Will they be able to reach the third floor? Woman: They can use the south entrance and the other elevator. I am asking Security to place signs in the lobby. Man: Good. Should we move the welcome table closer to that entrance? Woman: That would make things easier for visitors. Man: I will ask the events team to move it on Sunday afternoon. Woman: Great. Facilities also promised to test the elevator before the building opens.",
       "items": [
         {
           "id": "p3_example_005_q1",
           "section": "p3",
-          "level": 4,
-          "stem": "Why is lunch being arranged?",
+          "level": 3,
+          "stem": "What is the conversation mainly about?",
           "opts": [
-            "A meeting will last into the afternoon.",
-            "A café is opening nearby.",
-            "Two employees are leaving early.",
-            "A visitor requested a tour."
+            "Elevator maintenance",
+            "A security training course",
+            "A visitor registration form",
+            "A new building entrance"
           ],
           "ans": 0,
-          "expl": "The meeting has been extended, so lunch is needed.",
-          "qtype": "listen_p3"
+          "expl": "The speakers are planning around maintenance of one elevator.",
+          "qtype": "listen_p3",
+          "evidence": "notice about the elevators"
         },
         {
           "id": "p3_example_005_q2",
           "section": "p3",
-          "level": 4,
-          "stem": "What special food should be included?",
+          "level": 3,
+          "stem": "When will Facilities inspect the elevator?",
           "opts": [
-            "Fruit desserts",
-            "Vegetarian sandwiches",
-            "Hot soup",
-            "Gluten-free cake"
+            "Sunday afternoon",
+            "Monday morning",
+            "Monday evening",
+            "Before the visitors leave"
           ],
           "ans": 1,
-          "expl": "The man specifically requests vegetarian sandwiches.",
-          "qtype": "listen_p3"
+          "expl": "The inspection is scheduled from seven until ten on Monday morning.",
+          "qtype": "listen_p3",
+          "evidence": "from seven until ten on Monday morning"
+        },
+        {
+          "id": "p3_example_005_q3",
+          "section": "p3",
+          "level": 3,
+          "stem": "What will the man probably do on Sunday?",
+          "opts": [
+            "Test the elevator",
+            "Meet the visitors",
+            "Move a welcome table",
+            "Print security signs"
+          ],
+          "ans": 2,
+          "expl": "He will ask the events team to move the welcome table on Sunday afternoon.",
+          "qtype": "listen_p3",
+          "evidence": "ask the events team to move it on Sunday afternoon"
         }
       ],
-      "set": "examples"
+      "set": "1"
+    },
+    {
+      "id": "p3_example_006",
+      "section": "p3",
+      "title": "A changed business flight",
+      "passage": "Woman: I received an airline notice about your flight to Denver. Man: Did they change the departure time? Woman: Yes. The new flight leaves at eight-thirty, which makes your connection in Chicago too short. Man: I cannot risk arriving after the conference registration closes. Woman: I found a direct flight leaving at six-forty. It costs a little more, but your travel approval covers the difference. Man: That works. Does the hotel shuttle run from the airport that early? Woman: It starts at five and runs every thirty minutes. Man: Please book the direct flight, then. I will print the new confirmation and send it to the conference organizer.",
+      "items": [
+        {
+          "id": "p3_example_006_q1",
+          "section": "p3",
+          "level": 3,
+          "stem": "What problem does the woman describe?",
+          "opts": [
+            "A hotel has lost a reservation.",
+            "A travel approval expired.",
+            "A conference was postponed.",
+            "An airline changed a flight."
+          ],
+          "ans": 3,
+          "expl": "She received an airline notice changing the man's flight time.",
+          "qtype": "listen_p3",
+          "evidence": "airline notice about your flight to Denver"
+        },
+        {
+          "id": "p3_example_006_q2",
+          "section": "p3",
+          "level": 3,
+          "stem": "Why does the man prefer the direct flight?",
+          "opts": [
+            "It avoids a short connection.",
+            "It arrives after the conference.",
+            "It includes a meal.",
+            "It leaves from Chicago."
+          ],
+          "ans": 0,
+          "expl": "The original change would make his connection in Chicago too short.",
+          "qtype": "listen_p3",
+          "evidence": "your connection in Chicago too short"
+        },
+        {
+          "id": "p3_example_006_q3",
+          "section": "p3",
+          "level": 3,
+          "stem": "What will the man send to the conference organizer?",
+          "opts": [
+            "A hotel invoice",
+            "A new flight confirmation",
+            "A travel approval",
+            "A shuttle schedule"
+          ],
+          "ans": 1,
+          "expl": "He will send the new flight confirmation to the organizer.",
+          "qtype": "listen_p3",
+          "evidence": "send it to the conference organizer"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p3_example_007",
+      "section": "p3",
+      "title": "A marketing survey poster",
+      "passage": "Man: The response rate for our customer survey is lower than expected. Woman: I found the reason. The QR code on the posters stops working after the first page. Man: Can the web team replace it today? Woman: They already created a new code, and I tested it with my phone. Man: Excellent. There will be about two hundred visitors at tomorrow's event. Woman: I will send the corrected file to the print shop and ask for fifty replacement posters. Man: That will not cover every location. Woman: Then I will also ask the social-media team to share the working link this afternoon. Man: Good. We can compare the response numbers next week.",
+      "items": [
+        {
+          "id": "p3_example_007_q1",
+          "section": "p3",
+          "level": 3,
+          "stem": "Why is the man concerned?",
+          "opts": [
+            "The print shop closed early.",
+            "The event has been cancelled.",
+            "The survey is receiving few responses.",
+            "The social-media team changed its name."
+          ],
+          "ans": 2,
+          "expl": "He says that the survey response rate is lower than expected.",
+          "qtype": "listen_p3",
+          "evidence": "response rate for our customer survey is lower than expected"
+        },
+        {
+          "id": "p3_example_007_q2",
+          "section": "p3",
+          "level": 3,
+          "stem": "What has the web team done?",
+          "opts": [
+            "Printed two hundred posters",
+            "Compared the response numbers",
+            "Scheduled next week's event",
+            "Created a new QR code"
+          ],
+          "ans": 3,
+          "expl": "The woman says the web team created and tested a new QR code.",
+          "qtype": "listen_p3",
+          "evidence": "created a new code"
+        },
+        {
+          "id": "p3_example_007_q3",
+          "section": "p3",
+          "level": 3,
+          "stem": "What will the woman ask the social-media team to do?",
+          "opts": [
+            "Share a working link",
+            "Cancel the survey",
+            "Design a poster",
+            "Visit the print shop"
+          ],
+          "ans": 0,
+          "expl": "She will ask the team to share the working survey link that afternoon.",
+          "qtype": "listen_p3",
+          "evidence": "ask the social-media team to share the working link this afternoon"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p3_example_008",
+      "section": "p3",
+      "title": "Missing office chairs",
+      "passage": "Woman: The new desks arrived, but I cannot find two of the matching chairs. Man: The invoice says the supplier shipped twelve chairs with the desks. Woman: Our receiving clerk counted only ten when the truck arrived. Man: Perhaps the other two are still in the warehouse. Woman: I checked the loading area and the storage room this morning. Man: I will call the supplier. They may be able to deliver replacements before Wednesday's orientation. Woman: We need all the chairs by then, but we could temporarily use two from the training room. Man: That is a good solution. I will reserve them and ask the supplier for a delivery date.",
+      "items": [
+        {
+          "id": "p3_example_008_q1",
+          "section": "p3",
+          "level": 3,
+          "stem": "What is the problem?",
+          "opts": [
+            "The desks were delivered late.",
+            "Two office chairs are missing.",
+            "The training room is locked.",
+            "The invoice has the wrong address."
+          ],
+          "ans": 1,
+          "expl": "The receiving clerk counted ten chairs instead of the twelve listed on the invoice.",
+          "qtype": "listen_p3",
+          "evidence": "cannot find two of the matching chairs"
+        },
+        {
+          "id": "p3_example_008_q2",
+          "section": "p3",
+          "level": 3,
+          "stem": "What has the woman already checked?",
+          "opts": [
+            "The supplier's website",
+            "The orientation schedule",
+            "The loading area and storage room",
+            "The training room's projector"
+          ],
+          "ans": 2,
+          "expl": "She checked both the loading area and the storage room.",
+          "qtype": "listen_p3",
+          "evidence": "I checked the loading area and the storage room this morning"
+        },
+        {
+          "id": "p3_example_008_q3",
+          "section": "p3",
+          "level": 3,
+          "stem": "What will the man do?",
+          "opts": [
+            "Move the new desks",
+            "Count the delivery truck",
+            "Cancel the orientation",
+            "Call the supplier"
+          ],
+          "ans": 3,
+          "expl": "He will call the supplier to ask about replacements and delivery.",
+          "qtype": "listen_p3",
+          "evidence": "I will call the supplier"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p3_example_009",
+      "section": "p3",
+      "title": "Preparing for a job interview",
+      "passage": "Man: How did Lena's interview preparation go? Woman: She has arrived and is reviewing the sales position description now. Man: Does she have experience with international customers? Woman: Yes. She managed accounts in two countries and speaks both Spanish and English. Man: Good. Did she bring the portfolio requested in the invitation? Woman: She sent a digital copy, but she did not bring printed pages. Man: The interview panel will meet at three. Woman: I will print three copies and place them in the conference room. Man: Please also ask Human Resources whether her references have been checked. Woman: I will do that before the panel arrives.",
+      "items": [
+        {
+          "id": "p3_example_009_q1",
+          "section": "p3",
+          "level": 3,
+          "stem": "What position is Lena applying for?",
+          "opts": [
+            "A sales position",
+            "A translation position",
+            "A human-resources position",
+            "A design position"
+          ],
+          "ans": 0,
+          "expl": "The woman says Lena is reviewing the sales position description.",
+          "qtype": "listen_p3",
+          "evidence": "sales position description"
+        },
+        {
+          "id": "p3_example_009_q2",
+          "section": "p3",
+          "level": 3,
+          "stem": "What did Lena send?",
+          "opts": [
+            "Three reference letters",
+            "A digital portfolio",
+            "A position description",
+            "A travel invitation"
+          ],
+          "ans": 1,
+          "expl": "She sent a digital copy of the requested portfolio.",
+          "qtype": "listen_p3",
+          "evidence": "She sent a digital copy"
+        },
+        {
+          "id": "p3_example_009_q3",
+          "section": "p3",
+          "level": 3,
+          "stem": "What will the woman do before the interview panel arrives?",
+          "opts": [
+            "Check Lena's language skills",
+            "Write a new job description",
+            "Print portfolio copies",
+            "Meet an international customer"
+          ],
+          "ans": 2,
+          "expl": "She will print three copies and put them in the conference room.",
+          "qtype": "listen_p3",
+          "evidence": "I will print three copies"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p3_example_010",
+      "section": "p3",
+      "title": "A customer returns a coffee machine",
+      "passage": "Woman: A customer wants to return the coffee machine she bought twelve days ago. Man: Our return policy allows thirty days, so that should be possible. Woman: She opened the box, but she says every part is still included. Man: We need to inspect the machine before issuing a refund. Would she prefer an exchange? Woman: Yes, she wants the newer model, but it is temporarily out of stock. Man: The next shipment is expected on Monday. Woman: I will offer to reserve one and call her when it arrives. Man: Good. Please record the return request in the service system so the warehouse knows to expect the original machine.",
+      "items": [
+        {
+          "id": "p3_example_010_q1",
+          "section": "p3",
+          "level": 3,
+          "stem": "Why does the customer want to contact the store?",
+          "opts": [
+            "To extend a return policy",
+            "To order a warehouse system",
+            "To report a delivery driver",
+            "To return a coffee machine"
+          ],
+          "ans": 3,
+          "expl": "She wants to return the coffee machine bought twelve days earlier.",
+          "qtype": "listen_p3",
+          "evidence": "customer wants to return the coffee machine"
+        },
+        {
+          "id": "p3_example_010_q2",
+          "section": "p3",
+          "level": 3,
+          "stem": "What does the store need to do before issuing a refund?",
+          "opts": [
+            "Inspect the machine",
+            "Reserve a newer model",
+            "Call the next shipment",
+            "Close the service system"
+          ],
+          "ans": 0,
+          "expl": "The man says the machine must be inspected before a refund is issued.",
+          "qtype": "listen_p3",
+          "evidence": "We need to inspect the machine before issuing a refund"
+        },
+        {
+          "id": "p3_example_010_q3",
+          "section": "p3",
+          "level": 3,
+          "stem": "What will the woman offer?",
+          "opts": [
+            "A free coffee",
+            "A reserved newer model",
+            "A faster delivery route",
+            "A longer customer survey"
+          ],
+          "ans": 1,
+          "expl": "She will offer to reserve the newer model and call the customer when it arrives.",
+          "qtype": "listen_p3",
+          "evidence": "I will offer to reserve one"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p3_example_011",
+      "section": "p3",
+      "title": "Setting up a conference booth",
+      "passage": "Man: The booth is almost ready, but it still looks empty. Woman: The large banner was shipped separately and should arrive around noon. Man: What about the brochures? Woman: Three hundred were delivered to the storage room yesterday. I brought a box here this morning. Man: I cannot find the charger for the demonstration tablet. Woman: The registration desk may have a spare one. I will ask the coordinator. Man: Please do. Our first demonstration begins at two. Woman: If the spare charger does not work, we can use the tablet from the information desk. Man: That is a good backup. I will arrange the brochures while you check the charger.",
+      "items": [
+        {
+          "id": "p3_example_011_q1",
+          "section": "p3",
+          "level": 3,
+          "stem": "What is the man concerned about?",
+          "opts": [
+            "The brochures were printed incorrectly.",
+            "The conference has no registration desk.",
+            "The booth is not fully prepared.",
+            "The demonstration was moved to noon."
+          ],
+          "ans": 2,
+          "expl": "He says the booth is almost ready but still looks empty.",
+          "qtype": "listen_p3",
+          "evidence": "The booth is almost ready, but it still looks empty"
+        },
+        {
+          "id": "p3_example_011_q2",
+          "section": "p3",
+          "level": 3,
+          "stem": "Where are most of the brochures?",
+          "opts": [
+            "At the information desk",
+            "At the registration entrance",
+            "Inside the demonstration tablet",
+            "In the storage room"
+          ],
+          "ans": 3,
+          "expl": "The woman says three hundred brochures were delivered to the storage room.",
+          "qtype": "listen_p3",
+          "evidence": "Three hundred were delivered to the storage room yesterday"
+        },
+        {
+          "id": "p3_example_011_q3",
+          "section": "p3",
+          "level": 3,
+          "stem": "What will the woman ask the coordinator for?",
+          "opts": [
+            "A spare tablet charger",
+            "A box of brochures",
+            "A conference banner",
+            "A new demonstration time"
+          ],
+          "ans": 0,
+          "expl": "She will ask the coordinator whether the registration desk has a spare charger.",
+          "qtype": "listen_p3",
+          "evidence": "I will ask the coordinator"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p3_example_012",
+      "section": "p3",
+      "title": "Correcting event certificates",
+      "passage": "Woman: The certificates for tomorrow's seminar show the wrong event date. Man: Were they printed from last year's template? Woman: Yes. The title is correct, but the date says April instead of May. Man: We should update the template and print the certificates again. Woman: I counted sixty participants, and there is enough paper in the supply cabinet. Man: I can change the date now. Could you ask the director to approve the new file before we print? Woman: Certainly. She is in a meeting until eleven, but I will send it to her immediately afterward. Man: Good. I will prepare the printer while we wait for her approval.",
+      "items": [
+        {
+          "id": "p3_example_012_q1",
+          "section": "p3",
+          "level": 3,
+          "stem": "What is wrong with the certificates?",
+          "opts": [
+            "The event title is missing.",
+            "The date is incorrect.",
+            "The paper is too small.",
+            "The participant list is incomplete."
+          ],
+          "ans": 1,
+          "expl": "The certificates use April instead of the correct May date.",
+          "qtype": "listen_p3",
+          "evidence": "date says April instead of May"
+        },
+        {
+          "id": "p3_example_012_q2",
+          "section": "p3",
+          "level": 3,
+          "stem": "How many certificates are needed?",
+          "opts": [
+            "Eleven",
+            "Thirty",
+            "Sixty",
+            "One hundred"
+          ],
+          "ans": 2,
+          "expl": "The woman counted sixty seminar participants.",
+          "qtype": "listen_p3",
+          "evidence": "I counted sixty participants"
+        },
+        {
+          "id": "p3_example_012_q3",
+          "section": "p3",
+          "level": 3,
+          "stem": "What will the woman do after eleven?",
+          "opts": [
+            "Repair the printer",
+            "Buy paper from a store",
+            "Attend the seminar",
+            "Send the corrected file for approval"
+          ],
+          "ans": 3,
+          "expl": "She will send the corrected file to the director after the meeting ends.",
+          "qtype": "listen_p3",
+          "evidence": "I will send it to her immediately afterward"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p3_example_013",
+      "section": "p3",
+      "title": "Temporary parking arrangements",
+      "passage": "Man: Have you seen the notice about employee parking next week? Woman: Yes. The main garage will be full because contractors are replacing the lighting system. Man: I reserved passes for the temporary lot two blocks away. Woman: Will evening staff be able to find it easily? Man: Security will email a map and place signs at both entrances. Woman: That should help. Is there a shuttle for employees carrying equipment? Man: Yes, it leaves the temporary lot at 7:45 and 8:15 in the morning. Woman: I will share those times in the team chat. Man: Thanks. The garage should reopen on Friday, and I will send another notice when Facilities confirms it.",
+      "items": [
+        {
+          "id": "p3_example_013_q1",
+          "section": "p3",
+          "level": 3,
+          "stem": "Why will employees use a temporary parking lot?",
+          "opts": [
+            "The main garage is being repaired.",
+            "The office is moving to another city.",
+            "Security is holding a training session.",
+            "The shuttle service has ended."
+          ],
+          "ans": 0,
+          "expl": "The main garage will be full while contractors replace its lighting system.",
+          "qtype": "listen_p3",
+          "evidence": "main garage will be full because contractors are replacing the lighting system"
+        },
+        {
+          "id": "p3_example_013_q2",
+          "section": "p3",
+          "level": 3,
+          "stem": "What will Security provide?",
+          "opts": [
+            "Parking passes for visitors",
+            "A map and entrance signs",
+            "New lighting equipment",
+            "A Friday team chat"
+          ],
+          "ans": 1,
+          "expl": "Security will email a map and place signs at the entrances.",
+          "qtype": "listen_p3",
+          "evidence": "Security will email a map and place signs at both entrances"
+        },
+        {
+          "id": "p3_example_013_q3",
+          "section": "p3",
+          "level": 3,
+          "stem": "What will the woman do?",
+          "opts": [
+            "Repair the garage lights",
+            "Reserve a shuttle",
+            "Share the shuttle times",
+            "Move the temporary lot"
+          ],
+          "ans": 2,
+          "expl": "She will share the shuttle departure times in the team chat.",
+          "qtype": "listen_p3",
+          "evidence": "I will share those times in the team chat"
+        }
+      ],
+      "set": "1"
+    },
+    {
+      "id": "p3_example_014",
+      "section": "p3",
+      "level": 3,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "A clinic appointment moves",
+      "passage": "Woman: I am calling about my appointment with Dr. Lee on Thursday. Man: The doctor will be attending a training session that morning. Woman: Could I move my appointment to Thursday afternoon? Man: The first opening is at 3:30, and the nurse can complete the paperwork before the visit. Woman: That works for me. I also need to update my emergency contact. Man: Bring the new information to the front desk, and arrive fifteen minutes early so we can enter it in the system.",
+      "items": [
+        {
+          "id": "p3_example_014_q1",
+          "stem": "Why is the appointment being changed?",
+          "opts": [
+            "The doctor will attend training.",
+            "The clinic will close for repairs.",
+            "The nurse is moving to another office.",
+            "The patient forgot the appointment."
+          ],
+          "ans": 0,
+          "expl": "The doctor is attending a training session that morning.",
+          "evidence": "attending a training session",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_014_q2",
+          "stem": "When is the first afternoon opening?",
+          "opts": [
+            "At 1:15",
+            "At 3:30",
+            "At 2:00",
+            "At 4:45"
+          ],
+          "ans": 1,
+          "expl": "The first available afternoon appointment is at 3:30.",
+          "evidence": "The first opening is at 3:30",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_014_q3",
+          "stem": "What should the woman bring?",
+          "opts": [
+            "A payment receipt",
+            "A doctor's note",
+            "New emergency-contact information",
+            "A training certificate"
+          ],
+          "ans": 2,
+          "expl": "She needs to bring the updated emergency-contact information.",
+          "evidence": "update my emergency contact",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_015",
+      "section": "p3",
+      "level": 4,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "A delivery for the office move",
+      "passage": "Man: Has the moving company confirmed the delivery time for the new desks? Woman: Yes, the truck will arrive between ten and noon on Friday. Man: That is earlier than I expected. The loading area is still being painted. Woman: The building manager said the crew can use the side entrance instead. Man: Then I will reserve that entrance and ask the movers to call me when they are ten minutes away. Woman: Good. I will label the desk boxes by department before the truck arrives.",
+      "items": [
+        {
+          "id": "p3_example_015_q1",
+          "stem": "What are the speakers arranging?",
+          "opts": [
+            "A building lease",
+            "A painting class",
+            "A new department budget",
+            "A delivery of office furniture"
+          ],
+          "ans": 3,
+          "expl": "They are arranging the delivery of desks for an office move.",
+          "evidence": "delivery time for the new desks",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_015_q2",
+          "stem": "Why cannot the truck use the loading area?",
+          "opts": [
+            "It is being painted.",
+            "It is too narrow.",
+            "It is reserved for visitors.",
+            "It has been moved underground."
+          ],
+          "ans": 0,
+          "expl": "The loading area is being painted.",
+          "evidence": "The loading area is still being painted",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_015_q3",
+          "stem": "What task will the woman handle before the truck arrives?",
+          "opts": [
+            "Call the building manager",
+            "Label the desk boxes",
+            "Reserve the side entrance",
+            "Drive the moving truck"
+          ],
+          "ans": 1,
+          "expl": "She will label the desk boxes by department.",
+          "evidence": "label the desk boxes by department",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_016",
+      "section": "p3",
+      "level": 3,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "Counting a store inventory",
+      "passage": "Woman: The store manager asked us to finish the inventory count before closing. Man: I can count the kitchen section, but several price tags are missing. Woman: I will print replacement tags from the office. Man: Thanks. Should I record the damaged items separately? Woman: Yes, place them on the blue cart and enter their product numbers on this sheet. Man: The stockroom shelves are almost finished, so we should have the report ready by six. Woman: I will review the numbers before sending it to the manager.",
+      "items": [
+        {
+          "id": "p3_example_016_q1",
+          "stem": "What task must be completed before closing?",
+          "opts": [
+            "A customer survey",
+            "A staff schedule",
+            "An inventory count",
+            "A delivery order"
+          ],
+          "ans": 2,
+          "expl": "The staff must finish the inventory count before the store closes.",
+          "evidence": "finish the inventory count",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_016_q2",
+          "stem": "Which inventory issue does the man report?",
+          "opts": [
+            "Some products are damaged.",
+            "The office printer is broken.",
+            "The stockroom is locked.",
+            "Some price tags are missing."
+          ],
+          "ans": 3,
+          "expl": "He says that several price tags are missing.",
+          "evidence": "several price tags are missing",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_016_q3",
+          "stem": "What will the woman probably do before sending the report?",
+          "opts": [
+            "Review the numbers",
+            "Move the blue cart",
+            "Close the stockroom",
+            "Call a customer"
+          ],
+          "ans": 0,
+          "expl": "She will review the numbers before sending the report.",
+          "evidence": "review the numbers",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_017",
+      "section": "p3",
+      "level": 3,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "A conference speaker changes travel plans",
+      "passage": "Man: I received a message from our guest speaker. Her flight will arrive two hours late. Woman: Will she still reach the conference before her opening session? Man: Yes, but she will miss the welcome dinner tonight. Woman: I can ask the hotel to keep a meal for her. Man: Good idea. I will move her airport pickup to 9:30 and tell the registration team about the delay. Woman: Please also change the program note that says she will greet attendees at the dinner.",
+      "items": [
+        {
+          "id": "p3_example_017_q1",
+          "stem": "What problem has occurred?",
+          "opts": [
+            "A conference room is unavailable.",
+            "A flight has been delayed.",
+            "A dinner has been cancelled.",
+            "A registration system has failed."
+          ],
+          "ans": 1,
+          "expl": "The guest speaker's flight will arrive two hours late.",
+          "evidence": "flight will arrive two hours late",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_017_q2",
+          "stem": "What will the woman arrange?",
+          "opts": [
+            "A conference badge",
+            "A new flight",
+            "A meal at the hotel",
+            "A welcome speech"
+          ],
+          "ans": 2,
+          "expl": "She will ask the hotel to keep a meal for the speaker.",
+          "evidence": "ask the hotel to keep a meal",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_017_q3",
+          "stem": "What will the man change?",
+          "opts": [
+            "The conference location",
+            "The dinner menu",
+            "The hotel reservation",
+            "The speaker's airport pickup"
+          ],
+          "ans": 3,
+          "expl": "He will move the airport pickup to 9:30.",
+          "evidence": "move her airport pickup to 9:30",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_018",
+      "section": "p3",
+      "level": 4,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "Apartment maintenance request",
+      "passage": "Woman: The maintenance office returned my request about the leaking kitchen faucet. Man: Did they give you a repair time? Woman: They can send a plumber tomorrow between eight and ten. Man: I will be at work then. Could you leave the spare key with the concierge? Woman: I can, but the plumber also needs access to the cabinet under the sink. Man: That is fine. Please ask the concierge to call me when the work is finished. Woman: I will add that note to the request.",
+      "items": [
+        {
+          "id": "p3_example_018_q1",
+          "stem": "What problem does the woman report?",
+          "opts": [
+            "A leaking faucet",
+            "A broken cabinet door",
+            "A missing spare key",
+            "A blocked elevator"
+          ],
+          "ans": 0,
+          "expl": "She submitted a request about a leaking kitchen faucet.",
+          "evidence": "leaking kitchen faucet",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_018_q2",
+          "stem": "When will the plumber arrive?",
+          "opts": [
+            "This afternoon",
+            "Tomorrow between eight and ten",
+            "Tomorrow after lunch",
+            "Next week"
+          ],
+          "ans": 1,
+          "expl": "The plumber can come tomorrow between eight and ten.",
+          "evidence": "tomorrow between eight and ten",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_018_q3",
+          "stem": "What does the man ask the woman to do?",
+          "opts": [
+            "Call his employer",
+            "Repair the cabinet",
+            "Leave a key with the concierge",
+            "Meet the plumber at work"
+          ],
+          "ans": 2,
+          "expl": "He asks her to leave the spare key with the concierge.",
+          "evidence": "leave the spare key with the concierge",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_019",
+      "section": "p3",
+      "level": 3,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "Replacing staff photo badges",
+      "passage": "Man: The security office says our staff badges need new photos this month. Woman: I saw the notice. Is the photo session still in the lobby? Man: No, it moved to Room 204 because the lobby is being renovated. Woman: When should our team go? Man: The photographer will be there from noon to four on Wednesday. Woman: I teach a class at noon, so I will go after two. Man: I will reserve the 2:30 slot for you and remind everyone to bring their old badges.",
+      "items": [
+        {
+          "id": "p3_example_019_q1",
+          "stem": "What is the purpose of the photo session?",
+          "opts": [
+            "To schedule classes",
+            "To advertise a security course",
+            "To inspect the lobby",
+            "To make new staff badges"
+          ],
+          "ans": 3,
+          "expl": "Staff members need new photos for replacement badges.",
+          "evidence": "staff badges need new photos",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_019_q2",
+          "stem": "Why has the location changed?",
+          "opts": [
+            "The lobby is being renovated.",
+            "Room 204 is larger.",
+            "The photographer requested a window.",
+            "The security office moved."
+          ],
+          "ans": 0,
+          "expl": "The lobby is being renovated.",
+          "evidence": "the lobby is being renovated",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_019_q3",
+          "stem": "What will the man do for the woman?",
+          "opts": [
+            "Teach her class",
+            "Reserve a time slot",
+            "Bring a new camera",
+            "Collect her old badge"
+          ],
+          "ans": 1,
+          "expl": "He will reserve the 2:30 slot for her.",
+          "evidence": "reserve the 2:30 slot",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_020",
+      "section": "p3",
+      "level": 3,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "Access to a new software system",
+      "passage": "Woman: I tried to open the new scheduling system, but my account is not active. Man: Did you complete the security course? Woman: Yes, I finished it yesterday and received a confirmation message. Man: The access list is updated every evening, so your account should work tomorrow morning. Woman: I need to prepare next week's schedule tonight. Man: I can ask the IT desk for temporary access. Woman: That would help. I will forward my course confirmation to you now.",
+      "items": [
+        {
+          "id": "p3_example_020_q1",
+          "stem": "What difficulty is the woman having?",
+          "opts": [
+            "She cannot change a work schedule.",
+            "She lost a training certificate.",
+            "She cannot access a software system.",
+            "She forgot her account password."
+          ],
+          "ans": 2,
+          "expl": "Her account for the new scheduling system is not active.",
+          "evidence": "my account is not active",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_020_q2",
+          "stem": "When is the access list normally updated?",
+          "opts": [
+            "Every hour",
+            "At noon",
+            "Once a week",
+            "Every evening"
+          ],
+          "ans": 3,
+          "expl": "The man says the access list is updated every evening.",
+          "evidence": "updated every evening",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_020_q3",
+          "stem": "What will the woman send?",
+          "opts": [
+            "A course confirmation",
+            "A weekly schedule",
+            "A password list",
+            "An IT invoice"
+          ],
+          "ans": 0,
+          "expl": "She will forward her security-course confirmation.",
+          "evidence": "forward my course confirmation",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_021",
+      "section": "p3",
+      "level": 4,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "Volunteers for a community festival",
+      "passage": "Man: We still need someone to manage the information table at Saturday's festival. Woman: I can work there until noon, but I have a food-stall shift later. Man: That is enough for the morning. Could you prepare a sign with the event map? Woman: Yes, and I can print a list of emergency phone numbers. Man: Great. The organizers will deliver the table and chairs at eight. Woman: I will arrive at 7:45 to set up the signs before visitors arrive.",
+      "items": [
+        {
+          "id": "p3_example_021_q1",
+          "stem": "What position is the woman willing to fill?",
+          "opts": [
+            "Food-stall manager",
+            "Information-table volunteer",
+            "Festival photographer",
+            "Emergency driver"
+          ],
+          "ans": 1,
+          "expl": "She will manage the information table in the morning.",
+          "evidence": "manage the information table",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_021_q2",
+          "stem": "What will she prepare?",
+          "opts": [
+            "A food menu",
+            "A list of volunteers' addresses",
+            "A sign with the event map",
+            "A set of chairs"
+          ],
+          "ans": 2,
+          "expl": "She will prepare a sign with the event map.",
+          "evidence": "prepare a sign with the event map",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_021_q3",
+          "stem": "When will she arrive?",
+          "opts": [
+            "At 7:15",
+            "At noon",
+            "At 8:30",
+            "At 7:45"
+          ],
+          "ans": 3,
+          "expl": "She plans to arrive at 7:45.",
+          "evidence": "arrive at 7:45",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_022",
+      "section": "p3",
+      "level": 3,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "Labels for a factory shipment",
+      "passage": "Woman: The customer changed the destination on the equipment order. Man: Has the shipping label been printed? Woman: Not yet. The original label says Eastport, but the equipment must go to Lakeview. Man: I will update the address in the system and print a new label. Woman: Please also check the delivery date. The customer wants the crates there by the 18th. Man: The carrier can meet that date if we load the truck on Monday. Woman: I will tell the warehouse team to have everything ready.",
+      "items": [
+        {
+          "id": "p3_example_022_q1",
+          "stem": "What has the customer changed?",
+          "opts": [
+            "The shipment destination",
+            "The equipment design",
+            "The delivery company",
+            "The order quantity"
+          ],
+          "ans": 0,
+          "expl": "The equipment must now be sent to Lakeview instead of Eastport.",
+          "evidence": "changed the destination",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_022_q2",
+          "stem": "Which action will the man take?",
+          "opts": [
+            "Load the crates",
+            "Print a new shipping label",
+            "Contact the customer",
+            "Move the delivery date"
+          ],
+          "ans": 1,
+          "expl": "He will update the address and print a new label.",
+          "evidence": "print a new label",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_022_q3",
+          "stem": "When must the crates arrive?",
+          "opts": [
+            "By the 8th",
+            "By the 15th",
+            "By the 18th",
+            "By the end of the month"
+          ],
+          "ans": 2,
+          "expl": "The customer wants the crates delivered by the 18th.",
+          "evidence": "by the 18th",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_023",
+      "section": "p3",
+      "level": 3,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "Catering a café meeting",
+      "passage": "Man: I am ordering lunch for tomorrow's planning meeting. Woman: How many people should I prepare for? Man: Eight employees and three visitors. Two visitors have a nut allergy, so please avoid the usual dessert. Woman: We can provide fruit cups instead. Man: That sounds good. The meeting begins at eleven, but lunch will be served at twelve-thirty. Woman: I will deliver the meals to Conference Room A and label the allergy-safe boxes clearly.",
+      "items": [
+        {
+          "id": "p3_example_023_q1",
+          "stem": "What is the man ordering?",
+          "opts": [
+            "Office furniture",
+            "A travel ticket",
+            "Conference equipment",
+            "Lunch for a meeting"
+          ],
+          "ans": 3,
+          "expl": "He is ordering lunch for a planning meeting.",
+          "evidence": "ordering lunch for tomorrow's planning meeting",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_023_q2",
+          "stem": "Why should the usual dessert be avoided?",
+          "opts": [
+            "It contains nuts.",
+            "It is too expensive.",
+            "It arrives too late.",
+            "It is not available on Mondays."
+          ],
+          "ans": 0,
+          "expl": "Two visitors have a nut allergy.",
+          "evidence": "Two visitors have a nut allergy",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_023_q3",
+          "stem": "Where will the meals be delivered?",
+          "opts": [
+            "The café entrance",
+            "Conference Room A",
+            "The reception desk",
+            "The training kitchen"
+          ],
+          "ans": 1,
+          "expl": "The woman will deliver the meals to Conference Room A.",
+          "evidence": "deliver the meals to Conference Room A",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_024",
+      "section": "p3",
+      "level": 4,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "A school career fair",
+      "passage": "Woman: Have the companies confirmed their tables for Friday's career fair? Man: Most have, but the engineering firm needs an electrical outlet for its demonstration. Woman: I will move its table beside the wall outlet. Man: Thanks. The student registration list also needs updating because two classes will attend in the afternoon. Woman: I will print a second copy for the welcome desk. Man: Please place the company name cards on each table before the first students arrive. Woman: I will ask the volunteers to do that at eight.",
+      "items": [
+        {
+          "id": "p3_example_024_q1",
+          "stem": "What event are the speakers preparing for?",
+          "opts": [
+            "A school sports day",
+            "A science examination",
+            "A student career fair",
+            "A parent meeting"
+          ],
+          "ans": 2,
+          "expl": "They are preparing tables and materials for a career fair.",
+          "evidence": "Friday's career fair",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_024_q2",
+          "stem": "Why will one table be moved?",
+          "opts": [
+            "It needs more chairs.",
+            "It belongs to an afternoon class.",
+            "It is blocking the welcome desk.",
+            "It must be near an electrical outlet."
+          ],
+          "ans": 3,
+          "expl": "The engineering company needs an electrical outlet for a demonstration.",
+          "evidence": "needs an electrical outlet",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_024_q3",
+          "stem": "Who will place the company name cards?",
+          "opts": [
+            "The volunteers",
+            "The students",
+            "The engineering firm",
+            "The afternoon teachers"
+          ],
+          "ans": 0,
+          "expl": "The man asks the woman to have the volunteers place them.",
+          "evidence": "ask the volunteers to do that",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_025",
+      "section": "p3",
+      "level": 3,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "A hotel shuttle schedule",
+      "passage": "Man: The airport shuttle is running on a different schedule this weekend. Woman: Is that because of the road construction? Man: Yes. The hotel entrance road will be closed from Saturday morning until Sunday evening. Woman: Where should guests wait for the shuttle? Man: At the east parking lot, beside the bicycle rental desk. Woman: I will put a notice at reception and send a message to guests with airport reservations. Man: Good. The first shuttle will leave at 5:30 instead of 5:00.",
+      "items": [
+        {
+          "id": "p3_example_025_q1",
+          "stem": "Why is the shuttle schedule changing?",
+          "opts": [
+            "The hotel is changing owners.",
+            "Road construction will close an entrance.",
+            "The airport has moved terminals.",
+            "The bicycle desk is closed."
+          ],
+          "ans": 1,
+          "expl": "Road construction will close the hotel entrance road.",
+          "evidence": "road construction",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_025_q2",
+          "stem": "Where should guests wait?",
+          "opts": [
+            "At the hotel entrance",
+            "Near the airport ticket desk",
+            "At the east parking lot",
+            "Beside the restaurant"
+          ],
+          "ans": 2,
+          "expl": "Guests should wait at the east parking lot.",
+          "evidence": "At the east parking lot",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_025_q3",
+          "stem": "How will the woman inform travelers?",
+          "opts": [
+            "Repair the hotel road",
+            "Change the shuttle bus",
+            "Rent bicycles",
+            "Notify guests"
+          ],
+          "ans": 3,
+          "expl": "She will post a notice and message guests with reservations.",
+          "evidence": "send a message to guests",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_026",
+      "section": "p3",
+      "level": 3,
+      "set": "2",
+      "source": "original:exam-expansion-2026",
+      "title": "A museum membership renewal",
+      "passage": "Woman: I would like to renew my museum membership, but the online form keeps rejecting my card. Man: The payment system was updated this morning. You can renew at the desk while we test it. Woman: I also want to change my mailing address. Man: We can do that here, and your new membership card will be mailed within ten days. Woman: Excellent. Does the renewal include the summer lecture series? Man: Yes, but reservations for lectures open next Monday. Woman: I will return then to reserve a seat.",
+      "items": [
+        {
+          "id": "p3_example_026_q1",
+          "stem": "What problem does the woman have?",
+          "opts": [
+            "An online payment is being rejected.",
+            "Her membership has expired.",
+            "Her mailing address is missing.",
+            "A lecture was cancelled."
+          ],
+          "ans": 0,
+          "expl": "The online form is rejecting her card.",
+          "evidence": "online form keeps rejecting my card",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_026_q2",
+          "stem": "When will the new card arrive?",
+          "opts": [
+            "Within three days",
+            "Within ten days",
+            "Next Monday",
+            "At the end of summer"
+          ],
+          "ans": 1,
+          "expl": "The new membership card will be mailed within ten days.",
+          "evidence": "mailed within ten days",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_026_q3",
+          "stem": "What will the woman do next Monday?",
+          "opts": [
+            "Renew her card online",
+            "Attend a lecture",
+            "Reserve a lecture seat",
+            "Change the payment system"
+          ],
+          "ans": 2,
+          "expl": "She will return to reserve a seat in the lecture series.",
+          "evidence": "return then to reserve a seat",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_027",
+      "section": "p3",
+      "level": 4,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A dentist booking",
+      "passage": "Man: I need to schedule a cleaning for my daughter. Woman: We have openings on Tuesday morning and Thursday after school. Man: Thursday would be better. Does the dentist need her previous records? Woman: Yes, please ask her former clinic to send them before the appointment. Man: I will do that today. Woman: Also, arrive ten minutes early because this is her first visit here. Man: Thank you. I will bring her insurance card and arrive early.",
+      "items": [
+        {
+          "id": "p3_example_027_q1",
+          "stem": "What appointment does the man want?",
+          "opts": [
+            "A dental cleaning",
+            "An eye examination",
+            "A school interview",
+            "An insurance meeting"
+          ],
+          "ans": 0,
+          "expl": "He wants to schedule a cleaning for his daughter.",
+          "evidence": "schedule a cleaning",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_027_q2",
+          "stem": "When will the appointment probably take place?",
+          "opts": [
+            "Tuesday morning",
+            "Thursday after school",
+            "Friday before lunch",
+            "Saturday evening"
+          ],
+          "ans": 1,
+          "expl": "Thursday after school is better for him.",
+          "evidence": "Thursday would be better",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_027_q3",
+          "stem": "What should the man bring?",
+          "opts": [
+            "A school report",
+            "A former clinic bill",
+            "An insurance card",
+            "A new appointment form"
+          ],
+          "ans": 2,
+          "expl": "He says he will bring his daughter's insurance card.",
+          "evidence": "bring her insurance card",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_028",
+      "section": "p3",
+      "level": 3,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A design review meeting",
+      "passage": "Woman: I have reviewed the first design for the new website. Man: What do you think of the navigation menu? Woman: It is clear, but the labels are too small on a phone screen. Man: I can increase the font size. Should we keep the blue background? Woman: Yes, it matches the company's logo. Man: I will make the text change before our client meeting on Friday. Woman: Great. I will prepare two phone screenshots so the client can compare the old and new versions.",
+      "items": [
+        {
+          "id": "p3_example_028_q1",
+          "stem": "What are the speakers reviewing?",
+          "opts": [
+            "A phone contract",
+            "A company logo",
+            "A client invoice",
+            "A website design"
+          ],
+          "ans": 3,
+          "expl": "They are reviewing the first design for a website.",
+          "evidence": "first design for the new website",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_028_q2",
+          "stem": "What problem does the woman identify?",
+          "opts": [
+            "The navigation labels are too small.",
+            "The background color is wrong.",
+            "The logo is missing.",
+            "The screenshots are outdated."
+          ],
+          "ans": 0,
+          "expl": "She says the labels are too small on a phone screen.",
+          "evidence": "labels are too small on a phone screen",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_028_q3",
+          "stem": "What will the woman prepare?",
+          "opts": [
+            "A new menu",
+            "Two phone screenshots",
+            "A client invoice",
+            "A color chart"
+          ],
+          "ans": 1,
+          "expl": "She will prepare two screenshots for the client.",
+          "evidence": "prepare two phone screenshots",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_029",
+      "section": "p3",
+      "level": 3,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A train platform change",
+      "passage": "Man: Passengers for the 4:20 train should listen for an announcement. Woman: Has the departure time changed? Man: No, but the train will leave from Platform 6 instead of Platform 2. Woman: I am meeting my sister at Platform 2. Man: Ask her to walk through the main hall; the signs will point to Platform 6. Woman: I will text her now. Man: Good. The station staff will also put a notice beside the ticket machines.",
+      "items": [
+        {
+          "id": "p3_example_029_q1",
+          "stem": "Which detail about the train is different?",
+          "opts": [
+            "The train's departure time",
+            "The train's destination",
+            "The departure platform",
+            "The ticket price"
+          ],
+          "ans": 2,
+          "expl": "The train will leave from Platform 6 instead of Platform 2.",
+          "evidence": "leave from Platform 6",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_029_q2",
+          "stem": "Who is the woman meeting?",
+          "opts": [
+            "A station employee",
+            "A ticket agent",
+            "A train conductor",
+            "Her sister"
+          ],
+          "ans": 3,
+          "expl": "She says she is meeting her sister.",
+          "evidence": "meeting my sister",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_029_q3",
+          "stem": "What will the station staff do?",
+          "opts": [
+            "Put up a notice",
+            "Change the ticket machines",
+            "Delay the train",
+            "Close the main hall"
+          ],
+          "ans": 0,
+          "expl": "They will put a notice beside the ticket machines.",
+          "evidence": "put a notice beside the ticket machines",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_030",
+      "section": "p3",
+      "level": 4,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A customer invoice correction",
+      "passage": "Woman: The customer says the invoice lists the wrong quantity of chairs. Man: The order was for twenty, but the invoice shows twelve. Woman: I checked the warehouse record, and twenty chairs were shipped. Man: I will correct the invoice and send it again. Woman: Please include a note explaining that the amount due has not changed because the customer was billed for twenty. Man: I will add that note and copy you on the email. Woman: Thanks. I will call the customer after the corrected invoice is sent.",
+      "items": [
+        {
+          "id": "p3_example_030_q1",
+          "stem": "What error is on the invoice?",
+          "opts": [
+            "The delivery address is incomplete.",
+            "The chair quantity is incorrect.",
+            "The payment date is missing.",
+            "The customer name is misspelled."
+          ],
+          "ans": 1,
+          "expl": "The invoice lists twelve chairs instead of twenty.",
+          "evidence": "invoice shows twelve",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_030_q2",
+          "stem": "What will the man send again?",
+          "opts": [
+            "Ship eight more chairs",
+            "Call the warehouse",
+            "Correct and resend the invoice",
+            "Change the amount due"
+          ],
+          "ans": 2,
+          "expl": "He will correct the invoice and send it again.",
+          "evidence": "correct the invoice and send it again",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_030_q3",
+          "stem": "What will the woman do after the invoice is resent?",
+          "opts": [
+            "Update the warehouse record",
+            "Count the chairs",
+            "Approve a new order",
+            "Call the customer"
+          ],
+          "ans": 3,
+          "expl": "She will call the customer after the corrected invoice is sent.",
+          "evidence": "call the customer",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_031",
+      "section": "p3",
+      "level": 3,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A library author event",
+      "passage": "Man: The author speaking at the library tonight requested a table for signing books. Woman: We have one in the storage room, but it needs a tablecloth. Man: I can bring one from the events office. Woman: Please also check the microphone. The last speaker had trouble with it. Man: The technician will test it at five. Woman: Good. I will place the reserved-seat cards near the front row and ask the volunteers to guide visitors to the overflow room.",
+      "items": [
+        {
+          "id": "p3_example_031_q1",
+          "stem": "What will the author do?",
+          "opts": [
+            "Sign books",
+            "Teach a music class",
+            "Repair a microphone",
+            "Guide visitors"
+          ],
+          "ans": 0,
+          "expl": "The author requested a table for signing books.",
+          "evidence": "table for signing books",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_031_q2",
+          "stem": "What will the man bring?",
+          "opts": [
+            "Reserved-seat cards",
+            "A tablecloth",
+            "An extra microphone",
+            "A storage key"
+          ],
+          "ans": 1,
+          "expl": "He will bring a tablecloth from the events office.",
+          "evidence": "bring one from the events office",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_031_q3",
+          "stem": "What will the woman ask volunteers to do?",
+          "opts": [
+            "Test the microphone",
+            "Sell tablecloths",
+            "Guide visitors",
+            "Move the front row"
+          ],
+          "ans": 2,
+          "expl": "She will ask them to guide visitors to the overflow room.",
+          "evidence": "guide visitors to the overflow room",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_032",
+      "section": "p3",
+      "level": 3,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "Warehouse safety training",
+      "passage": "Woman: The safety trainer moved tomorrow's session to the afternoon. Man: What time should warehouse staff arrive? Woman: The session starts at 1:00 in the break room. Man: We normally load the afternoon truck then. Woman: The loading supervisor agreed to start that truck at 2:30 instead. Man: I will post the new training time by the entrance. Woman: Please also remind staff to wear their safety shoes. The trainer will not allow anyone onto the practice floor without them.",
+      "items": [
+        {
+          "id": "p3_example_032_q1",
+          "stem": "What part of the training schedule has changed?",
+          "opts": [
+            "The safety trainer's topic",
+            "The afternoon truck route",
+            "The warehouse location",
+            "The training time"
+          ],
+          "ans": 3,
+          "expl": "The safety training has moved to the afternoon.",
+          "evidence": "moved tomorrow's session to the afternoon",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_032_q2",
+          "stem": "What will happen to the afternoon truck?",
+          "opts": [
+            "It will be loaded at 2:30.",
+            "It will leave earlier.",
+            "It will be cancelled.",
+            "It will use the break room."
+          ],
+          "ans": 0,
+          "expl": "The loading supervisor agreed to start it at 2:30.",
+          "evidence": "start that truck at 2:30",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_032_q3",
+          "stem": "What should staff wear?",
+          "opts": [
+            "Work gloves only",
+            "Safety shoes",
+            "A training badge",
+            "A company jacket"
+          ],
+          "ans": 1,
+          "expl": "Staff must wear safety shoes on the practice floor.",
+          "evidence": "wear their safety shoes",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_033",
+      "section": "p3",
+      "level": 4,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "The office heating problem",
+      "passage": "Man: The west side of the office is still cold this morning. Woman: I called the building service desk. They found a problem with the thermostat and will send a technician after lunch. Man: Should we move the afternoon meeting? Woman: The small meeting room is warmer, but it only has six chairs. Man: Our team has five people, so that will work. Woman: I will reserve the room and tell everyone to bring their laptops. Man: I will put a sign on the west-side meeting room so no one waits there.",
+      "items": [
+        {
+          "id": "p3_example_033_q1",
+          "stem": "What issue does the man report?",
+          "opts": [
+            "The laptops need updates.",
+            "The meeting room has no tables.",
+            "The west office is too cold.",
+            "The service desk is closed."
+          ],
+          "ans": 2,
+          "expl": "He says that the west side of the office is cold.",
+          "evidence": "west side of the office is still cold",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_033_q2",
+          "stem": "When will the technician arrive?",
+          "opts": [
+            "Before breakfast",
+            "At noon",
+            "Tomorrow morning",
+            "After lunch"
+          ],
+          "ans": 3,
+          "expl": "The building service desk will send a technician after lunch.",
+          "evidence": "send a technician after lunch",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_033_q3",
+          "stem": "What arrangement will the woman make?",
+          "opts": [
+            "Reserve a warmer meeting room",
+            "Repair the thermostat",
+            "Buy six chairs",
+            "Move the west office"
+          ],
+          "ans": 0,
+          "expl": "She will reserve the small meeting room.",
+          "evidence": "reserve the room",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_034",
+      "section": "p3",
+      "level": 3,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A restaurant reservation",
+      "passage": "Woman: I am calling about our reservation for Saturday evening. Man: I have it here for six people at seven. Woman: One guest is now vegetarian. Can the restaurant provide a suitable main course? Man: Yes, the chef can prepare a vegetable pasta, but we need the request before Friday. Woman: Please add it to the reservation. Man: I will. Also, would you like to move to the quieter room? Woman: No, the main dining room is fine. We are bringing a small birthday cake.",
+      "items": [
+        {
+          "id": "p3_example_034_q1",
+          "stem": "What change does the woman request?",
+          "opts": [
+            "A different reservation date",
+            "A vegetarian meal",
+            "A larger dining room",
+            "A new birthday cake"
+          ],
+          "ans": 1,
+          "expl": "She asks the restaurant to provide a vegetarian main course.",
+          "evidence": "One guest is now vegetarian",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_034_q2",
+          "stem": "By when must the request be made?",
+          "opts": [
+            "At seven on Saturday",
+            "By Saturday at noon",
+            "Before Friday",
+            "After the meal"
+          ],
+          "ans": 2,
+          "expl": "The chef needs the request before Friday.",
+          "evidence": "before Friday",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_034_q3",
+          "stem": "What will the group bring?",
+          "opts": [
+            "A vegetable dish",
+            "Six menus",
+            "A quiet-room sign",
+            "A birthday cake"
+          ],
+          "ans": 3,
+          "expl": "They will bring a small birthday cake.",
+          "evidence": "bringing a small birthday cake",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_035",
+      "section": "p3",
+      "level": 3,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A market survey assignment",
+      "passage": "Man: Have you finished the customer survey for the farmers market? Woman: I collected responses from the morning shoppers, but we still need evening visitors. Man: The market closes at eight. Could you return at six? Woman: Yes, and I will use the shorter version of the questionnaire. Man: Good. Remember to ask each person how they heard about the market. Woman: I will record those answers separately. Man: Afterward, upload the spreadsheet to the shared folder before tomorrow's meeting.",
+      "items": [
+        {
+          "id": "p3_example_035_q1",
+          "stem": "What is incomplete?",
+          "opts": [
+            "The customer survey",
+            "The market schedule",
+            "The shared folder",
+            "The questionnaire design"
+          ],
+          "ans": 0,
+          "expl": "The survey still needs responses from evening visitors.",
+          "evidence": "we still need evening visitors",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_035_q2",
+          "stem": "What will the woman use?",
+          "opts": [
+            "A new spreadsheet",
+            "A shorter questionnaire",
+            "A market map",
+            "A price list"
+          ],
+          "ans": 1,
+          "expl": "She will use the shorter version of the questionnaire.",
+          "evidence": "shorter version of the questionnaire",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_035_q3",
+          "stem": "What should she do after the survey?",
+          "opts": [
+            "Close the market",
+            "Print more signs",
+            "Upload a spreadsheet",
+            "Call the morning shoppers"
+          ],
+          "ans": 2,
+          "expl": "She should upload the spreadsheet before the next day's meeting.",
+          "evidence": "upload the spreadsheet",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_036",
+      "section": "p3",
+      "level": 4,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A campus parking permit",
+      "passage": "Woman: I applied for a campus parking permit, but the office says my vehicle number is missing. Man: Did you enter the number from your registration document? Woman: I entered the license plate, not the vehicle identification number. Man: That is the number they need. You can update the application online. Woman: I will do that tonight. Man: Once it is corrected, the permit office will email you a pickup appointment. Woman: Thanks. I will bring the registration document when I collect the permit.",
+      "items": [
+        {
+          "id": "p3_example_036_q1",
+          "stem": "Why was the application returned?",
+          "opts": [
+            "A payment was late.",
+            "A pickup appointment expired.",
+            "The campus lot was full.",
+            "A vehicle number was missing."
+          ],
+          "ans": 3,
+          "expl": "The application was missing the required vehicle identification number.",
+          "evidence": "vehicle number is missing",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_036_q2",
+          "stem": "What did the woman enter by mistake?",
+          "opts": [
+            "A license plate number",
+            "A campus room number",
+            "An insurance code",
+            "A registration date"
+          ],
+          "ans": 0,
+          "expl": "She entered the license plate instead of the vehicle identification number.",
+          "evidence": "entered the license plate",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_036_q3",
+          "stem": "What will she bring to the pickup appointment?",
+          "opts": [
+            "A campus map",
+            "The registration document",
+            "A parking receipt",
+            "A new application form"
+          ],
+          "ans": 1,
+          "expl": "She will bring the vehicle registration document.",
+          "evidence": "bring the registration document",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_037",
+      "section": "p3",
+      "level": 3,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A charity donation pickup",
+      "passage": "Man: The charity can collect the donated computers on Wednesday morning. Woman: That is fine, but the loading dock is reserved for another delivery. Man: Could the charity use the side door? Woman: Yes, if the boxes are placed on the marked pallets. Man: I will move the computers there on Tuesday afternoon. Woman: Please remove the old inventory labels first. Man: I will do that and prepare a list of the serial numbers. Woman: Great. The charity driver said he would call when he is fifteen minutes away.",
+      "items": [
+        {
+          "id": "p3_example_037_q1",
+          "stem": "What will the charity collect?",
+          "opts": [
+            "Delivery pallets",
+            "Food donations",
+            "Office computers",
+            "Inventory labels"
+          ],
+          "ans": 2,
+          "expl": "The charity will collect donated computers.",
+          "evidence": "donated computers",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_037_q2",
+          "stem": "Why cannot the charity use the loading dock?",
+          "opts": [
+            "It is being painted.",
+            "The driver is late.",
+            "The pallets are missing.",
+            "It is reserved for another delivery."
+          ],
+          "ans": 3,
+          "expl": "The loading dock is reserved for another delivery.",
+          "evidence": "loading dock is reserved",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_037_q3",
+          "stem": "What will the man prepare?",
+          "opts": [
+            "A list of serial numbers",
+            "A new loading dock",
+            "A donation receipt",
+            "A driver schedule"
+          ],
+          "ans": 0,
+          "expl": "He will prepare a list of the computers' serial numbers.",
+          "evidence": "prepare a list of the serial numbers",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_038",
+      "section": "p3",
+      "level": 3,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "A travel reimbursement",
+      "passage": "Woman: I submitted my travel reimbursement, but accounting returned it. Man: Which receipt is missing? Woman: The train ticket is attached, but the hotel receipt is only in my email. Man: The policy requires a PDF from the hotel, not a screenshot. Woman: I will download the PDF and attach it today. Man: Also check that the project code is correct. Woman: It says Project 418, but the trip was for Project 481. Man: Then change that before resubmitting the claim.",
+      "items": [
+        {
+          "id": "p3_example_038_q1",
+          "stem": "Why was the reimbursement returned?",
+          "opts": [
+            "A project ended.",
+            "A required hotel receipt was missing.",
+            "The train ticket was too expensive.",
+            "Accounting changed offices."
+          ],
+          "ans": 1,
+          "expl": "Accounting needs the hotel receipt in the required format.",
+          "evidence": "hotel receipt is only in my email",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_038_q2",
+          "stem": "What format is required?",
+          "opts": [
+            "A printed ticket",
+            "A photograph",
+            "A PDF",
+            "A spreadsheet"
+          ],
+          "ans": 2,
+          "expl": "The policy requires a PDF from the hotel.",
+          "evidence": "requires a PDF",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_038_q3",
+          "stem": "What else should the woman correct?",
+          "opts": [
+            "The travel date",
+            "The hotel name",
+            "The train route",
+            "The project code"
+          ],
+          "ans": 3,
+          "expl": "She must change the incorrect project code before resubmitting.",
+          "evidence": "change that before resubmitting the claim",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "p3_example_039",
+      "section": "p3",
+      "level": 4,
+      "set": "3",
+      "source": "original:exam-expansion-2026",
+      "title": "Conference registration materials",
+      "passage": "Man: The conference badges arrived, but the attendee list has three spelling errors. Woman: I can correct the list before the badges are printed. Man: The printer needs the final file by four o'clock. Woman: I will ask the registration team to confirm the three names. Man: Good. The welcome packets also need the updated room map. Woman: I will replace the old map and put the packets in alphabetical order. Man: Please leave them in the supply room; the volunteers will carry them to the registration desk tomorrow morning.",
+      "items": [
+        {
+          "id": "p3_example_039_q1",
+          "stem": "What problem do the speakers identify?",
+          "opts": [
+            "Some names are misspelled.",
+            "Some badges are too large.",
+            "The room map is missing.",
+            "The volunteers are unavailable."
+          ],
+          "ans": 0,
+          "expl": "The attendee list contains three spelling errors.",
+          "evidence": "three spelling errors",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_039_q2",
+          "stem": "What will the woman replace?",
+          "opts": [
+            "The printer",
+            "The room map",
+            "The attendee list",
+            "The supply room"
+          ],
+          "ans": 1,
+          "expl": "She will replace the old room map in the welcome packets.",
+          "evidence": "replace the old map",
+          "section": "p3",
+          "qtype": "listen_p3"
+        },
+        {
+          "id": "p3_example_039_q3",
+          "stem": "Where should the packets be left?",
+          "opts": [
+            "At the hotel entrance",
+            "On the conference stage",
+            "In the supply room",
+            "At the airport desk"
+          ],
+          "ans": 2,
+          "expl": "The man asks her to leave them in the supply room.",
+          "evidence": "leave them in the supply room",
+          "section": "p3",
+          "qtype": "listen_p3"
+        }
+      ]
     }
   ]
 }

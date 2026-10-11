@@ -358,10 +358,17 @@ def main():
     p2, p2_locale = build_p2(read_authoring_p2())
     write_json(os.path.join(ROOT, "content", "en", "exams", "toeic_p2.json"), p2)
     write_json(os.path.join(ROOT, "content", "i18n", "vi", "exams", "toeic_p2.json"), p2_locale)
-    p3, p3_locale = build_p34(read_authoring_part("p3"), "p3")
+    # Part 3 and Part 4 are maintained by the complete-paper expansion builder.
+    # Keeping this hook here makes gen_content.py reproducible without reverting
+    # the three full listening practices to the original preview bank.
+    import build_p34_expansion
+    build_p34_expansion.main()
+    p3 = read_json("content", "en", "exams", "toeic_p3.json")
+    p3_locale = read_json("content", "i18n", "vi", "exams", "toeic_p3.json")
     write_json(os.path.join(ROOT, "content", "en", "exams", "toeic_p3.json"), p3)
     write_json(os.path.join(ROOT, "content", "i18n", "vi", "exams", "toeic_p3.json"), p3_locale)
-    p4, p4_locale = build_p34(read_authoring_part("p4"), "p4")
+    p4 = read_json("content", "en", "exams", "toeic_p4.json")
+    p4_locale = read_json("content", "i18n", "vi", "exams", "toeic_p4.json")
     write_json(os.path.join(ROOT, "content", "en", "exams", "toeic_p4.json"), p4)
     write_json(os.path.join(ROOT, "content", "i18n", "vi", "exams", "toeic_p4.json"), p4_locale)
     update_status({**locale, **p7_locale, **p1_locale, **p2_locale, **p3_locale, **p4_locale})

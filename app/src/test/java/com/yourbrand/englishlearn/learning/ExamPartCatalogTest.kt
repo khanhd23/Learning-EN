@@ -12,7 +12,8 @@ class ExamPartCatalogTest {
             format("toeic_p1_practice_1"), format("toeic_p1_practice_2"), format("toeic_p1_practice_3"),
             format("toeic_p1_practice_4"), format("toeic_p1_practice_5"),
             format("toeic_p2_practice_1"), format("toeic_p2_practice_2"), format("toeic_p2_practice_3"),
-            format("toeic_p3_examples"), format("toeic_p4_examples"),
+            format("toeic_p3_examples"), format("toeic_p3_practice_2"), format("toeic_p3_practice_3"),
+            format("toeic_p4_examples"), format("toeic_p4_practice_2"), format("toeic_p4_practice_3"),
             format("toeic_p5"), format("toeic_p6"),
             format("toeic_p7_practice_1"), format("toeic_p7_practice_2"), format("toeic_p7_practice_3"),
             format("toeic_reading_1"), format("toeic_reading_2"), format("toeic_reading_3"), format("toeic"),
@@ -21,7 +22,7 @@ class ExamPartCatalogTest {
         val parts = ExamPartCatalog.toeic(formats)
 
         assertEquals(listOf("p1", "p2", "p3", "p4", "p5", "p6", "p7", "reading_bank"), parts.map { it.key })
-        assertEquals(listOf(5, 3, 1, 1, 3, 3, 3, 1), parts.map { it.formats.size })
+        assertEquals(listOf(5, 3, 3, 3, 3, 3, 3, 1), parts.map { it.formats.size })
         assertEquals(ExamPartMode.LISTENING, parts.first().mode)
         assertTrue(parts.first { it.key == "p5" }.formats.none { it.id.startsWith("toeic_p7") })
         assertEquals(listOf("p5", "p5", "p5"), parts.first { it.key == "p5" }.sets.map { it.sectionId })
