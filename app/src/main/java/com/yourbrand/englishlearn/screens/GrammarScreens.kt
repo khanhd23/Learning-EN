@@ -14,15 +14,81 @@ import android.widget.TextView
 import com.yourbrand.englishlearn.MainActivity
 import com.yourbrand.englishlearn.R
 import com.yourbrand.englishlearn.content.GrammarPoint
+import com.yourbrand.englishlearn.core.GrammarRoadmap
 import com.yourbrand.englishlearn.ui.*
-import com.yourbrand.englishlearn.ui.views.Bar
 
 /** S08 — grammar ladder, 5 levels easy → hard. */
 class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
     override val tab = Tab.GRAMMAR
-    override val allowsBanner = true
+    // Grammar has one inline ad at the active roadmap position; do not add the global banner too.
+    override val allowsBanner = false
     override val petMode = PetMode.FLOATING
     private var filter = 0 // 0 all · 1 TOEIC · 2 tricky
+    private val inlineAdSlots = mutableListOf<FrameLayout>()
+    private var roadmapId: String? = null
+    private var roadmapRevealed = false
+
+    private fun destroyInlineAds() {
+        inlineAdSlots.forEach { services.ads.destroyBanner(it) }
+        inlineAdSlots.clear()
+    }
+
+    private fun inlineAd(): FrameLayout = FrameLayout(ctx).apply {
+        minimumHeight = ctx.dpi(50)
+        setPadding(0, ctx.dpi(4), 0, ctx.dpi(4))
+        tag = "grammar-inline-ad"
+        inlineAdSlots += this
+    }
+
+    private fun loadInlineAd(slot: FrameLayout) {
+        if (slot.tag == "grammar-inline-ad-loaded" || !services.ads.showsAds) return
+        slot.tag = "grammar-inline-ad-loaded"
+        services.ads.loadBanner(activity, slot) { }
+    }
+
+    private fun loadNearbyInlineAds() {
+        if (!hasView) return
+        val scrollLocation = IntArray(2)
+        scroll.getLocationOnScreen(scrollLocation)
+        val nearTop = scrollLocation[1] - scroll.height / 2
+        val nearBottom = scrollLocation[1] + scroll.height + scroll.height / 2
+        inlineAdSlots.forEach { slot ->
+            if (slot.tag == "grammar-inline-ad-loaded" || !slot.isShown) return@forEach
+            val location = IntArray(2)
+            slot.getLocationOnScreen(location)
+            val top = location[1]
+            val bottom = top + slot.height
+            if (bottom >= nearTop && top <= nearBottom) loadInlineAd(slot)
+        }
+    }
+
+    override fun onDestroy() {
+        destroyInlineAds()
+        super.onDestroy()
+    }
+
+    private fun visiblePoints(all: List<GrammarPoint>): List<GrammarPoint> = all.filter { gp -> when (filter) {
+        1 -> gp.exam
+        2 -> gp.mistakes.size >= 2 && gp.tags.any { it in setOf("tense", "conjunction", "agreement", "conditional", "gerund_infinitive", "pronoun") }
+        else -> true
+    } }
+
+    private fun currentRoadmapId(all: List<GrammarPoint>): String? {
+        val visible = visiblePoints(all)
+        val stars = visible.associate { it.id to services.store.stars(it.id) }
+        return GrammarRoadmap.currentId(visible.map { it.id }, stars, services.settings.grammarRoadmapId)
+    }
+
+    /** Re-selects the saved roadmap node when the learner taps the Grammar tab again. */
+    fun restoreLearningPosition() {
+        if (!hasView) return
+        val id = roadmapId ?: currentRoadmapId(services.content.grammar) ?: return
+        val target = body.findViewWithTag<View>("grammar-node:$id")
+        if (target != null) {
+            reveal(target)
+            target.post { loadNearbyInlineAds() }
+        }
+    }
 
     override fun headerActions(bar: LinearLayout) = HubHeader.build(this, bar, str(R.string.tab_grammar))
 
@@ -40,39 +106,100 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
 
     override fun build(body: LinearLayout) {
         val c = ctx
+        destroyInlineAds()
         val chips = Kit.hbox(c)
         listOf(R.string.g_all, R.string.g_toeic, R.string.g_tricky).forEachIndexed { i, label -> chips.addView(Kit.chip(c, str(label), filter == i) { filter = i; refresh() }) }
         body.addView(Kit.hscroll(c, chips).margins(c, top = 4))
 
         val all = services.content.grammar
-        val levelNames = listOf(R.string.gl_1, R.string.gl_2, R.string.gl_3, R.string.gl_4, R.string.gl_5)
+        roadmapId = currentRoadmapId(all)
+        roadmapRevealed = false
+        if (firstBuild) {
+            buildSmooth(body, c, all)
+            return
+        }
         (1..5).forEach { lvl ->
             val pts = all.filter { it.level == lvl }
-            val visible = pts.filter { gp -> when (filter) { 1 -> gp.exam; 2 -> gp.mistakes.size >= 2 && gp.tags.any { it in setOf("tense", "conjunction", "agreement", "conditional", "gerund_infinitive", "pronoun") }; else -> true } }
+            val visible = visiblePoints(pts)
             if (!services.content.isLevelAvailable(lvl)) {
-                body.addView(Kit.card(c, 14, 20, Hues.container(c, lvl * 2 - 2), null) {
-                    addView(Kit.text(c, str(R.string.level_n, lvl), R.style.Text_Title))
-                    addView(Kit.text(c, str(R.string.coming_soon), R.style.Text_Caption).margins(c, top = 4))
+                body.addView(Kit.card(c, 14, 8, Hues.container(c, lvl * 2 - 2), null) {
+                    addView(Kit.text(c, "${str(R.string.level_n, lvl)} · ${str(R.string.coming_soon)}", R.style.Text_Caption).apply {
+                        gravity = Gravity.CENTER
+                        layoutParams = lp(MATCH_PARENT, c.dpi(28))
+                    })
                 })
                 return@forEach
             }
             if (visible.isEmpty()) return@forEach
             val mastered = pts.count { services.store.stars(it.id) > 0 }
-            body.addView(Kit.card(c, 14, 20, Hues.container(c, lvl * 2 - 2), null) {
-                val r = Kit.hbox(c)
-                r.addView(Kit.text(c, str(R.string.level_n, lvl) + " · " + str(levelNames[lvl - 1]), R.style.Text_Title).apply { layoutParams = lp(0, WRAP_CONTENT, 1f) })
-                r.addView(Kit.text(c, "$mastered/${pts.size}", R.style.Text_BodyStrong, Hues.color(c, lvl * 2 - 2)))
-                addView(r)
-                addView(Bar(c).apply { color = Hues.color(c, lvl * 2 - 2); trackColor = c.col(R.color.surface); layoutParams = lp(h = c.dpi(6)).apply { topMargin = c.dpi(8) }; post { set(mastered / pts.size.toFloat()) } })
+            body.addView(Kit.card(c, 14, 8, Hues.container(c, lvl * 2 - 2), null) {
+                addView(Kit.text(c, "$mastered/${pts.size}", R.style.Text_BodyStrong, Hues.color(c, lvl * 2 - 2)).apply {
+                    gravity = Gravity.CENTER
+                    layoutParams = lp(MATCH_PARENT, c.dpi(28))
+                    contentDescription = str(R.string.level_n, lvl) + ", " + text
+                })
             })
             // Path of nodes (zig-zag) with connectors.
             visible.forEachIndexed { vi, gp ->
                 val i = all.indexOf(gp)
                 val state = stateOf(all, i)
                 if (vi > 0) body.addView(connector(state != NodeState.LOCKED, vi))
+                if (gp.id == roadmapId) body.addView(inlineAd().margins(c, top = 4, bottom = 4))
                 body.addView(node(gp, state, vi))
             }
         }
+        scroll.setOnScrollChangeListener { _, _, _, _, _ -> loadNearbyInlineAds() }
+        scroll.post {
+            restoreLearningPosition()
+            loadNearbyInlineAds()
+        }
+    }
+
+    /** First-open ladder rendering is split by level and by frame; refreshes stay synchronous. */
+    private fun buildSmooth(body: LinearLayout, c: android.content.Context, all: List<GrammarPoint>) {
+        val filteredIds = visiblePoints(all).map { it.id }.toSet()
+        fun next(levelIndex: Int) {
+            if (levelIndex >= 5 || !body.isAttachedToWindow) return
+            val lvl = levelIndex + 1
+            val pts = all.withIndex().filter { it.value.level == lvl }
+            val visible = pts.filter { (_, gp) -> gp.id in filteredIds }
+            if (!services.content.isLevelAvailable(lvl)) {
+                body.addView(Kit.card(c, 14, 8, Hues.container(c, lvl * 2 - 2), null) {
+                    addView(Kit.text(c, "${str(R.string.level_n, lvl)} - ${str(R.string.coming_soon)}", R.style.Text_Caption).apply {
+                        gravity = Gravity.CENTER
+                        layoutParams = lp(MATCH_PARENT, c.dpi(28))
+                    })
+                })
+                body.postOnAnimation { next(levelIndex + 1) }
+                return
+            }
+            if (visible.isEmpty()) { body.postOnAnimation { next(levelIndex + 1) }; return }
+            val mastered = pts.count { services.store.stars(it.value.id) > 0 }
+            body.addView(Kit.card(c, 14, 8, Hues.container(c, lvl * 2 - 2), null) {
+                addView(Kit.text(c, "$mastered/${pts.size}", R.style.Text_BodyStrong, Hues.color(c, lvl * 2 - 2)).apply {
+                    gravity = Gravity.CENTER
+                    layoutParams = lp(MATCH_PARENT, c.dpi(28))
+                    contentDescription = str(R.string.level_n, lvl) + ", " + text
+                })
+            })
+            fun addNode(i: Int) {
+                val (index, gp) = visible[i]
+                val state = stateOf(all, index)
+                if (i > 0) body.addView(connector(state != NodeState.LOCKED, i))
+                if (gp.id == roadmapId) body.addView(inlineAd().margins(c, top = 4, bottom = 4))
+                body.addView(node(gp, state, i))
+                if (gp.id == roadmapId && !roadmapRevealed) {
+                    roadmapRevealed = true
+                    body.post { restoreLearningPosition() }
+                }
+            }
+            addInFrames(body, visible.size, now = if (levelIndex == 0) 3 else 1,
+                startDelayMs = if (levelIndex == 0) AFTER_TRANSITION_MS else 0,
+                onDone = { body.postOnAnimation { next(levelIndex + 1) } }, add = ::addNode)
+        }
+        next(0)
+        scroll.setOnScrollChangeListener { _, _, _, _, _ -> loadNearbyInlineAds() }
+        scroll.post { loadNearbyInlineAds() }
     }
 
     private fun offsetFor(i: Int): Float = when (i % 4) { 0 -> 0f; 1 -> 0.18f; 2 -> 0f; else -> -0.18f }
@@ -96,7 +223,10 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
 
     private fun node(gp: GrammarPoint, state: NodeState, i: Int): View {
         val c = ctx
-        val frame = FrameLayout(c).apply { layoutParams = lp(h = WRAP_CONTENT) }
+        val frame = FrameLayout(c).apply {
+            layoutParams = lp(h = WRAP_CONTENT)
+            tag = "grammar-node:${gp.id}"
+        }
         val box = Kit.vbox(c) { gravity = Gravity.CENTER_HORIZONTAL; layoutParams = FrameLayout.LayoutParams(c.dpi(220), WRAP_CONTENT, Gravity.CENTER_HORIZONTAL) }
         val circle = FrameLayout(c).apply {
             val (fill, stroke) = when (state) {
@@ -127,9 +257,12 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
         circle.onTap {
             if (state == NodeState.LOCKED) {
                 Dialogs.confirm(c, str(R.string.locked_title), str(R.string.locked_msg), str(R.string.skip_test), str(R.string.cancel)) {
-                    activity.startSession(services.builder().skipTest(str(R.string.skip_test) + ": " + gp.title, gp.id))
+                    activity.startSessionAsync { services.builder().skipTest(str(R.string.skip_test) + ": " + gp.title, gp.id) }
                 }
-            } else activity.open(GrammarLessonScreen(activity, gp.id))
+            } else {
+                services.settings.grammarRoadmapId = gp.id
+                activity.open(GrammarLessonScreen(activity, gp.id))
+            }
         }
         if (state == NodeState.IN_PROGRESS && !c.reduceMotion) circle.postDelayed({ circle.pop(0.92f) }, 400)
         return frame
@@ -176,7 +309,7 @@ class GrammarLessonScreen(activity: MainActivity, private val gpId: String) : Sc
 
     private fun onNext() {
         if (step < 3) { step++; render(); return }
-        activity.startSession(services.builder().grammar(gp.title, gp.id))
+        activity.startSessionAsync { services.builder().grammar(gp.title, gp.id) }
     }
 
     private fun render() {

@@ -50,6 +50,8 @@ sealed class Exercise {
         val audioOptions: Boolean = false,
         /** Part 2-style listening: read this question before the answer sentences. */
         val audioPrompt: String? = null,
+        /** Optional illustration shown for TOEIC Part 1 listening scenes. */
+        val sharedImage: String? = null,
     ) : Exercise()
 
     /** A genuine exam open-cloze response: the learner types one word, with no choices shown. */

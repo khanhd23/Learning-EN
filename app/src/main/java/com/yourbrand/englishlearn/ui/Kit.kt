@@ -172,7 +172,9 @@ object Kit {
         tv.background = if (selected) ctx.rounded(blend(color, ctx.col(R.color.surface), 0.82f), 100f, color, 1.5f, ripple = true)
         else ctx.rounded(ctx.col(R.color.surface), 100f, ctx.col(R.color.outline), 1f, ripple = true)
         tv.setTextColor(if (selected) color else ctx.col(R.color.on_surface))
-        tv.typeface = Typeface.create("sans-serif-medium", if (selected) Typeface.BOLD else Typeface.NORMAL)
+        // MIUI may perform a synchronous font-file lookup from TextView.setTypeface.
+        // Fake bold keeps the selected-chip emphasis without blocking a navigation frame.
+        tv.paint.isFakeBoldText = selected
     }
 
     /** Wrapping row of chips. */
@@ -382,6 +384,15 @@ abstract class ScrollScreen(activity: MainActivity) : Screen(activity) {
     protected abstract fun build(body: LinearLayout)
 
     fun scrollToTop() = scroll.smoothScrollTo(0, 0)
+
+    /** Brings a restored learning position into view without jumping unrelated screens. */
+    protected fun reveal(view: View) {
+        view.post {
+            if (!view.isShown) return@post
+            val extra = ctx.dpi(72)
+            view.requestRectangleOnScreen(android.graphics.Rect(0, -extra, view.width, view.height + extra), false)
+        }
+    }
 
     /** Re-renders without the entrance animation (after a filter change). */
     fun refresh() {

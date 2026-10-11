@@ -1,3 +1,4 @@
+import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
 import java.util.Properties
 
@@ -154,6 +155,53 @@ val copyContent = tasks.register("generateContentAssets") {
                 source.copyRecursively(File(dst, "i18n/${source.name}"), overwrite = true)
             }
         }
+        // ApprovalGate used to parse the full English source set on the main thread at startup.
+        // Emit the exact release decision and approved IDs once during the build so runtime only
+        // reads this compact manifest; the source/status files remain the authoring authority.
+        val json = JsonSlurper()
+        val wordsRoot = json.parse(rootProject.file("content/en/words.json")) as Map<*, *>
+        val grammarRoot = json.parse(rootProject.file("content/en/grammar.json")) as Map<*, *>
+        val wordLevels = ((wordsRoot["words"] as? List<*>) ?: emptyList<Any?>()).mapNotNull { raw ->
+            val row = raw as? Map<*, *> ?: return@mapNotNull null
+            val first = (row["senses"] as? List<*>)?.firstOrNull() as? Map<*, *>
+            val id = first?.get("id") as? String ?: return@mapNotNull null
+            ((row["level"] as? Number)?.toInt() ?: 1) to id
+        }.groupBy({ it.first }, { it.second })
+        val grammarLevels = ((grammarRoot["points"] as? List<*>) ?: emptyList<Any?>()).mapNotNull { raw ->
+            val row = raw as? Map<*, *> ?: return@mapNotNull null
+            val id = row["id"] as? String ?: return@mapNotNull null
+            ((row["level"] as? Number)?.toInt() ?: 1) to id
+        }.groupBy({ it.first }, { it.second })
+        fun entryRows(meta: Map<*, *>?, kind: String): Map<*, *> =
+            (((meta?.get("entries") as? Map<*, *>)?.get(kind)) as? Map<*, *>) ?: emptyMap<Any?, Any?>()
+        fun approvedIds(meta: Map<*, *>?, kind: String): List<String> = entryRows(meta, kind)
+            .filter { (_, row) -> (row as? Map<*, *>)?.get("s") == "approved" }
+            .keys.mapNotNull { it as? String }.sorted()
+        val manifest = linkedMapOf<String, Any>()
+        localeDir.listFiles { f -> f.isDirectory && File(f, "status.json").isFile }?.forEach { source ->
+            val meta = runCatching { json.parse(File(source, "status.json")) as Map<*, *> }.getOrNull() ?: return@forEach
+            val complete = meta["status"] == "complete" && meta["todo"] != true
+            if (!complete && source.name != "vi") return@forEach
+            val approved = listOf("topics", "words", "confusables", "grammar", "questions", "passages", "pet", "tips", "sound", "stories", "exams")
+                .associateWith { kind -> mapOf("ids" to approvedIds(meta, kind)) }
+            val approvedWords = approved["words"]!!["ids"] as List<*>
+            val approvedGrammar = approved["grammar"]!!["ids"] as List<*>
+            val availableLevels = (1..5).filter { level ->
+                val words = wordLevels[level].orEmpty()
+                val grammar = grammarLevels[level].orEmpty()
+                words.isNotEmpty() && grammar.isNotEmpty() &&
+                    words.count { it in approvedWords } / words.size.toDouble() >= 0.95 &&
+                    grammar.count { it in approvedGrammar } / grammar.size.toDouble() >= 0.95
+            }
+            val ui = entryRows(meta, "ui")
+            val uiApproved = ui.isNotEmpty() && ui.values.all { (it as? Map<*, *>)?.get("s") == "approved" }
+            manifest[source.name] = mapOf(
+                "selectable" to (uiApproved && 1 in availableLevels),
+                "availableLevels" to availableLevels,
+                "approved" to approved,
+            )
+        }
+        File(dst, "locale_approvals.json").writeText(JsonOutput.prettyPrint(JsonOutput.toJson(manifest)), Charsets.UTF_8)
         rootProject.file("config/exam_formats.json").copyTo(File(dst, "exam_formats.json"), overwrite = true)
         rootProject.file("config/word_lists.json").copyTo(File(dst, "word_lists.json"), overwrite = true)
         rootProject.file("content/i18n/market_profiles.json").copyTo(File(dst, "market_profiles.json"), overwrite = true)

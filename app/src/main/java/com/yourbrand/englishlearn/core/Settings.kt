@@ -5,6 +5,21 @@ import androidx.appcompat.app.AppCompatDelegate
 import org.json.JSONArray
 import org.json.JSONObject
 
+/** Sustainable new-word targets for the three study-time plans. */
+object StudyTargetPolicy {
+    fun dailyNewWords(minutes: Int, preferredPerSession: Int): Int {
+        val planMinimum = when (minutes) {
+            15 -> 5
+            30 -> 8
+            else -> 12
+        }
+        return maxOf(planMinimum, preferredPerSession.coerceIn(3, 12))
+    }
+
+    fun weeklyNewWords(minutes: Int, preferredPerSession: Int): Int =
+        dailyNewWords(minutes, preferredPerSession) * 7
+}
+
 /** Small key-value settings (SharedPreferences; included in Auto Backup). */
 class Settings(context: Context) {
     companion object {
@@ -57,6 +72,10 @@ class Settings(context: Context) {
     val topicOpenedAt: Map<String, Long>
         get() = ui.getString("topicOpenedAt", null)?.let { s -> runCatching { JSONObject(s).let { o -> o.keys().asSequence().associateWith { o.getLong(it) } } }.getOrNull() } ?: emptyMap()
     fun topicOpened(id: String, at: Long) = ui.edit().putString("topicOpenedAt", JSONObject(topicOpenedAt + (id to at)).toString()).apply()
+    /** Last unfinished grammar node selected by the learner; UI-only and not part of backups. */
+    var grammarRoadmapId: String?
+        get() = ui.getString("grammarRoadmapId", null)
+        set(v) = ui.edit().putString("grammarRoadmapId", v).apply()
     var examDate: Long get() = p.getLong("examDate", 0L); set(v) = put("examDate", v)
     var sessionsDone: Int get() = int("sessionsDone", 0); set(v) = put("sessionsDone", v)
     var goodSessions: Int get() = int("goodSessions", 0); set(v) = put("goodSessions", v)
@@ -118,6 +137,10 @@ class Settings(context: Context) {
 
     /** Daily XP goal; stays within the pet's daily XP cap (200) so 60 minutes is reachable. */
     val dailyGoalXp: Int get() = when (dailyMinutes) { 15 -> 60; 30 -> 120; else -> 200 }
+    /** Recommended number of genuinely new words in the daily plan. */
+    val dailyNewWordsTarget: Int get() = StudyTargetPolicy.dailyNewWords(dailyMinutes, newWordsPerSession)
+    /** Weekly quest target derived from the selected daily plan; this is not a learning limit. */
+    val weeklyNewWordsTarget: Int get() = StudyTargetPolicy.weeklyNewWords(dailyMinutes, newWordsPerSession)
     val userLevel: Int get() = (level + 1).coerceIn(1, 5)
     val questionScale: Float get() = when (textSize) { 1 -> 1.25f; 2 -> 1.5f; else -> 1f }
 

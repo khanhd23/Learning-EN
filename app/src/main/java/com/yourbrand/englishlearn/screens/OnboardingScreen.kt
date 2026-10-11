@@ -231,7 +231,7 @@ class OnboardingScreen(activity: MainActivity) : Screen(activity) {
         s.savePet()
         activity.selectTab(Tab.TODAY)
         // Welcome session: 5 easy questions right away.
-        activity.startSession(s.builder().welcome(str(R.string.welcome_session)))
+        activity.startSessionAsync { s.builder().welcome(str(R.string.welcome_session)) }
     }
 }
 

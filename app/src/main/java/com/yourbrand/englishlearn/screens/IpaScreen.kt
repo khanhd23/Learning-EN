@@ -17,7 +17,7 @@ class IpaScreen(activity: MainActivity) : ScrollScreen(activity) {
         body.addView(Kit.text(c, str(R.string.tag_pronunciation), R.style.Text_Section).margins(c, top = 4))
         body.addView(Kit.text(c, str(R.string.sound_practice_desc), R.style.Text_Body).margins(c, top = 4))
         body.addView(Kit.primary(c, str(R.string.sound_practice), 14) {
-            activity.startSession(services.builder().sound(str(R.string.sound_practice)))
+            activity.startSessionAsync { services.builder().sound(str(R.string.sound_practice)) }
         })
 
         sound.focuses.forEach { focus -> focusCard(body, focus) }

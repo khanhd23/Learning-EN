@@ -289,13 +289,28 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         if (v != null && !ctx.reduceMotion) v.animate().scaleX(1.12f).scaleY(1.12f).setDuration(140).withEndAction { v.animate().scaleX(1f).scaleY(1f).setDuration(160).start() }.start()
     }
 
+    private fun toeicSceneImage(resourceName: String): ImageView? {
+        val id = ctx.resources.getIdentifier(resourceName, "drawable", ctx.packageName)
+        if (id == 0) return null
+        return ImageView(ctx).apply {
+            setImageResource(id)
+            contentDescription = str(R.string.ins_picture_word)
+            scaleType = ImageView.ScaleType.FIT_CENTER
+            layoutParams = LinearLayout.LayoutParams(MATCH_PARENT, ctx.dpi(220)).apply {
+                bottomMargin = ctx.dpi(8)
+            }
+        }
+    }
+
     // -- Choice (E01/E02/E09/E11/E12/E14 + passages + pronunciation) --
 
     private fun renderChoice(ex: Exercise.Choice) {
         val c = ctx
         if (ex.sharedPassage != null) {
             content.addView(Kit.card(c, 14, 10, c.col(R.color.surface_variant), null) {
-                addView(Kit.text(c, (ex.sharedPassageTitle?.let { "$it\n\n" } ?: "") + ex.sharedPassage, R.style.Text_Body))
+                val image = ex.sharedImage?.let(::toeicSceneImage)
+                if (image != null) addView(image)
+                else addView(Kit.text(c, (ex.sharedPassageTitle?.let { "$it\n\n" } ?: "") + ex.sharedPassage, R.style.Text_Body))
             })
         }
         content.addView(instruction(ex.instruction))
@@ -1104,7 +1119,9 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         val bottom = Kit.hbox(c).margins(c, top = 10)
         if (tags.isNotEmpty()) {
             val tagRow = Kit.flow(c).apply { layoutParams = lp(0, WRAP_CONTENT, 1f) }
-            tags.forEach { t -> tagRow.addView(Kit.chip(c, TagNames.label(c, t), false) { activity.startSession(services.builder().mistakes(TagNames.label(c, t), t).takeIf { it.exercises.size >= 3 } ?: services.builder().weak(str(R.string.practice_weak), System.currentTimeMillis())) }.apply { textSize = 12f; minHeight = c.dpi(32) }) }
+            tags.forEach { t -> tagRow.addView(Kit.chip(c, TagNames.label(c, t), false) {
+                activity.startSessionAsync { services.builder().mistakes(TagNames.label(c, t), t).let { if (it.exercises.size >= 3) it else services.builder().weak(str(R.string.practice_weak), System.currentTimeMillis()) } }
+            }.apply { textSize = 12f; minHeight = c.dpi(32) }) }
             bottom.addView(tagRow)
         } else bottom.addView(View(c).apply { layoutParams = lp(0, 1, 1f) })
         val saved = services.store.item(ex.key)?.saved == true
@@ -1170,7 +1187,10 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             services.settings.weeklyDailyChallenges++
             services.pet.state.coins += 10
             services.content.petLines["Q_DAILY_DONE"]?.randomOrNull()?.let { activity.petView.say(it.replace("{name}", services.pet.state.name), false) }
-            services.claimWeeklyRewards(now).forEach { id -> PetItems.byId[id]?.let { activity.toast(str(R.string.quest_reward, str(it.nameRes))) } }
+            services.claimWeeklyRewards(now).let { reward ->
+                reward.itemIds.forEach { id -> PetItems.byId[id]?.let { activity.toast(str(R.string.quest_reward, str(it.nameRes))) } }
+                if (reward.xp > 0) activity.toast(str(R.string.quest_xp_reward, reward.xp))
+            }
         }
         // Weekly goal → freeze token
         if (services.streak() >= 7) {
@@ -1198,7 +1218,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
             org.json.JSONObject().put("xp", totalXp).put("combo", bestCombo))
         activity.onSessionDone()
         val result = ResultScreen(activity, session, answers, totalXp, accuracy, seconds, bestCombo)
-        services.ads.onSessionFinished(activity, lastWrong, fromMock = false, fromPetHome = session.kind == SessionKind.MEAL) {
+        services.ads.onSessionFinished(activity, lastWrong, fromMock = false, fromPetHome = session.kind == SessionKind.MEAL, questionCount = firstTry.size) {
             activity.navigator.replace(result)
         }
     }

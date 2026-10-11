@@ -45,6 +45,7 @@ object AdConfig {
 class AdsManager(private val app: Application) {
     private val prefs = app.getSharedPreferences("ads_v1", Context.MODE_PRIVATE)
     val policy = AdPolicy(readState())
+    val rewardedPolicy = RewardedAdPolicy(readRewardedState())
     private val consentInfo: ConsentInformation by lazy { UserMessagingPlatform.getConsentInformation(app) }
     private val main = Handler(Looper.getMainLooper())
     private val initStarted = AtomicBoolean(false)
@@ -136,8 +137,8 @@ class AdsManager(private val app: Application) {
     }
 
     /** Called when a session ends, before its result screen. [then] always runs exactly once. */
-    fun onSessionFinished(activity: Activity, lastAnswerWrong: Boolean, fromMock: Boolean, fromPetHome: Boolean, then: () -> Unit) {
-        val allowed = showsAds && policy.onSessionFinished(lastAnswerWrong, fromMock, fromPetHome)
+    fun onSessionFinished(activity: Activity, lastAnswerWrong: Boolean, fromMock: Boolean, fromPetHome: Boolean, questionCount: Int = 0, then: () -> Unit) {
+        val allowed = showsAds && policy.onSessionFinished(lastAnswerWrong, fromMock, fromPetHome, questionCount)
         save()
         val ad = interstitial
         if (!allowed || ad == null || !isInitialized) { then(); preloadInterstitial(); return }
@@ -158,6 +159,7 @@ class AdsManager(private val app: Application) {
     private var rewardedLoading = false
     private var rewardedFailures = 0
     val rewardedReady: Boolean get() = rewarded != null
+    val rewardedAllowed: Boolean get() = showsAds && rewardedPolicy.canShow()
 
     fun preloadRewarded(onReady: (() -> Unit)? = null) {
         if (!showsAds) return
@@ -172,12 +174,13 @@ class AdsManager(private val app: Application) {
         }
     }
 
-    fun showRewarded(activity: Activity, onRewarded: () -> Unit, onClosed: () -> Unit = {}) {
-        val ad = rewarded ?: run { onClosed(); return }
+    fun showRewarded(activity: Activity, onRewarded: () -> Unit, onClosed: () -> Unit = {}): Boolean {
+        if (!rewardedPolicy.canShow()) { onClosed(); return false }
+        val ad = rewarded ?: run { onClosed(); return false }
         rewarded = null
         var earned = false
         ad.fullScreenContentCallback = object : FullScreenContentCallback() {
-            override fun onAdShowedFullScreenContent() { isShowingFullScreen = true }
+            override fun onAdShowedFullScreenContent() { isShowingFullScreen = true; rewardedPolicy.onShown(); saveRewardedState() }
             override fun onAdDismissedFullScreenContent() {
                 isShowingFullScreen = false
                 if (earned) onRewarded()
@@ -187,18 +190,35 @@ class AdsManager(private val app: Application) {
             override fun onAdFailedToShowFullScreenContent(error: AdError) { isShowingFullScreen = false; onClosed() }
         }
         ad.show(activity) { earned = true }
+        return true
     }
 
     // ---- persistence --------------------------------------------------------------------------
 
     private fun readState(): AdState = runCatching {
         val o = JSONObject(prefs.getString("s", "{}").orEmpty())
-        AdState(o.optInt("sessions"), o.optLong("lastAt"), o.optLong("day", -1), o.optInt("dayCount"))
+        AdState(
+            sessionsFinished = o.optInt("sessions"),
+            lastInterstitialAt = o.optLong("lastAt"),
+            dayKey = o.optLong("day", -1),
+            dayCount = o.optInt("dayCount"),
+            shortSessionsSinceAd = o.optInt("shortSessions", 0),
+        )
     }.getOrElse { AdState() }
+
+    private fun readRewardedState(): RewardedAdState = runCatching {
+        val o = JSONObject(prefs.getString("rewarded", "{}").orEmpty())
+        RewardedAdState(o.optLong("day", -1), o.optInt("count"), o.optLong("lastAt"))
+    }.getOrElse { RewardedAdState() }
 
     private fun save() {
         val s = policy.state
         prefs.edit().putString("s", JSONObject().put("sessions", s.sessionsFinished).put("lastAt", s.lastInterstitialAt)
-            .put("day", s.dayKey).put("dayCount", s.dayCount).toString()).apply()
+            .put("day", s.dayKey).put("dayCount", s.dayCount).put("shortSessions", s.shortSessionsSinceAd).toString()).apply()
+    }
+
+    private fun saveRewardedState() {
+        val s = rewardedPolicy.state
+        prefs.edit().putString("rewarded", JSONObject().put("day", s.dayKey).put("count", s.dayCount).put("lastAt", s.lastShownAt).toString()).apply()
     }
 }

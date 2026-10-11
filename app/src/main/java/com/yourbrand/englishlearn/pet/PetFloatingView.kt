@@ -155,6 +155,7 @@ class PetFloatingView(context: Context, private val onOpen: () -> Unit, private 
         val slop = ViewConfiguration.get(context).scaledTouchSlop
         var downX = 0f; var downY = 0f; var startX = 0f; var startY = 0f
         var dragging = false; var moved = false
+        var dragHintShown = false
         val longPress = Runnable {
             dragging = true
             disc.haptic(android.view.HapticFeedbackConstants.LONG_PRESS)
@@ -165,13 +166,19 @@ class PetFloatingView(context: Context, private val onOpen: () -> Unit, private 
             when (e.actionMasked) {
                 MotionEvent.ACTION_DOWN -> {
                     downX = e.rawX; downY = e.rawY; startX = v.x; startY = v.y
-                    dragging = false; moved = false
+                    dragging = false; moved = false; dragHintShown = false
                     v.postDelayed(longPress, 350)
                     true
                 }
                 MotionEvent.ACTION_MOVE -> {
                     val dx = e.rawX - downX; val dy = e.rawY - downY
-                    if (!dragging && hypot(dx, dy) > slop) v.removeCallbacks(longPress)
+                    if (!dragging && hypot(dx, dy) > slop) {
+                        v.removeCallbacks(longPress)
+                        if (!dragHintShown) {
+                            dragHintShown = true
+                            say(context.getString(R.string.pet_drag_hint), iconOnly = false)
+                        }
+                    }
                     if (dragging) {
                         if (hypot(dx, dy) > slop) moved = true
                         v.x = (startX + dx).coerceIn(bounds.left.toFloat(), (bounds.right - sizePx).toFloat())

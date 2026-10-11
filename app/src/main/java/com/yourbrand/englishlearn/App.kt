@@ -3,6 +3,7 @@ package com.yourbrand.englishlearn
 import android.app.Application
 import android.content.Context
 import android.os.StrictMode
+import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatDelegate
 import com.yourbrand.englishlearn.ads.AdsManager
 import com.yourbrand.englishlearn.content.Content
@@ -30,6 +31,8 @@ import kotlin.concurrent.thread
 
 /** Manual service locator (no DI framework). */
 class Services(private val app: Application) {
+    data class WeeklyRewards(val itemIds: List<String>, val xp: Int)
+
     val settings = Settings(app)
     val contentRepo = ContentRepository(app)
     val contentDb = ContentDb(app)
@@ -39,7 +42,22 @@ class Services(private val app: Application) {
     val tts by lazy { Tts(app) { settings.slowTts } }
     val bubbles = BubbleScheduler(LearningStore::dayKey)
 
-    val content: Content get() = contentRepo.get(settings.contentLocale)
+    @Volatile private var contentReadyLocale: String? = null
+    val contentReady: Boolean get() = contentReadyLocale == settings.contentLocale
+    val content: Content
+        get() {
+            val locale = settings.contentLocale
+            return contentRepo.get(locale).also { contentReadyLocale = locale }
+        }
+
+    /** Parse the active content pack away from the first Activity traversal. */
+    fun prewarmContent() {
+        val locale = settings.contentLocale
+        thread(name = "content-prewarm", priority = Thread.NORM_PRIORITY - 1) {
+            runCatching { contentRepo.get(locale) }
+                .onSuccess { if (settings.contentLocale == locale) contentReadyLocale = locale }
+        }
+    }
 
     private val petPrefs = app.getSharedPreferences("pet_v1", Context.MODE_PRIVATE).also { com.yourbrand.englishlearn.core.DataRevision.watch(it) }
     val pet: PetEngine by lazy {
@@ -50,7 +68,8 @@ class Services(private val app: Application) {
     private fun petConfig(): PetConfig = runCatching {
         val o = JSONObject(app.assets.open("content/app_config.json").bufferedReader().use { it.readText() }).getJSONObject("pet")
         val costs = o.getJSONArray("stageCost").let { a -> List(a.length()) { a.getInt(it) } }
-        PetConfig(costs, o.optInt("dailyXpCap", 200), o.optInt("graceHours", 24), o.optInt("dailyDecayPercentOfStage", 15), o.optInt("mealHungerDrop", 40))
+        val weeklyXp = o.optJSONArray("weeklyQuestXp")?.let { a -> List(a.length()) { a.getInt(it) } } ?: PetConfig().weeklyQuestXp
+        PetConfig(costs, o.optInt("dailyXpCap", 200), o.optInt("graceHours", 24), o.optInt("dailyDecayPercentOfStage", 15), o.optInt("mealHungerDrop", 40), weeklyXp)
     }.getOrElse { PetConfig() }
 
     fun savePet() { petPrefs.edit().putString("state", pet.state.toJson().toString()).apply() }
@@ -91,12 +110,13 @@ class Services(private val app: Application) {
         settings.weeklyStories++
     }
 
-    /** Pays each completed weekly quest once. Returns newly awarded item ids. */
-    fun claimWeeklyRewards(now: Long = System.currentTimeMillis()): List<String> {
+    /** Pays each completed weekly quest once with a bonus that does not consume today's goal. */
+    fun claimWeeklyRewards(now: Long = System.currentTimeMillis()): WeeklyRewards {
         ensureWeekly(now)
         val rewards = ArrayList<String>()
+        var bonusXp = 0
         val counts = listOf(
-            settings.weeklyNewWords to 20,
+            settings.weeklyNewWords to settings.weeklyNewWordsTarget,
             settings.weeklyDailyChallenges to 3,
             settings.weeklySpeakingDays.size to 2,
             settings.weeklyStories to 2,
@@ -104,13 +124,15 @@ class Services(private val app: Application) {
         counts.forEachIndexed { bit, pair ->
             if (pair.first >= pair.second && settings.weeklyPaidMask and (1 shl bit) == 0) {
                 settings.weeklyPaidMask = settings.weeklyPaidMask or (1 shl bit)
+                bonusXp += pet.config.weeklyQuestXp.getOrElse(bit) { 0 }
                 val item = PetItems.all.filter { it.id !in pet.state.owned }.minByOrNull { it.price }
                 if (item != null) { pet.state.owned += item.id; rewards += item.id }
                 else pet.state.coins += 10
             }
         }
-        if (rewards.isNotEmpty()) savePet()
-        return rewards
+        if (bonusXp > 0) pet.addBonusXp(bonusXp, now)
+        if (rewards.isNotEmpty() || bonusXp > 0) savePet()
+        return WeeklyRewards(rewards, bonusXp)
     }
 
     /** Consecutive days (ending today or yesterday) with at least one completed session. */
@@ -203,7 +225,23 @@ class EnglishApp : Application() {
                     .build()
             )
         }
+        // Android 14/MIUI can perform the first SharedPreferences directory check for
+        // hundreds of milliseconds. Do that while the launch/splash window is still up so
+        // MainActivity never pays the cost during its first traversal.
+        thread(name = "prefs-prewarm", priority = Thread.MIN_PRIORITY) {
+            getSharedPreferences("settings_v1", Context.MODE_PRIVATE)
+            getSharedPreferences("ui_state_v1", Context.MODE_PRIVATE)
+            getSharedPreferences("pet_v1", Context.MODE_PRIVATE)
+            getSharedPreferences("ads_v1", Context.MODE_PRIVATE)
+            getSharedPreferences("ach", Context.MODE_PRIVATE)
+        }
         services = Services(this)
+        // Some MIUI builds synchronously resolve sans-serif-medium from disk on the first
+        // styled TextView. Warm the shared typefaces off the UI thread while content prewarms.
+        thread(name = "font-prewarm", priority = Thread.MIN_PRIORITY) {
+            Typeface.create("sans-serif", Typeface.NORMAL)
+            Typeface.create("sans-serif", Typeface.BOLD)
+        }
         val selectable = services.contentRepo.selectableLocales()
         val appLocaleTag = AppCompatDelegate.getApplicationLocales().let { locales ->
             if (locales.isEmpty) "" else locales[0]?.toLanguageTag().orEmpty()
@@ -218,11 +256,11 @@ class EnglishApp : Application() {
         }
         AppLocale.apply(services.settings.contentLocale)
         AppCompatDelegate.setDefaultNightMode(services.settings.nightMode)
-        // Parse content + load learning state while the first frame is drawn.
-        thread(name = "prewarm", priority = Thread.NORM_PRIORITY - 1) {
-            services.content
-            services.store.load()
-        }
+        // These are warmups only. Blocking the main thread here makes a low-end device wait for
+        // disk I/O and the multi-megabyte content parser before it can draw the first frame.
+        thread(name = "learning-prewarm", priority = Thread.MIN_PRIORITY) { services.store.load() }
+        thread(name = "pet-prewarm", priority = Thread.MIN_PRIORITY) { services.pet }
+        services.prewarmContent()
     }
 }
 

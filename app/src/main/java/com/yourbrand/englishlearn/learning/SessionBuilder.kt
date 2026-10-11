@@ -35,8 +35,8 @@ class SessionBuilder(
 ) {
     private val factory = ExerciseFactory(content, random)
 
-    fun exerciseFor(key: String): Exercise? = when {
-        key.startsWith("w:") -> content.wordById[key.removePrefix("w:")]?.let { factory.forWord(it, state(key)) }
+    fun exerciseFor(key: String, wordPool: List<Word> = content.lessonWords): Exercise? = when {
+        key.startsWith("w:") -> content.wordById[key.removePrefix("w:")]?.let { factory.forWord(it, state(key), wordPool) }
         key.startsWith("q:") -> content.questionById[key.removePrefix("q:")]?.let { factory.question(it) }
         key.startsWith("d:") -> content.sound.dictation.firstOrNull { it.id == key.removePrefix("d:") }?.let { factory.dictation(it) }
         key.startsWith("mp:") -> content.sound.pairs.firstOrNull { "mp:${it.id}" == key.substringBeforeLast(':') }?.let { factory.minimalPair(it) }
@@ -59,19 +59,28 @@ class SessionBuilder(
     private fun weakQuestionKeys(limit: Int, exclude: Set<String>): List<String> {
         val weak = weakTags().take(3).toSet()
         if (weak.isEmpty()) return emptyList()
-        return content.questions.filter { q -> q.tags.any { it in weak } && q.key !in exclude && q.type != "E05" }
-            .sortedWith(compareByDescending<Question> { state(it.key)?.wrongRate ?: 0f }.thenBy { state(it.key)?.due ?: 0L })
-            .take(limit * 2).shuffled(random).take(limit).map { it.key }
+        return content.questions.asSequence()
+            .filter { q -> q.tags.any { it in weak } && q.key !in exclude && q.type != "E05" }
+            .map { q -> q to state(q.key) }
+            .sortedWith(compareByDescending<Pair<Question, ItemState?>> { it.second?.wrongRate ?: 0f }
+                .thenBy { it.second?.due ?: 0L })
+            .take(limit * 2).shuffled(random).take(limit).map { it.first.key }.toList()
     }
 
     /** New words, preferring topics that match the learner's goals and their level. */
     fun newWords(limit: Int, preferredTopics: List<String>, userLevel: Int, exclude: Set<String> = emptySet()): List<Word> {
-        val fresh = content.lessonWords.filter { state(it.key)?.isNew != false && it.key !in exclude }
-        val ranked = fresh.sortedBy { w ->
-            val topicScore = if (preferredTopics.isEmpty() || w.topics.any { it in preferredTopics }) 0 else 3
-            topicScore + kotlin.math.abs(w.level - userLevel) + random.nextDouble()
+        if (limit <= 0) return emptyList()
+        val excludeIds = exclude.mapTo(HashSet()) { it.removePrefix("w:") }
+        val preferred = sampleWords(content.lessonWords, limit, excludeIds) { word ->
+            state(word.key)?.isNew != false &&
+                word.level <= userLevel + 1 &&
+                (preferredTopics.isEmpty() || word.topics.any { it in preferredTopics })
         }
-        return ranked.take(limit)
+        val used = HashSet<String>(excludeIds).apply { addAll(preferred.map { it.id }) }
+        val fallback = sampleWords(content.lessonWords, limit - preferred.size, used) { word ->
+            state(word.key)?.isNew != false && word.level <= userLevel + 1
+        }
+        return (preferred + fallback).take(limit)
     }
 
     /** "Học 5 phút" — 60% due · 25% weak · 15% new. */
@@ -81,7 +90,9 @@ class SessionBuilder(
         val taken = (due + weak).toMutableSet()
         val newCount = (n - taken.size).coerceAtLeast((n * 0.15).toInt())
         val newWords = newWords(newCount, preferredTopics, userLevel, taken)
-        val ex = (due + weak).mapNotNull { exerciseFor(it) } + newWords.map { factory.forWord(it, null) } +
+        val dueWords = (due + weak).mapNotNull { key -> content.wordById[key.removePrefix("w:")] }
+        val wordPool = (dueWords + newWords + speedWords(userLevel, 40)).distinctBy { it.id }
+        val ex = (due + weak).mapNotNull { exerciseFor(it, wordPool) } + newWords.map { factory.forWord(it, null, wordPool) } +
             grammarFill(n - due.size - weak.size - newWords.size, userLevel)
         return Session(SessionKind.QUICK, title, mix(ex.take(n)))
     }
@@ -141,17 +152,27 @@ class SessionBuilder(
     fun words(kind: SessionKind, title: String, words: List<Word>, mode: VocabMode, n: Int = 10, newFirst: Boolean = false): Session {
         val now = System.currentTimeMillis()
         val pick = if (newFirst) {
-            val fresh = words.filter { state(it.key)?.isNew != false }.shuffled(random)
-            val due = words.filter { candidate ->
+            val fresh = sampleWords(words, n) { state(it.key)?.isNew != false }
+            val freshIds = fresh.mapTo(HashSet()) { it.id }
+            val due = sampleWords(words, n - fresh.size, freshIds) { candidate ->
                 val item = state(candidate.key)
                 item != null && !item.isNew && Scheduler.isDue(item, now)
-            }.sortedBy { state(it.key)?.due ?: Long.MAX_VALUE }
-            val rest = words.filter { it !in fresh && it !in due }.shuffled(random)
+            }
+            val used = HashSet<String>(freshIds).apply { addAll(due.map { it.id }) }
+            val rest = sampleWords(words, n - fresh.size - due.size, used) { true }
             (fresh + due + rest).take(n)
         } else {
-            words.sortedWith(compareBy<Word> { (state(it.key)?.box ?: 0) >= Scheduler.MASTER_BOX }
-                .thenBy { if (state(it.key)?.let { s -> Scheduler.isDue(s, now) } == true) 0 else 1 }
-                .thenBy { random.nextInt(1000) }).take(n)
+            // Never put a random value inside a comparator: it violates the comparator contract
+            // on large lists and can crash TimSort. Bounded sampling also avoids sorting 100k words.
+            val due = sampleWords(words, n, predicate = { state(it.key)?.let { s -> Scheduler.isDue(s, now) } == true })
+            val used = due.mapTo(HashSet()) { it.id }
+            val learning = sampleWords(words, n - due.size, used) { candidate ->
+                val s = state(candidate.key)
+                s != null && !s.mastered && !Scheduler.isDue(s, now)
+            }
+            val usedAll = HashSet(used).apply { addAll(learning.map { it.id }) }
+            val rest = sampleWords(words, n - due.size - learning.size, usedAll) { true }
+            (due + learning + rest).take(n)
         }
         val ex: List<Exercise> = when (mode) {
             VocabMode.FLASHCARD -> pick.map { factory.flashcard(it) }
@@ -160,10 +181,11 @@ class SessionBuilder(
             VocabMode.SPELLING -> pick.mapNotNull { factory.spelling(it) }.ifEmpty { pick.map { factory.reverse(it) } }
             VocabMode.MATCHING -> pick.chunked(4).mapNotNull { factory.matching(it) }.ifEmpty { pick.map { factory.meaning(it) } }
             VocabMode.MIXED -> {
-                val list = pick.map { factory.forWord(it, state(it.key)) }.toMutableList()
+                val distractorPool = if (newFirst) pick else content.lessonWords
+                val list = pick.map { factory.forWord(it, state(it.key), distractorPool) }.toMutableList()
                 pick.filter { it.image != null }.shuffled(random).take(2).forEach { w ->
                     if (random.nextBoolean()) factory.picture(w, Kind.E16)?.let { list.add(it) }
-                    else factory.pictureMatch(w)?.let { list.add(it) }
+                    else factory.pictureMatch(w, distractorPool)?.let { list.add(it) }
                 }
                 if (pick.size >= 4) factory.matching(pick.shuffled(random).take(4))?.let { list.add(list.size / 2, it) }
                 list
@@ -171,6 +193,28 @@ class SessionBuilder(
         }
         val result = if (mode == VocabMode.MIXED) mix(ex) else ex.toMutableList()
         return Session(kind, title, if (kind == SessionKind.TOPIC) addOptionalSound(result) else result)
+    }
+
+    /** Bounded random selection; avoids sorting or shuffling a potentially huge topic/list. */
+    private fun sampleWords(source: List<Word>, limit: Int, exclude: Set<String> = emptySet(), predicate: (Word) -> Boolean): List<Word> {
+        if (limit <= 0 || source.isEmpty()) return emptyList()
+        val out = ArrayList<Word>(limit)
+        val used = HashSet<String>(exclude)
+        var attempts = 0
+        while (out.size < limit && attempts++ < limit * 32) {
+            val word = source[random.nextInt(source.size)]
+            if (word.id !in used && predicate(word)) {
+                used += word.id
+                out += word
+            }
+        }
+        if (out.size < limit) {
+            source.asSequence()
+                .filter { it.id !in used && predicate(it) }
+                .take(limit - out.size)
+                .forEach { used += it.id; out += it }
+        }
+        return out.shuffled(random)
     }
 
     /** Three quick exercises for a single word (word detail → "Luyện từ này"). */
@@ -255,7 +299,8 @@ class SessionBuilder(
             val pool = examPool(fmt).filter { qtype == null || it.qtype == qtype }
             val byLevel = when (difficulty) { 0 -> pool.filter { it.level <= 2 }; 1 -> pool.filter { it.level == 3 }; 2 -> pool.filter { it.level >= 4 }; else -> pool }
                 .ifEmpty { pool }
-            byLevel.sortedBy { if (state(it.key)?.isNew != false) 0 else 1 + random.nextInt(3) }.take(n).shuffled(random).map { factory.question(it) }
+            // Shuffle before deterministic prioritisation; random comparator keys can be unstable.
+            byLevel.shuffled(random).sortedBy { if (state(it.key)?.isNew != false) 0 else 1 }.take(n).map { factory.question(it) }
         }
         return Session(SessionKind.EXAM_TYPE, title, ex.toMutableList())
     }
@@ -273,11 +318,37 @@ class SessionBuilder(
         return Session(SessionKind.MISTAKES, title, ex.shuffled(random).take(20).toMutableList())
     }
 
-    /** E13 speed round: rapid multiple choice on known words and easy items. */
+    /** E13 speed round: rapid multiple choice on easy items, without blocking on learning.db. */
     fun speed(title: String, userLevel: Int): Session {
-        val known = allStates().filter { it.key.startsWith("w:") && it.seen > 0 }.mapNotNull { content.wordById[it.key.removePrefix("w:")] }
-        val words = (known + content.lessonWords.filter { it.level <= userLevel }).distinct().shuffled(random).take(40)
-        return Session(SessionKind.SPEED, title, words.map { if (random.nextBoolean()) factory.meaning(it) else factory.reverse(it) }.toMutableList(), speed = true)
+        val words = speedWords(userLevel, 40)
+        // The speed pool is deliberately small: distractors must not scan and shuffle the
+        // complete vocabulary once per question while the user is waiting on the UI thread.
+        return Session(SessionKind.SPEED, title, words.map {
+            if (random.nextBoolean()) factory.meaning(it, words) else factory.reverse(it, words)
+        }.toMutableList(), speed = true)
+    }
+
+    /** Selects a small speed-round pool without materialising/shuffling the whole vocabulary. */
+    private fun speedWords(userLevel: Int, limit: Int): List<Word> {
+        val selected = ArrayList<Word>(limit)
+        val selectedIds = HashSet<String>(limit)
+
+        // Do not load the learning database here: this method is called by a tap listener on the
+        // main thread. A speed round needs only easy words, so bounded indexed sampling gives us
+        // the same variety without scanning, allocating, or shuffling the complete vocabulary.
+        val source = content.lessonWords
+        var attempts = 0
+        while (selected.size < limit && source.isNotEmpty() && attempts++ < limit * 32) {
+            val word = source[random.nextInt(source.size)]
+            if (word.level <= userLevel && selectedIds.add(word.id)) selected += word
+        }
+        if (selected.size < limit) {
+            source.asSequence()
+                .filter { it.level <= userLevel && selectedIds.add(it.id) }
+                .take(limit - selected.size)
+                .forEach { selected += it }
+        }
+        return selected.shuffled(random)
     }
 
     fun builder(title: String, result: PracticeBuilder.Result, count: Int, timed: Boolean): Session {

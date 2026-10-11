@@ -8,12 +8,12 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import com.yourbrand.englishlearn.MainActivity
 import com.yourbrand.englishlearn.R
+import com.yourbrand.englishlearn.learning.ExamCatalog
 import com.yourbrand.englishlearn.learning.ExamFormatText
 import com.yourbrand.englishlearn.learning.WeaknessAnalyzer
 import com.yourbrand.englishlearn.ui.*
 import com.yourbrand.englishlearn.ui.views.Bar
 import com.yourbrand.englishlearn.ui.views.DayBars
-import com.yourbrand.englishlearn.ui.views.Heatmap
 import java.text.DateFormat
 import java.util.Calendar
 import java.util.Date
@@ -71,7 +71,10 @@ class MeScreen(activity: MainActivity) : ScrollScreen(activity) {
             addView(stats)
         })
 
-        // 14-day chart
+        // The overview is the first useful content. The 14-day chart, weak spots, achievements
+        // and goal cards are deferred by one frame on first navigation so the tab transition stays light.
+        fun renderRest() {
+        // 14-day chart; the heatmap/calendar section is intentionally omitted.
         body.addView(Kit.section(c, str(R.string.chart_14)))
         val days = s.store.allDays()
         val todayKey = s.today()
@@ -91,12 +94,6 @@ class MeScreen(activity: MainActivity) : ScrollScreen(activity) {
             })
         })
 
-        // Heatmap 8 weeks
-        body.addView(Kit.section(c, str(R.string.heatmap)))
-        body.addView(Kit.card(c, 16, 4) {
-            addView(Heatmap(c).apply { set(IntArray(56) { i -> days[todayKey - 55 + i]?.answered ?: 0 }) })
-        })
-
         // Weak spots
         val weak = WeaknessAnalyzer.rank(s.store.tagStats()).filter { TagNames.has(it.tag) }.take(5)
         body.addView(Kit.section(c, str(R.string.your_weak)))
@@ -108,7 +105,7 @@ class MeScreen(activity: MainActivity) : ScrollScreen(activity) {
                 col.addView(Kit.text(c, TagNames.label(c, t.tag) + "  ·  ${t.accuracy}%", R.style.Text_Body).apply { textSize = 14f })
                 col.addView(Bar(c).apply { color = c.col(if (t.accuracy >= 70) R.color.accent else R.color.error); layoutParams = lp(h = c.dpi(6)).apply { topMargin = c.dpi(4) }; post { set(t.accuracy / 100f) } })
                 r.addView(col)
-                r.addView(Kit.chip(c, str(R.string.practice), false) { activity.startSession(s.builder().weak(str(R.string.practice_weak), System.currentTimeMillis())) }.apply { (layoutParams as LinearLayout.LayoutParams).apply { marginStart = c.dpi(12); bottomMargin = 0 } })
+                r.addView(Kit.chip(c, str(R.string.practice), false) { activity.startSessionAsync { s.builder().weak(str(R.string.practice_weak), System.currentTimeMillis()) } }.apply { (layoutParams as LinearLayout.LayoutParams).apply { marginStart = c.dpi(12); bottomMargin = 0 } })
                 addView(r)
             }
         })
@@ -139,7 +136,8 @@ class MeScreen(activity: MainActivity) : ScrollScreen(activity) {
 
         // Exam goal
         body.addView(Kit.section(c, str(R.string.exam_goal)))
-        val goalFmt = s.settings.examGoal?.let { s.content.formatById(it)?.let { format -> ExamFormatText.label(c, format) } } ?: str(R.string.not_set)
+        val visibleFormats = ExamCatalog.visibleToLocale(s.content.formats, s.settings.contentLocale)
+        val goalFmt = s.settings.examGoal?.let { id -> visibleFormats.firstOrNull { it.id == id }?.let { format -> ExamFormatText.label(c, format) } } ?: str(R.string.not_set)
         val date = s.settings.examDate.takeIf { it > 0 }?.let { DateFormat.getDateInstance(DateFormat.MEDIUM).format(Date(it)) } ?: str(R.string.not_set)
         body.addView(Kit.card(c, 6, 4) {
             addView(Kit.row(c, Kit.emojiTile(c, "🎯", c.col(R.color.primary_container)), str(R.string.exam_type), goalFmt, Kit.chevron(c)) { pickExam() })
@@ -147,6 +145,12 @@ class MeScreen(activity: MainActivity) : ScrollScreen(activity) {
             addView(Kit.row(c, Kit.emojiTile(c, "📅", c.col(R.color.info_container)), str(R.string.exam_date), date, Kit.chevron(c)) { pickDate() })
         })
         body.addView(Kit.secondary(c, "⚙️  " + str(R.string.settings), 20) { activity.open(SettingsScreen(activity)) })
+        }
+        if (firstBuild) {
+            body.postOnAnimation { if (body.isAttachedToWindow) renderRest() }
+        } else {
+            renderRest()
+        }
     }
 
     private fun stat(value: String, label: String) = Kit.vbox(ctx) {
@@ -160,7 +164,7 @@ class MeScreen(activity: MainActivity) : ScrollScreen(activity) {
         val sheet = BottomSheet(activity)
         sheet.show { box ->
             box.addView(Kit.text(ctx, str(R.string.exam_type), R.style.Text_Title))
-            services.content.formats.forEach { f ->
+            ExamCatalog.visibleToLocale(services.content.formats, services.settings.contentLocale).forEach { f ->
                 box.addView(Kit.row(ctx, null, ExamFormatText.label(ctx, f), f.family, if (services.settings.examGoal == f.id) Kit.icon(ctx, R.drawable.ic_check, ctx.col(R.color.primary)) else null) {
                     services.settings.examGoal = f.id; sheet.dismiss(); refresh()
                 })

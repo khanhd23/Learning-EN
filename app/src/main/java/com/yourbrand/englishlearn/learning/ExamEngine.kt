@@ -36,7 +36,7 @@ object SectionedExamBuilder {
         return format.sections.flatMap { section ->
             val (bank, bankId) = resolve(section, section.id)
             val items = bank.items.filter { it.section == section.id && matches(it, section) }
-            val groups = bank.groups.filter { it.section == section.id && (section.groupSet == null || it.set == section.groupSet) }
+            val groups = bank.groups.filter { it.section == section.id && belongsToSet(it.set, it.id, section.groupSet) }
             when (section.itemType) {
                 "group" -> chooseGroups(section, groups, random, bankId)
                 else -> items.shuffled(random).take(section.count).map { PickedExamItem(it.id, section.id, it, bank = bankId) }
@@ -48,7 +48,18 @@ object SectionedExamBuilder {
 
     private fun matches(item: ExamItem, section: ExamSection): Boolean =
         (section.qtypes.isEmpty() || item.qtype in section.qtypes) &&
-            (section.groupSet == null || item.set == section.groupSet)
+            belongsToSet(item.set, item.id, section.groupSet)
+
+    /**
+     * Some older generated banks encode the paper in stable IDs (for example p3_notice)
+     * instead of repeating it in every object as a set field. Keep both encodings valid so
+     * each configured paper can select a complete, deterministic bank without rewriting data.
+     */
+    private fun belongsToSet(explicitSet: String?, id: String, requestedSet: String?): Boolean {
+        if (requestedSet == null) return true
+        if (explicitSet == requestedSet) return true
+        return id.startsWith("${requestedSet}_") || id.startsWith("p${requestedSet}_")
+    }
 
     private fun chooseGroups(section: ExamSection, groups: List<ExamGroup>, random: Random, bankId: String?): List<PickedExamItem> {
         val shuffled = groups.shuffled(random)

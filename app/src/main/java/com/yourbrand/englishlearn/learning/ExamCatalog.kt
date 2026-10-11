@@ -18,4 +18,10 @@ object ExamCatalog {
         formats.groupBy { groupKey(it.family) }
             .toList()
             .sortedWith(compareBy { preferredOrder.indexOf(it.first).let { index -> if (index < 0) Int.MAX_VALUE else index } })
+
+    /** THPT content is a Vietnamese-market exam and must not appear in other locale catalogs. */
+    fun visibleToLocale(formats: List<ExamFormat>, locale: String): List<ExamFormat> {
+        val language = locale.trim().replace('_', '-').substringBefore('-').lowercase()
+        return formats.filterNot { it.family.equals("THPT", ignoreCase = true) && language != "vi" }
+    }
 }

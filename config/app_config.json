@@ -13,8 +13,9 @@
     "interstitialSkipFirstSessions": 2
   },
   "pet": {
-    "stageCost": [100, 220, 380, 580, 820, 1100, 1450, 1850, 2300, 2800],
+    "stageCost": [400, 800, 1400, 2200, 3200, 4300, 5500, 6700, 7800, 9000],
     "dailyXpCap": 200,
+    "weeklyQuestXp": [200, 240, 160, 200],
     "graceHours": 24,
     "dailyDecayPercentOfStage": 15,
     "hungerPerHalfHour": 1,

@@ -29,11 +29,12 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
     private var formatId: String
         get() = services.settings.examGoal?.let { id ->
             when {
-                services.content.formatById(id) != null -> id
-                id == "toeic_p7_practice" -> "toeic_p7_practice_1"
+                availableFormats().any { it.id == id } -> id
+                id == "toeic_p7_practice" && availableFormats().any { it.id == "toeic_p7_practice_1" } -> "toeic_p7_practice_1"
                 else -> null
             }
-        } ?: if ("toeic" in services.settings.goals) "toeic" else "school"
+        } ?: if ("toeic" in services.settings.goals && availableFormats().any { it.id == "toeic" }) "toeic"
+        else availableFormats().firstOrNull()?.id ?: "school"
         set(v) { services.settings.examGoal = v }
 
     private var selectedFamily: String? = null
@@ -41,10 +42,11 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
     override fun build(body: LinearLayout) {
         val c = ctx
         val content = services.content
-        val fmt = content.formatById(formatId) ?: content.formats.first()
+        val formats = availableFormats()
+        val fmt = formats.firstOrNull { it.id == formatId } ?: formats.first()
 
         // 1. Choose an exam family, then drill into a part and its practice sets.
-        val families = ExamCatalog.families(content.formats)
+        val families = ExamCatalog.families(formats)
         val currentFamily = selectedFamily?.takeIf { key -> families.any { it.first == key } }
             ?: ExamCatalog.groupKey(fmt.family)
         selectedFamily = currentFamily
@@ -58,13 +60,18 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
         }
         body.addView(Kit.hscroll(c, familyChips).margins(c, top = 10))
 
+        // The hub can contain many cards (all exam families, sections and history). On a
+        // first navigation render the chrome now and fill the body on the next frame; refreshes
+        // remain synchronous so filters and scroll restoration keep their old behaviour.
+        fun renderMain() {
         val familyFormats = families.firstOrNull { it.first == currentFamily }?.second.orEmpty()
         val toeicParts = if (currentFamily == "TOEIC") ExamPartCatalog.toeic(familyFormats) else emptyList()
         val showFormatDetails = toeicParts.isEmpty()
+        val structuredFamily = showFormatDetails && familyFormats.any { it.sections.isNotEmpty() }
 
         if (toeicParts.isEmpty()) {
             body.addView(Kit.section(c, familyLabel(currentFamily), topDp = 14))
-            familyFormats.forEach { formatCard(body, it, it.id == fmt.id) }
+            renderNonToeicTracks(body, familyFormats)
         } else {
             listOf(ExamPartMode.LISTENING, ExamPartMode.READING).forEach { mode ->
                 val parts = toeicParts.filter { it.mode == mode }
@@ -75,7 +82,7 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
             }
         }
 
-        if (showFormatDetails) {
+        if (showFormatDetails && !structuredFamily) {
             if (toeicParts.isEmpty()) {
                 body.addView(Kit.text(c, ExamFormatText.description(c, fmt), R.style.Text_Body).apply { textSize = 14f }.margins(c, top = 8))
             }
@@ -93,13 +100,13 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
 
         if (content.sound.dictation.isNotEmpty() || content.sound.pairs.isNotEmpty()) {
             body.addView(Kit.clickableCard(c, 6, 10, c.col(R.color.primary_container), onClick = {
-                activity.startSession(services.builder().sound(str(R.string.sound_practice)))
+                activity.startSessionAsync { services.builder().sound(str(R.string.sound_practice)) }
             }) {
                 addView(Kit.row(c, Kit.emojiTile(c, "🔊", c.col(R.color.primary_container)), str(R.string.sound_practice), str(R.string.sound_practice_desc), Kit.chevron(c)))
             })
         }
 
-        if (showFormatDetails) {
+        if (showFormatDetails && !structuredFamily) {
             // 2. Practice by question type
         body.addView(Kit.section(c, str(R.string.by_type)))
         body.addView(Kit.clickableCard(c, 6, 4, onClick = { activity.open(QuestionTypeScreen(activity, fmt.id)) }) {
@@ -142,6 +149,12 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
         }
 
         body.addView(Kit.text(c, str(R.string.disclaimer), R.style.Text_Caption).apply { textSize = 11f; gravity = Gravity.CENTER }.margins(c, top = 24))
+        }
+        if (firstBuild) {
+            body.postOnAnimation { if (body.isAttachedToWindow) renderMain() }
+        } else {
+            renderMain()
+        }
     }
 
     private fun familyLabel(key: String): String = when (key) {
@@ -154,14 +167,80 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
         else -> key.ifBlank { str(R.string.exam_other) }
     }
 
-    private fun formatCard(body: LinearLayout, format: ExamFormat, selected: Boolean) {
+    private fun availableFormats(): List<ExamFormat> =
+        ExamCatalog.visibleToLocale(services.content.formats, services.settings.contentLocale)
+
+    private fun isThptPaper(format: ExamFormat): Boolean =
+        format.id == "thpt" || format.id.startsWith("thpt_")
+
+    /** Non-TOEIC exams use the same drill-down shape: section -> practice set -> test. */
+    private fun renderNonToeicTracks(body: LinearLayout, formats: List<ExamFormat>) {
         val c = ctx
-        body.addView(Kit.clickableCard(c, 4, 6, if (selected) c.col(R.color.primary_container) else c.col(R.color.surface), onClick = {
-            formatId = format.id
-            refresh()
-        }) {
-            if (selected) background = c.rounded(c.col(R.color.primary_container), 16f, c.col(R.color.primary), 1.5f)
-            addView(Kit.row(c, null, ExamFormatText.label(c, format), formatMeta(format), Kit.chevron(c)))
+        formats.groupBy { it.family }.values.forEach { trackFormats ->
+            if (trackFormats.any(::isThptPaper)) {
+                body.addView(Kit.section(c, trackFormats.first().family, topDp = 12))
+                // The legacy "school" format has no backed exam paper and would render a
+                // misleading 0-question card. THPT practice is represented by the five papers below.
+                trackFormats.filterNot(::isThptPaper).filter { it.id != "school" }.forEach { directFormatCard(body, it) }
+                trackFormats.filter(::isThptPaper)
+                    .sortedWith(compareBy { if (it.id == "thpt") 1 else it.id.substringAfter("thpt_").toIntOrNull() ?: Int.MAX_VALUE })
+                    .forEach { directFormatCard(body, it) }
+                return@forEach
+            }
+            if (trackFormats.firstOrNull()?.family?.startsWith("IELTS", ignoreCase = true) == true &&
+                trackFormats.all { format ->
+                    format.questionCount != null &&
+                        format.sections.isNotEmpty() &&
+                        format.sections.sumOf { it.count } == format.questionCount
+                }
+            ) {
+                // A full IELTS paper contains three passages (13 + 13 + 14 = 40).
+                // Show one card per paper; selecting it builds all sections together.
+                body.addView(Kit.section(c, trackFormats.first().family, topDp = 12))
+                trackFormats.forEach { directFormatCard(body, it) }
+                return@forEach
+            }
+            val sectionFormats = trackFormats.filter { it.sections.isNotEmpty() }
+            val directFormats = trackFormats.filter { it.sections.isEmpty() }
+            if (sectionFormats.isEmpty()) {
+                directFormats.forEach { directFormatCard(body, it) }
+                return@forEach
+            }
+
+            body.addView(Kit.section(c, trackFormats.first().family, topDp = 12))
+            val sectionIds = sectionFormats.flatMap { it.sections.map { section -> section.id } }.distinct()
+            sectionIds.forEach { sectionId ->
+                val template = sectionFormats.firstNotNullOfOrNull { format -> format.sections.firstOrNull { it.id == sectionId } }
+                    ?: return@forEach
+                val sets = sectionFormats.count { format -> format.sections.any { it.id == sectionId } }
+                body.addView(Kit.clickableCard(c, 4, 6, onClick = {
+                    activity.open(ExamSectionScreen(activity, sectionId, sectionFormats))
+                }) {
+                    addView(Kit.row(
+                        c,
+                        Kit.badge(c, sets.toString(), c.col(R.color.primary_container), c.col(R.color.primary)),
+                        ExamFormatText.sectionLabel(c, template),
+                        str(R.string.exam_practice_sets_n, sets),
+                        Kit.chevron(c),
+                    ))
+                })
+            }
+            directFormats.forEach { directFormatCard(body, it) }
+        }
+    }
+
+    private fun directFormatCard(body: LinearLayout, format: ExamFormat) {
+        val c = ctx
+        val title = ExamFormatText.label(c, format)
+        val count = format.questionCount ?: 0
+        body.addView(Kit.clickableCard(c, 4, 6, onClick = { start(format, title, null) }) {
+            addView(Kit.row(
+                c,
+                Kit.badge(c, count.toString(), c.col(R.color.primary_container), c.col(R.color.primary)),
+                title,
+                format.timeLimitMinutes?.let { str(R.string.minutes_n, it) } ?: str(R.string.generic_test),
+                Kit.chevron(c),
+            ))
         })
     }
 
@@ -192,14 +271,6 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
         else -> part.key
     }
 
-    private fun formatMeta(format: ExamFormat): String {
-        val parts = buildList {
-            format.questionCount?.let { add(str(R.string.n_questions, it)) }
-            format.timeLimitMinutes?.let { add(str(R.string.minutes_n, it)) }
-        }
-        return parts.ifEmpty { listOf(str(R.string.generic_test)) }.joinToString(" · ")
-    }
-
     private fun testCard(body: LinearLayout, emoji: String, title: String, fmt: ExamFormat, count: Int?, hist: List<com.yourbrand.englishlearn.learning.HistoryEntry>) {
         val c = ctx
         val n = count ?: fmt.questionCount ?: 20
@@ -217,9 +288,11 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
                 onNegative = { services.settings.mockInProgress = null; start(fmt, title, count) }) { MockScreen.resume(activity) }
             return
         }
-        val test = MockTest.build(services.content, services.builder(), fmt.id, title, count, services.settings.recentMockKeys.toSet())
-        if (test.keys.isEmpty()) { activity.toast(str(R.string.nothing_to_practice)); return }
-        activity.open(MockScreen(activity, test))
+        activity.openAsync {
+            val test = MockTest.build(services.content, services.builder(), fmt.id, title, count, services.settings.recentMockKeys.toSet())
+            check(test.keys.isNotEmpty())
+            MockScreen(activity, test)
+        }
     }
 }
 
@@ -227,7 +300,7 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
 /** Detail screen for one exam part: choose a practice set, then read the shared guide. */
 class ExamPartScreen(activity: MainActivity, private val partKey: String) : ScrollScreen(activity) {
     override val petMode = PetMode.FLOATING
-    override val barTitle: String get() = partLabel()
+    override val barTitle: String get() = str(R.string.exam_part_sets_title, partLabel())
 
     override fun build(body: LinearLayout) {
         val c = ctx
@@ -237,20 +310,39 @@ class ExamPartScreen(activity: MainActivity, private val partKey: String) : Scro
             return
         }
 
-        body.addView(Kit.section(c, str(R.string.exam_part_sets_title, partLabel()), topDp = 4))
         part.sets.forEach { practiceCard(body, it) }
 
         body.addView(Kit.section(c, str(R.string.exam_part_guide), topDp = 20))
         val guideFormat = services.content.formatById("toeic_$partKey") ?: part.formats.first()
         body.addView(Kit.card(c, 6, 6) {
-            addView(Kit.text(c, ExamFormatText.description(c, guideFormat), R.style.Text_Body))
+            addView(Kit.text(c, guideText(partKey, guideFormat), R.style.Text_Body))
         })
+    }
+
+    /**
+     * Method cards are learner content, so use the active locale pack first. The format
+     * description remains a safe fallback for a locale pack that has no translated tip.
+     */
+    private fun guideText(partKey: String, format: ExamFormat): String {
+        val tipKey = when (partKey) {
+            "p1" -> "listen_p1"
+            "p2" -> "listen_p2"
+            "p3" -> "listen_p3"
+            "p4" -> "listen_p4"
+            "p5" -> "p5_method"
+            "p6" -> "p6_method"
+            "p7" -> "p7_method"
+            else -> null
+        }
+        return tipKey?.let { services.content.tips[it] }
+            ?.takeIf { it.isNotBlank() }
+            ?: ExamFormatText.description(ctx, format)
     }
 
     private fun practiceCard(body: LinearLayout, set: ExamPartSet) {
         val c = ctx
         val format = set.format
-        val title = ExamFormatText.label(c, format) + set.sectionId?.let { " · ${partLabel()}" }.orEmpty()
+        val title = "TOEIC ${partLabel()} Test ${testNumber(format)}"
         val hist = services.store.history().filter { it.kind == "MOCK" && it.format == format.id }
         val n = set.sectionId?.let { sectionId -> format.sections.firstOrNull { it.id == sectionId }?.count }
             ?: format.questionCount ?: 20
@@ -258,9 +350,12 @@ class ExamPartScreen(activity: MainActivity, private val partKey: String) : Scro
         val best = hist.maxByOrNull { it.percent }?.let { "${it.correct}/${it.total}" } ?: "—"
         val time = if (set.sectionId != null) str(R.string.untimed) else format.timeLimitMinutes?.let { str(R.string.minutes_n, it) } ?: str(R.string.untimed)
         body.addView(Kit.clickableCard(c, 6, 10, onClick = { start(set, title) }) {
-            addView(Kit.row(c, null, title, str(R.string.test_meta, n, time, last, best), Kit.chevron(c)))
+            addView(Kit.row(c, null, title, str(R.string.n_questions, n), Kit.chevron(c)))
         })
     }
+
+    private fun testNumber(format: ExamFormat): Int =
+        format.id.substringAfterLast('_').toIntOrNull() ?: 1
 
     private fun start(set: ExamPartSet, title: String) {
         if (services.settings.mockInProgress != null) {
@@ -268,11 +363,13 @@ class ExamPartScreen(activity: MainActivity, private val partKey: String) : Scro
                 onNegative = { services.settings.mockInProgress = null; start(set, title) }) { MockScreen.resume(activity) }
             return
         }
-        val test = set.sectionId?.let { sectionId ->
-            MockTest.buildSection(services.content, set.format.id, sectionId, title)
-        } ?: MockTest.build(services.content, services.builder(), set.format.id, title, null, services.settings.recentMockKeys.toSet())
-        if (test.keys.isEmpty()) { activity.toast(str(R.string.nothing_to_practice)); return }
-        activity.open(MockScreen(activity, test))
+        activity.openAsync {
+            val test = set.sectionId?.let { sectionId ->
+                MockTest.buildSection(services.content, set.format.id, sectionId, title)
+            } ?: MockTest.build(services.content, services.builder(), set.format.id, title, null, services.settings.recentMockKeys.toSet())
+            check(test.keys.isNotEmpty())
+            MockScreen(activity, test)
+        }
     }
 
     private fun partLabel(): String = when (partKey) {
@@ -285,6 +382,61 @@ class ExamPartScreen(activity: MainActivity, private val partKey: String) : Scro
         "p7" -> str(R.string.exam_part7)
         "reading_bank" -> str(R.string.exam_reading_bank)
         else -> partKey
+    }
+}
+
+/** Generic section screen shared by IELTS, VSTEP, THPT and Cambridge practice banks. */
+class ExamSectionScreen(
+    activity: MainActivity,
+    private val sectionId: String,
+    private val formats: List<ExamFormat>,
+) : ScrollScreen(activity) {
+    override val petMode = PetMode.FLOATING
+    override val barTitle: String get() = sectionLabel()
+
+    override fun build(body: LinearLayout) {
+        val c = ctx
+        val sets = formats.mapNotNull { format ->
+            format.sections.firstOrNull { it.id == sectionId }?.let { format to it }
+        }
+        sets.forEach { (format, section) ->
+            val title = ExamFormatText.label(c, format)
+            body.addView(Kit.clickableCard(c, 6, 10, onClick = { start(format, section, title) }) {
+                addView(Kit.row(
+                    c,
+                    Kit.badge(c, section.count.toString(), c.col(R.color.primary_container), c.col(R.color.primary)),
+                    title,
+                    str(R.string.n_questions, section.count),
+                    Kit.chevron(c),
+                ))
+            })
+        }
+
+        sets.firstOrNull()?.let { (format, _) ->
+            body.addView(Kit.section(c, str(R.string.exam_part_guide), topDp = 20))
+            body.addView(Kit.card(c, 6, 6) {
+                addView(Kit.text(c, ExamFormatText.description(c, format), R.style.Text_Body))
+            })
+        }
+    }
+
+    private fun sectionLabel(): String {
+        val format = formats.firstOrNull() ?: return sectionId
+        val section = format.sections.firstOrNull { it.id == sectionId }
+        return section?.let { ExamFormatText.sectionLabel(ctx, it) } ?: sectionId
+    }
+
+    private fun start(format: ExamFormat, section: com.yourbrand.englishlearn.content.ExamSection, title: String) {
+        if (services.settings.mockInProgress != null) {
+            Dialogs.confirm(ctx, str(R.string.mock_in_progress), str(R.string.mock_in_progress_msg), str(R.string.continue_label), str(R.string.start_new),
+                onNegative = { services.settings.mockInProgress = null; start(format, section, title) }) { MockScreen.resume(activity) }
+            return
+        }
+        activity.openAsync {
+            val test = MockTest.buildSection(services.content, format.id, section.id, title)
+            check(test.keys.isNotEmpty())
+            MockScreen(activity, test)
+        }
     }
 }
 
@@ -370,7 +522,7 @@ class QuestionTypeScreen(activity: MainActivity, private val fmt: String) : Scro
             else -> null
         }
         val tip = qt?.let { services.content.tips[it] } ?: partTipKey?.let { services.content.tips[it] }
-        val start = { activity.startSession(services.builder().examType(label, fmt, qt, difficulty)) }
+        val start = { activity.startSessionAsync { services.builder().examType(label, fmt, qt, difficulty) } }
         if (tip == null) { start(); return }
         val sheet = BottomSheet(activity)
         sheet.show { box ->
@@ -400,7 +552,7 @@ class MistakeBookScreen(activity: MainActivity) : ScrollScreen(activity) {
         val exByKey = items.associate { it.key to b.exerciseFor(it.key) }
         val groups = items.flatMap { s -> (exByKey[s.key]?.tags.orEmpty().filter { TagNames.has(it) }.ifEmpty { listOf("vocab_core") }).map { it to s } }.groupBy({ it.first }, { it.second })
             .entries.sortedByDescending { it.value.size }
-        body.addView(Kit.primary(c, str(R.string.redo_all, items.size), 12) { activity.startSession(b.mistakes(str(R.string.mistake_book), null)) })
+        body.addView(Kit.primary(c, str(R.string.redo_all, items.size), 12) { activity.startSessionAsync { b.mistakes(str(R.string.mistake_book), null) } })
         groups.forEach { (tag, list) ->
             var expanded = false
             val card = Kit.card(c, 6, 12)
@@ -433,7 +585,7 @@ class MistakeBookScreen(activity: MainActivity) : ScrollScreen(activity) {
                 })
                 inner.addView(r)
             }
-            inner.addView(Kit.secondary(c, str(R.string.redo_group)) { activity.startSession(b.mistakes(TagNames.label(c, tag), tag)) }.margins(c, top = 6, bottom = 8, start = 8, end = 8))
+            inner.addView(Kit.secondary(c, str(R.string.redo_group)) { activity.startSessionAsync { b.mistakes(TagNames.label(c, tag), tag) } }.margins(c, top = 6, bottom = 8, start = 8, end = 8))
             card.addView(inner)
             header.setOnClickListener { expanded = !expanded; inner.show(expanded); (header.getChildAt(header.childCount - 1)).animate().rotation(if (expanded) 90f else 0f).setDuration(150).start() }
             body.addView(card)

@@ -24,6 +24,8 @@ class RoomView(context: Context) : View(context) {
     var theme = "theme_cozy"; set(v) { field = v; invalidate() }
     var items: Map<String, String> = emptyMap(); set(v) { field = v; invalidate() }
     var night = false; set(v) { field = v; invalidate() }
+    var petStage = 1; set(v) { field = v.coerceIn(1, 10); invalidate() }
+    var petSpecies = "cat"; set(v) { field = v; invalidate() }
     /** Preview a single item in the shop sheet. */
     var previewOnly: String? = null
 
@@ -50,6 +52,7 @@ class RoomView(context: Context) : View(context) {
             else -> cozy(canvas, w, h, fy)
         }
         val u = min(w, h) / 100f
+        stageDecor(canvas, w, h, fy, u)
         items[PetItems.WALL]?.let { wall(canvas, it, w * 0.27f, h * 0.24f, u) }
         items[PetItems.RUG]?.let { rug(canvas, it, w * 0.55f, fy + (h - fy) * 0.45f, w, u) }
         items[PetItems.LAMP]?.let { lamp(canvas, it, w * 0.09f, fy + (h - fy) * 0.2f, u) }
@@ -64,6 +67,62 @@ class RoomView(context: Context) : View(context) {
                 canvas.drawCircle(w * 0.09f, fy - 18f * u, 40f * u, p)
                 p.shader = null
             }
+        }
+    }
+
+    /** Decorative progression that makes the room feel earned without adding new assets. */
+    private fun stageDecor(canvas: Canvas, w: Float, h: Float, fy: Float, u: Float) {
+        val accent = when (theme) {
+            "theme_space" -> 0xFF7FB0F5.toInt()
+            "theme_forest", "theme_garden" -> 0xFF4E9A5E.toInt()
+            "theme_castle" -> 0xFFFFD54F.toInt()
+            else -> 0xFF8A5CD6.toInt()
+        }
+        // A subtle ceiling band gives every room a finished silhouette.
+        p.color = if (night) 0x224E5A9A else 0x22FFFFFF
+        canvas.drawRect(0f, 0f, w, h * 0.035f, p)
+
+        if (petSpecies == "panda" && theme != "theme_space" && theme != "theme_beach") {
+            drawBamboo(canvas, w * 0.93f, fy - 2f * u, u)
+        }
+        if (petStage >= 3) {
+            // Small framed achievement plaque.
+            val cx = w * 0.42f; val cy = h * 0.16f; val pw = 18f * u; val ph = 12f * u
+            p.color = 0xCCFFF8E8.toInt(); r.set(cx - pw, cy - ph, cx + pw, cy + ph); canvas.drawRoundRect(r, 3f * u, 3f * u, p)
+            s.color = accent; s.strokeWidth = 1.6f * u; canvas.drawRoundRect(r, 3f * u, 3f * u, s)
+            star(canvas, cx, cy, 5.5f * u, accent)
+        }
+        if (petStage >= 5) {
+            // A tiny trophy shelf behind the pet.
+            val sx = w * 0.16f; val sy = h * 0.25f
+            p.color = 0x553B2A1A; canvas.drawRoundRect(sx - 22f * u, sy, sx + 22f * u, sy + 3f * u, 2f * u, 2f * u, p)
+            p.color = if (petStage >= 8 && !night) 0xFFFFC83D.toInt() else accent
+            canvas.drawCircle(sx - 10f * u, sy - 5f * u, 3.8f * u, p)
+            canvas.drawCircle(sx + 1f * u, sy - 5f * u, 3.8f * u, p)
+            p.color = 0xFF8D5A35.toInt(); canvas.drawRect(sx - 11f * u, sy - 2f * u, sx - 9f * u, sy, p); canvas.drawRect(sx, sy - 2f * u, sx + 2f * u, sy, p)
+        }
+        if (petStage >= 7) {
+            // A few fixed sparkles keep the room lively without animation work.
+            star(canvas, w * 0.12f, h * 0.18f, 3.2f * u, if (night) 0xFFFFE08A.toInt() else 0xFFFFD54F.toInt())
+            star(canvas, w * 0.76f, h * 0.11f, 2.5f * u, 0xFFFFFFFF.toInt())
+        }
+        if (petStage >= 9) {
+            s.color = if (night) 0x99FFD166.toInt() else 0xCCFFD166.toInt(); s.strokeWidth = 1.8f * u
+            canvas.drawLine(w * 0.27f, h * 0.055f, w * 0.73f, h * 0.055f, s)
+            star(canvas, w * 0.5f, h * 0.055f, 4f * u, 0xFFFFC83D.toInt())
+        }
+    }
+
+    private fun drawBamboo(canvas: Canvas, x: Float, base: Float, u: Float) {
+        val stem = 5f * u
+        s.color = if (night) 0xFF35664D.toInt() else 0xFF3F8252.toInt(); s.strokeWidth = stem
+        canvas.drawLine(x, base, x - 5f * u, base - 48f * u, s)
+        canvas.drawLine(x + 9f * u, base, x + 7f * u, base - 38f * u, s)
+        p.color = if (night) 0xFF4F8A60.toInt() else 0xFF65AF67.toInt()
+        for ((dx, dy, tilt) in listOf(Triple(-7f, -36f, -32f), Triple(2f, -25f, 26f), Triple(5f, -45f, 28f), Triple(12f, -30f, 42f))) {
+            canvas.save(); canvas.rotate(tilt, x + dx * u, base + dy * u)
+            canvas.drawOval(x + dx * u - 4f * u, base + dy * u - 9f * u, x + dx * u + 4f * u, base + dy * u + 9f * u, p)
+            canvas.restore()
         }
     }
 

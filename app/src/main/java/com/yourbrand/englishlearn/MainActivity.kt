@@ -19,6 +19,7 @@ import android.view.animation.DecelerateInterpolator
 import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.activity.addCallback
 import androidx.activity.enableEdgeToEdge
@@ -70,6 +71,7 @@ class MainActivity : AppCompatActivity() {
     private var greetPending = false
     private var resumedAt = 0L
     private var microphoneResult: ((Boolean) -> Unit)? = null
+    @Volatile private var sessionBuildInProgress = false
     private val mainHandler = Handler(Looper.getMainLooper())
 
     private val createBackup = registerForActivityResult(ActivityResultContracts.CreateDocument("application/json")) { uri ->
@@ -162,8 +164,13 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null && BuildConfig.DEBUG) DemoMode.handle(this, intent)
 
         rootFrame.post {
-            services.ads.gatherConsent(this) { loadBanner() }
-            services.ads.preloadRewarded()
+            // Consent/WebView/ads can trigger a large provider initialization on the main
+            // thread. Let the first screen and the first touch settle before starting it.
+            rootFrame.postDelayed({
+                if (isFinishing || isDestroyed) return@postDelayed
+                services.ads.gatherConsent(this) { loadBanner() }
+                services.ads.preloadRewarded()
+            }, 5_000L)
         }
     }
 
@@ -260,7 +267,10 @@ class MainActivity : AppCompatActivity() {
         item.addView(tv, LinearLayout.LayoutParams(MATCH_PARENT, WRAP_CONTENT).apply { topMargin = dpi(2) })
         item.setOnClickListener {
             it.haptic()
-            if (tab == currentTab && navigator.depth == 1) (navigator.current as? ScrollScreen)?.scrollToTop() else selectTab(tab)
+            if (tab == currentTab && navigator.depth == 1) {
+                if (tab == Tab.GRAMMAR) (navigator.current as? GrammarScreen)?.restoreLearningPosition()
+                else (navigator.current as? ScrollScreen)?.scrollToTop()
+            } else selectTab(tab)
         }
         bottomNav.addView(item, LinearLayout.LayoutParams(0, WRAP_CONTENT, 1f))
         navItems[tab] = Triple(item, img, tv)
@@ -292,6 +302,33 @@ class MainActivity : AppCompatActivity() {
         if (session.exercises.isEmpty()) { toast(getString(R.string.nothing_to_practice)); return }
         services.ads.preloadInterstitial()
         navigator.push(SessionScreen(this, session))
+    }
+
+    /** Builds heavier sessions off the UI thread so the tap/ripple responds immediately. */
+    fun startSessionAsync(build: () -> Session) = runAsync(build, ::startSession)
+
+    /** Builds a large mock-test model off the UI thread before navigating to its screen. */
+    fun openAsync(build: () -> Screen) = runAsync(build, ::open)
+
+    private fun <T> runAsync(build: () -> T, onSuccess: (T) -> Unit) {
+        if (sessionBuildInProgress) return
+        sessionBuildInProgress = true
+        val spinner = ProgressBar(this).apply {
+            isClickable = false
+            isFocusable = false
+            contentDescription = getString(R.string.loading)
+        }
+        overlay.addView(spinner, FrameLayout.LayoutParams(dpi(44), dpi(44), Gravity.CENTER))
+        thread(name = "session-build") {
+            val result = runCatching { build() }
+            mainHandler.post {
+                sessionBuildInProgress = false
+                overlay.removeView(spinner)
+                if (isFinishing || isDestroyed) return@post
+                result.onSuccess(onSuccess)
+                    .onFailure { toast(getString(R.string.nothing_to_practice)) }
+            }
+        }
     }
 
     fun openPetHome() {

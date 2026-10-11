@@ -45,6 +45,8 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
     private val openPassageGroups = mutableSetOf<String>()
     private val seenPassageGroups = mutableSetOf<String>()
 
+    private data class SharedScene(val id: String?, val title: String?, val passage: String?, val image: String?)
+
     companion object {
         fun resume(activity: MainActivity) {
             val json = activity.services.settings.mockInProgress ?: return
@@ -137,6 +139,19 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
 
     private fun paintFlag() { flagBtn.tintRes(if (test.flags[test.current]) R.color.accent else R.color.muted) }
 
+    private fun toeicSceneImage(resourceName: String): ImageView? {
+        val id = ctx.resources.getIdentifier(resourceName, "drawable", ctx.packageName)
+        if (id == 0) return null
+        return ImageView(ctx).apply {
+            setImageResource(id)
+            contentDescription = str(R.string.ins_picture_word)
+            scaleType = ImageView.ScaleType.FIT_CENTER
+            layoutParams = LinearLayout.LayoutParams(MATCH_PARENT, ctx.dpi(220)).apply {
+                bottomMargin = ctx.dpi(8)
+            }
+        }
+    }
+
     private fun render() {
         val c = ctx
         val i = test.current
@@ -152,30 +167,39 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
             content.addView(Kit.text(c, str(R.string.section_n, sectionIndex + 1, test.sectionLabels.size, test.sectionLabels[sectionIndex].second), R.style.Text_Caption).margins(c, top = 4, bottom = 8))
         }
         val shared = when (ex) {
-            is Exercise.Choice -> Triple(ex.sharedGroupId, ex.sharedPassageTitle, ex.sharedPassage)
-            is Exercise.ExamText -> Triple(ex.sharedGroupId, ex.sharedPassageTitle, ex.sharedPassage)
+            is Exercise.Choice -> SharedScene(ex.sharedGroupId, ex.sharedPassageTitle, ex.sharedPassage, ex.sharedImage)
+            is Exercise.ExamText -> SharedScene(ex.sharedGroupId, ex.sharedPassageTitle, ex.sharedPassage, null)
             else -> null
         }
-        if (shared?.first != null && shared.third != null) {
-            val groupId = shared.first!!
-            // Open the first time the group appears; after that it stays as the learner left it
-            // (re-rendering after an answer must not collapse it).
-            if (seenPassageGroups.add(groupId)) openPassageGroups += groupId
-            val open = groupId in openPassageGroups
-            content.addView(Kit.secondary(c, str(if (open) R.string.passage_hide else R.string.passage_show), 0) {
-                if (open) openPassageGroups -= groupId else openPassageGroups += groupId
-                render()
-            }.margins(c, top = 2))
-            if (open) {
-                val height = minOf((c.resources.displayMetrics.heightPixels * 0.4f).toInt(), c.dpi(280))
-                content.addView(android.widget.ScrollView(c).apply {
-                    layoutParams = lp(ViewGroup.LayoutParams.MATCH_PARENT, height).apply { topMargin = c.dpi(6); bottomMargin = c.dpi(8) }
-                    addView(Kit.card(c, 14, 10, c.col(R.color.surface_variant), null) { addView(Kit.text(c, (shared.second?.let { "$it\n\n" } ?: "") + shared.third, R.style.Text_Body)) })
-                })
+        if (shared?.id != null && shared.passage != null) {
+            val groupId = shared.id
+            if (shared.image != null) {
+                content.addView(Kit.card(c, 14, 10, c.col(R.color.surface_variant), null) {
+                    val image = shared.image.let(::toeicSceneImage)
+                    if (image != null) addView(image)
+                    else addView(Kit.text(c, (shared.title?.let { "$it\n\n" } ?: "") + shared.passage, R.style.Text_Body))
+                }.margins(c, top = 6, bottom = 8))
+            } else {
+                // Open the first time the group appears; after that it stays as the learner left it
+                // (re-rendering after an answer must not collapse it).
+                if (seenPassageGroups.add(groupId)) openPassageGroups += groupId
+                val open = groupId in openPassageGroups
+                content.addView(Kit.secondary(c, str(if (open) R.string.passage_hide else R.string.passage_show), 0) {
+                    if (open) openPassageGroups -= groupId else openPassageGroups += groupId
+                    render()
+                }.margins(c, top = 2))
+                if (open) {
+                    // Let the parent question scroll own the whole passage. A fixed-height nested
+                    // scroll view hid long Part 7 passages behind a second scroll container.
+                    content.addView(Kit.card(c, 14, 10, c.col(R.color.surface_variant), null) {
+                        addView(Kit.text(c, (shared.title?.let { "$it\n\n" } ?: "") + shared.passage, R.style.Text_Body))
+                    }.margins(c, top = 6, bottom = 8))
+                }
             }
         }
         when (ex) {
             is Exercise.Choice -> {
+                var stemView: TextView? = null
                 if (ex.passage != null) {
                     val filled = HashMap<Int, String>()
                     // In a mock the learner's own choices fill the other blanks.
@@ -186,7 +210,10 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
                     })
                 } else {
                     content.addView(Kit.text(c, str(ex.instruction), R.style.Text_Caption))
-                    if (ex.stem.isNotBlank()) content.addView(Kit.text(c, if (ex.stem.contains("___")) Spans.blank(ex.stem, ex.options.getOrNull(test.answers[i]), c.col(R.color.primary), c.col(R.color.primary_container)) else Spans.underline(ex.stem), R.style.Text_Question).margins(c, top = 8))
+                    if (ex.stem.isNotBlank()) {
+                        stemView = Kit.text(c, if (ex.stem.contains("___")) Spans.blank(ex.stem, ex.options.getOrNull(test.answers[i]), c.col(R.color.primary), c.col(R.color.primary_container)) else Spans.underline(ex.stem), R.style.Text_Question).margins(c, top = 8)
+                        content.addView(stemView)
+                    }
                 }
                 val cards = ex.options.mapIndexed { j, o -> OptionCard(c, j, if (ex.optionsMarked) Spans.underline(o) else o) }
                 val box = Kit.vbox(c).margins(c, top = 14)
@@ -195,8 +222,10 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
                     card.view.onTap {
                         test.answers[i] = j
                         cards.forEachIndexed { k, oc -> oc.setState(if (k == j) OptionCard.State.SELECTED else OptionCard.State.DEFAULT) }
+                        if (ex.stem.contains("___") && ex.passage == null) {
+                            stemView?.text = Spans.blank(ex.stem, ex.options[j], c.col(R.color.primary), c.col(R.color.primary_container))
+                        }
                         save()
-                        if (ex.stem.contains("___") && ex.passage == null) render()
                     }
                     box.addView(card.view)
                 }
@@ -341,6 +370,21 @@ class MockResultScreen(
     override val barTitle: String get() = str(R.string.mock_result)
     private var reviewFilter = 0 // 0 wrong · 1 flagged · 2 all
 
+    private data class SharedScene(val id: String?, val title: String?, val passage: String?, val image: String?)
+
+    private fun toeicSceneImage(resourceName: String): ImageView? {
+        val id = ctx.resources.getIdentifier(resourceName, "drawable", ctx.packageName)
+        if (id == 0) return null
+        return ImageView(ctx).apply {
+            setImageResource(id)
+            contentDescription = str(R.string.ins_picture_word)
+            scaleType = ImageView.ScaleType.FIT_CENTER
+            layoutParams = LinearLayout.LayoutParams(MATCH_PARENT, ctx.dpi(220)).apply {
+                bottomMargin = ctx.dpi(8)
+            }
+        }
+    }
+
     private fun answerOf(ex: Exercise?) = when (ex) { is Exercise.Choice -> ex.answer; is Exercise.FindError -> ex.answer; else -> -1 }
     private fun correctAt(index: Int): Boolean = when (val ex = exercises[index]) {
         is Exercise.ExamText -> Grader.grade(test.textAnswers[index], ex.answer) != Grader.Result.WRONG
@@ -400,7 +444,7 @@ class MockResultScreen(
         byType.forEach { (t, v) -> card2.addView(barRow(t, v[1], v[0])) }
         body.addView(card2)
 
-        body.addView(Kit.primary(c, str(R.string.practice_weak), 16) { activity.startSession(services.builder().weak(str(R.string.practice_weak), System.currentTimeMillis())) })
+        body.addView(Kit.primary(c, str(R.string.practice_weak), 16) { activity.startSessionAsync { services.builder().weak(str(R.string.practice_weak), System.currentTimeMillis()) } })
 
         // Review each question
         body.addView(Kit.section(c, str(R.string.review_each)))
@@ -414,19 +458,21 @@ class MockResultScreen(
             val show = when (reviewFilter) { 0 -> !ok; 1 -> test.flags[k]; else -> true }
             if (!show) return@forEachIndexed
             val shared = when (ex) {
-                is Exercise.Choice -> Triple(ex.sharedGroupId, ex.sharedPassageTitle, ex.sharedPassage)
-                is Exercise.ExamText -> Triple(ex.sharedGroupId, ex.sharedPassageTitle, ex.sharedPassage)
+                is Exercise.Choice -> SharedScene(ex.sharedGroupId, ex.sharedPassageTitle, ex.sharedPassage, ex.sharedImage)
+                is Exercise.ExamText -> SharedScene(ex.sharedGroupId, ex.sharedPassageTitle, ex.sharedPassage, null)
                 else -> null
             }
-            if (shared?.first != null && shared.third != null && exercises.take(k).none {
+            if (shared?.id != null && shared.passage != null && exercises.take(k).none {
                     when (it) {
-                        is Exercise.Choice -> it.sharedGroupId == shared.first
-                        is Exercise.ExamText -> it.sharedGroupId == shared.first
+                        is Exercise.Choice -> it.sharedGroupId == shared.id
+                        is Exercise.ExamText -> it.sharedGroupId == shared.id
                         else -> false
                     }
                 }) {
                 body.addView(Kit.card(c, 14, 10, c.col(R.color.surface_variant), null) {
-                    addView(Kit.text(c, (shared.second?.let { "$it\n\n" } ?: "") + shared.third, R.style.Text_Body))
+                    val image = shared.image?.let(::toeicSceneImage)
+                    if (image != null) addView(image)
+                    else addView(Kit.text(c, (shared.title?.let { "$it\n\n" } ?: "") + shared.passage, R.style.Text_Body))
                 })
             }
             val (stem, opts, expl) = when (ex) {

@@ -25,6 +25,7 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
     private var topicOrder: List<Topic>? = null
     /** Next topics build fills the grid over frames (segment switch, tab entry). */
     private var progressiveNext = false
+    private var masteredWords: Set<String> = emptySet()
 
     private fun orderedTopics(): List<Topic> {
         val opened = services.settings.topicOpenedAt
@@ -51,6 +52,7 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
     private lateinit var pageHost: LinearLayout
 
     override fun build(body: LinearLayout) {
+        masteredWords = services.store.allItems().asSequence().filter { it.mastered && it.key.startsWith("w:") }.map { it.key }.toSet()
         pages = arrayOfNulls(3)
         body.addView(segmentBar())
         pageHost = Kit.vbox(ctx)
@@ -83,7 +85,7 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
         progressiveNext = false
     }
 
-    private fun known(w: Word) = services.store.item(w.key)?.mastered == true
+    private fun known(w: Word) = w.key in masteredWords
 
     private fun topics(body: LinearLayout) {
         val c = ctx
@@ -114,7 +116,7 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
         // scroll position holds; building all 47 cards in one frame took up to 400 ms.
         val rowPx = c.dpi(150)
         val onScreen = 2 * ((scroll.scrollY + c.resources.displayMetrics.heightPixels) / rowPx + 1)
-        val now = if (scroll.scrollY > 0) maxOf(8, onScreen) else 8
+        val now = if (scroll.scrollY > 0) maxOf(6, onScreen) else 4
         // Exam word lists go below the grid once it is complete, so they never show up early and
         // then get pushed down by the rows filling in.
         addInFrames(grid, topics.size, now = now, startDelayMs = if (firstBuild) AFTER_TRANSITION_MS else 0, onDone = { wordLists(body) }, add = addCard)
@@ -163,9 +165,9 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
 
     private fun levels(body: LinearLayout) {
         val c = ctx
-        val words = services.content.words
+        val words = services.content.wordsByLevel
         (1..5).forEach { lvl ->
-            val list = words.filter { it.level == lvl }
+            val list = words[lvl].orEmpty()
             val known = list.count { known(it) }
             body.addView(Kit.clickableCard(c, 16, 12, onClick = { if (services.content.isLevelAvailable(lvl)) activity.open(WordListScreen(activity, level = lvl)) }) {
                 val r = Kit.hbox(c)
@@ -222,7 +224,8 @@ fun ScrollScreen.segmented(labels: List<String>, selected: Int, onSelect: (Int) 
             background = if (on) c.rounded(c.col(R.color.surface), 11f) else null
             elevation = if (on) c.dp(1f) else 0f
             setTextColor(c.col(if (on) R.color.on_surface else R.color.muted))
-            typeface = android.graphics.Typeface.create("sans-serif-medium", if (on) android.graphics.Typeface.BOLD else android.graphics.Typeface.NORMAL)
+            // Avoid MIUI's synchronous variable-font lookup during tab navigation.
+            paint.isFakeBoldText = on
             layoutParams = lp(0, c.dpi(40), 1f)
             isSelected = on
             setOnClickListener { if (i != selected) { haptic(); onSelect(i) } }

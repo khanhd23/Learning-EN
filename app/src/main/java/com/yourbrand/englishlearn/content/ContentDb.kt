@@ -12,7 +12,9 @@ data class DbWordHit(val id: String, val lemma: String, val gloss: String, val l
 
 /** Read-only access to the build-time content database. No content is rebuilt on the device. */
 class ContentDb(private val context: Context) {
-    private val file = File(context.noBackupFilesDir, "content.db")
+    // Resolving noBackupFilesDir can hit the filesystem on MIUI. Search opens this lazily on
+    // its executor, so constructing Services during the first Activity frame stays in memory.
+    private val file by lazy { File(context.noBackupFilesDir, "content.db") }
     private var database: SQLiteDatabase? = null
 
     @Synchronized

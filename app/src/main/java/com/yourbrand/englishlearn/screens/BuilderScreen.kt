@@ -147,7 +147,7 @@ class BuilderScreen(activity: MainActivity) : ScrollScreen(activity) {
 
     private fun start() {
         val r = lastResult ?: return
-        activity.startSession(services.builder().builder(str(R.string.builder_title), r, count, timed))
+        activity.startSessionAsync { services.builder().builder(str(R.string.builder_title), r, count, timed) }
     }
 
     private fun savePreset() {

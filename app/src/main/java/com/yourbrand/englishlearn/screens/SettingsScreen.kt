@@ -100,7 +100,7 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
         }
 
         group(body, R.string.set_about) { g ->
-            action(g, R.string.about_disclaimer) { activity.open(TextScreen(activity, str(R.string.about_disclaimer), str(R.string.disclaimer_full))) }
+            action(g, R.string.about_disclaimer) { activity.open(AboutScreen(activity)) }
             action(g, R.string.licenses) {
                 openLicenses()
             }
@@ -113,18 +113,22 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
 
     /** Opens the complete offline license catalogue; used by the release smoke test too. */
     fun openLicenses() {
-        val c = ctx
-        val contentLicenses = c.assets.open("content/LICENSES.md").bufferedReader(Charsets.UTF_8).use { it.readText() }
-        val imageNotice = runCatching { c.assets.open("content/third_party_notices.txt").bufferedReader(Charsets.UTF_8).use { it.readText() } }.getOrDefault("")
-        val apache = c.assets.open("licenses/apache-2.0.txt").bufferedReader(Charsets.UTF_8).use { it.readText() }
-        val ccBySa = c.assets.open("licenses/cc-by-sa-4.0.txt").bufferedReader(Charsets.UTF_8).use { it.readText() }
-        val dependencyLicenses = runCatching { c.assets.open("licenses/dependencies.txt").bufferedReader(Charsets.UTF_8).use { it.readText() } }.getOrDefault("")
-        val text = str(R.string.licenses_text) + "\n\n" + contentLicenses +
-            if (imageNotice.isBlank()) "" else "\n\n$imageNotice" +
-            "\n\nApache License 2.0 (AndroidX and Noto Emoji)\n\n$apache" +
-            "\n\nCC BY-SA 4.0 summary\n\n$ccBySa" +
-            if (dependencyLicenses.isBlank()) "" else "\n\n$dependencyLicenses"
-        activity.open(TextScreen(activity, str(R.string.licenses), text))
+        val heading = str(R.string.licenses)
+        val prefix = str(R.string.licenses_text)
+        activity.openAsync {
+            val c = ctx
+            val contentLicenses = c.assets.open("content/LICENSES.md").bufferedReader(Charsets.UTF_8).use { it.readText() }
+            val imageNotice = runCatching { c.assets.open("content/third_party_notices.txt").bufferedReader(Charsets.UTF_8).use { it.readText() } }.getOrDefault("")
+            val apache = c.assets.open("licenses/apache-2.0.txt").bufferedReader(Charsets.UTF_8).use { it.readText() }
+            val ccBySa = c.assets.open("licenses/cc-by-sa-4.0.txt").bufferedReader(Charsets.UTF_8).use { it.readText() }
+            val dependencyLicenses = runCatching { c.assets.open("licenses/dependencies.txt").bufferedReader(Charsets.UTF_8).use { it.readText() } }.getOrDefault("")
+            val text = prefix + "\n\n" + contentLicenses +
+                if (imageNotice.isBlank()) "" else "\n\n$imageNotice" +
+                "\n\nApache License 2.0 (AndroidX and Noto Emoji)\n\n$apache" +
+                "\n\nCC BY-SA 4.0 summary\n\n$ccBySa" +
+                if (dependencyLicenses.isBlank()) "" else "\n\n$dependencyLicenses"
+            TextScreen(activity, heading, text)
+        }
     }
 
     private fun localeLabel(locale: String): String = when (locale) {
@@ -179,6 +183,31 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
     }
 }
 
+/** Friendly, structured introduction to the product and its independent status. */
+class AboutScreen(activity: MainActivity) : ScrollScreen(activity) {
+    override val barTitle: String get() = str(R.string.about_disclaimer)
+
+    override fun build(body: LinearLayout) {
+        val c = ctx
+        body.addView(Kit.card(c, 20, 8, c.col(R.color.primary_container), null) {
+            addView(Kit.text(c, str(R.string.about_tagline), R.style.Text_Title, c.col(R.color.on_surface)))
+            addView(Kit.text(c, str(R.string.about_intro), R.style.Text_Body).margins(c, top = 8))
+        })
+
+        body.addView(Kit.section(c, str(R.string.about_features_title)))
+        body.addView(Kit.card(c, 16, 8) {
+            listOf(R.string.about_feature_words, R.string.about_feature_grammar, R.string.about_feature_practice).forEach { id ->
+                addView(Kit.text(c, "•  " + str(id), R.style.Text_Body).margins(c, top = 4, bottom = 4))
+            }
+        })
+
+        body.addView(Kit.section(c, str(R.string.about_independent_title)))
+        body.addView(Kit.card(c, 16, 8, c.col(R.color.surface_variant), null) {
+            addView(Kit.text(c, str(R.string.about_independent_text), R.style.Text_Body))
+        })
+    }
+}
+
 /** Plain text page (disclaimer, licenses, offline privacy policy). */
 class TextScreen(activity: MainActivity, private val title: String, private val text: String) : ScrollScreen(activity) {
     override val barTitle: String get() = title
@@ -189,10 +218,27 @@ class PrivacyPolicyScreen(activity: MainActivity, private val publicUrl: String)
     override val barTitle: String get() = str(R.string.privacy_policy)
 
     override fun build(body: LinearLayout) {
-        body.addView(Kit.text(ctx, str(R.string.privacy_text), R.style.Text_Body).margins(ctx, top = 8))
-        if (publicUrl.isNotBlank()) body.addView(Kit.secondary(ctx, str(R.string.privacy_policy), 12) {
+        val c = ctx
+        body.addView(Kit.card(c, 16, 8, c.col(R.color.primary_container), null) {
+            addView(Kit.text(c, str(R.string.privacy_intro_title), R.style.Text_Title))
+            addView(Kit.text(c, str(R.string.privacy_intro), R.style.Text_Body).margins(c, top = 8))
+        })
+        policyBlock(body, R.string.privacy_backup_title, R.string.privacy_backup)
+        policyBlock(body, R.string.privacy_ads_title, R.string.privacy_ads)
+        policyBlock(body, R.string.privacy_microphone_title, R.string.privacy_microphone)
+        policyBlock(body, R.string.privacy_reminders_title, R.string.privacy_reminders)
+        body.addView(Kit.text(c, str(R.string.privacy_link_hint), R.style.Text_Caption).margins(c, top = 10))
+        if (publicUrl.isNotBlank()) body.addView(Kit.secondary(ctx, str(R.string.privacy_open_link), 12) {
             runCatching { activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(publicUrl))) }
-        }.margins(ctx, top = 16))
+        }.margins(ctx, top = 8))
+    }
+
+    private fun policyBlock(body: LinearLayout, title: Int, text: Int) {
+        val c = ctx
+        body.addView(Kit.card(c, 16, 12) {
+            addView(Kit.text(c, str(title), R.style.Text_BodyStrong, c.col(R.color.primary)))
+            addView(Kit.text(c, str(text), R.style.Text_Body).margins(c, top = 6))
+        })
     }
 }
 

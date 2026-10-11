@@ -52,7 +52,7 @@
     },
     {
       "id": "thpt",
-      "label": "Đề thi tốt nghiệp THPT",
+      "label": "Đề ôn luyện THPT - Bộ 1",
       "family": "THPT",
       "description": "40 câu trắc nghiệm, 50 phút: thông báo, tờ rơi, sắp xếp, điền đoạn và hai bài đọc.",
       "exerciseTypes": ["E02"],
@@ -61,12 +61,88 @@
       "optionsPerQuestion": 4,
       "source": "https://vqa.moet.gov.vn/vi/news/thong-bao/cau-truc-dinh-dang-de-thi-tot-nghiep-thpt-tu-nam-2025-74.html",
       "sections": [
-        {"id": "notice", "label": "Thông báo", "itemType": "group", "count": 6, "bank": "thpt"},
-        {"id": "leaflet", "label": "Tờ rơi, quảng cáo", "itemType": "group", "count": 6, "bank": "thpt"},
-        {"id": "arrange", "label": "Sắp xếp câu", "itemType": "mcq", "count": 5, "bank": "thpt"},
-        {"id": "complete", "label": "Điền vào đoạn văn", "itemType": "group", "count": 5, "bank": "thpt"},
-        {"id": "reading1", "label": "Đọc hiểu 1", "itemType": "group", "count": 8, "bank": "thpt"},
-        {"id": "reading2", "label": "Đọc hiểu 2", "itemType": "group", "count": 10, "bank": "thpt"}
+        {"id": "notice", "label": "Thông báo", "itemType": "group", "count": 6, "bank": "thpt", "groupSet": "1"},
+        {"id": "leaflet", "label": "Tờ rơi, quảng cáo", "itemType": "group", "count": 6, "bank": "thpt", "groupSet": "1"},
+        {"id": "arrange", "label": "Sắp xếp câu", "itemType": "mcq", "count": 5, "bank": "thpt", "groupSet": "1"},
+        {"id": "complete", "label": "Điền vào đoạn văn", "itemType": "group", "count": 5, "bank": "thpt", "groupSet": "1"},
+        {"id": "reading1", "label": "Đọc hiểu 1", "itemType": "group", "count": 8, "bank": "thpt", "groupSet": "1"},
+        {"id": "reading2", "label": "Đọc hiểu 2", "itemType": "group", "count": 10, "bank": "thpt", "groupSet": "1"}
+      ]
+    },
+    {
+      "id": "thpt_2",
+      "label": "Đề ôn luyện THPT - Bộ 2",
+      "family": "THPT",
+      "description": "40 original multiple-choice questions in 50 minutes.",
+      "exerciseTypes": ["E02"],
+      "questionCount": 40,
+      "timeLimitMinutes": 50,
+      "optionsPerQuestion": 4,
+      "source": "https://vqa.moet.gov.vn/vi/news/thong-bao/cau-truc-dinh-dang-de-thi-tot-nghiep-thpt-tu-nam-2025-74.html",
+      "sections": [
+        {"id": "notice", "label": "Notice", "itemType": "group", "count": 6, "bank": "thpt", "groupSet": "2"},
+        {"id": "leaflet", "label": "Leaflet or advertisement", "itemType": "group", "count": 6, "bank": "thpt", "groupSet": "2"},
+        {"id": "arrange", "label": "Sentence ordering", "itemType": "mcq", "count": 5, "bank": "thpt", "groupSet": "2"},
+        {"id": "complete", "label": "Text completion", "itemType": "group", "count": 5, "bank": "thpt", "groupSet": "2"},
+        {"id": "reading1", "label": "Reading 1", "itemType": "group", "count": 8, "bank": "thpt", "groupSet": "2"},
+        {"id": "reading2", "label": "Reading 2", "itemType": "group", "count": 10, "bank": "thpt", "groupSet": "2"}
+      ]
+    },
+    {
+      "id": "thpt_3",
+      "label": "Đề ôn luyện THPT - Bộ 3",
+      "family": "THPT",
+      "description": "40 original multiple-choice questions in 50 minutes.",
+      "exerciseTypes": ["E02"],
+      "questionCount": 40,
+      "timeLimitMinutes": 50,
+      "optionsPerQuestion": 4,
+      "source": "https://vqa.moet.gov.vn/vi/news/thong-bao/cau-truc-dinh-dang-de-thi-tot-nghiep-thpt-tu-nam-2025-74.html",
+      "sections": [
+        {"id": "notice", "label": "Notice", "itemType": "group", "count": 6, "bank": "thpt", "groupSet": "3"},
+        {"id": "leaflet", "label": "Leaflet or advertisement", "itemType": "group", "count": 6, "bank": "thpt", "groupSet": "3"},
+        {"id": "arrange", "label": "Sentence ordering", "itemType": "mcq", "count": 5, "bank": "thpt", "groupSet": "3"},
+        {"id": "complete", "label": "Text completion", "itemType": "group", "count": 5, "bank": "thpt", "groupSet": "3"},
+        {"id": "reading1", "label": "Reading 1", "itemType": "group", "count": 8, "bank": "thpt", "groupSet": "3"},
+        {"id": "reading2", "label": "Reading 2", "itemType": "group", "count": 10, "bank": "thpt", "groupSet": "3"}
+      ]
+    },
+    {
+      "id": "thpt_4",
+      "label": "Đề ôn luyện THPT - Bộ 4",
+      "family": "THPT",
+      "description": "40 original multiple-choice questions in 50 minutes.",
+      "exerciseTypes": ["E02"],
+      "questionCount": 40,
+      "timeLimitMinutes": 50,
+      "optionsPerQuestion": 4,
+      "source": "https://vqa.moet.gov.vn/vi/news/thong-bao/cau-truc-dinh-dang-de-thi-tot-nghiep-thpt-tu-nam-2025-74.html",
+      "sections": [
+        {"id": "notice", "label": "Notice", "itemType": "group", "count": 6, "bank": "thpt", "groupSet": "4"},
+        {"id": "leaflet", "label": "Leaflet or advertisement", "itemType": "group", "count": 6, "bank": "thpt", "groupSet": "4"},
+        {"id": "arrange", "label": "Sentence ordering", "itemType": "mcq", "count": 5, "bank": "thpt", "groupSet": "4"},
+        {"id": "complete", "label": "Text completion", "itemType": "group", "count": 5, "bank": "thpt", "groupSet": "4"},
+        {"id": "reading1", "label": "Reading 1", "itemType": "group", "count": 8, "bank": "thpt", "groupSet": "4"},
+        {"id": "reading2", "label": "Reading 2", "itemType": "group", "count": 10, "bank": "thpt", "groupSet": "4"}
+      ]
+    },
+    {
+      "id": "thpt_5",
+      "label": "Đề ôn luyện THPT - Bộ 5",
+      "family": "THPT",
+      "description": "40 original multiple-choice questions in 50 minutes.",
+      "exerciseTypes": ["E02"],
+      "questionCount": 40,
+      "timeLimitMinutes": 50,
+      "optionsPerQuestion": 4,
+      "source": "https://vqa.moet.gov.vn/vi/news/thong-bao/cau-truc-dinh-dang-de-thi-tot-nghiep-thpt-tu-nam-2025-74.html",
+      "sections": [
+        {"id": "notice", "label": "Notice", "itemType": "group", "count": 6, "bank": "thpt", "groupSet": "5"},
+        {"id": "leaflet", "label": "Leaflet or advertisement", "itemType": "group", "count": 6, "bank": "thpt", "groupSet": "5"},
+        {"id": "arrange", "label": "Sentence ordering", "itemType": "mcq", "count": 5, "bank": "thpt", "groupSet": "5"},
+        {"id": "complete", "label": "Text completion", "itemType": "group", "count": 5, "bank": "thpt", "groupSet": "5"},
+        {"id": "reading1", "label": "Reading 1", "itemType": "group", "count": 8, "bank": "thpt", "groupSet": "5"},
+        {"id": "reading2", "label": "Reading 2", "itemType": "group", "count": 10, "bank": "thpt", "groupSet": "5"}
       ]
     },
     {

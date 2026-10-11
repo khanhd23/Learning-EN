@@ -6,34 +6,16 @@ import org.junit.Test
 
 class ExamCatalogTest {
     @Test
-    fun groupsRelatedExamFormatsInPreferredOrder() {
+    fun thptIsVisibleOnlyForVietnameseLocale() {
         val formats = listOf(
-            format("ielts_1", "IELTS Academic practice"),
-            format("ket_1", "Cambridge A2 Key"),
-            format("toeic_1", "TOEIC-style practice"),
-            format("toeic_2", "TOEIC"),
-            format("pet_1", "Cambridge B1 Preliminary"),
-            format("vstep_1", "VSTEP"),
+            format("thpt", "THPT"),
+            format("thpt_2", "THPT"),
+            format("ielts", "IELTS"),
         )
 
-        val grouped = ExamCatalog.families(formats)
-
-        assertEquals(listOf("TOEIC", "IELTS", "VSTEP", "KET", "PET"), grouped.map { it.first })
-        assertEquals(listOf("toeic_1", "toeic_2"), grouped.first { it.first == "TOEIC" }.second.map { it.id })
-        assertEquals(listOf("ielts_1"), grouped.first { it.first == "IELTS" }.second.map { it.id })
-    }
-
-    @Test
-    fun unknownFamiliesStaySeparateAndKeepInputOrder() {
-        val formats = listOf(
-            format("school_1", "School practice"),
-            format("school_2", "School mock"),
-        )
-
-        val grouped = ExamCatalog.families(formats)
-
-        assertEquals(listOf("School practice", "School mock"), grouped.map { it.first })
-        assertEquals(listOf("school_1", "school_2"), grouped.flatMap { it.second }.map { it.id })
+        assertEquals(listOf("thpt", "thpt_2", "ielts"), ExamCatalog.visibleToLocale(formats, "vi").map { it.id })
+        assertEquals(listOf("ielts"), ExamCatalog.visibleToLocale(formats, "en-US").map { it.id })
+        assertEquals(listOf("ielts"), ExamCatalog.visibleToLocale(formats, "es").map { it.id })
     }
 
     private fun format(id: String, family: String) = ExamFormat(
@@ -41,9 +23,9 @@ class ExamCatalogTest {
         label = id,
         family = family,
         description = "",
-        questionCount = null,
+        questionCount = 40,
         passages = null,
-        timeLimitMinutes = null,
+        timeLimitMinutes = 50,
         source = null,
     )
 }

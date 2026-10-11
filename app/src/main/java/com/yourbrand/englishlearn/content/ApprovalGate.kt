@@ -20,6 +20,40 @@ data class LocaleApproval(
     val availableLevels: Set<Int>,
 )
 
+/**
+ * Compact release-gate data generated into the APK at build time. Keeping this parser next to
+ * the full evaluator makes the runtime path cheap without changing the approval rules.
+ */
+private fun JSONObject.stringSet(key: String): Set<String> {
+    val array = optJSONArray(key) ?: return emptySet()
+    return buildSet { for (i in 0 until array.length()) add(array.getString(i)) }
+}
+
+private fun JSONObject.intSet(key: String): Set<Int> {
+    val array = optJSONArray(key) ?: return emptySet()
+    return buildSet { for (i in 0 until array.length()) add(array.getInt(i)) }
+}
+
+fun localeApprovalFromManifest(row: JSONObject): LocaleApproval {
+    val approved = row.optJSONObject("approved") ?: JSONObject()
+    fun set(kind: String) = approved.optJSONObject(kind)?.stringSet("ids") ?: emptySet()
+    return LocaleApproval(
+        approvedTopics = set("topics"),
+        approvedWords = set("words"),
+        approvedConfusables = set("confusables"),
+        approvedGrammar = set("grammar"),
+        approvedQuestions = set("questions"),
+        approvedPassages = set("passages"),
+        approvedPet = set("pet"),
+        approvedTips = set("tips"),
+        approvedSound = set("sound"),
+        approvedStories = set("stories"),
+        approvedExams = set("exams"),
+        selectable = row.optBoolean("selectable"),
+        availableLevels = row.intSet("availableLevels"),
+    )
+}
+
 object ApprovalGate {
     private const val THRESHOLD = 0.95
 

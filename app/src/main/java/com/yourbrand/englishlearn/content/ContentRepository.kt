@@ -34,8 +34,30 @@ class Content(
     val questionById = questions.associateBy { it.id }
     val passageById = passages.associateBy { it.id }
     val confusableById = confusables.associateBy { it.id }
-    val wordsByTopic: Map<String, List<Word>> = topics.associate { t -> t.id to words.filter { !it.adult && t.id in it.topics } }
-    val wordsByList: Map<String, List<Word>> = wordLists.associate { list -> list.id to words.filter { !it.adult && list.id in it.lists } }
+    /** Indexes are built once while the content pack is parsed; screens never rescan the full vocabulary for a topic/level. */
+    val wordsByLevel: Map<Int, List<Word>> = words.groupBy { it.level }
+    val wordsByTopic: Map<String, List<Word>> = buildMap {
+        topics.forEach { put(it.id, ArrayList()) }
+        words.asSequence().filterNot { it.adult }.forEach { word ->
+            word.topics.forEach { topic -> (get(topic) as? MutableList<Word>)?.add(word) }
+        }
+    }
+    /**
+     * A visible exam list is a view over the source/list codes and/or CEFR levels declared in
+     * config/word_lists.json. The config ids (for example, "toeic") are presentation ids; the
+     * generated words carry source codes such as "tsl" and "nawl".
+     */
+    val wordsByList: Map<String, List<Word>> = buildMap {
+        wordLists.forEach { put(it.id, ArrayList()) }
+        words.asSequence().filterNot { it.adult }.forEach { word ->
+            wordLists.forEach { list ->
+                val matches = list.id in word.lists ||
+                    list.sources.any { source -> source in word.lists } ||
+                    (word.cefr != null && list.cefr.any { level -> level.equals(word.cefr, ignoreCase = true) })
+                if (matches) (get(list.id) as? MutableList<Word>)?.add(word)
+            }
+        }
+    }
     val questionsByPoint: Map<String, List<Question>> = questions.filter { it.gp != null }.groupBy { it.gp!! }
 
     fun isLevelAvailable(level: Int): Boolean = level in availableLevels
@@ -225,6 +247,10 @@ object ContentParser {
 class ContentRepository(private val context: Context) {
     private val cached = mutableMapOf<String, Content>()
     private val approvalCached = mutableMapOf<String, LocaleApproval>()
+    private val approvalManifest by lazy {
+        runCatching { JSONObject(asset("locale_approvals.json")) }.getOrElse { JSONObject() }
+    }
+    private var selectableCache: List<String>? = null
 
     private fun asset(name: String) = context.assets.open("content/$name").bufferedReader().use { it.readText() }
 
@@ -254,6 +280,9 @@ class ContentRepository(private val context: Context) {
     }
 
     private fun approval(path: String): LocaleApproval = approvalCached.getOrPut(path) {
+        val locale = path.removePrefix("i18n/")
+        approvalManifest.optJSONObject(locale)?.let { return@getOrPut localeApprovalFromManifest(it) }
+        // Keep a safe fallback for older/dev asset bundles that predate the generated manifest.
         ApprovalGate.evaluate(
             JSONObject(asset("$path/status.json")),
             JSONObject(asset("en/words.json")),
@@ -269,12 +298,15 @@ class ContentRepository(private val context: Context) {
 
     /** Locale packs that are actually bundled in this build and pass the release gate. */
     fun selectableLocales(): List<String> = synchronized(this) {
-        val locales = context.assets.list("content/i18n").orEmpty().asSequence()
-            .filter { it != "market_profiles.json" }
-            .filter { isSelectablePath("i18n/$it") }
-            .toMutableList()
-        locales += "en"
-        locales.distinct().sortedWith(compareBy<String> { if (it == "en") 0 else if (it == "vi") 1 else 2 }.thenBy { it })
+        selectableCache ?: run {
+            val locales = context.assets.list("content/i18n").orEmpty().asSequence()
+                .filter { it != "market_profiles.json" }
+                .filter { isSelectablePath("i18n/$it") }
+                .toMutableList()
+            locales += "en"
+            locales.distinct().sortedWith(compareBy<String> { if (it == "en") 0 else if (it == "vi") 1 else 2 }.thenBy { it })
+                .also { selectableCache = it }
+        }
     }
 
     /** Backward-compatible name used by Settings; this is now the approval-gated picker list. */
@@ -315,7 +347,18 @@ class ContentRepository(private val context: Context) {
             val source = runCatching { asset("en/exams/$bank.json") }.getOrNull() ?: return@mapNotNull null
             val base = ExamBankParser.parse(source)
             val localized = if (key == "en") null else runCatching { asset("$key/exams/$bank.json") }.getOrNull()
-            bank to ExamBankParser.merge(base, localized, approval?.approvedExams ?: emptySet())
+            bank to ExamBankParser.merge(
+                base,
+                localized,
+                approval?.approvedExams ?: emptySet(),
+                // Assessment material must stay in its authored language for every exam.
+                // This includes IELTS/VSTEP/THPT/KET/PET: translating a stem, passage or
+                // group title changes what the learner is being assessed on. Explanations
+                // remain localizable through the approved locale pack.
+                translatePassages = false,
+                translateGroupTitles = false,
+                translateItemStems = false,
+            )
         }.toMap()
     }
 

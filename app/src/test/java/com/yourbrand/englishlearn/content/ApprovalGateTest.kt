@@ -78,6 +78,24 @@ class ApprovalGateTest {
         assertTrue(result.approvedWords.isEmpty())
     }
 
+    @Test
+    fun compactManifestRestoresApprovalSetsAndLevels() {
+        val row = JSONObject()
+            .put("selectable", true)
+            .put("availableLevels", JSONArray().put(1).put(2))
+            .put("approved", JSONObject()
+                .put("words", JSONObject().put("ids", JSONArray().put("s1")))
+                .put("grammar", JSONObject().put("ids", JSONArray().put("be")))
+                .put("ui", JSONObject().put("ids", JSONArray().put("home"))))
+
+        val result = localeApprovalFromManifest(row)
+
+        assertTrue(result.selectable)
+        assertEquals(setOf(1, 2), result.availableLevels)
+        assertEquals(setOf("s1"), result.approvedWords)
+        assertEquals(setOf("be"), result.approvedGrammar)
+    }
+
     private fun approvedRows(vararg keys: String): JSONObject = JSONObject().apply {
         keys.forEach { put(it, JSONObject().put("s", "approved")) }
     }

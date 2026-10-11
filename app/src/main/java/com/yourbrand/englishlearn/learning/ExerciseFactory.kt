@@ -8,6 +8,7 @@ import com.yourbrand.englishlearn.content.MinimalPair
 import com.yourbrand.englishlearn.content.SoundSentence
 import com.yourbrand.englishlearn.content.ExamItem
 import com.yourbrand.englishlearn.content.ExamGroup
+import com.yourbrand.englishlearn.content.ToeicPart1Images
 import com.yourbrand.englishlearn.content.Word
 import kotlin.random.Random
 
@@ -18,6 +19,8 @@ internal fun meaningDistractorAllowed(answerId: String, candidateId: String): Bo
 
 /** Builds runtime exercises from content. Every word gives many exercise types for free. */
 class ExerciseFactory(private val content: Content, private val random: Random = Random.Default) {
+
+    private val imageWords = content.lessonWords.filter { it.image != null }
 
     private fun wordTags(w: Word) = listOf("vocab_core", "pos_${w.pos}") + w.topics.take(1).map { "topic_$it" }
 
@@ -39,9 +42,21 @@ class ExerciseFactory(private val content: Content, private val random: Random =
     private fun distractors(w: Word, n: Int = 3, pool: List<Word> = content.lessonWords): List<Word> {
         val glosses = HashSet<String>().apply { add(w.gloss.lowercase()) }
         val lemmas = HashSet<String>().apply { add(w.lemma.lowercase()) }
-        val same = pool.filter { it.id != w.id && it.pos == w.pos && meaningDistractorAllowed(w.id, it.id) }.shuffled(random)
+        // A question needs only a few candidates. Sampling a bounded number keeps each
+        // exercise O(1) with respect to the full vocabulary instead of filtering/shuffling it.
+        fun sample(predicate: (Word) -> Boolean, max: Int): List<Word> {
+            if (pool.isEmpty()) return emptyList()
+            val out = LinkedHashMap<String, Word>()
+            repeat(minOf(pool.size, max * 32)) {
+                val candidate = pool[random.nextInt(pool.size)]
+                if (candidate.id != w.id && candidate.id !in out && predicate(candidate)) out[candidate.id] = candidate
+            }
+            if (out.size < max) pool.asSequence().filter { it.id != w.id && it.id !in out && predicate(it) }.take(max - out.size).forEach { out[it.id] = it }
+            return out.values.toList()
+        }
+        val same = sample({ it.pos == w.pos && meaningDistractorAllowed(w.id, it.id) }, 40)
             .sortedBy { kotlin.math.abs(it.level - w.level) + if (it.topics.any { t -> t in w.topics }) 0 else 1 }
-        val any = pool.filter { it.id != w.id && meaningDistractorAllowed(w.id, it.id) }.shuffled(random)
+        val any = sample({ meaningDistractorAllowed(w.id, it.id) }, 40)
         val out = ArrayList<Word>()
         for (c in same.take(40) + any.take(40)) {
             if (out.size == n) break
@@ -56,15 +71,15 @@ class ExerciseFactory(private val content: Content, private val random: Random =
     }
 
     /** E01: English word → Vietnamese meaning. */
-    fun meaning(w: Word): Exercise.Choice {
-        val (opts, ans) = withAnswer(w.gloss, distractors(w).map { it.gloss })
+    fun meaning(w: Word, distractorPool: List<Word> = content.lessonWords): Exercise.Choice {
+        val (opts, ans) = withAnswer(w.gloss, distractors(w, pool = distractorPool).map { it.gloss })
         return Exercise.Choice(w.key, Kind.E01, wordTags(w), w.level, R.string.ins_meaning, w.lemma, opts, ans,
             explanation = explainWord(w), speak = w.lemma, wordId = w.id, hint = "(${w.pos}) ${w.ipa}", methodContext = example(w))
     }
 
     /** E01 reversed: Vietnamese meaning → English word. */
-    fun reverse(w: Word): Exercise.Choice {
-        val (opts, ans) = withAnswer(w.lemma, distractors(w).map { it.lemma })
+    fun reverse(w: Word, distractorPool: List<Word> = content.lessonWords): Exercise.Choice {
+        val (opts, ans) = withAnswer(w.lemma, distractors(w, pool = distractorPool).map { it.lemma })
         return Exercise.Choice(w.key, Kind.E01, wordTags(w), w.level, R.string.ins_reverse, w.gloss, opts, ans,
             explanation = explainWord(w), speak = w.lemma, wordId = w.id, methodContext = blanked(w))
     }
@@ -89,9 +104,10 @@ class ExerciseFactory(private val content: Content, private val random: Random =
 
     fun flashcard(w: Word) = Exercise.Flashcard(w.key, wordTags(w), w.level, w)
 
-    fun picture(w: Word, kind: Kind = Kind.E15): Exercise.PictureChoice? {
-        val sameTopic = content.lessonWords.filter { it.image != null && it.id != w.id && it.pos == w.pos && it.topics.any { t -> t in w.topics } }
-        val samePos = content.lessonWords.filter { it.image != null && it.id != w.id && it.pos == w.pos }
+    fun picture(w: Word, kind: Kind = Kind.E15, pool: List<Word> = content.lessonWords): Exercise.PictureChoice? {
+        val candidates = if (pool === content.lessonWords) imageWords else pool.filter { it.image != null }
+        val sameTopic = candidates.filter { it.id != w.id && it.pos == w.pos && it.topics.any { t -> t in w.topics } }
+        val samePos = candidates.filter { it.id != w.id && it.pos == w.pos }
         val others = orderedPictureDistractors(sameTopic, samePos, { it.image }, random, 3)
         if (w.image == null || others.size < 3) return null
         val words = (others + w).shuffled(random)
@@ -102,10 +118,11 @@ class ExerciseFactory(private val content: Content, private val random: Random =
         }
     }
 
-    fun pictureMatch(w: Word): Exercise.PictureMatch? {
+    fun pictureMatch(w: Word, pool: List<Word> = content.lessonWords): Exercise.PictureMatch? {
         if (w.image == null) return null
-        val sameTopic = content.lessonWords.filter { it.image != null && it.id != w.id && it.topics.any { t -> t in w.topics } }
-        val samePos = content.lessonWords.filter { it.image != null && it.id != w.id && it.pos == w.pos }
+        val candidates = if (pool === content.lessonWords) imageWords else pool.filter { it.image != null }
+        val sameTopic = candidates.filter { it.id != w.id && it.topics.any { t -> t in w.topics } }
+        val samePos = candidates.filter { it.id != w.id && it.pos == w.pos }
         val words = (listOf(w) + orderedPictureDistractors(sameTopic, samePos, { it.image }, random, 3)).take(4)
         if (words.size < 4) return null
         val order = words.indices.shuffled(random)
@@ -150,7 +167,8 @@ class ExerciseFactory(private val content: Content, private val random: Random =
             listOf("exam", "section_${item.section}") + if (listening) listOf("listening", item.section) else emptyList(), item.level,
             if (listening) R.string.ins_listen else R.string.ins_choose, item.stem, item.options, item.answer, item.explanation,
             sharedPassage = group?.passage, sharedPassageTitle = group?.title, sharedGroupId = group?.id,
-            audioOptions = listening, audioPrompt = audioPrompt)
+            audioOptions = listening, audioPrompt = audioPrompt,
+            sharedImage = if (bank == "toeic_p1" && partOneListening) ToeicPart1Images.resourceFor(group?.id) else null)
     }
 
     fun spelling(w: Word): Exercise.Spelling? {
@@ -208,16 +226,16 @@ class ExerciseFactory(private val content: Content, private val random: Random =
     }
 
     /** A varied set of exercises for one word, by how well it is known. */
-    fun forWord(w: Word, state: ItemState?): Exercise {
+    fun forWord(w: Word, state: ItemState?, distractorPool: List<Word> = content.lessonWords): Exercise {
         val box = state?.box ?: 0
         val options = buildList<() -> Exercise?> {
-            if (box <= 1) { add { meaning(w) }; add { meaning(w) }; add { flashcard(w) } }
-            if (box <= 1) add { picture(w, Kind.E15) }
-            if (box >= 1) { add { reverse(w) }; add { listening(w) }; add { cloze(w) } }
+            if (box <= 1) { add { meaning(w, distractorPool) }; add { meaning(w, distractorPool) }; add { flashcard(w) } }
+            if (box <= 1) add { picture(w, Kind.E15, distractorPool) }
+            if (box >= 1) { add { reverse(w, distractorPool) }; add { listening(w) }; add { cloze(w) } }
             if (box >= 2) { add { spelling(w) }; add { cloze(w) } }
         }
         for (attempt in 0 until 4) options.random(random)()?.let { return it }
-        return meaning(w)
+        return meaning(w, distractorPool)
     }
 }
 

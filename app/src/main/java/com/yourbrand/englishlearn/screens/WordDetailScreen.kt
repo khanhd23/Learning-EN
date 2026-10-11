@@ -143,7 +143,7 @@ class WordDetailScreen(activity: MainActivity, private val wordId: String) : Scr
         }.apply { layoutParams = lp(0, c.dpi(52), 1f).apply { marginStart = c.dpi(10) } })
         (actions.getChildAt(1) as? TextView)?.text = "🚩 " + str(R.string.report_mistake)
         body.addView(actions)
-        body.addView(Kit.primary(c, str(R.string.practice_this_word), 12) { activity.startSession(services.builder().singleWord(w.lemma, w)) }.apply { tag = "petAvoid" })
+        body.addView(Kit.primary(c, str(R.string.practice_this_word), 12) { activity.startSessionAsync { services.builder().singleWord(w.lemma, w) } }.apply { tag = "petAvoid" })
     }
 
     private fun posLabel(pos: String) = str(when (pos) {
@@ -191,6 +191,6 @@ class ConfusableScreen(activity: MainActivity, private val setId: String) : Scro
             addView(Kit.text(c, cf.tip, R.style.Text_Body).margins(c, top = 4))
         })
         val s = services.builder().confusable(cf.words.joinToString(" / "), cf.id)
-        if (s.exercises.isNotEmpty()) body.addView(Kit.primary(c, str(R.string.practice_set, s.exercises.size), 20) { activity.startSession(services.builder().confusable(cf.words.joinToString(" / "), cf.id)) })
+        if (s.exercises.isNotEmpty()) body.addView(Kit.primary(c, str(R.string.practice_set, s.exercises.size), 20) { activity.startSessionAsync { services.builder().confusable(cf.words.joinToString(" / "), cf.id) } })
     }
 }

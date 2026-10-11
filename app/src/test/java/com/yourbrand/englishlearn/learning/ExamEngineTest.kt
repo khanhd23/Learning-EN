@@ -58,6 +58,22 @@ class ExamEngineTest {
         assertEquals(emptySet<String>(), paper("1").map { it.id }.toSet() intersect paper("2").map { it.id }.toSet())
     }
 
+    @Test fun idEncodedPaperSetSelectsOneThptPaper() {
+        fun item(id: String, section: String) = ExamItem(id, section, 3, id, listOf("A", "B", "C", "D"), 0, "Explanation")
+        fun group(id: String) = ExamGroup(id, "notice", "Passage $id", "Notice", listOf(item("${id}_1", "notice"), item("${id}_2", "notice")))
+        val bank = ExamBank(
+            listOf(item("p1_arrange_1", "arrange"), item("p2_arrange_1", "arrange")),
+            listOf(group("p1_notice"), group("p2_notice")),
+        )
+        val format = ExamFormat("thpt", "THPT", "THPT", "", 3, null, 50, null, listOf(
+            ExamSection("arrange", "Arrange", "mcq", 1, emptyList(), emptyList(), "thpt", "1"),
+            ExamSection("notice", "Notice", "group", 2, emptyList(), emptyList(), "thpt", "1"),
+        ))
+
+        val picked = SectionedExamBuilder.build(format, bank)
+        assertEquals(listOf("p1_arrange_1", "p1_notice_1", "p1_notice_2"), picked.map { it.id })
+    }
+
     @Test fun mixedBankFormatKeepsSectionsAndKeysInTheirSourceBanks() {
         val p5 = ExamBank(listOf(
             ExamItem("p5_set1_a", "p5", 3, "P5 A", listOf("A", "B", "C", "D"), 0, "Explanation").copy(set = "1"),

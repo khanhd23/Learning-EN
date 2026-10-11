@@ -8,7 +8,9 @@ import com.yourbrand.englishlearn.content.ExamSection
 /** Localized presentation text for format metadata kept in the exam catalog. */
 object ExamFormatText {
     fun label(context: Context, format: ExamFormat): String =
-        labelRes(format.id)?.let(context::getString) ?: format.label
+        thptSetNumber(format.id)?.let { format.label }
+            ?: labelRes(format.id)?.let(context::getString)
+            ?: format.label
 
     fun description(context: Context, format: ExamFormat): String =
         descriptionRes(format.id)?.let(context::getString) ?: format.description
@@ -28,7 +30,7 @@ object ExamFormatText {
         id == "toeic_p5" -> R.string.exam_format_toeic_p5_desc
         id == "toeic_p6" -> R.string.exam_format_toeic_p6_desc
         id == "school" -> R.string.exam_format_school_desc
-        id == "thpt" -> R.string.exam_format_thpt_desc
+        thptSetNumber(id) != null -> R.string.exam_format_thpt_desc
         id.startsWith("toeic_p7_practice_") -> R.string.exam_format_toeic_p7_desc
         id.startsWith("vstep_practice_") -> R.string.exam_format_vstep_desc
         else -> null
@@ -41,6 +43,12 @@ object ExamFormatText {
         "complete" -> R.string.exam_section_complete
         "reading1" -> R.string.exam_section_reading1
         "reading2" -> R.string.exam_section_reading2
+        else -> null
+    }
+
+    private fun thptSetNumber(id: String): Int? = when {
+        id == "thpt" -> 1
+        id.startsWith("thpt_") -> id.substringAfter("thpt_").toIntOrNull()?.takeIf { it in 2..5 }
         else -> null
     }
 }

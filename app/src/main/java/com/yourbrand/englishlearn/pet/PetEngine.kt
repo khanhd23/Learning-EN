@@ -5,11 +5,14 @@ import org.json.JSONObject
 
 /** Tunables from config/app_config.json → "pet". */
 data class PetConfig(
-    val stageCost: List<Int> = listOf(100, 220, 380, 580, 820, 1100, 1450, 1850, 2300, 2800),
+    // A full 60-minute day is capped at 200 XP. These costs keep max stage
+    // beyond 100 full study days, even when weekly quest bonuses are included.
+    val stageCost: List<Int> = listOf(400, 800, 1400, 2200, 3200, 4300, 5500, 6700, 7800, 9000),
     val dailyXpCap: Int = 200,
     val graceHours: Int = 24,
     val dailyDecayPercent: Int = 15,
     val mealHungerDrop: Int = 40,
+    val weeklyQuestXp: List<Int> = listOf(200, 240, 160, 200),
 ) {
     val maxStage: Int get() = stageCost.size
 }
@@ -110,18 +113,29 @@ class PetEngine(
         return moved
     }
 
+    /** Adds learning XP (already multiplied by the caller), capped per day. */
+    fun addXp(raw: Int, now: Long): XpResult = addXpInternal(raw, now, respectDailyCap = true, awardCoins = true)
+
     /**
-     * Adds learning XP (already multiplied by the caller), capped per day. Coins: 1 per 2 XP + 30 per stage-up.
+     * Adds a completed weekly-quest bonus. It is separate from the daily goal, so a learner
+     * who already reached 15/30/60 minutes still receives the weekly reward. Quest rewards do
+     * not mint extra coins because the quest already grants a pet item or coins.
      */
-    fun addXp(raw: Int, now: Long): XpResult {
+    fun addBonusXp(raw: Int, now: Long): XpResult = addXpInternal(raw, now, respectDailyCap = false, awardCoins = false)
+
+    private fun addXpInternal(raw: Int, now: Long, respectDailyCap: Boolean, awardCoins: Boolean): XpResult {
         if (raw <= 0) return XpResult(0, 0, null)
         val day = dayOf(now)
-        if (state.xpDay != day) { state.xpDay = day; state.xpToday = 0 }
-        val gained = raw.coerceAtMost((config.dailyXpCap - state.xpToday).coerceAtLeast(0))
-        state.xpToday += raw // count raw so the cap reflects effort, not just credited XP
+        val gained = if (respectDailyCap) {
+            if (state.xpDay != day) { state.xpDay = day; state.xpToday = 0 }
+            state.xpToday += raw // count raw so the cap reflects effort, not just credited XP
+            raw.coerceAtMost((config.dailyXpCap - (state.xpToday - raw)).coerceAtLeast(0))
+        } else {
+            raw
+        }
         state.lastStudyAt = maxOf(state.lastStudyAt, now)
         state.lastDecayDay = maxOf(state.lastDecayDay, day - 1)
-        var coins = (gained + 1) / 2
+        var coins = if (awardCoins) (gained + 1) / 2 else 0
         var stageUp: Int? = null
         if (gained > 0) {
             state.totalXp += gained

@@ -83,15 +83,16 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
             })
         }
 
-        // 3. Continue
-        continueCard()?.let { body.addView(it) }
+        // 3. Continue. The content pack is parsed in the background during app startup; do not
+        // synchronously force that multi-megabyte parse while the first frame is being built.
+        if (s.contentReady) continueCard()?.let { body.addView(it) }
 
         // 4. Due reviews
         val dailyDone = s.settings.dailyChallengeDay == LearningStore.dayKey(now)
         body.addView(Kit.clickableCard(c, 16, 12, c.col(R.color.accent_container), onClick = {
             if (!dailyDone) {
                 s.content.petLines["Q_DAILY_START"]?.randomOrNull()?.let { activity.petView.say(it.replace("{name}", s.pet.state.name), false) }
-                activity.startSession(s.builder().daily(str(R.string.daily_challenge), now, s.settings.preferredTopics(), s.settings.userLevel))
+                activity.startSessionAsync { s.builder().daily(str(R.string.daily_challenge), now, s.settings.preferredTopics(), s.settings.userLevel) }
             }
         }) {
             orientation = LinearLayout.HORIZONTAL; gravity = Gravity.CENTER_VERTICAL
@@ -104,25 +105,34 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
             addView(Kit.chevron(c))
         })
         val week = com.yourbrand.englishlearn.learning.WeekKey.mondayOf(s.today(now))
-        val newWords = s.store.firstSeenCount(week).coerceAtMost(20)
+        val newWordsGoal = s.settings.weeklyNewWordsTarget
+        val newWords = s.store.firstSeenCount(week).coerceAtMost(newWordsGoal)
         val dailyChallenges = s.settings.weeklyDailyChallenges.coerceAtMost(3)
         val speakingDays = s.settings.weeklySpeakingDays.size.coerceAtMost(2)
         val stories = s.settings.weeklyStories.coerceAtMost(2)
         body.addView(Kit.card(c, 16, 12) {
             addView(Kit.text(c, str(R.string.weekly_quests), R.style.Text_BodyStrong))
-            weeklyRow(this, str(R.string.quest_new_words, 20) + "  " + str(R.string.quest_progress, newWords, 20), newWords >= 20)
-            weeklyRow(this, str(R.string.quest_daily, 3) + "  " + str(R.string.quest_progress, dailyChallenges, 3), dailyChallenges >= 3)
-            if (SpeechRecognizer.isRecognitionAvailable(c)) weeklyRow(this, str(R.string.quest_speaking, 2) + "  " + str(R.string.quest_progress, speakingDays, 2), speakingDays >= 2)
-            weeklyRow(this, str(R.string.quest_stories, 2) + "  " + str(R.string.quest_progress, stories, 2), stories >= 2)
+            weeklyRow(this, str(R.string.quest_new_words, newWordsGoal) + "  " + str(R.string.quest_progress, newWords, newWordsGoal) + "  " + str(R.string.quest_xp, s.pet.config.weeklyQuestXp.getOrElse(0) { 0 }), newWords >= newWordsGoal)
+            weeklyRow(this, str(R.string.quest_daily, 3) + "  " + str(R.string.quest_progress, dailyChallenges, 3) + "  " + str(R.string.quest_xp, s.pet.config.weeklyQuestXp.getOrElse(1) { 0 }), dailyChallenges >= 3)
+            if (SpeechRecognizer.isRecognitionAvailable(c)) weeklyRow(this, str(R.string.quest_speaking, 2) + "  " + str(R.string.quest_progress, speakingDays, 2) + "  " + str(R.string.quest_xp, s.pet.config.weeklyQuestXp.getOrElse(2) { 0 }), speakingDays >= 2)
+            weeklyRow(this, str(R.string.quest_stories, 2) + "  " + str(R.string.quest_progress, stories, 2) + "  " + str(R.string.quest_xp, s.pet.config.weeklyQuestXp.getOrElse(3) { 0 }), stories >= 2)
             addView(Kit.text(c, str(R.string.streak_shields, s.pet.state.freezeTokens), R.style.Text_Caption).margins(c, top = 4))
         }.apply { tag = "petAvoid" })
 
         val token = ++deferredBuildToken
         body.postOnAnimation {
             if (token != deferredBuildToken || !body.isAttachedToWindow) return@postOnAnimation
+            if (!s.contentReady) {
+                body.postDelayed({
+                    if (token != deferredBuildToken || !body.isAttachedToWindow) return@postDelayed
+                    body.removeAllViews()
+                    build(body)
+                }, 50L)
+                return@postOnAnimation
+            }
         // 4. Due reviews
         val due = s.store.allItems().count { Scheduler.isDue(it, now) }
-        body.addView(Kit.clickableCard(c, 16, 12, onClick = { activity.startSession(s.builder().review(str(R.string.review_now_title), now)) }) {
+        body.addView(Kit.clickableCard(c, 16, 12, onClick = { activity.startSessionAsync { s.builder().review(str(R.string.review_now_title), now) } }) {
             orientation = LinearLayout.HORIZONTAL; gravity = Gravity.CENTER_VERTICAL
             addView(Kit.emojiTile(c, "🔁", c.col(R.color.info_container)))
             addView(Kit.vbox(c) {
@@ -138,9 +148,9 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
         if (weak.isNotEmpty()) {
             body.addView(Kit.section(c, str(R.string.weak_spots)))
             val flow = Kit.flow(c)
-            weak.forEach { t -> flow.addView(Kit.chip(c, TagNames.label(c, t), false, c.col(R.color.error)) { activity.startSession(s.builder().weak(str(R.string.practice_weak), now)) }) }
+            weak.forEach { t -> flow.addView(Kit.chip(c, TagNames.label(c, t), false, c.col(R.color.error)) { activity.startSessionAsync { s.builder().weak(str(R.string.practice_weak), now) } }) }
             body.addView(flow)
-            body.addView(Kit.secondary(c, str(R.string.practice_weak), 4) { activity.startSession(s.builder().weak(str(R.string.practice_weak), now)) })
+            body.addView(Kit.secondary(c, str(R.string.practice_weak), 4) { activity.startSessionAsync { s.builder().weak(str(R.string.practice_weak), now) } })
         }
 
         // 6. Today's plan (from goals)
@@ -150,13 +160,17 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
         val todayHist = s.store.history().filter { LearningStore.dayKey(it.at) == todayKey }
         val topic = topicForPlan()
         val list = selectedListForPlan()
-        planRow(plan, str(R.string.plan_words, s.settings.newWordsPerSession * 2, list?.label ?: topic?.name ?: ""), todayHist.any { it.kind in listOf("QUICK", "TOPIC", "WORDS", "WELCOME", "MEAL") }) {
-            if (list != null) {
-                val words = s.content.wordsByList[list.id].orEmpty().filter { it.tier == "silver" }
-                activity.startSession(s.builder().words(SessionKind.WORDS, list.label, words, com.yourbrand.englishlearn.learning.VocabMode.MIXED, newFirst = true))
+        val dailyNewWords = s.settings.dailyNewWordsTarget
+        val listWords = list?.let { s.content.wordsByList[it.id].orEmpty().filter { word -> word.tier == "silver" } }.orEmpty()
+        val topicWords = topic?.let { s.content.wordsByTopic[it.id].orEmpty() }.orEmpty()
+        planRow(plan, str(R.string.plan_words, dailyNewWords), todayHist.any { it.kind in listOf("QUICK", "TOPIC", "WORDS", "WELCOME", "MEAL") }) {
+            if (listWords.isNotEmpty()) {
+                activity.startSessionAsync { s.builder().words(SessionKind.WORDS, list?.label.orEmpty(), listWords, com.yourbrand.englishlearn.learning.VocabMode.MIXED, n = dailyNewWords, newFirst = true) }
             } else {
-                val t = topic ?: return@planRow
-                activity.startSession(s.builder().words(SessionKind.TOPIC, t.name, s.content.wordsByTopic[t.id].orEmpty(), com.yourbrand.englishlearn.learning.VocabMode.MIXED))
+                val t = topic
+                val candidates = topicWords.ifEmpty { s.content.lessonWords }
+                if (candidates.isEmpty()) activity.toast(str(R.string.nothing_to_practice))
+                else activity.startSessionAsync { s.builder().words(SessionKind.TOPIC, t?.name ?: str(R.string.words), candidates, com.yourbrand.englishlearn.learning.VocabMode.MIXED, n = dailyNewWords, newFirst = true) }
             }
         }
         val gp = nextGrammarPoint()
@@ -165,7 +179,7 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
         planRow(plan, examLabel, todayHist.any { it.kind == "EXAM_TYPE" || it.kind == "BUILDER" || it.kind == "MOCK" }) {
             val fmt = if ("toeic" in s.settings.goals) "toeic" else "school"
             val section = if (fmt == "toeic") "p5" else null
-            activity.startSession(s.builder().examType(examLabel, fmt, section, 3, 5))
+            activity.startSessionAsync { s.builder().examType(examLabel, fmt, section, 3, 5) }
         }
         body.addView(plan)
 
@@ -191,7 +205,7 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
         }
 
         // 60-second challenge
-        body.addView(Kit.clickableCard(c, 16, 12, c.col(R.color.accent_container), onClick = { activity.startSession(s.builder().speed(str(R.string.speed_title), s.settings.userLevel)) }) {
+        body.addView(Kit.clickableCard(c, 16, 12, c.col(R.color.accent_container), onClick = { activity.startSessionAsync { s.builder().speed(str(R.string.speed_title), s.settings.userLevel) } }) {
             orientation = LinearLayout.HORIZONTAL; gravity = Gravity.CENTER_VERTICAL
             addView(Kit.emojiTile(c, "⚡", c.col(R.color.surface)))
             addView(Kit.vbox(c) {
@@ -301,7 +315,10 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
     private fun startQuick() {
         val s = services
         val title = str(R.string.quick_session)
-        activity.startSession(s.builder().quick(title, System.currentTimeMillis(), s.settings.preferredTopics(), s.settings.userLevel, 10))
+        val now = System.currentTimeMillis()
+        val topics = s.settings.preferredTopics()
+        val level = s.settings.userLevel
+        activity.startSessionAsync { s.builder().quick(title, now, topics, level, 10) }
     }
 }
 

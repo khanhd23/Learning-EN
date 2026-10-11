@@ -155,7 +155,8 @@ class StoryScreen(activity: MainActivity, private val story: Story) : Screen(act
     private fun finishStory() {
         services.creditXp((10 + correct * 2).coerceAtMost(20))
         val rewards = services.run { recordStoryFinished(); claimWeeklyRewards() }
-        rewards.forEach { id -> PetItems.byId[id]?.let { activity.toast(str(R.string.quest_reward, str(it.nameRes))) } }
+        rewards.itemIds.forEach { id -> PetItems.byId[id]?.let { activity.toast(str(R.string.quest_reward, str(it.nameRes))) } }
+        if (rewards.xp > 0) activity.toast(str(R.string.quest_xp_reward, rewards.xp))
         services.pet.meal(System.currentTimeMillis(), services.goalReached())
         services.savePet()
         activity.navigator.pop()

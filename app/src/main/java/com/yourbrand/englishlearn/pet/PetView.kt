@@ -129,7 +129,15 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
     private fun palette(): Palette {
         val s = (stage - 1) / 9f
         return when (species) {
-            "panda" -> Palette(0xFFFFFDF9.toInt(), 0xFF2A2A2E.toInt(), 0xFFF3EEE6.toInt(), 0xFFF5A3AE.toInt(), 0xFF3FAF6A.toInt())
+            // A cool, slightly blue-white coat keeps the panda readable against the warm
+            // room backgrounds. The dark parts become inkier as the panda grows.
+            "panda" -> Palette(
+                mix(0xFFF1F5F7.toInt(), 0xFFD7E3EA.toInt(), s),
+                mix(0xFF2B3440.toInt(), 0xFF111827.toInt(), s),
+                mix(0xFFF9FBFC.toInt(), 0xFFE1EAF0.toInt(), s),
+                0xFFF5A3AE.toInt(),
+                mix(0xFF5B9EAD.toInt(), 0xFFFFC83D.toInt(), s)
+            )
             "dragon" -> Palette(mix(0xFF8ED9A8.toInt(), 0xFF4FC383.toInt(), s), 0xFF2F8F5E.toInt(), 0xFFF3F8C8.toInt(), 0xFFF7D06B.toInt(), 0xFFF5A623.toInt())
             else -> Palette(mix(0xFFFFC768.toInt(), 0xFFFFA93A.toInt(), s), 0xFFE07F1F.toInt(), 0xFFFFEED3.toInt(), 0xFFF7A1A8.toInt(), 0xFFD6487E.toInt())
         }
@@ -163,7 +171,8 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
             // Head-and-shoulders crop: zoom on the head.
             canvas.translate(w / 2, h / 2)
             canvas.scale(u * 1.55f, u * 1.55f)
-            canvas.translate(-50f, -40f)
+            // Keep the face a little higher inside the floating disc so it does not look sunk.
+            canvas.translate(-50f, -45f)
         } else {
             canvas.translate(w / 2 - 50f * u, h / 2 - 50f * u)
             canvas.scale(u, u)
@@ -228,8 +237,15 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
         p.color = c(if (species == "panda") pal.dark else pal.main)
         canvas.drawOval(50f - bw * 0.95f, bodyCy - bodyH * 0.35f, 50f - bw * 0.55f, bodyCy + bodyH * 0.25f, p)
         canvas.drawOval(50f + bw * 0.55f, bodyCy - bodyH * 0.35f, 50f + bw * 0.95f, bodyCy + bodyH * 0.25f, p)
+        if (species == "panda" && !silhouette) {
+            // A thin ink outline separates the pale coat from both the room and the belly.
+            rect.set(50f - bw, bodyCy - bodyH, 50f + bw, 92f)
+            stroke.color = 0xB52B3440.toInt(); stroke.strokeWidth = 1.15f
+            canvas.drawOval(rect, stroke)
+        }
         canvas.restore()
 
+        if (stage >= 4 && !silhouette) drawStageGear(canvas, bodyCy, bodyH, bodyW)
         // Stage-7+ star charm (when no neck item)
         if (stage >= 7 && neck == null && !silhouette) drawStar(canvas, 50f, bodyCy - bodyH * 0.55f, 4.2f, 0xFFFFD54F.toInt())
         if (neck != null && !silhouette) drawNeck(canvas, neck!!, headCy + headR * 0.92f, bodyW)
@@ -241,20 +257,33 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
         p.color = c(pal.main)
         rect.set(50f - headR * 1.08f, headCy - headR, 50f + headR * 1.08f, headCy + headR * 0.92f)
         canvas.drawOval(rect, p)
+        if (species == "panda" && !silhouette) {
+            stroke.color = 0xCC27303A.toInt(); stroke.strokeWidth = 1.2f
+            canvas.drawOval(rect, stroke)
+        }
         drawEarsFront(canvas, pal, headCy, headR, s)
         if (!silhouette) {
+            drawSpeciesRankDetails(canvas, headCy, headR)
             drawMarkings(canvas, pal, headCy, headR)
             // Muzzle
             p.color = c(pal.belly)
             rect.set(50f - headR * 0.55f, headCy + headR * 0.05f, 50f + headR * 0.55f, headCy + headR * 0.75f)
             canvas.drawOval(rect, p)
             drawFace(canvas, pal, headCy, headR)
-            face?.let { drawGlasses(canvas, it, headCy, headR) }
+            // Higher stages receive a visual rank upgrade even when the player has not
+            // bought an accessory. An explicitly equipped item always wins.
+            val faceId = face ?: if (stage >= 8) "face_elite" else null
+            faceId?.let { drawGlasses(canvas, it, headCy, headR) }
         }
-        val hatId = hat ?: if (stage >= 10 && !silhouette) "hat_crown" else null
+        val hatId = hat ?: when {
+            stage >= 10 && !silhouette -> "hat_crown"
+            stage >= 9 && !silhouette -> "hat_elite"
+            else -> null
+        }
         if (hatId != null && !silhouette) drawHat(canvas, hatId, headCy - headR * 0.92f, headR)
         canvas.restore()
 
+        if (!silhouette) drawMoodEffects(canvas, pal, headCy, headR, bodyCy, bodyH)
         canvas.restore()
 
         // Floating zzz for sleeping / dozing (outside the pet transform)
@@ -313,6 +342,15 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
             path.quadTo(bx + side * span * 0.5f, by - 2f, bx, by + 4f)
             path.close()
             canvas.drawPath(path, p)
+            if (!silhouette && stage >= 7) {
+                stroke.color = if (stage >= 9) 0xFFFFC83D.toInt() else 0xFFC5D0DA.toInt()
+                stroke.strokeWidth = if (stage >= 9) 1.3f else 0.9f
+                canvas.drawLine(
+                    bx + side * span * 0.55f, by - span * 0.82f - flap,
+                    bx + side * span * 0.93f, by - span * 0.68f - flap,
+                    stroke
+                )
+            }
         }
     }
 
@@ -326,6 +364,10 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
                 val bx = 50f + side * r * 0.45f; val by = cy - r * 0.78f
                 path.moveTo(bx - 3f, by + 2f); path.lineTo(bx + side * 3f, by - hl); path.lineTo(bx + 3f, by + 2f); path.close()
                 canvas.drawPath(path, p)
+                if (!silhouette && stage >= 6) {
+                    p.color = if (stage >= 9) 0xFFFFC83D.toInt() else 0xFFC5D0DA.toInt()
+                    canvas.drawCircle(bx + side * 3f, by - hl + 1f, 1.8f, p)
+                }
             }
             // Head spikes for older dragons
             if (stage >= 4) {
@@ -379,6 +421,39 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
                 val bx = 50f + side * r * 1.0f; val by = cy - r * 0.1f
                 path.moveTo(bx, by - 4f); path.lineTo(bx + side * 8f, by - 7f); path.lineTo(bx, by + 4f); path.close()
                 canvas.drawPath(path, p)
+            }
+        }
+    }
+
+    /** Species-specific rank details keep the cat and dragon from feeling like recolours. */
+    private fun drawSpeciesRankDetails(canvas: Canvas, cy: Float, r: Float) {
+        when (species) {
+            "cat" -> {
+                if (stage >= 4) {
+                    // Silver ear clips appear first, then gain a warm gold centre at the elite tier.
+                    p.color = 0xFFC5D0DA.toInt()
+                    canvas.drawCircle(50f - r * 0.86f, cy - r * 0.72f, r * 0.09f, p)
+                    canvas.drawCircle(50f + r * 0.86f, cy - r * 0.72f, r * 0.09f, p)
+                    if (stage >= 8) {
+                        p.color = 0xFFFFC83D.toInt()
+                        canvas.drawCircle(50f - r * 0.86f, cy - r * 0.72f, r * 0.045f, p)
+                        canvas.drawCircle(50f + r * 0.86f, cy - r * 0.72f, r * 0.045f, p)
+                    }
+                }
+                if (stage >= 7) drawStar(canvas, 50f, cy - r * 0.72f, r * 0.11f, 0xFFFFC83D.toInt())
+            }
+            "dragon" -> {
+                if (stage >= 5) {
+                    p.color = if (stage >= 9) 0xFFFFC83D.toInt() else 0xFFC5D0DA.toInt()
+                    drawStar(canvas, 50f, cy - r * 0.7f, r * 0.13f, p.color)
+                }
+                if (stage >= 8) {
+                    // A small ember jewel makes the higher dragon stages read at icon size.
+                    p.color = 0xFFF59E0B.toInt()
+                    canvas.drawCircle(50f, cy + r * 0.53f, r * 0.075f, p)
+                    stroke.color = 0xFFFFE08A.toInt(); stroke.strokeWidth = r * 0.035f
+                    canvas.drawCircle(50f, cy + r * 0.53f, r * 0.12f, stroke)
+                }
             }
         }
     }
@@ -441,6 +516,7 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
             Mood.HI, Mood.CHEER, Mood.CELEBRATE, Mood.FULL -> { arcEye(50f - ex, true); arcEye(50f + ex, true) }
             Mood.SLEEPING -> { arcEye(50f - ex, false); arcEye(50f + ex, false) }
             Mood.DOZING, Mood.SLEEPY -> { openEye(50f - ex, half = true); openEye(50f + ex, half = true) }
+            Mood.STARVING -> { arcEye(50f - ex, false); arcEye(50f + ex, false) }
             Mood.OOPS -> {
                 for (side in listOf(-1f, 1f)) {
                     val x = 50f + side * ex
@@ -452,8 +528,9 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
             else -> if (blinking) { arcEye(50f - ex, false); arcEye(50f + ex, false) } else { openEye(50f - ex); openEye(50f + ex) }
         }
 
-        // Cheeks
-        p.color = c(pal.inner); p.alpha = 150
+        // Cheeks: warm and bright when happy, muted when the pet is struggling.
+        p.color = if (mood == Mood.STARVING || mood == Mood.OOPS) 0xFF9FB6C8.toInt() else c(pal.inner)
+        p.alpha = if (mood == Mood.STARVING) 105 else 150
         canvas.drawOval(50f - r * 0.82f, cy + r * 0.12f, 50f - r * 0.48f, cy + r * 0.32f, p)
         canvas.drawOval(50f + r * 0.48f, cy + r * 0.12f, 50f + r * 0.82f, cy + r * 0.32f, p)
         p.alpha = 255
@@ -468,7 +545,16 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
         val chew = phase(chewStart, 1.2f).let { if (it in 0f..1f) abs(sin(it * PI.toFloat() * 3)) else -1f }
         when {
             chew >= 0f -> { p.color = dark; canvas.drawOval(50f - r * 0.12f, my - r * 0.02f, 50f + r * 0.12f, my + r * 0.06f + chew * r * 0.12f, p) }
-            mood == Mood.HUNGRY || mood == Mood.STARVING || mood == Mood.CHEER || mood == Mood.CELEBRATE || mood == Mood.HI -> {
+            mood == Mood.STARVING -> {
+                // A small frown makes prolonged hunger unmistakably different from a smile.
+                path.reset(); path.moveTo(50f - r * 0.15f, my + r * 0.1f); path.quadTo(50f, my - r * 0.03f, 50f + r * 0.15f, my + r * 0.1f)
+                canvas.drawPath(path, stroke)
+            }
+            mood == Mood.HUNGRY -> {
+                p.color = 0xFF8C3B3B.toInt()
+                canvas.drawOval(50f - r * 0.1f, my, 50f + r * 0.1f, my + r * 0.13f, p)
+            }
+            mood == Mood.FULL || mood == Mood.CHEER || mood == Mood.CELEBRATE || mood == Mood.HI -> {
                 p.color = 0xFF8C3B3B.toInt()
                 rect.set(50f - r * 0.16f, my - r * 0.04f, 50f + r * 0.16f, my + r * 0.24f)
                 canvas.drawArc(rect, 0f, 180f, true, p)
@@ -476,7 +562,7 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
                 rect.set(50f - r * 0.09f, my + r * 0.08f, 50f + r * 0.09f, my + r * 0.22f)
                 canvas.drawOval(rect, p)
             }
-            mood == Mood.OOPS || mood == Mood.STARVING -> {
+            mood == Mood.OOPS -> {
                 path.reset(); path.moveTo(50f - r * 0.14f, my + r * 0.06f); path.quadTo(50f, my - r * 0.06f, 50f + r * 0.14f, my + r * 0.06f)
                 canvas.drawPath(path, stroke)
             }
@@ -510,9 +596,52 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
         }
     }
 
+    /** Small, readable status effects reinforce the face without adding image assets. */
+    private fun drawMoodEffects(canvas: Canvas, pal: Palette, headCy: Float, headR: Float, bodyCy: Float, bodyH: Float) {
+        when (mood) {
+            Mood.HI, Mood.CHEER, Mood.CELEBRATE -> {
+                drawStar(canvas, 50f - headR * 1.15f, headCy - headR * 0.55f, 2.8f, pal.accent)
+                drawStar(canvas, 50f + headR * 1.15f, headCy - headR * 0.35f, 2.2f, 0xFFFFD54F.toInt())
+            }
+            Mood.FULL -> {
+                // Three tiny crumbs/food sparkles read as “satisfied” without text.
+                p.color = 0xFFFFC83D.toInt()
+                canvas.drawCircle(50f - headR * 0.72f, headCy + headR * 0.72f, 1.3f, p)
+                canvas.drawCircle(50f + headR * 0.8f, headCy + headR * 0.65f, 1.1f, p)
+                drawStar(canvas, 50f + headR * 1.05f, bodyCy + bodyH * 0.1f, 2.2f, pal.accent)
+            }
+            Mood.HUNGRY -> {
+                // A quiet “rumble” on the belly, rather than a sad face too early.
+                stroke.color = 0x996A7A86.toInt(); stroke.strokeWidth = 1.1f
+                canvas.drawArc(50f - 5f, bodyCy + bodyH * 0.18f, 50f + 5f, bodyCy + bodyH * 0.46f, 205f, 130f, false, stroke)
+                canvas.drawArc(50f - 3f, bodyCy + bodyH * 0.28f, 50f + 3f, bodyCy + bodyH * 0.5f, 205f, 130f, false, stroke)
+            }
+            Mood.STARVING -> {
+                // Cool desaturated “low energy” marks make the state visible at a glance.
+                stroke.color = 0x887FB0F5.toInt(); stroke.strokeWidth = 1.2f
+                canvas.drawLine(50f - headR * 0.95f, headCy + headR * 0.95f, 50f - headR * 0.75f, headCy + headR * 1.12f, stroke)
+                canvas.drawLine(50f + headR * 0.95f, headCy + headR * 0.95f, 50f + headR * 0.75f, headCy + headR * 1.12f, stroke)
+            }
+            else -> Unit
+        }
+    }
+
     private fun drawGlasses(canvas: Canvas, id: String, cy: Float, r: Float) {
         val ex = r * 0.42f; val ey = cy - r * 0.1f; val gr = r * 0.27f
-        if (id == "face_star") {
+        if (id == "face_elite") {
+            // Gold rims, cool blue lenses and a small bridge read clearly even in the
+            // compact home scene.
+            p.color = 0x443B82F6.toInt()
+            canvas.drawCircle(50f - ex, ey, gr * 0.86f, p)
+            canvas.drawCircle(50f + ex, ey, gr * 0.86f, p)
+            stroke.color = if (stage >= 9) 0xFFFFC83D.toInt() else 0xFFC5D0DA.toInt(); stroke.strokeWidth = r * 0.075f
+            canvas.drawCircle(50f - ex, ey, gr, stroke)
+            canvas.drawCircle(50f + ex, ey, gr, stroke)
+            canvas.drawLine(50f - ex + gr, ey, 50f + ex - gr, ey, stroke)
+            stroke.color = 0x66FFFFFF; stroke.strokeWidth = r * 0.035f
+            canvas.drawLine(50f - ex - gr * 0.45f, ey - gr * 0.45f, 50f - ex + gr * 0.05f, ey - gr * 0.7f, stroke)
+            canvas.drawLine(50f + ex - gr * 0.45f, ey - gr * 0.45f, 50f + ex + gr * 0.05f, ey - gr * 0.7f, stroke)
+        } else if (id == "face_star") {
             drawStar(canvas, 50f - ex, ey, gr * 1.2f, 0xFF2B2118.toInt())
             drawStar(canvas, 50f + ex, ey, gr * 1.2f, 0xFF2B2118.toInt())
             stroke.color = 0xFF2B2118.toInt(); stroke.strokeWidth = r * 0.06f
@@ -568,6 +697,38 @@ class PetView(context: Context) : View(context), Choreographer.FrameCallback {
                 p.color = 0xFFD6487E.toInt(); canvas.drawCircle(50f, top - r * 0.12f, r * 0.08f, p)
                 p.color = 0xFF3B7DD8.toInt(); canvas.drawCircle(50f - r * 0.3f, top - r * 0.05f, r * 0.06f, p); canvas.drawCircle(50f + r * 0.3f, top - r * 0.05f, r * 0.06f, p)
             }
+            "hat_elite" -> {
+                // A silver-blue cap is the bridge between the grown-up and crown stages.
+                p.shader = LinearGradient(50f - r * 0.7f, top, 50f + r * 0.7f, top, intArrayOf(0xFFE7EEF3.toInt(), 0xFF9EAFBE.toInt(), 0xFFF7FBFF.toInt()), null, Shader.TileMode.CLAMP)
+                rect.set(50f - r * 0.55f, top - r * 0.65f, 50f + r * 0.55f, top + r * 0.14f)
+                canvas.drawOval(rect, p)
+                p.shader = null
+                p.color = 0xFF6B7F91.toInt(); canvas.drawRect(50f - r * 0.8f, top - r * 0.02f, 50f + r * 0.8f, top + r * 0.16f, p)
+                p.color = 0xFFFFC83D.toInt(); canvas.drawRect(50f - r * 0.72f, top + r * 0.08f, 50f + r * 0.72f, top + r * 0.14f, p)
+                drawStar(canvas, 50f, top - r * 0.28f, r * 0.14f, 0xFF3B82F6.toInt())
+            }
+        }
+    }
+
+    private fun drawStageGear(canvas: Canvas, bodyCy: Float, bodyH: Float, bodyW: Float) {
+        // These are rank details, not shop slots, so they never overwrite the player's
+        // chosen hat/face/neck items.
+        if (stage >= 4) {
+            p.color = 0xFFC5D0DA.toInt()
+            canvas.drawCircle(50f - bodyW * 0.82f, bodyCy + bodyH * 0.04f, 3.6f, p)
+            canvas.drawCircle(50f + bodyW * 0.82f, bodyCy + bodyH * 0.04f, 3.6f, p)
+            stroke.color = 0xFF718294.toInt(); stroke.strokeWidth = 0.8f
+            canvas.drawCircle(50f - bodyW * 0.82f, bodyCy + bodyH * 0.04f, 3.6f, stroke)
+            canvas.drawCircle(50f + bodyW * 0.82f, bodyCy + bodyH * 0.04f, 3.6f, stroke)
+        }
+        if (stage >= 6) {
+            p.color = 0xFFFFC83D.toInt()
+            canvas.drawCircle(50f, bodyCy + bodyH * 0.22f, 4.2f, p)
+            drawStar(canvas, 50f, bodyCy + bodyH * 0.22f, 2.7f, 0xFFF59E0B.toInt())
+        }
+        if (stage >= 9) {
+            stroke.color = 0xCCFFD166.toInt(); stroke.strokeWidth = 1.1f
+            canvas.drawArc(50f - bodyW * 0.62f, bodyCy - bodyH * 0.2f, 50f + bodyW * 0.62f, bodyCy + bodyH * 0.72f, 198f, 144f, false, stroke)
         }
     }
 

@@ -24,20 +24,29 @@ object ExamBankParser {
     }
 
     /** Applies approved locale overrides without allowing a locale to add or remove exam items. */
-    fun merge(base: ExamBank, localizedJson: String?, approved: Set<String>): ExamBank {
+    fun merge(
+        base: ExamBank,
+        localizedJson: String?,
+        approved: Set<String>,
+        translatePassages: Boolean = true,
+        translateGroupTitles: Boolean = true,
+        translateItemStems: Boolean = true,
+    ): ExamBank {
         if (localizedJson == null) return base
         val values = JSONObject(localizedJson)
         fun override(id: String, field: String, fallback: String): String =
             if (id in approved) values.optJSONObject(id)?.optString(field, fallback) ?: fallback else fallback
         fun item(item: ExamItem) = item.copy(
-            stem = override(item.id, "stem", item.stem),
+            stem = if (translateItemStems) override(item.id, "stem", item.stem) else item.stem,
             explanation = override(item.id, "expl", item.explanation),
         )
         return ExamBank(base.items.map(::item), base.groups.map { group ->
             group.copy(
-                passage = override(group.id, "passage", group.passage),
+                // Reading practice keeps the source passage in English. Localized titles and
+                // explanations remain available without replacing the text being assessed.
+                passage = if (translatePassages) override(group.id, "passage", group.passage) else group.passage,
                 audioPassage = group.audioPassage ?: group.passage,
-                title = override(group.id, "title", group.title ?: "").takeIf { it.isNotBlank() },
+                title = if (translateGroupTitles) override(group.id, "title", group.title ?: "").takeIf { it.isNotBlank() } else group.title,
                 items = group.items.map(::item),
             )
         })

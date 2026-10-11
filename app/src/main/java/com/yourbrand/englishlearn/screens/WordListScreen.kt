@@ -39,7 +39,7 @@ class WordListScreen(
         return when {
             listId != null -> c.wordsByList[listId].orEmpty()
             topicId != null -> c.wordsByTopic[topicId].orEmpty()
-            level != null -> c.words.filter { it.level == level }
+            level != null -> c.wordsByLevel[level].orEmpty()
             keys != null -> keys.mapNotNull { c.wordById[it.removePrefix("w:")] }
             else -> emptyList()
         }
@@ -215,7 +215,7 @@ class WordListScreen(
         bar.addView(Kit.primary(c, str(R.string.practice_selected), 0) {
             val words = selected.mapNotNull { services.content.wordById[it.removePrefix("w:")] }
             selected.clear(); updateSelectBar()
-            activity.startSession(services.builder().words(SessionKind.WORDS, str(R.string.practice_selected), words, VocabMode.MIXED, words.size.coerceAtMost(20)))
+            activity.startSessionAsync { services.builder().words(SessionKind.WORDS, str(R.string.practice_selected), words, VocabMode.MIXED, words.size.coerceAtMost(20)) }
         }.apply { layoutParams = LinearLayout.LayoutParams(WRAP_CONTENT, c.dpi(48)) })
     }
 
@@ -239,7 +239,7 @@ class WordListScreen(
     private fun study(mode: VocabMode, words: List<Word>) {
         val candidates = if (listId != null) words.filter { it.tier == "silver" } else words
         if (candidates.isEmpty()) return
-        activity.startSession(services.builder().words(if (listId != null) SessionKind.WORDS else SessionKind.TOPIC, barTitle, candidates, mode, if (mode == VocabMode.MATCHING) 12 else 10, newFirst = listId != null))
+        activity.startSessionAsync { services.builder().words(if (listId != null) SessionKind.WORDS else SessionKind.TOPIC, barTitle, candidates, mode, if (mode == VocabMode.MATCHING) 12 else 10, newFirst = listId != null) }
     }
 }
 

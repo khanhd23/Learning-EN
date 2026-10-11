@@ -129,7 +129,7 @@ class ResultScreen(
         if (weak.isNotEmpty()) {
             body.addView(Kit.section(c, str(R.string.need_practice)))
             val flow = Kit.flow(c)
-            weak.forEach { (t, _) -> flow.addView(Kit.chip(c, TagNames.label(c, t), false, c.col(R.color.error)) { activity.startSession(services.builder().weak(str(R.string.practice_weak), System.currentTimeMillis())) }) }
+            weak.forEach { (t, _) -> flow.addView(Kit.chip(c, TagNames.label(c, t), false, c.col(R.color.error)) { activity.startSessionAsync { services.builder().weak(str(R.string.practice_weak), System.currentTimeMillis()) } }) }
             body.addView(flow)
         }
 
@@ -145,7 +145,7 @@ class ResultScreen(
         val wrong = answers.filter { !it.correct }.map { it.ex }.distinctBy { it.key }
         if (wrong.isNotEmpty()) body.addView(Kit.secondary(c, str(R.string.retry_wrong)) {
             activity.navigator.pop()
-            activity.startSession(Session(SessionKind.MISTAKES, str(R.string.retry_wrong), wrong.mapNotNull { services.builder().exerciseFor(it.key) }.toMutableList()))
+            activity.startSessionAsync { Session(SessionKind.MISTAKES, str(R.string.retry_wrong), wrong.mapNotNull { services.builder().exerciseFor(it.key) }.toMutableList()) }
         })
         body.addView(Kit.secondary(c, str(R.string.go_home)) { activity.selectTab(Tab.TODAY) })
 
@@ -221,13 +221,14 @@ class ResultScreen(
     private fun again() {
         val b = services.builder()
         val now = System.currentTimeMillis()
-        val next = when (session.kind) {
-            SessionKind.GRAMMAR -> session.gp?.let { b.grammar(session.title, it) }
-            SessionKind.SPEED -> b.speed(session.title, services.settings.userLevel)
-            else -> b.quick(str(R.string.quick_session), now, services.settings.preferredTopics(), services.settings.userLevel)
-        } ?: b.quick(str(R.string.quick_session), now, services.settings.preferredTopics(), services.settings.userLevel)
         activity.navigator.pop()
-        activity.startSession(next)
+        activity.startSessionAsync {
+            when (session.kind) {
+                SessionKind.GRAMMAR -> session.gp?.let { b.grammar(session.title, it) }
+                SessionKind.SPEED -> b.speed(session.title, services.settings.userLevel)
+                else -> b.quick(str(R.string.quick_session), now, services.settings.preferredTopics(), services.settings.userLevel)
+            } ?: b.quick(str(R.string.quick_session), now, services.settings.preferredTopics(), services.settings.userLevel)
+        }
     }
 
     /** Notification rationale after the first completed session; rate prompt rules (SKILL.md S23). */

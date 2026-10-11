@@ -35,6 +35,9 @@ class PetHomeScreen(activity: MainActivity) : Screen(activity) {
     private lateinit var panel: LinearLayout
     private lateinit var coinsText: TextView
     private var lastPet = 0L
+    private var petTapWindowStart = 0L
+    private var petTapCount = 0
+    private var petAnnoyedUntil = 0L
 
     override fun onCreateView(parent: ViewGroup): View {
         val c = ctx
@@ -104,8 +107,32 @@ class PetHomeScreen(activity: MainActivity) : Screen(activity) {
     private fun petPet() {
         val now = SystemClock.elapsedRealtime()
         if (now - lastPet < 1000) return // max one reaction per second, no XP
+        if (now < petAnnoyedUntil) return // give the pet a short quiet break
         lastPet = now
+        if (now - petTapWindowStart > 5000L) {
+            petTapWindowStart = now
+            petTapCount = 0
+        }
+        petTapCount++
+        if (petTapCount >= 4) {
+            // A few pats are welcome; repeated rapid tapping is treated as annoying,
+            // without changing hunger, XP, coins or any persistent pet state.
+            petTapCount = 0
+            petTapWindowStart = now
+            petAnnoyedUntil = now + 1800L
+            pet.mood = Mood.OOPS
+            pet.react(Mood.OOPS)
+            pet.postDelayed({ if (pet.isAttachedToWindow) pet.mood = activity.currentMood() }, 1200L)
+            pet.haptic(android.view.HapticFeedbackConstants.LONG_PRESS)
+            say(str(R.string.pet_too_many_pats))
+            return
+        }
         pet.wiggle()
+        // Petting is a short, non-persistent happy reaction. Restore the real hunger/sleep
+        // state afterwards so touching the pet never fakes progress or care completion.
+        pet.mood = Mood.CHEER
+        pet.react(Mood.CHEER)
+        pet.postDelayed({ if (pet.isAttachedToWindow) pet.mood = activity.currentMood() }, 900L)
         pet.haptic()
         services.sfx.play(Sfx.Sound.POP)
         val loc = IntArray(2); pet.getLocationInWindow(loc)
@@ -121,6 +148,8 @@ class PetHomeScreen(activity: MainActivity) : Screen(activity) {
         val now = System.currentTimeMillis()
         val hour = Services.hourOf(now)
         room.theme = PetItems.equipped(st, PetItems.THEME)?.id ?: "theme_cozy"
+        room.petStage = st.stage
+        room.petSpecies = st.species
         room.items = PetItems.slots.filter { it != PetItems.THEME && it != PetItems.HAT && it != PetItems.FACE && it != PetItems.NECK }
             .mapNotNull { slot -> PetItems.equipped(st, slot)?.let { slot to it.id } }.toMap()
         room.night = hour >= 19f || hour < 6f
@@ -154,8 +183,8 @@ class PetHomeScreen(activity: MainActivity) : Screen(activity) {
             panel.addView(Kit.card(c, 16, 12, c.col(R.color.info_container), null) {
                 addView(Kit.text(c, "😴 " + str(R.string.dozing_title, st.name), R.style.Text_BodyStrong))
                 addView(Kit.text(c, str(R.string.dozing_sub, st.recoverableXp), R.style.Text_Caption).margins(c, top = 2))
-                addView(Kit.primary(c, str(R.string.wake_free), 12) { feed() })
-                if (s.ads.showsAds) addView(Kit.secondary(c, str(R.string.wake_ad)) { wakeWithAd() })
+                addView(Kit.primary(c, str(R.string.wake_free), 12) { startMealPractice() })
+                if (s.ads.rewardedAllowed) addView(Kit.secondary(c, str(R.string.wake_ad)) { watchPetCareAd() })
                 if (st.freezeTokens > 0) addView(Kit.secondary(c, str(R.string.wake_token, st.freezeTokens)) { if (engine.useFreezeToken()) { s.savePet(); render(); activity.toast(str(R.string.token_used)) } })
             })
         }
@@ -176,6 +205,7 @@ class PetHomeScreen(activity: MainActivity) : Screen(activity) {
 
         // Actions
         panel.addView(Kit.primary(c, "🍽️  " + str(R.string.feed), 16) { feed() })
+        if (s.ads.showsAds) panel.addView(Kit.secondary(c, "🪙  " + str(R.string.earn_coins_ad)) { earnCoinsWithAd() }.margins(c, top = 10))
         val row = Kit.hbox(c).margins(c, top = 10)
         row.addView(Kit.secondary(c, "🛋️ " + str(R.string.decorate), 0) { shop() }.apply { layoutParams = lp(0, c.dpi(52), 1f) })
         row.addView(Kit.secondary(c, "🖼️ " + str(R.string.gallery), 0) { gallery() }.apply { layoutParams = lp(0, c.dpi(52), 1f).apply { marginStart = c.dpi(10) } })
@@ -185,13 +215,67 @@ class PetHomeScreen(activity: MainActivity) : Screen(activity) {
     }
 
     private fun feed() {
-        val s = services
-        activity.startSession(s.builder().meal(str(R.string.meal_title, s.pet.state.name), System.currentTimeMillis(), s.settings.userLevel))
+        choosePetCare()
     }
 
-    private fun wakeWithAd() {
+    private fun choosePetCare() {
+        val c = ctx
+        val name = services.pet.state.name
+        Dialogs.custom(c) { box, d ->
+            box.addView(Kit.text(c, str(R.string.pet_care_title, name), R.style.Text_Title))
+            box.addView(Kit.text(c, str(R.string.pet_care_sub), R.style.Text_Caption).margins(c, top = 8))
+            box.addView(Kit.primary(c, str(R.string.pet_care_study)) {
+                d.dismiss()
+                startMealPractice()
+            }.margins(c, top = 12))
+            if (services.ads.rewardedAllowed) {
+                box.addView(Kit.secondary(c, str(R.string.pet_care_ad)) {
+                    d.dismiss()
+                    watchPetCareAd()
+                })
+            }
+        }
+    }
+
+    private fun startMealPractice() {
+        val s = services
+        activity.startSessionAsync { s.builder().meal(str(R.string.meal_title, s.pet.state.name), System.currentTimeMillis(), s.settings.userLevel) }
+    }
+
+    private fun watchPetCareAd() {
+        val s = services
         val ads = services.ads
-        val run = { ads.showRewarded(activity, onRewarded = { services.pet.recover(); services.savePet(); render(); pet.react(Mood.CELEBRATE); activity.toast(str(R.string.woke_up)) }) }
+        val run = {
+            if (ads.rewardedAllowed) {
+                ads.showRewarded(activity, onRewarded = {
+                    if (s.pet.isDozing) {
+                        s.pet.recover()
+                        activity.toast(str(R.string.woke_up))
+                    } else {
+                        s.pet.meal(System.currentTimeMillis(), s.goalReached())
+                    }
+                    s.savePet()
+                    render()
+                    pet.react(Mood.CELEBRATE)
+                })
+            } else activity.toast(str(R.string.ad_limit))
+        }
+        if (ads.rewardedReady) run() else { activity.toast(str(R.string.ad_loading)); ads.preloadRewarded { run() } }
+    }
+
+    private fun earnCoinsWithAd() {
+        val s = services
+        val ads = s.ads
+        val run = {
+            if (ads.rewardedAllowed) {
+                ads.showRewarded(activity, onRewarded = {
+                    s.pet.state.coins += 10
+                    s.savePet()
+                    render()
+                    activity.toast(str(R.string.coins_earned, 10))
+                })
+            } else activity.toast(str(R.string.ad_limit))
+        }
         if (ads.rewardedReady) run() else { activity.toast(str(R.string.ad_loading)); ads.preloadRewarded { run() } }
     }
 
