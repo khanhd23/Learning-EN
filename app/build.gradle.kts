@@ -202,6 +202,8 @@ val copyContent = tasks.register("generateContentAssets") {
             )
         }
         File(dst, "locale_approvals.json").writeText(JsonOutput.prettyPrint(JsonOutput.toJson(manifest)), Charsets.UTF_8)
+        val selectableLocales = manifest.filterValues { row -> (row as? Map<*, *>)?.get("selectable") == true }.keys.sorted()
+        File(dst, "selectable_locales.json").writeText(JsonOutput.toJson(selectableLocales), Charsets.UTF_8)
         rootProject.file("config/exam_formats.json").copyTo(File(dst, "exam_formats.json"), overwrite = true)
         rootProject.file("config/word_lists.json").copyTo(File(dst, "word_lists.json"), overwrite = true)
         rootProject.file("content/i18n/market_profiles.json").copyTo(File(dst, "market_profiles.json"), overwrite = true)

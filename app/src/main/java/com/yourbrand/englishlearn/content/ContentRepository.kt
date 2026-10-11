@@ -250,6 +250,14 @@ class ContentRepository(private val context: Context) {
     private val approvalManifest by lazy {
         runCatching { JSONObject(asset("locale_approvals.json")) }.getOrElse { JSONObject() }
     }
+    /** Tiny startup index; the full approval manifest stays off the first Activity path. */
+    private val selectableLocaleList: List<String>? by lazy {
+        runCatching {
+            JSONArray(asset("selectable_locales.json")).let { array ->
+                List(array.length()) { i -> array.getString(i) }
+            }
+        }.getOrNull()
+    }
     private var selectableCache: List<String>? = null
 
     private fun asset(name: String) = context.assets.open("content/$name").bufferedReader().use { it.readText() }
@@ -299,7 +307,9 @@ class ContentRepository(private val context: Context) {
     /** Locale packs that are actually bundled in this build and pass the release gate. */
     fun selectableLocales(): List<String> = synchronized(this) {
         selectableCache ?: run {
-            val locales = context.assets.list("content/i18n").orEmpty().asSequence()
+            // New bundles provide a tiny generated list. Keep the old discovery path only for
+            // development/legacy assets that predate this optimization.
+            val locales = selectableLocaleList?.toMutableList() ?: context.assets.list("content/i18n").orEmpty().asSequence()
                 .filter { it != "market_profiles.json" }
                 .filter { isSelectablePath("i18n/$it") }
                 .toMutableList()
