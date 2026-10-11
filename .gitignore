@@ -5,6 +5,7 @@ dist/*
 !dist/reports/
 local.properties
 secrets.properties
+lingomori key/
 *.jks
 *.keystore
 .idea/

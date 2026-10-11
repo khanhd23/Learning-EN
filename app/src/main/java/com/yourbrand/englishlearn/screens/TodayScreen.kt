@@ -24,8 +24,6 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
     override val tab = Tab.TODAY
     override val allowsBanner = true
     override val petMode = PetMode.FLOATING
-    private var deferredBuildToken = 0L
-
     override fun headerActions(bar: LinearLayout) = HubHeader.build(this, bar, greeting())
 
     private fun greeting(): String {
@@ -60,7 +58,9 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
         ringBox.addView(Kit.text(c, if (xp >= goal) "🎉" else "🎯", sizeSp = 26f).apply { gravity = Gravity.CENTER }, FrameLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT, Gravity.CENTER))
         top.addView(ringBox)
         hero.addView(top)
-        ring.post { ring.set(xp / goal.toFloat().coerceAtLeast(1f)) }
+        // The initial value is already known; draw it immediately instead of starting a
+        // 500 ms animation from zero after the first layout pass.
+        ring.set(xp / goal.toFloat().coerceAtLeast(1f), animate = false)
         hero.addView(TextView(c).apply {
             text = str(R.string.study_minutes, s.settings.dailyMinutes.coerceAtMost(5))
             gravity = Gravity.CENTER; textSize = 16f; setTypeface(typeface, android.graphics.Typeface.BOLD)
@@ -83,11 +83,13 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
             })
         }
 
-        // 3. Continue. The content pack is parsed in the background during app startup; do not
-        // synchronously force that multi-megabyte parse while the first frame is being built.
-        if (s.contentReady) continueCard()?.let { body.addView(it) }
+        // 3. Continue. Reserve a stable insertion point and populate it before the first
+        // dashboard build completes, so it never appears as a late-added card.
+        val continueSlot = FrameLayout(c).apply { layoutParams = lp() }
+        body.addView(continueSlot)
+        if (s.contentReady) continueCard()?.let { continueSlot.addView(it) }
 
-        // 4. Due reviews
+        // Daily challenge
         val dailyDone = s.settings.dailyChallengeDay == LearningStore.dayKey(now)
         body.addView(Kit.clickableCard(c, 16, 12, c.col(R.color.accent_container), onClick = {
             if (!dailyDone) {
@@ -119,17 +121,11 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
             addView(Kit.text(c, str(R.string.streak_shields, s.pet.state.freezeTokens), R.style.Text_Caption).margins(c, top = 4))
         }.apply { tag = "petAvoid" })
 
-        val token = ++deferredBuildToken
-        body.postOnAnimation {
-            if (token != deferredBuildToken || !body.isAttachedToWindow) return@postOnAnimation
-            if (!s.contentReady) {
-                body.postDelayed({
-                    if (token != deferredBuildToken || !body.isAttachedToWindow) return@postDelayed
-                    body.removeAllViews()
-                    build(body)
-                }, 50L)
-                return@postOnAnimation
-            }
+        // Finish the dashboard in the same build pass. Previously this section was posted to
+        // the next frame and could remove/rebuild the whole body when content prewarming ended,
+        // which made Home visibly blink and inserted Continue after the first render.
+        if (!s.contentReady) s.content
+        continueCard()?.let { if (continueSlot.childCount == 0) continueSlot.addView(it) }
         // 4. Due reviews
         val due = s.store.allItems().count { Scheduler.isDue(it, now) }
         body.addView(Kit.clickableCard(c, 16, 12, onClick = { activity.startSessionAsync { s.builder().review(str(R.string.review_now_title), now) } }) {
@@ -241,8 +237,6 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
             })
         }
     }
-
-        }
 
     private fun planRow(parent: LinearLayout, text: String, done: Boolean, onClick: () -> Unit) {
         val c = ctx

@@ -1,0 +1,1670 @@
+{
+  "items": [],
+  "groups": [
+    {
+      "id": "vstep_listen_1_p1",
+      "section": "listening1",
+      "set": "1",
+      "title": "VSTEP Listening Part 1",
+      "passage": "You will hear short announcements and instructions from everyday situations. For your notes, the visitor's name is Jon Bell. The speaker then confirms that the course is street gardening. It is also important that the starting day is Thursday. The recording adds that the starting time is 10:20. Listeners should remember that the fee is 48 dollars. For your notes, the meeting place is Riverside Centre. The speaker then confirms that the room is Room 208. It is also important that the contact number is 0183 772 410.",
+      "audioPassage": "You will hear short announcements and instructions from everyday situations. For your notes, the visitor's name is Jon Bell. The speaker then confirms that the course is street gardening. It is also important that the starting day is Thursday. The recording adds that the starting time is 10:20. Listeners should remember that the fee is 48 dollars. For your notes, the meeting place is Riverside Centre. The speaker then confirms that the room is Room 208. It is also important that the contact number is 0183 772 410.",
+      "items": [
+        {
+          "id": "vstep_listen_1_p1_q01",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the visitor's name mentioned in note 1?",
+          "opts": [
+            "Leo Martin",
+            "Nora Evans",
+            "Jon Bell",
+            "Sara Wong"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the visitor's name is Jon Bell.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_1_p1_q02",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the course mentioned in note 2?",
+          "opts": [
+            "local history",
+            "food writing",
+            "map reading",
+            "street gardening"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the course is street gardening.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_1_p1_q03",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the starting day mentioned in note 3?",
+          "opts": [
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Monday"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the starting day is Thursday.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_1_p1_q04",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the starting time mentioned in note 4?",
+          "opts": [
+            "8:40",
+            "10:20",
+            "11:45",
+            "8:15"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the starting time is 10:20.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_1_p1_q05",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the fee mentioned in note 5?",
+          "opts": [
+            "24 dollars",
+            "30 dollars",
+            "48 dollars",
+            "18 dollars"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the fee is 48 dollars.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_1_p1_q06",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the meeting place mentioned in note 6?",
+          "opts": [
+            "Oak Street",
+            "Greenway Station",
+            "Harbour Road",
+            "Riverside Centre"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the meeting place is Riverside Centre.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_1_p1_q07",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the room mentioned in note 7?",
+          "opts": [
+            "Room 208",
+            "Room 315",
+            "Studio B",
+            "the north hall"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the room is Room 208.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_1_p1_q08",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the contact number mentioned in note 8?",
+          "opts": [
+            "0177 392 508",
+            "0183 772 410",
+            "0195 208 364",
+            "0131 664 782"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the contact number is 0183 772 410.",
+          "qtype": "vstep_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "vstep_listen_1_p2",
+      "section": "listening2",
+      "set": "1",
+      "title": "VSTEP Listening Part 2",
+      "passage": "You will hear a longer discussion in which the speakers compare plans and evidence. For your notes, the project title is Repair cafés. The speaker then confirms that the research question is coastal birds. It is also important that the sample size is 48. The recording adds that the data source is museum records. Listeners should remember that the first meeting is Monday. For your notes, the software is Cedar. The speaker then confirms that the draft deadline is 24 June. It is also important that the main concern is late replies. The recording adds that the supervisor is Nora Evans. Listeners should remember that the next action is draw the map. For your notes, the project title detail 11 is Night buses. The speaker then confirms that the research question detail 12 is recycled glass.",
+      "audioPassage": "You will hear a longer discussion in which the speakers compare plans and evidence. For your notes, the project title is Repair cafés. The speaker then confirms that the research question is coastal birds. It is also important that the sample size is 48. The recording adds that the data source is museum records. Listeners should remember that the first meeting is Monday. For your notes, the software is Cedar. The speaker then confirms that the draft deadline is 24 June. It is also important that the main concern is late replies. The recording adds that the supervisor is Nora Evans. Listeners should remember that the next action is draw the map. For your notes, the project title detail 11 is Night buses. The speaker then confirms that the research question detail 12 is recycled glass.",
+      "items": [
+        {
+          "id": "vstep_listen_1_p2_q01",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the project title mentioned in note 1?",
+          "opts": [
+            "Local archives",
+            "Repair cafés",
+            "Open classrooms",
+            "River sensors"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the project title is Repair cafés.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_1_p2_q02",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the research question mentioned in note 2?",
+          "opts": [
+            "museum maps",
+            "urban trees",
+            "coastal birds",
+            "community kitchens"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the research question is coastal birds.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_1_p2_q03",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the sample size mentioned in note 3?",
+          "opts": [
+            "sixty-two",
+            "12",
+            "18",
+            "48"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the sample size is 48.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_1_p2_q04",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the data source mentioned in note 4?",
+          "opts": [
+            "museum records",
+            "a survey",
+            "field notes",
+            "a public database"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the data source is museum records.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_1_p2_q05",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the first meeting mentioned in note 5?",
+          "opts": [
+            "Thursday",
+            "Monday",
+            "Tuesday",
+            "Wednesday"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the first meeting is Monday.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_1_p2_q06",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the software mentioned in note 6?",
+          "opts": [
+            "Orchid",
+            "Pine",
+            "Cedar",
+            "Maple"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the software is Cedar.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_1_p2_q07",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the draft deadline mentioned in note 7?",
+          "opts": [
+            "6 July",
+            "15 August",
+            "21 September",
+            "24 June"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the draft deadline is 24 June.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_1_p2_q08",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the main concern mentioned in note 8?",
+          "opts": [
+            "late replies",
+            "noisy data",
+            "limited access",
+            "small sample"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the main concern is late replies.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_1_p2_q09",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the supervisor mentioned in note 9?",
+          "opts": [
+            "Jon Bell",
+            "Nora Evans",
+            "Owen Reed",
+            "Mina Patel"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the supervisor is Nora Evans.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_1_p2_q10",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the next action mentioned in note 10?",
+          "opts": [
+            "email the participants",
+            "clean the spreadsheet",
+            "draw the map",
+            "check the ethics form"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the next action is draw the map.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_1_p2_q11",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the project title detail 11 mentioned in note 11?",
+          "opts": [
+            "Shared gardens",
+            "Repair cafés",
+            "Open classrooms",
+            "Night buses"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the project title detail 11 is Night buses.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_1_p2_q12",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the research question detail 12 mentioned in note 12?",
+          "opts": [
+            "recycled glass",
+            "sleep patterns",
+            "coastal birds",
+            "community kitchens"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the research question detail 12 is recycled glass.",
+          "qtype": "vstep_listen_p2"
+        }
+      ]
+    },
+    {
+      "id": "vstep_listen_1_p3",
+      "section": "listening3",
+      "set": "1",
+      "title": "VSTEP Listening Part 3",
+      "passage": "You will hear a talk in which a speaker develops an idea and gives examples. For your notes, the definition is a heat island. The speaker then confirms that the period studied is the last decade. It is also important that the first example is museum maps. The recording adds that the main cause is traffic growth. Listeners should remember that the measured change is a 9 percent fall. For your notes, the research tool is a satellite image. The speaker then confirms that the unexpected result is the control group changed. It is also important that the practical use is health advice. The recording adds that the limitation is limited funding. Listeners should remember that the conclusion is more local trials. For your notes, the definition detail 11 is a seasonal movement. The speaker then confirms that the period studied detail 12 is the 1970s. It is also important that the first example detail 13 is coastal birds. The recording adds that the main cause detail 14 is noise. Listeners should remember that the measured change detail 15 is a smaller gap.",
+      "audioPassage": "You will hear a talk in which a speaker develops an idea and gives examples. For your notes, the definition is a heat island. The speaker then confirms that the period studied is the last decade. It is also important that the first example is museum maps. The recording adds that the main cause is traffic growth. Listeners should remember that the measured change is a 9 percent fall. For your notes, the research tool is a satellite image. The speaker then confirms that the unexpected result is the control group changed. It is also important that the practical use is health advice. The recording adds that the limitation is limited funding. Listeners should remember that the conclusion is more local trials. For your notes, the definition detail 11 is a seasonal movement. The speaker then confirms that the period studied detail 12 is the 1970s. It is also important that the first example detail 13 is coastal birds. The recording adds that the main cause detail 14 is noise. Listeners should remember that the measured change detail 15 is a smaller gap.",
+      "items": [
+        {
+          "id": "vstep_listen_1_p3_q01",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the definition mentioned in note 1?",
+          "opts": [
+            "a shared resource",
+            "a heat island",
+            "a memory cue",
+            "a sound pattern"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the definition is a heat island.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_1_p3_q02",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the period studied mentioned in note 2?",
+          "opts": [
+            "the early 1900s",
+            "the 1950s",
+            "the last decade",
+            "the present day"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the period studied is the last decade.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_1_p3_q03",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the first example mentioned in note 3?",
+          "opts": [
+            "urban trees",
+            "recycled glass",
+            "sleep patterns",
+            "museum maps"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the first example is museum maps.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_1_p3_q04",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the main cause mentioned in note 4?",
+          "opts": [
+            "traffic growth",
+            "dry weather",
+            "new materials",
+            "changed habits"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the main cause is traffic growth.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_1_p3_q05",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the measured change mentioned in note 5?",
+          "opts": [
+            "a wider range",
+            "a 9 percent fall",
+            "a two-hour delay",
+            "three extra visits"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the measured change is a 9 percent fall.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_1_p3_q06",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the research tool mentioned in note 6?",
+          "opts": [
+            "a water gauge",
+            "a map grid",
+            "a satellite image",
+            "a memory test"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the research tool is a satellite image.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_1_p3_q07",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the unexpected result mentioned in note 7?",
+          "opts": [
+            "the samples clustered",
+            "the final result was stable",
+            "the pattern reversed",
+            "the control group changed"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the unexpected result is the control group changed.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_1_p3_q08",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the practical use mentioned in note 8?",
+          "opts": [
+            "health advice",
+            "coastal management",
+            "school planning",
+            "public transport"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the practical use is health advice.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_1_p3_q09",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the limitation mentioned in note 9?",
+          "opts": [
+            "missing records",
+            "limited funding",
+            "short observation",
+            "small sample"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the limitation is limited funding.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_1_p3_q10",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the conclusion mentioned in note 10?",
+          "opts": [
+            "better labels",
+            "a second survey",
+            "more local trials",
+            "longer observation"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the conclusion is more local trials.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_1_p3_q11",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the definition detail 11 mentioned in note 11?",
+          "opts": [
+            "a local exchange",
+            "a heat island",
+            "a memory cue",
+            "a seasonal movement"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the definition detail 11 is a seasonal movement.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_1_p3_q12",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the period studied detail 12 mentioned in note 12?",
+          "opts": [
+            "the 1970s",
+            "the 1990s",
+            "the last decade",
+            "the present day"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the period studied detail 12 is the 1970s.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_1_p3_q13",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the first example detail 13 mentioned in note 13?",
+          "opts": [
+            "urban trees",
+            "coastal birds",
+            "community kitchens",
+            "museum maps"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the first example detail 13 is coastal birds.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_1_p3_q14",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the main cause detail 14 mentioned in note 14?",
+          "opts": [
+            "traffic growth",
+            "dry weather",
+            "noise",
+            "poor drainage"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the main cause detail 14 is noise.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_1_p3_q15",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the measured change detail 15 mentioned in note 15?",
+          "opts": [
+            "a 12 percent rise",
+            "a 9 percent fall",
+            "a two-hour delay",
+            "a smaller gap"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the measured change detail 15 is a smaller gap.",
+          "qtype": "vstep_listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "vstep_listen_2_p1",
+      "section": "listening1",
+      "set": "2",
+      "title": "VSTEP Listening Part 1",
+      "passage": "You will hear short announcements and instructions from everyday situations. For your notes, the visitor's name is Leo Martin. The speaker then confirms that the course is food writing. It is also important that the starting day is Saturday. The recording adds that the starting time is 8:15. Listeners should remember that the fee is 24 dollars. For your notes, the meeting place is Greenway Station. The speaker then confirms that the room is Studio B. It is also important that the contact number is 0131 664 782.",
+      "audioPassage": "You will hear short announcements and instructions from everyday situations. For your notes, the visitor's name is Leo Martin. The speaker then confirms that the course is food writing. It is also important that the starting day is Saturday. The recording adds that the starting time is 8:15. Listeners should remember that the fee is 24 dollars. For your notes, the meeting place is Greenway Station. The speaker then confirms that the room is Studio B. It is also important that the contact number is 0131 664 782.",
+      "items": [
+        {
+          "id": "vstep_listen_2_p1_q01",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the visitor's name mentioned in note 1?",
+          "opts": [
+            "Owen Reed",
+            "Mina Patel",
+            "Leo Martin",
+            "Nora Evans"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the visitor's name is Leo Martin.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_2_p1_q02",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the course mentioned in note 2?",
+          "opts": [
+            "map reading",
+            "evening photography",
+            "beginner pottery",
+            "food writing"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the course is food writing.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_2_p1_q03",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the starting day mentioned in note 3?",
+          "opts": [
+            "Saturday",
+            "Monday",
+            "Tuesday",
+            "Wednesday"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the starting day is Saturday.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_2_p1_q04",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the starting time mentioned in note 4?",
+          "opts": [
+            "9:30",
+            "8:15",
+            "8:40",
+            "9:05"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the starting time is 8:15.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_2_p1_q05",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the fee mentioned in note 5?",
+          "opts": [
+            "36 dollars",
+            "42 dollars",
+            "24 dollars",
+            "30 dollars"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the fee is 24 dollars.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_2_p1_q06",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the meeting place mentioned in note 6?",
+          "opts": [
+            "Harbour Road",
+            "Hilltop Library",
+            "Central Market",
+            "Greenway Station"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the meeting place is Greenway Station.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_2_p1_q07",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the room mentioned in note 7?",
+          "opts": [
+            "Studio B",
+            "the north hall",
+            "the library lobby",
+            "Room 104"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the room is Studio B.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_2_p1_q08",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the contact number mentioned in note 8?",
+          "opts": [
+            "0162 440 905",
+            "0131 664 782",
+            "0177 392 508",
+            "0148 273 611"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the contact number is 0131 664 782.",
+          "qtype": "vstep_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "vstep_listen_2_p2",
+      "section": "listening2",
+      "set": "2",
+      "title": "VSTEP Listening Part 2",
+      "passage": "You will hear a longer discussion in which the speakers compare plans and evidence. For your notes, the project title is River sensors. The speaker then confirms that the research question is museum maps. It is also important that the sample size is 12. The recording adds that the data source is field notes. Listeners should remember that the first meeting is Wednesday. For your notes, the software is Orchid. The speaker then confirms that the draft deadline is 15 August. It is also important that the main concern is limited access. The recording adds that the supervisor is Mina Patel. Listeners should remember that the next action is email the participants. For your notes, the project title detail 11 is Repair cafés. The speaker then confirms that the research question detail 12 is coastal birds.",
+      "audioPassage": "You will hear a longer discussion in which the speakers compare plans and evidence. For your notes, the project title is River sensors. The speaker then confirms that the research question is museum maps. It is also important that the sample size is 12. The recording adds that the data source is field notes. Listeners should remember that the first meeting is Wednesday. For your notes, the software is Orchid. The speaker then confirms that the draft deadline is 15 August. It is also important that the main concern is limited access. The recording adds that the supervisor is Mina Patel. Listeners should remember that the next action is email the participants. For your notes, the project title detail 11 is Repair cafés. The speaker then confirms that the research question detail 12 is coastal birds.",
+      "items": [
+        {
+          "id": "vstep_listen_2_p2_q01",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the project title mentioned in note 1?",
+          "opts": [
+            "Shared gardens",
+            "River sensors",
+            "Local archives",
+            "Night buses"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the project title is River sensors.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_2_p2_q02",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the research question mentioned in note 2?",
+          "opts": [
+            "recycled glass",
+            "sleep patterns",
+            "museum maps",
+            "urban trees"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the research question is museum maps.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_2_p2_q03",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the sample size mentioned in note 3?",
+          "opts": [
+            "18",
+            "24",
+            "36",
+            "12"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the sample size is 12.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_2_p2_q04",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the data source mentioned in note 4?",
+          "opts": [
+            "field notes",
+            "a public database",
+            "interviews",
+            "a weather log"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the data source is field notes.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_2_p2_q05",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the first meeting mentioned in note 5?",
+          "opts": [
+            "Saturday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the first meeting is Wednesday.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_2_p2_q06",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the software mentioned in note 6?",
+          "opts": [
+            "Quartz",
+            "Atlas",
+            "Orchid",
+            "Pine"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the software is Orchid.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_2_p2_q07",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the draft deadline mentioned in note 7?",
+          "opts": [
+            "21 September",
+            "12 April",
+            "18 May",
+            "15 August"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the draft deadline is 15 August.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_2_p2_q08",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the main concern mentioned in note 8?",
+          "opts": [
+            "limited access",
+            "small sample",
+            "missing dates",
+            "unclear labels"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the main concern is limited access.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_2_p2_q09",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the supervisor mentioned in note 9?",
+          "opts": [
+            "Leo Martin",
+            "Mina Patel",
+            "Jon Bell",
+            "Sara Wong"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the supervisor is Mina Patel.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_2_p2_q10",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the next action mentioned in note 10?",
+          "opts": [
+            "book the lab",
+            "read two articles",
+            "email the participants",
+            "clean the spreadsheet"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the next action is email the participants.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_2_p2_q11",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the project title detail 11 mentioned in note 11?",
+          "opts": [
+            "Open classrooms",
+            "River sensors",
+            "Local archives",
+            "Repair cafés"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the project title detail 11 is Repair cafés.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_2_p2_q12",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the research question detail 12 mentioned in note 12?",
+          "opts": [
+            "coastal birds",
+            "community kitchens",
+            "museum maps",
+            "urban trees"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the research question detail 12 is coastal birds.",
+          "qtype": "vstep_listen_p2"
+        }
+      ]
+    },
+    {
+      "id": "vstep_listen_2_p3",
+      "section": "listening3",
+      "set": "2",
+      "title": "VSTEP Listening Part 3",
+      "passage": "You will hear a talk in which a speaker develops an idea and gives examples. For your notes, the definition is a sound pattern. The speaker then confirms that the period studied is the early 1900s. It is also important that the first example is recycled glass. The recording adds that the main cause is new materials. Listeners should remember that the measured change is three extra visits. For your notes, the research tool is a water gauge. The speaker then confirms that the unexpected result is the final result was stable. It is also important that the practical use is school planning. The recording adds that the limitation is small sample. Listeners should remember that the conclusion is better labels. For your notes, the definition detail 11 is a heat island. The speaker then confirms that the period studied detail 12 is the last decade. It is also important that the first example detail 13 is museum maps. The recording adds that the main cause detail 14 is traffic growth. Listeners should remember that the measured change detail 15 is a 9 percent fall.",
+      "audioPassage": "You will hear a talk in which a speaker develops an idea and gives examples. For your notes, the definition is a sound pattern. The speaker then confirms that the period studied is the early 1900s. It is also important that the first example is recycled glass. The recording adds that the main cause is new materials. Listeners should remember that the measured change is three extra visits. For your notes, the research tool is a water gauge. The speaker then confirms that the unexpected result is the final result was stable. It is also important that the practical use is school planning. The recording adds that the limitation is small sample. Listeners should remember that the conclusion is better labels. For your notes, the definition detail 11 is a heat island. The speaker then confirms that the period studied detail 12 is the last decade. It is also important that the first example detail 13 is museum maps. The recording adds that the main cause detail 14 is traffic growth. Listeners should remember that the measured change detail 15 is a 9 percent fall.",
+      "items": [
+        {
+          "id": "vstep_listen_2_p3_q01",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the definition mentioned in note 1?",
+          "opts": [
+            "a local exchange",
+            "a sound pattern",
+            "a shared resource",
+            "a seasonal movement"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the definition is a sound pattern.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_2_p3_q02",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the period studied mentioned in note 2?",
+          "opts": [
+            "the 1970s",
+            "the 1990s",
+            "the early 1900s",
+            "the 1950s"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the period studied is the early 1900s.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_2_p3_q03",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the first example mentioned in note 3?",
+          "opts": [
+            "sleep patterns",
+            "coastal birds",
+            "community kitchens",
+            "recycled glass"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the first example is recycled glass.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_2_p3_q04",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the main cause mentioned in note 4?",
+          "opts": [
+            "new materials",
+            "changed habits",
+            "noise",
+            "poor drainage"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the main cause is new materials.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_2_p3_q05",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the measured change mentioned in note 5?",
+          "opts": [
+            "a 12 percent rise",
+            "three extra visits",
+            "a wider range",
+            "a smaller gap"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the measured change is three extra visits.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_2_p3_q06",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the research tool mentioned in note 6?",
+          "opts": [
+            "a field diary",
+            "a sound meter",
+            "a water gauge",
+            "a map grid"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the research tool is a water gauge.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_2_p3_q07",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the unexpected result mentioned in note 7?",
+          "opts": [
+            "the pattern reversed",
+            "the result was seasonal",
+            "the oldest site improved",
+            "the final result was stable"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the unexpected result is the final result was stable.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_2_p3_q08",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the practical use mentioned in note 8?",
+          "opts": [
+            "school planning",
+            "public transport",
+            "library design",
+            "farm work"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the practical use is school planning.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_2_p3_q09",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the limitation mentioned in note 9?",
+          "opts": [
+            "weather changes",
+            "small sample",
+            "missing records",
+            "one location"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the limitation is small sample.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_2_p3_q10",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the conclusion mentioned in note 10?",
+          "opts": [
+            "a public workshop",
+            "a wider comparison",
+            "better labels",
+            "a second survey"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the conclusion is better labels.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_2_p3_q11",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the definition detail 11 mentioned in note 11?",
+          "opts": [
+            "a memory cue",
+            "a sound pattern",
+            "a shared resource",
+            "a heat island"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the definition detail 11 is a heat island.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_2_p3_q12",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the period studied detail 12 mentioned in note 12?",
+          "opts": [
+            "the last decade",
+            "the present day",
+            "the early 1900s",
+            "the 1950s"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the period studied detail 12 is the last decade.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_2_p3_q13",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the first example detail 13 mentioned in note 13?",
+          "opts": [
+            "sleep patterns",
+            "museum maps",
+            "urban trees",
+            "recycled glass"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the first example detail 13 is museum maps.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_2_p3_q14",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the main cause detail 14 mentioned in note 14?",
+          "opts": [
+            "new materials",
+            "changed habits",
+            "traffic growth",
+            "dry weather"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the main cause detail 14 is traffic growth.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_2_p3_q15",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the measured change detail 15 mentioned in note 15?",
+          "opts": [
+            "a two-hour delay",
+            "three extra visits",
+            "a wider range",
+            "a 9 percent fall"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the measured change detail 15 is a 9 percent fall.",
+          "qtype": "vstep_listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "vstep_listen_3_p1",
+      "section": "listening1",
+      "set": "3",
+      "title": "VSTEP Listening Part 1",
+      "passage": "You will hear short announcements and instructions from everyday situations. For your notes, the visitor's name is Owen Reed. The speaker then confirms that the course is evening photography. It is also important that the starting day is Tuesday. The recording adds that the starting time is 9:05. Listeners should remember that the fee is 36 dollars. For your notes, the meeting place is Hilltop Library. The speaker then confirms that the room is the library lobby. It is also important that the contact number is 0148 273 611.",
+      "audioPassage": "You will hear short announcements and instructions from everyday situations. For your notes, the visitor's name is Owen Reed. The speaker then confirms that the course is evening photography. It is also important that the starting day is Tuesday. The recording adds that the starting time is 9:05. Listeners should remember that the fee is 36 dollars. For your notes, the meeting place is Hilltop Library. The speaker then confirms that the room is the library lobby. It is also important that the contact number is 0148 273 611.",
+      "items": [
+        {
+          "id": "vstep_listen_3_p1_q01",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the visitor's name mentioned in note 1?",
+          "opts": [
+            "Jon Bell",
+            "Sara Wong",
+            "Owen Reed",
+            "Mina Patel"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the visitor's name is Owen Reed.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_3_p1_q02",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the course mentioned in note 2?",
+          "opts": [
+            "beginner pottery",
+            "street gardening",
+            "local history",
+            "evening photography"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the course is evening photography.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_3_p1_q03",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the starting day mentioned in note 3?",
+          "opts": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the starting day is Tuesday.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_3_p1_q04",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the starting time mentioned in note 4?",
+          "opts": [
+            "11:45",
+            "9:05",
+            "9:30",
+            "10:20"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the starting time is 9:05.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_3_p1_q05",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the fee mentioned in note 5?",
+          "opts": [
+            "48 dollars",
+            "18 dollars",
+            "36 dollars",
+            "42 dollars"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the fee is 36 dollars.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_3_p1_q06",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the meeting place mentioned in note 6?",
+          "opts": [
+            "Central Market",
+            "Riverside Centre",
+            "Oak Street",
+            "Hilltop Library"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the meeting place is Hilltop Library.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_3_p1_q07",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the room mentioned in note 7?",
+          "opts": [
+            "the library lobby",
+            "Room 104",
+            "Room 208",
+            "Room 315"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the room is the library lobby.",
+          "qtype": "vstep_listen_p1"
+        },
+        {
+          "id": "vstep_listen_3_p1_q08",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the contact number mentioned in note 8?",
+          "opts": [
+            "0195 208 364",
+            "0148 273 611",
+            "0162 440 905",
+            "0183 772 410"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the contact number is 0148 273 611.",
+          "qtype": "vstep_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "vstep_listen_3_p2",
+      "section": "listening2",
+      "set": "3",
+      "title": "VSTEP Listening Part 2",
+      "passage": "You will hear a longer discussion in which the speakers compare plans and evidence. For your notes, the project title is Night buses. The speaker then confirms that the research question is recycled glass. It is also important that the sample size is 24. The recording adds that the data source is interviews. Listeners should remember that the first meeting is Friday. For your notes, the software is Quartz. The speaker then confirms that the draft deadline is 12 April. It is also important that the main concern is missing dates. The recording adds that the supervisor is Sara Wong. Listeners should remember that the next action is book the lab. For your notes, the project title detail 11 is River sensors. The speaker then confirms that the research question detail 12 is museum maps.",
+      "audioPassage": "You will hear a longer discussion in which the speakers compare plans and evidence. For your notes, the project title is Night buses. The speaker then confirms that the research question is recycled glass. It is also important that the sample size is 24. The recording adds that the data source is interviews. Listeners should remember that the first meeting is Friday. For your notes, the software is Quartz. The speaker then confirms that the draft deadline is 12 April. It is also important that the main concern is missing dates. The recording adds that the supervisor is Sara Wong. Listeners should remember that the next action is book the lab. For your notes, the project title detail 11 is River sensors. The speaker then confirms that the research question detail 12 is museum maps.",
+      "items": [
+        {
+          "id": "vstep_listen_3_p2_q01",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the project title mentioned in note 1?",
+          "opts": [
+            "Open classrooms",
+            "Night buses",
+            "Shared gardens",
+            "Repair cafés"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the project title is Night buses.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_3_p2_q02",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the research question mentioned in note 2?",
+          "opts": [
+            "coastal birds",
+            "community kitchens",
+            "recycled glass",
+            "sleep patterns"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the research question is recycled glass.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_3_p2_q03",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the sample size mentioned in note 3?",
+          "opts": [
+            "36",
+            "48",
+            "sixty-two",
+            "24"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the sample size is 24.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_3_p2_q04",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the data source mentioned in note 4?",
+          "opts": [
+            "interviews",
+            "a weather log",
+            "museum records",
+            "a survey"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the data source is interviews.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_3_p2_q05",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the first meeting mentioned in note 5?",
+          "opts": [
+            "Tuesday",
+            "Friday",
+            "Saturday",
+            "Monday"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the first meeting is Friday.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_3_p2_q06",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the software mentioned in note 6?",
+          "opts": [
+            "Cedar",
+            "Maple",
+            "Quartz",
+            "Atlas"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the software is Quartz.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_3_p2_q07",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the draft deadline mentioned in note 7?",
+          "opts": [
+            "18 May",
+            "24 June",
+            "6 July",
+            "12 April"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the draft deadline is 12 April.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_3_p2_q08",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the main concern mentioned in note 8?",
+          "opts": [
+            "missing dates",
+            "unclear labels",
+            "late replies",
+            "noisy data"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the main concern is missing dates.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_3_p2_q09",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the supervisor mentioned in note 9?",
+          "opts": [
+            "Owen Reed",
+            "Sara Wong",
+            "Leo Martin",
+            "Nora Evans"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the supervisor is Sara Wong.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_3_p2_q10",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the next action mentioned in note 10?",
+          "opts": [
+            "draw the map",
+            "check the ethics form",
+            "book the lab",
+            "read two articles"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the next action is book the lab.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_3_p2_q11",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the project title detail 11 mentioned in note 11?",
+          "opts": [
+            "Local archives",
+            "Night buses",
+            "Shared gardens",
+            "River sensors"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the project title detail 11 is River sensors.",
+          "qtype": "vstep_listen_p2"
+        },
+        {
+          "id": "vstep_listen_3_p2_q12",
+          "section": "listening2",
+          "level": 4,
+          "stem": "What is the research question detail 12 mentioned in note 12?",
+          "opts": [
+            "museum maps",
+            "urban trees",
+            "recycled glass",
+            "sleep patterns"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the research question detail 12 is museum maps.",
+          "qtype": "vstep_listen_p2"
+        }
+      ]
+    },
+    {
+      "id": "vstep_listen_3_p3",
+      "section": "listening3",
+      "set": "3",
+      "title": "VSTEP Listening Part 3",
+      "passage": "You will hear a talk in which a speaker develops an idea and gives examples. For your notes, the definition is a seasonal movement. The speaker then confirms that the period studied is the 1970s. It is also important that the first example is coastal birds. The recording adds that the main cause is noise. Listeners should remember that the measured change is a smaller gap. For your notes, the research tool is a field diary. The speaker then confirms that the unexpected result is the result was seasonal. It is also important that the practical use is library design. The recording adds that the limitation is one location. Listeners should remember that the conclusion is a public workshop. For your notes, the definition detail 11 is a sound pattern. The speaker then confirms that the period studied detail 12 is the early 1900s. It is also important that the first example detail 13 is recycled glass. The recording adds that the main cause detail 14 is new materials. Listeners should remember that the measured change detail 15 is three extra visits.",
+      "audioPassage": "You will hear a talk in which a speaker develops an idea and gives examples. For your notes, the definition is a seasonal movement. The speaker then confirms that the period studied is the 1970s. It is also important that the first example is coastal birds. The recording adds that the main cause is noise. Listeners should remember that the measured change is a smaller gap. For your notes, the research tool is a field diary. The speaker then confirms that the unexpected result is the result was seasonal. It is also important that the practical use is library design. The recording adds that the limitation is one location. Listeners should remember that the conclusion is a public workshop. For your notes, the definition detail 11 is a sound pattern. The speaker then confirms that the period studied detail 12 is the early 1900s. It is also important that the first example detail 13 is recycled glass. The recording adds that the main cause detail 14 is new materials. Listeners should remember that the measured change detail 15 is three extra visits.",
+      "items": [
+        {
+          "id": "vstep_listen_3_p3_q01",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the definition mentioned in note 1?",
+          "opts": [
+            "a memory cue",
+            "a seasonal movement",
+            "a local exchange",
+            "a heat island"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the definition is a seasonal movement.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_3_p3_q02",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the period studied mentioned in note 2?",
+          "opts": [
+            "the last decade",
+            "the present day",
+            "the 1970s",
+            "the 1990s"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the period studied is the 1970s.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_3_p3_q03",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the first example mentioned in note 3?",
+          "opts": [
+            "community kitchens",
+            "museum maps",
+            "urban trees",
+            "coastal birds"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the first example is coastal birds.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_3_p3_q04",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the main cause mentioned in note 4?",
+          "opts": [
+            "noise",
+            "poor drainage",
+            "traffic growth",
+            "dry weather"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the main cause is noise.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_3_p3_q05",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the measured change mentioned in note 5?",
+          "opts": [
+            "a two-hour delay",
+            "a smaller gap",
+            "a 12 percent rise",
+            "a 9 percent fall"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the measured change is a smaller gap.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_3_p3_q06",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the research tool mentioned in note 6?",
+          "opts": [
+            "a satellite image",
+            "a memory test",
+            "a field diary",
+            "a sound meter"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the research tool is a field diary.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_3_p3_q07",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the unexpected result mentioned in note 7?",
+          "opts": [
+            "the oldest site improved",
+            "the control group changed",
+            "the samples clustered",
+            "the result was seasonal"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the unexpected result is the result was seasonal.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_3_p3_q08",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the practical use mentioned in note 8?",
+          "opts": [
+            "library design",
+            "farm work",
+            "health advice",
+            "coastal management"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the practical use is library design.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_3_p3_q09",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the limitation mentioned in note 9?",
+          "opts": [
+            "short observation",
+            "one location",
+            "weather changes",
+            "limited funding"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the limitation is one location.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_3_p3_q10",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the conclusion mentioned in note 10?",
+          "opts": [
+            "more local trials",
+            "longer observation",
+            "a public workshop",
+            "a wider comparison"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the conclusion is a public workshop.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_3_p3_q11",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the definition detail 11 mentioned in note 11?",
+          "opts": [
+            "a shared resource",
+            "a seasonal movement",
+            "a local exchange",
+            "a sound pattern"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the definition detail 11 is a sound pattern.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_3_p3_q12",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the period studied detail 12 mentioned in note 12?",
+          "opts": [
+            "the early 1900s",
+            "the 1950s",
+            "the 1970s",
+            "the 1990s"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the period studied detail 12 is the early 1900s.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_3_p3_q13",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the first example detail 13 mentioned in note 13?",
+          "opts": [
+            "community kitchens",
+            "recycled glass",
+            "sleep patterns",
+            "coastal birds"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the first example detail 13 is recycled glass.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_3_p3_q14",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the main cause detail 14 mentioned in note 14?",
+          "opts": [
+            "noise",
+            "poor drainage",
+            "new materials",
+            "changed habits"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the main cause detail 14 is new materials.",
+          "qtype": "vstep_listen_p3"
+        },
+        {
+          "id": "vstep_listen_3_p3_q15",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the measured change detail 15 mentioned in note 15?",
+          "opts": [
+            "a wider range",
+            "a smaller gap",
+            "a 12 percent rise",
+            "three extra visits"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the measured change detail 15 is three extra visits.",
+          "qtype": "vstep_listen_p3"
+        }
+      ]
+    }
+  ]
+}

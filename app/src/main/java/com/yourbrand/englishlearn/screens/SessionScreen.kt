@@ -306,11 +306,12 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
 
     private fun renderChoice(ex: Exercise.Choice) {
         val c = ctx
-        if (ex.sharedPassage != null) {
+        val hideAudioTranscript = ex.tags.any { it == "listening" }
+        if (ex.sharedPassage != null && (!hideAudioTranscript || ex.sharedImage != null)) {
             content.addView(Kit.card(c, 14, 10, c.col(R.color.surface_variant), null) {
                 val image = ex.sharedImage?.let(::toeicSceneImage)
                 if (image != null) addView(image)
-                else addView(Kit.text(c, (ex.sharedPassageTitle?.let { "$it\n\n" } ?: "") + ex.sharedPassage, R.style.Text_Body))
+                else if (!hideAudioTranscript) addView(Kit.text(c, (ex.sharedPassageTitle?.let { "$it\n\n" } ?: "") + ex.sharedPassage, R.style.Text_Body))
             })
         }
         content.addView(instruction(ex.instruction))
@@ -335,7 +336,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
                 content.addView(box)
                 content.post { speak(ex.speak.orEmpty()) }
             }
-            ex.stem.isNotBlank() -> {
+            ex.stem.isNotBlank() && !ex.hideAudioOptionText -> {
                 // The top gap goes on the row: a top margin on a child of a CENTER_VERTICAL row shifts
                 // it down by half the margin past the row's bottom and clipped the descenders (y, g).
                 val row = Kit.hbox(c).margins(c, top = 10)
@@ -352,8 +353,11 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
         val optionsBox = Kit.vbox(c).margins(c, top = 16)
         content.addView(optionsBox)
         var selected = -1
+        val hideAudioAnswerText = ex.hideAudioOptionText ||
+            ex.key.startsWith("exam:toeic_p1:") ||
+            ex.tags.any { it == "section_p1" || it == "listen_p1" }
         val cards = ex.options.mapIndexed { i, opt ->
-            OptionCard(c, i, if (ex.optionsMarked) Spans.underline(opt) else opt).also { card ->
+            OptionCard(c, i, if (ex.optionsMarked) Spans.underline(opt) else opt, showText = !hideAudioAnswerText).also { card ->
                 optionsBox.addView(card.view)
                 card.view.onTap {
                     if (answered || !card.enabled) return@onTap
@@ -1225,7 +1229,7 @@ class SessionScreen(activity: MainActivity, private val session: Session) : Scre
 }
 
 /** Answer option with the states from SKILL.md 4.4 (default · selected · correct · wrong · dimmed · disabled). */
-class OptionCard(private val ctx: android.content.Context, index: Int, text: CharSequence) {
+class OptionCard(private val ctx: android.content.Context, index: Int, text: CharSequence, showText: Boolean = true) {
     enum class State { DEFAULT, PLAYING, SELECTED, CORRECT, WRONG, DIMMED, DISABLED }
 
     val view: LinearLayout
@@ -1251,10 +1255,11 @@ class OptionCard(private val ctx: android.content.Context, index: Int, text: Cha
         label = Kit.text(c, text, R.style.Text_Body).apply {
             textSize = 17f * c.services.settings.questionScale
             layoutParams = lp(0, WRAP_CONTENT, 1f).apply { marginStart = c.dpi(12) }
+            visibility = if (showText) View.VISIBLE else View.GONE
         }
         mark = ImageView(c).apply { layoutParams = LinearLayout.LayoutParams(c.dpi(24), c.dpi(24)); visibility = View.GONE }
         view.addView(letter); view.addView(label); view.addView(mark)
-        view.contentDescription = "${'A' + index}. $text"
+        view.contentDescription = if (showText) "${'A' + index}. $text" else "${'A' + index}. ${ctx.getString(R.string.listen)}"
         setState(State.DEFAULT)
     }
 
@@ -1278,6 +1283,12 @@ class OptionCard(private val ctx: android.content.Context, index: Int, text: Cha
     }
 
     fun showLabel(show: Boolean) { label.visibility = if (show) View.VISIBLE else View.GONE }
+
+    /** Keeps only A/B/C/D visible while the answer text is supplied by the audio track. */
+    fun hideTextForAudio() {
+        label.visibility = View.GONE
+        view.contentDescription = "${letter.text}. ${ctx.getString(R.string.listen)}"
+    }
 
     /** The correct option pulses green once after a wrong answer. */
     fun pulse() {

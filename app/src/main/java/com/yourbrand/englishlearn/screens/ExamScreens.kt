@@ -78,6 +78,10 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
                 if (parts.isNotEmpty()) {
                     body.addView(Kit.section(c, if (mode == ExamPartMode.LISTENING) str(R.string.exam_listening) else str(R.string.exam_reading), topDp = 14))
                     parts.forEach { partCard(body, it) }
+                    if (mode == ExamPartMode.LISTENING) {
+                        familyFormats.filter { it.id.startsWith("toeic_listening_") }
+                            .forEach { directFormatCard(body, it) }
+                    }
                 }
             }
         }
@@ -173,7 +177,7 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
     private fun isThptPaper(format: ExamFormat): Boolean =
         format.id == "thpt" || format.id.startsWith("thpt_")
 
-    /** Non-TOEIC exams use the same drill-down shape: section -> practice set -> test. */
+    /** Non-TOEIC exams expose complete papers directly, then retain section drill-downs for partial banks. */
     private fun renderNonToeicTracks(body: LinearLayout, formats: List<ExamFormat>) {
         val c = ctx
         formats.groupBy { it.family }.values.forEach { trackFormats ->
@@ -187,27 +191,34 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
                     .forEach { directFormatCard(body, it) }
                 return@forEach
             }
-            if (trackFormats.firstOrNull()?.family?.startsWith("IELTS", ignoreCase = true) == true &&
-                trackFormats.all { format ->
-                    format.questionCount != null &&
-                        format.sections.isNotEmpty() &&
-                        format.sections.sumOf { it.count } == format.questionCount
+            fun isCompletePaper(format: ExamFormat): Boolean =
+                format.questionCount != null && format.sections.isNotEmpty() &&
+                    format.sections.sumOf { it.count } == format.questionCount
+            fun isListeningPaper(format: ExamFormat): Boolean =
+                isCompletePaper(format) && format.sections.any { section ->
+                    section.id.startsWith("listening") || section.qtypes.any { it.contains("listen", ignoreCase = true) }
                 }
-            ) {
-                // A full IELTS paper contains three passages (13 + 13 + 14 = 40).
-                // Show one card per paper; selecting it builds all sections together.
-                body.addView(Kit.section(c, trackFormats.first().family, topDp = 12))
-                trackFormats.forEach { directFormatCard(body, it) }
-                return@forEach
+
+            val completeListening = trackFormats.filter(::isListeningPaper)
+            val remaining = trackFormats.filterNot { it in completeListening }
+            if (completeListening.isNotEmpty()) {
+                body.addView(Kit.section(c, str(R.string.exam_listening), topDp = 12))
+                completeListening.forEach { directFormatCard(body, it) }
             }
-            val sectionFormats = trackFormats.filter { it.sections.isNotEmpty() }
-            val directFormats = trackFormats.filter { it.sections.isEmpty() }
+
+            val completeReading = remaining.filter(::isCompletePaper)
+            val sectionFormats = remaining.filter { it.sections.isNotEmpty() && it !in completeReading }
+            val directFormats = remaining.filter { it.sections.isEmpty() }
+            if (completeReading.isNotEmpty()) {
+                body.addView(Kit.section(c, str(R.string.exam_reading), topDp = 12))
+                completeReading.forEach { directFormatCard(body, it) }
+            }
             if (sectionFormats.isEmpty()) {
                 directFormats.forEach { directFormatCard(body, it) }
                 return@forEach
             }
 
-            body.addView(Kit.section(c, trackFormats.first().family, topDp = 12))
+            body.addView(Kit.section(c, remaining.firstOrNull()?.family ?: trackFormats.first().family, topDp = 12))
             val sectionIds = sectionFormats.flatMap { it.sections.map { section -> section.id } }.distinct()
             sectionIds.forEach { sectionId ->
                 val template = sectionFormats.firstNotNullOfOrNull { format -> format.sections.firstOrNull { it.id == sectionId } }
@@ -345,7 +356,12 @@ class ExamPartScreen(activity: MainActivity, private val partKey: String) : Scro
         val title = "TOEIC ${partLabel()} Test ${testNumber(format)}"
         val hist = services.store.history().filter { it.kind == "MOCK" && it.format == format.id }
         val n = set.sectionId?.let { sectionId -> format.sections.firstOrNull { it.id == sectionId }?.count }
-            ?: format.questionCount ?: 20
+            ?: if (partKey == "p3") {
+                val section = format.sections.firstOrNull { it.id == "p3" }
+                services.content.examBanks[section?.bank]?.groups.orEmpty()
+                    .filter { section?.groupSet == null || it.set == section.groupSet }
+                    .sumOf { it.items.size }
+            } else format.questionCount ?: 20
         val last = hist.lastOrNull()?.let { "${it.correct}/${it.total}" } ?: "—"
         val best = hist.maxByOrNull { it.percent }?.let { "${it.correct}/${it.total}" } ?: "—"
         val time = if (set.sectionId != null) str(R.string.untimed) else format.timeLimitMinutes?.let { str(R.string.minutes_n, it) } ?: str(R.string.untimed)

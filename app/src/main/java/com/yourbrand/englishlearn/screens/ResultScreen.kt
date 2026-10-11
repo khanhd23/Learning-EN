@@ -225,6 +225,7 @@ class ResultScreen(
         activity.startSessionAsync {
             when (session.kind) {
                 SessionKind.GRAMMAR -> session.gp?.let { b.grammar(session.title, it) }
+                SessionKind.TENSES -> b.tensePractice(session.title)
                 SessionKind.SPEED -> b.speed(session.title, services.settings.userLevel)
                 else -> b.quick(str(R.string.quick_session), now, services.settings.preferredTopics(), services.settings.userLevel)
             } ?: b.quick(str(R.string.quick_session), now, services.settings.preferredTopics(), services.settings.userLevel)

@@ -57,6 +57,23 @@ object Spans {
         return sb
     }
 
+    /** Highlights several source phrases with stable colors, used for question-to-audio review. */
+    fun highlightParts(text: String, parts: List<String>, colors: List<Int>, backgrounds: List<Int>): CharSequence {
+        val sb = SpannableStringBuilder(text)
+        if (colors.isEmpty() || backgrounds.isEmpty()) return sb
+        parts.forEachIndexed { index, part ->
+            if (part.isBlank()) return@forEachIndexed
+            val start = text.indexOf(part, ignoreCase = true)
+            if (start < 0) return@forEachIndexed
+            val end = start + part.length
+            sb.setSpan(ForegroundColorSpan(colors[index % colors.size]), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+            sb.setSpan(BackgroundColorSpan(backgrounds[index % backgrounds.size]), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+            sb.setSpan(UnderlineSpan(), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+            sb.setSpan(StyleSpan(Typeface.BOLD), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+        }
+        return sb
+    }
+
     fun bold(text: String): CharSequence = SpannableStringBuilder(text).apply { setSpan(StyleSpan(Typeface.BOLD), 0, length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE) }
 
     /**

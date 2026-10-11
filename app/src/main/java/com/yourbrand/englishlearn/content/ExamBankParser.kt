@@ -11,6 +11,7 @@ object ExamBankParser {
             o.optInt("ans", -1), o.optString("expl"), o.optString("qtype").takeIf { it.isNotBlank() },
             o.optString("answerText").takeIf { it.isNotBlank() },
             o.optString("set").takeIf { it.isNotBlank() },
+            o.optString("evidence").takeIf { it.isNotBlank() },
         )
         val items = root.optJSONArray("items")?.let { a -> List(a.length()) { item(a.getJSONObject(it)) } } ?: emptyList()
         val groups = root.optJSONArray("groups")?.let { a -> List(a.length()) { i ->
@@ -18,7 +19,8 @@ object ExamBankParser {
             val section = o.getString("section")
             val groupItems = o.getJSONArray("items").let { values -> List(values.length()) { item(values.getJSONObject(it), section) } }
             val passage = o.getString("passage")
-            ExamGroup(o.getString("id"), section, passage, o.optString("title").takeIf { it.isNotBlank() }, groupItems, o.optString("set").takeIf { it.isNotBlank() }, passage)
+            val audioPassage = o.optString("audioPassage").takeIf { it.isNotBlank() } ?: passage
+            ExamGroup(o.getString("id"), section, passage, o.optString("title").takeIf { it.isNotBlank() }, groupItems, o.optString("set").takeIf { it.isNotBlank() }, audioPassage)
         } } ?: emptyList()
         return ExamBank(items, groups)
     }

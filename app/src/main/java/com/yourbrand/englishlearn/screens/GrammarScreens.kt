@@ -20,52 +20,13 @@ import com.yourbrand.englishlearn.ui.*
 /** S08 — grammar ladder, 5 levels easy → hard. */
 class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
     override val tab = Tab.GRAMMAR
-    // Grammar has one inline ad at the active roadmap position; do not add the global banner too.
-    override val allowsBanner = false
+    // Use only MainActivity's fixed bottom banner; never inject ads into the roadmap.
+    override val allowsBanner = true
     override val petMode = PetMode.FLOATING
     private var filter = 0 // 0 all · 1 TOEIC · 2 tricky
-    private val inlineAdSlots = mutableListOf<FrameLayout>()
     private var roadmapId: String? = null
-    private var roadmapRevealed = false
-
-    private fun destroyInlineAds() {
-        inlineAdSlots.forEach { services.ads.destroyBanner(it) }
-        inlineAdSlots.clear()
-    }
-
-    private fun inlineAd(): FrameLayout = FrameLayout(ctx).apply {
-        minimumHeight = ctx.dpi(50)
-        setPadding(0, ctx.dpi(4), 0, ctx.dpi(4))
-        tag = "grammar-inline-ad"
-        inlineAdSlots += this
-    }
-
-    private fun loadInlineAd(slot: FrameLayout) {
-        if (slot.tag == "grammar-inline-ad-loaded" || !services.ads.showsAds) return
-        slot.tag = "grammar-inline-ad-loaded"
-        services.ads.loadBanner(activity, slot) { }
-    }
-
-    private fun loadNearbyInlineAds() {
-        if (!hasView) return
-        val scrollLocation = IntArray(2)
-        scroll.getLocationOnScreen(scrollLocation)
-        val nearTop = scrollLocation[1] - scroll.height / 2
-        val nearBottom = scrollLocation[1] + scroll.height + scroll.height / 2
-        inlineAdSlots.forEach { slot ->
-            if (slot.tag == "grammar-inline-ad-loaded" || !slot.isShown) return@forEach
-            val location = IntArray(2)
-            slot.getLocationOnScreen(location)
-            val top = location[1]
-            val bottom = top + slot.height
-            if (bottom >= nearTop && top <= nearBottom) loadInlineAd(slot)
-        }
-    }
-
-    override fun onDestroy() {
-        destroyInlineAds()
-        super.onDestroy()
-    }
+    private var cachedScrollY: Int? = null
+    private var cachedRoadmapId: String? = null
 
     private fun visiblePoints(all: List<GrammarPoint>): List<GrammarPoint> = all.filter { gp -> when (filter) {
         1 -> gp.exam
@@ -79,14 +40,35 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
         return GrammarRoadmap.currentId(visible.map { it.id }, stars, services.settings.grammarRoadmapId)
     }
 
+    override fun onShown(firstTime: Boolean) {
+        super.onShown(firstTime)
+        // ScrollScreen restores/resets its position first. Restore Grammar's learning position
+        // afterwards so returning to this tab never jumps back to the top.
+        val id = roadmapId ?: currentRoadmapId(services.content.grammar)
+        if (!firstTime && cachedScrollY != null && cachedRoadmapId == id) {
+            scroll.scrollTo(0, cachedScrollY!!)
+        } else {
+            scroll.post { restoreLearningPosition() }
+        }
+    }
+
+    override fun onHidden() {
+        if (hasView) {
+            cachedScrollY = scroll.scrollY
+            cachedRoadmapId = roadmapId
+        }
+        super.onHidden()
+    }
+
     /** Re-selects the saved roadmap node when the learner taps the Grammar tab again. */
     fun restoreLearningPosition() {
         if (!hasView) return
         val id = roadmapId ?: currentRoadmapId(services.content.grammar) ?: return
-        val target = body.findViewWithTag<View>("grammar-node:$id")
+        val point = services.content.grammarById[id]
+        val target = point?.let { body.findViewWithTag<View>("grammar-progress:${it.level}") }
+            ?: body.findViewWithTag<View>("grammar-node:$id")
         if (target != null) {
             reveal(target)
-            target.post { loadNearbyInlineAds() }
         }
     }
 
@@ -106,14 +88,17 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
 
     override fun build(body: LinearLayout) {
         val c = ctx
-        destroyInlineAds()
         val chips = Kit.hbox(c)
         listOf(R.string.g_all, R.string.g_toeic, R.string.g_tricky).forEachIndexed { i, label -> chips.addView(Kit.chip(c, str(label), filter == i) { filter = i; refresh() }) }
         body.addView(Kit.hscroll(c, chips).margins(c, top = 4))
+        body.addView(Kit.clickableCard(c, 8, 10, c.col(R.color.primary_container), onClick = {
+            activity.startSessionAsync { services.builder().tensePractice("12 ${str(R.string.tag_tense)}") }
+        }) {
+            addView(Kit.row(c, Kit.emojiTile(c, "🕒", c.col(R.color.surface_variant)), "12 ${str(R.string.tag_tense)}", str(R.string.drills_sub, 42), Kit.chevron(c)))
+        }.margins(c, top = 8, bottom = 4))
 
         val all = services.content.grammar
         roadmapId = currentRoadmapId(all)
-        roadmapRevealed = false
         if (firstBuild) {
             buildSmooth(body, c, all)
             return
@@ -132,26 +117,14 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
             }
             if (visible.isEmpty()) return@forEach
             val mastered = pts.count { services.store.stars(it.id) > 0 }
-            body.addView(Kit.card(c, 14, 8, Hues.container(c, lvl * 2 - 2), null) {
-                addView(Kit.text(c, "$mastered/${pts.size}", R.style.Text_BodyStrong, Hues.color(c, lvl * 2 - 2)).apply {
-                    gravity = Gravity.CENTER
-                    layoutParams = lp(MATCH_PARENT, c.dpi(28))
-                    contentDescription = str(R.string.level_n, lvl) + ", " + text
-                })
-            })
+            body.addView(levelProgress(c, lvl, mastered, pts.size))
             // Path of nodes (zig-zag) with connectors.
             visible.forEachIndexed { vi, gp ->
                 val i = all.indexOf(gp)
                 val state = stateOf(all, i)
                 if (vi > 0) body.addView(connector(state != NodeState.LOCKED, vi))
-                if (gp.id == roadmapId) body.addView(inlineAd().margins(c, top = 4, bottom = 4))
                 body.addView(node(gp, state, vi))
             }
-        }
-        scroll.setOnScrollChangeListener { _, _, _, _, _ -> loadNearbyInlineAds() }
-        scroll.post {
-            restoreLearningPosition()
-            loadNearbyInlineAds()
         }
     }
 
@@ -175,21 +148,13 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
             }
             if (visible.isEmpty()) { body.postOnAnimation { next(levelIndex + 1) }; return }
             val mastered = pts.count { services.store.stars(it.value.id) > 0 }
-            body.addView(Kit.card(c, 14, 8, Hues.container(c, lvl * 2 - 2), null) {
-                addView(Kit.text(c, "$mastered/${pts.size}", R.style.Text_BodyStrong, Hues.color(c, lvl * 2 - 2)).apply {
-                    gravity = Gravity.CENTER
-                    layoutParams = lp(MATCH_PARENT, c.dpi(28))
-                    contentDescription = str(R.string.level_n, lvl) + ", " + text
-                })
-            })
+            body.addView(levelProgress(c, lvl, mastered, pts.size))
             fun addNode(i: Int) {
                 val (index, gp) = visible[i]
                 val state = stateOf(all, index)
                 if (i > 0) body.addView(connector(state != NodeState.LOCKED, i))
-                if (gp.id == roadmapId) body.addView(inlineAd().margins(c, top = 4, bottom = 4))
                 body.addView(node(gp, state, i))
-                if (gp.id == roadmapId && !roadmapRevealed) {
-                    roadmapRevealed = true
+                if (gp.id == roadmapId) {
                     body.post { restoreLearningPosition() }
                 }
             }
@@ -198,9 +163,17 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
                 onDone = { body.postOnAnimation { next(levelIndex + 1) } }, add = ::addNode)
         }
         next(0)
-        scroll.setOnScrollChangeListener { _, _, _, _, _ -> loadNearbyInlineAds() }
-        scroll.post { loadNearbyInlineAds() }
     }
+
+    private fun levelProgress(c: android.content.Context, level: Int, mastered: Int, total: Int): View =
+        Kit.card(c, 14, 8, Hues.container(c, level * 2 - 2), null).apply {
+            tag = "grammar-progress:$level"
+            addView(Kit.text(c, "$mastered/$total", R.style.Text_BodyStrong, Hues.color(c, level * 2 - 2)).apply {
+                gravity = Gravity.CENTER
+                layoutParams = lp(MATCH_PARENT, c.dpi(28))
+                contentDescription = str(R.string.level_n, level) + ", " + text
+            })
+        }
 
     private fun offsetFor(i: Int): Float = when (i % 4) { 0 -> 0f; 1 -> 0.18f; 2 -> 0f; else -> -0.18f }
 

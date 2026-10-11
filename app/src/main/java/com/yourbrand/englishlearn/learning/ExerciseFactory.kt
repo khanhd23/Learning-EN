@@ -157,18 +157,20 @@ class ExerciseFactory(private val content: Content, private val random: Random =
         val partTwoListening = item.qtype == "listen_p2"
         val partThreeListening = item.qtype == "listen_p3"
         val partFourListening = item.qtype == "listen_p4"
-        val listening = partOneListening || partTwoListening || partThreeListening || partFourListening
+        val listening = item.qtype?.contains("listen", ignoreCase = true) == true
         val audioPrompt = when {
             partTwoListening -> group?.audioPassage ?: group?.passage
             partThreeListening || partFourListening -> group?.audioPassage?.let { "$it ${item.stem}" } ?: group?.passage?.let { "$it ${item.stem}" }
+            listening -> group?.audioPassage ?: group?.passage
             else -> null
         }
         return Exercise.Choice("exam:$bank:${item.id}", if (listening) Kind.E09 else Kind.E01,
             listOf("exam", "section_${item.section}") + if (listening) listOf("listening", item.section) else emptyList(), item.level,
             if (listening) R.string.ins_listen else R.string.ins_choose, item.stem, item.options, item.answer, item.explanation,
             sharedPassage = group?.passage, sharedPassageTitle = group?.title, sharedGroupId = group?.id,
-            audioOptions = listening, audioPrompt = audioPrompt,
-            sharedImage = if (bank == "toeic_p1" && partOneListening) ToeicPart1Images.resourceFor(group?.id) else null)
+            audioOptions = listening, hideAudioOptionText = partOneListening, audioPrompt = audioPrompt,
+            sharedImage = if (bank == "toeic_p1" && partOneListening) ToeicPart1Images.resourceFor(group?.id) else null,
+            evidence = item.evidence)
     }
 
     fun spelling(w: Word): Exercise.Spelling? {

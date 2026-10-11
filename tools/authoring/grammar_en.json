@@ -105,6 +105,30 @@
       "Going to needs the verb to be before it: she is going to."
     ]
   },
+  "past_continuous": {
+    "when": "For an action that was in progress at a particular time in the past, was interrupted, or happened alongside another action.",
+    "body": "Use was or were + verb-ing. The action in progress takes the past continuous, while an interrupting action usually takes the past simple: I was driving when the phone rang. Use while when two actions were happening at the same time.",
+    "why": [
+      "At a particular time yesterday, the action was in progress, so use was cooking.",
+      "After were, use the -ing form: were waiting."
+    ]
+  },
+  "present_perfect_continuous": {
+    "when": "For an action that started in the past and is still continuing, or has just finished and has a present result.",
+    "body": "Use have or has been + verb-ing with since and for to emphasise a process or duration. Use the present perfect simple when the result matters more, or with stative verbs such as know: I have known her for years.",
+    "why": [
+      "Since breakfast shows an action continuing until now, so use has been studying.",
+      "Know is normally a stative verb, so use the present perfect simple: have known."
+    ]
+  },
+  "future_continuous": {
+    "when": "For an action that will be in progress at a particular time in the future.",
+    "body": "Use will be + verb-ing. It often answers what someone will be doing at a future time, or describes an activity already expected in a schedule. The form after will be is always the -ing form.",
+    "why": [
+      "This time next week identifies an action in progress in the future, so use will be relaxing.",
+      "After will be, use the -ing form: will be working."
+    ]
+  },
   "must_should": {
     "when": "To talk about obligation, advice and things that are not allowed.",
     "body": "Should gives advice. Must shows a strong obligation, often from the speaker or from rules. Have to shows an obligation that comes from outside, such as a job or a law. Be careful with the negatives: mustn't means it is not allowed, but don't have to means it is not necessary. After must and should, use the base verb.",
@@ -192,6 +216,30 @@
     "why": [
       "The train left before I arrived, so the earlier action needs had left.",
       "After had, use the past participle: seen, not saw."
+    ]
+  },
+  "past_perfect_continuous": {
+    "when": "For an action that continued for some time before another action or time in the past.",
+    "body": "Use had been + verb-ing to emphasise the process or duration before a past point. Use the past perfect simple when the completed result matters more, or with stative verbs such as know: He had known her for years.",
+    "why": [
+      "The rain continued before the past result, so use had been raining.",
+      "After had been, use the -ing form: had been waiting."
+    ]
+  },
+  "future_perfect": {
+    "when": "For an action that will be complete before a particular time or action in the future.",
+    "body": "Use will have + past participle. It often appears with by, by the time and before: By Friday, we will have finished the project. A time clause beginning with when or by the time uses the present simple, not will.",
+    "why": [
+      "By the end of the month marks a future deadline, so use will have completed.",
+      "After will have, use the past participle: finished, not finish."
+    ]
+  },
+  "future_perfect_continuous": {
+    "when": "For an action that will have continued for a period of time up to a future point.",
+    "body": "Use will have been + verb-ing, usually with for + a duration and by + a future point: By June, I will have been working here for five years. This form emphasises duration; use the future perfect simple when the completed result is more important.",
+    "why": [
+      "A duration continuing up to July needs will have been working.",
+      "After will, use have, not has: will have been teaching."
     ]
   },
   "conditional3": {

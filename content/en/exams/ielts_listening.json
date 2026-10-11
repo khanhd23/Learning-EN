@@ -1,0 +1,1925 @@
+{
+  "items": [],
+  "groups": [
+    {
+      "id": "ielts_listen_1_p1",
+      "section": "listening1",
+      "set": "1",
+      "title": "Everyday arrangements",
+      "passage": "A learner phones a community centre to arrange a course. For your notes, the visitor's name is Leo Martin. The speaker then confirms that the course is food writing. It is also important that the starting day is Saturday. The recording adds that the starting time is 8:15. Listeners should remember that the fee is 24 dollars. For your notes, the meeting place is Greenway Station. The speaker then confirms that the room is Studio B. It is also important that the contact number is 0131 664 782. The recording adds that the email ending is library.edu. Listeners should remember that the item to bring is a notebook.",
+      "audioPassage": "A learner phones a community centre to arrange a course. For your notes, the visitor's name is Leo Martin. The speaker then confirms that the course is food writing. It is also important that the starting day is Saturday. The recording adds that the starting time is 8:15. Listeners should remember that the fee is 24 dollars. For your notes, the meeting place is Greenway Station. The speaker then confirms that the room is Studio B. It is also important that the contact number is 0131 664 782. The recording adds that the email ending is library.edu. Listeners should remember that the item to bring is a notebook.",
+      "items": [
+        {
+          "id": "ielts_listen_1_p1_q01",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the visitor's name mentioned in note 1?",
+          "opts": [
+            "Owen Reed",
+            "Mina Patel",
+            "Leo Martin",
+            "Nora Evans"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the visitor's name is Leo Martin.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_1_p1_q02",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the course mentioned in note 2?",
+          "opts": [
+            "map reading",
+            "evening photography",
+            "beginner pottery",
+            "food writing"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the course is food writing.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_1_p1_q03",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the starting day mentioned in note 3?",
+          "opts": [
+            "Saturday",
+            "Monday",
+            "Tuesday",
+            "Wednesday"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the starting day is Saturday.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_1_p1_q04",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the starting time mentioned in note 4?",
+          "opts": [
+            "9:30",
+            "8:15",
+            "8:40",
+            "9:05"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the starting time is 8:15.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_1_p1_q05",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the fee mentioned in note 5?",
+          "opts": [
+            "36 dollars",
+            "42 dollars",
+            "24 dollars",
+            "30 dollars"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the fee is 24 dollars.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_1_p1_q06",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the meeting place mentioned in note 6?",
+          "opts": [
+            "Harbour Road",
+            "Hilltop Library",
+            "Central Market",
+            "Greenway Station"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the meeting place is Greenway Station.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_1_p1_q07",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the room mentioned in note 7?",
+          "opts": [
+            "Studio B",
+            "the north hall",
+            "the library lobby",
+            "Room 104"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the room is Studio B.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_1_p1_q08",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the contact number mentioned in note 8?",
+          "opts": [
+            "0162 440 905",
+            "0131 664 782",
+            "0177 392 508",
+            "0148 273 611"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the contact number is 0131 664 782.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_1_p1_q09",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the email ending mentioned in note 9?",
+          "opts": [
+            "learn.net",
+            "centre.edu",
+            "library.edu",
+            "study.org"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the email ending is library.edu.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_1_p1_q10",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the item to bring mentioned in note 10?",
+          "opts": [
+            "a water bottle",
+            "a passport photo",
+            "indoor shoes",
+            "a notebook"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the item to bring is a notebook.",
+          "qtype": "ielts_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ielts_listen_1_p2",
+      "section": "listening2",
+      "set": "1",
+      "title": "A public-information talk",
+      "passage": "A guide explains changes to a city visitor centre. For your notes, the opening time is 10:20. The speaker then confirms that the last entry is 11:45. It is also important that the bus route is Route 4. The recording adds that the ticket price is 24 dollars. Listeners should remember that the quiet area is Room 315. For your notes, the guided tour day is Thursday. The speaker then confirms that the collection floor is east wing. It is also important that the reservation method is the information desk. The recording adds that the accessibility feature is a ramp. Listeners should remember that the closing day is Tuesday.",
+      "audioPassage": "A guide explains changes to a city visitor centre. For your notes, the opening time is 10:20. The speaker then confirms that the last entry is 11:45. It is also important that the bus route is Route 4. The recording adds that the ticket price is 24 dollars. Listeners should remember that the quiet area is Room 315. For your notes, the guided tour day is Thursday. The speaker then confirms that the collection floor is east wing. It is also important that the reservation method is the information desk. The recording adds that the accessibility feature is a ramp. Listeners should remember that the closing day is Tuesday.",
+      "items": [
+        {
+          "id": "ielts_listen_1_p2_q01",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the opening time mentioned in note 1?",
+          "opts": [
+            "8:15",
+            "8:40",
+            "10:20",
+            "11:45"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the opening time is 10:20.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_1_p2_q02",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the last entry mentioned in note 2?",
+          "opts": [
+            "8:15",
+            "8:40",
+            "9:05",
+            "11:45"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the last entry is 11:45.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_1_p2_q03",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the bus route mentioned in note 3?",
+          "opts": [
+            "Route 4",
+            "Route 7",
+            "Route 12",
+            "Route 18"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the bus route is Route 4.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_1_p2_q04",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the ticket price mentioned in note 4?",
+          "opts": [
+            "42 dollars",
+            "24 dollars",
+            "30 dollars",
+            "36 dollars"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the ticket price is 24 dollars.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_1_p2_q05",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the quiet area mentioned in note 5?",
+          "opts": [
+            "the north hall",
+            "the library lobby",
+            "Room 315",
+            "Studio B"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the quiet area is Room 315.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_1_p2_q06",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the guided tour day mentioned in note 6?",
+          "opts": [
+            "Friday",
+            "Saturday",
+            "Monday",
+            "Thursday"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the guided tour day is Thursday.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_1_p2_q07",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the collection floor mentioned in note 7?",
+          "opts": [
+            "east wing",
+            "west wing",
+            "ground floor",
+            "first floor"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the collection floor is east wing.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_1_p2_q08",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the reservation method mentioned in note 8?",
+          "opts": [
+            "the front desk",
+            "the information desk",
+            "the website",
+            "the phone line"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the reservation method is the information desk.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_1_p2_q09",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the accessibility feature mentioned in note 9?",
+          "opts": [
+            "large-print labels",
+            "a hearing loop",
+            "a ramp",
+            "a lift"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the accessibility feature is a ramp.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_1_p2_q10",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the closing day mentioned in note 10?",
+          "opts": [
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Tuesday"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the closing day is Tuesday.",
+          "qtype": "ielts_listen_p2"
+        }
+      ]
+    },
+    {
+      "id": "ielts_listen_1_p3",
+      "section": "listening3",
+      "set": "1",
+      "title": "A student project discussion",
+      "passage": "Two students meet their supervisor to plan a small study. For your notes, the project title is Local archives. The speaker then confirms that the research question is urban trees. It is also important that the sample size is 18. The recording adds that the data source is a public database. Listeners should remember that the first meeting is Thursday. For your notes, the software is Pine. The speaker then confirms that the draft deadline is 21 September. It is also important that the main concern is small sample. The recording adds that the supervisor is Jon Bell. Listeners should remember that the next action is clean the spreadsheet.",
+      "audioPassage": "Two students meet their supervisor to plan a small study. For your notes, the project title is Local archives. The speaker then confirms that the research question is urban trees. It is also important that the sample size is 18. The recording adds that the data source is a public database. Listeners should remember that the first meeting is Thursday. For your notes, the software is Pine. The speaker then confirms that the draft deadline is 21 September. It is also important that the main concern is small sample. The recording adds that the supervisor is Jon Bell. Listeners should remember that the next action is clean the spreadsheet.",
+      "items": [
+        {
+          "id": "ielts_listen_1_p3_q01",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the project title mentioned in note 1?",
+          "opts": [
+            "Repair cafés",
+            "Local archives",
+            "Night buses",
+            "Shared gardens"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the project title is Local archives.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_1_p3_q02",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the research question mentioned in note 2?",
+          "opts": [
+            "sleep patterns",
+            "coastal birds",
+            "urban trees",
+            "recycled glass"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the research question is urban trees.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_1_p3_q03",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the sample size mentioned in note 3?",
+          "opts": [
+            "24",
+            "36",
+            "48",
+            "18"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the sample size is 18.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_1_p3_q04",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the data source mentioned in note 4?",
+          "opts": [
+            "a public database",
+            "interviews",
+            "a weather log",
+            "museum records"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the data source is a public database.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_1_p3_q05",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the first meeting mentioned in note 5?",
+          "opts": [
+            "Monday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the first meeting is Thursday.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_1_p3_q06",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the software mentioned in note 6?",
+          "opts": [
+            "Atlas",
+            "Cedar",
+            "Pine",
+            "Quartz"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the software is Pine.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_1_p3_q07",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the draft deadline mentioned in note 7?",
+          "opts": [
+            "12 April",
+            "18 May",
+            "24 June",
+            "21 September"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the draft deadline is 21 September.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_1_p3_q08",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the main concern mentioned in note 8?",
+          "opts": [
+            "small sample",
+            "missing dates",
+            "unclear labels",
+            "late replies"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the main concern is small sample.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_1_p3_q09",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the supervisor mentioned in note 9?",
+          "opts": [
+            "Nora Evans",
+            "Jon Bell",
+            "Sara Wong",
+            "Leo Martin"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the supervisor is Jon Bell.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_1_p3_q10",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the next action mentioned in note 10?",
+          "opts": [
+            "read two articles",
+            "draw the map",
+            "clean the spreadsheet",
+            "book the lab"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the next action is clean the spreadsheet.",
+          "qtype": "ielts_listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "ielts_listen_1_p4",
+      "section": "listening4",
+      "set": "1",
+      "title": "An academic mini-lecture",
+      "passage": "A lecturer introduces a research topic and its practical limits. For your notes, the definition is a shared resource. The speaker then confirms that the period studied is the 1950s. It is also important that the first example is sleep patterns. The recording adds that the main cause is changed habits. Listeners should remember that the measured change is a wider range. For your notes, the research tool is a map grid. The speaker then confirms that the unexpected result is the pattern reversed. It is also important that the practical use is public transport. The recording adds that the limitation is missing records. Listeners should remember that the conclusion is a second survey.",
+      "audioPassage": "A lecturer introduces a research topic and its practical limits. For your notes, the definition is a shared resource. The speaker then confirms that the period studied is the 1950s. It is also important that the first example is sleep patterns. The recording adds that the main cause is changed habits. Listeners should remember that the measured change is a wider range. For your notes, the research tool is a map grid. The speaker then confirms that the unexpected result is the pattern reversed. It is also important that the practical use is public transport. The recording adds that the limitation is missing records. Listeners should remember that the conclusion is a second survey.",
+      "items": [
+        {
+          "id": "ielts_listen_1_p4_q01",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the definition mentioned in note 1?",
+          "opts": [
+            "a heat island",
+            "a shared resource",
+            "a seasonal movement",
+            "a local exchange"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the definition is a shared resource.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_1_p4_q02",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the period studied mentioned in note 2?",
+          "opts": [
+            "the 1990s",
+            "the last decade",
+            "the 1950s",
+            "the 1970s"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the period studied is the 1950s.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_1_p4_q03",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the first example mentioned in note 3?",
+          "opts": [
+            "coastal birds",
+            "community kitchens",
+            "museum maps",
+            "sleep patterns"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the first example is sleep patterns.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_1_p4_q04",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the main cause mentioned in note 4?",
+          "opts": [
+            "changed habits",
+            "noise",
+            "poor drainage",
+            "traffic growth"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the main cause is changed habits.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_1_p4_q05",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the measured change mentioned in note 5?",
+          "opts": [
+            "a 9 percent fall",
+            "a wider range",
+            "a smaller gap",
+            "a 12 percent rise"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the measured change is a wider range.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_1_p4_q06",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the research tool mentioned in note 6?",
+          "opts": [
+            "a sound meter",
+            "a satellite image",
+            "a map grid",
+            "a field diary"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the research tool is a map grid.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_1_p4_q07",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the unexpected result mentioned in note 7?",
+          "opts": [
+            "the result was seasonal",
+            "the oldest site improved",
+            "the control group changed",
+            "the pattern reversed"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the unexpected result is the pattern reversed.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_1_p4_q08",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the practical use mentioned in note 8?",
+          "opts": [
+            "public transport",
+            "library design",
+            "farm work",
+            "health advice"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the practical use is public transport.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_1_p4_q09",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the limitation mentioned in note 9?",
+          "opts": [
+            "limited funding",
+            "missing records",
+            "one location",
+            "weather changes"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the limitation is missing records.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_1_p4_q10",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the conclusion mentioned in note 10?",
+          "opts": [
+            "a wider comparison",
+            "more local trials",
+            "a second survey",
+            "a public workshop"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the conclusion is a second survey.",
+          "qtype": "ielts_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "ielts_listen_2_p1",
+      "section": "listening1",
+      "set": "2",
+      "title": "Everyday arrangements",
+      "passage": "A learner phones a community centre to arrange a course. For your notes, the visitor's name is Owen Reed. The speaker then confirms that the course is evening photography. It is also important that the starting day is Tuesday. The recording adds that the starting time is 9:05. Listeners should remember that the fee is 36 dollars. For your notes, the meeting place is Hilltop Library. The speaker then confirms that the room is the library lobby. It is also important that the contact number is 0148 273 611. The recording adds that the email ending is learn.net. Listeners should remember that the item to bring is a passport photo.",
+      "audioPassage": "A learner phones a community centre to arrange a course. For your notes, the visitor's name is Owen Reed. The speaker then confirms that the course is evening photography. It is also important that the starting day is Tuesday. The recording adds that the starting time is 9:05. Listeners should remember that the fee is 36 dollars. For your notes, the meeting place is Hilltop Library. The speaker then confirms that the room is the library lobby. It is also important that the contact number is 0148 273 611. The recording adds that the email ending is learn.net. Listeners should remember that the item to bring is a passport photo.",
+      "items": [
+        {
+          "id": "ielts_listen_2_p1_q01",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the visitor's name mentioned in note 1?",
+          "opts": [
+            "Jon Bell",
+            "Sara Wong",
+            "Owen Reed",
+            "Mina Patel"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the visitor's name is Owen Reed.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_2_p1_q02",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the course mentioned in note 2?",
+          "opts": [
+            "beginner pottery",
+            "street gardening",
+            "local history",
+            "evening photography"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the course is evening photography.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_2_p1_q03",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the starting day mentioned in note 3?",
+          "opts": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the starting day is Tuesday.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_2_p1_q04",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the starting time mentioned in note 4?",
+          "opts": [
+            "11:45",
+            "9:05",
+            "9:30",
+            "10:20"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the starting time is 9:05.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_2_p1_q05",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the fee mentioned in note 5?",
+          "opts": [
+            "48 dollars",
+            "18 dollars",
+            "36 dollars",
+            "42 dollars"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the fee is 36 dollars.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_2_p1_q06",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the meeting place mentioned in note 6?",
+          "opts": [
+            "Central Market",
+            "Riverside Centre",
+            "Oak Street",
+            "Hilltop Library"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the meeting place is Hilltop Library.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_2_p1_q07",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the room mentioned in note 7?",
+          "opts": [
+            "the library lobby",
+            "Room 104",
+            "Room 208",
+            "Room 315"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the room is the library lobby.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_2_p1_q08",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the contact number mentioned in note 8?",
+          "opts": [
+            "0195 208 364",
+            "0148 273 611",
+            "0162 440 905",
+            "0183 772 410"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the contact number is 0148 273 611.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_2_p1_q09",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the email ending mentioned in note 9?",
+          "opts": [
+            "mailbox.org",
+            "class.net",
+            "learn.net",
+            "centre.edu"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the email ending is learn.net.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_2_p1_q10",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the item to bring mentioned in note 10?",
+          "opts": [
+            "indoor shoes",
+            "a pencil",
+            "a folder",
+            "a passport photo"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the item to bring is a passport photo.",
+          "qtype": "ielts_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ielts_listen_2_p2",
+      "section": "listening2",
+      "set": "2",
+      "title": "A public-information talk",
+      "passage": "A guide explains changes to a city visitor centre. For your notes, the opening time is 8:15. The speaker then confirms that the last entry is 8:40. It is also important that the bus route is Route 12. The recording adds that the ticket price is 36 dollars. Listeners should remember that the quiet area is the north hall. For your notes, the guided tour day is Saturday. The speaker then confirms that the collection floor is ground floor. It is also important that the reservation method is the phone line. The recording adds that the accessibility feature is large-print labels. Listeners should remember that the closing day is Thursday.",
+      "audioPassage": "A guide explains changes to a city visitor centre. For your notes, the opening time is 8:15. The speaker then confirms that the last entry is 8:40. It is also important that the bus route is Route 12. The recording adds that the ticket price is 36 dollars. Listeners should remember that the quiet area is the north hall. For your notes, the guided tour day is Saturday. The speaker then confirms that the collection floor is ground floor. It is also important that the reservation method is the phone line. The recording adds that the accessibility feature is large-print labels. Listeners should remember that the closing day is Thursday.",
+      "items": [
+        {
+          "id": "ielts_listen_2_p2_q01",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the opening time mentioned in note 1?",
+          "opts": [
+            "9:05",
+            "9:30",
+            "8:15",
+            "8:40"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the opening time is 8:15.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_2_p2_q02",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the last entry mentioned in note 2?",
+          "opts": [
+            "9:05",
+            "9:30",
+            "10:20",
+            "8:40"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the last entry is 8:40.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_2_p2_q03",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the bus route mentioned in note 3?",
+          "opts": [
+            "Route 12",
+            "Route 18",
+            "Route 21",
+            "Route 26"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the bus route is Route 12.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_2_p2_q04",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the ticket price mentioned in note 4?",
+          "opts": [
+            "18 dollars",
+            "36 dollars",
+            "42 dollars",
+            "48 dollars"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the ticket price is 36 dollars.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_2_p2_q05",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the quiet area mentioned in note 5?",
+          "opts": [
+            "Room 104",
+            "Room 208",
+            "the north hall",
+            "the library lobby"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the quiet area is the north hall.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_2_p2_q06",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the guided tour day mentioned in note 6?",
+          "opts": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Saturday"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the guided tour day is Saturday.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_2_p2_q07",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the collection floor mentioned in note 7?",
+          "opts": [
+            "ground floor",
+            "first floor",
+            "second floor",
+            "third floor"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the collection floor is ground floor.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_2_p2_q08",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the reservation method mentioned in note 8?",
+          "opts": [
+            "the ticket machine",
+            "the phone line",
+            "the front desk",
+            "the visitor app"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the reservation method is the phone line.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_2_p2_q09",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the accessibility feature mentioned in note 9?",
+          "opts": [
+            "a quiet entrance",
+            "a rest bench",
+            "large-print labels",
+            "a hearing loop"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the accessibility feature is large-print labels.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_2_p2_q10",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the closing day mentioned in note 10?",
+          "opts": [
+            "Friday",
+            "Saturday",
+            "Monday",
+            "Thursday"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the closing day is Thursday.",
+          "qtype": "ielts_listen_p2"
+        }
+      ]
+    },
+    {
+      "id": "ielts_listen_2_p3",
+      "section": "listening3",
+      "set": "2",
+      "title": "A student project discussion",
+      "passage": "Two students meet their supervisor to plan a small study. For your notes, the project title is Shared gardens. The speaker then confirms that the research question is sleep patterns. It is also important that the sample size is 36. The recording adds that the data source is a weather log. Listeners should remember that the first meeting is Saturday. For your notes, the software is Atlas. The speaker then confirms that the draft deadline is 18 May. It is also important that the main concern is unclear labels. The recording adds that the supervisor is Leo Martin. Listeners should remember that the next action is read two articles.",
+      "audioPassage": "Two students meet their supervisor to plan a small study. For your notes, the project title is Shared gardens. The speaker then confirms that the research question is sleep patterns. It is also important that the sample size is 36. The recording adds that the data source is a weather log. Listeners should remember that the first meeting is Saturday. For your notes, the software is Atlas. The speaker then confirms that the draft deadline is 18 May. It is also important that the main concern is unclear labels. The recording adds that the supervisor is Leo Martin. Listeners should remember that the next action is read two articles.",
+      "items": [
+        {
+          "id": "ielts_listen_2_p3_q01",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the project title mentioned in note 1?",
+          "opts": [
+            "River sensors",
+            "Shared gardens",
+            "Repair cafés",
+            "Open classrooms"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the project title is Shared gardens.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_2_p3_q02",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the research question mentioned in note 2?",
+          "opts": [
+            "community kitchens",
+            "museum maps",
+            "sleep patterns",
+            "coastal birds"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the research question is sleep patterns.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_2_p3_q03",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the sample size mentioned in note 3?",
+          "opts": [
+            "48",
+            "sixty-two",
+            "12",
+            "36"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the sample size is 36.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_2_p3_q04",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the data source mentioned in note 4?",
+          "opts": [
+            "a weather log",
+            "museum records",
+            "a survey",
+            "field notes"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the data source is a weather log.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_2_p3_q05",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the first meeting mentioned in note 5?",
+          "opts": [
+            "Wednesday",
+            "Saturday",
+            "Monday",
+            "Tuesday"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the first meeting is Saturday.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_2_p3_q06",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the software mentioned in note 6?",
+          "opts": [
+            "Maple",
+            "Orchid",
+            "Atlas",
+            "Cedar"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the software is Atlas.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_2_p3_q07",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the draft deadline mentioned in note 7?",
+          "opts": [
+            "24 June",
+            "6 July",
+            "15 August",
+            "18 May"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the draft deadline is 18 May.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_2_p3_q08",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the main concern mentioned in note 8?",
+          "opts": [
+            "unclear labels",
+            "late replies",
+            "noisy data",
+            "limited access"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the main concern is unclear labels.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_2_p3_q09",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the supervisor mentioned in note 9?",
+          "opts": [
+            "Mina Patel",
+            "Leo Martin",
+            "Nora Evans",
+            "Owen Reed"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the supervisor is Leo Martin.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_2_p3_q10",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the next action mentioned in note 10?",
+          "opts": [
+            "check the ethics form",
+            "email the participants",
+            "read two articles",
+            "draw the map"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the next action is read two articles.",
+          "qtype": "ielts_listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "ielts_listen_2_p4",
+      "section": "listening4",
+      "set": "2",
+      "title": "An academic mini-lecture",
+      "passage": "A lecturer introduces a research topic and its practical limits. For your notes, the definition is a local exchange. The speaker then confirms that the period studied is the 1990s. It is also important that the first example is community kitchens. The recording adds that the main cause is poor drainage. Listeners should remember that the measured change is a 12 percent rise. For your notes, the research tool is a sound meter. The speaker then confirms that the unexpected result is the oldest site improved. It is also important that the practical use is farm work. The recording adds that the limitation is weather changes. Listeners should remember that the conclusion is a wider comparison.",
+      "audioPassage": "A lecturer introduces a research topic and its practical limits. For your notes, the definition is a local exchange. The speaker then confirms that the period studied is the 1990s. It is also important that the first example is community kitchens. The recording adds that the main cause is poor drainage. Listeners should remember that the measured change is a 12 percent rise. For your notes, the research tool is a sound meter. The speaker then confirms that the unexpected result is the oldest site improved. It is also important that the practical use is farm work. The recording adds that the limitation is weather changes. Listeners should remember that the conclusion is a wider comparison.",
+      "items": [
+        {
+          "id": "ielts_listen_2_p4_q01",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the definition mentioned in note 1?",
+          "opts": [
+            "a sound pattern",
+            "a local exchange",
+            "a heat island",
+            "a memory cue"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the definition is a local exchange.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_2_p4_q02",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the period studied mentioned in note 2?",
+          "opts": [
+            "the present day",
+            "the early 1900s",
+            "the 1990s",
+            "the last decade"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the period studied is the 1990s.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_2_p4_q03",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the first example mentioned in note 3?",
+          "opts": [
+            "museum maps",
+            "urban trees",
+            "recycled glass",
+            "community kitchens"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the first example is community kitchens.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_2_p4_q04",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the main cause mentioned in note 4?",
+          "opts": [
+            "poor drainage",
+            "traffic growth",
+            "dry weather",
+            "new materials"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the main cause is poor drainage.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_2_p4_q05",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the measured change mentioned in note 5?",
+          "opts": [
+            "three extra visits",
+            "a 12 percent rise",
+            "a 9 percent fall",
+            "a two-hour delay"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the measured change is a 12 percent rise.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_2_p4_q06",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the research tool mentioned in note 6?",
+          "opts": [
+            "a memory test",
+            "a water gauge",
+            "a sound meter",
+            "a satellite image"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the research tool is a sound meter.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_2_p4_q07",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the unexpected result mentioned in note 7?",
+          "opts": [
+            "the control group changed",
+            "the samples clustered",
+            "the final result was stable",
+            "the oldest site improved"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the unexpected result is the oldest site improved.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_2_p4_q08",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the practical use mentioned in note 8?",
+          "opts": [
+            "farm work",
+            "health advice",
+            "coastal management",
+            "school planning"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the practical use is farm work.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_2_p4_q09",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the limitation mentioned in note 9?",
+          "opts": [
+            "small sample",
+            "weather changes",
+            "limited funding",
+            "short observation"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the limitation is weather changes.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_2_p4_q10",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the conclusion mentioned in note 10?",
+          "opts": [
+            "longer observation",
+            "better labels",
+            "a wider comparison",
+            "more local trials"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the conclusion is a wider comparison.",
+          "qtype": "ielts_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "ielts_listen_3_p1",
+      "section": "listening1",
+      "set": "3",
+      "title": "Everyday arrangements",
+      "passage": "A learner phones a community centre to arrange a course. For your notes, the visitor's name is Jon Bell. The speaker then confirms that the course is street gardening. It is also important that the starting day is Thursday. The recording adds that the starting time is 10:20. Listeners should remember that the fee is 48 dollars. For your notes, the meeting place is Riverside Centre. The speaker then confirms that the room is Room 208. It is also important that the contact number is 0183 772 410. The recording adds that the email ending is mailbox.org. Listeners should remember that the item to bring is a pencil.",
+      "audioPassage": "A learner phones a community centre to arrange a course. For your notes, the visitor's name is Jon Bell. The speaker then confirms that the course is street gardening. It is also important that the starting day is Thursday. The recording adds that the starting time is 10:20. Listeners should remember that the fee is 48 dollars. For your notes, the meeting place is Riverside Centre. The speaker then confirms that the room is Room 208. It is also important that the contact number is 0183 772 410. The recording adds that the email ending is mailbox.org. Listeners should remember that the item to bring is a pencil.",
+      "items": [
+        {
+          "id": "ielts_listen_3_p1_q01",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the visitor's name mentioned in note 1?",
+          "opts": [
+            "Leo Martin",
+            "Nora Evans",
+            "Jon Bell",
+            "Sara Wong"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the visitor's name is Jon Bell.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_3_p1_q02",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the course mentioned in note 2?",
+          "opts": [
+            "local history",
+            "food writing",
+            "map reading",
+            "street gardening"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the course is street gardening.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_3_p1_q03",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the starting day mentioned in note 3?",
+          "opts": [
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Monday"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the starting day is Thursday.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_3_p1_q04",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the starting time mentioned in note 4?",
+          "opts": [
+            "8:40",
+            "10:20",
+            "11:45",
+            "8:15"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the starting time is 10:20.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_3_p1_q05",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the fee mentioned in note 5?",
+          "opts": [
+            "24 dollars",
+            "30 dollars",
+            "48 dollars",
+            "18 dollars"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the fee is 48 dollars.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_3_p1_q06",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the meeting place mentioned in note 6?",
+          "opts": [
+            "Oak Street",
+            "Greenway Station",
+            "Harbour Road",
+            "Riverside Centre"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the meeting place is Riverside Centre.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_3_p1_q07",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the room mentioned in note 7?",
+          "opts": [
+            "Room 208",
+            "Room 315",
+            "Studio B",
+            "the north hall"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the room is Room 208.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_3_p1_q08",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the contact number mentioned in note 8?",
+          "opts": [
+            "0177 392 508",
+            "0183 772 410",
+            "0195 208 364",
+            "0131 664 782"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the contact number is 0183 772 410.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_3_p1_q09",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the email ending mentioned in note 9?",
+          "opts": [
+            "library.edu",
+            "study.org",
+            "mailbox.org",
+            "class.net"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the email ending is mailbox.org.",
+          "qtype": "ielts_listen_p1"
+        },
+        {
+          "id": "ielts_listen_3_p1_q10",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the item to bring mentioned in note 10?",
+          "opts": [
+            "a folder",
+            "a notebook",
+            "a water bottle",
+            "a pencil"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the item to bring is a pencil.",
+          "qtype": "ielts_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ielts_listen_3_p2",
+      "section": "listening2",
+      "set": "3",
+      "title": "A public-information talk",
+      "passage": "A guide explains changes to a city visitor centre. For your notes, the opening time is 9:05. The speaker then confirms that the last entry is 9:30. It is also important that the bus route is Route 21. The recording adds that the ticket price is 48 dollars. Listeners should remember that the quiet area is Room 104. For your notes, the guided tour day is Tuesday. The speaker then confirms that the collection floor is second floor. It is also important that the reservation method is the visitor app. The recording adds that the accessibility feature is a quiet entrance. Listeners should remember that the closing day is Saturday.",
+      "audioPassage": "A guide explains changes to a city visitor centre. For your notes, the opening time is 9:05. The speaker then confirms that the last entry is 9:30. It is also important that the bus route is Route 21. The recording adds that the ticket price is 48 dollars. Listeners should remember that the quiet area is Room 104. For your notes, the guided tour day is Tuesday. The speaker then confirms that the collection floor is second floor. It is also important that the reservation method is the visitor app. The recording adds that the accessibility feature is a quiet entrance. Listeners should remember that the closing day is Saturday.",
+      "items": [
+        {
+          "id": "ielts_listen_3_p2_q01",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the opening time mentioned in note 1?",
+          "opts": [
+            "10:20",
+            "11:45",
+            "9:05",
+            "9:30"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the opening time is 9:05.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_3_p2_q02",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the last entry mentioned in note 2?",
+          "opts": [
+            "10:20",
+            "11:45",
+            "8:15",
+            "9:30"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the last entry is 9:30.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_3_p2_q03",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the bus route mentioned in note 3?",
+          "opts": [
+            "Route 21",
+            "Route 26",
+            "Route 4",
+            "Route 7"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the bus route is Route 21.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_3_p2_q04",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the ticket price mentioned in note 4?",
+          "opts": [
+            "30 dollars",
+            "48 dollars",
+            "18 dollars",
+            "24 dollars"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the ticket price is 48 dollars.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_3_p2_q05",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the quiet area mentioned in note 5?",
+          "opts": [
+            "Room 315",
+            "Studio B",
+            "Room 104",
+            "Room 208"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the quiet area is Room 104.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_3_p2_q06",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the guided tour day mentioned in note 6?",
+          "opts": [
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Tuesday"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the guided tour day is Tuesday.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_3_p2_q07",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the collection floor mentioned in note 7?",
+          "opts": [
+            "second floor",
+            "third floor",
+            "east wing",
+            "west wing"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the collection floor is second floor.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_3_p2_q08",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the reservation method mentioned in note 8?",
+          "opts": [
+            "the website",
+            "the visitor app",
+            "the ticket machine",
+            "the information desk"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the reservation method is the visitor app.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_3_p2_q09",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the accessibility feature mentioned in note 9?",
+          "opts": [
+            "a ramp",
+            "a lift",
+            "a quiet entrance",
+            "a rest bench"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the accessibility feature is a quiet entrance.",
+          "qtype": "ielts_listen_p2"
+        },
+        {
+          "id": "ielts_listen_3_p2_q10",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the closing day mentioned in note 10?",
+          "opts": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Saturday"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the closing day is Saturday.",
+          "qtype": "ielts_listen_p2"
+        }
+      ]
+    },
+    {
+      "id": "ielts_listen_3_p3",
+      "section": "listening3",
+      "set": "3",
+      "title": "A student project discussion",
+      "passage": "Two students meet their supervisor to plan a small study. For your notes, the project title is Open classrooms. The speaker then confirms that the research question is community kitchens. It is also important that the sample size is sixty-two. The recording adds that the data source is a survey. Listeners should remember that the first meeting is Tuesday. For your notes, the software is Maple. The speaker then confirms that the draft deadline is 6 July. It is also important that the main concern is noisy data. The recording adds that the supervisor is Owen Reed. Listeners should remember that the next action is check the ethics form.",
+      "audioPassage": "Two students meet their supervisor to plan a small study. For your notes, the project title is Open classrooms. The speaker then confirms that the research question is community kitchens. It is also important that the sample size is sixty-two. The recording adds that the data source is a survey. Listeners should remember that the first meeting is Tuesday. For your notes, the software is Maple. The speaker then confirms that the draft deadline is 6 July. It is also important that the main concern is noisy data. The recording adds that the supervisor is Owen Reed. Listeners should remember that the next action is check the ethics form.",
+      "items": [
+        {
+          "id": "ielts_listen_3_p3_q01",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the project title mentioned in note 1?",
+          "opts": [
+            "Night buses",
+            "Open classrooms",
+            "River sensors",
+            "Local archives"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the project title is Open classrooms.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_3_p3_q02",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the research question mentioned in note 2?",
+          "opts": [
+            "urban trees",
+            "recycled glass",
+            "community kitchens",
+            "museum maps"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the research question is community kitchens.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_3_p3_q03",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the sample size mentioned in note 3?",
+          "opts": [
+            "12",
+            "18",
+            "24",
+            "sixty-two"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the sample size is sixty-two.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_3_p3_q04",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the data source mentioned in note 4?",
+          "opts": [
+            "a survey",
+            "field notes",
+            "a public database",
+            "interviews"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the data source is a survey.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_3_p3_q05",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the first meeting mentioned in note 5?",
+          "opts": [
+            "Friday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the first meeting is Tuesday.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_3_p3_q06",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the software mentioned in note 6?",
+          "opts": [
+            "Pine",
+            "Quartz",
+            "Maple",
+            "Orchid"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the software is Maple.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_3_p3_q07",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the draft deadline mentioned in note 7?",
+          "opts": [
+            "15 August",
+            "21 September",
+            "12 April",
+            "6 July"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the draft deadline is 6 July.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_3_p3_q08",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the main concern mentioned in note 8?",
+          "opts": [
+            "noisy data",
+            "limited access",
+            "small sample",
+            "missing dates"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the main concern is noisy data.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_3_p3_q09",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the supervisor mentioned in note 9?",
+          "opts": [
+            "Sara Wong",
+            "Owen Reed",
+            "Mina Patel",
+            "Jon Bell"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the supervisor is Owen Reed.",
+          "qtype": "ielts_listen_p3"
+        },
+        {
+          "id": "ielts_listen_3_p3_q10",
+          "section": "listening3",
+          "level": 4,
+          "stem": "What is the next action mentioned in note 10?",
+          "opts": [
+            "clean the spreadsheet",
+            "book the lab",
+            "check the ethics form",
+            "email the participants"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the next action is check the ethics form.",
+          "qtype": "ielts_listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "ielts_listen_3_p4",
+      "section": "listening4",
+      "set": "3",
+      "title": "An academic mini-lecture",
+      "passage": "A lecturer introduces a research topic and its practical limits. For your notes, the definition is a memory cue. The speaker then confirms that the period studied is the present day. It is also important that the first example is urban trees. The recording adds that the main cause is dry weather. Listeners should remember that the measured change is a two-hour delay. For your notes, the research tool is a memory test. The speaker then confirms that the unexpected result is the samples clustered. It is also important that the practical use is coastal management. The recording adds that the limitation is short observation. Listeners should remember that the conclusion is longer observation.",
+      "audioPassage": "A lecturer introduces a research topic and its practical limits. For your notes, the definition is a memory cue. The speaker then confirms that the period studied is the present day. It is also important that the first example is urban trees. The recording adds that the main cause is dry weather. Listeners should remember that the measured change is a two-hour delay. For your notes, the research tool is a memory test. The speaker then confirms that the unexpected result is the samples clustered. It is also important that the practical use is coastal management. The recording adds that the limitation is short observation. Listeners should remember that the conclusion is longer observation.",
+      "items": [
+        {
+          "id": "ielts_listen_3_p4_q01",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the definition mentioned in note 1?",
+          "opts": [
+            "a seasonal movement",
+            "a memory cue",
+            "a sound pattern",
+            "a shared resource"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the definition is a memory cue.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_3_p4_q02",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the period studied mentioned in note 2?",
+          "opts": [
+            "the 1950s",
+            "the 1970s",
+            "the present day",
+            "the early 1900s"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the period studied is the present day.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_3_p4_q03",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the first example mentioned in note 3?",
+          "opts": [
+            "recycled glass",
+            "sleep patterns",
+            "coastal birds",
+            "urban trees"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the first example is urban trees.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_3_p4_q04",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the main cause mentioned in note 4?",
+          "opts": [
+            "dry weather",
+            "new materials",
+            "changed habits",
+            "noise"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the main cause is dry weather.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_3_p4_q05",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the measured change mentioned in note 5?",
+          "opts": [
+            "a smaller gap",
+            "a two-hour delay",
+            "three extra visits",
+            "a wider range"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the measured change is a two-hour delay.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_3_p4_q06",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the research tool mentioned in note 6?",
+          "opts": [
+            "a map grid",
+            "a field diary",
+            "a memory test",
+            "a water gauge"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the research tool is a memory test.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_3_p4_q07",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the unexpected result mentioned in note 7?",
+          "opts": [
+            "the final result was stable",
+            "the pattern reversed",
+            "the result was seasonal",
+            "the samples clustered"
+          ],
+          "ans": 3,
+          "expl": "The recording states that the unexpected result is the samples clustered.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_3_p4_q08",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the practical use mentioned in note 8?",
+          "opts": [
+            "coastal management",
+            "school planning",
+            "public transport",
+            "library design"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the practical use is coastal management.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_3_p4_q09",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the limitation mentioned in note 9?",
+          "opts": [
+            "one location",
+            "short observation",
+            "small sample",
+            "missing records"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the limitation is short observation.",
+          "qtype": "ielts_listen_p4"
+        },
+        {
+          "id": "ielts_listen_3_p4_q10",
+          "section": "listening4",
+          "level": 4,
+          "stem": "What is the conclusion mentioned in note 10?",
+          "opts": [
+            "a second survey",
+            "a public workshop",
+            "longer observation",
+            "better labels"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the conclusion is longer observation.",
+          "qtype": "ielts_listen_p4"
+        }
+      ]
+    }
+  ]
+}

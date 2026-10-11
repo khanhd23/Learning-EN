@@ -9,7 +9,7 @@
       "exerciseTypes": ["E02", "E11"],
       "questionCount": 30,
       "timeLimitMinutes": null,
-      "optionsPerQuestion": 4,
+      "optionsPerQuestion": 3,
       "source": "https://www.ets.org/toeic/about/listening-reading.html ; https://www.iibc-global.org/english/toeic/test/lr/about/format.html (Part 5: 30 questions; Reading section 100 questions / 75 minutes, no per-part time limit)"
     },
     {
@@ -21,7 +21,7 @@
       "questionCount": 16,
       "passages": 4,
       "timeLimitMinutes": null,
-      "optionsPerQuestion": 4,
+      "optionsPerQuestion": 3,
       "source": "https://www.ets.org/toeic/about/listening-reading.html ; https://www.iibc-global.org/english/toeic/test/lr/about/format.html (Part 6: 16 questions, 4 per text)"
     },
     {
@@ -32,7 +32,7 @@
       "exerciseTypes": ["E01", "E02"],
       "questionCount": 46,
       "timeLimitMinutes": null,
-      "optionsPerQuestion": 4,
+      "optionsPerQuestion": 3,
       "source": "https://www.ets.org/toeic/about/listening-reading.html ; https://www.iibc-global.org/english/toeic/test/lr/about/format.html",
       "sections": [
         {"id": "p5", "label": "Part 5", "itemType": "mcq", "count": 30, "bank": "toeic"},
@@ -747,6 +747,261 @@
         {"id": "reading1", "label": "Passage 1", "itemType": "group", "count": 13, "bank": "ielts_full", "groupSet": "3", "qtype": ["ielts_full_reading"]},
         {"id": "reading2", "label": "Passage 2", "itemType": "group", "count": 13, "bank": "ielts_full", "groupSet": "3", "qtype": ["ielts_full_reading"]},
         {"id": "reading3", "label": "Passage 3", "itemType": "group", "count": 14, "bank": "ielts_full", "groupSet": "3", "qtype": ["ielts_full_reading"]}
+      ]
+    },
+    {
+      "id": "toeic_listening_1",
+      "label": "TOEIC full listening practice 1",
+      "family": "TOEIC",
+      "description": "Original full Listening practice: 100 questions in the official Part 1-4 count. The app uses TTS for the original scripts and is not an official ETS paper.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 100,
+      "timeLimitMinutes": 45,
+      "optionsPerQuestion": 4,
+      "source": "https://www.ets.org/toeic/about/listening-reading.html (format context only)",
+      "sections": [
+        {"id": "p1", "label": "Part 1 - Photographs", "itemType": "group", "count": 6, "bank": "toeic_p1", "groupSet": "1", "qtype": ["listen_p1"]},
+        {"id": "p2", "label": "Part 2 - Question-Response", "itemType": "group", "count": 25, "bank": "toeic_p2", "groupSet": "1", "qtype": ["listen_p2"]},
+        {"id": "p3", "label": "Part 3 - Conversations", "itemType": "group", "count": 39, "bank": "toeic_p3", "groupSet": "1", "qtype": ["listen_p3"]},
+        {"id": "p4", "label": "Part 4 - Talks", "itemType": "group", "count": 30, "bank": "toeic_p4", "groupSet": "1", "qtype": ["listen_p4"]}
+      ]
+    },
+    {
+      "id": "toeic_listening_2",
+      "label": "TOEIC full listening practice 2",
+      "family": "TOEIC",
+      "description": "Original full Listening practice: 100 questions in the official Part 1-4 count. The app uses TTS for the original scripts and is not an official ETS paper.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 100,
+      "timeLimitMinutes": 45,
+      "optionsPerQuestion": 4,
+      "source": "https://www.ets.org/toeic/about/listening-reading.html (format context only)",
+      "sections": [
+        {"id": "p1", "label": "Part 1 - Photographs", "itemType": "group", "count": 6, "bank": "toeic_p1", "groupSet": "2", "qtype": ["listen_p1"]},
+        {"id": "p2", "label": "Part 2 - Question-Response", "itemType": "group", "count": 25, "bank": "toeic_p2", "groupSet": "2", "qtype": ["listen_p2"]},
+        {"id": "p3", "label": "Part 3 - Conversations", "itemType": "group", "count": 39, "bank": "toeic_p3", "groupSet": "2", "qtype": ["listen_p3"]},
+        {"id": "p4", "label": "Part 4 - Talks", "itemType": "group", "count": 30, "bank": "toeic_p4", "groupSet": "2", "qtype": ["listen_p4"]}
+      ]
+    },
+    {
+      "id": "toeic_listening_3",
+      "label": "TOEIC full listening practice 3",
+      "family": "TOEIC",
+      "description": "Original full Listening practice: 100 questions in the official Part 1-4 count. The app uses TTS for the original scripts and is not an official ETS paper.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 100,
+      "timeLimitMinutes": 45,
+      "optionsPerQuestion": 4,
+      "source": "https://www.ets.org/toeic/about/listening-reading.html (format context only)",
+      "sections": [
+        {"id": "p1", "label": "Part 1 - Photographs", "itemType": "group", "count": 6, "bank": "toeic_p1", "groupSet": "3", "qtype": ["listen_p1"]},
+        {"id": "p2", "label": "Part 2 - Question-Response", "itemType": "group", "count": 25, "bank": "toeic_p2", "groupSet": "3", "qtype": ["listen_p2"]},
+        {"id": "p3", "label": "Part 3 - Conversations", "itemType": "group", "count": 39, "bank": "toeic_p3", "groupSet": "3", "qtype": ["listen_p3"]},
+        {"id": "p4", "label": "Part 4 - Talks", "itemType": "group", "count": 30, "bank": "toeic_p4", "groupSet": "3", "qtype": ["listen_p4"]}
+      ]
+    },
+    {
+      "id": "ielts_listening_1",
+      "label": "IELTS Academic full listening practice 1",
+      "family": "IELTS Academic practice",
+      "description": "Original four-part IELTS-style Listening practice with 40 questions. It is not an official IELTS paper and does not estimate a band score.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 40,
+      "timeLimitMinutes": 30,
+      "optionsPerQuestion": 4,
+      "source": "https://ielts.org/take-a-test/test-types/ielts-academic-format-listening (format context only)",
+      "sections": [
+        {"id": "listening1", "label": "Part 1 - Everyday conversation", "itemType": "group", "count": 10, "bank": "ielts_listening", "groupSet": "1", "qtype": ["ielts_listen_p1"]},
+        {"id": "listening2", "label": "Part 2 - Everyday monologue", "itemType": "group", "count": 10, "bank": "ielts_listening", "groupSet": "1", "qtype": ["ielts_listen_p2"]},
+        {"id": "listening3", "label": "Part 3 - Academic discussion", "itemType": "group", "count": 10, "bank": "ielts_listening", "groupSet": "1", "qtype": ["ielts_listen_p3"]},
+        {"id": "listening4", "label": "Part 4 - Academic monologue", "itemType": "group", "count": 10, "bank": "ielts_listening", "groupSet": "1", "qtype": ["ielts_listen_p4"]}
+      ]
+    },
+    {
+      "id": "ielts_listening_2",
+      "label": "IELTS Academic full listening practice 2",
+      "family": "IELTS Academic practice",
+      "description": "Original four-part IELTS-style Listening practice with 40 questions. It is not an official IELTS paper and does not estimate a band score.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 40,
+      "timeLimitMinutes": 30,
+      "optionsPerQuestion": 4,
+      "source": "https://ielts.org/take-a-test/test-types/ielts-academic-format-listening (format context only)",
+      "sections": [
+        {"id": "listening1", "label": "Part 1 - Everyday conversation", "itemType": "group", "count": 10, "bank": "ielts_listening", "groupSet": "2", "qtype": ["ielts_listen_p1"]},
+        {"id": "listening2", "label": "Part 2 - Everyday monologue", "itemType": "group", "count": 10, "bank": "ielts_listening", "groupSet": "2", "qtype": ["ielts_listen_p2"]},
+        {"id": "listening3", "label": "Part 3 - Academic discussion", "itemType": "group", "count": 10, "bank": "ielts_listening", "groupSet": "2", "qtype": ["ielts_listen_p3"]},
+        {"id": "listening4", "label": "Part 4 - Academic monologue", "itemType": "group", "count": 10, "bank": "ielts_listening", "groupSet": "2", "qtype": ["ielts_listen_p4"]}
+      ]
+    },
+    {
+      "id": "ielts_listening_3",
+      "label": "IELTS Academic full listening practice 3",
+      "family": "IELTS Academic practice",
+      "description": "Original four-part IELTS-style Listening practice with 40 questions. It is not an official IELTS paper and does not estimate a band score.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 40,
+      "timeLimitMinutes": 30,
+      "optionsPerQuestion": 4,
+      "source": "https://ielts.org/take-a-test/test-types/ielts-academic-format-listening (format context only)",
+      "sections": [
+        {"id": "listening1", "label": "Part 1 - Everyday conversation", "itemType": "group", "count": 10, "bank": "ielts_listening", "groupSet": "3", "qtype": ["ielts_listen_p1"]},
+        {"id": "listening2", "label": "Part 2 - Everyday monologue", "itemType": "group", "count": 10, "bank": "ielts_listening", "groupSet": "3", "qtype": ["ielts_listen_p2"]},
+        {"id": "listening3", "label": "Part 3 - Academic discussion", "itemType": "group", "count": 10, "bank": "ielts_listening", "groupSet": "3", "qtype": ["ielts_listen_p3"]},
+        {"id": "listening4", "label": "Part 4 - Academic monologue", "itemType": "group", "count": 10, "bank": "ielts_listening", "groupSet": "3", "qtype": ["ielts_listen_p4"]}
+      ]
+    },
+    {
+      "id": "vstep_listening_1",
+      "label": "VSTEP full listening practice 1",
+      "family": "VSTEP",
+      "description": "Original VSTEP.3-5 Listening-style practice: 3 parts and 35 multiple-choice questions. It is not an official VSTEP paper.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 35,
+      "timeLimitMinutes": 40,
+      "optionsPerQuestion": 4,
+      "source": "https://vstep.vnu.edu.vn/test-format/ (format context only)",
+      "sections": [
+        {"id": "listening1", "label": "Part 1 - Short announcements", "itemType": "group", "count": 8, "bank": "vstep_listening", "groupSet": "1", "qtype": ["vstep_listen_p1"]},
+        {"id": "listening2", "label": "Part 2 - Extended conversations", "itemType": "group", "count": 12, "bank": "vstep_listening", "groupSet": "1", "qtype": ["vstep_listen_p2"]},
+        {"id": "listening3", "label": "Part 3 - Talks and lectures", "itemType": "group", "count": 15, "bank": "vstep_listening", "groupSet": "1", "qtype": ["vstep_listen_p3"]}
+      ]
+    },
+    {
+      "id": "vstep_listening_2",
+      "label": "VSTEP full listening practice 2",
+      "family": "VSTEP",
+      "description": "Original VSTEP.3-5 Listening-style practice: 3 parts and 35 multiple-choice questions. It is not an official VSTEP paper.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 35,
+      "timeLimitMinutes": 40,
+      "optionsPerQuestion": 4,
+      "source": "https://vstep.vnu.edu.vn/test-format/ (format context only)",
+      "sections": [
+        {"id": "listening1", "label": "Part 1 - Short announcements", "itemType": "group", "count": 8, "bank": "vstep_listening", "groupSet": "2", "qtype": ["vstep_listen_p1"]},
+        {"id": "listening2", "label": "Part 2 - Extended conversations", "itemType": "group", "count": 12, "bank": "vstep_listening", "groupSet": "2", "qtype": ["vstep_listen_p2"]},
+        {"id": "listening3", "label": "Part 3 - Talks and lectures", "itemType": "group", "count": 15, "bank": "vstep_listening", "groupSet": "2", "qtype": ["vstep_listen_p3"]}
+      ]
+    },
+    {
+      "id": "vstep_listening_3",
+      "label": "VSTEP full listening practice 3",
+      "family": "VSTEP",
+      "description": "Original VSTEP.3-5 Listening-style practice: 3 parts and 35 multiple-choice questions. It is not an official VSTEP paper.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 35,
+      "timeLimitMinutes": 40,
+      "optionsPerQuestion": 4,
+      "source": "https://vstep.vnu.edu.vn/test-format/ (format context only)",
+      "sections": [
+        {"id": "listening1", "label": "Part 1 - Short announcements", "itemType": "group", "count": 8, "bank": "vstep_listening", "groupSet": "3", "qtype": ["vstep_listen_p1"]},
+        {"id": "listening2", "label": "Part 2 - Extended conversations", "itemType": "group", "count": 12, "bank": "vstep_listening", "groupSet": "3", "qtype": ["vstep_listen_p2"]},
+        {"id": "listening3", "label": "Part 3 - Talks and lectures", "itemType": "group", "count": 15, "bank": "vstep_listening", "groupSet": "3", "qtype": ["vstep_listen_p3"]}
+      ]
+    },
+    {
+      "id": "ket_listening_1",
+      "label": "A2 Key full listening practice 1",
+      "family": "Cambridge A2 Key",
+      "description": "Original five-part A2 Key Listening-style practice with 25 questions. It is not an official Cambridge paper.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 25,
+      "timeLimitMinutes": 30,
+      "optionsPerQuestion": 3,
+      "source": "https://www.cambridgeenglish.org/exams-and-tests/qualifications/key/format/ (format context only)",
+      "sections": [
+        {"id": "listening1", "label": "Part 1", "itemType": "group", "count": 5, "bank": "ket_listening", "groupSet": "1", "qtype": ["a2_listen_p1"]},
+        {"id": "listening2", "label": "Part 2", "itemType": "group", "count": 5, "bank": "ket_listening", "groupSet": "1", "qtype": ["a2_listen_p2"]},
+        {"id": "listening3", "label": "Part 3", "itemType": "group", "count": 5, "bank": "ket_listening", "groupSet": "1", "qtype": ["a2_listen_p3"]},
+        {"id": "listening4", "label": "Part 4", "itemType": "group", "count": 5, "bank": "ket_listening", "groupSet": "1", "qtype": ["a2_listen_p4"]},
+        {"id": "listening5", "label": "Part 5", "itemType": "group", "count": 5, "bank": "ket_listening", "groupSet": "1", "qtype": ["a2_listen_p5"]}
+      ]
+    },
+    {
+      "id": "ket_listening_2",
+      "label": "A2 Key full listening practice 2",
+      "family": "Cambridge A2 Key",
+      "description": "Original five-part A2 Key Listening-style practice with 25 questions. It is not an official Cambridge paper.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 25,
+      "timeLimitMinutes": 30,
+      "optionsPerQuestion": 3,
+      "source": "https://www.cambridgeenglish.org/exams-and-tests/qualifications/key/format/ (format context only)",
+      "sections": [
+        {"id": "listening1", "label": "Part 1", "itemType": "group", "count": 5, "bank": "ket_listening", "groupSet": "2", "qtype": ["a2_listen_p1"]},
+        {"id": "listening2", "label": "Part 2", "itemType": "group", "count": 5, "bank": "ket_listening", "groupSet": "2", "qtype": ["a2_listen_p2"]},
+        {"id": "listening3", "label": "Part 3", "itemType": "group", "count": 5, "bank": "ket_listening", "groupSet": "2", "qtype": ["a2_listen_p3"]},
+        {"id": "listening4", "label": "Part 4", "itemType": "group", "count": 5, "bank": "ket_listening", "groupSet": "2", "qtype": ["a2_listen_p4"]},
+        {"id": "listening5", "label": "Part 5", "itemType": "group", "count": 5, "bank": "ket_listening", "groupSet": "2", "qtype": ["a2_listen_p5"]}
+      ]
+    },
+    {
+      "id": "ket_listening_3",
+      "label": "A2 Key full listening practice 3",
+      "family": "Cambridge A2 Key",
+      "description": "Original five-part A2 Key Listening-style practice with 25 questions. It is not an official Cambridge paper.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 25,
+      "timeLimitMinutes": 30,
+      "optionsPerQuestion": 3,
+      "source": "https://www.cambridgeenglish.org/exams-and-tests/qualifications/key/format/ (format context only)",
+      "sections": [
+        {"id": "listening1", "label": "Part 1", "itemType": "group", "count": 5, "bank": "ket_listening", "groupSet": "3", "qtype": ["a2_listen_p1"]},
+        {"id": "listening2", "label": "Part 2", "itemType": "group", "count": 5, "bank": "ket_listening", "groupSet": "3", "qtype": ["a2_listen_p2"]},
+        {"id": "listening3", "label": "Part 3", "itemType": "group", "count": 5, "bank": "ket_listening", "groupSet": "3", "qtype": ["a2_listen_p3"]},
+        {"id": "listening4", "label": "Part 4", "itemType": "group", "count": 5, "bank": "ket_listening", "groupSet": "3", "qtype": ["a2_listen_p4"]},
+        {"id": "listening5", "label": "Part 5", "itemType": "group", "count": 5, "bank": "ket_listening", "groupSet": "3", "qtype": ["a2_listen_p5"]}
+      ]
+    },
+    {
+      "id": "pet_listening_1",
+      "label": "B1 Preliminary full listening practice 1",
+      "family": "Cambridge B1 Preliminary",
+      "description": "Original four-part B1 Preliminary Listening-style practice with 25 questions. It is not an official Cambridge paper.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 25,
+      "timeLimitMinutes": 30,
+      "optionsPerQuestion": 3,
+      "source": "https://www.cambridgeenglish.org/exams-and-tests/qualifications/preliminary/format/ (format context only)",
+      "sections": [
+        {"id": "listening1", "label": "Part 1", "itemType": "group", "count": 7, "bank": "pet_listening", "groupSet": "1", "qtype": ["b1_listen_p1"]},
+        {"id": "listening2", "label": "Part 2", "itemType": "group", "count": 6, "bank": "pet_listening", "groupSet": "1", "qtype": ["b1_listen_p2"]},
+        {"id": "listening3", "label": "Part 3", "itemType": "group", "count": 6, "bank": "pet_listening", "groupSet": "1", "qtype": ["b1_listen_p3"]},
+        {"id": "listening4", "label": "Part 4", "itemType": "group", "count": 6, "bank": "pet_listening", "groupSet": "1", "qtype": ["b1_listen_p4"]}
+      ]
+    },
+    {
+      "id": "pet_listening_2",
+      "label": "B1 Preliminary full listening practice 2",
+      "family": "Cambridge B1 Preliminary",
+      "description": "Original four-part B1 Preliminary Listening-style practice with 25 questions. It is not an official Cambridge paper.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 25,
+      "timeLimitMinutes": 30,
+      "optionsPerQuestion": 3,
+      "source": "https://www.cambridgeenglish.org/exams-and-tests/qualifications/preliminary/format/ (format context only)",
+      "sections": [
+        {"id": "listening1", "label": "Part 1", "itemType": "group", "count": 7, "bank": "pet_listening", "groupSet": "2", "qtype": ["b1_listen_p1"]},
+        {"id": "listening2", "label": "Part 2", "itemType": "group", "count": 6, "bank": "pet_listening", "groupSet": "2", "qtype": ["b1_listen_p2"]},
+        {"id": "listening3", "label": "Part 3", "itemType": "group", "count": 6, "bank": "pet_listening", "groupSet": "2", "qtype": ["b1_listen_p3"]},
+        {"id": "listening4", "label": "Part 4", "itemType": "group", "count": 6, "bank": "pet_listening", "groupSet": "2", "qtype": ["b1_listen_p4"]}
+      ]
+    },
+    {
+      "id": "pet_listening_3",
+      "label": "B1 Preliminary full listening practice 3",
+      "family": "Cambridge B1 Preliminary",
+      "description": "Original four-part B1 Preliminary Listening-style practice with 25 questions. It is not an official Cambridge paper.",
+      "exerciseTypes": ["E01"],
+      "questionCount": 25,
+      "timeLimitMinutes": 30,
+      "optionsPerQuestion": 3,
+      "source": "https://www.cambridgeenglish.org/exams-and-tests/qualifications/preliminary/format/ (format context only)",
+      "sections": [
+        {"id": "listening1", "label": "Part 1", "itemType": "group", "count": 7, "bank": "pet_listening", "groupSet": "3", "qtype": ["b1_listen_p1"]},
+        {"id": "listening2", "label": "Part 2", "itemType": "group", "count": 6, "bank": "pet_listening", "groupSet": "3", "qtype": ["b1_listen_p2"]},
+        {"id": "listening3", "label": "Part 3", "itemType": "group", "count": 6, "bank": "pet_listening", "groupSet": "3", "qtype": ["b1_listen_p3"]},
+        {"id": "listening4", "label": "Part 4", "itemType": "group", "count": 6, "bank": "pet_listening", "groupSet": "3", "qtype": ["b1_listen_p4"]}
       ]
     }
   ],

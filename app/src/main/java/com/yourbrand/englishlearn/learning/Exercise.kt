@@ -48,10 +48,14 @@ sealed class Exercise {
         val sharedGroupId: String? = null,
         /** Part 1-style listening: read every answer sentence in order and highlight it. */
         val audioOptions: Boolean = false,
+        /** Image-based listening (TOEIC Part 1): answer statements are audio-only before grading. */
+        val hideAudioOptionText: Boolean = false,
         /** Part 2-style listening: read this question before the answer sentences. */
         val audioPrompt: String? = null,
         /** Optional illustration shown for TOEIC Part 1 listening scenes. */
         val sharedImage: String? = null,
+        /** Exact source phrase used to verify a listening answer on the result screen. */
+        val evidence: String? = null,
     ) : Exercise()
 
     /** A genuine exam open-cloze response: the learner types one word, with no choices shown. */

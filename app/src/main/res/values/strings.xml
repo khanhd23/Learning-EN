@@ -287,6 +287,7 @@
     <string name="licenses">Licenses</string>
     <string name="licenses_text">LingoMori uses open data and libraries. The sources and their licenses are listed below.</string>
     <string name="listen">Listen</string>
+    <string name="audio_evidence">Evidence in the audio</string>
     <string name="listen_slow">Listen slowly</string>
     <string name="locked_msg">Finish the earlier lessons first, or take a short test to skip ahead.</string>
     <string name="locked_title">This lesson is locked</string>

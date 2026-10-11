@@ -5,7 +5,7 @@ import com.yourbrand.englishlearn.content.Question
 import com.yourbrand.englishlearn.content.Word
 import kotlin.random.Random
 
-enum class SessionKind { QUICK, REVIEW, WEAK, TOPIC, LEVEL, WORDS, GRAMMAR, EXAM_TYPE, BUILDER, MISTAKES, WELCOME, MEAL, CONFUSABLE, SPEED, DAILY, SKIP_TEST, PLACEMENT }
+enum class SessionKind { QUICK, REVIEW, WEAK, TOPIC, LEVEL, WORDS, GRAMMAR, TENSES, EXAM_TYPE, BUILDER, MISTAKES, WELCOME, MEAL, CONFUSABLE, SPEED, DAILY, SKIP_TEST, PLACEMENT }
 
 /** Vocabulary study mode chosen from the topic screen menu. */
 enum class VocabMode { MIXED, FLASHCARD, QUIZ, MATCHING, SPELLING, LISTENING }
@@ -242,6 +242,54 @@ class SessionBuilder(
         val order = qs.filter { it.type == "E05" }.shuffled(random)
         val picked = (cloze.take(n - 4) + fix.take(2) + order.take(2)).let { if (it.size < n) it + (cloze.drop(n - 4)).take(n - it.size) else it }
         return Session(SessionKind.GRAMMAR, title, picked.take(n).map { factory.question(it) }.toMutableList(), gp = gp)
+    }
+
+    /**
+     * A balanced review of all twelve tense points, exposed from the Grammar tab.
+     *
+     * The session includes at least ten questions from every grammar exercise
+     * family used by the tense bank (E02, E04, E05 and E12). Twelve coverage
+     * questions are retained so every tense remains represented, therefore the
+     * minimum session size is 42 rather than 40.
+     */
+    fun tensePractice(title: String, n: Int = 42): Session {
+        val tenseIds = listOf(
+            "present_simple", "present_continuous", "present_perfect", "present_perfect_continuous",
+            "past_simple", "past_continuous", "past_perfect", "past_perfect_continuous",
+            "future", "future_continuous", "future_perfect", "future_perfect_continuous",
+        )
+        val pool = tenseIds.flatMap { content.questionsByPoint[it].orEmpty() }
+        val picked = linkedMapOf<String, Question>()
+        val counts = mutableMapOf<String, Int>()
+        fun add(question: Question) {
+            if (picked.putIfAbsent(question.id, question) == null) {
+                counts[question.type] = (counts[question.type] ?: 0) + 1
+            }
+        }
+
+        // Keep every tense visible even when the exercise families are unevenly sized.
+        tenseIds.forEach { id ->
+            content.questionsByPoint[id].orEmpty()
+                .firstOrNull { it.type == "E02" }
+                ?.let(::add)
+                ?: content.questionsByPoint[id].orEmpty().firstOrNull()?.let(::add)
+        }
+
+        // Fill each exercise family independently. The generated bank currently
+        // has enough source questions for all four minimums.
+        listOf("E02", "E04", "E05", "E12").forEach { type ->
+            pool.filter { it.type == type }.shuffled(random).forEach { question ->
+                if ((counts[type] ?: 0) < 10) add(question)
+            }
+        }
+
+        // Keep the optional n parameter useful for larger sessions, but never
+        // allow callers to create a session below the per-family requirement.
+        val target = maxOf(n, 42)
+        pool.filterNot { picked.containsKey(it.id) }.shuffled(random).forEach { question ->
+            if (picked.size < target) add(question)
+        }
+        return Session(SessionKind.TENSES, title, picked.values.map { factory.question(it) }.toMutableList())
     }
 
     /** 5-question skip test that unlocks a grammar node early. */

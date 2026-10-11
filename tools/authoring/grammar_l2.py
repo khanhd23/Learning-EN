@@ -120,6 +120,27 @@ E("She [going] [to] [start] a new job [next week].", 0, "is going", "Thiếu to 
 O("I'm going to learn ten new words every day.", "Tôi định học mười từ mới mỗi ngày.")
 O("Don't worry, I will help you.", "Đừng lo, tôi sẽ giúp bạn.")
 
+point("past_continuous", 2, "Thì quá khứ tiếp diễn", "S + was/were + V-ing",
+      "Diễn tả hành động đang diễn ra tại một thời điểm trong quá khứ, bị gián đoạn, hoặc diễn ra song song.",
+      "Dùng was/were + V-ing. Hành động đang diễn ra thường dùng past continuous; hành động xen vào thường dùng past simple: I was driving when the phone rang. Hai hành động song song có thể dùng while.",
+      ["at 8 p.m. yesterday", "while", "when", "at that moment", "all evening"],
+      [("I was cooking dinner at eight yesterday.", "Tôi đang nấu bữa tối lúc tám giờ hôm qua.", "was cooking"),
+       ("They were watching a film when the lights went out.", "Họ đang xem phim thì điện bị cắt.", "were watching"),
+       ("While I was walking home, it started to rain.", "Trong khi tôi đang đi bộ về nhà thì trời bắt đầu mưa.", "was walking")],
+      [("She was drive to work when it started raining.", "She was driving to work when it started raining.", "was/were + V-ing: drive → driving."),
+       ("We were wait for the bus at seven.", "We were waiting for the bus at seven.", "Sau were dùng V-ing: waiting.")],
+      tags=["tense"], exam=True)
+C("At eight last night, I ___ dinner.", ["was cooking", "cooked", "have cooked", "am cooking"], "Mốc thời gian trong quá khứ và hành động đang diễn ra → was cooking.")
+C("While the manager was speaking, the employees ___ notes.", ["were taking", "took", "are taking", "have taken"], "Hành động song song trong quá khứ → were taking.")
+C("The phone rang while she ___.", ["was driving", "drove", "has driven", "is driving"], "Hành động đang diễn ra bị xen vào → was driving.")
+C("They ___ television when the lights went out.", ["were watching", "watched", "have watched", "are watching"], "When một việc xen vào, hành động đang diễn ra dùng past continuous.")
+C("What ___ you doing at noon yesterday?", ["were", "was", "did", "have"], "You + past continuous → were you doing.")
+C("He ___ not listening when the teacher asked him a question.", ["was", "were", "did", "has"], "He + was not + V-ing.")
+E("At seven, we [were] [wait] [for] [the bus].", 1, "waiting", "Sau were dùng V-ing: were waiting.")
+E("I [was] [read] [a book] [when you called].", 1, "reading", "was + V-ing: was reading.")
+T("The rain started during our walk.", ["It started raining while we were walking.", "It starts raining while we walk.", "We have walked when rain started.", "It was rain during our walk."], "Hành động đang diễn ra trong quá khứ dùng while + past continuous.")
+O("We were having lunch when the visitor arrived.", "Chúng tôi đang ăn trưa thì khách đến.")
+
 point("must_should", 2, "Must / Should / Have to", "S + must/should + V · S + have/has to + V",
       "Bắt buộc, lời khuyên, cấm đoán.",
       "should: nên (lời khuyên). must: phải (bắt buộc từ người nói, nội quy). have to: phải (bắt buộc từ hoàn cảnh bên ngoài). mustn't = CẤM; don't have to = KHÔNG CẦN (không bắt buộc). Đây là bẫy rất hay gặp!",

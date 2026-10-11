@@ -173,7 +173,7 @@ class MainActivity : AppCompatActivity() {
                 if (isFinishing || isDestroyed) return@postDelayed
                 services.ads.gatherConsent(this) { loadBanner() }
                 services.ads.preloadRewarded()
-            }, 5_000L)
+            }, 800L)
         }
     }
 

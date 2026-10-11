@@ -675,3 +675,57 @@ q480fb3fb0|Should you need is an inverted formal conditional meaning if you need
 q1cc07b910|Wanted to call uses the infinitive after wanted. Forgot to avoids repeating call you, so the final to stands for to call you.|I wanted to call you, but I forgot to.||wanted to + động từ (call you), but + I forgot to; "to" cuối câu thay cho "to call you".
 qf46ec4852|Has been canceled is present perfect passive: the meeting received the action, and the result is relevant now.|It seems that the meeting has been canceled.||It seems that + mệnh đề; bị động hiện tại hoàn thành: has been canceled.
 qc7e698228|Look forward to is a fixed expression. Here to is a preposition, so it is followed by the gerund hearing.|We look forward to hearing from you.||look forward to (to là giới từ) + V-ing: hearing from you.
+qcaccb00af|At a specific time last night, the dinner was in progress, so use the past continuous was cooking.
+q837f9f11a|The notes were being written at the same time as the manager spoke, so use were taking.
+q216e75fe2|The phone call interrupted an action in progress, so the ongoing action is was driving.
+qc9302c047|Watching television was in progress when the lights went out, so use were watching.
+q78c386836|With you, the past continuous question is were you doing.
+qcf1ae22f2|With he, the past continuous negative starts was not listening.
+q81a44d936|After were, use the -ing form: were waiting.
+q300f45cec|After was, use the -ing form: was reading.
+q6317a19a1|The walk was in progress when the rain started, so use while we were walking.
+q8e5db5de4|Since breakfast shows an action continuing until now, so use has been studying.
+q75ca4fdf8|For nearly an hour describes a continuing action, so use have been waiting.
+q03cc302fb|Dirty hands are present evidence of a recent activity, so use have been gardening.
+qe5054b431|All afternoon describes a continuing activity, so use has been raining.
+qf555a2a6e|The present perfect continuous question is How long have you been learning English?
+q3111fbdbf|For twenty minutes shows a continuing action, so use has been playing.
+q6274c740a|After have been, use the -ing form: studying.
+q5b4cc8190|After has been, use the -ing form: waiting.
+q92d90498d|The action started two hours ago and is still happening, so use have been playing for two hours.
+qed9e42469|This time next week identifies an action in progress in the future, so use will be relaxing.
+q2983f8d9b|At a particular time tomorrow, the team will be in the middle of testing, so use will be testing.
+qa968d2288|The speaker will be driving at six, so use the future continuous will be driving.
+qd38d3e4d5|The children will be in the middle of dinner when you get home, so use will be having.
+qc85b64e21|The future continuous question is What will you be doing this time tomorrow?
+qe9d39b755|All day tomorrow describes an action in progress, so use will be repairing.
+q1e659c01d|After will be, use the -ing form: working.
+q09ec43e7b|After will be, use the -ing form: travelling.
+q670332fa3|Dinner will already be in progress when you arrive, so use will be eating.
+q15d282326|The rain continued before the past result, so use had been raining.
+qcccdc6576|The travelling continued throughout the day before the past result, so use had been travelling.
+q4dc8ce9f9|The waiting continued for thirty minutes before the doctor called, so use had been waiting.
+q4f292a666|The past perfect continuous question is How long had he been working?
+qa4c5fda43|Staring continued for hours before the past headache, so use had been staring.
+q0021317ea|Since breakfast describes an activity continuing up to a past point, so use had been playing.
+q1cefe1e7f|After had been, use the -ing form: waiting.
+q1919d4ba7|After had been, use the -ing form: working.
+q3eb71f080|The road repair continued from dawn until noon, so use had been repairing.
+q6fdf7ba2b|By the end of the month is a future deadline, so use will have completed.
+q7c55dd076|By tomorrow evening means the reading will be complete before then, so use will have read.
+qae519bc25|The dinner will be complete before the guests arrive, so use will have prepared.
+q7bf8eb336|The future perfect question is How many emails will you have answered by noon?
+qb9cca69b9|The train will have departed before we reach the station, so use will have departed.
+qe0785bf63|By 2030 marks a future deadline, so use will have built.
+qc9e75bd53|After will have, use the past participle: finished.
+qc20459734|After will have, use the past participle: left.
+q7b65168b6|The work will be complete before Monday, so use By Monday, we will have completed the work.
+qdab7cdd97|By July plus a ten-year duration emphasises an action continuing to that future point, so use will have been working.
+q755efe8a8|For six hours up to midnight describes future duration, so use will have been travelling.
+q3dfb1e66a|The study will continue up to 2030 for twenty years, so use will have been studying.
+q30c38d524|The five-year duration continues to the end of the season, so use will have been playing.
+qd64f0e21d|The future perfect continuous question starts How long will they have been living there?
+q2a1aa935c|For a full year up to August describes future duration, so use will have been learning.
+q681c39af1|After will have been, use the -ing form: teaching.
+qc50b286a7|After will, use have, not has: will have been running.
+q2a2343147|The course will continue for six months up to June, so use will have been taking.

@@ -1,5 +1,26 @@
 from lib import point, C, E, O, T, M
 
+point("future_perfect_continuous", 5, "Thì tương lai hoàn thành tiếp diễn", "S + will have been + V-ing",
+      "Diễn tả hành động sẽ kéo dài liên tục đến một thời điểm trong tương lai.",
+      "Dùng will have been + V-ing, thường với for + khoảng thời gian và by + mốc tương lai: By June, I will have been working here for five years. Thì này nhấn mạnh thời lượng; nếu nhấn mạnh việc hoàn tất, dùng future perfect đơn.",
+      ["by", "for", "by next month", "by the end of", "for five years"],
+      [("By June, I will have been working here for five years.", "Đến tháng Sáu, tôi sẽ làm việc ở đây được năm năm.", "will have been working"),
+       ("Next month, she will have been teaching for a decade.", "Tháng sau cô ấy sẽ dạy học được một thập kỷ.", "will have been teaching"),
+       ("By midnight, they will have been driving for eight hours.", "Đến nửa đêm, họ sẽ lái xe được tám giờ.", "will have been driving")],
+      [("By June, I will have been work here for five years.", "By June, I will have been working here for five years.", "will have been + V-ing."),
+       ("Next year, she will has been teaching for ten years.", "Next year, she will have been teaching for ten years.", "Sau will dùng have, không dùng has.")],
+      tags=["tense"], exam=True)
+C("By July, he ___ at the company for ten years.", ["will have been working", "will work", "has worked", "will have work"], "By + thời lượng kéo dài đến tương lai → will have been working.")
+C("By midnight, we ___ for six hours.", ["will have been travelling", "travel", "will travel", "have travelled"], "For six hours đến một mốc tương lai → will have been travelling.")
+C("In 2030, the scientist ___ the climate for twenty years.", ["will have been studying", "studied", "will study", "has studied"], "Hành động kéo dài đến năm 2030 → will have been studying.")
+C("By the end of the season, she ___ in the orchestra for five years.", ["will have been playing", "plays", "will play", "has played"], "By the end of + thời lượng → will have been playing.")
+C("How long ___ they have been living there by next spring?", ["will", "have", "do", "are"], "Câu hỏi tương lai hoàn thành tiếp diễn: will they have been living...? ")
+C("By August, I ___ English for a full year.", ["will have been learning", "learned", "will learn", "have learned"], "For a full year đến mốc tương lai → will have been learning.")
+E("By December, she [will] [have] [been] [teach] here for five years.", 3, "teaching", "will have been + V-ing.")
+E("Next month, they [will] [has] [been] [running] the shop for a decade.", 1, "have", "Sau will dùng have.")
+T("I started this course in January and June will be six months later.", ["By June, I will have been taking this course for six months.", "By June, I will take been this course.", "I have been take it by June.", "By June, I will have taking this course."], "Nhấn mạnh thời lượng kéo dài đến mốc tương lai → will have been taking for.")
+O("By next year, he will have been living abroad for a decade.", "Đến năm sau, anh ấy sẽ sống ở nước ngoài được một thập kỷ.")
+
 point("noun_phrase", 5, "Cụm danh từ phức", "det + adv + adj + N + N (+ prep phrase)",
       "Đọc hiểu và chọn từ đúng trong các cụm danh từ dài của văn bản công việc.",
       "Trật tự: từ hạn định (the, our) + trạng từ (highly) + tính từ (experienced) + danh từ bổ nghĩa (sales) + DANH TỪ CHÍNH (team). Danh từ đứng trước danh từ đóng vai trò như tính từ và thường ở số ít: a ten-minute break, a customer service desk.",

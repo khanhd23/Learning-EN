@@ -1,0 +1,1445 @@
+{
+  "items": [],
+  "groups": [
+    {
+      "id": "ket_listen_1_p1_01",
+      "section": "listening1",
+      "set": "1",
+      "title": "A2 Key Listening Part 1",
+      "passage": "A short everyday conversation gives one key detail. The speakers are checking a weekend visit at the school office. For your notes, the place is the bus station.",
+      "audioPassage": "A short everyday conversation gives one key detail. The speakers are checking a weekend visit at the school office. For your notes, the place is the bus station.",
+      "items": [
+        {
+          "id": "ket_listen_1_p1_01_q01",
+          "section": "listening1",
+          "level": 2,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the bus station",
+            "the museum",
+            "the bookshop"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the bus station.",
+          "qtype": "a2_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_1_p1_02",
+      "section": "listening1",
+      "set": "1",
+      "title": "A2 Key Listening Part 1",
+      "passage": "A short everyday conversation gives one key detail. The speakers are checking a club meeting at the school office. For your notes, the place is the museum.",
+      "audioPassage": "A short everyday conversation gives one key detail. The speakers are checking a club meeting at the school office. For your notes, the place is the museum.",
+      "items": [
+        {
+          "id": "ket_listen_1_p1_02_q01",
+          "section": "listening1",
+          "level": 2,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the museum",
+            "the bookshop",
+            "the park"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the museum.",
+          "qtype": "a2_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_1_p1_03",
+      "section": "listening1",
+      "set": "1",
+      "title": "A2 Key Listening Part 1",
+      "passage": "A short everyday conversation gives one key detail. The speakers are checking a school activity at the school office. For your notes, the place is the bookshop.",
+      "audioPassage": "A short everyday conversation gives one key detail. The speakers are checking a school activity at the school office. For your notes, the place is the bookshop.",
+      "items": [
+        {
+          "id": "ket_listen_1_p1_03_q01",
+          "section": "listening1",
+          "level": 2,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the bookshop",
+            "the park",
+            "the café"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the bookshop.",
+          "qtype": "a2_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_1_p1_04",
+      "section": "listening1",
+      "set": "1",
+      "title": "A2 Key Listening Part 1",
+      "passage": "A short everyday conversation gives one key detail. The speakers are checking a weekend visit at the town library. For your notes, the place is the park.",
+      "audioPassage": "A short everyday conversation gives one key detail. The speakers are checking a weekend visit at the town library. For your notes, the place is the park.",
+      "items": [
+        {
+          "id": "ket_listen_1_p1_04_q01",
+          "section": "listening1",
+          "level": 2,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the park",
+            "the café",
+            "the sports centre"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the park.",
+          "qtype": "a2_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_1_p1_05",
+      "section": "listening1",
+      "set": "1",
+      "title": "A2 Key Listening Part 1",
+      "passage": "A short everyday conversation gives one key detail. The speakers are checking a club meeting at the town library. For your notes, the place is the café.",
+      "audioPassage": "A short everyday conversation gives one key detail. The speakers are checking a club meeting at the town library. For your notes, the place is the café.",
+      "items": [
+        {
+          "id": "ket_listen_1_p1_05_q01",
+          "section": "listening1",
+          "level": 2,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the café",
+            "the sports centre",
+            "the bus station"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the café.",
+          "qtype": "a2_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_1_p2_01",
+      "section": "listening2",
+      "set": "1",
+      "title": "A2 Key Listening Part 2",
+      "passage": "A visitor records notes while a guide describes a place. The speakers are checking a school activity at the town library. For your notes, the day is Friday. The speaker then confirms that the item is a black umbrella. It is also important that the time is at 11:30. The recording adds that the travel method is by train. Listeners should remember that the place is the sports centre.",
+      "audioPassage": "A visitor records notes while a guide describes a place. The speakers are checking a school activity at the town library. For your notes, the day is Friday. The speaker then confirms that the item is a black umbrella. It is also important that the time is at 11:30. The recording adds that the travel method is by train. Listeners should remember that the place is the sports centre.",
+      "items": [
+        {
+          "id": "ket_listen_1_p2_01_q01",
+          "section": "listening2",
+          "level": 2,
+          "stem": "What is the day mentioned in note 1?",
+          "opts": [
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the day is Friday.",
+          "qtype": "a2_listen_p2"
+        },
+        {
+          "id": "ket_listen_1_p2_01_q02",
+          "section": "listening2",
+          "level": 2,
+          "stem": "What is the item mentioned in note 2?",
+          "opts": [
+            "a yellow notebook",
+            "a blue bag",
+            "a black umbrella"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the item is a black umbrella.",
+          "qtype": "a2_listen_p2"
+        },
+        {
+          "id": "ket_listen_1_p2_01_q03",
+          "section": "listening2",
+          "level": 2,
+          "stem": "What is the time mentioned in note 3?",
+          "opts": [
+            "at 9:30",
+            "at 11:30",
+            "at 9:00"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the time is at 11:30.",
+          "qtype": "a2_listen_p2"
+        },
+        {
+          "id": "ket_listen_1_p2_01_q04",
+          "section": "listening2",
+          "level": 2,
+          "stem": "What is the travel method mentioned in note 4?",
+          "opts": [
+            "by train",
+            "by bus",
+            "by bicycle"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the travel method is by train.",
+          "qtype": "a2_listen_p2"
+        },
+        {
+          "id": "ket_listen_1_p2_01_q05",
+          "section": "listening2",
+          "level": 2,
+          "stem": "What is the place mentioned in note 5?",
+          "opts": [
+            "the bus station",
+            "the museum",
+            "the sports centre"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the place is the sports centre.",
+          "qtype": "a2_listen_p2"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_1_p3_01",
+      "section": "listening3",
+      "set": "1",
+      "title": "A2 Key Listening Part 3",
+      "passage": "Two friends discuss a simple plan and check five details. The speakers are checking a weekend visit at the railway station. For your notes, the item is a black umbrella. The speaker then confirms that the time is at 11:30. It is also important that the travel method is by train. The recording adds that the place is the sports centre. Listeners should remember that the day is Thursday.",
+      "audioPassage": "Two friends discuss a simple plan and check five details. The speakers are checking a weekend visit at the railway station. For your notes, the item is a black umbrella. The speaker then confirms that the time is at 11:30. It is also important that the travel method is by train. The recording adds that the place is the sports centre. Listeners should remember that the day is Thursday.",
+      "items": [
+        {
+          "id": "ket_listen_1_p3_01_q01",
+          "section": "listening3",
+          "level": 2,
+          "stem": "What is the item mentioned in note 1?",
+          "opts": [
+            "a black umbrella",
+            "a yellow notebook",
+            "a blue bag"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the item is a black umbrella.",
+          "qtype": "a2_listen_p3"
+        },
+        {
+          "id": "ket_listen_1_p3_01_q02",
+          "section": "listening3",
+          "level": 2,
+          "stem": "What is the time mentioned in note 2?",
+          "opts": [
+            "at 9:00",
+            "at 9:30",
+            "at 11:30"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the time is at 11:30.",
+          "qtype": "a2_listen_p3"
+        },
+        {
+          "id": "ket_listen_1_p3_01_q03",
+          "section": "listening3",
+          "level": 2,
+          "stem": "What is the travel method mentioned in note 3?",
+          "opts": [
+            "by bicycle",
+            "by train",
+            "by bus"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the travel method is by train.",
+          "qtype": "a2_listen_p3"
+        },
+        {
+          "id": "ket_listen_1_p3_01_q04",
+          "section": "listening3",
+          "level": 2,
+          "stem": "What is the place mentioned in note 4?",
+          "opts": [
+            "the sports centre",
+            "the bus station",
+            "the museum"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the sports centre.",
+          "qtype": "a2_listen_p3"
+        },
+        {
+          "id": "ket_listen_1_p3_01_q05",
+          "section": "listening3",
+          "level": 2,
+          "stem": "What is the day mentioned in note 5?",
+          "opts": [
+            "Friday",
+            "Saturday",
+            "Thursday"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the day is Thursday.",
+          "qtype": "a2_listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_1_p4_01",
+      "section": "listening4",
+      "set": "1",
+      "title": "A2 Key Listening Part 4",
+      "passage": "A short announcement gives the main message. The speakers are checking a club meeting at the railway station. For your notes, the time is at 11:30.",
+      "audioPassage": "A short announcement gives the main message. The speakers are checking a club meeting at the railway station. For your notes, the time is at 11:30.",
+      "items": [
+        {
+          "id": "ket_listen_1_p4_01_q01",
+          "section": "listening4",
+          "level": 2,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 11:30",
+            "at 9:00",
+            "at 9:30"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 11:30.",
+          "qtype": "a2_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_1_p4_02",
+      "section": "listening4",
+      "set": "1",
+      "title": "A2 Key Listening Part 4",
+      "passage": "A short announcement gives the main message. The speakers are checking a school activity at the railway station. For your notes, the time is at 9:00.",
+      "audioPassage": "A short announcement gives the main message. The speakers are checking a school activity at the railway station. For your notes, the time is at 9:00.",
+      "items": [
+        {
+          "id": "ket_listen_1_p4_02_q01",
+          "section": "listening4",
+          "level": 2,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 9:00",
+            "at 9:30",
+            "at 10:00"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 9:00.",
+          "qtype": "a2_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_1_p4_03",
+      "section": "listening4",
+      "set": "1",
+      "title": "A2 Key Listening Part 4",
+      "passage": "A short announcement gives the main message. The speakers are checking a weekend visit at the sports centre. For your notes, the time is at 9:30.",
+      "audioPassage": "A short announcement gives the main message. The speakers are checking a weekend visit at the sports centre. For your notes, the time is at 9:30.",
+      "items": [
+        {
+          "id": "ket_listen_1_p4_03_q01",
+          "section": "listening4",
+          "level": 2,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 9:30",
+            "at 10:00",
+            "at 10:30"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 9:30.",
+          "qtype": "a2_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_1_p4_04",
+      "section": "listening4",
+      "set": "1",
+      "title": "A2 Key Listening Part 4",
+      "passage": "A short announcement gives the main message. The speakers are checking a club meeting at the sports centre. For your notes, the time is at 10:00.",
+      "audioPassage": "A short announcement gives the main message. The speakers are checking a club meeting at the sports centre. For your notes, the time is at 10:00.",
+      "items": [
+        {
+          "id": "ket_listen_1_p4_04_q01",
+          "section": "listening4",
+          "level": 2,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 10:00",
+            "at 10:30",
+            "at 11:00"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 10:00.",
+          "qtype": "a2_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_1_p4_05",
+      "section": "listening4",
+      "set": "1",
+      "title": "A2 Key Listening Part 4",
+      "passage": "A short announcement gives the main message. The speakers are checking a school activity at the sports centre. For your notes, the time is at 10:30.",
+      "audioPassage": "A short announcement gives the main message. The speakers are checking a school activity at the sports centre. For your notes, the time is at 10:30.",
+      "items": [
+        {
+          "id": "ket_listen_1_p4_05_q01",
+          "section": "listening4",
+          "level": 2,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 10:30",
+            "at 11:00",
+            "at 11:30"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 10:30.",
+          "qtype": "a2_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_1_p5_01",
+      "section": "listening5",
+      "set": "1",
+      "title": "A2 Key Listening Part 5",
+      "passage": "Two speakers compare arrangements and agree on information. The speakers are checking a weekend visit at the community hall. For your notes, the travel method is by train. The speaker then confirms that the place is the sports centre. It is also important that the day is Thursday. The recording adds that the item is a white jacket. Listeners should remember that the time is at 11:00.",
+      "audioPassage": "Two speakers compare arrangements and agree on information. The speakers are checking a weekend visit at the community hall. For your notes, the travel method is by train. The speaker then confirms that the place is the sports centre. It is also important that the day is Thursday. The recording adds that the item is a white jacket. Listeners should remember that the time is at 11:00.",
+      "items": [
+        {
+          "id": "ket_listen_1_p5_01_q01",
+          "section": "listening5",
+          "level": 2,
+          "stem": "What is the travel method mentioned in note 1?",
+          "opts": [
+            "by train",
+            "by bus",
+            "by bicycle"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the travel method is by train.",
+          "qtype": "a2_listen_p5"
+        },
+        {
+          "id": "ket_listen_1_p5_01_q02",
+          "section": "listening5",
+          "level": 2,
+          "stem": "What is the place mentioned in note 2?",
+          "opts": [
+            "the bus station",
+            "the museum",
+            "the sports centre"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the place is the sports centre.",
+          "qtype": "a2_listen_p5"
+        },
+        {
+          "id": "ket_listen_1_p5_01_q03",
+          "section": "listening5",
+          "level": 2,
+          "stem": "What is the day mentioned in note 3?",
+          "opts": [
+            "Saturday",
+            "Thursday",
+            "Friday"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the day is Thursday.",
+          "qtype": "a2_listen_p5"
+        },
+        {
+          "id": "ket_listen_1_p5_01_q04",
+          "section": "listening5",
+          "level": 2,
+          "stem": "What is the item mentioned in note 4?",
+          "opts": [
+            "a white jacket",
+            "a black umbrella",
+            "a yellow notebook"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the item is a white jacket.",
+          "qtype": "a2_listen_p5"
+        },
+        {
+          "id": "ket_listen_1_p5_01_q05",
+          "section": "listening5",
+          "level": 2,
+          "stem": "What is the time mentioned in note 5?",
+          "opts": [
+            "at 11:30",
+            "at 9:00",
+            "at 11:00"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the time is at 11:00.",
+          "qtype": "a2_listen_p5"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_2_p1_01",
+      "section": "listening1",
+      "set": "2",
+      "title": "A2 Key Listening Part 1",
+      "passage": "A short everyday conversation gives one key detail. The speakers are checking a club meeting at the community hall. For your notes, the place is the museum.",
+      "audioPassage": "A short everyday conversation gives one key detail. The speakers are checking a club meeting at the community hall. For your notes, the place is the museum.",
+      "items": [
+        {
+          "id": "ket_listen_2_p1_01_q01",
+          "section": "listening1",
+          "level": 2,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the museum",
+            "the bookshop",
+            "the park"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the museum.",
+          "qtype": "a2_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_2_p1_02",
+      "section": "listening1",
+      "set": "2",
+      "title": "A2 Key Listening Part 1",
+      "passage": "A short everyday conversation gives one key detail. The speakers are checking a school activity at the community hall. For your notes, the place is the bookshop.",
+      "audioPassage": "A short everyday conversation gives one key detail. The speakers are checking a school activity at the community hall. For your notes, the place is the bookshop.",
+      "items": [
+        {
+          "id": "ket_listen_2_p1_02_q01",
+          "section": "listening1",
+          "level": 2,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the bookshop",
+            "the park",
+            "the café"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the bookshop.",
+          "qtype": "a2_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_2_p1_03",
+      "section": "listening1",
+      "set": "2",
+      "title": "A2 Key Listening Part 1",
+      "passage": "A short everyday conversation gives one key detail. The speakers are checking a weekend visit at the art museum. For your notes, the place is the park.",
+      "audioPassage": "A short everyday conversation gives one key detail. The speakers are checking a weekend visit at the art museum. For your notes, the place is the park.",
+      "items": [
+        {
+          "id": "ket_listen_2_p1_03_q01",
+          "section": "listening1",
+          "level": 2,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the park",
+            "the café",
+            "the sports centre"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the park.",
+          "qtype": "a2_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_2_p1_04",
+      "section": "listening1",
+      "set": "2",
+      "title": "A2 Key Listening Part 1",
+      "passage": "A short everyday conversation gives one key detail. The speakers are checking a club meeting at the art museum. For your notes, the place is the café.",
+      "audioPassage": "A short everyday conversation gives one key detail. The speakers are checking a club meeting at the art museum. For your notes, the place is the café.",
+      "items": [
+        {
+          "id": "ket_listen_2_p1_04_q01",
+          "section": "listening1",
+          "level": 2,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the café",
+            "the sports centre",
+            "the bus station"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the café.",
+          "qtype": "a2_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_2_p1_05",
+      "section": "listening1",
+      "set": "2",
+      "title": "A2 Key Listening Part 1",
+      "passage": "A short everyday conversation gives one key detail. The speakers are checking a school activity at the art museum. For your notes, the place is the sports centre.",
+      "audioPassage": "A short everyday conversation gives one key detail. The speakers are checking a school activity at the art museum. For your notes, the place is the sports centre.",
+      "items": [
+        {
+          "id": "ket_listen_2_p1_05_q01",
+          "section": "listening1",
+          "level": 2,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the sports centre",
+            "the bus station",
+            "the museum"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the sports centre.",
+          "qtype": "a2_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_2_p2_01",
+      "section": "listening2",
+      "set": "2",
+      "title": "A2 Key Listening Part 2",
+      "passage": "A visitor records notes while a guide describes a place. The speakers are checking a weekend visit at the campsite. For your notes, the day is Saturday. The speaker then confirms that the item is a yellow notebook. It is also important that the time is at 9:00. The recording adds that the travel method is by bus. Listeners should remember that the place is the bus station.",
+      "audioPassage": "A visitor records notes while a guide describes a place. The speakers are checking a weekend visit at the campsite. For your notes, the day is Saturday. The speaker then confirms that the item is a yellow notebook. It is also important that the time is at 9:00. The recording adds that the travel method is by bus. Listeners should remember that the place is the bus station.",
+      "items": [
+        {
+          "id": "ket_listen_2_p2_01_q01",
+          "section": "listening2",
+          "level": 2,
+          "stem": "What is the day mentioned in note 1?",
+          "opts": [
+            "Saturday",
+            "Sunday",
+            "Tuesday"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the day is Saturday.",
+          "qtype": "a2_listen_p2"
+        },
+        {
+          "id": "ket_listen_2_p2_01_q02",
+          "section": "listening2",
+          "level": 2,
+          "stem": "What is the item mentioned in note 2?",
+          "opts": [
+            "a blue bag",
+            "a red ticket",
+            "a yellow notebook"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the item is a yellow notebook.",
+          "qtype": "a2_listen_p2"
+        },
+        {
+          "id": "ket_listen_2_p2_01_q03",
+          "section": "listening2",
+          "level": 2,
+          "stem": "What is the time mentioned in note 3?",
+          "opts": [
+            "at 10:00",
+            "at 9:00",
+            "at 9:30"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the time is at 9:00.",
+          "qtype": "a2_listen_p2"
+        },
+        {
+          "id": "ket_listen_2_p2_01_q04",
+          "section": "listening2",
+          "level": 2,
+          "stem": "What is the travel method mentioned in note 4?",
+          "opts": [
+            "by bus",
+            "by bicycle",
+            "on foot"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the travel method is by bus.",
+          "qtype": "a2_listen_p2"
+        },
+        {
+          "id": "ket_listen_2_p2_01_q05",
+          "section": "listening2",
+          "level": 2,
+          "stem": "What is the place mentioned in note 5?",
+          "opts": [
+            "the museum",
+            "the bookshop",
+            "the bus station"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the place is the bus station.",
+          "qtype": "a2_listen_p2"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_2_p3_01",
+      "section": "listening3",
+      "set": "2",
+      "title": "A2 Key Listening Part 3",
+      "passage": "Two friends discuss a simple plan and check five details. The speakers are checking a club meeting at the campsite. For your notes, the item is a yellow notebook. The speaker then confirms that the time is at 9:00. It is also important that the travel method is by bus. The recording adds that the place is the bus station. Listeners should remember that the day is Friday.",
+      "audioPassage": "Two friends discuss a simple plan and check five details. The speakers are checking a club meeting at the campsite. For your notes, the item is a yellow notebook. The speaker then confirms that the time is at 9:00. It is also important that the travel method is by bus. The recording adds that the place is the bus station. Listeners should remember that the day is Friday.",
+      "items": [
+        {
+          "id": "ket_listen_2_p3_01_q01",
+          "section": "listening3",
+          "level": 2,
+          "stem": "What is the item mentioned in note 1?",
+          "opts": [
+            "a yellow notebook",
+            "a blue bag",
+            "a red ticket"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the item is a yellow notebook.",
+          "qtype": "a2_listen_p3"
+        },
+        {
+          "id": "ket_listen_2_p3_01_q02",
+          "section": "listening3",
+          "level": 2,
+          "stem": "What is the time mentioned in note 2?",
+          "opts": [
+            "at 9:30",
+            "at 10:00",
+            "at 9:00"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the time is at 9:00.",
+          "qtype": "a2_listen_p3"
+        },
+        {
+          "id": "ket_listen_2_p3_01_q03",
+          "section": "listening3",
+          "level": 2,
+          "stem": "What is the travel method mentioned in note 3?",
+          "opts": [
+            "on foot",
+            "by bus",
+            "by bicycle"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the travel method is by bus.",
+          "qtype": "a2_listen_p3"
+        },
+        {
+          "id": "ket_listen_2_p3_01_q04",
+          "section": "listening3",
+          "level": 2,
+          "stem": "What is the place mentioned in note 4?",
+          "opts": [
+            "the bus station",
+            "the museum",
+            "the bookshop"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the bus station.",
+          "qtype": "a2_listen_p3"
+        },
+        {
+          "id": "ket_listen_2_p3_01_q05",
+          "section": "listening3",
+          "level": 2,
+          "stem": "What is the day mentioned in note 5?",
+          "opts": [
+            "Saturday",
+            "Sunday",
+            "Friday"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the day is Friday.",
+          "qtype": "a2_listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_2_p4_01",
+      "section": "listening4",
+      "set": "2",
+      "title": "A2 Key Listening Part 4",
+      "passage": "A short announcement gives the main message. The speakers are checking a school activity at the campsite. For your notes, the time is at 9:00.",
+      "audioPassage": "A short announcement gives the main message. The speakers are checking a school activity at the campsite. For your notes, the time is at 9:00.",
+      "items": [
+        {
+          "id": "ket_listen_2_p4_01_q01",
+          "section": "listening4",
+          "level": 2,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 9:00",
+            "at 9:30",
+            "at 10:00"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 9:00.",
+          "qtype": "a2_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_2_p4_02",
+      "section": "listening4",
+      "set": "2",
+      "title": "A2 Key Listening Part 4",
+      "passage": "A short announcement gives the main message. The speakers are checking a weekend visit at the swimming pool. For your notes, the time is at 9:30.",
+      "audioPassage": "A short announcement gives the main message. The speakers are checking a weekend visit at the swimming pool. For your notes, the time is at 9:30.",
+      "items": [
+        {
+          "id": "ket_listen_2_p4_02_q01",
+          "section": "listening4",
+          "level": 2,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 9:30",
+            "at 10:00",
+            "at 10:30"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 9:30.",
+          "qtype": "a2_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_2_p4_03",
+      "section": "listening4",
+      "set": "2",
+      "title": "A2 Key Listening Part 4",
+      "passage": "A short announcement gives the main message. The speakers are checking a club meeting at the swimming pool. For your notes, the time is at 10:00.",
+      "audioPassage": "A short announcement gives the main message. The speakers are checking a club meeting at the swimming pool. For your notes, the time is at 10:00.",
+      "items": [
+        {
+          "id": "ket_listen_2_p4_03_q01",
+          "section": "listening4",
+          "level": 2,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 10:00",
+            "at 10:30",
+            "at 11:00"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 10:00.",
+          "qtype": "a2_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_2_p4_04",
+      "section": "listening4",
+      "set": "2",
+      "title": "A2 Key Listening Part 4",
+      "passage": "A short announcement gives the main message. The speakers are checking a school activity at the swimming pool. For your notes, the time is at 10:30.",
+      "audioPassage": "A short announcement gives the main message. The speakers are checking a school activity at the swimming pool. For your notes, the time is at 10:30.",
+      "items": [
+        {
+          "id": "ket_listen_2_p4_04_q01",
+          "section": "listening4",
+          "level": 2,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 10:30",
+            "at 11:00",
+            "at 11:30"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 10:30.",
+          "qtype": "a2_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_2_p4_05",
+      "section": "listening4",
+      "set": "2",
+      "title": "A2 Key Listening Part 4",
+      "passage": "A short announcement gives the main message. The speakers are checking a weekend visit at the music shop. For your notes, the time is at 11:00.",
+      "audioPassage": "A short announcement gives the main message. The speakers are checking a weekend visit at the music shop. For your notes, the time is at 11:00.",
+      "items": [
+        {
+          "id": "ket_listen_2_p4_05_q01",
+          "section": "listening4",
+          "level": 2,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 11:00",
+            "at 11:30",
+            "at 9:00"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 11:00.",
+          "qtype": "a2_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_2_p5_01",
+      "section": "listening5",
+      "set": "2",
+      "title": "A2 Key Listening Part 5",
+      "passage": "Two speakers compare arrangements and agree on information. The speakers are checking a club meeting at the music shop. For your notes, the travel method is by bus. The speaker then confirms that the place is the bus station. It is also important that the day is Friday. The recording adds that the item is a black umbrella. Listeners should remember that the time is at 11:30.",
+      "audioPassage": "Two speakers compare arrangements and agree on information. The speakers are checking a club meeting at the music shop. For your notes, the travel method is by bus. The speaker then confirms that the place is the bus station. It is also important that the day is Friday. The recording adds that the item is a black umbrella. Listeners should remember that the time is at 11:30.",
+      "items": [
+        {
+          "id": "ket_listen_2_p5_01_q01",
+          "section": "listening5",
+          "level": 2,
+          "stem": "What is the travel method mentioned in note 1?",
+          "opts": [
+            "by bus",
+            "by bicycle",
+            "on foot"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the travel method is by bus.",
+          "qtype": "a2_listen_p5"
+        },
+        {
+          "id": "ket_listen_2_p5_01_q02",
+          "section": "listening5",
+          "level": 2,
+          "stem": "What is the place mentioned in note 2?",
+          "opts": [
+            "the museum",
+            "the bookshop",
+            "the bus station"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the place is the bus station.",
+          "qtype": "a2_listen_p5"
+        },
+        {
+          "id": "ket_listen_2_p5_01_q03",
+          "section": "listening5",
+          "level": 2,
+          "stem": "What is the day mentioned in note 3?",
+          "opts": [
+            "Sunday",
+            "Friday",
+            "Saturday"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the day is Friday.",
+          "qtype": "a2_listen_p5"
+        },
+        {
+          "id": "ket_listen_2_p5_01_q04",
+          "section": "listening5",
+          "level": 2,
+          "stem": "What is the item mentioned in note 4?",
+          "opts": [
+            "a black umbrella",
+            "a yellow notebook",
+            "a blue bag"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the item is a black umbrella.",
+          "qtype": "a2_listen_p5"
+        },
+        {
+          "id": "ket_listen_2_p5_01_q05",
+          "section": "listening5",
+          "level": 2,
+          "stem": "What is the time mentioned in note 5?",
+          "opts": [
+            "at 9:00",
+            "at 9:30",
+            "at 11:30"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the time is at 11:30.",
+          "qtype": "a2_listen_p5"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_3_p1_01",
+      "section": "listening1",
+      "set": "3",
+      "title": "A2 Key Listening Part 1",
+      "passage": "A short everyday conversation gives one key detail. The speakers are checking a school activity at the music shop. For your notes, the place is the bookshop.",
+      "audioPassage": "A short everyday conversation gives one key detail. The speakers are checking a school activity at the music shop. For your notes, the place is the bookshop.",
+      "items": [
+        {
+          "id": "ket_listen_3_p1_01_q01",
+          "section": "listening1",
+          "level": 2,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the bookshop",
+            "the park",
+            "the café"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the bookshop.",
+          "qtype": "a2_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_3_p1_02",
+      "section": "listening1",
+      "set": "3",
+      "title": "A2 Key Listening Part 1",
+      "passage": "A short everyday conversation gives one key detail. The speakers are checking a weekend visit at the town market. For your notes, the place is the park.",
+      "audioPassage": "A short everyday conversation gives one key detail. The speakers are checking a weekend visit at the town market. For your notes, the place is the park.",
+      "items": [
+        {
+          "id": "ket_listen_3_p1_02_q01",
+          "section": "listening1",
+          "level": 2,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the park",
+            "the café",
+            "the sports centre"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the park.",
+          "qtype": "a2_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_3_p1_03",
+      "section": "listening1",
+      "set": "3",
+      "title": "A2 Key Listening Part 1",
+      "passage": "A short everyday conversation gives one key detail. The speakers are checking a club meeting at the town market. For your notes, the place is the café.",
+      "audioPassage": "A short everyday conversation gives one key detail. The speakers are checking a club meeting at the town market. For your notes, the place is the café.",
+      "items": [
+        {
+          "id": "ket_listen_3_p1_03_q01",
+          "section": "listening1",
+          "level": 2,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the café",
+            "the sports centre",
+            "the bus station"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the café.",
+          "qtype": "a2_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_3_p1_04",
+      "section": "listening1",
+      "set": "3",
+      "title": "A2 Key Listening Part 1",
+      "passage": "A short everyday conversation gives one key detail. The speakers are checking a school activity at the town market. For your notes, the place is the sports centre.",
+      "audioPassage": "A short everyday conversation gives one key detail. The speakers are checking a school activity at the town market. For your notes, the place is the sports centre.",
+      "items": [
+        {
+          "id": "ket_listen_3_p1_04_q01",
+          "section": "listening1",
+          "level": 2,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the sports centre",
+            "the bus station",
+            "the museum"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the sports centre.",
+          "qtype": "a2_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_3_p1_05",
+      "section": "listening1",
+      "set": "3",
+      "title": "A2 Key Listening Part 1",
+      "passage": "A short everyday conversation gives one key detail. The speakers are checking a weekend visit at the travel desk. For your notes, the place is the bus station.",
+      "audioPassage": "A short everyday conversation gives one key detail. The speakers are checking a weekend visit at the travel desk. For your notes, the place is the bus station.",
+      "items": [
+        {
+          "id": "ket_listen_3_p1_05_q01",
+          "section": "listening1",
+          "level": 2,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the bus station",
+            "the museum",
+            "the bookshop"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the bus station.",
+          "qtype": "a2_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_3_p2_01",
+      "section": "listening2",
+      "set": "3",
+      "title": "A2 Key Listening Part 2",
+      "passage": "A visitor records notes while a guide describes a place. The speakers are checking a club meeting at the travel desk. For your notes, the day is Sunday. The speaker then confirms that the item is a blue bag. It is also important that the time is at 9:30. The recording adds that the travel method is by bicycle. Listeners should remember that the place is the museum.",
+      "audioPassage": "A visitor records notes while a guide describes a place. The speakers are checking a club meeting at the travel desk. For your notes, the day is Sunday. The speaker then confirms that the item is a blue bag. It is also important that the time is at 9:30. The recording adds that the travel method is by bicycle. Listeners should remember that the place is the museum.",
+      "items": [
+        {
+          "id": "ket_listen_3_p2_01_q01",
+          "section": "listening2",
+          "level": 2,
+          "stem": "What is the day mentioned in note 1?",
+          "opts": [
+            "Sunday",
+            "Tuesday",
+            "Wednesday"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the day is Sunday.",
+          "qtype": "a2_listen_p2"
+        },
+        {
+          "id": "ket_listen_3_p2_01_q02",
+          "section": "listening2",
+          "level": 2,
+          "stem": "What is the item mentioned in note 2?",
+          "opts": [
+            "a red ticket",
+            "a green key",
+            "a blue bag"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the item is a blue bag.",
+          "qtype": "a2_listen_p2"
+        },
+        {
+          "id": "ket_listen_3_p2_01_q03",
+          "section": "listening2",
+          "level": 2,
+          "stem": "What is the time mentioned in note 3?",
+          "opts": [
+            "at 10:30",
+            "at 9:30",
+            "at 10:00"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the time is at 9:30.",
+          "qtype": "a2_listen_p2"
+        },
+        {
+          "id": "ket_listen_3_p2_01_q04",
+          "section": "listening2",
+          "level": 2,
+          "stem": "What is the travel method mentioned in note 4?",
+          "opts": [
+            "by bicycle",
+            "on foot",
+            "by taxi"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the travel method is by bicycle.",
+          "qtype": "a2_listen_p2"
+        },
+        {
+          "id": "ket_listen_3_p2_01_q05",
+          "section": "listening2",
+          "level": 2,
+          "stem": "What is the place mentioned in note 5?",
+          "opts": [
+            "the bookshop",
+            "the park",
+            "the museum"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the place is the museum.",
+          "qtype": "a2_listen_p2"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_3_p3_01",
+      "section": "listening3",
+      "set": "3",
+      "title": "A2 Key Listening Part 3",
+      "passage": "Two friends discuss a simple plan and check five details. The speakers are checking a school activity at the travel desk. For your notes, the item is a blue bag. The speaker then confirms that the time is at 9:30. It is also important that the travel method is by bicycle. The recording adds that the place is the museum. Listeners should remember that the day is Saturday.",
+      "audioPassage": "Two friends discuss a simple plan and check five details. The speakers are checking a school activity at the travel desk. For your notes, the item is a blue bag. The speaker then confirms that the time is at 9:30. It is also important that the travel method is by bicycle. The recording adds that the place is the museum. Listeners should remember that the day is Saturday.",
+      "items": [
+        {
+          "id": "ket_listen_3_p3_01_q01",
+          "section": "listening3",
+          "level": 2,
+          "stem": "What is the item mentioned in note 1?",
+          "opts": [
+            "a blue bag",
+            "a red ticket",
+            "a green key"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the item is a blue bag.",
+          "qtype": "a2_listen_p3"
+        },
+        {
+          "id": "ket_listen_3_p3_01_q02",
+          "section": "listening3",
+          "level": 2,
+          "stem": "What is the time mentioned in note 2?",
+          "opts": [
+            "at 10:00",
+            "at 10:30",
+            "at 9:30"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the time is at 9:30.",
+          "qtype": "a2_listen_p3"
+        },
+        {
+          "id": "ket_listen_3_p3_01_q03",
+          "section": "listening3",
+          "level": 2,
+          "stem": "What is the travel method mentioned in note 3?",
+          "opts": [
+            "by taxi",
+            "by bicycle",
+            "on foot"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the travel method is by bicycle.",
+          "qtype": "a2_listen_p3"
+        },
+        {
+          "id": "ket_listen_3_p3_01_q04",
+          "section": "listening3",
+          "level": 2,
+          "stem": "What is the place mentioned in note 4?",
+          "opts": [
+            "the museum",
+            "the bookshop",
+            "the park"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the museum.",
+          "qtype": "a2_listen_p3"
+        },
+        {
+          "id": "ket_listen_3_p3_01_q05",
+          "section": "listening3",
+          "level": 2,
+          "stem": "What is the day mentioned in note 5?",
+          "opts": [
+            "Sunday",
+            "Tuesday",
+            "Saturday"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the day is Saturday.",
+          "qtype": "a2_listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_3_p4_01",
+      "section": "listening4",
+      "set": "3",
+      "title": "A2 Key Listening Part 4",
+      "passage": "A short announcement gives the main message. The speakers are checking a weekend visit at the college café. For your notes, the time is at 9:30.",
+      "audioPassage": "A short announcement gives the main message. The speakers are checking a weekend visit at the college café. For your notes, the time is at 9:30.",
+      "items": [
+        {
+          "id": "ket_listen_3_p4_01_q01",
+          "section": "listening4",
+          "level": 2,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 9:30",
+            "at 10:00",
+            "at 10:30"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 9:30.",
+          "qtype": "a2_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_3_p4_02",
+      "section": "listening4",
+      "set": "3",
+      "title": "A2 Key Listening Part 4",
+      "passage": "A short announcement gives the main message. The speakers are checking a club meeting at the college café. For your notes, the time is at 10:00.",
+      "audioPassage": "A short announcement gives the main message. The speakers are checking a club meeting at the college café. For your notes, the time is at 10:00.",
+      "items": [
+        {
+          "id": "ket_listen_3_p4_02_q01",
+          "section": "listening4",
+          "level": 2,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 10:00",
+            "at 10:30",
+            "at 11:00"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 10:00.",
+          "qtype": "a2_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_3_p4_03",
+      "section": "listening4",
+      "set": "3",
+      "title": "A2 Key Listening Part 4",
+      "passage": "A short announcement gives the main message. The speakers are checking a school activity at the college café. For your notes, the time is at 10:30.",
+      "audioPassage": "A short announcement gives the main message. The speakers are checking a school activity at the college café. For your notes, the time is at 10:30.",
+      "items": [
+        {
+          "id": "ket_listen_3_p4_03_q01",
+          "section": "listening4",
+          "level": 2,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 10:30",
+            "at 11:00",
+            "at 11:30"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 10:30.",
+          "qtype": "a2_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_3_p4_04",
+      "section": "listening4",
+      "set": "3",
+      "title": "A2 Key Listening Part 4",
+      "passage": "A short announcement gives the main message. The speakers are checking a weekend visit at the park office. For your notes, the time is at 11:00.",
+      "audioPassage": "A short announcement gives the main message. The speakers are checking a weekend visit at the park office. For your notes, the time is at 11:00.",
+      "items": [
+        {
+          "id": "ket_listen_3_p4_04_q01",
+          "section": "listening4",
+          "level": 2,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 11:00",
+            "at 11:30",
+            "at 9:00"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 11:00.",
+          "qtype": "a2_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_3_p4_05",
+      "section": "listening4",
+      "set": "3",
+      "title": "A2 Key Listening Part 4",
+      "passage": "A short announcement gives the main message. The speakers are checking a club meeting at the park office. For your notes, the time is at 11:30.",
+      "audioPassage": "A short announcement gives the main message. The speakers are checking a club meeting at the park office. For your notes, the time is at 11:30.",
+      "items": [
+        {
+          "id": "ket_listen_3_p4_05_q01",
+          "section": "listening4",
+          "level": 2,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 11:30",
+            "at 9:00",
+            "at 9:30"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 11:30.",
+          "qtype": "a2_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "ket_listen_3_p5_01",
+      "section": "listening5",
+      "set": "3",
+      "title": "A2 Key Listening Part 5",
+      "passage": "Two speakers compare arrangements and agree on information. The speakers are checking a school activity at the park office. For your notes, the travel method is by bicycle. The speaker then confirms that the place is the museum. It is also important that the day is Saturday. The recording adds that the item is a yellow notebook. Listeners should remember that the time is at 9:00.",
+      "audioPassage": "Two speakers compare arrangements and agree on information. The speakers are checking a school activity at the park office. For your notes, the travel method is by bicycle. The speaker then confirms that the place is the museum. It is also important that the day is Saturday. The recording adds that the item is a yellow notebook. Listeners should remember that the time is at 9:00.",
+      "items": [
+        {
+          "id": "ket_listen_3_p5_01_q01",
+          "section": "listening5",
+          "level": 2,
+          "stem": "What is the travel method mentioned in note 1?",
+          "opts": [
+            "by bicycle",
+            "on foot",
+            "by taxi"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the travel method is by bicycle.",
+          "qtype": "a2_listen_p5"
+        },
+        {
+          "id": "ket_listen_3_p5_01_q02",
+          "section": "listening5",
+          "level": 2,
+          "stem": "What is the place mentioned in note 2?",
+          "opts": [
+            "the bookshop",
+            "the park",
+            "the museum"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the place is the museum.",
+          "qtype": "a2_listen_p5"
+        },
+        {
+          "id": "ket_listen_3_p5_01_q03",
+          "section": "listening5",
+          "level": 2,
+          "stem": "What is the day mentioned in note 3?",
+          "opts": [
+            "Tuesday",
+            "Saturday",
+            "Sunday"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the day is Saturday.",
+          "qtype": "a2_listen_p5"
+        },
+        {
+          "id": "ket_listen_3_p5_01_q04",
+          "section": "listening5",
+          "level": 2,
+          "stem": "What is the item mentioned in note 4?",
+          "opts": [
+            "a yellow notebook",
+            "a blue bag",
+            "a red ticket"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the item is a yellow notebook.",
+          "qtype": "a2_listen_p5"
+        },
+        {
+          "id": "ket_listen_3_p5_01_q05",
+          "section": "listening5",
+          "level": 2,
+          "stem": "What is the time mentioned in note 5?",
+          "opts": [
+            "at 9:30",
+            "at 10:00",
+            "at 9:00"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the time is at 9:00.",
+          "qtype": "a2_listen_p5"
+        }
+      ]
+    }
+  ]
+}

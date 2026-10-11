@@ -1,0 +1,1175 @@
+{
+  "items": [],
+  "groups": [
+    {
+      "id": "pet_listen_1_p1",
+      "section": "listening1",
+      "set": "1",
+      "title": "B1 Preliminary Listening Part 1",
+      "passage": "You will hear short everyday exchanges and identify the key detail. For your notes, the place is the bookshop. The speaker then confirms that the day is Sunday. It is also important that the item is a blue bag. The recording adds that the time is at 9:30. Listeners should remember that the travel method is by bicycle. For your notes, the place is the museum. The speaker then confirms that the day is Saturday.",
+      "audioPassage": "You will hear short everyday exchanges and identify the key detail. For your notes, the place is the bookshop. The speaker then confirms that the day is Sunday. It is also important that the item is a blue bag. The recording adds that the time is at 9:30. Listeners should remember that the travel method is by bicycle. For your notes, the place is the museum. The speaker then confirms that the day is Saturday.",
+      "items": [
+        {
+          "id": "pet_listen_1_p1_q01",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the park",
+            "the café",
+            "the bookshop"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the place is the bookshop.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_1_p1_q02",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the day mentioned in note 2?",
+          "opts": [
+            "Wednesday",
+            "Sunday",
+            "Tuesday"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the day is Sunday.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_1_p1_q03",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the item mentioned in note 3?",
+          "opts": [
+            "a blue bag",
+            "a red ticket",
+            "a green key"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the item is a blue bag.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_1_p1_q04",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the time mentioned in note 4?",
+          "opts": [
+            "at 10:00",
+            "at 10:30",
+            "at 9:30"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the time is at 9:30.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_1_p1_q05",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the travel method mentioned in note 5?",
+          "opts": [
+            "by taxi",
+            "by bicycle",
+            "on foot"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the travel method is by bicycle.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_1_p1_q06",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the place mentioned in note 6?",
+          "opts": [
+            "the museum",
+            "the bookshop",
+            "the park"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the museum.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_1_p1_q07",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the day mentioned in note 7?",
+          "opts": [
+            "Sunday",
+            "Tuesday",
+            "Saturday"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the day is Saturday.",
+          "qtype": "b1_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "pet_listen_1_p2",
+      "section": "listening2",
+      "set": "1",
+      "title": "B1 Preliminary Listening Part 2",
+      "passage": "You will hear a longer conversation and follow the speakers' plans. For your notes, the day is Sunday. The speaker then confirms that the item is a blue bag. It is also important that the time is at 9:30. The recording adds that the travel method is by bicycle. Listeners should remember that the place is the museum. For your notes, the day is Saturday.",
+      "audioPassage": "You will hear a longer conversation and follow the speakers' plans. For your notes, the day is Sunday. The speaker then confirms that the item is a blue bag. It is also important that the time is at 9:30. The recording adds that the travel method is by bicycle. Listeners should remember that the place is the museum. For your notes, the day is Saturday.",
+      "items": [
+        {
+          "id": "pet_listen_1_p2_q01",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the day mentioned in note 1?",
+          "opts": [
+            "Tuesday",
+            "Wednesday",
+            "Sunday"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the day is Sunday.",
+          "qtype": "b1_listen_p2"
+        },
+        {
+          "id": "pet_listen_1_p2_q02",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the item mentioned in note 2?",
+          "opts": [
+            "a green key",
+            "a blue bag",
+            "a red ticket"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the item is a blue bag.",
+          "qtype": "b1_listen_p2"
+        },
+        {
+          "id": "pet_listen_1_p2_q03",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the time mentioned in note 3?",
+          "opts": [
+            "at 9:30",
+            "at 10:00",
+            "at 10:30"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 9:30.",
+          "qtype": "b1_listen_p2"
+        },
+        {
+          "id": "pet_listen_1_p2_q04",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the travel method mentioned in note 4?",
+          "opts": [
+            "on foot",
+            "by taxi",
+            "by bicycle"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the travel method is by bicycle.",
+          "qtype": "b1_listen_p2"
+        },
+        {
+          "id": "pet_listen_1_p2_q05",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the place mentioned in note 5?",
+          "opts": [
+            "the park",
+            "the museum",
+            "the bookshop"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the place is the museum.",
+          "qtype": "b1_listen_p2"
+        },
+        {
+          "id": "pet_listen_1_p2_q06",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the day mentioned in note 6?",
+          "opts": [
+            "Saturday",
+            "Sunday",
+            "Tuesday"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the day is Saturday.",
+          "qtype": "b1_listen_p2"
+        }
+      ]
+    },
+    {
+      "id": "pet_listen_1_p3",
+      "section": "listening3",
+      "set": "1",
+      "title": "B1 Preliminary Listening Part 3",
+      "passage": "You will hear a short interview and identify the speaker's opinion. For your notes, the item is a blue bag. The speaker then confirms that the time is at 9:30. It is also important that the travel method is by bicycle. The recording adds that the place is the museum. Listeners should remember that the day is Saturday. For your notes, the item is a yellow notebook.",
+      "audioPassage": "You will hear a short interview and identify the speaker's opinion. For your notes, the item is a blue bag. The speaker then confirms that the time is at 9:30. It is also important that the travel method is by bicycle. The recording adds that the place is the museum. Listeners should remember that the day is Saturday. For your notes, the item is a yellow notebook.",
+      "items": [
+        {
+          "id": "pet_listen_1_p3_q01",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the item mentioned in note 1?",
+          "opts": [
+            "a red ticket",
+            "a green key",
+            "a blue bag"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the item is a blue bag.",
+          "qtype": "b1_listen_p3"
+        },
+        {
+          "id": "pet_listen_1_p3_q02",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the time mentioned in note 2?",
+          "opts": [
+            "at 10:30",
+            "at 9:30",
+            "at 10:00"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the time is at 9:30.",
+          "qtype": "b1_listen_p3"
+        },
+        {
+          "id": "pet_listen_1_p3_q03",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the travel method mentioned in note 3?",
+          "opts": [
+            "by bicycle",
+            "on foot",
+            "by taxi"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the travel method is by bicycle.",
+          "qtype": "b1_listen_p3"
+        },
+        {
+          "id": "pet_listen_1_p3_q04",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the place mentioned in note 4?",
+          "opts": [
+            "the bookshop",
+            "the park",
+            "the museum"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the place is the museum.",
+          "qtype": "b1_listen_p3"
+        },
+        {
+          "id": "pet_listen_1_p3_q05",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the day mentioned in note 5?",
+          "opts": [
+            "Tuesday",
+            "Saturday",
+            "Sunday"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the day is Saturday.",
+          "qtype": "b1_listen_p3"
+        },
+        {
+          "id": "pet_listen_1_p3_q06",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the item mentioned in note 6?",
+          "opts": [
+            "a yellow notebook",
+            "a blue bag",
+            "a red ticket"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the item is a yellow notebook.",
+          "qtype": "b1_listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "pet_listen_1_p4",
+      "section": "listening4",
+      "set": "1",
+      "title": "B1 Preliminary Listening Part 4",
+      "passage": "You will hear a short talk and identify its main message. For your notes, the time is at 9:30. The speaker then confirms that the travel method is by bicycle. It is also important that the place is the museum. The recording adds that the day is Saturday. Listeners should remember that the item is a yellow notebook. For your notes, the time is at 9:00.",
+      "audioPassage": "You will hear a short talk and identify its main message. For your notes, the time is at 9:30. The speaker then confirms that the travel method is by bicycle. It is also important that the place is the museum. The recording adds that the day is Saturday. Listeners should remember that the item is a yellow notebook. For your notes, the time is at 9:00.",
+      "items": [
+        {
+          "id": "pet_listen_1_p4_q01",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 10:00",
+            "at 10:30",
+            "at 9:30"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the time is at 9:30.",
+          "qtype": "b1_listen_p4"
+        },
+        {
+          "id": "pet_listen_1_p4_q02",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the travel method mentioned in note 2?",
+          "opts": [
+            "by taxi",
+            "by bicycle",
+            "on foot"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the travel method is by bicycle.",
+          "qtype": "b1_listen_p4"
+        },
+        {
+          "id": "pet_listen_1_p4_q03",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the place mentioned in note 3?",
+          "opts": [
+            "the museum",
+            "the bookshop",
+            "the park"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the museum.",
+          "qtype": "b1_listen_p4"
+        },
+        {
+          "id": "pet_listen_1_p4_q04",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the day mentioned in note 4?",
+          "opts": [
+            "Sunday",
+            "Tuesday",
+            "Saturday"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the day is Saturday.",
+          "qtype": "b1_listen_p4"
+        },
+        {
+          "id": "pet_listen_1_p4_q05",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the item mentioned in note 5?",
+          "opts": [
+            "a red ticket",
+            "a yellow notebook",
+            "a blue bag"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the item is a yellow notebook.",
+          "qtype": "b1_listen_p4"
+        },
+        {
+          "id": "pet_listen_1_p4_q06",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the time mentioned in note 6?",
+          "opts": [
+            "at 9:00",
+            "at 9:30",
+            "at 10:00"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 9:00.",
+          "qtype": "b1_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "pet_listen_2_p1",
+      "section": "listening1",
+      "set": "2",
+      "title": "B1 Preliminary Listening Part 1",
+      "passage": "You will hear short everyday exchanges and identify the key detail. For your notes, the place is the park. The speaker then confirms that the day is Tuesday. It is also important that the item is a red ticket. The recording adds that the time is at 10:00. Listeners should remember that the travel method is on foot. For your notes, the place is the bookshop. The speaker then confirms that the day is Sunday.",
+      "audioPassage": "You will hear short everyday exchanges and identify the key detail. For your notes, the place is the park. The speaker then confirms that the day is Tuesday. It is also important that the item is a red ticket. The recording adds that the time is at 10:00. Listeners should remember that the travel method is on foot. For your notes, the place is the bookshop. The speaker then confirms that the day is Sunday.",
+      "items": [
+        {
+          "id": "pet_listen_2_p1_q01",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the café",
+            "the sports centre",
+            "the park"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the place is the park.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_2_p1_q02",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the day mentioned in note 2?",
+          "opts": [
+            "Thursday",
+            "Tuesday",
+            "Wednesday"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the day is Tuesday.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_2_p1_q03",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the item mentioned in note 3?",
+          "opts": [
+            "a red ticket",
+            "a green key",
+            "a white jacket"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the item is a red ticket.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_2_p1_q04",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the time mentioned in note 4?",
+          "opts": [
+            "at 10:30",
+            "at 11:00",
+            "at 10:00"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the time is at 10:00.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_2_p1_q05",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the travel method mentioned in note 5?",
+          "opts": [
+            "by tram",
+            "on foot",
+            "by taxi"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the travel method is on foot.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_2_p1_q06",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the place mentioned in note 6?",
+          "opts": [
+            "the bookshop",
+            "the park",
+            "the café"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the bookshop.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_2_p1_q07",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the day mentioned in note 7?",
+          "opts": [
+            "Tuesday",
+            "Wednesday",
+            "Sunday"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the day is Sunday.",
+          "qtype": "b1_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "pet_listen_2_p2",
+      "section": "listening2",
+      "set": "2",
+      "title": "B1 Preliminary Listening Part 2",
+      "passage": "You will hear a longer conversation and follow the speakers' plans. For your notes, the day is Tuesday. The speaker then confirms that the item is a red ticket. It is also important that the time is at 10:00. The recording adds that the travel method is on foot. Listeners should remember that the place is the bookshop. For your notes, the day is Sunday.",
+      "audioPassage": "You will hear a longer conversation and follow the speakers' plans. For your notes, the day is Tuesday. The speaker then confirms that the item is a red ticket. It is also important that the time is at 10:00. The recording adds that the travel method is on foot. Listeners should remember that the place is the bookshop. For your notes, the day is Sunday.",
+      "items": [
+        {
+          "id": "pet_listen_2_p2_q01",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the day mentioned in note 1?",
+          "opts": [
+            "Wednesday",
+            "Thursday",
+            "Tuesday"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the day is Tuesday.",
+          "qtype": "b1_listen_p2"
+        },
+        {
+          "id": "pet_listen_2_p2_q02",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the item mentioned in note 2?",
+          "opts": [
+            "a white jacket",
+            "a red ticket",
+            "a green key"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the item is a red ticket.",
+          "qtype": "b1_listen_p2"
+        },
+        {
+          "id": "pet_listen_2_p2_q03",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the time mentioned in note 3?",
+          "opts": [
+            "at 10:00",
+            "at 10:30",
+            "at 11:00"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 10:00.",
+          "qtype": "b1_listen_p2"
+        },
+        {
+          "id": "pet_listen_2_p2_q04",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the travel method mentioned in note 4?",
+          "opts": [
+            "by taxi",
+            "by tram",
+            "on foot"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the travel method is on foot.",
+          "qtype": "b1_listen_p2"
+        },
+        {
+          "id": "pet_listen_2_p2_q05",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the place mentioned in note 5?",
+          "opts": [
+            "the café",
+            "the bookshop",
+            "the park"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the place is the bookshop.",
+          "qtype": "b1_listen_p2"
+        },
+        {
+          "id": "pet_listen_2_p2_q06",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the day mentioned in note 6?",
+          "opts": [
+            "Sunday",
+            "Tuesday",
+            "Wednesday"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the day is Sunday.",
+          "qtype": "b1_listen_p2"
+        }
+      ]
+    },
+    {
+      "id": "pet_listen_2_p3",
+      "section": "listening3",
+      "set": "2",
+      "title": "B1 Preliminary Listening Part 3",
+      "passage": "You will hear a short interview and identify the speaker's opinion. For your notes, the item is a red ticket. The speaker then confirms that the time is at 10:00. It is also important that the travel method is on foot. The recording adds that the place is the bookshop. Listeners should remember that the day is Sunday. For your notes, the item is a blue bag.",
+      "audioPassage": "You will hear a short interview and identify the speaker's opinion. For your notes, the item is a red ticket. The speaker then confirms that the time is at 10:00. It is also important that the travel method is on foot. The recording adds that the place is the bookshop. Listeners should remember that the day is Sunday. For your notes, the item is a blue bag.",
+      "items": [
+        {
+          "id": "pet_listen_2_p3_q01",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the item mentioned in note 1?",
+          "opts": [
+            "a green key",
+            "a white jacket",
+            "a red ticket"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the item is a red ticket.",
+          "qtype": "b1_listen_p3"
+        },
+        {
+          "id": "pet_listen_2_p3_q02",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the time mentioned in note 2?",
+          "opts": [
+            "at 11:00",
+            "at 10:00",
+            "at 10:30"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the time is at 10:00.",
+          "qtype": "b1_listen_p3"
+        },
+        {
+          "id": "pet_listen_2_p3_q03",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the travel method mentioned in note 3?",
+          "opts": [
+            "on foot",
+            "by taxi",
+            "by tram"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the travel method is on foot.",
+          "qtype": "b1_listen_p3"
+        },
+        {
+          "id": "pet_listen_2_p3_q04",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the place mentioned in note 4?",
+          "opts": [
+            "the park",
+            "the café",
+            "the bookshop"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the place is the bookshop.",
+          "qtype": "b1_listen_p3"
+        },
+        {
+          "id": "pet_listen_2_p3_q05",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the day mentioned in note 5?",
+          "opts": [
+            "Wednesday",
+            "Sunday",
+            "Tuesday"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the day is Sunday.",
+          "qtype": "b1_listen_p3"
+        },
+        {
+          "id": "pet_listen_2_p3_q06",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the item mentioned in note 6?",
+          "opts": [
+            "a blue bag",
+            "a red ticket",
+            "a green key"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the item is a blue bag.",
+          "qtype": "b1_listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "pet_listen_2_p4",
+      "section": "listening4",
+      "set": "2",
+      "title": "B1 Preliminary Listening Part 4",
+      "passage": "You will hear a short talk and identify its main message. For your notes, the time is at 10:00. The speaker then confirms that the travel method is on foot. It is also important that the place is the bookshop. The recording adds that the day is Sunday. Listeners should remember that the item is a blue bag. For your notes, the time is at 9:30.",
+      "audioPassage": "You will hear a short talk and identify its main message. For your notes, the time is at 10:00. The speaker then confirms that the travel method is on foot. It is also important that the place is the bookshop. The recording adds that the day is Sunday. Listeners should remember that the item is a blue bag. For your notes, the time is at 9:30.",
+      "items": [
+        {
+          "id": "pet_listen_2_p4_q01",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 10:30",
+            "at 11:00",
+            "at 10:00"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the time is at 10:00.",
+          "qtype": "b1_listen_p4"
+        },
+        {
+          "id": "pet_listen_2_p4_q02",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the travel method mentioned in note 2?",
+          "opts": [
+            "by tram",
+            "on foot",
+            "by taxi"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the travel method is on foot.",
+          "qtype": "b1_listen_p4"
+        },
+        {
+          "id": "pet_listen_2_p4_q03",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the place mentioned in note 3?",
+          "opts": [
+            "the bookshop",
+            "the park",
+            "the café"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the bookshop.",
+          "qtype": "b1_listen_p4"
+        },
+        {
+          "id": "pet_listen_2_p4_q04",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the day mentioned in note 4?",
+          "opts": [
+            "Tuesday",
+            "Wednesday",
+            "Sunday"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the day is Sunday.",
+          "qtype": "b1_listen_p4"
+        },
+        {
+          "id": "pet_listen_2_p4_q05",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the item mentioned in note 5?",
+          "opts": [
+            "a green key",
+            "a blue bag",
+            "a red ticket"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the item is a blue bag.",
+          "qtype": "b1_listen_p4"
+        },
+        {
+          "id": "pet_listen_2_p4_q06",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the time mentioned in note 6?",
+          "opts": [
+            "at 9:30",
+            "at 10:00",
+            "at 10:30"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 9:30.",
+          "qtype": "b1_listen_p4"
+        }
+      ]
+    },
+    {
+      "id": "pet_listen_3_p1",
+      "section": "listening1",
+      "set": "3",
+      "title": "B1 Preliminary Listening Part 1",
+      "passage": "You will hear short everyday exchanges and identify the key detail. For your notes, the place is the café. The speaker then confirms that the day is Wednesday. It is also important that the item is a green key. The recording adds that the time is at 10:30. Listeners should remember that the travel method is by taxi. For your notes, the place is the park. The speaker then confirms that the day is Tuesday.",
+      "audioPassage": "You will hear short everyday exchanges and identify the key detail. For your notes, the place is the café. The speaker then confirms that the day is Wednesday. It is also important that the item is a green key. The recording adds that the time is at 10:30. Listeners should remember that the travel method is by taxi. For your notes, the place is the park. The speaker then confirms that the day is Tuesday.",
+      "items": [
+        {
+          "id": "pet_listen_3_p1_q01",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the place mentioned in note 1?",
+          "opts": [
+            "the sports centre",
+            "the bus station",
+            "the café"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the place is the café.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_3_p1_q02",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the day mentioned in note 2?",
+          "opts": [
+            "Friday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the day is Wednesday.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_3_p1_q03",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the item mentioned in note 3?",
+          "opts": [
+            "a green key",
+            "a white jacket",
+            "a black umbrella"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the item is a green key.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_3_p1_q04",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the time mentioned in note 4?",
+          "opts": [
+            "at 11:00",
+            "at 11:30",
+            "at 10:30"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the time is at 10:30.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_3_p1_q05",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the travel method mentioned in note 5?",
+          "opts": [
+            "by train",
+            "by taxi",
+            "by tram"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the travel method is by taxi.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_3_p1_q06",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the place mentioned in note 6?",
+          "opts": [
+            "the park",
+            "the café",
+            "the sports centre"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the park.",
+          "qtype": "b1_listen_p1"
+        },
+        {
+          "id": "pet_listen_3_p1_q07",
+          "section": "listening1",
+          "level": 3,
+          "stem": "What is the day mentioned in note 7?",
+          "opts": [
+            "Wednesday",
+            "Thursday",
+            "Tuesday"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the day is Tuesday.",
+          "qtype": "b1_listen_p1"
+        }
+      ]
+    },
+    {
+      "id": "pet_listen_3_p2",
+      "section": "listening2",
+      "set": "3",
+      "title": "B1 Preliminary Listening Part 2",
+      "passage": "You will hear a longer conversation and follow the speakers' plans. For your notes, the day is Wednesday. The speaker then confirms that the item is a green key. It is also important that the time is at 10:30. The recording adds that the travel method is by taxi. Listeners should remember that the place is the park. For your notes, the day is Tuesday.",
+      "audioPassage": "You will hear a longer conversation and follow the speakers' plans. For your notes, the day is Wednesday. The speaker then confirms that the item is a green key. It is also important that the time is at 10:30. The recording adds that the travel method is by taxi. Listeners should remember that the place is the park. For your notes, the day is Tuesday.",
+      "items": [
+        {
+          "id": "pet_listen_3_p2_q01",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the day mentioned in note 1?",
+          "opts": [
+            "Thursday",
+            "Friday",
+            "Wednesday"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the day is Wednesday.",
+          "qtype": "b1_listen_p2"
+        },
+        {
+          "id": "pet_listen_3_p2_q02",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the item mentioned in note 2?",
+          "opts": [
+            "a black umbrella",
+            "a green key",
+            "a white jacket"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the item is a green key.",
+          "qtype": "b1_listen_p2"
+        },
+        {
+          "id": "pet_listen_3_p2_q03",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the time mentioned in note 3?",
+          "opts": [
+            "at 10:30",
+            "at 11:00",
+            "at 11:30"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 10:30.",
+          "qtype": "b1_listen_p2"
+        },
+        {
+          "id": "pet_listen_3_p2_q04",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the travel method mentioned in note 4?",
+          "opts": [
+            "by tram",
+            "by train",
+            "by taxi"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the travel method is by taxi.",
+          "qtype": "b1_listen_p2"
+        },
+        {
+          "id": "pet_listen_3_p2_q05",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the place mentioned in note 5?",
+          "opts": [
+            "the sports centre",
+            "the park",
+            "the café"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the place is the park.",
+          "qtype": "b1_listen_p2"
+        },
+        {
+          "id": "pet_listen_3_p2_q06",
+          "section": "listening2",
+          "level": 3,
+          "stem": "What is the day mentioned in note 6?",
+          "opts": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the day is Tuesday.",
+          "qtype": "b1_listen_p2"
+        }
+      ]
+    },
+    {
+      "id": "pet_listen_3_p3",
+      "section": "listening3",
+      "set": "3",
+      "title": "B1 Preliminary Listening Part 3",
+      "passage": "You will hear a short interview and identify the speaker's opinion. For your notes, the item is a green key. The speaker then confirms that the time is at 10:30. It is also important that the travel method is by taxi. The recording adds that the place is the park. Listeners should remember that the day is Tuesday. For your notes, the item is a red ticket.",
+      "audioPassage": "You will hear a short interview and identify the speaker's opinion. For your notes, the item is a green key. The speaker then confirms that the time is at 10:30. It is also important that the travel method is by taxi. The recording adds that the place is the park. Listeners should remember that the day is Tuesday. For your notes, the item is a red ticket.",
+      "items": [
+        {
+          "id": "pet_listen_3_p3_q01",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the item mentioned in note 1?",
+          "opts": [
+            "a white jacket",
+            "a black umbrella",
+            "a green key"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the item is a green key.",
+          "qtype": "b1_listen_p3"
+        },
+        {
+          "id": "pet_listen_3_p3_q02",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the time mentioned in note 2?",
+          "opts": [
+            "at 11:30",
+            "at 10:30",
+            "at 11:00"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the time is at 10:30.",
+          "qtype": "b1_listen_p3"
+        },
+        {
+          "id": "pet_listen_3_p3_q03",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the travel method mentioned in note 3?",
+          "opts": [
+            "by taxi",
+            "by tram",
+            "by train"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the travel method is by taxi.",
+          "qtype": "b1_listen_p3"
+        },
+        {
+          "id": "pet_listen_3_p3_q04",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the place mentioned in note 4?",
+          "opts": [
+            "the café",
+            "the sports centre",
+            "the park"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the place is the park.",
+          "qtype": "b1_listen_p3"
+        },
+        {
+          "id": "pet_listen_3_p3_q05",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the day mentioned in note 5?",
+          "opts": [
+            "Thursday",
+            "Tuesday",
+            "Wednesday"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the day is Tuesday.",
+          "qtype": "b1_listen_p3"
+        },
+        {
+          "id": "pet_listen_3_p3_q06",
+          "section": "listening3",
+          "level": 3,
+          "stem": "What is the item mentioned in note 6?",
+          "opts": [
+            "a red ticket",
+            "a green key",
+            "a white jacket"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the item is a red ticket.",
+          "qtype": "b1_listen_p3"
+        }
+      ]
+    },
+    {
+      "id": "pet_listen_3_p4",
+      "section": "listening4",
+      "set": "3",
+      "title": "B1 Preliminary Listening Part 4",
+      "passage": "You will hear a short talk and identify its main message. For your notes, the time is at 10:30. The speaker then confirms that the travel method is by taxi. It is also important that the place is the park. The recording adds that the day is Tuesday. Listeners should remember that the item is a red ticket. For your notes, the time is at 10:00.",
+      "audioPassage": "You will hear a short talk and identify its main message. For your notes, the time is at 10:30. The speaker then confirms that the travel method is by taxi. It is also important that the place is the park. The recording adds that the day is Tuesday. Listeners should remember that the item is a red ticket. For your notes, the time is at 10:00.",
+      "items": [
+        {
+          "id": "pet_listen_3_p4_q01",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the time mentioned in note 1?",
+          "opts": [
+            "at 11:00",
+            "at 11:30",
+            "at 10:30"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the time is at 10:30.",
+          "qtype": "b1_listen_p4"
+        },
+        {
+          "id": "pet_listen_3_p4_q02",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the travel method mentioned in note 2?",
+          "opts": [
+            "by train",
+            "by taxi",
+            "by tram"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the travel method is by taxi.",
+          "qtype": "b1_listen_p4"
+        },
+        {
+          "id": "pet_listen_3_p4_q03",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the place mentioned in note 3?",
+          "opts": [
+            "the park",
+            "the café",
+            "the sports centre"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the place is the park.",
+          "qtype": "b1_listen_p4"
+        },
+        {
+          "id": "pet_listen_3_p4_q04",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the day mentioned in note 4?",
+          "opts": [
+            "Wednesday",
+            "Thursday",
+            "Tuesday"
+          ],
+          "ans": 2,
+          "expl": "The recording states that the day is Tuesday.",
+          "qtype": "b1_listen_p4"
+        },
+        {
+          "id": "pet_listen_3_p4_q05",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the item mentioned in note 5?",
+          "opts": [
+            "a white jacket",
+            "a red ticket",
+            "a green key"
+          ],
+          "ans": 1,
+          "expl": "The recording states that the item is a red ticket.",
+          "qtype": "b1_listen_p4"
+        },
+        {
+          "id": "pet_listen_3_p4_q06",
+          "section": "listening4",
+          "level": 3,
+          "stem": "What is the time mentioned in note 6?",
+          "opts": [
+            "at 10:00",
+            "at 10:30",
+            "at 11:00"
+          ],
+          "ans": 0,
+          "expl": "The recording states that the time is at 10:00.",
+          "qtype": "b1_listen_p4"
+        }
+      ]
+    }
+  ]
+}

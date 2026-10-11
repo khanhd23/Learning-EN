@@ -21,6 +21,48 @@ E("She [had] [went] to bed [before] I [called].", 1, "gone", "had + V3: go → g
 O("I had never seen snow before I went to Japan.", "Tôi chưa từng thấy tuyết trước khi đến Nhật.")
 O("By the time we arrived, the party had ended.", "Lúc chúng tôi đến thì bữa tiệc đã kết thúc.")
 
+point("past_perfect_continuous", 4, "Thì quá khứ hoàn thành tiếp diễn", "S + had been + V-ing",
+      "Diễn tả hành động đã kéo dài liên tục trước một thời điểm hoặc hành động khác trong quá khứ.",
+      "Dùng had been + V-ing để nhấn mạnh quá trình và thời lượng trước mốc quá khứ. Với hành động hoàn tất và nhấn mạnh kết quả, dùng past perfect đơn: She had written three pages before lunch.",
+      ["for", "since", "before", "by the time", "all morning"],
+      [("They had been waiting for an hour when the bus arrived.", "Họ đã chờ một giờ khi xe buýt đến.", "had been waiting"),
+       ("He was tired because he had been running.", "Anh ấy mệt vì đã chạy bộ.", "had been running"),
+       ("She had been working there for five years before she moved.", "Cô ấy đã làm ở đó năm năm trước khi chuyển đi.", "had been working")],
+      [("We had been wait for two hours before help came.", "We had been waiting for two hours before help came.", "had been + V-ing."),
+       ("He had been know her for years.", "He had known her for years.", "know là động từ trạng thái, dùng past perfect đơn.")],
+      tags=["tense"], exam=True)
+C("The ground was wet because it ___ all night.", ["had been raining", "rained", "has rained", "was rain"], "Mưa kéo dài trước một mốc quá khứ → had been raining.")
+C("She was exhausted because she ___ all day.", ["had been travelling", "travelled", "has travelled", "was travel"], "All day trước trạng thái quá khứ → had been travelling.")
+C("They ___ for thirty minutes when the doctor called them in.", ["had been waiting", "waited", "have waited", "were wait"], "Hành động kéo dài trước mốc quá khứ → had been waiting.")
+C("How long ___ he been working there before he resigned?", ["had", "has", "did", "was"], "Câu hỏi past perfect continuous: How long had he been working...? ")
+C("I had a headache because I ___ at the screen for hours.", ["had been staring", "stared", "have stared", "was stare"], "Nguyên nhân kéo dài trước đó → had been staring.")
+C("By noon, the children ___ in the garden since breakfast.", ["had been playing", "played", "have played", "were play"], "Since breakfast trước mốc quá khứ → had been playing.")
+E("They [had] [been] [wait] [when] the train arrived.", 2, "waiting", "had been + V-ing.")
+E("She [had] [been] [work] [there] for years.", 2, "working", "had been + V-ing.")
+T("The workers started repairing the road at dawn and stopped at noon.", ["The workers had been repairing the road all morning.", "The workers repaired since dawn.", "The workers had repair all morning.", "The workers were repaired the road."], "Hành động kéo dài trước mốc quá khứ → had been repairing.")
+O("They had been studying for three hours when the power went out.", "Họ đã học được ba giờ thì mất điện.")
+
+point("future_perfect", 4, "Thì tương lai hoàn thành", "S + will have + V3",
+      "Diễn tả hành động sẽ hoàn tất trước một thời điểm hoặc hành động khác trong tương lai.",
+      "Dùng will have + V3. Thường đi với by, by the time, before và mốc tương lai: By Friday, we will have finished the project. Mốc kết thúc ở tương lai quyết định thì, không dùng will ở mệnh đề thời gian bắt đầu bằng when hoặc by the time.",
+      ["by", "by the time", "before", "by next year", "by Friday"],
+      [("By Friday, I will have finished the report.", "Đến thứ Sáu, tôi sẽ hoàn thành báo cáo.", "will have finished"),
+       ("She will have left by the time you arrive.", "Cô ấy sẽ đã rời đi trước khi bạn đến.", "will have left"),
+       ("By next year, they will have built the bridge.", "Đến năm sau, họ sẽ xây xong cây cầu.", "will have built")],
+      [("By Friday, I will have finish the report.", "By Friday, I will have finished the report.", "will have + V3."),
+       ("When he will arrive, we will have eaten.", "When he arrives, we will have eaten.", "Mệnh đề thời gian tương lai dùng hiện tại đơn.")],
+      tags=["tense"], exam=True)
+C("By the end of this month, we ___ the course.", ["will have completed", "complete", "will complete", "have completing"], "By + mốc tương lai và hoàn tất trước mốc đó → will have completed.")
+C("She ___ the book by tomorrow evening.", ["will have read", "reads", "will reading", "has read"], "By tomorrow evening → will have read.")
+C("By the time the guests arrive, we ___ dinner.", ["will have prepared", "prepare", "will preparing", "prepared"], "Hành động hoàn tất trước mốc tương lai → will have prepared.")
+C("How many emails ___ you have answered by noon?", ["will", "have", "do", "are"], "Câu hỏi tương lai hoàn thành: will you have answered...? ")
+C("The train ___ before we reach the station.", ["will have departed", "departs", "will departing", "has depart"], "Trước một mốc tương lai → will have departed.")
+C("By 2030, the city ___ a new airport.", ["will have built", "builds", "will building", "has built"], "By 2030 → will have built.")
+E("By next week, she [will] [have] [finish] [the project].", 2, "finished", "will have + V3.")
+E("When you arrive, I [will] [have] [leave] [the office].", 2, "left", "Sau will have dùng V3: left.")
+T("We plan to complete the work before Monday.", ["By Monday, we will have completed the work.", "By Monday, we will completed the work.", "By Monday, we complete have work.", "By Monday, we will have completing the work."], "Hoàn tất trước mốc tương lai → will have completed.")
+O("By the time you wake up, I will have left.", "Khi bạn thức dậy thì tôi đã rời đi rồi.")
+
 point("conditional3", 4, "Câu điều kiện loại 3 và hỗn hợp", "If + had + V3, would have + V3 · Hỗn hợp: If + had + V3, would + V (now)",
       "Giả định trái với quá khứ (tiếc nuối), và giả định quá khứ ảnh hưởng hiện tại.",
       "Loại 3: điều đã không xảy ra trong quá khứ (If I had studied, I would have passed). Hỗn hợp: điều kiện quá khứ → kết quả hiện tại (If I had taken that job, I would be rich now). Đảo ngữ trang trọng: Had I known = If I had known.",

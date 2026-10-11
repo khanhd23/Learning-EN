@@ -213,6 +213,7 @@ class ExamEngineTest {
         val builder = SessionBuilder(content, { null }, { emptyList() }, { emptyList() })
         val exercise = builder.examType("Part 1", "toeic_p1_practice_1", null, 3, 1).exercises.single() as Exercise.Choice
         assertTrue(exercise.audioOptions)
+        assertTrue(exercise.hideAudioOptionText)
         assertEquals(listOf("A sentence", "B sentence", "C sentence", "D sentence"), exercise.options)
     }
 
@@ -239,6 +240,24 @@ class ExamEngineTest {
         assertEquals("Man: What are they discussing? What are they discussing?", exercise.audioPrompt)
     }
 
+    @Test fun partThreeFullPracticeSelectsThirteenConversationsAndThirtyNineQuestions() {
+        val groups = (1..13).map { conversation ->
+            ExamGroup("p3_example_${conversation.toString().padStart(3, '0')}", "p3", "Conversation $conversation", "Conversation", (1..3).map { question ->
+                ExamItem("p3_example_${conversation.toString().padStart(3, '0')}_q$question", "p3", 2,
+                    "Question $conversation-$question", listOf("A", "B", "C", "D"), 0, "Explanation", "listen_p3")
+            }, "examples", "Speaker: Conversation $conversation.")
+        }
+        val format = ExamFormat("toeic_p3_examples", "Part 3", "TOEIC-style practice", "", 39, null, 39, null,
+            listOf(ExamSection("p3", "Part 3 conversations", "group", 39, emptyList(), listOf("listen_p3"), "toeic_p3", "examples")))
+
+        val picked = SectionedExamBuilder.build(format, mapOf("toeic_p3" to ExamBank(emptyList(), groups)), kotlin.random.Random(7))
+
+        assertEquals(39, picked.size)
+        assertEquals(13, picked.mapNotNull { it.group?.id }.distinct().size)
+        assertEquals(3, picked.groupingBy { it.group?.id }.eachCount().values.distinct().single())
+        assertTrue(picked.all { it.item.qtype == "listen_p3" })
+    }
+
     @Test fun partFourPracticeReadsEnglishTalkAndQuestion() {
         val p4 = ExamBank(emptyList(), listOf(ExamGroup("p4_1", "p4", "Bản dịch bài nói", "Bài nói", listOf(
             ExamItem("p4_1_q1", "p4", 2, "When will it begin?", listOf("A", "B", "C", "D"), 1, "Explanation", "listen_p4")
@@ -248,6 +267,24 @@ class ExamEngineTest {
         val exercise = builder.examType("Part 4", "toeic_p4_examples", null, 3, 1).exercises.single() as Exercise.Choice
         assertTrue(exercise.audioOptions)
         assertEquals("The talk begins at noon. When will it begin?", exercise.audioPrompt)
+    }
+
+    @Test fun partFourFullPracticeSelectsTenTalksAndThirtyQuestions() {
+        val groups = (1..10).map { talk ->
+            ExamGroup("p4_example_${talk.toString().padStart(3, '0')}", "p4", "Talk $talk", "Talk", (1..3).map { question ->
+                ExamItem("p4_example_${talk.toString().padStart(3, '0')}_q$question", "p4", 2,
+                    "Question $talk-$question", listOf("A", "B", "C", "D"), 0, "Explanation", "listen_p4")
+            }, "examples", "Speaker: Talk $talk.")
+        }
+        val format = ExamFormat("toeic_p4_examples", "Part 4", "TOEIC-style practice", "", 30, null, 30, null,
+            listOf(ExamSection("p4", "Part 4 talks", "group", 30, emptyList(), listOf("listen_p4"), "toeic_p4", "examples")))
+
+        val picked = SectionedExamBuilder.build(format, mapOf("toeic_p4" to ExamBank(emptyList(), groups)), kotlin.random.Random(7))
+
+        assertEquals(30, picked.size)
+        assertEquals(10, picked.mapNotNull { it.group?.id }.distinct().size)
+        assertEquals(3, picked.groupingBy { it.group?.id }.eachCount().values.distinct().single())
+        assertTrue(picked.all { it.item.qtype == "listen_p4" })
     }
 
     @Test fun partSevenPracticeCanFilterByPassageType() {

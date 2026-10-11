@@ -94,7 +94,7 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
         scroll.addView(content)
         root.addView(scroll)
         val bar = Kit.hbox(c) { setPadding(c.dpi(12), c.dpi(8), c.dpi(12), c.dpi(14)) }
-        prev = Kit.secondary(c, "‹ " + str(R.string.prev), 0) { go(test.current - 1) }.apply { layoutParams = lp(0, c.dpi(52), 1f) }
+        prev = Kit.secondary(c, "‹ " + str(R.string.prev), 0) { go(previousPageIndex(test.current)) }.apply { layoutParams = lp(0, c.dpi(52), 1f) }
         flagBtn = ImageView(c).apply {
             setImageResource(R.drawable.ic_flag); setBackgroundResource(R.drawable.ripple_circle)
             val p = c.dpi(14); setPadding(p, p, p, p); contentDescription = str(R.string.flag)
@@ -107,7 +107,10 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
             layoutParams = LinearLayout.LayoutParams(c.dpi(52), c.dpi(52)).apply { marginEnd = c.dpi(6) }
             setOnClickListener { showPalette() }
         }
-        next = Kit.primary(c, str(R.string.next) + " ›", 0) { if (test.current >= test.keys.lastIndex) confirmSubmit() else go(test.current + 1) }.apply { layoutParams = lp(0, c.dpi(52), 1f) }
+        next = Kit.primary(c, str(R.string.next) + " ›", 0) {
+            val target = nextPageIndex(test.current)
+            if (target < 0) confirmSubmit() else go(target)
+        }.apply { layoutParams = lp(0, c.dpi(52), 1f) }
         bar.addView(prev); bar.addView(flagBtn); bar.addView(palette); bar.addView(next)
         root.addView(bar)
         return root
@@ -132,12 +135,47 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
 
     private fun go(i: Int) {
         if (i !in test.keys.indices) return
-        test.current = i
+        test.current = pageStart(i)
         save()
         render()
     }
 
     private fun paintFlag() { flagBtn.tintRes(if (test.flags[test.current]) R.color.accent else R.color.muted) }
+
+    private fun isGroupedListening(index: Int): Boolean =
+        exercises.getOrNull(index) is Exercise.Choice &&
+            (exercises[index] as Exercise.Choice).tags.any { it == "listening" } &&
+            (exercises[index] as Exercise.Choice).sharedGroupId != null
+
+    private fun listeningGroupStart(index: Int): Int {
+        if (!isGroupedListening(index)) return index
+        val groupId = (exercises[index] as Exercise.Choice).sharedGroupId ?: return index
+        var start = index
+        while (start > 0 && isGroupedListening(start - 1) && (exercises[start - 1] as? Exercise.Choice)?.sharedGroupId == groupId) start--
+        return start
+    }
+
+    private fun listeningGroupEnd(index: Int): Int {
+        if (!isGroupedListening(index)) return index
+        val groupId = (exercises[index] as Exercise.Choice).sharedGroupId ?: return index
+        var end = index
+        while (end + 1 < exercises.size && isGroupedListening(end + 1) && (exercises[end + 1] as? Exercise.Choice)?.sharedGroupId == groupId) end++
+        return end
+    }
+
+    private fun pageStart(index: Int): Int = listeningGroupStart(index.coerceIn(0, test.keys.lastIndex))
+
+    private fun previousPageIndex(index: Int): Int {
+        val start = pageStart(index)
+        if (start <= 0) return -1
+        return pageStart(start - 1)
+    }
+
+    private fun nextPageIndex(index: Int): Int {
+        val start = pageStart(index)
+        val end = listeningGroupEnd(start)
+        return if (end >= test.keys.lastIndex) -1 else pageStart(end + 1)
+    }
 
     private fun toeicSceneImage(resourceName: String): ImageView? {
         val id = ctx.resources.getIdentifier(resourceName, "drawable", ctx.packageName)
@@ -154,10 +192,14 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
 
     private fun render() {
         val c = ctx
-        val i = test.current
-        counter.text = "${i + 1}/${test.keys.size}"
-        prev.isEnabled = i > 0; prev.alpha = if (i > 0) 1f else 0.4f
-        next.text = if (i >= test.keys.lastIndex) str(R.string.submit) else str(R.string.next) + " ›"
+        val i = pageStart(test.current)
+        test.current = i
+        val groupEnd = listeningGroupEnd(i)
+        counter.text = if (groupEnd > i) "${i + 1}-${groupEnd + 1}/${test.keys.size}" else "${i + 1}/${test.keys.size}"
+        val previous = previousPageIndex(i)
+        val following = nextPageIndex(i)
+        prev.isEnabled = previous >= 0; prev.alpha = if (previous >= 0) 1f else 0.4f
+        next.text = if (following < 0) str(R.string.submit) else str(R.string.next) + " ›"
         paintFlag()
         content.removeAllViews()
         scroll.scrollTo(0, 0)
@@ -166,18 +208,24 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
         if (sectionIndex >= 0 && (i == 0 || test.sectionIds.getOrNull(i - 1) != test.sectionIds.getOrNull(i))) {
             content.addView(Kit.text(c, str(R.string.section_n, sectionIndex + 1, test.sectionLabels.size, test.sectionLabels[sectionIndex].second), R.style.Text_Caption).margins(c, top = 4, bottom = 8))
         }
+        if (isGroupedListening(i)) {
+            renderListeningGroup(i, groupEnd)
+            content.staggerChildren(25)
+            return
+        }
         val shared = when (ex) {
             is Exercise.Choice -> SharedScene(ex.sharedGroupId, ex.sharedPassageTitle, ex.sharedPassage, ex.sharedImage)
             is Exercise.ExamText -> SharedScene(ex.sharedGroupId, ex.sharedPassageTitle, ex.sharedPassage, null)
             else -> null
         }
-        if (shared?.id != null && shared.passage != null) {
+        val hideAudioTranscript = ex is Exercise.Choice && ex.tags.any { it == "listening" }
+        if ((!hideAudioTranscript || shared?.image != null) && shared?.id != null && shared.passage != null) {
             val groupId = shared.id
             if (shared.image != null) {
                 content.addView(Kit.card(c, 14, 10, c.col(R.color.surface_variant), null) {
                     val image = shared.image.let(::toeicSceneImage)
                     if (image != null) addView(image)
-                    else addView(Kit.text(c, (shared.title?.let { "$it\n\n" } ?: "") + shared.passage, R.style.Text_Body))
+                    else if (!hideAudioTranscript) addView(Kit.text(c, (shared.title?.let { "$it\n\n" } ?: "") + shared.passage, R.style.Text_Body))
                 }.margins(c, top = 6, bottom = 8))
             } else {
                 // Open the first time the group appears; after that it stays as the learner left it
@@ -215,7 +263,15 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
                         content.addView(stemView)
                     }
                 }
-                val cards = ex.options.mapIndexed { j, o -> OptionCard(c, j, if (ex.optionsMarked) Spans.underline(o) else o) }
+                // TOEIC Listening Part 1 presents picture statements as audio only.
+                // Keep the answer choices selectable, but never reveal their text before
+                // the learner answers; this also covers the full-test MockScreen path.
+                val hideAudioAnswerText = ex.hideAudioOptionText ||
+                    ex.key.startsWith("exam:toeic_p1:") ||
+                    ex.tags.any { it == "section_p1" || it == "listen_p1" }
+                val cards = ex.options.mapIndexed { j, o ->
+                    OptionCard(c, j, if (ex.optionsMarked) Spans.underline(o) else o, showText = !hideAudioAnswerText)
+                }
                 val box = Kit.vbox(c).margins(c, top = 14)
                 cards.forEachIndexed { j, card ->
                     if (test.answers[i] == j) card.setState(OptionCard.State.SELECTED)
@@ -279,6 +335,80 @@ class MockScreen(activity: MainActivity, private val test: MockTest) : Screen(ac
             else -> content.addView(Kit.text(c, "—"))
         }
         content.staggerChildren(25)
+    }
+
+    /** Keep one recording and its questions on one answer page for every grouped listening part. */
+    private fun renderListeningGroup(start: Int, end: Int) {
+        val c = ctx
+        val questions = (start..end).mapNotNull { exercises[it] as? Exercise.Choice }
+        val questionViews = ArrayList<TextView>()
+        val optionCards = ArrayList<List<OptionCard>>()
+        content.addView(Kit.text(c, str(R.string.ins_listen), R.style.Text_Caption))
+        content.addView(Kit.secondary(c, str(R.string.listen), 4) { playListeningGroup(start, end, false, questionViews, optionCards) }.margins(c, top = 8))
+        content.addView(Kit.secondary(c, str(R.string.play_slow), 4) { playListeningGroup(start, end, true, questionViews, optionCards) }.margins(c, top = 2))
+        questions.forEachIndexed { offset, ex ->
+            val index = start + offset
+            val q = Kit.text(c, "${index + 1}. ${ex.stem}", R.style.Text_Question).margins(c, top = 18)
+            questionViews += q
+            content.addView(q)
+            val hideAudioAnswerText = ex.hideAudioOptionText || ex.tags.any { it == "section_p1" || it == "listen_p1" }
+            val cards = ex.options.mapIndexed { j, option -> OptionCard(c, j, option, showText = !hideAudioAnswerText) }
+            optionCards += cards
+            val box = Kit.vbox(c).margins(c, top = 10)
+            cards.forEachIndexed { j, card ->
+                if (test.answers[index] == j) card.setState(OptionCard.State.SELECTED)
+                card.view.onTap {
+                    test.answers[index] = j
+                    cards.forEachIndexed { k, other -> other.setState(if (k == j) OptionCard.State.SELECTED else OptionCard.State.DEFAULT) }
+                    save()
+                }
+                box.addView(card.view)
+            }
+            content.addView(box)
+        }
+        content.post { playListeningGroup(start, end, false, questionViews, optionCards) }
+    }
+
+    private fun playListeningGroup(
+        start: Int,
+        end: Int,
+        slower: Boolean,
+        questionViews: List<TextView> = emptyList(),
+        optionCards: List<List<OptionCard>> = emptyList(),
+    ) {
+        val first = exercises[start] as? Exercise.Choice ?: return
+        val dialogue = first.sharedPassage?.takeIf { it.isNotBlank() } ?: first.audioPrompt.orEmpty()
+        val questions = (start..end).mapNotNull { exercises[it] as? Exercise.Choice }
+        // TOEIC Parts 2–4 are the only formats in this screen whose listening
+        // flow reads the question/options after the recording. For the other
+        // exams the questions are printed material; reading them through TTS
+        // would no longer match the real test and can expose answer text as
+        // audio before the learner answers. Part 1 is recording-only as well.
+        val speakQuestions = questions.any { question ->
+            question.tags.any { it == "section_p2" || it == "section_p3" || it == "section_p4" }
+        }
+        val chunks = if (!speakQuestions) {
+            listOf(dialogue)
+        } else {
+            listOf(dialogue) + questions.mapIndexed { offset, ex ->
+                val number = start + offset + 1
+                "Question $number. ${ex.stem} " + ex.options.mapIndexed { j, option -> "${('A'.code + j).toChar()}. $option" }.joinToString(" ")
+            }
+        }
+        services.tts.speakSequence(chunks, slower, gapMs = 1500L) { chunk ->
+            val active = chunk - 1
+            questionViews.forEachIndexed { i, view -> view.setTextColor(ctx.col(if (i == active) R.color.primary else R.color.on_surface)) }
+            optionCards.forEachIndexed { i, cards ->
+                val selected = test.answers[start + i]
+                cards.forEachIndexed { j, card ->
+                    card.setState(when {
+                        i == active && selected < 0 -> OptionCard.State.PLAYING
+                        j == selected -> OptionCard.State.SELECTED
+                        else -> OptionCard.State.DEFAULT
+                    })
+                }
+            }
+        }
     }
 
     /** Palette sheet: grid of question numbers (answered / flagged / blank) + submit. */
@@ -451,6 +581,9 @@ class MockResultScreen(
         val chips = Kit.hbox(c)
         listOf(R.string.rv_wrong, R.string.rv_flagged, R.string.f_all).forEachIndexed { i, l -> chips.addView(Kit.chip(c, str(l), reviewFilter == i) { reviewFilter = i; refresh() }) }
         body.addView(Kit.hscroll(c, chips))
+        val evidenceColors = listOf(c.col(R.color.primary), c.col(R.color.accent), c.col(R.color.success))
+        val evidenceBackgrounds = listOf(c.col(R.color.primary_container), c.col(R.color.accent_container), c.col(R.color.success_container))
+        val shownListeningGroups = mutableSetOf<String>()
         exercises.forEachIndexed { k, ex ->
             ex ?: return@forEachIndexed
             val ans = answerOf(ex)
@@ -462,17 +595,47 @@ class MockResultScreen(
                 is Exercise.ExamText -> SharedScene(ex.sharedGroupId, ex.sharedPassageTitle, ex.sharedPassage, null)
                 else -> null
             }
-            if (shared?.id != null && shared.passage != null && exercises.take(k).none {
+            val listeningReview = ex is Exercise.Choice && ex.tags.any { it == "listening" }
+            val groupId = shared?.id
+            val listeningGroupQuestions = if (listeningReview && groupId != null) {
+                exercises.mapNotNull { it as? Exercise.Choice }.filter {
+                    it.sharedGroupId == groupId && it.tags.any { tag -> tag == "listening" }
+                }
+            } else emptyList()
+            val listeningQuestionIndex = if (listeningReview) {
+                listeningGroupQuestions.indexOfFirst { it.key == ex.key }.coerceAtLeast(0)
+            } else 0
+            val showListeningTranscript = listeningReview && groupId?.let { shownListeningGroups.add(it) } == true
+            val showRegularTranscript = !listeningReview && groupId != null && exercises.take(k).none {
                     when (it) {
-                        is Exercise.Choice -> it.sharedGroupId == shared.id
-                        is Exercise.ExamText -> it.sharedGroupId == shared.id
+                        is Exercise.Choice -> it.sharedGroupId == groupId
+                        is Exercise.ExamText -> it.sharedGroupId == groupId
                         else -> false
                     }
-                }) {
+                }
+            if ((showListeningTranscript || showRegularTranscript) && shared?.id != null && shared.passage != null) {
                 body.addView(Kit.card(c, 14, 10, c.col(R.color.surface_variant), null) {
                     val image = shared.image?.let(::toeicSceneImage)
                     if (image != null) addView(image)
-                    else addView(Kit.text(c, (shared.title?.let { "$it\n\n" } ?: "") + shared.passage, R.style.Text_Body))
+                    else if (listeningReview) {
+                        shared.title?.let { addView(Kit.text(c, it, R.style.Text_BodyStrong)) }
+                        val evidenceParts = listeningGroupQuestions.mapNotNull { it.evidence?.takeIf(String::isNotBlank) }
+                        if (evidenceParts.isNotEmpty()) {
+                            val legend = Kit.hbox(c).margins(c, top = 6, bottom = 6)
+                            evidenceParts.forEachIndexed { index, _ ->
+                                val marker = Kit.text(c, "Q${index + 1}", R.style.Text_Caption, evidenceColors[index % evidenceColors.size]).apply {
+                                    background = c.rounded(evidenceBackgrounds[index % evidenceBackgrounds.size], 8f)
+                                    setPadding(c.dpi(8), c.dpi(4), c.dpi(8), c.dpi(4))
+                                    layoutParams = LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT).apply { marginEnd = c.dpi(6) }
+                                }
+                                legend.addView(marker)
+                            }
+                            addView(legend)
+                            addView(Kit.text(c, Spans.highlightParts(shared.passage, evidenceParts, evidenceColors, evidenceBackgrounds), R.style.Text_Body))
+                        } else {
+                            addView(Kit.text(c, shared.passage, R.style.Text_Body))
+                        }
+                    } else addView(Kit.text(c, (shared.title?.let { "$it\n\n" } ?: "") + shared.passage, R.style.Text_Body))
                 })
             }
             val (stem, opts, expl) = when (ex) {
@@ -495,6 +658,12 @@ class MockResultScreen(
                     addView(Kit.text(c, "✓ " + opts.getOrElse(ans) { "" }.replace("[", "").replace("]", ""), R.style.Text_BodyStrong, c.col(R.color.success)).margins(c, top = 2))
                 }
                 if (expl.isNotBlank()) addView(Kit.text(c, expl, R.style.Text_Caption).margins(c, top = 4))
+                val evidence = (ex as? Exercise.Choice)?.evidence
+                if (listeningReview && evidence?.isNotBlank() == true) {
+                    addView(Kit.text(c, str(R.string.audio_evidence), R.style.Text_Caption).margins(c, top = 10))
+                    val colorIndex = listeningQuestionIndex % evidenceColors.size
+                    addView(Kit.text(c, Spans.highlight(evidence, evidence, evidenceColors[colorIndex], evidenceBackgrounds[colorIndex]), R.style.Text_Body).margins(c, top = 3))
+                }
                 addView(Kit.secondary(c, str(R.string.report_mistake), 8) { report(ex.key) }.margins(c, top = 8))
             })
         }

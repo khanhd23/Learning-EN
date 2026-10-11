@@ -28,6 +28,48 @@ T("This is the first time I have eaten sushi.", ["I have never eaten sushi befor
 O("Have you ever been to Japan?", "Bạn đã từng đến Nhật chưa?")
 O("I have just finished my homework.", "Tôi vừa làm xong bài tập.")
 
+point("present_perfect_continuous", 3, "Thì hiện tại hoàn thành tiếp diễn", "S + have/has been + V-ing",
+      "Diễn tả hành động bắt đầu trong quá khứ và vẫn đang tiếp diễn, hoặc vừa kết thúc nhưng còn dấu hiệu ở hiện tại.",
+      "Dùng have/has been + V-ing với since và for để nhấn mạnh quá trình hoặc thời lượng. Dùng present perfect đơn khi nhấn mạnh kết quả hoặc với động từ trạng thái: I have known her for years.",
+      ["since", "for", "all morning", "lately", "recently"],
+      [("I have been studying for two hours.", "Tôi đã học được hai giờ rồi.", "have been studying"),
+       ("She has been working here since May.", "Cô ấy đã làm việc ở đây từ tháng Năm.", "has been working"),
+       ("It has been raining all morning.", "Trời đã mưa suốt buổi sáng.", "has been raining")],
+      [("They have been wait for an hour.", "They have been waiting for an hour.", "have been + V-ing."),
+       ("I have been knowing him since school.", "I have known him since school.", "know là động từ trạng thái, thường dùng hiện tại hoàn thành đơn.")],
+      tags=["tense"], exam=True)
+C("She ___ for the exam since breakfast.", ["has been studying", "studied", "is studying", "has studied"], "Since breakfast và nhấn mạnh quá trình → has been studying.")
+C("We ___ here for nearly an hour.", ["have been waiting", "waited", "are waited", "have wait"], "For + khoảng thời gian, hành động kéo dài → have been waiting.")
+C("Why are your hands dirty? — I ___.", ["have been gardening", "gardened", "am garden", "have garden"], "Dấu hiệu hiện tại do hoạt động vừa diễn ra → have been gardening.")
+C("It ___ heavily all afternoon.", ["has been raining", "rained", "is rain", "has rain"], "All afternoon và nhấn mạnh diễn tiến → has been raining.")
+C("How long ___ you been learning English?", ["have", "has", "did", "are"], "How long + have you been + V-ing.")
+C("He ___ the same song for twenty minutes.", ["has been playing", "played", "is play", "has play"], "For + thời lượng, hành động đang tiếp diễn → has been playing.")
+E("I [have] [been] [study] [since six o'clock].", 2, "studying", "have been + V-ing.")
+E("She [has] [been] [wait] [for the bus].", 2, "waiting", "has been + V-ing.")
+T("The children started playing two hours ago and they are still playing.", ["The children have been playing for two hours.", "The children played since two hours.", "The children are played for two hours.", "The children have play two hours."], "Hành động bắt đầu trong quá khứ và còn tiếp diễn → have been playing for.")
+O("How long have you been waiting here?", "Bạn đã chờ ở đây bao lâu rồi?")
+
+point("future_continuous", 3, "Thì tương lai tiếp diễn", "S + will be + V-ing",
+      "Diễn tả hành động sẽ đang diễn ra tại một thời điểm cụ thể trong tương lai.",
+      "Dùng will be + V-ing. Thì này thường trả lời câu hỏi một người sẽ đang làm gì vào lúc nào, hoặc mô tả việc đã nằm trong lịch trình. Không dùng be going to be V-ing trong bài cơ bản.",
+      ["this time tomorrow", "at 8 p.m. tomorrow", "next week at this time", "when you arrive", "all day tomorrow"],
+      [("This time tomorrow, I will be flying to Seoul.", "Giờ này ngày mai tôi sẽ đang bay đến Seoul.", "will be flying"),
+       ("At nine tonight, she will be working.", "Chín giờ tối nay cô ấy sẽ đang làm việc.", "will be working"),
+       ("When you arrive, we will be waiting outside.", "Khi bạn đến, chúng tôi sẽ đang đợi bên ngoài.", "will be waiting")],
+      [("This time tomorrow I will fly to Seoul.", "This time tomorrow I will be flying to Seoul.", "Một hành động đang diễn ra tại mốc tương lai → will be + V-ing."),
+       ("At eight she will be work.", "At eight she will be working.", "Sau will be dùng V-ing.")],
+      tags=["tense"], exam=True)
+C("This time next week, we ___ on the beach.", ["will be relaxing", "relax", "will relax", "are relaxed"], "This time next week → will be relaxing.")
+C("At 10 a.m. tomorrow, the team ___ the new software.", ["will be testing", "tests", "tested", "will testing"], "Hành động đang diễn ra tại mốc tương lai → will be testing.")
+C("Don't call at six. I ___.", ["will be driving", "drive", "am drive", "will driving"], "Tại một thời điểm tương lai → will be driving.")
+C("When you get home, your children ___ dinner.", ["will be having", "have", "had", "will have been"], "Hành động đang diễn ra khi một mốc tương lai xảy ra → will be having.")
+C("What ___ you be doing this time tomorrow?", ["will", "are", "do", "have"], "Câu hỏi tương lai tiếp diễn: What will you be doing...? ")
+C("The workers ___ the road all day tomorrow.", ["will be repairing", "repair", "repaired", "will repairing"], "All day tomorrow và hành động kéo dài → will be repairing.")
+E("At noon tomorrow, I [will] [be] [work] [at home].", 2, "working", "will be + V-ing.")
+E("This time next month, she [will] [be] [travel] [in Europe].", 2, "travelling", "will be + V-ing: travelling.")
+T("You will arrive at seven, and we will eat dinner then.", ["When you arrive, we will be eating dinner.", "When you arrive, we eat dinner yesterday.", "We will ate dinner when you arrive.", "We are eat dinner at seven."], "Hành động đang diễn ra tại mốc tương lai → will be eating.")
+O("Will you be using the car this evening?", "Tối nay bạn sẽ có dùng ô tô không?")
+
 point("passive", 3, "Câu bị động", "S + be + V3 (+ by O)",
       "Nhấn mạnh đối tượng chịu tác động, hoặc khi không cần/không biết ai làm.",
       "Chia to be theo thì của câu chủ động, động từ chính luôn ở V3: is made, was built, has been sent, will be held, must be signed. Mẹo làm Part 5: nếu sau chỗ trống KHÔNG có tân ngữ và chủ ngữ là vật chịu tác động → thường chọn bị động.",
