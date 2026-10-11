@@ -24,7 +24,7 @@ class ContentDbBuilderTest(unittest.TestCase):
                             "senses": [{"id": "go_s1", "pos": "v", "def": "move", "ex": [{"id": "go_e1", "text": "Go now."}]}]}],
                 "confusables": []
             })
-            self.write(root / "content/en/grammar.json", {"points": []})
+            self.write(root / "content/en/grammar.json", {"points": [{"id": "be", "level": 1, "title": "be", "formula": "I am · He/She/It is · You/We/They are"}]})
             self.write(root / "content/en/questions.json", {"questions": [], "passages": []})
             self.write(root / "content/en/relations.json", {})
             self.write(root / "config/exam_formats.json", {"formats": []})
@@ -33,7 +33,11 @@ class ContentDbBuilderTest(unittest.TestCase):
 
             db = sqlite3.connect(output)
             try:
-                self.assertEqual(db.execute("select value from meta where key='schema_version'").fetchone()[0], "4")
+                self.assertEqual(db.execute("select value from meta where key='schema_version'").fetchone()[0], "5")
+                self.assertEqual(
+                    db.execute("select formula from grammar where id='be'").fetchone()[0],
+                    "I am · He/She/It is · You/We/They are",
+                )
                 self.assertEqual(db.execute("select value from meta where key='content_hash'").fetchone()[0], digest)
                 self.assertEqual(db.execute("select count(*) from word").fetchone()[0], 1)
                 self.assertEqual(db.execute("select word_id from word_fts where word_fts match 'di*'").fetchone()[0], "go")

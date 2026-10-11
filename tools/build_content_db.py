@@ -8,7 +8,7 @@ import sqlite3
 import unicodedata
 from pathlib import Path
 
-SCHEMA_VERSION = "4"
+SCHEMA_VERSION = "5"
 
 
 def load(path: Path):
@@ -117,7 +117,8 @@ def build(root: Path, output: Path, hash_output: Path | None = None) -> str:
             CREATE TABLE word_topic(word_id TEXT NOT NULL, topic_id TEXT NOT NULL, PRIMARY KEY(word_id, topic_id));
             CREATE TABLE topic(id TEXT PRIMARY KEY, domain TEXT NOT NULL, icon TEXT NOT NULL,
                                hue INTEGER NOT NULL, name TEXT NOT NULL);
-            CREATE TABLE grammar(id TEXT PRIMARY KEY, level INTEGER NOT NULL, title TEXT NOT NULL);
+            CREATE TABLE grammar(id TEXT PRIMARY KEY, level INTEGER NOT NULL, title TEXT NOT NULL,
+                                 formula TEXT NOT NULL);
             CREATE TABLE loc(locale TEXT NOT NULL, kind TEXT NOT NULL, key TEXT NOT NULL,
                              value_json TEXT NOT NULL, status TEXT NOT NULL, PRIMARY KEY(locale, kind, key));
             CREATE INDEX word_level ON word(level);
@@ -132,7 +133,9 @@ def build(root: Path, output: Path, hash_output: Path | None = None) -> str:
         for topic in words.get("topics", []):
             db.execute("INSERT INTO topic VALUES(?,?,?,?,?)", (topic["id"], topic.get("domain", ""), topic.get("icon", ""), topic.get("hue", 0), topic.get("name", topic["id"])))
         for point in grammar.get("points", []):
-            db.execute("INSERT INTO grammar VALUES(?,?,?)", (point["id"], point.get("level", 1), point.get("title", point["id"])))
+            db.execute("INSERT INTO grammar VALUES(?,?,?,?)", (
+                point["id"], point.get("level", 1), point.get("title", point["id"]), point.get("formula", "")
+            ))
         for word in words.get("words", []):
             senses = word.get("senses", [])
             pos_list = word.get("pos") if isinstance(word.get("pos"), list) else [s.get("pos", "") for s in senses]

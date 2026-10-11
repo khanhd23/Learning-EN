@@ -167,6 +167,9 @@ class MainActivity : AppCompatActivity() {
             // Consent/WebView/ads can trigger a large provider initialization on the main
             // thread. Let the first screen and the first touch settle before starting it.
             rootFrame.postDelayed({
+                if (!isFinishing && !isDestroyed) services.prewarmContentDb()
+            }, 700L)
+            rootFrame.postDelayed({
                 if (isFinishing || isDestroyed) return@postDelayed
                 services.ads.gatherConsent(this) { loadBanner() }
                 services.ads.preloadRewarded()

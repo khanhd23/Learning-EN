@@ -59,6 +59,13 @@ class Services(private val app: Application) {
         }
     }
 
+    /** Open the read-only search database away from the UI thread before it is first needed. */
+    fun prewarmContentDb() {
+        thread(name = "content-db-prewarm", priority = Thread.MIN_PRIORITY) {
+            runCatching { contentDb.warmup() }
+        }
+    }
+
     private val petPrefs = app.getSharedPreferences("pet_v1", Context.MODE_PRIVATE).also { com.yourbrand.englishlearn.core.DataRevision.watch(it) }
     val pet: PetEngine by lazy {
         val state = petPrefs.getString("state", null)?.let { runCatching { PetState.fromJson(JSONObject(it)) }.getOrNull() } ?: PetState()
