@@ -12,6 +12,8 @@ learner language, and no entry was marked approved.
   reviewed word senses.
 - Indonesian Level 1 learning support: reviewed 47 topic names, 8 grammar points, and 32
   confusable sets. Added Indonesian L1 notes for false friends, pronunciation, and grammar.
+- Indonesian support copy: translated 10 exam strategy tips and 144 pet lines from the English
+  source into natural Indonesian, preserving {name} placeholders.
 - Spanish: repaired 11 damaged or semantically wrong word entries found during the focused sample
   review, including grind_s1, wink_s1, trifle_s1, aka_s1, henry_s1, rum_s1, slumber_s1,
   justified_s1, nationwide_s1, chum_s1, and whereon_s1.
