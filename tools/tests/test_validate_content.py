@@ -56,6 +56,14 @@ class Task3ValidationFixtures(unittest.TestCase):
     def test_duplicate_gloss_fixture(self):
         self.assertIn("duplicate comma/semicolon", self.check({"words.json": {"teach_s1": {"g": "a, a"}}}))
 
+    def test_concise_gloss_is_not_flagged_against_long_definition(self):
+        self.write("content/i18n/xx/words.json", {"teach_s1": {
+            "g": "ensinar {name}", "ex": {"teach_s1": "Ensine {name}."}
+        }})
+        errors, warnings = validate_content.locale_rule_errors(str(self.root))
+        self.assertEqual(errors, [])
+        self.assertFalse(any("gloss length is unusual" in warning for warning in warnings))
+
     def test_vietnamese_fixture(self):
         self.assertIn("Vietnam/Vietnamese", self.check({"words.json": {"teach_s1": {"g": "Vietnamese"}}}))
 

@@ -11,6 +11,7 @@ import com.yourbrand.englishlearn.learning.ExamPart
 import com.yourbrand.englishlearn.learning.ExamPartCatalog
 import com.yourbrand.englishlearn.learning.ExamPartMode
 import com.yourbrand.englishlearn.learning.ExamPartSet
+import com.yourbrand.englishlearn.learning.ExamGuideFormatter
 import com.yourbrand.englishlearn.learning.ExamFormatText
 import com.yourbrand.englishlearn.learning.MockTest
 import com.yourbrand.englishlearn.learning.SessionKind
@@ -324,10 +325,16 @@ class ExamPartScreen(activity: MainActivity, private val partKey: String) : Scro
         part.sets.forEach { practiceCard(body, it) }
 
         body.addView(Kit.section(c, str(R.string.exam_part_guide), topDp = 20))
-        val guideFormat = services.content.formatById("toeic_$partKey") ?: part.formats.first()
-        body.addView(Kit.card(c, 6, 6) {
-            addView(Kit.text(c, guideText(partKey, guideFormat), R.style.Text_Body))
-        })
+        if (partKey == "reading_bank") {
+            ExamGuideFormatter.readingBankTipKeys.forEachIndexed { index, tipKey ->
+                services.content.tips[tipKey]?.takeIf { it.isNotBlank() }?.let { tip ->
+                    body.addGuideCard(c, str(listOf(R.string.exam_part5, R.string.exam_part6, R.string.exam_part7)[index]), tip)
+                }
+            }
+        } else {
+            val guideFormat = services.content.formatById("toeic_$partKey") ?: part.formats.first()
+            body.addGuideCard(c, null, guideText(partKey, guideFormat))
+        }
     }
 
     /**
@@ -430,9 +437,7 @@ class ExamSectionScreen(
 
         sets.firstOrNull()?.let { (format, _) ->
             body.addView(Kit.section(c, str(R.string.exam_part_guide), topDp = 20))
-            body.addView(Kit.card(c, 6, 6) {
-                addView(Kit.text(c, ExamFormatText.description(c, format), R.style.Text_Body))
-            })
+            body.addGuideCard(c, null, ExamFormatText.description(c, format))
         }
     }
 
@@ -544,9 +549,33 @@ class QuestionTypeScreen(activity: MainActivity, private val fmt: String) : Scro
         sheet.show { box ->
             box.addView(Kit.text(c, "💡 " + str(R.string.tips_title), R.style.Text_Title))
             box.addView(Kit.text(c, label, R.style.Text_Caption).margins(c, top = 2))
-            box.addView(Kit.text(c, tip, R.style.Text_Body).margins(c, top = 10))
+            box.addGuideContent(c, tip, top = 10)
             box.addView(Kit.primary(c, str(R.string.start_10)) { sheet.dismiss(); start() })
         }
+    }
+}
+
+private fun LinearLayout.addGuideCard(context: android.content.Context, title: String?, raw: String) {
+    addView(Kit.card(context, 14, 8, fill = context.col(R.color.info_container)) {
+        addGuideContent(context, raw, title = title)
+    })
+}
+
+private fun LinearLayout.addGuideContent(
+    context: android.content.Context,
+    raw: String,
+    title: String? = null,
+    top: Int = 0,
+) {
+    title?.takeIf { it.isNotBlank() }?.let {
+        addView(Kit.text(context, it, R.style.Text_BodyStrong, context.col(R.color.primary)).margins(context, top = top))
+    }
+    val blocks = ExamGuideFormatter.blocks(raw)
+    blocks.forEachIndexed { index, block ->
+        if (block.heading.isNotBlank()) {
+            addView(Kit.text(context, block.heading, R.style.Text_BodyStrong, context.col(R.color.primary)).margins(context, top = if (title != null || index > 0 || top > 0) 10 else 0))
+        }
+        addView(Kit.text(context, block.body, R.style.Text_Body).margins(context, top = 4))
     }
 }
 

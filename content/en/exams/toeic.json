@@ -6,12 +6,12 @@
       "level": 3,
       "stem": "Ms. Rivera was praised for her ___ handling of the client's complaint.",
       "opts": [
-        "professionalism",
         "professional",
+        "professionalism",
         "professionally",
         "profession"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "Before the noun handling, we need an adjective: professional.",
       "qtype": "pos",
       "set": "1"
@@ -23,11 +23,11 @@
       "stem": "The new software allows employees to work more ___.",
       "opts": [
         "efficient",
-        "efficiencies",
         "efficiently",
+        "efficiencies",
         "efficiency"
       ],
-      "ans": 2,
+      "ans": 1,
       "expl": "The word describes the verb work, so we need an adverb: efficiently.",
       "qtype": "pos",
       "set": "1"
@@ -88,10 +88,10 @@
       "opts": [
         "appreciate",
         "appreciative",
-        "appreciation",
-        "appreciatively"
+        "appreciatively",
+        "appreciation"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "After her, we need a noun: appreciation.",
       "qtype": "pos",
       "set": "1"
@@ -104,10 +104,10 @@
       "opts": [
         "careful",
         "care",
-        "cared",
-        "carefully"
+        "carefully",
+        "cared"
       ],
-      "ans": 3,
+      "ans": 2,
       "expl": "The word describes the verb read, so we need an adverb: carefully.",
       "qtype": "pos",
       "set": "1"
@@ -119,11 +119,11 @@
       "stem": "The training session was so ___ that many staff asked for another one.",
       "opts": [
         "information",
-        "informative",
         "informatively",
-        "inform"
+        "inform",
+        "informative"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "So + adjective + that: informative.",
       "qtype": "pos",
       "set": "1"
@@ -134,12 +134,12 @@
       "level": 3,
       "stem": "Mr. Ito is ___ for checking all invoices before payment.",
       "opts": [
-        "responsible",
         "responsibly",
+        "responsible",
         "responsibility",
         "respond"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "Be responsible for means 'have the job of'.",
       "qtype": "pos",
       "set": "1"
@@ -151,11 +151,11 @@
       "stem": "The company's ___ to quality has earned it many loyal customers.",
       "opts": [
         "committing",
-        "commitment",
         "commit",
+        "commitment",
         "committed"
       ],
-      "ans": 1,
+      "ans": 2,
       "expl": "After company's, we need a noun: commitment.",
       "qtype": "pos",
       "set": "1"
@@ -166,12 +166,12 @@
       "level": 2,
       "stem": "Applicants should have ___ communication skills.",
       "opts": [
+        "excellent",
         "excellently",
         "excel",
-        "excellence",
-        "excellent"
+        "excellence"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "Before the noun communication skills, we need an adjective: excellent.",
       "qtype": "pos",
       "set": "1"
@@ -182,12 +182,12 @@
       "level": 4,
       "stem": "The sales figures were ___ higher than last year.",
       "opts": [
-        "considerably",
         "considerable",
+        "considerably",
         "consideration",
         "consider"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "The word describes the comparative higher, so we need an adverb: considerably.",
       "qtype": "pos",
       "set": "1"
@@ -216,10 +216,10 @@
       "opts": [
         "admit",
         "admissible",
-        "admission",
-        "admitted"
+        "admitted",
+        "admission"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "After the adjective free, we need a noun: admission.",
       "qtype": "pos",
       "set": "1"
@@ -230,12 +230,12 @@
       "level": 3,
       "stem": "Our technicians will respond ___ to any service request.",
       "opts": [
+        "promptly",
         "promptness",
         "prompted",
-        "prompt",
-        "promptly"
+        "prompt"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "The word describes the verb respond, so we need an adverb: promptly.",
       "qtype": "pos",
       "set": "1"
@@ -246,12 +246,12 @@
       "level": 5,
       "stem": "The proposal was rejected because it was not financially ___.",
       "opts": [
-        "feasibly",
         "feasible",
+        "feasibly",
         "feasibility",
         "feasibleness"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "After be and the adverb financially, we need an adjective: feasible.",
       "qtype": "pos",
       "set": "1"
@@ -262,12 +262,12 @@
       "level": 2,
       "stem": "Ms. Garcia is one of the most ___ designers in the company.",
       "opts": [
-        "creative",
         "creatively",
         "create",
+        "creative",
         "creation"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "The most + adjective + noun: creative.",
       "qtype": "pos",
       "set": "1"
@@ -278,12 +278,12 @@
       "level": 3,
       "stem": "The ___ of the new factory will create 500 jobs.",
       "opts": [
-        "construction",
         "construct",
         "constructed",
-        "constructive"
+        "constructive",
+        "construction"
       ],
-      "ans": 0,
+      "ans": 3,
       "expl": "The … of needs a noun: construction.",
       "qtype": "pos",
       "set": "1"
@@ -295,11 +295,11 @@
       "stem": "Employees must complete the form ___ and return it to HR.",
       "opts": [
         "accuracy",
-        "accurate",
         "accurately",
+        "accurate",
         "accurateness"
       ],
-      "ans": 2,
+      "ans": 1,
       "expl": "The word describes the verb complete, so we need an adverb: accurately.",
       "qtype": "pos",
       "set": "1"
@@ -311,11 +311,11 @@
       "stem": "The CEO gave a very ___ speech at the annual dinner.",
       "opts": [
         "inspiration",
+        "inspiring",
         "inspire",
-        "inspired",
-        "inspiring"
+        "inspired"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "The speech gave people inspiration, so we use the -ing adjective: inspiring.",
       "qtype": "pos",
       "set": "1"
@@ -326,12 +326,12 @@
       "level": 3,
       "stem": "We were ___ by the high quality of the samples.",
       "opts": [
-        "impressive",
         "impressed",
+        "impressive",
         "impress",
         "impression"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "We describes people's feelings, so we use the -ed adjective: impressed.",
       "qtype": "pos",
       "set": "1"
@@ -344,10 +344,10 @@
       "opts": [
         "effectiveness",
         "effect",
-        "effectively",
-        "effective"
+        "effective",
+        "effectively"
       ],
-      "ans": 3,
+      "ans": 2,
       "expl": "Become effective means 'start to apply'.",
       "qtype": "pos",
       "set": "1"
@@ -358,12 +358,12 @@
       "level": 3,
       "stem": "The board of directors ___ the merger at next week's meeting.",
       "opts": [
-        "will discuss",
         "has discussed",
         "discussed",
-        "discussing"
+        "discussing",
+        "will discuss"
       ],
-      "ans": 0,
+      "ans": 3,
       "expl": "Next week is in the future: will discuss.",
       "qtype": "tense",
       "set": "1"
@@ -375,11 +375,11 @@
       "stem": "Since joining the company, Mr. Ahmed ___ three major projects.",
       "opts": [
         "will manage",
-        "has managed",
         "manages",
-        "managed"
+        "managed",
+        "has managed"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Since + a starting point shows a period up to now: has managed.",
       "qtype": "tense",
       "set": "1"
@@ -391,11 +391,11 @@
       "stem": "The package ___ to the wrong address yesterday.",
       "opts": [
         "has been sent",
-        "sent",
         "was sent",
+        "sent",
         "is sending"
       ],
-      "ans": 2,
+      "ans": 1,
       "expl": "Yesterday + passive: was sent.",
       "qtype": "tense",
       "set": "1"
@@ -406,12 +406,12 @@
       "level": 3,
       "stem": "Currently, our engineers ___ a new mobile application.",
       "opts": [
+        "are developing",
         "develop",
         "developed",
-        "have developed",
-        "are developing"
+        "have developed"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "Currently signals the present continuous.",
       "qtype": "tense",
       "set": "1"
@@ -422,12 +422,12 @@
       "level": 4,
       "stem": "The conference room ___ for the training session tomorrow.",
       "opts": [
-        "has been reserved",
         "reserves",
         "has reserved",
+        "has been reserved",
         "reserving"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "The room receives the action, and the booking is already done: has been reserved.",
       "qtype": "tense",
       "set": "1"
@@ -438,12 +438,12 @@
       "level": 5,
       "stem": "By the end of this year, the company ___ 20 new stores.",
       "opts": [
+        "will have opened",
         "opens",
         "has opened",
-        "will have opened",
         "opened"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "By the end of + a future time: future perfect, will have opened.",
       "qtype": "tense",
       "set": "1"
@@ -487,11 +487,11 @@
       "stem": "All orders ___ within two business days.",
       "opts": [
         "process",
-        "are processed",
         "processing",
+        "are processed",
         "have processing"
       ],
-      "ans": 1,
+      "ans": 2,
       "expl": "Orders receive the action: are processed.",
       "qtype": "tense",
       "set": "2"
@@ -518,12 +518,12 @@
       "level": 3,
       "stem": "The new policy ___ by the board last Monday.",
       "opts": [
-        "was approved",
         "has approved",
+        "was approved",
         "approved",
         "approves"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "The policy receives the action, last Monday: was approved.",
       "qtype": "tense",
       "set": "2"
@@ -551,11 +551,11 @@
       "stem": "Mr. Park ___ for the company for over twenty years when he retired.",
       "opts": [
         "works",
-        "had worked",
         "has worked",
-        "is working"
+        "is working",
+        "had worked"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Before a past moment (when he retired): past perfect.",
       "qtype": "tense",
       "set": "2"
@@ -568,10 +568,10 @@
       "opts": [
         "will continue",
         "continued",
-        "continue",
-        "would continue"
+        "would continue",
+        "continue"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "First conditional: If + present simple.",
       "qtype": "tense",
       "set": "2"
@@ -583,11 +583,11 @@
       "stem": "The quarterly meeting will be held ___ the third floor.",
       "opts": [
         "at",
+        "on",
         "to",
-        "in",
-        "on"
+        "in"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "Floors take on: on the third floor.",
       "qtype": "preposition",
       "set": "2"
@@ -598,12 +598,12 @@
       "level": 5,
       "stem": "Payment is due ___ receipt of the invoice.",
       "opts": [
+        "upon",
         "into",
         "toward",
-        "upon",
         "among"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "Upon receipt means 'as soon as it is received'.",
       "qtype": "preposition",
       "set": "2"
@@ -614,12 +614,12 @@
       "level": 4,
       "stem": "The store will be closed ___ the holiday period.",
       "opts": [
-        "throughout",
         "between",
         "beneath",
+        "throughout",
         "along"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "Throughout + a period means 'for the whole of it'.",
       "qtype": "preposition",
       "set": "2"
@@ -631,11 +631,11 @@
       "stem": "Ms. Lee has worked in sales ___ 2015.",
       "opts": [
         "for",
-        "since",
         "during",
-        "from"
+        "from",
+        "since"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "A starting point in time: since.",
       "qtype": "preposition",
       "set": "2"
@@ -646,12 +646,12 @@
       "level": 3,
       "stem": "The report must be submitted ___ Friday at 5 p.m.",
       "opts": [
+        "by",
         "until",
         "in",
-        "within",
-        "by"
+        "within"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "By means 'not later than' for a deadline.",
       "qtype": "preposition",
       "set": "2"
@@ -663,11 +663,11 @@
       "stem": "The bus stop is located directly ___ the hotel entrance.",
       "opts": [
         "among",
-        "above of",
         "opposite",
+        "above of",
         "through"
       ],
-      "ans": 2,
+      "ans": 1,
       "expl": "Opposite means 'facing, on the other side'.",
       "qtype": "preposition",
       "set": "2"
@@ -678,12 +678,12 @@
       "level": 2,
       "stem": "The museum is open daily ___ 9 a.m. to 6 p.m.",
       "opts": [
-        "from",
         "between",
         "since",
+        "from",
         "at"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "From … to … shows a time range.",
       "qtype": "preposition",
       "set": "2"
@@ -695,11 +695,11 @@
       "stem": "Refunds will be issued ___ 14 days of the return.",
       "opts": [
         "among",
-        "within",
         "until",
+        "within",
         "since"
       ],
-      "ans": 1,
+      "ans": 2,
       "expl": "Within + a period means 'inside that time'.",
       "qtype": "preposition",
       "set": "2"
@@ -710,12 +710,12 @@
       "level": 3,
       "stem": "The training is mandatory for all staff, ___ managers.",
       "opts": [
+        "including",
         "include",
         "included",
-        "inclusion",
-        "including"
+        "inclusion"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "Including works as a preposition: it adds part of a group.",
       "qtype": "preposition",
       "set": "2"
@@ -742,12 +742,12 @@
       "level": 5,
       "stem": "The lecture was interesting, ___ a bit too long.",
       "opts": [
-        "albeit",
         "unless",
         "despite",
-        "because"
+        "because",
+        "albeit"
       ],
-      "ans": 0,
+      "ans": 3,
       "expl": "Albeit means 'although' and is followed by an adjective or phrase. It is formal.",
       "qtype": "preposition",
       "set": "2"
@@ -759,11 +759,11 @@
       "stem": "Customers can pay ___ cash or by credit card.",
       "opts": [
         "on",
+        "in",
         "at",
-        "to",
-        "in"
+        "to"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "Pay in cash, but pay by card.",
       "qtype": "preposition",
       "set": "2"
@@ -790,12 +790,12 @@
       "level": 3,
       "stem": "The price of the tour includes meals and accommodation, but not ___ insurance.",
       "opts": [
+        "travel",
         "traveling",
         "traveled",
-        "travels",
-        "travel"
+        "travels"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "Travel insurance is a compound noun.",
       "qtype": "pos",
       "set": "2"
@@ -807,11 +807,11 @@
       "stem": "We apologize ___ any inconvenience this may cause.",
       "opts": [
         "of",
-        "for",
         "with",
-        "about"
+        "about",
+        "for"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Apologise for something.",
       "qtype": "preposition",
       "set": "2"
@@ -823,11 +823,11 @@
       "stem": "Please reply ___ this email by Thursday.",
       "opts": [
         "for",
-        "at",
         "to",
+        "at",
         "on"
       ],
-      "ans": 2,
+      "ans": 1,
       "expl": "Reply to something.",
       "qtype": "preposition",
       "set": "2"
@@ -838,12 +838,12 @@
       "level": 3,
       "stem": "___ the weather was bad, the outdoor concert went ahead as planned.",
       "opts": [
-        "Although",
         "Despite",
         "Because",
-        "Unless"
+        "Unless",
+        "Although"
       ],
-      "ans": 0,
+      "ans": 3,
       "expl": "A clause with a contrasting meaning: Although.",
       "qtype": "conj_prep",
       "set": "2"
@@ -855,11 +855,11 @@
       "stem": "You will not be able to enter the building ___ you show your ID card.",
       "opts": [
         "if",
-        "unless",
         "so that",
+        "unless",
         "because"
       ],
-      "ans": 1,
+      "ans": 2,
       "expl": "Unless means 'if not'.",
       "qtype": "conj_prep",
       "set": "2"
@@ -870,12 +870,12 @@
       "level": 3,
       "stem": "Ms. Brown will lead the meeting ___ Mr. Davis is on vacation.",
       "opts": [
+        "while",
         "so",
         "despite",
-        "while",
         "during"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "Mr. Davis is on vacation is a clause: while.",
       "qtype": "conj_prep",
       "set": "2"
@@ -887,11 +887,11 @@
       "stem": "Both the manager ___ her assistant attended the conference.",
       "opts": [
         "nor",
+        "and",
         "or",
-        "but",
-        "and"
+        "but"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "Both … and.",
       "qtype": "conj_prep",
       "set": "2"
@@ -918,12 +918,12 @@
       "level": 3,
       "stem": "Neither the printer ___ the scanner is working today.",
       "opts": [
-        "nor",
         "and",
         "or",
-        "but"
+        "but",
+        "nor"
       ],
-      "ans": 0,
+      "ans": 3,
       "expl": "Neither … nor.",
       "qtype": "conj_prep",
       "set": "2"
@@ -951,11 +951,11 @@
       "stem": "___ submitting the form, check that all information is correct.",
       "opts": [
         "Whereas",
+        "Before",
         "Until",
-        "Unless",
-        "Before"
+        "Unless"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "Before + -ing.",
       "qtype": "conj_prep",
       "set": "2"
@@ -966,12 +966,12 @@
       "level": 4,
       "stem": "The first design was simple, ___ the second one was more detailed.",
       "opts": [
-        "so that",
         "whereas",
+        "so that",
         "because of",
         "despite"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "Whereas contrasts two clauses.",
       "qtype": "conj_prep",
       "set": "3"
@@ -983,11 +983,11 @@
       "stem": "___ you have any questions, please contact our support team.",
       "opts": [
         "Unless",
-        "If",
         "Whether",
-        "Although"
+        "Although",
+        "If"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "A condition: If.",
       "qtype": "conj_prep",
       "set": "3"
@@ -998,12 +998,12 @@
       "level": 3,
       "stem": "The project was completed on time ___ several unexpected problems.",
       "opts": [
-        "in spite of",
         "even though",
         "although",
+        "in spite of",
         "so"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "Several unexpected problems is a noun phrase: in spite of.",
       "qtype": "conj_prep",
       "set": "3"
@@ -1014,12 +1014,12 @@
       "level": 4,
       "stem": "Not only did the hotel upgrade our room, ___ it also gave us free breakfast.",
       "opts": [
+        "but",
         "or",
         "and",
-        "but",
         "so"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "Not only … but also.",
       "qtype": "conj_prep",
       "set": "3"
@@ -1047,11 +1047,11 @@
       "stem": "___ the hotel nor the restaurant accepts credit cards.",
       "opts": [
         "Either",
+        "Neither",
         "Both",
-        "Not",
-        "Neither"
+        "Not"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "Neither … nor.",
       "qtype": "conj_prep",
       "set": "3"
@@ -1063,11 +1063,11 @@
       "stem": "Ms. Kim asked that all reports be sent directly to ___.",
       "opts": [
         "herself",
-        "her",
         "she",
+        "her",
         "hers"
       ],
-      "ans": 1,
+      "ans": 2,
       "expl": "After the preposition to, we need an object pronoun: her.",
       "qtype": "pronoun",
       "set": "3"
@@ -1078,12 +1078,12 @@
       "level": 3,
       "stem": "The employees organized the farewell party by ___.",
       "opts": [
-        "themselves",
         "them",
         "theirs",
-        "their"
+        "their",
+        "themselves"
       ],
-      "ans": 0,
+      "ans": 3,
       "expl": "By themselves means 'without help'.",
       "qtype": "pronoun",
       "set": "3"
@@ -1095,11 +1095,11 @@
       "stem": "Mr. Chen forgot ___ laptop in the meeting room.",
       "opts": [
         "he",
-        "himself",
         "his",
+        "himself",
         "him"
       ],
-      "ans": 2,
+      "ans": 1,
       "expl": "Before the noun laptop, we need a possessive adjective: his.",
       "qtype": "pronoun",
       "set": "3"
@@ -1110,12 +1110,12 @@
       "level": 4,
       "stem": "Our products are cheaper than ___ of our competitors.",
       "opts": [
-        "those",
         "these",
         "them",
+        "those",
         "that"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "Those replaces a plural noun already mentioned (products).",
       "qtype": "pronoun",
       "set": "3"
@@ -1126,12 +1126,12 @@
       "level": 4,
       "stem": "___ who wish to join the tour should sign up at the front desk.",
       "opts": [
-        "Their",
         "Those",
+        "Their",
         "They",
         "Them"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "Those who means 'the people who'.",
       "qtype": "pronoun",
       "set": "3"
@@ -1144,10 +1144,10 @@
       "opts": [
         "it",
         "their",
-        "it's",
-        "its"
+        "its",
+        "it's"
       ],
-      "ans": 3,
+      "ans": 2,
       "expl": "The company is singular, so the possessive is its. It's means it is.",
       "qtype": "pronoun",
       "set": "3"
@@ -1160,10 +1160,10 @@
       "opts": [
         "them",
         "they",
-        "their",
-        "theirs"
+        "theirs",
+        "their"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "Before the noun stay, we need a possessive adjective: their.",
       "qtype": "pronoun",
       "set": "3"
@@ -1174,12 +1174,12 @@
       "level": 3,
       "stem": "Mr. Diaz prefers to review the contracts ___ before signing them.",
       "opts": [
+        "himself",
         "his",
         "him",
-        "himself",
         "he"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "Himself emphasises that he does it personally.",
       "qtype": "pronoun",
       "set": "3"
@@ -1223,11 +1223,11 @@
       "stem": "Due to high ___, the new phone sold out in two days.",
       "opts": [
         "supply",
+        "demand",
         "request",
-        "order",
-        "demand"
+        "order"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "High demand means many people want to buy it.",
       "qtype": "vocab",
       "set": "3"
@@ -1240,10 +1240,10 @@
       "opts": [
         "follow up",
         "deal",
-        "agree to",
-        "comply with"
+        "comply with",
+        "agree to"
       ],
-      "ans": 3,
+      "ans": 2,
       "expl": "Comply with rules means 'obey them'.",
       "qtype": "vocab",
       "set": "3"
@@ -1255,11 +1255,11 @@
       "stem": "The company will ___ all travel expenses for the conference.",
       "opts": [
         "repay back",
-        "reimburse",
         "borrow",
-        "refund to"
+        "refund to",
+        "reimburse"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Reimburse expenses means 'pay back money someone has spent'.",
       "qtype": "vocab",
       "set": "3"
@@ -1287,11 +1287,11 @@
       "stem": "We need to ___ the deadline because the materials arrived late.",
       "opts": [
         "expand",
-        "exceed",
         "extend",
+        "exceed",
         "expire"
       ],
-      "ans": 2,
+      "ans": 1,
       "expl": "Extend a deadline means 'give more time'.",
       "qtype": "vocab",
       "set": "3"
@@ -1318,12 +1318,12 @@
       "level": 3,
       "stem": "Ms. Ortiz was ___ to regional manager after five years.",
       "opts": [
-        "promoted",
         "advanced to",
         "raised",
+        "promoted",
         "lifted"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "Be promoted to means 'be given a higher position'.",
       "qtype": "vocab",
       "set": "3"
@@ -1334,12 +1334,12 @@
       "level": 2,
       "stem": "Our customer service team is ___ 24 hours a day.",
       "opts": [
-        "able",
         "available",
+        "able",
         "possible",
         "capable"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "Available means 'ready to help or be used'.",
       "qtype": "vocab",
       "set": "3"
@@ -1351,11 +1351,11 @@
       "stem": "Please ___ a table for six at 7 p.m.",
       "opts": [
         "save up",
-        "hold on",
         "reserve",
+        "hold on",
         "keep up"
       ],
-      "ans": 2,
+      "ans": 1,
       "expl": "Reserve a table means 'book it in advance'.",
       "qtype": "vocab",
       "set": "3"
@@ -1382,12 +1382,12 @@
       "level": 3,
       "stem": "The manager asked us to ___ our ideas at the next meeting.",
       "opts": [
-        "present",
         "presence",
         "presently",
-        "presenter"
+        "presenter",
+        "present"
       ],
-      "ans": 0,
+      "ans": 3,
       "expl": "Ask somebody to + base verb: present.",
       "qtype": "pos",
       "set": "3"
@@ -1399,11 +1399,11 @@
       "stem": "To ___ for the discount, customers must spend at least $50.",
       "opts": [
         "qualification",
-        "qualify",
         "qualified",
-        "quality"
+        "quality",
+        "qualify"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Qualify for means 'meet the conditions to get'.",
       "qtype": "vocab",
       "set": "3"
@@ -1416,10 +1416,10 @@
       "opts": [
         "excused",
         "estimated",
-        "examined",
-        "established"
+        "established",
+        "examined"
       ],
-      "ans": 3,
+      "ans": 2,
       "expl": "Establish a relationship means 'build it'.",
       "qtype": "vocab",
       "set": "3"
@@ -1446,12 +1446,12 @@
       "level": 4,
       "stem": "The factory is running at full ___ to meet the holiday orders.",
       "opts": [
+        "capacity",
         "capability",
         "volume up",
-        "capacity",
         "ability"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "At full capacity means 'producing as much as possible'.",
       "qtype": "vocab"
     },
@@ -1461,12 +1461,12 @@
       "level": 3,
       "stem": "We will ___ you as soon as your order is ready.",
       "opts": [
-        "notify",
         "notice",
         "notation",
-        "note"
+        "note",
+        "notify"
       ],
-      "ans": 0,
+      "ans": 3,
       "expl": "Notify somebody means 'tell them officially'.",
       "qtype": "vocab"
     },
@@ -1477,11 +1477,11 @@
       "stem": "Please keep your receipt as ___ of purchase.",
       "opts": [
         "proven",
+        "proof",
         "proofing",
-        "prove",
-        "proof"
+        "prove"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "Proof of purchase shows that you bought something.",
       "qtype": "vocab"
     },
@@ -1492,11 +1492,11 @@
       "stem": "The company plans to ___ its business into three new markets.",
       "opts": [
         "extend to",
-        "expand",
         "explain",
+        "expand",
         "expend"
       ],
-      "ans": 1,
+      "ans": 2,
       "expl": "Expand into new markets means 'grow into them'.",
       "qtype": "vocab"
     },
@@ -1506,12 +1506,12 @@
       "level": 3,
       "stem": "Staff are ___ to wear their ID badges at all times.",
       "opts": [
+        "required",
         "requested of",
         "requiring",
-        "requirement",
-        "required"
+        "requirement"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "Be required to means 'must'.",
       "qtype": "vocab"
     },
@@ -1523,10 +1523,10 @@
       "opts": [
         "return",
         "reward",
-        "refund",
-        "repay"
+        "repay",
+        "refund"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "A refund is money paid back.",
       "qtype": "vocab"
     },
@@ -1566,12 +1566,12 @@
       "level": 4,
       "stem": "The two companies have agreed to ___ on the new project.",
       "opts": [
-        "collaborate",
         "collide",
         "collect",
+        "collaborate",
         "collapse"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "Collaborate on means 'work together on'.",
       "qtype": "vocab"
     },
@@ -1581,12 +1581,12 @@
       "level": 4,
       "stem": "The CEO will ___ the opening speech at the conference.",
       "opts": [
+        "deliver",
         "say",
         "tell",
-        "talk",
-        "deliver"
+        "talk"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "Deliver a speech means 'give a speech'.",
       "qtype": "vocab"
     },
@@ -1612,11 +1612,11 @@
       "stem": "The bank will ___ a fee for international transfers.",
       "opts": [
         "pay",
-        "charge",
         "cost",
-        "spend"
+        "spend",
+        "charge"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Charge a fee means 'ask for money for a service'.",
       "qtype": "vocab"
     },
@@ -1626,12 +1626,12 @@
       "level": 2,
       "stem": "This year's conference attracted ___ participants than last year's.",
       "opts": [
-        "more",
         "many",
+        "more",
         "most",
         "much"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "Comparative + than: more participants.",
       "qtype": "comparison"
     },
@@ -1641,12 +1641,12 @@
       "level": 2,
       "stem": "This is the ___ sales result in the company's history.",
       "opts": [
+        "best",
         "good",
         "better",
-        "well",
-        "best"
+        "well"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "The + superlative: the best.",
       "qtype": "comparison"
     },
@@ -1658,10 +1658,10 @@
       "opts": [
         "most",
         "very",
-        "much",
-        "more"
+        "more",
+        "much"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "Much makes a comparative stronger: much lighter. Very cannot go before a comparative.",
       "qtype": "comparison"
     },
@@ -1671,12 +1671,12 @@
       "level": 2,
       "stem": "___ employee will receive a bonus this year.",
       "opts": [
-        "Every",
         "Several",
         "Many",
+        "Every",
         "All"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "Every + singular noun: every employee.",
       "qtype": "quantifier"
     },
@@ -1687,11 +1687,11 @@
       "stem": "There were ___ complaints about the new menu.",
       "opts": [
         "much",
+        "few",
         "a little",
-        "little",
-        "few"
+        "little"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "Complaints is countable, so we use few.",
       "qtype": "quantifier"
     },
@@ -1718,10 +1718,10 @@
       "opts": [
         "who",
         "which",
-        "where",
-        "whose"
+        "whose",
+        "where"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "For a place (= in which): where.",
       "qtype": "relative"
     },
@@ -1733,10 +1733,10 @@
       "opts": [
         "to complete",
         "completed",
-        "complete",
-        "completing"
+        "completing",
+        "complete"
       ],
-      "ans": 3,
+      "ans": 2,
       "expl": "After a preposition (for), use -ing.",
       "qtype": "gerund"
     },
@@ -1746,12 +1746,12 @@
       "level": 3,
       "stem": "We look forward to ___ with you again.",
       "opts": [
-        "worked",
         "working",
+        "worked",
         "work",
         "be working"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "Look forward to + -ing.",
       "qtype": "gerund"
     },
@@ -1762,11 +1762,11 @@
       "stem": "The manager decided ___ the event until next month.",
       "opts": [
         "postponed",
-        "postpone",
         "to postpone",
+        "postpone",
         "postponing"
       ],
-      "ans": 2,
+      "ans": 1,
       "expl": "Decide + to + verb.",
       "qtype": "gerund"
     },
@@ -1776,12 +1776,12 @@
       "level": 3,
       "stem": "Customers who wish ___ their orders should call before noon.",
       "opts": [
-        "to change",
         "change",
         "changing",
+        "to change",
         "changed"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "Wish + to + verb.",
       "qtype": "gerund"
     },
@@ -1791,12 +1791,12 @@
       "level": 2,
       "stem": "___ the end of the year, all employees will receive a gift card.",
       "opts": [
+        "At",
         "On",
         "In",
-        "At",
         "By the"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "At the end of a period.",
       "qtype": "preposition"
     },
@@ -1821,12 +1821,12 @@
       "level": 3,
       "stem": "Please inform us ___ any changes to your address.",
       "opts": [
-        "of",
         "with",
         "at",
+        "of",
         "for"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "Inform somebody of something.",
       "qtype": "preposition"
     },
@@ -1867,11 +1867,11 @@
       "stem": "Employees are asked to keep their identification cards ___ at all times.",
       "opts": [
         "vision",
-        "visible",
         "visibly",
-        "visibility"
+        "visibility",
+        "visible"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Keep is followed by an object complement. Visible describes the cards' state, while the other choices are nouns or an adverb.",
       "qtype": "pos"
     },
@@ -1883,10 +1883,10 @@
       "opts": [
         "soon",
         "soonness",
-        "sooner",
-        "soonest"
+        "soonest",
+        "sooner"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "The word than calls for the comparative adverb sooner. The sentence compares the promised delivery time with the expected time.",
       "qtype": "comparison"
     },
@@ -1898,10 +1898,10 @@
       "opts": [
         "complained",
         "complaining",
-        "complain",
-        "complaints"
+        "complaints",
+        "complain"
       ],
-      "ans": 3,
+      "ans": 2,
       "expl": "Several must modify a plural countable noun. Complaints fits the meaning and the grammar; the other forms are verb forms.",
       "qtype": "pos"
     },
@@ -1911,12 +1911,12 @@
       "level": 2,
       "stem": "Please submit the travel request ___ you book the hotel.",
       "opts": [
-        "before",
         "because",
+        "before",
         "despite",
         "unless"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "Before introduces the earlier action. Employees should submit the request first and book the hotel afterward.",
       "qtype": "conjunction"
     },
@@ -1926,12 +1926,12 @@
       "level": 3,
       "stem": "The new printer is capable ___ producing color brochures.",
       "opts": [
-        "for",
         "of",
+        "for",
         "to",
         "with"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "Capable is followed by the preposition of and a gerund. Producing completes the phrase capable of producing.",
       "qtype": "preposition"
     },
@@ -1943,10 +1943,10 @@
       "opts": [
         "despite",
         "whereas",
-        "during",
-        "because"
+        "because",
+        "during"
       ],
-      "ans": 3,
+      "ans": 2,
       "expl": "Because introduces a complete reason clause: her supervisor is unavailable. During and despite require a noun phrase instead.",
       "qtype": "conjunction"
     },
@@ -1956,12 +1956,12 @@
       "level": 4,
       "stem": "The maintenance crew ___ the air-conditioning system before the store opened.",
       "opts": [
+        "had inspected",
         "inspects",
         "will inspect",
-        "had inspected",
         "is inspecting"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "The inspection happened before the past event of the store opening, so the past perfect had inspected is appropriate.",
       "qtype": "tense"
     },
@@ -1971,12 +1971,12 @@
       "level": 2,
       "stem": "Customers who register online will receive a ___ confirmation email.",
       "opts": [
-        "detailed",
         "detailing",
+        "detailed",
         "detail",
         "details"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "An adjective is needed before the noun phrase confirmation email. Detailed describes the information in the message.",
       "qtype": "pos"
     },
@@ -1987,11 +1987,11 @@
       "stem": "The board approved the proposal ___ several members had raised concerns.",
       "opts": [
         "so that",
-        "although",
         "because of",
-        "during"
+        "during",
+        "although"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Although connects two contrasting clauses. The board approved the proposal even though some members had concerns.",
       "qtype": "conjunction"
     },
@@ -2003,10 +2003,10 @@
       "opts": [
         "since",
         "beside",
-        "before",
-        "among"
+        "among",
+        "before"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "Before introduces the later event, authorization. The invoices must be checked first.",
       "qtype": "conjunction"
     },
@@ -2016,12 +2016,12 @@
       "level": 3,
       "stem": "The company is seeking an applicant with experience ___ international clients.",
       "opts": [
+        "serving",
         "service",
         "serve",
-        "served",
-        "serving"
+        "served"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "Experience is followed naturally by a gerund when describing an activity. Serving international clients is the required experience.",
       "qtype": "collocation"
     },
@@ -2032,11 +2032,11 @@
       "stem": "The manager asked the receptionist to reserve a room for ___.",
       "opts": [
         "ours",
+        "us",
         "our",
-        "we",
-        "us"
+        "we"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "The preposition for needs an object pronoun. Us is the object form of we; our and ours are possessive forms.",
       "qtype": "pronoun"
     },
@@ -2062,11 +2062,11 @@
       "stem": "The marketing report provides a ___ comparison of the two campaigns.",
       "opts": [
         "usefulness",
-        "useful",
         "usefully",
+        "useful",
         "use"
       ],
-      "ans": 1,
+      "ans": 2,
       "expl": "The blank modifies the noun comparison, so an adjective is required. Useful describes the comparison.",
       "qtype": "pos"
     },
@@ -2076,12 +2076,12 @@
       "level": 3,
       "stem": "If the parts arrive today, the technician ___ the machine tomorrow.",
       "opts": [
-        "will repair",
         "has repaired",
+        "will repair",
         "repairing",
         "repaired"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "This is a first conditional: present simple after if and will plus the base verb in the result clause.",
       "qtype": "conditional"
     },
@@ -2091,12 +2091,12 @@
       "level": 3,
       "stem": "The conference organizers sent the schedule to all ___ participants.",
       "opts": [
+        "registered",
         "registering",
         "registration",
-        "register",
-        "registered"
+        "register"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "Registered is a past participle used as an adjective meaning participants who have completed registration.",
       "qtype": "pos"
     },
@@ -2107,11 +2107,11 @@
       "stem": "The office will remain closed ___ the electrical work is completed.",
       "opts": [
         "during",
-        "until",
         "despite",
-        "while"
+        "while",
+        "until"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Until marks the endpoint of the closure. The office remains closed up to the time the work is completed.",
       "qtype": "conjunction"
     },
@@ -2121,12 +2121,12 @@
       "level": 3,
       "stem": "The director spoke ___ about the need to protect customer data.",
       "opts": [
+        "seriously",
         "serious",
         "seriousness",
-        "seriously",
         "series"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "An adverb is needed to modify spoke. Seriously describes the director's manner of speaking.",
       "qtype": "pos"
     },
@@ -2136,12 +2136,12 @@
       "level": 3,
       "stem": "The delivery driver could not enter the building ___ he had a valid access code.",
       "opts": [
-        "although",
         "because of",
         "so",
-        "during"
+        "during",
+        "although"
       ],
-      "ans": 0,
+      "ans": 3,
       "expl": "Although introduces a contrast between having a valid code and being unable to enter. Because of would need a noun phrase.",
       "qtype": "conjunction"
     },
@@ -2153,10 +2153,10 @@
       "opts": [
         "whereas",
         "even though",
-        "until",
-        "in case"
+        "in case",
+        "until"
       ],
-      "ans": 3,
+      "ans": 2,
       "expl": "In case introduces a possible future situation for which the receipt may be needed.",
       "qtype": "conjunction"
     },
@@ -2166,12 +2166,12 @@
       "level": 2,
       "stem": "The warehouse has enough space to store the equipment ___ the renovation.",
       "opts": [
-        "during",
         "because",
+        "during",
         "although",
         "unless"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "During is a preposition followed by a noun phrase. It identifies the period when the equipment will be stored.",
       "qtype": "preposition"
     },
@@ -2182,11 +2182,11 @@
       "stem": "The training manual is available in both printed and digital ___.",
       "opts": [
         "formative",
-        "formats",
         "formally",
-        "formation"
+        "formation",
+        "formats"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "The phrase lists two types of the manual, so the plural noun formats is required.",
       "qtype": "pos"
     },
@@ -2197,11 +2197,11 @@
       "stem": "The hotel offers guests a ___ breakfast before the early flight.",
       "opts": [
         "complement",
-        "compliment",
         "complimentary",
+        "compliment",
         "complimented"
       ],
-      "ans": 2,
+      "ans": 1,
       "expl": "Complimentary means provided free of charge, which fits the hotel breakfast. Compliment is a different noun meaning praise.",
       "qtype": "pos"
     },
@@ -2211,12 +2211,12 @@
       "level": 3,
       "stem": "The sales representative will contact you as soon as she ___ the updated figures.",
       "opts": [
-        "receives",
         "receiving",
         "will receive",
+        "receives",
         "received"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "In a future time clause after as soon as, use the present simple receives rather than will receive.",
       "qtype": "tense"
     },
@@ -2226,12 +2226,12 @@
       "level": 4,
       "stem": "The audit revealed that the records had been stored ___.",
       "opts": [
+        "improperly",
         "improve",
         "improper",
-        "improperly",
         "impropriety"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "The adverb improperly modifies had been stored and means not in the correct way.",
       "qtype": "pos"
     },
@@ -2242,11 +2242,11 @@
       "stem": "The supplier offered a discount ___ we placed a larger order.",
       "opts": [
         "whereas",
+        "provided that",
         "despite",
-        "because of",
-        "provided that"
+        "because of"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "Provided that introduces the condition for receiving the discount. The other choices do not express a condition here.",
       "qtype": "conjunction"
     },
@@ -2257,11 +2257,11 @@
       "stem": "The employee handbook explains how staff should respond ___ emergencies.",
       "opts": [
         "on",
-        "to",
         "at",
+        "to",
         "with"
       ],
-      "ans": 1,
+      "ans": 2,
       "expl": "Respond to is the fixed collocation. Emergencies are what staff must respond to.",
       "qtype": "preposition"
     },
@@ -2332,11 +2332,11 @@
       "stem": "The receptionist will notify visitors when their host ___.",
       "opts": [
         "arrived",
-        "arrives",
         "will arrive",
-        "arrive"
+        "arrive",
+        "arrives"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Host is singular, so the present simple form is arrives. A future time clause uses present simple rather than will.",
       "qtype": "agreement"
     },
@@ -2346,12 +2346,12 @@
       "level": 3,
       "stem": "The company reduced shipping costs by negotiating a more favorable ___.",
       "opts": [
+        "contract",
         "contractual",
         "contracting",
-        "contracted",
-        "contract"
+        "contracted"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "The article a and adjective favorable require a singular noun. Contract names the agreement being negotiated.",
       "qtype": "pos"
     },
@@ -2361,12 +2361,12 @@
       "level": 2,
       "stem": "Please ensure that the package is labeled ___.",
       "opts": [
+        "correctly",
         "correctness",
         "correct",
-        "correctly",
         "correction"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "The adverb correctly modifies is labeled and describes how the package should be labeled.",
       "qtype": "pos"
     },
@@ -2376,12 +2376,12 @@
       "level": 4,
       "stem": "The new policy applies to all employees, ___ their job title.",
       "opts": [
-        "regardless of",
         "so that",
+        "regardless of",
         "until",
         "because"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "Regardless of is followed by a noun phrase and means that the policy applies without considering job title.",
       "qtype": "preposition"
     },
@@ -2392,11 +2392,11 @@
       "stem": "The flight was delayed ___ heavy fog at the airport.",
       "opts": [
         "unless",
-        "because of",
         "whereas",
+        "because of",
         "although"
       ],
-      "ans": 1,
+      "ans": 2,
       "expl": "Because of introduces a noun phrase that gives the reason for the delay.",
       "qtype": "preposition"
     },
@@ -2408,10 +2408,10 @@
       "opts": [
         "finish",
         "finishing",
-        "to finish",
-        "finished"
+        "finished",
+        "to finish"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "The passive expression be expected is followed by an infinitive: to finish the draft.",
       "qtype": "infinitive"
     },
@@ -2421,12 +2421,12 @@
       "level": 3,
       "stem": "The director asked whether the figures were ___ enough to publish.",
       "opts": [
-        "reliable",
         "rely",
         "reliability",
+        "reliable",
         "reliably"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "The linking verb were requires an adjective. Reliable describes figures that can be trusted.",
       "qtype": "pos"
     },
@@ -2436,12 +2436,12 @@
       "level": 3,
       "stem": "The café will close early today ___ a private event.",
       "opts": [
+        "for",
         "since",
         "despite",
-        "while",
-        "for"
+        "while"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "For introduces the reason for closing early. It is followed by the noun phrase a private event.",
       "qtype": "preposition"
     },
@@ -2452,11 +2452,11 @@
       "stem": "The software update includes several security ___ for mobile users.",
       "opts": [
         "improving",
-        "improved",
         "improvements",
+        "improved",
         "improve"
       ],
-      "ans": 2,
+      "ans": 1,
       "expl": "Several requires a plural noun. Improvements names the security changes included in the update.",
       "qtype": "pos"
     },
@@ -2467,11 +2467,11 @@
       "stem": "The courier delivered the documents ___ than the client had expected.",
       "opts": [
         "earliness",
-        "earlier",
         "earliest",
-        "early"
+        "early",
+        "earlier"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Than requires the comparative adverb earlier. The delivery happened before the client's expectation.",
       "qtype": "comparison"
     },
@@ -2498,10 +2498,10 @@
       "opts": [
         "unless",
         "among",
-        "because",
-        "after"
+        "after",
+        "because"
       ],
-      "ans": 3,
+      "ans": 2,
       "expl": "After is followed by the noun phrase the product demonstration and identifies when representatives are available.",
       "qtype": "preposition"
     },
@@ -2527,11 +2527,11 @@
       "stem": "The hotel requires guests to provide a credit card ___ check-in.",
       "opts": [
         "in",
-        "to",
         "at",
+        "to",
         "on"
       ],
-      "ans": 2,
+      "ans": 1,
       "expl": "At is used with a specific event or point in time: at check-in.",
       "qtype": "preposition"
     },
@@ -2541,12 +2541,12 @@
       "level": 3,
       "stem": "The report was praised for its ___ analysis of customer behavior.",
       "opts": [
-        "through",
         "thorough",
+        "through",
         "thoroughness",
         "thoroughly"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "An adjective is required before analysis. Thorough means complete and careful.",
       "qtype": "pos"
     },
@@ -2556,12 +2556,12 @@
       "level": 3,
       "stem": "The sales figures have increased steadily ___ the new campaign began.",
       "opts": [
-        "since",
         "until",
         "by",
-        "during"
+        "during",
+        "since"
       ],
-      "ans": 0,
+      "ans": 3,
       "expl": "Since introduces the starting point of a continuing change: the campaign began.",
       "qtype": "conjunction"
     },
@@ -2586,12 +2586,12 @@
       "level": 3,
       "stem": "The technician found the instructions too ___ to follow.",
       "opts": [
-        "confusing",
         "confused",
+        "confusing",
         "confusion",
         "confuse"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "Confusing describes something that causes confusion. The instructions cause the difficulty, so confusing is correct.",
       "qtype": "pos"
     },
@@ -2618,10 +2618,10 @@
       "opts": [
         "efficiencies",
         "efficient",
-        "efficiency",
-        "efficiently"
+        "efficiently",
+        "efficiency"
       ],
-      "ans": 3,
+      "ans": 2,
       "expl": "An adverb modifies operate. Efficiently explains how the air-conditioning system can operate.",
       "qtype": "pos"
     },
@@ -2631,12 +2631,12 @@
       "level": 3,
       "stem": "The supplier will replace any items that arrive ___.",
       "opts": [
+        "damaged",
         "damaging",
         "damages",
-        "damage",
-        "damaged"
+        "damage"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "Damaged is a past participle adjective describing items that arrive in a damaged condition.",
       "qtype": "pos"
     },
@@ -2646,12 +2646,12 @@
       "level": 4,
       "stem": "The manager approved the request, ___ it exceeded the original budget.",
       "opts": [
-        "even though",
         "so that",
         "because of",
-        "during"
+        "during",
+        "even though"
       ],
-      "ans": 0,
+      "ans": 3,
       "expl": "Even though introduces a complete contrasting clause. The request was approved despite exceeding the budget.",
       "qtype": "conjunction"
     },
@@ -2662,11 +2662,11 @@
       "stem": "The conference room is reserved ___ the afternoon session.",
       "opts": [
         "to",
-        "for",
         "by",
-        "at"
+        "at",
+        "for"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "The room is reserved for the session, so for introduces the intended use.",
       "qtype": "preposition"
     },
@@ -2691,12 +2691,12 @@
       "level": 3,
       "stem": "The manager will review the schedule and make ___ changes if necessary.",
       "opts": [
+        "any",
         "some of",
         "much",
-        "any",
         "a little"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "Any is used before the plural count noun changes in this conditional sentence.",
       "qtype": "determiner"
     },
@@ -2721,12 +2721,12 @@
       "level": 3,
       "stem": "The employee handbook should be read carefully before it is ___ to new staff.",
       "opts": [
-        "distributed",
         "distributing",
         "distribute",
-        "distribution"
+        "distribution",
+        "distributed"
       ],
-      "ans": 0,
+      "ans": 3,
       "expl": "The handbook receives the action, so the passive form is distributed after is.",
       "qtype": "passive"
     },
@@ -2738,10 +2738,10 @@
       "opts": [
         "with",
         "at",
-        "to",
-        "for"
+        "for",
+        "to"
       ],
-      "ans": 3,
+      "ans": 2,
       "expl": "Apologize for is the fixed phrase used before the problem being apologized for.",
       "qtype": "preposition"
     },
@@ -2751,12 +2751,12 @@
       "level": 3,
       "stem": "The new filing system makes documents much easier ___.",
       "opts": [
-        "to locate",
         "locating",
+        "to locate",
         "locate",
         "located"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "The pattern is make something easier to do. To locate completes the adjective phrase easier to locate.",
       "qtype": "infinitive"
     },
@@ -2766,12 +2766,12 @@
       "level": 3,
       "stem": "The manager asked for a more ___ explanation of the price increase.",
       "opts": [
+        "specific",
         "specification",
         "specify",
-        "specifically",
-        "specific"
+        "specifically"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "More modifies the adjective specific, which describes the requested explanation.",
       "qtype": "pos"
     },
@@ -2826,12 +2826,12 @@
       "level": 3,
       "stem": "The operations team is responsible for ___ daily inventory levels.",
       "opts": [
-        "monitor",
         "monitoring",
+        "monitor",
         "monitorable",
         "monitored"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "Responsible for is followed by a gerund. Monitoring describes the team's regular duty.",
       "qtype": "gerund"
     },
@@ -2856,12 +2856,12 @@
       "level": 3,
       "stem": "The factory will stop production ___ the inspection is complete.",
       "opts": [
-        "until",
         "because of",
+        "until",
         "whereas",
         "during"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "Until marks the point when production can resume. The inspection is a complete clause after it.",
       "qtype": "conjunction"
     },
@@ -2871,12 +2871,12 @@
       "level": 2,
       "stem": "The supervisor gave the team clear instructions, and everyone followed ___ carefully.",
       "opts": [
-        "they",
         "them",
+        "they",
         "theirs",
         "their"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "Followed needs an object pronoun. Them refers back to the instructions.",
       "qtype": "pronoun"
     },
@@ -2888,10 +2888,10 @@
       "opts": [
         "avail",
         "availability",
-        "available",
-        "availably"
+        "availably",
+        "available"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "The linking verb is requires an adjective. Available means the schedule can be accessed.",
       "qtype": "pos"
     },
@@ -2901,12 +2901,12 @@
       "level": 3,
       "stem": "The factory installed new lights to improve visibility and reduce energy ___.",
       "opts": [
-        "consumption",
         "consume",
+        "consumption",
         "consuming",
         "consumable"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "Energy consumption is the noun phrase for the amount of energy used.",
       "qtype": "pos"
     },
@@ -2946,12 +2946,12 @@
       "level": 2,
       "stem": "The equipment must be handled with ___ to avoid damage.",
       "opts": [
-        "carefully",
         "care",
+        "carefully",
         "cared",
         "careful"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "With care is the noun phrase meaning carefully. The preposition with is followed by the noun care.",
       "qtype": "collocation"
     },
@@ -2961,12 +2961,12 @@
       "level": 2,
       "stem": "The manager was pleased ___ the team's progress during the trial period.",
       "opts": [
+        "with",
         "at",
         "for",
-        "to",
-        "with"
+        "to"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "Pleased with is the fixed expression for being satisfied with something.",
       "qtype": "preposition"
     },
@@ -2976,12 +2976,12 @@
       "level": 3,
       "stem": "The new employee handbook contains useful information about workplace ___.",
       "opts": [
-        "conduct",
         "conducted",
+        "conduct",
         "conducting",
         "conductive"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "Workplace conduct is the noun phrase for behavior at work. The other forms do not fit after workplace.",
       "qtype": "pos"
     },
@@ -2991,12 +2991,12 @@
       "level": 4,
       "stem": "The manager requested that all visitors ___ their badges at the entrance.",
       "opts": [
-        "wear",
         "wears",
         "wore",
-        "wearing"
+        "wearing",
+        "wear"
       ],
-      "ans": 0,
+      "ans": 3,
       "expl": "After requested that in a formal requirement, use the base form wear for the subjunctive.",
       "qtype": "subjunctive"
     },
@@ -3007,11 +3007,11 @@
       "stem": "The new packaging is designed to be both attractive and ___.",
       "opts": [
         "durability",
-        "durable",
         "durably",
+        "durable",
         "endure"
       ],
-      "ans": 1,
+      "ans": 2,
       "expl": "Both ... and joins parallel adjectives. Durable describes packaging that lasts a long time.",
       "qtype": "pos"
     },
@@ -3023,10 +3023,10 @@
       "opts": [
         "completed",
         "completing",
-        "complete",
-        "will complete"
+        "will complete",
+        "complete"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "The relative clause describes a future condition, so it uses present simple complete rather than will complete.",
       "qtype": "conditional"
     },
@@ -3036,12 +3036,12 @@
       "level": 2,
       "stem": "The repair should take no ___ than two hours.",
       "opts": [
+        "more",
         "much",
         "many",
-        "most",
-        "more"
+        "most"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "No more than means not exceeding a limit. More is the comparative form required before than.",
       "qtype": "comparison"
     },
@@ -3052,11 +3052,11 @@
       "stem": "The company has made a significant ___ in reducing paper waste.",
       "opts": [
         "improving",
-        "improve",
         "improvement",
+        "improve",
         "improved"
       ],
-      "ans": 2,
+      "ans": 1,
       "expl": "The article a and adjective significant require a singular noun. Improvement means progress.",
       "qtype": "pos"
     },
@@ -3066,12 +3066,12 @@
       "level": 3,
       "stem": "The loading area is accessible only ___ authorized personnel.",
       "opts": [
-        "to",
         "from",
         "at",
+        "to",
         "on"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "Accessible to is the fixed phrase. Authorized personnel are the people permitted to enter.",
       "qtype": "preposition"
     },
@@ -3082,11 +3082,11 @@
       "stem": "The company postponed the launch ___ a shortage of components.",
       "opts": [
         "unless",
-        "due to",
         "although",
-        "so that"
+        "so that",
+        "due to"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Due to introduces the noun phrase that explains the reason for postponing the launch.",
       "qtype": "preposition"
     },
@@ -3096,12 +3096,12 @@
       "level": 3,
       "stem": "The assistant prepared the meeting room ___ and checked the projector.",
       "opts": [
+        "in advance",
         "advance",
         "advancing",
-        "advanced",
-        "in advance"
+        "advanced"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "In advance is the adverbial phrase meaning before the event. It modifies prepared.",
       "qtype": "adverb"
     },
@@ -3111,12 +3111,12 @@
       "level": 3,
       "stem": "The employee was promoted because of her ___ performance.",
       "opts": [
-        "outstanding",
         "outstand",
+        "outstanding",
         "outstandingness",
         "outstandingly"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "An adjective is needed before performance. Outstanding means exceptionally good.",
       "qtype": "pos"
     },
@@ -3143,10 +3143,10 @@
       "opts": [
         "returned",
         "returns",
-        "will return",
-        "is returned"
+        "is returned",
+        "will return"
       ],
-      "ans": 3,
+      "ans": 2,
       "expl": "The product receives the action, so the passive is is returned. Unless clauses use present simple for a future condition.",
       "qtype": "passive"
     },
@@ -3217,11 +3217,11 @@
       "stem": "The new system is expected to make data entry less ___.",
       "opts": [
         "time-consumed",
-        "time-consuming",
         "time-consume",
-        "time-consumption"
+        "time-consumption",
+        "time-consuming"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Less modifies an adjective. Time-consuming describes a task that takes a lot of time.",
       "qtype": "pos"
     },
@@ -3246,12 +3246,12 @@
       "level": 4,
       "stem": "The report must be signed by a manager before it can be sent ___.",
       "opts": [
+        "externally",
         "externality",
         "external",
-        "externally",
         "externalize"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "Externally is the adverb modifying sent and means to outside recipients.",
       "qtype": "pos"
     },
@@ -3292,11 +3292,11 @@
       "stem": "The company offers customers several convenient payment ___.",
       "opts": [
         "methodically",
+        "methods",
         "methodical",
-        "method",
-        "methods"
+        "method"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "Several requires a plural countable noun. Methods are different ways to pay.",
       "qtype": "pos"
     },
@@ -3321,12 +3321,12 @@
       "level": 2,
       "stem": "The accountant noticed that one receipt was missing from the expense ___.",
       "opts": [
-        "report",
         "reporting",
         "reported",
+        "report",
         "reporter"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "Expense report is the standard noun phrase for a record of spending.",
       "qtype": "pos"
     },
@@ -3337,11 +3337,11 @@
       "stem": "The finance team has not finalized the figures ___, so please wait.",
       "opts": [
         "already",
-        "yet",
         "still",
-        "ever"
+        "ever",
+        "yet"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Yet is commonly used in negative present perfect sentences to say that something has not happened up to now.",
       "qtype": "adverb"
     },
@@ -3352,11 +3352,11 @@
       "stem": "The customer asked whether the transfer could be completed ___.",
       "opts": [
         "electronic",
+        "electronically",
         "electron",
-        "electronics",
-        "electronically"
+        "electronics"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "Electronically is an adverb describing how the transfer can be completed.",
       "qtype": "pos"
     },
@@ -3366,12 +3366,12 @@
       "level": 3,
       "stem": "The store offers a full refund provided that the item is returned ___.",
       "opts": [
+        "unused",
         "using",
         "uses",
-        "unused",
         "use"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "Unused is an adjective describing an item that has not been used, a condition for the refund.",
       "qtype": "pos"
     },
@@ -3381,12 +3381,12 @@
       "level": 4,
       "stem": "The credit department will review the application before a decision ___.",
       "opts": [
-        "made",
         "is made",
+        "made",
         "makes",
         "will make"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "A decision receives the action, so the passive is is made. A future time clause after before uses present simple.",
       "qtype": "passive"
     },
@@ -3396,12 +3396,12 @@
       "level": 2,
       "stem": "The retailer sends customers an email as soon as their order ___.",
       "opts": [
-        "ships",
         "shipped",
+        "ships",
         "ship",
         "will ship"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "Order is singular, so the present simple form is ships. A future time clause after as soon as uses present simple.",
       "qtype": "agreement"
     },
@@ -3427,11 +3427,11 @@
       "stem": "The company is unable to process orders ___ the system is offline.",
       "opts": [
         "despite",
-        "while",
         "during",
-        "because of"
+        "because of",
+        "while"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "While introduces a complete clause and gives the time during which orders cannot be processed.",
       "qtype": "conjunction"
     },
@@ -3456,12 +3456,12 @@
       "level": 2,
       "stem": "The company apologized for the inconvenience and offered to replace the item ___.",
       "opts": [
-        "immediately",
         "immediate",
         "immediacy",
+        "immediately",
         "immediate action"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "Immediately is an adverb modifying replace and tells when the company offered to act.",
       "qtype": "pos"
     },
@@ -3471,12 +3471,12 @@
       "level": 3,
       "stem": "The payment terminal is temporarily unavailable; please use another one ___.",
       "opts": [
+        "instead",
         "substitute",
         "instead of",
-        "instead",
         "rather"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "Instead is an adverb used at the end of the sentence to show an alternative.",
       "qtype": "adverb"
     },
@@ -3501,12 +3501,12 @@
       "level": 4,
       "stem": "The new account can be opened online without an appointment, ___?",
       "opts": [
-        "can't it",
         "isn't it",
+        "can't it",
         "can it",
         "doesn't it"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "The statement is affirmative and uses the modal can, so the negative tag is can't it.",
       "qtype": "tag_question"
     },
@@ -3518,10 +3518,10 @@
       "opts": [
         "will expire",
         "expire",
-        "expired",
-        "expires"
+        "expires",
+        "expired"
       ],
-      "ans": 3,
+      "ans": 2,
       "expl": "Warranty period is singular, and the time clause after until takes present simple expires.",
       "qtype": "agreement"
     },
@@ -3532,11 +3532,11 @@
       "stem": "The payment was rejected because the account contained ___ funds.",
       "opts": [
         "insufficiently",
-        "insufficient",
         "insufficiency",
-        "suffice"
+        "suffice",
+        "insufficient"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Insufficient is an adjective describing funds that are not enough.",
       "qtype": "pos"
     },
@@ -3546,12 +3546,12 @@
       "level": 3,
       "stem": "The finance manager is responsible for ensuring that all records are kept ___.",
       "opts": [
+        "securely",
         "securing",
         "security",
-        "secure",
-        "securely"
+        "secure"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "Securely is an adverb modifying kept and describes how records must be stored.",
       "qtype": "pos"
     },
@@ -3563,10 +3563,10 @@
       "opts": [
         "among",
         "between",
-        "throughout",
-        "toward"
+        "toward",
+        "throughout"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "Throughout means during the whole period of the holiday season.",
       "qtype": "preposition"
     },
@@ -3576,12 +3576,12 @@
       "level": 2,
       "stem": "The manager gave the customer a clear explanation, ___ the customer remained dissatisfied.",
       "opts": [
-        "but",
         "so that",
+        "but",
         "because",
         "unless"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "But connects the contrasting ideas of a clear explanation and continued dissatisfaction.",
       "qtype": "conjunction"
     },
@@ -3591,12 +3591,12 @@
       "level": 3,
       "stem": "The bank's website has been redesigned to make navigation more ___.",
       "opts": [
-        "intuitive",
         "intuit",
         "intuition",
+        "intuitive",
         "intuitively"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "More modifies the adjective intuitive, describing navigation that is easy to understand.",
       "qtype": "pos"
     },
@@ -3606,12 +3606,12 @@
       "level": 4,
       "stem": "The customer requested that the disputed charge ___ immediately.",
       "opts": [
-        "removed",
         "be removed",
+        "removed",
         "removing",
         "is removed"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "After requested that, formal English uses the base subjunctive be removed for the requested action.",
       "qtype": "subjunctive"
     },
@@ -3621,12 +3621,12 @@
       "level": 3,
       "stem": "Please contact the help desk if you have any difficulty ___ the payment.",
       "opts": [
+        "making",
         "to make",
         "made",
-        "make",
-        "making"
+        "make"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "Difficulty is followed by a gerund. Making the payment names the activity causing difficulty.",
       "qtype": "gerund"
     },
@@ -3638,10 +3638,10 @@
       "opts": [
         "soonest",
         "soonness",
-        "soon",
-        "sooner"
+        "sooner",
+        "soon"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "The fixed expression is as soon as possible, using the base form soon between as and as.",
       "qtype": "comparison"
     },
@@ -3652,11 +3652,11 @@
       "stem": "The accountant checked the totals again to avoid an ___ error.",
       "opts": [
         "avoiding",
+        "avoidable",
         "avoid",
-        "avoidance",
-        "avoidable"
+        "avoidance"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "An adjective is needed before error. Avoidable describes an error that could have been prevented.",
       "qtype": "pos"
     },
@@ -3666,12 +3666,12 @@
       "level": 2,
       "stem": "The payment instructions are available in several languages for the convenience of ___.",
       "opts": [
-        "customers",
         "customer",
         "customize",
+        "customers",
         "customary"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "The preposition of needs a noun. Customers are the people who benefit from the translated instructions.",
       "qtype": "pos"
     },
@@ -3681,12 +3681,12 @@
       "level": 3,
       "stem": "The company will issue a replacement once the damaged product ___.",
       "opts": [
-        "received",
         "is received",
+        "received",
         "will receive",
         "receives"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "The product receives the action, so is received is passive. A future time clause after once uses present simple.",
       "qtype": "passive"
     },
@@ -3712,11 +3712,11 @@
       "stem": "The bank will notify account holders ___ there is any unusual activity.",
       "opts": [
         "because of",
+        "if",
         "despite",
-        "during",
-        "if"
+        "during"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "If introduces the condition that triggers the bank's notification.",
       "qtype": "conjunction"
     },
@@ -3726,12 +3726,12 @@
       "level": 2,
       "stem": "Passengers should keep their boarding passes ___ until they leave the airport.",
       "opts": [
-        "accessible",
         "access",
         "accessibility",
-        "accessibly"
+        "accessibly",
+        "accessible"
       ],
-      "ans": 0,
+      "ans": 3,
       "expl": "Keep is followed by an object complement. Accessible means easy to reach or show when needed.",
       "qtype": "pos"
     },
@@ -3773,10 +3773,10 @@
       "opts": [
         "beside",
         "during",
-        "before",
-        "among"
+        "among",
+        "before"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "Before introduces the earlier time relative to departure.",
       "qtype": "preposition"
     },
@@ -3786,12 +3786,12 @@
       "level": 2,
       "stem": "The hotel has recently ___ its reservation system.",
       "opts": [
-        "updates",
         "updated",
+        "updates",
         "updating",
         "update"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "Has is followed by a past participle in the present perfect. Updated describes the completed system change.",
       "qtype": "perfect"
     },
@@ -3801,12 +3801,12 @@
       "level": 3,
       "stem": "Guests may request a late checkout, subject ___ availability.",
       "opts": [
-        "to",
         "at",
+        "to",
         "with",
         "for"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "Subject to availability is the fixed phrase meaning dependent on whether space or service is available.",
       "qtype": "preposition"
     },
@@ -3831,12 +3831,12 @@
       "level": 2,
       "stem": "The hotel provides guests ___ complimentary wireless internet.",
       "opts": [
+        "with",
         "for",
         "to",
-        "with",
         "of"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "Provide guests with something is the fixed structure; the guests receive wireless internet.",
       "qtype": "preposition"
     },
@@ -3848,10 +3848,10 @@
       "opts": [
         "host",
         "hosted",
-        "hosting",
-        "to host"
+        "to host",
+        "hosting"
       ],
-      "ans": 3,
+      "ans": 2,
       "expl": "The pattern adjective enough to do something requires the infinitive to host.",
       "qtype": "infinitive"
     },
@@ -3876,12 +3876,12 @@
       "level": 2,
       "stem": "The software can automatically ___ duplicate files.",
       "opts": [
-        "identify",
         "identifiable",
         "identification",
-        "identified"
+        "identified",
+        "identify"
       ],
-      "ans": 0,
+      "ans": 3,
       "expl": "A modal such as can is followed by the base verb identify.",
       "qtype": "pos"
     },
@@ -3891,12 +3891,12 @@
       "level": 3,
       "stem": "The update will be installed ___ the device is connected to Wi-Fi.",
       "opts": [
-        "once",
         "during",
         "despite",
+        "once",
         "because of"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "Once introduces the time condition for installation: after the device connects to Wi-Fi.",
       "qtype": "conjunction"
     },
@@ -3906,12 +3906,12 @@
       "level": 3,
       "stem": "Users should back up their files regularly to prevent data ___.",
       "opts": [
+        "loss",
         "lose",
         "lost",
-        "losing",
-        "loss"
+        "losing"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "Data loss is the noun phrase for losing information. A noun is needed after data.",
       "qtype": "pos"
     },
@@ -3921,12 +3921,12 @@
       "level": 3,
       "stem": "The app's new features are designed to improve user ___.",
       "opts": [
-        "engaged",
         "engagement",
+        "engaged",
         "engaging",
         "engage"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "User engagement is the noun phrase for the degree to which users interact with the app.",
       "qtype": "pos"
     },
@@ -3937,11 +3937,11 @@
       "stem": "The support article explains how to reset a password ___.",
       "opts": [
         "safeness",
-        "safe",
         "safely",
+        "safe",
         "safety"
       ],
-      "ans": 2,
+      "ans": 1,
       "expl": "Safely is an adverb modifying reset and explains how the password should be changed.",
       "qtype": "pos"
     },
@@ -3953,10 +3953,10 @@
       "opts": [
         "test",
         "testing",
-        "to be tested",
-        "tested"
+        "tested",
+        "to be tested"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "Arrange for something to be done takes an infinitive passive: for the elevators to be tested.",
       "qtype": "causative"
     },
@@ -3968,10 +3968,10 @@
       "opts": [
         "first",
         "one",
-        "one time",
-        "once a"
+        "once a",
+        "one time"
       ],
-      "ans": 3,
+      "ans": 2,
       "expl": "Once a month is the standard expression for a monthly frequency.",
       "qtype": "frequency"
     },
@@ -3982,11 +3982,11 @@
       "stem": "The heating system stopped working, so the room became increasingly ___.",
       "opts": [
         "coldly",
-        "cold",
         "cool",
+        "cold",
         "coldness"
       ],
-      "ans": 1,
+      "ans": 2,
       "expl": "Became is a linking verb and needs an adjective. Cold describes the room's changing state.",
       "qtype": "pos"
     },
@@ -3996,12 +3996,12 @@
       "level": 2,
       "stem": "The maintenance team responded ___ to the water leak.",
       "opts": [
-        "promptly",
         "prompt",
         "prompted",
-        "promptness"
+        "promptness",
+        "promptly"
       ],
-      "ans": 0,
+      "ans": 3,
       "expl": "Promptly is an adverb describing the quick response.",
       "qtype": "pos"
     },
@@ -4041,12 +4041,12 @@
       "level": 3,
       "stem": "The new lights consume less electricity and are therefore more ___.",
       "opts": [
+        "economical",
         "economically",
         "economy",
-        "economical",
         "economize"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "More modifies the adjective economical, meaning the lights cost less to operate.",
       "qtype": "pos"
     },
@@ -4057,11 +4057,11 @@
       "stem": "The museum is closed on Mondays, ___ it opens late on other weekdays.",
       "opts": [
         "during",
+        "although",
         "unless",
-        "because of",
-        "although"
+        "because of"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "Although introduces the contrast between being closed Monday and opening late on other days.",
       "qtype": "conjunction"
     },
@@ -4101,12 +4101,12 @@
       "level": 4,
       "stem": "The reservation can be changed without charge ___ it is made 48 hours in advance.",
       "opts": [
-        "provided that",
         "because of",
+        "provided that",
         "despite",
         "whereas"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "Provided that introduces the condition for changing the reservation without a charge.",
       "qtype": "conjunction"
     },
@@ -4116,12 +4116,12 @@
       "level": 3,
       "stem": "The airport lounge offers a quiet area for passengers who need to work ___.",
       "opts": [
-        "private",
         "privately",
+        "private",
         "privatize",
         "privacy"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "Privately is an adverb modifying work and means away from other people.",
       "qtype": "pos"
     },
@@ -4132,11 +4132,11 @@
       "stem": "The device must be switched off before the battery ___.",
       "opts": [
         "removed",
-        "is removed",
         "will remove",
+        "is removed",
         "removes"
       ],
-      "ans": 1,
+      "ans": 2,
       "expl": "The battery receives the action, so is removed is passive. A before clause uses present simple.",
       "qtype": "passive"
     },
@@ -4148,10 +4148,10 @@
       "opts": [
         "propriety",
         "proper",
-        "properly",
-        "property"
+        "property",
+        "properly"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "Properly is an adverb modifying use and describes the correct way to operate the equipment.",
       "qtype": "pos"
     },
@@ -4162,11 +4162,11 @@
       "stem": "The hotel offers a discount to guests who book ___ advance.",
       "opts": [
         "on",
+        "in",
         "to",
-        "at",
-        "in"
+        "at"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "In advance is the fixed phrase meaning before the relevant date or event.",
       "qtype": "collocation"
     },
@@ -4176,12 +4176,12 @@
       "level": 2,
       "stem": "The chairperson opened the meeting by reviewing the day's ___.",
       "opts": [
-        "agenda",
         "agent",
         "agendas",
+        "agenda",
         "agendize"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "The day's is followed by a singular noun. Agenda is the list of topics for a meeting.",
       "qtype": "pos"
     },
@@ -4206,12 +4206,12 @@
       "level": 2,
       "stem": "The speaker answered each question clearly and ___.",
       "opts": [
-        "patience",
         "patiently",
+        "patience",
         "impatient",
         "patient"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "Patiently is an adverb parallel to clearly and describes how the speaker answered.",
       "qtype": "pos"
     },
@@ -4223,10 +4223,10 @@
       "opts": [
         "with",
         "for",
-        "to",
-        "at"
+        "at",
+        "to"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "Present the proposal to the client is the standard construction.",
       "qtype": "preposition"
     },
@@ -4236,12 +4236,12 @@
       "level": 3,
       "stem": "The manager asked whether everyone was ___ with the revised plan.",
       "opts": [
-        "satisfied",
         "satisfying",
+        "satisfied",
         "satisfy",
         "satisfaction"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "Satisfied describes how people feel about the plan. Satisfying would describe the plan itself.",
       "qtype": "pos"
     },
@@ -4251,12 +4251,12 @@
       "level": 3,
       "stem": "The team reached an agreement after a ___ discussion.",
       "opts": [
-        "lengthy",
         "lengthen",
         "lengthily",
+        "lengthy",
         "length"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "An adjective is required before discussion. Lengthy means lasting a long time.",
       "qtype": "pos"
     },
@@ -4266,12 +4266,12 @@
       "level": 2,
       "stem": "The report summarizes the results of the survey ___.",
       "opts": [
+        "briefly",
         "briefness",
         "briefing",
-        "brief",
-        "briefly"
+        "brief"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "Briefly is an adverb modifying summarizes and means in a short way.",
       "qtype": "pos"
     },
@@ -4282,11 +4282,11 @@
       "stem": "The client asked us to send the revised proposal as soon as it ___.",
       "opts": [
         "readies",
-        "is ready",
         "will be ready",
-        "was ready"
+        "was ready",
+        "is ready"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Proposal is singular, and a future time clause after as soon as uses present simple is ready.",
       "qtype": "agreement"
     },
@@ -4296,12 +4296,12 @@
       "level": 3,
       "stem": "The team will postpone the presentation ___ the projector is repaired.",
       "opts": [
+        "until",
         "during",
         "because of",
-        "until",
         "despite"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "Until marks the time when the presentation can take place: after the projector is repaired.",
       "qtype": "conjunction"
     },
@@ -4311,12 +4311,12 @@
       "level": 2,
       "stem": "The customer requested a more ___ explanation of the service fee.",
       "opts": [
-        "detailed",
         "detail",
         "details",
+        "detailed",
         "detailing"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "More modifies the adjective detailed, which describes the explanation requested by the customer.",
       "qtype": "pos"
     },
@@ -4327,11 +4327,11 @@
       "stem": "The representative took notes so that she would not ___ any details.",
       "opts": [
         "missed",
-        "misses",
         "miss",
+        "misses",
         "missing"
       ],
-      "ans": 2,
+      "ans": 1,
       "expl": "The modal would is followed by the base verb miss.",
       "qtype": "modal"
     },
@@ -4342,11 +4342,11 @@
       "stem": "The company is committed to ___ its products responsibly.",
       "opts": [
         "development",
-        "developing",
         "developed",
-        "develop"
+        "develop",
+        "developing"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "In committed to, to is a preposition, so it is followed by the gerund developing.",
       "qtype": "gerund"
     },
@@ -4357,11 +4357,11 @@
       "stem": "The new sales figures are considerably ___ than last quarter's.",
       "opts": [
         "high",
+        "higher",
         "highest",
-        "highly",
-        "higher"
+        "highly"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "Than requires the comparative adjective higher. Considerably intensifies the comparison.",
       "qtype": "comparison"
     },
@@ -4371,12 +4371,12 @@
       "level": 3,
       "stem": "The company hired an outside consultant to provide an ___ opinion.",
       "opts": [
-        "independently",
         "independent",
+        "independently",
         "independence",
         "depend"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "An adjective is required before opinion. Independent describes an unbiased outside view.",
       "qtype": "pos"
     },
@@ -4401,12 +4401,12 @@
       "level": 2,
       "stem": "The office installed soundproof panels to reduce background ___.",
       "opts": [
+        "noise",
         "noisy",
         "noisily",
-        "noisiness",
-        "noise"
+        "noisiness"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "Background noise is the standard noun phrase. A noun is required after background.",
       "qtype": "pos"
     },
@@ -4416,12 +4416,12 @@
       "level": 2,
       "stem": "The event coordinator is in charge ___ arranging the seating.",
       "opts": [
-        "of",
         "for",
+        "of",
         "with",
         "to"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "In charge of is the fixed expression meaning responsible for a task.",
       "qtype": "preposition"
     },
@@ -4432,11 +4432,11 @@
       "stem": "The advertising campaign was successful because it reached its target audience ___.",
       "opts": [
         "effect",
-        "effectively",
         "effective",
-        "effectiveness"
+        "effectiveness",
+        "effectively"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Effectively is an adverb modifying reached and describes how well the campaign reached the audience.",
       "qtype": "pos"
     },
@@ -4448,10 +4448,10 @@
       "opts": [
         "reviewing",
         "reviewed",
-        "will review",
-        "reviews"
+        "reviews",
+        "will review"
       ],
-      "ans": 3,
+      "ans": 2,
       "expl": "A future time clause after once uses present simple reviews, not will review.",
       "qtype": "tense"
     },
@@ -4461,12 +4461,12 @@
       "level": 2,
       "stem": "The company has received positive ___ from users of the new service.",
       "opts": [
-        "feedback",
         "fed",
+        "feedback",
         "feed back",
         "feeding"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "Feedback is an uncountable noun meaning comments from users, so it fits after positive.",
       "qtype": "pos"
     },
@@ -4492,11 +4492,11 @@
       "stem": "The brochure is intended for customers who are ___ in sustainable products.",
       "opts": [
         "interest",
-        "interested",
         "interesting",
-        "interestingly"
+        "interestingly",
+        "interested"
       ],
-      "ans": 1,
+      "ans": 3,
       "expl": "Interested describes customers' feelings and is followed by in. Interesting would describe the products.",
       "qtype": "pos"
     },
@@ -4506,12 +4506,12 @@
       "level": 3,
       "stem": "The company plans to expand its services ___ rural areas.",
       "opts": [
+        "into",
         "on",
         "at",
-        "among",
-        "into"
+        "among"
       ],
-      "ans": 3,
+      "ans": 0,
       "expl": "Expand into is the correct phrasal combination for entering a new area.",
       "qtype": "preposition"
     },
@@ -4523,10 +4523,10 @@
       "opts": [
         "attend",
         "attentive",
-        "attendees",
-        "attendance"
+        "attendance",
+        "attendees"
       ],
-      "ans": 2,
+      "ans": 3,
       "expl": "Attendees are people who attend the conference. The plural noun is required after all the.",
       "qtype": "pos"
     },
@@ -4536,12 +4536,12 @@
       "level": 2,
       "stem": "The survey results were collected anonymously to encourage ___ responses.",
       "opts": [
-        "honest",
         "honor",
+        "honest",
         "honestly",
         "honesty"
       ],
-      "ans": 0,
+      "ans": 1,
       "expl": "An adjective is needed before responses. Honest describes truthful answers.",
       "qtype": "pos"
     },
@@ -4551,12 +4551,12 @@
       "level": 3,
       "stem": "The company will continue the program as long as it remains ___.",
       "opts": [
-        "profitable",
         "profitably",
         "profit",
+        "profitable",
         "profitability"
       ],
-      "ans": 0,
+      "ans": 2,
       "expl": "Remains is a linking verb and takes an adjective. Profitable describes a program that earns more than it costs.",
       "qtype": "pos"
     },
@@ -4566,12 +4566,12 @@
       "level": 2,
       "stem": "The sales representative apologized for ___ the appointment.",
       "opts": [
-        "miss",
         "missing",
+        "miss",
         "to miss",
         "missed"
       ],
-      "ans": 1,
+      "ans": 0,
       "expl": "The preposition for is followed by a gerund: apologized for missing the appointment.",
       "qtype": "gerund"
     },
@@ -4582,11 +4582,11 @@
       "stem": "The customer was asked to wait while the representative checked the information ___.",
       "opts": [
         "manuals",
+        "manually",
         "manufacture",
-        "manual",
-        "manually"
+        "manual"
       ],
-      "ans": 3,
+      "ans": 1,
       "expl": "Manually is an adverb describing how the representative checked the information.",
       "qtype": "pos"
     },
@@ -4611,12 +4611,12 @@
       "level": 3,
       "stem": "The new policy is intended to make communication more ___.",
       "opts": [
+        "transparent",
         "transparency",
         "transparently",
-        "transparent",
         "transpire"
       ],
-      "ans": 2,
+      "ans": 0,
       "expl": "More modifies the adjective transparent, describing communication that is easier to understand and check.",
       "qtype": "pos"
     },
@@ -4657,11 +4657,11 @@
       "stem": "The supplier confirmed that the replacement would arrive ___ Monday morning.",
       "opts": [
         "during",
-        "by",
         "until",
+        "by",
         "among"
       ],
-      "ans": 1,
+      "ans": 2,
       "expl": "By Monday morning gives the latest expected arrival time: no later than then.",
       "qtype": "preposition"
     },
@@ -4671,12 +4671,12 @@
       "level": 2,
       "stem": "The online form is simple enough for customers to complete ___.",
       "opts": [
-        "independently",
         "independence",
         "depend",
-        "independent"
+        "independent",
+        "independently"
       ],
-      "ans": 0,
+      "ans": 3,
       "expl": "Independently is an adverb modifying complete and means without assistance.",
       "qtype": "pos"
     }

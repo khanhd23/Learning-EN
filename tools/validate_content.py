@@ -276,8 +276,12 @@ def locale_rule_errors(root=ROOT):
                     definition = source.get("def", "") if isinstance(source, dict) else ""
                     if value["g"].strip().casefold() == str(definition).strip().casefold():
                         warnings_out.append(f"{locale}/words:{key}: TRANSLATE gloss identical to English definition")
-                    if definition and (len(value["g"].split()) > max(8, len(definition.split()) * 2.5) or
-                                       len(value["g"].split()) < max(1, len(definition.split()) // 5)):
+                    # Glosses are learner-facing equivalents, not translations of the
+                    # often verbose WordNet definition. A concise gloss can therefore
+                    # legitimately be much shorter than the English source. Keep the
+                    # useful overlong-definition warning, but do not flag short glosses
+                    # that follow CONTENT_STANDARD.md (1–3 equivalents, <= 40 chars).
+                    if definition and len(value["g"].split()) > max(8, len(definition.split()) * 2.5):
                         warnings_out.append(f"{locale}/words:{key}: gloss length is unusual compared with English definition")
 
         if "ui" in files:
