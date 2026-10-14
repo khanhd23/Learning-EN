@@ -1,0 +1,24 @@
+key,english,english_example,def,draft,corrected,comment
+questions:qc8c168466,,,,,"We berbentuk jamak, jadi gunakan do not atau don't sebelum kata kerja dasar go.",manual UTF-8 repair against English source
+questions:qa1c9da4c7,,,,,Konsonan + y berubah menjadi -ies: city → cities.,manual UTF-8 repair against English source
+questions:q252950fb9,,,,,Could you…? adalah permintaan yang sopan.,manual UTF-8 repair against English source
+questions:qca6ba6c2e,,,,,Cake memiliki bunyi /eɪ/. Kata lainnya memiliki bunyi /æ/.,manual UTF-8 repair against English source
+questions:q3e7691490,,,,,Like memiliki bunyi /aɪ/. Kata lainnya memiliki bunyi /ɪ/.,manual UTF-8 repair against English source
+ui:ad_loading,,,,,"Video sedang dimuat, harap tunggu…",manual UTF-8 repair against English source
+ui:loading,,,,,Memuat…,manual UTF-8 repair against English source
+ui:day_detail,,,,,Hari %1$s: %2$d XP · %3$d menit · %4$d jawaban,manual UTF-8 repair against English source
+ui:exam_format_toeic_p5_title,,,,,Membaca — Bagian 5,manual UTF-8 repair against English source
+ui:exam_format_toeic_p6_title,,,,,Membaca — Bagian 6,manual UTF-8 repair against English source
+ui:fix_to,,,,,%1$s → %2$s,manual UTF-8 repair against English source
+ui:lv_12,,,,,Level 1–2,manual UTF-8 repair against English source
+ui:lv_23,,,,,Level 2–3,manual UTF-8 repair against English source
+ui:lv_34,,,,,Level 3–4,manual UTF-8 repair against English source
+ui:lv_45,,,,,Level 4–5,manual UTF-8 repair against English source
+ui:mini_test,,,,,Tes singkat · %1$d soal,manual UTF-8 repair against English source
+ui:result_meta,,,,,%1$d soal · %2$d:%3$02d,manual UTF-8 repair against English source
+ui:sort_az,,,,,A–Z,manual UTF-8 repair against English source
+ui:test_meta,,,,,%1$d soal · %2$s · Terakhir: %3$s · Terbaik: %4$s,manual UTF-8 repair against English source
+ui:type_meta,,,,,%1$d soal · Akurasi %2$s · Dikuasai %3$d,manual UTF-8 repair against English source
+ui:vocab_total,,,,,%1$d kata · %2$d makna,manual UTF-8 repair against English source
+ui:hint_context,,,,,Tebak dari kalimat ini: “%1$s”,manual UTF-8 repair against English source
+ui:hint_word_order_meaning,,,,,"Makna: “%1$s”. Temukan subjek dan kata kerja terlebih dahulu, lalu tambahkan kata-kata lain.",manual UTF-8 repair against English source

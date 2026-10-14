@@ -1,0 +1,80 @@
+key,english,english_example,def,draft,corrected,comment
+questions:qd5b75949c,,,,,"Setelah can, diperlukan kata kerja dasar. Affect adalah kata kerja; effect biasanya kata benda.",manual LLM semantic translation from content/en/questions.json
+questions:q830c03079,,,,,"Setelah positive, diperlukan kata benda. Effect adalah kata benda yang berarti 'hasil'.",manual LLM semantic translation from content/en/questions.json
+questions:q5fd6cbe02,,,,,"Lend berarti 'memberikan sesuatu untuk sementara': lend somebody something. Borrow berarti 'mengambil', jadi tidak cocok ketika me adalah penerima.",manual LLM semantic translation from content/en/questions.json
+questions:q877de3ff6,,,,,Borrow something from somewhere berarti mengambilnya dan mengembalikannya nanti.,manual LLM semantic translation from content/en/questions.json
+questions:qabcaa6b07,,,,,Gunakan say that + klausa. Told harus langsung diikuti orang: told me that…,manual LLM semantic translation from content/en/questions.json
+questions:q8047a210b,,,,,Ungkapan tetapnya adalah do homework.,manual LLM semantic translation from content/en/questions.json
+questions:q3dad66886,,,,,Ungkapan tetapnya adalah make a mistake.,manual LLM semantic translation from content/en/questions.json
+questions:qa44378353,,,,,Do somebody a favour berarti 'membantu seseorang'. Ini adalah ungkapan tetap.,manual LLM semantic translation from content/en/questions.json
+questions:q8aefbd72a,,,,,Ungkapan tetapnya adalah make a decision.,manual LLM semantic translation from content/en/questions.json
+questions:qab683114a,,,,,"Setelah don't, diperlukan kata kerja dasar: lose. Loose adalah kata sifat; loss adalah kata benda.",manual LLM semantic translation from content/en/questions.json
+questions:qefa5c4152,,,,,"Setelah too, diperlukan kata sifat. Loose berarti 'tidak ketat'.",manual LLM semantic translation from content/en/questions.json
+questions:q6cebc0160,,,,,"Setelah a new, diperlukan kata benda tunggal yang dapat dihitung. Job dapat dihitung; work dalam makna ini tidak.",manual LLM semantic translation from content/en/questions.json
+questions:q91c12b211,,,,,"A lot of diikuti kata benda yang tidak dapat dihitung. Work tidak dapat dihitung dalam konteks ini, jadi tidak memakai a atau -s.",manual LLM semantic translation from content/en/questions.json
+questions:q9a58184d8,,,,,Fun berarti 'menyenangkan'. Funny berarti 'membuat orang tertawa'.,manual LLM semantic translation from content/en/questions.json
+questions:q8a360766b,,,,,Lelucon yang membuat orang tertawa bersifat funny.,manual LLM semantic translation from content/en/questions.json
+questions:qcef739fac,,,,,Bored menjelaskan perasaan seseorang. Boring menjelaskan benda atau hal yang menyebabkan perasaan itu.,manual LLM semantic translation from content/en/questions.json
+questions:qae68d123c,,,,,"Ceramah itu menyebabkan perasaan tersebut, jadi gunakan kata sifat berakhiran -ing: boring.",manual LLM semantic translation from content/en/questions.json
+questions:q4b85e2921,,,,,"We menjelaskan perasaan orang, jadi gunakan kata sifat berakhiran -ed: excited.",manual LLM semantic translation from content/en/questions.json
+questions:qb8980f3d9,,,,,Listen to music berarti sengaja memperhatikan musik.,manual LLM semantic translation from content/en/questions.json
+questions:qd34c4288e,,,,,Hear digunakan untuk suara yang sampai kepada kita tanpa sengaja. Noise adalah sesuatu yang kita dengar.,manual LLM semantic translation from content/en/questions.json
+questions:qac4bb110e,,,,,Gunakan watch a movie: kita melihat sesuatu yang bergerak selama suatu jangka waktu.,manual LLM semantic translation from content/en/questions.json
+questions:q5416ef47c,,,,,Look at berarti 'mengarahkan mata ke'. Look! sering digunakan agar seseorang memperhatikan sesuatu.,manual LLM semantic translation from content/en/questions.json
+questions:qbb19d5ef8,,,,,Raise memerlukan objek (prices). Rise tidak memiliki objek.,manual LLM semantic translation from content/en/questions.json
+questions:qfa8e4db70,,,,,Rise tidak memiliki objek: the sun rises. Raise memerlukan objek.,manual LLM semantic translation from content/en/questions.json
+questions:q96a7d1322,,,,,Between digunakan untuk dua titik yang jelas: the bank dan the school.,manual LLM semantic translation from content/en/questions.json
+questions:q5b2bee451,,,,,Among digunakan untuk sekelompok orang atau benda: her classmates.,manual LLM semantic translation from content/en/questions.json
+questions:q04206fc57,,,,,"2018 adalah titik awal, jadi gunakan since.",manual LLM semantic translation from content/en/questions.json
+questions:qd64e644dd,,,,,"Ten years adalah lamanya suatu waktu, jadi gunakan for.",manual LLM semantic translation from content/en/questions.json
+questions:q6fc9c33c8,,,,,"The meeting adalah frasa kata benda, jadi diperlukan preposisi during.",manual LLM semantic translation from content/en/questions.json
+questions:q2c8da63b1,,,,,"You were out adalah klausa, jadi diperlukan konjungsi while.",manual LLM semantic translation from content/en/questions.json
+questions:qe9a37268b,,,,,"The heavy traffic adalah frasa kata benda, jadi diperlukan preposisi Despite.",manual LLM semantic translation from content/en/questions.json
+questions:q8379d2e35,,,,,"He was tired adalah klausa, jadi diperlukan konjungsi Although.",manual LLM semantic translation from content/en/questions.json
+questions:qbc85cdecc,,,,,"The storm adalah frasa kata benda, jadi gunakan because of.",manual LLM semantic translation from content/en/questions.json
+questions:q5e7d52fc7,,,,,"I was sick adalah klausa, jadi diperlukan konjungsi because.",manual LLM semantic translation from content/en/questions.json
+questions:q9f4e7b067,,,,,Economic berarti 'berkaitan dengan ekonomi': economic growth.,manual LLM semantic translation from content/en/questions.json
+questions:q72f0c87c8,,,,,Economical berarti 'tidak menghabiskan banyak uang atau bahan bakar'.,manual LLM semantic translation from content/en/questions.json
+questions:q4a07cd340,,,,,"Advice adalah kata benda yang tidak dapat dihitung, jadi tidak memiliki -s. Advise adalah kata kerja.",manual LLM semantic translation from content/en/questions.json
+questions:q65fb61061,,,,,Diperlukan kata kerja lampau: advised. Advice adalah kata benda.,manual LLM semantic translation from content/en/questions.json
+questions:qd7924554a,,,,,Remind somebody to do something berarti 'membuat seseorang ingat'.,manual LLM semantic translation from content/en/questions.json
+questions:q191d7a92a,,,,,Remember berarti menyimpan sesuatu dalam ingatan sendiri.,manual LLM semantic translation from content/en/questions.json
+questions:qfca24a04d,,,,,Check berarti 'melihat lagi untuk memastikan kebenarannya'. Control berarti 'memiliki kekuasaan atas'.,manual LLM semantic translation from content/en/questions.json
+questions:q28c08afab,,,,,Orang yang membayar pengacara atau tenaga profesional lain disebut client.,manual LLM semantic translation from content/en/questions.json
+questions:q8ba9afb70,,,,,Orang yang menginap di hotel disebut guests.,manual LLM semantic translation from content/en/questions.json
+questions:qbf035c79f,,,,,Uang yang dibayar per jam atau per minggu adalah wage. Salary dibayar per bulan atau per tahun.,manual LLM semantic translation from content/en/questions.json
+questions:q11d30cd74,,,,,Sesuatu yang dimenangkan dalam perlombaan adalah prize. Price adalah biaya sesuatu.,manual LLM semantic translation from content/en/questions.json
+questions:q5adacd446,,,,,Career adalah pekerjaan yang dilakukan seseorang selama bertahun-tahun.,manual LLM semantic translation from content/en/questions.json
+questions:qe771c2b1c,,,,,Kunjungan singkat untuk bekerja disebut business trip.,manual LLM semantic translation from content/en/questions.json
+questions:qcf8d2f73f,,,,,"Journey berarti perjalanan dari satu tempat ke tempat lain, sering kali perjalanan yang jauh.",manual LLM semantic translation from content/en/questions.json
+questions:q156d00e53,,,,,Its adalah bentuk kepemilikan: ekor itu milik anjing. It's berarti it is.,manual LLM semantic translation from content/en/questions.json
+questions:q7218b8dab,,,,,It's = it is: It is raining.,manual LLM semantic translation from content/en/questions.json
+questions:qfac8e604b,,,,,Bentuk komparatif menggunakan than: cheaper than.,manual LLM semantic translation from content/en/questions.json
+questions:q41c3c84bf,,,,,Especially berarti 'lebih daripada yang lain; khususnya'.,manual LLM semantic translation from content/en/questions.json
+questions:q6700cb96f,,,,,Specially berarti 'untuk tujuan tertentu'.,manual LLM semantic translation from content/en/questions.json
+questions:qbf072957b,,,,,Hard juga dapat menjadi kata keterangan: work hard. Hardly berarti 'hampir tidak'.,manual LLM semantic translation from content/en/questions.json
+questions:q8eff13bc4,,,,,Hardly berarti 'hampir tidak': I could almost not hear him.,manual LLM semantic translation from content/en/questions.json
+questions:q5facafb6a,,,,,Lately berarti 'baru-baru ini' dan sering digunakan dengan present perfect.,manual LLM semantic translation from content/en/questions.json
+questions:q8fa575a91,,,,,Alone berarti 'tanpa orang lain'.,manual LLM semantic translation from content/en/questions.json
+questions:q5d20e874f,,,,,Lonely menjelaskan perasaan sedih karena tidak memiliki teman atau pendamping.,manual LLM semantic translation from content/en/questions.json
+questions:qc1b7bcb32,,,,,"Pertandingan itu menyebabkan perasaan tersebut, jadi gunakan kata sifat berakhiran -ing: exciting.",manual LLM semantic translation from content/en/questions.json
+questions:q76aa90d54,,,,,"My brother berarti he, jadi kata kerjanya adalah is.",manual LLM semantic translation from content/en/questions.json
+questions:qedced9b6b,,,,,They berpasangan dengan are.,manual LLM semantic translation from content/en/questions.json
+questions:q1bbbe1f03,,,,,I berpasangan dengan am.,manual LLM semantic translation from content/en/questions.json
+questions:q78ada7e0f,,,,,"Your parents berbentuk jamak, jadi pertanyaannya dimulai dengan Are.",manual LLM semantic translation from content/en/questions.json
+questions:q741512d1b,,,,,"Coffee tidak dapat dihitung, jadi menggunakan kata kerja tunggal: is.",manual LLM semantic translation from content/en/questions.json
+questions:q62b973e3b,,,,,We berpasangan dengan are.,manual LLM semantic translation from content/en/questions.json
+questions:qb30bf03db,,,,,"My keys berbentuk jamak, jadi kata kerjanya adalah are.",manual LLM semantic translation from content/en/questions.json
+questions:q747416582,,,,,It berpasangan dengan is.,manual LLM semantic translation from content/en/questions.json
+questions:qae06a0104,,,,,"She berbentuk tunggal, jadi gunakan is, bukan are.",manual LLM semantic translation from content/en/questions.json
+questions:q982934822,,,,,"My friends berbentuk jamak, jadi gunakan are, bukan is.",manual LLM semantic translation from content/en/questions.json
+questions:qd08888c66,,,,,Kata sifat tidak dapat langsung mengikuti subjek. Bahasa Inggris memerlukan kata kerja to be: I am tired.,manual LLM semantic translation from content/en/questions.json
+questions:q98ee39bf2,,,,,"Ini pertanyaan be dalam present simple: letakkan Are sebelum you, lalu kata sifat ready.",manual LLM semantic translation from content/en/questions.json
+questions:q4bdfdaf1a,,,,,"Sister berbentuk tunggal, jadi gunakan is. Job adalah kata benda tunggal yang dapat dihitung, sehingga memerlukan artikel a.",manual LLM semantic translation from content/en/questions.json
+questions:q84e3821c0,,,,,"They berbentuk jamak, jadi gunakan are. Bentuk negatifnya adalah are not atau aren't.",manual LLM semantic translation from content/en/questions.json
+questions:q5f9e3b0d3,,,,,She + kata kerja present simple + -es: goes. Every day menandai kebiasaan.,manual LLM semantic translation from content/en/questions.json
+questions:qd09d48f20,,,,,"My parents berbentuk jamak, jadi kata kerjanya tidak memakai -s: watch.",manual LLM semantic translation from content/en/questions.json
+questions:q6eb1fd2f7,,,,,"Ini adalah fakta, dan water berbentuk tunggal, jadi kata kerjanya mendapat -s: boils.",manual LLM semantic translation from content/en/questions.json
+questions:q67a98c983,,,,,He + doesn't + kata kerja dasar.,manual LLM semantic translation from content/en/questions.json
+questions:q77fe2b7f4,,,,,"Your sister berarti she, jadi pertanyaannya menggunakan Does.",manual LLM semantic translation from content/en/questions.json
+questions:q9098b2af5,,,,,Jadwal tetap menggunakan present simple. The train berbentuk tunggal: leaves.,manual LLM semantic translation from content/en/questions.json
