@@ -1,0 +1,101 @@
+key,english,english_example,def,draft,corrected,comment
+questions:qdabf2b316,,,,,So far menunjukkan periode sampai sekarang: present perfect.,manual LLM semantic translation from content/en/questions.json
+questions:qba6e2c008,,,,,"Since + titik awal, yang dapat berupa klausa masa lalu.",manual LLM semantic translation from content/en/questions.json
+questions:q4ac81491b,,,,,For + lamanya waktu: for ten years.,manual LLM semantic translation from content/en/questions.json
+questions:q12e50201c,,,,,For the past five years menunjukkan keadaan yang berlanjut sampai sekarang: present perfect.,manual LLM semantic translation from content/en/questions.json
+questions:q4c47b3d4e,,,,,"Last weekend adalah waktu lampau yang sudah selesai, jadi gunakan simple past: I visited.",manual LLM semantic translation from content/en/questions.json
+questions:q6cb5fe7db,,,,,Has + past participle: go → gone.,manual LLM semantic translation from content/en/questions.json
+questions:q5063724f9,,,,,"Five years adalah lamanya waktu, jadi gunakan for, bukan since.",manual LLM semantic translation from content/en/questions.json
+questions:q2be47698e,,,,,Dimulai pada 2020 dan masih bekerja berarti have worked here since 2020.,manual LLM semantic translation from content/en/questions.json
+questions:qf42e31c36,,,,,The first time I have eaten it berarti I have never eaten it before.,manual LLM semantic translation from content/en/questions.json
+questions:qe6c6a6c05,,,,,Present perfect have been menanyakan pengalaman sampai sekarang. Ever umum dipakai dalam pertanyaan tentang apakah sesuatu pernah terjadi.,manual LLM semantic translation from content/en/questions.json
+questions:qdb6f72600,,,,,Present perfect have finished menghubungkan tindakan yang selesai dengan keadaan sekarang. Just berarti tindakan itu baru saja terjadi.,manual LLM semantic translation from content/en/questions.json
+questions:q8e5db5de4,,,,,"Since breakfast menunjukkan tindakan yang berlanjut sampai sekarang, jadi gunakan has been studying.",manual LLM semantic translation from content/en/questions.json
+questions:q75ca4fdf8,,,,,"For nearly an hour menjelaskan tindakan yang terus berlangsung, jadi gunakan have been waiting.",manual LLM semantic translation from content/en/questions.json
+questions:q03cc302fb,,,,,"Tangan yang kotor menjadi bukti sekarang tentang kegiatan baru-baru ini, jadi gunakan have been gardening.",manual LLM semantic translation from content/en/questions.json
+questions:qe5054b431,,,,,"All afternoon menjelaskan kegiatan yang terus berlangsung, jadi gunakan has been raining.",manual LLM semantic translation from content/en/questions.json
+questions:qf555a2a6e,,,,,Pertanyaan present perfect continuous adalah How long have you been learning English?,manual LLM semantic translation from content/en/questions.json
+questions:q3111fbdbf,,,,,"For twenty minutes menunjukkan tindakan yang terus berlangsung, jadi gunakan has been playing.",manual LLM semantic translation from content/en/questions.json
+questions:q6274c740a,,,,,"Setelah have been, gunakan bentuk -ing: studying.",manual LLM semantic translation from content/en/questions.json
+questions:q5b4cc8190,,,,,"Setelah has been, gunakan bentuk -ing: waiting.",manual LLM semantic translation from content/en/questions.json
+questions:q92d90498d,,,,,"Tindakan dimulai dua jam lalu dan masih berlangsung, jadi gunakan have been playing for two hours.",manual LLM semantic translation from content/en/questions.json
+questions:qed9e42469,,,,,"This time next week menunjukkan tindakan yang sedang berlangsung di masa depan, jadi gunakan will be relaxing.",manual LLM semantic translation from content/en/questions.json
+questions:q2983f8d9b,,,,,"Pada waktu tertentu besok, tim akan sedang menguji, jadi gunakan will be testing.",manual LLM semantic translation from content/en/questions.json
+questions:qa968d2288,,,,,"Pembicara akan sedang mengemudi pukul enam, jadi gunakan future continuous will be driving.",manual LLM semantic translation from content/en/questions.json
+questions:qd38d3e4d5,,,,,"Anak-anak akan sedang makan malam ketika kamu pulang, jadi gunakan will be having.",manual LLM semantic translation from content/en/questions.json
+questions:qc85b64e21,,,,,Pertanyaan future continuous adalah What will you be doing this time tomorrow?,manual LLM semantic translation from content/en/questions.json
+questions:qe9d39b755,,,,,"All day tomorrow menjelaskan tindakan yang sedang berlangsung, jadi gunakan will be repairing.",manual LLM semantic translation from content/en/questions.json
+questions:q1e659c01d,,,,,"Setelah will be, gunakan bentuk -ing: working.",manual LLM semantic translation from content/en/questions.json
+questions:q09ec43e7b,,,,,"Setelah will be, gunakan bentuk -ing: travelling.",manual LLM semantic translation from content/en/questions.json
+questions:q670332fa3,,,,,"Makan malam akan sudah berlangsung ketika kamu tiba, jadi gunakan will be eating.",manual LLM semantic translation from content/en/questions.json
+questions:q2c76d4f42,,,,,Perpustakaan dibuka oleh seseorang pada masa depan: will be opened.,manual LLM semantic translation from content/en/questions.json
+questions:qedbcdc3c9,,,,,Mobil-mobil dibuat oleh seseorang: passive present simple.,manual LLM semantic translation from content/en/questions.json
+questions:qbaee6703f,,,,,Para pemenang diumumkan oleh seseorang pada masa depan: will be announced.,manual LLM semantic translation from content/en/questions.json
+questions:qfb699803b,,,,,Lamaran diajukan oleh orang-orang: must be + past participle.,manual LLM semantic translation from content/en/questions.json
+questions:q41c030e7e,,,,,Yesterday + passive: was delivered.,manual LLM semantic translation from content/en/questions.json
+questions:q88e050dbf,,,,,Ruangan dibersihkan oleh staf setiap pagi: passive present simple.,manual LLM semantic translation from content/en/questions.json
+questions:qe49869c3a,,,,,Passive present perfect: has been + past participle.,manual LLM semantic translation from content/en/questions.json
+questions:q865a513d1,,,,,Pelanggan menerima nasihat itu: are advised.,manual LLM semantic translation from content/en/questions.json
+questions:qcc1a347e7,,,,,Museum dikunjungi wisatawan: passive present simple.,manual LLM semantic translation from content/en/questions.json
+questions:q7392c0d78,,,,,Bentuk pasif menggunakan past participle: written.,manual LLM semantic translation from content/en/questions.json
+questions:q3003d0d62,,,,,Dokumen dikirim oleh seseorang: must be sent.,manual LLM semantic translation from content/en/questions.json
+questions:q7e2513352,,,,,Passive continuous: is being painted.,manual LLM semantic translation from content/en/questions.json
+questions:q12790289c,,,,,Sepeda menerima tindakan tersebut: My bike was stolen.,manual LLM semantic translation from content/en/questions.json
+questions:q096bbd640,,,,,"Ini passive present simple: kantor menerima tindakan, jadi gunakan is + past participle cleaned.",manual LLM semantic translation from content/en/questions.json
+questions:q5fbe594b4,,,,,"Ini future passive: hasil menerima tindakan, jadi gunakan will + past participle announced.",manual LLM semantic translation from content/en/questions.json
+questions:qc76bfcb27,,,,,First conditional: If + present simple.,manual LLM semantic translation from content/en/questions.json
+questions:q0eb74bb3e,,,,,Second conditional: If I were you.,manual LLM semantic translation from content/en/questions.json
+questions:qf7c50c30c,,,,,Second conditional: would + kata kerja dasar.,manual LLM semantic translation from content/en/questions.json
+questions:qa5dfd9277,,,,,Fakta umum menggunakan zero conditional: kedua bagiannya memakai present simple.,manual LLM semantic translation from content/en/questions.json
+questions:q12f98c357,,,,,"Unless berarti 'if not': if you don't hurry, you'll miss the bus.",manual LLM semantic translation from content/en/questions.json
+questions:q931be81eb,,,,,First conditional: If + present simple.,manual LLM semantic translation from content/en/questions.json
+questions:qe9aa13b6f,,,,,Second conditional: if + were.,manual LLM semantic translation from content/en/questions.json
+questions:q9d758a650,,,,,Second conditional: If + simple past.,manual LLM semantic translation from content/en/questions.json
+questions:q7fea113c6,,,,,Klausa if dalam first conditional tidak menggunakan will: If it rains.,manual LLM semantic translation from content/en/questions.json
+questions:qe2158b96e,,,,,"Second conditional menggunakan If + simple past, jadi have berubah menjadi had.",manual LLM semantic translation from content/en/questions.json
+questions:q9ab8b219d,,,,,Unless sudah berarti 'if not'. Hapus don't.,manual LLM semantic translation from content/en/questions.json
+questions:qb5e46e35c,,,,,Situasi sekarang yang dibayangkan menggunakan second conditional.,manual LLM semantic translation from content/en/questions.json
+questions:q9e9f70e7b,,,,,"Dalam first conditional, gunakan present simple setelah if. Hasilnya di sini berupa perintah: just call me.",manual LLM semantic translation from content/en/questions.json
+questions:q857e0e0a1,,,,,Ini second conditional untuk situasi khayalan. Gunakan simple past won setelah if dan would + kata kerja dasar do pada hasilnya.,manual LLM semantic translation from content/en/questions.json
+questions:q98fd81c16,,,,,"Untuk orang sebagai subjek klausa, gunakan who.",manual LLM semantic translation from content/en/questions.json
+questions:q9f664cc55,,,,,"Untuk benda, gunakan which.",manual LLM semantic translation from content/en/questions.json
+questions:q53941776f,,,,,"Untuk tempat (= at which), gunakan where.",manual LLM semantic translation from content/en/questions.json
+questions:qc30486e52,,,,,Whose menunjukkan kepemilikan: the student's father.,manual LLM semantic translation from content/en/questions.json
+questions:q8eba25c03,,,,,"Untuk orang sebagai subjek klausa, gunakan who.",manual LLM semantic translation from content/en/questions.json
+questions:qd11f8bef2,,,,,"Setelah koma, gunakan which untuk benda, bukan that.",manual LLM semantic translation from content/en/questions.json
+questions:q938b114eb,,,,,Whose menunjukkan kepemilikan: the company's products.,manual LLM semantic translation from content/en/questions.json
+questions:qf2457d02d,,,,,"Untuk orang sebagai subjek klausa, gunakan who.",manual LLM semantic translation from content/en/questions.json
+questions:q1c57d24c5,,,,,"Untuk orang, gunakan who.",manual LLM semantic translation from content/en/questions.json
+questions:q40e355d35,,,,,"Setelah koma, gunakan which, bukan that.",manual LLM semantic translation from content/en/questions.json
+questions:qdc45969e1,,,,,Which sudah menggantikan house. Hapus it.,manual LLM semantic translation from content/en/questions.json
+questions:q4c8881a49,,,,,That memperkenalkan klausa relatif yang menjelaskan book. Present continuous am reading menunjukkan tindakan yang sedang berlangsung sekarang.,manual LLM semantic translation from content/en/questions.json
+questions:q4dc93fef1,,,,,Who memperkenalkan klausa relatif tentang orang dan berfungsi sebagai subjek helped.,manual LLM semantic translation from content/en/questions.json
+questions:q595526f18,,,,,Enjoy + -ing.,manual LLM semantic translation from content/en/questions.json
+questions:q18687fdc7,,,,,Decide + to + kata kerja.,manual LLM semantic translation from content/en/questions.json
+questions:q6e05f8dce,,,,,Look forward to + -ing. Di sini to adalah preposisi.,manual LLM semantic translation from content/en/questions.json
+questions:q2908ea2b6,,,,,Mind + -ing.,manual LLM semantic translation from content/en/questions.json
+questions:q5a838ac58,,,,,Promise + to + kata kerja.,manual LLM semantic translation from content/en/questions.json
+questions:qbcc878978,,,,,"Setelah preposisi (for), gunakan -ing.",manual LLM semantic translation from content/en/questions.json
+questions:q1fc04186f,,,,,Remember to do berarti jangan lupa melakukan sesuatu di masa depan.,manual LLM semantic translation from content/en/questions.json
+questions:q0ed783090,,,,,Suggest + -ing.,manual LLM semantic translation from content/en/questions.json
+questions:q56ff572d7,,,,,Afford + to + kata kerja.,manual LLM semantic translation from content/en/questions.json
+questions:qdebbc67b6,,,,,"Setelah preposisi (before), gunakan -ing.",manual LLM semantic translation from content/en/questions.json
+questions:qabee56cb4,,,,,"Setelah preposisi (in), gunakan -ing: learning.",manual LLM semantic translation from content/en/questions.json
+questions:qa55965414,,,,,Avoid + -ing: answering.,manual LLM semantic translation from content/en/questions.json
+questions:q2047040b9,,,,,Agree + to + kata kerja: to help.,manual LLM semantic translation from content/en/questions.json
+questions:qbb4f99147,,,,,"Preposisi seperti about diikuti kata benda atau gerund. Karena itu gunakan changing, bukan infinitive change.",manual LLM semantic translation from content/en/questions.json
+questions:q152740bb4,,,,,Want diikuti to + kata kerja dasar. Become adalah bentuk dasar setelah to.,manual LLM semantic translation from content/en/questions.json
+questions:qb48bd6338,,,,,"The high price adalah frasa kata benda, jadi diperlukan Despite.",manual LLM semantic translation from content/en/questions.json
+questions:qf0f790a33,,,,,"The store was busy adalah klausa, jadi diperlukan Although.",manual LLM semantic translation from content/en/questions.json
+questions:q7d2bdaa78,,,,,"The storm adalah frasa kata benda, jadi diperlukan due to.",manual LLM semantic translation from content/en/questions.json
+questions:q033eecd49,,,,,"The presentation adalah frasa kata benda, jadi diperlukan during.",manual LLM semantic translation from content/en/questions.json
+questions:qa40ced944,,,,,"You were at lunch adalah klausa, jadi diperlukan while.",manual LLM semantic translation from content/en/questions.json
+questions:qd247dc42c,,,,,"She had little experience adalah klausa, jadi diperlukan even though.",manual LLM semantic translation from content/en/questions.json
+questions:qd0f852ded,,,,,"The successful advertising campaign adalah frasa kata benda, jadi diperlukan because of.",manual LLM semantic translation from content/en/questions.json
+questions:q5f0451007,,,,,"Repairs are being made adalah klausa, jadi diperlukan because.",manual LLM semantic translation from content/en/questions.json
+questions:q83f8a388e,,,,,"It was raining adalah klausa, jadi gunakan Although, bukan Despite.",manual LLM semantic translation from content/en/questions.json
+questions:q265150aa8,,,,,"The heavy rain adalah frasa kata benda, jadi gunakan because of.",manual LLM semantic translation from content/en/questions.json
+questions:qbe1fbcb8f,,,,,"I was in Rome adalah klausa, jadi gunakan While, bukan During.",manual LLM semantic translation from content/en/questions.json
+questions:qf171d2349,,,,,Although + klausa = Despite + -ing: Despite being tired.,manual LLM semantic translation from content/en/questions.json
+questions:qd3a81576f,,,,,"Despite diikuti frasa kata benda, bukan klausa lengkap. The traffic adalah frasa kata benda, sedangkan arrived adalah kata kerja utama.",manual LLM semantic translation from content/en/questions.json
+questions:qe595ee6a8,,,,,Subjek sebenarnya adalah price yang berbentuk tunggal: is.,manual LLM semantic translation from content/en/questions.json
