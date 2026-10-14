@@ -1,0 +1,101 @@
+key,english,english_example,def,draft,corrected,comment
+questions:q36d89f5e6,,,,,"Last night menunjukkan waktu lampau yang sudah selesai, jadi gunakan simple past.",manual LLM semantic translation from content/en/questions.json
+questions:q60efcdaab,,,,,Two years ago menandai simple past: go → went.,manual LLM semantic translation from content/en/questions.json
+questions:q331c72099,,,,,Tindakan itu selesai di masa lalu: lose → lost.,manual LLM semantic translation from content/en/questions.json
+questions:q7b0f03c43,,,,,Pertanyaan simple past dengan kata kerja biasa menggunakan Did.,manual LLM semantic translation from content/en/questions.json
+questions:qb94cc1dcf,,,,,They + bentuk lampau be = were.,manual LLM semantic translation from content/en/questions.json
+questions:qe695b3921,,,,,Didn't + kata kerja dasar: read.,manual LLM semantic translation from content/en/questions.json
+questions:q39a6cc9f5,,,,,"When I was a child menunjukkan waktu lampau yang sudah selesai, jadi gunakan simple past.",manual LLM semantic translation from content/en/questions.json
+questions:qbf2b72d83,,,,,"In March, yang sudah berlalu, menandai simple past.",manual LLM semantic translation from content/en/questions.json
+questions:qe854284da,,,,,I + bentuk lampau be = was.,manual LLM semantic translation from content/en/questions.json
+questions:q83e94ad88,,,,,Leave memiliki bentuk lampau tidak beraturan: left.,manual LLM semantic translation from content/en/questions.json
+questions:q3fc66e148,,,,,"Setelah didn't, gunakan kata kerja dasar: go.",manual LLM semantic translation from content/en/questions.json
+questions:q13535a122,,,,,Buy memiliki bentuk lampau tidak beraturan: bought.,manual LLM semantic translation from content/en/questions.json
+questions:qb59f2dc28,,,,,"Setelah Did, gunakan kata kerja dasar: call.",manual LLM semantic translation from content/en/questions.json
+questions:q2f8e92b1b,,,,,Dimulai lima tahun lalu dan masih belajar berarti have learned for five years.,manual LLM semantic translation from content/en/questions.json
+questions:q7e8a689a9,,,,,"Gunakan simple past went untuk perjalanan yang sudah selesai. Last Sunday adalah keterangan waktu yang sudah berlalu, jadi tidak perlu present perfect.",manual LLM semantic translation from content/en/questions.json
+questions:q60b602816,,,,,"Did sudah menandai kala lampau, jadi kata kerja utama kembali ke bentuk dasar enjoy.",manual LLM semantic translation from content/en/questions.json
+questions:q0d35c55b7,,,,,"Didn't adalah did not, sehingga membawa kala lampau dan harus diikuti bentuk dasar have.",manual LLM semantic translation from content/en/questions.json
+questions:q2b7cbe2a1,,,,,Tindakan sedang berlangsung sekarang: is sleeping.,manual LLM semantic translation from content/en/questions.json
+questions:q4c46730f5,,,,,Look! menunjukkan tindakan sedang berlangsung sekarang. Those people berbentuk jamak: are getting off.,manual LLM semantic translation from content/en/questions.json
+questions:qb693abe33,,,,,"Know adalah kata kerja statif, jadi tidak digunakan dalam bentuk continuous.",manual LLM semantic translation from content/en/questions.json
+questions:q1ca3155d8,,,,,At the moment menandai present continuous.,manual LLM semantic translation from content/en/questions.json
+questions:qcd7a6d05e,,,,,Rencana dekat yang sudah diatur menggunakan present continuous.,manual LLM semantic translation from content/en/questions.json
+questions:q2d8f1019f,,,,,Tren yang sedang berubah menggunakan present continuous: are getting.,manual LLM semantic translation from content/en/questions.json
+questions:q6eee81e74,,,,,Listen! menunjukkan tindakan sedang berlangsung sekarang.,manual LLM semantic translation from content/en/questions.json
+questions:qce6916264,,,,,Be + -ing: is cooking.,manual LLM semantic translation from content/en/questions.json
+questions:q4041f069b,,,,,"Want adalah kata kerja statif, jadi tidak digunakan dalam bentuk continuous: I want.",manual LLM semantic translation from content/en/questions.json
+questions:q3afcf0812,,,,,Look! menunjukkan tindakan sedang berlangsung sekarang: are playing.,manual LLM semantic translation from content/en/questions.json
+questions:q741e1ea14,,,,,"Pertanyaan menanyakan tindakan yang sedang berlangsung sekarang, jadi gunakan present continuous: are + doing.",manual LLM semantic translation from content/en/questions.json
+questions:q65e319514,,,,,"Present continuous dapat menggambarkan keadaan sementara di sekitar sekarang. Dengan my sister, gunakan is working.",manual LLM semantic translation from content/en/questions.json
+questions:q16551146f,,,,,Kata sifat panjang membentuk komparatif dengan more: more comfortable.,manual LLM semantic translation from content/en/questions.json
+questions:q843942381,,,,,Kata sifat pendek membentuk superlatif dengan the + -est. Hot menggandakan t: the hottest.,manual LLM semantic translation from content/en/questions.json
+questions:qf7c667045,,,,,Good memiliki bentuk komparatif tidak beraturan: better.,manual LLM semantic translation from content/en/questions.json
+questions:q5eac83c04,,,,,Kata sifat panjang membentuk superlatif dengan the most: the most expensive.,manual LLM semantic translation from content/en/questions.json
+questions:q4f1532c0d,,,,,Perbandingan kesetaraan menggunakan as + kata sifat + as.,manual LLM semantic translation from content/en/questions.json
+questions:q753f85cb8,,,,,Bad memiliki bentuk komparatif tidak beraturan: worse.,manual LLM semantic translation from content/en/questions.json
+questions:q376ffff6e,,,,,Kata sifat pendek + -er + than: taller than.,manual LLM semantic translation from content/en/questions.json
+questions:q36bb1d9b5,,,,,Of all the candidates menunjukkan superlatif: the most qualified.,manual LLM semantic translation from content/en/questions.json
+questions:q969b7cfd8,,,,,"Bentuk komparatif menggunakan than, bukan then. Then berarti 'setelah itu'.",manual LLM semantic translation from content/en/questions.json
+questions:qa38fd9c7b,,,,,Taller sudah berbentuk komparatif. Hapus more.,manual LLM semantic translation from content/en/questions.json
+questions:q35fa64dd1,,,,,"Cheap adalah kata sifat pendek, jadi superlatifnya adalah the cheapest.",manual LLM semantic translation from content/en/questions.json
+questions:q2ad4dfc05,,,,,Gunakan superlatif highest untuk membandingkan Everest dengan semua gunung lain di dunia. Superlatif biasanya memakai the.,manual LLM semantic translation from content/en/questions.json
+questions:q4eac795c9,,,,,"Gunakan kata sifat komparatif bigger untuk membandingkan dua kamar, lalu gunakan than dan pembanding yours.",manual LLM semantic translation from content/en/questions.json
+questions:q6ec370598,,,,,"People dapat dihitung, jadi gunakan many.",manual LLM semantic translation from content/en/questions.json
+questions:q03c324fff,,,,,"Time dalam makna ini tidak dapat dihitung, jadi gunakan much.",manual LLM semantic translation from content/en/questions.json
+questions:q7c60d0e4a,,,,,"Seats dapat dihitung, dan maknanya 'beberapa, tetapi tidak banyak': a few.",manual LLM semantic translation from content/en/questions.json
+questions:qfcc6c8f5a,,,,,Permintaan dan tawaran yang sopan menggunakan some.,manual LLM semantic translation from content/en/questions.json
+questions:qd570ae3f9,,,,,Kalimat negatif biasanya menggunakan any.,manual LLM semantic translation from content/en/questions.json
+questions:qea2136967,,,,,"Furniture tidak dapat dihitung, jadi gunakan little, bukan few atau many.",manual LLM semantic translation from content/en/questions.json
+questions:q5a979bbb8,,,,,"Information tidak dapat dihitung, jadi gunakan much.",manual LLM semantic translation from content/en/questions.json
+questions:qd9f69e0b5,,,,,"Employees adalah kata benda jamak yang dapat dihitung, jadi gunakan several.",manual LLM semantic translation from content/en/questions.json
+questions:q00ab58c03,,,,,"Money tidak dapat dihitung, jadi gunakan How much.",manual LLM semantic translation from content/en/questions.json
+questions:qe25d4a016,,,,,"Homework tidak dapat dihitung, jadi tidak memiliki -s.",manual LLM semantic translation from content/en/questions.json
+questions:qc2bf4e8fd,,,,,"Milk tidak dapat dihitung, jadi gunakan much.",manual LLM semantic translation from content/en/questions.json
+questions:qd86c83db4,,,,,"Apples dapat dihitung dan berbentuk jamak, jadi a few berarti jumlah kecil yang positif. Gunakan are setelah there.",manual LLM semantic translation from content/en/questions.json
+questions:q46110ee61,,,,,"Help tidak dapat dihitung dalam konteks ini, jadi gunakan a little untuk jumlah kecil yang positif. A little diletakkan sebelum kata benda.",manual LLM semantic translation from content/en/questions.json
+questions:qd12604384,,,,,Keputusan yang dibuat saat berbicara menggunakan will.,manual LLM semantic translation from content/en/questions.json
+questions:q8321084a5,,,,,Rencana yang dibuat sebelum sekarang menggunakan be going to.,manual LLM semantic translation from content/en/questions.json
+questions:qacf9f8572,,,,,Prediksi berdasarkan sesuatu yang dapat dilihat sekarang menggunakan be going to.,manual LLM semantic translation from content/en/questions.json
+questions:qe16b69528,,,,,Prediksi berdasarkan pendapat (I think) menggunakan will.,manual LLM semantic translation from content/en/questions.json
+questions:qd0b47ac0c,,,,,Janji menggunakan will. Bentuk negatifnya adalah won't.,manual LLM semantic translation from content/en/questions.json
+questions:q4a4d3ccde,,,,,Next spring berada di masa depan: will open.,manual LLM semantic translation from content/en/questions.json
+questions:qb98c95e83,,,,,Will diikuti kata kerja dasar tanpa to. Hapus to.,manual LLM semantic translation from content/en/questions.json
+questions:qb304a4758,,,,,Going to memerlukan kata kerja to be: She is going to.,manual LLM semantic translation from content/en/questions.json
+questions:qa0aa1eea3,,,,,"Be going to + learn menyatakan niat atau rencana. Ten new words adalah objeknya, dan every day menunjukkan waktu kebiasaan.",manual LLM semantic translation from content/en/questions.json
+questions:qdf47e8f55,,,,,Will + kata kerja dasar help menyatakan keputusan atau janji masa depan. Setelah will digunakan bentuk dasar.,manual LLM semantic translation from content/en/questions.json
+questions:qcaccb00af,,,,,"Pada waktu tertentu tadi malam, makan malam sedang berlangsung, jadi gunakan past continuous was cooking.",manual LLM semantic translation from content/en/questions.json
+questions:q837f9f11a,,,,,"Catatan sedang ditulis bersamaan ketika manajer berbicara, jadi gunakan were taking.",manual LLM semantic translation from content/en/questions.json
+questions:q216e75fe2,,,,,"Panggilan telepon menyela tindakan yang sedang berlangsung, jadi tindakan itu adalah was driving.",manual LLM semantic translation from content/en/questions.json
+questions:qc9302c047,,,,,"Menonton televisi sedang berlangsung ketika lampu padam, jadi gunakan were watching.",manual LLM semantic translation from content/en/questions.json
+questions:q78c386836,,,,,"Dengan you, pertanyaan past continuous adalah were you doing.",manual LLM semantic translation from content/en/questions.json
+questions:qcf1ae22f2,,,,,"Dengan he, kalimat negatif past continuous dimulai dengan was not listening.",manual LLM semantic translation from content/en/questions.json
+questions:q81a44d936,,,,,"Setelah were, gunakan bentuk -ing: were waiting.",manual LLM semantic translation from content/en/questions.json
+questions:q300f45cec,,,,,"Setelah was, gunakan bentuk -ing: was reading.",manual LLM semantic translation from content/en/questions.json
+questions:q6317a19a1,,,,,"Tindakan berjalan sedang berlangsung ketika hujan mulai turun, jadi gunakan while we were walking.",manual LLM semantic translation from content/en/questions.json
+questions:q3cafb2e1e,,,,,Nasihat menggunakan should.,manual LLM semantic translation from content/en/questions.json
+questions:qd450e8a8c,,,,,Sesuatu yang tidak diperbolehkan menggunakan mustn't.,manual LLM semantic translation from content/en/questions.json
+questions:qf0773ecc1,,,,,Sesuatu yang tidak perlu dilakukan menggunakan don't have to.,manual LLM semantic translation from content/en/questions.json
+questions:q5265611d6,,,,,Aturan atau kewajiban menggunakan must.,manual LLM semantic translation from content/en/questions.json
+questions:qf77402982,,,,,"Dengan he, have to berubah menjadi has to.",manual LLM semantic translation from content/en/questions.json
+questions:q0f3564a4d,,,,,Must diikuti kata kerja dasar tanpa to. Hapus to.,manual LLM semantic translation from content/en/questions.json
+questions:qb41d6c373,,,,,"My mother berarti she, jadi have to berubah menjadi has to.",manual LLM semantic translation from content/en/questions.json
+questions:q18afc1cc3,,,,,Not necessary berarti don't have to. Mustn't berarti tidak diperbolehkan.,manual LLM semantic translation from content/en/questions.json
+questions:qc4bfcb7b3,,,,,"Should adalah kata kerja modal, jadi diikuti bentuk dasar practice. Every day menunjukkan rutinitas yang dianjurkan.",manual LLM semantic translation from content/en/questions.json
+questions:q977b803ac,,,,,"Jika tidak ada kata benda setelahnya, diperlukan kata ganti kepemilikan hers (= her umbrella).",manual LLM semantic translation from content/en/questions.json
+questions:qeeb7e6b0d,,,,,"Setelah kata kerja give, diperlukan kata ganti objek: me.",manual LLM semantic translation from content/en/questions.json
+questions:q37af8db6a,,,,,"Sebelum kata benda assistant, diperlukan kata sifat kepemilikan: her.",manual LLM semantic translation from content/en/questions.json
+questions:q0bcc6c80e,,,,,By + kata ganti refleksif berarti 'tanpa bantuan': by themselves.,manual LLM semantic translation from content/en/questions.json
+questions:q72a99e15f,,,,,"Team berbentuk tunggal dalam konteks ini, jadi bentuk kepemilikannya adalah its. It's berarti it is.",manual LLM semantic translation from content/en/questions.json
+questions:q215faac9e,,,,,"Himself menekankan bahwa dia sendiri yang melakukannya, bukan orang lain.",manual LLM semantic translation from content/en/questions.json
+questions:q67a50778a,,,,,"Subjek memerlukan kata ganti subjek, dan I biasanya diletakkan terakhir: My brother and I.",manual LLM semantic translation from content/en/questions.json
+questions:qb6fd08fc4,,,,,"Jika tidak ada kata benda setelahnya, diperlukan kata ganti kepemilikan mine.",manual LLM semantic translation from content/en/questions.json
+questions:q7ed8882a6,,,,,Bentuk kepemilikannya adalah its. It's berarti it is.,manual LLM semantic translation from content/en/questions.json
+questions:q3269e8a4e,,,,,Their menunjukkan kepemilikan sebelum house. Ours adalah kata ganti kepemilikan yang menggantikan our house setelah perbandingan.,manual LLM semantic translation from content/en/questions.json
+questions:q3a54419d9,,,,,Taught myself menggunakan kata ganti refleksif karena subjek dan orang yang menerima tindakan adalah orang yang sama.,manual LLM semantic translation from content/en/questions.json
+questions:q2b83721ba,,,,,Pengalaman sampai sekarang (tiga kali) menggunakan present perfect.,manual LLM semantic translation from content/en/questions.json
+questions:q874510ea6,,,,,Since 2018 menunjukkan keadaan yang berlanjut sampai sekarang: present perfect.,manual LLM semantic translation from content/en/questions.json
+questions:qfb44d3de3,,,,,Pertanyaan dalam present perfect sering diakhiri dengan yet.,manual LLM semantic translation from content/en/questions.json
+questions:q28d932390,,,,,"Last summer adalah waktu lampau yang sudah selesai, jadi gunakan simple past.",manual LLM semantic translation from content/en/questions.json
+questions:q14cff13a6,,,,,Just berarti 'baru saja' dan digunakan dengan present perfect.,manual LLM semantic translation from content/en/questions.json
+questions:q4fed8916b,,,,,Ever menanyakan pengalaman: Have you ever…?,manual LLM semantic translation from content/en/questions.json
