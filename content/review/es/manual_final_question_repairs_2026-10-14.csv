@@ -1,0 +1,7 @@
+key,english,english_example,def,draft,corrected,comment
+questions:q8c128ac18,,,,,Were having indica una acción en curso cuando llegó el visitante: past continuous.,manual LLM semantic repair from the corresponding English grammar point; source question expl was empty
+questions:q8f528a56b,,,,,How long have you been waiting pregunta cuánto tiempo lleva una acción en curso: present perfect continuous.,manual LLM semantic repair from the corresponding English grammar point; source question expl was empty
+questions:q09323df7b,,,,,Una acción que estará en curso en un momento futuro usa future continuous: will be using.,manual LLM semantic repair from the corresponding English grammar point; source question expl was empty
+questions:q35f64661e,,,,,Had been studying muestra una acción continua que ocurrió antes de otra acción pasada: past perfect continuous.,manual LLM semantic repair from the corresponding English grammar point; source question expl was empty
+questions:qa266907c5,,,,,Will have left muestra una acción que estará terminada antes de un momento futuro: future perfect.,manual LLM semantic repair from the corresponding English grammar point; source question expl was empty
+questions:q2c32606b6,,,,,Will have been living muestra una acción continua durante un periodo que llega hasta un punto futuro: future perfect continuous.,manual LLM semantic repair from the corresponding English grammar point; source question expl was empty

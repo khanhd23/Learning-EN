@@ -1,0 +1,7 @@
+key,english,english_example,def,draft,corrected,comment
+questions:q8c128ac18,,,,,Were having menunjukkan tindakan yang sedang berlangsung ketika pengunjung tiba: past continuous.,manual LLM semantic repair from the corresponding English grammar point; source question expl was empty
+questions:q8f528a56b,,,,,How long have you been waiting menanyakan sudah berapa lama tindakan berlangsung: present perfect continuous.,manual LLM semantic repair from the corresponding English grammar point; source question expl was empty
+questions:q09323df7b,,,,,Tindakan yang akan sedang berlangsung pada waktu mendatang menggunakan future continuous: will be using.,manual LLM semantic repair from the corresponding English grammar point; source question expl was empty
+questions:q35f64661e,,,,,Had been studying menunjukkan tindakan yang berlangsung sebelum tindakan lain di masa lalu: past perfect continuous.,manual LLM semantic repair from the corresponding English grammar point; source question expl was empty
+questions:qa266907c5,,,,,Will have left menunjukkan tindakan yang akan selesai sebelum waktu tertentu di masa depan: future perfect.,manual LLM semantic repair from the corresponding English grammar point; source question expl was empty
+questions:q2c32606b6,,,,,Will have been living menunjukkan tindakan yang terus berlangsung selama suatu periode sampai titik masa depan: future perfect continuous.,manual LLM semantic repair from the corresponding English grammar point; source question expl was empty
