@@ -1,0 +1,48 @@
+key,english,english_example,def,draft,corrected,comment
+topics:family,,,,,परिवार,Manual LLM semantic Hindi topic label from the English source.
+topics:friends_relationships,,,,,दोस्त और रिश्ते,Manual LLM semantic Hindi topic label from the English source.
+topics:body_appearance,,,,,शरीर और रूप-रंग,Manual LLM semantic Hindi topic label from the English source.
+topics:feelings_personality,,,,,भावनाएँ और व्यक्तित्व,Manual LLM semantic Hindi topic label from the English source.
+topics:health_illness,,,,,स्वास्थ्य और बीमारी,Manual LLM semantic Hindi topic label from the English source.
+topics:age_life_stages,,,,,उम्र और जीवन के चरण,Manual LLM semantic Hindi topic label from the English source.
+topics:home_furniture,,,,,घर और घरेलू सामान,Manual LLM semantic Hindi topic label from the English source.
+topics:daily_routine,,,,,दैनिक दिनचर्या,Manual LLM semantic Hindi topic label from the English source.
+topics:food_drink,,,,,खाना और पेय,Manual LLM semantic Hindi topic label from the English source.
+topics:shopping,,,,,खरीदारी,Manual LLM semantic Hindi topic label from the English source.
+topics:clothes,,,,,कपड़े,Manual LLM semantic Hindi topic label from the English source.
+topics:money_banking,,,,,पैसा और बैंकिंग,Manual LLM semantic Hindi topic label from the English source.
+topics:time_dates,,,,,समय और तारीखें,Manual LLM semantic Hindi topic label from the English source.
+topics:numbers_quantity,,,,,संख्याएँ और मात्रा,Manual LLM semantic Hindi topic label from the English source.
+topics:weather,,,,,मौसम,Manual LLM semantic Hindi topic label from the English source.
+topics:city_directions,,,,,शहर और दिशाएँ,Manual LLM semantic Hindi topic label from the English source.
+topics:transport,,,,,परिवहन,Manual LLM semantic Hindi topic label from the English source.
+topics:travel_holidays,,,,,यात्रा और छुट्टियाँ,Manual LLM semantic Hindi topic label from the English source.
+topics:hotel_restaurant,,,,,होटल और रेस्तराँ,Manual LLM semantic Hindi topic label from the English source.
+topics:nature_landscape,,,,,प्रकृति और भू-दृश्य,Manual LLM semantic Hindi topic label from the English source.
+topics:animals,,,,,जानवर,Manual LLM semantic Hindi topic label from the English source.
+topics:education,,,,,शिक्षा और स्कूल,Manual LLM semantic Hindi topic label from the English source.
+topics:language_learning,,,,,भाषा सीखना,Manual LLM semantic Hindi topic label from the English source.
+topics:science_basics,,,,,विज्ञान की बुनियाद,Manual LLM semantic Hindi topic label from the English source.
+topics:academic_words,,,,,शैक्षणिक शब्द,Manual LLM semantic Hindi topic label from the English source.
+topics:jobs,,,,,नौकरियाँ,Manual LLM semantic Hindi topic label from the English source.
+topics:office,,,,,कार्यालय और बैठकें,Manual LLM semantic Hindi topic label from the English source.
+topics:hr_recruiting,,,,,मानव संसाधन और भर्ती,Manual LLM semantic Hindi topic label from the English source.
+topics:sales_customer,,,,,बिक्री और ग्राहक,Manual LLM semantic Hindi topic label from the English source.
+topics:marketing,,,,,विपणन,Manual LLM semantic Hindi topic label from the English source.
+topics:finance_accounting,,,,,वित्त और लेखांकन,Manual LLM semantic Hindi topic label from the English source.
+topics:contracts_law,,,,,अनुबंध और क़ानून,Manual LLM semantic Hindi topic label from the English source.
+topics:logistics,,,,,उत्पादन और रसद,Manual LLM semantic Hindi topic label from the English source.
+topics:it_technology,,,,,आईटी और तकनीक,Manual LLM semantic Hindi topic label from the English source.
+topics:events,,,,,कार्यक्रम और सम्मेलन,Manual LLM semantic Hindi topic label from the English source.
+topics:media_news,,,,,मीडिया और समाचार,Manual LLM semantic Hindi topic label from the English source.
+topics:internet_social,,,,,इंटरनेट और सोशल मीडिया,Manual LLM semantic Hindi topic label from the English source.
+topics:environment_energy,,,,,पर्यावरण और ऊर्जा,Manual LLM semantic Hindi topic label from the English source.
+topics:government_society,,,,,सरकार और समाज,Manual LLM semantic Hindi topic label from the English source.
+topics:arts_entertainment,,,,,कला और मनोरंजन,Manual LLM semantic Hindi topic label from the English source.
+topics:sports_fitness,,,,,खेल और तंदुरुस्ती,Manual LLM semantic Hindi topic label from the English source.
+topics:function_words,,,,,कार्यात्मक शब्द,Manual LLM semantic Hindi topic label from the English source.
+topics:core_verbs,,,,,मुख्य क्रियाएँ,Manual LLM semantic Hindi topic label from the English source.
+topics:describing_things,,,,,वस्तुओं का वर्णन,Manual LLM semantic Hindi topic label from the English source.
+topics:linking_words,,,,,जोड़ने वाले शब्द,Manual LLM semantic Hindi topic label from the English source.
+topics:phrasal_verbs,,,,,Phrasal verbs,Manual LLM semantic Hindi topic label from the English source.
+topics:idioms_chunks,,,,,मुहावरे और expressions,Manual LLM semantic Hindi topic label from the English source.
