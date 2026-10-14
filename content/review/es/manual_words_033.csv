@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:wolf_s1,,,,,"{""g"":""lobo"",""ex"":{""wolf_s1"":""El lobo vive en un grupo.""}}",manual sense/example review
+words:backpack_s1,,,,,"{""g"":""mochila"",""ex"":{""backpack_s1"":""Mis libros están en mi mochila.""}}",manual sense/example review
+words:eraser_s1,,,,,"{""g"":""borrador; goma de borrar"",""ex"":{""eraser_s1"":""Usa un borrador para quitar la marca de lápiz.""}}",regional variants retained for es-419
+words:ruler_s1,,,,,"{""g"":""regla"",""ex"":{""ruler_s1"":""La regla mide treinta centímetros.""}}",source definition describes a person who rules but the example uses a measuring tool
+words:crayon_s1,,,,,"{""g"":""crayón; lápiz de cera"",""ex"":{""crayon_s1"":""El niño dibuja un sol con un crayón amarillo.""}}",manual sense/example review
+words:marker_s1,,,,,"{""g"":""marcador; plumón"",""ex"":{""marker_s1"":""Escribe el título con un marcador rojo.""}}",regional variants retained for es-419
+words:scissors_s1,,,,,"{""g"":""tijeras"",""ex"":{""scissors_s1"":""Las tijeras están sobre mi escritorio.""}}",manual plural-noun review
+words:glue_s1,,,,,"{""g"":""pegamento"",""ex"":{""glue_s1"":""Pon un poco de pegamento en el papel.""}}",manual sense/example review
+words:schoolbag_s1,,,,,"{""g"":""mochila escolar"",""ex"":{""schoolbag_s1"":""Su mochila escolar nueva es azul y rosa.""}}",manual sense/example review
+words:blackboard_s1,,,,,"{""g"":""pizarrón; pizarra"",""ex"":{""blackboard_s1"":""El profesor escribe en el pizarrón.""}}",regional variants retained for es-419
+words:whiteboard_s1,,,,,"{""g"":""pizarra blanca"",""ex"":{""whiteboard_s1"":""El profesor escribió la respuesta en la pizarra blanca.""}}",manual sense/example review
+words:headphones_s1,,,,,"{""g"":""auriculares; audífonos"",""ex"":{""headphones_s1"":""Usa auriculares para escuchar música.""}}",regional variants retained for es-419
+words:camera_s1,,,,,"{""g"":""cámara"",""ex"":{""camera_s1"":""Esta cámara toma fotos nítidas.""}}",manual sense/example review
+words:raincoat_s1,,,,,"{""g"":""impermeable; chubasquero"",""ex"":{""raincoat_s1"":""Lleva tu impermeable; está lloviendo afuera.""}}",regional variants retained for es-419
+words:helmet_s1,,,,,"{""g"":""casco"",""ex"":{""helmet_s1"":""Siempre usa casco en la motocicleta.""}}",manual sense/example review
+words:bicycle_s1,,,,,"{""g"":""bicicleta"",""ex"":{""bicycle_s1"":""Ella va en bicicleta a la escuela.""}}",manual sense/example review
+words:scooter_s1,,,,,"{""g"":""scooter; patinete"",""ex"":{""scooter_s1"":""El scooter está estacionado afuera.""}}",source definition describes a motorboat but the example uses a small personal vehicle
+words:airplane_s1,,,,,"{""g"":""avión"",""ex"":{""airplane_s1"":""El avión está sobre las nubes.""}}",manual sense/example review
+words:shelf_s1,,,,,"{""g"":""estante; repisa"",""ex"":{""shelf_s1"":""Los libros están en el estante de arriba.""}}",regional variants retained for es-419
+words:drawer_s1,,,,,"{""g"":""cajón"",""ex"":{""drawer_s1"":""Los lápices están en el cajón.""}}",manual sense/example review
+words:bucket_s1,,,,,"{""g"":""balde; cubeta"",""ex"":{""bucket_s1"":""El balde está lleno de agua limpia.""}}",regional variants retained for es-419
+words:broom_s1,,,,,"{""g"":""escoba"",""ex"":{""broom_s1"":""La escoba está detrás de la puerta.""}}",manual sense/example review
+words:zipper_s1,,,,,"{""g"":""cierre; cremallera"",""ex"":{""zipper_s1"":""El cierre de mi bolso está roto.""}}",regional variants retained for es-419
+words:glove_s1,,,,,"{""g"":""guante"",""ex"":{""glove_s1"":""Ponte un guante para protegerte la mano.""}}",manual sense/example review
+words:sneaker_s1,,,,,"{""g"":""zapatilla deportiva; tenis"",""ex"":{""sneaker_s1"":""Mis zapatillas deportivas están debajo de la cama.""}}",regional variants retained for es-419

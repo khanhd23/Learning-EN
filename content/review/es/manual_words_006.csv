@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:head_s1,,,,,"{""g"":""cabeza"",""ex"":{""head_s1"":""Sacudió la cabeza y sonrió.""}}",manual sense/example review
+words:head_s2,,,,,"{""g"":""dirigirse; encaminarse"",""ex"":{""head_s2"":""Nos dirigimos a casa después de la película.""}}",manual sense/example review
+words:back_s1,,,,,"{""g"":""espalda"",""ex"":{""back_s1"":""Sentarse demasiado tiempo es malo para la espalda.""}}",manual sense/example review
+words:back_s2,,,,,"{""g"":""volver; regresar"",""ex"":{""back_s2"":""Volveré en cinco minutos.""}}",manual sense/example review
+words:tooth_s1,,,,,"{""g"":""diente"",""ex"":{""tooth_s1"":""Cepíllate los dientes dos veces al día.""}}",manual sense/example review
+words:finger_s1,,,,,"{""g"":""dedo"",""ex"":{""finger_s1"":""Me corté el dedo mientras preparaba la cena.""}}",manual sense/example review
+words:hair_s1,,,,,"{""g"":""cabello; pelo"",""ex"":{""hair_s1"":""Ella tiene el cabello largo y negro.""}}",manual sense/example review
+words:tall_s1,,,,,"{""g"":""alto; alta"",""ex"":{""tall_s1"":""Mi hermano es muy alto.""}}",manual sense/example review
+words:cute_s1,,,,,"{""g"":""lindo; linda"",""ex"":{""cute_s1"":""¡Qué lindo cachorro!""}}",manual sense/example review
+words:heart_s1,,,,,"{""g"":""corazón"",""ex"":{""heart_s1"":""El ejercicio mantiene sano tu corazón.""}}",manual sense/example review
+words:heart_s2,,,,,"{""g"":""de memoria"",""ex"":{""heart_s2"":""Sé este poema corto de memoria.""}}",manual idiom review
+words:pet_s1,,,,,"{""g"":""mascota"",""ex"":{""pet_s1"":""¿Tienes mascotas?""}}",manual sense/example review
+words:pet_s2,,,,,"{""g"":""acariciar"",""ex"":{""pet_s2"":""Puedes acariciar al perro; es amigable.""}}",manual sense/example review
+words:puppy_s1,,,,,"{""g"":""cachorro"",""ex"":{""puppy_s1"":""El cachorro duerme en su canasta.""}}",manual sense/example review
+words:elephant_s1,,,,,"{""g"":""elefante"",""ex"":{""elephant_s1"":""El elefante bebió agua del río.""}}",manual sense/example review
+words:tiger_s1,,,,,"{""g"":""tigre"",""ex"":{""tiger_s1"":""El tigre durmió a la sombra de un árbol.""}}",manual sense/example review
+words:monkey_s1,,,,,"{""g"":""mono"",""ex"":{""monkey_s1"":""¡El mono robó mi plátano!""}}",manual sense/example review
+words:bird_s1,,,,,"{""g"":""ave; pájaro"",""ex"":{""bird_s1"":""Los pájaros cantan por la mañana.""}}",manual sense/example review
+words:rabbit_s1,,,,,"{""g"":""conejo"",""ex"":{""rabbit_s1"":""El conejo está comiendo una zanahoria.""}}",manual sense/example review
+words:shirt_s1,,,,,"{""g"":""camisa"",""ex"":{""shirt_s1"":""Lleva una camisa blanca para ir al trabajo.""}}",manual sense/example review
+words:jeans_s1,,,,,"{""g"":""pantalones vaqueros; jeans"",""ex"":{""jeans_s1"":""Compré un par de jeans nuevos.""}}",manual sense/example review
+words:dress_s1,,,,,"{""g"":""vestido"",""ex"":{""dress_s1"":""Llevó un vestido rojo a la fiesta.""}}",manual sense/example review
+words:dress_s2,,,,,"{""g"":""vestirse"",""ex"":{""dress_s2"":""Vístete rápido, llegamos tarde.""}}",source definition is broad; corrected follows the reflexive example
+words:jacket_s1,,,,,"{""g"":""chaqueta"",""ex"":{""jacket_s1"":""Ponte una chaqueta. Hace frío.""}}",manual sense/example review
+words:hat_s1,,,,,"{""g"":""sombrero; gorra"",""ex"":{""hat_s1"":""Ponte un sombrero cuando estés al sol.""}}",manual sense/example review

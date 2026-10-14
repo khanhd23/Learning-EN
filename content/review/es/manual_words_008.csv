@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:what_s_up_s1,,,,,"{""g"":""¿qué tal?; ¿qué pasa?"",""ex"":{""what_s_up_s1"":""Hola, Ben, ¿qué tal hoy?""}}",manual conversational review
+words:good_luck_s1,,,,,"{""g"":""buena suerte"",""ex"":{""good_luck_s1"":""¡Buena suerte en tu examen de mañana!""}}",manual idiom review
+words:sounds_good_s1,,,,,"{""g"":""suena bien"",""ex"":{""sounds_good_s1"":""Suena bien, entonces nos vemos a las siete.""}}",manual idiom review
+words:awesome_s1,,,,,"{""g"":""genial; increíble"",""ex"":{""awesome_s1"":""¡El viaje a las montañas fue genial!""}}",manual sense/example review
+words:look_for_s1,,,,,"{""g"":""buscar"",""ex"":{""look_for_s1"":""Estoy buscando mis llaves otra vez.""}}",manual phrasal-verb review
+words:turn_on_s1,,,,,"{""g"":""encender"",""ex"":{""turn_on_s1"":""Enciende las luces, por favor. Está oscuro.""}}",manual phrasal-verb review
+words:turn_off_s1,,,,,"{""g"":""apagar"",""ex"":{""turn_off_s1"":""Apaga el teléfono en el cine.""}}",manual phrasal-verb review
+words:say_s1,,,,,"{""g"":""decir"",""ex"":{""say_s1"":""Di tu nombre despacio, por favor.""}}",manual sense/example review
+words:tell_s1,,,,,"{""g"":""decir; contar"",""ex"":{""tell_s1"":""Cuéntame cómo fue tu primer día de clases.""}}",manual sense/example review
+words:make_s1,,,,,"{""g"":""hacer; preparar"",""ex"":{""make_s1"":""Los domingos preparamos el desayuno juntos.""}}",source definition is broad; corrected follows the food example
+words:do_s1,,,,,"{""g"":""hacer"",""ex"":{""do_s1"":""Hago la tarea después de cenar.""}}",manual sense/example review
+words:be_s1,,,,,"{""g"":""ser; estar"",""ex"":{""be_s1"":""Mi hermana quiere ser maestra.""}}",manual sense/example review
+words:have_s1,,,,,"{""g"":""tener"",""ex"":{""have_s1"":""Tienen un jardín pequeño detrás de la casa.""}}",manual sense/example review
+words:go_s1,,,,,"{""g"":""ir"",""ex"":{""go_s1"":""Vamos a la escuela en autobús.""}}",manual sense/example review
+words:come_s1,,,,,"{""g"":""venir"",""ex"":{""come_s1"":""¿Puedes venir a mi casa después de clase?""}}",manual sense/example review
+words:get_s1,,,,,"{""g"":""recibir; obtener; volverse"",""ex"":{""get_s1"":""Recibo un mensaje de mi hermana todas las mañanas.""}}",source definition has several senses; corrected follows the receive example
+words:take_s1,,,,,"{""g"":""llevar"",""ex"":{""take_s1"":""Lleva un paraguas cuando salgas.""}}",manual sense/example review
+words:give_s1,,,,,"{""g"":""dar"",""ex"":{""give_s1"":""Dale este libro a Ana.""}}",manual sense/example review
+words:want_s1,,,,,"{""g"":""querer"",""ex"":{""want_s1"":""Quiero un vaso de agua.""}}",manual sense/example review
+words:need_s1,,,,,"{""g"":""necesitar"",""ex"":{""need_s1"":""Necesitas un bolígrafo para este ejercicio.""}}",manual sense/example review
+words:like_s1,,,,,"{""g"":""gustar; preferir"",""ex"":{""like_s1"":""Me gusta leer antes de acostarme.""}}",manual sense/example review
+words:love_s1,,,,,"{""g"":""amar; encantar"",""ex"":{""love_s1"":""A mis padres les encanta caminar por el parque.""}}",manual sense/example review
+words:know_s1,,,,,"{""g"":""saber; conocer"",""ex"":{""know_s1"":""¿Sabes la respuesta a esta pregunta?""}}",manual sense/example review
+words:think_s1,,,,,"{""g"":""pensar; creer"",""ex"":{""think_s1"":""Creo que este bolso es tuyo.""}}",manual sense/example review
+words:understand_s1,,,,,"{""g"":""entender"",""ex"":{""understand_s1"":""Entiendo las palabras, pero no la oración completa.""}}",manual sense/example review

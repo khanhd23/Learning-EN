@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:rather_s1,,,,,"{""g"":""más bien; mejor dicho"",""ex"":{""rather_s1"":""Soy médico o, mejor dicho, cirujano.""}}",manual idiom/context review
+words:together_s1,,,,,"{""g"":""juntos; juntas"",""ex"":{""together_s1"":""Caminemos juntos a casa después del partido.""}}",manual sense/example review
+words:local_s1,,,,,"{""g"":""local"",""ex"":{""local_s1"":""Compramos pan en una panadería local.""}}",manual sense/example review
+words:ever_s1,,,,,"{""g"":""alguna vez"",""ex"":{""ever_s1"":""¿Has estado alguna vez en Japón?""}}",manual question review
+words:past_s1,,,,,"{""g"":""pasado"",""ex"":{""past_s1"":""En el pasado, este pueblo era muy pequeño.""}}",manual time review
+words:nothing_s1,,,,,"{""g"":""nada"",""ex"":{""nothing_s1"":""No hay nada en el refrigerador.""}}",manual pronoun review
+words:clear_s1,,,,,"{""g"":""claro; clara"",""ex"":{""clear_s1"":""El profesor nos dio instrucciones claras.""}}",manual sense/example review
+words:future_s1,,,,,"{""g"":""futuro"",""ex"":{""future_s1"":""¿Qué quieres hacer en el futuro?""}}",manual time review
+words:ago_s1,,,,,"{""g"":""hace"",""ex"":{""ago_s1"":""Empecé a aprender inglés hace dos años.""}}",manual time expression review
+words:social_s1,,,,,"{""g"":""social"",""ex"":{""social_s1"":""Le gustan los eventos sociales con sus compañeros de trabajo.""}}",manual sense/example review
+words:across_s1,,,,,"{""g"":""al otro lado de; a través de"",""ex"":{""across_s1"":""Nadamos al otro lado del río.""}}",manual preposition review
+words:along_s1,,,,,"{""g"":""a lo largo de; por"",""ex"":{""along_s1"":""Caminamos por la playa al atardecer.""}}",manual preposition review
+words:political_s1,,,,,"{""g"":""político; política"",""ex"":{""political_s1"":""Los dos partidos políticos no están de acuerdo sobre los impuestos.""}}",manual sense/example review
+words:further_s1,,,,,"{""g"":""más; adicional"",""ex"":{""further_s1"":""Llámanos si necesitas más información.""}}",manual sense/example review
+words:general_s1,,,,,"{""g"":""general"",""ex"":{""general_s1"":""El profesor nos dio algunos consejos generales.""}}",manual sense/example review
+words:individual_s1,,,,,"{""g"":""individual; cada uno"",""ex"":{""individual_s1"":""Cada estudiante recibió un plan de estudio individual.""}}",manual sense/example review
+words:near_s1,,,,,"{""g"":""cerca de"",""ex"":{""near_s1"":""¿Hay una farmacia cerca del hotel?""}}",manual preposition review
+words:human_s1,,,,,"{""g"":""humano; humana"",""ex"":{""human_s1"":""Estos errores forman parte del aprendizaje humano.""}}",manual sense/example review
+words:major_s1,,,,,"{""g"":""importante; principal"",""ex"":{""major_s1"":""Este es un cambio importante para nuestra escuela.""}}",manual sense/example review
+words:above_s1,,,,,"{""g"":""encima de; sobre"",""ex"":{""above_s1"":""La foto cuelga encima del sofá.""}}",manual preposition review
+words:special_s1,,,,,"{""g"":""especial"",""ex"":{""special_s1"":""Preparamos una comida especial para nuestros invitados.""}}",manual sense/example review
+words:certain_s1,,,,,"{""g"":""seguro; cierta"",""ex"":{""certain_s1"":""Estoy seguro de que esta respuesta es correcta.""}}",manual certainty review
+words:forward_s1,,,,,"{""g"":""adelante; hacia delante"",""ex"":{""forward_s1"":""Da dos pasos hacia adelante.""}}",manual direction review
+words:main_s1,,,,,"{""g"":""principal"",""ex"":{""main_s1"":""La razón principal es fácil de entender.""}}",manual sense/example review
+words:else_s1,,,,,"{""g"":""más; otra cosa"",""ex"":{""else_s1"":""¿Quieres algo más con tu pedido?""}}",manual idiom review

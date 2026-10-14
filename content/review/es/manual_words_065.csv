@@ -1,0 +1,26 @@
+key,corrected,comment
+words:prize_s1,"{""g"":""premio"",""ex"":{""prize_s1"":""Ganó el primer premio en el concurso de escritura.""}}",manual translation
+words:university_s1,"{""g"":""universidad"",""ex"":{""university_s1"":""Estudia historia en la universidad.""}}",manual translation
+words:information_s1,"{""g"":""información"",""ex"":{""information_s1"":""El sitio web tiene información útil sobre el curso.""}}",manual translation
+words:manager_s1,"{""g"":""gerente, gerenta"",""ex"":{""manager_s1"":""Pregúntale al gerente sobre el nuevo horario.""}}",manual translation
+words:assistant_s1,"{""g"":""asistente"",""ex"":{""assistant_s1"":""El asistente preparó la sala de reuniones.""}}",manual translation
+words:staff_s1,"{""g"":""personal"",""ex"":{""staff_s1"":""El personal del hotel respondió nuestras preguntas con amabilidad.""}}",manual translation
+words:task_s1,"{""g"":""tarea"",""ex"":{""task_s1"":""Termina una tarea antes de empezar otra.""}}",manual translation
+words:project_s1,"{""g"":""proyecto"",""ex"":{""project_s1"":""Nuestro equipo comenzó un proyecto nuevo el mes pasado.""}}",manual translation
+words:goal_s1,"{""g"":""meta, objetivo"",""ex"":{""goal_s1"":""Mi meta es leer un libro en inglés.""}}",manual translation
+words:decision_s1,"{""g"":""decisión"",""ex"":{""decision_s1"":""Tómate tu tiempo antes de tomar una decisión importante.""}}",manual translation
+words:reason_s1,"{""g"":""razón, motivo"",""ex"":{""reason_s1"":""¿Cuál fue la razón del retraso?""}}",manual translation
+words:result_s1,"{""g"":""resultado"",""ex"":{""result_s1"":""Recibiremos los resultados mañana.""}}",manual translation
+words:explain_s1,"{""g"":""explicar"",""ex"":{""explain_s1"":""¿Podrías explicar esta regla una vez más?""}}",manual translation
+words:describe_s1,"{""g"":""describir"",""ex"":{""describe_s1"":""¿Puedes describir claramente la bolsa perdida?""}}",manual translation
+words:discuss_s1,"{""g"":""hablar sobre, analizar"",""ex"":{""discuss_s1"":""Hablemos de nuestras ideas después de clase.""}}",manual translation
+words:determine_s1,"{""g"":""determinar"",""ex"":{""determine_s1"":""El examen determinará tu nivel actual de lectura.""}}",manual translation
+words:fail_s1,"{""g"":""reprobar, fracasar"",""ex"":{""fail_s1"":""Reprobó su examen de conducir la semana pasada.""}}",manual translation
+words:depend_s1,"{""g"":""depender de"",""ex"":{""depend_s1"":""El éxito puede depender de una preparación cuidadosa.""}}",manual translation
+words:recognize_s1,"{""g"":""reconocer"",""ex"":{""recognize_s1"":""Reconocí su voz por teléfono.""}}",manual translation
+words:prove_s1,"{""g"":""demostrar, probar"",""ex"":{""prove_s1"":""El recibo puede demostrar que pagamos.""}}",manual translation
+words:strike_s1,"{""g"":""golpear; caer sobre"",""ex"":{""strike_s1"":""Un rayo puede caer sobre el árbol más alto de la zona.""}}",example-led translation
+words:seek_s1,"{""g"":""buscar"",""ex"":{""seek_s1"":""Muchos estudiantes buscan consejos antes del examen.""}}",manual translation
+words:treat_s1,"{""g"":""tratar"",""ex"":{""treat_s1"":""Trata a todos los clientes con respeto.""}}",manual translation
+words:identify_s1,"{""g"":""identificar"",""ex"":{""identify_s1"":""La enfermera identificó rápidamente al paciente correcto.""}}",manual translation
+words:shall_s1,"{""g"":""auxiliar de futuro formal"",""ex"":{""shall_s1"":""Nos reuniremos afuera de la biblioteca al mediodía.""}}",manual translation

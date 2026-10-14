@@ -1,0 +1,62 @@
+key,corrected,comment
+ui:node_available,"lista para aprender",manual translation
+ui:node_locked,"bloqueado",manual translation
+ui:node_mastered,"dominado",manual translation
+ui:node_progress,"en progreso",manual translation
+ui:not_now,"Ahora no",manual translation
+ui:not_set,"No establecido",manual translation
+ui:nothing_to_practice,"Todavía no hay nada que practicar. ¡Aprende primero algunas palabras nuevas!",manual translation
+ui:notif_channel,"Recordatorios de estudio",manual translation
+ui:notif_msg,"¿Quieres un recordatorio diario para que %1$s no tenga hambre?",manual translation
+ui:notif_title,"Recordatorio diario",manual translation
+ui:notif_yes,"Recordármelo",manual translation
+ui:ob_goal_sub,"Te sugeriremos lecciones que encajen con tu objetivo.",manual translation
+ui:ob_goal_title,"¿Cuál es tu objetivo?",manual translation
+ui:ob_level_sub,"Empieza donde te sientas cómodo. Puedes cambiarlo más tarde.",manual translation
+ui:ob_level_title,"¿Cuál es tu nivel de inglés?",manual translation
+ui:ob_pet_explain,"Tu mascota crece cuando estudias. Si faltas unos días, tendrá hambre, pero nunca se escapará.",manual translation
+ui:ob_pet_name,"Ponle nombre a tu mascota",manual translation
+ui:ob_pet_sub,"Elige un compañero de estudio y ponle nombre.",manual translation
+ui:ob_pet_title,"Conoce a tu compañero de estudio",manual translation
+ui:ob_time,"Tiempo de estudio diario",manual translation
+ui:open_pet_home,"Toca para visitar a tu mascota",manual translation
+ui:owned,"Adquirido",manual translation
+ui:palette,"Lista de preguntas",manual translation
+ui:palette_legend,"Respondidas %1$d de %2$d",manual translation
+ui:part_test,"Prueba completa de %1$s",manual translation
+ui:pet_ate,"¡%1$s disfrutó de la comida!",manual translation
+ui:pet_cd,"Mascota, %1$s",manual translation
+ui:pet_full_after,"¡%1$s está lleno y feliz!",manual translation
+ui:pet_hidden_hint,"Mascota oculta. Vuelve a activarla en Ajustes.",manual translation
+ui:pet_too_many_pats,"¡Acaríciala con suavidad, por favor!",manual translation
+ui:pet_drag_hint,"Mantén pulsado para arrastrar a tu mascota.",manual translation
+ui:pet_hide,"Ocultar mascota",manual translation
+ui:pet_hide_bubbles_today,"Ocultar los globos de diálogo hoy",manual translation
+ui:pet_menu_title,"%1$s",manual translation
+ui:pet_reset_position,"Devolver la mascota a su sitio",manual translation
+ui:pet_tap_cd,"Tu mascota. Toca para jugar.",manual translation
+ui:pet_teaser,"%1$s está %2$s",manual translation
+ui:pet_tip,"Cada respuesta correcta alimenta a tu mascota.",manual translation
+ui:placement_intro,"Responde unas preguntas para encontrar tu nivel inicial.",manual translation
+ui:placement_later,"Puedes hacer esta prueba más tarde desde la pantalla Hoy.",manual translation
+ui:placement_sub,"Encuentra tu nivel en unos 3 minutos.",manual translation
+ui:placement_title,"Comprobar nivel",manual translation
+ui:plan_grammar,"Gramática: %1$s",manual translation
+ui:plan_part5,"Práctica de TOEIC Part 5",manual translation
+ui:plan_school,"Práctica de examen",manual translation
+ui:plan_words,"Aprender %1$d palabras nuevas",manual translation
+ui:pos_adj,"adjetivo",manual translation
+ui:pos_adv,"adverbio",manual translation
+ui:pos_conj,"conjunción",manual translation
+ui:pos_idiom,"modismo",manual translation
+ui:pos_n,"sustantivo",manual translation
+ui:pos_phr,"frase",manual translation
+ui:pos_prep,"preposición",manual translation
+ui:pos_v,"verbo",manual translation
+ui:practice,"Practicar",manual translation
+ui:practice_selected,"Practicar las palabras seleccionadas",manual translation
+ui:practice_set,"Practicar este conjunto (%1$d)",manual translation
+ui:practice_this_word,"Practicar esta palabra",manual translation
+ui:practice_weak,"Practicar los puntos débiles",manual translation
+ui:preset_default,"Mi práctica",manual translation
+ui:preset_name,"Ponle nombre a esta práctica",manual translation

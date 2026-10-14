@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:tray_s1,,,,,"{""g"":""bandeja"",""ex"":{""tray_s1"":""Pon las tazas en la bandeja.""}}",manual sense/example review
+words:napkin_s1,,,,,"{""g"":""servilleta"",""ex"":{""napkin_s1"":""Hay una servilleta junto a cada plato.""}}",manual sense/example review
+words:doll_s1,,,,,"{""g"":""muñeca"",""ex"":{""doll_s1"":""La muñeca tiene un vestido rojo.""}}",manual sense/example review
+words:puzzle_s1,,,,,"{""g"":""rompecabezas"",""ex"":{""puzzle_s1"":""Este rompecabezas tiene mil piezas.""}}",manual sense/example review
+words:he_s1,,,,,"{""g"":""él"",""ex"":{""he_s1"":""Él estudia inglés después del trabajo.""}}",manual pronoun review
+words:we_s1,,,,,"{""g"":""nosotros; nosotras"",""ex"":{""we_s1"":""Practicamos inglés juntos todas las noches.""}}",Spanish gender depends on the group
+words:as_s1,,,,,"{""g"":""mientras; cuando"",""ex"":{""as_s1"":""Cuando dejó de llover, seguimos caminando.""}}",manual time-connector review
+words:would_s1,,,,,"{""g"":""-ría (condicional)"",""ex"":{""would_s1"":""Yo elegiría la habitación más tranquila.""}}",English modal expressed by a Spanish conditional form
+words:about_s1,,,,,"{""g"":""sobre; acerca de"",""ex"":{""about_s1"":""Hablamos sobre el curso nuevo.""}}",manual preposition review
+words:which_s1,,,,,"{""g"":""cuál; qué"",""ex"":{""which_s1"":""¿Qué libro recomendarías para principiantes?""}}",manual question-word review
+words:who_s1,,,,,"{""g"":""quién"",""ex"":{""who_s1"":""¿Quién dejó esta nota junto a la puerta?""}}",manual question-word review
+words:no_s1,,,,,"{""g"":""no; ningún; ninguna"",""ex"":{""no_s1"":""No hay leche en el refrigerador.""}}",Spanish form depends on the noun/construction
+words:could_s1,,,,,"{""g"":""podrías; podría"",""ex"":{""could_s1"":""¿Podrías abrir la ventana, por favor?""}}",polite-request sense
+words:most_s1,,,,,"{""g"":""la mayoría de; la mayor parte de"",""ex"":{""most_s1"":""La mayoría de los estudiantes repasa sus apuntes antes de los exámenes.""}}",manual quantity review
+words:off_s1,,,,,"{""g"":""apagado; fuera de"",""ex"":{""off_s1"":""Apaga las luces antes de salir.""}}",phrasal-verb context review
+words:end_s1,,,,,"{""g"":""final; fin"",""ex"":{""end_s1"":""Llegamos al final del camino largo.""}}",manual sense/example review
+words:play_s1,,,,,"{""g"":""jugar"",""ex"":{""play_s1"":""Los niños juegan afuera después de la escuela.""}}",manual sense/example review
+words:include_s1,,,,,"{""g"":""incluir"",""ex"":{""include_s1"":""El precio incluye el desayuno y el transporte al aeropuerto.""}}",manual sense/example review
+words:every_s1,,,,,"{""g"":""cada"",""ex"":{""every_s1"":""Cada estudiante recibió una hoja de práctica.""}}",manual quantity review
+words:begin_s1,,,,,"{""g"":""comenzar; empezar"",""ex"":{""begin_s1"":""La lección comenzará después de un breve descanso.""}}",manual sense/example review
+words:program_s1,,,,,"{""g"":""programa"",""ex"":{""program_s1"":""El programa enseña habilidades útiles a los trabajadores nuevos.""}}",manual sense/example review
+words:lead_s1,,,,,"{""g"":""dirigir; guiar"",""ex"":{""lead_s1"":""Ella dirigirá la discusión esta tarde.""}}",manual sense/example review
+words:city_s1,,,,,"{""g"":""ciudad"",""ex"":{""city_s1"":""La ciudad abrió una biblioteca pública nueva.""}}",manual sense/example review
+words:almost_s1,,,,,"{""g"":""casi"",""ex"":{""almost_s1"":""El informe está casi listo para enviarlo.""}}",manual degree review
+words:whole_s1,,,,,"{""g"":""todo; completo"",""ex"":{""whole_s1"":""Leyó el artículo completo antes de la clase.""}}",manual quantity review

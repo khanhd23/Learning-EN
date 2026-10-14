@@ -1,0 +1,63 @@
+key,corrected,comment
+ui:tap_to_flip,"Toca para girar",manual translation
+ui:tap_to_replay,"Toca para escuchar otra vez",manual translation
+ui:tap_wrong_part,"Toca la parte incorrecta",manual translation
+ui:tell_apart,"Cómo distinguirlas",manual translation
+ui:test_meta,"%1$d preguntas · %2$s · Último: %3$s · Mejor: %4$s",manual translation
+ui:tests,"Pruebas",manual translation
+ui:theme_dark,"Oscuro",manual translation
+ui:theme_light,"Claro",manual translation
+ui:theme_system,"Igual que el dispositivo",manual translation
+ui:time_up,"¡Se acabó el tiempo!",manual translation
+ui:time_used,"Tiempo: %1$d:%2$02d",manual translation
+ui:tips_title,"Consejos",manual translation
+ui:today_plan,"Plan de hoy",manual translation
+ui:token_used,"Token de despertar usado",manual translation
+ui:too_few,"No hay suficientes preguntas que coincidan con estos filtros.",manual translation
+ui:topics,"Temas",manual translation
+ui:total_xp,"XP total",manual translation
+ui:trap_lookalike,"Palabras parecidas",manual translation
+ui:trap_preposition,"Preposición incorrecta",manual translation
+ui:trap_similar,"Significado similar",manual translation
+ui:trap_tense,"Tiempo verbal incorrecto",manual translation
+ui:trap_wrong_pos,"Forma de palabra incorrecta",manual translation
+ui:type_choice,"Opción múltiple",manual translation
+ui:type_error,"Encontrar el error",manual translation
+ui:type_here,"Escribe tu respuesta",manual translation
+ui:type_meta,"%1$d preguntas · Precisión %2$s · Dominadas %3$d",manual translation
+ui:type_passage,"Pasaje de lectura",manual translation
+ui:type_sound,"Comprensión auditiva",manual translation
+ui:unanswered,"Sin responder",manual translation
+ui:unlocked,"Desbloqueado",manual translation
+ui:unsaved,"Eliminada de guardadas",manual translation
+ui:untimed,"Sin límite de tiempo",manual translation
+ui:version,"Versión %1$s",manual translation
+ui:vocab_total,"%1$d palabras · %2$d significados",manual translation
+ui:vs_previous,"%1$d%% frente a la última vez",manual translation
+ui:wake_ad,"Mira un video para despertarla",manual translation
+ui:wake_free,"Estudia para despertarla",manual translation
+ui:wake_token,"Usar un token de despertar (%1$d restante)",manual translation
+ui:weak_none,"Todavía no hay puntos débiles. ¡Muy bien!",manual translation
+ui:weak_spots,"Puntos débiles",manual translation
+ui:welcome_session,"Tu primera lección",manual translation
+ui:when_to_use,"Cuándo usarla",manual translation
+ui:woke_up,"¡Tu mascota está despierta!",manual translation
+ui:word_detail,"Palabra",manual translation
+ui:word_family,"Familia de palabras",manual translation
+ui:word_of_day,"Palabra del día",manual translation
+ui:words,"Palabras",manual translation
+ui:words_known,"%1$d de %2$d palabras conocidas",manual translation
+ui:words_mastered,"Palabras dominadas",manual translation
+ui:xp_left,"Faltan %1$d XP",manual translation
+ui:your_weak,"Tus puntos débiles",manual translation
+ui:pet_item_theme_cozy,"Habitación acogedora",manual translation
+ui:pet_item_theme_garden,"Jardín",manual translation
+ui:pet_item_theme_beach,"Playa",manual translation
+ui:pet_item_theme_candy,"Tierra de dulces",manual translation
+ui:pet_item_theme_forest,"Bosque",manual translation
+ui:pet_item_theme_space,"Espacio exterior",manual translation
+ui:pet_item_theme_castle,"Castillo",manual translation
+ui:pet_item_bed_basket,"Cesta",manual translation
+ui:pet_item_bed_cushion,"Cojín",manual translation
+ui:pet_item_bed_cloud,"Cama de nube",manual translation
+ui:pet_item_bed_royal,"Cama real",manual translation

@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:death_s1,,,,,"{""g"":""muerte"",""ex"":{""death_s1"":""La familia se reunió después de su muerte.""}}",manual sense/example review
+words:amount_s1,,,,,"{""g"":""cantidad"",""ex"":{""amount_s1"":""Una pequeña cantidad de azúcar hace que el té sea más dulce.""}}",manual quantity review
+words:regard_s1,,,,,"{""g"":""considerar"",""ex"":{""regard_s1"":""Considero que este libro es muy útil.""}}",expression “regard as”
+words:act_s1,,,,,"{""g"":""actuar"",""ex"":{""act_s1"":""Debes actuar rápido en una emergencia.""}}",manual sense/example review
+words:range_s1,,,,,"{""g"":""variedad; gama"",""ex"":{""range_s1"":""La tienda ofrece una amplia variedad de tallas.""}}",manual sense/example review
+words:road_s1,,,,,"{""g"":""carretera; camino"",""ex"":{""road_s1"":""La carretera se llena durante la hora punta de la mañana.""}}",manual sense/example review
+words:list_s1,,,,,"{""g"":""lista"",""ex"":{""list_s1"":""Añade tu nombre a la lista.""}}",manual sense/example review
+words:wish_s1,,,,,"{""g"":""desear; ojalá"",""ex"":{""wish_s1"":""Ojalá tuviera más tiempo libre.""}}",manual subjunctive-context review
+words:rest_s1,,,,,"{""g"":""resto"",""ex"":{""rest_s1"":""El resto del pastel está en el refrigerador.""}}",manual sense/example review
+words:industry_s1,,,,,"{""g"":""industria"",""ex"":{""industry_s1"":""La industria tecnológica cambia muy rápido.""}}",manual sense/example review
+words:measure_s1,,,,,"{""g"":""medir"",""ex"":{""measure_s1"":""Medimos la mesa antes de comprarla.""}}",manual sense/example review
+words:air_s1,,,,,"{""g"":""aire"",""ex"":{""air_s1"":""Abrimos la ventana para que entre aire fresco.""}}",manual sense/example review
+words:risk_s1,,,,,"{""g"":""riesgo"",""ex"":{""risk_s1"":""Conducir demasiado rápido aumenta el riesgo de accidentes.""}}",manual sense/example review
+words:standard_s1,,,,,"{""g"":""estándar; nivel"",""ex"":{""standard_s1"":""Esta escuela tiene un alto nivel de enseñanza.""}}",manual context review
+words:vote_s1,,,,,"{""g"":""votar"",""ex"":{""vote_s1"":""Cada miembro puede votar en la reunión.""}}",manual sense/example review
+words:stage_s1,,,,,"{""g"":""etapa"",""ex"":{""stage_s1"":""El proyecto todavía está en una etapa inicial.""}}",manual process review
+words:space_s1,,,,,"{""g"":""espacio"",""ex"":{""space_s1"":""Hay suficiente espacio para otra silla.""}}",manual sense/example review
+words:chance_s1,,,,,"{""g"":""posibilidad; probabilidad"",""ex"":{""chance_s1"":""Hay muchas posibilidades de que llueva.""}}",manual probability review
+words:society_s1,,,,,"{""g"":""sociedad"",""ex"":{""society_s1"":""Una sociedad saludable apoya a sus miembros mayores.""}}",manual sense/example review
+words:mention_s1,,,,,"{""g"":""mencionar"",""ex"":{""mention_s1"":""Mencionó la reunión durante el almuerzo.""}}",manual sense/example review
+words:choice_s1,,,,,"{""g"":""elección; opción"",""ex"":{""choice_s1"":""Puedes elegir entre té y café.""}}",manual sense/example review
+words:culture_s1,,,,,"{""g"":""cultura"",""ex"":{""culture_s1"":""La comida es una parte importante de todas las culturas.""}}",manual sense/example review
+words:limit_s1,,,,,"{""g"":""límite"",""ex"":{""limit_s1"":""El límite de velocidad es de cincuenta kilómetros por hora.""}}",manual sense/example review
+words:foot_s1,,,,,"{""g"":""pie"",""ex"":{""foot_s1"":""Me duele el pie izquierdo después de la larga caminata.""}}",manual sense/example review
+words:attention_s1,,,,,"{""g"":""atención"",""ex"":{""attention_s1"":""Presta atención a las señales de tránsito.""}}",manual sense/example review

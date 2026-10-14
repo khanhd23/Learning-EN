@@ -1,0 +1,26 @@
+key,corrected,comment
+words:loyal_s1,"{""g"":""leal; fiel"",""ex"":{""loyal_s1"":""Recompensamos a nuestros clientes fieles con descuentos.""}}",manual translation
+words:research_s1,"{""g"":""investigación; estudio"",""ex"":{""research_s1"":""La investigación tardó varios meses en completarse.""}}",manual translation
+words:research_s2,"{""g"":""investigar"",""ex"":{""research_s2"":""Está investigando la historia de la ciudad antigua.""}}",manual translation
+words:billboard_s1,"{""g"":""cartel publicitario; valla publicitaria"",""ex"":{""billboard_s1"":""Hay un cartel publicitario enorme junto a la autopista.""}}",manual translation
+words:complaint_s1,"{""g"":""queja; reclamación"",""ex"":{""complaint_s1"":""Recibimos una queja por la entrega tardía.""}}",manual translation
+words:warranty_s1,"{""g"":""garantía"",""ex"":{""warranty_s1"":""La laptop viene con una garantía de dos años.""}}",manual translation
+words:purchase_s1,"{""g"":""comprar; adquirir"",""ex"":{""purchase_s1"":""Puedes comprar boletos en línea o en la entrada.""}}",manual translation
+words:in_stock_s1,"{""g"":""disponible; en existencia"",""ex"":{""in_stock_s1"":""La chaqueta azul está disponible hoy.""}}",manual translation
+words:satisfied_s1,"{""g"":""satisfecho; satisfecha"",""ex"":{""satisfied_s1"":""La mayoría de los clientes está satisfecha con nuestro servicio.""}}",manual translation
+words:replace_s1,"{""g"":""reemplazar; sustituir"",""ex"":{""replace_s1"":""Reemplazaremos gratis el artículo roto.""}}",manual translation
+words:bargain_s1,"{""g"":""ganga; buena oferta"",""ex"":{""bargain_s1"":""Esta chaqueta fue una verdadera ganga.""}}",manual translation
+words:apologize_s1,"{""g"":""disculparse; pedir disculpas"",""ex"":{""apologize_s1"":""Se disculpó con su jefe por llegar tarde.""}}",manual translation
+words:checkout_s1,"{""g"":""caja; pago"",""ex"":{""checkout_s1"":""Había una fila larga en la caja.""}}",source example uses checkout as the store payment area
+words:handle_s1,"{""g"":""manejar; gestionar"",""ex"":{""handle_s1"":""Maneja a los clientes difíciles con mucha calma.""}}",manual translation
+words:handle_s2,"{""g"":""asa; manija"",""ex"":{""handle_s2"":""La manija de mi maleta está rota.""}}",manual translation
+words:loyalty_card_s1,"{""g"":""tarjeta de fidelidad"",""ex"":{""loyalty_card_s1"":""Usó su tarjeta de fidelidad para acumular puntos.""}}",manual translation
+words:contract_s1,"{""g"":""contrato"",""ex"":{""contract_s1"":""Lee el contrato con atención antes de firmarlo.""}}",manual translation
+words:contract_s2,"{""g"":""contraerse"",""ex"":{""contract_s2"":""El metal se contrae cuando hace frío.""}}",manual translation
+words:agreement_s1,"{""g"":""acuerdo"",""ex"":{""agreement_s1"":""Llegamos a un acuerdo después de largas conversaciones.""}}",manual translation
+words:expire_s1,"{""g"":""vencer; caducar"",""ex"":{""expire_s1"":""Mi pasaporte vence en marzo del próximo año.""}}",manual translation
+words:renew_s1,"{""g"":""renovar"",""ex"":{""renew_s1"":""Necesitas renovar tu licencia cada cinco años.""}}",manual translation
+words:legal_s1,"{""g"":""legal; jurídico"",""ex"":{""legal_s1"":""La empresa enfrenta problemas legales.""}}",manual translation
+words:valid_s1,"{""g"":""válido; válida"",""ex"":{""valid_s1"":""Este boleto es válido durante un mes.""}}",manual translation
+words:permit_s1,"{""g"":""permiso; autorización"",""ex"":{""permit_s1"":""Necesitas un permiso de trabajo para conseguir empleo aquí.""}}",manual translation
+words:permit_s2,"{""g"":""permitir; autorizar"",""ex"":{""permit_s2"":""No se permite fumar dentro del edificio.""}}",manual translation

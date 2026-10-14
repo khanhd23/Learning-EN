@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:bear_s1,,,,,"{""g"":""soportar; tolerar"",""ex"":{""bear_s1"":""Ya no soporto este ruido tan fuerte.""}}",manual sense/example review
+words:join_s1,,,,,"{""g"":""unirse"",""ex"":{""join_s1"":""¿Te gustaría unirte a nuestro grupo de estudio?""}}",manual sense/example review
+words:please_s1,,,,,"{""g"":""por favor"",""ex"":{""please_s1"":""¿Puedes abrir la puerta, por favor?""}}",manual politeness review
+words:enjoy_s1,,,,,"{""g"":""disfrutar; gustar"",""ex"":{""enjoy_s1"":""A los niños les gusta jugar afuera después de la escuela.""}}",manual sense/example review
+words:accord_s1,,,,,"{""g"":""según"",""ex"":{""accord_s1"":""Según las noticias, mañana lloverá.""}}",source key is used in the expression “according to”
+words:kill_s1,,,,,"{""g"":""matar"",""ex"":{""kill_s1"":""El veneno puede matar insectos pequeños.""}}",manual sense/example review
+words:teach_s1,,,,,"{""g"":""enseñar"",""ex"":{""teach_s1"":""Mi tía enseña inglés en una escuela local.""}}",manual sense/example review
+words:address_s1,,,,,"{""g"":""dirección"",""ex"":{""address_s1"":""Escribe tu dirección con claridad aquí.""}}",manual sense/example review
+words:accept_s1,,,,,"{""g"":""aceptar"",""ex"":{""accept_s1"":""Aceptó el trabajo después de pensarlo bien.""}}",manual sense/example review
+words:save_s1,,,,,"{""g"":""salvar; guardar"",""ex"":{""save_s1"":""Este medicamento podría salvarle la vida.""}}",manual sense/example review
+words:pick_s1,,,,,"{""g"":""elegir; escoger"",""ex"":{""pick_s1"":""Elige un color para la pared.""}}",manual sense/example review
+words:arrive_s1,,,,,"{""g"":""llegar"",""ex"":{""arrive_s1"":""Deberíamos llegar antes de que empiece la reunión.""}}",manual sense/example review
+words:prepare_s1,,,,,"{""g"":""preparar"",""ex"":{""prepare_s1"":""Preparo mi almuerzo antes de salir de casa.""}}",manual sense/example review
+words:apply_s1,,,,,"{""g"":""solicitar; postularse"",""ex"":{""apply_s1"":""Solicitó un empleo en el banco.""}}",job-application sense
+words:manage_s1,,,,,"{""g"":""lograr; conseguir"",""ex"":{""manage_s1"":""Logró terminar el informe antes del mediodía.""}}",manual sense/example review
+words:bank_s1,,,,,"{""g"":""banco"",""ex"":{""bank_s1"":""Depositó su cheque de nómina en el banco.""}}",manual sense/example review
+words:relate_s1,,,,,"{""g"":""relacionar"",""ex"":{""relate_s1"":""Este ejemplo relaciona la regla con la vida cotidiana.""}}",manual sense/example review
+words:worry_s1,,,,,"{""g"":""preocuparse"",""ex"":{""worry_s1"":""Intenta no preocuparte por la cita de mañana.""}}",manual sense/example review
+words:represent_s1,,,,,"{""g"":""representar"",""ex"":{""represent_s1"":""Este símbolo representa la paz en la historia.""}}",manual sense/example review
+words:contain_s1,,,,,"{""g"":""contener"",""ex"":{""contain_s1"":""La caja contiene tres botellas pequeñas de vidrio.""}}",manual sense/example review
+words:paint_s1,,,,,"{""g"":""pintar"",""ex"":{""paint_s1"":""Pintaremos las paredes de la cocina la próxima semana.""}}",manual sense/example review
+words:attempt_s1,,,,,"{""g"":""intento"",""ex"":{""attempt_s1"":""Hizo un intento de reparar la lámpara.""}}",noun sense
+words:establish_s1,,,,,"{""g"":""establecer; fundar"",""ex"":{""establish_s1"":""La familia fundó un pequeño negocio juntos.""}}",manual sense/example review
+words:the_s1,,,,,"{""g"":""el; la; los; las (artículo definido)"",""ex"":{""the_s1"":""Cierra la puerta detrás de ti, por favor.""}}",Spanish requires gender/number agreement
+words:in_s1,,,,,"{""g"":""en; dentro de"",""ex"":{""in_s1"":""Las llaves están en mi bolso.""}}",manual preposition review

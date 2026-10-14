@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:management_s1,,,,,"{""g"":""gerencia; administración"",""ex"":{""management_s1"":""La gerencia aprobó los cambios de seguridad.""}}",manual sense/example review
+words:behavior_s1,,,,,"{""g"":""comportamiento; conducta"",""ex"":{""behavior_s1"":""El profesor elogió su comportamiento educado.""}}",manual sense/example review
+words:production_s1,,,,,"{""g"":""producción"",""ex"":{""production_s1"":""La producción aumentó después de que llegó la máquina nueva.""}}",manual sense/example review
+words:player_s1,,,,,"{""g"":""jugador; jugadora"",""ex"":{""player_s1"":""La jugadora le pasó la pelota a su compañera de equipo.""}}",manual gender/context review
+words:enter_s1,,,,,"{""g"":""entrar"",""ex"":{""enter_s1"":""Entra al edificio por la puerta principal, por favor.""}}",manual sense/example review
+words:drug_s1,,,,,"{""g"":""medicamento; fármaco"",""ex"":{""drug_s1"":""El médico recetó un medicamento nuevo para la infección.""}}",medical context review
+words:machine_s1,,,,,"{""g"":""máquina"",""ex"":{""machine_s1"":""La máquina se detuvo durante la prueba de seguridad.""}}",manual sense/example review
+words:anyone_s1,,,,,"{""g"":""alguien; cualquiera"",""ex"":{""anyone_s1"":""¿Alguien puede ayudarme a llevar esta mesa?""}}",manual indefinite-pronoun review
+words:analysis_s1,,,,,"{""g"":""análisis"",""ex"":{""analysis_s1"":""El análisis explica por qué bajaron las ventas.""}}",manual sense/example review
+words:military_s1,,,,,"{""g"":""militar"",""ex"":{""military_s1"":""El museo exhibe vehículos militares antiguos.""}}",manual sense/example review
+words:hotel_s1,,,,,"{""g"":""hotel"",""ex"":{""hotel_s1"":""El hotel ofrece desayuno gratis a sus huéspedes.""}}",manual sense/example review
+words:nation_s1,,,,,"{""g"":""nación; país"",""ex"":{""nation_s1"":""La nación celebró la victoria del equipo.""}}",manual sense/example review
+words:link_s1,,,,,"{""g"":""enlace; vínculo"",""ex"":{""link_s1"":""El artículo incluye un enlace al estudio.""}}",technology context
+words:quickly_s1,,,,,"{""g"":""rápidamente; de prisa"",""ex"":{""quickly_s1"":""La enfermera respondió rápidamente a la llamada de emergencia.""}}",manual adverb review
+words:television_s1,,,,,"{""g"":""televisión"",""ex"":{""television_s1"":""Los niños vieron televisión después de cenar.""}}",manual sense/example review
+words:yourself_s1,,,,,"{""g"":""tú mismo; tú misma"",""ex"":{""yourself_s1"":""Puedes resolver este problema tú mismo.""}}",Spanish gender depends on the learner
+words:village_s1,,,,,"{""g"":""pueblo; aldea"",""ex"":{""village_s1"":""El pueblo tiene una pequeña clínica de salud.""}}",regional variants retained for es-419
+words:investment_s1,,,,,"{""g"":""inversión"",""ex"":{""investment_s1"":""El proyecto necesita una gran inversión este año.""}}",manual sense/example review
+words:file_s1,,,,,"{""g"":""archivo"",""ex"":{""file_s1"":""Guarda el archivo antes de cerrar el programa.""}}",manual technology review
+words:option_s1,,,,,"{""g"":""opción"",""ex"":{""option_s1"":""Tomar el tren es la opción más rápida.""}}",manual sense/example review
+words:refer_s1,,,,,"{""g"":""consultar; referirse a"",""ex"":{""refer_s1"":""Consulta el mapa antes de salir.""}}",imperative context review
+words:baby_s1,,,,,"{""g"":""bebé"",""ex"":{""baby_s1"":""El bebé se quedó dormido durante la canción.""}}",manual sense/example review
+words:adult_s1,,,,,"{""g"":""adulto; adulta"",""ex"":{""adult_s1"":""Todo adulto necesita tiempo para descansar.""}}",manual gender/context review
+words:pattern_s1,,,,,"{""g"":""patrón; estampado"",""ex"":{""pattern_s1"":""La tela tiene un estampado geométrico brillante.""}}",fabric context
+words:obviously_s1,,,,,"{""g"":""obviamente"",""ex"":{""obviously_s1"":""Obviamente, el puente viejo necesita reparación.""}}",manual adverb review

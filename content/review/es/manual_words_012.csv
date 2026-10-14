@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:hundred_s1,,,,,"{""g"":""cien"",""ex"":{""hundred_s1"":""Cien personas fueron al evento.""}}",manual number review
+words:half_s1,,,,,"{""g"":""mitad"",""ex"":{""half_s1"":""Comimos la mitad del pastel.""}}",manual sense/example review
+words:monday_s1,,,,,"{""g"":""lunes"",""ex"":{""monday_s1"":""Nuestro curso nuevo empieza el lunes.""}}",manual day-of-week review
+words:tuesday_s1,,,,,"{""g"":""martes"",""ex"":{""tuesday_s1"":""Tengo una clase de música el martes.""}}",manual day-of-week review
+words:wednesday_s1,,,,,"{""g"":""miércoles"",""ex"":{""wednesday_s1"":""El club de lectura se reúne el miércoles.""}}",manual day-of-week review
+words:thursday_s1,,,,,"{""g"":""jueves"",""ex"":{""thursday_s1"":""Devuelve el libro a más tardar el jueves.""}}",manual day-of-week review
+words:friday_s1,,,,,"{""g"":""viernes"",""ex"":{""friday_s1"":""El viernes cenaremos con unos amigos.""}}",manual day-of-week review
+words:saturday_s1,,,,,"{""g"":""sábado"",""ex"":{""saturday_s1"":""Limpio mi habitación los sábados.""}}",manual day-of-week review
+words:sunday_s1,,,,,"{""g"":""domingo"",""ex"":{""sunday_s1"":""Visitamos a nuestra abuela todos los domingos.""}}",manual day-of-week review
+words:house_s1,,,,,"{""g"":""casa"",""ex"":{""house_s1"":""Su casa tiene una puerta roja.""}}",building sense
+words:home_s1,,,,,"{""g"":""hogar; casa"",""ex"":{""home_s1"":""Mi hogar está cerca del río.""}}",place-of-living sense
+words:room_s1,,,,,"{""g"":""habitación; cuarto"",""ex"":{""room_s1"":""Hay dos ventanas en esta habitación.""}}",manual sense/example review
+words:kitchen_s1,,,,,"{""g"":""cocina"",""ex"":{""kitchen_s1"":""Mi papá está preparando sopa en la cocina.""}}",manual sense/example review
+words:bathroom_s1,,,,,"{""g"":""baño"",""ex"":{""bathroom_s1"":""El baño está al final del pasillo.""}}",manual sense/example review
+words:bedroom_s1,,,,,"{""g"":""dormitorio; habitación"",""ex"":{""bedroom_s1"":""Guardo mis libros en mi dormitorio.""}}",manual sense/example review
+words:living_room_s1,,,,,"{""g"":""sala; salón"",""ex"":{""living_room_s1"":""Vemos películas en la sala.""}}",manual sense/example review
+words:door_s1,,,,,"{""g"":""puerta"",""ex"":{""door_s1"":""Cierra la puerta en silencio al salir.""}}",manual sense/example review
+words:window_s1,,,,,"{""g"":""ventana"",""ex"":{""window_s1"":""El gato está sentado junto a la ventana.""}}",manual sense/example review
+words:floor_s1,,,,,"{""g"":""piso; suelo"",""ex"":{""floor_s1"":""Hay una alfombra azul en el piso.""}}",manual sense/example review
+words:wall_s1,,,,,"{""g"":""pared"",""ex"":{""wall_s1"":""Puso un reloj en la pared.""}}",manual sense/example review
+words:table_s1,,,,,"{""g"":""mesa"",""ex"":{""table_s1"":""Deja las llaves sobre la mesa.""}}",manual sense/example review
+words:chair_s1,,,,,"{""g"":""silla"",""ex"":{""chair_s1"":""Siéntate en la silla que está junto a la ventana.""}}",manual sense/example review
+words:desk_s1,,,,,"{""g"":""escritorio"",""ex"":{""desk_s1"":""Mi cuaderno está sobre el escritorio.""}}",manual sense/example review
+words:bed_s1,,,,,"{""g"":""cama"",""ex"":{""bed_s1"":""Leo diez minutos antes de acostarme.""}}",manual sense/example review
+words:pillow_s1,,,,,"{""g"":""almohada"",""ex"":{""pillow_s1"":""Esta almohada es demasiado blanda para mí.""}}",manual sense/example review

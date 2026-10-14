@@ -1,0 +1,26 @@
+key,corrected,comment
+words:reimburse_s1,"{""g"":""reembolsar; devolver a alguien el dinero que gastó"",""ex"":{ ""reimburse_s1"":""La empresa reembolsará tus gastos de viaje.""}}",manual translation
+words:fiscal_year_s1,"{""g"":""año fiscal; período contable de doce meses"",""ex"":{ ""fiscal_year_s1"":""Nuestro año fiscal comienza en abril.""}}",manual translation
+words:balance_sheet_s1,"{""g"":""balance general; estado que muestra la situación financiera de una institución en una fecha concreta mediante sus activos y obligaciones"",""ex"":{ ""balance_sheet_s1"":""El balance general muestra qué posee y qué debe la empresa.""}}",manual translation
+words:expenditure_s1,"{""g"":""gasto; dinero pagado o cantidad gastada"",""ex"":{ ""expenditure_s1"":""El gasto público en educación ha aumentado.""}}",manual translation
+words:courteous_s1,"{""g"":""cortés; que muestra educación y buenos modales"",""ex"":{ ""courteous_s1"":""El personal debe ser siempre cortés con los clientes.""}}",manual translation
+words:receipt_of_s1,"{""g"":""recepción de; acto de recibir algo, especialmente un mensaje o un pago"",""ex"":{ ""receipt_of_s1"":""Enviamos por correo electrónico un comprobante de recepción del pago al cliente.""}}",manual translation
+words:comply_with_s1,"{""g"":""cumplir con; hacer lo que exige una regla o solicitud"",""ex"":{ ""comply_with_s1"":""Todos los proveedores deben cumplir con las nuevas normas de seguridad.""}}",manual translation
+words:clause_s1,"{""g"":""cláusula; en gramática, expresión que incluye sujeto y predicado, pero no constituye una oración completa"",""ex"":{ ""clause_s1"":""Una cláusula del contrato contempla los pagos atrasados.""}}",manual translation
+words:breach_s1,"{""g"":""incumplimiento; falta de ejecución de un acto o una obligación prometidos"",""ex"":{ ""breach_s1"":""La entrega tardía constituye un incumplimiento del contrato.""}}",manual translation
+words:liable_s1,"{""g"":""responsable; expuesto a algo o sujeto a experimentar algo, normalmente desagradable"",""ex"":{ ""liable_s1"":""La empresa no se hace responsable de los objetos perdidos.""}}",manual translation
+words:binding_s1,"{""g"":""vinculante; exigido legalmente y no susceptible de ignorarse"",""ex"":{ ""binding_s1"":""El acuerdo firmado es vinculante para ambas partes.""}}",manual translation
+words:terminate_s1,"{""g"":""terminar; poner fin o detener"",""ex"":{ ""terminate_s1"":""Cualquiera de las partes puede terminar el contrato con un preaviso de 30 días.""}}",manual translation
+words:automate_s1,"{""g"":""automatizar; hacer automático o controlar y operar automáticamente"",""ex"":{ ""automate_s1"":""La fábrica ha automatizado la mayor parte de su producción.""}}",manual translation
+words:specification_s1,"{""g"":""especificación; descripción detallada de los criterios de diseño de un trabajo"",""ex"":{ ""specification_s1"":""Las piezas deben cumplir las especificaciones del cliente.""}}",manual translation
+words:merchandise_s1,"{""g"":""mercancía; productos ofrecidos para la venta"",""ex"":{ ""merchandise_s1"":""Toda la mercancía tiene un 20 % de descuento.""}}",manual translation
+words:wholesaler_s1,"{""g"":""mayorista; persona que compra grandes cantidades de productos y los revende a comerciantes, no al consumidor final"",""ex"":{ ""wholesaler_s1"":""La tienda compra a un mayorista.""}}",manual translation
+words:amenity_s1,"{""g"":""comodidad; ventaja agradable que resulta de unas condiciones favorables"",""ex"":{ ""amenity_s1"":""Las comodidades del hotel incluyen un gimnasio y un spa.""}}",manual translation
+words:complimentary_s1,"{""g"":""gratuito; ofrecido sin costo como cortesía"",""ex"":{ ""complimentary_s1"":""Los huéspedes reciben café gratuito en el vestíbulo del hotel.""}}",manual translation
+words:cater_s1,"{""g"":""atender; proporcionar lo que se desea o necesita, especialmente apoyo, comida o sustento"",""ex"":{ ""cater_s1"":""Una empresa local se encargó del servicio de comida de la boda.""}}",manual translation
+words:banquet_s1,"{""g"":""banquete; cena ceremonial para muchas personas"",""ex"":{ ""banquet_s1"":""Se celebró un banquete en honor de los ganadores.""}}",manual translation
+words:keynote_s1,"{""g"":""tema central; tema principal de un discurso o una obra literaria"",""ex"":{ ""keynote_s1"":""El director ejecutivo dará el discurso principal.""}}",manual translation
+words:venue_capacity_s1,"{""g"":""aforo del lugar; número máximo de personas que un sitio puede acoger de forma segura"",""ex"":{ ""venue_capacity_s1"":""El organizador comprobó el aforo del lugar antes de vender las entradas.""}}",manual translation
+words:malfunction_s1,"{""g"":""fallo; incapacidad para funcionar con normalidad"",""ex"":{ ""malfunction_s1"":""Un fallo detuvo la línea de producción.""}}",manual translation
+words:compatible_s1,"{""g"":""compatible; capaz de existir y funcionar en combinación armoniosa o adecuada"",""ex"":{ ""compatible_s1"":""Este cargador es compatible con la mayoría de los teléfonos.""}}",manual translation
+words:troubleshoot_s1,"{""g"":""solucionar problemas; resolver dificultades"",""ex"":{ ""troubleshoot_s1"":""El equipo de informática solucionará el problema.""}}",manual translation

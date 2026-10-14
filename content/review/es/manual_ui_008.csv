@@ -1,0 +1,62 @@
+key,corrected,comment
+ui:set_about,"Acerca de",manual translation
+ui:set_ad_privacy,"Opciones de privacidad de anuncios",manual translation
+ui:set_appearance,"Apariencia",manual translation
+ui:set_bubbles,"Globos de diálogo de la mascota",manual translation
+ui:set_data,"Datos",manual translation
+ui:set_goal,"Objetivo diario",manual translation
+ui:set_haptics,"Vibración",manual translation
+ui:set_learning,"Aprendizaje",manual translation
+ui:set_level,"Nivel",manual translation
+ui:set_new_words,"Palabras nuevas por sesión",manual translation
+ui:set_notifications,"Notificaciones",manual translation
+ui:set_open_pet,"Abrir el hogar de la mascota",manual translation
+ui:set_pet,"Mascota",manual translation
+ui:set_pet_size,"Tamaño de la mascota",manual translation
+ui:set_privacy,"Privacidad",manual translation
+ui:set_reduce_motion,"Reducir movimiento",manual translation
+ui:set_reminder,"Recordatorio diario",manual translation
+ui:set_reminder_time,"Hora del recordatorio",manual translation
+ui:set_reset_pos,"Restablecer la posición de la mascota",manual translation
+ui:set_show_pet,"Mostrar la mascota en pantalla",manual translation
+ui:set_slow_tts,"Audio más lento",manual translation
+ui:set_sounds,"Efectos de sonido",manual translation
+ui:set_text_size,"Tamaño del texto",manual translation
+ui:set_theme,"Tema",manual translation
+ui:set_translation,"Mostrar traducciones",manual translation
+ui:settings,"Ajustes",manual translation
+ui:show_more,"Mostrar %1$d más",manual translation
+ui:show_translation,"Traducción",manual translation
+ui:signals,"Palabras clave",manual translation
+ui:skip,"Omitir",manual translation
+ui:skip_test,"Prueba para avanzar",manual translation
+ui:slot_bed,"Cama",manual translation
+ui:slot_face,"Gafas",manual translation
+ui:slot_hat,"Sombrero",manual translation
+ui:slot_lamp,"Lámpara",manual translation
+ui:slot_neck,"Accesorio de cuello",manual translation
+ui:slot_plant,"Planta",manual translation
+ui:slot_rug,"Alfombra",manual translation
+ui:slot_theme,"Habitación",manual translation
+ui:slot_toy,"Juguete",manual translation
+ui:slot_wall,"Pared",manual translation
+ui:sort_az,"A–Z",manual translation
+ui:sort_default,"Orden predeterminado",manual translation
+ui:sort_hard,"Las más difíciles primero",manual translation
+ui:sort_wrong,"Más errores primero",manual translation
+ui:speed_sub,"Responde tantas como puedas en 60 segundos.",manual translation
+ui:speed_title,"Desafío de velocidad",manual translation
+ui:src_new,"Preguntas nuevas",manual translation
+ui:src_saved,"Guardadas",manual translation
+ui:src_wrong,"Las que respondí mal",manual translation
+ui:stage_n,"Etapa %1$d",manual translation
+ui:stage_of,"Etapa %1$d de %2$d",manual translation
+ui:stage_up_sub,"%1$s está creciendo contigo",manual translation
+ui:stage_up_title,"¡Etapa %1$d!",manual translation
+ui:stage_xp,"%1$d / %2$d XP",manual translation
+ui:start,"Empezar",manual translation
+ui:start_10,"Empezar 10 preguntas",manual translation
+ui:start_drills,"Empezar la práctica",manual translation
+ui:start_learning,"Empezar a aprender",manual translation
+ui:start_new,"Empezar una prueba nueva",manual translation
+ui:step_careful,"Ten cuidado",manual translation

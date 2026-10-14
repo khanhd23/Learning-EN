@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:girlfriend_s1,,,,,"{""g"":""novia"",""ex"":{""girlfriend_s1"":""Su novia le envió un mensaje antes de la entrevista.""}}",manual sense/example review
+words:grandparent_s1,,,,,"{""g"":""abuelo; abuela"",""ex"":{""grandparent_s1"":""Mi abuelo cuenta historias maravillosas sobre la vida en el pueblo.""}}",manual gender/context review
+words:trousers_s1,,,,,"{""g"":""pantalones"",""ex"":{""trousers_s1"":""Estos pantalones son lo bastante cómodos para un viaje largo.""}}",manual clothing review
+words:yogurt_s1,,,,,"{""g"":""yogur"",""ex"":{""yogurt_s1"":""Como yogur con fruta después de hacer ejercicio por la mañana.""}}",manual food review
+words:chimpanzee_s1,,,,,"{""g"":""chimpancé"",""ex"":{""chimpanzee_s1"":""El chimpancé usó un palo para alcanzar la fruta.""}}",manual animal review
+words:chirp_s1,,,,,"{""g"":""piar; gorjear"",""ex"":{""chirp_s1"":""Los pajaritos pían fuerte afuera de mi ventana cada mañana.""}}",manual sound review
+words:climbing_s1,,,,,"{""g"":""escalada"",""ex"":{""climbing_s1"":""La escalada requiere manos fuertes y movimientos cuidadosos.""}}",manual activity review
+words:clown_s1,,,,,"{""g"":""payaso; payasa"",""ex"":{""clown_s1"":""El payaso hizo reír a los niños en la fiesta de cumpleaños.""}}",manual sense/example review
+words:dancer_s1,,,,,"{""g"":""bailarín; bailarina"",""ex"":{""dancer_s1"":""La bailarina practicó la nueva rutina todas las tardes.""}}",manual gender/context review
+words:diary_s1,,,,,"{""g"":""diario"",""ex"":{""diary_s1"":""Escribe sobre su día en un diario cada noche.""}}",manual sense/example review
+words:dinosaur_s1,,,,,"{""g"":""dinosaurio"",""ex"":{""dinosaur_s1"":""El museo exhibió un esqueleto grande de dinosaurio.""}}",manual sense/example review
+words:disadvantage_s1,,,,,"{""g"":""desventaja"",""ex"":{""disadvantage_s1"":""La falta de sueño es una desventaja durante los exámenes importantes.""}}",manual sense/example review
+words:disappointing_s1,,,,,"{""g"":""decepcionante"",""ex"":{""disappointing_s1"":""El resultado decepcionante hizo que el equipo practicara más.""}}",manual sense/example review
+words:disco_s1,,,,,"{""g"":""discoteca"",""ex"":{""disco_s1"":""El hotel organizó una discoteca para los huéspedes el viernes por la noche.""}}",manual context review
+words:dishonest_s1,,,,,"{""g"":""deshonesto; deshonesta"",""ex"":{""dishonest_s1"":""El vendedor deshonesto ocultó el daño al comprador.""}}",manual sense/example review
+words:dizzy_s1,,,,,"{""g"":""mareado; mareada"",""ex"":{""dizzy_s1"":""Me sentí mareado después de estar de pie en la habitación caliente.""}}",manual sense/example review
+words:drugstore_s1,,,,,"{""g"":""farmacia"",""ex"":{""drugstore_s1"":""Compró medicina para la tos en la farmacia.""}}",regional context review
+words:duck_s1,,,,,"{""g"":""pato; pata"",""ex"":{""duck_s1"":""Un pato cruzó el camino junto al estanque tranquilo.""}}",manual animal review
+words:earring_s1,,,,,"{""g"":""arete; pendiente"",""ex"":{""earring_s1"":""Perdió un arete mientras caminaba por el mercado.""}}",regional variants retained for es-419
+words:embarrassing_s1,,,,,"{""g"":""vergonzoso; incómodo"",""ex"":{""embarrassing_s1"":""Olvidar su nombre fue un error vergonzoso.""}}",manual false-friend/context review
+words:ending_s1,,,,,"{""g"":""final; desenlace"",""ex"":{""ending_s1"":""La película tiene un final sorprendente que nadie esperaba.""}}",manual sense/example review
+words:fascinating_s1,,,,,"{""g"":""fascinante"",""ex"":{""fascinating_s1"":""El guía dio una charla fascinante sobre la ciudad antigua.""}}",manual sense/example review
+words:fighter_s1,,,,,"{""g"":""luchador; luchadora"",""ex"":{""fighter_s1"":""El luchador entrenaba todas las mañanas antes del campeonato.""}}",manual context review
+words:fisherman_s1,,,,,"{""g"":""pescador; pescadora"",""ex"":{""fisherman_s1"":""El pescador reparó su red junto al bote pequeño.""}}",manual sense/example review
+words:flea_s1,,,,,"{""g"":""pulga"",""ex"":{""flea_s1"":""El perro se rascaba porque una pulga le había picado la piel.""}}",manual animal review

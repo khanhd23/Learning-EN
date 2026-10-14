@@ -1,0 +1,26 @@
+key,corrected,comment
+words:chef_s1,"{""g"":""chef, cocinero, cocinera"",""ex"":{""chef_s1"":""El chef cocina con ingredientes locales.""}}",manual translation
+words:tip_s1,"{""g"":""punta"",""ex"":{""tip_s1"":""Dejamos una propina para el mesero.""}}",source/example mismatch noted
+words:tip_s2,"{""g"":""consejo, recomendación"",""ex"":{""tip_s2"":""Aquí tienes cinco consejos para aprender palabras nuevas.""}}",source/example mismatch noted
+words:serve_s1,"{""g"":""servir"",""ex"":{""serve_s1"":""El desayuno se sirve de seis a diez.""}}",manual translation
+words:serve_s2,"{""g"":""sacar (en deportes)"",""ex"":{""serve_s2"":""Es tu turno de sacar.""}}",manual translation
+words:dessert_s1,"{""g"":""postre"",""ex"":{""dessert_s1"":""¿Quieres un poco de postre?""}}",manual translation
+words:spicy_s1,"{""g"":""picante"",""ex"":{""spicy_s1"":""Esta sopa es demasiado picante para mí.""}}",manual translation
+words:speaker_s1,"{""g"":""orador, oradora; ponente"",""ex"":{""speaker_s1"":""El orador principal es un científico famoso.""}}",manual translation
+words:organize_s1,"{""g"":""organizar"",""ex"":{""organize_s1"":""Tenemos que organizar los archivos por fecha.""}}",manual translation
+words:invitation_s1,"{""g"":""invitación"",""ex"":{""invitation_s1"":""Gracias por la invitación.""}}",manual translation
+words:celebrate_s1,"{""g"":""celebrar"",""ex"":{""celebrate_s1"":""Celebramos el final del proyecto con una cena.""}}",manual translation
+words:software_s1,"{""g"":""software"",""ex"":{""software_s1"":""Tienes que actualizar el software.""}}",manual translation
+words:upload_s1,"{""g"":""subir"",""ex"":{""upload_s1"":""Ella subió las fotos a su blog.""}}",manual translation
+words:data_s1,"{""g"":""datos"",""ex"":{""data_s1"":""Los investigadores recopilaron datos de tres escuelas.""}}",manual translation
+words:update_s1,"{""g"":""actualización"",""ex"":{""update_s1"":""Hay una nueva actualización disponible.""}}",manual translation
+words:update_s2,"{""g"":""actualizar, informar"",""ex"":{""update_s2"":""Mañana te pondré al día sobre el proyecto.""}}",manual translation
+words:virus_s1,"{""g"":""virus"",""ex"":{""virus_s1"":""Mi computadora tiene un virus.""}}",manual translation
+words:virus_s2,"{""g"":""virus informático"",""ex"":{""virus_s2"":""El software antivirus protege tu laptop.""}}",example-led translation
+words:user_s1,"{""g"":""usuario, usuaria"",""ex"":{""user_s1"":""La aplicación tiene más de un millón de usuarios.""}}",manual translation
+words:appointment_s1,"{""g"":""cita"",""ex"":{""appointment_s1"":""Tengo una cita con el dentista a las tres.""}}",source/example mismatch noted
+words:patient_s1,"{""g"":""paciente"",""ex"":{""patient_s1"":""La enfermera revisó al paciente.""}}",manual translation
+words:patient_s2,"{""g"":""paciente"",""ex"":{""patient_s2"":""Ten paciencia. El autobús llegará pronto.""}}",manual translation
+words:fever_s1,"{""g"":""fiebre"",""ex"":{""fever_s1"":""El niño tiene fiebre alta.""}}",manual translation
+words:clinic_s1,"{""g"":""clínica"",""ex"":{""clinic_s1"":""Hay una clínica pequeña cerca de mi casa.""}}",manual translation
+words:diet_s1,"{""g"":""dieta"",""ex"":{""diet_s1"":""Una dieta saludable incluye muchas verduras.""}}",manual translation

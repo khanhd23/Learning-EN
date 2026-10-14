@@ -1,0 +1,26 @@
+key,corrected,comment
+words:forgive_s1,"{""g"":""perdonar; dejar de sentir enojo hacia alguien que hizo algo malo"",""ex"":{ ""forgive_s1"":""Me tomó tiempo perdonar el comentario injusto.""}}",manual translation
+words:furtive_s1,"{""g"":""furtivo; silencioso, cauteloso y secreto para evitar que alguien lo observe"",""ex"":{ ""furtive_s1"":""Entró con pasos furtivos para que nadie lo viera.""}}",manual translation; replaced source placeholder with a usable example
+words:get_cold_feet_s1,"{""g"":""echarse atrás; perder el valor o la decisión justo antes de hacer algo"",""ex"":{ ""get_cold_feet_s1"":""Bueno, ¿qué pasa? No te estarás echando atrás, ¿verdad?""}}",manual translation
+words:ghastly_s1,"{""g"":""espantoso; extremadamente desagradable o pálido"",""ex"":{ ""ghastly_s1"":""tener un aspecto terriblemente pálido""}}",manual translation
+words:growl_s1,"{""g"":""gruñir; emitir sonidos bajos y roncos"",""ex"":{ ""growl_s1"":""gruñirle a alguien""}}",manual translation
+words:guarded_s1,"{""g"":""cauteloso; prudente y reservado"",""ex"":{ ""guarded_s1"":""una respuesta cautelosa""}}",manual translation
+words:guzzle_s1,"{""g"":""beber vorazmente; beber con ansia o como si se tuviera mucha sed"",""ex"":{ ""guzzle_s1"":""beber cerveza vorazmente""}}",manual translation
+words:have_to_s1,"{""g"":""tener que; estar obligado o necesitar hacer algo"",""ex"":{ ""have_to_s1"":""tener que hacer el trabajo de alguien""}}",manual translation
+words:healing_s1,"{""g"":""curación; proceso de recuperar la salud después de una lesión o enfermedad"",""ex"":{ ""healing_s1"":""El descanso es importante durante el proceso de curación.""}}",manual translation
+words:hem_s1,"{""g"":""dobladillar; doblar y coser un borde para hacer un dobladillo, o cercar"",""ex"":{ ""hem_s1"":""cercar al enemigo""}}",manual translation
+words:hoof_s1,"{""g"":""pezuña; pie duro de un caballo, una vaca o una cabra"",""ex"":{ ""hoof_s1"":""El caballo se lastimó la pezuña delantera.""}}",manual translation
+words:ignorant_s1,"{""g"":""ignorante; sin educación general, conocimientos o preparación"",""ex"":{ ""ignorant_s1"":""no tener conocimiento de algo""}}",manual translation
+words:illiterate_s1,"{""g"":""analfabeto; que no sabe leer ni escribir, o que carece de conocimientos en un área"",""ex"":{ ""illiterate_s1"":""ser analfabeto en política""}}",manual translation
+words:imbecile_s1,"{""g"":""imbécil; término ofensivo para una persona considerada muy poco inteligente"",""ex"":{ ""imbecile_s1"":""un tipo imbécil""}}",manual translation; marked as offensive
+words:improvise_s1,"{""g"":""improvisar; actuar o crear sin preparación"",""ex"":{ ""improvise_s1"":""improvisar una cama con hojas""}}",manual translation
+words:impugn_s1,"{""g"":""impugnar; atacar algo por considerarlo falso o incorrecto"",""ex"":{ ""impugn_s1"":""impugnar una afirmación""}}",manual translation
+words:inadvertent_s1,"{""g"":""involuntario; que ocurre por casualidad, inesperadamente o sin intención"",""ex"":{ ""inadvertent_s1"":""una respuesta involuntaria""}}",manual translation
+words:included_s1,"{""g"":""incluido; colocado en el mismo sobre o paquete, o comprendido dentro de un grupo"",""ex"":{ ""included_s1"":""son doce, incluidos los niños""}}",manual translation
+words:incongruous_s1,"{""g"":""incongruente; sin armonía, compatibilidad o adecuación"",""ex"":{ ""incongruous_s1"":""una definición incongruente""}}",manual translation
+words:insinuate_s1,"{""g"":""insinuarse; introducirse a sí mismo de manera sutil"",""ex"":{ ""insinuate_s1"":""insinuarse en el favor de alguien""}}",manual translation
+words:jaded_s1,"{""g"":""hastiado; agotado y sin entusiasmo"",""ex"":{ ""jaded_s1"":""un apetito hastiado""}}",manual translation
+words:kowtow_s1,"{""g"":""postrarse; doblar las rodillas e inclinarse de manera servil"",""ex"":{ ""kowtow_s1"":""postrarse ante alguien""}}",manual translation
+words:loiter_s1,"{""g"":""holgazanear; quedarse en un lugar sin propósito claro"",""ex"":{ ""loiter_s1"":""perder el tiempo holgazaneando""}}",manual translation
+words:lurid_s1,"{""g"":""espeluznante; horrible por su ferocidad o crueldad"",""ex"":{ ""lurid_s1"":""un relato espeluznante""}}",manual translation
+words:malignant_s1,"{""g"":""maligno; peligroso para la salud y caracterizado por un crecimiento progresivo y descontrolado, especialmente de un tumor"",""ex"":{ ""malignant_s1"":""fiebre maligna""}}",manual translation

@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:easy_s1,,,,,"{""g"":""fácil"",""ex"":{""easy_s1"":""Este ejercicio es fácil para la mayoría de los principiantes.""}}",manual sense/example review
+words:difficult_s1,,,,,"{""g"":""difícil"",""ex"":{""difficult_s1"":""Esa pregunta de gramática es difícil para los principiantes.""}}",manual sense/example review
+words:hard_s1,,,,,"{""g"":""difícil"",""ex"":{""hard_s1"":""La última pregunta fue difícil.""}}",difficulty sense
+words:hard_s2,,,,,"{""g"":""trabajar duro; esforzarse"",""ex"":{""hard_s2"":""Ella trabaja duro para mejorar su inglés.""}}",adverbial sense
+words:hard_s3,,,,,"{""g"":""duro; dura"",""ex"":{""hard_s3"":""Este pan está demasiado duro para comerlo.""}}",physical sense
+words:fast_s1,,,,,"{""g"":""rápido; rápida"",""ex"":{""fast_s1"":""Tomamos un tren rápido a la ciudad.""}}",manual sense/example review
+words:slow_s1,,,,,"{""g"":""lento; lenta"",""ex"":{""slow_s1"":""El viaje en autobús lento duró dos horas.""}}",manual sense/example review
+words:clean_s1,,,,,"{""g"":""limpio; limpia"",""ex"":{""clean_s1"":""Usa una cuchara limpia.""}}",manual sense/example review
+words:dirty_s1,,,,,"{""g"":""sucio; sucia"",""ex"":{""dirty_s1"":""Deja tus zapatos sucios junto a la puerta.""}}",manual sense/example review
+words:light_s1,,,,,"{""g"":""ligero; ligera"",""ex"":{""light_s1"":""Esta bolsa es lo bastante ligera para llevarla todo el día.""}}",weight sense
+words:light_s2,,,,,"{""g"":""luz"",""ex"":{""light_s2"":""Aquí no hay suficiente luz para leer.""}}",illumination sense
+words:heavy_s1,,,,,"{""g"":""pesado; pesada"",""ex"":{""heavy_s1"":""La caja es demasiado pesada para levantarla.""}}",manual sense/example review
+words:strong_s1,,,,,"{""g"":""fuerte"",""ex"":{""strong_s1"":""Esta cuerda es lo bastante fuerte para sostener la caja.""}}",manual sense/example review
+words:right_s1,,,,,"{""g"":""correcto; correcta"",""ex"":{""right_s1"":""Comprueba que tienes la dirección correcta.""}}",manual sense/example review
+words:wrong_s1,,,,,"{""g"":""equivocado; equivocada"",""ex"":{""wrong_s1"":""Llamé al número equivocado por error.""}}",manual sense/example review
+words:different_s1,,,,,"{""g"":""diferente"",""ex"":{""different_s1"":""Estas dos palabras tienen significados diferentes.""}}",manual sense/example review
+words:same_s1,,,,,"{""g"":""mismo; misma"",""ex"":{""same_s1"":""Tomamos el mismo autobús a la escuela.""}}",manual sense/example review
+words:safe_s1,,,,,"{""g"":""seguro; segura"",""ex"":{""safe_s1"":""Guarda tu pasaporte en un lugar seguro.""}}",manual sense/example review
+words:beautiful_s1,,,,,"{""g"":""hermoso; hermosa"",""ex"":{""beautiful_s1"":""El jardín se ve hermoso en primavera.""}}",manual sense/example review
+words:kind_s2,,,,,"{""g"":""tipo; clase"",""ex"":{""kind_s2"":""¿Qué tipo de música te gusta?""}}",type sense
+words:kind_s1,,,,,"{""g"":""amable; bondadoso"",""ex"":{""kind_s1"":""Fue muy amable de tu parte ayudarme.""}}",kindness sense
+words:ready_s1,,,,,"{""g"":""listo; lista"",""ex"":{""ready_s1"":""La cena estará lista en diez minutos.""}}",manual sense/example review
+words:free_s1,,,,,"{""g"":""libre; disponible"",""ex"":{""free_s1"":""¿Estás libre después del almuerzo?""}}",availability sense
+words:free_s2,,,,,"{""g"":""gratis; gratuito"",""ex"":{""free_s2"":""La entrada al museo es gratis el domingo.""}}",example uses no-cost sense
+words:and_s1,,,,,"{""g"":""y"",""ex"":{""and_s1"":""Compré pan y leche.""}}",manual conjunction review

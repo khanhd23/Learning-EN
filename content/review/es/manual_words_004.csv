@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:hobby_s1,,,,,"{""g"":""pasatiempo; afición"",""ex"":{""hobby_s1"":""Mi pasatiempo es tomar fotos.""}}",manual sense/example review
+words:relax_s1,,,,,"{""g"":""relajarse"",""ex"":{""relax_s1"":""Me relajo escuchando música.""}}",manual sense/example review
+words:busy_s1,,,,,"{""g"":""ocupado; ocupada"",""ex"":{""busy_s1"":""Ahora estoy demasiado ocupado para hablar.""}}",manual sense/example review
+words:tired_s1,,,,,"{""g"":""cansado; cansada"",""ex"":{""tired_s1"":""Estoy cansado después de un día largo.""}}",manual sense/example review
+words:dishes_s1,,,,,"{""g"":""platos; lavar los platos"",""ex"":{""dishes_s1"":""Te toca lavar los platos.""}}",source definition is a noun while the example uses the action phrase
+words:fridge_s1,,,,,"{""g"":""refrigerador; nevera"",""ex"":{""fridge_s1"":""Pon la leche en el refrigerador.""}}",manual sense/example review
+words:traffic_s1,,,,,"{""g"":""tráfico"",""ex"":{""traffic_s1"":""El tráfico es terrible a las 5 p. m.""}}",manual sense/example review
+words:on_time_s1,,,,,"{""g"":""a tiempo"",""ex"":{""on_time_s1"":""Por favor, llega a tiempo a clase.""}}",manual sense/example review
+words:parents_s1,,,,,"{""g"":""padres"",""ex"":{""parents_s1"":""Mis padres viven en la ciudad vieja.""}}",manual sense/example review
+words:grandparents_s1,,,,,"{""g"":""abuelos"",""ex"":{""grandparents_s1"":""Visitamos a nuestros abuelos cada Tết.""}}",manual sense/example review
+words:husband_s1,,,,,"{""g"":""esposo; marido"",""ex"":{""husband_s1"":""Su esposo es maestro.""}}",manual sense/example review
+words:wife_s1,,,,,"{""g"":""esposa"",""ex"":{""wife_s1"":""Su esposa trabaja en un hospital.""}}",manual sense/example review
+words:best_friend_s1,,,,,"{""g"":""mejor amigo; mejor amiga"",""ex"":{""best_friend_s1"":""Ella es mi mejor amiga desde la primaria.""}}",source example has a tense mismatch; corrected Spanish is idiomatic
+words:happy_s1,,,,,"{""g"":""feliz"",""ex"":{""happy_s1"":""Se sintió feliz después de aprobar el examen.""}}",manual sense/example review
+words:sad_s1,,,,,"{""g"":""triste"",""ex"":{""sad_s1"":""Se sintió triste cuando su amiga se mudó.""}}",source definition contains malformed text; corrected follows the example
+words:angry_s1,,,,,"{""g"":""enojado; enojada"",""ex"":{""angry_s1"":""No te enojes conmigo.""}}",manual sense/example review
+words:friendly_s1,,,,,"{""g"":""amable; amistoso"",""ex"":{""friendly_s1"":""El personal es muy amable.""}}",manual sense/example review
+words:lazy_s1,,,,,"{""g"":""perezoso; perezosa"",""ex"":{""lazy_s1"":""Tengo pereza los domingos por la mañana.""}}",manual sense/example review
+words:rice_s1,,,,,"{""g"":""arroz"",""ex"":{""rice_s1"":""Comemos arroz casi todos los días.""}}",manual sense/example review
+words:noodles_s1,,,,,"{""g"":""fideos"",""ex"":{""noodles_s1"":""Desayuné sopa de fideos con carne de res.""}}",manual sense/example review
+words:vegetable_s1,,,,,"{""g"":""verdura; vegetal"",""ex"":{""vegetable_s1"":""Deberías comer más verduras con la cena.""}}",manual sense/example review
+words:fruit_s1,,,,,"{""g"":""fruta"",""ex"":{""fruit_s1"":""El mango es mi fruta favorita.""}}",manual sense/example review
+words:cook_s1,,,,,"{""g"":""cocinar"",""ex"":{""cook_s1"":""Mi papá cocina la cena los fines de semana.""}}",manual sense/example review
+words:cook_s2,,,,,"{""g"":""cocinero; cocinera"",""ex"":{""cook_s2"":""Mi abuela es una excelente cocinera.""}}",manual sense/example review
+words:sweet_s1,,,,,"{""g"":""dulce"",""ex"":{""sweet_s1"":""Este café está demasiado dulce.""}}",manual sense/example review

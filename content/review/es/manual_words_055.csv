@@ -1,0 +1,26 @@
+key,corrected,comment
+words:budget_s1,"{""g"":""presupuesto"",""ex"":{""budget_s1"":""Tenemos que mantenernos dentro del presupuesto.""}}",manual translation
+words:savings_s1,"{""g"":""ahorros"",""ex"":{""savings_s1"":""Gastó todos sus ahorros en el viaje.""}}",manual translation
+words:borrow_s1,"{""g"":""pedir prestado"",""ex"":{""borrow_s1"":""¿Puedo pedirte prestada tu pluma por un minuto?""}}",manual translation
+words:receipt_s1,"{""g"":""recibo"",""ex"":{""receipt_s1"":""Guarda el recibo por si quieres devolverlo.""}}",manual translation
+words:tax_s1,"{""g"":""impuesto"",""ex"":{""tax_s1"":""Los precios incluyen un impuesto de ventas del 10 %.""}}",manual translation
+words:accountant_s1,"{""g"":""contador, contadora"",""ex"":{""accountant_s1"":""Nuestro contador prepara los formularios de impuestos.""}}",manual translation
+words:record_s1,"{""g"":""registro"",""ex"":{""record_s1"":""Lleva un registro de todos tus gastos.""}}",manual translation
+words:record_s2,"{""g"":""grabar"",""ex"":{""record_s2"":""Grabamos una canción juntos.""}}",manual translation
+words:increase_s1,"{""g"":""aumentar"",""ex"":{""increase_s1"":""Los precios aumentaron un 3 % el mes pasado.""}}",manual translation
+words:increase_s2,"{""g"":""aumento"",""ex"":{""increase_s2"":""Hubo un aumento pronunciado de los precios.""}}",manual translation
+words:decrease_s1,"{""g"":""disminuir"",""ex"":{""decrease_s1"":""El número de quejas disminuyó este año.""}}",example-led translation; source definition is noun-like
+words:decrease_s2,"{""g"":""disminución"",""ex"":{""decrease_s2"":""Vimos una pequeña disminución en las ventas.""}}",manual translation
+words:advertise_s1,"{""g"":""anunciar, publicitar"",""ex"":{""advertise_s1"":""Anuncian sus productos en las redes sociales.""}}",manual translation
+words:brand_s1,"{""g"":""marca"",""ex"":{""brand_s1"":""Esta es una marca de café conocida.""}}",manual translation
+words:brand_s2,"{""g"":""tildar de, calificar de"",""ex"":{""brand_s2"":""Lo tildaron de mentiroso.""}}",manual translation
+words:feedback_s1,"{""g"":""comentarios, opiniones"",""ex"":{""feedback_s1"":""Los comentarios de los clientes nos ayudan a mejorar el servicio.""}}",manual translation
+words:image_s1,"{""g"":""imagen"",""ex"":{""image_s1"":""La empresa quiere mejorar su imagen pública.""}}",manual translation
+words:image_s2,"{""g"":""imagen"",""ex"":{""image_s2"":""La imagen en la pantalla está borrosa.""}}",source/example mismatch noted
+words:client_s1,"{""g"":""cliente"",""ex"":{""client_s1"":""El abogado se reunió con su cliente a las diez.""}}",manual translation
+words:discount_s1,"{""g"":""descuento"",""ex"":{""discount_s1"":""Los estudiantes obtienen un descuento del 10 %.""}}",manual translation
+words:deliver_s1,"{""g"":""entregar, hacer entregas"",""ex"":{""deliver_s1"":""Hacemos entregas gratis dentro de la ciudad.""}}",source/example mismatch noted
+words:cashier_s1,"{""g"":""cajero, cajera"",""ex"":{""cashier_s1"":""Por favor, paga en la caja.""}}",manual translation
+words:salesperson_s1,"{""g"":""vendedor, vendedora"",""ex"":{""salesperson_s1"":""El vendedor nos mostró varios modelos.""}}",manual translation
+words:available_s1,"{""g"":""disponible"",""ex"":{""available_s1"":""Hay varios asientos disponibles cerca de la entrada.""}}",manual translation
+words:exchange_s1,"{""g"":""cambiar, intercambiar"",""ex"":{""exchange_s1"":""¿Puedo cambiar esta camisa por una más grande?""}}",manual translation

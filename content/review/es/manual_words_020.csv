@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:not_s1,,,,,"{""g"":""no"",""ex"":{""not_s1"":""Ahora no tengo hambre.""}}",manual negation review
+words:this_s1,,,,,"{""g"":""este; esta"",""ex"":{""this_s1"":""Esta silla es muy cómoda.""}}",Spanish gender agreement
+words:so_s1,,,,,"{""g"":""así que; por eso"",""ex"":{""so_s1"":""Estaba lloviendo, así que nos quedamos adentro.""}}",manual connector review
+words:all_s1,,,,,"{""g"":""todo; todos; todas"",""ex"":{""all_s1"":""Todos los estudiantes tienen un cuaderno.""}}",Spanish agreement depends on the noun
+words:there_s1,,,,,"{""g"":""ahí; allí"",""ex"":{""there_s1"":""¿Puedes poner la caja ahí?""}}",manual deictic review
+words:more_s1,,,,,"{""g"":""más"",""ex"":{""more_s1"":""¿Puedo comer más arroz, por favor?""}}",manual quantity review
+words:up_s1,,,,,"{""g"":""arriba; hacia arriba"",""ex"":{""up_s1"":""Subimos la colina lentamente.""}}",manual direction review
+words:some_s1,,,,,"{""g"":""algo de; algunos; algunas"",""ex"":{""some_s1"":""Compré unas manzanas en el mercado.""}}",Spanish quantity depends on the noun
+words:other_s1,,,,,"{""g"":""otro; otra"",""ex"":{""other_s1"":""Los otros estudiantes ya están en clase.""}}",Spanish gender/number agreement
+words:out_s1,,,,,"{""g"":""fuera; salir de"",""ex"":{""out_s1"":""El gato salió corriendo de la cocina.""}}",manual phrasal context review
+words:well_s1,,,,,"{""g"":""bien"",""ex"":{""well_s1"":""Ella habla inglés muy bien.""}}",manual adverb review
+words:very_s1,,,,,"{""g"":""muy"",""ex"":{""very_s1"":""La sopa está muy caliente.""}}",manual adverb review
+words:just_s1,,,,,"{""g"":""acabar de; justo"",""ex"":{""just_s1"":""Acabo de terminar mi almuerzo.""}}",manual aspect review
+words:now_s1,,,,,"{""g"":""ahora"",""ex"":{""now_s1"":""Ahora estoy ocupado, así que llámame más tarde.""}}",manual time review
+words:only_s1,,,,,"{""g"":""solo; solamente"",""ex"":{""only_s1"":""Solo me quedan cinco dólares.""}}",manual limitation review
+words:any_s1,,,,,"{""g"":""algún; alguna; cualquier"",""ex"":{""any_s1"":""¿Tienes alguna pregunta?""}}",Spanish agreement depends on the noun
+words:where_s1,,,,,"{""g"":""dónde"",""ex"":{""where_s1"":""¿Dónde vives ahora?""}}",manual question-word review
+words:much_s1,,,,,"{""g"":""mucho; mucha"",""ex"":{""much_s1"":""No llevo mucho dinero conmigo.""}}",Spanish agreement depends on the noun
+words:how_s1,,,,,"{""g"":""cómo"",""ex"":{""how_s1"":""¿Cómo llegas a la escuela?""}}",manual question-word review
+words:mean_s1,,,,,"{""g"":""significar"",""ex"":{""mean_s1"":""¿Qué significa esta palabra?""}}",manual sense/example review
+words:even_s1,,,,,"{""g"":""incluso; hasta"",""ex"":{""even_s1"":""Hasta mi hermanito sabe nadar.""}}",manual emphasis review
+words:here_s1,,,,,"{""g"":""aquí"",""ex"":{""here_s1"":""Espera aquí un momento, por favor.""}}",manual deictic review
+words:many_s1,,,,,"{""g"":""muchos; muchas"",""ex"":{""many_s1"":""Ahora mucha gente trabaja desde casa.""}}",manual quantity review
+words:such_s1,,,,,"{""g"":""tan; semejante"",""ex"":{""such_s1"":""Nunca he visto un perro tan grande.""}}",manual emphasis review
+words:really_s1,,,,,"{""g"":""realmente; de verdad"",""ex"":{""really_s1"":""Disfruté mucho el concierto.""}}",manual emphasis review

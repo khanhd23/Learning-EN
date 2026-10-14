@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:peanut_s1,,,,,"{""g"":""maní; cacahuate"",""ex"":{""peanut_s1"":""Comió un maní después del almuerzo.""}}",regional variants retained for es-419
+words:spinach_s1,,,,,"{""g"":""espinaca"",""ex"":{""spinach_s1"":""Añadimos espinaca fresca a la sopa.""}}",manual food review
+words:strawberry_s1,,,,,"{""g"":""fresa; frutilla"",""ex"":{""strawberry_s1"":""Puso una fresa madura sobre el pastel.""}}",regional variants retained for es-419
+words:greeting_s1,,,,,"{""g"":""saludo"",""ex"":{""greeting_s1"":""Nos dio un saludo cálido en la puerta.""}}",manual sense/example review
+words:jungle_s1,,,,,"{""g"":""selva"",""ex"":{""jungle_s1"":""El guía nos condujo con seguridad por la selva.""}}",manual nature review
+words:postman_s1,,,,,"{""g"":""cartero; cartera"",""ex"":{""postman_s1"":""El cartero dejó un paquete junto a nuestra puerta.""}}",manual occupation review
+words:preschool_s1,,,,,"{""g"":""preescolar"",""ex"":{""preschool_s1"":""Su hija asiste a un preescolar cerca de su casa.""}}",manual education review
+words:salmon_s1,,,,,"{""g"":""salmón"",""ex"":{""salmon_s1"":""Horneamos salmón con limón para la cena.""}}",manual food review
+words:scared_s1,,,,,"{""g"":""asustado; asustada"",""ex"":{""scared_s1"":""La niña se asustó durante la tormenta ruidosa.""}}",feeling sense
+words:scary_s1,,,,,"{""g"":""aterrador; aterradora"",""ex"":{""scary_s1"":""Esa película aterradora me mantuvo despierto toda la noche.""}}",cause-of-fear sense
+words:sunbathe_s1,,,,,"{""g"":""tomar el sol"",""ex"":{""sunbathe_s1"":""Les gusta tomar el sol junto a la piscina tranquila.""}}",manual activity review
+words:swimmer_s1,,,,,"{""g"":""nadador; nadadora"",""ex"":{""swimmer_s1"":""El joven nadador entrena antes de la escuela todos los días.""}}",manual sport review
+words:daisy_s1,,,,,"{""g"":""margarita"",""ex"":{""daisy_s1"":""Una margarita brillante creció junto al sendero del jardín.""}}",manual nature review
+words:earache_s1,,,,,"{""g"":""dolor de oído"",""ex"":{""earache_s1"":""La niña se quedó en casa por un dolor de oído.""}}",manual health review
+words:elbow_s1,,,,,"{""g"":""codo"",""ex"":{""elbow_s1"":""Se golpeó el codo contra la mesa.""}}",manual body review
+words:hut_s1,,,,,"{""g"":""cabaña; choza"",""ex"":{""hut_s1"":""El guardabosques descansó en una pequeña cabaña.""}}",manual context review
+words:lamb_s1,,,,,"{""g"":""cordero"",""ex"":{""lamb_s1"":""El cordero siguió a su madre por el campo.""}}",manual animal review
+words:mustard_s1,,,,,"{""g"":""mostaza"",""ex"":{""mustard_s1"":""Añadió mostaza a su sándwich.""}}",manual food review
+words:pond_s1,,,,,"{""g"":""estanque"",""ex"":{""pond_s1"":""Los patos nadaban en el estanque tranquilo.""}}",manual nature review
+words:pork_s1,,,,,"{""g"":""carne de cerdo"",""ex"":{""pork_s1"":""El restaurante sirve carne de cerdo con arroz.""}}",manual food review
+words:razor_s1,,,,,"{""g"":""rasuradora; afeitadora"",""ex"":{""razor_s1"":""Empacó una rasuradora nueva para el viaje.""}}",regional variants retained for es-419
+words:rubbish_s1,,,,,"{""g"":""basura"",""ex"":{""rubbish_s1"":""Pon la basura en el contenedor correcto.""}}",manual sense/example review
+words:sandal_s1,,,,,"{""g"":""sandalia"",""ex"":{""sandal_s1"":""Llevaba sandalias cómodas en la playa.""}}",manual clothing review
+words:wagon_s1,,,,,"{""g"":""carreta; carrito"",""ex"":{""wagon_s1"":""Arrastraron la carreta por el parque.""}}",manual context review
+words:forehead_s1,,,,,"{""g"":""frente"",""ex"":{""forehead_s1"":""Una gota de lluvia le bajó por la frente.""}}",manual body review

@@ -1,0 +1,22 @@
+key,english,english_example,def,draft,corrected,comment
+words:pence_s1,,,,,"{""g"":""peniques"",""ex"":{""pence_s1"":""El sello cuesta sesenta peniques.""}}",British currency term
+words:theirs_s1,,,,,"{""g"":""suyo; suya; suyos; suyas"",""ex"":{""theirs_s1"":""Esos asientos son suyos, no nuestros.""}}",Spanish possessive agrees with the owned noun
+words:towards_s1,,,,,"{""g"":""hacia"",""ex"":{""towards_s1"":""Los niños caminaron hacia el patio de juegos.""}}",British spelling maps to same Spanish preposition
+words:kilogramme_s1,,,,,"{""g"":""kilogramo"",""ex"":{""kilogramme_s1"":""El paquete pesa dos kilogramos.""}}",British spelling maps to same Spanish unit
+words:lily_s1,,,,,"{""g"":""lirio"",""ex"":{""lily_s1"":""Un lirio blanco creció junto al sendero del jardín.""}}",manual nature review
+words:flavour_s1,,,,,"{""g"":""sabor"",""ex"":{""flavour_s1"":""Esta sopa tiene un sabor intenso por las hierbas frescas.""}}",British spelling maps to same Spanish word
+words:memorise_s1,,,,,"{""g"":""memorizar"",""ex"":{""memorise_s1"":""Los estudiantes suelen memorizar palabras nuevas usándolas en oraciones.""}}",British spelling maps to same Spanish verb
+words:next_door_s1,,,,,"{""g"":""de al lado; vecino de al lado"",""ex"":{""next_door_s1"":""Nuestro vecino de al lado cultiva tomates en el jardín.""}}",manual compound review
+words:cd_s1,,,,,"{""g"":""CD"",""ex"":{""cd_s1"":""Guarda su música favorita en un CD.""}}",manual technology review
+words:dr_s1,,,,,"{""g"":""Dr.; doctor; doctora"",""ex"":{""dr_s1"":""El Dr. Patel atenderá al próximo paciente.""}}",abbreviation retained in example
+words:mommie_s1,,,,,"{""g"":""mami; mamá"",""ex"":{""mommie_s1"":""El niño llamó a su mamá después de despertarse.""}}",informal spelling/context
+words:mr_s1,,,,,"{""g"":""Sr."",""ex"":{""mr_s1"":""El Sr. Brown está esperando en la recepción.""}}",title abbreviation retained
+words:mrs_s1,,,,,"{""g"":""Sra."",""ex"":{""mrs_s1"":""La Sra. Green enseña inglés en nuestra escuela.""}}",title abbreviation retained
+words:pm_s1,,,,,"{""g"":""p. m.; de la tarde/noche"",""ex"":{""pm_s1"":""La reunión empieza a las 3 p. m.""}}",time abbreviation review
+words:tee_shirt_s1,,,,,"{""g"":""camiseta; playera"",""ex"":{""tee_shirt_s1"":""Llevaba una camiseta azul con jeans.""}}",regional variants retained for es-419
+words:tv_s1,,,,,"{""g"":""televisión; TV"",""ex"":{""tv_s1"":""Los niños apagaron la televisión antes de cenar.""}}",manual technology review
+words:ms_s1,,,,,"{""g"":""Ms. (tratamiento para una mujer)"",""ex"":{""ms_s1"":""Ms. Lee responderá hoy a sus preguntas.""}}",English title retained because Spanish has no exact equivalent
+words:pc_s1,,,,,"{""g"":""PC; computadora personal"",""ex"":{""pc_s1"":""La oficina compró una PC más rápida para el diseñador.""}}",manual technology review
+words:paid_s1,,,,,"{""g"":""pagado; pagada"",""ex"":{""paid_s1"":""Al personal le pagan al final de cada mes.""}}",manual employment review
+words:recognise_s1,,,,,"{""g"":""reconocer"",""ex"":{""recognise_s1"":""Reconozco esa canción de la radio.""}}",British spelling maps to same Spanish verb
+words:sports_s1,,,,,"{""g"":""deportes"",""ex"":{""sports_s1"":""Los deportes ayudan a los niños a mantenerse activos y trabajar en equipo.""}}",manual activity review

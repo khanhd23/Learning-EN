@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:sweet_s2,,,,,"{""g"":""amable; encantador"",""ex"":{""sweet_s2"":""¡Qué amable de tu parte!""}}",manual context review of the compliment example
+words:meal_s1,,,,,"{""g"":""comida"",""ex"":{""meal_s1"":""La cena es mi comida favorita.""}}",manual sense/example review
+words:hungry_s1,,,,,"{""g"":""tener hambre"",""ex"":{""hungry_s1"":""Tengo mucha hambre después de la larga caminata.""}}",manual sense/example review
+words:full_s1,,,,,"{""g"":""lleno; llena"",""ex"":{""full_s1"":""El autobús está lleno, así que debemos esperar.""}}",manual sense/example review
+words:sunny_s1,,,,,"{""g"":""soleado; soleada"",""ex"":{""sunny_s1"":""Hoy hace sol y calor.""}}",manual sense/example review
+words:rainy_s1,,,,,"{""g"":""lluvioso; lluviosa"",""ex"":{""rainy_s1"":""La temporada de lluvias empieza en mayo.""}}",manual sense/example review
+words:cloudy_s1,,,,,"{""g"":""nublado; nublada"",""ex"":{""cloudy_s1"":""Está nublado, pero no está lloviendo.""}}",manual sense/example review
+words:season_s1,,,,,"{""g"":""estación; temporada"",""ex"":{""season_s1"":""El otoño es mi estación favorita del año.""}}",manual sense/example review
+words:mountain_s1,,,,,"{""g"":""montaña"",""ex"":{""mountain_s1"":""Subimos la montaña al amanecer.""}}",manual sense/example review
+words:river_s1,,,,,"{""g"":""río"",""ex"":{""river_s1"":""El Mekong es un río largo.""}}",manual sense/example review
+words:football_s1,,,,,"{""g"":""fútbol"",""ex"":{""football_s1"":""El fútbol es el deporte más popular del país.""}}",manual sense/example review
+words:team_s1,,,,,"{""g"":""equipo"",""ex"":{""team_s1"":""Nuestro equipo se reúne todos los lunes por la mañana.""}}",manual sense/example review
+words:win_s1,,,,,"{""g"":""ganar"",""ex"":{""win_s1"":""Nuestro equipo ganó el partido anoche.""}}",manual sense/example review
+words:lose_s1,,,,,"{""g"":""perder"",""ex"":{""lose_s1"":""A menudo pierdo las llaves en casa.""}}",manual sense/example review
+words:lose_s2,,,,,"{""g"":""perder"",""ex"":{""lose_s2"":""Volví a perder las llaves.""}}",source definition says fail to win but example uses lose an object; corrected follows the example
+words:fan_s1,,,,,"{""g"":""fan; admirador; admiradora"",""ex"":{""fan_s1"":""Soy un gran admirador de esta cantante.""}}",source definition describes a device but example uses a devotee
+words:fan_s2,,,,,"{""g"":""ventilador"",""ex"":{""fan_s2"":""Enciende el ventilador, hace calor.""}}",source definition describes a devotee but example uses a device
+words:gym_s1,,,,,"{""g"":""gimnasio"",""ex"":{""gym_s1"":""El gimnasio está abierto hasta las 10 p. m.""}}",manual sense/example review
+words:badminton_s1,,,,,"{""g"":""bádminton"",""ex"":{""badminton_s1"":""Jugamos al bádminton después del trabajo.""}}",manual sense/example review
+words:movie_s1,,,,,"{""g"":""película"",""ex"":{""movie_s1"":""Veamos una película esta noche.""}}",manual sense/example review
+words:actor_s1,,,,,"{""g"":""actor; actriz"",""ex"":{""actor_s1"":""Él es mi actor favorito de esa película.""}}",manual sense/example review
+words:song_s1,,,,,"{""g"":""canción"",""ex"":{""song_s1"":""Esta canción es muy pegadiza.""}}",manual sense/example review
+words:game_s1,,,,,"{""g"":""juego"",""ex"":{""game_s1"":""Los niños están jugando un juego de cartas.""}}",manual sense/example review
+words:cartoon_s1,,,,,"{""g"":""dibujos animados; caricatura"",""ex"":{""cartoon_s1"":""Mis hijos ven dibujos animados los sábados.""}}",manual sense/example review
+words:ticket_s1,,,,,"{""g"":""entrada; boleto"",""ex"":{""ticket_s1"":""Dos entradas para la función de las ocho, por favor.""}}",manual sense/example review

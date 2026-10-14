@@ -1,0 +1,26 @@
+key,corrected,comment
+words:storm_s1,"{""g"":""tormenta"",""ex"":{""storm_s1"":""Se acerca una gran tormenta.""}}",manual translation
+words:ocean_s1,"{""g"":""océano"",""ex"":{""ocean_s1"":""El océano se ve hermoso por la noche.""}}",manual translation
+words:island_s1,"{""g"":""isla"",""ex"":{""island_s1"":""Esta isla es hermosa.""}}",source example neutralized geographic reference for locale policy
+words:sunrise_s1,"{""g"":""amanecer"",""ex"":{""sunrise_s1"":""Nos levantamos temprano para ver el amanecer.""}}",manual translation
+words:sunset_s1,"{""g"":""atardecer, puesta de sol"",""ex"":{""sunset_s1"":""El atardecer sobre el mar fue increíble.""}}",manual translation
+words:nature_s1,"{""g"":""naturaleza"",""ex"":{""nature_s1"":""Me encanta estar cerca de la naturaleza.""}}",manual translation
+words:match_s1,"{""g"":""combinar, hacer juego"",""ex"":{""match_s1"":""Estas cortinas combinan con el color del sofá.""}}",manual translation
+words:match_s2,"{""g"":""combinar, hacer juego"",""ex"":{""match_s2"":""Tus zapatos combinan con tu bolso.""}}",source/example mismatch noted
+words:score_s1,"{""g"":""marcador, puntuación"",""ex"":{""score_s1"":""El marcador final fue de tres a dos.""}}",manual translation
+words:score_s2,"{""g"":""anotar"",""ex"":{""score_s2"":""Ella anotó dos goles en la final.""}}",manual translation
+words:coach_s1,"{""g"":""entrenador, entrenadora"",""ex"":{""coach_s1"":""El entrenador está contento con el equipo.""}}",manual translation
+words:coach_s2,"{""g"":""autobús"",""ex"":{""coach_s2"":""Tomamos un autobús para ir a una ciudad cercana.""}}",source/example mismatch; neutralized geographic reference for locale policy
+words:stadium_s1,"{""g"":""estadio"",""ex"":{""stadium_s1"":""El estadio estaba lleno de aficionados.""}}",manual translation
+words:jog_s1,"{""g"":""trotar"",""ex"":{""jog_s1"":""Trote suavemente en el parque cada mañana.""}}",source/example mismatch noted
+words:director_s1,"{""g"":""director, directora"",""ex"":{""director_s1"":""El director ganó un premio.""}}",manual translation
+words:concert_s1,"{""g"":""concierto"",""ex"":{""concert_s1"":""¡Conseguimos entradas para el concierto!""}}",manual translation
+words:band_s1,"{""g"":""banda"",""ex"":{""band_s1"":""Mi hermano toca la guitarra en una banda.""}}",manual translation
+words:album_s1,"{""g"":""álbum"",""ex"":{""album_s1"":""Su nuevo álbum sale la próxima semana.""}}",manual translation
+words:playlist_s1,"{""g"":""lista de reproducción"",""ex"":{""playlist_s1"":""Hice una lista de reproducción para estudiar.""}}",manual translation
+words:shoulder_s1,"{""g"":""hombro"",""ex"":{""shoulder_s1"":""Me duele el hombro después de cargar la bolsa.""}}",manual translation
+words:knee_s1,"{""g"":""rodilla"",""ex"":{""knee_s1"":""Se lastimó la rodilla jugando fútbol.""}}",manual translation
+words:slim_s1,"{""g"":""delgado, delgada"",""ex"":{""slim_s1"":""Ella es alta y delgada.""}}",manual translation
+words:good_looking_s1,"{""g"":""guapo, guapa; atractivo, atractiva"",""ex"":{""good_looking_s1"":""Su novio es muy guapo.""}}",manual translation
+words:skin_s1,"{""g"":""piel"",""ex"":{""skin_s1"":""Usa protector solar para proteger tu piel.""}}",manual translation
+words:brain_s1,"{""g"":""cerebro"",""ex"":{""brain_s1"":""Aprender idiomas es bueno para tu cerebro.""}}",manual translation

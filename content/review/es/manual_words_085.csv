@@ -1,0 +1,26 @@
+key,corrected,comment
+words:appropriate_s1,"{""g"":""adecuado, adecuada"",""ex"":{""appropriate_s1"":""Usa zapatos adecuados para la caminata.""}}",manual translation
+words:radio_s1,"{""g"":""radio"",""ex"":{""radio_s1"":""La alerta meteorológica se transmitió por la radio.""}}",manual translation
+words:complex_s1,"{""g"":""complejo, compleja"",""ex"":{""complex_s1"":""La máquina tiene un sistema de control complejo.""}}",manual translation
+words:text_s1,"{""g"":""texto"",""ex"":{""text_s1"":""Lee el texto con atención antes de responder.""}}",manual translation
+words:context_s1,"{""g"":""contexto"",""ex"":{""context_s1"":""El significado cambia en un contexto diferente.""}}",manual translation
+words:directly_s1,"{""g"":""directamente"",""ex"":{""directly_s1"":""Habla directamente con el gerente.""}}",manual translation
+words:sample_s1,"{""g"":""muestra"",""ex"":{""sample_s1"":""El investigador analizó una muestra del agua.""}}",manual translation
+words:video_s1,"{""g"":""video"",""ex"":{""video_s1"":""El profesor compartió un video corto con la clase.""}}",manual translation
+words:wonderful_s1,"{""g"":""maravilloso, maravillosa"",""ex"":{""wonderful_s1"":""La pasamos muy bien junto al lago.""}}",example-led translation
+words:examine_s1,"{""g"":""examinar"",""ex"":{""examine_s1"":""El médico examinó su brazo lesionado.""}}",manual translation
+words:display_s1,"{""g"":""mostrar"",""ex"":{""display_s1"":""La pantalla muestra la temperatura actual.""}}",manual translation
+words:federal_s1,"{""g"":""federal"",""ex"":{""federal_s1"":""La agencia federal publicó nuevas directrices.""}}",manual translation
+words:reveal_s1,"{""g"":""revelar"",""ex"":{""reveal_s1"":""El informe reveló un grave problema de seguridad.""}}",manual translation
+words:crime_s1,"{""g"":""delito"",""ex"":{""crime_s1"":""La policía investiga el delito.""}}",manual translation
+words:decade_s1,"{""g"":""década"",""ex"":{""decade_s1"":""La ciudad cambió mucho durante la última década.""}}",manual translation
+words:warn_s1,"{""g"":""advertir"",""ex"":{""warn_s1"":""El letrero advierte a los conductores sobre la curva cerrada.""}}",manual translation
+words:institution_s1,"{""g"":""institución"",""ex"":{""institution_s1"":""La universidad es una institución respetada.""}}",manual translation
+words:eventually_s1,"{""g"":""finalmente, con el tiempo"",""ex"":{""eventually_s1"":""El niño perdido finalmente encontró a sus padres.""}}",manual translation
+words:excite_s1,"{""g"":""entusiasmar"",""ex"":{""excite_s1"":""El partido final entusiasmó a todos en el estadio.""}}",manual translation
+words:taxi_s1,"{""g"":""taxi"",""ex"":{""taxi_s1"":""Tomamos un taxi al aeropuerto.""}}",manual translation
+words:sector_s1,"{""g"":""sector"",""ex"":{""sector_s1"":""El sector tecnológico está creciendo rápidamente.""}}",manual translation
+words:ensure_s1,"{""g"":""asegurar, cerciorarse de"",""ex"":{""ensure_s1"":""Revisa la cerradura para asegurarte de que la puerta esté segura.""}}",manual translation
+words:labor_s1,"{""g"":""trabajo, mano de obra"",""ex"":{""labor_s1"":""El proyecto necesita mano de obra calificada para continuar.""}}",manual translation
+words:excellent_s1,"{""g"":""excelente"",""ex"":{""excellent_s1"":""Recibió comentarios excelentes sobre su ensayo.""}}",manual translation
+words:edge_s1,"{""g"":""borde"",""ex"":{""edge_s1"":""Una taza pequeña estaba cerca del borde de la mesa.""}}",manual translation

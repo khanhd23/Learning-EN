@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:frozen_s1,,,,,"{""g"":""congelado; congelada"",""ex"":{""frozen_s1"":""Compramos frutos rojos congelados para el desayuno.""}}",manual food review
+words:gardening_s1,,,,,"{""g"":""jardinería; hacer jardinería"",""ex"":{""gardening_s1"":""La jardinería ayuda a mi abuelo a relajarse.""}}",manual activity review
+words:gorilla_s1,,,,,"{""g"":""gorila"",""ex"":{""gorilla_s1"":""El gorila observaba tranquilamente a los visitantes.""}}",manual animal review
+words:jogging_s1,,,,,"{""g"":""trotar; hacer jogging"",""ex"":{""jogging_s1"":""Trote alrededor del lago todas las mañanas.""}}",regional variants retained for es-419
+words:jug_s1,,,,,"{""g"":""jarra"",""ex"":{""jug_s1"":""Llena la jarra con agua fría, por favor.""}}",manual household review
+words:messy_s1,,,,,"{""g"":""desordenado; desordenada"",""ex"":{""messy_s1"":""Su escritorio está desordenado después de la semana ocupada.""}}",manual sense/example review
+words:diaper_s1,,,,,"{""g"":""pañal"",""ex"":{""diaper_s1"":""El bebé necesita un pañal limpio.""}}",manual family review
+words:giggle_s1,,,,,"{""g"":""reírse bajito; soltar una risita"",""ex"":{""giggle_s1"":""Los niños empezaron a reírse durante el juego.""}}",manual sound/action review
+words:golfer_s1,,,,,"{""g"":""golfista"",""ex"":{""golfer_s1"":""El golfista practicó sus golpes antes del partido.""}}",manual sport review
+words:handkerchief_s1,,,,,"{""g"":""pañuelo"",""ex"":{""handkerchief_s1"":""Llevaba un pañuelo limpio en su bolso.""}}",manual sense/example review
+words:heel_s1,,,,,"{""g"":""talón"",""ex"":{""heel_s1"":""Estos zapatos me lastiman el talón después de caminar.""}}",manual body review
+words:hip_s1,,,,,"{""g"":""cadera"",""ex"":{""hip_s1"":""Sintió dolor en la cadera derecha.""}}",manual body review
+words:hop_s1,,,,,"{""g"":""dar saltitos; saltar en un pie"",""ex"":{""hop_s1"":""El conejo empezó a dar saltitos por el pasto.""}}",manual movement review
+words:am_s1,,,,,"{""g"":""soy; estoy"",""ex"":{""am_s1"":""Estoy listo para la lección.""}}",English be-form mapped by Spanish state/identity
+words:are_s1,,,,,"{""g"":""eres; estás; son; están"",""ex"":{""are_s1"":""Llegas temprano a la clase de la mañana.""}}",English be-form depends on subject and Spanish ser/estar
+words:best_s1,,,,,"{""g"":""mejor"",""ex"":{""best_s1"":""Esta es la mejor opción para principiantes.""}}",manual comparison review
+words:doing_s1,,,,,"{""g"":""hacer"",""ex"":{""doing_s1"":""¿Qué haces después de clase?""}}",manual progressive-context review
+words:eighteen_s1,,,,,"{""g"":""dieciocho"",""ex"":{""eighteen_s1"":""Dieciocho estudiantes se unieron al club de ciencias.""}}",manual number review
+words:fifteen_s1,,,,,"{""g"":""quince"",""ex"":{""fifteen_s1"":""El autobús sale en quince minutos.""}}",manual number review
+words:fourteen_s1,,,,,"{""g"":""catorce"",""ex"":{""fourteen_s1"":""Hay catorce sillas colocadas en filas.""}}",manual number review
+words:hers_s1,,,,,"{""g"":""suyo; suya; de ella"",""ex"":{""hers_s1"":""El cuaderno azul es de ella.""}}",Spanish possessive agrees with the owned noun
+words:him_s1,,,,,"{""g"":""lo; le"",""ex"":{""him_s1"":""El profesor le pidió que leyera en voz alta.""}}",Spanish object pronoun depends on construction
+words:is_s1,,,,,"{""g"":""es; está"",""ex"":{""is_s1"":""La respuesta está en la página siguiente.""}}",English be-form mapped by Spanish ser/estar
+words:my_s1,,,,,"{""g"":""mi; mis"",""ex"":{""my_s1"":""Mis apuntes están junto al libro de texto.""}}",Spanish possessive agrees in number
+words:nineteen_s1,,,,,"{""g"":""diecinueve"",""ex"":{""nineteen_s1"":""Diecinueve voluntarios limpiaron la playa.""}}",manual number review

@@ -1,0 +1,26 @@
+key,corrected,comment
+words:charge_s1,"{""g"":""cobrar"",""ex"":{""charge_s1"":""El hotel cobrará a los huéspedes las toallas adicionales.""}}",manual translation
+words:charge_s2,"{""g"":""cargo; tarifa"",""ex"":{""charge_s2"":""No hay cargo para los niños.""}}",source definition conflicts with the example; corrected follows the example
+words:charge_s3,"{""g"":""cargar"",""ex"":{""charge_s3"":""Necesito cargar mi teléfono.""}}",manual translation
+words:loss_s1,"{""g"":""pérdida"",""ex"":{""loss_s1"":""La tienda tuvo pérdidas durante su primer año.""}}",manual translation
+words:accurate_s1,"{""g"":""preciso; exacto"",""ex"":{""accurate_s1"":""Asegúrate de que las cifras sean exactas.""}}",manual translation
+words:campaign_s1,"{""g"":""campaña"",""ex"":{""campaign_s1"":""La nueva campaña publicitaria comienza en mayo.""}}",manual translation
+words:target_s1,"{""g"":""meta; objetivo"",""ex"":{""target_s1"":""Nuestra meta de ventas para este mes es bastante alta.""}}",manual translation
+words:target_s2,"{""g"":""dirigirse a; enfocar en"",""ex"":{""target_s2"":""El nuevo juego está dirigido a adolescentes jóvenes.""}}",manual translation
+words:survey_s1,"{""g"":""encuesta"",""ex"":{""survey_s1"":""Completa una breve encuesta sobre nuestro servicio.""}}",manual translation
+words:survey_s2,"{""g"":""encuestar"",""ex"":{""survey_s2"":""Encuestamos a doscientos estudiantes sobre sus hábitos.""}}",manual translation
+words:competitor_s1,"{""g"":""competidor"",""ex"":{""competitor_s1"":""Nuestros precios son más bajos que los de nuestros competidores.""}}",manual translation
+words:launch_s1,"{""g"":""lanzar"",""ex"":{""launch_s1"":""La empresa lanzará un teléfono nuevo el próximo mes.""}}",manual translation
+words:launch_s2,"{""g"":""lanzamiento"",""ex"":{""launch_s2"":""El lanzamiento del producto fue un gran éxito.""}}",source example uses product launch
+words:promotion_s1,"{""g"":""promoción; oferta"",""ex"":{""promotion_s1"":""Esta semana hay una promoción especial en todos los zapatos.""}}",manual translation
+words:consumer_s1,"{""g"":""consumidor; consumidora"",""ex"":{""consumer_s1"":""Los consumidores quieren productos más baratos y ecológicos.""}}",manual translation
+words:strategy_s1,"{""g"":""estrategia"",""ex"":{""strategy_s1"":""Necesitamos una nueva estrategia de marketing.""}}",manual translation
+words:slogan_s1,"{""g"":""eslogan"",""ex"":{""slogan_s1"":""El eslogan es corto y fácil de recordar.""}}",manual translation
+words:trend_s1,"{""g"":""tendencia"",""ex"":{""trend_s1"":""Hay una tendencia hacia el trabajo desde casa.""}}",manual translation
+words:audience_s1,"{""g"":""público; audiencia"",""ex"":{""audience_s1"":""El anuncio llegó a un público amplio.""}}",manual translation
+words:commercial_s1,"{""g"":""anuncio; comercial"",""ex"":{""commercial_s1"":""El comercial se mostró durante el partido de fútbol.""}}",manual translation
+words:commercial_s2,"{""g"":""comercial"",""ex"":{""commercial_s2"":""Esta es una zona comercial con muchas tiendas.""}}",manual translation
+words:flyer_s1,"{""g"":""volante; folleto"",""ex"":{""flyer_s1"":""Repartimos volantes en la estación de tren.""}}",manual translation
+words:demand_s1,"{""g"":""demanda"",""ex"":{""demand_s1"":""Hay una gran demanda de autos eléctricos.""}}",manual translation
+words:demand_s2,"{""g"":""exigir; reclamar"",""ex"":{""demand_s2"":""El cliente exigió que le devolvieran su dinero.""}}",manual translation
+words:attract_s1,"{""g"":""atraer"",""ex"":{""attract_s1"":""La oferta atrajo a cientos de compradores.""}}",manual translation

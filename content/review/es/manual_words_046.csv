@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:builder_s1,,,,,"{""g"":""constructor; constructora"",""ex"":{""builder_s1"":""El constructor reparó el techo antes de que llegara el invierno.""}}",manual gender/context review
+words:campsite_s1,,,,,"{""g"":""campamento; zona de acampada"",""ex"":{""campsite_s1"":""Dormimos en un campamento cerca del lago.""}}",regional variants retained for es-419
+words:canned_s1,,,,,"{""g"":""enlatado; enlatada"",""ex"":{""canned_s1"":""La tienda vende frijoles y sopa enlatados.""}}",manual food review
+words:canteen_s1,,,,,"{""g"":""comedor; cafetería"",""ex"":{""canteen_s1"":""El comedor de la escuela sirve comidas calientes al mediodía.""}}",regional context review
+words:cashpoint_s1,,,,,"{""g"":""cajero automático"",""ex"":{""cashpoint_s1"":""El conductor se detuvo en un cajero automático cerca de la estación.""}}",regional finance context
+words:accidental_s1,,,,,"{""g"":""accidental"",""ex"":{""accidental_s1"":""La ventana rota fue un accidente, no algo deliberado.""}}",manual sense/example review
+words:ache_s1,,,,,"{""g"":""dolor sordo; molestia"",""ex"":{""ache_s1"":""Sentí un dolor sordo en el hombro.""}}",manual health review
+words:adorable_s1,,,,,"{""g"":""adorable; encantador"",""ex"":{""adorable_s1"":""El cachorro se veía adorable con su suéter pequeño.""}}",manual sense/example review
+words:aerobics_s1,,,,,"{""g"":""aeróbic; aeróbicos"",""ex"":{""aerobics_s1"":""Asiste a clases de aeróbicos todos los sábados por la mañana.""}}",regional variants retained for es-419
+words:alcoholic_s1,,,,,"{""g"":""con alcohol; alcohólico"",""ex"":{""alcoholic_s1"":""Esta bebida no tiene alcohol, así que los niños pueden tomarla.""}}",drink context
+words:alphabet_s1,,,,,"{""g"":""alfabeto; abecedario"",""ex"":{""alphabet_s1"":""Los niños aprenden el alfabeto antes de leer libros sencillos.""}}",regional variants retained for es-419
+words:amazed_s1,,,,,"{""g"":""asombrado; asombrada"",""ex"":{""amazed_s1"":""Nos sorprendió mucho el tamaño del árbol antiguo.""}}",manual feeling review
+words:amazing_s1,,,,,"{""g"":""increíble; asombroso"",""ex"":{""amazing_s1"":""La vista desde la montaña era increíble.""}}",manual sense/example review
+words:amusing_s1,,,,,"{""g"":""divertido; entretenido"",""ex"":{""amusing_s1"":""Contó una historia divertida durante la cena.""}}",manual sense/example review
+words:ape_s1,,,,,"{""g"":""simio"",""ex"":{""ape_s1"":""El simio usó una rama para alcanzar la fruta.""}}",manual animal review
+words:arithmetic_s1,,,,,"{""g"":""aritmética"",""ex"":{""arithmetic_s1"":""La aritmética ayuda a los estudiantes a resolver problemas cotidianos de dinero.""}}",manual education review
+words:arrow_s1,,,,,"{""g"":""flecha"",""ex"":{""arrow_s1"":""La flecha cayó cerca del centro del blanco.""}}",manual sense/example review
+words:aspirin_s1,,,,,"{""g"":""aspirina"",""ex"":{""aspirin_s1"":""La enfermera le dio aspirina para el dolor de cabeza.""}}",manual health review
+words:babysit_s1,,,,,"{""g"":""cuidar niños; hacer de niñera"",""ex"":{""babysit_s1"":""Cuido a mi sobrino los viernes por la noche.""}}",manual activity review
+words:babysitter_s1,,,,,"{""g"":""niñera; cuidador infantil"",""ex"":{""babysitter_s1"":""La niñera preparó la cena antes de que regresaran los padres.""}}",gender-neutral context
+words:backache_s1,,,,,"{""g"":""dolor de espalda"",""ex"":{""backache_s1"":""Levantar la caja pesada me causó dolor de espalda.""}}",manual health review
+words:bacon_s1,,,,,"{""g"":""tocino"",""ex"":{""bacon_s1"":""El café sirve tocino con huevos y tostadas.""}}",source example contains a broken character; restored from context
+words:bandage_s1,,,,,"{""g"":""venda; vendaje"",""ex"":{""bandage_s1"":""Pon una venda limpia sobre el corte pequeño.""}}",manual health review
+words:bang_s1,,,,,"{""g"":""estruendo; golpe fuerte"",""ex"":{""bang_s1"":""Oímos un fuerte estruendo afuera del aula.""}}",manual sound review
+words:beautifully_s1,,,,,"{""g"":""bellamente; de forma hermosa"",""ex"":{""beautifully_s1"":""El coro cantó maravillosamente en la ceremonia escolar.""}}",manual adverb review

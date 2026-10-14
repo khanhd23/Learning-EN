@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:website_s1,,,,,"{""g"":""sitio web"",""ex"":{""website_s1"":""Visita nuestro sitio web para más detalles.""}}",manual sense/example review
+words:doctor_s1,,,,,"{""g"":""médico; médica"",""ex"":{""doctor_s1"":""Deberías consultar a un médico.""}}",manual sense/example review
+words:medicine_s1,,,,,"{""g"":""medicamento"",""ex"":{""medicine_s1"":""Toma este medicamento dos veces al día.""}}",source definition/example mismatch; corrected follows the example
+words:headache_s1,,,,,"{""g"":""dolor de cabeza"",""ex"":{""headache_s1"":""Tengo un dolor de cabeza terrible.""}}",source definition/example mismatch; corrected follows the example
+words:nurse_s1,,,,,"{""g"":""enfermero; enfermera"",""ex"":{""nurse_s1"":""La enfermera me puso una inyección.""}}",manual sense/example review
+words:exercise_s1,,,,,"{""g"":""ejercicio"",""ex"":{""exercise_s1"":""El ejercicio regular es bueno para el corazón.""}}",manual sense/example review
+words:exercise_s2,,,,,"{""g"":""hacer ejercicio"",""ex"":{""exercise_s2"":""Hago ejercicio durante 30 minutos todas las mañanas.""}}",source definition/example mismatch; corrected follows the example
+words:healthy_s1,,,,,"{""g"":""saludable; sano"",""ex"":{""healthy_s1"":""Comer fruta todos los días te mantiene saludable.""}}",manual sense/example review
+words:apartment_s1,,,,,"{""g"":""apartamento"",""ex"":{""apartment_s1"":""Viven en un apartamento pequeño en el centro.""}}",manual sense/example review
+words:move_s1,,,,,"{""g"":""mover; mudarse"",""ex"":{""move_s1"":""Nos mudamos a una ciudad nueva en primavera.""}}",source definition is broad; example uses residential move
+words:move_s2,,,,,"{""g"":""decisión acertada"",""ex"":{""move_s2"":""Aprender inglés fue una decisión acertada.""}}",manual context review of the idiomatic example
+words:student_s1,,,,,"{""g"":""estudiante"",""ex"":{""student_s1"":""Ella es estudiante en una universidad grande.""}}",manual sense/example review
+words:lesson_s1,,,,,"{""g"":""lección; clase"",""ex"":{""lesson_s1"":""La lección de hoy trata sobre los verbos.""}}",manual sense/example review
+words:homework_s1,,,,,"{""g"":""tarea"",""ex"":{""homework_s1"":""¿Terminaste la tarea?""}}",manual sense/example review
+words:exam_s1,,,,,"{""g"":""examen"",""ex"":{""exam_s1"":""Mañana tengo un examen de inglés.""}}",manual sense/example review
+words:practice_s1,,,,,"{""g"":""práctica"",""ex"":{""practice_s1"":""La práctica constante hace que hablar resulte más fácil.""}}",manual sense/example review
+words:practice_s2,,,,,"{""g"":""practicar"",""ex"":{""practice_s2"":""Practico inglés todos los días.""}}",manual sense/example review
+words:plastic_s1,,,,,"{""g"":""plástico"",""ex"":{""plastic_s1"":""Las bolsas de plástico son malas para el océano.""}}",manual sense/example review
+words:forest_s1,,,,,"{""g"":""bosque"",""ex"":{""forest_s1"":""Los bosques son el hogar de muchos animales.""}}",manual sense/example review
+words:news_s1,,,,,"{""g"":""noticias"",""ex"":{""news_s1"":""Leo las noticias todas las mañanas.""}}",manual sense/example review
+words:magazine_s1,,,,,"{""g"":""revista"",""ex"":{""magazine_s1"":""Compré una revista de moda.""}}",manual sense/example review
+words:wake_up_s1,,,,,"{""g"":""despertarse"",""ex"":{""wake_up_s1"":""Me despierto a las seis todos los días.""}}",manual sense/example review
+words:breakfast_s1,,,,,"{""g"":""desayuno"",""ex"":{""breakfast_s1"":""¿Qué desayunaste?""}}",manual sense/example review
+words:neighbor_s1,,,,,"{""g"":""vecino; vecina"",""ex"":{""neighbor_s1"":""Nuestros vecinos son muy amables.""}}",manual sense/example review
+words:weekend_s1,,,,,"{""g"":""fin de semana"",""ex"":{""weekend_s1"":""Planeamos visitar a nuestros abuelos este fin de semana.""}}",manual sense/example review

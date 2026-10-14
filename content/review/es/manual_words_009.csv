@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:learn_s1,,,,,"{""g"":""aprender"",""ex"":{""learn_s1"":""Aprendemos cinco palabras nuevas cada día.""}}",manual sense/example review
+words:study_s1,,,,,"{""g"":""estudiar"",""ex"":{""study_s1"":""Ella estudia inglés en la biblioteca.""}}",manual sense/example review
+words:read_s1,,,,,"{""g"":""leer"",""ex"":{""read_s1"":""Leo un libro corto cada noche.""}}",manual sense/example review
+words:write_s1,,,,,"{""g"":""escribir"",""ex"":{""write_s1"":""Escribe tu dirección en el sobre.""}}",manual sense/example review
+words:speak_s1,,,,,"{""g"":""hablar"",""ex"":{""speak_s1"":""¿Tu hermano habla inglés?""}}",manual sense/example review
+words:talk_s1,,,,,"{""g"":""hablar; conversar"",""ex"":{""talk_s1"":""Hablamos de nuestro día durante la cena.""}}",manual sense/example review
+words:hear_s1,,,,,"{""g"":""oír"",""ex"":{""hear_s1"":""Puedo oír pájaros fuera de mi ventana.""}}",manual sense/example review
+words:listen_s1,,,,,"{""g"":""escuchar"",""ex"":{""listen_s1"":""Escucha atentamente las instrucciones de seguridad.""}}",manual sense/example review
+words:look_s1,,,,,"{""g"":""mirar"",""ex"":{""look_s1"":""Mira la imagen de la página diez.""}}",manual sense/example review
+words:see_s1,,,,,"{""g"":""ver"",""ex"":{""see_s1"":""¿Puedes ver el puente desde aquí?""}}",manual sense/example review
+words:watch_s1,,,,,"{""g"":""ver; mirar"",""ex"":{""watch_s1"":""Vemos una película los viernes por la noche.""}}",manual context review for a film
+words:ask_s1,,,,,"{""g"":""preguntar; pedir"",""ex"":{""ask_s1"":""Pregúntale a tu profesor si necesitas ayuda.""}}",manual sense/example review
+words:answer_s1,,,,,"{""g"":""responder"",""ex"":{""answer_s1"":""Responde la pregunta en inglés, por favor.""}}",verb sense
+words:answer_s2,,,,,"{""g"":""respuesta"",""ex"":{""answer_s2"":""Escribe tu respuesta debajo de la pregunta.""}}",noun sense
+words:help_s1,,,,,"{""g"":""ayudar"",""ex"":{""help_s1"":""¿Puedes ayudarme a llevar esta caja?""}}",manual sense/example review
+words:try_s1,,,,,"{""g"":""intentar"",""ex"":{""try_s1"":""Intenta leer la oración sin diccionario.""}}",manual sense/example review
+words:use_s1,,,,,"{""g"":""usar"",""ex"":{""use_s1"":""Puedes usar mi teléfono para llamar a casa.""}}",manual sense/example review
+words:find_s1,,,,,"{""g"":""encontrar"",""ex"":{""find_s1"":""No encuentro mi cuaderno.""}}",manual sense/example review
+words:bring_s1,,,,,"{""g"":""traer"",""ex"":{""bring_s1"":""Trae tu cuaderno a clase, por favor.""}}",manual sense/example review
+words:buy_s1,,,,,"{""g"":""comprar"",""ex"":{""buy_s1"":""Quiero comprar un teléfono nuevo.""}}",manual sense/example review
+words:sell_s1,,,,,"{""g"":""vender"",""ex"":{""sell_s1"":""El mercado vende fruta fresca todas las mañanas.""}}",manual sense/example review
+words:pay_s1,,,,,"{""g"":""pagar"",""ex"":{""pay_s1"":""Pago mi comida en el mostrador.""}}",manual sense/example review
+words:eat_s1,,,,,"{""g"":""comer"",""ex"":{""eat_s1"":""Comemos fruta fresca después de cenar.""}}",manual sense/example review
+words:drink_s1,,,,,"{""g"":""beber; tomar"",""ex"":{""drink_s1"":""Bebo agua después de hacer ejercicio.""}}",manual sense/example review
+words:sleep_s1,,,,,"{""g"":""dormir"",""ex"":{""sleep_s1"":""El bebé está durmiendo en la habitación.""}}",manual sense/example review

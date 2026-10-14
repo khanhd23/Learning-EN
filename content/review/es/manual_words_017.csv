@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:sentence_s1,,,,,"{""g"":""oración; frase"",""ex"":{""sentence_s1"":""Escribe una oración usando la palabra nueva.""}}",manual sense/example review
+words:question_s1,,,,,"{""g"":""pregunta"",""ex"":{""question_s1"":""¿Tienes alguna pregunta sobre la lección?""}}",manual sense/example review
+words:meaning_s1,,,,,"{""g"":""significado"",""ex"":{""meaning_s1"":""¿Cuál es el significado de esta palabra?""}}",manual sense/example review
+words:mistake_s1,,,,,"{""g"":""error; equivocación"",""ex"":{""mistake_s1"":""No te preocupes por cometer un error.""}}",manual sense/example review
+words:language_s1,,,,,"{""g"":""idioma; lengua"",""ex"":{""language_s1"":""Aprender un idioma requiere práctica constante.""}}",manual sense/example review
+words:letter_s1,,,,,"{""g"":""carta"",""ex"":{""letter_s1"":""Escribí una carta a mi abuela.""}}",written-message sense
+words:letter_s2,,,,,"{""g"":""letra"",""ex"":{""letter_s2"":""La palabra 'cat' tiene tres letras.""}}",alphabet-character sense
+words:word_s1,,,,,"{""g"":""palabra"",""ex"":{""word_s1"":""Esta palabra tiene dos significados comunes.""}}",manual sense/example review
+words:test_s1,,,,,"{""g"":""prueba; examen"",""ex"":{""test_s1"":""El viernes tenemos una prueba corta.""}}",manual sense/example review
+words:subject_s1,,,,,"{""g"":""materia; asignatura"",""ex"":{""subject_s1"":""Ciencias es mi materia favorita.""}}",manual sense/example review
+words:plan_s1,,,,,"{""g"":""plan"",""ex"":{""plan_s1"":""Necesitamos un plan para el fin de semana.""}}",noun sense
+words:plan_s2,,,,,"{""g"":""planear; tener planeado"",""ex"":{""plan_s2"":""Planeamos visitar a nuestros abuelos este fin de semana.""}}",verb sense
+words:problem_s1,,,,,"{""g"":""problema"",""ex"":{""problem_s1"":""Tenemos que hablar de este problema juntos.""}}",manual sense/example review
+words:can_s1,,,,,"{""g"":""poder"",""ex"":{""can_s1"":""Puedo ayudarte a llevar esa bolsa.""}}",ability sense
+words:may_s1,,,,,"{""g"":""poder (permiso o posibilidad)"",""ex"":{""may_s1"":""¿Puedo abrir la ventana?""}}",permission sense
+words:show_s1,,,,,"{""g"":""mostrar"",""ex"":{""show_s1"":""Muéstrame la página siguiente, por favor.""}}",manual sense/example review
+words:place_s2,,,,,"{""g"":""lugar"",""ex"":{""place_s2"":""Este es un lugar tranquilo para estudiar.""}}",noun sense
+words:place_s1,,,,,"{""g"":""colocar; poner"",""ex"":{""place_s1"":""Coloca tus bolsas debajo del asiento.""}}",verb sense
+words:point_s1,,,,,"{""g"":""señalar"",""ex"":{""point_s1"":""El niño señaló el autobús grande y rojo.""}}",manual sense/example review
+words:put_s1,,,,,"{""g"":""poner"",""ex"":{""put_s1"":""Pon tu bolsa debajo de la silla, por favor.""}}",manual sense/example review
+words:become_s1,,,,,"{""g"":""convertirse en; llegar a ser"",""ex"":{""become_s1"":""Quiere convertirse en médico algún día.""}}",manual sense/example review
+words:must_s1,,,,,"{""g"":""deber; tener que"",""ex"":{""must_s1"":""Debes usar el cinturón de seguridad.""}}",necessity sense
+words:seem_s1,,,,,"{""g"":""parecer"",""ex"":{""seem_s1"":""Pareces muy cansado esta mañana.""}}",manual sense/example review
+words:let_s1,,,,,"{""g"":""dejar; permitir"",""ex"":{""let_s1"":""Mis padres me dejan quedarme despierto hasta tarde.""}}",permission sense
+words:follow_s1,,,,,"{""g"":""seguir"",""ex"":{""follow_s1"":""Sígueme a la sala de reuniones.""}}",manual sense/example review

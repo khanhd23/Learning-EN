@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:down_s1,,,,,"{""g"":""abajo; hacia abajo"",""ex"":{""down_s1"":""Ten cuidado al bajar las escaleras.""}}",manual direction review
+words:too_s1,,,,,"{""g"":""demasiado"",""ex"":{""too_s1"":""Este café está demasiado caliente para beberlo.""}}",manual quantity review
+words:great_s1,,,,,"{""g"":""genial; excelente"",""ex"":{""great_s1"":""La pasamos genial en la playa.""}}",manual sense/example review
+words:part_s1,,,,,"{""g"":""parte"",""ex"":{""part_s1"":""Esta es mi parte favorita de la película.""}}",manual sense/example review
+words:little_s1,,,,,"{""g"":""pequeño; pequeña; poco"",""ex"":{""little_s1"":""Vivimos en una casa pequeña cerca del parque.""}}",manual sense/example review
+words:another_s1,,,,,"{""g"":""otro; otra"",""ex"":{""another_s1"":""¿Puedo tomar otra taza de té?""}}",manual quantity review
+words:each_s1,,,,,"{""g"":""cada"",""ex"":{""each_s1"":""Cada estudiante recibe un libro gratis.""}}",manual quantity review
+words:high_s1,,,,,"{""g"":""alto; alta"",""ex"":{""high_s1"":""El estante está demasiado alto para mí.""}}",manual sense/example review
+words:next_s1,,,,,"{""g"":""siguiente; próximo; próxima"",""ex"":{""next_s1"":""Nos veremos de nuevo la próxima semana.""}}",manual time/order review
+words:why_s1,,,,,"{""g"":""por qué"",""ex"":{""why_s1"":""¿Por qué llegas tarde hoy?""}}",manual question-word review
+words:again_s1,,,,,"{""g"":""otra vez; de nuevo"",""ex"":{""again_s1"":""¿Puedes decirlo otra vez, por favor?""}}",manual repetition review
+words:few_s1,,,,,"{""g"":""pocos; pocas"",""ex"":{""few_s1"":""Solo unas pocas personas fueron a la reunión.""}}",manual quantity review
+words:large_s1,,,,,"{""g"":""grande"",""ex"":{""large_s1"":""Necesitamos una caja grande para estos libros.""}}",manual size review
+words:yes_s1,,,,,"{""g"":""sí"",""ex"":{""yes_s1"":""Sí, me gustaría un poco de té.""}}",manual response review
+words:away_s1,,,,,"{""g"":""lejos"",""ex"":{""away_s1"":""La playa está a dos kilómetros de aquí.""}}",manual distance review
+words:less_s1,,,,,"{""g"":""menos"",""ex"":{""less_s1"":""Quiero pasar menos tiempo con el teléfono.""}}",manual quantity review
+words:level_s1,,,,,"{""g"":""nivel"",""ex"":{""level_s1"":""Este libro es para estudiantes de nivel básico.""}}",manual sense/example review
+words:able_s1,,,,,"{""g"":""poder; ser capaz de"",""ex"":{""able_s1"":""¿Podrás venir mañana?""}}",manual ability review
+words:present_s1,,,,,"{""g"":""presente"",""ex"":{""present_s1"":""Todos los estudiantes están presentes en clase hoy.""}}",attendance sense
+words:quite_s1,,,,,"{""g"":""bastante"",""ex"":{""quite_s1"":""La prueba me pareció bastante fácil.""}}",manual degree review
+words:sure_s1,,,,,"{""g"":""seguro; segura"",""ex"":{""sure_s1"":""¿Estás seguro de que la tienda está abierta?""}}",manual certainty review
+words:least_s1,,,,,"{""g"":""el menos; la menos"",""ex"":{""least_s1"":""Este es el hotel menos caro de la ciudad.""}}",manual comparison review
+words:low_s1,,,,,"{""g"":""bajo; baja"",""ex"":{""low_s1"":""La mesa es demasiado baja para los adultos.""}}",manual sense/example review
+words:public_s1,,,,,"{""g"":""público; pública"",""ex"":{""public_s1"":""No se puede fumar en lugares públicos.""}}",manual sense/example review
+words:actually_s1,,,,,"{""g"":""en realidad; de hecho"",""ex"":{""actually_s1"":""Pensé que era francés, pero en realidad es suizo.""}}",false-friend review: not “actualmente”

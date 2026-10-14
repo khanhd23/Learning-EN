@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:blanket_s1,,,,,"{""g"":""manta"",""ex"":{""blanket_s1"":""Lleva una manta si tienes frío.""}}",manual sense/example review
+words:towel_s1,,,,,"{""g"":""toalla"",""ex"":{""towel_s1"":""Hay una toalla limpia junto al lavabo.""}}",manual sense/example review
+words:soap_s1,,,,,"{""g"":""jabón"",""ex"":{""soap_s1"":""Lávate las manos con agua y jabón.""}}",manual sense/example review
+words:toothbrush_s1,,,,,"{""g"":""cepillo de dientes"",""ex"":{""toothbrush_s1"":""Guardé mi cepillo de dientes antes del viaje.""}}",manual sense/example review
+words:toothpaste_s1,,,,,"{""g"":""pasta dental"",""ex"":{""toothpaste_s1"":""Necesitamos un tubo nuevo de pasta dental.""}}",manual sense/example review
+words:mirror_s1,,,,,"{""g"":""espejo"",""ex"":{""mirror_s1"":""Se miró en el espejo antes de salir.""}}",manual sense/example review
+words:key_s1,,,,,"{""g"":""llave"",""ex"":{""key_s1"":""Guardo mi llave en el bolsillo de la chaqueta.""}}",manual sense/example review
+words:bag_s1,,,,,"{""g"":""bolsa; bolso"",""ex"":{""bag_s1"":""Esta bolsa es lo suficientemente grande para mis libros.""}}",manual sense/example review
+words:wallet_s1,,,,,"{""g"":""billetera; cartera"",""ex"":{""wallet_s1"":""Dejé mi billetera sobre la mesa de la cocina.""}}",manual sense/example review
+words:pen_s1,,,,,"{""g"":""bolígrafo; lapicero"",""ex"":{""pen_s1"":""¿Me prestas tu bolígrafo un minuto?""}}",manual sense/example review
+words:pencil_s1,,,,,"{""g"":""lápiz"",""ex"":{""pencil_s1"":""Usa un lápiz para dibujar el mapa.""}}",manual sense/example review
+words:notebook_s1,,,,,"{""g"":""cuaderno"",""ex"":{""notebook_s1"":""Escribe las palabras nuevas en tu cuaderno.""}}",manual sense/example review
+words:paper_s1,,,,,"{""g"":""papel"",""ex"":{""paper_s1"":""Escribe tu respuesta en una hoja de papel limpia.""}}",manual sense/example review
+words:cup_s1,,,,,"{""g"":""taza"",""ex"":{""cup_s1"":""¿Te gustaría una taza de té?""}}",manual sense/example review
+words:glass_s1,,,,,"{""g"":""vaso"",""ex"":{""glass_s1"":""Por favor, tráeme un vaso de agua.""}}",source definition describes the material but the example uses a drinking container
+words:glass_s2,,,,,"{""g"":""vidrio; cristal"",""ex"":{""glass_s2"":""Este cuenco es de vidrio.""}}",source definition describes a container but the example uses the material
+words:bottle_s1,,,,,"{""g"":""botella"",""ex"":{""bottle_s1"":""Llena tu botella antes de salir.""}}",manual sense/example review
+words:plate_s1,,,,,"{""g"":""plato"",""ex"":{""plate_s1"":""Pon los sándwiches en un plato grande.""}}",source definition describes baseball but the example uses tableware
+words:bowl_s1,,,,,"{""g"":""tazón; cuenco"",""ex"":{""bowl_s1"":""Comió un tazón de sopa en el almuerzo.""}}",manual sense/example review
+words:spoon_s1,,,,,"{""g"":""cuchara"",""ex"":{""spoon_s1"":""Usa una cuchara para revolver la sopa.""}}",manual sense/example review
+words:fork_s1,,,,,"{""g"":""tenedor"",""ex"":{""fork_s1"":""Hay un tenedor junto a cada plato.""}}",manual sense/example review
+words:knife_s1,,,,,"{""g"":""cuchillo"",""ex"":{""knife_s1"":""Corta el pan con este cuchillo.""}}",manual sense/example review
+words:water_s1,,,,,"{""g"":""agua"",""ex"":{""water_s1"":""Hay un poco de agua en la botella.""}}",manual sense/example review
+words:bread_s1,,,,,"{""g"":""pan"",""ex"":{""bread_s1"":""Compramos pan fresco esta mañana.""}}",manual sense/example review
+words:milk_s1,,,,,"{""g"":""leche"",""ex"":{""milk_s1"":""¿Quieres leche en el té?""}}",manual sense/example review

@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:lie_s1,,,,,"{""g"":""tumbarse; estar acostado"",""ex"":{""lie_s1"":""Acuéstate y descansa, por favor.""}}",false-friend review: physical position, not telling an untruth
+words:ground_s1,,,,,"{""g"":""suelo; tierra"",""ex"":{""ground_s1"":""Los niños se sentaron en el suelo.""}}",manual sense/example review
+words:animal_s1,,,,,"{""g"":""animal"",""ex"":{""animal_s1"":""Todo animal necesita comida, agua y refugio.""}}",manual sense/example review
+words:current_s1,,,,,"{""g"":""actual; vigente"",""ex"":{""current_s1"":""¿Cuál es tu dirección actual?""}}",false-friend/context review
+words:fight_s1,,,,,"{""g"":""pelea; lucha"",""ex"":{""fight_s1"":""Los hermanos se pelearon por el juguete.""}}",manual context review
+words:contact_s1,,,,,"{""g"":""contacto"",""ex"":{""contact_s1"":""Seguimos en contacto después de mudarnos.""}}",manual sense/example review
+words:sport_s1,,,,,"{""g"":""deporte"",""ex"":{""sport_s1"":""La natación es un deporte saludable para muchas personas.""}}",manual sense/example review
+words:response_s1,,,,,"{""g"":""respuesta"",""ex"":{""response_s1"":""Recibimos una respuesta rápida a nuestra solicitud.""}}",manual sense/example review
+words:voice_s1,,,,,"{""g"":""voz"",""ex"":{""voice_s1"":""Su voz sonaba cansada después del discurso largo.""}}",manual sense/example review
+words:fire_s1,,,,,"{""g"":""fuego; incendio"",""ex"":{""fire_s1"":""Los bomberos apagaron el incendio de la cocina.""}}",manual context review
+words:store_s1,,,,,"{""g"":""tienda"",""ex"":{""store_s1"":""Compré fruta fresca en la tienda local.""}}",manual sense/example review
+words:laugh_s1,,,,,"{""g"":""reír"",""ex"":{""laugh_s1"":""Los niños se ríen cuando el cachorro salta.""}}",manual sense/example review
+words:attack_s1,,,,,"{""g"":""atacar"",""ex"":{""attack_s1"":""El perro podría atacar si se siente amenazado.""}}",manual sense/example review
+words:drop_s1,,,,,"{""g"":""dejar caer; caerse"",""ex"":{""drop_s1"":""Se me cayó el teléfono al suelo.""}}",manual Spanish construction review
+words:miss_s1,,,,,"{""g"":""extrañar; echar de menos"",""ex"":{""miss_s1"":""Extraño a mi familia cuando viajo por trabajo.""}}",manual sense/example review
+words:art_s1,,,,,"{""g"":""arte"",""ex"":{""art_s1"":""La galería exhibe arte moderno de muchos artistas.""}}",manual sense/example review
+words:pause_s1,,,,,"{""g"":""pausa"",""ex"":{""pause_s1"":""Hizo una breve pausa antes de responder.""}}",manual sense/example review
+words:opinion_s1,,,,,"{""g"":""opinión"",""ex"":{""opinion_s1"":""En mi opinión, este plan es más práctico.""}}",manual sense/example review
+words:wonder_s1,,,,,"{""g"":""preguntarse"",""ex"":{""wonder_s1"":""Me pregunto si la tienda está abierta hoy.""}}",manual sense/example review
+words:structure_s1,,,,,"{""g"":""estructura"",""ex"":{""structure_s1"":""El puente tiene una estructura de acero resistente.""}}",manual sense/example review
+words:region_s1,,,,,"{""g"":""región; zona"",""ex"":{""region_s1"":""Esta región es conocida por sus playas tranquilas.""}}",manual sense/example review
+words:growth_s1,,,,,"{""g"":""crecimiento"",""ex"":{""growth_s1"":""La empresa informó un crecimiento constante este año.""}}",manual sense/example review
+words:influence_s1,,,,,"{""g"":""influencia"",""ex"":{""influence_s1"":""Los padres tienen una gran influencia en sus hijos.""}}",manual sense/example review
+words:catch_s1,,,,,"{""g"":""atrapar"",""ex"":{""catch_s1"":""¿Puedes atrapar la pelota con una mano?""}}",manual sense/example review
+words:son_s1,,,,,"{""g"":""hijo"",""ex"":{""son_s1"":""Su hijo empieza la escuela el próximo septiembre.""}}",manual sense/example review

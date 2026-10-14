@@ -1,0 +1,27 @@
+{
+  "falseFriends": [
+    {"id": "ff_actually", "en": "actually", "l1": "aktual", "enMeans": "sebenarnya; pada kenyataannya", "l1Means": "terkini; berhubungan dengan keadaan saat ini", "senseIds": ["actually_s1"]},
+    {"id": "ff_library", "en": "library", "l1": "librari", "enMeans": "perpustakaan", "l1Means": "bentuk yang sering tertukar; bukan toko buku", "senseIds": ["library_s1"]},
+    {"id": "ff sensible", "en": "sensible", "l1": "sensitif", "enMeans": "bijaksana; masuk akal", "l1Means": "mudah terpengaruh atau mudah merasa", "senseIds": ["sensible_s1"]},
+    {"id": "ff assist", "en": "assist", "l1": "asistensi", "enMeans": "membantu", "l1Means": "dukungan atau pendampingan", "senseIds": ["assist_s1"]},
+    {"id": "ff_exit", "en": "exit", "l1": "eksit", "enMeans": "pintu atau jalan keluar", "l1Means": "bukan kata untuk hasil positif atau keberhasilan", "senseIds": ["exit_s1"]},
+    {"id": "ff_realize", "en": "realize", "l1": "realisasi", "enMeans": "menyadari; memahami secara tiba-tiba", "l1Means": "pelaksanaan atau pencapaian rencana", "senseIds": ["realize_s1"]}
+  ],
+  "pronunciation": [
+    {"id": "pr_b_v", "sounds": ["b", "v"], "tip": "Bahasa Indonesia memiliki bunyi b, tetapi v dalam bahasa Inggris memerlukan gigi atas menyentuh bibir bawah dan udara terus mengalir: very. Untuk /b/, kedua bibir menutup: berry.", "examples": ["very", "berry"]},
+    {"id": "pr_f_p", "sounds": ["f", "p"], "tip": "Untuk /f/, gigi atas menyentuh bibir bawah dan udara mengalir. Untuk /p/, kedua bibir menutup lalu melepaskan udara. Jangan mengucapkan fan seperti pan.", "examples": ["fan", "pan"]},
+    {"id": "pr_ship_sheep", "sounds": ["/ɪ/", "/iː/"], "tip": "Bedakan vokal pendek dan rileks /ɪ/ pada ship dari vokal panjang dan lebih tegang /iː/ pada sheep. Perbedaan ini dapat mengubah arti.", "examples": ["ship", "sheep"]},
+    {"id": "pr_final_consonants", "sounds": ["konsonan akhir"], "tip": "Ucapkan konsonan di akhir kata dan jangan menambahkan vokal setelahnya. Akhiran pada work, worked, dan works memberi informasi penting.", "examples": ["work", "worked", "works"]},
+    {"id": "pr_ed_endings", "sounds": ["/t/", "/d/", "/ɪd/"], "tip": "Akhiran -ed dapat berbunyi /t/, /d/, atau /ɪd/. Dengarkan bunyi sebelum -ed: worked, played, wanted.", "examples": ["worked", "played", "wanted"]},
+    {"id": "pr_english_h", "sounds": ["/h/"], "tip": "H di awal kata bahasa Inggris biasanya terdengar sebagai hembusan napas: house, help. Jangan menghilangkannya seperti h yang tidak dibaca dalam beberapa kata bahasa Indonesia.", "examples": ["house", "help", "honest"]}
+  ],
+  "grammar": [
+    {"id": "gr_subject_it", "grammarId": "be", "wrong": "Is raining.", "right": "It is raining.", "why": "Kalimat bahasa Inggris biasanya memerlukan subjek yang jelas. Untuk cuaca, gunakan it sebagai subjek formal."},
+    {"id": "gr_age", "grammarId": "be", "wrong": "I have 20 years.", "right": "I am 20 years old.", "why": "Dalam bahasa Indonesia, usia sering dinyatakan dengan berusia atau umur. Dalam bahasa Inggris, gunakan be, bukan have."},
+    {"id": "gr_adjective_position", "grammarId": "word_order", "wrong": "a car red", "right": "a red car", "why": "Kata sifat dalam bahasa Inggris biasanya diletakkan sebelum kata benda, sedangkan dalam bahasa Indonesia sering diletakkan setelahnya."},
+    {"id": "gr_double_negative", "grammarId": "present_simple", "wrong": "I don't know nothing.", "right": "I don't know anything.", "why": "Dalam bahasa Inggris baku, don't sudah menyatakan negasi. Setelahnya gunakan anything, bukan nothing."},
+    {"id": "gr_people_agreement", "grammarId": "plurals", "wrong": "People is friendly.", "right": "People are friendly.", "why": "People adalah bentuk jamak tidak beraturan dan harus diikuti are."},
+    {"id": "gr_general_noun_article", "grammarId": "articles", "wrong": "The life is hard.", "right": "Life is hard.", "why": "Bahasa Indonesia tidak memiliki sistem a, an, dan the. Untuk life dalam makna umum, jangan tambahkan the."},
+    {"id": "gr_make_do", "grammarId": "word_order", "wrong": "I make my homework.", "right": "I do my homework.", "why": "Ungkapan yang alami adalah do homework. Make berarti membuat, menghasilkan, atau menyebabkan sesuatu."}
+  ]
+}

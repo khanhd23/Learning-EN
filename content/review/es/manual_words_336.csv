@@ -1,0 +1,26 @@
+key,corrected,comment
+words:pneumonia_s1,"{""g"":""neumonía; infección grave que llena los pulmones de líquido"",""ex"":{ ""pneumonia_s1"":""El médico trató su neumonía antes de que se volviera más grave.""}}",manual translation
+words:pointless_s1,"{""g"":""inútil; que no tiene un propósito o resultado provechoso"",""ex"":{ ""pointless_s1"":""Discutir ahora sobre el error anterior parece inútil.""}}",manual translation
+words:polio_s1,"{""g"":""polio; enfermedad grave que afecta al sistema nervioso"",""ex"":{ ""polio_s1"":""La vacunación ha reducido considerablemente la polio en muchos países.""}}",manual translation
+words:politeness_s1,"{""g"":""cortesía; buenos modales y respeto hacia otras personas"",""ex"":{ ""politeness_s1"":""Su cortesía facilitó la conversación difícil.""}}",manual translation
+words:politically_s1,"{""g"":""políticamente; de una manera relacionada con el gobierno o la política"",""ex"":{ ""politically_s1"":""La decisión era políticamente difícil, pero económicamente necesaria.""}}",manual translation
+words:polity_s1,"{""g"":""sistema político; forma o sistema de organización política"",""ex"":{ ""polity_s1"":""El libro compara cada sistema político con los de sus países vecinos.""}}",manual translation
+words:polo_s1,"{""g"":""polo; juego a caballo en el que se usa un mazo de mango largo"",""ex"":{ ""polo_s1"":""El club ofrece clases de iniciación al polo todos los sábados.""}}",manual translation
+words:popularise_s1,"{""g"":""popularizar; hacer que algo sea apreciado o conocido por muchas personas"",""ex"":{ ""popularise_s1"":""El documental ayudó a popularizar los métodos tradicionales de cocina.""}}",manual translation; variant spelling
+words:porch_s1,"{""g"":""porche; entrada cubierta o zona elevada junto a una casa"",""ex"":{ ""porch_s1"":""Dejamos las botas embarradas en el porche después de caminar.""}}",manual translation
+words:posh_s1,"{""g"":""lujoso; elegante y caro"",""ex"":{ ""posh_s1"":""Reservaron un hotel lujoso cerca del distrito histórico.""}}",manual translation
+words:possessed_s1,"{""g"":""poseído; controlado por un espíritu maligno"",""ex"":{ ""possessed_s1"":""La historia de terror sigue a una niña poseída y a su familia.""}}",manual translation
+words:potent_s1,"{""g"":""potente; que tiene un efecto o una influencia fuertes"",""ex"":{ ""potent_s1"":""El medicamento contiene un ingrediente potente que alivia el dolor.""}}",manual translation
+words:powerfully_s1,"{""g"":""con fuerza; de una manera fuerte o eficaz"",""ex"":{ ""powerfully_s1"":""La cantante actuó con mucha fuerza pese a las condiciones difíciles.""}}",manual translation
+words:practicality_s1,"{""g"":""practicidad; cualidad de ser útil y realista"",""ex"":{ ""practicality_s1"":""El comité cuestionó la practicidad de la costosa propuesta.""}}",manual translation
+words:prance_s1,"{""g"":""andar con pasos vivaces; moverse levantando mucho las patas"",""ex"":{ ""prance_s1"":""El caballo joven comenzó a andar con pasos vivaces por el campo de entrenamiento.""}}",manual translation
+words:prawn_s1,"{""g"":""camarón; pequeño animal marino que suele comerse como alimento"",""ex"":{ ""prawn_s1"":""El chef añadió camarones al arroz cerca del final de la cocción.""}}",manual translation
+words:predicament_s1,"{""g"":""aprieto; situación difícil sin una solución sencilla"",""ex"":{ ""predicament_s1"":""Los excursionistas perdidos enfrentaron un grave aprieto después de oscurecer.""}}",manual translation
+words:predicate_s1,"{""g"":""predicado; parte de una oración que dice algo sobre el sujeto"",""ex"":{ ""predicate_s1"":""Los estudiantes subrayan el predicado al analizar una oración.""}}",manual translation
+words:predicative_s1,"{""g"":""predicativo; relacionado con una palabra o frase que describe al sujeto"",""ex"":{ ""predicative_s1"":""La lección explica cómo los adjetivos predicativos siguen a los verbos copulativos.""}}",manual translation
+words:predictable_s1,"{""g"":""predecible; fácil de anticipar porque sigue un patrón esperado"",""ex"":{ ""predictable_s1"":""El final era predecible, pero aun así resultaba entretenido.""}}",manual translation
+words:predictive_s1,"{""g"":""predictivo; capaz de mostrar lo que probablemente ocurrirá"",""ex"":{ ""predictive_s1"":""El modelo tiene un gran valor predictivo para el desarrollo de tormentas.""}}",manual translation
+words:predictor_s1,"{""g"":""indicador predictivo; algo que ayuda a pronosticar un resultado futuro"",""ex"":{ ""predictor_s1"":""La edad no siempre es un indicador predictivo confiable del rendimiento.""}}",manual translation
+words:prefect_s1,"{""g"":""prefecto escolar; estudiante con autoridad para ayudar a administrar una escuela"",""ex"":{ ""prefect_s1"":""El prefecto escolar dio la bienvenida a los alumnos nuevos durante la primera asamblea.""}}",manual translation
+words:preferable_s1,"{""g"":""preferible; mejor o más adecuado que otra opción"",""ex"":{ ""preferable_s1"":""Una habitación tranquila es preferible cuando necesitas concentrarte.""}}",manual translation
+words:preferably_s1,"{""g"":""preferiblemente; se usa para indicar la opción considerada mejor"",""ex"":{ ""preferably_s1"":""Responde preferiblemente antes de que comience la reunión de mañana.""}}",manual translation

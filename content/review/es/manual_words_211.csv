@@ -1,0 +1,26 @@
+key,corrected,comment
+words:appetizer_s1,"{""g"":""aperitivo; comida o bebida que estimula el apetito y suele servirse antes de la comida"",""ex"":{ ""appetizer_s1"":""Pedimos rollitos de primavera como aperitivo.""}}",manual translation
+words:beverage_s1,"{""g"":""bebida; cualquier líquido adecuado para beber"",""ex"":{ ""beverage_s1"":""Las bebidas no están incluidas en el precio.""}}",manual translation
+words:portion_s1,"{""g"":""porción; cantidad de algo que forma parte de un conjunto"",""ex"":{ ""portion_s1"":""Aquí las porciones son muy grandes.""}}",manual translation
+words:venue_s1,"{""g"":""lugar; sitio donde ocurre un evento o acción, especialmente una reunión"",""ex"":{ ""venue_s1"":""El lugar tiene capacidad para 500 personas.""}}",manual translation
+words:trade_fair_s1,"{""g"":""feria comercial; evento donde las empresas muestran y venden productos a otras empresas"",""ex"":{ ""trade_fair_s1"":""Nuestro equipo demostrará el dispositivo nuevo en la feria comercial.""}}",manual translation
+words:attendee_s1,"{""g"":""asistente; persona presente que participa en una reunión"",""ex"":{ ""attendee_s1"":""Todos los asistentes deben llevar una credencial con su nombre.""}}",manual translation
+words:booth_s1,"{""g"":""puesto; mesa en un restaurante o bar rodeada de dos bancos altos con respaldo"",""ex"":{ ""booth_s1"":""Visita nuestro puesto en el pabellón B.""}}",manual translation
+words:catering_s1,"{""g"":""servicio de comida; provisión de alimentos y servicios"",""ex"":{ ""catering_s1"":""El servicio de comida está incluido en el precio de la entrada.""}}",manual translation
+words:log_in_s1,"{""g"":""iniciar sesión; introducir el nombre y la contraseña para usar un sistema"",""ex"":{ ""log_in_s1"":""Inicia sesión con tu dirección de correo y contraseña.""}}",manual translation
+words:artificial_intelligence_s1,"{""g"":""inteligencia artificial; rama de la informática que crea programas capaces de resolver problemas de manera creativa"",""ex"":{ ""artificial_intelligence_s1"":""La inteligencia artificial puede traducir textos en segundos.""}}",manual translation
+words:innovation_s1,"{""g"":""innovación; creación, como un dispositivo o proceso nuevo, resultado del estudio y la experimentación"",""ex"":{ ""innovation_s1"":""La innovación es la clave de nuestro éxito.""}}",manual translation
+words:prescription_s1,"{""g"":""receta médica; indicación prescrita previamente o conjunto de reglas y órdenes autorizadas"",""ex"":{ ""prescription_s1"":""Necesitas una receta médica para este medicamento.""}}",manual translation
+words:surgery_s1,"{""g"":""cirugía; rama de la medicina que trata enfermedades o lesiones mediante operaciones"",""ex"":{ ""surgery_s1"":""Necesita una cirugía de espalda.""}}",manual translation
+words:allergic_s1,"{""g"":""alérgico; que tiene una reacción médica a una sustancia específica"",""ex"":{ ""allergic_s1"":""Mi hermano es alérgico a los cacahuates y lleva medicamentos consigo.""}}",manual translation
+words:cure_s1,"{""g"":""cura; medicamento o terapia que cura una enfermedad o alivia el dolor"",""ex"":{ ""cure_s1"":""No existe una cura para el resfriado común.""}}",manual translation
+words:vaccine_s1,"{""g"":""vacuna; sustancia administrada para proteger contra una enfermedad"",""ex"":{ ""vaccine_s1"":""Los niños reciben una vacuna contra el sarampión.""}}",manual translation
+words:claim_s2,"{""g"":""afirmar; decir que algo es verdad o que te pertenece"",""ex"":{ ""claim_s2"":""Afirma que la historia es verdadera.""}}",manual translation
+words:claim_s1,"{""g"":""reclamación; afirmación de que algo es verdadero o factual"",""ex"":{ ""claim_s1"":""Puedes presentar una reclamación al seguro en línea.""}}",manual translation
+words:well_being_s1,"{""g"":""bienestar; estado de felicidad, salud y prosperidad"",""ex"":{ ""well_being_s1"":""Dormir es importante para tu bienestar.""}}",manual translation
+words:tenant_s1,"{""g"":""inquilino; persona que paga para usar un terreno, edificio o automóvil de otra persona"",""ex"":{ ""tenant_s1"":""Los nuevos inquilinos se mudan el lunes.""}}",manual translation
+words:lease_s1,"{""g"":""contrato de arrendamiento; acuerdo legal para alquilar un edificio o terreno"",""ex"":{ ""lease_s1"":""Firmamos un contrato de arrendamiento de dos años para el departamento.""}}",manual translation
+words:real_estate_s1,"{""g"":""bienes raíces; propiedades formadas por casas y terrenos"",""ex"":{ ""real_estate_s1"":""Trabaja como agente de bienes raíces.""}}",manual translation
+words:renovate_s1,"{""g"":""renovar; reparar y mejorar un edificio antiguo"",""ex"":{ ""renovate_s1"":""Los propietarios planean renovar la cocina el próximo mes.""}}",manual translation
+words:utilities_s1,"{""g"":""servicios básicos; servicios como agua, gas y electricidad suministrados a un edificio"",""ex"":{ ""utilities_s1"":""La renta mensual incluye los servicios básicos, pero no el internet.""}}",manual translation
+words:spacious_s1,"{""g"":""espacioso; muy grande en extensión o alcance"",""ex"":{ ""spacious_s1"":""La cocina es luminosa y espaciosa.""}}",manual translation

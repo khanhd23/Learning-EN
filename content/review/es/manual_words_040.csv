@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:apron_s1,,,,,"{""g"":""delantal"",""ex"":{""apron_s1"":""Se puso un delantal antes de preparar la cena para los invitados.""}}",manual sense/example review
+words:beef_s1,,,,,"{""g"":""carne de res"",""ex"":{""beef_s1"":""El restaurante sirve carne de res con arroz y verduras frescas.""}}",regional variant retained for es-419
+words:biscuit_s1,,,,,"{""g"":""galleta"",""ex"":{""biscuit_s1"":""Empacó una galleta para el viaje en tren.""}}",regional context review
+words:boyfriend_s1,,,,,"{""g"":""novio"",""ex"":{""boyfriend_s1"":""Su novio le llevó flores después de su difícil examen.""}}",manual sense/example review
+words:broken_s1,,,,,"{""g"":""roto; averiado"",""ex"":{""broken_s1"":""La impresora averiada necesita una pieza de repuesto.""}}",manual context review
+words:building_s1,,,,,"{""g"":""edificio"",""ex"":{""building_s1"":""El edificio nuevo tiene oficinas en seis pisos.""}}",manual sense/example review
+words:burger_s1,,,,,"{""g"":""hamburguesa"",""ex"":{""burger_s1"":""Pedimos una hamburguesa y una ensalada para el almuerzo.""}}",manual sense/example review
+words:cop_s1,,,,,"{""g"":""policía; agente"",""ex"":{""cop_s1"":""Un agente de policía dirigió el tráfico después del accidente.""}}",informal source term rendered naturally
+words:dancing_s1,,,,,"{""g"":""bailar; baile"",""ex"":{""dancing_s1"":""Bailar me ayuda a relajarme después de un día largo de trabajo.""}}",manual activity review
+words:elementary_s1,,,,,"{""g"":""básico; elemental"",""ex"":{""elementary_s1"":""Esta lección de nivel básico introduce patrones de oraciones sencillos.""}}",manual education review
+words:foreigner_s1,,,,,"{""g"":""extranjero; extranjera"",""ex"":{""foreigner_s1"":""El guía ayudó al extranjero a encontrar la estación de tren.""}}",manual sense/example review
+words:haircut_s1,,,,,"{""g"":""corte de pelo"",""ex"":{""haircut_s1"":""Necesito un corte de pelo antes de la entrevista de trabajo.""}}",manual sense/example review
+words:hometown_s1,,,,,"{""g"":""ciudad natal; pueblo natal"",""ex"":{""hometown_s1"":""Visita su ciudad natal todos los veranos.""}}",regional context review
+words:interviewer_s1,,,,,"{""g"":""entrevistador; entrevistadora"",""ex"":{""interviewer_s1"":""El entrevistador preguntó por mi experiencia laboral anterior.""}}",manual gender/context review
+words:kite_s1,,,,,"{""g"":""cometa; papalote"",""ex"":{""kite_s1"":""Los niños volaron una cometa cerca de la playa.""}}",regional variants retained for es-419
+words:later_s1,,,,,"{""g"":""más tarde; después"",""ex"":{""later_s1"":""Te llamaré más tarde, después de la reunión.""}}",manual time review
+words:math_s1,,,,,"{""g"":""matemáticas"",""ex"":{""math_s1"":""Las matemáticas eran mi materia favorita en la escuela.""}}",manual school subject review
+words:painting_s1,,,,,"{""g"":""pintura; cuadro"",""ex"":{""painting_s1"":""La galería exhibió un cuadro del puerto.""}}",manual art context review
+words:palace_s1,,,,,"{""g"":""palacio"",""ex"":{""palace_s1"":""Los turistas visitaron el palacio antiguo durante su viaje.""}}",manual sense/example review
+words:pants_s1,,,,,"{""g"":""pantalones"",""ex"":{""pants_s1"":""Estos pantalones son lo bastante cómodos para un vuelo largo.""}}",regional context review
+words:sailor_s1,,,,,"{""g"":""marinero; marinera"",""ex"":{""sailor_s1"":""El marinero revisó las cuerdas antes de salir del puerto.""}}",manual sense/example review
+words:smoking_s1,,,,,"{""g"":""fumar; tabaquismo"",""ex"":{""smoking_s1"":""No se permite fumar dentro del hospital.""}}",sentence uses the activity/gerund sense
+words:temple_s1,,,,,"{""g"":""templo"",""ex"":{""temple_s1"":""El templo antiguo atrae visitantes durante todo el año.""}}",manual sense/example review
+words:turkey_s1,,,,,"{""g"":""pavo"",""ex"":{""turkey_s1"":""Asamos un pavo para la comida festiva.""}}",manual food context review
+words:foggy_s1,,,,,"{""g"":""neblinoso; con niebla"",""ex"":{""foggy_s1"":""Había niebla, así que el conductor redujo la velocidad cerca de la escuela.""}}",manual weather context review

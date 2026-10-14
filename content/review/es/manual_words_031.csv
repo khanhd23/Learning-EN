@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:orange_s1,,,,,"{""g"":""naranja"",""ex"":{""orange_s1"":""Peló una naranja para su hijo.""}}",manual sense/example review
+words:mango_s1,,,,,"{""g"":""mango"",""ex"":{""mango_s1"":""Este mango está muy dulce y blando.""}}",manual sense/example review
+words:grape_s1,,,,,"{""g"":""uva"",""ex"":{""grape_s1"":""Lavó las uvas antes del almuerzo.""}}",manual sense/example review
+words:pineapple_s1,,,,,"{""g"":""piña"",""ex"":{""pineapple_s1"":""La piña tiene una cáscara áspera.""}}",manual sense/example review
+words:watermelon_s1,,,,,"{""g"":""sandía"",""ex"":{""watermelon_s1"":""Compartimos una sandía grande en la playa.""}}",manual sense/example review
+words:peach_s1,,,,,"{""g"":""durazno; melocotón"",""ex"":{""peach_s1"":""Este durazno está blando y muy jugoso.""}}",regional variants retained for es-419
+words:pear_s1,,,,,"{""g"":""pera"",""ex"":{""pear_s1"":""Cortó una pera por la mitad.""}}",manual sense/example review
+words:plum_s1,,,,,"{""g"":""ciruela"",""ex"":{""plum_s1"":""Las ciruelas de nuestro jardín son moradas.""}}",manual sense/example review
+words:cherry_s1,,,,,"{""g"":""cereza"",""ex"":{""cherry_s1"":""Hay una cereza en el pastel.""}}",source definition describes cherry wood but the example uses the fruit
+words:avocado_s1,,,,,"{""g"":""aguacate; palta"",""ex"":{""avocado_s1"":""El aguacate es verde por dentro.""}}",regional variants retained for es-419
+words:papaya_s1,,,,,"{""g"":""papaya"",""ex"":{""papaya_s1"":""La papaya de la mesa ya está madura.""}}",manual sense/example review
+words:guava_s1,,,,,"{""g"":""guayaba"",""ex"":{""guava_s1"":""Esta guayaba huele fresca y dulce.""}}",manual sense/example review
+words:kiwi_s1,,,,,"{""g"":""kiwi"",""ex"":{""kiwi_s1"":""El kiwi tiene la cáscara marrón y la pulpa verde.""}}",manual sense/example review
+words:lemon_s1,,,,,"{""g"":""limón"",""ex"":{""lemon_s1"":""Añade una rodaja de limón a tu té.""}}",manual sense/example review
+words:lime_s1,,,,,"{""g"":""lima"",""ex"":{""lime_s1"":""Exprimió una lima sobre el pescado.""}}",manual sense/example review
+words:grapefruit_s1,,,,,"{""g"":""toronja; pomelo"",""ex"":{""grapefruit_s1"":""Esta toronja sabe un poco amarga.""}}",regional variants retained for es-419
+words:pomegranate_s1,,,,,"{""g"":""granada"",""ex"":{""pomegranate_s1"":""La granada tiene muchas semillas rojas por dentro.""}}",manual sense/example review
+words:apricot_s1,,,,,"{""g"":""chabacano; albaricoque"",""ex"":{""apricot_s1"":""Los chabacanos de esta tienda están frescos.""}}",regional variants retained for es-419
+words:raspberry_s1,,,,,"{""g"":""frambuesa"",""ex"":{""raspberry_s1"":""Puso frambuesas frescas sobre su yogur.""}}",manual sense/example review
+words:blueberry_s1,,,,,"{""g"":""arándano azul"",""ex"":{""blueberry_s1"":""Los arándanos azules son pequeños y redondos.""}}",manual sense/example review
+words:cranberry_s1,,,,,"{""g"":""arándano rojo"",""ex"":{""cranberry_s1"":""El jugo de arándano rojo es de color rojo y un poco ácido.""}}",manual sense/example review
+words:mulberry_s1,,,,,"{""g"":""mora"",""ex"":{""mulberry_s1"":""La mora es de color morado oscuro.""}}",manual sense/example review
+words:passion_fruit_s1,,,,,"{""g"":""maracuyá; fruta de la pasión"",""ex"":{""passion_fruit_s1"":""El jugo de maracuyá es dulce y ácido.""}}",regional variants retained for es-419
+words:star_fruit_s1,,,,,"{""g"":""carambola; fruta estrella"",""ex"":{""star_fruit_s1"":""La carambola parece una estrella cuando la cortas.""}}",regional variants retained for es-419
+words:dragon_fruit_s1,,,,,"{""g"":""pitahaya; fruta del dragón"",""ex"":{""dragon_fruit_s1"":""La pitahaya tiene la cáscara rosada y la pulpa blanca.""}}",regional variants retained for es-419

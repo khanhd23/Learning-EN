@@ -1,0 +1,34 @@
+key,english,english_example,def,draft,corrected,comment
+ui:set_language,,,,,"Idioma del contenido",manual review
+ui:locale_vi,,,,,"Vietnamita",manual review
+ui:locale_es,,,,,"Español",manual review
+ui:locale_pt_br,,,,,"Portugués (Brasil)",manual review
+ui:locale_id,,,,,"Indonesio",manual review
+ui:locale_hi,,,,,"Hindi",manual review
+ui:locale_ar,,,,,"Árabe",manual review
+ui:locale_ja,,,,,"Japonés",manual review
+ui:locale_ko,,,,,"Coreano",manual review
+ui:locale_th,,,,,"Tailandés",manual review
+ui:locale_fr,,,,,"Francés",manual review
+ui:about_disclaimer,,,,,"Acerca de LingoMori",manual review
+ui:about_tagline,,,,,"Una forma más tranquila de mejorar tu inglés.",manual review
+ui:about_intro,,,,,"LingoMori convierte la práctica diaria en pequeños pasos gratificantes para que ganes confianza sin agobios.",manual review
+ui:about_features_title,,,,,"Pensado para avanzar con constancia",manual review
+ui:about_feature_words,,,,,"Aprende palabras útiles con ejemplos, pronunciación y repasos rápidos.",manual review
+ui:about_feature_grammar,,,,,"Sigue un itinerario guiado de gramática a tu propio ritmo.",manual review
+ui:about_feature_practice,,,,,"Gana confianza con prácticas específicas y preguntas con formato de examen.",manual review
+ui:about_independent_title,,,,,"Aplicación de aprendizaje independiente",manual review
+ui:about_independent_text,,,,,"LingoMori es una aplicación independiente para aprender. No está vinculada a ningún organizador de exámenes y las puntuaciones de práctica son estimaciones. Las listas de palabras se basan en listas de vocabulario abiertas; consulta Licencias para obtener más información. TOEIC, IELTS y los demás nombres de exámenes son marcas comerciales de sus respectivos propietarios. LingoMori no está afiliada ni respaldada por ellos.",manual review
+ui:accuracy,,,,,"Precisión",manual review
+ui:ach_combo,,,,,"Maestro de combos",manual review
+ui:ach_combo_h,,,,,"Acierta 10 respuestas seguidas",manual review
+ui:ach_decor,,,,,"Diseñador de interiores",manual review
+ui:ach_decor_h,,,,,"Consigue 5 decoraciones",manual review
+ui:ach_first,,,,,"Primer paso",manual review
+ui:ach_first_h,,,,,"Completa tu primera sesión",manual review
+ui:ach_g1,,,,,"Estrella de la gramática",manual review
+ui:ach_g1_h,,,,,"Consigue tu primera estrella de gramática",manual review
+ui:ach_l1,,,,,"Base sólida",manual review
+ui:ach_l1_h,,,,,"Domina toda la gramática del nivel 1",manual review
+ui:ach_mock,,,,,"Listo para el examen",manual review
+ui:ach_mock_h,,,,,"Obtén al menos un 80 % en una prueba de 10 preguntas o más",manual review

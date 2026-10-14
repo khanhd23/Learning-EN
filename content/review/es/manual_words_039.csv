@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:sofa_s1,,,,,"{""g"":""sofá"",""ex"":{""sofa_s1"":""El gato está durmiendo en el sofá.""}}",manual sense/example review
+words:grow_up_s1,,,,,"{""g"":""crecer; hacerse adulto"",""ex"":{""grow_up_s1"":""Crecí en un pueblo pequeño junto al mar.""}}",manual phrasal-verb review
+words:get_up_s1,,,,,"{""g"":""levantarse"",""ex"":{""get_up_s1"":""Me levanto a las seis y media todas las mañanas.""}}",manual phrasal-verb review
+words:come_back_s1,,,,,"{""g"":""volver; regresar"",""ex"":{""come_back_s1"":""¿A qué hora volverás a casa esta noche?""}}",manual phrasal-verb review
+words:airport_s1,,,,,"{""g"":""aeropuerto"",""ex"":{""airport_s1"":""Tenemos que estar en el aeropuerto a las seis.""}}",manual sense/example review
+words:o_clock_s1,,,,,"{""g"":""en punto"",""ex"":{""o_clock_s1"":""La reunión empieza a las nueve en punto.""}}",manual time expression review
+words:suitcase_s1,,,,,"{""g"":""maleta"",""ex"":{""suitcase_s1"":""Mi maleta es demasiado pesada para llevarla.""}}",manual sense/example review
+words:cellphone_s1,,,,,"{""g"":""celular; teléfono móvil"",""ex"":{""cellphone_s1"":""Apaga tu celular durante la prueba.""}}",regional variants retained for es-419
+words:dentist_s1,,,,,"{""g"":""dentista"",""ex"":{""dentist_s1"":""Mañana tengo una cita con el dentista.""}}",manual sense/example review
+words:supermarket_s1,,,,,"{""g"":""supermercado"",""ex"":{""supermarket_s1"":""Compro fruta en el supermercado cerca de mi casa.""}}",manual sense/example review
+words:mall_s1,,,,,"{""g"":""centro comercial"",""ex"":{""mall_s1"":""Pasamos la tarde en el centro comercial.""}}",manual sense/example review
+words:sandwich_s1,,,,,"{""g"":""sándwich; emparedado"",""ex"":{""sandwich_s1"":""Almorcé un sándwich de queso.""}}",regional variants retained for es-419
+words:soccer_s1,,,,,"{""g"":""fútbol"",""ex"":{""soccer_s1"":""Los niños juegan al fútbol todas las tardes.""}}",manual sense/example review
+words:sweater_s1,,,,,"{""g"":""suéter; jersey"",""ex"":{""sweater_s1"":""Ponte un suéter porque hace frío afuera.""}}",regional variants retained for es-419
+words:picnic_s1,,,,,"{""g"":""picnic; día de campo"",""ex"":{""picnic_s1"":""El domingo hicimos un picnic junto al lago.""}}",regional variants retained for es-419
+words:unhappy_s1,,,,,"{""g"":""descontento; triste"",""ex"":{""unhappy_s1"":""El cliente no estaba contento con el servicio.""}}",manual sense/example review
+words:baseball_s1,,,,,"{""g"":""béisbol"",""ex"":{""baseball_s1"":""El béisbol es muy popular en Japón.""}}",manual sense/example review
+words:bookstore_s1,,,,,"{""g"":""librería"",""ex"":{""bookstore_s1"":""Compré este diccionario en la librería.""}}",false-friend support: bookstore is not library/biblioteca
+words:salad_s1,,,,,"{""g"":""ensalada"",""ex"":{""salad_s1"":""Quisiera una ensalada de pollo, por favor.""}}",manual sense/example review
+words:ice_cream_s1,,,,,"{""g"":""helado"",""ex"":{""ice_cream_s1"":""Los niños querían helado de chocolate.""}}",manual sense/example review
+words:basketball_s1,,,,,"{""g"":""baloncesto; básquetbol"",""ex"":{""basketball_s1"":""Jugamos al baloncesto después de la escuela los viernes.""}}",regional variants retained for es-419
+words:pizza_s1,,,,,"{""g"":""pizza"",""ex"":{""pizza_s1"":""Pidamos una pizza para la cena.""}}",manual sense/example review
+words:zoo_s1,,,,,"{""g"":""zoológico"",""ex"":{""zoo_s1"":""Vimos leones y elefantes en el zoológico.""}}",manual sense/example review
+words:internet_s1,,,,,"{""g"":""internet"",""ex"":{""internet_s1"":""El hotel tiene internet rápido en todas las habitaciones.""}}",manual sense/example review
+words:lunchtime_s1,,,,,"{""g"":""hora del almuerzo"",""ex"":{""lunchtime_s1"":""El café está muy concurrido a la hora del almuerzo.""}}",manual time expression review

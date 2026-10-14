@@ -1,0 +1,26 @@
+key,corrected,comment
+words:bark_s1,"{""g"":""ladrar"",""ex"":{""bark_s1"":""El perro comenzó a ladrar por el sonido desconocido.""}}",manual translation
+words:cage_s1,"{""g"":""jaula"",""ex"":{""cage_s1"":""El pájaro está en su jaula.""}}",manual translation
+words:vet_s1,"{""g"":""veterinario; veterinaria"",""ex"":{""vet_s1"":""Llevamos a nuestro perro herido al veterinario.""}}",manual translation
+words:adopt_s1,"{""g"":""adoptar"",""ex"":{""adopt_s1"":""Adoptamos un gato de un refugio.""}}",manual translation
+words:cuddle_s1,"{""g"":""abrazar; acurrucar"",""ex"":{""cuddle_s1"":""A los niños les encanta abrazar al cachorro.""}}",manual translation
+words:feather_s1,"{""g"":""pluma"",""ex"":{""feather_s1"":""El loro tiene plumas de color verde brillante.""}}",manual translation
+words:nest_s1,"{""g"":""nido"",""ex"":{""nest_s1"":""Hay un nido de pájaro en el árbol.""}}",manual translation
+words:insect_s1,"{""g"":""insecto"",""ex"":{""insect_s1"":""Las abejas son insectos útiles que ayudan a crecer a las plantas.""}}",manual translation
+words:outfit_s1,"{""g"":""atuendo; conjunto de ropa"",""ex"":{""outfit_s1"":""Compró un atuendo nuevo para la fiesta.""}}",manual translation
+words:trendy_s1,"{""g"":""de moda; moderno"",""ex"":{""trendy_s1"":""Ese café está lleno de jóvenes que están de moda.""}}",manual translation
+words:loose_s1,"{""g"":""flojo; holgado"",""ex"":{""loose_s1"":""Estos pantalones están demasiado flojos de la cintura.""}}",manual translation
+words:tight_s1,"{""g"":""ajustado; apretado"",""ex"":{""tight_s1"":""Estos jeans me quedan demasiado ajustados.""}}",manual translation
+words:sleeve_s1,"{""g"":""manga"",""ex"":{""sleeve_s1"":""Me gustan las camisas de manga corta.""}}",manual translation
+words:casual_s1,"{""g"":""informal; casual"",""ex"":{""casual_s1"":""Los viernes puedes usar ropa informal.""}}",manual translation
+words:formal_s1,"{""g"":""formal"",""ex"":{""formal_s1"":""Necesitas ropa formal para la entrevista.""}}",manual translation
+words:jewelry_s1,"{""g"":""joyería; joyas"",""ex"":{""jewelry_s1"":""Guarda tus joyas en una pequeña caja con llave.""}}",manual translation
+words:crossroads_s1,"{""g"":""cruce; cruce de caminos"",""ex"":{""crossroads_s1"":""Gira a la derecha en el cruce cerca de la biblioteca.""}}",manual translation
+words:block_s1,"{""g"":""cuadra; manzana"",""ex"":{""block_s1"":""El hotel está a dos cuadras.""}}",manual translation
+words:block_s2,"{""g"":""bloquear"",""ex"":{""block_s2"":""Lo bloqueó en todas las aplicaciones.""}}",manual translation
+words:sidewalk_s1,"{""g"":""acera; banqueta"",""ex"":{""sidewalk_s1"":""La gente estaciona sus motos en la acera.""}}",manual translation
+words:public_transport_s1,"{""g"":""transporte público"",""ex"":{""public_transport_s1"":""Uso el transporte público todos los días.""}}",manual translation
+words:rush_hour_s1,"{""g"":""hora pico; hora punta"",""ex"":{""rush_hour_s1"":""El autobús va lento durante la hora pico de la mañana.""}}",manual translation
+words:influencer_s1,"{""g"":""influencer; persona influyente"",""ex"":{""influencer_s1"":""La influencer publicó un video sobre el teléfono nuevo.""}}",manual translation
+words:notification_s1,"{""g"":""notificación"",""ex"":{""notification_s1"":""Desactivé las notificaciones para concentrarme.""}}",source definition differs; corrected follows the phone example
+words:scroll_s1,"{""g"":""desplazarse; deslizar"",""ex"":{""scroll_s1"":""Pasé una hora desplazándome por los videos.""}}",manual translation

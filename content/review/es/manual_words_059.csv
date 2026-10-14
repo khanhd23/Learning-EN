@@ -1,0 +1,26 @@
+key,corrected,comment
+words:energy_s1,"{""g"":""energía"",""ex"":{""energy_s1"":""Apaga las luces para ahorrar energía.""}}",manual translation
+words:flood_s1,"{""g"":""inundación"",""ex"":{""flood_s1"":""La inundación destruyó muchas casas.""}}",manual translation
+words:reduce_s1,"{""g"":""reducir"",""ex"":{""reduce_s1"":""Tenemos que reducir los residuos plásticos.""}}",manual translation
+words:protect_s1,"{""g"":""proteger"",""ex"":{""protect_s1"":""El protector solar ayuda a proteger tu piel de las quemaduras.""}}",manual translation
+words:electricity_s1,"{""g"":""electricidad"",""ex"":{""electricity_s1"":""La tormenta dejó la zona sin electricidad.""}}",manual translation
+words:temperature_s1,"{""g"":""temperatura"",""ex"":{""temperature_s1"":""La temperatura bajó durante la noche.""}}",manual translation
+words:article_s1,"{""g"":""artículo"",""ex"":{""article_s1"":""Leí un artículo interesante sobre la IA.""}}",manual translation
+words:article_s2,"{""g"":""artículo"",""ex"":{""article_s2"":""«The» se llama artículo definido.""}}",manual translation
+words:report_s1,"{""g"":""informe"",""ex"":{""report_s1"":""El informe se publicó ayer.""}}",manual translation
+words:report_s2,"{""g"":""informar, reportar"",""ex"":{""report_s2"":""Informa al gerente sobre cualquier problema.""}}",manual translation
+words:channel_s1,"{""g"":""canal"",""ex"":{""channel_s1"":""¿En qué canal pasan la película?""}}",source/example mismatch noted
+words:reporter_s1,"{""g"":""periodista"",""ex"":{""reporter_s1"":""El periodista hizo preguntas difíciles.""}}",manual translation
+words:live_s2,"{""g"":""vivir"",""ex"":{""live_s2"":""Vivo en un departamento pequeño.""}}",manual translation
+words:live_s1,"{""g"":""en vivo, transmitirse en directo"",""ex"":{""live_s1"":""El concierto se transmite en vivo por televisión.""}}",source/example mismatch noted
+words:grocery_s1,"{""g"":""supermercado, tienda de comestibles"",""ex"":{""grocery_s1"":""Los domingos voy al supermercado.""}}",manual translation
+words:laundry_s1,"{""g"":""lavandería, ropa para lavar"",""ex"":{""laundry_s1"":""Lavo la ropa los fines de semana.""}}",example-led translation
+words:habit_s1,"{""g"":""hábito"",""ex"":{""habit_s1"":""Leer antes de dormir es un buen hábito.""}}",manual translation
+words:alarm_s1,"{""g"":""alarma"",""ex"":{""alarm_s1"":""Mi alarma no sonó esta mañana.""}}",source/example mismatch noted
+words:chart_s1,"{""g"":""gráfico"",""ex"":{""chart_s1"":""El gráfico muestra las ventas por mes.""}}",manual translation
+words:cousin_s1,"{""g"":""primo, prima"",""ex"":{""cousin_s1"":""Mi primo estudia en Canadá.""}}",manual translation
+words:close_s1,"{""g"":""cercano, cercana; estar cerca"",""ex"":{""close_s1"":""Somos amigos muy cercanos.""}}",manual translation
+words:close_s2,"{""g"":""cerrar"",""ex"":{""close_s2"":""Cierra la puerta al salir.""}}",manual translation
+words:trust_s1,"{""g"":""confiar en"",""ex"":{""trust_s1"":""Confío completamente en mi mejor amigo.""}}",manual translation
+words:trust_s2,"{""g"":""confianza"",""ex"":{""trust_s2"":""La confianza tarda años en construirse.""}}",manual translation
+words:support_s1,"{""g"":""apoyar"",""ex"":{""support_s1"":""Los amigos se apoyan en los momentos difíciles.""}}",manual translation

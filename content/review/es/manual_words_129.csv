@@ -1,0 +1,26 @@
+key,corrected,comment
+words:session_s1,"{""g"":""sesión"",""ex"":{""session_s1"":""La sesión de la tarde comienza a las dos.""}}",manual translation
+words:session_s2,"{""g"":""sesión de estudio; clase"",""ex"":{""session_s2"":""La sesión de estudio de hoy dura quince minutos.""}}",manual translation
+words:hardware_s1,"{""g"":""hardware; componentes físicos"",""ex"":{""hardware_s1"":""El problema está en el hardware, no en el programa.""}}",manual translation
+words:device_s1,"{""g"":""dispositivo"",""ex"":{""device_s1"":""La aplicación funciona en todos los dispositivos móviles.""}}",manual translation
+words:network_s1,"{""g"":""red"",""ex"":{""network_s1"":""La red de la oficina no funciona esta mañana.""}}",manual translation
+words:network_s2,"{""g"":""hacer contactos; establecer relaciones"",""ex"":{""network_s2"":""Las conferencias son un excelente lugar para hacer contactos.""}}",manual translation
+words:network_s3,"{""g"":""red; red de contactos"",""ex"":{""network_s3"":""Tiene una amplia red de contactos.""}}",source example uses a contact network
+words:backup_s1,"{""g"":""copia de seguridad; respaldo"",""ex"":{""backup_s1"":""Siempre conserva una copia de seguridad de los archivos importantes.""}}",manual translation
+words:security_s1,"{""g"":""seguridad"",""ex"":{""security_s1"":""Usa una contraseña segura para la seguridad en línea.""}}",manual translation
+words:technician_s1,"{""g"":""técnico; técnica"",""ex"":{""technician_s1"":""Un técnico reparará la impresora.""}}",manual translation
+words:browser_s1,"{""g"":""navegador"",""ex"":{""browser_s1"":""Abre el enlace en tu navegador.""}}",manual translation
+words:attachment_s1,"{""g"":""archivo adjunto; anexo"",""ex"":{""attachment_s1"":""Consulta el archivo adjunto para ver los detalles.""}}",source definition differs; corrected follows the email example
+words:digital_s1,"{""g"":""digital"",""ex"":{""digital_s1"":""Puedes comprar una copia digital del libro.""}}",manual translation
+words:access_s1,"{""g"":""acceso"",""ex"":{""access_s1"":""Solo los gerentes tienen acceso a este archivo.""}}",manual translation
+words:access_s2,"{""g"":""acceder a"",""ex"":{""access_s2"":""Puedes acceder a tu cuenta desde cualquier dispositivo.""}}",manual translation
+words:wireless_s1,"{""g"":""inalámbrico; inalámbrica"",""ex"":{""wireless_s1"":""El hotel ofrece internet inalámbrico gratis.""}}",manual translation
+words:symptom_s1,"{""g"":""síntoma"",""ex"":{""symptom_s1"":""La fiebre es un síntoma común de la gripe.""}}",manual translation
+words:pharmacy_s1,"{""g"":""farmacia"",""ex"":{""pharmacy_s1"":""La farmacia está abierta las veinticuatro horas.""}}",manual translation
+words:insurance_s1,"{""g"":""seguro; seguro médico"",""ex"":{""insurance_s1"":""¿Tu seguro cubre la atención dental?""}}",manual translation
+words:treatment_s1,"{""g"":""tratamiento"",""ex"":{""treatment_s1"":""El tratamiento para su rodilla dura seis semanas.""}}",manual translation
+words:recover_s1,"{""g"":""recuperarse"",""ex"":{""recover_s1"":""Se recuperó rápidamente después de la operación.""}}",manual translation
+words:injury_s1,"{""g"":""lesión; herida"",""ex"":{""injury_s1"":""No jugó el partido por una lesión en la rodilla.""}}",manual translation
+words:emergency_s1,"{""g"":""emergencia"",""ex"":{""emergency_s1"":""En caso de emergencia, llama a este número.""}}",manual translation
+words:check_up_s1,"{""g"":""chequeo; revisión médica"",""ex"":{""check_up_s1"":""La próxima semana tengo un chequeo con mi médico.""}}",manual translation
+words:landlord_s1,"{""g"":""propietario; arrendador"",""ex"":{""landlord_s1"":""Llama al propietario si se rompe el calentador.""}}",manual translation

@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:walk_s1,,,,,"{""g"":""caminar"",""ex"":{""walk_s1"":""Camino a la estación todas las mañanas.""}}",manual sense/example review
+words:run_s1,,,,,"{""g"":""correr"",""ex"":{""run_s1"":""Los niños corren por el patio.""}}",manual sense/example review
+words:sit_s1,,,,,"{""g"":""sentarse"",""ex"":{""sit_s1"":""Siéntate a mi lado, por favor.""}}",manual sense/example review
+words:stand_s1,,,,,"{""g"":""estar de pie"",""ex"":{""stand_s1"":""Esperamos de pie cerca de la puerta.""}}",manual sense/example review
+words:wait_s1,,,,,"{""g"":""esperar"",""ex"":{""wait_s1"":""Espera aquí hasta que te llame el médico.""}}",manual sense/example review
+words:open_s1,,,,,"{""g"":""abrir"",""ex"":{""open_s1"":""Abre la ventana para que entre aire fresco.""}}",manual sense/example review
+words:start_s1,,,,,"{""g"":""empezar; comenzar"",""ex"":{""start_s1"":""Nuestra clase de inglés empieza a las seis.""}}",manual sense/example review
+words:finish_s1,,,,,"{""g"":""terminar"",""ex"":{""finish_s1"":""Hoy termino de trabajar a las cinco.""}}",manual sense/example review
+words:stop_s1,,,,,"{""g"":""parar; detenerse"",""ex"":{""stop_s1"":""El autobús se detiene afuera de la escuela.""}}",manual sense/example review
+words:meet_s1,,,,,"{""g"":""reunirse; encontrarse"",""ex"":{""meet_s1"":""Nos vemos afuera de la biblioteca.""}}",manual sense/example review
+words:call_s1,,,,,"{""g"":""llamar"",""ex"":{""call_s1"":""Te llamaré después del almuerzo.""}}",manual sense/example review
+words:send_s1,,,,,"{""g"":""enviar"",""ex"":{""send_s1"":""Te enviaré las fotos esta noche.""}}",manual sense/example review
+words:today_s1,,,,,"{""g"":""hoy"",""ex"":{""today_s1"":""Hoy tengo dos clases.""}}",manual sense/example review
+words:tomorrow_s1,,,,,"{""g"":""mañana (día siguiente)"",""ex"":{""tomorrow_s1"":""Mañana visitaremos a nuestros abuelos.""}}",manual disambiguation review
+words:yesterday_s1,,,,,"{""g"":""ayer"",""ex"":{""yesterday_s1"":""Ayer dejé mi paraguas en la escuela.""}}",manual sense/example review
+words:morning_s1,,,,,"{""g"":""mañana (parte del día)"",""ex"":{""morning_s1"":""Por lo general bebo té por la mañana.""}}",manual disambiguation review
+words:afternoon_s1,,,,,"{""g"":""tarde"",""ex"":{""afternoon_s1"":""Jugamos al fútbol por la tarde.""}}",manual sense/example review
+words:evening_s1,,,,,"{""g"":""tarde-noche"",""ex"":{""evening_s1"":""Mi familia cena junta por la tarde-noche.""}}",manual sense/example review
+words:night_s1,,,,,"{""g"":""noche"",""ex"":{""night_s1"":""La calle está tranquila por la noche.""}}",manual sense/example review
+words:day_s1,,,,,"{""g"":""día"",""ex"":{""day_s1"":""Leo un poco de inglés todos los días.""}}",manual sense/example review
+words:week_s1,,,,,"{""g"":""semana"",""ex"":{""week_s1"":""La biblioteca está cerrada esta semana.""}}",manual sense/example review
+words:month_s1,,,,,"{""g"":""mes"",""ex"":{""month_s1"":""Mi cumpleaños es el próximo mes.""}}",manual sense/example review
+words:year_s1,,,,,"{""g"":""año"",""ex"":{""year_s1"":""Se mudaron a esta ciudad el año pasado.""}}",manual sense/example review
+words:hour_s1,,,,,"{""g"":""hora"",""ex"":{""hour_s1"":""El viaje dura una hora.""}}",manual sense/example review
+words:minute_s1,,,,,"{""g"":""minuto"",""ex"":{""minute_s1"":""El próximo autobús llega en diez minutos.""}}",manual sense/example review

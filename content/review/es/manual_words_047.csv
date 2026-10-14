@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:beaver_s1,,,,,"{""g"":""castor"",""ex"":{""beaver_s1"":""El castor construyó una presa a través del arroyo estrecho.""}}",manual animal review
+words:bow_s1,,,,,"{""g"":""arco"",""ex"":{""bow_s1"":""El atleta llevaba un arco y varias flechas.""}}",homograph disambiguation: weapon
+words:boxing_s1,,,,,"{""g"":""boxeo"",""ex"":{""boxing_s1"":""El boxeo requiere condición física, concentración y entrenamiento cuidadoso.""}}",manual sport review
+words:bravely_s1,,,,,"{""g"":""valientemente"",""ex"":{""bravely_s1"":""El bombero entró valientemente en el edificio en llamas.""}}",manual adverb review
+words:brightly_s1,,,,,"{""g"":""brillantemente; con colores vivos"",""ex"":{""brightly_s1"":""Los niños pintaron la puerta del aula con colores vivos.""}}",manual context review
+words:buddy_s1,,,,,"{""g"":""amigo; compañero"",""ex"":{""buddy_s1"":""Mi compañero de senderismo llevó agua adicional.""}}",informal-register context
+words:bump_s1,,,,,"{""g"":""bulto; chichón"",""ex"":{""bump_s1"":""Tenía un pequeño chichón en la frente.""}}",manual health review
+words:butcher_s1,,,,,"{""g"":""carnicero; carnicera"",""ex"":{""butcher_s1"":""El carnicero preparó carne fresca para el restaurante.""}}",manual occupation review
+words:cabbage_s1,,,,,"{""g"":""repollo; col"",""ex"":{""cabbage_s1"":""Picó repollo para la sopa de verduras.""}}",regional variants retained for es-419
+words:cattle_s1,,,,,"{""g"":""ganado"",""ex"":{""cattle_s1"":""El granjero llevó el ganado a un campo fresco.""}}",manual farm review
+words:choir_s1,,,,,"{""g"":""coro"",""ex"":{""choir_s1"":""El coro de la escuela interpretó tres canciones en el concierto.""}}",manual music review
+words:chili_s1,,,,,"{""g"":""chile; ají"",""ex"":{""chili_s1"":""Esta salsa de chile es demasiado picante para mí.""}}",regional variants retained for es-419
+words:hey_s1,,,,,"{""g"":""oye; hey"",""ex"":{""hey_s1"":""Oye, ¿estás listo para la próxima lección?""}}",informal-register context
+words:kilo_s1,,,,,"{""g"":""kilo; kilogramo"",""ex"":{""kilo_s1"":""El paquete pesa casi un kilo.""}}",regional abbreviation retained
+words:million_s1,,,,,"{""g"":""millón"",""ex"":{""million_s1"":""El video recibió un millón de visitas.""}}",manual number review
+words:racket_s1,,,,,"{""g"":""raqueta"",""ex"":{""racket_s1"":""Compró una raqueta nueva para practicar tenis.""}}",manual sport review
+words:rap_s1,,,,,"{""g"":""rap"",""ex"":{""rap_s1"":""Mi hermano escucha rap mientras hace ejercicio.""}}",manual music review
+words:right_hand_s1,,,,,"{""g"":""derecho; derecha"",""ex"":{""right_hand_s1"":""Guarda el mapa en el bolsillo derecho.""}}",Spanish gender depends on the noun
+words:robin_s1,,,,,"{""g"":""petirrojo"",""ex"":{""robin_s1"":""Un petirrojo se posó en la cerca del jardín.""}}",manual animal review
+words:skating_s1,,,,,"{""g"":""patinaje; patinar"",""ex"":{""skating_s1"":""El patinaje es popular en el parque los fines de semana.""}}",manual activity review
+words:surprised_s1,,,,,"{""g"":""sorprendido; sorprendida"",""ex"":{""surprised_s1"":""Parecía sorprendida por el regalo inesperado.""}}",manual feeling review
+words:tablespoon_s1,,,,,"{""g"":""cucharada"",""ex"":{""tablespoon_s1"":""Añade una cucharada de aceite a la sartén.""}}",manual cooking review
+words:washing_up_s1,,,,,"{""g"":""lavar los platos"",""ex"":{""washing_up_s1"":""Nos turnamos para lavar los platos después de la cena familiar.""}}",manual household-activity review
+words:well_known_s1,,,,,"{""g"":""conocido; conocida"",""ex"":{""well_known_s1"":""La ciudad es conocida por sus hermosos parques.""}}",manual adjective review
+words:animated_s1,,,,,"{""g"":""animado; animada"",""ex"":{""animated_s1"":""Los niños vieron una película animada después de la cena.""}}",manual media review

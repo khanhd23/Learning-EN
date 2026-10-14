@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:group_s1,,,,,"{""g"":""grupo"",""ex"":{""group_s1"":""Un grupo pequeño de estudiantes esperó afuera.""}}",manual sense/example review
+words:case_s1,,,,,"{""g"":""caso"",""ex"":{""case_s1"":""En ese caso, nos reuniremos mañana.""}}",manual sense/example review
+words:woman_s1,,,,,"{""g"":""mujer"",""ex"":{""woman_s1"":""La mujer del mostrador puede ayudarte.""}}",manual sense/example review
+words:family_s1,,,,,"{""g"":""familia"",""ex"":{""family_s1"":""Mi familia cena junta todas las noches.""}}",manual sense/example review
+words:system_s1,,,,,"{""g"":""sistema"",""ex"":{""system_s1"":""La escuela tiene un sistema informático nuevo.""}}",manual sense/example review
+words:set_s1,,,,,"{""g"":""juego; conjunto"",""ex"":{""set_s1"":""Compré un juego nuevo de lápices.""}}",group-of-items sense
+words:turn_s1,,,,,"{""g"":""girar"",""ex"":{""turn_s1"":""Gira el mango lentamente para abrirlo.""}}",manual sense/example review
+words:hand_s1,,,,,"{""g"":""mano"",""ex"":{""hand_s1"":""Levanta la mano si sabes la respuesta.""}}",manual sense/example review
+words:state_s1,,,,,"{""g"":""estado"",""ex"":{""state_s1"":""La casa vieja está en mal estado.""}}",manual sense/example review
+words:money_s1,,,,,"{""g"":""dinero"",""ex"":{""money_s1"":""No tengo suficiente dinero para un taxi.""}}",manual sense/example review
+words:fact_s1,,,,,"{""g"":""hecho"",""ex"":{""fact_s1"":""Es un hecho que el agua hierve a 100 grados.""}}",manual sense/example review
+words:area_s1,,,,,"{""g"":""zona; área"",""ex"":{""area_s1"":""Hay muchos cafés en esta zona.""}}",source example contains a broken character; restored from context
+words:name_s1,,,,,"{""g"":""nombre"",""ex"":{""name_s1"":""¿Cuál es el nombre de tu perro?""}}",manual sense/example review
+words:business_s1,,,,,"{""g"":""negocio; empresa"",""ex"":{""business_s1"":""Sus padres dirigen un pequeño negocio.""}}",manual sense/example review
+words:government_s1,,,,,"{""g"":""gobierno"",""ex"":{""government_s1"":""El gobierno planea construir un hospital nuevo.""}}",manual sense/example review
+words:market_s1,,,,,"{""g"":""mercado"",""ex"":{""market_s1"":""Compramos pescado fresco en el mercado.""}}",manual sense/example review
+words:hold_s1,,,,,"{""g"":""sostener; sujetar"",""ex"":{""hold_s1"":""Sujeta mi bolso un minuto, por favor.""}}",manual sense/example review
+words:service_s1,,,,,"{""g"":""servicio"",""ex"":{""service_s1"":""El servicio de este hotel es excelente.""}}",manual sense/example review
+words:example_s1,,,,,"{""g"":""ejemplo"",""ex"":{""example_s1"":""¿Puedes darme un ejemplo?""}}",manual sense/example review
+words:face_s1,,,,,"{""g"":""cara; rostro"",""ex"":{""face_s1"":""Lávate la cara con agua fría.""}}",manual sense/example review
+words:hope_s1,,,,,"{""g"":""esperanza"",""ex"":{""hope_s1"":""Todavía hay esperanza de que gane.""}}",manual sense/example review
+words:idea_s1,,,,,"{""g"":""idea"",""ex"":{""idea_s1"":""Es una idea genial para una fiesta.""}}",manual sense/example review
+words:form_s1,,,,,"{""g"":""forma; tipo"",""ex"":{""form_s1"":""Caminar es una buena forma de hacer ejercicio.""}}",manual sense/example review
+words:car_s1,,,,,"{""g"":""auto; automóvil"",""ex"":{""car_s1"":""Mi padre conduce un auto azul viejo.""}}",manual sense/example review
+words:person_s1,,,,,"{""g"":""persona"",""ex"":{""person_s1"":""Ella es una persona muy amable.""}}",manual sense/example review

@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:probably_s1,,,,,"{""g"":""probablemente"",""ex"":{""probably_s1"":""Probablemente el tren llegará a tiempo.""}}",manual probability review
+words:center_s1,,,,,"{""g"":""centro"",""ex"":{""center_s1"":""El hotel está en el centro del pueblo.""}}",manual sense/example review
+words:real_s1,,,,,"{""g"":""real"",""ex"":{""real_s1"":""El museo exhibe una roca lunar real.""}}",manual sense/example review
+words:development_s1,,,,,"{""g"":""desarrollo"",""ex"":{""development_s1"":""El desarrollo de la aplicación tardó seis meses.""}}",manual sense/example review
+words:top_s1,,,,,"{""g"":""parte superior; cima"",""ex"":{""top_s1"":""Una bandera pequeña estaba en la cima de la colina.""}}",manual position review
+words:color_s1,,,,,"{""g"":""color"",""ex"":{""color_s1"":""El diseñador cambió el color del logotipo.""}}",manual sense/example review
+words:involve_s1,,,,,"{""g"":""involucrar; incluir"",""ex"":{""involve_s1"":""El proyecto involucra a tres escuelas locales.""}}",manual sense/example review
+words:eye_s1,,,,,"{""g"":""ojo"",""ex"":{""eye_s1"":""Me entró polvo en el ojo durante la caminata.""}}",manual sense/example review
+words:music_s1,,,,,"{""g"":""música"",""ex"":{""music_s1"":""Sonó música suave durante la cena.""}}",manual sense/example review
+words:perhaps_s1,,,,,"{""g"":""quizá; tal vez"",""ex"":{""perhaps_s1"":""Quizá deberíamos irnos antes de que aumente el tráfico.""}}",manual possibility review
+words:produce_s1,,,,,"{""g"":""producir"",""ex"":{""produce_s1"":""La fábrica produce equipos de energía limpia.""}}",verb sense
+words:film_s1,,,,,"{""g"":""película; filme"",""ex"":{""film_s1"":""Vimos una película corta después de la cena.""}}",manual sense/example review
+words:someone_s1,,,,,"{""g"":""alguien"",""ex"":{""someone_s1"":""Alguien dejó un mensaje en mi escritorio.""}}",manual pronoun review
+words:himself_s1,,,,,"{""g"":""él mismo"",""ex"":{""himself_s1"":""Él mismo reparó la bicicleta.""}}",manual reflexive review
+words:girl_s1,,,,,"{""g"":""niña; chica"",""ex"":{""girl_s1"":""La niña llevó sus libros a clase.""}}",manual sense/example review
+words:maybe_s1,,,,,"{""g"":""quizá; tal vez"",""ex"":{""maybe_s1"":""Quizá la tienda cierre más temprano los domingos.""}}",manual possibility review
+words:role_s1,,,,,"{""g"":""papel; rol"",""ex"":{""role_s1"":""Los padres desempeñan un papel importante en el aprendizaje.""}}",manual sense/example review
+words:phone_s1,,,,,"{""g"":""teléfono"",""ex"":{""phone_s1"":""Mi teléfono necesita cargarse antes del viaje.""}}",manual sense/example review
+words:themselves_s1,,,,,"{""g"":""ellos mismos; ellas mismas"",""ex"":{""themselves_s1"":""Los estudiantes organizaron el evento ellos mismos.""}}",manual reflexive review
+words:white_s1,,,,,"{""g"":""blanco; blanca"",""ex"":{""white_s1"":""Pintó de blanco las paredes del dormitorio.""}}",manual color review
+words:organization_s1,,,,,"{""g"":""organización"",""ex"":{""organization_s1"":""La organización apoya la educación de adultos.""}}",manual sense/example review
+words:couple_s1,,,,,"{""g"":""pareja"",""ex"":{""couple_s1"":""Una pareja joven se mudó al apartamento.""}}",manual sense/example review
+words:kid_s1,,,,,"{""g"":""niño; niña"",""ex"":{""kid_s1"":""El niño resolvió el rompecabezas rápidamente.""}}",manual sense/example review
+words:itself_s1,,,,,"{""g"":""por sí mismo; por sí misma"",""ex"":{""itself_s1"":""La máquina en sí es fácil de operar.""}}",manual reflexive review
+words:percent_s1,,,,,"{""g"":""por ciento; porcentaje"",""ex"":{""percent_s1"":""El precio aumentó un cinco por ciento este año.""}}",manual number review

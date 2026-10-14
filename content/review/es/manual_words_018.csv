@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:provide_s1,,,,,"{""g"":""proporcionar; brindar"",""ex"":{""provide_s1"":""La escuela proporciona libros a los estudiantes.""}}",manual sense/example review
+words:build_s1,,,,,"{""g"":""construir"",""ex"":{""build_s1"":""Están construyendo un puente nuevo sobre el río.""}}",manual sense/example review
+words:believe_s1,,,,,"{""g"":""creer"",""ex"":{""believe_s1"":""Creo que estás diciendo la verdad.""}}",manual sense/example review
+words:thank_s1,,,,,"{""g"":""agradecer"",""ex"":{""thank_s1"":""Quiero agradecerte tu ayuda.""}}",manual sense/example review
+words:spend_s1,,,,,"{""g"":""pasar; gastar"",""ex"":{""spend_s1"":""Paso una hora leyendo todas las noches.""}}",source has time and money senses; corrected follows the time example
+words:consider_s1,,,,,"{""g"":""considerar"",""ex"":{""consider_s1"":""Estamos considerando mudarnos a la ciudad.""}}",manual sense/example review
+words:expect_s1,,,,,"{""g"":""esperar"",""ex"":{""expect_s1"":""Esperamos que el paquete llegue mañana.""}}",manual sense/example review
+words:fall_s1,,,,,"{""g"":""caer"",""ex"":{""fall_s1"":""Ten cuidado de no caerte en el hielo.""}}",manual sense/example review
+words:allow_s1,,,,,"{""g"":""permitir"",""ex"":{""allow_s1"":""No se permiten perros en esta tienda.""}}",manual passive-example review
+words:base_s1,,,,,"{""g"":""basar"",""ex"":{""base_s1"":""La película está basada en una historia real.""}}",manual sense/example review
+words:suggest_s1,,,,,"{""g"":""sugerir"",""ex"":{""suggest_s1"":""Sugiero que tomemos un descanso corto.""}}",manual sense/example review
+words:visit_s1,,,,,"{""g"":""visitar"",""ex"":{""visit_s1"":""Visitamos a nuestros abuelos todos los veranos.""}}",manual sense/example review
+words:grow_s1,,,,,"{""g"":""crecer"",""ex"":{""grow_s1"":""Los niños crecen muy rápido a esta edad.""}}",manual sense/example review
+words:decide_s1,,,,,"{""g"":""decidir"",""ex"":{""decide_s1"":""Decidimos quedarnos en casa esta noche.""}}",manual sense/example review
+words:break_s1,,,,,"{""g"":""romper"",""ex"":{""break_s1"":""Ten cuidado de no romper el vidrio.""}}",manual sense/example review
+words:remain_s1,,,,,"{""g"":""permanecer; quedarse"",""ex"":{""remain_s1"":""Permanezcan sentados hasta que se detenga el autobús.""}}",manual imperative review
+words:reach_s1,,,,,"{""g"":""llegar a; alcanzar"",""ex"":{""reach_s1"":""Llegamos a la estación antes del mediodía.""}}",manual sense/example review
+words:note_s1,,,,,"{""g"":""notar; tener en cuenta"",""ex"":{""note_s1"":""Ten en cuenta que la oficina cierra a las cinco.""}}",manual notice-example review
+words:require_s1,,,,,"{""g"":""requerir; necesitar"",""ex"":{""require_s1"":""Algunos trabajos requieren capacitación especial.""}}",manual sense/example review
+words:appear_s1,,,,,"{""g"":""aparecer; parecer"",""ex"":{""appear_s1"":""Las estrellas aparecen cuando el cielo se oscurece.""}}",manual sense/example review
+words:add_s1,,,,,"{""g"":""añadir; agregar"",""ex"":{""add_s1"":""Añade un poco de leche al café.""}}",manual sense/example review
+words:pass_s1,,,,,"{""g"":""pasar por"",""ex"":{""pass_s1"":""Pasamos por un pequeño café camino a casa.""}}",source example contains a broken character; restored from context
+words:agree_s1,,,,,"{""g"":""estar de acuerdo"",""ex"":{""agree_s1"":""Estoy de acuerdo con tu plan para el fin de semana.""}}",manual sense/example review
+words:carry_s1,,,,,"{""g"":""llevar; cargar"",""ex"":{""carry_s1"":""Llevo mi computadora portátil al trabajo todos los días.""}}",manual sense/example review
+words:die_s1,,,,,"{""g"":""morir"",""ex"":{""die_s1"":""Las plantas mueren sin suficiente agua.""}}",manual sense/example review

@@ -1,0 +1,61 @@
+key,corrected,comment
+ui:step_practice,"Practicar",manual translation
+ui:step_see,"Ejemplos",manual translation
+ui:step_understand,"Comprender",manual translation
+ui:streak_cd,"Racha de estudio: %1$d días",manual translation
+ui:streak_days,"Racha de %1$d días",manual translation
+ui:study_minutes,"Estudiar %1$d min",manual translation
+ui:study_modes,"Modos de estudio",manual translation
+ui:study_more,"Estudiar más",manual translation
+ui:submit,"Enviar",manual translation
+ui:submit_left,"Todavía tienes %1$d preguntas sin responder. ¿Enviar de todos modos?",manual translation
+ui:submit_title,"¿Enviar tu prueba?",manual translation
+ui:suggest_topics,"Temas sugeridos",manual translation
+ui:t_grammar,"Gramática",manual translation
+ui:t_part5,"TOEIC Part 5",manual translation
+ui:t_part6,"TOEIC Part 6",manual translation
+ui:t_school,"Exámenes escolares",manual translation
+ui:t_vocab,"Vocabulario",manual translation
+ui:tab_exam,"Exámenes",manual translation
+ui:tab_grammar,"Gramática",manual translation
+ui:tab_me,"Yo",manual translation
+ui:tab_today,"Hoy",manual translation
+ui:tab_vocab,"Palabras",manual translation
+ui:tag_agreement,"Concordancia entre sujeto y verbo",manual translation
+ui:tag_antonym,"Opuestos",manual translation
+ui:tag_cleft,"Oraciones hendidas",manual translation
+ui:tag_collocation,"Combinaciones de palabras",manual translation
+ui:tag_comparison,"Comparaciones",manual translation
+ui:tag_conditional,"Condicionales",manual translation
+ui:tag_confusable,"Palabras que se confunden",manual translation
+ui:tag_conjunction,"Conectores",manual translation
+ui:tag_ellipsis,"Elipsis",manual translation
+ui:tag_error,"Encontrar el error",manual translation
+ui:tag_gerund,"Gerundio o infinitivo",manual translation
+ui:tag_hedging,"Lenguaje atenuado",manual translation
+ui:tag_inversion,"Inversión",manual translation
+ui:tag_linking,"Marcadores discursivos",manual translation
+ui:tag_modal,"Verbos modales",manual translation
+ui:tag_noun_phrase,"Frases nominales",manual translation
+ui:tag_participle,"Participios",manual translation
+ui:tag_passage,"Pasajes de lectura",manual translation
+ui:tag_passive,"Voz pasiva",manual translation
+ui:tag_pos,"Formas de las palabras",manual translation
+ui:tag_preposition,"Preposiciones",manual translation
+ui:tag_pronoun,"Pronombres",manual translation
+ui:tag_pronunciation,"Pronunciación",manual translation
+ui:tag_quantifier,"Artículos y cuantificadores",manual translation
+ui:tag_register,"Registro formal o informal",manual translation
+ui:tag_relative,"Oraciones relativas",manual translation
+ui:tag_reported,"Estilo indirecto",manual translation
+ui:tag_sentence,"Completar la oración",manual translation
+ui:tag_spelling,"Ortografía",manual translation
+ui:tag_stress,"Acentuación de palabras",manual translation
+ui:tag_subjunctive,"Subjuntivo",manual translation
+ui:tag_synonym,"Significados similares",manual translation
+ui:tag_tense,"Tiempos verbales",manual translation
+ui:tag_transform,"Transformación de oraciones",manual translation
+ui:tag_vocab,"Vocabulario básico",manual translation
+ui:tag_vocab_work,"Vocabulario laboral",manual translation
+ui:tag_wish,"Deseos",manual translation
+ui:tag_word_order,"Orden de las palabras",manual translation

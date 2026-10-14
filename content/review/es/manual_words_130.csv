@@ -1,0 +1,26 @@
+key,corrected,comment
+words:location_s1,"{""g"":""ubicación; lugar"",""ex"":{""location_s1"":""El hotel está en una ubicación excelente.""}}",manual translation
+words:plumber_s1,"{""g"":""plomero; fontanero"",""ex"":{""plumber_s1"":""Llamamos a un plomero para reparar la fuga.""}}",manual translation
+words:leak_s1,"{""g"":""fuga; gotera"",""ex"":{""leak_s1"":""Hay una gotera en el techo.""}}",manual translation
+words:suburb_s1,"{""g"":""suburbio; zona residencial"",""ex"":{""suburb_s1"":""Viven en un suburbio tranquilo.""}}",manual translation
+words:construction_s1,"{""g"":""construcción"",""ex"":{""construction_s1"":""El puente nuevo todavía está en construcción.""}}",manual translation
+words:brick_s1,"{""g"":""ladrillo"",""ex"":{""brick_s1"":""La casa está hecha de ladrillo rojo.""}}",manual translation
+words:ceiling_s1,"{""g"":""techo; cielorraso"",""ex"":{""ceiling_s1"":""Hay un ventilador en el techo.""}}",manual translation
+words:household_s1,"{""g"":""hogar; unidad familiar"",""ex"":{""household_s1"":""La mayoría de los hogares tiene una lavadora.""}}",manual translation
+words:degree_s1,"{""g"":""título universitario; grado"",""ex"":{""degree_s1"":""Tiene un título en economía.""}}",manual translation
+words:degree_s2,"{""g"":""grado"",""ex"":{""degree_s2"":""Hoy afuera hace unos treinta grados.""}}",manual translation
+words:graduate_s1,"{""g"":""graduarse"",""ex"":{""graduate_s1"":""Se graduó de la universidad en 2020.""}}",manual translation
+words:graduate_s2,"{""g"":""graduado; recién egresado"",""ex"":{""graduate_s2"":""La empresa contrata a muchos recién egresados.""}}",source example uses graduate as a person rather than a measuring instrument
+words:scholarship_s1,"{""g"":""beca"",""ex"":{""scholarship_s1"":""Ganó una beca para estudiar en Australia.""}}",manual translation
+words:certificate_s1,"{""g"":""certificado; constancia"",""ex"":{""certificate_s1"":""Recibirás un certificado después del curso.""}}",manual translation
+words:lecture_s1,"{""g"":""clase; conferencia"",""ex"":{""lecture_s1"":""La clase de historia duró dos horas.""}}",manual translation
+words:semester_s1,"{""g"":""semestre"",""ex"":{""semester_s1"":""El nuevo semestre comienza en septiembre.""}}",manual translation
+words:assignment_s1,"{""g"":""tarea; trabajo asignado"",""ex"":{""assignment_s1"":""La tarea vence el próximo lunes.""}}",manual translation
+words:knowledge_s1,"{""g"":""conocimiento"",""ex"":{""knowledge_s1"":""Leer todos los días mejora tus conocimientos generales.""}}",manual translation
+words:memorize_s1,"{""g"":""memorizar; aprender de memoria"",""ex"":{""memorize_s1"":""Es difícil memorizar listas largas de palabras.""}}",manual translation
+words:revise_s1,"{""g"":""repasar; estudiar"",""ex"":{""revise_s1"":""Necesito repasar para el examen.""}}",manual translation
+words:fluent_s1,"{""g"":""fluido; fluida"",""ex"":{""fluent_s1"":""Habla tres idiomas con fluidez.""}}",manual translation
+words:pronunciation_s1,"{""g"":""pronunciación"",""ex"":{""pronunciation_s1"":""Una pronunciación clara ayuda a los oyentes a entenderte.""}}",manual translation
+words:principal_s1,"{""g"":""director; directora"",""ex"":{""principal_s1"":""La directora habló con los estudiantes esta mañana.""}}",manual translation
+words:principal_s2,"{""g"":""principal; más importante"",""ex"":{""principal_s2"":""El arroz es el alimento principal en muchos países.""}}",manual translation
+words:instructor_s1,"{""g"":""instructor; instructor de cursos"",""ex"":{""instructor_s1"":""Nuestro instructor de yoga es muy paciente.""}}",manual translation

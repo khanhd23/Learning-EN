@@ -1,0 +1,26 @@
+key,corrected,comment
+words:trade_s1,"{""g"":""comercio; comerciar"",""ex"":{""trade_s1"":""El comercio entre los dos países está creciendo.""}}",manual translation
+words:trade_s2,"{""g"":""comerciar; intercambiar"",""ex"":{""trade_s2"":""Los dos países comercian con arroz y café.""}}",source example uses international trade rather than trade-in
+words:goods_s1,"{""g"":""mercancías; bienes"",""ex"":{""goods_s1"":""Las mercancías se enviarán por mar.""}}",source definition differs; corrected follows the example
+words:catalog_s1,"{""g"":""catálogo"",""ex"":{""catalog_s1"":""Consulta nuestro catálogo para ver más productos.""}}",manual translation
+words:affordable_s1,"{""g"":""asequible; económico"",""ex"":{""affordable_s1"":""Ofrecemos precios asequibles para estudiantes.""}}",manual translation
+words:install_s1,"{""g"":""instalar"",""ex"":{""install_s1"":""Un técnico instalará el aire acondicionado.""}}",manual translation
+words:brochure_s1,"{""g"":""folleto"",""ex"":{""brochure_s1"":""Toma un folleto para obtener más información.""}}",manual translation
+words:suit_s1,"{""g"":""quedarle bien a; ser adecuado para"",""ex"":{""suit_s1"":""Ese color te queda muy bien, así que cómpralo.""}}",manual translation
+words:suit_s2,"{""g"":""traje"",""ex"":{""suit_s2"":""Llevó un traje oscuro a la entrevista.""}}",manual translation
+words:deal_s1,"{""g"":""acuerdo; trato"",""ex"":{""deal_s1"":""Las dos empresas llegaron a un acuerdo la semana pasada.""}}",manual translation
+words:deal_s2,"{""g"":""encargarse de; resolver"",""ex"":{""deal_s2"":""¿Quién se encargará de la queja del cliente?""}}",manual translation
+words:free_of_charge_s1,"{""g"":""gratis; sin costo"",""ex"":{""free_of_charge_s1"":""El envío es gratis para pedidos de más de cincuenta dólares.""}}",manual translation
+words:reasonable_s1,"{""g"":""razonable; moderado"",""ex"":{""reasonable_s1"":""El hotel tiene habitaciones limpias a precios razonables.""}}",manual translation
+words:departure_s1,"{""g"":""salida"",""ex"":{""departure_s1"":""Consulta la hora de salida en la pantalla.""}}",manual translation
+words:arrival_s1,"{""g"":""llegada"",""ex"":{""arrival_s1"":""La sala de llegadas está en la planta baja.""}}",source definition differs; corrected follows the airport example
+words:reservation_s1,"{""g"":""reserva"",""ex"":{""reservation_s1"":""Tengo una reserva a nombre de Nguyen.""}}",source definition differs; corrected follows the booking example
+words:destination_s1,"{""g"":""destino"",""ex"":{""destination_s1"":""El tren llegó a su destino antes del atardecer.""}}",manual translation
+words:customs_s1,"{""g"":""aduana"",""ex"":{""customs_s1"":""Los pasajeros pasaron por la aduana después de recoger sus maletas.""}}",manual translation
+words:round_trip_s1,"{""g"":""ida y vuelta"",""ex"":{""round_trip_s1"":""Un boleto de ida y vuelta cuesta trescientos dólares.""}}",manual translation
+words:fare_s1,"{""g"":""tarifa; precio del transporte"",""ex"":{""fare_s1"":""Las tarifas de autobús subirán el próximo mes.""}}",source definition differs; corrected follows the transport example
+words:fare_s2,"{""g"":""desempeñarse; irle a alguien"",""ex"":{""fare_s2"":""¿Cómo te fue en el examen?""}}",manual translation
+words:aisle_s1,"{""g"":""pasillo"",""ex"":{""aisle_s1"":""Por favor, quisiera un asiento junto al pasillo.""}}",manual translation
+words:souvenir_s1,"{""g"":""recuerdo; souvenir"",""ex"":{""souvenir_s1"":""Compramos recuerdos en el mercado nocturno.""}}",manual translation
+words:sightseeing_s1,"{""g"":""hacer turismo; visitar lugares"",""ex"":{""sightseeing_s1"":""Pasamos la tarde haciendo turismo por el casco antiguo.""}}",manual translation
+words:abroad_s1,"{""g"":""en el extranjero"",""ex"":{""abroad_s1"":""Quiere estudiar en el extranjero el próximo año.""}}",manual translation

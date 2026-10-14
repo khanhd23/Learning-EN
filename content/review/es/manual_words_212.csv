@@ -1,0 +1,26 @@
+key,corrected,comment
+words:residential_s1,"{""g"":""residencial; destinado a viviendas o limitado a ellas"",""ex"":{ ""residential_s1"":""Esta es una zona residencial, así que conduce despacio, por favor.""}}",manual translation
+words:downtown_s1,"{""g"":""al centro; en dirección a la zona empresarial central de una ciudad"",""ex"":{ ""downtown_s1"":""Tomamos el tren al centro para la reunión de la tarde.""}}",manual translation
+words:downtown_s2,"{""g"":""centro; zona comercial más activa de un pueblo o ciudad"",""ex"":{ ""downtown_s2"":""El centro sigue lleno de gente después de que cierran las oficinas.""}}",manual translation
+words:tuition_s1,"{""g"":""matrícula; cantidad pagada por la enseñanza, especialmente en la educación superior"",""ex"":{ ""tuition_s1"":""Las matrículas aumentan cada año.""}}",manual translation
+words:enroll_s1,"{""g"":""inscribirse; registrarse formalmente como participante o miembro"",""ex"":{ ""enroll_s1"":""Más de 200 estudiantes se inscribieron en el curso.""}}",manual translation
+words:renewable_s1,"{""g"":""renovable; que puede renovarse o prolongarse"",""ex"":{ ""renewable_s1"":""La energía solar es una fuente de energía renovable.""}}",manual translation
+words:conserve_s1,"{""g"":""conservar; mantener o ahorrar algo para evitar su desperdicio"",""ex"":{ ""conserve_s1"":""Ahorra agua durante la temporada seca, por favor.""}}",manual translation
+words:drought_s1,"{""g"":""sequía; escasez de lluvias"",""ex"":{ ""drought_s1"":""La sequía perjudicó la cosecha de arroz.""}}",manual translation
+words:species_s1,"{""g"":""especie; grupo de animales o plantas del mismo tipo"",""ex"":{ ""species_s1"":""Muchas especies de aves viven en este bosque.""}}",manual translation
+words:endangered_s1,"{""g"":""en peligro de extinción; que enfrenta un peligro inminente de desaparecer"",""ex"":{ ""endangered_s1"":""El tigre es un animal en peligro de extinción.""}}",manual translation
+words:disposable_s1,"{""g"":""desechable; hecho para usarse una vez y luego tirarse"",""ex"":{ ""disposable_s1"":""Muchos cafés han dejado de usar vasos desechables.""}}",manual translation
+words:broadcast_s1,"{""g"":""transmitir; emitir por radio o televisión"",""ex"":{ ""broadcast_s1"":""El partido se transmitirá en directo.""}}",manual translation
+words:documentary_s1,"{""g"":""documental; película o programa de televisión que presenta hechos sobre una persona o evento"",""ex"":{ ""documentary_s1"":""Vimos un documental sobre el océano.""}}",manual translation
+words:column_s1,"{""g"":""columna; serie de unidades colocadas una después de otra"",""ex"":{ ""column_s1"":""Escribe una columna semanal sobre salud.""}}",manual translation
+words:errand_s1,"{""g"":""mandado; viaje corto para realizar una tarea o misión necesaria"",""ex"":{ ""errand_s1"":""Esta tarde tengo que hacer unos mandados.""}}",manual translation
+words:hang_out_s1,"{""g"":""pasar el rato; pasar el tiempo libre en un lugar o con alguien (informal)"",""ex"":{ ""hang_out_s1"":""Normalmente pasamos el rato en el parque después de la escuela.""}}",manual translation
+words:take_a_nap_s1,"{""g"":""echar una siesta; dormir un rato durante el día"",""ex"":{ ""take_a_nap_s1"":""A menudo echo una siesta después de almorzar.""}}",manual translation
+words:in_a_hurry_s1,"{""g"":""con prisa; que necesita hacer o terminar algo rápidamente"",""ex"":{ ""in_a_hurry_s1"":""Ahora no puedo hablar porque tengo prisa.""}}",manual translation
+words:look_after_s1,"{""g"":""cuidar; ocuparse de alguien o algo"",""ex"":{ ""look_after_s1"":""¿Puedes cuidar a mi gato este fin de semana?""}}",manual translation
+words:analyze_s1,"{""g"":""analizar; estudiar algo cuidadosamente para comprenderlo"",""ex"":{ ""analyze_s1"":""El equipo analizó los resultados de ventas.""}}",manual translation
+words:significant_s1,"{""g"":""significativo; importante o suficientemente grande para notarse"",""ex"":{ ""significant_s1"":""Hubo un aumento significativo de las ventas.""}}",manual translation
+words:approach_s1,"{""g"":""enfoque; manera de abordar un problema"",""ex"":{ ""approach_s1"":""Necesitamos un nuevo enfoque para este problema.""}}",manual translation
+words:approach_s2,"{""g"":""acercarse; aproximarse, parecerse o acercarse en calidad o carácter"",""ex"":{ ""approach_s2"":""Un hombre se acercó a mí y me pidió indicaciones.""}}",manual translation
+words:assume_s1,"{""g"":""suponer; aceptar algo como verdadero sin pruebas"",""ex"":{ ""assume_s1"":""Supongo que has leído el informe.""}}",manual translation
+words:indicate_s1,"{""g"":""indicar; mostrar o señalar algo"",""ex"":{ ""indicate_s1"":""Los resultados indican una tendencia clara.""}}",manual translation

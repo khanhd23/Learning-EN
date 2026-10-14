@@ -1,0 +1,26 @@
+key,corrected,comment
+words:chore_s1,"{""g"":""tarea doméstica"",""ex"":{""chore_s1"":""Lavar los platos es la tarea doméstica que menos me gusta.""}}",manual translation
+words:routine_s1,"{""g"":""rutina"",""ex"":{""routine_s1"":""El ejercicio forma parte de mi rutina diaria.""}}",manual translation
+words:get_along_with_s1,"{""g"":""llevarse bien con"",""ex"":{""get_along_with_s1"":""Me llevo bien con mis nuevos vecinos.""}}",manual translation
+words:run_out_of_s1,"{""g"":""quedarse sin; agotarse"",""ex"":{""run_out_of_s1"":""Se nos acabó la leche, así que compraré más.""}}",manual translation
+words:theory_s1,"{""g"":""teoría"",""ex"":{""theory_s1"":""En teoría, el plan debería funcionar.""}}",manual translation
+words:conclusion_s1,"{""g"":""conclusión"",""ex"":{""conclusion_s1"":""Las pruebas respaldan su conclusión sobre el accidente.""}}",manual translation
+words:method_s1,"{""g"":""método"",""ex"":{""method_s1"":""Este es un método sencillo para aprender palabras.""}}",manual translation
+words:factor_s1,"{""g"":""factor"",""ex"":{""factor_s1"":""El precio es un factor importante para los compradores.""}}",manual translation
+words:affect_s1,"{""g"":""afectar; influir en"",""ex"":{""affect_s1"":""La falta de sueño afecta tu memoria.""}}",manual translation
+words:effect_s1,"{""g"":""efecto"",""ex"":{""effect_s1"":""El medicamento no tuvo ningún efecto en mi dolor de cabeza.""}}",manual translation
+words:define_s1,"{""g"":""definir; explicar"",""ex"":{""define_s1"":""¿Puedes definir esta palabra en inglés sencillo?""}}",manual translation
+words:summary_s1,"{""g"":""resumen"",""ex"":{""summary_s1"":""Escribe un breve resumen del artículo.""}}",manual translation
+words:percentage_s1,"{""g"":""porcentaje"",""ex"":{""percentage_s1"":""Un gran porcentaje de los estudiantes aprobó.""}}",manual translation
+words:experiment_s1,"{""g"":""experimento"",""ex"":{""experiment_s1"":""Hicimos un experimento en el laboratorio.""}}",manual translation
+words:argument_s1,"{""g"":""argumento; razón"",""ex"":{""argument_s1"":""Su argumento es claro y lógico.""}}",manual translation
+words:previous_s1,"{""g"":""anterior; previo"",""ex"":{""previous_s1"":""El dueño anterior pintó la casa de azul.""}}",manual translation
+words:sibling_s1,"{""g"":""hermano; hermana"",""ex"":{""sibling_s1"":""Mi hermano menor comienza la universidad este otoño.""}}",manual translation
+words:niece_s1,"{""g"":""sobrina"",""ex"":{""niece_s1"":""Mi sobrina tiene cinco años.""}}",manual translation
+words:nephew_s1,"{""g"":""sobrino"",""ex"":{""nephew_s1"":""Compré un juguete para mi sobrino.""}}",manual translation
+words:relative_s1,"{""g"":""familiar; pariente"",""ex"":{""relative_s1"":""Muchos familiares vinieron al cumpleaños de nuestra abuela.""}}",manual translation
+words:relative_s2,"{""g"":""relativo; comparativo"",""ex"":{""relative_s2"":""El examen fue un éxito relativo.""}}",manual translation
+words:raise_s1,"{""g"":""levantar; alzar"",""ex"":{""raise_s1"":""Levanta la mano antes de responder.""}}",manual translation
+words:raise_s2,"{""g"":""aumento de sueldo"",""ex"":{""raise_s2"":""Le pidió un aumento de sueldo a su jefe.""}}",source example uses the salary sense
+words:bring_up_s1,"{""g"":""criar; educar"",""ex"":{""bring_up_s1"":""Sus abuelos la criaron.""}}",manual translation
+words:engaged_s1,"{""g"":""comprometido; comprometida"",""ex"":{""engaged_s1"":""Mi hermano y su novia se comprometieron el mes pasado.""}}",manual translation

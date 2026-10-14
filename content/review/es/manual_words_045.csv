@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:pal_s1,,,,,"{""g"":""amigo; amiga"",""ex"":{""pal_s1"":""Es un viejo amigo de mi primera escuela.""}}",manual informal-register review
+words:pea_s1,,,,,"{""g"":""guisante; chícharo"",""ex"":{""pea_s1"":""Añade un guisante a cada tazón de sopa.""}}",regional variants retained for es-419
+words:schoolchild_s1,,,,,"{""g"":""niño; niña en edad escolar"",""ex"":{""schoolchild_s1"":""Todo niño en edad escolar necesita un aula segura y tranquila.""}}",manual education review
+words:singing_s1,,,,,"{""g"":""canto; cantar"",""ex"":{""singing_s1"":""Cantar me ayuda a relajarme después de un día largo.""}}",manual activity review
+words:skateboarding_s1,,,,,"{""g"":""skateboarding; andar en patineta"",""ex"":{""skateboarding_s1"":""Andar en patineta requiere equilibrio y equipo de protección.""}}",regional variants retained for es-419
+words:snowboarding_s1,,,,,"{""g"":""snowboard; hacer snowboard"",""ex"":{""snowboarding_s1"":""Hacer snowboard es emocionante, pero requiere práctica cuidadosa.""}}",manual sport review
+words:softly_s1,,,,,"{""g"":""suavemente; en voz baja"",""ex"":{""softly_s1"":""Habla en voz baja mientras el bebé duerme.""}}",manual adverb review
+words:sweetheart_s1,,,,,"{""g"":""persona amada; pareja"",""ex"":{""sweetheart_s1"":""Su pareja le envió flores en su aniversario.""}}",gender-neutral contextual rendering
+words:teenage_s1,,,,,"{""g"":""adolescente"",""ex"":{""teenage_s1"":""Los estudiantes adolescentes suelen necesitar apoyo durante los cambios importantes.""}}",manual age review
+words:thief_s1,,,,,"{""g"":""ladrón; ladrona"",""ex"":{""thief_s1"":""El ladrón escapó por una ventana antes del amanecer.""}}",manual sense/example review
+words:thought_s1,,,,,"{""g"":""pensamiento; idea"",""ex"":{""thought_s1"":""Un pensamiento permaneció en mi mente todo el día.""}}",manual sense/example review
+words:tights_s1,,,,,"{""g"":""medias; mallas"",""ex"":{""tights_s1"":""Las medias mantienen sus piernas calientes durante la práctica de danza.""}}",regional variants retained for es-419
+words:toast_s1,,,,,"{""g"":""tostada"",""ex"":{""toast_s1"":""Desayunamos tostadas con mantequilla.""}}",manual food review
+words:toothache_s1,,,,,"{""g"":""dolor de muelas"",""ex"":{""toothache_s1"":""Beber agua puede aliviar temporalmente un dolor de muelas leve.""}}",manual health review
+words:tram_s1,,,,,"{""g"":""tranvía"",""ex"":{""tram_s1"":""El tranvía se detuvo junto al mercado lleno de gente.""}}",manual transport review
+words:underwater_s1,,,,,"{""g"":""bajo el agua"",""ex"":{""underwater_s1"":""La cámara funciona bajo el agua durante treinta minutos.""}}",manual place review
+words:uneasy_s1,,,,,"{""g"":""inquieto; incómodo"",""ex"":{""uneasy_s1"":""Me sentí inquieto al caminar solo por la calle oscura.""}}",manual feeling review
+words:unhealthy_s1,,,,,"{""g"":""poco saludable; insalubre"",""ex"":{""unhealthy_s1"":""Comer demasiados alimentos azucarados no es saludable.""}}",manual health review
+words:walking_s1,,,,,"{""g"":""caminar; caminata"",""ex"":{""walking_s1"":""Caminar después de cenar ayuda a mi digestión.""}}",manual activity review
+words:barrel_s1,,,,,"{""g"":""barril"",""ex"":{""barrel_s1"":""El granjero guardó grano en un barril de madera.""}}",manual sense/example review
+words:beard_s1,,,,,"{""g"":""barba"",""ex"":{""beard_s1"":""Se dejó crecer la barba durante las vacaciones de invierno.""}}",manual sense/example review
+words:bedside_s1,,,,,"{""g"":""junto a la cama; mesita de noche"",""ex"":{""bedside_s1"":""Una lámpara estaba sobre la mesita de noche.""}}",manual context review
+words:blogger_s1,,,,,"{""g"":""bloguero; bloguera"",""ex"":{""blogger_s1"":""El bloguero compartió una reseña del restaurante nuevo.""}}",regional variants retained for es-419
+words:bracelet_s1,,,,,"{""g"":""pulsera"",""ex"":{""bracelet_s1"":""Llevó una pulsera de plata a la ceremonia.""}}",manual sense/example review
+words:broccoli_s1,,,,,"{""g"":""brócoli"",""ex"":{""broccoli_s1"":""El brócoli sabe bien asado con ajo.""}}",manual food review

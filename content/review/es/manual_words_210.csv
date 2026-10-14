@@ -1,0 +1,26 @@
+key,corrected,comment
+words:capacity_s1,"{""g"":""capacidad; posibilidad de realizar o producir algo"",""ex"":{ ""capacity_s1"":""La planta está funcionando a plena capacidad.""}}",manual translation
+words:freight_s1,"{""g"":""carga; mercancías transportadas por un vehículo grande"",""ex"":{ ""freight_s1"":""Los costos de transporte de carga se duplicaron este año.""}}",manual translation
+words:deliver_on_time_s1,"{""g"":""entregar a tiempo; llevar o enviar algo antes de la fecha límite acordada"",""ex"":{ ""deliver_on_time_s1"":""El mensajero trabajó hasta tarde para entregar todos los paquetes a tiempo.""}}",manual translation
+words:raw_material_s1,"{""g"":""materia prima; material adecuado para fabricar, usar o terminar algo"",""ex"":{ ""raw_material_s1"":""El precio de las materias primas ha subido.""}}",manual translation
+words:maintenance_s1,"{""g"":""mantenimiento; actividad necesaria para conservar algo en buen funcionamiento"",""ex"":{ ""maintenance_s1"":""El ascensor está cerrado por mantenimiento.""}}",manual translation
+words:distribute_s1,"{""g"":""distribuir; entregar o repartir, normalmente en pequeñas cantidades"",""ex"":{ ""distribute_s1"":""Distribuimos nuestros productos en 30 países.""}}",manual translation
+words:shortage_s1,"{""g"":""escasez; situación en la que hay menos cantidad de algo de la esperada o necesaria"",""ex"":{ ""shortage_s1"":""Hay escasez de trabajadores cualificados.""}}",manual translation
+words:efficiency_s1,"{""g"":""eficiencia; relación entre la producción y los recursos utilizados por un sistema"",""ex"":{ ""efficiency_s1"":""Las máquinas nuevas mejoraron la eficiencia en un 20 por ciento.""}}",manual translation
+words:vendor_s1,"{""g"":""vendedor; persona que ofrece o intercambia bienes o servicios por dinero"",""ex"":{ ""vendor_s1"":""Los vendedores ambulantes venden fruta cerca del mercado.""}}",manual translation
+words:bulk_s1,"{""g"":""a granel; en grandes cantidades o en la mayor parte de algo"",""ex"":{ ""bulk_s1"":""Es más barato comprar al por mayor.""}}",manual translation
+words:customer_service_s1,"{""g"":""servicio al cliente; ayuda proporcionada antes o después de una compra"",""ex"":{ ""customer_service_s1"":""Un buen servicio al cliente puede transformar una queja en confianza.""}}",manual translation
+words:second_hand_s1,"{""g"":""de segunda mano; que perteneció a otra persona antes de volver a venderse"",""ex"":{ ""second_hand_s1"":""Compré una bicicleta de segunda mano en una tienda local.""}}",manual translation
+words:e_commerce_s1,"{""g"":""comercio electrónico; comercio realizado por medios electrónicos, como internet"",""ex"":{ ""e_commerce_s1"":""El comercio electrónico ha cambiado la forma en que la gente compra.""}}",manual translation
+words:itinerary_s1,"{""g"":""itinerario; ruta o plan establecido de un viaje"",""ex"":{ ""itinerary_s1"":""El agente de viajes me envió el itinerario por correo electrónico.""}}",manual translation
+words:commute_s1,"{""g"":""desplazarse; viajar regularmente entre el hogar y el trabajo"",""ex"":{ ""commute_s1"":""Todos los días me desplazo a la ciudad en tren.""}}",manual translation
+words:commute_s2,"{""g"":""trayecto diario; viaje entre el hogar y el trabajo"",""ex"":{ ""commute_s2"":""Mi trayecto diario dura unos cuarenta minutos.""}}",manual translation
+words:check_in_s1,"{""g"":""registrarse; llegar y hacer el registro en un hotel o aeropuerto"",""ex"":{ ""check_in_s1"":""Nos registramos en el hotel a las tres.""}}",manual translation
+words:accommodation_s1,"{""g"":""alojamiento; lugar donde se hospeda alguien"",""ex"":{ ""accommodation_s1"":""El precio incluye los vuelos y el alojamiento.""}}",manual translation
+words:vacant_s1,"{""g"":""desocupado; vacío y sin ocupantes"",""ex"":{ ""vacant_s1"":""¿Hay habitaciones desocupadas esta noche?""}}",manual translation
+words:check_out_s1,"{""g"":""hacer el registro de salida; pagar y dejar un hotel"",""ex"":{ ""check_out_s1"":""Tenemos que hacer el registro de salida antes de las once.""}}",manual translation
+words:check_out_s2,"{""g"":""echar un vistazo; mirar algo porque resulta interesante"",""ex"":{ ""check_out_s2"":""Deberías conocer el nuevo café del centro.""}}",manual translation
+words:front_desk_s1,"{""g"":""recepción; zona del hotel donde los huéspedes se registran y piden ayuda"",""ex"":{ ""front_desk_s1"":""Deja la llave de tu habitación en la recepción, por favor.""}}",manual translation
+words:housekeeping_s1,"{""g"":""servicio de limpieza; trabajo de limpiar y administrar una casa"",""ex"":{ ""housekeeping_s1"":""El servicio de limpieza limpia las habitaciones todos los días.""}}",manual translation
+words:suite_s1,"{""g"":""suite; conjunto de habitaciones o composición musical de varios movimientos"",""ex"":{ ""suite_s1"":""Se hospedaron en una suite con vista al mar.""}}",manual translation
+words:cuisine_s1,"{""g"":""gastronomía; estilo de cocina asociado con un país o región"",""ex"":{ ""cuisine_s1"":""El pequeño restaurante es conocido por su gastronomía regional.""}}",manual translation

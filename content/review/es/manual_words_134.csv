@@ -1,0 +1,26 @@
+key,corrected,comment
+words:forecast_s1,"{""g"":""pronóstico; previsión"",""ex"":{""forecast_s1"":""El pronóstico dice que mañana lloverá.""}}",manual translation
+words:thunder_s1,"{""g"":""trueno"",""ex"":{""thunder_s1"":""El perro le tiene miedo a los truenos.""}}",manual translation
+words:lightning_s1,"{""g"":""relámpago; rayo"",""ex"":{""lightning_s1"":""Un relámpago iluminó el cielo antes de que comenzara la lluvia fuerte.""}}",manual translation
+words:freezing_s1,"{""g"":""helado; extremadamente frío"",""ex"":{""freezing_s1"":""El viento helado hizo incómoda la caminata.""}}",manual translation
+words:waterfall_s1,"{""g"":""cascada"",""ex"":{""waterfall_s1"":""Un sendero estrecho nos llevó a una cascada escondida.""}}",manual translation
+words:cave_s1,"{""g"":""cueva"",""ex"":{""cave_s1"":""Una ruta estrecha nos llevó a una cueva escondida.""}}",source example neutralized to avoid a country-specific reference
+words:typhoon_s1,"{""g"":""tifón"",""ex"":{""typhoon_s1"":""El tifón golpeó la costa central.""}}",manual translation
+words:pour_s1,"{""g"":""verter; servir"",""ex"":{""pour_s1"":""¿Puedes servirme un vaso de agua?""}}",manual translation
+words:earthquake_s1,"{""g"":""terremoto"",""ex"":{""earthquake_s1"":""El terremoto sacudió toda la ciudad.""}}",manual translation
+words:fog_s1,"{""g"":""niebla"",""ex"":{""fog_s1"":""La niebla era tan densa que no podíamos ver la carretera.""}}",manual translation
+words:melt_s1,"{""g"":""derretirse; fundirse"",""ex"":{""melt_s1"":""El hielo se derretirá rápidamente bajo la luz cálida del sol.""}}",manual translation
+words:champion_s1,"{""g"":""campeón; campeona"",""ex"":{""champion_s1"":""Es la campeona nacional de natación.""}}",manual translation
+words:referee_s1,"{""g"":""árbitro; árbitra"",""ex"":{""referee_s1"":""El árbitro le mostró una tarjeta amarilla.""}}",manual translation
+words:muscle_s1,"{""g"":""músculo"",""ex"":{""muscle_s1"":""Me duelen los músculos de las piernas después de correr.""}}",manual translation
+words:compete_s1,"{""g"":""competir"",""ex"":{""compete_s1"":""A las tiendas pequeñas les cuesta competir con los grandes supermercados.""}}",manual translation
+words:athlete_s1,"{""g"":""atleta; deportista"",""ex"":{""athlete_s1"":""Los atletas entrenan durante años para los Juegos Olímpicos.""}}",manual translation
+words:medal_s1,"{""g"":""medalla"",""ex"":{""medal_s1"":""El corredor recibió una medalla de oro después de la carrera.""}}",manual translation
+words:draw_s2,"{""g"":""dibujar"",""ex"":{""draw_s2"":""¿Puedes dibujarme un gato?""}}",manual translation
+words:draw_s1,"{""g"":""empate"",""ex"":{""draw_s1"":""El partido terminó en empate después del tiempo extra.""}}",manual translation
+words:injured_s1,"{""g"":""lesionado; lesionada"",""ex"":{""injured_s1"":""El jugador lesionado salió del campo con ayuda.""}}",manual translation
+words:cheer_s1,"{""g"":""animar; alentar"",""ex"":{""cheer_s1"":""El público animó al equipo local.""}}",manual translation
+words:plot_s1,"{""g"":""trama; argumento"",""ex"":{""plot_s1"":""La trama es un poco confusa.""}}",source example uses story plot rather than the source definition
+words:character_s1,"{""g"":""personaje"",""ex"":{""character_s1"":""El personaje principal es un médico joven.""}}",manual translation
+words:episode_s1,"{""g"":""episodio"",""ex"":{""episode_s1"":""Anoche vi tres episodios.""}}",manual translation
+words:series_s1,"{""g"":""serie"",""ex"":{""series_s1"":""Esta serie de televisión tiene hasta ahora cinco temporadas.""}}",manual translation

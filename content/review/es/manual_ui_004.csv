@@ -1,0 +1,59 @@
+key,corrected,comment
+ui:feed,"Dar de comer",manual translation
+ui:pet_care_title,"Cuida de %1$s",manual translation
+ui:pet_care_sub,"Elige una lección corta gratis o un anuncio opcional.",manual translation
+ui:pet_care_study,"Hacer una lección corta",manual translation
+ui:pet_care_ad,"Ver un anuncio",manual translation
+ui:earn_coins_ad,"Ganar monedas con un anuncio",manual translation
+ui:fix_to,"%1$s → %2$s",manual translation
+ui:flag,"Marcar esta pregunta",manual translation
+ui:formula,"Estructura",manual translation
+ui:g_all,"Todas",manual translation
+ui:g_toeic,"TOEIC",manual translation
+ui:g_tricky,"Difíciles",manual translation
+ui:gallery,"Galería",manual translation
+ui:gallery_sub,"Tu mascota en cada etapa que ha alcanzado.",manual translation
+ui:generic_test,"Prueba de práctica",manual translation
+ui:gl_1,"Fundamentos",manual translation
+ui:gl_2,"Conceptos básicos",manual translation
+ui:gl_3,"Intermedio",manual translation
+ui:gl_4,"Intermedio alto",manual translation
+ui:gl_5,"Avanzado",manual translation
+ui:go_home,"Volver al inicio",manual translation
+ui:go_practice,"Ir a practicar",manual translation
+ui:goal_basics,"Aprender lo básico",manual translation
+ui:goal_done,"¡Objetivo de hoy alcanzado!",manual translation
+ui:goal_ielts,"Prepararte para IELTS",manual translation
+ui:goal_progress,"%1$d de %2$d XP hoy",manual translation
+ui:goal_talk,"Hablar con confianza",manual translation
+ui:goal_toeic,"Prepararte para TOEIC",manual translation
+ui:goal_travel,"Inglés para viajar",manual translation
+ui:goal_work,"Inglés para el trabajo",manual translation
+ui:grammar_mastered,"Gramática dominada",manual translation
+ui:grammar_points,"Gramática",manual translation
+ui:greet_afternoon,"¡Buenas tardes!",manual translation
+ui:greet_evening,"¡Buenas noches!",manual translation
+ui:greet_morning,"¡Buenos días!",manual translation
+ui:greet_noon,"¡Hola!",manual translation
+ui:heatmap,"Calendario de estudio",manual translation
+ui:hint,"Pista",manual translation
+ui:hint_find_error,"Fíjate en las formas de las palabras y en el tiempo verbal.",manual translation
+ui:history,"Historial",manual translation
+ui:in_use,"En uso",manual translation
+ui:ins_antonym,"Elige la palabra con el significado opuesto.",manual translation
+ui:ins_choose,"Elige la respuesta correcta.",manual translation
+ui:ins_cloze,"Elige la palabra que completa mejor la oración.",manual translation
+ui:ins_find_error,"Toca la parte de la oración que está mal.",manual translation
+ui:ins_flashcard,"Intenta recordar el significado y luego gira la tarjeta.",manual translation
+ui:ins_listen,"Escucha y elige la palabra que oyes.",manual translation
+ui:ins_matching,"Relaciona cada palabra con su significado.",manual translation
+ui:ins_meaning,"¿Qué significa esta palabra?",manual translation
+ui:ins_picture_word,"¿Qué palabra corresponde a la imagen?",manual translation
+ui:ins_listen_picture,"Escucha y elige la imagen.",manual translation
+ui:ins_match_pictures,"Relaciona cada imagen con su palabra.",manual translation
+ui:ins_dictation,"Escucha y escribe lo que oyes.",manual translation
+ui:ins_minimal_pair,"¿Qué palabra oyes?",manual translation
+ui:sound_practice,"Comprensión auditiva y pronunciación",manual translation
+ui:sound_practice_desc,"Distingue sonidos parecidos y escribe lo que oyes.",manual translation
+ui:sound_tip,"Consejo: %1$s",manual translation
+ui:play_slow,"Reproducir despacio",manual translation

@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:egg_s1,,,,,"{""g"":""huevo"",""ex"":{""egg_s1"":""Herví un huevo para el desayuno.""}}",manual sense/example review
+words:meat_s1,,,,,"{""g"":""carne"",""ex"":{""meat_s1"":""Esta sopa no contiene carne.""}}",manual sense/example review
+words:fish_s1,,,,,"{""g"":""pez"",""ex"":{""fish_s1"":""Vimos peces pequeños en el arroyo.""}}",animal sense
+words:fish_s2,,,,,"{""g"":""pescado"",""ex"":{""fish_s2"":""Comimos pescado a la parrilla con arroz.""}}",food sense
+words:chicken_s1,,,,,"{""g"":""pollo"",""ex"":{""chicken_s1"":""Cenamos pollo con arroz.""}}",food sense
+words:chicken_s2,,,,,"{""g"":""gallina; pollo"",""ex"":{""chicken_s2"":""Las gallinas caminan por el jardín.""}}",animal sense
+words:tea_s1,,,,,"{""g"":""té"",""ex"":{""tea_s1"":""Mi abuelo toma té después del almuerzo.""}}",manual sense/example review
+words:coffee_s1,,,,,"{""g"":""café"",""ex"":{""coffee_s1"":""Tomo café sin azúcar.""}}",manual sense/example review
+words:sugar_s1,,,,,"{""g"":""azúcar"",""ex"":{""sugar_s1"":""No hay azúcar en esta bebida.""}}",manual sense/example review
+words:salt_s1,,,,,"{""g"":""sal"",""ex"":{""salt_s1"":""Añade un poco de sal a la sopa.""}}",manual sense/example review
+words:lunch_s1,,,,,"{""g"":""almuerzo; comida"",""ex"":{""lunch_s1"":""Llevo mi almuerzo al trabajo.""}}",manual sense/example review
+words:dinner_s1,,,,,"{""g"":""cena"",""ex"":{""dinner_s1"":""La cena está lista, así que lávate las manos.""}}",manual sense/example review
+words:good_s1,,,,,"{""g"":""bueno; buena"",""ex"":{""good_s1"":""Esa es una pregunta muy buena.""}}",manual sense/example review
+words:bad_s1,,,,,"{""g"":""malo; mala"",""ex"":{""bad_s1"":""Nos quedamos en casa por el mal tiempo.""}}",manual sense/example review
+words:big_s1,,,,,"{""g"":""grande"",""ex"":{""big_s1"":""Viven en una casa grande cerca de la playa.""}}",manual sense/example review
+words:small_s1,,,,,"{""g"":""pequeño; pequeña"",""ex"":{""small_s1"":""Llevo un cuaderno pequeño en mi bolso.""}}",manual sense/example review
+words:new_s1,,,,,"{""g"":""nuevo; nueva"",""ex"":{""new_s1"":""Compró un par de zapatos nuevos.""}}",manual sense/example review
+words:old_s1,,,,,"{""g"":""viejo; antigua"",""ex"":{""old_s1"":""Esta foto antigua muestra nuestra primera casa.""}}",manual sense/example review
+words:young_s1,,,,,"{""g"":""joven"",""ex"":{""young_s1"":""El joven músico toca el piano muy bien.""}}",manual sense/example review
+words:long_s1,,,,,"{""g"":""largo; larga"",""ex"":{""long_s1"":""Fue un viaje largo de regreso a casa.""}}",manual sense/example review
+words:short_s1,,,,,"{""g"":""corto; corta"",""ex"":{""short_s1"":""Tomamos un descanso corto después del almuerzo.""}}",manual sense/example review
+words:hot_s1,,,,,"{""g"":""caliente"",""ex"":{""hot_s1"":""Ten cuidado: la sopa está caliente.""}}",manual sense/example review
+words:cold_s1,,,,,"{""g"":""frío; fría"",""ex"":{""cold_s1"":""Necesito una chaqueta porque hace frío afuera.""}}",manual sense/example review
+words:warm_s1,,,,,"{""g"":""cálido; caliente"",""ex"":{""warm_s1"":""Esta manta me mantiene caliente por la noche.""}}",manual sense/example review
+words:cool_s1,,,,,"{""g"":""fresco; fresca"",""ex"":{""cool_s1"":""El aire está fresco por la mañana.""}}",manual sense/example review

@@ -1,0 +1,26 @@
+key,corrected,comment
+words:freedom_s1,"{""g"":""libertad"",""ex"":{""freedom_s1"":""Todos deberían tener libertad de expresión.""}}",manual translation
+words:vehicle_s1,"{""g"":""vehículo"",""ex"":{""vehicle_s1"":""No se permiten vehículos en el parque.""}}",manual translation
+words:route_s1,"{""g"":""ruta"",""ex"":{""route_s1"":""Esta ruta de autobús pasa por el hospital.""}}",manual translation
+words:danger_s1,"{""g"":""peligro"",""ex"":{""danger_s1"":""El letrero advierte del peligro de caída de rocas.""}}",manual translation
+words:army_s1,"{""g"":""ejército"",""ex"":{""army_s1"":""Su hermano se unió al ejército el año pasado.""}}",manual translation
+words:council_s1,"{""g"":""consejo municipal"",""ex"":{""council_s1"":""El consejo municipal aprobó el nuevo parque.""}}",manual translation
+words:sight_s1,"{""g"":""vista, espectáculo"",""ex"":{""sight_s1"":""El atardecer sobre el mar era un hermoso espectáculo.""}}",example-led translation
+words:gift_s1,"{""g"":""regalo"",""ex"":{""gift_s1"":""Gracias por el bonito regalo de cumpleaños.""}}",manual translation
+words:mouth_s1,"{""g"":""boca"",""ex"":{""mouth_s1"":""No hables con la boca llena.""}}",manual translation
+words:noise_s1,"{""g"":""ruido"",""ex"":{""noise_s1"":""El ruido de la calle no me dejó dormir.""}}",manual translation
+words:manner_s1,"{""g"":""manera, forma"",""ex"":{""manner_s1"":""Habló de manera tranquila y amable.""}}",manual translation
+words:occasion_s1,"{""g"":""ocasión"",""ex"":{""occasion_s1"":""Solo comemos pastel en ocasiones especiales.""}}",manual translation
+words:affair_s1,"{""g"":""asunto, evento"",""ex"":{""affair_s1"":""La boda fue un evento familiar pequeño.""}}",example-led translation
+words:belief_s1,"{""g"":""creencia"",""ex"":{""belief_s1"":""Tiene una fuerte creencia en el trabajo duro.""}}",manual translation
+words:prison_s1,"{""g"":""prisión"",""ex"":{""prison_s1"":""El ladrón pasó dos años en prisión.""}}",manual translation
+words:wood_s1,"{""g"":""madera"",""ex"":{""wood_s1"":""La mesa está hecha de madera oscura.""}}",manual translation
+words:shake_s1,"{""g"":""agitar"",""ex"":{""shake_s1"":""Agita la botella antes de beber.""}}",manual translation
+words:description_s1,"{""g"":""descripción"",""ex"":{""description_s1"":""¿Puedes dar una descripción del hombre?""}}",manual translation
+words:confidence_s1,"{""g"":""confianza"",""ex"":{""confidence_s1"":""La práctica te da más confianza al hablar.""}}",manual translation
+words:error_s1,"{""g"":""error"",""ex"":{""error_s1"":""Hay un error en la primera oración.""}}",manual translation
+words:arrest_s1,"{""g"":""arrestar, detener"",""ex"":{""arrest_s1"":""La policía arrestó a dos hombres anoche.""}}",manual translation
+words:beyond_s1,"{""g"":""más allá de"",""ex"":{""beyond_s1"":""El pequeño pueblo está más allá de la montaña.""}}",manual translation
+words:anybody_s1,"{""g"":""alguien, cualquiera"",""ex"":{""anybody_s1"":""¿Hay alguien en casa?""}}",manual translation
+words:dog_s1,"{""g"":""perro"",""ex"":{""dog_s1"":""Su perro duerme junto a la puerta principal.""}}",manual translation
+words:blood_s1,"{""g"":""sangre"",""ex"":{""blood_s1"":""La enfermera tomó una pequeña muestra de sangre.""}}",manual translation

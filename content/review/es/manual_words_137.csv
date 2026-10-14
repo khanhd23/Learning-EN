@@ -1,0 +1,26 @@
+key,corrected,comment
+words:unfollow_s1,"{""g"":""dejar de seguir"",""ex"":{""unfollow_s1"":""Dejé de seguir la cuenta porque publicaba demasiado.""}}",manual translation
+words:profile_s1,"{""g"":""perfil"",""ex"":{""profile_s1"":""Añade una foto a tu perfil.""}}",manual translation
+words:livestream_s1,"{""g"":""transmisión en vivo; directo"",""ex"":{""livestream_s1"":""La banda hizo una transmisión en vivo gratuita desde su estudio.""}}",manual translation
+words:content_creator_s1,"{""g"":""creador de contenido; creadora de contenido"",""ex"":{""content_creator_s1"":""La creadora de contenido publicó una lección de pronunciación.""}}",manual translation
+words:go_viral_s1,"{""g"":""volverse viral; hacerse viral"",""ex"":{""go_viral_s1"":""La entrevista se volvió viral después de una respuesta memorable.""}}",manual translation
+words:screen_time_s1,"{""g"":""tiempo de pantalla"",""ex"":{""screen_time_s1"":""La aplicación ayuda a los padres a controlar el tiempo de pantalla diario.""}}",manual translation
+words:privacy_s1,"{""g"":""privacidad"",""ex"":{""privacy_s1"":""Por favor, respeta mi privacidad y toca antes de entrar.""}}",manual translation
+words:scam_s1,"{""g"":""estafa; fraude"",""ex"":{""scam_s1"":""Ese mensaje es una estafa. No hagas clic en el enlace.""}}",manual translation
+words:fair_enough_s1,"{""g"":""de acuerdo; está bien"",""ex"":{""fair_enough_s1"":""De acuerdo; podemos intentarlo de nuevo mañana.""}}",manual translation
+words:i_m_down_s1,"{""g"":""me apunto; acepto"",""ex"":{""i_m_down_s1"":""Me apunto, así que iré a caminar.""}}",manual translation
+words:for_real_s1,"{""g"":""en serio; de verdad"",""ex"":{""for_real_s1"":""¿De verdad hablas en serio sobre mudarte a otra ciudad?""}}",manual translation
+words:catch_up_s1,"{""g"":""ponerse al día"",""ex"":{""catch_up_s1"":""Falté una semana a clases y necesito ponerme al día.""}}",manual translation
+words:my_treat_s1,"{""g"":""yo invito; corre por mi cuenta"",""ex"":{""my_treat_s1"":""No te preocupes por el café; yo invito.""}}",manual translation
+words:that_makes_sense_s1,"{""g"":""eso tiene sentido"",""ex"":{""that_makes_sense_s1"":""Ahora tiene sentido, ya que explicaste la regla.""}}",manual translation
+words:how_come_s1,"{""g"":""cómo es que; por qué"",""ex"":{""how_come_s1"":""¿Cómo es que saliste tan temprano de la reunión?""}}",manual translation
+words:chill_s1,"{""g"":""relajarse; descansar"",""ex"":{""chill_s1"":""Pasamos todo el día relajándonos en casa.""}}",source definition differs; corrected follows the informal example
+words:chill_s2,"{""g"":""tranquilo; relajado"",""ex"":{""chill_s2"":""Mi jefe es bastante tranquilo con los errores pequeños.""}}",manual translation
+words:look_forward_to_s1,"{""g"":""esperar con ilusión; tener ganas de"",""ex"":{""look_forward_to_s1"":""Tengo muchas ganas de que lleguen las vacaciones de verano.""}}",manual translation
+words:turn_down_s1,"{""g"":""rechazar"",""ex"":{""turn_down_s1"":""Rechazó el trabajo porque el sueldo era bajo.""}}",manual translation
+words:set_up_s1,"{""g"":""montar; establecer"",""ex"":{""set_up_s1"":""Montaron juntos una pequeña tienda en línea.""}}",manual translation
+words:figure_out_s1,"{""g"":""entender; descubrir"",""ex"":{""figure_out_s1"":""No logro entender cómo funciona esta máquina.""}}",manual translation
+words:put_off_s1,"{""g"":""posponer; aplazar"",""ex"":{""put_off_s1"":""No pospongas la tarea hasta el domingo por la noche.""}}",manual translation
+words:call_off_s1,"{""g"":""cancelar"",""ex"":{""call_off_s1"":""El partido se canceló por la lluvia.""}}",manual translation
+words:carry_on_s1,"{""g"":""continuar; seguir"",""ex"":{""carry_on_s1"":""Continúa con tu trabajo mientras estoy fuera.""}}",manual translation
+words:show_up_s1,"{""g"":""presentarse; llegar"",""ex"":{""show_up_s1"":""Solo cinco personas se presentaron a la reunión.""}}",manual translation

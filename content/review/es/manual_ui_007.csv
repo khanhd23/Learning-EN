@@ -1,0 +1,60 @@
+key,corrected,comment
+ui:preset_saved,"Práctica guardada",manual translation
+ui:prev,"Anterior",manual translation
+ui:privacy_policy,"Política de privacidad",manual translation
+ui:privacy_intro_title,"Tus datos, explicados claramente",manual translation
+ui:privacy_intro,"LingoMori guarda tu progreso de aprendizaje solo en este dispositivo. No tenemos un servidor y la aplicación no requiere una cuenta.",manual translation
+ui:privacy_backup_title,"Copia de seguridad",manual translation
+ui:privacy_backup,"Android puede incluir estos datos en tu propia copia de seguridad de Google.",manual translation
+ui:privacy_ads_title,"Publicidad y opciones de privacidad",manual translation
+ui:privacy_ads,"La aplicación muestra anuncios de Google AdMob. AdMob puede recopilar tu identificador de publicidad, dirección IP e interacciones con los anuncios. Puedes revisar tus opciones de publicidad en Ajustes.",manual translation
+ui:privacy_microphone_title,"Práctica de conversación",manual translation
+ui:privacy_microphone,"El micrófono se usa únicamente para practicar conversación. El servicio de voz de tu teléfono convierte el habla en texto; LingoMori no graba ni conserva el audio.",manual translation
+ui:privacy_reminders_title,"Recordatorios",manual translation
+ui:privacy_reminders,"Los recordatorios son opcionales.",manual translation
+ui:privacy_link_hint,"Para consultar la política completa, abre la página pública de la política que aparece abajo.",manual translation
+ui:privacy_open_link,"Abrir la política pública",manual translation
+ui:privacy_text,"LingoMori guarda tu progreso de aprendizaje solo en este dispositivo; no tenemos servidor ni cuenta. Android puede incluirlo en tu propia copia de seguridad de Google. La aplicación muestra anuncios de Google AdMob, que puede recopilar tu identificador de publicidad, dirección IP e interacciones con los anuncios; puedes revisar las opciones de publicidad en Ajustes. El micrófono se usa únicamente para practicar conversación: el servicio de voz de tu teléfono convierte el habla en texto y la aplicación nunca graba ni conserva el audio. Los recordatorios son opcionales. La política completa está en el enlace siguiente.",manual translation
+ui:quick_session,"Sesión rápida",manual translation
+ui:quiet_hours,"Nunca se envían recordatorios entre las 22:00 y las 08:00.",manual translation
+ui:quit_keep,"Seguir",manual translation
+ui:quit_leave,"Salir",manual translation
+ui:quit_msg,"Perderás el progreso de esta sesión.",manual translation
+ui:quit_title,"¿Salir de esta sesión?",manual translation
+ui:rate_again,"Otra vez",manual translation
+ui:rate_easy,"Fácil",manual translation
+ui:rate_good,"Bien",manual translation
+ui:rate_hard,"Difícil",manual translation
+ui:rate_msg,"Si te gusta LingoMori, una valoración rápida ayuda a otros estudiantes a encontrarla.",manual translation
+ui:rate_title,"¿Te gusta LingoMori?",manual translation
+ui:rate_yes,"Valorar ahora",manual translation
+ui:recent_searches,"Búsquedas recientes",manual translation
+ui:redo_all,"Repetir todo (%1$d)",manual translation
+ui:redo_group,"Repetir este grupo",manual translation
+ui:remove_mastered,"Eliminar las preguntas que ya dominas",manual translation
+ui:rename,"Cambiar nombre",manual translation
+ui:report,"Informar de un problema",manual translation
+ui:report_body,"Revisa el elemento de contenido %1$s.",manual translation
+ui:report_subject,"Informe de contenido: %1$s",manual translation
+ui:reset_confirm,"Restablecer",manual translation
+ui:reset_done,"Progreso restablecido",manual translation
+ui:reset_msg,"Se eliminarán todo tu progreso de aprendizaje, las palabras guardadas y el progreso de tu mascota. Esta acción no se puede deshacer.",manual translation
+ui:reset_progress,"Restablecer todo el progreso",manual translation
+ui:reset_title,"¿Restablecer el progreso?",manual translation
+ui:result_done,"Sesión completada",manual translation
+ui:result_great,"¡Excelente trabajo!",manual translation
+ui:result_meta,"%1$d preguntas · %2$d:%3$02d",manual translation
+ui:retry_wrong,"Reintentar las respuestas incorrectas",manual translation
+ui:review_answers,"Revisar tus respuestas",manual translation
+ui:review_each,"Revisar cada pregunta",manual translation
+ui:review_now,"Repasar",manual translation
+ui:review_now_title,"Repasar",manual translation
+ui:rv_flagged,"Marcadas",manual translation
+ui:rv_wrong,"Incorrectas",manual translation
+ui:save,"Guardar",manual translation
+ui:save_preset,"Guardar práctica",manual translation
+ui:saved,"Guardadas",manual translation
+ui:search,"Buscar",manual translation
+ui:search_hint,"Buscar palabras o gramática",manual translation
+ui:seconds_left,"Quedan %1$d s",manual translation
+ui:see_word,"Ver palabra",manual translation

@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:particular_s1,,,,,"{""g"":""particular; específico"",""ex"":{""particular_s1"":""Tiene un motivo específico para irse temprano.""}}",manual sense/example review
+words:true_s1,,,,,"{""g"":""verdadero; verdad"",""ex"":{""true_s1"":""¿Es verdad que la tienda cierra temprano hoy?""}}",manual sense/example review
+words:front_s1,,,,,"{""g"":""frente; parte delantera"",""ex"":{""front_s1"":""Avanza hasta el frente de la fila.""}}",manual position review
+words:behind_s1,,,,,"{""g"":""detrás de"",""ex"":{""behind_s1"":""La bicicleta está estacionada detrás de la casa.""}}",manual preposition review
+words:finally_s1,,,,,"{""g"":""finalmente; por fin"",""ex"":{""finally_s1"":""Por fin llegó el autobús después de una hora.""}}",manual time review
+words:nice_s1,,,,,"{""g"":""agradable; amable"",""ex"":{""nice_s1"":""El dependiente de la tienda fue amable con nosotros.""}}",manual sense/example review
+words:round_s1,,,,,"{""g"":""redondo; redonda"",""ex"":{""round_s1"":""Nos sentamos alrededor de una mesa redonda.""}}",manual shape review
+words:likely_s1,,,,,"{""g"":""probable"",""ex"":{""likely_s1"":""Es probable que llueva más tarde esta tarde.""}}",manual probability review
+words:certainly_s1,,,,,"{""g"":""sin duda; ciertamente"",""ex"":{""certainly_s1"":""Sin duda llamará antes de la cena.""}}",manual certainty review
+words:national_s1,,,,,"{""g"":""nacional"",""ex"":{""national_s1"":""El equipo ganó una competencia nacional.""}}",manual sense/example review
+words:common_s1,,,,,"{""g"":""común"",""ex"":{""common_s1"":""El azul es un color común para los uniformes escolares.""}}",manual sense/example review
+words:material_s1,,,,,"{""g"":""material"",""ex"":{""material_s1"":""La madera es un material de construcción común.""}}",manual sense/example review
+words:due_s1,,,,,"{""g"":""vencer; pendiente de pago"",""ex"":{""due_s1"":""El pago vence el próximo viernes.""}}",payment context
+words:complete_s1,,,,,"{""g"":""completo; completa"",""ex"":{""complete_s1"":""Proporciona una lista completa de ingredientes.""}}",manual sense/example review
+words:personal_s1,,,,,"{""g"":""personal"",""ex"":{""personal_s1"":""Esta es mi opinión personal sobre el plan.""}}",manual sense/example review
+words:similar_s1,,,,,"{""g"":""similar"",""ex"":{""similar_s1"":""Las dos imágenes se ven muy similares.""}}",manual sense/example review
+words:fine_s1,,,,,"{""g"":""bien; estar bien"",""ex"":{""fine_s1"":""Todo está bien después de la reparación.""}}",false-friend review: here “fine” means okay
+words:former_s1,,,,,"{""g"":""anterior; antiguo"",""ex"":{""former_s1"":""Su antiguo profesor todavía le envía consejos útiles.""}}",manual sense/example review
+words:particularly_s1,,,,,"{""g"":""particularmente; sobre todo"",""ex"":{""particularly_s1"":""Me gusta el invierno, sobre todo en las mañanas tranquilas.""}}",manual emphasis review
+words:firm_s1,,,,,"{""g"":""firma (empresa)"",""ex"":{""firm_s1"":""Trabaja para una pequeña firma de abogados.""}}",false-friend review: business, not “firme”
+words:foreign_s1,,,,,"{""g"":""extranjero; extranjera"",""ex"":{""foreign_s1"":""Le gusta conocer a estudiantes extranjeros en la universidad.""}}",manual sense/example review
+words:pretty_s1,,,,,"{""g"":""bastante"",""ex"":{""pretty_s1"":""La comida aquí está bastante buena.""}}",false-friend review: degree adverb
+words:recent_s1,,,,,"{""g"":""reciente"",""ex"":{""recent_s1"":""¿Has leído noticias recientes sobre el espacio?""}}",manual sense/example review
+words:official_s1,,,,,"{""g"":""oficial"",""ex"":{""official_s1"":""Espera el anuncio oficial.""}}",manual sense/example review
+words:private_s1,,,,,"{""g"":""privado; privada"",""ex"":{""private_s1"":""El médico habló conmigo en una sala privada.""}}",manual sense/example review

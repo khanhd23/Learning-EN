@@ -1,0 +1,26 @@
+key,corrected,comment
+words:email_s1,"{""g"":""correo electrónico"",""ex"":{""email_s1"":""Esta mañana envié el recibo por correo electrónico.""}}",manual translation
+words:global_s1,"{""g"":""mundial, global"",""ex"":{""global_s1"":""El cambio climático es un problema mundial.""}}",manual translation
+words:select_s1,"{""g"":""seleccionar, elegir"",""ex"":{""select_s1"":""Selecciona la respuesta que complete mejor la oración.""}}",manual translation
+words:surround_s1,"{""g"":""rodear"",""ex"":{""surround_s1"":""Árboles altos rodean la casa tranquila.""}}",manual translation
+words:fully_s1,"{""g"":""completamente"",""ex"":{""fully_s1"":""La sala está completamente preparada para la reunión.""}}",manual translation
+words:conflict_s1,"{""g"":""conflicto"",""ex"":{""conflict_s1"":""El acuerdo ayudó a prevenir un conflicto.""}}",manual translation
+words:entire_s1,"{""g"":""entero, entera; todo"",""ex"":{""entire_s1"":""Pasó todo el día leyendo.""}}",manual translation
+words:gas_s1,"{""g"":""gas"",""ex"":{""gas_s1"":""La estufa usa gas para cocinar.""}}",manual translation
+words:category_s1,"{""g"":""categoría"",""ex"":{""category_s1"":""Pon cada palabra en la categoría correcta.""}}",manual translation
+words:defense_s1,"{""g"":""defensa, protección"",""ex"":{""defense_s1"":""La pared ofrece protección contra los vientos fuertes.""}}",manual translation
+words:nuclear_s1,"{""g"":""nuclear"",""ex"":{""nuclear_s1"":""El país debatió la política de energía nuclear.""}}",manual translation
+words:driver_s1,"{""g"":""conductor, conductora"",""ex"":{""driver_s1"":""El conductor se detuvo cerca de la estación.""}}",manual translation
+words:introduction_s1,"{""g"":""introducción"",""ex"":{""introduction_s1"":""La introducción explica el propósito del informe.""}}",manual translation
+words:senior_s1,"{""g"":""superior, de alto rango"",""ex"":{""senior_s1"":""Un gerente de alto rango aprobó la solicitud.""}}",manual translation
+words:photo_s1,"{""g"":""foto, fotografía"",""ex"":{""photo_s1"":""Envió una foto del viaje familiar.""}}",manual translation
+words:refuse_s1,"{""g"":""negarse a, rechazar"",""ex"":{""refuse_s1"":""Se negó a firmar el contrato incompleto.""}}",manual translation
+words:transport_s1,"{""g"":""transporte"",""ex"":{""transport_s1"":""El transporte público es más barato que conducir.""}}",manual translation
+words:emerge_s1,"{""g"":""surgir, aparecer"",""ex"":{""emerge_s1"":""Surgió un nuevo problema durante las pruebas.""}}",manual translation
+words:concept_s1,"{""g"":""concepto"",""ex"":{""concept_s1"":""El profesor explicó el concepto con un ejemplo.""}}",manual translation
+words:left_s1,"{""g"":""quedar; izquierdo, izquierda"",""ex"":{""left_s1"":""Solo quedan dos asientos cerca del frente.""}}",example-led translation
+words:solve_s1,"{""g"":""resolver"",""ex"":{""solve_s1"":""El equipo resolvió rápidamente el problema técnico.""}}",manual translation
+words:technique_s1,"{""g"":""técnica"",""ex"":{""technique_s1"":""Esta técnica mejora la velocidad de lectura.""}}",manual translation
+words:tool_s1,"{""g"":""herramienta"",""ex"":{""tool_s1"":""Un diccionario es una herramienta útil para los estudiantes.""}}",manual translation
+words:combine_s1,"{""g"":""combinar"",""ex"":{""combine_s1"":""Combina los ingredientes en un tazón grande.""}}",manual translation
+words:hide_s1,"{""g"":""esconder, ocultar"",""ex"":{""hide_s1"":""El niño escondió el regalo detrás de la silla.""}}",manual translation

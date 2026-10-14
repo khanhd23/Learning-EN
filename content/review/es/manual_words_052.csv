@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:were_s1,,,,,"{""g"":""eran; estaban; fueron"",""ex"":{""were_s1"":""Estaban listos antes de que llegara el profesor.""}}",English past be-form rendered in context
+words:whose_s1,,,,,"{""g"":""de quién"",""ex"":{""whose_s1"":""¿De quién es el cuaderno que está en el escritorio?""}}",manual question-word review
+words:your_s1,,,,,"{""g"":""tu; su"",""ex"":{""your_s1"":""Escribe tu nombre en la parte superior.""}}",Spanish possessive depends on formality
+words:yours_s1,,,,,"{""g"":""tuyo; tuya; suyo; suya"",""ex"":{""yours_s1"":""¿Este paraguas es tuyo o mío?""}}",Spanish possessive agrees with the owned noun
+words:colour_s1,,,,,"{""g"":""color"",""ex"":{""colour_s1"":""El azul es mi color favorito.""}}",British spelling maps to same Spanish word
+words:e_mail_s1,,,,,"{""g"":""correo electrónico; email"",""ex"":{""e_mail_s1"":""Envié un correo electrónico con el horario actualizado.""}}",regional variants retained for es-419
+words:favourite_s1,,,,,"{""g"":""favorito; favorita"",""ex"":{""favourite_s1"":""El azul es su color favorito.""}}",British spelling maps to same Spanish word
+words:grey_s1,,,,,"{""g"":""gris"",""ex"":{""grey_s1"":""El cielo gris cubrió la ciudad toda la mañana.""}}",British spelling maps to same Spanish word
+words:maths_s1,,,,,"{""g"":""matemáticas"",""ex"":{""maths_s1"":""Las matemáticas eran su materia favorita en la escuela.""}}",British school term maps to Spanish plural noun
+words:me_s1,,,,,"{""g"":""me"",""ex"":{""me_s1"":""Envíame la dirección antes del mediodía.""}}",Spanish object pronoun
+words:mommy_s1,,,,,"{""g"":""mami; mamá"",""ex"":{""mommy_s1"":""El niño llamó a su mamá después de despertarse.""}}",informal-register context
+words:t_shirt_s1,,,,,"{""g"":""camiseta; playera"",""ex"":{""t_shirt_s1"":""Llevaba una camiseta limpia al picnic.""}}",regional variants retained for es-419
+words:us_s1,,,,,"{""g"":""nos"",""ex"":{""us_s1"":""El guía nos mostró la ruta más segura.""}}",Spanish object pronoun
+words:yoghurt_s1,,,,,"{""g"":""yogur"",""ex"":{""yoghurt_s1"":""Añadió fruta fresca al yogur.""}}",British spelling maps to same Spanish word
+words:bookshop_s1,,,,,"{""g"":""librería"",""ex"":{""bookshop_s1"":""Encontramos el cuaderno de ejercicios en una librería pequeña.""}}",British term; distinguish from library/biblioteca
+words:centimetre_s1,,,,,"{""g"":""centímetro"",""ex"":{""centimetre_s1"":""La mesa mide noventa centímetros de ancho.""}}",British spelling maps to same Spanish unit
+words:centre_s1,,,,,"{""g"":""centro"",""ex"":{""centre_s1"":""La biblioteca está en el centro del pueblo.""}}",British spelling maps to same Spanish word
+words:chilli_s1,,,,,"{""g"":""chile; ají"",""ex"":{""chilli_s1"":""Añade un chile si te gusta la sopa picante.""}}",British spelling; regional variants retained for es-419
+words:been_s1,,,,,"{""g"":""estado; sido"",""ex"":{""been_s1"":""He estado ocupado desde temprano.""}}",English past participle rendered in context
+words:done_s1,,,,,"{""g"":""hecho"",""ex"":{""done_s1"":""¿Has hecho el primer ejercicio?""}}",English past participle rendered in context
+words:gramme_s1,,,,,"{""g"":""gramo"",""ex"":{""gramme_s1"":""La receta necesita dos gramos de sal.""}}",British spelling maps to same Spanish unit
+words:granddad_s1,,,,,"{""g"":""abuelo; abuelito"",""ex"":{""granddad_s1"":""Mi abuelo cultiva verduras detrás de su casa.""}}",informal-register context
+words:granny_s1,,,,,"{""g"":""abuela; abuelita"",""ex"":{""granny_s1"":""Su abuela le envía una tarjeta cada cumpleaños.""}}",informal-register context
+words:kilometre_s1,,,,,"{""g"":""kilómetro"",""ex"":{""kilometre_s1"":""El pueblo está a tres kilómetros de la estación.""}}",British spelling maps to same Spanish unit
+words:omelette_s1,,,,,"{""g"":""omelet; tortilla de huevo"",""ex"":{""omelette_s1"":""Pidió un omelet con hierbas frescas.""}}",British spelling; regional variants retained for es-419

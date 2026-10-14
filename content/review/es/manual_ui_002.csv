@@ -1,0 +1,88 @@
+key,corrected,comment
+ui:ach_pet10,"Leyenda",manual translation
+ui:ach_pet10_h,"Sube a tu mascota hasta la etapa 10",manual translation
+ui:ach_pet3,"Creciendo",manual translation
+ui:ach_pet3_h,"Sube a tu mascota hasta la etapa 3",manual translation
+ui:ach_pet5,"Mejores amigos",manual translation
+ui:ach_pet5_h,"Sube a tu mascota hasta la etapa 5",manual translation
+ui:ach_streak3,"En racha",manual translation
+ui:ach_streak3_h,"Estudia 3 días seguidos",manual translation
+ui:ach_streak30,"Imparable",manual translation
+ui:ach_streak30_h,"Estudia 30 días seguidos",manual translation
+ui:ach_streak7,"Una semana completa",manual translation
+ui:ach_streak7_h,"Estudia 7 días seguidos",manual translation
+ui:ach_w200,"Coleccionista de palabras",manual translation
+ui:ach_w200_h,"Domina 200 palabras",manual translation
+ui:ach_w50,"Primeros pasos",manual translation
+ui:ach_w50_h,"Domina 50 palabras",manual translation
+ui:ach_w500,"Mago de las palabras",manual translation
+ui:ach_w500_h,"Domina 500 palabras",manual translation
+ui:achievements,"Logros",manual translation
+ui:ad_loading,"Cargando el video; espera un momento…",manual translation
+ui:loading,"Cargando…",manual translation
+ui:ad_limit,"Has alcanzado el límite diario de anuncios. Aun así, puedes estudiar gratis.",manual translation
+ui:all_types,"Todos los tipos de preguntas",manual translation
+ui:app_short_name,"LingoMori",manual translation
+ui:b_count,"Número de preguntas",manual translation
+ui:b_level,"Nivel",manual translation
+ui:b_mode,"Modo",manual translation
+ui:b_skill,"Habilidad",manual translation
+ui:b_source,"Preguntas de",manual translation
+ui:b_topic,"Tema",manual translation
+ui:b_type,"Tipo de pregunta",manual translation
+ui:back,"Atrás",manual translation
+ui:backup_info,"Tu progreso se guarda en este dispositivo y se incluye en la copia de seguridad de tu teléfono.",manual translation
+ui:best_combo,"Mejor combo: %1$d",manual translation
+ui:blank_n,"Espacio %1$d",manual translation
+ui:bowl_full,"%1$s está lleno. ¡Vuelve más tarde!",manual translation
+ui:bowl_hungry,"%1$s tiene hambre. ¡Estudia para darle de comer!",manual translation
+ui:bowl_ok,"%1$s ha comido. ¿Estudiamos un poco más?",manual translation
+ui:builder_sub,"Elige temas, habilidades y tipos de preguntas.",manual translation
+ui:builder_title,"Crea tu propia práctica",manual translation
+ui:buy,"Comprar",manual translation
+ui:buy_msg,"¿Comprar esto por %1$d monedas?",manual translation
+ui:by_level,"Por nivel",manual translation
+ui:by_qtype,"Por tipo de pregunta",manual translation
+ui:by_skill,"Por habilidad",manual translation
+ui:by_topic,"Por tema",manual translation
+ui:by_type,"Practicar por tipo de pregunta",manual translation
+ui:by_type_sub,"Concéntrate en un tipo de pregunta a la vez.",manual translation
+ui:by_type_title,"Practicar por tipo",manual translation
+ui:cancel,"Cancelar",manual translation
+ui:change_species,"Cambiar mascota",manual translation
+ui:chart_14,"Últimos 14 días",manual translation
+ui:check,"Comprobar",manual translation
+ui:choose_format,"Elige un formato de examen",manual translation
+ui:clear,"Borrar",manual translation
+ui:close,"Cerrar",manual translation
+ui:coins_hint,"Gasta las monedas que ganas al estudiar.",manual translation
+ui:coins_earned,"Has ganado %1$d monedas.",manual translation
+ui:collocations,"Combinaciones frecuentes",manual translation
+ui:coming_soon,"Próximamente",manual translation
+ui:common_mistakes,"Errores frecuentes",manual translation
+ui:confusables,"Palabras que se confunden fácilmente",manual translation
+ui:confused_with,"A menudo se confunde con",manual translation
+ui:cont,"Continuar",manual translation
+ui:contact,"Contáctanos",manual translation
+ui:continue_grammar,"Continuar: %1$s (%2$d%%)",manual translation
+ui:continue_label,"Continuar",manual translation
+ui:continue_mock,"Continuar tu prueba de práctica",manual translation
+ui:correct_answer_is,"La respuesta correcta es: %1$s",manual translation
+ui:story_score,"%1$d de %2$d correctas",manual translation
+ui:d_easy,"Fácil",manual translation
+ui:d_hard,"Difícil",manual translation
+ui:d_medium,"Medio",manual translation
+ui:d_mixed,"Mixto",manual translation
+ui:daily_goal,"Objetivo diario",manual translation
+ui:day_detail,"Día %1$s: %2$d XP · %3$d min · %4$d respuestas",manual translation
+ui:decorate,"Decorar",manual translation
+ui:disclaimer,"Las pruebas de práctica son solo para estudiar. No son exámenes oficiales.",manual translation
+ui:disclaimer_full,"LingoMori es una aplicación de aprendizaje independiente. No está vinculada a ningún organizador de exámenes y las puntuaciones de práctica son solo estimaciones. Las listas de palabras se basan en listas de vocabulario abiertas; consulta Licencias para obtener más información. TOEIC, IELTS y los demás nombres de exámenes son marcas comerciales de sus propietarios; LingoMori no está afiliada ni respaldada por ellos.",manual translation
+ui:done,"Listo",manual translation
+ui:double_xp,"Duplica tu XP",manual translation
+ui:double_xp_done,"¡Has ganado %1$d XP extra!",manual translation
+ui:double_xp_sub,"Mira un video corto para duplicar el XP de esta sesión.",manual translation
+ui:dozing_sub,"Estudia para despertar a tu mascota y recuperar %1$d XP.",manual translation
+ui:dozing_title,"%1$s se ha quedado dormido",manual translation
+ui:drills_ready,"¡Listo para practicar!",manual translation
+ui:drills_sub,"Responde %1$d preguntas para comprobar lo que aprendiste.",manual translation

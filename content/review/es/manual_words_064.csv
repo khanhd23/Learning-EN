@@ -1,0 +1,26 @@
+key,corrected,comment
+words:weak_s1,"{""g"":""débil"",""ex"":{""weak_s1"":""Me sentí débil después de la enfermedad.""}}",manual translation
+words:important_s1,"{""g"":""importante"",""ex"":{""important_s1"":""Es importante revisar tu trabajo.""}}",manual translation
+words:possible_s1,"{""g"":""posible"",""ex"":{""possible_s1"":""¿Es posible cambiar la fecha?""}}",manual translation
+words:impossible_s1,"{""g"":""imposible"",""ex"":{""impossible_s1"":""Es imposible leer en completa oscuridad.""}}",manual translation
+words:careful_s1,"{""g"":""cuidadoso, cuidadosa; tener cuidado"",""ex"":{""careful_s1"":""Ten cuidado con ese vaso.""}}",manual translation
+words:dangerous_s1,"{""g"":""peligroso, peligrosa"",""ex"":{""dangerous_s1"":""Nadar aquí es peligroso por la fuerte corriente.""}}",manual translation
+words:fun_s1,"{""g"":""divertido, divertida"",""ex"":{""fun_s1"":""La clase de cocina fue divertida.""}}",manual translation
+words:fun_s2,"{""g"":""diversión"",""ex"":{""fun_s2"":""Nos divertimos mucho en el picnic.""}}",example-led translation
+words:funny_s1,"{""g"":""gracioso, graciosa"",""ex"":{""funny_s1"":""Contó una historia graciosa sobre su perro.""}}",manual translation
+words:boring_s1,"{""g"":""aburrido, aburrida"",""ex"":{""boring_s1"":""La película era tan aburrida que dejé de verla.""}}",manual translation
+words:exciting_s1,"{""g"":""emocionante"",""ex"":{""exciting_s1"":""Empezar un curso nuevo es emocionante.""}}",manual translation
+words:alone_s1,"{""g"":""solo, sola"",""ex"":{""alone_s1"":""Ella estaba sola en el salón de clases.""}}",manual translation
+words:polite_s1,"{""g"":""educado, educada; cortés"",""ex"":{""polite_s1"":""Le dio una respuesta cortés al cliente.""}}",manual translation
+words:rude_s1,"{""g"":""grosero, grosera"",""ex"":{""rude_s1"":""Es grosero interrumpir a alguien repetidamente.""}}",manual translation
+words:while_s1,"{""g"":""mientras"",""ex"":{""while_s1"":""Escuché música mientras cocinaba.""}}",manual translation
+words:during_s1,"{""g"":""durante"",""ex"":{""during_s1"":""Apaga el teléfono durante la clase.""}}",manual translation
+words:since_s1,"{""g"":""desde"",""ex"":{""since_s1"":""Vivo aquí desde 2020.""}}",manual translation
+words:since_s2,"{""g"":""desde que"",""ex"":{""since_s2"":""La conozco desde que éramos niños.""}}",manual translation
+words:until_s1,"{""g"":""hasta"",""ex"":{""until_s1"":""La biblioteca está abierta hasta las ocho.""}}",manual translation
+words:among_s1,"{""g"":""entre"",""ex"":{""among_s1"":""Encontré mi pluma entre los libros.""}}",manual translation
+words:its_s1,"{""g"":""su (posesivo)"",""ex"":{""its_s1"":""El gato se está lavando la cara.""}}",source/example mismatch noted
+words:instead_s1,"{""g"":""en vez de, en su lugar"",""ex"":{""instead_s1"":""No había té, así que elegí agua en su lugar.""}}",manual translation
+words:either_s1,"{""g"":""cualquiera de los dos"",""ex"":{""either_s1"":""Ambos asientos están vacíos; puedes tomar cualquiera.""}}",manual translation
+words:career_s1,"{""g"":""carrera profesional"",""ex"":{""career_s1"":""Quiere una carrera en educación.""}}",manual translation
+words:advice_s1,"{""g"":""consejo"",""ex"":{""advice_s1"":""Gracias por tu útil consejo.""}}",manual translation

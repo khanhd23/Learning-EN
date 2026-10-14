@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:animation_s1,,,,,"{""g"":""animación"",""ex"":{""animation_s1"":""La clase creó una animación corta sobre el reciclaje.""}}",manual media review
+words:bronze_s1,,,,,"{""g"":""bronce"",""ex"":{""bronze_s1"":""El atleta ganó una medalla de bronce en la final.""}}",manual sport review
+words:cd_rom_s1,,,,,"{""g"":""CD-ROM"",""ex"":{""cd_rom_s1"":""El programa de computadora antiguo venía en un CD-ROM.""}}",manual technology review
+words:chuckle_s1,,,,,"{""g"":""reírse bajito; soltar una risita"",""ex"":{""chuckle_s1"":""Se rio bajito cuando leyó el mensaje gracioso.""}}",manual sound/action review
+words:cliff_s1,,,,,"{""g"":""acantilado"",""ex"":{""cliff_s1"":""El camino sigue el acantilado sobre el mar.""}}",manual nature review
+words:cod_s1,,,,,"{""g"":""bacalao"",""ex"":{""cod_s1"":""El restaurante sirve bacalao al horno con papas.""}}",manual food review
+words:comedian_s1,,,,,"{""g"":""comediante"",""ex"":{""comedian_s1"":""El comediante contó chistes sobre la vida familiar cotidiana.""}}",manual occupation review
+words:comet_s1,,,,,"{""g"":""cometa (astronomía)"",""ex"":{""comet_s1"":""El astrónomo fotografió un cometa con el telescopio.""}}",context disambiguation from kite
+words:comma_s1,,,,,"{""g"":""coma"",""ex"":{""comma_s1"":""Pon una coma después de la frase inicial.""}}",manual punctuation review
+words:complicated_s1,,,,,"{""g"":""complicado; complicada"",""ex"":{""complicated_s1"":""Las instrucciones parecen complicadas, pero son fáciles de seguir.""}}",manual sense/example review
+words:confusing_s1,,,,,"{""g"":""confuso; confusa"",""ex"":{""confusing_s1"":""El mapa confuso nos llevó en la dirección equivocada.""}}",manual sense/example review
+words:courgette_s1,,,,,"{""g"":""calabacita; calabacín"",""ex"":{""courgette_s1"":""Cortó una calabacita para la sopa de verduras.""}}",British source term with es-419 variants
+words:april_s1,,,,,"{""g"":""abril"",""ex"":{""april_s1"":""Nuestro semestre de primavera comienza en abril.""}}",Spanish months are lowercase
+words:august_s1,,,,,"{""g"":""agosto"",""ex"":{""august_s1"":""Las vacaciones escolares más calurosas suelen ser en agosto.""}}",Spanish months are lowercase
+words:december_s1,,,,,"{""g"":""diciembre"",""ex"":{""december_s1"":""Decoramos juntos el aula en diciembre.""}}",Spanish months are lowercase
+words:february_s1,,,,,"{""g"":""febrero"",""ex"":{""february_s1"":""Su cumpleaños es en febrero de este año.""}}",Spanish months are lowercase
+words:january_s1,,,,,"{""g"":""enero"",""ex"":{""january_s1"":""El nuevo semestre empieza en enero.""}}",Spanish months are lowercase
+words:july_s1,,,,,"{""g"":""julio"",""ex"":{""july_s1"":""Muchas familias viajan durante julio.""}}",Spanish months are lowercase
+words:june_s1,,,,,"{""g"":""junio"",""ex"":{""june_s1"":""La temporada de lluvias suele comenzar en junio.""}}",Spanish months are lowercase
+words:september_s1,,,,,"{""g"":""septiembre"",""ex"":{""september_s1"":""Los estudiantes regresan a la escuela en septiembre.""}}",Spanish months are lowercase
+words:grandma_s1,,,,,"{""g"":""abuela"",""ex"":{""grandma_s1"":""Mi abuela cultiva hierbas junto a su cocina.""}}",manual family review
+words:grandpa_s1,,,,,"{""g"":""abuelo"",""ex"":{""grandpa_s1"":""Mi abuelo lee el periódico después del desayuno.""}}",manual family review
+words:daddy_s1,,,,,"{""g"":""papá"",""ex"":{""daddy_s1"":""Papá lleva las compras a casa después del trabajo.""}}",informal-register context
+words:cucumber_s1,,,,,"{""g"":""pepino"",""ex"":{""cucumber_s1"":""Corté un pepino fresco para la ensalada.""}}",manual food review
+words:lettuce_s1,,,,,"{""g"":""lechuga"",""ex"":{""lettuce_s1"":""Lava la lechuga antes de preparar los sándwiches.""}}",manual food review

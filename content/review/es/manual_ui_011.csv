@@ -1,0 +1,67 @@
+key,corrected,comment
+ui:pet_item_rug_round,"Alfombra redonda",manual translation
+ui:pet_item_rug_rainbow,"Alfombra arcoíris",manual translation
+ui:pet_item_rug_paw,"Alfombra de huellas",manual translation
+ui:pet_item_plant_cactus,"Cactus",manual translation
+ui:pet_item_plant_monstera,"Monstera",manual translation
+ui:pet_item_plant_sunflower,"Girasol",manual translation
+ui:pet_item_lamp_floor,"Lámpara de pie",manual translation
+ui:pet_item_lamp_star,"Lámpara de estrella",manual translation
+ui:pet_item_lamp_lava,"Lámpara de lava",manual translation
+ui:pet_item_wall_abc,"Póster del abecedario",manual translation
+ui:pet_item_wall_clock,"Reloj de pared",manual translation
+ui:pet_item_wall_map,"Mapa del mundo",manual translation
+ui:pet_item_toy_ball,"Pelota",manual translation
+ui:pet_item_toy_yarn,"Ovillo de lana",manual translation
+ui:pet_item_toy_teddy,"Oso de peluche",manual translation
+ui:pet_item_toy_books,"Pila de libros",manual translation
+ui:pet_item_hat_party,"Sombrero de fiesta",manual translation
+ui:pet_item_hat_beanie,"Gorro",manual translation
+ui:pet_item_hat_flower,"Corona de flores",manual translation
+ui:pet_item_hat_grad,"Birrete de graduación",manual translation
+ui:pet_item_hat_crown,"Corona",manual translation
+ui:pet_item_face_round,"Gafas redondas",manual translation
+ui:pet_item_face_star,"Gafas de sol de estrella",manual translation
+ui:pet_item_neck_bow,"Pajarita",manual translation
+ui:pet_item_neck_scarf,"Bufanda",manual translation
+ui:pet_item_neck_medal,"Medalla",manual translation
+ui:species_cat,"Gato",manual translation
+ui:species_panda,"Panda",manual translation
+ui:species_dragon,"Dragón",manual translation
+ui:pet_default_cat,"Mia",manual translation
+ui:pet_default_panda,"Bao",manual translation
+ui:pet_default_dragon,"Ember",manual translation
+ui:locale_en,"Inglés",manual translation
+ui:ob_language_title,"¿Qué idioma hablas?",manual translation
+ui:ob_language_sub,"Los significados y las explicaciones aparecerán en este idioma.",manual translation
+ui:i_speak,"Hablo %1$s",manual translation
+ui:word_lists,"Listas de palabras de exámenes",manual translation
+ui:word_lists_desc,"Las palabras que más usa cada examen",manual translation
+ui:n_of_m_ready,"%1$d de %2$d palabras listas",manual translation
+ui:learn_list,"Aprender esta lista",manual translation
+ui:list_source,"Fuente: %1$s",manual translation
+ui:passage_show,"Mostrar el pasaje",manual translation
+ui:passage_hide,"Ocultar el pasaje",manual translation
+ui:section_n,"Sección %1$d de %2$d: %3$s",manual translation
+ui:backup_title,"Hacer copia de seguridad del progreso",manual translation
+ui:backup_desc,"Guarda tus palabras, historial de pruebas y mascota en un archivo",manual translation
+ui:backup_done,"Progreso guardado",manual translation
+ui:backup_failed,"No se pudo guardar el archivo. Prueba en otro lugar.",manual translation
+ui:restore_title,"Restaurar el progreso",manual translation
+ui:restore_desc,"Carga el progreso desde un archivo de copia de seguridad",manual translation
+ui:restore_confirm_title,"¿Reemplazar tu progreso?",manual translation
+ui:restore_confirm_msg,"La copia de seguridad del %1$s tiene %2$d palabras, %3$d pruebas y una mascota de nivel %4$d. Se reemplazará el progreso actual de este teléfono.",manual translation
+ui:restore_replace,"Reemplazar",manual translation
+ui:restore_done,"Progreso restaurado",manual translation
+ui:restore_bad_file,"Este archivo no es una copia de seguridad de LingoMori o está dañado.",manual translation
+ui:restore_newer_version,"Esta copia de seguridad se creó con una versión más reciente de LingoMori. Actualiza primero la aplicación.",manual translation
+ui:topic_story,"Cuento corto",manual translation
+ui:hint_generic,"Lee primero toda la oración, busca las palabras clave alrededor del espacio y comprueba qué opción encaja tanto con la gramática como con el significado.",manual translation
+ui:hint_context,"Adivina a partir de esta oración: «%1$s»",manual translation
+ui:hint_picture,"Primero nombra en inglés lo que ves y después busca esa palabra.",manual translation
+ui:hint_word_order,"Primero encuentra el sujeto y el verbo y después añade las demás palabras a su alrededor.",manual translation
+ui:hint_word_order_meaning,"Significado: «%1$s». Primero encuentra el sujeto y el verbo y después añade las demás palabras.",manual translation
+ui:report_mistake,"Informar de un error",manual translation
+ui:report_mistake_subject,"LingoMori: error en %1$s",manual translation
+ui:report_mistake_body,"Elemento: %1$s\nPantalla: %2$s\nVersión de la aplicación: %3$s\n\nQué está mal (y la respuesta correcta si la sabes):\n",manual translation
+ui:report_mistake_no_app,"No se encontró ninguna aplicación de correo. Escribe a %1$s",manual translation

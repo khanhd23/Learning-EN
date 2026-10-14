@@ -1,0 +1,26 @@
+key,corrected,comment
+words:agenda_s1,"{""g"":""agenda; orden del día"",""ex"":{""agenda_s1"":""El primer punto del orden del día es el presupuesto.""}}",manual translation
+words:memo_s1,"{""g"":""memorando; nota interna"",""ex"":{""memo_s1"":""El gerente envió un memorando sobre las nuevas reglas.""}}",manual translation
+words:memo_s2,"{""g"":""nota; recordatorio"",""ex"":{""memo_s2"":""Grabé una nota de voz para no olvidarlo.""}}",manual translation
+words:submit_s1,"{""g"":""presentar; entregar"",""ex"":{""submit_s1"":""Presenta tu informe de gastos antes del viernes.""}}",manual translation
+words:approve_s1,"{""g"":""aprobar"",""ex"":{""approve_s1"":""El director aprobó el nuevo plan.""}}",manual translation
+words:approve_s2,"{""g"":""aprobar; dar su aprobación a"",""ex"":{""approve_s2"":""A mis padres no les gusta mi nuevo peinado.""}}",manual translation
+words:postpone_s1,"{""g"":""posponer; aplazar"",""ex"":{""postpone_s1"":""La reunión se pospuso hasta la próxima semana.""}}",manual translation
+words:assign_s1,"{""g"":""asignar; encargar"",""ex"":{""assign_s1"":""El gerente asignó la tarea a dos empleados nuevos.""}}",manual translation
+words:assign_s2,"{""g"":""asignar; adjudicar"",""ex"":{""assign_s2"":""A cada estudiante se le asigna un asiento.""}}",manual translation
+words:arrange_s1,"{""g"":""organizar; concertar"",""ex"":{""arrange_s1"":""Su asistente concertó una reunión con el cliente.""}}",manual translation
+words:efficient_s1,"{""g"":""eficiente"",""ex"":{""efficient_s1"":""La nueva impresora es más rápida y eficiente.""}}",manual translation
+words:urgent_s1,"{""g"":""urgente"",""ex"":{""urgent_s1"":""Tengo un mensaje urgente para el señor Lee.""}}",manual translation
+words:temporary_s1,"{""g"":""temporal"",""ex"":{""temporary_s1"":""Encontró un trabajo temporal para el verano.""}}",manual translation
+words:productive_s1,"{""g"":""productivo"",""ex"":{""productive_s1"":""El equipo tuvo una reunión muy productiva.""}}",manual translation
+words:stationery_s1,"{""g"":""artículos de papelería"",""ex"":{""stationery_s1"":""Los bolígrafos y el papel están en el armario de papelería.""}}",manual translation
+words:workload_s1,"{""g"":""carga de trabajo"",""ex"":{""workload_s1"":""Mi carga de trabajo es pesada este mes.""}}",manual translation
+words:in_charge_of_s1,"{""g"":""a cargo de; responsable de"",""ex"":{""in_charge_of_s1"":""La señora Park está a cargo del nuevo proyecto.""}}",manual translation
+words:headquarters_s1,"{""g"":""sede central"",""ex"":{""headquarters_s1"":""La sede central de la empresa está en Singapur.""}}",manual translation
+words:applicant_s1,"{""g"":""solicitante; aspirante"",""ex"":{""applicant_s1"":""Recibimos más de cincuenta candidatos para el puesto.""}}",manual translation
+words:candidate_s1,"{""g"":""candidato"",""ex"":{""candidate_s1"":""El mejor candidato tiene diez años de experiencia.""}}",manual translation
+words:resume_s1,"{""g"":""currículum; CV"",""ex"":{""resume_s1"":""Envía tu currículum por correo electrónico antes de la entrevista.""}}",manual translation
+words:recruit_s1,"{""g"":""reclutar; contratar"",""ex"":{""recruit_s1"":""La empresa contrata a recién graduados cada primavera.""}}",manual translation
+words:qualified_s1,"{""g"":""calificado; capacitado"",""ex"":{""qualified_s1"":""Está muy calificada para este trabajo.""}}",manual translation
+words:wage_s1,"{""g"":""salario; sueldo"",""ex"":{""wage_s1"":""El salario mínimo aumentará el próximo año.""}}",manual translation
+words:benefit_s1,"{""g"":""beneficio; prestación laboral"",""ex"":{""benefit_s1"":""El trabajo ofrece buenas prestaciones, incluido un seguro médico.""}}",manual translation

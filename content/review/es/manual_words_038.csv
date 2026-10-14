@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:unclear_s1,,,,,"{""g"":""poco claro; confuso"",""ex"":{""unclear_s1"":""La instrucción final no estaba clara para nadie.""}}",manual sense/example review
+words:separate_s1,,,,,"{""g"":""separado; separada"",""ex"":{""separate_s1"":""Mantén separada la ropa limpia de la sucia.""}}",manual sense/example review
+words:throughout_s1,,,,,"{""g"":""durante todo; por todo"",""ex"":{""throughout_s1"":""El festival continuó durante todo el fin de semana.""}}",manual time/place review
+words:disease_s1,,,,,"{""g"":""enfermedad"",""ex"":{""disease_s1"":""La vacuna protege a los niños contra la enfermedad.""}}",manual health review
+words:basis_s1,,,,,"{""g"":""base"",""ex"":{""basis_s1"":""La confianza es la base de una buena relación.""}}",manual sense/example review
+words:encourage_s1,,,,,"{""g"":""animar; fomentar"",""ex"":{""encourage_s1"":""Los profesores animan a los estudiantes a hacer preguntas.""}}",manual sense/example review
+words:restaurant_s1,,,,,"{""g"":""restaurante"",""ex"":{""restaurant_s1"":""El restaurante sirve verduras frescas todos los días.""}}",manual sense/example review
+words:okay_s1,,,,,"{""g"":""bien; estar bien"",""ex"":{""okay_s1"":""¿Está bien si me voy temprano hoy?""}}",manual conversational review
+words:daughter_s1,,,,,"{""g"":""hija"",""ex"":{""daughter_s1"":""Su hija empieza la escuela el próximo mes.""}}",manual sense/example review
+words:mine_s1,,,,,"{""g"":""mío; mía"",""ex"":{""mine_s1"":""El paraguas azul es mío.""}}",Spanish possessive agrees with the owned noun
+words:object_s1,,,,,"{""g"":""objeto"",""ex"":{""object_s1"":""El museo protege cuidadosamente cada objeto antiguo.""}}",manual sense/example review
+words:discover_s1,,,,,"{""g"":""descubrir"",""ex"":{""discover_s1"":""Los científicos descubrieron una nueva forma de almacenar energía.""}}",manual sense/example review
+words:extend_s1,,,,,"{""g"":""ampliar; extender"",""ex"":{""extend_s1"":""La escuela amplió el plazo una semana.""}}",deadline context
+words:facility_s1,,,,,"{""g"":""instalación; centro"",""ex"":{""facility_s1"":""El centro deportivo abre temprano todas las mañanas.""}}",manual context review
+words:clothes_s1,,,,,"{""g"":""ropa"",""ex"":{""clothes_s1"":""Su ropa todavía estaba mojada después de la lluvia.""}}",manual plural/collective review
+words:completely_s1,,,,,"{""g"":""completamente; por completo"",""ex"":{""completely_s1"":""La habitación quedó completamente vacía después de la mudanza.""}}",manual adverb review
+words:easily_s1,,,,,"{""g"":""fácilmente"",""ex"":{""easily_s1"":""Este estante puede sostener fácilmente varios libros.""}}",manual adverb review
+words:dollar_s1,,,,,"{""g"":""dólar"",""ex"":{""dollar_s1"":""El cuaderno cuesta tres dólares en la tienda.""}}",manual money review
+words:yeah_s1,,,,,"{""g"":""sí (informal)"",""ex"":{""yeah_s1"":""Sí, puedo reunirme contigo después del almuerzo.""}}",manual conversational review
+words:proposal_s1,,,,,"{""g"":""propuesta"",""ex"":{""proposal_s1"":""El comité discutió su propuesta ayer.""}}",manual sense/example review
+words:immediately_s1,,,,,"{""g"":""inmediatamente; de inmediato"",""ex"":{""immediately_s1"":""Informa del problema de inmediato.""}}",manual adverb review
+words:traditional_s1,,,,,"{""g"":""tradicional"",""ex"":{""traditional_s1"":""El pueblo organiza un festival de música tradicional.""}}",manual sense/example review
+words:herself_s1,,,,,"{""g"":""ella misma"",""ex"":{""herself_s1"":""Ella misma aprendió a tocar el piano.""}}",manual reflexive review
+words:favorite_s1,,,,,"{""g"":""favorito; favorita"",""ex"":{""favorite_s1"":""El azul es mi color favorito para la ropa.""}}",Spanish gender agreement
+words:stairs_s1,,,,,"{""g"":""escaleras"",""ex"":{""stairs_s1"":""Nuestro dormitorio está arriba, al final de las escaleras.""}}",manual plural-noun review

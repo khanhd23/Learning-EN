@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:ninety_s1,,,,,"{""g"":""noventa"",""ex"":{""ninety_s1"":""El pueblo está a noventa millas de aquí.""}}",manual number review
+words:ours_s1,,,,,"{""g"":""nuestro; nuestra; nuestros; nuestras"",""ex"":{""ours_s1"":""Esa mesa pequeña es nuestra.""}}",Spanish possessive agrees with the owned noun
+words:saw_s1,,,,,"{""g"":""vi; vio"",""ex"":{""saw_s1"":""Vi un pájaro brillante cerca del lago.""}}",past form rendered in context
+words:seventeen_s1,,,,,"{""g"":""diecisiete"",""ex"":{""seventeen_s1"":""Faltan diecisiete páginas del informe.""}}",manual number review
+words:sixteen_s1,,,,,"{""g"":""dieciséis"",""ex"":{""sixteen_s1"":""Compró dieciséis manzanas para el picnic.""}}",manual number review
+words:thanks_s1,,,,,"{""g"":""gracias"",""ex"":{""thanks_s1"":""Gracias por ayudarme con este formulario.""}}",manual conversational review
+words:their_s1,,,,,"{""g"":""su; sus"",""ex"":{""their_s1"":""Sus hijos caminan juntos a la escuela.""}}",Spanish possessive depends on number
+words:these_s1,,,,,"{""g"":""estos; estas"",""ex"":{""these_s1"":""Estos zapatos son más cómodos que esos.""}}",Spanish demonstrative agrees with noun
+words:thirteen_s1,,,,,"{""g"":""trece"",""ex"":{""thirteen_s1"":""Trece equipos participaron en el torneo.""}}",manual number review
+words:thirty_s1,,,,,"{""g"":""treinta"",""ex"":{""thirty_s1"":""La caja pesa treinta kilogramos.""}}",manual number review
+words:those_s1,,,,,"{""g"":""esos; esas; aquellos; aquellas"",""ex"":{""those_s1"":""Pon esas cajas cerca de la puerta.""}}",Spanish demonstrative agrees with noun
+words:twelve_s1,,,,,"{""g"":""doce"",""ex"":{""twelve_s1"":""Doce invitados llegaron antes del mediodía.""}}",manual number review
+words:twenty_s1,,,,,"{""g"":""veinte"",""ex"":{""twenty_s1"":""La biblioteca cierra en veinte minutos.""}}",manual number review
+words:closed_s1,,,,,"{""g"":""cerrado; cerrada"",""ex"":{""closed_s1"":""El museo está cerrado los lunes.""}}",manual state review
+words:did_s1,,,,,"{""g"":""did (pasado de do)"",""ex"":{""did_s1"":""¿Terminaste la lectura antes de la clase?""}}",English auxiliary rendered through Spanish past tense
+words:does_s1,,,,,"{""g"":""hace (he/she/it)"",""ex"":{""does_s1"":""Ella hace la tarea después de cenar.""}}",English auxiliary/verb rendered in Spanish
+words:eighty_s1,,,,,"{""g"":""ochenta"",""ex"":{""eighty_s1"":""Ochenta personas asistieron a la reunión comunitaria.""}}",manual number review
+words:fifth_s1,,,,,"{""g"":""quinto; quinta"",""ex"":{""fifth_s1"":""Terminó quinto en la carrera escolar.""}}",Spanish ordinal agrees with the noun/person
+words:had_s1,,,,,"{""g"":""tuvo; tuvimos; había"",""ex"":{""had_s1"":""Tuvimos suficiente tiempo para repasar la lección.""}}",English past form rendered in context
+words:has_s1,,,,,"{""g"":""tiene"",""ex"":{""has_s1"":""El apartamento tiene dos dormitorios pequeños.""}}",English present form rendered in context
+words:his_s1,,,,,"{""g"":""su; suyo; de él"",""ex"":{""his_s1"":""Su abrigo está colgado junto a la puerta.""}}",Spanish possessive depends on construction
+words:november_s1,,,,,"{""g"":""noviembre"",""ex"":{""november_s1"":""El curso comienza en noviembre de cada año.""}}",Spanish months are lowercase
+words:ok_s1,,,,,"{""g"":""de acuerdo; está bien"",""ex"":{""ok_s1"":""De acuerdo, podemos empezar la lección ahora.""}}",manual conversational review
+words:seventy_s1,,,,,"{""g"":""setenta"",""ex"":{""seventy_s1"":""Setenta invitados recibieron un programa impreso.""}}",manual number review
+words:was_s1,,,,,"{""g"":""era; estaba; fue"",""ex"":{""was_s1"":""El museo estaba cerrado el lunes.""}}",English past be-form rendered in context

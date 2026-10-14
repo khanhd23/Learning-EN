@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:champagne_s1,,,,,"{""g"":""champán"",""ex"":{""champagne_s1"":""Abrieron una botella de champán en la cena de la boda.""}}",manual food/drink review
+words:confused_s1,,,,,"{""g"":""confundido; confundida"",""ex"":{""confused_s1"":""Me sentí confundido por las instrucciones nuevas.""}}",manual feeling review
+words:cricket_s1,,,,,"{""g"":""críquet"",""ex"":{""cricket_s1"":""Los estudiantes jugaron al críquet en el campo de la escuela.""}}",manual sport review
+words:crown_s1,,,,,"{""g"":""corona"",""ex"":{""crown_s1"":""El museo exhibió una corona dorada del reino antiguo.""}}",manual sense/example review
+words:curry_s1,,,,,"{""g"":""curry"",""ex"":{""curry_s1"":""Pedimos curry de verduras con arroz para el almuerzo.""}}",manual food review
+words:cycling_s1,,,,,"{""g"":""ciclismo; andar en bicicleta"",""ex"":{""cycling_s1"":""Ir al trabajo en bicicleta ahorra dinero y mejora la condición física.""}}",manual activity review
+words:dressed_s1,,,,,"{""g"":""vestido; abrigado"",""ex"":{""dressed_s1"":""Todos iban bien abrigados para el viaje de invierno.""}}",manual clothing context
+words:fried_s1,,,,,"{""g"":""frito; frita"",""ex"":{""fried_s1"":""Pidió arroz frito con verduras para la cena.""}}",manual food review
+words:frightened_s1,,,,,"{""g"":""asustado; asustada"",""ex"":{""frightened_s1"":""La niña asustada tomó la mano de su padre con fuerza.""}}",feeling sense
+words:frightening_s1,,,,,"{""g"":""aterrador; espantoso"",""ex"":{""frightening_s1"":""La tormenta produjo un sonido aterrador durante la noche.""}}",cause-of-fear sense
+words:greedy_s1,,,,,"{""g"":""codicioso; codiciosa"",""ex"":{""greedy_s1"":""El zorro codicioso quería toda la comida para sí.""}}",manual sense/example review
+words:grilled_s1,,,,,"{""g"":""a la parrilla; asado"",""ex"":{""grilled_s1"":""Comimos pollo a la parrilla y ensalada después de la caminata.""}}",manual food review
+words:guidebook_s1,,,,,"{""g"":""guía de viaje"",""ex"":{""guidebook_s1"":""Usé una guía de viaje para planear nuestro recorrido por la ciudad.""}}",manual travel review
+words:ham_s1,,,,,"{""g"":""jamón"",""ex"":{""ham_s1"":""Puso rebanadas de jamón en el sándwich.""}}",manual food review
+words:headteacher_s1,,,,,"{""g"":""director; directora de escuela"",""ex"":{""headteacher_s1"":""La directora dio la bienvenida a los estudiantes nuevos en la asamblea.""}}",regional school context
+words:hockey_s1,,,,,"{""g"":""hockey"",""ex"":{""hockey_s1"":""Nuestro equipo practica hockey dos veces por semana.""}}",manual sport review
+words:latest_s1,,,,,"{""g"":""más reciente; último"",""ex"":{""latest_s1"":""¿Has leído las últimas noticias de la escuela?""}}",manual time review
+words:luckily_s1,,,,,"{""g"":""por suerte; afortunadamente"",""ex"":{""luckily_s1"":""Por suerte, nadie resultó herido en el pequeño accidente.""}}",manual adverb review
+words:missing_s1,,,,,"{""g"":""faltante; ausente"",""ex"":{""missing_s1"":""Falta una página del libro de historia.""}}",manual absence review
+words:mosque_s1,,,,,"{""g"":""mezquita"",""ex"":{""mosque_s1"":""Los visitantes se quitaron los zapatos antes de entrar en la mezquita.""}}",manual place review
+words:overweight_s1,,,,,"{""g"":""con sobrepeso"",""ex"":{""overweight_s1"":""El médico aconsejó al paciente con sobrepeso que caminara todos los días.""}}",respectful health wording
+words:penfriend_s1,,,,,"{""g"":""amigo; amiga por correspondencia"",""ex"":{""penfriend_s1"":""Mi amiga por correspondencia vive en un pueblo pequeño cerca de Londres.""}}",manual sense/example review
+words:perfume_s1,,,,,"{""g"":""perfume"",""ex"":{""perfume_s1"":""Eligió un perfume ligero para el verano.""}}",manual sense/example review
+words:playful_s1,,,,,"{""g"":""juguetón; juguetona"",""ex"":{""playful_s1"":""El cachorro juguetón perseguía su cola por la habitación.""}}",manual sense/example review
+words:relaxed_s1,,,,,"{""g"":""relajado; relajada"",""ex"":{""relaxed_s1"":""Me siento relajado después de una caminata tranquila por el parque.""}}",manual feeling review

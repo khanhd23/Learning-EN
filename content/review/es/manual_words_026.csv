@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:line_s1,,,,,"{""g"":""fila; línea"",""ex"":{""line_s1"":""Esperamos en una fila larga para comprar entradas.""}}",manual context review
+words:side_s1,,,,,"{""g"":""lado"",""ex"":{""side_s1"":""Escribe en un lado del papel.""}}",manual sense/example review
+words:term_s1,,,,,"{""g"":""término"",""ex"":{""term_s1"":""¿Conoces el significado de este término?""}}",manual sense/example review
+words:age_s1,,,,,"{""g"":""edad"",""ex"":{""age_s1"":""Los niños comienzan la escuela a los seis años.""}}",manual age expression review
+words:train_s1,,,,,"{""g"":""tren"",""ex"":{""train_s1"":""El tren al aeropuerto sale a las nueve.""}}",manual sense/example review
+words:view_s1,,,,,"{""g"":""opinión; punto de vista"",""ex"":{""view_s1"":""En mi opinión, el plan es demasiado caro.""}}",manual sense/example review
+words:concern_s1,,,,,"{""g"":""preocupación; asunto"",""ex"":{""concern_s1"":""La seguridad es nuestra principal preocupación.""}}",manual sense/example review
+words:story_s1,,,,,"{""g"":""historia; cuento"",""ex"":{""story_s1"":""Mi abuelo nos cuenta una historia todas las noches.""}}",manual sense/example review
+words:rate_s1,,,,,"{""g"":""tasa"",""ex"":{""rate_s1"":""El banco ofrece una buena tasa de interés.""}}",interest-rate context
+words:care_s1,,,,,"{""g"":""cuidado; atención"",""ex"":{""care_s1"":""Los bebés necesitan mucho cuidado.""}}",manual sense/example review
+words:sort_s1,,,,,"{""g"":""tipo; clase"",""ex"":{""sort_s1"":""Este tipo de problema es fácil de solucionar.""}}",manual sense/example review
+words:anything_s1,,,,,"{""g"":""algo; cualquier cosa"",""ex"":{""anything_s1"":""¿Necesitas algo de la tienda?""}}",manual indefinite-pronoun review
+words:cause_s1,,,,,"{""g"":""causa"",""ex"":{""cause_s1"":""El mal tiempo fue la causa del retraso.""}}",manual sense/example review
+words:power_s1,,,,,"{""g"":""poder"",""ex"":{""power_s1"":""El presidente tiene mucho poder.""}}",manual sense/example review
+words:return_s1,,,,,"{""g"":""regresar; volver"",""ex"":{""return_s1"":""Regresará de su viaje el lunes.""}}",manual sense/example review
+words:mother_s1,,,,,"{""g"":""madre"",""ex"":{""mother_s1"":""Mi madre trabaja en una escuela.""}}",manual sense/example review
+words:matter_s1,,,,,"{""g"":""asunto; cuestión"",""ex"":{""matter_s1"":""Este es un asunto importante para la familia.""}}",manual sense/example review
+words:mind_s1,,,,,"{""g"":""mente"",""ex"":{""mind_s1"":""Leer es bueno para la mente.""}}",manual sense/example review
+words:value_s1,,,,,"{""g"":""valor"",""ex"":{""value_s1"":""El valor de la casa ha aumentado.""}}",manual sense/example review
+words:stay_s1,,,,,"{""g"":""quedarse; permanecer"",""ex"":{""stay_s1"":""Nos quedamos en un hotel pequeño junto al mar.""}}",manual sense/example review
+words:force_s1,,,,,"{""g"":""fuerza"",""ex"":{""force_s1"":""La fuerza del viento rompió la ventana.""}}",manual sense/example review
+words:bit_s1,,,,,"{""g"":""un poco"",""ex"":{""bit_s1"":""¿Puedes esperar un poco más?""}}",manual quantity expression review
+words:town_s1,,,,,"{""g"":""pueblo; ciudad pequeña"",""ex"":{""town_s1"":""Creció en un pueblo pequeño junto al mar.""}}",manual sense/example review
+words:food_s1,,,,,"{""g"":""comida; alimento"",""ex"":{""food_s1"":""Este restaurante sirve comida muy buena.""}}",manual sense/example review
+words:per_s1,,,,,"{""g"":""por; cada"",""ex"":{""per_s1"":""Los boletos cuestan diez dólares por persona.""}}",manual preposition review

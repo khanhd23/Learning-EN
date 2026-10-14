@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:office_s1,,,,,"{""g"":""oficina"",""ex"":{""office_s1"":""Nuestra oficina está en el tercer piso.""}}",manual sense/example review
+words:office_s2,,,,,"{""g"":""cargo público"",""ex"":{""office_s2"":""El presidente asumió el cargo en 2021.""}}",manual source/example review
+words:meeting_s1,,,,,"{""g"":""reunión"",""ex"":{""meeting_s1"":""La reunión empieza a las nueve.""}}",manual sense/example review
+words:document_s1,,,,,"{""g"":""documento"",""ex"":{""document_s1"":""Guarda el documento antes de cerrarlo.""}}",manual sense/example review
+words:interview_s1,,,,,"{""g"":""entrevista"",""ex"":{""interview_s1"":""Mañana por la mañana tengo una entrevista de trabajo.""}}",manual sense/example review
+words:interview_s2,,,,,"{""g"":""entrevistar"",""ex"":{""interview_s2"":""La cadena de televisión entrevistó al ganador.""}}",manual sense/example review
+words:account_s1,,,,,"{""g"":""cuenta"",""ex"":{""account_s1"":""Comprueba tu cuenta bancaria antes de pagar.""}}",manual sense/example review
+words:cash_s1,,,,,"{""g"":""efectivo"",""ex"":{""cash_s1"":""¿Quieres pagar con tarjeta o en efectivo?""}}",manual sense/example review
+words:cash_s2,,,,,"{""g"":""cobrar; cambiar por efectivo"",""ex"":{""cash_s2"":""¿Puedo cobrar este cheque aquí?""}}",manual sense/example review
+words:credit_card_s1,,,,,"{""g"":""tarjeta de crédito"",""ex"":{""credit_card_s1"":""¿Puedo pagar con tarjeta de crédito?""}}",manual sense/example review
+words:total_s1,,,,,"{""g"":""total; importe total"",""ex"":{""total_s1"":""El total asciende a cuarenta y cinco dólares.""}}",manual sense/example review
+words:total_s2,,,,,"{""g"":""total; completo"",""ex"":{""total_s2"":""El costo total es de 2 millones de dongs.""}}",manual sense/example review
+words:cost_s1,,,,,"{""g"":""costo; coste"",""ex"":{""cost_s1"":""El costo de vida está subiendo.""}}",manual sense/example review
+words:cost_s2,,,,,"{""g"":""costar; suponer un sacrificio"",""ex"":{""cost_s2"":""¿Cuánto cuesta?""}}",manual sense/example review
+words:bill_s1,,,,,"{""g"":""cuenta; factura"",""ex"":{""bill_s1"":""¿Podemos pedir la cuenta antes de irnos?""}}",manual sense/example review
+words:logo_s1,,,,,"{""g"":""logotipo"",""ex"":{""logo_s1"":""El logotipo está impreso en cada bolsa.""}}",manual sense/example review
+words:customer_s1,,,,,"{""g"":""cliente"",""ex"":{""customer_s1"":""El cliente pagó el pedido por internet.""}}",manual sense/example review
+words:order_s1,,,,,"{""g"":""pedido; encargo"",""ex"":{""order_s1"":""Hicimos un pedido para el almuerzo.""}}",manual sense/example review
+words:order_s2,,,,,"{""g"":""pedir; encargar"",""ex"":{""order_s2"":""¿Estás listo para pedir?""}}",manual sense/example review
+words:order_s3,,,,,"{""g"":""orden; disposición correcta"",""ex"":{""order_s3"":""Coloca las palabras en el orden correcto.""}}",manual sense/example review
+words:order_s4,,,,,"{""g"":""ordenar; mandar"",""ex"":{""order_s4"":""El médico le ordenó que descansara.""}}",manual sense/example review
+words:item_s1,,,,,"{""g"":""artículo; elemento"",""ex"":{""item_s1"":""Cada artículo se revisa antes de enviarlo.""}}",manual sense/example review
+words:sign_s1,,,,,"{""g"":""firmar"",""ex"":{""sign_s1"":""Firma el formulario abajo, por favor.""}}",manual sense/example review
+words:sign_s2,,,,,"{""g"":""cartel; letrero"",""ex"":{""sign_s2"":""El letrero dice «No estacionar».""}}",manual sense/example review
+words:factory_s1,,,,,"{""g"":""fábrica"",""ex"":{""factory_s1"":""La fábrica produce 500 automóviles al día.""}}",manual sense/example review

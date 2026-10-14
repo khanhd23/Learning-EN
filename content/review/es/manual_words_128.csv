@@ -1,0 +1,26 @@
+key,corrected,comment
+words:baggage_claim_s1,"{""g"":""recogida de equipaje; reclamo de equipaje"",""ex"":{""baggage_claim_s1"":""Esperamos en la zona de recogida de equipaje por dos maletas.""}}",manual translation
+words:ingredient_s1,"{""g"":""ingrediente"",""ex"":{""ingredient_s1"":""Los ingredientes frescos hacen que la comida sepa mejor.""}}",manual translation
+words:vegetarian_s1,"{""g"":""vegetariano; vegetariana"",""ex"":{""vegetarian_s1"":""El hotel sirve un desayuno vegetariano todas las mañanas.""}}",manual translation
+words:reserve_s1,"{""g"":""reservar"",""ex"":{""reserve_s1"":""Quisiera reservar una mesa para dos.""}}",manual translation
+words:room_service_s1,"{""g"":""servicio a la habitación"",""ex"":{""room_service_s1"":""Pedimos servicio a la habitación después del vuelo nocturno.""}}",manual translation
+words:lobby_s1,"{""g"":""vestíbulo; recepción"",""ex"":{""lobby_s1"":""Te encontraré en el vestíbulo del hotel.""}}",manual translation
+words:host_s1,"{""g"":""ser anfitrión de; organizar"",""ex"":{""host_s1"":""El hotel organizará la cena de premiación.""}}",manual translation
+words:host_s2,"{""g"":""anfitrión; anfitriona"",""ex"":{""host_s2"":""El anfitrión dio la bienvenida a todos los invitados.""}}",source example uses host as a person rather than a multitude
+words:host_s3,"{""g"":""presentar; conducir"",""ex"":{""host_s3"":""¿Quién presenta el programa esta noche?""}}",manual translation
+words:recommend_s1,"{""g"":""recomendar"",""ex"":{""recommend_s1"":""¿Puedes recomendarme un buen restaurante?""}}",manual translation
+words:conference_s1,"{""g"":""conferencia"",""ex"":{""conference_s1"":""La conferencia se celebrará en la capital.""}}",manual translation
+words:seminar_s1,"{""g"":""seminario"",""ex"":{""seminar_s1"":""Asistí a un seminario sobre marketing digital.""}}",manual translation
+words:workshop_s1,"{""g"":""taller"",""ex"":{""workshop_s1"":""El taller enseña habilidades básicas de diseño.""}}",manual translation
+words:register_s1,"{""g"":""inscribirse; registrarse"",""ex"":{""register_s1"":""Tienes que inscribirte antes de que comience el curso.""}}",manual translation
+words:register_s2,"{""g"":""registro; lista"",""ex"":{""register_s2"":""El profesor revisa la lista de la clase todas las mañanas.""}}",manual translation
+words:participant_s1,"{""g"":""participante"",""ex"":{""participant_s1"":""Cada participante recibirá un certificado.""}}",manual translation
+words:presentation_s1,"{""g"":""presentación"",""ex"":{""presentation_s1"":""Hizo una presentación sobre los resultados de ventas.""}}",manual translation
+words:presentation_s2,"{""g"":""presentación; presentación visual"",""ex"":{""presentation_s2"":""La presentación de la comida es hermosa.""}}",manual translation
+words:exhibition_s1,"{""g"":""exposición"",""ex"":{""exhibition_s1"":""La exposición de arte abre el sábado.""}}",manual translation
+words:ceremony_s1,"{""g"":""ceremonia"",""ex"":{""ceremony_s1"":""La ceremonia de apertura comienza a las seis de la tarde.""}}",manual translation
+words:anniversary_s1,"{""g"":""aniversario"",""ex"":{""anniversary_s1"":""La empresa celebra su vigésimo aniversario este año.""}}",manual translation
+words:announce_s1,"{""g"":""anunciar"",""ex"":{""announce_s1"":""Los ganadores se anunciarán esta noche.""}}",manual translation
+words:award_s1,"{""g"":""premio"",""ex"":{""award_s1"":""La película ganó un premio a la mejor música.""}}",manual translation
+words:award_s2,"{""g"":""otorgar; conceder"",""ex"":{""award_s2"":""Le otorgaron una beca para estudiar en el extranjero.""}}",manual translation
+words:in_advance_s1,"{""g"":""con anticipación; por adelantado"",""ex"":{""in_advance_s1"":""Reserva los asientos con anticipación.""}}",manual translation

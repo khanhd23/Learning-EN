@@ -1,0 +1,26 @@
+key,corrected,comment
+words:boost_s1,"{""g"":""impulsar; aumentar"",""ex"":{ ""boost_s1"":""El nuevo anuncio impulsó las ventas un 15 por ciento.""}}",manual translation
+words:inquiry_s1,"{""g"":""consulta; búsqueda de conocimiento o información"",""ex"":{ ""inquiry_s1"":""Gracias por su consulta sobre nuestros precios.""}}",manual translation
+words:quote_s1,"{""g"":""cotización; precio que una empresa dice que cobrará por un trabajo"",""ex"":{ ""quote_s1"":""Pedimos una cotización a tres empresas.""}}",manual translation
+words:quote_s2,"{""g"":""citar; repetir las palabras exactas de otra persona"",""ex"":{ ""quote_s2"":""La profesora citó un poema famoso.""}}",manual translation
+words:retail_s1,"{""g"":""venta minorista; venta de productos a consumidores, normalmente en pequeñas cantidades y no para reventa"",""ex"":{ ""retail_s1"":""Ha trabajado en ventas minoristas durante diez años.""}}",manual translation
+words:wholesale_s1,"{""g"":""venta al por mayor; venta de productos a comerciantes, normalmente en grandes cantidades para revenderlos"",""ex"":{ ""wholesale_s1"":""Compramos nuestro café a precios de mayoreo.""}}",manual translation
+words:inconvenience_s1,"{""g"":""inconveniente; molestia o incomodidad causada por una situación"",""ex"":{ ""inconvenience_s1"":""Disculpe cualquier inconveniente causado.""}}",manual translation
+words:guarantee_s1,"{""g"":""garantizar; dar seguridad o asumir responsabilidad"",""ex"":{ ""guarantee_s1"":""Garantizamos la entrega en un plazo de 48 horas.""}}",manual translation
+words:representative_s1,"{""g"":""representante; persona que representa a otras"",""ex"":{ ""representative_s1"":""Un representante de ventas lo llamará en breve.""}}",manual translation
+words:terms_s1,"{""g"":""términos; condiciones o situación en las relaciones entre personas o grupos"",""ex"":{ ""terms_s1"":""Lee detenidamente los términos y condiciones, por favor.""}}",manual translation
+words:negotiate_s1,"{""g"":""negociar; discutir las condiciones de un acuerdo"",""ex"":{ ""negotiate_s1"":""Negociamos un precio más bajo con el proveedor.""}}",manual translation
+words:regulation_s1,"{""g"":""regulación; norma establecida por una autoridad"",""ex"":{ ""regulation_s1"":""Las nuevas regulaciones sobre seguridad alimentaria comienzan en julio.""}}",manual translation
+words:party_s1,"{""g"":""fiesta; evento social donde las personas comen, beben y se divierten"",""ex"":{ ""party_s1"":""Vamos a celebrar una fiesta por su cumpleaños.""}}",manual translation
+words:party_s2,"{""g"":""parte; persona o grupo que participa en un acuerdo legal"",""ex"":{ ""party_s2"":""Ambas partes deben firmar el contrato.""}}",manual translation
+words:party_s3,"{""g"":""partido; grupo político que quiere formar un gobierno"",""ex"":{ ""party_s3"":""¿Qué partido ganó las elecciones este año?""}}",manual translation
+words:dispute_s1,"{""g"":""disputa; desacuerdo o discusión sobre algo importante"",""ex"":{ ""dispute_s1"":""Las dos empresas resolvieron su disputa.""}}",manual translation
+words:confidential_s1,"{""g"":""confidencial; destinado a mantenerse en secreto"",""ex"":{ ""confidential_s1"":""Esta información es estrictamente confidencial, así que no la compartas.""}}",manual translation
+words:obligation_s1,"{""g"":""obligación; deber que vincula a alguien a realizar determinadas acciones"",""ex"":{ ""obligation_s1"":""No tienes ninguna obligación de comprar nada.""}}",manual translation
+words:authorize_s1,"{""g"":""autorizar; conceder permiso o autorización para algo"",""ex"":{ ""authorize_s1"":""Solo el gerente puede autorizar los reembolsos.""}}",manual translation
+words:manufacture_s1,"{""g"":""fabricar; ensamblar a partir de componentes o piezas artificiales o naturales"",""ex"":{ ""manufacture_s1"":""La empresa fabrica piezas para aviones.""}}",manual translation
+words:inventory_s1,"{""g"":""inventario; lista detallada de todos los artículos en existencia"",""ex"":{ ""inventory_s1"":""Revisamos nuestro inventario todos los viernes.""}}",manual translation
+words:assemble_s1,"{""g"":""ensamblar; crear juntando componentes o miembros"",""ex"":{ ""assemble_s1"":""Los trabajadores ensamblan los teléfonos a mano.""}}",manual translation
+words:machinery_s1,"{""g"":""maquinaria; máquinas en general, especialmente las grandes"",""ex"":{ ""machinery_s1"":""La granja utiliza maquinaria moderna para cosechar arroz.""}}",manual translation
+words:defective_s1,"{""g"":""defectuoso; que no funciona correctamente por una falla"",""ex"":{ ""defective_s1"":""Reemplazamos las piezas defectuosas sin costo.""}}",manual translation
+words:output_s1,"{""g"":""producción; producto final o cosas producidas"",""ex"":{ ""output_s1"":""La producción aumentó un 10 por ciento este año.""}}",manual translation

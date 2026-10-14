@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:focus_s1,,,,,"{""g"":""enfocarse; concentrarse"",""ex"":{""focus_s1"":""Concéntrate primero en la pregunta principal.""}}",manual sense/example review
+words:single_s1,,,,,"{""g"":""individual; para una persona"",""ex"":{""single_s1"":""Reservó una habitación individual por dos noches.""}}",hotel-room context
+words:technology_s1,,,,,"{""g"":""tecnología"",""ex"":{""technology_s1"":""La nueva tecnología facilita el aprendizaje a distancia.""}}",manual sense/example review
+words:effort_s1,,,,,"{""g"":""esfuerzo"",""ex"":{""effort_s1"":""Tu esfuerzo ha mejorado el resultado del equipo.""}}",manual sense/example review
+words:century_s1,,,,,"{""g"":""siglo"",""ex"":{""century_s1"":""El puente se construyó en el siglo pasado.""}}",manual time review
+words:exist_s1,,,,,"{""g"":""existir"",""ex"":{""exist_s1"":""Existen muchos pequeños negocios fuera de la ciudad.""}}",manual sense/example review
+words:leader_s1,,,,,"{""g"":""líder"",""ex"":{""leader_s1"":""El líder agradeció a todos después de la reunión.""}}",manual sense/example review
+words:president_s1,,,,,"{""g"":""presidente; presidenta"",""ex"":{""president_s1"":""El presidente se dirigió a la nación anoche.""}}",manual sense/example review
+words:police_s1,,,,,"{""g"":""policía"",""ex"":{""police_s1"":""La policía cerró la carretera después del accidente.""}}",collective noun context
+words:poor_s1,,,,,"{""g"":""pobre"",""ex"":{""poor_s1"":""La organización benéfica ofrece comidas a familias pobres.""}}",manual sense/example review
+words:arm_s1,,,,,"{""g"":""brazo"",""ex"":{""arm_s1"":""Se lastimó el brazo jugando al tenis.""}}",manual sense/example review
+words:simply_s1,,,,,"{""g"":""simplemente"",""ex"":{""simply_s1"":""La guía explica cada paso de forma sencilla.""}}",manual adverb review
+words:cell_s1,,,,,"{""g"":""célula"",""ex"":{""cell_s1"":""Toda planta viva está formada por células.""}}",manual science review
+words:surprise_s1,,,,,"{""g"":""sorpresa"",""ex"":{""surprise_s1"":""El pastel de cumpleaños fue una agradable sorpresa.""}}",manual sense/example review
+words:feature_s1,,,,,"{""g"":""función; característica"",""ex"":{""feature_s1"":""La nueva función ahorra varios minutos a los usuarios.""}}",app context
+words:recently_s1,,,,,"{""g"":""recientemente; hace poco"",""ex"":{""recently_s1"":""Recientemente me inscribí en una clase nocturna de inglés.""}}",manual time review
+words:everyone_s1,,,,,"{""g"":""todos; todas"",""ex"":{""everyone_s1"":""Todos recibieron una copia del horario.""}}",Spanish agreement depends on the group
+words:page_s1,,,,,"{""g"":""página"",""ex"":{""page_s1"":""Pasa a la página diez del cuaderno de ejercicios.""}}",manual sense/example review
+words:international_s1,,,,,"{""g"":""internacional"",""ex"":{""international_s1"":""El aeropuerto gestiona muchos vuelos internacionales.""}}",manual sense/example review
+words:myself_s1,,,,,"{""g"":""yo mismo; yo misma"",""ex"":{""myself_s1"":""Yo mismo preparé la presentación.""}}",Spanish gender depends on the speaker
+words:exactly_s1,,,,,"{""g"":""exactamente"",""ex"":{""exactly_s1"":""Eso es exactamente lo que quería preguntar.""}}",manual emphasis review
+words:plant_s1,,,,,"{""g"":""planta"",""ex"":{""plant_s1"":""Esta planta necesita luz solar todas las mañanas.""}}",manual sense/example review
+words:worker_s1,,,,,"{""g"":""trabajador; trabajadora"",""ex"":{""worker_s1"":""Los trabajadores terminaron el puente antes del invierno.""}}",Spanish gender/number agreement
+words:whatever_s1,,,,,"{""g"":""lo que sea; cualquier cosa"",""ex"":{""whatever_s1"":""Elige lo que parezca más útil hoy.""}}",manual indefinite-pronoun review
+words:respect_s1,,,,,"{""g"":""respetar"",""ex"":{""respect_s1"":""Los buenos líderes respetan a todos los miembros del equipo.""}}",manual sense/example review

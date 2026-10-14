@@ -1,0 +1,26 @@
+key,corrected,comment
+words:relationship_s1,"{""g"":""relación"",""ex"":{""relationship_s1"":""Tienen una relación cercana con sus vecinos.""}}",manual translation
+words:argue_s1,"{""g"":""discutir; argumentar"",""ex"":{""argue_s1"":""Mis dos hermanos discuten por todo.""}}",manual translation
+words:generation_s1,"{""g"":""generación"",""ex"":{""generation_s1"":""Tres generaciones viven en esta casa.""}}",manual translation
+words:take_after_s1,"{""g"":""parecerse a"",""ex"":{""take_after_s1"":""Se parece a su padre; a los dos les encanta la música.""}}",manual translation
+words:crush_s1,"{""g"":""estar enamorado de; flechazo"",""ex"":{""crush_s1"":""Me gusta mucho una chica de mi clase.""}}",source definition differs; corrected follows the romantic example
+words:embarrassed_s1,"{""g"":""avergonzado; avergonzada"",""ex"":{""embarrassed_s1"":""Me sentí avergonzado cuando me caí frente a todos.""}}",manual translation
+words:confident_s1,"{""g"":""seguro de sí mismo; confiado"",""ex"":{""confident_s1"":""Se sintió segura antes de la entrevista.""}}",manual translation
+words:generous_s1,"{""g"":""generoso; generosa"",""ex"":{""generous_s1"":""Fue muy generoso de tu parte ayudar.""}}",manual translation
+words:selfish_s1,"{""g"":""egoísta"",""ex"":{""selfish_s1"":""No seas egoísta. Comparte con tu hermana.""}}",manual translation
+words:stressed_out_s1,"{""g"":""estresado; bajo presión"",""ex"":{""stressed_out_s1"":""Se sintió muy estresada antes del examen.""}}",manual translation
+words:relieved_s1,"{""g"":""aliviado; aliviada"",""ex"":{""relieved_s1"":""Me sentí aliviado al escuchar la noticia.""}}",manual translation
+words:disappointed_s1,"{""g"":""decepcionado; decepcionada"",""ex"":{""disappointed_s1"":""Me decepcionó la película.""}}",manual translation
+words:grateful_s1,"{""g"":""agradecido; agradecida"",""ex"":{""grateful_s1"":""Estoy muy agradecido por tu ayuda.""}}",manual translation
+words:jealous_s1,"{""g"":""celoso; celosa"",""ex"":{""jealous_s1"":""Está celoso del éxito de su hermano.""}}",manual translation
+words:curious_s1,"{""g"":""curioso; curiosa"",""ex"":{""curious_s1"":""Los niños pequeños sienten curiosidad por todo lo que los rodea.""}}",manual translation
+words:upset_s1,"{""g"":""molesto; alterado"",""ex"":{""upset_s1"":""Estaba molesta por sus calificaciones.""}}",manual translation
+words:grill_s1,"{""g"":""asar a la parrilla"",""ex"":{""grill_s1"":""Asamos carne de cerdo en el balcón.""}}",manual translation
+words:recipe_s1,"{""g"":""receta"",""ex"":{""recipe_s1"":""¿Puedes darme la receta de esta sopa?""}}",manual translation
+words:bitter_s1,"{""g"":""amargo; amarga"",""ex"":{""bitter_s1"":""El café negro es un poco amargo.""}}",manual translation
+words:leftovers_s1,"{""g"":""sobras"",""ex"":{""leftovers_s1"":""Guardamos las sobras para el almuerzo de mañana.""}}",manual translation
+words:takeaway_s1,"{""g"":""comida para llevar"",""ex"":{""takeaway_s1"":""Pedimos comida para llevar después de que cerró el restaurante.""}}",manual translation
+words:flavor_s1,"{""g"":""sabor"",""ex"":{""flavor_s1"":""¿Qué sabor de helado quieres?""}}",source example uses the food sense
+words:crispy_s1,"{""g"":""crujiente"",""ex"":{""crispy_s1"":""Los rollitos de primavera están calientes y crujientes.""}}",manual translation
+words:starving_s1,"{""g"":""muerto de hambre; hambriento"",""ex"":{""starving_s1"":""Estaba muerto de hambre después de la larga caminata.""}}",manual translation
+words:humid_s1,"{""g"":""húmedo; húmeda"",""ex"":{""humid_s1"":""La tarde húmeda hizo que todos bebieran más agua.""}}",manual translation

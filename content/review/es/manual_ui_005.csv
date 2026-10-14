@@ -1,0 +1,60 @@
+key,corrected,comment
+ui:lvl_beginner_d,"Estoy empezando a aprender inglés.",manual translation
+ui:lvl_inter,"Intermedio",manual translation
+ui:lvl_inter_d,"Puedo hablar sobre temas cotidianos y leer textos cortos.",manual translation
+ui:lvl_upper,"Intermedio alto",manual translation
+ui:lvl_upper_d,"Quiero perfeccionar mi inglés para el trabajo o los exámenes.",manual translation
+ui:mastery,"Tu progreso",manual translation
+ui:mastery_known,"Conoces bien esta palabra",manual translation
+ui:mastery_learning,"Aún en aprendizaje",manual translation
+ui:mastery_new,"Palabra nueva",manual translation
+ui:mastery_stats,"Correcta %1$d de %2$d veces",manual translation
+ui:matches,"%1$d preguntas coincidentes",manual translation
+ui:max_stage,"¡Has alcanzado la etapa final!",manual translation
+ui:meal_title,"Comida para %1$s",manual translation
+ui:meal_today,"Hoy: %1$d de %2$d XP",manual translation
+ui:meanings,"Significados (%1$d)",manual translation
+ui:memory_tip,"Consejo de memoria",manual translation
+ui:mine,"Mis palabras",manual translation
+ui:mine_empty,"Todavía no has estudiado ninguna palabra.",manual translation
+ui:mine_known,"Palabras conocidas",manual translation
+ui:mine_learning,"Palabras en progreso",manual translation
+ui:mine_saved,"Palabras guardadas",manual translation
+ui:mine_wrong,"Palabras que debes corregir",manual translation
+ui:mini_test,"Mini prueba · %1$d preguntas",manual translation
+ui:minutes_n,"%1$d minutos",manual translation
+ui:mistake_book,"Cuaderno de errores",manual translation
+ui:mistakes_empty,"Todavía no hay errores. ¡Sigue así!",manual translation
+ui:mock_in_progress,"Prueba en curso",manual translation
+ui:mock_in_progress_msg,"Tienes una prueba sin terminar. ¿Quieres continuarla o empezar una nueva?",manual translation
+ui:mock_leave_msg,"Tus respuestas están guardadas, así que puedes continuar más tarde.",manual translation
+ui:mock_leave_save,"Guardar y salir",manual translation
+ui:mock_leave_title,"¿Salir de la prueba?",manual translation
+ui:mock_result,"Resultado de la prueba",manual translation
+ui:mode_flashcard,"Tarjetas",manual translation
+ui:mode_listening,"Comprensión auditiva",manual translation
+ui:mode_matching,"Relacionar",manual translation
+ui:mode_practice,"Práctica",manual translation
+ui:mode_quiz,"Cuestionario",manual translation
+ui:mode_spelling,"Ortografía",manual translation
+ui:mode_timed,"Contrarreloj",manual translation
+ui:mood_dozing,"adormilado",manual translation
+ui:mood_full,"lleno",manual translation
+ui:mood_happy,"feliz",manual translation
+ui:mood_hi,"emocionado de verte",manual translation
+ui:mood_hungry,"hambriento",manual translation
+ui:mood_sleeping,"durmiendo",manual translation
+ui:mood_sleepy,"somnoliento",manual translation
+ui:n_items,"%1$d elementos",manual translation
+ui:n_questions,"%1$d preguntas",manual translation
+ui:n_selected,"%1$d seleccionadas",manual translation
+ui:n_words,"%1$d palabras",manual translation
+ui:need_coins,"Necesitas %1$d monedas más.",manual translation
+ui:need_practice,"Necesita más práctica",manual translation
+ui:need_stage,"Se desbloquea en la etapa %1$d",manual translation
+ui:new_mastered,"Palabras nuevas dominadas",manual translation
+ui:next,"Siguiente",manual translation
+ui:next_stage,"Siguiente etapa",manual translation
+ui:no_mail_app,"No se encontró ninguna aplicación de correo.",manual translation
+ui:no_results,"No se encontraron resultados",manual translation
+ui:no_words_filter,"Ninguna palabra coincide con este filtro.",manual translation

@@ -1,0 +1,26 @@
+key,corrected,comment
+words:nearby_s1,"{""g"":""cerca, cercano"",""ex"":{""nearby_s1"":""¿Hay un cajero automático cerca?""}}",manual translation
+words:park_s1,"{""g"":""estacionar"",""ex"":{""park_s1"":""Por favor, estaciona tu auto junto a la puerta azul.""}}",manual translation
+words:park_s2,"{""g"":""parque"",""ex"":{""park_s2"":""Nos vemos en el parque.""}}",manual translation
+words:comment_s1,"{""g"":""comentario"",""ex"":{""comment_s1"":""Su comentario nos ayudó a mejorar el plan.""}}",manual translation
+words:follower_s1,"{""g"":""seguidor, seguidora"",""ex"":{""follower_s1"":""Tiene más de 10,000 seguidores.""}}",manual translation
+words:reply_s1,"{""g"":""responder"",""ex"":{""reply_s1"":""¡Perdón por responder tarde!""}}",source/example mismatch noted
+words:reply_s2,"{""g"":""respuesta"",""ex"":{""reply_s2"":""Todavía estoy esperando su respuesta.""}}",manual translation
+words:charger_s1,"{""g"":""cargador"",""ex"":{""charger_s1"":""¿Puedo pedirte prestado el cargador de tu teléfono?""}}",source/example mismatch noted
+words:battery_s1,"{""g"":""batería"",""ex"":{""battery_s1"":""Mi batería está casi agotada.""}}",source/example mismatch noted
+words:totally_s1,"{""g"":""totalmente, por completo"",""ex"":{""totally_s1"":""Tienes toda la razón sobre el plan.""}}",example-led translation
+words:remember_s1,"{""g"":""recordar"",""ex"":{""remember_s1"":""Recuerda cerrar la puerta con llave antes de salir.""}}",manual translation
+words:forget_s1,"{""g"":""olvidar"",""ex"":{""forget_s1"":""Por favor, no olvides tu pasaporte mañana.""}}",manual translation
+words:keep_s1,"{""g"":""guardar, conservar"",""ex"":{""keep_s1"":""Guarda tu boleto hasta el final del viaje.""}}",manual translation
+words:choose_s1,"{""g"":""elegir"",""ex"":{""choose_s1"":""Puedes elegir cualquier asiento cerca de la ventana.""}}",manual translation
+words:change_s1,"{""g"":""cambiar"",""ex"":{""change_s1"":""Tenemos que cambiar nuestros planes de viaje.""}}",manual translation
+words:change_s2,"{""g"":""cambio"",""ex"":{""change_s2"":""Un pequeño cambio puede marcar una gran diferencia.""}}",manual translation
+words:receive_s1,"{""g"":""recibir"",""ex"":{""receive_s1"":""Recibirás una carta la próxima semana.""}}",manual translation
+words:midnight_s1,"{""g"":""medianoche"",""ex"":{""midnight_s1"":""El último tren sale a medianoche.""}}",manual translation
+words:already_s1,"{""g"":""ya"",""ex"":{""already_s1"":""Ya terminé esta lección.""}}",manual translation
+words:still_s1,"{""g"":""todavía, aún"",""ex"":{""still_s1"":""Ella todavía espera el autobús.""}}",manual translation
+words:yet_s1,"{""g"":""todavía, aún"",""ex"":{""yet_s1"":""Todavía no he leído ese libro.""}}",manual translation
+words:thousand_s1,"{""g"":""mil"",""ex"":{""thousand_s1"":""El pueblo tiene unos mil habitantes.""}}",manual translation
+words:both_s1,"{""g"":""ambos, ambas"",""ex"":{""both_s1"":""Mis dos hermanas hablan inglés.""}}",manual translation
+words:enough_s1,"{""g"":""suficiente"",""ex"":{""enough_s1"":""Tenemos suficientes sillas para todos.""}}",manual translation
+words:several_s1,"{""g"":""varios, varias"",""ex"":{""several_s1"":""Varios estudiantes se quedaron después de clase.""}}",manual translation

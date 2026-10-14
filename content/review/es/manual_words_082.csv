@@ -1,0 +1,26 @@
+key,corrected,comment
+words:guy_s1,"{""g"":""tipo, hombre"",""ex"":{""guy_s1"":""Ese hombre me ayudó a cargar la caja pesada.""}}",manual translation
+words:lay_s1,"{""g"":""poner, acostar"",""ex"":{""lay_s1"":""Ella acostó al bebé suavemente en la cama.""}}",manual translation
+words:phrase_s1,"{""g"":""frase"",""ex"":{""phrase_s1"":""Aprende algunas frases útiles antes de tu viaje.""}}",manual translation
+words:activity_s1,"{""g"":""actividad"",""ex"":{""activity_s1"":""Leer es una actividad útil para los niños.""}}",manual translation
+words:arrangement_s1,"{""g"":""acuerdo, arreglo"",""ex"":{""arrangement_s1"":""Hicimos arreglos para encontrarnos en la estación.""}}",manual translation
+words:camp_s1,"{""g"":""campamento"",""ex"":{""camp_s1"":""Los niños fueron a un campamento de verano.""}}",manual translation
+words:event_s1,"{""g"":""evento"",""ex"":{""event_s1"":""El evento escolar comienza mañana a las nueve.""}}",manual translation
+words:parent_s1,"{""g"":""padre, madre; progenitor"",""ex"":{""parent_s1"":""Todos los padres quieren lo mejor para sus hijos.""}}",manual translation
+words:smell_s1,"{""g"":""olor"",""ex"":{""smell_s1"":""Me encanta el olor del pan recién hecho.""}}",manual translation
+words:club_s1,"{""g"":""club"",""ex"":{""club_s1"":""Se unió al club escolar de ajedrez este año.""}}",manual translation
+words:convention_s1,"{""g"":""convención"",""ex"":{""convention_s1"":""El centro de convenciones está cerca del hotel.""}}",example-led translation
+words:damage_s1,"{""g"":""daño"",""ex"":{""damage_s1"":""La tormenta causó graves daños al techo.""}}",manual translation
+words:estate_s1,"{""g"":""propiedad, urbanización"",""ex"":{""estate_s1"":""Compraron una casa en una urbanización tranquila.""}}",manual translation
+words:improvement_s1,"{""g"":""mejora"",""ex"":{""improvement_s1"":""Hay una gran mejora en tu escritura.""}}",manual translation
+words:opposition_s1,"{""g"":""oposición"",""ex"":{""opposition_s1"":""Hubo una fuerte oposición al nuevo impuesto.""}}",manual translation
+words:violence_s1,"{""g"":""violencia"",""ex"":{""violence_s1"":""La película tiene demasiada violencia para los niños.""}}",manual translation
+words:education_s1,"{""g"":""educación"",""ex"":{""education_s1"":""Una buena educación puede abrir muchas oportunidades.""}}",manual translation
+words:engine_s1,"{""g"":""motor"",""ex"":{""engine_s1"":""El motor del auto hace un ruido extraño.""}}",manual translation
+words:instrument_s1,"{""g"":""instrumento"",""ex"":{""instrument_s1"":""¿Puedes tocar un instrumento musical?""}}",manual translation
+words:revolution_s1,"{""g"":""revolución"",""ex"":{""revolution_s1"":""Internet provocó una revolución en la comunicación.""}}",manual translation
+words:summer_s1,"{""g"":""verano"",""ex"":{""summer_s1"":""Solemos viajar durante las vacaciones de verano.""}}",manual translation
+words:request_s1,"{""g"":""solicitud"",""ex"":{""request_s1"":""Recibimos tu solicitud de reembolso.""}}",manual translation
+words:implement_s1,"{""g"":""implementar"",""ex"":{""implement_s1"":""La escuela implementará las nuevas reglas en mayo.""}}",manual translation
+words:liberal_s1,"{""g"":""liberal"",""ex"":{""liberal_s1"":""Mis padres tienen opiniones liberales sobre la música.""}}",manual translation
+words:victory_s1,"{""g"":""victoria"",""ex"":{""victory_s1"":""El equipo celebró su victoria toda la noche.""}}",manual translation

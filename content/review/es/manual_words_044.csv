@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:retired_s1,,,,,"{""g"":""jubilado; jubilada"",""ex"":{""retired_s1"":""Mi vecino jubilado cultiva verduras en su jardín.""}}",manual life-stage review
+words:roundabout_s1,,,,,"{""g"":""rotonda"",""ex"":{""roundabout_s1"":""Gira a la izquierda en la rotonda después del puente.""}}",manual road review
+words:rugby_s1,,,,,"{""g"":""rugby"",""ex"":{""rugby_s1"":""El equipo universitario de rugby entrenó bajo la lluvia.""}}",manual sport review
+words:sadly_s1,,,,,"{""g"":""tristemente; lamentablemente"",""ex"":{""sadly_s1"":""Lamentablemente, el árbol viejo cayó durante la tormenta.""}}",manual adverb review
+words:sailing_s1,,,,,"{""g"":""navegación a vela; navegar a vela"",""ex"":{""sailing_s1"":""Navegar a vela es emocionante cuando hay mucho viento.""}}",manual activity review
+words:sandy_s1,,,,,"{""g"":""arenoso; arenosa"",""ex"":{""sandy_s1"":""Caminamos por una playa arenosa al atardecer.""}}",manual nature review
+words:schoolwork_s1,,,,,"{""g"":""tarea escolar"",""ex"":{""schoolwork_s1"":""Terminó su tarea escolar antes de ver televisión.""}}",manual education review
+words:shampoo_s1,,,,,"{""g"":""champú; shampoo"",""ex"":{""shampoo_s1"":""Este champú deja mi cabello suave y limpio.""}}",regional variants retained for es-419
+words:shorts_s1,,,,,"{""g"":""pantalones cortos; shorts"",""ex"":{""shorts_s1"":""Llevaba pantalones cortos porque hacía calor.""}}",regional variants retained for es-419
+words:skiing_s1,,,,,"{""g"":""esquí"",""ex"":{""skiing_s1"":""El esquí puede ser difícil para los principiantes.""}}",manual sport review
+words:soda_s1,,,,,"{""g"":""refresco; gaseosa"",""ex"":{""soda_s1"":""Pidió un refresco con su sándwich.""}}",regional variants retained for es-419
+words:spaceship_s1,,,,,"{""g"":""nave espacial"",""ex"":{""spaceship_s1"":""Los niños construyeron una nave espacial con cajas de cartón.""}}",manual sense/example review
+words:spaghetti_s1,,,,,"{""g"":""espagueti"",""ex"":{""spaghetti_s1"":""Cocinamos espagueti con salsa de tomate para la cena.""}}",manual food review
+words:stomachache_s1,,,,,"{""g"":""dolor de estómago"",""ex"":{""stomachache_s1"":""Se quedó en casa porque tenía dolor de estómago.""}}",manual health review
+words:sunflower_s1,,,,,"{""g"":""girasol"",""ex"":{""sunflower_s1"":""El girasol creció más que la cerca del jardín.""}}",manual nature review
+words:supper_s1,,,,,"{""g"":""cena; cena ligera"",""ex"":{""supper_s1"":""Cenamos algo sencillo después del tren nocturno.""}}",manual meal context
+words:surfing_s1,,,,,"{""g"":""surf; surfear"",""ex"":{""surfing_s1"":""El surf es popular en esta isla costera cálida.""}}",regional variants retained for es-419
+words:swimsuit_s1,,,,,"{""g"":""traje de baño; bañador"",""ex"":{""swimsuit_s1"":""Empaca un traje de baño si piensas usar la piscina del hotel.""}}",regional variants retained for es-419
+words:fairy_s1,,,,,"{""g"":""hada"",""ex"":{""fairy_s1"":""El hada apareció en un cuento junto al príncipe dormido.""}}",manual story review
+words:grandfather_s1,,,,,"{""g"":""abuelo"",""ex"":{""grandfather_s1"":""Mi abuelo me enseñó a reparar una bicicleta.""}}",manual family review
+words:princess_s1,,,,,"{""g"":""princesa"",""ex"":{""princess_s1"":""La princesa saludó a los visitantes desde el balcón del palacio.""}}",manual story review
+words:cola_s1,,,,,"{""g"":""refresco de cola; cola"",""ex"":{""cola_s1"":""Pidió un refresco de cola con el almuerzo.""}}",manual drink review
+words:frank_s1,,,,,"{""g"":""franco; sincero"",""ex"":{""frank_s1"":""Dio una respuesta sincera sobre la decisión difícil.""}}",manual sense/example review
+words:half_price_s1,,,,,"{""g"":""a mitad de precio"",""ex"":{""half_price_s1"":""La tienda vende abrigos de invierno a mitad de precio esta semana.""}}",manual shopping review
+words:omelet_s1,,,,,"{""g"":""omelet; tortilla de huevo"",""ex"":{""omelet_s1"":""Preparé un omelet con queso y verduras frescas.""}}",regional variants retained for es-419

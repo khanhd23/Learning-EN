@@ -1,0 +1,26 @@
+key,corrected,comment
+words:benefit_s2,"{""g"":""beneficiar; ser beneficioso para"",""ex"":{""benefit_s2"":""Todos se beneficiarán del nuevo parque.""}}",manual translation
+words:promote_s1,"{""g"":""ascender; promover"",""ex"":{""promote_s1"":""La ascendieron a gerente después de dos años.""}}",manual translation
+words:promote_s2,"{""g"":""promocionar; promover"",""ex"":{""promote_s2"":""Usaron las redes sociales para promocionar su nueva cafetería.""}}",manual translation
+words:resign_s1,"{""g"":""renunciar"",""ex"":{""resign_s1"":""Renunció para iniciar su propio negocio.""}}",manual translation
+words:retire_s1,"{""g"":""jubilarse; retirarse"",""ex"":{""retire_s1"":""Mi padre se jubiló a los sesenta años.""}}",manual translation
+words:performance_s1,"{""g"":""actuación; espectáculo"",""ex"":{""performance_s1"":""Su actuación impresionó a todos los espectadores.""}}",manual translation
+words:reference_s1,"{""g"":""referencia; recomendación"",""ex"":{""reference_s1"":""Por favor, proporciona dos referencias de empleadores anteriores.""}}",manual translation
+words:reference_s2,"{""g"":""referencia"",""ex"":{""reference_s2"":""Guarda esta guía para consultarla en el futuro.""}}",manual translation
+words:leave_s1,"{""g"":""salir; partir"",""ex"":{""leave_s1"":""El tren sale de la estación a las nueve.""}}",manual translation
+words:leave_s2,"{""g"":""dejar"",""ex"":{""leave_s2"":""Dejé mi paraguas en el autobús.""}}",manual translation
+words:deposit_s1,"{""g"":""depositar"",""ex"":{""deposit_s1"":""Puedes depositar efectivo en cualquier sucursal.""}}",manual translation
+words:deposit_s2,"{""g"":""depósito"",""ex"":{""deposit_s2"":""Debes pagar un depósito equivalente a un mes de renta.""}}",source example uses rental deposit
+words:withdraw_s1,"{""g"":""retirar; sacar"",""ex"":{""withdraw_s1"":""Necesito retirar dinero del cajero automático.""}}",manual translation
+words:loan_s1,"{""g"":""préstamo"",""ex"":{""loan_s1"":""Pidieron un préstamo para comprar una casa.""}}",manual translation
+words:loan_s2,"{""g"":""prestar"",""ex"":{""loan_s2"":""Me prestó su auto durante el fin de semana.""}}",manual translation
+words:interest_s1,"{""g"":""interés"",""ex"":{""interest_s1"":""Tiene mucho interés en la historia.""}}",manual translation
+words:interest_s2,"{""g"":""interés; intereses"",""ex"":{""interest_s2"":""El banco paga un dos por ciento de intereses sobre los ahorros.""}}",manual translation
+words:interest_s3,"{""g"":""interesar"",""ex"":{""interest_s3"":""La ciencia siempre le ha interesado a mi hermano.""}}",manual translation
+words:balance_s1,"{""g"":""saldo"",""ex"":{""balance_s1"":""Consulta el saldo de tu cuenta en línea.""}}",manual translation
+words:balance_s2,"{""g"":""equilibrio; balance"",""ex"":{""balance_s2"":""Intenta mantener un equilibrio entre el trabajo y el descanso.""}}",source example uses work/rest balance
+words:transfer_s1,"{""g"":""transferir"",""ex"":{""transfer_s1"":""Ayer transferí el dinero a tu cuenta.""}}",manual translation
+words:transfer_s2,"{""g"":""transferencia"",""ex"":{""transfer_s2"":""La transferencia bancaria tarda un día.""}}",manual translation
+words:currency_s1,"{""g"":""moneda"",""ex"":{""currency_s1"":""El euro es la moneda de muchos países europeos.""}}",manual translation
+words:exchange_rate_s1,"{""g"":""tipo de cambio"",""ex"":{""exchange_rate_s1"":""El tipo de cambio cambia todos los días.""}}",manual translation
+words:invest_s1,"{""g"":""invertir"",""ex"":{""invest_s1"":""Invirtió sus ahorros en una pequeña empresa.""}}",manual translation

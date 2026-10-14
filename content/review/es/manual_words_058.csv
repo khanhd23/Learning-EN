@@ -1,0 +1,26 @@
+key,corrected,comment
+words:stress_s1,"{""g"":""estrés"",""ex"":{""stress_s1"":""Demasiado trabajo causa estrés.""}}",manual translation
+words:stress_s2,"{""g"":""enfatizar, hacer hincapié en"",""ex"":{""stress_s2"":""El profesor enfatizó la importancia de practicar.""}}",manual translation
+words:cough_s1,"{""g"":""tos"",""ex"":{""cough_s1"":""Tiene mucha tos.""}}",manual translation
+words:rent_s1,"{""g"":""alquiler, renta"",""ex"":{""rent_s1"":""El alquiler vence el primer día del mes.""}}",manual translation
+words:rent_s2,"{""g"":""alquilar"",""ex"":{""rent_s2"":""Alquilamos un auto para el fin de semana.""}}",manual translation
+words:neighborhood_s1,"{""g"":""vecindario, barrio"",""ex"":{""neighborhood_s1"":""Este es un vecindario tranquilo.""}}",manual translation
+words:furniture_s1,"{""g"":""muebles"",""ex"":{""furniture_s1"":""Compramos muebles nuevos para la sala.""}}",manual translation
+words:balcony_s1,"{""g"":""balcón"",""ex"":{""balcony_s1"":""Desayunamos en el balcón.""}}",manual translation
+words:garage_s1,"{""g"":""garaje, cochera"",""ex"":{""garage_s1"":""El auto está en el garaje.""}}",manual translation
+words:roommate_s1,"{""g"":""compañero, compañera de cuarto"",""ex"":{""roommate_s1"":""Mi compañero de cuarto es de Japón.""}}",manual translation
+words:own_s1,"{""g"":""ser dueño de, poseer"",""ex"":{""own_s1"":""Ellos son dueños de dos casas junto al mar.""}}",manual translation
+words:own_s2,"{""g"":""propio, propia"",""ex"":{""own_s2"":""Quiero mi propio cuarto.""}}",manual translation
+words:course_s1,"{""g"":""curso"",""ex"":{""course_s1"":""Estoy tomando un curso de inglés en línea.""}}",manual translation
+words:course_s2,"{""g"":""por supuesto, claro"",""ex"":{""course_s2"":""Por supuesto que te ayudaré con tu tarea.""}}",manual translation
+words:skill_s1,"{""g"":""habilidad"",""ex"":{""skill_s1"":""La comunicación es una habilidad importante.""}}",manual translation
+words:improve_s1,"{""g"":""mejorar"",""ex"":{""improve_s1"":""Quiero mejorar mi expresión oral este año.""}}",manual translation
+words:vocabulary_s1,"{""g"":""vocabulario"",""ex"":{""vocabulary_s1"":""Leer te ayuda a ampliar tu vocabulario.""}}",manual translation
+words:grammar_s1,"{""g"":""gramática"",""ex"":{""grammar_s1"":""La gramática inglesa no es tan difícil como crees.""}}",manual translation
+words:mark_s1,"{""g"":""calificación, nota"",""ex"":{""mark_s1"":""Obtuvo la máxima calificación en el examen.""}}",manual translation
+words:mark_s2,"{""g"":""marcar"",""ex"":{""mark_s2"":""Marca las palabras que no conoces.""}}",manual translation
+words:environment_s1,"{""g"":""medio ambiente"",""ex"":{""environment_s1"":""Debemos proteger el medio ambiente.""}}",manual translation
+words:pollution_s1,"{""g"":""contaminación"",""ex"":{""pollution_s1"":""La contaminación del aire es un gran problema en muchas ciudades.""}}",manual translation
+words:recycle_s1,"{""g"":""reciclar"",""ex"":{""recycle_s1"":""Reciclamos papel y plástico.""}}",manual translation
+words:waste_s1,"{""g"":""residuos, desechos"",""ex"":{""waste_s1"":""Las fábricas producen muchos residuos.""}}",manual translation
+words:waste_s2,"{""g"":""desperdiciar"",""ex"":{""waste_s2"":""No desperdicies tu tiempo en ese juego tonto.""}}",manual translation

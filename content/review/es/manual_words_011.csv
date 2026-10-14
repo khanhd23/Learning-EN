@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:second_s1,,,,,"{""g"":""segundo (unidad de tiempo)"",""ex"":{""second_s1"":""Espera unos segundos antes de abrir la puerta.""}}",manual disambiguation review
+words:second_s2,,,,,"{""g"":""segundo; segunda"",""ex"":{""second_s2"":""Toma la segunda calle a la derecha.""}}",manual disambiguation review
+words:noon_s1,,,,,"{""g"":""mediodía"",""ex"":{""noon_s1"":""Reunámonos para almorzar al mediodía.""}}",manual sense/example review
+words:early_s1,,,,,"{""g"":""temprano"",""ex"":{""early_s1"":""Llegamos temprano y encontramos buenos asientos.""}}",manual sense/example review
+words:late_s1,,,,,"{""g"":""tarde"",""ex"":{""late_s1"":""Llegó tarde porque perdió el autobús.""}}",manual sense/example review
+words:late_s2,,,,,"{""g"":""tarde; retrasado"",""ex"":{""late_s2"":""Lo siento, llego tarde a clase.""}}",manual sense/example review
+words:always_s1,,,,,"{""g"":""siempre"",""ex"":{""always_s1"":""Ella siempre revisa sus respuestas.""}}",manual sense/example review
+words:usually_s1,,,,,"{""g"":""normalmente; por lo general"",""ex"":{""usually_s1"":""Normalmente camino al trabajo los lunes.""}}",manual sense/example review
+words:often_s1,,,,,"{""g"":""a menudo; con frecuencia"",""ex"":{""often_s1"":""A menudo cocinamos la cena juntos.""}}",manual sense/example review
+words:sometimes_s1,,,,,"{""g"":""a veces"",""ex"":{""sometimes_s1"":""A veces camino a casa después de la clase nocturna.""}}",manual sense/example review
+words:never_s1,,,,,"{""g"":""nunca"",""ex"":{""never_s1"":""Nunca salgo de casa sin mis llaves.""}}",manual sense/example review
+words:once_s1,,,,,"{""g"":""una vez"",""ex"":{""once_s1"":""Visitamos a nuestros primos una vez al mes.""}}",manual sense/example review
+words:twice_s1,,,,,"{""g"":""dos veces"",""ex"":{""twice_s1"":""Revisé la dirección dos veces.""}}",manual sense/example review
+words:soon_s1,,,,,"{""g"":""pronto"",""ex"":{""soon_s1"":""La cena estará lista pronto.""}}",manual sense/example review
+words:zero_s1,,,,,"{""g"":""cero"",""ex"":{""zero_s1"":""La temperatura bajó a cero anoche.""}}",source definition is generic; corrected follows the numerical example
+words:one_s1,,,,,"{""g"":""uno; una"",""ex"":{""one_s1"":""Escribe el número uno en el primer recuadro.""}}",manual number review
+words:two_s1,,,,,"{""g"":""dos"",""ex"":{""two_s1"":""Escribe el número dos debajo de tu nombre.""}}",manual number review
+words:three_s1,,,,,"{""g"":""tres"",""ex"":{""three_s1"":""Rodea el número tres en la tarjeta.""}}",manual number review
+words:four_s1,,,,,"{""g"":""cuatro"",""ex"":{""four_s1"":""La respuesta a dos más dos es cuatro.""}}",manual number review
+words:five_s1,,,,,"{""g"":""cinco"",""ex"":{""five_s1"":""Pasa a la página cinco de tu libro.""}}",manual number review
+words:six_s1,,,,,"{""g"":""seis"",""ex"":{""six_s1"":""El número de la puerta es seis.""}}",manual number review
+words:seven_s1,,,,,"{""g"":""siete"",""ex"":{""seven_s1"":""Mi número de la suerte es el siete.""}}",manual number review
+words:eight_s1,,,,,"{""g"":""ocho"",""ex"":{""eight_s1"":""Puedes ver el número ocho en el autobús.""}}",manual number review
+words:nine_s1,,,,,"{""g"":""nueve"",""ex"":{""nine_s1"":""Escribe nueve con letras, no con cifras.""}}",manual number review
+words:ten_s1,,,,,"{""g"":""diez"",""ex"":{""ten_s1"":""Cuenta del uno al diez despacio.""}}",manual number review

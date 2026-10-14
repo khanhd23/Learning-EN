@@ -1,0 +1,26 @@
+key,corrected,comment
+words:exchange_s2,"{""g"":""intercambio"",""ex"":{""exchange_s2"":""Tuvimos un intercambio de ideas.""}}",manual translation
+words:lawyer_s1,"{""g"":""abogado, abogada"",""ex"":{""lawyer_s1"":""Deberías hablar con un abogado antes de firmar.""}}",manual translation
+words:quality_s1,"{""g"":""calidad"",""ex"":{""quality_s1"":""El restaurante es conocido por la calidad de su comida.""}}",manual translation
+words:package_s1,"{""g"":""paquete"",""ex"":{""package_s1"":""Esta mañana llegó un paquete para ti.""}}",manual translation
+words:package_s2,"{""g"":""paquete"",""ex"":{""package_s2"":""El hotel ofrece un paquete para luna de miel.""}}",manual translation
+words:safety_s1,"{""g"":""seguridad"",""ex"":{""safety_s1"":""La seguridad es nuestra máxima prioridad.""}}",manual translation
+words:delay_s1,"{""g"":""retraso, demora"",""ex"":{""delay_s1"":""El mal tiempo causó largos retrasos.""}}",manual translation
+words:delay_s2,"{""g"":""retrasar"",""ex"":{""delay_s2"":""El vuelo se retrasó dos horas.""}}",manual translation
+words:payment_s1,"{""g"":""pago"",""ex"":{""payment_s1"":""Aceptamos pagos mediante transferencia bancaria.""}}",manual translation
+words:compare_s1,"{""g"":""comparar"",""ex"":{""compare_s1"":""Compara los precios antes de comprar.""}}",manual translation
+words:brand_new_s1,"{""g"":""completamente nuevo, nuevo de paquete"",""ex"":{""brand_new_s1"":""Compró una laptop completamente nueva.""}}",manual translation
+words:fit_s1,"{""g"":""quedar, ajustarse"",""ex"":{""fit_s1"":""Estos jeans no me quedan.""}}",manual translation
+words:fit_s2,"{""g"":""mantenerse en forma"",""ex"":{""fit_s2"":""Ella se mantiene en forma montando bicicleta.""}}",source/example mismatch noted
+words:fit_s3,"{""g"":""ajuste, calce"",""ex"":{""fit_s3"":""Esta chaqueta tiene un ajuste perfecto.""}}",manual translation
+words:passenger_s1,"{""g"":""pasajero, pasajera"",""ex"":{""passenger_s1"":""Todos los pasajeros deben mostrar sus boletos.""}}",manual translation
+words:luggage_s1,"{""g"":""equipaje"",""ex"":{""luggage_s1"":""No dejes tu equipaje sin supervisión.""}}",manual translation
+words:boarding_pass_s1,"{""g"":""pase de abordar"",""ex"":{""boarding_pass_s1"":""Ten listo tu pase de abordar en la puerta de embarque.""}}",manual translation
+words:delayed_s1,"{""g"":""retrasado, retrasada"",""ex"":{""delayed_s1"":""El tren se retrasó una hora.""}}",source/example mismatch noted
+words:cancel_s1,"{""g"":""cancelar"",""ex"":{""cancel_s1"":""El vuelo se canceló debido a la tormenta.""}}",manual translation
+words:platform_s1,"{""g"":""andén, plataforma"",""ex"":{""platform_s1"":""El tren sale del andén 3.""}}",manual translation
+words:journey_s1,"{""g"":""viaje"",""ex"":{""journey_s1"":""El viaje dura unas cinco horas.""}}",manual translation
+words:guide_s1,"{""g"":""guía"",""ex"":{""guide_s1"":""Nuestro guía hablaba un inglés excelente.""}}",manual translation
+words:guide_s2,"{""g"":""guiar"",""ex"":{""guide_s2"":""Ella nos guio por el casco antiguo.""}}",manual translation
+words:dish_s1,"{""g"":""plato"",""ex"":{""dish_s1"":""El pho es un plato famoso de origen asiático.""}}",source/example mismatch noted; neutralized geographic reference for locale policy
+words:dish_s2,"{""g"":""plato"",""ex"":{""dish_s2"":""Pon el plato en el fregadero.""}}",source/example mismatch noted

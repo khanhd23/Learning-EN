@@ -1,0 +1,26 @@
+key,corrected,comment
+words:support_s2,"{""g"":""apoyo"",""ex"":{""support_s2"":""Gracias por tu apoyo.""}}",manual translation
+words:twin_s1,"{""g"":""gemelo, gemela"",""ex"":{""twin_s1"":""Alex y Sam son gemelos.""}}",manual translation
+words:date_s1,"{""g"":""fecha"",""ex"":{""date_s1"":""Escribe la fecha de hoy en la parte superior.""}}",manual translation
+words:date_s2,"{""g"":""cita"",""ex"":{""date_s2"":""Tuvieron una cita en el cine.""}}",manual translation
+words:excited_s1,"{""g"":""emocionado, emocionada"",""ex"":{""excited_s1"":""Estoy muy emocionado por el viaje.""}}",manual translation
+words:bored_s1,"{""g"":""aburrido, aburrida"",""ex"":{""bored_s1"":""Estoy aburrido. Vamos a salir.""}}",manual translation
+words:nervous_s1,"{""g"":""nervioso, nerviosa"",""ex"":{""nervous_s1"":""Siempre me pongo nervioso antes de los exámenes.""}}",manual translation
+words:worried_s1,"{""g"":""preocupado, preocupada"",""ex"":{""worried_s1"":""Mamá está preocupada porque llego tarde.""}}",manual translation
+words:proud_s1,"{""g"":""orgulloso, orgullosa"",""ex"":{""proud_s1"":""Estoy muy orgulloso del trabajo de mi hija.""}}",manual translation
+words:shy_s1,"{""g"":""tímido, tímida"",""ex"":{""shy_s1"":""Es tímido con la gente nueva.""}}",manual translation
+words:honest_s1,"{""g"":""honesto, honesta; sincero, sincera"",""ex"":{""honest_s1"":""Para ser honesto, no me gusta.""}}",manual translation
+words:lonely_s1,"{""g"":""solo, sola; sentirse solo"",""ex"":{""lonely_s1"":""Se sintió sola en la ciudad nueva.""}}",manual translation
+words:calm_s1,"{""g"":""tranquilo, tranquila"",""ex"":{""calm_s1"":""Mantén la calma y vuelve a leer la pregunta.""}}",manual translation
+words:calm_s2,"{""g"":""calmarse"",""ex"":{""calm_s2"":""Cálmate. Todo estará bien.""}}",manual translation
+words:mood_s1,"{""g"":""estado de ánimo, humor"",""ex"":{""mood_s1"":""Hoy estoy de buen humor.""}}",manual translation
+words:boil_s1,"{""g"":""hervir"",""ex"":{""boil_s1"":""Hierve los huevos durante diez minutos.""}}",manual translation
+words:fry_s1,"{""g"":""freír"",""ex"":{""fry_s1"":""Ella frió pescado para el almuerzo.""}}",source/example mismatch noted
+words:bake_s1,"{""g"":""hornear"",""ex"":{""bake_s1"":""Horneé un pastel para su cumpleaños.""}}",manual translation
+words:taste_s1,"{""g"":""saber, tener sabor"",""ex"":{""taste_s1"":""Esta sopa sabe increíble con hierbas frescas.""}}",manual translation
+words:taste_s2,"{""g"":""gusto"",""ex"":{""taste_s2"":""Tenemos el mismo gusto musical.""}}",manual translation
+words:salty_s1,"{""g"":""salado, salada"",""ex"":{""salty_s1"":""La salsa de pescado está muy salada.""}}",source/example mismatch noted
+words:fresh_s1,"{""g"":""fresco, fresca"",""ex"":{""fresh_s1"":""Compramos pescado fresco en el mercado.""}}",manual translation
+words:snack_s1,"{""g"":""bocadillo, tentempié"",""ex"":{""snack_s1"":""Tengo hambre. Vamos por un bocadillo.""}}",manual translation
+words:slice_s1,"{""g"":""rebanada"",""ex"":{""slice_s1"":""¿Quieres una rebanada de pizza?""}}",manual translation
+words:windy_s1,"{""g"":""ventoso, ventosa"",""ex"":{""windy_s1"":""Hace demasiado viento para ir a la playa.""}}",manual translation

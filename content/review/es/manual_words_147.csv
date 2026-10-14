@@ -1,0 +1,26 @@
+key,corrected,comment
+words:rough_s1,"{""g"":""áspero; irregular"",""ex"":{""rough_s1"":""El camino al pueblo es irregular y polvoriento.""}}",manual translation
+words:exact_s1,"{""g"":""exacto; preciso"",""ex"":{""exact_s1"":""¿Cuál es la hora exacta ahora?""}}",manual translation
+words:dependent_s1,"{""g"":""dependiente"",""ex"":{""dependent_s1"":""Los niños pequeños dependen de sus padres.""}}",manual translation
+words:stupid_s1,"{""g"":""tonto; poco sensato"",""ex"":{""stupid_s1"":""Fue una tontería que olvidara mis llaves.""}}",manual translation
+words:keen_s1,"{""g"":""entusiasmado; muy interesado"",""ex"":{""keen_s1"":""A mi hijo le encanta el fútbol y juega todos los días.""}}",manual translation
+words:prompt_s1,"{""g"":""rápido; inmediato"",""ex"":{""prompt_s1"":""Gracias por tu rápida respuesta.""}}",manual translation
+words:comprehensive_s1,"{""g"":""completo; exhaustivo"",""ex"":{""comprehensive_s1"":""La guía ofrece información completa sobre la ciudad.""}}",manual translation
+words:rapid_s1,"{""g"":""rápido; acelerado"",""ex"":{""rapid_s1"":""La ciudad ha experimentado un crecimiento rápido.""}}",manual translation
+words:absolute_s1,"{""g"":""absoluto; total"",""ex"":{""absolute_s1"":""Tengo absoluta confianza en mi equipo.""}}",manual translation
+words:motor_s1,"{""g"":""motor"",""ex"":{""motor_s1"":""El barco tiene un pequeño motor eléctrico.""}}",manual translation
+words:mad_s1,"{""g"":""enojado; loco"",""ex"":{""mad_s1"":""Mi mamá se enojó conmigo por llegar tarde a casa.""}}",manual translation
+words:visible_s1,"{""g"":""visible"",""ex"":{""visible_s1"":""Las montañas son visibles desde nuestra ventana.""}}",manual translation
+words:electric_s1,"{""g"":""eléctrico"",""ex"":{""electric_s1"":""Cada vez más personas compran autos eléctricos.""}}",manual translation
+words:impressive_s1,"{""g"":""impresionante"",""ex"":{""impressive_s1"":""La vista desde la torre es realmente impresionante.""}}",manual translation
+words:violent_s1,"{""g"":""violento; intenso"",""ex"":{""violent_s1"":""A los padres les preocupan los videojuegos violentos.""}}",manual translation
+words:random_s1,"{""g"":""aleatorio; al azar"",""ex"":{""random_s1"":""La computadora elige un número al azar.""}}",manual translation
+words:mutual_s1,"{""g"":""mutuo; en común"",""ex"":{""mutual_s1"":""Se conocieron por medio de un amigo en común.""}}",manual translation
+words:silent_s1,"{""g"":""silencioso; callado"",""ex"":{""silent_s1"":""La sala quedó en silencio cuando entró la maestra.""}}",manual translation
+words:classical_s1,"{""g"":""clásico; tradicional"",""ex"":{""classical_s1"":""Le gusta escuchar música clásica.""}}",manual translation
+words:historic_s1,"{""g"":""histórico; célebre"",""ex"":{""historic_s1"":""Visitamos el centro histórico de la ciudad.""}}",manual translation
+words:remote_s1,"{""g"":""remoto; aislado"",""ex"":{""remote_s1"":""Viven en un pueblo remoto de las montañas.""}}",manual translation
+words:pregnant_s1,"{""g"":""embarazada"",""ex"":{""pregnant_s1"":""Mi hermana está embarazada de su primer hijo.""}}",manual translation
+words:fancy_s1,"{""g"":""elegante; lujoso"",""ex"":{""fancy_s1"":""Cenamos en un restaurante elegante.""}}",manual translation
+words:wooden_s1,"{""g"":""de madera"",""ex"":{""wooden_s1"":""Compramos una mesa de madera para la cocina.""}}",manual translation
+words:intense_s1,"{""g"":""intenso; fuerte"",""ex"":{""intense_s1"":""El calor era intenso por la tarde.""}}",manual translation

@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:period_s1,,,,,"{""g"":""período; periodo"",""ex"":{""period_s1"":""La tienda está cerrada durante un breve período.""}}",manual time review
+words:history_s1,,,,,"{""g"":""historia"",""ex"":{""history_s1"":""Estoy leyendo un libro sobre la historia del mundo.""}}",manual sense/example review
+words:drive_s1,,,,,"{""g"":""conducir"",""ex"":{""drive_s1"":""Conduzco al trabajo todas las mañanas.""}}",manual sense/example review
+words:type_s1,,,,,"{""g"":""tipo"",""ex"":{""type_s1"":""¿Qué tipo de teléfono tienes?""}}",manual sense/example review
+words:sound_s1,,,,,"{""g"":""sonido; ruido"",""ex"":{""sound_s1"":""Oí un sonido extraño afuera.""}}",manual sense/example review
+words:moment_s1,,,,,"{""g"":""momento"",""ex"":{""moment_s1"":""Espera un momento, ya casi estoy listo.""}}",manual time review
+words:body_s1,,,,,"{""g"":""cuerpo"",""ex"":{""body_s1"":""El ejercicio regular mantiene sano tu cuerpo.""}}",manual sense/example review
+words:sense_s1,,,,,"{""g"":""sentido"",""ex"":{""sense_s1"":""El tacto es un sentido importante.""}}",manual sense/example review
+words:rule_s1,,,,,"{""g"":""regla; norma"",""ex"":{""rule_s1"":""Cada aula tiene algunas reglas sencillas.""}}",manual sense/example review
+words:cover_s1,,,,,"{""g"":""tapa; cubierta"",""ex"":{""cover_s1"":""Pon una tapa a la comida, por favor.""}}",source definition is broad; corrected follows the noun example
+words:computer_s1,,,,,"{""g"":""computadora; ordenador"",""ex"":{""computer_s1"":""Hoy mi computadora necesita una batería nueva.""}}",manual sense/example review
+words:situation_s1,,,,,"{""g"":""situación"",""ex"":{""situation_s1"":""Primero tenemos que entender la situación.""}}",manual sense/example review
+words:war_s1,,,,,"{""g"":""guerra"",""ex"":{""war_s1"":""Muchas familias perdieron sus hogares durante la guerra.""}}",manual sense/example review
+words:design_s1,,,,,"{""g"":""diseño"",""ex"":{""design_s1"":""El diseñador nos mostró el nuevo diseño del sitio web.""}}",manual sense/example review
+words:condition_s1,,,,,"{""g"":""condición; estado"",""ex"":{""condition_s1"":""El auto está en buen estado.""}}",manual context review
+words:father_s1,,,,,"{""g"":""padre"",""ex"":{""father_s1"":""Mi padre cocina la cena los viernes.""}}",manual sense/example review
+words:cut_s1,,,,,"{""g"":""corte"",""ex"":{""cut_s1"":""Cubre el corte pequeño con una venda limpia.""}}",noun sense
+words:detail_s1,,,,,"{""g"":""detalle"",""ex"":{""detail_s1"":""Revisa cada detalle antes de enviar el formulario.""}}",manual sense/example review
+words:difference_s1,,,,,"{""g"":""diferencia"",""ex"":{""difference_s1"":""¿Puedes explicar la diferencia entre estas palabras?""}}",manual sense/example review
+words:action_s1,,,,,"{""g"":""acción"",""ex"":{""action_s1"":""Cada pequeña acción puede ayudar al medioambiente.""}}",manual sense/example review
+words:step_s1,,,,,"{""g"":""paso"",""ex"":{""step_s1"":""El primer paso es leer las instrucciones.""}}",manual sense/example review
+words:model_s1,,,,,"{""g"":""modelo"",""ex"":{""model_s1"":""Este modelo muestra cómo funciona la máquina.""}}",manual sense/example review
+words:outside_s1,,,,,"{""g"":""afuera; fuera"",""ex"":{""outside_s1"":""Los niños juegan afuera después de la escuela.""}}",manual place review
+words:site_s1,,,,,"{""g"":""sitio; obra"",""ex"":{""site_s1"":""Los trabajadores visitaron la obra ayer.""}}",manual context review
+words:land_s1,,,,,"{""g"":""tierra"",""ex"":{""land_s1"":""Después de semanas en el mar, finalmente vieron tierra.""}}",manual sense/example review

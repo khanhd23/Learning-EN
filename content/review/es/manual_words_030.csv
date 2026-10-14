@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:medium_s1,,,,,"{""g"":""mediano; mediana"",""ex"":{""medium_s1"":""Quisiera un café mediano con leche.""}}",manual size review
+words:average_s1,,,,,"{""g"":""promedio"",""ex"":{""average_s1"":""El promedio de estos tres números es diez.""}}",manual sense/example review
+words:hit_s1,,,,,"{""g"":""golpear"",""ex"":{""hit_s1"":""La pelota golpeó la ventana durante el partido.""}}",manual sense/example review
+words:of_s1,,,,,"{""g"":""de"",""ex"":{""of_s1"":""El techo de la casa es rojo.""}}",manual preposition review
+words:to_s1,,,,,"{""g"":""a; para"",""ex"":{""to_s1"":""Camino a la escuela todas las mañanas.""}}",manual preposition review
+words:a_s1,,,,,"{""g"":""un; una (artículo indefinido)"",""ex"":{""a_s1"":""Un pájaro está sentado en el árbol.""}}",Spanish article agrees with gender
+words:you_s1,,,,,"{""g"":""tú; usted; ustedes"",""ex"":{""you_s1"":""¿Puedes ayudarme con esta bolsa?""}}",Spanish pronoun depends on number and formality
+words:that_s1,,,,,"{""g"":""ese; esa; aquel; aquella"",""ex"":{""that_s1"":""¿Quién es ese hombre junto a la puerta?""}}",Spanish demonstrative agrees with noun
+words:on_s1,,,,,"{""g"":""en; sobre"",""ex"":{""on_s1"":""Hay un libro sobre la mesa.""}}",manual preposition review
+words:with_s1,,,,,"{""g"":""con"",""ex"":{""with_s1"":""Vivo con mis padres.""}}",manual preposition review
+words:from_s1,,,,,"{""g"":""de; desde"",""ex"":{""from_s1"":""El tren de Londres llega al mediodía.""}}",manual preposition review
+words:by_s1,,,,,"{""g"":""para (fecha límite); junto a"",""ex"":{""by_s1"":""Termina el informe para el viernes.""}}",manual deadline context review
+words:what_s1,,,,,"{""g"":""qué; cuál"",""ex"":{""what_s1"":""¿Cuál es tu color favorito?""}}",manual question-word review
+words:through_s1,,,,,"{""g"":""a través de; por"",""ex"":{""through_s1"":""El tren atraviesa un túnel largo.""}}",manual preposition review
+words:man_s1,,,,,"{""g"":""hombre"",""ex"":{""man_s1"":""Un hombre está esperando en la puerta.""}}",manual sense/example review
+words:around_s1,,,,,"{""g"":""alrededor de"",""ex"":{""around_s1"":""Caminamos alrededor del lago después del almuerzo.""}}",manual preposition review
+words:under_s1,,,,,"{""g"":""debajo de"",""ex"":{""under_s1"":""El gato está durmiendo debajo de la cama.""}}",manual preposition review
+words:without_s1,,,,,"{""g"":""sin"",""ex"":{""without_s1"":""Tomo el café sin azúcar.""}}",manual preposition review
+words:against_s1,,,,,"{""g"":""contra"",""ex"":{""against_s1"":""La mayoría de la gente votó contra el plan.""}}",manual preposition review
+words:though_s1,,,,,"{""g"":""aunque"",""ex"":{""though_s1"":""Aunque era tarde, seguimos trabajando.""}}",manual contrast review
+words:within_s1,,,,,"{""g"":""dentro de; en un plazo de"",""ex"":{""within_s1"":""Recibirás una respuesta en un plazo de dos días.""}}",manual time-limit review
+words:toward_s1,,,,,"{""g"":""hacia"",""ex"":{""toward_s1"":""Caminó hacia la estación después del trabajo.""}}",manual direction review
+words:everything_s1,,,,,"{""g"":""todo"",""ex"":{""everything_s1"":""Todo está listo para la reunión.""}}",manual pronoun review
+words:upon_s1,,,,,"{""g"":""al; después de"",""ex"":{""upon_s1"":""Al llegar, llama a la oficina.""}}",formal time expression
+words:apple_s1,,,,,"{""g"":""manzana"",""ex"":{""apple_s1"":""Como una manzana todas las mañanas.""}}",manual sense/example review

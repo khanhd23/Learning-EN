@@ -1,0 +1,48 @@
+key,english,english_example,def,draft,corrected,comment
+topics:family,Family,,,,"Keluarga",manual LLM semantic translation
+topics:friends_relationships,Friends & relationships,,,,"Teman dan hubungan",manual LLM semantic translation
+topics:body_appearance,Body & appearance,,,,"Tubuh dan penampilan",manual LLM semantic translation
+topics:feelings_personality,Feelings & personality,,,,"Perasaan dan kepribadian",manual LLM semantic translation
+topics:health_illness,Health & illness,,,,"Kesehatan dan penyakit",manual LLM semantic translation
+topics:age_life_stages,Age & life stages,,,,"Usia dan tahap kehidupan",manual LLM semantic translation
+topics:home_furniture,Home & household,,,,"Rumah dan keperluan rumah tangga",manual LLM semantic translation
+topics:daily_routine,Daily routine,,,,"Rutinitas sehari-hari",manual LLM semantic translation
+topics:food_drink,Food & cooking,,,,"Makanan dan memasak",manual LLM semantic translation
+topics:shopping,Shopping,,,,"Berbelanja",manual LLM semantic translation
+topics:clothes,Clothes,,,,"Pakaian",manual LLM semantic translation
+topics:money_banking,Money & banking,,,,"Uang dan perbankan",manual LLM semantic translation
+topics:time_dates,Time & dates,,,,"Waktu dan tanggal",manual LLM semantic translation
+topics:numbers_quantity,Numbers & quantity,,,,"Angka dan jumlah",manual LLM semantic translation
+topics:weather,Weather,,,,"Cuaca",manual LLM semantic translation
+topics:city_directions,City & directions,,,,"Kota dan arah",manual LLM semantic translation
+topics:transport,Transport,,,,"Transportasi",manual LLM semantic translation
+topics:travel_holidays,Travel & holidays,,,,"Perjalanan dan liburan",manual LLM semantic translation
+topics:hotel_restaurant,Hotels & restaurants,,,,"Hotel dan restoran",manual LLM semantic translation
+topics:nature_landscape,Nature & landscape,,,,"Alam dan bentang alam",manual LLM semantic translation
+topics:animals,Animals,,,,"Hewan",manual LLM semantic translation
+topics:education,Education & school,,,,"Pendidikan dan sekolah",manual LLM semantic translation
+topics:language_learning,Language learning,,,,"Belajar bahasa",manual LLM semantic translation
+topics:science_basics,Science basics,,,,"Dasar-dasar sains",manual LLM semantic translation
+topics:academic_words,Academic words,,,,"Kosakata akademik",manual LLM semantic translation
+topics:jobs,Jobs,,,,"Pekerjaan",manual LLM semantic translation
+topics:office,Office & meetings,,,,"Kantor dan rapat",manual LLM semantic translation
+topics:hr_recruiting,HR & recruiting,,,,"SDM dan perekrutan",manual LLM semantic translation
+topics:sales_customer,Sales & customers,,,,"Penjualan dan pelanggan",manual LLM semantic translation
+topics:marketing,Marketing,,,,"Pemasaran",manual LLM semantic translation
+topics:finance_accounting,Finance & accounting,,,,"Keuangan dan akuntansi",manual LLM semantic translation
+topics:contracts_law,Contracts & law,,,,"Kontrak dan hukum",manual LLM semantic translation
+topics:logistics,Production & logistics,,,,"Produksi dan logistik",manual LLM semantic translation
+topics:it_technology,IT & technology,,,,"Teknologi informasi",manual LLM semantic translation
+topics:events,Events & conferences,,,,"Acara dan konferensi",manual LLM semantic translation
+topics:media_news,Media & news,,,,"Media dan berita",manual LLM semantic translation
+topics:internet_social,Internet & social media,,,,"Internet dan media sosial",manual LLM semantic translation
+topics:environment_energy,Environment & energy,,,,"Lingkungan dan energi",manual LLM semantic translation
+topics:government_society,Government & society,,,,"Pemerintahan dan masyarakat",manual LLM semantic translation
+topics:arts_entertainment,Arts & entertainment,,,,"Seni dan hiburan",manual LLM semantic translation
+topics:sports_fitness,Sports & fitness,,,,"Olahraga dan kebugaran",manual LLM semantic translation
+topics:function_words,Function words,,,,"Kata fungsi",manual LLM semantic translation
+topics:core_verbs,Core verbs,,,,"Kata kerja inti",manual LLM semantic translation
+topics:describing_things,Describing things,,,,"Mendeskripsikan sesuatu",manual LLM semantic translation
+topics:linking_words,Linking words,,,,"Kata penghubung",manual LLM semantic translation
+topics:phrasal_verbs,Phrasal verbs,,,,"Kata kerja frasa",manual LLM semantic translation
+topics:idioms_chunks,Idioms & expressions,,,,"Idiom dan ungkapan",manual LLM semantic translation

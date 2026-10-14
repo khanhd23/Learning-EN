@@ -1,0 +1,26 @@
+key,corrected,comment
+words:schedule_s1,"{""g"":""horario"",""ex"":{""schedule_s1"":""Revisa el horario antes de reservar una sala.""}}",example-led translation
+words:schedule_s2,"{""g"":""programar, agendar"",""ex"":{""schedule_s2"":""La reunión está programada para el lunes.""}}",example-led translation
+words:deadline_s1,"{""g"":""fecha límite"",""ex"":{""deadline_s1"":""Tenemos que terminar el informe antes de la fecha límite.""}}",manual translation
+words:colleague_s1,"{""g"":""colega"",""ex"":{""colleague_s1"":""Mi colega me ayudó con la presentación.""}}",manual translation
+words:supervisor_s1,"{""g"":""supervisor"",""ex"":{""supervisor_s1"":""Pregúntale a tu supervisor si necesitas un día libre.""}}",manual translation
+words:department_s1,"{""g"":""departamento"",""ex"":{""department_s1"":""Ella trabaja en el departamento de ventas.""}}",manual translation
+words:photocopy_s1,"{""g"":""fotocopiar"",""ex"":{""photocopy_s1"":""¿Podrías fotocopiarme estas páginas?""}}",manual translation
+words:remind_s1,"{""g"":""recordar, recordarle algo a alguien"",""ex"":{""remind_s1"":""Recuérdame llamar al cliente.""}}",manual translation
+words:attend_s1,"{""g"":""asistir a"",""ex"":{""attend_s1"":""Todos los gerentes deben asistir a la sesión de capacitación.""}}",manual translation
+words:attend_s2,"{""g"":""atender"",""ex"":{""attend_s2"":""Una enfermera te atenderá en breve.""}}",example-led translation
+words:reception_s1,"{""g"":""recepción"",""ex"":{""reception_s1"":""Deja el paquete en recepción.""}}",example-led translation
+words:hire_s1,"{""g"":""contratar"",""ex"":{""hire_s1"":""El hotel planea contratar a veinte empleados nuevos.""}}",manual translation
+words:experience_s1,"{""g"":""experiencia"",""ex"":{""experience_s1"":""¿Tienes experiencia en ventas?""}}",manual translation
+words:salary_s1,"{""g"":""salario, sueldo"",""ex"":{""salary_s1"":""El salario se paga el último día de cada mes.""}}",manual translation
+words:employee_s1,"{""g"":""empleado"",""ex"":{""employee_s1"":""La empresa tiene unos 300 empleados.""}}",manual translation
+words:employer_s1,"{""g"":""empleador"",""ex"":{""employer_s1"":""Tu empleador debe darte un contrato por escrito.""}}",manual translation
+words:position_s1,"{""g"":""posición"",""ex"":{""position_s1"":""El corredor pasó a ocupar la primera posición.""}}",example-led translation
+words:position_s2,"{""g"":""posición, postura"",""ex"":{""position_s2"":""Siéntate en una posición cómoda.""}}",source/example mismatch noted
+words:position_s3,"{""g"":""colocar"",""ex"":{""position_s3"":""Coloca la cámara encima de la puerta.""}}",manual translation
+words:training_s1,"{""g"":""capacitación, formación"",""ex"":{""training_s1"":""El personal nuevo recibe dos semanas de capacitación.""}}",example-led translation
+words:training_s2,"{""g"":""entrenamiento, preparación"",""ex"":{""training_s2"":""El equipo está entrenando para la final.""}}",source/example mismatch noted
+words:full_time_s1,"{""g"":""de tiempo completo"",""ex"":{""full_time_s1"":""Ella tiene un trabajo de tiempo completo en un banco.""}}",manual translation
+words:part_time_s1,"{""g"":""de tiempo parcial"",""ex"":{""part_time_s1"":""Muchos estudiantes tienen trabajos de tiempo parcial.""}}",manual translation
+words:branch_s1,"{""g"":""sucursal"",""ex"":{""branch_s1"":""El banco tiene una sucursal cerca de mi oficina.""}}",example-led translation
+words:branch_s2,"{""g"":""rama"",""ex"":{""branch_s2"":""Hay un pájaro posado en la rama.""}}",manual translation

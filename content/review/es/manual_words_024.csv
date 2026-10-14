@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:inside_s1,,,,,"{""g"":""dentro; adentro"",""ex"":{""inside_s1"":""Los niños juegan adentro porque está lloviendo.""}}",manual preposition/adverb review
+words:necessary_s1,,,,,"{""g"":""necesario; necesaria"",""ex"":{""necessary_s1"":""Lleva solo los documentos necesarios a la entrevista.""}}",manual sense/example review
+words:various_s1,,,,,"{""g"":""varios; diversas"",""ex"":{""various_s1"":""La biblioteca ofrece libros sobre diversos temas.""}}",manual quantity review
+words:thus_s1,,,,,"{""g"":""por lo tanto; así que"",""ex"":{""thus_s1"":""La carretera estaba cerrada; por lo tanto, tomamos un autobús.""}}",formal connector review
+words:simple_s1,,,,,"{""g"":""sencillo; sencilla"",""ex"":{""simple_s1"":""Esta receta usa ingredientes sencillos del mercado.""}}",manual sense/example review
+words:indeed_s1,,,,,"{""g"":""en efecto; realmente"",""ex"":{""indeed_s1"":""La tarea es, en efecto, más difícil de lo que parece.""}}",manual emphasis review
+words:final_s1,,,,,"{""g"":""final"",""ex"":{""final_s1"":""La decisión final llegará la próxima semana.""}}",manual sense/example review
+words:it_s1,,,,,"{""g"":""lo; la (pronombre de objeto)"",""ex"":{""it_s1"":""Perdí mi teléfono, pero lo encontré después.""}}",Spanish object pronoun agrees with the referent
+words:at_s1,,,,,"{""g"":""en"",""ex"":{""at_s1"":""Nos vemos en la estación de autobuses.""}}",manual preposition review
+words:she_s1,,,,,"{""g"":""ella"",""ex"":{""she_s1"":""Ella trabaja en un hospital cercano.""}}",manual pronoun review
+words:will_s1,,,,,"{""g"":""futuro (will)"",""ex"":{""will_s1"":""Lloverá mañana por la tarde.""}}",English auxiliary expressed by a Spanish future form
+words:time_s1,,,,,"{""g"":""tiempo"",""ex"":{""time_s1"":""Hoy no tengo tiempo para cocinar.""}}",manual sense/example review
+words:people_s1,,,,,"{""g"":""personas; gente"",""ex"":{""people_s1"":""Mucha gente visita este parque los fines de semana.""}}",manual collective-noun review
+words:into_s1,,,,,"{""g"":""dentro de; hacia dentro de"",""ex"":{""into_s1"":""Entró en la habitación en silencio.""}}",manual preposition review
+words:first_s1,,,,,"{""g"":""primero; primera"",""ex"":{""first_s1"":""Esta es mi primera visita a Londres.""}}",Spanish gender agreement
+words:way_s1,,,,,"{""g"":""manera; camino"",""ex"":{""way_s1"":""¿Cuál es la mejor manera de aprender inglés?""}}",manual sense/example review
+words:over_s1,,,,,"{""g"":""encima de; sobre"",""ex"":{""over_s1"":""Una lámpara cuelga sobre la mesa de la cocina.""}}",manual preposition review
+words:last_s1,,,,,"{""g"":""último; última"",""ex"":{""last_s1"":""Diciembre es el último mes del año.""}}",Spanish gender agreement
+words:company_s1,,,,,"{""g"":""empresa; compañía"",""ex"":{""company_s1"":""Nuestra empresa abrió una oficina nueva.""}}",manual sense/example review
+words:life_s1,,,,,"{""g"":""vida"",""ex"":{""life_s1"":""Mi abuela tuvo una vida larga y feliz.""}}",manual sense/example review
+words:feel_s1,,,,,"{""g"":""sentir"",""ex"":{""feel_s1"":""Me siento feliz después de una caminata larga.""}}",manual sense/example review
+words:lot_s1,,,,,"{""g"":""mucho; una gran cantidad"",""ex"":{""lot_s1"":""Compramos mucha fruta.""}}",manual quantity review
+words:number_s1,,,,,"{""g"":""número"",""ex"":{""number_s1"":""Escribe aquí tu número de teléfono.""}}",manual sense/example review
+words:world_s1,,,,,"{""g"":""mundo"",""ex"":{""world_s1"":""Quiere viajar por todo el mundo.""}}",manual sense/example review
+words:might_s1,,,,,"{""g"":""podría; quizá"",""ex"":{""might_s1"":""Lleva un abrigo; podría llover más tarde.""}}",English modal expressed by a Spanish possibility form

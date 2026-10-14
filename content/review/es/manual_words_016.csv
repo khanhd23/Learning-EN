@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:but_s1,,,,,"{""g"":""pero"",""ex"":{""but_s1"":""Me gusta esta camisa, pero es demasiado pequeña.""}}",manual conjunction review
+words:or_s1,,,,,"{""g"":""o"",""ex"":{""or_s1"":""¿Quieres té o café?""}}",manual conjunction review
+words:because_s1,,,,,"{""g"":""porque"",""ex"":{""because_s1"":""Me quedé en casa porque estaba cansado.""}}",manual conjunction review
+words:if_s1,,,,,"{""g"":""si"",""ex"":{""if_s1"":""Llámame si necesitas ayuda.""}}",manual conjunction review
+words:when_s1,,,,,"{""g"":""cuando"",""ex"":{""when_s1"":""Escríbeme cuando llegues a casa.""}}",manual conjunction review
+words:for_s1,,,,,"{""g"":""durante; por"",""ex"":{""for_s1"":""Esperamos veinte minutos.""}}",source definition has several uses; corrected follows the duration example
+words:for_s2,,,,,"{""g"":""para"",""ex"":{""for_s2"":""Este regalo es para mi hermanita.""}}",recipient/purpose sense
+words:before_s1,,,,,"{""g"":""antes de"",""ex"":{""before_s1"":""Lávate las manos antes de cenar.""}}",manual preposition review
+words:after_s1,,,,,"{""g"":""después de"",""ex"":{""after_s1"":""Salimos a caminar después del desayuno.""}}",manual preposition review
+words:than_s1,,,,,"{""g"":""que"",""ex"":{""than_s1"":""Esta bolsa es más ligera que esa.""}}",manual comparison review
+words:then_s1,,,,,"{""g"":""luego; entonces"",""ex"":{""then_s1"":""Lee el texto y luego responde las preguntas.""}}",manual sequence review
+words:also_s1,,,,,"{""g"":""también"",""ex"":{""also_s1"":""Habla inglés y también estudia coreano.""}}",manual adverb review
+words:job_s1,,,,,"{""g"":""empleo; trabajo"",""ex"":{""job_s1"":""Encontró trabajo en una librería.""}}",manual sense/example review
+words:work_s1,,,,,"{""g"":""trabajo"",""ex"":{""work_s1"":""Hoy tengo mucho trabajo que hacer.""}}",noun sense
+words:work_s2,,,,,"{""g"":""trabajar"",""ex"":{""work_s2"":""Trabajo en una oficina pequeña cerca de mi casa.""}}",verb sense
+words:check_s1,,,,,"{""g"":""revisar; comprobar"",""ex"":{""check_s1"":""Revisa tus respuestas antes de enviar el formulario.""}}",manual sense/example review
+words:travel_s1,,,,,"{""g"":""viajar"",""ex"":{""travel_s1"":""Viajo al trabajo en tren todos los días.""}}",verb sense
+words:travel_s2,,,,,"{""g"":""viaje; viajar"",""ex"":{""travel_s2"":""Viajar en avión puede ser caro durante las vacaciones.""}}",noun/activity sense used in the example
+words:trip_s1,,,,,"{""g"":""viaje"",""ex"":{""trip_s1"":""Hicimos un viaje corto a la costa.""}}",manual sense/example review
+words:teacher_s1,,,,,"{""g"":""profesor; profesora"",""ex"":{""teacher_s1"":""Nuestro profesor explica las palabras nuevas con imágenes.""}}",manual sense/example review
+words:school_s1,,,,,"{""g"":""escuela"",""ex"":{""school_s1"":""Mi escuela está cerca del parque.""}}",manual sense/example review
+words:class_s1,,,,,"{""g"":""clase"",""ex"":{""class_s1"":""Hay veinte estudiantes en mi clase.""}}",manual sense/example review
+words:classroom_s1,,,,,"{""g"":""aula; salón de clase"",""ex"":{""classroom_s1"":""El aula tiene ventanas grandes.""}}",manual sense/example review
+words:classmate_s1,,,,,"{""g"":""compañero; compañera de clase"",""ex"":{""classmate_s1"":""Mi compañera de clase me ayudó a entender el ejercicio.""}}",manual sense/example review
+words:dictionary_s1,,,,,"{""g"":""diccionario"",""ex"":{""dictionary_s1"":""Usa un diccionario para comprobar la pronunciación.""}}",manual sense/example review

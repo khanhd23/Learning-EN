@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:footballer_s1,,,,,"{""g"":""futbolista"",""ex"":{""footballer_s1"":""El joven futbolista marcó dos veces en la final.""}}",manual sense/example review
+words:garlic_s1,,,,,"{""g"":""ajo"",""ex"":{""garlic_s1"":""Añade un poco de ajo a la sopa para darle más sabor.""}}",manual food review
+words:globe_s1,,,,,"{""g"":""globo terráqueo"",""ex"":{""globe_s1"":""Nuestro profesor usó un globo terráqueo para explicar los océanos.""}}",manual sense/example review
+words:handbag_s1,,,,,"{""g"":""bolso; cartera"",""ex"":{""handbag_s1"":""Guardó las llaves y el teléfono en su bolso.""}}",regional variants retained for es-419
+words:hiking_s1,,,,,"{""g"":""senderismo; hacer senderismo"",""ex"":{""hiking_s1"":""Hacer senderismo en las colinas es más fácil con zapatos cómodos.""}}",manual activity review
+words:honey_s1,,,,,"{""g"":""miel"",""ex"":{""honey_s1"":""Las abejas hacen miel con el néctar que recogen de las flores.""}}",manual food/nature review
+words:hunter_s1,,,,,"{""g"":""cazador; cazadora"",""ex"":{""hunter_s1"":""El cazador siguió huellas recientes por el bosque.""}}",manual sense/example review
+words:jelly_s1,,,,,"{""g"":""mermelada"",""ex"":{""jelly_s1"":""Los niños untaron mermelada de fresa en las tostadas.""}}",source word is ambiguous by region; example requires spreadable jam
+words:lemonade_s1,,,,,"{""g"":""limonada"",""ex"":{""lemonade_s1"":""Servimos limonada fría después del juego al aire libre.""}}",manual food review
+words:learner_s1,,,,,"{""g"":""estudiante; aprendiz"",""ex"":{""learner_s1"":""Toda persona que aprende necesita práctica y comentarios útiles.""}}",manual education review
+words:make_up_s1,,,,,"{""g"":""maquillaje"",""ex"":{""make_up_s1"":""Se quitó el maquillaje antes de acostarse.""}}",noun sense
+words:married_s1,,,,,"{""g"":""casado; casada"",""ex"":{""married_s1"":""Mi hermana lleva tres años casada.""}}",manual sense/example review
+words:mysterious_s1,,,,,"{""g"":""misterioso; misteriosa"",""ex"":{""mysterious_s1"":""Apareció un mensaje misterioso en la computadora vieja.""}}",manual sense/example review
+words:onion_s1,,,,,"{""g"":""cebolla"",""ex"":{""onion_s1"":""Picó una cebolla para la sopa de verduras.""}}",manual food review
+words:playground_s1,,,,,"{""g"":""patio de juegos; parque infantil"",""ex"":{""playground_s1"":""La escuela construyó un patio de juegos más seguro detrás de la biblioteca.""}}",regional variants retained for es-419
+words:pleased_s1,,,,,"{""g"":""satisfecho; contento"",""ex"":{""pleased_s1"":""El profesor quedó satisfecho con nuestro trabajo cuidadoso.""}}",manual sense/example review
+words:pleasing_s1,,,,,"{""g"":""agradable"",""ex"":{""pleasing_s1"":""La pintura usa colores agradables y formas sencillas.""}}",manual sense/example review
+words:policeman_s1,,,,,"{""g"":""policía; agente de policía"",""ex"":{""policeman_s1"":""El agente de policía ayudó a la niña perdida a encontrar a sus padres.""}}",gendered source rendered naturally
+words:policewoman_s1,,,,,"{""g"":""policía; agente de policía"",""ex"":{""policewoman_s1"":""La agente de policía habló con calma con el conductor preocupado.""}}",gendered source rendered naturally
+words:quiz_s1,,,,,"{""g"":""prueba; cuestionario"",""ex"":{""quiz_s1"":""Después de la lección tuvimos una prueba corta de vocabulario.""}}",manual education review
+words:sausage_s1,,,,,"{""g"":""salchicha"",""ex"":{""sausage_s1"":""El café sirve salchicha con huevos para el desayuno.""}}",source example contains a broken character; restored from context
+words:sunlight_s1,,,,,"{""g"":""luz solar"",""ex"":{""sunlight_s1"":""Las plantas necesitan luz solar y agua para crecer bien.""}}",manual nature review
+words:sunglasses_s1,,,,,"{""g"":""gafas de sol; lentes de sol"",""ex"":{""sunglasses_s1"":""Usa gafas de sol cuando el sol de la tarde esté muy fuerte.""}}",regional variants retained for es-419
+words:surprising_s1,,,,,"{""g"":""sorprendente"",""ex"":{""surprising_s1"":""El resultado final fue sorprendente después de un partido tan reñido.""}}",manual sense/example review
+words:sweatshirt_s1,,,,,"{""g"":""sudadera"",""ex"":{""sweatshirt_s1"":""Llevaba una sudadera azul en la mañana fresca.""}}",regional context review

@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:glasses_s1,,,,,"{""g"":""gafas"",""ex"":{""glasses_s1"":""Necesito gafas para leer.""}}",manual sense/example review
+words:wear_s1,,,,,"{""g"":""llevar; usar"",""ex"":{""wear_s1"":""Llevo zapatos cómodos para ir al trabajo todos los días.""}}",manual sense/example review
+words:put_on_s1,,,,,"{""g"":""ponerse"",""ex"":{""put_on_s1"":""Ponte el abrigo; hace frío afuera.""}}",manual sense/example review
+words:take_off_s1,,,,,"{""g"":""quitarse"",""ex"":{""take_off_s1"":""Por favor, quítate los zapatos en la puerta.""}}",manual sense/example review
+words:take_off_s2,,,,,"{""g"":""despegar"",""ex"":{""take_off_s2"":""El avión despegó a tiempo.""}}",manual sense/example review
+words:umbrella_s1,,,,,"{""g"":""paraguas"",""ex"":{""umbrella_s1"":""No olvides tu paraguas; puede llover.""}}",manual sense/example review
+words:street_s1,,,,,"{""g"":""calle"",""ex"":{""street_s1"":""Mira a ambos lados antes de cruzar la calle.""}}",manual sense/example review
+words:traffic_light_s1,,,,,"{""g"":""semáforo"",""ex"":{""traffic_light_s1"":""Detente en el semáforo.""}}",manual sense/example review
+words:turn_left_s1,,,,,"{""g"":""girar a la izquierda"",""ex"":{""turn_left_s1"":""Gira a la izquierda en el banco y luego sigue recto.""}}",manual sense/example review
+words:go_straight_s1,,,,,"{""g"":""seguir recto; seguir derecho"",""ex"":{""go_straight_s1"":""Sigue recto dos cuadras hasta la estación.""}}",manual sense/example review
+words:next_to_s1,,,,,"{""g"":""al lado de; junto a"",""ex"":{""next_to_s1"":""El café está al lado de la librería.""}}",source example contains a broken character; restored from context
+words:between_s1,,,,,"{""g"":""entre"",""ex"":{""between_s1"":""La farmacia está entre el banco y la escuela.""}}",manual sense/example review
+words:library_s1,,,,,"{""g"":""biblioteca"",""ex"":{""library_s1"":""Estudio en la biblioteca.""}}",manual sense/example review
+words:post_office_s1,,,,,"{""g"":""oficina de correos"",""ex"":{""post_office_s1"":""¿Dónde está la oficina de correos más cercana?""}}",manual sense/example review
+words:hospital_s1,,,,,"{""g"":""hospital"",""ex"":{""hospital_s1"":""Trabaja en el hospital de la ciudad.""}}",manual sense/example review
+words:far_s1,,,,,"{""g"":""lejos"",""ex"":{""far_s1"":""¿Está lejos la estación de aquí?""}}",manual sense/example review
+words:motorbike_s1,,,,,"{""g"":""motocicleta; moto"",""ex"":{""motorbike_s1"":""La mayoría de la gente del país usa motocicletas.""}}",manual sense/example review
+words:post_s1,,,,,"{""g"":""publicación"",""ex"":{""post_s1"":""¡Tu publicación obtuvo 500 Me gusta!""}}",manual sense/example review
+words:post_s2,,,,,"{""g"":""publicar"",""ex"":{""post_s2"":""Publica una foto nueva todos los días.""}}",manual sense/example review
+words:share_s1,,,,,"{""g"":""compartir"",""ex"":{""share_s1"":""Comparte este video con tus amigos.""}}",manual sense/example review
+words:selfie_s1,,,,,"{""g"":""selfi; selfie"",""ex"":{""selfie_s1"":""¡Tomemos una selfi frente al lago!""}}",manual sense/example review
+words:emoji_s1,,,,,"{""g"":""emoji"",""ex"":{""emoji_s1"":""Respondió con un emoji de corazón.""}}",manual sense/example review
+words:online_s1,,,,,"{""g"":""en línea"",""ex"":{""online_s1"":""Compro la mayoría de mis libros en línea.""}}",manual sense/example review
+words:app_s1,,,,,"{""g"":""aplicación; app"",""ex"":{""app_s1"":""Esta aplicación me ayuda a aprender inglés todos los días.""}}",manual sense/example review
+words:no_worries_s1,,,,,"{""g"":""no hay problema; no te preocupes"",""ex"":{""no_worries_s1"":""No hay problema, puedes devolverme el dinero mañana.""}}",manual idiom review

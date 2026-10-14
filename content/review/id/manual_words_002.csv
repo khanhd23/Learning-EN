@@ -1,0 +1,81 @@
+key,corrected,comment
+words:reimburse_s1,"{""g"": ""mengganti biaya"", ""ex"": {""reimburse_s1"": ""Perusahaan akan mengganti biaya perjalanan Anda.""}}",LLM semantic review from English source
+words:fiscal_year_s1,"{""g"": ""tahun fiskal"", ""ex"": {""fiscal_year_s1"": ""Tahun fiskal kami dimulai pada bulan April.""}}",LLM semantic review from English source
+words:balance_sheet_s1,"{""g"": ""neraca"", ""ex"": {""balance_sheet_s1"": ""Neraca itu menunjukkan apa yang dimiliki dan menjadi utang perusahaan.""}}",LLM semantic review from English source
+words:expenditure_s1,"{""g"": ""pengeluaran"", ""ex"": {""expenditure_s1"": ""Pengeluaran pemerintah untuk pendidikan telah meningkat.""}}",LLM semantic review from English source
+words:courteous_s1,"{""g"": ""sopan"", ""ex"": {""courteous_s1"": ""Staf harus selalu bersikap sopan kepada pelanggan.""}}",LLM semantic review from English source
+words:receipt_of_s1,"{""g"": ""penerimaan; tanda terima pembayaran"", ""ex"": {""receipt_of_s1"": ""Kami mengirimkan tanda terima pembayaran kepada pelanggan melalui email.""}}",LLM semantic review from English source
+words:comply_with_s1,"{""g"": ""mematuhi"", ""ex"": {""comply_with_s1"": ""Semua pemasok harus mematuhi aturan keselamatan yang baru.""}}",LLM semantic review from English source
+words:clause_s1,"{""g"": ""klausul; pasal"", ""ex"": {""clause_s1"": ""Salah satu klausul dalam kontrak mengatur keterlambatan pembayaran.""}}",LLM semantic review from English source
+words:breach_s1,"{""g"": ""pelanggaran kewajiban; pelanggaran kontrak"", ""ex"": {""breach_s1"": ""Pengiriman yang terlambat merupakan pelanggaran kontrak.""}}",LLM semantic review from English source
+words:liable_s1,"{""g"": ""bertanggung jawab secara hukum; berisiko mengalami"", ""ex"": {""liable_s1"": ""Perusahaan tidak bertanggung jawab atas barang yang hilang.""}}",LLM semantic review from English source
+words:binding_s1,"{""g"": ""mengikat secara hukum"", ""ex"": {""binding_s1"": ""Perjanjian yang telah ditandatangani itu mengikat kedua belah pihak.""}}",LLM semantic review from English source
+words:terminate_s1,"{""g"": ""mengakhiri"", ""ex"": {""terminate_s1"": ""Salah satu pihak dapat mengakhiri kontrak dengan pemberitahuan 30 hari.""}}",LLM semantic review from English source
+words:automate_s1,"{""g"": ""mengotomatiskan"", ""ex"": {""automate_s1"": ""Pabrik itu telah mengotomatiskan sebagian besar produksinya.""}}",LLM semantic review from English source
+words:specification_s1,"{""g"": ""spesifikasi"", ""ex"": {""specification_s1"": ""Komponen tersebut harus memenuhi spesifikasi pelanggan.""}}",LLM semantic review from English source
+words:merchandise_s1,"{""g"": ""barang dagangan"", ""ex"": {""merchandise_s1"": ""Semua barang dagangan mendapat diskon 20 persen.""}}",LLM semantic review from English source
+words:wholesaler_s1,"{""g"": ""pedagang grosir"", ""ex"": {""wholesaler_s1"": ""Toko itu membeli barang dari pedagang grosir.""}}",LLM semantic review from English source
+words:amenity_s1,"{""g"": ""fasilitas; kenyamanan"", ""ex"": {""amenity_s1"": ""Fasilitas hotel itu meliputi pusat kebugaran dan spa.""}}",LLM semantic review from English source
+words:complimentary_s1,"{""g"": ""gratis sebagai bentuk pelayanan"", ""ex"": {""complimentary_s1"": ""Tamu menerima kopi gratis di lobi hotel.""}}",LLM semantic review from English source
+words:cater_s1,"{""g"": ""menyediakan makanan atau kebutuhan"", ""ex"": {""cater_s1"": ""Perusahaan setempat menyediakan makanan untuk pesta pernikahan itu.""}}",LLM semantic review from English source
+words:banquet_s1,"{""g"": ""jamuan makan"", ""ex"": {""banquet_s1"": ""Jamuan makan diadakan untuk menghormati para pemenang.""}}",LLM semantic review from English source
+words:keynote_s1,"{""g"": ""tema utama"", ""ex"": {""keynote_s1"": ""CEO akan menyampaikan pidato utama.""}}",LLM semantic review from English source
+words:venue_capacity_s1,"{""g"": ""kapasitas tempat"", ""ex"": {""venue_capacity_s1"": ""Penyelenggara memeriksa kapasitas tempat sebelum menjual tiket.""}}",LLM semantic review from English source
+words:malfunction_s1,"{""g"": ""kerusakan; kegagalan fungsi"", ""ex"": {""malfunction_s1"": ""Kerusakan menghentikan lini produksi.""}}",LLM semantic review from English source
+words:compatible_s1,"{""g"": ""kompatibel; dapat digunakan bersama"", ""ex"": {""compatible_s1"": ""Pengisi daya ini kompatibel dengan sebagian besar ponsel.""}}",LLM semantic review from English source
+words:troubleshoot_s1,"{""g"": ""memecahkan masalah"", ""ex"": {""troubleshoot_s1"": ""Tim TI akan memecahkan masalah itu.""}}",LLM semantic review from English source
+words:coverage_s1,"{""g"": ""pertanggungan asuransi"", ""ex"": {""coverage_s1"": ""Polis itu memberikan pertanggungan penuh untuk kecelakaan.""}}",LLM semantic review from English source
+words:mortgage_rate_s1,"{""g"": ""suku bunga hipotek"", ""ex"": {""mortgage_rate_s1"": ""Suku bunga hipotek yang lebih rendah membuat apartemen itu lebih terjangkau.""}}",LLM semantic review from English source
+words:curriculum_s1,"{""g"": ""kurikulum"", ""ex"": {""curriculum_s1"": ""Bahasa Inggris merupakan bagian dari kurikulum sekolah.""}}",LLM semantic review from English source
+words:emission_s1,"{""g"": ""emisi"", ""ex"": {""emission_s1"": ""Kota itu ingin mengurangi emisi karbon.""}}",LLM semantic review from English source
+words:sustainable_s1,"{""g"": ""berkelanjutan"", ""ex"": {""sustainable_s1"": ""Kita membutuhkan sumber energi yang lebih berkelanjutan.""}}",LLM semantic review from English source
+words:carbon_footprint_s1,"{""g"": ""jejak karbon"", ""ex"": {""carbon_footprint_s1"": ""Bersepeda ke kantor dapat mengurangi jejak karbon Anda.""}}",LLM semantic review from English source
+words:censor_s1,"{""g"": ""menyensor"", ""ex"": {""censor_s1"": ""Pemerintah menyensor laporan berita itu.""}}",LLM semantic review from English source
+words:hypothesis_s1,"{""g"": ""hipotesis"", ""ex"": {""hypothesis_s1"": ""Eksperimen itu dirancang untuk menguji hipotesis kami.""}}",LLM semantic review from English source
+words:interpret_s1,"{""g"": ""menafsirkan"", ""ex"": {""interpret_s1"": ""Bagaimana Anda menafsirkan hasil ini?""}}",LLM semantic review from English source
+words:whereas_s1,"{""g"": ""sedangkan"", ""ex"": {""whereas_s1"": ""Saya suka teh, sedangkan adik saya lebih suka kopi.""}}",LLM semantic review from English source
+words:algorithm_s1,"{""g"": ""algoritma"", ""ex"": {""algorithm_s1"": ""Algoritma itu menampilkan video yang mungkin Anda sukai.""}}",LLM semantic review from English source
+words:hit_the_nail_on_the_head_s1,"{""g"": ""mengatakan sesuatu dengan tepat"", ""ex"": {""hit_the_nail_on_the_head_s1"": ""Komentar Anda tepat sekali mengenai masalah itu.""}}",LLM semantic review from English source
+words:the_ball_is_in_your_court_s1,"{""g"": ""giliran Anda untuk bertindak atau memutuskan"", ""ex"": {""the_ball_is_in_your_court_s1"": ""Saya sudah mengajukan tawaran, jadi sekarang keputusan ada di tangan Anda.""}}",LLM semantic review from English source
+words:a_blessing_in_disguise_s1,"{""g"": ""hikmah yang tersembunyi"", ""ex"": {""a_blessing_in_disguise_s1"": ""Kehilangan pekerjaan itu ternyata membawa hikmah.""}}",LLM semantic review from English source
+words:in_hot_water_s1,"{""g"": ""dalam masalah"", ""ex"": {""in_hot_water_s1"": ""Dia akan mendapat masalah jika terlambat lagi.""}}",LLM semantic review from English source
+words:let_the_cat_out_of_the_bag_s1,"{""g"": ""membocorkan rahasia tanpa sengaja"", ""ex"": {""let_the_cat_out_of_the_bag_s1"": ""Adik saya membocorkan rahasia tentang hadiah saya.""}}",LLM semantic review from English source
+words:pull_someone_s_leg_s1,"{""g"": ""menggoda seseorang dengan mengatakan sesuatu yang tidak benar"", ""ex"": {""pull_someone_s_leg_s1"": ""Jangan khawatir, saya hanya bercanda.""}}",LLM semantic review from English source
+words:burn_the_midnight_oil_s1,"{""g"": ""bekerja atau belajar hingga larut malam"", ""ex"": {""burn_the_midnight_oil_s1"": ""Dia belajar hingga larut malam untuk menyelesaikan laporannya.""}}",LLM semantic review from English source
+words:see_eye_to_eye_s1,"{""g"": ""sependapat dengan seseorang"", ""ex"": {""see_eye_to_eye_s1"": ""Saya dan saudara perempuan saya tidak selalu sependapat.""}}",LLM semantic review from English source
+words:go_the_extra_mile_s1,"{""g"": ""melakukan lebih dari yang diharapkan"", ""ex"": {""go_the_extra_mile_s1"": ""Staf yang baik selalu melakukan lebih dari yang diharapkan pelanggan.""}}",LLM semantic review from English source
+words:abdominal_s1,"{""g"": ""berkaitan dengan perut"", ""ex"": {""abdominal_s1"": ""Dia merasakan nyeri tajam di perut setelah makan siang.""}}",LLM semantic review from English source
+words:acceleration_s1,"{""g"": ""percepatan"", ""ex"": {""acceleration_s1"": ""Mobil sport ini memiliki akselerasi yang mengagumkan.""}}",LLM semantic review from English source
+words:acute_s1,"{""g"": ""sangat parah; akut"", ""ex"": {""acute_s1"": ""Dia dibawa ke rumah sakit karena nyeri perut akut.""}}",LLM semantic review from English source
+words:algebra_s1,"{""g"": ""aljabar"", ""ex"": {""algebra_s1"": ""Dalam aljabar, x sering melambangkan sebuah bilangan.""}}",LLM semantic review from English source
+words:alien_s1,"{""g"": ""makhluk dari planet lain"", ""ex"": {""alien_s1"": ""Film itu bercerita tentang makhluk asing yang mengunjungi Bumi.""}}",LLM semantic review from English source
+words:amplitude_s1,"{""g"": ""amplitudo"", ""ex"": {""amplitude_s1"": ""Suara yang lebih keras memiliki amplitudo yang lebih besar.""}}",LLM semantic review from English source
+words:analogy_s1,"{""g"": ""analogi"", ""ex"": {""analogy_s1"": ""Guru menggunakan analogi untuk menjelaskan gagasan itu.""}}",LLM semantic review from English source
+words:applause_s1,"{""g"": ""tepuk tangan"", ""ex"": {""applause_s1"": ""Penyanyi itu meninggalkan panggung diiringi tepuk tangan meriah.""}}",LLM semantic review from English source
+words:bat_s1,"{""g"": ""kelelawar"", ""ex"": {""bat_s1"": ""Kelelawar keluar dari gua pada malam hari.""}}",LLM semantic review from English source
+words:binary_s1,"{""g"": ""biner; menggunakan angka 0 dan 1"", ""ex"": {""binary_s1"": ""Komputer menyimpan data dalam kode biner.""}}",LLM semantic review from English source
+words:bodily_s1,"{""g"": ""berkaitan dengan tubuh manusia"", ""ex"": {""bodily_s1"": ""Undang-undang baru itu melindungi orang dari cedera tubuh.""}}",LLM semantic review from English source
+words:chemistry_s1,"{""g"": ""kimia"", ""ex"": {""chemistry_s1"": ""Kami melakukan percobaan dalam pelajaran kimia.""}}",LLM semantic review from English source
+words:circa_s1,"{""g"": ""sekitar; kira-kira, terutama sebelum tahun"", ""ex"": {""circa_s1"": ""Rumah itu dibangun sekitar tahun 1850.""}}",LLM semantic review from English source
+words:civilization_s1,"{""g"": ""peradaban"", ""ex"": {""civilization_s1"": ""Kami mempelajari peradaban kuno dalam pelajaran sejarah.""}}",LLM semantic review from English source
+words:conceive_s1,"{""g"": ""mencetuskan gagasan atau rencana"", ""ex"": {""conceive_s1"": ""Dia mencetuskan gagasan untuk aplikasi itu di dalam kereta.""}}",LLM semantic review from English source
+words:conception_s1,"{""g"": ""gagasan atau pemahaman tentang sesuatu"", ""ex"": {""conception_s1"": ""Anak-anak memiliki pemahaman tentang waktu yang berbeda.""}}",LLM semantic review from English source
+words:confound_s1,"{""g"": ""membingungkan atau mengejutkan seseorang"", ""ex"": {""confound_s1"": ""Hasil yang aneh itu membingungkan para ilmuwan selama berbulan-bulan.""}}",LLM semantic review from English source
+words:consciousness_s1,"{""g"": ""kesadaran; keadaan terjaga dan sadar"", ""ex"": {""consciousness_s1"": ""Dia kehilangan kesadaran setelah jatuh.""}}",LLM semantic review from English source
+words:contradictory_s1,"{""g"": ""saling bertentangan"", ""ex"": {""contradictory_s1"": ""Kedua laporan itu memberikan informasi yang bertentangan.""}}",LLM semantic review from English source
+words:cord_s1,"{""g"": ""tali tebal atau kabel listrik"", ""ex"": {""cord_s1"": ""Kabel pengisi daya ponsel itu panjang.""}}",LLM semantic review from English source
+words:correspondence_s1,"{""g"": ""surat-menyurat atau email"", ""ex"": {""correspondence_s1"": ""Tolong simpan semua surat-menyurat bisnis Anda.""}}",LLM semantic review from English source
+words:crystal_s1,"{""g"": ""kristal"", ""ex"": {""crystal_s1"": ""Garam membentuk kristal putih kecil saat air mengering.""}}",LLM semantic review from English source
+words:damp_s1,"{""g"": ""agak basah atau lembap"", ""ex"": {""damp_s1"": ""Kamar itu berbau lembap setelah hujan selama seminggu.""}}",LLM semantic review from English source
+words:definite_s1,"{""g"": ""pasti atau jelas"", ""ex"": {""definite_s1"": ""Kami membutuhkan jawaban pasti sebelum hari Jumat.""}}",LLM semantic review from English source
+words:dense_s1,"{""g"": ""padat; memiliki banyak hal atau orang yang berdekatan"", ""ex"": {""dense_s1"": ""Kami berjalan melewati hutan yang lebat.""}}",LLM semantic review from English source
+words:disturbance_s1,"{""g"": ""gangguan yang menimbulkan kebisingan atau masalah"", ""ex"": {""disturbance_s1"": ""Maaf mengganggu, tetapi saya membutuhkan bantuan Anda.""}}",LLM semantic review from English source
+words:fabric_s1,"{""g"": ""kain untuk membuat pakaian atau tirai"", ""ex"": {""fabric_s1"": ""Kemeja ini terbuat dari kain katun yang lembut.""}}",LLM semantic review from English source
+words:fluid_s1,"{""g"": ""cairan, terutama cairan dalam tubuh"", ""ex"": {""fluid_s1"": ""Minumlah banyak cairan saat Anda demam.""}}",LLM semantic review from English source
+words:fossil_s1,"{""g"": ""fosil"", ""ex"": {""fossil_s1"": ""Para ilmuwan menemukan fosil dinosaurus di gurun.""}}",LLM semantic review from English source
+words:ghost_s1,"{""g"": ""roh orang yang telah meninggal; hantu"", ""ex"": {""ghost_s1"": ""Adik laki-laki saya takut pada hantu pada malam hari.""}}",LLM semantic review from English source
+words:gradient_s1,"{""g"": ""tingkat kemiringan"", ""ex"": {""gradient_s1"": ""Jalan itu memiliki kemiringan yang curam di dekat puncak.""}}",LLM semantic review from English source
+words:gravity_s1,"{""g"": ""gaya yang menarik benda ke Bumi"", ""ex"": {""gravity_s1"": ""Gravitasi membuat apel jatuh ke tanah.""}}",LLM semantic review from English source
+words:hawk_s1,"{""g"": ""burung pemangsa yang memakan hewan kecil"", ""ex"": {""hawk_s1"": ""Seekor elang terbang tinggi di atas lapangan.""}}",LLM semantic review from English source
+words:illusion_s1,"{""g"": ""sesuatu yang tampak nyata tetapi sebenarnya tidak"", ""ex"": {""illusion_s1"": ""Cermin itu menciptakan ilusi ruang yang lebih luas.""}}",LLM semantic review from English source
+words:impulse_s1,"{""g"": ""keinginan tiba-tiba untuk melakukan sesuatu tanpa berpikir"", ""ex"": {""impulse_s1"": ""Saya membeli sepatu itu secara impulsif.""}}",LLM semantic review from English source

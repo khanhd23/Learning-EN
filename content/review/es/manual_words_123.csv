@@ -1,0 +1,26 @@
+key,corrected,comment
+words:profit_s1,"{""g"":""ganancia; beneficio"",""ex"":{""profit_s1"":""La empresa obtuvo una gran ganancia el año pasado.""}}",manual translation
+words:expense_s1,"{""g"":""gasto"",""ex"":{""expense_s1"":""La empresa pagará los gastos de viaje.""}}",manual translation
+words:afford_s1,"{""g"":""poder permitirse"",""ex"":{""afford_s1"":""Este año no podemos permitirnos un auto nuevo.""}}",manual translation
+words:debt_s1,"{""g"":""deuda"",""ex"":{""debt_s1"":""Pagó todas sus deudas.""}}",manual translation
+words:statement_s1,"{""g"":""declaración; comunicado"",""ex"":{""statement_s1"":""La empresa emitió un breve comunicado para la prensa.""}}",manual translation
+words:statement_s2,"{""g"":""declaración; afirmación"",""ex"":{""statement_s2"":""La empresa hizo una declaración ante la prensa.""}}",manual translation
+words:financial_s1,"{""g"":""financiero"",""ex"":{""financial_s1"":""La empresa tiene una sólida situación financiera.""}}",manual translation
+words:economy_s1,"{""g"":""economía"",""ex"":{""economy_s1"":""La economía creció un seis por ciento este año.""}}",manual translation
+words:fund_s1,"{""g"":""fondo"",""ex"":{""fund_s1"":""La escuela recaudó fondos para computadoras nuevas.""}}",manual translation
+words:fund_s2,"{""g"":""financiar"",""ex"":{""fund_s2"":""La ciudad financia el proyecto.""}}",manual translation
+words:stock_s1,"{""g"":""acción; acciones"",""ex"":{""stock_s1"":""El precio de las acciones de la empresa subió considerablemente.""}}",manual translation
+words:stock_s2,"{""g"":""existencias; inventario"",""ex"":{""stock_s2"":""Tenemos mucho papel en existencia.""}}",manual translation
+words:fee_s1,"{""g"":""tarifa; comisión"",""ex"":{""fee_s1"":""No hay ninguna comisión por abrir una cuenta.""}}",manual translation
+words:lend_s1,"{""g"":""prestar"",""ex"":{""lend_s1"":""¿Podrías prestarme tu pluma por un minuto?""}}",manual translation
+words:invoice_s1,"{""g"":""factura"",""ex"":{""invoice_s1"":""Paga la factura en un plazo de treinta días.""}}",manual translation
+words:calculate_s1,"{""g"":""calcular"",""ex"":{""calculate_s1"":""Calculamos el costo total del proyecto.""}}",manual translation
+words:estimate_s1,"{""g"":""estimación; presupuesto"",""ex"":{""estimate_s1"":""El constructor nos dio un presupuesto para las reparaciones.""}}",manual translation
+words:estimate_s2,"{""g"":""estimar; calcular aproximadamente"",""ex"":{""estimate_s2"":""Calculamos que el trabajo tardará dos semanas.""}}",manual translation
+words:quarter_s1,"{""g"":""trimestre"",""ex"":{""quarter_s1"":""Las ventas aumentaron en el segundo trimestre.""}}",manual translation
+words:annual_s1,"{""g"":""anual"",""ex"":{""annual_s1"":""El informe anual se publicará en marzo.""}}",manual translation
+words:figure_s1,"{""g"":""cifra; cantidad"",""ex"":{""figure_s1"":""Las cifras de ventas de mayo se ven bien.""}}",manual translation
+words:figure_s2,"{""g"":""figura; personaje destacado"",""ex"":{""figure_s2"":""Es una figura importante del arte latinoamericano.""}}",source example localized to avoid a country-specific reference
+words:figure_s3,"{""g"":""descubrir; darse cuenta de"",""ex"":{""figure_s3"":""Por fin descubrí cómo funciona la aplicación.""}}",manual translation
+words:spreadsheet_s1,"{""g"":""hoja de cálculo"",""ex"":{""spreadsheet_s1"":""Guardo todos los costos en una hoja de cálculo.""}}",manual translation
+words:refund_s1,"{""g"":""reembolso; devolución"",""ex"":{""refund_s1"":""Puedes obtener un reembolso completo en un plazo de catorce días.""}}",manual translation

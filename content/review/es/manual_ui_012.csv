@@ -1,0 +1,57 @@
+key,corrected,comment
+ui:ins_say_it,"Escucha y después di la oración.",manual translation
+ui:tap_to_speak,"Toca y habla",manual translation
+ui:listening_now,"Escuchando…",manual translation
+ui:you_said,"Has dicho: %1$s",manual translation
+ui:speak_again,"Inténtalo otra vez",manual translation
+ui:mic_title,"¿Usar el micrófono?",manual translation
+ui:mic_reason,"El micrófono solo se usa para comprobar tu pronunciación. No se graba ni se guarda nada.",manual translation
+ui:daily_challenge,"Desafío diario",manual translation
+ui:daily_challenge_desc,"Cinco preguntas variadas. Un conjunto nuevo cada día.",manual translation
+ui:daily_challenge_done,"Listo por hoy. ¡Vuelve mañana!",manual translation
+ui:weekly_quests,"Misiones semanales",manual translation
+ui:quest_new_words,"Aprender %1$d palabras nuevas",manual translation
+ui:quest_stories,"Terminar %1$d cuentos",manual translation
+ui:quest_speaking,"Practicar conversación durante %1$d días",manual translation
+ui:quest_daily,"Completar %1$d desafíos diarios",manual translation
+ui:quest_progress,"%1$d/%2$d",manual translation
+ui:quest_reward,"Recompensa: %1$s",manual translation
+ui:quest_xp,"+%1$d XP",manual translation
+ui:quest_xp_reward,"Bono semanal: +%1$d XP",manual translation
+ui:streak_shields,"Escudos de racha: %1$d",manual translation
+ui:streak_shield_info,"Aprende 7 días seguidos para ganar un escudo. Un escudo conserva tu racha si faltas un día (máximo 2).",manual translation
+ui:ins_passage,"Elige la mejor respuesta para cada espacio.",manual translation
+ui:ins_pronunciation,"Elige la palabra cuya parte subrayada suena diferente.",manual translation
+ui:ins_reverse,"Elige la palabra inglesa para este significado.",manual translation
+ui:ins_sentence,"Elige la oración que encaja mejor en el espacio.",manual translation
+ui:ins_spelling,"Escribe la palabra que oyes.",manual translation
+ui:ins_stress,"Elige la palabra con un patrón de acentuación diferente.",manual translation
+ui:ins_synonym,"Elige la palabra con el significado más parecido.",manual translation
+ui:ins_transform,"Elige la oración con el mismo significado.",manual translation
+ui:ins_word_order,"Ordena las palabras correctamente.",manual translation
+ui:keep_working,"Sigue trabajando",manual translation
+ui:last_30,"Últimos 30 días",manual translation
+ui:last_7,"Últimos 7 días",manual translation
+ui:learn_topic,"Aprender este tema",manual translation
+ui:level_desc_1,"Palabras cotidianas para principiantes absolutos.",manual translation
+ui:level_desc_2,"Palabras comunes para la vida diaria y conversaciones sencillas.",manual translation
+ui:level_desc_3,"Palabras para el trabajo, los estudios y conversaciones más largas.",manual translation
+ui:level_desc_4,"Palabras académicas y empresariales para leer y hacer exámenes.",manual translation
+ui:level_desc_5,"Palabras avanzadas y formales.",manual translation
+ui:level_n,"Nivel %1$d",manual translation
+ui:licenses,"Licencias",manual translation
+ui:licenses_text,"LingoMori usa datos y bibliotecas abiertos. A continuación se indican las fuentes y sus licencias.",manual translation
+ui:listen,"Escuchar",manual translation
+ui:audio_evidence,"Evidencia en el audio",manual translation
+ui:listen_slow,"Escuchar despacio",manual translation
+ui:locked_msg,"Termina primero las lecciones anteriores o haz una prueba corta para avanzar.",manual translation
+ui:locked_title,"Esta lección está bloqueada",manual translation
+ui:loosen,"Quitar algunos filtros",manual translation
+ui:lv_12,"Niveles 1–2",manual translation
+ui:lv_23,"Niveles 2–3",manual translation
+ui:lv_34,"Niveles 3–4",manual translation
+ui:lv_45,"Niveles 4–5",manual translation
+ui:lv_auto,"Mi nivel",manual translation
+ui:lvl_basic,"Elemental",manual translation
+ui:lvl_basic_d,"Conozco palabras comunes y oraciones sencillas.",manual translation
+ui:lvl_beginner,"Principiante",manual translation

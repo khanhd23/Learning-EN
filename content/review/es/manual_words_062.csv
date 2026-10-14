@@ -1,0 +1,26 @@
+key,corrected,comment
+words:kitten_s1,"{""g"":""gatito, gatita"",""ex"":{""kitten_s1"":""El gatito juega con una pelota.""}}",manual translation
+words:feed_s1,"{""g"":""alimentar"",""ex"":{""feed_s1"":""No olvides alimentar al gato.""}}",manual translation
+words:feed_s2,"{""g"":""feed, muro; sección de noticias"",""ex"":{""feed_s2"":""Tu publicación aparece en todo mi feed.""}}",example-led translation
+words:tail_s1,"{""g"":""cola"",""ex"":{""tail_s1"":""El perro mueve la cola.""}}",manual translation
+words:bite_s1,"{""g"":""morder"",""ex"":{""bite_s1"":""No te preocupes, no muerde.""}}",manual translation
+words:wild_s1,"{""g"":""salvaje"",""ex"":{""wild_s1"":""Los animales salvajes deben vivir en la naturaleza.""}}",example-led translation
+words:butterfly_s1,"{""g"":""mariposa"",""ex"":{""butterfly_s1"":""Una mariposa se posó en la flor.""}}",manual translation
+words:turtle_s1,"{""g"":""tortuga"",""ex"":{""turtle_s1"":""Las tortugas marinas ponen huevos en la playa.""}}",source/example mismatch noted
+words:hamster_s1,"{""g"":""hámster"",""ex"":{""hamster_s1"":""Mi hámster duerme todo el día.""}}",manual translation
+words:dragon_s1,"{""g"":""dragón"",""ex"":{""dragon_s1"":""En la historia, un dragón amistoso ayuda al pueblo.""}}",manual translation
+words:sneakers_s1,"{""g"":""tenis, zapatillas deportivas"",""ex"":{""sneakers_s1"":""Estos tenis son muy cómodos.""}}",manual translation
+words:scarf_s1,"{""g"":""bufanda"",""ex"":{""scarf_s1"":""Ella tejió una bufanda para su papá.""}}",manual translation
+words:uniform_s1,"{""g"":""uniforme"",""ex"":{""uniform_s1"":""Los estudiantes deben usar uniforme.""}}",manual translation
+words:fashion_s1,"{""g"":""moda"",""ex"":{""fashion_s1"":""Trabaja en la industria de la moda en París.""}}",manual translation
+words:style_s1,"{""g"":""estilo"",""ex"":{""style_s1"":""Tiene su propio estilo.""}}",manual translation
+words:pocket_s1,"{""g"":""bolsillo"",""ex"":{""pocket_s1"":""Mi teléfono está en el bolsillo.""}}",manual translation
+words:button_s1,"{""g"":""botón"",""ex"":{""button_s1"":""Se le cayó un botón a mi camisa.""}}",manual translation
+words:opposite_s1,"{""g"":""enfrente de, opuesto a"",""ex"":{""opposite_s1"":""El banco está enfrente de la oficina de correos.""}}",manual translation
+words:opposite_s2,"{""g"":""opuesto, contrario"",""ex"":{""opposite_s2"":""«Hot» es lo contrario de «cold».""}}",source/example mismatch noted
+words:corner_s1,"{""g"":""esquina"",""ex"":{""corner_s1"":""Hay una tienda en la esquina.""}}",manual translation
+words:bridge_s1,"{""g"":""puente"",""ex"":{""bridge_s1"":""Caminamos por el viejo puente de piedra.""}}",manual translation
+words:crowded_s1,"{""g"":""lleno, llena; concurrido, concurrida"",""ex"":{""crowded_s1"":""El mercado está lleno los fines de semana.""}}",manual translation
+words:museum_s1,"{""g"":""museo"",""ex"":{""museum_s1"":""El museo es gratis los domingos.""}}",manual translation
+words:lost_s1,"{""g"":""perdido, perdida"",""ex"":{""lost_s1"":""Disculpe, creo que me perdí.""}}",manual translation
+words:direction_s1,"{""g"":""dirección"",""ex"":{""direction_s1"":""El letrero señala en dirección a la estación.""}}",manual translation

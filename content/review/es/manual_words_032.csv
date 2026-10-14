@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:bee_s1,,,,,"{""g"":""abeja"",""ex"":{""bee_s1"":""La abeja está sobre la flor.""}}",manual sense/example review
+words:spider_s1,,,,,"{""g"":""araña"",""ex"":{""spider_s1"":""Una araña está haciendo una telaraña en la pared.""}}",manual sense/example review
+words:snake_s1,,,,,"{""g"":""serpiente"",""ex"":{""snake_s1"":""La serpiente cruzó el camino lentamente.""}}",manual sense/example review
+words:lizard_s1,,,,,"{""g"":""lagarto; lagartija"",""ex"":{""lizard_s1"":""El lagarto está sobre una roca.""}}",manual sense/example review
+words:toad_s1,,,,,"{""g"":""sapo"",""ex"":{""toad_s1"":""Un sapo está sentado cerca del estanque.""}}",manual sense/example review
+words:crocodile_s1,,,,,"{""g"":""cocodrilo"",""ex"":{""crocodile_s1"":""El cocodrilo vive cerca del río.""}}",manual sense/example review
+words:octopus_s1,,,,,"{""g"":""pulpo"",""ex"":{""octopus_s1"":""El pulpo tiene ocho brazos.""}}",source definition describes octopus as food but the example describes the animal
+words:crab_s1,,,,,"{""g"":""cangrejo"",""ex"":{""crab_s1"":""El cangrejo pequeño camina de lado sobre la arena.""}}",manual sense/example review
+words:shrimp_s1,,,,,"{""g"":""camarón; gamba"",""ex"":{""shrimp_s1"":""El camarón está en la red.""}}",source definition contains a disparaging sense but the example describes the animal
+words:penguin_s1,,,,,"{""g"":""pingüino"",""ex"":{""penguin_s1"":""El pingüino no puede volar, pero nada bien.""}}",manual sense/example review
+words:eagle_s1,,,,,"{""g"":""águila"",""ex"":{""eagle_s1"":""El águila voló muy alto sobre la montaña.""}}",manual sense/example review
+words:owl_s1,,,,,"{""g"":""búho; lechuza"",""ex"":{""owl_s1"":""El búho puede ver de noche.""}}",regional variants retained for es-419
+words:parrot_s1,,,,,"{""g"":""loro"",""ex"":{""parrot_s1"":""El loro puede imitar sonidos.""}}",manual sense/example review
+words:swan_s1,,,,,"{""g"":""cisne"",""ex"":{""swan_s1"":""El cisne está en el lago.""}}",manual sense/example review
+words:rooster_s1,,,,,"{""g"":""gallo"",""ex"":{""rooster_s1"":""El gallo canta por la mañana.""}}",manual sense/example review
+words:duckling_s1,,,,,"{""g"":""patito"",""ex"":{""duckling_s1"":""El patito sigue a su madre.""}}",source definition describes duck meat but the example describes a young duck
+words:goat_s1,,,,,"{""g"":""cabra"",""ex"":{""goat_s1"":""La cabra está comiendo pasto en la colina.""}}",manual sense/example review
+words:sheep_s1,,,,,"{""g"":""oveja"",""ex"":{""sheep_s1"":""La oveja tiene lana gruesa.""}}",manual sense/example review
+words:donkey_s1,,,,,"{""g"":""burro; asno"",""ex"":{""donkey_s1"":""El burro lleva una bolsa.""}}",source definition describes the political symbol but the example describes the animal
+words:zebra_s1,,,,,"{""g"":""cebra"",""ex"":{""zebra_s1"":""La cebra tiene rayas blancas y negras.""}}",manual sense/example review
+words:giraffe_s1,,,,,"{""g"":""jirafa"",""ex"":{""giraffe_s1"":""La jirafa tiene el cuello largo.""}}",manual sense/example review
+words:rhinoceros_s1,,,,,"{""g"":""rinoceronte"",""ex"":{""rhinoceros_s1"":""El rinoceronte tiene la piel gruesa.""}}",manual sense/example review
+words:hippopotamus_s1,,,,,"{""g"":""hipopótamo"",""ex"":{""hippopotamus_s1"":""El hipopótamo está en el río.""}}",manual sense/example review
+words:kangaroo_s1,,,,,"{""g"":""canguro"",""ex"":{""kangaroo_s1"":""El canguro puede saltar muy lejos.""}}",manual sense/example review
+words:panda_s1,,,,,"{""g"":""panda"",""ex"":{""panda_s1"":""El panda está comiendo bambú en el zoológico.""}}",manual sense/example review

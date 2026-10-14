@@ -1,0 +1,26 @@
+key,english,english_example,def,draft,corrected,comment
+words:price_s1,,,,,"{""g"":""precio"",""ex"":{""price_s1"":""El precio de la habitación incluye un desayuno gratis.""}}",manual sense/example review
+words:cheap_s1,,,,,"{""g"":""barato; económico"",""ex"":{""cheap_s1"":""La comida aquí es barata y buena.""}}",manual sense/example review
+words:expensive_s1,,,,,"{""g"":""caro"",""ex"":{""expensive_s1"":""Los hoteles del centro son caros.""}}",manual sense/example review
+words:sale_s1,,,,,"{""g"":""oferta; rebaja"",""ex"":{""sale_s1"":""Estos zapatos están en oferta esta semana.""}}",manual sense/example review
+words:sale_s2,,,,,"{""g"":""ventas"",""ex"":{""sale_s2"":""Las ventas aumentaron en diciembre.""}}",manual sense/example review
+words:shopping_mall_s1,,,,,"{""g"":""centro comercial"",""ex"":{""shopping_mall_s1"":""Abrieron un nuevo centro comercial en el centro de la ciudad.""}}",manual sense/example review
+words:try_on_s1,,,,,"{""g"":""probarse"",""ex"":{""try_on_s1"":""¿Puedo probarme esta chaqueta, por favor?""}}",manual sense/example review
+words:size_s1,,,,,"{""g"":""talla; tamaño"",""ex"":{""size_s1"":""Esta camisa está disponible en todas las tallas.""}}",manual sense/example review
+words:flight_s1,,,,,"{""g"":""vuelo"",""ex"":{""flight_s1"":""Nuestro vuelo sale a las siete de la mañana.""}}",manual sense/example review
+words:flight_s2,,,,,"{""g"":""vuelo"",""ex"":{""flight_s2"":""El vuelo a Seúl está lleno.""}}",manual source/example review
+words:book_s2,,,,,"{""g"":""libro"",""ex"":{""book_s2"":""Leo un libro antes de acostarme.""}}",manual sense/example review
+words:book_s1,,,,,"{""g"":""reservar"",""ex"":{""book_s1"":""Reservé una mesa para cuatro.""}}",manual sense/example review
+words:passport_s1,,,,,"{""g"":""pasaporte"",""ex"":{""passport_s1"":""No olvides tu pasaporte en el aeropuerto.""}}",manual sense/example review
+words:tourist_s1,,,,,"{""g"":""turista"",""ex"":{""tourist_s1"":""La playa está llena de turistas en verano.""}}",manual sense/example review
+words:traffic_jam_s1,,,,,"{""g"":""embotellamiento; atasco"",""ex"":{""traffic_jam_s1"":""Nos quedamos atrapados en un embotellamiento durante una hora.""}}",manual sense/example review
+words:map_s1,,,,,"{""g"":""mapa"",""ex"":{""map_s1"":""¿Puedes mostrarme dónde está en el mapa?""}}",manual sense/example review
+words:guest_s1,,,,,"{""g"":""huésped"",""ex"":{""guest_s1"":""Los huéspedes del hotel pueden usar la piscina gratis.""}}",manual sense/example review
+words:menu_s1,,,,,"{""g"":""menú"",""ex"":{""menu_s1"":""¿Podría ver el menú, por favor?""}}",manual sense/example review
+words:waiter_s1,,,,,"{""g"":""mesero"",""ex"":{""waiter_s1"":""El mesero nos trajo agua.""}}",manual sense/example review
+words:delicious_s1,,,,,"{""g"":""delicioso"",""ex"":{""delicious_s1"":""La sopa de este café está deliciosa.""}}",manual sense/example review
+words:download_s1,,,,,"{""g"":""descargar"",""ex"":{""download_s1"":""Descarga la aplicación gratis.""}}",manual sense/example review
+words:password_s1,,,,,"{""g"":""contraseña"",""ex"":{""password_s1"":""No compartas tu contraseña con nadie.""}}",manual sense/example review
+words:screen_s1,,,,,"{""g"":""pantalla"",""ex"":{""screen_s1"":""La pantalla es demasiado pequeña para leer.""}}",manual sense/example review
+words:screen_s2,,,,,"{""g"":""examinar; filtrar"",""ex"":{""screen_s2"":""Todos los solicitantes se evalúan cuidadosamente.""}}",manual sense/example review
+words:keyboard_s1,,,,,"{""g"":""teclado"",""ex"":{""keyboard_s1"":""El teclado de mi laptop dejó de funcionar ayer.""}}",manual sense/example review

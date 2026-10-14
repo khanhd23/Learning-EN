@@ -1,0 +1,67 @@
+key,corrected,comment
+ui:due_count,"%1$d por repasar",manual translation
+ui:due_none,"Ahora no hay nada que repasar",manual translation
+ui:due_today,"Repasar hoy",manual translation
+ui:est_1,"Inicial",manual translation
+ui:est_2,"Elemental",manual translation
+ui:est_3,"Intermedio",manual translation
+ui:est_4,"Intermedio alto",manual translation
+ui:est_5,"Avanzado",manual translation
+ui:est_disclaimer,"Es una estimación aproximada, no una puntuación oficial.",manual translation
+ui:est_level,"Nivel estimado",manual translation
+ui:exam_countdown,"Faltan %1$d días para tu examen",manual translation
+ui:exam_date,"Fecha del examen",manual translation
+ui:exam_focus,"Enfoque de hoy: %1$s",manual translation
+ui:exam_goal,"Objetivo del examen",manual translation
+ui:exam_catalog_sub,"Elige un examen y después un conjunto de práctica.",manual translation
+ui:exam_listening,"Comprensión auditiva",manual translation
+ui:exam_reading,"Comprensión lectora",manual translation
+ui:exam_part1,"Part 1",manual translation
+ui:exam_part2,"Part 2",manual translation
+ui:exam_part3,"Part 3",manual translation
+ui:exam_part4,"Part 4",manual translation
+ui:exam_part5,"Part 5",manual translation
+ui:exam_part6,"Part 6",manual translation
+ui:exam_part7,"Part 7",manual translation
+ui:exam_full_reading,"Comprensión lectora completa",manual translation
+ui:exam_reading_bank,"Banco de comprensión lectora",manual translation
+ui:exam_practice_sets_n,"%1$d conjuntos de práctica",manual translation
+ui:exam_part_guide,"Cómo abordar esta parte",manual translation
+ui:exam_part_sets_title,"Conjuntos de práctica - %1$s",manual translation
+ui:exam_sections,"Qué incluye esta práctica",manual translation
+ui:exam_toeic,"TOEIC",manual translation
+ui:exam_ielts,"IELTS",manual translation
+ui:exam_vstep,"VSTEP",manual translation
+ui:exam_thpt,"Práctica de bachillerato",manual translation
+ui:exam_ket,"A2 Key (KET)",manual translation
+ui:exam_pet,"B1 Preliminary (PET)",manual translation
+ui:exam_other,"Otros exámenes",manual translation
+ui:exam_format_toeic_p5_title,"Comprensión lectora — Part 5",manual translation
+ui:exam_format_toeic_p6_title,"Comprensión lectora — Part 6",manual translation
+ui:exam_format_school_title,"Inglés escolar",manual translation
+ui:exam_format_thpt_title,"Práctica de bachillerato",manual translation
+ui:exam_format_toeic_p5_desc,"Cómo hacerlo: lee la oración completa, identifica si el espacio necesita una categoría de palabra, un tiempo verbal, una preposición o una colocación y elimina las opciones incorrectas. Consejo: comprueba primero la estructura de la oración y la colocación, antes que el significado.",manual translation
+ui:exam_format_toeic_p6_desc,"Cómo hacerlo: capta rápidamente el propósito y el hilo del pasaje y lee las dos oraciones que rodean el espacio. Consejo: los conectores, pronombres, la gramática y las colocaciones deben encajar en el contexto.",manual translation
+ui:exam_format_school_desc,"Practica tipos de preguntas habituales de la escuela: pronunciación, acentuación de palabras, identificación de errores, sinónimos, antónimos y transformación de oraciones.",manual translation
+ui:exam_format_thpt_desc,"40 preguntas de opción múltiple en 50 minutos: avisos, folletos, ordenamiento de oraciones, completar textos y dos pasajes de comprensión lectora.",manual translation
+ui:exam_format_toeic_p7_desc,"Cómo hacerlo: lee primero el título, el remitente, la fecha y las preguntas; después busca los detalles y compara las paráfrasis. Consejo: cada respuesta de detalle debe estar respaldada por el pasaje; no uses conocimientos externos. 54 preguntas de práctica originales; no es un examen oficial de TOEIC.",manual translation
+ui:exam_format_vstep_desc,"Práctica original de comprensión lectora con estilo VSTEP: 4 pasajes y 40 preguntas en 60 minutos. No es un examen oficial de VSTEP.",manual translation
+ui:exam_section_notice,"Aviso",manual translation
+ui:exam_section_leaflet,"Folleto o anuncio",manual translation
+ui:exam_section_arrange,"Ordenamiento de oraciones",manual translation
+ui:exam_section_complete,"Completar el texto",manual translation
+ui:exam_section_reading1,"Comprensión lectora 1",manual translation
+ui:exam_section_reading2,"Comprensión lectora 2",manual translation
+ui:exam_type,"Examen",manual translation
+ui:examples_tap,"Toca un ejemplo para escucharlo.",manual translation
+ui:f_all,"Todas",manual translation
+ui:f_known,"Conocidas",manual translation
+ui:f_learning,"En aprendizaje",manual translation
+ui:f_new,"Nuevas",manual translation
+ui:f_saved,"Guardadas",manual translation
+ui:fb_almost,"¡Casi!",manual translation
+ui:fb_correct_1,"¡Correcto!",manual translation
+ui:fb_correct_2,"¡Muy bien!",manual translation
+ui:fb_correct_3,"¡Bien hecho!",manual translation
+ui:fb_correct_4,"¡Genial!",manual translation
+ui:fb_wrong,"No exactamente",manual translation

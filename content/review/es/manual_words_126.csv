@@ -1,0 +1,26 @@
+key,corrected,comment
+words:policy_s1,"{""g"":""política; norma"",""ex"":{""policy_s1"":""Nuestra política de devoluciones permite reembolsos en un plazo de treinta días.""}}",manual translation
+words:court_s1,"{""g"":""tribunal; corte"",""ex"":{""court_s1"":""El caso irá a los tribunales el próximo mes.""}}",manual translation
+words:court_s2,"{""g"":""cancha; pista"",""ex"":{""court_s2"":""Las canchas de tenis están detrás del hotel.""}}",source example uses tennis courts
+words:draft_s1,"{""g"":""borrador"",""ex"":{""draft_s1"":""Te envié el primer borrador del contrato.""}}",source definition differs; corrected follows the writing example
+words:draft_s2,"{""g"":""redactar; preparar"",""ex"":{""draft_s2"":""¿Puedes redactar una respuesta a este correo?""}}",source definition differs; corrected follows the writing example
+words:notice_s1,"{""g"":""notar; darse cuenta de"",""ex"":{""notice_s1"":""¿Notaste su nuevo corte de cabello?""}}",manual translation
+words:notice_s2,"{""g"":""aviso; anuncio"",""ex"":{""notice_s2"":""Hay un aviso sobre la reunión en la pared.""}}",manual translation
+words:property_s1,"{""g"":""propiedad"",""ex"":{""property_s1"":""Por favor, no dañes la propiedad pública.""}}",manual translation
+words:license_s1,"{""g"":""licencia; permiso"",""ex"":{""license_s1"":""Necesitas una licencia para conducir un auto.""}}",manual translation
+words:license_s2,"{""g"":""autorizar; otorgar licencia"",""ex"":{""license_s2"":""La tienda tiene autorización para vender medicamentos.""}}",manual translation
+words:evidence_s1,"{""g"":""evidencia; pruebas"",""ex"":{""evidence_s1"":""No hay pruebas de que haya infringido las reglas.""}}",manual translation
+words:warehouse_s1,"{""g"":""almacén; bodega"",""ex"":{""warehouse_s1"":""Las mercancías se almacenan en un almacén.""}}",manual translation
+words:shipment_s1,"{""g"":""envío; cargamento"",""ex"":{""shipment_s1"":""El envío llegó con dos días de retraso.""}}",manual translation
+words:supplier_s1,"{""g"":""proveedor"",""ex"":{""supplier_s1"":""Buscamos un nuevo proveedor de papel.""}}",manual translation
+words:equipment_s1,"{""g"":""equipo"",""ex"":{""equipment_s1"":""Todo el equipo de seguridad debe revisarse a diario.""}}",manual translation
+words:container_s1,"{""g"":""contenedor"",""ex"":{""container_s1"":""El contenedor fue cargado en el barco.""}}",manual translation
+words:track_s1,"{""g"":""rastrear; seguir"",""ex"":{""track_s1"":""Puedes rastrear tu paquete en línea.""}}",manual translation
+words:track_s2,"{""g"":""pista; canción"",""ex"":{""track_s2"":""La tercera pista del álbum es mi favorita.""}}",source example uses an album track
+words:load_s1,"{""g"":""cargar"",""ex"":{""load_s1"":""Cargaron las cajas en el camión.""}}",manual translation
+words:load_s2,"{""g"":""carga"",""ex"":{""load_s2"":""El camión llevaba una carga pesada.""}}",manual translation
+words:process_s1,"{""g"":""proceso"",""ex"":{""process_s1"":""Aprender un idioma es un proceso largo.""}}",manual translation
+words:process_s2,"{""g"":""procesar; tramitar"",""ex"":{""process_s2"":""Tu solicitud se tramitará en un plazo de una semana.""}}",manual translation
+words:operate_s1,"{""g"":""operar; manejar"",""ex"":{""operate_s1"":""Solo el personal capacitado puede operar esta máquina.""}}",manual translation
+words:import_s1,"{""g"":""importar"",""ex"":{""import_s1"":""El país importa café de varias regiones.""}}",manual translation
+words:export_s1,"{""g"":""exportar"",""ex"":{""export_s1"":""El país exporta café y arroz.""}}",manual translation
