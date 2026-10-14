@@ -1,2 +1,2 @@
 key,english,english_example,def,draft,corrected,comment
-words:overjoyed_s1,overjoyed,Her parents were overjoyed when she won the scholarship.,extremely happy,,"{""g"": ""extremely happy"", ""ex"": {""overjoyed_s1"": ""scholarship जीतने पर parents overjoyed थे।""}, ""tip"": """", ""regional"": {}}",Manual semantic Hindi warning correction
+words:overjoyed_s1,overjoyed,Her parents were overjoyed when she won the scholarship.,extremely happy,,"{""g"": ""अत्यंत प्रसन्न"", ""ex"": {""overjoyed_s1"": ""scholarship जीतने पर parents overjoyed थे।""}, ""tip"": """", ""regional"": {}}",Manual semantic Hindi warning correction

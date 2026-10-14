@@ -1,4 +1,4 @@
 key,english,english_example,def,draft,corrected,comment
-words:precisely_s1,precisely,,,,"{""g"": ""exactly"", ""ex"": {""precisely_s1"": ""train precisely eight oclock पर चली।""}, ""tip"": """", ""regional"": {}}",Manual semantic Hindi warning correction
-words:fantastic_s1,fantastic,,,,"{""g"": ""extremely good"", ""ex"": {""fantastic_s1"": ""course के बाद तुम्हारी English fantastic लगती है।""}, ""tip"": """", ""regional"": {}}",Manual semantic Hindi warning correction
-words:consequently_s1,consequently,,,,"{""g"": ""as a result"", ""ex"": {""consequently_s1"": ""वह bus miss कर गया और consequently late पहुँचा।""}, ""tip"": """", ""regional"": {}}",Manual semantic Hindi warning correction
+words:precisely_s1,precisely,,,,"{""g"": ""ठीक-ठीक"", ""ex"": {""precisely_s1"": ""train precisely eight oclock पर चली।""}, ""tip"": """", ""regional"": {}}",Manual semantic Hindi warning correction
+words:fantastic_s1,fantastic,,,,"{""g"": ""अद्भुत"", ""ex"": {""fantastic_s1"": ""course के बाद तुम्हारी English fantastic लगती है।""}, ""tip"": """", ""regional"": {}}",Manual semantic Hindi warning correction
+words:consequently_s1,consequently,,,,"{""g"": ""परिणामस्वरूप"", ""ex"": {""consequently_s1"": ""वह bus miss कर गया और consequently late पहुँचा।""}, ""tip"": """", ""regional"": {}}",Manual semantic Hindi warning correction

@@ -1,2 +1,2 @@
 key,english,english_example,def,draft,corrected,comment
-words:hilarious_s1,hilarious,The comedian told a hilarious story about travel.,extremely funny,,"{""g"": ""extremely funny"", ""ex"": {""hilarious_s1"": ""comedian ने travel पर hilarious story सुनाई।""}, ""tip"": """", ""regional"": {}}",Manual semantic Hindi warning correction
+words:hilarious_s1,hilarious,The comedian told a hilarious story about travel.,extremely funny,,"{""g"": ""बेहद मज़ेदार"", ""ex"": {""hilarious_s1"": ""comedian ने travel पर hilarious story सुनाई।""}, ""tip"": """", ""regional"": {}}",Manual semantic Hindi warning correction
