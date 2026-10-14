@@ -1,0 +1,121 @@
+key,corrected,comment
+ui:tap_to_flip,Ketuk untuk membalik,manual LLM semantic translation from English source
+ui:tap_to_replay,Ketuk untuk mendengarkan lagi,manual LLM semantic translation from English source
+ui:tap_wrong_part,Ketuk bagian yang salah,manual LLM semantic translation from English source
+ui:tell_apart,Cara membedakannya,manual LLM semantic translation from English source
+ui:test_meta,%1$d soal ? %2$s ? Terakhir: %3$s ? Terbaik: %4$s,manual LLM semantic translation from English source
+ui:tests,Tes,manual LLM semantic translation from English source
+ui:theme_dark,Gelap,manual LLM semantic translation from English source
+ui:theme_light,Terang,manual LLM semantic translation from English source
+ui:theme_system,Sama seperti perangkat,manual LLM semantic translation from English source
+ui:time_up,Waktu habis!,manual LLM semantic translation from English source
+ui:time_used,Waktu: %1$d:%2$02d,manual LLM semantic translation from English source
+ui:tips_title,Kiat,manual LLM semantic translation from English source
+ui:today_plan,Rencana hari ini,manual LLM semantic translation from English source
+ui:token_used,Token pembangun digunakan,manual LLM semantic translation from English source
+ui:too_few,Tidak cukup soal yang cocok dengan filter ini.,manual LLM semantic translation from English source
+ui:topics,Topik,manual LLM semantic translation from English source
+ui:total_xp,Total XP,manual LLM semantic translation from English source
+ui:trap_lookalike,Kata yang tampak mirip,manual LLM semantic translation from English source
+ui:trap_preposition,Preposisi yang salah,manual LLM semantic translation from English source
+ui:trap_similar,Makna yang mirip,manual LLM semantic translation from English source
+ui:trap_tense,Tense yang salah,manual LLM semantic translation from English source
+ui:trap_wrong_pos,Bentuk kata yang salah,manual LLM semantic translation from English source
+ui:type_choice,Pilihan ganda,manual LLM semantic translation from English source
+ui:type_error,Temukan kesalahan,manual LLM semantic translation from English source
+ui:type_here,Ketik jawaban Anda,manual LLM semantic translation from English source
+ui:type_meta,%1$d soal ? Akurasi %2$s ? Dikuasai %3$d,manual LLM semantic translation from English source
+ui:type_passage,Bacaan,manual LLM semantic translation from English source
+ui:type_sound,Menyimak,manual LLM semantic translation from English source
+ui:unanswered,Belum dijawab,manual LLM semantic translation from English source
+ui:unlocked,Terbuka,manual LLM semantic translation from English source
+ui:unsaved,Dihapus dari tersimpan,manual LLM semantic translation from English source
+ui:untimed,Tanpa batas waktu,manual LLM semantic translation from English source
+ui:version,Versi %1$s,manual LLM semantic translation from English source
+ui:vocab_total,%1$d kata ? %2$d makna,manual LLM semantic translation from English source
+ui:vs_previous,%1$d%% dibanding terakhir,manual LLM semantic translation from English source
+ui:wake_ad,Tonton video untuk membangunkan pet,manual LLM semantic translation from English source
+ui:wake_free,Belajar untuk membangunkannya,manual LLM semantic translation from English source
+ui:wake_token,Gunakan token pembangun (%1$d tersisa),manual LLM semantic translation from English source
+ui:weak_none,Belum ada bagian lemah. Kerja bagus!,manual LLM semantic translation from English source
+ui:weak_spots,Bagian yang masih lemah,manual LLM semantic translation from English source
+ui:welcome_session,Pelajaran pertama Anda,manual LLM semantic translation from English source
+ui:when_to_use,Kapan menggunakannya,manual LLM semantic translation from English source
+ui:woke_up,Pet Anda sudah bangun!,manual LLM semantic translation from English source
+ui:word_detail,Kata,manual LLM semantic translation from English source
+ui:word_family,Keluarga kata,manual LLM semantic translation from English source
+ui:word_of_day,Kata hari ini,manual LLM semantic translation from English source
+ui:words,Kata,manual LLM semantic translation from English source
+ui:words_known,%1$d dari %2$d kata sudah dikenal,manual LLM semantic translation from English source
+ui:words_mastered,Kata yang dikuasai,manual LLM semantic translation from English source
+ui:xp_left,Tersisa %1$d XP,manual LLM semantic translation from English source
+ui:your_weak,Bagian lemah Anda,manual LLM semantic translation from English source
+ui:pet_item_theme_cozy,Ruangan nyaman,manual LLM semantic translation from English source
+ui:pet_item_theme_garden,Taman,manual LLM semantic translation from English source
+ui:pet_item_theme_beach,Pantai,manual LLM semantic translation from English source
+ui:pet_item_theme_candy,Negeri permen,manual LLM semantic translation from English source
+ui:pet_item_theme_forest,Hutan,manual LLM semantic translation from English source
+ui:pet_item_theme_space,Luar angkasa,manual LLM semantic translation from English source
+ui:pet_item_theme_castle,Kastel,manual LLM semantic translation from English source
+ui:pet_item_bed_basket,Keranjang,manual LLM semantic translation from English source
+ui:pet_item_bed_cushion,Bantal,manual LLM semantic translation from English source
+ui:pet_item_bed_cloud,Tempat tidur awan,manual LLM semantic translation from English source
+ui:pet_item_bed_royal,Tempat tidur kerajaan,manual LLM semantic translation from English source
+ui:pet_item_rug_round,Karpet bundar,manual LLM semantic translation from English source
+ui:pet_item_rug_rainbow,Karpet pelangi,manual LLM semantic translation from English source
+ui:pet_item_rug_paw,Karpet telapak kaki,manual LLM semantic translation from English source
+ui:pet_item_plant_cactus,Kaktus,manual LLM semantic translation from English source
+ui:pet_item_plant_monstera,Monstera,manual LLM semantic translation from English source
+ui:pet_item_plant_sunflower,Bunga matahari,manual LLM semantic translation from English source
+ui:pet_item_lamp_floor,Lampu lantai,manual LLM semantic translation from English source
+ui:pet_item_lamp_star,Lampu bintang,manual LLM semantic translation from English source
+ui:pet_item_lamp_lava,Lampu lava,manual LLM semantic translation from English source
+ui:pet_item_wall_abc,Poster ABC,manual LLM semantic translation from English source
+ui:pet_item_wall_clock,Jam dinding,manual LLM semantic translation from English source
+ui:pet_item_wall_map,Peta dunia,manual LLM semantic translation from English source
+ui:pet_item_toy_ball,Bola,manual LLM semantic translation from English source
+ui:pet_item_toy_yarn,Gulungan benang,manual LLM semantic translation from English source
+ui:pet_item_toy_teddy,Boneka beruang,manual LLM semantic translation from English source
+ui:pet_item_toy_books,Tumpukan buku,manual LLM semantic translation from English source
+ui:pet_item_hat_party,Topi pesta,manual LLM semantic translation from English source
+ui:pet_item_hat_beanie,Kupluk,manual LLM semantic translation from English source
+ui:pet_item_hat_flower,Mahkota bunga,manual LLM semantic translation from English source
+ui:pet_item_hat_grad,Topi wisuda,manual LLM semantic translation from English source
+ui:pet_item_hat_crown,Mahkota,manual LLM semantic translation from English source
+ui:pet_item_face_round,Kacamata bundar,manual LLM semantic translation from English source
+ui:pet_item_face_star,Kacamata hitam berbentuk bintang,manual LLM semantic translation from English source
+ui:pet_item_neck_bow,Dasi kupu-kupu,manual LLM semantic translation from English source
+ui:pet_item_neck_scarf,Syal,manual LLM semantic translation from English source
+ui:pet_item_neck_medal,Medali,manual LLM semantic translation from English source
+ui:species_cat,Kucing,manual LLM semantic translation from English source
+ui:species_panda,Panda,manual LLM semantic translation from English source
+ui:species_dragon,Naga,manual LLM semantic translation from English source
+ui:pet_default_cat,Mia,manual LLM semantic translation from English source
+ui:pet_default_panda,Bao,manual LLM semantic translation from English source
+ui:pet_default_dragon,Ember,manual LLM semantic translation from English source
+ui:locale_en,Bahasa Inggris,manual LLM semantic translation from English source
+ui:ob_language_title,Bahasa apa yang Anda gunakan?,manual LLM semantic translation from English source
+ui:ob_language_sub,Makna dan penjelasan akan muncul dalam bahasa ini.,manual LLM semantic translation from English source
+ui:i_speak,Saya berbicara %1$s,manual LLM semantic translation from English source
+ui:word_lists,Daftar kata ujian,manual LLM semantic translation from English source
+ui:word_lists_desc,Kata-kata yang paling sering digunakan setiap ujian,manual LLM semantic translation from English source
+ui:n_of_m_ready,%1$d dari %2$d kata siap,manual LLM semantic translation from English source
+ui:learn_list,Pelajari daftar ini,manual LLM semantic translation from English source
+ui:list_source,Sumber: %1$s,manual LLM semantic translation from English source
+ui:passage_show,Tampilkan bacaan,manual LLM semantic translation from English source
+ui:passage_hide,Sembunyikan bacaan,manual LLM semantic translation from English source
+ui:section_n,Bagian %1$d dari %2$d: %3$s,manual LLM semantic translation from English source
+ui:backup_title,Cadangkan kemajuan,manual LLM semantic translation from English source
+ui:backup_desc,"Simpan kata, riwayat tes, dan pet Anda ke dalam file",manual LLM semantic translation from English source
+ui:backup_done,Kemajuan disimpan,manual LLM semantic translation from English source
+ui:backup_failed,Tidak dapat menyimpan file. Coba lokasi lain.,manual LLM semantic translation from English source
+ui:restore_title,Pulihkan kemajuan,manual LLM semantic translation from English source
+ui:restore_desc,Muat kemajuan dari file cadangan,manual LLM semantic translation from English source
+ui:restore_confirm_title,Ganti kemajuan Anda?,manual LLM semantic translation from English source
+ui:restore_confirm_msg,"Cadangan dari %1$s berisi %2$d kata, %3$d tes, dan pet level %4$d. Kemajuan Anda saat ini di ponsel ini akan diganti.",manual LLM semantic translation from English source
+ui:restore_replace,Ganti,manual LLM semantic translation from English source
+ui:restore_done,Kemajuan dipulihkan,manual LLM semantic translation from English source
+ui:restore_bad_file,File ini bukan cadangan LingoMori atau file tersebut rusak.,manual LLM semantic translation from English source
+ui:restore_newer_version,Cadangan ini dibuat oleh versi LingoMori yang lebih baru. Perbarui aplikasi terlebih dahulu.,manual LLM semantic translation from English source
+ui:topic_story,Cerita pendek,manual LLM semantic translation from English source
+ui:hint_generic,"Baca seluruh kalimat terlebih dahulu, temukan kata kunci di sekitar bagian kosong, lalu periksa pilihan yang cocok dengan tata bahasa dan makna.",manual LLM semantic translation from English source

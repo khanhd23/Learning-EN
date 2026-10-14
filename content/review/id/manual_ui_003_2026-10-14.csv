@@ -1,0 +1,121 @@
+key,corrected,comment
+ui:sound_practice,Menyimak dan pelafalan,manual LLM semantic translation from English source
+ui:sound_practice_desc,Dengarkan perbedaan bunyi yang mirip dan tulis apa yang Anda dengar.,manual LLM semantic translation from English source
+ui:sound_tip,Kiat: %1$s,manual LLM semantic translation from English source
+ui:play_slow,Putar perlahan,manual LLM semantic translation from English source
+ui:ins_say_it,"Dengarkan, lalu ucapkan kalimatnya.",manual LLM semantic translation from English source
+ui:tap_to_speak,Ketuk dan bicara,manual LLM semantic translation from English source
+ui:listening_now,Sedang menyimak?,manual LLM semantic translation from English source
+ui:you_said,Anda mengucapkan: %1$s,manual LLM semantic translation from English source
+ui:speak_again,Coba lagi,manual LLM semantic translation from English source
+ui:mic_title,Gunakan mikrofon?,manual LLM semantic translation from English source
+ui:mic_reason,Mikrofon hanya digunakan untuk memeriksa pelafalan Anda. Tidak ada yang direkam atau disimpan.,manual LLM semantic translation from English source
+ui:daily_challenge,Tantangan harian,manual LLM semantic translation from English source
+ui:daily_challenge_desc,Lima soal campuran. Set baru setiap hari.,manual LLM semantic translation from English source
+ui:daily_challenge_done,Selesai untuk hari ini. Kembali lagi besok!,manual LLM semantic translation from English source
+ui:weekly_quests,Misi mingguan,manual LLM semantic translation from English source
+ui:quest_new_words,Pelajari %1$d kata baru,manual LLM semantic translation from English source
+ui:quest_stories,Selesaikan %1$d cerita,manual LLM semantic translation from English source
+ui:quest_speaking,Berlatih berbicara selama %1$d hari,manual LLM semantic translation from English source
+ui:quest_daily,Selesaikan %1$d tantangan harian,manual LLM semantic translation from English source
+ui:quest_progress,%1$d/%2$d,manual LLM semantic translation from English source
+ui:quest_reward,Hadiah: %1$s,manual LLM semantic translation from English source
+ui:quest_xp,+%1$d XP,manual LLM semantic translation from English source
+ui:quest_xp_reward,Bonus mingguan: +%1$d XP,manual LLM semantic translation from English source
+ui:streak_shields,Pelindung rentetan: %1$d,manual LLM semantic translation from English source
+ui:streak_shield_info,Belajar 7 hari berturut-turut untuk mendapatkan pelindung. Pelindung menjaga rentetan Anda jika Anda melewatkan satu hari (maksimal 2).,manual LLM semantic translation from English source
+ui:ins_passage,Pilih jawaban terbaik untuk setiap bagian kosong.,manual LLM semantic translation from English source
+ui:ins_pronunciation,Pilih kata yang bagian garis bawahnya berbunyi berbeda.,manual LLM semantic translation from English source
+ui:ins_reverse,Pilih kata bahasa Inggris untuk makna ini.,manual LLM semantic translation from English source
+ui:ins_sentence,Pilih kalimat yang paling tepat untuk bagian kosong.,manual LLM semantic translation from English source
+ui:ins_spelling,Ketik kata yang Anda dengar.,manual LLM semantic translation from English source
+ui:ins_stress,Pilih kata dengan pola tekanan yang berbeda.,manual LLM semantic translation from English source
+ui:ins_synonym,Pilih kata dengan makna yang paling dekat.,manual LLM semantic translation from English source
+ui:ins_transform,Pilih kalimat dengan makna yang sama.,manual LLM semantic translation from English source
+ui:ins_word_order,Susun kata-kata dalam urutan yang benar.,manual LLM semantic translation from English source
+ui:keep_working,Terus berusaha,manual LLM semantic translation from English source
+ui:last_30,30 hari terakhir,manual LLM semantic translation from English source
+ui:last_7,7 hari terakhir,manual LLM semantic translation from English source
+ui:learn_topic,Pelajari topik ini,manual LLM semantic translation from English source
+ui:level_desc_1,Kata-kata sehari-hari untuk pemula mutlak.,manual LLM semantic translation from English source
+ui:level_desc_2,Kata-kata umum untuk kehidupan sehari-hari dan percakapan sederhana.,manual LLM semantic translation from English source
+ui:level_desc_3,"Kata-kata untuk pekerjaan, belajar, dan percakapan yang lebih panjang.",manual LLM semantic translation from English source
+ui:level_desc_4,Kata-kata akademik dan bisnis untuk membaca dan ujian.,manual LLM semantic translation from English source
+ui:level_desc_5,Kata-kata tingkat lanjut dan formal.,manual LLM semantic translation from English source
+ui:level_n,Level %1$d,manual LLM semantic translation from English source
+ui:licenses,Lisensi,manual LLM semantic translation from English source
+ui:licenses_text,LingoMori menggunakan data dan pustaka terbuka. Sumber dan lisensinya tercantum di bawah.,manual LLM semantic translation from English source
+ui:listen,Dengarkan,manual LLM semantic translation from English source
+ui:audio_evidence,Bukti dalam audio,manual LLM semantic translation from English source
+ui:listen_slow,Dengarkan perlahan,manual LLM semantic translation from English source
+ui:locked_msg,"Selesaikan pelajaran sebelumnya terlebih dahulu, atau ikuti tes singkat untuk melompat ke depan.",manual LLM semantic translation from English source
+ui:locked_title,Pelajaran ini terkunci,manual LLM semantic translation from English source
+ui:loosen,Hapus beberapa filter,manual LLM semantic translation from English source
+ui:lv_12,Level 1?2,manual LLM semantic translation from English source
+ui:lv_23,Level 2?3,manual LLM semantic translation from English source
+ui:lv_34,Level 3?4,manual LLM semantic translation from English source
+ui:lv_45,Level 4?5,manual LLM semantic translation from English source
+ui:lv_auto,Level saya,manual LLM semantic translation from English source
+ui:lvl_basic,Dasar,manual LLM semantic translation from English source
+ui:lvl_basic_d,Saya tahu kata-kata umum dan kalimat sederhana.,manual LLM semantic translation from English source
+ui:lvl_beginner,Pemula,manual LLM semantic translation from English source
+ui:lvl_beginner_d,Saya baru mulai belajar bahasa Inggris.,manual LLM semantic translation from English source
+ui:lvl_inter,Menengah,manual LLM semantic translation from English source
+ui:lvl_inter_d,Saya dapat membicarakan topik sehari-hari dan membaca teks pendek.,manual LLM semantic translation from English source
+ui:lvl_upper,Menengah atas,manual LLM semantic translation from English source
+ui:lvl_upper_d,Saya ingin menyempurnakan bahasa Inggris untuk pekerjaan atau ujian.,manual LLM semantic translation from English source
+ui:mastery,Kemajuan Anda,manual LLM semantic translation from English source
+ui:mastery_known,Anda sudah menguasai kata ini,manual LLM semantic translation from English source
+ui:mastery_learning,Masih dipelajari,manual LLM semantic translation from English source
+ui:mastery_new,Kata baru,manual LLM semantic translation from English source
+ui:mastery_stats,Benar %1$d dari %2$d kali,manual LLM semantic translation from English source
+ui:matches,%1$d soal yang cocok,manual LLM semantic translation from English source
+ui:max_stage,Tahap akhir tercapai!,manual LLM semantic translation from English source
+ui:meal_title,Makanan untuk %1$s,manual LLM semantic translation from English source
+ui:meal_today,Hari ini: %1$d dari %2$d XP,manual LLM semantic translation from English source
+ui:meanings,Makna (%1$d),manual LLM semantic translation from English source
+ui:memory_tip,Kiat mengingat,manual LLM semantic translation from English source
+ui:mine,Kata-kata saya,manual LLM semantic translation from English source
+ui:mine_empty,Anda belum mempelajari kata apa pun.,manual LLM semantic translation from English source
+ui:mine_known,Kata yang sudah dikenal,manual LLM semantic translation from English source
+ui:mine_learning,Kata yang sedang dipelajari,manual LLM semantic translation from English source
+ui:mine_saved,Kata tersimpan,manual LLM semantic translation from English source
+ui:mine_wrong,Kata yang perlu diperbaiki,manual LLM semantic translation from English source
+ui:mini_test,Tes singkat ? %1$d soal,manual LLM semantic translation from English source
+ui:minutes_n,%1$d menit,manual LLM semantic translation from English source
+ui:mistake_book,Buku catatan kesalahan,manual LLM semantic translation from English source
+ui:mistakes_empty,Belum ada kesalahan. Pertahankan!,manual LLM semantic translation from English source
+ui:mock_in_progress,Tes sedang berlangsung,manual LLM semantic translation from English source
+ui:mock_in_progress_msg,Anda memiliki tes yang belum selesai. Lanjutkan atau mulai yang baru?,manual LLM semantic translation from English source
+ui:mock_leave_msg,"Jawaban Anda tersimpan, jadi Anda dapat melanjutkan nanti.",manual LLM semantic translation from English source
+ui:mock_leave_save,Simpan dan keluar,manual LLM semantic translation from English source
+ui:mock_leave_title,Keluar dari tes?,manual LLM semantic translation from English source
+ui:mock_result,Hasil tes,manual LLM semantic translation from English source
+ui:mode_flashcard,Kartu belajar,manual LLM semantic translation from English source
+ui:mode_listening,Menyimak,manual LLM semantic translation from English source
+ui:mode_matching,Mencocokkan,manual LLM semantic translation from English source
+ui:mode_practice,Latihan,manual LLM semantic translation from English source
+ui:mode_quiz,Kuis,manual LLM semantic translation from English source
+ui:mode_spelling,Ejaan,manual LLM semantic translation from English source
+ui:mode_timed,Berwaktu,manual LLM semantic translation from English source
+ui:mood_dozing,mengantuk,manual LLM semantic translation from English source
+ui:mood_full,kenyang,manual LLM semantic translation from English source
+ui:mood_happy,senang,manual LLM semantic translation from English source
+ui:mood_hi,senang bertemu denganmu,manual LLM semantic translation from English source
+ui:mood_hungry,lapar,manual LLM semantic translation from English source
+ui:mood_sleeping,tidur,manual LLM semantic translation from English source
+ui:mood_sleepy,mengantuk,manual LLM semantic translation from English source
+ui:n_items,%1$d item,manual LLM semantic translation from English source
+ui:n_questions,%1$d soal,manual LLM semantic translation from English source
+ui:n_selected,%1$d dipilih,manual LLM semantic translation from English source
+ui:n_words,%1$d kata,manual LLM semantic translation from English source
+ui:need_coins,Anda membutuhkan %1$d koin lagi.,manual LLM semantic translation from English source
+ui:need_practice,Perlu lebih banyak latihan,manual LLM semantic translation from English source
+ui:need_stage,Terbuka pada tahap %1$d,manual LLM semantic translation from English source
+ui:new_mastered,Kata baru dikuasai,manual LLM semantic translation from English source
+ui:next,Berikutnya,manual LLM semantic translation from English source
+ui:next_stage,Tahap berikutnya,manual LLM semantic translation from English source
+ui:no_mail_app,Tidak ada aplikasi email yang ditemukan.,manual LLM semantic translation from English source
+ui:no_results,Tidak ada hasil yang ditemukan,manual LLM semantic translation from English source
+ui:no_words_filter,Tidak ada kata yang cocok dengan filter ini.,manual LLM semantic translation from English source
+ui:node_available,siap dipelajari,manual LLM semantic translation from English source

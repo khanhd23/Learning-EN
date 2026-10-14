@@ -1,0 +1,121 @@
+key,corrected,comment
+ui:node_locked,terkunci,manual LLM semantic translation from English source
+ui:node_mastered,dikuasai,manual LLM semantic translation from English source
+ui:node_progress,sedang dipelajari,manual LLM semantic translation from English source
+ui:not_now,Nanti saja,manual LLM semantic translation from English source
+ui:not_set,Belum diatur,manual LLM semantic translation from English source
+ui:nothing_to_practice,Belum ada yang bisa dilatih. Pelajari beberapa kata baru terlebih dahulu!,manual LLM semantic translation from English source
+ui:notif_channel,Pengingat belajar,manual LLM semantic translation from English source
+ui:notif_msg,Ingin pengingat harian agar %1$s tidak lapar?,manual LLM semantic translation from English source
+ui:notif_title,Pengingat harian,manual LLM semantic translation from English source
+ui:notif_yes,Ingatkan saya,manual LLM semantic translation from English source
+ui:ob_goal_sub,Kami akan menyarankan pelajaran yang sesuai dengan target Anda.,manual LLM semantic translation from English source
+ui:ob_goal_title,Apa target Anda?,manual LLM semantic translation from English source
+ui:ob_level_sub,Mulailah dari level yang membuat Anda nyaman. Anda dapat mengubahnya nanti.,manual LLM semantic translation from English source
+ui:ob_level_title,Berapa level bahasa Inggris Anda?,manual LLM semantic translation from English source
+ui:ob_pet_explain,"Pet Anda tumbuh saat Anda belajar. Jika Anda melewatkan beberapa hari, pet akan lapar, tetapi tidak pernah pergi.",manual LLM semantic translation from English source
+ui:ob_pet_name,Beri nama pet Anda,manual LLM semantic translation from English source
+ui:ob_pet_sub,Pilih teman belajar dan beri dia nama.,manual LLM semantic translation from English source
+ui:ob_pet_title,Kenali teman belajar Anda,manual LLM semantic translation from English source
+ui:ob_time,Waktu belajar harian,manual LLM semantic translation from English source
+ui:open_pet_home,Ketuk untuk mengunjungi pet Anda,manual LLM semantic translation from English source
+ui:owned,Dimiliki,manual LLM semantic translation from English source
+ui:palette,Daftar soal,manual LLM semantic translation from English source
+ui:palette_legend,%1$d dari %2$d sudah dijawab,manual LLM semantic translation from English source
+ui:part_test,Tes %1$s lengkap,manual LLM semantic translation from English source
+ui:pet_ate,%1$s menikmati makanannya!,manual LLM semantic translation from English source
+ui:pet_cd,"Pet, %1$s",manual LLM semantic translation from English source
+ui:pet_full_after,%1$s kenyang dan bahagia!,manual LLM semantic translation from English source
+ui:pet_hidden_hint,Pet disembunyikan. Aktifkan kembali di Pengaturan.,manual LLM semantic translation from English source
+ui:pet_too_many_pats,"Tepuk pelan, ya!",manual LLM semantic translation from English source
+ui:pet_drag_hint,Tekan dan tahan untuk menyeret pet.,manual LLM semantic translation from English source
+ui:pet_hide,Sembunyikan pet,manual LLM semantic translation from English source
+ui:pet_hide_bubbles_today,Sembunyikan balon ucapan hari ini,manual LLM semantic translation from English source
+ui:pet_menu_title,%1$s,manual LLM semantic translation from English source
+ui:pet_reset_position,Kembalikan pet ke tempatnya,manual LLM semantic translation from English source
+ui:pet_tap_cd,Pet Anda. Ketuk untuk bermain.,manual LLM semantic translation from English source
+ui:pet_teaser,%1$s sedang %2$s,manual LLM semantic translation from English source
+ui:pet_tip,Setiap jawaban benar memberi makan pet Anda.,manual LLM semantic translation from English source
+ui:placement_intro,Jawab beberapa soal agar kami dapat menemukan level awal Anda.,manual LLM semantic translation from English source
+ui:placement_later,Anda dapat mengikuti tes ini nanti dari layar Hari Ini.,manual LLM semantic translation from English source
+ui:placement_sub,Temukan level Anda dalam sekitar 3 menit.,manual LLM semantic translation from English source
+ui:placement_title,Pemeriksaan level,manual LLM semantic translation from English source
+ui:plan_grammar,Tata bahasa: %1$s,manual LLM semantic translation from English source
+ui:plan_part5,Latihan TOEIC Bagian 5,manual LLM semantic translation from English source
+ui:plan_school,Latihan ujian,manual LLM semantic translation from English source
+ui:plan_words,Pelajari %1$d kata baru,manual LLM semantic translation from English source
+ui:pos_adj,kata sifat,manual LLM semantic translation from English source
+ui:pos_adv,kata keterangan,manual LLM semantic translation from English source
+ui:pos_conj,kata penghubung,manual LLM semantic translation from English source
+ui:pos_idiom,idiom,manual LLM semantic translation from English source
+ui:pos_n,kata benda,manual LLM semantic translation from English source
+ui:pos_phr,frasa,manual LLM semantic translation from English source
+ui:pos_prep,preposisi,manual LLM semantic translation from English source
+ui:pos_v,kata kerja,manual LLM semantic translation from English source
+ui:practice,Latihan,manual LLM semantic translation from English source
+ui:practice_selected,Latih kata yang dipilih,manual LLM semantic translation from English source
+ui:practice_set,Latih set ini (%1$d),manual LLM semantic translation from English source
+ui:practice_this_word,Latih kata ini,manual LLM semantic translation from English source
+ui:practice_weak,Latih bagian yang masih lemah,manual LLM semantic translation from English source
+ui:preset_default,Latihan saya,manual LLM semantic translation from English source
+ui:preset_name,Beri nama latihan ini,manual LLM semantic translation from English source
+ui:preset_saved,Latihan tersimpan,manual LLM semantic translation from English source
+ui:prev,Sebelumnya,manual LLM semantic translation from English source
+ui:privacy_policy,Kebijakan privasi,manual LLM semantic translation from English source
+ui:privacy_intro_title,"Data Anda, dijelaskan dengan jelas",manual LLM semantic translation from English source
+ui:privacy_intro,LingoMori menyimpan kemajuan belajar Anda hanya di perangkat ini. Kami tidak mengoperasikan server dan aplikasi tidak memerlukan akun.,manual LLM semantic translation from English source
+ui:privacy_backup_title,Cadangan,manual LLM semantic translation from English source
+ui:privacy_backup,Android mungkin menyertakan data ini dalam cadangan Google milik Anda.,manual LLM semantic translation from English source
+ui:privacy_ads_title,Pilihan iklan dan privasi,manual LLM semantic translation from English source
+ui:privacy_ads,"Aplikasi menampilkan iklan Google AdMob. AdMob dapat mengumpulkan ID iklan, alamat IP, dan interaksi Anda dengan iklan. Anda dapat meninjau pilihan iklan di Pengaturan.",manual LLM semantic translation from English source
+ui:privacy_microphone_title,Latihan berbicara,manual LLM semantic translation from English source
+ui:privacy_microphone,Mikrofon hanya digunakan untuk latihan berbicara. Layanan ucapan di ponsel Anda mengubah suara menjadi teks; LingoMori tidak merekam atau menyimpan audio.,manual LLM semantic translation from English source
+ui:privacy_reminders_title,Pengingat,manual LLM semantic translation from English source
+ui:privacy_reminders,Pengingat bersifat opsional.,manual LLM semantic translation from English source
+ui:privacy_link_hint,"Untuk kebijakan lengkap, buka halaman kebijakan publik di bawah.",manual LLM semantic translation from English source
+ui:privacy_open_link,Buka kebijakan publik,manual LLM semantic translation from English source
+ui:privacy_text,"LingoMori menyimpan kemajuan belajar Anda hanya di perangkat ini; kami tidak memiliki server dan Anda tidak memerlukan akun. Android mungkin menyertakannya dalam cadangan Google milik Anda. Aplikasi menampilkan iklan Google AdMob, yang dapat mengumpulkan ID iklan, alamat IP, dan interaksi dengan iklan; Anda dapat meninjau pilihan iklan di Pengaturan. Mikrofon hanya digunakan untuk latihan berbicara: layanan ucapan di ponsel mengubah suara menjadi teks, dan aplikasi tidak pernah merekam atau menyimpan audio. Pengingat bersifat opsional. Kebijakan lengkap tersedia melalui tautan di bawah.",manual LLM semantic translation from English source
+ui:quick_session,Sesi singkat,manual LLM semantic translation from English source
+ui:quiet_hours,Pengingat tidak pernah dikirim antara pukul 22.00 dan 08.00.,manual LLM semantic translation from English source
+ui:quit_keep,Lanjutkan,manual LLM semantic translation from English source
+ui:quit_leave,Keluar,manual LLM semantic translation from English source
+ui:quit_msg,Kemajuan Anda dalam sesi ini akan hilang.,manual LLM semantic translation from English source
+ui:quit_title,Keluar dari sesi ini?,manual LLM semantic translation from English source
+ui:rate_again,Lagi,manual LLM semantic translation from English source
+ui:rate_easy,Mudah,manual LLM semantic translation from English source
+ui:rate_good,Baik,manual LLM semantic translation from English source
+ui:rate_hard,Sulit,manual LLM semantic translation from English source
+ui:rate_msg,"Jika Anda menikmati LingoMori, penilaian singkat dapat membantu pelajar lain menemukannya.",manual LLM semantic translation from English source
+ui:rate_title,Menikmati LingoMori?,manual LLM semantic translation from English source
+ui:rate_yes,Beri nilai sekarang,manual LLM semantic translation from English source
+ui:recent_searches,Pencarian terbaru,manual LLM semantic translation from English source
+ui:redo_all,Ulangi semua (%1$d),manual LLM semantic translation from English source
+ui:redo_group,Ulangi grup ini,manual LLM semantic translation from English source
+ui:remove_mastered,Hapus soal yang sudah Anda kuasai,manual LLM semantic translation from English source
+ui:rename,Ganti nama,manual LLM semantic translation from English source
+ui:report,Laporkan masalah,manual LLM semantic translation from English source
+ui:report_body,Harap tinjau item konten %1$s.,manual LLM semantic translation from English source
+ui:report_subject,Laporan konten: %1$s,manual LLM semantic translation from English source
+ui:reset_confirm,Atur ulang,manual LLM semantic translation from English source
+ui:reset_done,Kemajuan diatur ulang,manual LLM semantic translation from English source
+ui:reset_msg,"Semua kemajuan belajar, kata tersimpan, dan kemajuan pet akan dihapus. Tindakan ini tidak dapat dibatalkan.",manual LLM semantic translation from English source
+ui:reset_progress,Atur ulang semua kemajuan,manual LLM semantic translation from English source
+ui:reset_title,Atur ulang kemajuan?,manual LLM semantic translation from English source
+ui:result_done,Sesi selesai,manual LLM semantic translation from English source
+ui:result_great,Kerja yang sangat baik!,manual LLM semantic translation from English source
+ui:result_meta,%1$d soal ? %2$d:%3$02d,manual LLM semantic translation from English source
+ui:retry_wrong,Ulangi jawaban yang salah,manual LLM semantic translation from English source
+ui:review_answers,Tinjau jawaban Anda,manual LLM semantic translation from English source
+ui:review_each,Tinjau setiap soal,manual LLM semantic translation from English source
+ui:review_now,Tinjau,manual LLM semantic translation from English source
+ui:review_now_title,Tinjau,manual LLM semantic translation from English source
+ui:rv_flagged,Ditandai,manual LLM semantic translation from English source
+ui:rv_wrong,Salah,manual LLM semantic translation from English source
+ui:save,Simpan,manual LLM semantic translation from English source
+ui:save_preset,Simpan latihan,manual LLM semantic translation from English source
+ui:saved,Tersimpan,manual LLM semantic translation from English source
+ui:search,Cari,manual LLM semantic translation from English source
+ui:search_hint,Cari kata atau tata bahasa,manual LLM semantic translation from English source
+ui:seconds_left,Sisa %1$d detik,manual LLM semantic translation from English source
+ui:see_word,Lihat kata,manual LLM semantic translation from English source
+ui:set_about,Tentang,manual LLM semantic translation from English source

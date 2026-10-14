@@ -1,0 +1,121 @@
+key,corrected,comment
+ui:due_count,%1$d perlu diulas,manual LLM semantic translation from English source
+ui:due_none,Tidak ada yang perlu diulas sekarang,manual LLM semantic translation from English source
+ui:due_today,Ulas hari ini,manual LLM semantic translation from English source
+ui:est_1,Pemula,manual LLM semantic translation from English source
+ui:est_2,Dasar,manual LLM semantic translation from English source
+ui:est_3,Menengah,manual LLM semantic translation from English source
+ui:est_4,Menengah atas,manual LLM semantic translation from English source
+ui:est_5,Mahir,manual LLM semantic translation from English source
+ui:est_disclaimer,"Ini hanya perkiraan kasar, bukan skor resmi.",manual LLM semantic translation from English source
+ui:est_level,Level perkiraan,manual LLM semantic translation from English source
+ui:exam_countdown,%1$d hari menuju ujian Anda,manual LLM semantic translation from English source
+ui:exam_date,Tanggal ujian,manual LLM semantic translation from English source
+ui:exam_focus,Fokus hari ini: %1$s,manual LLM semantic translation from English source
+ui:exam_goal,Target ujian,manual LLM semantic translation from English source
+ui:exam_catalog_sub,"Pilih ujian, lalu pilih set latihan.",manual LLM semantic translation from English source
+ui:exam_listening,Menyimak,manual LLM semantic translation from English source
+ui:exam_reading,Membaca,manual LLM semantic translation from English source
+ui:exam_part1,Bagian 1,manual LLM semantic translation from English source
+ui:exam_part2,Bagian 2,manual LLM semantic translation from English source
+ui:exam_part3,Bagian 3,manual LLM semantic translation from English source
+ui:exam_part4,Bagian 4,manual LLM semantic translation from English source
+ui:exam_part5,Bagian 5,manual LLM semantic translation from English source
+ui:exam_part6,Bagian 6,manual LLM semantic translation from English source
+ui:exam_part7,Bagian 7,manual LLM semantic translation from English source
+ui:exam_full_reading,Membaca lengkap,manual LLM semantic translation from English source
+ui:exam_reading_bank,Bank bacaan,manual LLM semantic translation from English source
+ui:exam_practice_sets_n,%1$d set latihan,manual LLM semantic translation from English source
+ui:exam_part_guide,Cara mengerjakan bagian ini,manual LLM semantic translation from English source
+ui:exam_part_sets_title,Set latihan - %1$s,manual LLM semantic translation from English source
+ui:exam_sections,Materi yang dilatih,manual LLM semantic translation from English source
+ui:exam_toeic,TOEIC,manual LLM semantic translation from English source
+ui:exam_ielts,IELTS,manual LLM semantic translation from English source
+ui:exam_vstep,VSTEP,manual LLM semantic translation from English source
+ui:exam_thpt,Latihan sekolah menengah,manual LLM semantic translation from English source
+ui:exam_ket,A2 Key (KET),manual LLM semantic translation from English source
+ui:exam_pet,B1 Preliminary (PET),manual LLM semantic translation from English source
+ui:exam_other,Ujian lainnya,manual LLM semantic translation from English source
+ui:exam_format_toeic_p5_title,Membaca ? Bagian 5,manual LLM semantic translation from English source
+ui:exam_format_toeic_p6_title,Membaca ? Bagian 6,manual LLM semantic translation from English source
+ui:exam_format_school_title,Bahasa Inggris sekolah,manual LLM semantic translation from English source
+ui:exam_format_thpt_title,Latihan sekolah menengah,manual LLM semantic translation from English source
+ui:exam_format_toeic_p5_desc,"Cara: baca seluruh kalimat, tentukan apakah bagian kosong memerlukan jenis kata, tense, preposisi, atau kolokasi, lalu singkirkan pilihan yang salah. Kiat: periksa struktur kalimat sebelum makna dan kolokasi.",manual LLM semantic translation from English source
+ui:exam_format_toeic_p6_desc,"Cara: baca sekilas tujuan dan alur bacaan, lalu baca kedua kalimat di sekitar bagian kosong. Kiat: kata penghubung, kata ganti, tata bahasa, dan kolokasi harus sesuai konteks.",manual LLM semantic translation from English source
+ui:exam_format_school_desc,"Latih jenis soal sekolah yang umum: pelafalan, tekanan kata, identifikasi kesalahan, sinonim dan antonim, serta penulisan ulang kalimat.",manual LLM semantic translation from English source
+ui:exam_format_thpt_desc,"40 soal pilihan ganda dalam 50 menit: pengumuman, selebaran, penyusunan kalimat, pelengkapan teks, dan dua bacaan.",manual LLM semantic translation from English source
+ui:exam_format_toeic_p7_desc,"Cara: baca judul, pengirim, tanggal, dan pertanyaan terlebih dahulu; lalu cari detail dan bandingkan parafrasa. Kiat: setiap jawaban detail harus didukung bacaan; jangan memakai pengetahuan di luar teks. 54 soal latihan orisinal; bukan tes TOEIC resmi.",manual LLM semantic translation from English source
+ui:exam_format_vstep_desc,Latihan membaca bergaya VSTEP yang orisinal: 4 bacaan dan 40 soal dalam 60 menit. Bukan tes VSTEP resmi.,manual LLM semantic translation from English source
+ui:exam_section_notice,Pengumuman,manual LLM semantic translation from English source
+ui:exam_section_leaflet,Selebaran atau iklan,manual LLM semantic translation from English source
+ui:exam_section_arrange,Penyusunan kalimat,manual LLM semantic translation from English source
+ui:exam_section_complete,Pelengkapan teks,manual LLM semantic translation from English source
+ui:exam_section_reading1,Bacaan 1,manual LLM semantic translation from English source
+ui:exam_section_reading2,Bacaan 2,manual LLM semantic translation from English source
+ui:exam_type,Ujian,manual LLM semantic translation from English source
+ui:examples_tap,Ketuk contoh untuk mendengarnya.,manual LLM semantic translation from English source
+ui:f_all,Semua,manual LLM semantic translation from English source
+ui:f_known,Sudah dikenal,manual LLM semantic translation from English source
+ui:f_learning,Sedang dipelajari,manual LLM semantic translation from English source
+ui:f_new,Baru,manual LLM semantic translation from English source
+ui:f_saved,Tersimpan,manual LLM semantic translation from English source
+ui:fb_almost,Hampir!,manual LLM semantic translation from English source
+ui:fb_correct_1,Benar!,manual LLM semantic translation from English source
+ui:fb_correct_2,Kerja bagus!,manual LLM semantic translation from English source
+ui:fb_correct_3,Bagus sekali!,manual LLM semantic translation from English source
+ui:fb_correct_4,Mantap!,manual LLM semantic translation from English source
+ui:fb_wrong,Belum tepat,manual LLM semantic translation from English source
+ui:feed,Beri makan,manual LLM semantic translation from English source
+ui:pet_care_title,Rawat %1$s,manual LLM semantic translation from English source
+ui:pet_care_sub,Pilih pelajaran singkat gratis atau tonton iklan opsional.,manual LLM semantic translation from English source
+ui:pet_care_study,Ikuti pelajaran singkat,manual LLM semantic translation from English source
+ui:pet_care_ad,Tonton iklan,manual LLM semantic translation from English source
+ui:earn_coins_ad,Dapatkan koin dari iklan,manual LLM semantic translation from English source
+ui:fix_to,%1$s ? %2$s,manual LLM semantic translation from English source
+ui:flag,Tandai soal ini,manual LLM semantic translation from English source
+ui:formula,Pola,manual LLM semantic translation from English source
+ui:g_all,Semua,manual LLM semantic translation from English source
+ui:g_toeic,TOEIC,manual LLM semantic translation from English source
+ui:g_tricky,Menantang,manual LLM semantic translation from English source
+ui:gallery,Galeri,manual LLM semantic translation from English source
+ui:gallery_sub,Pet Anda di setiap tahap yang telah dicapai.,manual LLM semantic translation from English source
+ui:generic_test,Tes latihan,manual LLM semantic translation from English source
+ui:gl_1,Fondasi,manual LLM semantic translation from English source
+ui:gl_2,Dasar,manual LLM semantic translation from English source
+ui:gl_3,Menengah,manual LLM semantic translation from English source
+ui:gl_4,Menengah atas,manual LLM semantic translation from English source
+ui:gl_5,Mahir,manual LLM semantic translation from English source
+ui:go_home,Kembali ke beranda,manual LLM semantic translation from English source
+ui:go_practice,Mulai berlatih,manual LLM semantic translation from English source
+ui:goal_basics,Pelajari dasar-dasarnya,manual LLM semantic translation from English source
+ui:goal_done,Target hari ini tercapai!,manual LLM semantic translation from English source
+ui:goal_ielts,Persiapkan IELTS,manual LLM semantic translation from English source
+ui:goal_progress,%1$d dari %2$d XP hari ini,manual LLM semantic translation from English source
+ui:goal_talk,Berbicara dengan percaya diri,manual LLM semantic translation from English source
+ui:goal_toeic,Persiapkan TOEIC,manual LLM semantic translation from English source
+ui:goal_travel,Bahasa Inggris untuk perjalanan,manual LLM semantic translation from English source
+ui:goal_work,Bahasa Inggris untuk pekerjaan,manual LLM semantic translation from English source
+ui:grammar_mastered,Tata bahasa dikuasai,manual LLM semantic translation from English source
+ui:grammar_points,Tata bahasa,manual LLM semantic translation from English source
+ui:greet_afternoon,Selamat siang!,manual LLM semantic translation from English source
+ui:greet_evening,Selamat malam!,manual LLM semantic translation from English source
+ui:greet_morning,Selamat pagi!,manual LLM semantic translation from English source
+ui:greet_noon,Halo!,manual LLM semantic translation from English source
+ui:heatmap,Kalender belajar,manual LLM semantic translation from English source
+ui:hint,Petunjuk,manual LLM semantic translation from English source
+ui:hint_find_error,Perhatikan bentuk kata dan tense.,manual LLM semantic translation from English source
+ui:history,Riwayat,manual LLM semantic translation from English source
+ui:in_use,Sedang digunakan,manual LLM semantic translation from English source
+ui:ins_antonym,Pilih kata yang maknanya berlawanan.,manual LLM semantic translation from English source
+ui:ins_choose,Pilih jawaban yang benar.,manual LLM semantic translation from English source
+ui:ins_cloze,Pilih kata yang paling tepat untuk melengkapi kalimat.,manual LLM semantic translation from English source
+ui:ins_find_error,Ketuk bagian kalimat yang salah.,manual LLM semantic translation from English source
+ui:ins_flashcard,"Coba ingat artinya, lalu balik kartunya.",manual LLM semantic translation from English source
+ui:ins_listen,Dengarkan dan pilih kata yang Anda dengar.,manual LLM semantic translation from English source
+ui:ins_matching,Pasangkan setiap kata dengan maknanya.,manual LLM semantic translation from English source
+ui:ins_meaning,Apa arti kata ini?,manual LLM semantic translation from English source
+ui:ins_picture_word,Kata mana yang cocok dengan gambar?,manual LLM semantic translation from English source
+ui:ins_listen_picture,Dengarkan dan pilih gambar.,manual LLM semantic translation from English source
+ui:ins_match_pictures,Pasangkan setiap gambar dengan katanya.,manual LLM semantic translation from English source
+ui:ins_dictation,Dengarkan lalu ketik apa yang Anda dengar.,manual LLM semantic translation from English source
+ui:ins_minimal_pair,Kata mana yang Anda dengar?,manual LLM semantic translation from English source

@@ -1,0 +1,33 @@
+key,corrected,comment
+questions:q74ba569bd,"Eggs berbentuk jamak, jadi pertanyaannya adalah Are there.",manual LLM semantic translation from English source
+questions:qd590d2c42,"Two banks berbentuk jamak, jadi gunakan are.",manual LLM semantic translation from English source
+questions:qf65b05ae4,"Dalam daftar, kata kerja mengikuti kata benda pertama: a pen, jadi gunakan is.",manual LLM semantic translation from English source
+questions:q4133d6870,Kalimat negatif biasanya menggunakan any.,manual LLM semantic translation from English source
+questions:qc69e1dbae,"Untuk menyatakan bahwa sesuatu ada di suatu tempat, gunakan There is, bukan It has.",manual LLM semantic translation from English source
+questions:qa8113b92d,"Places berbentuk jamak, jadi kita memerlukan There are.",manual LLM semantic translation from English source
+questions:q9dd056ef8,"Cat berbentuk tunggal, jadi gunakan there is. Under menunjukkan posisi kucing terhadap meja.",manual LLM semantic translation from English source
+questions:qc3bca6897,"Restaurants berbentuk jamak, jadi pertanyaannya dimulai dengan Are there. Any umum digunakan dalam pertanyaan tentang jumlah yang belum ditentukan.",manual LLM semantic translation from English source
+questions:qa17d92d22,Can + kata kerja dasar: run.,manual LLM semantic translation from English source
+questions:qbf4bccb74,Kemampuan di masa lalu menggunakan could.,manual LLM semantic translation from English source
+questions:q252950fb9,Could you?? adalah permintaan yang sopan.,manual LLM semantic translation from English source
+questions:q4212e216c,"Bentuk negatif can adalah can't, lalu diikuti kata kerja dasar.",manual LLM semantic translation from English source
+questions:q4571e5558,Can't berarti tidak mampu: I can't see anything.,manual LLM semantic translation from English source
+questions:q910c41285,"Setelah can, gunakan kata kerja dasar: speak.",manual LLM semantic translation from English source
+questions:qf7daff36c,Can langsung diikuti kata kerja dasar. Hapus to.,manual LLM semantic translation from English source
+questions:q0890d0677,"Can adalah kata kerja modal, jadi diikuti kata kerja dasar play. Frasa play the guitar menyebutkan alat musiknya.",manual LLM semantic translation from English source
+questions:qb56e6a656,Could membuat permintaan lebih sopan dan diikuti kata kerja dasar speak. More slowly menggunakan kata keterangan slowly untuk menjelaskan cara berbicara.,manual LLM semantic translation from English source
+questions:q21bfcf113,Artikel + kata sifat + kata benda: a beautiful voice.,manual LLM semantic translation from English source
+questions:q62900b9b5,Kata keterangan frekuensi diletakkan sebelum kata kerja utama: usually have.,manual LLM semantic translation from English source
+questions:q8361dc712,"Dengan kata kerja to be, kata keterangan diletakkan setelahnya: He is never late.",manual LLM semantic translation from English source
+questions:q16055ef75,Kata sifat diletakkan sebelum kata benda: a famous museum.,manual LLM semantic translation from English source
+questions:q4535bbb4f,Kata keterangan frekuensi diletakkan sebelum kata kerja utama: I often go.,manual LLM semantic translation from English source
+questions:q90958fcb1,"Gunakan past simple met untuk peristiwa yang sudah selesai. At school menunjukkan tempat, dan ten years ago menunjukkan waktu lampau yang sudah selesai.",manual LLM semantic translation from English source
+questions:q7a4fa6719,"Dengan she dalam simple present, wear menjadi wears. Always biasanya diletakkan sebelum kata kerja utama.",manual LLM semantic translation from English source
+questions:q49f87dd0d,Be going to + kata kerja dasar visit menyatakan rencana masa depan. Frasa waktu next week menempatkannya di masa depan.,manual LLM semantic translation from English source
+questions:q71e403765,"Bought adalah bentuk lampau buy untuk peristiwa yang selesai. Expensive dimulai dengan bunyi vokal, jadi gunakan an sebelum watch.",manual LLM semantic translation from English source
+questions:qca6ba6c2e,Cake memiliki bunyi /e?/. Kata lainnya memiliki bunyi /?/.,manual LLM semantic translation from English source
+questions:q3e7691490,Like memiliki bunyi /a?/. Kata lainnya memiliki bunyi /?/.,manual LLM semantic translation from English source
+questions:q59bd42a7a,Begin mendapat tekanan pada suku kata kedua. Kata lainnya mendapat tekanan pada suku kata pertama.,manual LLM semantic translation from English source
+questions:q3f217bbbc,Teacher mendapat tekanan pada suku kata pertama. Kata lainnya mendapat tekanan pada suku kata kedua.,manual LLM semantic translation from English source
+questions:q75ccae401,Lawan kata hot adalah cold.,manual LLM semantic translation from English source
+questions:qde547ca84,Lawan kata correct adalah wrong.,manual LLM semantic translation from English source

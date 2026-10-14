@@ -1,0 +1,121 @@
+key,corrected,comment
+ui:set_language,Konten pembelajaran,manual LLM semantic translation from English source
+ui:locale_vi,Bahasa Vietnam,manual LLM semantic translation from English source
+ui:locale_es,Bahasa Spanyol,manual LLM semantic translation from English source
+ui:locale_pt_br,Bahasa Portugis (Brasil),manual LLM semantic translation from English source
+ui:locale_id,Bahasa Indonesia,manual LLM semantic translation from English source
+ui:locale_hi,Bahasa Hindi,manual LLM semantic translation from English source
+ui:locale_ar,Bahasa Arab,manual LLM semantic translation from English source
+ui:locale_ja,Bahasa Jepang,manual LLM semantic translation from English source
+ui:locale_ko,Bahasa Korea,manual LLM semantic translation from English source
+ui:locale_th,Bahasa Thailand,manual LLM semantic translation from English source
+ui:locale_fr,Bahasa Prancis,manual LLM semantic translation from English source
+ui:about_disclaimer,Tentang LingoMori,manual LLM semantic translation from English source
+ui:about_tagline,Cara yang lebih tenang untuk mengembangkan bahasa Inggris.,manual LLM semantic translation from English source
+ui:about_intro,"LingoMori mengubah latihan sehari-hari menjadi langkah-langkah kecil yang memuaskan, sehingga Anda dapat membangun kepercayaan diri tanpa merasa kewalahan.",manual LLM semantic translation from English source
+ui:about_features_title,Dibuat untuk kemajuan yang konsisten,manual LLM semantic translation from English source
+ui:about_feature_words,"Pelajari kata-kata berguna dengan contoh, pelafalan, dan ulasan singkat.",manual LLM semantic translation from English source
+ui:about_feature_grammar,Ikuti peta jalan tata bahasa dengan kecepatan Anda sendiri.,manual LLM semantic translation from English source
+ui:about_feature_practice,Bangun kepercayaan diri melalui latihan terarah dan soal bergaya ujian.,manual LLM semantic translation from English source
+ui:about_independent_title,Aplikasi belajar mandiri,manual LLM semantic translation from English source
+ui:about_independent_text,"LingoMori adalah aplikasi belajar mandiri. Aplikasi ini tidak terhubung dengan penyelenggara ujian mana pun, dan skor latihan hanya merupakan perkiraan. Daftar kata didasarkan pada daftar kosakata terbuka; lihat detailnya di bagian Lisensi. TOEIC, IELTS, dan nama ujian lainnya adalah merek dagang pemiliknya masing-masing. LingoMori tidak berafiliasi dengan atau didukung oleh mereka.",manual LLM semantic translation from English source
+ui:accuracy,Akurasi,manual LLM semantic translation from English source
+ui:ach_combo,Ahli combo,manual LLM semantic translation from English source
+ui:ach_combo_h,Menjawab 10 soal berturut-turut dengan benar,manual LLM semantic translation from English source
+ui:ach_decor,Desainer interior,manual LLM semantic translation from English source
+ui:ach_decor_h,Memiliki 5 dekorasi,manual LLM semantic translation from English source
+ui:ach_first,Langkah pertama,manual LLM semantic translation from English source
+ui:ach_first_h,Menyelesaikan sesi pertama,manual LLM semantic translation from English source
+ui:ach_g1,Bintang tata bahasa,manual LLM semantic translation from English source
+ui:ach_g1_h,Mendapatkan bintang tata bahasa pertama,manual LLM semantic translation from English source
+ui:ach_l1,Dasar yang kuat,manual LLM semantic translation from English source
+ui:ach_l1_h,Menguasai semua tata bahasa Level 1,manual LLM semantic translation from English source
+ui:ach_mock,Siap mengikuti tes,manual LLM semantic translation from English source
+ui:ach_mock_h,Mendapatkan nilai setidaknya 80 persen pada tes yang berisi 10 soal atau lebih,manual LLM semantic translation from English source
+ui:ach_pet10,Legenda,manual LLM semantic translation from English source
+ui:ach_pet10_h,Menaikkan pet ke tahap 10,manual LLM semantic translation from English source
+ui:ach_pet3,Tumbuh besar,manual LLM semantic translation from English source
+ui:ach_pet3_h,Menaikkan pet ke tahap 3,manual LLM semantic translation from English source
+ui:ach_pet5,Sahabat terbaik,manual LLM semantic translation from English source
+ui:ach_pet5_h,Menaikkan pet ke tahap 5,manual LLM semantic translation from English source
+ui:ach_streak3,Sedang lancar,manual LLM semantic translation from English source
+ui:ach_streak3_h,Belajar 3 hari berturut-turut,manual LLM semantic translation from English source
+ui:ach_streak30,Tak terbendung,manual LLM semantic translation from English source
+ui:ach_streak30_h,Belajar 30 hari berturut-turut,manual LLM semantic translation from English source
+ui:ach_streak7,Satu minggu penuh,manual LLM semantic translation from English source
+ui:ach_streak7_h,Belajar 7 hari berturut-turut,manual LLM semantic translation from English source
+ui:ach_w200,Pengumpul kata,manual LLM semantic translation from English source
+ui:ach_w200_h,Menguasai 200 kata,manual LLM semantic translation from English source
+ui:ach_w50,Mulai belajar,manual LLM semantic translation from English source
+ui:ach_w50_h,Menguasai 50 kata,manual LLM semantic translation from English source
+ui:ach_w500,Penyihir kosakata,manual LLM semantic translation from English source
+ui:ach_w500_h,Menguasai 500 kata,manual LLM semantic translation from English source
+ui:achievements,Pencapaian,manual LLM semantic translation from English source
+ui:ad_loading,"Video sedang dimuat, harap tunggu?",manual LLM semantic translation from English source
+ui:loading,Memuat?,manual LLM semantic translation from English source
+ui:ad_limit,Anda telah mencapai batas iklan hari ini. Anda tetap dapat belajar secara gratis.,manual LLM semantic translation from English source
+ui:all_types,Semua jenis soal,manual LLM semantic translation from English source
+ui:app_short_name,LingoMori,manual LLM semantic translation from English source
+ui:b_count,Jumlah soal,manual LLM semantic translation from English source
+ui:b_level,Level,manual LLM semantic translation from English source
+ui:b_mode,Mode,manual LLM semantic translation from English source
+ui:b_skill,Keterampilan,manual LLM semantic translation from English source
+ui:b_source,Soal dari,manual LLM semantic translation from English source
+ui:b_topic,Topik,manual LLM semantic translation from English source
+ui:b_type,Jenis soal,manual LLM semantic translation from English source
+ui:back,Kembali,manual LLM semantic translation from English source
+ui:backup_info,Kemajuan Anda disimpan di perangkat ini dan disertakan dalam cadangan ponsel Anda.,manual LLM semantic translation from English source
+ui:best_combo,Combo terbaik: %1$d,manual LLM semantic translation from English source
+ui:blank_n,Bagian kosong %1$d,manual LLM semantic translation from English source
+ui:bowl_full,%1$s sudah kenyang. Kembali lagi nanti!,manual LLM semantic translation from English source
+ui:bowl_hungry,%1$s sedang lapar. Belajarlah untuk memberinya makan!,manual LLM semantic translation from English source
+ui:bowl_ok,%1$s sudah makan. Mau belajar sedikit lagi?,manual LLM semantic translation from English source
+ui:builder_sub,"Pilih topik, keterampilan, dan jenis soal.",manual LLM semantic translation from English source
+ui:builder_title,Buat latihan sendiri,manual LLM semantic translation from English source
+ui:buy,Beli,manual LLM semantic translation from English source
+ui:buy_msg,Beli ini dengan %1$d koin?,manual LLM semantic translation from English source
+ui:by_level,Menurut level,manual LLM semantic translation from English source
+ui:by_qtype,Menurut jenis soal,manual LLM semantic translation from English source
+ui:by_skill,Menurut keterampilan,manual LLM semantic translation from English source
+ui:by_topic,Menurut topik,manual LLM semantic translation from English source
+ui:by_type,Berlatih menurut jenis soal,manual LLM semantic translation from English source
+ui:by_type_sub,Fokus pada satu jenis soal setiap kali.,manual LLM semantic translation from English source
+ui:by_type_title,Berlatih menurut jenis,manual LLM semantic translation from English source
+ui:cancel,Batal,manual LLM semantic translation from English source
+ui:change_species,Ganti pet,manual LLM semantic translation from English source
+ui:chart_14,14 hari terakhir,manual LLM semantic translation from English source
+ui:check,Periksa,manual LLM semantic translation from English source
+ui:choose_format,Pilih format ujian,manual LLM semantic translation from English source
+ui:clear,Hapus,manual LLM semantic translation from English source
+ui:close,Tutup,manual LLM semantic translation from English source
+ui:coins_hint,Gunakan koin yang Anda peroleh dari belajar.,manual LLM semantic translation from English source
+ui:coins_earned,Anda memperoleh %1$d koin.,manual LLM semantic translation from English source
+ui:collocations,Pasangan kata umum,manual LLM semantic translation from English source
+ui:coming_soon,Segera hadir,manual LLM semantic translation from English source
+ui:common_mistakes,Kesalahan umum,manual LLM semantic translation from English source
+ui:confusables,Kata-kata yang mudah tertukar,manual LLM semantic translation from English source
+ui:confused_with,Sering tertukar dengan,manual LLM semantic translation from English source
+ui:cont,Lanjutkan,manual LLM semantic translation from English source
+ui:contact,Hubungi kami,manual LLM semantic translation from English source
+ui:continue_grammar,Lanjutkan: %1$s (%2$d%%),manual LLM semantic translation from English source
+ui:continue_label,Lanjutkan,manual LLM semantic translation from English source
+ui:continue_mock,Lanjutkan tes latihan,manual LLM semantic translation from English source
+ui:correct_answer_is,Jawaban yang benar: %1$s,manual LLM semantic translation from English source
+ui:story_score,%1$d dari %2$d benar,manual LLM semantic translation from English source
+ui:d_easy,Mudah,manual LLM semantic translation from English source
+ui:d_hard,Sulit,manual LLM semantic translation from English source
+ui:d_medium,Sedang,manual LLM semantic translation from English source
+ui:d_mixed,Campuran,manual LLM semantic translation from English source
+ui:daily_goal,Target harian,manual LLM semantic translation from English source
+ui:day_detail,Hari %1$s: %2$d XP ? %3$d menit ? %4$d jawaban,manual LLM semantic translation from English source
+ui:decorate,Hiasi,manual LLM semantic translation from English source
+ui:disclaimer,Tes latihan hanya untuk belajar. Tes ini bukan ujian resmi.,manual LLM semantic translation from English source
+ui:disclaimer_full,"LingoMori adalah aplikasi belajar mandiri. Aplikasi ini tidak terhubung dengan penyelenggara ujian mana pun dan skor latihan hanya merupakan perkiraan. Daftar kata didasarkan pada daftar kosakata terbuka; lihat detailnya di bagian Lisensi. TOEIC, IELTS, dan nama ujian lainnya adalah merek dagang pemiliknya; LingoMori tidak berafiliasi dengan atau didukung oleh mereka.",manual LLM semantic translation from English source
+ui:done,Selesai,manual LLM semantic translation from English source
+ui:double_xp,Gandakan XP,manual LLM semantic translation from English source
+ui:double_xp_done,Anda memperoleh tambahan %1$d XP!,manual LLM semantic translation from English source
+ui:double_xp_sub,Tonton video singkat untuk menggandakan XP dari sesi ini.,manual LLM semantic translation from English source
+ui:dozing_sub,Belajar untuk membangunkannya dan memulihkan %1$d XP.,manual LLM semantic translation from English source
+ui:dozing_title,%1$s tertidur,manual LLM semantic translation from English source
+ui:drills_ready,Siap berlatih!,manual LLM semantic translation from English source
+ui:drills_sub,Jawab %1$d soal untuk memeriksa apa yang telah Anda pelajari.,manual LLM semantic translation from English source

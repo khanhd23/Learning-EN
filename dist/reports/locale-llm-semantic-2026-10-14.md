@@ -14,6 +14,9 @@ learner language, and no entry was marked approved.
   confusable sets. Added Indonesian L1 notes for false friends, pronunciation, and grammar.
 - Indonesian support copy: translated 10 exam strategy tips and 144 pet lines from the English
   source into natural Indonesian, preserving {name} placeholders.
+- Indonesian pilot UI: translated all 728 UI strings, preserving Android placeholders and symbols.
+- Indonesian Level 1 questions: translated all 112 Level 1 answer explanations, preserving the
+  English answer words and grammar forms being taught.
 - Spanish: repaired 11 damaged or semantically wrong word entries found during the focused sample
   review, including grind_s1, wink_s1, trifle_s1, aka_s1, henry_s1, rum_s1, slumber_s1,
   justified_s1, nationwide_s1, chum_s1, and whereon_s1.
@@ -29,12 +32,13 @@ All new review CSV rows use reviewer codex-llm-semantic-2026-10-14 and remain re
 |---|---:|---:|---:|
 | Spanish | 10,618 tracked entries | 0 | 0 |
 | Portuguese (Brazil) | 10,618 tracked entries | 0 | 0 |
-| Indonesian words/topics/confusables/grammar | 8,924 | 1,658 in questions/passages/UI and 36 grammar points | 0 |
+| Indonesian pilot content | 9,764 reviewed entries | 40 passages and 36 higher-level grammar points | 0 |
 | Vietnamese | existing complete pack | 0 | existing owner state |
 
-Indonesian is therefore improved through the Level 1 pilot scope, but it is not release-ready:
-the remaining question explanations, passage explanations, UI strings, and higher-level grammar
-points still need semantic translation. Indonesian is not selectable or bundled.
+Indonesian now has the pilot's words, topics, UI, Level 1 grammar, Level 1 questions, pet lines,
+tips, and confusable guidance. It is still not release-ready: 40 passage explanations and 36
+higher-level grammar points still need semantic translation. Indonesian is not selectable or
+bundled.
 
 Spanish and Portuguese packs also remain unapproved and are not selectable or bundled. Spanish
 Level 4 includes a previously identified group of fragmentary examples that needs a separate

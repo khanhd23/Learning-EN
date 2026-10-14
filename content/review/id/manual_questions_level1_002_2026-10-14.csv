@@ -1,0 +1,43 @@
+key,corrected,comment
+questions:qc83bc8d7e,"Does membuka pertanyaan simple present, jadi kata kerja utama tetap dalam bentuk dasar live.",manual LLM semantic translation from English source
+questions:qc8c168466,"We berbentuk jamak, jadi gunakan do not atau don?t sebelum kata kerja dasar go.",manual LLM semantic translation from English source
+questions:q334a5c599,"H pada hour tidak dibaca, jadi kata itu dimulai dengan bunyi vokal: an hour.",manual LLM semantic translation from English source
+questions:qbc60f82f1,"University dimulai dengan bunyi /j/, yaitu bunyi konsonan: a university.",manual LLM semantic translation from English source
+questions:q7ee8cdc8c,"Hanya ada satu bulan, jadi kita menggunakan the.",manual LLM semantic translation from English source
+questions:q2f609e468,Nama pekerjaan setelah be memerlukan a atau an. Teacher dimulai dengan bunyi konsonan: a.,manual LLM semantic translation from English source
+questions:qc23ddb191,"Kedua pembicara tahu pintu yang dimaksud, jadi gunakan the.",manual LLM semantic translation from English source
+questions:q49c71d739,"Umbrella dimulai dengan bunyi vokal, jadi gunakan an.",manual LLM semantic translation from English source
+questions:q7c118e67b,"Music dalam makna umum tidak dapat dihitung, jadi tidak memerlukan artikel.",manual LLM semantic translation from English source
+questions:qc419e1796,"European dimulai dengan bunyi /j/, yaitu bunyi konsonan: a European company.",manual LLM semantic translation from English source
+questions:q278c0c181,"H pada honest tidak dibaca, jadi gunakan an: an honest person.",manual LLM semantic translation from English source
+questions:q5007cbfef,Nama pekerjaan tunggal memerlukan artikel: a doctor.,manual LLM semantic translation from English source
+questions:q18e742c22,Life dalam makna umum tidak memakai artikel: Life is too short.,manual LLM semantic translation from English source
+questions:q01af0661d,"Idea dimulai dengan bunyi vokal, jadi gunakan an sebelum kata benda tunggal.",manual LLM semantic translation from English source
+questions:q80baf0280,Frasa on the table menjelaskan buku yang mana. Mine adalah kata ganti kepunyaan sehingga dapat berdiri sendiri setelah is.,manual LLM semantic translation from English source
+questions:q36c62762d,Bentuk jamak person yang umum adalah people.,manual LLM semantic translation from English source
+questions:q4cbc1d950,Tooth memiliki bentuk jamak tidak beraturan: teeth.,manual LLM semantic translation from English source
+questions:q5751ee8d8,"Box berakhiran -x, jadi mendapat tambahan -es: boxes.",manual LLM semantic translation from English source
+questions:qa1c9da4c7,Konsonan + y berubah menjadi -ies: city ? cities.,manual LLM semantic translation from English source
+questions:qb7d833819,Child memiliki bentuk jamak tidak beraturan: children.,manual LLM semantic translation from English source
+questions:qf94d4dc60,"Advice tidak dapat dihitung, jadi tidak memakai -s.",manual LLM semantic translation from English source
+questions:q28c5e636f,Mouse memiliki bentuk jamak tidak beraturan: mice.,manual LLM semantic translation from English source
+questions:q794927143,Child memiliki bentuk jamak tidak beraturan: children.,manual LLM semantic translation from English source
+questions:q434820caa,"Information tidak dapat dihitung, jadi tidak memakai -s.",manual LLM semantic translation from English source
+questions:q957d79819,"Tourists berbentuk jamak, jadi gunakan there are. Many diikuti kata benda jamak yang dapat dihitung.",manual LLM semantic translation from English source
+questions:q0c9688621,Waktu pada jam menggunakan at.,manual LLM semantic translation from English source
+questions:q9a6e1870b,Tanggal menggunakan on.,manual LLM semantic translation from English source
+questions:qad369a03f,Musim menggunakan in.,manual LLM semantic translation from English source
+questions:q803c76536,Hari dalam seminggu menggunakan on.,manual LLM semantic translation from English source
+questions:q511458c11,Tahun menggunakan in.,manual LLM semantic translation from English source
+questions:qbf1a7cfe4,"Untuk permukaan, gunakan on: on the roof.",manual LLM semantic translation from English source
+questions:qa34b4128c,Titik tertentu menggunakan at: at the bus stop.,manual LLM semantic translation from English source
+questions:qbcd429269,At night adalah ungkapan tetap.,manual LLM semantic translation from English source
+questions:qcce749e77,Nama kota atau tempat menggunakan in.,manual LLM semantic translation from English source
+questions:q4691b2943,Bagian hari menggunakan in: in the afternoon.,manual LLM semantic translation from English source
+questions:qbe15d3229,Hari dalam seminggu menggunakan on: on Saturday.,manual LLM semantic translation from English source
+questions:q66457c1ef,Bagian hari menggunakan in: in the morning.,manual LLM semantic translation from English source
+questions:q5686284db,Nama kota menggunakan in: in Tokyo.,manual LLM semantic translation from English source
+questions:qef9ec6c7d,"Class berbentuk tunggal, jadi kata kerja simple present mendapat -s: starts. Gunakan at untuk waktu pada jam yang tepat.",manual LLM semantic translation from English source
+questions:q85f0f4ed4,Gunakan past simple met untuk peristiwa yang sudah selesai. Gunakan on dengan hari tertentu dan in dengan bulan.,manual LLM semantic translation from English source
+questions:qa83dea916,"People berbentuk jamak, dan pesta terjadi di masa lalu, jadi gunakan were.",manual LLM semantic translation from English source
+questions:qd94c59b24,"Water tidak dapat dihitung, jadi gunakan is.",manual LLM semantic translation from English source

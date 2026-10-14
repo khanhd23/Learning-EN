@@ -1,0 +1,121 @@
+key,corrected,comment
+ui:set_ad_privacy,Pilihan privasi iklan,manual LLM semantic translation from English source
+ui:set_appearance,Tampilan,manual LLM semantic translation from English source
+ui:set_bubbles,Balon ucapan pet,manual LLM semantic translation from English source
+ui:set_data,Data,manual LLM semantic translation from English source
+ui:set_goal,Target harian,manual LLM semantic translation from English source
+ui:set_haptics,Getaran,manual LLM semantic translation from English source
+ui:set_learning,Pembelajaran,manual LLM semantic translation from English source
+ui:set_level,Level,manual LLM semantic translation from English source
+ui:set_new_words,Kata baru per sesi,manual LLM semantic translation from English source
+ui:set_notifications,Notifikasi,manual LLM semantic translation from English source
+ui:set_open_pet,Buka beranda pet,manual LLM semantic translation from English source
+ui:set_pet,Pet,manual LLM semantic translation from English source
+ui:set_pet_size,Ukuran pet,manual LLM semantic translation from English source
+ui:set_privacy,Privasi,manual LLM semantic translation from English source
+ui:set_reduce_motion,Kurangi animasi,manual LLM semantic translation from English source
+ui:set_reminder,Pengingat harian,manual LLM semantic translation from English source
+ui:set_reminder_time,Waktu pengingat,manual LLM semantic translation from English source
+ui:set_reset_pos,Atur ulang posisi pet,manual LLM semantic translation from English source
+ui:set_show_pet,Tampilkan pet di layar,manual LLM semantic translation from English source
+ui:set_slow_tts,Audio lebih lambat,manual LLM semantic translation from English source
+ui:set_sounds,Efek suara,manual LLM semantic translation from English source
+ui:set_text_size,Ukuran teks,manual LLM semantic translation from English source
+ui:set_theme,Tema,manual LLM semantic translation from English source
+ui:set_translation,Tampilkan terjemahan,manual LLM semantic translation from English source
+ui:settings,Pengaturan,manual LLM semantic translation from English source
+ui:show_more,Tampilkan %1$d lagi,manual LLM semantic translation from English source
+ui:show_translation,Terjemahan,manual LLM semantic translation from English source
+ui:signals,Kata petunjuk,manual LLM semantic translation from English source
+ui:skip,Lewati,manual LLM semantic translation from English source
+ui:skip_test,Tes untuk langsung ke level berikutnya,manual LLM semantic translation from English source
+ui:slot_bed,Tempat tidur,manual LLM semantic translation from English source
+ui:slot_face,Kacamata,manual LLM semantic translation from English source
+ui:slot_hat,Topi,manual LLM semantic translation from English source
+ui:slot_lamp,Lampu,manual LLM semantic translation from English source
+ui:slot_neck,Leher,manual LLM semantic translation from English source
+ui:slot_plant,Tanaman,manual LLM semantic translation from English source
+ui:slot_rug,Karpet,manual LLM semantic translation from English source
+ui:slot_theme,Ruangan,manual LLM semantic translation from English source
+ui:slot_toy,Mainan,manual LLM semantic translation from English source
+ui:slot_wall,Dinding,manual LLM semantic translation from English source
+ui:sort_az,A?Z,manual LLM semantic translation from English source
+ui:sort_default,Urutan bawaan,manual LLM semantic translation from English source
+ui:sort_hard,Yang paling sulit dahulu,manual LLM semantic translation from English source
+ui:sort_wrong,Yang paling sering salah dahulu,manual LLM semantic translation from English source
+ui:speed_sub,Jawab sebanyak mungkin dalam 60 detik.,manual LLM semantic translation from English source
+ui:speed_title,Tantangan kecepatan,manual LLM semantic translation from English source
+ui:src_new,Soal baru,manual LLM semantic translation from English source
+ui:src_saved,Tersimpan,manual LLM semantic translation from English source
+ui:src_wrong,Soal yang pernah saya salah jawab,manual LLM semantic translation from English source
+ui:stage_n,Tahap %1$d,manual LLM semantic translation from English source
+ui:stage_of,Tahap %1$d dari %2$d,manual LLM semantic translation from English source
+ui:stage_up_sub,%1$s tumbuh bersamamu,manual LLM semantic translation from English source
+ui:stage_up_title,Tahap %1$d!,manual LLM semantic translation from English source
+ui:stage_xp,%1$d / %2$d XP,manual LLM semantic translation from English source
+ui:start,Mulai,manual LLM semantic translation from English source
+ui:start_10,Mulai 10 soal,manual LLM semantic translation from English source
+ui:start_drills,Mulai latihan,manual LLM semantic translation from English source
+ui:start_learning,Mulai belajar,manual LLM semantic translation from English source
+ui:start_new,Mulai tes baru,manual LLM semantic translation from English source
+ui:step_careful,Perhatikan,manual LLM semantic translation from English source
+ui:step_practice,Latihan,manual LLM semantic translation from English source
+ui:step_see,Contoh,manual LLM semantic translation from English source
+ui:step_understand,Pahami,manual LLM semantic translation from English source
+ui:streak_cd,Rentetan belajar: %1$d hari,manual LLM semantic translation from English source
+ui:streak_days,Rentetan %1$d hari,manual LLM semantic translation from English source
+ui:study_minutes,Belajar %1$d menit,manual LLM semantic translation from English source
+ui:study_modes,Mode belajar,manual LLM semantic translation from English source
+ui:study_more,Belajar lebih banyak,manual LLM semantic translation from English source
+ui:submit,Kirim,manual LLM semantic translation from English source
+ui:submit_left,Masih ada %1$d soal yang belum dijawab. Tetap kirim?,manual LLM semantic translation from English source
+ui:submit_title,Kirim tes Anda?,manual LLM semantic translation from English source
+ui:suggest_topics,Topik yang disarankan,manual LLM semantic translation from English source
+ui:t_grammar,Tata bahasa,manual LLM semantic translation from English source
+ui:t_part5,TOEIC Bagian 5,manual LLM semantic translation from English source
+ui:t_part6,TOEIC Bagian 6,manual LLM semantic translation from English source
+ui:t_school,Ujian sekolah,manual LLM semantic translation from English source
+ui:t_vocab,Kosakata,manual LLM semantic translation from English source
+ui:tab_exam,Ujian,manual LLM semantic translation from English source
+ui:tab_grammar,Tata bahasa,manual LLM semantic translation from English source
+ui:tab_me,Saya,manual LLM semantic translation from English source
+ui:tab_today,Hari ini,manual LLM semantic translation from English source
+ui:tab_vocab,Kata,manual LLM semantic translation from English source
+ui:tag_agreement,Kesesuaian subjek dan kata kerja,manual LLM semantic translation from English source
+ui:tag_antonym,Lawan kata,manual LLM semantic translation from English source
+ui:tag_cleft,Kalimat cleft,manual LLM semantic translation from English source
+ui:tag_collocation,Pasangan kata,manual LLM semantic translation from English source
+ui:tag_comparison,Perbandingan,manual LLM semantic translation from English source
+ui:tag_conditional,Kalimat pengandaian,manual LLM semantic translation from English source
+ui:tag_confusable,Kata yang mudah tertukar,manual LLM semantic translation from English source
+ui:tag_conjunction,Kata penghubung,manual LLM semantic translation from English source
+ui:tag_ellipsis,Elipsis,manual LLM semantic translation from English source
+ui:tag_error,Temukan kesalahan,manual LLM semantic translation from English source
+ui:tag_gerund,Gerund atau infinitive,manual LLM semantic translation from English source
+ui:tag_hedging,Bahasa yang lebih lunak,manual LLM semantic translation from English source
+ui:tag_inversion,Inversi,manual LLM semantic translation from English source
+ui:tag_linking,Penanda wacana,manual LLM semantic translation from English source
+ui:tag_modal,Kata kerja modal,manual LLM semantic translation from English source
+ui:tag_noun_phrase,Frasa kata benda,manual LLM semantic translation from English source
+ui:tag_participle,Partisip,manual LLM semantic translation from English source
+ui:tag_passage,Bacaan,manual LLM semantic translation from English source
+ui:tag_passive,Kalimat pasif,manual LLM semantic translation from English source
+ui:tag_pos,Bentuk kata,manual LLM semantic translation from English source
+ui:tag_preposition,Preposisi,manual LLM semantic translation from English source
+ui:tag_pronoun,Kata ganti,manual LLM semantic translation from English source
+ui:tag_pronunciation,Pelafalan,manual LLM semantic translation from English source
+ui:tag_quantifier,Artikel dan penentu jumlah,manual LLM semantic translation from English source
+ui:tag_register,Ragam formal atau informal,manual LLM semantic translation from English source
+ui:tag_relative,Klausa relatif,manual LLM semantic translation from English source
+ui:tag_reported,Kalimat tidak langsung,manual LLM semantic translation from English source
+ui:tag_sentence,Pelengkapan kalimat,manual LLM semantic translation from English source
+ui:tag_spelling,Ejaan,manual LLM semantic translation from English source
+ui:tag_stress,Tekanan kata,manual LLM semantic translation from English source
+ui:tag_subjunctive,Subjungtif,manual LLM semantic translation from English source
+ui:tag_synonym,Makna yang mirip,manual LLM semantic translation from English source
+ui:tag_tense,Tense kata kerja,manual LLM semantic translation from English source
+ui:tag_transform,Penulisan ulang kalimat,manual LLM semantic translation from English source
+ui:tag_vocab,Kosakata inti,manual LLM semantic translation from English source
+ui:tag_vocab_work,Kosakata pekerjaan,manual LLM semantic translation from English source
+ui:tag_wish,Harapan,manual LLM semantic translation from English source
+ui:tag_word_order,Urutan kata,manual LLM semantic translation from English source

@@ -1,0 +1,9 @@
+key,corrected,comment
+ui:hint_context,Tebak dari kalimat ini: ?%1$s?,manual LLM semantic translation from English source
+ui:hint_picture,"Sebutkan dahulu dalam bahasa Inggris apa yang Anda lihat, lalu cari kata itu.",manual LLM semantic translation from English source
+ui:hint_word_order,"Temukan subjek dan kata kerja terlebih dahulu, lalu tambahkan kata-kata lain di sekitarnya.",manual LLM semantic translation from English source
+ui:hint_word_order_meaning,"Makna: ?%1$s?. Temukan subjek dan kata kerja terlebih dahulu, lalu tambahkan kata-kata lain.",manual LLM semantic translation from English source
+ui:report_mistake,Laporkan kesalahan,manual LLM semantic translation from English source
+ui:report_mistake_subject,LingoMori: kesalahan dalam %1$s,manual LLM semantic translation from English source
+ui:report_mistake_body,Item: %1$s\nLayar: %2$s\nVersi aplikasi: %3$s\n\nApa yang salah (dan jawaban yang benar jika Anda tahu):\n,manual LLM semantic translation from English source
+ui:report_mistake_no_app,Tidak ada aplikasi email yang ditemukan. Silakan tulis ke %1$s,manual LLM semantic translation from English source
