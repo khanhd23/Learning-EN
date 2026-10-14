@@ -1,0 +1,181 @@
+key,english,english_example,def,draft,corrected,comment
+ui:fb_correct_4,,,,,बहुत बढ़िया!,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:fb_wrong,,,,,पूरी तरह सही नहीं,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:feed,,,,,खाना खिलाएँ,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:fix_to,,,,,%1$s → %2$s,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:flag,,,,,इस question को flag करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:formula,,,,,Pattern,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:g_all,,,,,सभी,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:g_toeic,,,,,TOEIC,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:g_tricky,,,,,Tricky,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:gallery,,,,,Gallery,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:gallery_sub,,,,,हर उस stage पर आपका pet जहाँ तक पहुँचा है।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:generic_test,,,,,Practice test,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:gl_1,,,,,Foundations,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:gl_2,,,,,Basics,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:gl_3,,,,,Intermediate,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:gl_4,,,,,Upper-intermediate,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:gl_5,,,,,Advanced,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:go_home,,,,,Home पर लौटें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:go_practice,,,,,Practice पर जाएँ,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:goal_basics,,,,,Basics सीखें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:goal_done,,,,,आज का goal पूरा हुआ!,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:goal_ielts,,,,,IELTS की तैयारी करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:goal_progress,,,,,आज %1$d में से %2$d XP,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:goal_talk,,,,,आत्मविश्वास से बोलें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:goal_toeic,,,,,TOEIC की तैयारी करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:goal_travel,,,,,Travel के लिए English,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:goal_work,,,,,Work के लिए English,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:grammar_mastered,,,,,Grammar mastered,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:grammar_points,,,,,Grammar,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:greet_afternoon,,,,,शुभ दोपहर!,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:greet_evening,,,,,शुभ संध्या!,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:greet_morning,,,,,सुप्रभात!,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:greet_noon,,,,,नमस्ते!,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:heatmap,,,,,Study calendar,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:hint,,,,,Hint,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:hint_context,,,,,इस sentence से guess करें: “%1$s”,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:hint_find_error,,,,,Word forms और tense देखें।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:hint_generic,,,,,"पहले पूरा sentence पढ़ें, blank के आसपास key words ढूँढ़ें, फिर जाँचें कि कौन-सा option grammar और meaning दोनों में fit होता है।",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:hint_picture,,,,,"पहले English में बताएँ कि आप क्या देख रहे हैं, फिर वह word ढूँढ़ें।",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:hint_word_order,,,,,"पहले subject और verb ढूँढ़ें, फिर बाकी words जोड़ें।",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:hint_word_order_meaning,,,,,"Meaning: “%1$s”. पहले subject और verb ढूँढ़ें, फिर बाकी words जोड़ें।",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:history,,,,,History,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:i_speak,,,,,मैं %1$s बोलता/बोलती हूँ,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:in_use,,,,,In use,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_antonym,,,,,वह word चुनें जिसका meaning opposite हो।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_choose,,,,,सही answer चुनें।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_cloze,,,,,वह word चुनें जो sentence को सबसे अच्छी तरह पूरा करे।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_dictation,,,,,सुनें और जो सुनें उसे type करें।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_find_error,,,,,Sentence के उस भाग पर tap करें जो ग़लत है।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_flashcard,,,,,"पहले meaning याद करने की कोशिश करें, फिर card पलटें।",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_listen,,,,,सुनें और वह word चुनें जो सुनाई दे।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_listen_picture,,,,,सुनें और picture चुनें।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_match_pictures,,,,,हर picture को उसके word से मिलाएँ।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_matching,,,,,हर word को उसके meaning से मिलाएँ।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_meaning,,,,,इस word का meaning क्या है?,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_minimal_pair,,,,,आपको कौन-सा word सुनाई देता है?,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_passage,,,,,हर blank के लिए best answer चुनें।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_picture_word,,,,,Picture से match करने वाला word कौन-सा है?,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_pronunciation,,,,,वह word चुनें जिसका underlined भाग अलग सुनाई देता है।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_reverse,,,,,इस meaning के लिए English word चुनें।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_say_it,,,,,"सुनें, फिर sentence बोलें।",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_sentence,,,,,वह sentence चुनें जो blank में सबसे अच्छा fit हो।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_spelling,,,,,जो word सुनें उसे type करें।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_stress,,,,,अलग stress pattern वाला word चुनें।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_synonym,,,,,सबसे निकट meaning वाला word चुनें।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_transform,,,,,समान meaning वाला sentence चुनें।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ins_word_order,,,,,Words को सही order में रखें।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:keep_working,,,,,काम जारी रखें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:last_30,,,,,पिछले 30 दिन,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:last_7,,,,,पिछले 7 दिन,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:learn_list,,,,,यह list सीखें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:learn_topic,,,,,यह topic सीखें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:level_desc_1,,,,,बिल्कुल शुरुआती learners के लिए रोज़मर्रा के words।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:level_desc_2,,,,,Daily life और simple conversations के common words।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:level_desc_3,,,,,"Work, study और longer conversations के words।",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:level_desc_4,,,,,Reading और exams के लिए academic और business words।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:level_desc_5,,,,,Advanced और formal words।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:level_n,,,,,Level %1$d,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:licenses,,,,,Licenses,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:licenses_text,,,,,LingoMori open data और libraries का उपयोग करता है। Sources और उनकी licenses नीचे दी गई हैं।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:list_source,,,,,Source: %1$s,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:listen,,,,,सुनें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:listen_slow,,,,,धीरे सुनें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:listening_now,,,,,सुन रहा है…,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:loading,,,,,Load हो रहा है…,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:locale_ar,,,,,العربية,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:locale_en,,,,,English,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:locale_es,,,,,Español,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:locale_fr,,,,,Français,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:locale_hi,,,,,हिन्दी,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:locale_id,,,,,Bahasa Indonesia,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:locale_ja,,,,,日本語,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:locale_ko,,,,,한국어,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:locale_pt_br,,,,,Português (Brasil),Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:locale_th,,,,,ไทย,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:locale_vi,,,,,Tiếng Việt,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:locked_msg,,,,,पहले की lessons पूरी करें या आगे जाने के लिए छोटा test दें।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:locked_title,,,,,यह lesson locked है,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:loosen,,,,,कुछ filters हटाएँ,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:lv_12,,,,,Levels 1–2,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:lv_23,,,,,Levels 2–3,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:lv_34,,,,,Levels 3–4,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:lv_45,,,,,Levels 4–5,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:lv_auto,,,,,मेरा level,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:lvl_basic,,,,,Elementary,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:lvl_basic_d,,,,,मैं common words और simple sentences जानता/जानती हूँ।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:lvl_beginner,,,,,Beginner,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:lvl_beginner_d,,,,,मैंने अभी English सीखना शुरू किया है।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:lvl_inter,,,,,Intermediate,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:lvl_inter_d,,,,,मैं daily topics पर बात कर सकता/सकती हूँ और short texts पढ़ सकता/सकती हूँ।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:lvl_upper,,,,,Upper-intermediate,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:lvl_upper_d,,,,,मैं work या exams के लिए अपनी English निखारना चाहता/चाहती हूँ।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mastery,,,,,आपका progress,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mastery_known,,,,,आप यह word अच्छी तरह जानते हैं,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mastery_learning,,,,,अभी सीख रहे हैं,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mastery_new,,,,,नया word,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mastery_stats,,,,,%2$d में से %1$d सही,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:matches,,,,,%1$d matching questions,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:max_stage,,,,,Final stage reached!,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:meal_title,,,,,%1$s के लिए meal,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:meal_today,,,,,आज: %2$d में से %1$d XP,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:meanings,,,,,Meanings (%1$d),Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:memory_tip,,,,,Memory tip,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mic_reason,,,,,Microphone केवल pronunciation check करने के लिए है। कुछ record या save नहीं किया जाता।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mic_title,,,,,Microphone इस्तेमाल करें?,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mine,,,,,मेरे words,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mine_empty,,,,,आपने अभी कोई word study नहीं किया है।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mine_known,,,,,Known words,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mine_learning,,,,,Progress में words,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mine_saved,,,,,Saved words,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mine_wrong,,,,,सुधारने वाले words,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mini_test,,,,,Mini test · %1$d questions,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:minutes_n,,,,,%1$d minutes,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mistake_book,,,,,Mistake notebook,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mistakes_empty,,,,,अभी कोई mistake नहीं। ऐसे ही करते रहें!,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mock_in_progress,,,,,Test चल रहा है,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mock_in_progress_msg,,,,,आपका एक test अधूरा है। उसे जारी रखें या नया शुरू करें?,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mock_leave_msg,,,,,"आपके answers save हैं, इसलिए बाद में जारी रख सकते हैं।",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mock_leave_save,,,,,Save करके निकलें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mock_leave_title,,,,,Test छोड़ें?,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mock_result,,,,,Test result,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mode_flashcard,,,,,Flashcards,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mode_listening,,,,,Listening,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mode_matching,,,,,Matching,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mode_practice,,,,,Practice,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mode_quiz,,,,,Quiz,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mode_spelling,,,,,Spelling,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mode_timed,,,,,Timed,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mood_dozing,,,,,ऊँघ रहा है,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mood_full,,,,,पेट भरा है,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mood_happy,,,,,खुश,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mood_hi,,,,,आपसे मिलने के लिए excited,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mood_hungry,,,,,भूखा,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mood_sleeping,,,,,सो रहा है,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:mood_sleepy,,,,,नींद में,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:n_items,,,,,%1$d items,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:n_of_m_ready,,,,,%1$d में से %2$d words ready,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:n_questions,,,,,%1$d questions,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:n_selected,,,,,%1$d selected,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:n_words,,,,,%1$d words,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:need_coins,,,,,आपको %1$d और coins चाहिए।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:need_practice,,,,,और practice चाहिए,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:need_stage,,,,,Stage %1$d पर unlock होगा,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:new_mastered,,,,,New words mastered,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:next,,,,,अगला,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:next_stage,,,,,अगला stage,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:no_mail_app,,,,,कोई email app नहीं मिला।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:no_results,,,,,कोई result नहीं मिला,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:no_words_filter,,,,,इस filter से कोई word match नहीं करता।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:node_available,,,,,सीखने के लिए ready,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:node_locked,,,,,locked,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:node_mastered,,,,,mastered,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:node_progress,,,,,progress में,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:not_now,,,,,अभी नहीं,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:not_set,,,,,Set नहीं है,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:nothing_to_practice,,,,,अभी practice के लिए कुछ नहीं। पहले कुछ नए words सीखें!,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:notif_channel,,,,,Study reminders,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:notif_msg,,,,,क्या आप daily reminder चाहते हैं ताकि %1$s भूखा न हो?,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:notif_title,,,,,Daily reminder,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:notif_yes,,,,,मुझे याद दिलाएँ,Manual LLM semantic Hindi UI translation; format placeholders retained.

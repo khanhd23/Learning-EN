@@ -1,0 +1,91 @@
+key,english,english_example,def,draft,corrected,comment
+ui:ob_goal_sub,,,,,?? ???? ?????? ?? ?????? ??????? lessons ?????????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ob_goal_title,,,,,???? ?????? ???? ???,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ob_language_sub,,,,,???? ?? explanations ??? ???? ??? ????? ??????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ob_language_title,,,,,?? ???-?? ???? ????? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ob_level_sub,,,,,???? ???? ??? ??? ???? ?? ???? ????? ??? ??? ??? ??? ???? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ob_level_title,,,,,???? English level ???? ???,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ob_pet_explain,,,,,"????? ???? ?? ???? pet ????? ??? ??? ??? ?????? ?? ??? ??? ???? ??, ????? ?? ??? ????? ?????",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ob_pet_name,,,,,???? pet ?? ??? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ob_pet_sub,,,,,????? ?? ???? ????? ?? ???? ??? ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ob_pet_title,,,,,???? ????? ?? ???? ?? ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:ob_time,,,,,???? ?? ????? ?? ???,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:open_pet_home,,,,,???? pet ?? ????? ?? ??? tap ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:owned,,,,,???? ??? ??,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:palette,,,,,Questions ?? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:palette_legend,,,,,%1$d ??? ?? %2$d ?? ????? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:part_test,,,,,???? %1$s test,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:passage_hide,,,,,Passage ??????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:passage_show,,,,,Passage ??????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_ate,,,,,%1$s ?? meal ?? ???? ????!,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_care_ad,,,,,Ad ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_care_study,,,,,???? lesson ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_care_sub,,,,,Free ??? ???? lesson ????? ?? optional ad ??????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_care_title,,,,,%1$s ?? ?????? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_cd,,,,,"Pet, %1$s",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_default_cat,,,,,Mia,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_default_dragon,,,,,Ember,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_default_panda,,,,,Bao,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_drag_hint,,,,,???? pet ?? ?????? ?? ??? ????? ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_full_after,,,,,%1$s ?? ??? ?? ??? ?? ?? ??? ??!,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_hidden_hint,,,,,Pet ???? ??? ??? Settings ??? ??? ??? ?? ???? ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_hide,,,,,Pet ??????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_hide_bubbles_today,,,,,?? speech bubbles ??????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_bed_basket,,,,,Basket,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_bed_cloud,,,,,Cloud bed,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_bed_cushion,,,,,Cushion,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_bed_royal,,,,,Royal bed,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_face_round,,,,,Round glasses,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_face_star,,,,,Star sunglasses,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_hat_beanie,,,,,Cap,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_hat_crown,,,,,Crown,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_hat_flower,,,,,Flower crown,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_hat_grad,,,,,Graduation cap,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_hat_party,,,,,Party hat,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_lamp_floor,,,,,Floor lamp,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_lamp_lava,,,,,Lava lamp,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_lamp_star,,,,,Star lamp,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_neck_bow,,,,,Bow tie,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_neck_medal,,,,,Medal,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_neck_scarf,,,,,Scarf,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_plant_cactus,,,,,Cactus,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_plant_monstera,,,,,Monstera,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_plant_sunflower,,,,,Sunflower,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_rug_paw,,,,,Paw rug,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_rug_rainbow,,,,,Rainbow rug,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_rug_round,,,,,Round rug,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_theme_beach,,,,,Beach,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_theme_candy,,,,,Candy land,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_theme_castle,,,,,Castle,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_theme_cozy,,,,,Cozy room,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_theme_forest,,,,,Forest,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_theme_garden,,,,,Garden,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_theme_space,,,,,Outer space,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_toy_ball,,,,,Ball,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_toy_books,,,,,Stack of books,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_toy_teddy,,,,,Teddy bear,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_toy_yarn,,,,,Ball of yarn,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_wall_abc,,,,,ABC poster,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_wall_clock,,,,,Wall clock,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_item_wall_map,,,,,World map,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_menu_title,,,,,%1$s,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_reset_position,,,,,Pet ?? ???? ??? ?? ???? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_tap_cd,,,,,???? pet? ????? ?? ??? tap ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_teaser,,,,,"%1$s, %2$s ??",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_tip,,,,,?? ??? ????? ???? pet ?? ???? ?????? ???,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pet_too_many_pats,,,,,"????-???? ??????, please!",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:placement_intro,,,,,???? ??????? level ?????? ?? ??? ??? questions ?? ????? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:placement_later,,,,,?? test ??? ??? Today screen ?? ?? ???? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:placement_sub,,,,,???? 3 minutes ??? ???? level ??????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:placement_title,,,,,Level check,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:plan_grammar,,,,,Grammar: %1$s,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:plan_part5,,,,,TOEIC Part 5 practice,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:plan_school,,,,,Exam practice,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:plan_words,,,,,%1$d ?? words ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:play_slow,,,,,???? ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pos_adj,,,,,adjective,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pos_adv,,,,,adverb,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pos_conj,,,,,conjunction,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pos_idiom,,,,,idiom,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pos_n,,,,,noun,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:pos_phr,,,,,phrase,Manual LLM semantic Hindi UI translation; format placeholders retained.
