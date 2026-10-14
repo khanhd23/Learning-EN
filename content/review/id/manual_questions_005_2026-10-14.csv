@@ -1,0 +1,101 @@
+key,english,english_example,def,draft,corrected,comment
+questions:qe1b618508,,,,,Tidak menerima koneksi adalah akibat dari keterlambatan: As a result.,manual LLM semantic translation from content/en/questions.json
+questions:q3c556302f,,,,,Kami menambahkan poin positif lain: Moreover.,manual LLM semantic translation from content/en/questions.json
+questions:qe3d2d70db,,,,,Otherwise berarti 'jika kamu tidak melakukan ini'.,manual LLM semantic translation from content/en/questions.json
+questions:q5eb847e8f,,,,,Populer di Asia tetapi penjualannya rendah di Eropa adalah pertentangan: However.,manual LLM semantic translation from content/en/questions.json
+questions:q914264abc,,,,,Perusahaan kami adalah salah satu contoh dari banyak perusahaan: For example.,manual LLM semantic translation from content/en/questions.json
+questions:qac0fda342,,,,,Kenaikan harga adalah akibat dari biaya yang meningkat: Therefore.,manual LLM semantic translation from content/en/questions.json
+questions:qb4d1aed43,,,,,"Small and comfortable adalah pertentangan, bukan hasil: However.",manual LLM semantic translation from content/en/questions.json
+questions:q79dda5592,,,,,However menghubungkan dua kalimat mandiri yang berlawanan. Letakkan titik sebelum kata itu dan koma setelahnya.,manual LLM semantic translation from content/en/questions.json
+questions:qdab7cdd97,,,,,"By July dan durasi sepuluh tahun menekankan tindakan yang terus berlangsung sampai titik masa depan itu, jadi gunakan will have been working.",manual LLM semantic translation from content/en/questions.json
+questions:q755efe8a8,,,,,"For six hours up to midnight menjelaskan durasi masa depan, jadi gunakan will have been travelling.",manual LLM semantic translation from content/en/questions.json
+questions:q3dfb1e66a,,,,,"Penelitian akan berlanjut sampai 2030 selama dua puluh tahun, jadi gunakan will have been studying.",manual LLM semantic translation from content/en/questions.json
+questions:q30c38d524,,,,,"Durasi lima tahun berlanjut sampai akhir musim, jadi gunakan will have been playing.",manual LLM semantic translation from content/en/questions.json
+questions:qd64f0e21d,,,,,Pertanyaan future perfect continuous dimulai dengan How long will they have been living there?,manual LLM semantic translation from content/en/questions.json
+questions:q2a1aa935c,,,,,"For a full year up to August menjelaskan durasi masa depan, jadi gunakan will have been learning.",manual LLM semantic translation from content/en/questions.json
+questions:q681c39af1,,,,,"Setelah will have been, gunakan bentuk -ing: teaching.",manual LLM semantic translation from content/en/questions.json
+questions:qc50b286a7,,,,,"Setelah will, gunakan have, bukan has: will have been running.",manual LLM semantic translation from content/en/questions.json
+questions:q2a2343147,,,,,"Kursus akan berlangsung selama enam bulan sampai Juni, jadi gunakan will have been taking.",manual LLM semantic translation from content/en/questions.json
+questions:qf262599ce,,,,,Kata sifat majemuk dengan angka tetap berbentuk tunggal: two-year.,manual LLM semantic translation from content/en/questions.json
+questions:q8d8448abf,,,,,Kata sifat majemuk dengan angka berbentuk tunggal dan memakai tanda hubung: five-star.,manual LLM semantic translation from content/en/questions.json
+questions:q97f1241d0,,,,,Customer service adalah kata benda majemuk.,manual LLM semantic translation from content/en/questions.json
+questions:qfc81085a4,,,,,"Kata ini menjelaskan kata sifat trained, jadi diperlukan kata keterangan: highly.",manual LLM semantic translation from content/en/questions.json
+questions:qad3ef8808,,,,,Kata sifat majemuk dengan angka tetap berbentuk tunggal: fifteen-minute.,manual LLM semantic translation from content/en/questions.json
+questions:qc4b9917ec,,,,,Highly adalah kata keterangan yang menjelaskan kata sifat experienced. Kata keterangan diletakkan sebelum kata sifat dalam frasa ini.,manual LLM semantic translation from content/en/questions.json
+questions:q867b840a7,,,,,Suggest that + subject + kata kerja dasar: submit.,manual LLM semantic translation from content/en/questions.json
+questions:q93e2f1b1f,,,,,It is essential that + kata kerja dasar: fasten.,manual LLM semantic translation from content/en/questions.json
+questions:q488efb6e6,,,,,Require that + be + past participle: be paid.,manual LLM semantic translation from content/en/questions.json
+questions:q1db1ad087,,,,,Recommend that + kata kerja dasar: consult.,manual LLM semantic translation from content/en/questions.json
+questions:q3ed24e7e1,,,,,"Recommend that + kata kerja dasar, bahkan dengan she: drink.",manual LLM semantic translation from content/en/questions.json
+questions:q1e73d8245,,,,,"Suggest that dapat menggunakan bentuk dasar dalam rekomendasi formal: he apply, bukan he applies atau he to apply.",manual LLM semantic translation from content/en/questions.json
+questions:qd23d2c926,,,,,"Untuk menekankan orang, gunakan It was … who atau that.",manual LLM semantic translation from content/en/questions.json
+questions:qe4fd3bc4d,,,,,What-cleft: What I need is…,manual LLM semantic translation from content/en/questions.json
+questions:q916402bd8,,,,,Untuk menekankan waktu: It was + time + that.,manual LLM semantic translation from content/en/questions.json
+questions:qc496bafd6,,,,,What I want is… Jangan menambahkan it.,manual LLM semantic translation from content/en/questions.json
+questions:q4cb4b498d,,,,,Ini adalah cleft sentence. It was my teacher who menunjukkan orang yang bertanggung jawab memberi semangat kepada saya.,manual LLM semantic translation from content/en/questions.json
+questions:q2ae322556,,,,,Should you need… = If you need… dalam bentuk formal.,manual LLM semantic translation from content/en/questions.json
+questions:q05bd06dc2,,,,,No sooner … than.,manual LLM semantic translation from content/en/questions.json
+questions:qae7ccac08,,,,,Hardly … when.,manual LLM semantic translation from content/en/questions.json
+questions:q70e8de3a5,,,,,"Under no circumstances sudah bermakna negatif, dan auxiliary diletakkan di awal: should you.",manual LLM semantic translation from content/en/questions.json
+questions:q0bd8a1ec6,,,,,"Only after + frasa, lalu balik urutan kata pada klausa utama: did she send.",manual LLM semantic translation from content/en/questions.json
+questions:q93f4bcc5f,,,,,"Setelah No sooner, letakkan had sebelum subjek: had I.",manual LLM semantic translation from content/en/questions.json
+questions:q480fb3fb0,,,,,"Should you need adalah conditional formal terbalik yang berarti if you need. Dalam pola ini, should diletakkan sebelum subjek.",manual LLM semantic translation from content/en/questions.json
+questions:qf0887f989,,,,,"Setelah think, so menggantikan seluruh klausa: I think so.",manual LLM semantic translation from content/en/questions.json
+questions:q51d0aea97,,,,,Bentuk negatif dengan hope adalah I hope not.,manual LLM semantic translation from content/en/questions.json
+questions:qe6e9b17ef,,,,,Ones menggantikan kata benda jamak yang dapat dihitung (shoes).,manual LLM semantic translation from content/en/questions.json
+questions:q3597f7f54,,,,,Auxiliary can't mewakili can't play the piano.,manual LLM semantic translation from content/en/questions.json
+questions:q60f92a97e,,,,,"Setelah think, gunakan so, bukan yes: I think so.",manual LLM semantic translation from content/en/questions.json
+questions:q1cc07b910,,,,,"Wanted to call menggunakan infinitive setelah wanted. Forgot to menghindari pengulangan call you, jadi to terakhir mewakili to call you.",manual LLM semantic translation from content/en/questions.json
+questions:q306622ae1,,,,,Young people berbentuk jamak: tend to + kata kerja.,manual LLM semantic translation from content/en/questions.json
+questions:q5c71e653e,,,,,Be likely to + kata kerja berarti 'kemungkinan besar akan'.,manual LLM semantic translation from content/en/questions.json
+questions:q068331373,,,,,I was wondering if… adalah cara meminta sesuatu dengan sopan.,manual LLM semantic translation from content/en/questions.json
+questions:q46b1379ff,,,,,Policy berbentuk tunggal: appears to have + past participle.,manual LLM semantic translation from content/en/questions.json
+questions:q2953c51f7,,,,,Be likely + to + kata kerja: to increase.,manual LLM semantic translation from content/en/questions.json
+questions:qf46ec4852,,,,,Has been canceled adalah passive present perfect: rapat menerima tindakan dan hasilnya masih relevan sekarang.,manual LLM semantic translation from content/en/questions.json
+questions:qfb85be534,,,,,Gaya formal: inform somebody that…,manual LLM semantic translation from content/en/questions.json
+questions:q8517ebd42,,,,,Do not hesitate to contact me adalah ungkapan formal yang tetap.,manual LLM semantic translation from content/en/questions.json
+questions:q8e4bfb30d,,,,,Apply for a position.,manual LLM semantic translation from content/en/questions.json
+questions:q432afcc0c,,,,,Sincerely dan Best regards adalah penutup formal.,manual LLM semantic translation from content/en/questions.json
+questions:qfe22f565b,,,,,Email formal tidak menggunakan wanna. Gunakan would like to.,manual LLM semantic translation from content/en/questions.json
+questions:qc7e698228,,,,,"Look forward to adalah ungkapan tetap. Di sini to adalah preposisi, jadi diikuti gerund hearing.",manual LLM semantic translation from content/en/questions.json
+questions:qc92b9b197,,,,,"Sebelum kata benda handling, diperlukan kata sifat: professional.",manual LLM semantic translation from content/en/questions.json
+questions:q5b74404ed,,,,,"Kata ini menjelaskan kata kerja work, jadi diperlukan kata keterangan: efficiently.",manual LLM semantic translation from content/en/questions.json
+questions:q2d9d77da6,,,,,"Setelah kata sifat proper, diperlukan kata benda: identification.",manual LLM semantic translation from content/en/questions.json
+questions:qd8cb73439,,,,,"Di antara has dan past participle, diperlukan kata keterangan: significantly.",manual LLM semantic translation from content/en/questions.json
+questions:q0c1b19416,,,,,"Kata ini menjelaskan participle located, jadi diperlukan kata keterangan: conveniently.",manual LLM semantic translation from content/en/questions.json
+questions:qf4c54b4d5,,,,,"Setelah her, diperlukan kata benda: appreciation.",manual LLM semantic translation from content/en/questions.json
+questions:q835b390c9,,,,,"Kata ini menjelaskan kata kerja read, jadi diperlukan kata keterangan: carefully.",manual LLM semantic translation from content/en/questions.json
+questions:q282162ea5,,,,,So + kata sifat + that: informative.,manual LLM semantic translation from content/en/questions.json
+questions:q015d79435,,,,,Be responsible for berarti 'bertugas melakukan'.,manual LLM semantic translation from content/en/questions.json
+questions:qa35c8764d,,,,,"Setelah company's, diperlukan kata benda: commitment.",manual LLM semantic translation from content/en/questions.json
+questions:q91205963a,,,,,"Sebelum kata benda communication skills, diperlukan kata sifat: excellent.",manual LLM semantic translation from content/en/questions.json
+questions:q295c47000,,,,,"Kata ini menjelaskan komparatif higher, jadi diperlukan kata keterangan: considerably.",manual LLM semantic translation from content/en/questions.json
+questions:q2cc0931c3,,,,,Be pleased to + kata kerja berarti 'senang untuk'.,manual LLM semantic translation from content/en/questions.json
+questions:q818416328,,,,,"Setelah kata sifat free, diperlukan kata benda: admission.",manual LLM semantic translation from content/en/questions.json
+questions:q1f57755f3,,,,,"Kata ini menjelaskan kata kerja respond, jadi diperlukan kata keterangan: promptly.",manual LLM semantic translation from content/en/questions.json
+questions:q8e35e58dc,,,,,"Setelah be dan kata keterangan financially, diperlukan kata sifat: feasible.",manual LLM semantic translation from content/en/questions.json
+questions:q9b9badee1,,,,,The most + kata sifat + kata benda: creative.,manual LLM semantic translation from content/en/questions.json
+questions:qa0df6514a,,,,,The … of memerlukan kata benda: construction.,manual LLM semantic translation from content/en/questions.json
+questions:q23dce62c1,,,,,"Kata ini menjelaskan kata kerja complete, jadi diperlukan kata keterangan: accurately.",manual LLM semantic translation from content/en/questions.json
+questions:q4a63faed2,,,,,"Pidato itu memberi inspirasi kepada orang-orang, jadi gunakan kata sifat berakhiran -ing: inspiring.",manual LLM semantic translation from content/en/questions.json
+questions:q003250e92,,,,,"We menjelaskan perasaan orang, jadi gunakan kata sifat berakhiran -ed: impressed.",manual LLM semantic translation from content/en/questions.json
+questions:qbce8abe85,,,,,Become effective berarti 'mulai diterapkan'.,manual LLM semantic translation from content/en/questions.json
+questions:q642310ced,,,,,Next week berada di masa depan: will discuss.,manual LLM semantic translation from content/en/questions.json
+questions:q3d3dda81d,,,,,Since + titik awal menunjukkan periode sampai sekarang: has managed.,manual LLM semantic translation from content/en/questions.json
+questions:q2ec3d942d,,,,,Yesterday + passive: was sent.,manual LLM semantic translation from content/en/questions.json
+questions:q909011335,,,,,Currently menandai present continuous.,manual LLM semantic translation from content/en/questions.json
+questions:q0c0f2017d,,,,,"Ruangan menerima tindakan, dan pemesanan sudah dilakukan: has been reserved.",manual LLM semantic translation from content/en/questions.json
+questions:q74a189623,,,,,"By the end of + waktu masa depan: future perfect, will have opened.",manual LLM semantic translation from content/en/questions.json
+questions:q7b556e1ee,,,,,Last quarter adalah waktu lampau yang sudah selesai: rise → rose.,manual LLM semantic translation from content/en/questions.json
+questions:qc5715ed21,,,,,Usually + subjek tunggal: prepares.,manual LLM semantic translation from content/en/questions.json
+questions:q1fbdbcb6b,,,,,Orders menerima tindakan: are processed.,manual LLM semantic translation from content/en/questions.json
+questions:q4cbff0ba0,,,,,Tindakan yang sedang berlangsung dan terputus menggunakan past continuous.,manual LLM semantic translation from content/en/questions.json
+questions:q94b122064,,,,,Policy menerima tindakan pada hari Senin lalu: was approved.,manual LLM semantic translation from content/en/questions.json
+questions:q040c85fe6,,,,,Lights menerima tindakan: are turned off.,manual LLM semantic translation from content/en/questions.json
+questions:q09243420d,,,,,Sebelum suatu titik lampau (when he retired): past perfect.,manual LLM semantic translation from content/en/questions.json
+questions:q111ee1051,,,,,First conditional: If + present simple.,manual LLM semantic translation from content/en/questions.json
+questions:q7cc207fd9,,,,,Floors menggunakan on: on the third floor.,manual LLM semantic translation from content/en/questions.json
+questions:q57e11dd1d,,,,,Upon receipt berarti 'segera setelah diterima'.,manual LLM semantic translation from content/en/questions.json
+questions:q31242503a,,,,,Throughout + suatu periode berarti 'sepanjang periode itu'.,manual LLM semantic translation from content/en/questions.json
+questions:qace4f7aca,,,,,Titik awal dalam waktu: since.,manual LLM semantic translation from content/en/questions.json
+questions:q2a4676b57,,,,,By berarti 'paling lambat' untuk menyatakan tenggat.,manual LLM semantic translation from content/en/questions.json
