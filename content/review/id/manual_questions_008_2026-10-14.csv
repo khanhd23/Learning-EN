@@ -1,0 +1,122 @@
+key,english,english_example,def,draft,corrected,comment
+questions:q22fd6c2ee,,,,,If memperkenalkan kondisi yang memicu pemberitahuan dari bank.,manual LLM semantic translation from content/en/questions.json
+questions:qc53e023ed,,,,,Keep diikuti pelengkap objek. Accessible berarti mudah dicapai atau ditampilkan saat diperlukan.,manual LLM semantic translation from content/en/questions.json
+questions:qed0645678,,,,,"Between digunakan untuk dua tempat, yaitu hotel dan bandara.",manual LLM semantic translation from content/en/questions.json
+questions:q5ea25b167,,,,,Sebelum suggestions diperlukan kata sifat. Helpful menjelaskan saran yang berguna.,manual LLM semantic translation from content/en/questions.json
+questions:qdca879d58,,,,,Before memperkenalkan waktu yang lebih awal daripada keberangkatan.,manual LLM semantic translation from content/en/questions.json
+questions:q7b23444a0,,,,,Has diikuti past participle dalam present perfect. Updated menjelaskan perubahan sistem yang sudah selesai.,manual LLM semantic translation from content/en/questions.json
+questions:q163d05501,,,,,Subject to availability adalah ungkapan tetap yang berarti bergantung pada tersedianya tempat atau layanan.,manual LLM semantic translation from content/en/questions.json
+questions:q7de870569,,,,,Thoroughly menerangkan cleaned dan menjelaskan cara ruangan disiapkan dengan cermat.,manual LLM semantic translation from content/en/questions.json
+questions:qc0c06caf5,,,,,Provide guests with something adalah struktur tetap; guests menerima wireless internet.,manual LLM semantic translation from content/en/questions.json
+questions:qd1b8d0424,,,,,Pola adjective enough to do something memerlukan infinitive to host.,manual LLM semantic translation from content/en/questions.json
+questions:qe48c91960,,,,,Kata kerja penghubung was memerlukan kata sifat. Reliable menjelaskan kabel yang dapat diandalkan.,manual LLM semantic translation from content/en/questions.json
+questions:q22580aa70,,,,,Modal seperti can diikuti kata kerja dasar identify.,manual LLM semantic translation from content/en/questions.json
+questions:qdd36cdc9e,,,,,Once memperkenalkan kondisi waktu untuk pemasangan: setelah perangkat terhubung ke Wi-Fi.,manual LLM semantic translation from content/en/questions.json
+questions:q4a3f8a825,,,,,Data loss adalah frasa kata benda untuk kehilangan informasi. Setelah data diperlukan kata benda.,manual LLM semantic translation from content/en/questions.json
+questions:q2c05e0f70,,,,,User engagement adalah frasa kata benda untuk tingkat interaksi pengguna dengan aplikasi.,manual LLM semantic translation from content/en/questions.json
+questions:q439ff7f92,,,,,Safely adalah kata keterangan yang menerangkan reset dan menjelaskan cara kata sandi harus diubah.,manual LLM semantic translation from content/en/questions.json
+questions:qac97483e5,,,,,Arrange for something to be done menggunakan infinitive pasif: for the elevators to be tested.,manual LLM semantic translation from content/en/questions.json
+questions:q9065556d7,,,,,Once a month adalah ungkapan standar untuk frekuensi bulanan.,manual LLM semantic translation from content/en/questions.json
+questions:q86c8ed116,,,,,Became adalah kata kerja penghubung dan memerlukan kata sifat. Cold menjelaskan keadaan ruangan yang berubah.,manual LLM semantic translation from content/en/questions.json
+questions:qd3404d439,,,,,Promptly adalah kata keterangan yang menjelaskan respons cepat.,manual LLM semantic translation from content/en/questions.json
+questions:qd09662c9a,,,,,While memperkenalkan periode ketika pintu masuk tetap tertutup.,manual LLM semantic translation from content/en/questions.json
+questions:q9ccc7fbcb,,,,,Extensive menerangkan experience dan berarti latar belakang yang luas di bidang tersebut.,manual LLM semantic translation from content/en/questions.json
+questions:q6ac240c22,,,,,"More menerangkan kata sifat economical, yang berarti lampu lebih murah untuk dioperasikan.",manual LLM semantic translation from content/en/questions.json
+questions:q2cb8dbf6f,,,,,Although memperkenalkan pertentangan antara tutup pada hari Senin dan buka terlambat pada hari lain.,manual LLM semantic translation from content/en/questions.json
+questions:qe6a8c93ac,,,,,Be permitted diikuti infinitive. Visitors are not permitted to take photographs.,manual LLM semantic translation from content/en/questions.json
+questions:q829bf2974,,,,,Clearly menerangkan understand dan menjelaskan seberapa baik pengunjung mengikuti pemandu.,manual LLM semantic translation from content/en/questions.json
+questions:q73093b4f7,,,,,Provided that memperkenalkan kondisi untuk mengubah reservasi tanpa biaya.,manual LLM semantic translation from content/en/questions.json
+questions:q4a66005b3,,,,,Privately adalah kata keterangan yang menerangkan work dan berarti jauh dari orang lain.,manual LLM semantic translation from content/en/questions.json
+questions:q5b9d67ca6,,,,,"Battery menerima tindakan, jadi is removed berbentuk pasif. Klausa before menggunakan present simple.",manual LLM semantic translation from content/en/questions.json
+questions:q5019ca7f7,,,,,Properly adalah kata keterangan yang menerangkan use dan menjelaskan cara menggunakan peralatan dengan benar.,manual LLM semantic translation from content/en/questions.json
+questions:q1ad845e2f,,,,,In advance adalah ungkapan tetap yang berarti sebelum tanggal atau acara terkait.,manual LLM semantic translation from content/en/questions.json
+questions:qc56057a01,,,,,The day's diikuti kata benda tunggal. Agenda adalah daftar topik rapat.,manual LLM semantic translation from content/en/questions.json
+questions:q5e0372bc6,,,,,Before memperkenalkan tindakan yang lebih awal: membagikan handout terjadi sebelum rapat dimulai.,manual LLM semantic translation from content/en/questions.json
+questions:q824baae3c,,,,,Patiently adalah kata keterangan yang sejajar dengan clearly dan menjelaskan cara pembicara menjawab.,manual LLM semantic translation from content/en/questions.json
+questions:qa4a7abc94,,,,,Present the proposal to the client adalah konstruksi standar.,manual LLM semantic translation from content/en/questions.json
+questions:qda255df52,,,,,Satisfied menjelaskan perasaan orang terhadap rencana. Satisfying menjelaskan rencananya sendiri.,manual LLM semantic translation from content/en/questions.json
+questions:qa0c8cd51a,,,,,Sebelum discussion diperlukan kata sifat. Lengthy berarti berlangsung lama.,manual LLM semantic translation from content/en/questions.json
+questions:q6196068da,,,,,Briefly adalah kata keterangan yang menerangkan summarizes dan berarti secara singkat.,manual LLM semantic translation from content/en/questions.json
+questions:q2721a6117,,,,,"Proposal berbentuk tunggal, dan klausa waktu setelah as soon as menggunakan present simple is ready.",manual LLM semantic translation from content/en/questions.json
+questions:qde609327d,,,,,Until menandai waktu ketika presentasi dapat berlangsung: setelah proyektor diperbaiki.,manual LLM semantic translation from content/en/questions.json
+questions:q7d52d9967,,,,,"More menerangkan kata sifat detailed, yang menjelaskan penjelasan yang diminta pelanggan.",manual LLM semantic translation from content/en/questions.json
+questions:q73978d4f1,,,,,Modal would diikuti kata kerja dasar miss.,manual LLM semantic translation from content/en/questions.json
+questions:q474114d9b,,,,,"Dalam committed to, to adalah preposisi, jadi diikuti gerund developing.",manual LLM semantic translation from content/en/questions.json
+questions:q4aafcd7b7,,,,,Than memerlukan kata sifat komparatif higher. Considerably memperkuat perbandingan.,manual LLM semantic translation from content/en/questions.json
+questions:q0f54d7eb3,,,,,Sebelum opinion diperlukan kata sifat. Independent menjelaskan pandangan luar yang tidak memihak.,manual LLM semantic translation from content/en/questions.json
+questions:q84c496b9c,,,,,"Setelah insisted that, bahasa formal menggunakan subjunctive dasar be circulated untuk tindakan yang diperlukan.",manual LLM semantic translation from content/en/questions.json
+questions:qb95a0c019,,,,,Background noise adalah frasa kata benda standar. Setelah background diperlukan kata benda.,manual LLM semantic translation from content/en/questions.json
+questions:qdbd3e08b1,,,,,In charge of adalah ungkapan tetap yang berarti bertanggung jawab atas tugas.,manual LLM semantic translation from content/en/questions.json
+questions:qb19faa0d0,,,,,Effectively adalah kata keterangan yang menerangkan reached dan menjelaskan seberapa baik kampanye mencapai audiens.,manual LLM semantic translation from content/en/questions.json
+questions:q21824289e,,,,,"Klausa waktu masa depan setelah once menggunakan present simple reviews, bukan will review.",manual LLM semantic translation from content/en/questions.json
+questions:qc3de96c8b,,,,,"Feedback adalah kata benda yang tidak dapat dihitung dan berarti komentar pengguna, jadi cocok setelah positive.",manual LLM semantic translation from content/en/questions.json
+questions:q8e22400df,,,,,Because memperkenalkan klausa alasan lengkap the presenter became ill. Because of memerlukan frasa kata benda.,manual LLM semantic translation from content/en/questions.json
+questions:q0db10b915,,,,,Interested menjelaskan perasaan pelanggan dan diikuti in. Interesting menjelaskan produknya.,manual LLM semantic translation from content/en/questions.json
+questions:q3d924cb97,,,,,Expand into adalah gabungan phrasal verb yang benar untuk memasuki wilayah baru.,manual LLM semantic translation from content/en/questions.json
+questions:q62ffa84cd,,,,,Attendees adalah orang yang menghadiri konferensi. Setelah all the diperlukan kata benda jamak.,manual LLM semantic translation from content/en/questions.json
+questions:qf5442dec3,,,,,Sebelum responses diperlukan kata sifat. Honest menjelaskan jawaban yang jujur.,manual LLM semantic translation from content/en/questions.json
+questions:q9b8440794,,,,,Remains adalah kata kerja penghubung dan mengambil kata sifat. Profitable menjelaskan program yang menghasilkan lebih dari biayanya.,manual LLM semantic translation from content/en/questions.json
+questions:q9ea9e45dc,,,,,Preposisi for diikuti gerund: apologized for missing the appointment.,manual LLM semantic translation from content/en/questions.json
+questions:qed178b007,,,,,Manually adalah kata keterangan yang menjelaskan cara perwakilan memeriksa informasi.,manual LLM semantic translation from content/en/questions.json
+questions:q770139222,,,,,At the end of adalah ungkapan tetap sebelum periode suatu acara.,manual LLM semantic translation from content/en/questions.json
+questions:qc03e2bce1,,,,,"More menerangkan kata sifat transparent, yang menjelaskan komunikasi yang lebih mudah dipahami dan diperiksa.",manual LLM semantic translation from content/en/questions.json
+questions:qad18a7580,,,,,Despite diikuti frasa kata benda dan menyatakan pertentangan dengan keterlambatan yang tidak terduga.,manual LLM semantic translation from content/en/questions.json
+questions:qa4b5d48ab,,,,,Scheduled for Friday adalah frasa alami untuk acara yang direncanakan pada hari itu.,manual LLM semantic translation from content/en/questions.json
+questions:q16abb360d,,,,,By Monday morning memberikan waktu kedatangan paling akhir: tidak lebih lambat dari waktu itu.,manual LLM semantic translation from content/en/questions.json
+questions:qaba546042,,,,,Independently adalah kata keterangan yang menerangkan complete dan berarti tanpa bantuan.,manual LLM semantic translation from content/en/questions.json
+questions:q02786514f,,,,,"Setelah /t/ atau /d/, -ed dilafalkan /ɪd/: wanted. Yang lain berakhiran /d/.",manual LLM semantic translation from content/en/questions.json
+questions:q841ea56e3,,,,,"Setelah bunyi tak bersuara seperti /k/, -ed dilafalkan /t/: walked. Yang lain berakhiran /ɪd/.",manual LLM semantic translation from content/en/questions.json
+questions:q23f3dd78f,,,,,"Setelah bunyi vokal, -ed dilafalkan /d/: stayed. Yang lain berakhiran /t/.",manual LLM semantic translation from content/en/questions.json
+questions:q61b0af4d9,,,,,"Setelah /t/, -ed dilafalkan /ɪd/: visited. Yang lain berakhiran /t/.",manual LLM semantic translation from content/en/questions.json
+questions:qb2edbec20,,,,,"Setelah /ʃ/, -ed dilafalkan /t/: finished. Yang lain berakhiran /d/.",manual LLM semantic translation from content/en/questions.json
+questions:q4c13a60dd,,,,,"Setelah /t/, -ed dilafalkan /ɪd/: invited. Yang lain berakhiran /d/.",manual LLM semantic translation from content/en/questions.json
+questions:q0d28b60f6,,,,,"Setelah /s/ (x = /ks/), -ed dilafalkan /t/: mixed. Yang lain berakhiran /d/.",manual LLM semantic translation from content/en/questions.json
+questions:qd5b0eff0a,,,,,"Setelah /n/, -ed dilafalkan /d/: planned. Yang lain berakhiran /t/.",manual LLM semantic translation from content/en/questions.json
+questions:q6ddf1e9a2,,,,,"Setelah /tʃ/, -es dilafalkan /ɪz/: watches. Yang lain berakhiran /s/.",manual LLM semantic translation from content/en/questions.json
+questions:q6a312a804,,,,,"Setelah bunyi bersuara seperti /g/, -s dilafalkan /z/: bags. Yang lain berakhiran /s/.",manual LLM semantic translation from content/en/questions.json
+questions:q913177781,,,,,"Setelah /k/, -s dilafalkan /s/: books. Yang lain berakhiran /z/.",manual LLM semantic translation from content/en/questions.json
+questions:q7d6bc4597,,,,,"Setelah /s/ (x = /ks/), -es dilafalkan /ɪz/: boxes. Yang lain berakhiran /z/.",manual LLM semantic translation from content/en/questions.json
+questions:qf2d6ac5d9,,,,,"Setelah /θ/, -s dilafalkan /s/: months. Yang lain berakhiran /z/.",manual LLM semantic translation from content/en/questions.json
+questions:qddeb21451,,,,,"Setelah /dʒ/, -es dilafalkan /ɪz/: bridges. Yang lain berakhiran /s/.",manual LLM semantic translation from content/en/questions.json
+questions:qd68f7961f,,,,,Head memiliki /e/. Yang lain memiliki /iː/.,manual LLM semantic translation from content/en/questions.json
+questions:q5bcc5c77b,,,,,Book memiliki /ʊ/. Yang lain memiliki /uː/.,manual LLM semantic translation from content/en/questions.json
+questions:q7c081e8cf,,,,,"Dalam character, ch dilafalkan /k/. Yang lain memiliki /tʃ/.",manual LLM semantic translation from content/en/questions.json
+questions:q9a2291b2a,,,,,Huruf h dalam hour tidak dilafalkan. Yang lain memiliki /h/.,manual LLM semantic translation from content/en/questions.json
+questions:q35e2e5edf,,,,,Come memiliki /ʌ/. Yang lain memiliki /oʊ/.,manual LLM semantic translation from content/en/questions.json
+questions:q3b0b739c5,,,,,Think memiliki /θ/. Yang lain memiliki /ð/.,manual LLM semantic translation from content/en/questions.json
+questions:q073810d2d,,,,,"Dalam sure, s dilafalkan /ʃ/. Yang lain memiliki /s/.",manual LLM semantic translation from content/en/questions.json
+questions:q73168cc09,,,,,Woman memiliki /ʊ/. Yang lain memiliki /ʌ/.,manual LLM semantic translation from content/en/questions.json
+questions:qd9c1d6402,,,,,Breakfast memiliki /e/. Yang lain memiliki /eɪ/.,manual LLM semantic translation from content/en/questions.json
+questions:q808932f99,,,,,Country memiliki /ʌ/. Yang lain memiliki /aʊ/.,manual LLM semantic translation from content/en/questions.json
+questions:qc56e0ef41,,,,,Hotel mendapat tekanan pada suku kata kedua. Yang lain mendapat tekanan pada suku kata pertama.,manual LLM semantic translation from content/en/questions.json
+questions:q97cc24c66,,,,,Computer mendapat tekanan pada suku kata kedua. Yang lain mendapat tekanan pada suku kata pertama.,manual LLM semantic translation from content/en/questions.json
+questions:q6dc6a4e4d,,,,,Important mendapat tekanan pada suku kata kedua. Yang lain mendapat tekanan pada suku kata pertama.,manual LLM semantic translation from content/en/questions.json
+questions:q64665dfc9,,,,,Engineer mendapat tekanan pada suku kata ketiga (-eer menerima tekanan). Yang lain mendapat tekanan pada suku kata pertama.,manual LLM semantic translation from content/en/questions.json
+questions:q807e08fd5,,,,,"Information mendapat tekanan pada suku kata ketiga, tepat sebelum -tion. Yang lain mendapat tekanan pada suku kata kedua.",manual LLM semantic translation from content/en/questions.json
+questions:q44fc31db7,,,,,"Economic mendapat tekanan pada suku kata ketiga, tepat sebelum -ic. Yang lain mendapat tekanan pada suku kata kedua.",manual LLM semantic translation from content/en/questions.json
+questions:q1abb58768,,,,,Visit mendapat tekanan pada suku kata pertama. Kata kerja lain mendapat tekanan pada suku kata kedua.,manual LLM semantic translation from content/en/questions.json
+questions:q6b45b9e24,,,,,Polite mendapat tekanan pada suku kata kedua. Yang lain mendapat tekanan pada suku kata pertama.,manual LLM semantic translation from content/en/questions.json
+questions:q72767ff4a,,,,,Advertise mendapat tekanan pada suku kata pertama. Yang lain mendapat tekanan pada suku kata kedua.,manual LLM semantic translation from content/en/questions.json
+questions:q4c7f1dc00,,,,,"Volunteer mendapat tekanan pada suku kata ketiga. Yang lain mendapat tekanan pada suku kata kedua, tepat sebelum -ian atau -tion.",manual LLM semantic translation from content/en/questions.json
+questions:qacbcd5a73,,,,,Comfortable mendapat tekanan pada suku kata pertama. Yang lain mendapat tekanan pada suku kata kedua.,manual LLM semantic translation from content/en/questions.json
+questions:q1243bc4d3,,,,,"Population mendapat tekanan pada suku kata ketiga. Yang lain mendapat tekanan pada suku kata kedua, tepat sebelum -ity.",manual LLM semantic translation from content/en/questions.json
+questions:q6b5035527,,,,,Answer mendapat tekanan pada suku kata pertama. Yang lain mendapat tekanan pada suku kata kedua.,manual LLM semantic translation from content/en/questions.json
+questions:q2ae947aea,,,,,Japanese mendapat tekanan pada suku kata ketiga (-ese menerima tekanan). Yang lain mendapat tekanan pada suku kata kedua.,manual LLM semantic translation from content/en/questions.json
+questions:qb01068827,,,,,"Postpone berarti 'memindahkan ke waktu yang lebih lambat', seperti delay.",manual LLM semantic translation from content/en/questions.json
+questions:qbfac9730f,,,,,"Generous berarti 'senang memberi dan membantu', jadi kind and giving adalah makna yang paling dekat.",manual LLM semantic translation from content/en/questions.json
+questions:qb72ceaa3d,,,,,"Essential berarti 'mutlak diperlukan', seperti necessary.",manual LLM semantic translation from content/en/questions.json
+questions:q944f9e4e0,,,,,Delighted berarti 'sangat bahagia'.,manual LLM semantic translation from content/en/questions.json
+questions:q8f0d83440,,,,,"Dalam kalimat ini, quickly berarti 'rapidly', jadi rapidly adalah sinonim langsungnya.",manual LLM semantic translation from content/en/questions.json
+questions:qfb83166ae,,,,,Repair berarti 'memperbaiki sesuatu yang rusak'.,manual LLM semantic translation from content/en/questions.json
+questions:q6ed8a78eb,,,,,"Astonished berarti 'sangat terkejut', seperti amazed.",manual LLM semantic translation from content/en/questions.json
+questions:q37bf1e0cc,,,,,"Reduce berarti 'membuat lebih kecil', seperti cut.",manual LLM semantic translation from content/en/questions.json
+questions:q17f1dd10f,,,,,Effort berarti 'kerja keras'.,manual LLM semantic translation from content/en/questions.json
+questions:qc08aff3fe,,,,,Inform berarti 'memberi tahu' dalam gaya formal.,manual LLM semantic translation from content/en/questions.json
+questions:q9b82f2b21,,,,,Lawan kata patient adalah impatient.,manual LLM semantic translation from content/en/questions.json
+questions:q548311f2a,,,,,Lawan kata simple adalah complicated.,manual LLM semantic translation from content/en/questions.json
+questions:q36dc26aa3,,,,,Lawan kata crowded adalah empty.,manual LLM semantic translation from content/en/questions.json
+questions:qa0757154c,,,,,Lawan kata increase adalah lower.,manual LLM semantic translation from content/en/questions.json
+questions:qb258a8b7a,,,,,Lawan kata polite adalah rude.,manual LLM semantic translation from content/en/questions.json
+questions:qd38c247cb,,,,,Lawan kata accept adalah reject.,manual LLM semantic translation from content/en/questions.json
+questions:qcc379d51d,,,,,Lawan kata temporarily adalah permanently.,manual LLM semantic translation from content/en/questions.json
+questions:qc5eae3739,,,,,Lawan kata confident adalah nervous.,manual LLM semantic translation from content/en/questions.json
