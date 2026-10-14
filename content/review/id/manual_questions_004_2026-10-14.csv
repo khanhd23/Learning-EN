@@ -1,0 +1,101 @@
+key,english,english_example,def,draft,corrected,comment
+questions:qb89f90fe2,,,,,Each of + kata benda menggunakan kata kerja tunggal: has.,manual LLM semantic translation from content/en/questions.json
+questions:qe908c4a02,,,,,The number of menggunakan kata kerja tunggal: has.,manual LLM semantic translation from content/en/questions.json
+questions:q9f4d7e4a9,,,,,A number of + kata benda jamak menggunakan kata kerja jamak: have.,manual LLM semantic translation from content/en/questions.json
+questions:q34638a3d2,,,,,"Dengan neither…nor, kata kerja mengikuti subjek yang lebih dekat (the employees): were.",manual LLM semantic translation from content/en/questions.json
+questions:q42a15f22d,,,,,Everyone menggunakan kata kerja tunggal: likes.,manual LLM semantic translation from content/en/questions.json
+questions:qc30d43b35,,,,,"Information tidak dapat dihitung, jadi kata kerjanya tunggal: was.",manual LLM semantic translation from content/en/questions.json
+questions:q3ad0feeb8,,,,,Subjek sebenarnya adalah boxes yang berbentuk jamak: are.,manual LLM semantic translation from content/en/questions.json
+questions:qc3d13a1d7,,,,,Every one of menggunakan kata kerja tunggal: has.,manual LLM semantic translation from content/en/questions.json
+questions:q3383c032a,,,,,"News tidak dapat dihitung, jadi menggunakan kata kerja tunggal: is.",manual LLM semantic translation from content/en/questions.json
+questions:q035a598d7,,,,,"Each secara tata bahasa berbentuk tunggal meskipun merujuk pada beberapa siswa, jadi gunakan has.",manual LLM semantic translation from content/en/questions.json
+questions:qe2dddd229,,,,,"Setelah kata sifat important, diperlukan kata benda: decision.",manual LLM semantic translation from content/en/questions.json
+questions:qe78c18092,,,,,"Kata ini menjelaskan kata kerja drive, jadi diperlukan kata keterangan: carefully.",manual LLM semantic translation from content/en/questions.json
+questions:q3b306fdc9,,,,,"Setelah be (has been very), diperlukan kata sifat: successful.",manual LLM semantic translation from content/en/questions.json
+questions:qd822934a2,,,,,"Sebelum kata benda engineer, diperlukan kata sifat: qualified.",manual LLM semantic translation from content/en/questions.json
+questions:qec21eecf1,,,,,"Di antara has dan past participle, diperlukan kata keterangan: recently.",manual LLM semantic translation from content/en/questions.json
+questions:q878270941,,,,,"Setelah your, diperlukan kata benda: cooperation.",manual LLM semantic translation from content/en/questions.json
+questions:q18199ca83,,,,,"Setelah be, diperlukan kata sifat: clear.",manual LLM semantic translation from content/en/questions.json
+questions:q9a71bb224,,,,,"Setelah will, gunakan kata kerja dasar: train.",manual LLM semantic translation from content/en/questions.json
+questions:q1dbc9733c,,,,,Customer satisfaction adalah kata benda majemuk dan subjek kalimat.,manual LLM semantic translation from content/en/questions.json
+questions:q06920c806,,,,,Hard juga merupakan kata keterangan: work hard. Hardly berarti 'hampir tidak'.,manual LLM semantic translation from content/en/questions.json
+questions:qd426cff26,,,,,"Kata ini menjelaskan kata kerja sings, jadi diperlukan kata keterangan: beautifully.",manual LLM semantic translation from content/en/questions.json
+questions:q5f7a40d9c,,,,,"Sebelum kata benda road, diperlukan kata sifat: dangerous.",manual LLM semantic translation from content/en/questions.json
+questions:qa8539db9c,,,,,"And menghubungkan kata tersebut dengan kata benda help, jadi diperlukan kata benda lain: patience.",manual LLM semantic translation from content/en/questions.json
+questions:q6d54ecdc5,,,,,Correctly adalah kata keterangan yang menjelaskan kata kerja answered. Bentuk lampau answered sesuai dengan tindakan yang sudah selesai.,manual LLM semantic translation from content/en/questions.json
+questions:qf4f9e5359,,,,,Kereta berangkat sebelum saya tiba: past perfect.,manual LLM semantic translation from content/en/questions.json
+questions:q9923163a4,,,,,"By the time + simple past, lalu had + past participle.",manual LLM semantic translation from content/en/questions.json
+questions:q9d3c96989,,,,,Dia menonton film sebelum waktu ketika dia memberi tahu saya: had seen.,manual LLM semantic translation from content/en/questions.json
+questions:q82201f067,,,,,"Dia menyelesaikan pekerjaan rumah lebih dulu, lalu pergi: had finished.",manual LLM semantic translation from content/en/questions.json
+questions:q38762d04c,,,,,Perubahan terjadi sebelum saya melihatnya: had changed.,manual LLM semantic translation from content/en/questions.json
+questions:q892454278,,,,,"Laporan selesai sebelum permintaan, dan laporan menerima tindakan: had been completed.",manual LLM semantic translation from content/en/questions.json
+questions:q5d2feb9ff,,,,,Pembobolan terjadi sebelum kami pulang: had broken.,manual LLM semantic translation from content/en/questions.json
+questions:q2cdc32ccd,,,,,Had + past participle: go → gone.,manual LLM semantic translation from content/en/questions.json
+questions:qbfa9c3680,,,,,"Gunakan past perfect had never seen untuk pengalaman yang lebih awal, lalu simple past went untuk kejadian berikutnya.",manual LLM semantic translation from content/en/questions.json
+questions:q150d2e107,,,,,"By the time memperkenalkan titik acuan lampau yang lebih akhir, jadi kejadian sebelumnya menggunakan past perfect had ended.",manual LLM semantic translation from content/en/questions.json
+questions:q15d282326,,,,,"Hujan berlanjut sebelum hasil di masa lalu, jadi gunakan had been raining.",manual LLM semantic translation from content/en/questions.json
+questions:qcccdc6576,,,,,"Perjalanan berlanjut sepanjang hari sebelum hasil di masa lalu, jadi gunakan had been travelling.",manual LLM semantic translation from content/en/questions.json
+questions:q4dc8ce9f9,,,,,"Penantian berlanjut selama tiga puluh menit sebelum dokter menelepon, jadi gunakan had been waiting.",manual LLM semantic translation from content/en/questions.json
+questions:q4f292a666,,,,,Pertanyaan past perfect continuous adalah How long had he been working?,manual LLM semantic translation from content/en/questions.json
+questions:qa4c5fda43,,,,,"Menatap berlanjut selama berjam-jam sebelum sakit kepala di masa lalu, jadi gunakan had been staring.",manual LLM semantic translation from content/en/questions.json
+questions:q0021317ea,,,,,"Since breakfast menjelaskan kegiatan yang berlanjut sampai titik lampau, jadi gunakan had been playing.",manual LLM semantic translation from content/en/questions.json
+questions:q1cefe1e7f,,,,,"Setelah had been, gunakan bentuk -ing: waiting.",manual LLM semantic translation from content/en/questions.json
+questions:q1919d4ba7,,,,,"Setelah had been, gunakan bentuk -ing: working.",manual LLM semantic translation from content/en/questions.json
+questions:q3eb71f080,,,,,"Perbaikan jalan berlanjut dari fajar sampai siang, jadi gunakan had been repairing.",manual LLM semantic translation from content/en/questions.json
+questions:q6fdf7ba2b,,,,,"By the end of the month adalah tenggat masa depan, jadi gunakan will have completed.",manual LLM semantic translation from content/en/questions.json
+questions:q7c55dd076,,,,,"By tomorrow evening berarti bacaan akan selesai sebelum waktu itu, jadi gunakan will have read.",manual LLM semantic translation from content/en/questions.json
+questions:qae519bc25,,,,,"Makan malam akan selesai sebelum tamu tiba, jadi gunakan will have prepared.",manual LLM semantic translation from content/en/questions.json
+questions:q7bf8eb336,,,,,Pertanyaan future perfect adalah How many emails will you have answered by noon?,manual LLM semantic translation from content/en/questions.json
+questions:qb9cca69b9,,,,,"Kereta akan berangkat sebelum kami sampai di stasiun, jadi gunakan will have departed.",manual LLM semantic translation from content/en/questions.json
+questions:qe0785bf63,,,,,"By 2030 menandai tenggat masa depan, jadi gunakan will have built.",manual LLM semantic translation from content/en/questions.json
+questions:qc9e75bd53,,,,,"Setelah will have, gunakan past participle: finished.",manual LLM semantic translation from content/en/questions.json
+questions:qc20459734,,,,,"Setelah will have, gunakan past participle: left.",manual LLM semantic translation from content/en/questions.json
+questions:q7b65168b6,,,,,"Pekerjaan akan selesai sebelum Senin, jadi gunakan By Monday, we will have completed the work.",manual LLM semantic translation from content/en/questions.json
+questions:q1c9c214e6,,,,,Third conditional: If + had + past participle.,manual LLM semantic translation from content/en/questions.json
+questions:q882f0bf17,,,,,Third conditional: would have + past participle.,manual LLM semantic translation from content/en/questions.json
+questions:qf8cedc04e,,,,,Mixed conditional: kondisi lampau dengan hasil sekarang menggunakan would + kata kerja.,manual LLM semantic translation from content/en/questions.json
+questions:qce2a999d8,,,,,Third conditional terbalik: Had + subject + past participle.,manual LLM semantic translation from content/en/questions.json
+questions:qc518aefaa,,,,,Third conditional: if + had + past participle.,manual LLM semantic translation from content/en/questions.json
+questions:qb094a1ba7,,,,,Klausa if tidak menggunakan would. Third conditional: If I had known.,manual LLM semantic translation from content/en/questions.json
+questions:q3e55aacd0,,,,,Hasil di masa lalu memerlukan would have + past participle: wouldn't have made.,manual LLM semantic translation from content/en/questions.json
+questions:q7c9110c90,,,,,Situasi masa lalu yang dibayangkan menggunakan third conditional.,manual LLM semantic translation from content/en/questions.json
+questions:q743b4928e,,,,,Ini third conditional tentang kondisi lampau yang tidak nyata: gunakan past perfect setelah if dan would have + past participle bought pada hasilnya.,manual LLM semantic translation from content/en/questions.json
+questions:q497532a9e,,,,,"Setelah said, kala mundur: is → was.",manual LLM semantic translation from content/en/questions.json
+questions:q1f2c87673,,,,,"Pertanyaan tidak langsung menggunakan urutan kata seperti pernyataan, dan kala mundur: where I worked.",manual LLM semantic translation from content/en/questions.json
+questions:q0c8441633,,,,,Told + orang + to + kata kerja.,manual LLM semantic translation from content/en/questions.json
+questions:q8a61fd657,,,,,Pertanyaan ya/tidak yang dilaporkan menggunakan if atau whether.,manual LLM semantic translation from content/en/questions.json
+questions:q017763f2f,,,,,"Setelah said, kala mundur: will → would.",manual LLM semantic translation from content/en/questions.json
+questions:qd38169ce2,,,,,Pertanyaan tidak langsung menggunakan urutan kata seperti pernyataan: where I had gone.,manual LLM semantic translation from content/en/questions.json
+questions:q3494ecded,,,,,Say tidak langsung diikuti orang. Gunakan told me atau cukup said.,manual LLM semantic translation from content/en/questions.json
+questions:q82ba3ef0b,,,,,Kala mundur (am learning → was learning) dan I berubah menjadi she.,manual LLM semantic translation from content/en/questions.json
+questions:qd3f4eb61d,,,,,"Dalam pertanyaan ya/tidak yang dilaporkan, gunakan if dan urutan kata pernyataan: I liked, bukan did I like.",manual LLM semantic translation from content/en/questions.json
+questions:q9da8689bc,,,,,Dokumen disiapkan oleh pengacara (pasif): prepared.,manual LLM semantic translation from content/en/questions.json
+questions:q94b97ea2f,,,,,Employees who wish bermakna aktif: wishing.,manual LLM semantic translation from content/en/questions.json
+questions:qfee9917f0,,,,,"Dia membaca petunjuk lebih dulu, lalu merakit meja: Having read.",manual LLM semantic translation from content/en/questions.json
+questions:q0defadf7d,,,,,Benda-benda itu ditinggalkan oleh seseorang (pasif): left.,manual LLM semantic translation from content/en/questions.json
+questions:q1c725d294,,,,,Pria yang sedang berbicara (aktif): talking.,manual LLM semantic translation from content/en/questions.json
+questions:qee7d72771,,,,,"When + -ing, dengan you sebagai subjek tersirat: When travelling.",manual LLM semantic translation from content/en/questions.json
+questions:qacacb002c,,,,,Surat itu ditulis oleh kakek saya (pasif): written.,manual LLM semantic translation from content/en/questions.json
+questions:q32c88915f,,,,,"Gunung tidak dapat melihat ke luar jendela. Kedua bagian memerlukan subjek yang sama, jadi gunakan klausa lengkap: When I looked.",manual LLM semantic translation from content/en/questions.json
+questions:q2d973c5f3,,,,,Standing at the door adalah klausa relatif yang dipendekkan dan berarti who is standing at the door. Bentuk -ing menjelaskan man.,manual LLM semantic translation from content/en/questions.json
+questions:qf74c5200c,,,,,Harapan tentang keadaan sekarang menggunakan simple past: knew.,manual LLM semantic translation from content/en/questions.json
+questions:q184d59393,,,,,Harapan tentang masa lalu (this morning) menggunakan had + past participle: hadn't missed.,manual LLM semantic translation from content/en/questions.json
+questions:qaf9c07a9f,,,,,If only + were digunakan untuk keadaan sekarang yang tidak nyata.,manual LLM semantic translation from content/en/questions.json
+questions:q9a3fb8aa8,,,,,"Untuk berharap orang lain berubah, gunakan would: wouldn't make.",manual LLM semantic translation from content/en/questions.json
+questions:q6fadfe12a,,,,,Harapan tentang keadaan sekarang memundurkan can menjadi could.,manual LLM semantic translation from content/en/questions.json
+questions:q9bc7f7664,,,,,Harapan tentang masa lalu menggunakan had + past participle: hadn't spent.,manual LLM semantic translation from content/en/questions.json
+questions:qda7272011,,,,,Wish + simple past menjelaskan keadaan sekarang yang tidak nyata atau tidak sebaik yang diinginkan. Had di sini menyatakan kepemilikan.,manual LLM semantic translation from content/en/questions.json
+questions:qef4035b6a,,,,,Untuk menyetujui kalimat negatif: Neither can I.,manual LLM semantic translation from content/en/questions.json
+questions:q04d144eac,,,,,Untuk menyetujui kalimat positif dengan likes: so do I.,manual LLM semantic translation from content/en/questions.json
+questions:q23f2b4386,,,,,Not only di awal kalimat menempatkan auxiliary lebih dulu: did she finish.,manual LLM semantic translation from content/en/questions.json
+questions:q2f1826d63,,,,,Rarely di awal kalimat menempatkan auxiliary lebih dulu: have we interviewed.,manual LLM semantic translation from content/en/questions.json
+questions:qcb4d67604,,,,,So + auxiliary + subject: so was my brother.,manual LLM semantic translation from content/en/questions.json
+questions:q7342775c0,,,,,Never di awal kalimat menempatkan auxiliary lebih dulu: Never have I heard.,manual LLM semantic translation from content/en/questions.json
+questions:q52d542fc9,,,,,"Neither do I menyetujui pernyataan negatif. Do adalah auxiliary untuk present simple, dan subjek diletakkan setelahnya.",manual LLM semantic translation from content/en/questions.json
+questions:q7a83d09b3,,,,,Tebakan yang sangat yakin tentang masa lalu: must have.,manual LLM semantic translation from content/en/questions.json
+questions:q104516ce3,,,,,Penyesalan tentang masa lalu: should have.,manual LLM semantic translation from content/en/questions.json
+questions:qac0643354,,,,,Yakin bahwa sesuatu tidak terjadi: can't have.,manual LLM semantic translation from content/en/questions.json
+questions:q57e9d4a23,,,,,Tebakan yang belum pasti: might have.,manual LLM semantic translation from content/en/questions.json
+questions:qed270dcca,,,,,Should have + past participle: come.,manual LLM semantic translation from content/en/questions.json
+questions:q2b8c96964,,,,,"Setelah must, gunakan bentuk dasar have, bukan has.",manual LLM semantic translation from content/en/questions.json
+questions:q9d74537a6,,,,,"Should have + past participle brought merujuk pada tindakan yang diharapkan tetapi tidak terjadi, sering kali untuk menyatakan penyesalan atau kritik.",manual LLM semantic translation from content/en/questions.json
