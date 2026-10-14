@@ -8,24 +8,24 @@ ui:set_haptics,,,,,Vibration,Manual LLM semantic Hindi UI translation; format pl
 ui:set_language,,,,,Learning content,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:set_learning,,,,,Learning,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:set_level,,,,,Level,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:set_new_words,,,,,?? session ??? ?? words,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:set_new_words,,,,,हर session में नए words,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:set_notifications,,,,,Notifications,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:set_open_pet,,,,,Pet home ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:set_open_pet,,,,,Pet home खोलें,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:set_pet,,,,,Pet,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:set_pet_size,,,,,Pet ?? size,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:set_pet_size,,,,,Pet का size,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:set_privacy,,,,,Privacy,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:set_reduce_motion,,,,,Motion ?? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:set_reduce_motion,,,,,Motion कम करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:set_reminder,,,,,Daily reminder,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:set_reminder_time,,,,,Reminder time,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:set_reset_pos,,,,,Pet ?? position reset ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:set_show_pet,,,,,Screen ?? pet ??????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:set_reset_pos,,,,,Pet की position reset करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:set_show_pet,,,,,Screen पर pet दिखाएँ,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:set_slow_tts,,,,,Slower audio,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:set_sounds,,,,,Sound effects,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:set_text_size,,,,,Text size,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:set_theme,,,,,Theme,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:set_translation,,,,,Translations ??????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:set_translation,,,,,Translations दिखाएँ,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:settings,,,,,Settings,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:show_more,,,,,%1$d ?? ??????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:show_more,,,,,%1$d और दिखाएँ,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:show_translation,,,,,Translation,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:signals,,,,,Clue words,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:skip,,,,,Skip,Manual LLM semantic Hindi UI translation; format placeholders retained.
@@ -40,47 +40,47 @@ ui:slot_rug,,,,,Rug,Manual LLM semantic Hindi UI translation; format placeholder
 ui:slot_theme,,,,,Room,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:slot_toy,,,,,Toy,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:slot_wall,,,,,Wall,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:sort_az,,,,,A?Z,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:sort_az,,,,,A–Z,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:sort_default,,,,,Default order,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:sort_hard,,,,,???? ??????? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:sort_wrong,,,,,???? ??????? mistakes ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:sound_practice,,,,,Listening ?? pronunciation,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:sound_practice_desc,,,,,?????-????? sounds ?? ???? ????? ?? ?? ????? ??? ??????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:sort_hard,,,,,सबसे मुश्किल पहले,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:sort_wrong,,,,,सबसे ज़्यादा mistakes पहले,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:sound_practice,,,,,Listening और pronunciation,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:sound_practice_desc,,,,,मिलती-जुलती sounds का अंतर सुनें और जो सुनें उसे लिखें।,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:sound_tip,,,,,Tip: %1$s,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:speak_again,,,,,??? ?? ????? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:speak_again,,,,,फिर से कोशिश करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:species_cat,,,,,Cat,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:species_dragon,,,,,Dragon,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:species_panda,,,,,Panda,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:speed_sub,,,,,60 seconds ??? ????? ?? ???? ???? answers ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:speed_sub,,,,,60 seconds में जितने हो सकें उतने answers दें।,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:speed_title,,,,,Speed challenge,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:src_new,,,,,New questions,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:src_saved,,,,,Saved,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:src_wrong,,,,,?????? ????? ???? ???,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:src_wrong,,,,,जिनमें मुझसे गलती हुई,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:stage_n,,,,,Stage %1$d,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:stage_of,,,,,%2$d ??? ?? Stage %1$d,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:stage_up_sub,,,,,%1$s ???? ??? ??? ??? ??,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:stage_of,,,,,%2$d में से Stage %1$d,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:stage_up_sub,,,,,%1$s आपके साथ बढ़ रहा है,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:stage_up_title,,,,,Stage %1$d!,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:stage_xp,,,,,%1$d / %2$d XP,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:start,,,,,Start,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:start_10,,,,,10 questions ???? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:start_drills,,,,,Practice ???? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:start_learning,,,,,Learning ???? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:start_new,,,,,??? test ???? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:step_careful,,,,,?????? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:start_10,,,,,10 questions शुरू करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:start_drills,,,,,Practice शुरू करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:start_learning,,,,,Learning शुरू करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:start_new,,,,,नया test शुरू करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:step_careful,,,,,सावधान रहें,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:step_practice,,,,,Practice,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:step_see,,,,,Examples,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:step_understand,,,,,?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:story_score,,,,,%2$d ??? ?? %1$d ???,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:step_understand,,,,,समझें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:story_score,,,,,%2$d में से %1$d सही,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:streak_cd,,,,,Study streak: %1$d days,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:streak_days,,,,,%1$d-day streak,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:streak_shield_info,,,,,Shield ???? ?? ??? ?????? 7 ??? ?????? ?? ??? ????? ?? shield ???? streak ????? ?? (?????? 2)?,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:streak_shield_info,,,,,Shield पाने के लिए लगातार 7 दिन सीखें। एक दिन छूटने पर shield आपकी streak बचाती है (अधिकतम 2)।,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:streak_shields,,,,,Streak shields: %1$d,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:study_minutes,,,,,%1$d min ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:study_minutes,,,,,%1$d min पढ़ें,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:study_modes,,,,,Study modes,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:study_more,,,,,?? ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:study_more,,,,,और पढ़ें,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:submit,,,,,Submit,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:submit_left,,,,,???? %1$d questions ?? answers ??? ???? ???? ??? ?? submit ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:submit_title,,,,,???? test submit ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:submit_left,,,,,आपके %1$d questions के answers अभी बाकी हैं। फिर भी submit करें?,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:submit_title,,,,,अपना test submit करें?,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:suggest_topics,,,,,Suggested topics,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:t_grammar,,,,,Grammar,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:t_part5,,,,,TOEIC Part 5,Manual LLM semantic Hindi UI translation; format placeholders retained.

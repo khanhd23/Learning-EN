@@ -2,90 +2,90 @@ key,english,english_example,def,draft,corrected,comment
 ui:pos_prep,,,,,preposition,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:pos_v,,,,,verb,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:practice,,,,,Practice,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:practice_selected,,,,,???? ??? words ?? practice ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:practice_set,,,,,?? set ?? practice ???? (%1$d),Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:practice_this_word,,,,,?? word ?? practice ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:practice_weak,,,,,?????? ??????? ?? practice ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:preset_default,,,,,???? practice,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:preset_name,,,,,?? practice ?? ??? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:preset_saved,,,,,Practice save ?? ??,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:prev,,,,,?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:privacy_ads,,,,,"App Google AdMob ads ?????? ??? AdMob ???? advertising ID, IP address ?? ads ?? ??? ???? interactions collect ?? ???? ??? ?? Settings ??? ???? ad choices ??? ???? ????",Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:privacy_ads_title,,,,,Advertising ?? privacy choices,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:privacy_backup,,,,,Android ?? data ?? ???? ???? Google backup ??? ????? ?? ???? ???,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:practice_selected,,,,,चुने हुए words की practice करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:practice_set,,,,,इस set की practice करें (%1$d),Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:practice_this_word,,,,,इस word की practice करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:practice_weak,,,,,कमज़ोर हिस्सों की practice करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:preset_default,,,,,मेरी practice,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:preset_name,,,,,इस practice का नाम रखें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:preset_saved,,,,,Practice save हो गई,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:prev,,,,,पिछला,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:privacy_ads,,,,,"App Google AdMob ads दिखाता है। AdMob आपका advertising ID, IP address और ads के साथ आपकी interactions collect कर सकता है। आप Settings में अपनी ad choices देख सकते हैं।",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:privacy_ads_title,,,,,Advertising और privacy choices,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:privacy_backup,,,,,Android इस data को आपके अपने Google backup में शामिल कर सकता है।,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:privacy_backup_title,,,,,Backup,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:privacy_intro,,,,,LingoMori ???? learning progress ???? ??? device ?? ???? ??? ????? ??? server ???? ?? ?? app ?? ??? account ?????? ???? ???,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:privacy_intro_title,,,,,"???? data, ???? ?????? ???",Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:privacy_link_hint,,,,,???? policy ?? ??? ???? ???? ??? public policy page ??????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:privacy_microphone,,,,,Microphone ?? ????? ???? speaking practice ?? ??? ???? ??? ???? phone ?? speech service ???? ????? ?? text ??? ????? ??; LingoMori audio record ?? save ???? ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:privacy_intro,,,,,LingoMori आपकी learning progress केवल इसी device पर रखता है। हमारा कोई server नहीं है और app के लिए account ज़रूरी नहीं है।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:privacy_intro_title,,,,,"आपका data, साफ़ शब्दों में",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:privacy_link_hint,,,,,पूरी policy के लिए नीचे दिया गया public policy page खोलें।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:privacy_microphone,,,,,Microphone का उपयोग केवल speaking practice के लिए होता है। आपके phone की speech service आपकी आवाज़ को text में बदलती है; LingoMori audio record या save नहीं करता।,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:privacy_microphone_title,,,,,Speaking practice,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:privacy_open_link,,,,,Public policy ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:privacy_open_link,,,,,Public policy खोलें,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:privacy_policy,,,,,Privacy policy,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:privacy_reminders,,,,,Reminders optional ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:privacy_reminders,,,,,Reminders optional हैं।,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:privacy_reminders_title,,,,,Reminders,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:privacy_text,,,,,"LingoMori ???? learning progress ???? ??? device ?? ???? ??; ????? ??? server ?? account ???? ??? Android ??? ???? ???? Google backup ??? ????? ?? ???? ??? App Google AdMob ?? ads ?????? ??, ?? ???? advertising ID, IP address ?? ads ?? ??? interactions collect ?? ???? ??; ?? Settings ??? ad choices ??? ???? ???? Microphone ?? ????? ???? speaking practice ?? ??? ???? ??: ???? phone ?? speech service ????? ?? text ??? ????? ?? ?? app audio ?? ??? record ?? save ???? ????? Reminders optional ???? ???? policy ???? ??? link ?? ???",Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:quest_daily,,,,,%1$d daily challenges ???? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:quest_new_words,,,,,%1$d ?? words ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:privacy_text,,,,,"LingoMori आपकी learning progress केवल इसी device पर रखता है; हमारा कोई server और account नहीं है। Android इसे आपके अपने Google backup में शामिल कर सकता है। App Google AdMob के ads दिखाता है, जो आपका advertising ID, IP address और ads के साथ interactions collect कर सकता है; आप Settings में ad choices देख सकते हैं। Microphone का उपयोग केवल speaking practice के लिए होता है: आपके phone की speech service आवाज़ को text में बदलती है और app audio को कभी record या save नहीं करता। Reminders optional हैं। पूरी policy नीचे दिए link पर है।",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:quest_daily,,,,,%1$d daily challenges पूरे करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:quest_new_words,,,,,%1$d नए words सीखें,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:quest_progress,,,,,%1$d/%2$d,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:quest_reward,,,,,Reward: %1$s,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:quest_speaking,,,,,%1$d ????? ?? speaking practice ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:quest_stories,,,,,%1$d stories ???? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:quest_speaking,,,,,%1$d दिनों तक speaking practice करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:quest_stories,,,,,%1$d stories पूरी करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:quest_xp,,,,,+%1$d XP,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:quest_xp_reward,,,,,Weekly bonus: +%1$d XP,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:quick_session,,,,,Quick session,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:quiet_hours,,,,,22:00 ?? 08:00 ?? ??? reminders ??? ???? ???? ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:quit_keep,,,,,???? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:quit_leave,,,,,??????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:quit_msg,,,,,?? session ?? ???? progress ?? ??????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:quit_title,,,,,?? session ???????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:rate_again,,,,,??? ??,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:rate_easy,,,,,????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:rate_good,,,,,?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:rate_hard,,,,,???????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:rate_msg,,,,,"??? ???? LingoMori ???? ??, ?? ???? ????-?? rating ????? learners ?? ??? ?????? ??? ??? ???? ???",Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:rate_title,,,,,LingoMori ???? ? ??? ???,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:rate_yes,,,,,??? rate ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:recent_searches,,,,,??? ?? searches,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:redo_all,,,,,?? ??? ?? ???? (%1$d),Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:redo_group,,,,,?? group ?? ??? ?? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:remove_mastered,,,,,??? questions ??? mastery ?? ?? ?? ?????? ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:rename,,,,,??? ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:report,,,,,Problem report ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:report_body,,,,,Content item %1$s ?? review ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:report_mistake,,,,,Mistake report ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:report_mistake_body,,,,,Item: %1$s\nScreen: %2$s\nApp version: %3$s\n\n???? ??? ?? (?? ??? ????? ??? ?? ?? ?? ??):\n,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:report_mistake_no_app,,,,,Email app ???? ????? ????? %1$s ?? ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:report_mistake_subject,,,,,LingoMori: %1$s ??? mistake,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:quiet_hours,,,,,22:00 से 08:00 के बीच reminders कभी नहीं भेजे जाते।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:quit_keep,,,,,जारी रखें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:quit_leave,,,,,छोड़ें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:quit_msg,,,,,इस session की आपकी progress खो जाएगी।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:quit_title,,,,,यह session छोड़ें?,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:rate_again,,,,,फिर से,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:rate_easy,,,,,आसान,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:rate_good,,,,,अच्छा,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:rate_hard,,,,,मुश्किल,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:rate_msg,,,,,"अगर आपको LingoMori पसंद है, तो आपकी छोटी-सी rating दूसरे learners को इसे ढूँढने में मदद करती है।",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:rate_title,,,,,LingoMori पसंद आ रहा है?,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:rate_yes,,,,,अभी rate करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:recent_searches,,,,,हाल की searches,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:redo_all,,,,,सब फिर से करें (%1$d),Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:redo_group,,,,,इस group को फिर से करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:remove_mastered,,,,,जिन questions में mastery हो गई है उन्हें हटाएँ,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:rename,,,,,नाम बदलें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:report,,,,,Problem report करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:report_body,,,,,Content item %1$s की review करें।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:report_mistake,,,,,Mistake report करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:report_mistake_body,,,,,Item: %1$s\nScreen: %2$s\nApp version: %3$s\n\nक्या गलत है (और सही उत्तर पता हो तो वह भी):\n,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:report_mistake_no_app,,,,,Email app नहीं मिला। कृपया %1$s पर लिखें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:report_mistake_subject,,,,,LingoMori: %1$s में mistake,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:report_subject,,,,,Content report: %1$s,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:reset_confirm,,,,,Reset,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:reset_done,,,,,Progress reset ?? ??,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:reset_msg,,,,,"???? ???? learning progress, saved words ?? pet progress delete ?? ??????? ??? undo ???? ???? ?? ?????",Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:reset_progress,,,,,???? progress reset ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:reset_title,,,,,Progress reset ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:restore_bad_file,,,,,?? file LingoMori backup ???? ?? ?? damaged ???,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:restore_confirm_msg,,,,,"%1$s ?? backup ??? %2$d words, %3$d tests ?? level %4$d ?? pet ??? ?? phone ?? current progress ???? replace ?? ??????",Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:restore_confirm_title,,,,,???? progress replace ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:restore_desc,,,,,Backup file ?? progress load ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:restore_done,,,,,Progress restore ?? ??,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:restore_newer_version,,,,,?? backup LingoMori ?? ?? version ??? ????? ??? ??? ???? app update ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:reset_done,,,,,Progress reset हो गई,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:reset_msg,,,,,"आपकी सारी learning progress, saved words और pet progress delete हो जाएँगी। इसे undo नहीं किया जा सकता।",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:reset_progress,,,,,सारी progress reset करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:reset_title,,,,,Progress reset करें?,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:restore_bad_file,,,,,यह file LingoMori backup नहीं है या damaged है।,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:restore_confirm_msg,,,,,"%1$s के backup में %2$d words, %3$d tests और level %4$d का pet है। इस phone की current progress इससे replace हो जाएगी।",Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:restore_confirm_title,,,,,अपनी progress replace करें?,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:restore_desc,,,,,Backup file से progress load करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:restore_done,,,,,Progress restore हो गई,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:restore_newer_version,,,,,यह backup LingoMori के नए version में बनाया गया था। पहले app update करें।,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:restore_replace,,,,,Replace,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:restore_title,,,,,Progress restore ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:result_done,,,,,Session ???? ???,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:result_great,,,,,???? ?????? ???!,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:result_meta,,,,,%1$d questions ? %2$d:%3$02d,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:retry_wrong,,,,,??? answers ??? ?? ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:review_answers,,,,,???? answers review ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:review_each,,,,,?? question review ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:restore_title,,,,,Progress restore करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:result_done,,,,,Session पूरा हुआ,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:result_great,,,,,बहुत बढ़िया काम!,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:result_meta,,,,,%1$d questions · %2$d:%3$02d,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:retry_wrong,,,,,गलत answers फिर से करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:review_answers,,,,,अपने answers review करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:review_each,,,,,हर question review करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:review_now,,,,,Review,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:review_now_title,,,,,Review,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:rv_flagged,,,,,Flagged,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:rv_wrong,,,,,Wrong,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:save,,,,,Save,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:save_preset,,,,,Practice save ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:save_preset,,,,,Practice save करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:saved,,,,,Saved,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:search,,,,,Search,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:search_hint,,,,,Words ?? grammar search ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:seconds_left,,,,,%1$d s ????,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:section_n,,,,,%2$d ??? ?? Section %1$d: %3$s,Manual LLM semantic Hindi UI translation; format placeholders retained.
-ui:see_word,,,,,Word ?????,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:search_hint,,,,,Words या grammar search करें,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:seconds_left,,,,,%1$d s बाकी,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:section_n,,,,,%2$d में से Section %1$d: %3$s,Manual LLM semantic Hindi UI translation; format placeholders retained.
+ui:see_word,,,,,Word देखें,Manual LLM semantic Hindi UI translation; format placeholders retained.
 ui:set_about,,,,,About,Manual LLM semantic Hindi UI translation; format placeholders retained.

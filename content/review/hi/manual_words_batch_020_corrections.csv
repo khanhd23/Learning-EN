@@ -1,3 +1,3 @@
 key,english,english_example,def,draft,corrected,comment
-words:advertise_s1,,,,,"{""g"":""?????? ????; ????? ??????? ????"",""ex"":{""advertise_s1"":""?? social media ?? ???? products advertise ???? ????""},""tip"":"""",""regional"":{""es-ES"":""""}}",Manual semantic correction to keep Hindi gloss concise and natural.
-words:research_s2,,,,,"{""g"":""???? ????; research ????"",""ex"":{""research_s2"":""?? ?????? city ?? history research ?? ??? ???""},""tip"":"""",""regional"":{""es-ES"":""""}}",Manual semantic correction to keep Hindi gloss concise and natural.
+words:advertise_s1,,,,,"{""g"": ""प्रचार करना; ध्यान आकर्षित करना"", ""ex"": {""advertise_s1"": ""वे social media पर अपने products advertise करते हैं।""}, ""tip"": """", ""regional"": {}}",Manual semantic correction to keep Hindi gloss concise and natural.
+words:research_s2,,,,,"{""g"": ""जाँच करना; research करना"", ""ex"": {""research_s2"": ""वह पुराने city का history research कर रही है।""}, ""tip"": """", ""regional"": {}}",Manual semantic correction to keep Hindi gloss concise and natural.

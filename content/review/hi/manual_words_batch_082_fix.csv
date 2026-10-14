@@ -1,2 +1,2 @@
 key,english,english_example,def,draft,corrected,comment
-words:attentive_s1,attentive,The attentive students noticed the small difference.,"watching, listening, or thinking carefully",,"{""g"": ""????? ???? ?????-????? ????"", ""ex"": {""attentive_s1"": ""attentive students ?? ???? difference ?? ????? ?????""}, ""tip"": """", ""regional"": {""es-ES"": """"}}",Manual semantic Hindi validator correction
+words:attentive_s1,attentive,The attentive students noticed the small difference.,"watching, listening, or thinking carefully",,"{""g"": ""ध्यान से देखना, सुनना या सोचना"", ""ex"": {""attentive_s1"": ""attentive students ने छोटा difference भी पहचान लिया।""}, ""tip"": """", ""regional"": {}}",Manual semantic Hindi validator correction

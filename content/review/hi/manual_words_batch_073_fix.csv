@@ -1,2 +1,2 @@
 key,english,english_example,def,draft,corrected,comment
-words:scum_s1,scum,There is scum on the surface of the soup.,"a layer of dirty foam on a liquid, or disliked people",,"{""g"": ""???? foam; ????? ???"", ""ex"": {""scum_s1"": ""Soup ?? surface ?? scum ???""}, ""tip"": """", ""regional"": {""es-ES"": """"}}",Manual semantic correction: concise Hindi gloss
+words:scum_s1,scum,There is scum on the surface of the soup.,"a layer of dirty foam on a liquid, or disliked people",,"{""g"": ""liquid की surface की dirty foam या disliked people"", ""ex"": {""scum_s1"": ""Soup की surface पर scum है।""}, ""tip"": """", ""regional"": {}}",Manual semantic correction: concise Hindi gloss

@@ -1,0 +1,4 @@
+key,english,english_example,def,draft,corrected,comment
+words:deception_s1,deception,The investigation uncovered a deliberate deception.,a misleading falsehood,,"{""g"": ""sự lừa dối"", ""ex"": {""deception_s1"": ""Cuộc điều tra phát hiện một sự lừa dối có chủ ý.""}, ""tip"": """", ""regional"": {}}",Semantic Vietnamese gloss-length correction
+words:homage_s1,homage,The exhibition is an homage to the painter's work.,respectful deference,,"{""g"": ""lời tôn kính"", ""ex"": {""homage_s1"": ""Triển lãm là lời tôn kính dành cho tác phẩm của họa sĩ.""}, ""tip"": """", ""regional"": {}}",Semantic Vietnamese gloss-length correction
+words:maid_s1,maid,The hotel maid changed the towels in the room.,a female domestic,,"{""g"": ""nữ giúp việc"", ""ex"": {""maid_s1"": ""Nhân viên khách sạn thay khăn trong phòng.""}, ""tip"": """", ""regional"": {}}",Semantic Vietnamese gloss-length correction
