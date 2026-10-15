@@ -24680,7 +24680,7 @@
   "canopy_s1": {
     "g": "cobertura transparente",
     "ex": {
-      "canopy_s1": "O piloto verificou a cobertura da cabine antes da decolagem."
+      "canopy_s1": "O piloto verificou a cobertura transparente da cabine antes da decolagem."
     }
   },
   "click_s1": {
@@ -24792,7 +24792,7 @@
   "wit_s1": {
     "g": "sagacidade",
     "ex": {
-      "wit_s1": "Ele não teve bom senso para perceber o perigo."
+      "wit_s1": "Ele n?o teve sagacidade para perceber o perigo."
     }
   },
   "acknowledge_s1": {
