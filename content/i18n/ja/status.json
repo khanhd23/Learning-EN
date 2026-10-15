@@ -1886,79 +1886,104 @@
         "by": "codex-manual-ja-019"
       },
       "troubleshoot_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "wireless_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "doctor_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "appointment_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "patient_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "patient_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "symptom_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "prescription_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "pharmacy_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "medicine_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "insurance_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "treatment_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "recover_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "injury_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "headache_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "fever_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "clinic_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "surgery_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "emergency_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "nurse_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "check_up_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "allergic_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "diet_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "exercise_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "exercise_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-020"
       },
       "stress_s1": {
         "s": "missing"
