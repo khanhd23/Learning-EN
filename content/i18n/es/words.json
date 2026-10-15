@@ -25502,7 +25502,7 @@
   "forgather_s1": {
     "g": "reunirse",
     "ex": {
-      "forgather_s1": "reunirse con alguien"
+      "forgather_s1": "Los antiguos compa?eros de clase se re?nen cada a?o para compartir una cena."
     }
   },
   "glaring_s1": {
@@ -25622,7 +25622,7 @@
   "disinterested_s1": {
     "g": "imparcial; que no está influido por el interés personal",
     "ex": {
-      "disinterested_s1": "ayuda desinteresada"
+      "disinterested_s1": "Un revisor independiente e imparcial evalu? la queja."
     }
   },
   "drizzle_s1": {
@@ -25686,9 +25686,9 @@
     }
   },
   "lour_s1": {
-    "g": "oscurecerse",
+    "g": "cernirse de forma oscura y amenazante",
     "ex": {
-      "lour_s1": "Las nubes oscuras se oscurecen sobre la costa antes de la tormenta."
+      "lour_s1": "Las nubes oscuras se cern?an sobre la costa antes de la tormenta."
     }
   },
   "lower_s1": {
