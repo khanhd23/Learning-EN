@@ -28668,9 +28668,9 @@
     }
   },
   "rickroll_s1": {
-    "g": "enganar com um link de Rickroll",
+    "g": "enganar algu?m com um link para o v?deo de Rick Astley",
     "ex": {
-      "rickroll_s1": "Esse link encurtado vai fazer Rickroll com qualquer pessoa que clicar."
+      "rickroll_s1": "Esse link encurtado vai enganar qualquer pessoa que clicar, levando-a ao v?deo de Rick Astley."
     }
   },
   "riverside_s1": {
