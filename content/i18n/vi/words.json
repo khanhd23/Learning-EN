@@ -25669,7 +25669,7 @@
   "sat_s1": {
     "g": "đã ngồi",
     "ex": {
-      "sat_s1": "Tôi ngồi cạnh cửa sổ trong khi viết báo cáo."
+      "sat_s1": "C? ?y ng?i c?nh c?a s? trong khi ch? ??n cu?c h?n."
     },
     "tip": "",
     "regional": {}
@@ -25685,7 +25685,7 @@
   "spill_the_tea_s1": {
     "g": "buôn chuyện; chia sẻ tin tức",
     "ex": {
-      "spill_the_tea_s1": "Nào, kể chuyện gì đã xảy ra ở bữa tiệc đi."
+      "spill_the_tea_s1": "Trong b?a tr?a, c?c ph?ng vi?n y?u c?u c? k? chuy?n v? d? ?n m?i."
     },
     "tip": "",
     "regional": {}
@@ -25751,7 +25751,7 @@
     }
   },
   "acquaint_s1": {
-    "g": "làm cho ai quen với người",
+    "g": "gi?p ai l?m quen v?i ng??i, n?i ho?c ch? ??",
     "ex": {
       "acquaint_s1": "Người đào tạo sẽ giúp nhân viên mới làm quen với quy trình an toàn."
     },
@@ -25883,9 +25883,9 @@
     }
   },
   "china_s1": {
-    "g": "bằng sứ tinh",
+    "g": "b?ng s? tinh, s? cao c?p",
     "ex": {
-      "china_s1": "Chủ nhà rót trà vào một chiếc tách sứ mỏng manh."
+      "china_s1": "Ch? nh? r?t tr? v?o m?t chi?c t?ch s? tinh."
     },
     "tip": "",
     "regional": {}
