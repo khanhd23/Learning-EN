@@ -24776,7 +24776,7 @@
   "christmas_s1": {
     "g": "navidad",
     "ex": {
-      "christmas_s1": "La familia se reúne para cenar el día de Navidad."
+      "christmas_s1": "Las familias suelen intercambiar regalos durante las vacaciones de Navidad."
     }
   },
   "clincher_s1": {
@@ -24816,9 +24816,9 @@
     }
   },
   "dogs_s1": {
-    "g": "perros; miembros del género Canis, probablemente descendientes del lobo común y domesticados desde la prehistoria",
+    "g": "carreras de perros",
     "ex": {
-      "dogs_s1": "Anoche perdí dinero en las carreras de perros."
+      "dogs_s1": "Anoche perd? dinero apostando en las carreras de perros del hip?dromo."
     }
   },
   "duct_s1": {
@@ -24858,7 +24858,7 @@
     }
   },
   "features_s1": {
-    "g": "funciones",
+    "g": "caracter?sticas o funciones destacadas",
     "ex": {
       "features_s1": "El teléfono nuevo tiene funciones de accesibilidad útiles."
     }
