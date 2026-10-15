@@ -27664,9 +27664,9 @@
     }
   },
   "robe_s1": {
-    "g": "bata ou túnica",
+    "g": "t?nica solta, especialmente toga",
     "ex": {
-      "robe_s1": "O juiz usava uma bata escura no tribunal."
+      "robe_s1": "O juiz usava uma toga escura no tribunal."
     }
   },
   "saint_s1": {
@@ -27738,7 +27738,7 @@
   "slouch_s1": {
     "g": "pessoa competente",
     "ex": {
-      "slouch_s1": "Ela não é incompetente para resolver problemas técnicos difíceis."
+      "slouch_s1": "Ela n?o fica atr?s de ningu?m na resolu??o de problemas t?cnicos dif?ceis."
     }
   },
   "squire_s1": {
@@ -27760,9 +27760,9 @@
     }
   },
   "thinking_s1": {
-    "g": "pensamento",
+    "g": "reflex?o cuidadosa",
     "ex": {
-      "thinking_s1": "O pensamento cuidadoso ajudou a equipe a encontrar uma solução prática."
+      "thinking_s1": "Uma reflex?o cuidadosa ajudou a equipe a encontrar uma solu??o pr?tica."
     }
   },
   "tiptoe_s1": {
