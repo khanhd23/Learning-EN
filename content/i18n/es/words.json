@@ -27374,7 +27374,7 @@
   "planetary_s1": {
     "g": "planetario; relacionado con las características físicas u orbitales de un planeta",
     "ex": {
-      "planetary_s1": "sistema planetario"
+      "planetary_s1": "Los investigadores compararon varios sistemas planetarios m?s all? del nuestro."
     }
   },
   "plank_s1": {
@@ -27402,7 +27402,7 @@
     }
   },
   "procure_s1": {
-    "g": "procurar",
+    "g": "obtener con esfuerzo o mediante gestiones",
     "ex": {
       "procure_s1": "El hospital obtuvo equipo nuevo para la clínica."
     }
@@ -27540,9 +27540,9 @@
     }
   },
   "studied_s1": {
-    "g": "deliberado",
+    "g": "cuidadosamente pensado",
     "ex": {
-      "studied_s1": "Dio una respuesta deliberada a la pregunta difícil."
+      "studied_s1": "Dio una respuesta cuidadosamente pensada a la pregunta dif?cil."
     }
   },
   "superficial_s1": {
