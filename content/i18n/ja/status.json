@@ -2386,79 +2386,104 @@
         "by": "codex-manual-ja-024"
       },
       "electricity_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "carbon_footprint_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "disposable_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "forest_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "organic_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "temperature_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "news_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "article_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "article_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "journalist_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "headline_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "broadcast_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "editor_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "publish_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "magazine_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "report_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "report_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "press_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "press_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "channel_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "subscribe_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "advertisement_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "source_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "fake_news_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "documentary_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-025"
       },
       "reporter_s1": {
         "s": "missing"
