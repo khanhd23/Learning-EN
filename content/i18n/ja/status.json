@@ -4486,79 +4486,104 @@
         "by": "codex-manual-ja-045"
       },
       "get_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "take_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "give_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "want_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "need_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "like_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "love_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "know_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "think_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "understand_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "remember_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "forget_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "learn_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "study_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "read_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "write_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "speak_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "talk_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "hear_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "listen_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "look_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "see_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "watch_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "ask_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "answer_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-046"
       },
       "answer_s2": {
         "s": "missing"
