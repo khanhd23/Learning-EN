@@ -24396,9 +24396,9 @@
     }
   },
   "touching_s1": {
-    "g": "sobre, con respecto a",
+    "g": "conmovedor",
     "ex": {
-      "touching_s1": "Hizo varias preguntas sobre el presupuesto."
+      "touching_s1": "Su mensaje conmovedor hizo sonre?r al profesor que se jubilaba."
     }
   },
   "volcano_s1": {
@@ -24470,7 +24470,7 @@
   "easter_s1": {
     "g": "Pascua",
     "ex": {
-      "easter_s1": "Los niños decoraron huevos para Pascua."
+      "easter_s1": "Muchas familias visitan a sus parientes durante las vacaciones de Pascua."
     }
   },
   "faithful_s1": {
@@ -24488,7 +24488,7 @@
   "friends_s1": {
     "g": "amigos",
     "ex": {
-      "friends_s1": "encontrar más amigos"
+      "friends_s1": "Los buenos amigos se apoyan durante los momentos dif?ciles."
     }
   },
   "frustum_s1": {
