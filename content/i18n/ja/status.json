@@ -886,79 +886,104 @@
         "by": "codex-manual-ja-009"
       },
       "guarantee_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "handle_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "handle_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "courteous_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "loyalty_card_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "receipt_of_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "exchange_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "exchange_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "representative_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "contract_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "contract_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "agreement_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "terms_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "sign_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "sign_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "negotiate_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "expire_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "renew_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "comply_with_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "regulation_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "lawyer_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "legal_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "clause_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "valid_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "permit_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-010"
       },
       "permit_s2": {
         "s": "missing"
