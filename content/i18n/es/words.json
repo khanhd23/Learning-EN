@@ -27726,9 +27726,9 @@
     }
   },
   "beneficent_s1": {
-    "g": "beneficioso",
+    "g": "beneficente",
     "ex": {
-      "beneficent_s1": "La organización beneficente apoya la atención médica gratuita."
+      "beneficent_s1": "La organizaci?n beneficente apoya la atenci?n m?dica gratuita."
     }
   },
   "blacken_s1": {
@@ -27824,7 +27824,7 @@
   "dreadful_s1": {
     "g": "terrible",
     "ex": {
-      "dreadful_s1": "Los viajeros enfrentaron un tiempo terrible en la montaña."
+      "dreadful_s1": "Los viajeros enfrentaron un clima terrible en la monta?a."
     }
   },
   "elicit_s1": {
