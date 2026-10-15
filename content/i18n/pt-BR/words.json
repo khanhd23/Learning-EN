@@ -30336,9 +30336,9 @@
     }
   },
   "settled_s1": {
-    "g": "resolvido",
+    "g": "resolvido, definitivo",
     "ex": {
-      "settled_s1": "Os dois lados chegaram a um acordo resolvido."
+      "settled_s1": "Os dois lados chegaram a um acordo definitivo."
     }
   },
   "stormy_s1": {
@@ -30360,9 +30360,9 @@
     }
   },
   "treacherous_s1": {
-    "g": "perigoso",
+    "g": "perigoso e trai?oeiro",
     "ex": {
-      "treacherous_s1": "Os escaladores enfrentaram gelo perigoso na montanha."
+      "treacherous_s1": "Os escaladores enfrentaram gelo trai?oeiro na montanha."
     }
   },
   "tuff_s1": {
