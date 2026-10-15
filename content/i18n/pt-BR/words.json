@@ -30972,9 +30972,9 @@
     }
   },
   "assumed_s1": {
-    "g": "suposto",
+    "g": "suposto ou falso",
     "ex": {
-      "assumed_s1": "A testemunha entrou no hotel com um nome falso."
+      "assumed_s1": "A testemunha entrou no hotel usando um nome falso."
     }
   },
   "awake_s1": {
@@ -31046,7 +31046,7 @@
   "conspicuous_s1": {
     "g": "notável",
     "ex": {
-      "conspicuous_s1": "A placa brilhante era notável da estrada."
+      "conspicuous_s1": "A placa brilhante era vis?vel da estrada."
     }
   },
   "covered_s1": {
