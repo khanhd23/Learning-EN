@@ -32504,7 +32504,7 @@
   "furtive_s1": {
     "g": "furtivo",
     "ex": {
-      "furtive_s1": "Ele lançou um olhar furtivo para a porta."
+      "furtive_s1": "Ele lan?ou um olhar furtivo para a porta trancada do escrit?rio."
     }
   },
   "get_cold_feet_s1": {
@@ -32616,9 +32616,9 @@
     }
   },
   "jaded_s1": {
-    "g": "cansado",
+    "g": "cansado, entediado e sem entusiasmo",
     "ex": {
-      "jaded_s1": "Após anos viajando, ele estava cansado de aeroportos lotados."
+      "jaded_s1": "Ap?s anos viajando, ele estava cansado e entediado com aeroportos lotados."
     }
   },
   "kowtow_s1": {
@@ -32628,9 +32628,9 @@
     }
   },
   "loiter_s1": {
-    "g": "vadiar",
+    "g": "permanecer sem prop?sito ou demorar-se",
     "ex": {
-      "loiter_s1": "O segurança pediu que os visitantes não ficassem parados na entrada."
+      "loiter_s1": "O seguran?a pediu que os visitantes n?o permanecessem sem prop?sito perto da entrada."
     }
   },
   "lurid_s1": {
