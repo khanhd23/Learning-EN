@@ -1086,79 +1086,104 @@
         "by": "codex-manual-ja-011"
       },
       "warehouse_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "shipment_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "inventory_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "supplier_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "assemble_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "equipment_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "machinery_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "quality_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "defective_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "output_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "capacity_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "freight_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "container_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "deliver_on_time_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "track_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "track_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "package_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "package_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "load_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "load_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "raw_material_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "process_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "process_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "operate_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "maintenance_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-012"
       },
       "safety_s1": {
         "s": "missing"
