@@ -25882,9 +25882,9 @@
     }
   },
   "blade_s1": {
-    "g": "lâmina da folha",
+    "g": "folha de grama",
     "ex": {
-      "blade_s1": "Cada lâmina de grama estava molhada de orvalho."
+      "blade_s1": "Cada folha de grama estava molhada de orvalho."
     }
   },
   "capture_s1": {
