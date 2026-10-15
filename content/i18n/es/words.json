@@ -28050,9 +28050,9 @@
     }
   },
   "mightily_s1": {
-    "g": "enormemente",
+    "g": "con gran esfuerzo",
     "ex": {
-      "mightily_s1": "El equipo trabajó enormemente para terminar a tiempo."
+      "mightily_s1": "El equipo trabaj? con gran esfuerzo para terminar a tiempo."
     }
   },
   "mossy_s1": {
@@ -28106,7 +28106,7 @@
   "procession_s1": {
     "g": "procesión",
     "ex": {
-      "procession_s1": "Una procesión caminó lentamente por la plaza."
+      "procession_s1": "Una procesi?n avanz? lentamente por la plaza del pueblo."
     }
   },
   "profuse_s1": {
@@ -28142,7 +28142,7 @@
   "rhythmic_s1": {
     "g": "rítmico",
     "ex": {
-      "rhythmic_s1": "Los bailarines se movieron al ritmo rítmico."
+      "rhythmic_s1": "Los bailarines se movieron al ritmo marcado."
     }
   },
   "rounded_s1": {
@@ -28194,9 +28194,9 @@
     }
   },
   "sparing_s1": {
-    "g": "escaso",
+    "g": "parco, que usa o da poco",
     "ex": {
-      "sparing_s1": "El guía fue escaso en detalles técnicos."
+      "sparing_s1": "El gu?a fue parco en detalles t?cnicos."
     }
   },
   "sparkling_s1": {
