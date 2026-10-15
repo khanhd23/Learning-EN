@@ -486,79 +486,104 @@
         "by": "codex-manual-ja-005"
       },
       "calculate_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "estimate_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "estimate_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "reimburse_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "quarter_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "annual_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "deduct_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "figure_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "figure_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "figure_s3": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "spreadsheet_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "asset_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "payroll_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "record_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "record_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "outstanding_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "overdue_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "refund_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "charge_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "charge_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "charge_s3": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "total_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "total_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "increase_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "increase_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-006"
       },
       "decrease_s1": {
         "s": "missing"
