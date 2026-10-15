@@ -26838,9 +26838,9 @@
     }
   },
   "touring_s1": {
-    "g": "de gira",
+    "g": "itinerante",
     "ex": {
-      "touring_s1": "El ciclista que estaba de gira se detuvo para reparar una llanta pinchada."
+      "touring_s1": "El ciclista itinerante se detuvo para reparar una llanta pinchada."
     }
   },
   "trenchant_s1": {
@@ -26906,7 +26906,7 @@
   "absolve_s1": {
     "g": "absolver",
     "ex": {
-      "absolve_s1": "Las pruebas la absolvieron de responsabilidad por el error."
+      "absolve_s1": "Las pruebas la eximieron de responsabilidad por el error."
     }
   },
   "acoustic_s1": {
@@ -26976,9 +26976,9 @@
     }
   },
   "cane_s1": {
-    "g": "hacer de mimbre",
+    "g": "cubrir con tiras de ca?a",
     "ex": {
-      "cane_s1": "El artesano hizo de mimbre el asiento de la silla vieja."
+      "cane_s1": "El artesano cubri? con tiras de ca?a el asiento de la silla vieja."
     }
   },
   "celestial_s1": {
