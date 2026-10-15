@@ -29934,9 +29934,9 @@
     }
   },
   "afloat_s1": {
-    "g": "à tona",
+    "g": "flutuando, sem afundar",
     "ex": {
-      "afloat_s1": "O pequeno barco permaneceu à tona durante a tempestade."
+      "afloat_s1": "O pequeno barco permaneceu flutuando durante a tempestade."
     }
   },
   "appease_s1": {
@@ -30024,9 +30024,9 @@
     }
   },
   "raging_s1": {
-    "g": "furioso",
+    "g": "intenso, violento, fora de controle",
     "ex": {
-      "raging_s1": "Os bombeiros se aproximaram cuidadosamente do incêndio furioso."
+      "raging_s1": "Os bombeiros se aproximaram cuidadosamente do inc?ndio intenso."
     }
   },
   "slapping_s1": {
@@ -30042,15 +30042,15 @@
     }
   },
   "thoughtless_s1": {
-    "g": "impensado",
+    "g": "sem considera??o pelos outros",
     "ex": {
-      "thoughtless_s1": "Foi impensado cancelar sem avisar ninguém."
+      "thoughtless_s1": "Foi uma atitude sem considera??o cancelar sem avisar ningu?m."
     }
   },
   "zealous_s1": {
     "g": "zeloso",
     "ex": {
-      "zealous_s1": "Muitos defendiam a causa com grande fervor."
+      "zealous_s1": "Os volunt?rios zelosos organizaram uma limpeza comunit?ria bem-sucedida."
     }
   },
   "absorbed_s1": {
