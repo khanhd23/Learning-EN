@@ -27218,13 +27218,13 @@
   "indemnify_s1": {
     "g": "indemnizar",
     "ex": {
-      "indemnify_s1": "La póliza indemniza a los clientes por daños durante la entrega."
+      "indemnify_s1": "La p?liza indemniza a los clientes contra los da?os sufridos durante la entrega."
     }
   },
   "inland_s1": {
-    "g": "interior",
+    "g": "del interior",
     "ex": {
-      "inland_s1": "La ciudad interior está rodeada de granjas."
+      "inland_s1": "La ciudad del interior est? rodeada de granjas."
     }
   },
   "inquiring_s1": {
@@ -27242,7 +27242,7 @@
   "intended_s1": {
     "g": "previsto",
     "ex": {
-      "intended_s1": "El público previsto son los principiantes."
+      "intended_s1": "El p?blico previsto para este curso para principiantes son estudiantes adultos."
     }
   },
   "interesting_s1": {
@@ -27264,7 +27264,7 @@
     }
   },
   "juggle_s1": {
-    "g": "compaginar; influir mediante astucia",
+    "g": "compaginar",
     "ex": {
       "juggle_s1": "A menudo las mujeres tienen que compaginar el trabajo con las responsabilidades familiares."
     }
