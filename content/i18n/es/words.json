@@ -24158,7 +24158,7 @@
   "comprehend_s1": {
     "g": "comprender",
     "ex": {
-      "comprehend_s1": "No puedo comprender cómo alguien puede ser carnicero y vegetariano al mismo tiempo."
+      "comprehend_s1": "Los estudiantes deben comprender las instrucciones antes de comenzar el ejercicio."
     }
   },
   "holy_s1": {
@@ -24176,7 +24176,7 @@
   "perplex_s1": {
     "g": "desconcertar",
     "ex": {
-      "perplex_s1": "desconcertar a alguien con preguntas"
+      "perplex_s1": "El resultado inesperado sigui? desconcertando al equipo de investigaci?n."
     }
   },
   "ram_s1": {
@@ -24188,7 +24188,7 @@
   "remedial_s1": {
     "g": "correctivo; que tiende a corregir o mejorar algo",
     "ex": {
-      "remedial_s1": "medida correctiva"
+      "remedial_s1": "La escuela ofreci? clases de lectura de refuerzo a los alumnos nuevos."
     }
   },
   "sore_s1": {
@@ -24284,13 +24284,13 @@
   "wanting_s1": {
     "g": "sin, carente de",
     "ex": {
-      "wanting_s1": "Al no tener pruebas suficientes, el comité aplazó su decisión."
+      "wanting_s1": "La propuesta fue rechazada porque carec?a de detalles pr?cticos."
     }
   },
   "warfare_s1": {
     "g": "guerra",
     "ex": {
-      "warfare_s1": "El tratado prohíbe la guerra química."
+      "warfare_s1": "La guerra moderna depende de la comunicaci?n, la planificaci?n y la log?stica."
     }
   },
   "aka_s1": {
@@ -24378,9 +24378,9 @@
     }
   },
   "sheaf_s1": {
-    "g": "manojo",
+    "g": "fajo o grupo reunido",
     "ex": {
-      "sheaf_s1": "Llevó un manojo de papeles a la reunión."
+      "sheaf_s1": "Llev? un fajo de papeles a la reuni?n."
     }
   },
   "them_s1": {
