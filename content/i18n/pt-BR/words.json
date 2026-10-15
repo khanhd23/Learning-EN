@@ -24906,7 +24906,7 @@
     }
   },
   "bearing_s1": {
-    "g": "gestação",
+    "g": "gesta??o e parto",
     "ex": {
       "bearing_s1": "A gestação e o parto podem exigir fisicamente e precisam de cuidados médicos."
     }
@@ -25142,7 +25142,7 @@
   "waft_s1": {
     "g": "sopro",
     "ex": {
-      "waft_s1": "Uma onda de música entrou pela janela aberta."
+      "waft_s1": "Um sopro de m?sica entrou pela janela aberta."
     }
   },
   "whirl_s1": {
