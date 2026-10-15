@@ -1986,79 +1986,104 @@
         "by": "codex-manual-ja-020"
       },
       "stress_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "stress_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "cure_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "cough_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "vaccine_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "claim_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "claim_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "coverage_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "healthy_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "well_being_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "apartment_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "rent_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "rent_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "landlord_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "tenant_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "lease_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "real_estate_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "neighborhood_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "furniture_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "renovate_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "utilities_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "move_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "move_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "spacious_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "balcony_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-021"
       },
       "garage_s1": {
         "s": "missing"
