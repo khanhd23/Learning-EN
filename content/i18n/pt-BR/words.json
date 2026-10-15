@@ -25206,9 +25206,9 @@
     }
   },
   "breadth_s1": {
-    "g": "amplitude",
+    "g": "abrang?ncia",
     "ex": {
-      "breadth_s1": "A amplitude do curso permite explorar vários campos."
+      "breadth_s1": "A abrang?ncia do curso permite que os alunos explorem v?rias ?reas."
     }
   },
   "camel_s1": {
@@ -25354,7 +25354,7 @@
   "pinch_s1": {
     "g": "dificuldade financeira",
     "ex": {
-      "pinch_s1": "A pobreza afetou toda a família."
+      "pinch_s1": "A dificuldade financeira afetou toda a fam?lia."
     }
   },
   "plume_s1": {
