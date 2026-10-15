@@ -2286,79 +2286,103 @@
         "by": "codex-manual-ja-023"
       },
       "practice_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "environment_s1": {
         "s": "missing"
       },
       "pollution_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "recycle_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "waste_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "waste_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "climate_change_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "renewable_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "energy_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "solar_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "emission_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "conserve_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "sustainable_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "plastic_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "flood_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "drought_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "wildlife_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "species_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "endangered_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "fuel_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "reduce_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "protect_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "global_warming_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "eco_friendly_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "resource_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024"
       },
       "electricity_s1": {
         "s": "missing"
