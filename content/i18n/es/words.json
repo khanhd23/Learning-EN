@@ -22206,9 +22206,9 @@
     }
   },
   "wandering_s1": {
-    "g": "errante",
+    "g": "errante, divagante",
     "ex": {
-      "wandering_s1": "Su explicación errante confundió al público."
+      "wandering_s1": "Su explicaci?n divagante confundi? al p?blico."
     }
   },
   "wane_s1": {
