@@ -386,79 +386,104 @@
         "by": "codex-manual-ja-004"
       },
       "expense_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "afford_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "debt_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "mortgage_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "savings_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "transaction_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "statement_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "statement_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "financial_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "economy_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "fund_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "fund_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "stock_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "stock_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "cash_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "cash_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "credit_card_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "fee_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "borrow_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "lend_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "invoice_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "receipt_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "tax_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "audit_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "accountant_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-005"
       },
       "calculate_s1": {
         "s": "missing"
