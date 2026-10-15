@@ -17883,7 +17883,8 @@
         "by": "codex-manual-vi-005"
       },
       "blade_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "capture_s1": {
         "s": "approved",
@@ -17901,7 +17902,8 @@
         "src": "95188a97b011"
       },
       "clutch_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "debate_s1": {
         "s": "approved",
@@ -17914,7 +17916,8 @@
         "src": "4363f49f9153"
       },
       "editing_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "fortnight_s1": {
         "s": "approved",
@@ -17927,7 +17930,8 @@
         "src": "c07b6f7cb034"
       },
       "helm_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "ignore_s1": {
         "s": "approved",
@@ -17940,19 +17944,24 @@
         "src": "3656ecb788e5"
       },
       "keeping_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "platypus_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "pluck_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "prominence_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "revenge_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "running_s1": {
         "s": "approved",
@@ -17970,7 +17979,8 @@
         "src": "3c65cabeef75"
       },
       "tar_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "tornado_s1": {
         "s": "approved",
@@ -17983,7 +17993,8 @@
         "src": "f33c4a34ef7c"
       },
       "admiral_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "affection_s1": {
         "s": "approved",
@@ -17991,7 +18002,8 @@
         "src": "dc3a4b784cb1"
       },
       "artery_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "bloom_s1": {
         "s": "approved",
@@ -17999,13 +18011,16 @@
         "src": "ce28363d5fa5"
       },
       "chum_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "cropper_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "dressing_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "eel_s1": {
         "s": "approved",
@@ -18018,7 +18033,8 @@
         "src": "a5ad71b6fbf3"
       },
       "murmur_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "mushroom_s1": {
         "s": "approved",
@@ -18026,7 +18042,8 @@
         "src": "602c562e885c"
       },
       "nadir_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "persist_s1": {
         "s": "approved",
@@ -18034,16 +18051,20 @@
         "src": "81b0be9110f7"
       },
       "repression_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "restoration_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "ruffle_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "shaft_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "spelling_s1": {
         "s": "approved",
@@ -18051,7 +18072,8 @@
         "src": "1fa059c8db1a"
       },
       "spit_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "strive_s1": {
         "s": "approved",
@@ -18059,13 +18081,16 @@
         "src": "6a3507953943"
       },
       "summons_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "temptation_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "thrashing_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-006"
       },
       "thrust_s1": {
         "s": "draft"
