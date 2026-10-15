@@ -31322,7 +31322,7 @@
   "raft_s1": {
     "g": "transportar em balsa",
     "ex": {
-      "raft_s1": "Os guias transportaram suprimentos de balsa pelo rio."
+      "raft_s1": "Os guias transportaram suprimentos em uma balsa pelo rio."
     }
   },
   "rasp_s1": {
@@ -31374,9 +31374,9 @@
     }
   },
   "salient_s1": {
-    "g": "proeminente",
+    "g": "mais not?vel ou importante",
     "ex": {
-      "salient_s1": "O relatório destaca os fatos importantes do caso."
+      "salient_s1": "O relat?rio destaca os fatos mais importantes do caso."
     }
   },
   "sanguine_s1": {
