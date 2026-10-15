@@ -1386,79 +1386,104 @@
         "by": "codex-manual-ja-014"
       },
       "arrival_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "delayed_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "cancel_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "book_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "book_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "reservation_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "itinerary_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "destination_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "passport_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "customs_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "round_trip_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "fare_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "fare_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "commute_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "commute_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "platform_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "aisle_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "souvenir_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "sightseeing_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "tourist_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "journey_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "traffic_jam_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "check_in_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "abroad_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "accommodation_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-015"
       },
       "guide_s1": {
         "s": "missing"
