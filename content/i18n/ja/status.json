@@ -1286,79 +1286,104 @@
         "by": "codex-manual-ja-013"
       },
       "sale_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "sale_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "customer_service_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "shopping_mall_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "brand_new_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "second_hand_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "try_on_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "size_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "fit_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "fit_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "fit_s3": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "suit_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "suit_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "deal_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "deal_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "wholesaler_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "e_commerce_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "free_of_charge_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "reasonable_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "flight_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "flight_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "passenger_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "luggage_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "boarding_pass_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "departure_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-014"
       },
       "arrival_s1": {
         "s": "missing"
