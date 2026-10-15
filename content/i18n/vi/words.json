@@ -20155,7 +20155,7 @@
   "duel_s1": {
     "g": "cuộc đấu tay đôi",
     "ex": {
-      "duel_s1": "Hai kiếm sĩ gặp nhau trong cuộc đấu cuối."
+      "duel_s1": "Hai ki?m s? g?p nhau trong tr?n ??u tay ??i cu?i c?ng."
     },
     "tip": "",
     "regional": {}
@@ -20201,9 +20201,9 @@
     }
   },
   "prick_s1": {
-    "g": "đồ đáng ghét",
+    "g": "?? kh?n; l?i ch?i m?ng th? t?c",
     "ex": {
-      "prick_s1": "Trong lúc tranh cãi, anh ta gọi đối thủ là đồ đáng ghét."
+      "prick_s1": "Trong l?c tranh c?i, anh ta g?i ??i th? l? ?? kh?n."
     },
     "tip": "",
     "regional": {}
@@ -20293,9 +20293,9 @@
     }
   },
   "bosom_s1": {
-    "g": "ngực; lòng ngực",
+    "g": "ng?c; l?ng ng?c",
     "ex": {
-      "bosom_s1": "Cô ôm em bé đang buồn ngủ sát vào ngực."
+      "bosom_s1": "C? ?m em b? ?ang bu?n ng? s?t v?o ng?c."
     },
     "tip": "",
     "regional": {}
