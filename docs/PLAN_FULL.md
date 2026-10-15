@@ -186,7 +186,7 @@ Cambridge KET/PET, CEFR B2 words, more interface languages through the locale pi
 
 A (20 → 21) → B1 (TOEIC words) → C1 (THPT format) → C2 (THPT papers 1–5) → B2 (CEFR A1–B1,
 alternate one word batch with one THPT paper) → D (TOEIC bank) → E (stories, pictures) → F step 2
-when the Publisher has the keystore → 22 (final device screenshot pass) → G.
+when the Publisher has the keystore → 22 (final device screenshot pass) → G: Japanese (`ja`) first, then other LTR locales; Arabic (`ar`) and RTL work last.
 
 ## 11. Publisher checklist (last)
 
