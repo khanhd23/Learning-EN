@@ -2290,7 +2290,8 @@
         "by": "codex-manual-ja-024"
       },
       "environment_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-024-correction"
       },
       "pollution_s1": {
         "s": "reviewed",
