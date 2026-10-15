@@ -28820,7 +28820,7 @@
   "dainty_s1": {
     "g": "delicado",
     "ex": {
-      "dainty_s1": "Ela deu uma mordida delicada no bolo."
+      "dainty_s1": "Ela deu uma pequena mordida no bolo."
     }
   },
   "deaf_s1": {
@@ -28892,13 +28892,13 @@
   "wanting_s1": {
     "g": "sem, carente de",
     "ex": {
-      "wanting_s1": "Por não ter provas suficientes, o comitê adiou sua decisão."
+      "wanting_s1": "A proposta foi rejeitada por carecer de detalhes pr?ticos."
     }
   },
   "warfare_s1": {
     "g": "guerra",
     "ex": {
-      "warfare_s1": "O tratado proíbe a guerra química."
+      "warfare_s1": "A guerra moderna depende de comunica??o, planejamento e log?stica."
     }
   },
   "aka_s1": {
