@@ -30792,9 +30792,9 @@
     }
   },
   "knowing_s1": {
-    "g": "conhecedor",
+    "g": "c?mplice, revelador de que se sabe algo",
     "ex": {
-      "knowing_s1": "Ela me deu um sorriso conhecedor quando o plano funcionou."
+      "knowing_s1": "Ela me deu um sorriso c?mplice quando o plano deu certo."
     }
   },
   "mute_s1": {
@@ -30840,9 +30840,9 @@
     }
   },
   "shabby_s1": {
-    "g": "surrado",
+    "g": "velho e desgastado",
     "ex": {
-      "shabby_s1": "Eles alugaram um apartamento surrado perto da estação."
+      "shabby_s1": "Eles alugaram um apartamento velho e desgastado perto da esta??o."
     }
   },
   "shear_s1": {
