@@ -18146,7 +18146,8 @@
         "by": "codex-manual-ptbr-008"
       },
       "juncture_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "kindness_s1": {
         "s": "reviewed",
@@ -18154,25 +18155,32 @@
         "src": "3c53744ddd0b"
       },
       "laurel_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "mob_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "multitude_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "navigation_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "ornament_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "perfection_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "pirate_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "pity_s1": {
         "s": "reviewed",
@@ -18180,10 +18188,12 @@
         "src": "a4ea0f70ffa0"
       },
       "prism_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "re_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "remembrance_s1": {
         "s": "reviewed",
@@ -18191,13 +18201,16 @@
         "src": "7c26f8d513f2"
       },
       "riding_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "saloon_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "secrecy_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "shave_s1": {
         "s": "reviewed",
@@ -18205,16 +18218,20 @@
         "src": "1489c1089ea2"
       },
       "snare_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "snatch_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "sounding_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "spate_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "spice_s1": {
         "s": "reviewed",
@@ -18222,7 +18239,8 @@
         "src": "660372ec20bc"
       },
       "standing_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "stew_s1": {
         "s": "reviewed",
@@ -18230,13 +18248,16 @@
         "src": "799f13fab0e1"
       },
       "stiff_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "sting_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "tangle_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "third_s1": {
         "s": "reviewed",
@@ -18244,16 +18265,20 @@
         "src": "85600c94a9f0"
       },
       "truce_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "turk_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "twinkle_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "vault_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-009"
       },
       "virgin_s1": {
         "s": "draft"

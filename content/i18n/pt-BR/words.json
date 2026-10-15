@@ -26736,9 +26736,9 @@
     }
   },
   "stiff_s1": {
-    "g": "duro, rígido",
+    "g": "emperrado, que n?o se move livremente",
     "ex": {
-      "stiff_s1": "A porta dura precisava de óleo antes de abrir."
+      "stiff_s1": "A porta emperrada precisava de ?leo para abrir."
     }
   },
   "sting_s1": {
@@ -26750,7 +26750,7 @@
   "tangle_s1": {
     "g": "emaranhado",
     "ex": {
-      "tangle_s1": "Os cabos estavam emaranhados atrás do computador."
+      "tangle_s1": "Os cabos formavam um emaranhado atr?s do computador."
     }
   },
   "third_s1": {
@@ -26778,9 +26778,9 @@
     }
   },
   "vault_s1": {
-    "g": "mausoléu familiar",
+    "g": "cripta funer?ria",
     "ex": {
-      "vault_s1": "O mausoléu da família ficava sob a capela antiga."
+      "vault_s1": "A cripta da fam?lia ficava sob a capela antiga."
     }
   },
   "virgin_s1": {
