@@ -27080,7 +27080,7 @@
   "quack_s1": {
     "g": "charlatão",
     "ex": {
-      "quack_s1": "O site promovia remédios de um charlatão para doenças graves."
+      "quack_s1": "O site promovia rem?dios charlat?es para doen?as graves."
     }
   },
   "quest_s1": {
@@ -27108,9 +27108,9 @@
     }
   },
   "salute_s1": {
-    "g": "saudação",
+    "g": "sauda??o ou contin?ncia",
     "ex": {
-      "salute_s1": "Os alunos fizeram uma saudação quando a bandeira foi hasteada."
+      "salute_s1": "Os alunos fizeram uma sauda??o quando a bandeira foi hasteada."
     }
   },
   "scourge_s1": {
