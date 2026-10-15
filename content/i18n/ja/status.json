@@ -1186,79 +1186,104 @@
         "by": "codex-manual-ja-012"
       },
       "safety_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "distribute_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "shortage_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "automate_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "delay_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "delay_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "efficiency_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "specification_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "price_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "cheap_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "expensive_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "import_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "export_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "trade_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "trade_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "goods_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "merchandise_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "vendor_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "catalog_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "bulk_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "affordable_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "payment_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "install_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "compare_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "brochure_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-013"
       },
       "sale_s1": {
         "s": "missing"
