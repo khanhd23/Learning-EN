@@ -32718,9 +32718,9 @@
     }
   },
   "profuse_s1": {
-    "g": "profuso",
+    "g": "abundante, em grande quantidade",
     "ex": {
-      "profuse_s1": "O jardim produziu flores profusas na primavera."
+      "profuse_s1": "O jardim produziu flores em abund?ncia na primavera."
     }
   },
   "quarry_s1": {
@@ -32750,7 +32750,7 @@
   "rhythmic_s1": {
     "g": "rítmico",
     "ex": {
-      "rhythmic_s1": "Os dançarinos se moveram ao ritmo rítmico."
+      "rhythmic_s1": "Os dan?arinos se moveram ao ritmo marcado."
     }
   },
   "rounded_s1": {
