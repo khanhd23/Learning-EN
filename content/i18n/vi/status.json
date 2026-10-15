@@ -22023,7 +22023,8 @@
         "by": "codex-manual-vi-035"
       },
       "ignominious_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "imaginary_s1": {
         "s": "approved",
@@ -22031,28 +22032,36 @@
         "src": "e5ecbcae979c"
       },
       "imperious_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "impudent_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "indebted_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "indemnify_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "inland_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "inquiring_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "inspired_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "intended_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "interesting_s1": {
         "s": "approved",
@@ -22060,37 +22069,48 @@
         "src": "039c6446d167"
       },
       "interrogative_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "intricate_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "juggle_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "justified_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "laughing_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "learned_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "lo_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "locomotive_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "maritime_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "martial_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "meddle_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "miserable_s1": {
         "s": "approved",
@@ -22108,10 +22128,12 @@
         "src": "87388dda116e"
       },
       "orthogonal_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "overtake_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "owing_s1": {
         "s": "approved",
@@ -22119,13 +22141,16 @@
         "src": "26a4c2a4d7c8"
       },
       "passionate_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "paternal_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "pinion_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-036"
       },
       "planetary_s1": {
         "s": "draft"
