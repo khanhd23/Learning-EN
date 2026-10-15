@@ -18683,16 +18683,20 @@
         "by": "codex-manual-vi-010"
       },
       "instantly_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "knack_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "landslide_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "lens_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "metre_s1": {
         "s": "approved",
@@ -18700,7 +18704,8 @@
         "src": "db049c1be048"
       },
       "mint_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "misery_s1": {
         "s": "approved",
@@ -18713,7 +18718,8 @@
         "src": "dcd0cc1676ee"
       },
       "nay_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "prayer_s1": {
         "s": "approved",
@@ -18721,34 +18727,44 @@
         "src": "86923bb60bb8"
       },
       "propaganda_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "quack_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "quest_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "recompense_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "repute_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "riser_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "salute_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "scourge_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "siege_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "sixth_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "skull_s1": {
         "s": "approved",
@@ -18756,19 +18772,24 @@
         "src": "9ac5c588f5b9"
       },
       "slant_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "solder_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "squadron_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "temperance_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "trepidation_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "turning_s1": {
         "s": "approved",
@@ -18781,16 +18802,20 @@
         "src": "3dbc64a59a23"
       },
       "advent_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "affectation_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "agitate_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "allegiance_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-011"
       },
       "alloy_s1": {
         "s": "draft"
