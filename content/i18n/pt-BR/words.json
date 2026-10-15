@@ -30222,9 +30222,9 @@
     }
   },
   "decided_s1": {
-    "g": "decidido",
+    "g": "claro, definitivo",
     "ex": {
-      "decided_s1": "Ela deu uma resposta decidida após considerar as opções."
+      "decided_s1": "Ela deu uma resposta definitiva depois de considerar as op??es."
     }
   },
   "disinterested_s1": {
@@ -30294,9 +30294,9 @@
     }
   },
   "lour_s1": {
-    "g": "fechar-se",
+    "g": "pairar de modo escuro e amea?ador",
     "ex": {
-      "lour_s1": "Nuvens escuras se fecham sobre a costa antes da tempestade."
+      "lour_s1": "Nuvens escuras pairavam de modo amea?ador sobre a costa antes da tempestade."
     }
   },
   "lower_s1": {
