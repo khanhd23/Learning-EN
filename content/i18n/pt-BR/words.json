@@ -31128,9 +31128,9 @@
     }
   },
   "gracious_s1": {
-    "g": "gracioso",
+    "g": "gentil, educado e generoso",
     "ex": {
-      "gracious_s1": "O anfitrião foi gentil com todos os convidados."
+      "gracious_s1": "O anfitri?o foi gentil com todos os convidados."
     }
   },
   "hanging_s1": {
@@ -31146,9 +31146,9 @@
     }
   },
   "headlong_s1": {
-    "g": "de cabeça",
+    "g": "com grande velocidade e sem cuidado",
     "ex": {
-      "headlong_s1": "O ciclista desceu de cabeça pela colina."
+      "headlong_s1": "O ciclista desceu a colina em alta velocidade e sem cuidado."
     }
   },
   "heal_s1": {
@@ -31190,7 +31190,7 @@
   "impinge_s1": {
     "g": "afetar",
     "ex": {
-      "impinge_s1": "O barulho pode afetar a capacidade de sono dos vizinhos."
+      "impinge_s1": "O barulho pode afetar a capacidade de os vizinhos dormirem."
     }
   },
   "interested_s1": {
