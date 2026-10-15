@@ -19218,7 +19218,8 @@
         "by": "codex-manual-vi-014"
       },
       "tot_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "treasure_s1": {
         "s": "approved",
@@ -19226,16 +19227,20 @@
         "src": "06ed63441381"
       },
       "tribute_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "tumult_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "twilight_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "uneasiness_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "vinegar_s1": {
         "s": "approved",
@@ -19243,34 +19248,44 @@
         "src": "fb1aff94d356"
       },
       "vocation_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "winning_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "wrath_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "wretch_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "yarn_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "abhorrent_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "adherent_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "aftermath_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "alchemy_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "alibi_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "annoyance_s1": {
         "s": "approved",
@@ -19278,10 +19293,12 @@
         "src": "179f3dcee2a0"
       },
       "arena_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "bait_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "bare_s1": {
         "s": "approved",
@@ -19289,13 +19306,16 @@
         "src": "0a014882d40f"
       },
       "boiling_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "botch_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "bulkhead_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "chew_s1": {
         "s": "approved",
@@ -19308,19 +19328,24 @@
         "src": "9b33339bff11"
       },
       "cloak_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "concealment_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "conjecture_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "crux_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "culprit_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-015"
       },
       "deception_s1": {
         "s": "draft"
