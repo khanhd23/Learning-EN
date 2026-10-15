@@ -27896,7 +27896,7 @@
   "furtive_s1": {
     "g": "furtivo; silencioso, cauteloso y secreto para evitar que alguien lo observe",
     "ex": {
-      "furtive_s1": "Entró con pasos furtivos para que nadie lo viera."
+      "furtive_s1": "Lanz? una mirada furtiva a la puerta cerrada de la oficina."
     }
   },
   "get_cold_feet_s1": {
@@ -28014,9 +28014,9 @@
     }
   },
   "kowtow_s1": {
-    "g": "adular",
+    "g": "someterse servilmente",
     "ex": {
-      "kowtow_s1": "El empleado se negó a adular a un gerente poco razonable."
+      "kowtow_s1": "El empleado se neg? a someterse servilmente ante un gerente poco razonable."
     }
   },
   "loiter_s1": {
