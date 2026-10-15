@@ -986,79 +986,104 @@
         "by": "codex-manual-ja-010"
       },
       "permit_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "policy_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "party_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "party_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "party_s3": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "breach_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "dispute_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "court_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "court_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "confidential_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "liable_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "obligation_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "draft_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "draft_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "binding_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "terminate_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "notice_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "notice_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "property_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "license_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "license_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "evidence_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "authorize_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "factory_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "manufacture_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-011"
       },
       "warehouse_s1": {
         "s": "missing"
