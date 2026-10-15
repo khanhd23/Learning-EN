@@ -24602,7 +24602,7 @@
   "sat_s1": {
     "g": "se sentó",
     "ex": {
-      "sat_s1": "Estaba sentado junto a la ventana mientras escribía el informe."
+      "sat_s1": "Se sent? cerca de la ventana mientras esperaba su cita."
     }
   },
   "semblance_s1": {
@@ -24614,7 +24614,7 @@
   "spill_the_tea_s1": {
     "g": "contar chismes",
     "ex": {
-      "spill_the_tea_s1": "Vamos, cuenta los chismes sobre lo que pasó en la fiesta."
+      "spill_the_tea_s1": "Durante el almuerzo, los periodistas le pidieron que contara los chismes sobre el nuevo proyecto."
     }
   },
   "spoil_s1": {
@@ -24668,13 +24668,13 @@
   "acquaint_s1": {
     "g": "familiarizar; hacer que alguien llegue a conocer algo o a una persona",
     "ex": {
-      "acquaint_s1": "familiarizarse con algo"
+      "acquaint_s1": "El instructor familiarizar? al personal nuevo con el procedimiento de seguridad."
     }
   },
   "acquit_s1": {
     "g": "absolver",
     "ex": {
-      "acquit_s1": "ser absuelto de un delito"
+      "acquit_s1": "El tribunal absolvi? al acusado despu?s de revisar las nuevas pruebas."
     }
   },
   "adieu_s1": {

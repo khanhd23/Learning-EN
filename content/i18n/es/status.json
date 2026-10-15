@@ -19981,13 +19981,16 @@
         "src": "a1befd42ccdb"
       },
       "sat_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "semblance_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "spill_the_tea_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "spoil_s1": {
         "s": "reviewed",
@@ -19995,22 +19998,28 @@
         "src": "6f4b169f7704"
       },
       "stab_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "torrent_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "troubled_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "utmost_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "verve_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "vortex_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "working_s1": {
         "s": "reviewed",
@@ -20018,34 +20027,44 @@
         "src": "65f88b3889e1"
       },
       "acquaint_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "acquit_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "adieu_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "alms_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "anonymity_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "apoplexy_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "ardent_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "astonishment_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "aught_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "azimuth_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "bathe_s1": {
         "s": "reviewed",
@@ -20053,19 +20072,24 @@
         "src": "c5b8ed5af2f7"
       },
       "blot_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "brainchild_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "buddha_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "cape_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "captive_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "carelessness_s1": {
         "s": "reviewed",
@@ -20073,7 +20097,8 @@
         "src": "2c83880cb2d9"
       },
       "china_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-025"
       },
       "christmas_s1": {
         "s": "draft"
