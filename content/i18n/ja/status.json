@@ -186,79 +186,104 @@
         "by": "codex-manual-ja-002"
       },
       "salary_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "wage_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "benefit_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "benefit_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "promote_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "promote_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "resign_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "retire_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "employee_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "employer_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "position_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "position_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "position_s3": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "training_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "training_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "performance_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "evaluate_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "probation_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "full_time_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "part_time_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "personnel_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "reference_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "reference_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "vacancy_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "workforce_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-003"
       },
       "apply_for_s1": {
         "s": "missing"
