@@ -18581,28 +18581,36 @@
         "by": "codex-manual-ptbr-011"
       },
       "alloy_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "altar_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "approbation_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "artillery_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "ascent_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "attainment_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "brigade_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "brood_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "burning_s1": {
         "s": "reviewed",
@@ -18610,43 +18618,56 @@
         "src": "95908fa041d4"
       },
       "butt_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "cache_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "charcoal_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "chasm_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "complexion_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "conformity_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "corps_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "crumb_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "dearth_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "doldrums_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "dreg_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "dusting_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "eighth_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "engineering_s1": {
         "s": "reviewed",
@@ -18654,13 +18675,16 @@
         "src": "9d78b5fc44f4"
       },
       "ether_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "eve_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "everlasting_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "feast_s1": {
         "s": "reviewed",
@@ -18668,7 +18692,8 @@
         "src": "479274882ec3"
       },
       "flank_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-012"
       },
       "flop_s1": {
         "s": "draft"
