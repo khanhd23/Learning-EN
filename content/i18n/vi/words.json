@@ -28713,9 +28713,9 @@
     }
   },
   "clarion_s1": {
-    "g": "tuyên bố vang dội",
+    "g": "c?ng b? r? r?ng v? vang d?i",
     "ex": {
-      "clarion_s1": "Chiến dịch tuyên bố vang dội lời kêu gọi đường phố an toàn hơn."
+      "clarion_s1": "Chi?n d?ch c?ng b? r? r?ng v? vang d?i l?i k?u g?i ???ng ph? an to?n h?n."
     },
     "tip": "",
     "regional": {}
@@ -28813,7 +28813,7 @@
     }
   },
   "distinguished_s1": {
-    "g": "danh tiếng; lỗi lạc",
+    "g": "??ng k?nh; l?i l?c",
     "ex": {
       "distinguished_s1": "Một giáo sư lỗi lạc giảng bài khai mạc."
     },
