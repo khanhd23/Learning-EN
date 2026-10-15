@@ -286,79 +286,104 @@
         "by": "codex-manual-ja-003"
       },
       "apply_for_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "leave_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "leave_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "incentive_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "account_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "deposit_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "deposit_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "withdraw_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "loan_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "loan_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "interest_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "interest_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "interest_s3": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "balance_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "balance_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "transfer_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "transfer_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "branch_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "branch_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "currency_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "exchange_rate_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "invest_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "profit_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "revenue_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "budget_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-004"
       },
       "expense_s1": {
         "s": "missing"
