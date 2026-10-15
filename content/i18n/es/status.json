@@ -19111,7 +19111,8 @@
         "by": "codex-manual-es-018"
       },
       "deception_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "deer_s1": {
         "s": "reviewed",
@@ -19119,19 +19120,24 @@
         "src": "c73dd740fc72"
       },
       "dexterity_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "doomsday_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "doorway_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "eating_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "enmity_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "envy_s1": {
         "s": "reviewed",
@@ -19139,13 +19145,16 @@
         "src": "a35395de77a1"
       },
       "epitome_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "falsetto_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "fir_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "fishing_s1": {
         "s": "reviewed",
@@ -19153,28 +19162,36 @@
         "src": "0e6b2e9de028"
       },
       "fluster_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "folly_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "footage_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "forefront_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "frenzy_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "gleam_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "glimmer_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "godfather_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "gravy_s1": {
         "s": "reviewed",
@@ -19182,10 +19199,12 @@
         "src": "84a30119d52a"
       },
       "guardian_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "gush_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "handsome_s1": {
         "s": "reviewed",
@@ -19193,10 +19212,12 @@
         "src": "cb5b8e910b45"
       },
       "harbinger_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "hardness_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "haven_s1": {
         "s": "reviewed",
@@ -19204,16 +19225,20 @@
         "src": "d88aec5e760b"
       },
       "helping_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "heyday_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "homage_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "iota_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-019"
       },
       "juggernaut_s1": {
         "s": "draft"
