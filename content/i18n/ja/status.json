@@ -86,79 +86,104 @@
         "by": "codex-manual-ja-001"
       },
       "remind_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "arrange_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "attend_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "attend_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "efficient_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "urgent_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "temporary_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "productive_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "stationery_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "extension_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "delegate_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "workload_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "in_charge_of_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "on_behalf_of_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "headquarters_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "reception_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "applicant_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "candidate_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "resume_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "interview_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "interview_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "hire_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "recruit_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "qualified_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "experience_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-002"
       },
       "salary_s1": {
         "s": "missing"
