@@ -29004,9 +29004,9 @@
     }
   },
   "touching_s1": {
-    "g": "sobre, a respeito de",
+    "g": "comovente",
     "ex": {
-      "touching_s1": "Ela fez várias perguntas sobre o orçamento."
+      "touching_s1": "Sua mensagem comovente fez o professor que estava se aposentando sorrir."
     }
   },
   "volcano_s1": {
@@ -29064,15 +29064,15 @@
     }
   },
   "earshot_s1": {
-    "g": "alcance da audição",
+    "g": "ao alcance da voz",
     "ex": {
-      "earshot_s1": "Mantenha as crianças ao alcance da audição."
+      "earshot_s1": "Mantenha as crian?as ao alcance da voz."
     }
   },
   "earthly_s1": {
-    "g": "terreno",
+    "g": "terreno, deste mundo",
     "ex": {
-      "earthly_s1": "Não havia motivo terreno para o alarme tocar."
+      "earthly_s1": "N?o havia raz?o alguma neste mundo para o alarme tocar."
     }
   },
   "easter_s1": {
