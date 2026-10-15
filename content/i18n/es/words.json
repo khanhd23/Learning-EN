@@ -26768,7 +26768,7 @@
   "salient_s1": {
     "g": "destacado",
     "ex": {
-      "salient_s1": "El informe destaca los hechos importantes del caso."
+      "salient_s1": "El informe destaca los hechos m?s destacados del caso."
     }
   },
   "sanguine_s1": {
@@ -26784,9 +26784,9 @@
     }
   },
   "slit_s1": {
-    "g": "cortar",
+    "g": "hacer un corte largo y estrecho",
     "ex": {
-      "slit_s1": "El sastre cortó la tela por la línea marcada."
+      "slit_s1": "El sastre hizo un corte largo y estrecho en la tela siguiendo la l?nea marcada."
     }
   },
   "solicit_s1": {
