@@ -1486,79 +1486,104 @@
         "by": "codex-manual-ja-015"
       },
       "guide_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "guide_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "map_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "baggage_claim_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "guest_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "vacant_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "check_out_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "check_out_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "front_desk_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "menu_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "dish_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "dish_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "waiter_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "chef_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "ingredient_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "vegetarian_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "tip_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "tip_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "serve_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "serve_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "amenity_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "housekeeping_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "suite_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "complimentary_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "cuisine_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-016"
       },
       "appetizer_s1": {
         "s": "missing"
