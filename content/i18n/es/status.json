@@ -18856,16 +18856,20 @@
         "src": "73392702400d"
       },
       "peep_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "persecution_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "pip_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "plight_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "purple_s1": {
         "s": "reviewed",
@@ -18873,19 +18877,24 @@
         "src": "cf24eb154de6"
       },
       "ramp_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "razzle_dazzle_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "reign_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "repository_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "reproach_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "rid_s1": {
         "s": "reviewed",
@@ -18893,31 +18902,40 @@
         "src": "1a1b73c46433"
       },
       "robe_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "saint_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "salvation_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "salvo_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "sap_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "scorn_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "scotch_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "scrape_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "serpent_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "shark_s1": {
         "s": "reviewed",
@@ -18925,7 +18943,8 @@
         "src": "ac9d27cac796"
       },
       "shepherd_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "sickness_s1": {
         "s": "reviewed",
@@ -18933,13 +18952,16 @@
         "src": "9932c6dab767"
       },
       "slouch_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "squire_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "stunt_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "thaw_s1": {
         "s": "reviewed",
@@ -18947,13 +18969,16 @@
         "src": "5ab6f0380aaa"
       },
       "thinking_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "tiptoe_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "torment_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-017"
       },
       "tot_s1": {
         "s": "draft"
