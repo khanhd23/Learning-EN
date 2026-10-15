@@ -25724,13 +25724,13 @@
   "savage_s1": {
     "g": "brutal; violento o cruel",
     "ex": {
-      "savage_s1": "persecución brutal"
+      "savage_s1": "La novela describe un ataque brutal contra el pueblo aislado."
     }
   },
   "settled_s1": {
     "g": "resuelto",
     "ex": {
-      "settled_s1": "Las dos partes alcanzaron un acuerdo resuelto."
+      "settled_s1": "Las dos partes alcanzaron un acuerdo definitivo."
     }
   },
   "stormy_s1": {
@@ -25824,9 +25824,9 @@
     }
   },
   "gallant_s1": {
-    "g": "gallardo",
+    "g": "valiente y honorable",
     "ex": {
-      "gallant_s1": "El bombero gallardo llevó al niño a un lugar seguro."
+      "gallant_s1": "El valiente bombero llev? al ni?o a un lugar seguro."
     }
   },
   "grate_s1": {
