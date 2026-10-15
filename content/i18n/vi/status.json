@@ -21263,25 +21263,32 @@
         "src": "d2e01d555217"
       },
       "devour_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "dispense_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "dwell_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "elevated_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "failed_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "fanciful_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "feeble_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "fond_s1": {
         "s": "approved",
@@ -21289,13 +21296,16 @@
         "src": "0a4b5b34192d"
       },
       "forlorn_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "german_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "governing_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "hasty_s1": {
         "s": "approved",
@@ -21303,10 +21313,12 @@
         "src": "61381aa649cf"
       },
       "heartily_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "howling_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "imitate_s1": {
         "s": "approved",
@@ -21314,10 +21326,12 @@
         "src": "be1591ea85d2"
       },
       "knowing_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "mute_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "orderly_s1": {
         "s": "approved",
@@ -21325,25 +21339,32 @@
         "src": "1997ac20eef3"
       },
       "picket_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "rambling_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "raven_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "repeating_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "restrained_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "shabby_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "shear_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "spiritual_s1": {
         "s": "approved",
@@ -21351,10 +21372,12 @@
         "src": "05d62f0d56fa"
       },
       "splendid_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "starve_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "sticky_s1": {
         "s": "approved",
@@ -21362,10 +21385,12 @@
         "src": "aaa732fce78b"
       },
       "stirring_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "sunken_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-030"
       },
       "tearing_s1": {
         "s": "draft"
