@@ -17361,10 +17361,12 @@
         "src": "06b7a2fdd806"
       },
       "beggar_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "chap_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "consume_s1": {
         "s": "reviewed",
@@ -17372,7 +17374,8 @@
         "src": "14a26273fe01"
       },
       "dawn_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "deeply_s1": {
         "s": "reviewed",
@@ -17380,10 +17383,12 @@
         "src": "e85316eb8f9f"
       },
       "delicacy_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "ebb_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "exclude_s1": {
         "s": "reviewed",
@@ -17391,7 +17396,8 @@
         "src": "28edc261a86f"
       },
       "fame_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "filling_s1": {
         "s": "reviewed",
@@ -17409,10 +17415,12 @@
         "src": "2567e26e7f97"
       },
       "haste_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "holler_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "i_s1": {
         "s": "reviewed",
@@ -17440,13 +17448,16 @@
         "src": "31abe3d1766a"
       },
       "learning_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "mast_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "means_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "mischief_s1": {
         "s": "reviewed",
@@ -17469,10 +17480,12 @@
         "src": "7fdbc89d36df"
       },
       "puppet_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "rascal_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "rat_s1": {
         "s": "reviewed",
@@ -17495,10 +17508,12 @@
         "src": "f0ac7155a66b"
       },
       "scent_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "stocking_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "they_s1": {
         "s": "reviewed",
@@ -17511,10 +17526,12 @@
         "src": "5d528b33492f"
       },
       "abatement_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "accession_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "behave_s1": {
         "s": "reviewed",
@@ -17522,7 +17539,8 @@
         "src": "0080473b91b8"
       },
       "berry_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "blessing_s1": {
         "s": "reviewed",
@@ -17540,7 +17558,8 @@
         "src": "cb46044cf5e9"
       },
       "discredit_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "elect_s1": {
         "s": "reviewed",
@@ -17563,10 +17582,12 @@
         "src": "e75503701507"
       },
       "fling_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "footing_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "marry_s1": {
         "s": "reviewed",
@@ -17579,7 +17600,8 @@
         "src": "19aa7cdcd824"
       },
       "parting_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "partner_s1": {
         "s": "reviewed",
@@ -17592,7 +17614,8 @@
         "src": "8f3f6096f66e"
       },
       "proclamation_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "provoke_s1": {
         "s": "reviewed",
@@ -17610,7 +17633,8 @@
         "src": "73f0f775b21d"
       },
       "uptake_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "weird_s1": {
         "s": "reviewed",
@@ -17618,7 +17642,8 @@
         "src": "66a3d924785d"
       },
       "ammonia_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-008"
       },
       "blade_s1": {
         "s": "draft"
