@@ -28174,9 +28174,9 @@
     }
   },
   "lore_s1": {
-    "g": "tradição",
+    "g": "folclore ou conhecimento tradicional",
     "ex": {
-      "lore_s1": "O guia compartilhou a tradição local sobre a montanha."
+      "lore_s1": "O guia compartilhou o folclore local sobre a montanha."
     }
   },
   "maid_s1": {
@@ -28302,7 +28302,7 @@
   "rebuke_s1": {
     "g": "repreensão",
     "ex": {
-      "rebuke_s1": "O gerente deu uma repreensão gentil por ele chegar atrasado."
+      "rebuke_s1": "O gerente lhe fez uma repreens?o gentil por ter chegado atrasado."
     }
   },
   "regiment_s1": {
