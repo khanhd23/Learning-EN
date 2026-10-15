@@ -29814,9 +29814,9 @@
     }
   },
   "wow_s1": {
-    "g": "admiração",
+    "g": "algo impressionante; express?o de surpresa ou admira??o",
     "ex": {
-      "wow_s1": "Os fogos de artifício foram uma verdadeira admiração."
+      "wow_s1": "Os fogos de artif?cio foram um verdadeiro espet?culo."
     }
   },
   "zinc_s1": {
@@ -29910,9 +29910,9 @@
     }
   },
   "pat_s1": {
-    "g": "exatamente",
+    "g": "pronto, simplista",
     "ex": {
-      "pat_s1": "Ela deu uma resposta simples demais sem conferir os detalhes."
+      "pat_s1": "Ela deu uma resposta pronta sem conferir os detalhes."
     }
   },
   "stink_s1": {

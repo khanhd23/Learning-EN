@@ -20351,22 +20351,28 @@
         "by": "codex-manual-ptbr-024"
       },
       "tom_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "tremulous_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "trying_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "vale_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "veneration_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "vim_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "voyage_s1": {
         "s": "reviewed",
@@ -20374,7 +20380,8 @@
         "src": "5463b45f88fb"
       },
       "wager_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "warrior_s1": {
         "s": "reviewed",
@@ -20382,37 +20389,48 @@
         "src": "7356cc214120"
       },
       "whereabouts_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "wince_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "wont_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "wow_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "zinc_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "abominable_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "abrupt_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "abusive_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "acting_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "astronomical_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "ditch_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "eternal_s1": {
         "s": "reviewed",
@@ -20420,10 +20438,12 @@
         "src": "b661fa08d0aa"
       },
       "formidable_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "ghostly_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "lively_s1": {
         "s": "reviewed",
@@ -20431,7 +20451,8 @@
         "src": "2a5edd10858d"
       },
       "maiden_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "our_s1": {
         "s": "reviewed",
@@ -20444,16 +20465,20 @@
         "src": "af29006d43cb"
       },
       "partake_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "pat_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "stink_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "transitive_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-025"
       },
       "vivacious_s1": {
         "s": "draft"
