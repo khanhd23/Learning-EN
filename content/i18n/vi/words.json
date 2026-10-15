@@ -25413,9 +25413,9 @@
     "regional": {}
   },
   "touching_s1": {
-    "g": "về, liên quan đến",
+    "g": "c?m ??ng, g?i s? c?m th?ng ho?c y?u m?n",
     "ex": {
-      "touching_s1": "Cô ấy hỏi vài câu liên quan đến ngân sách."
+      "touching_s1": "L?i nh?n c?m ??ng c?a c? khi?n ng??i gi?o vi?n s?p ngh? h?u m?m c??i."
     },
     "tip": "",
     "regional": {}
@@ -25499,7 +25499,7 @@
   "earthly_s1": {
     "g": "thuộc về trần thế",
     "ex": {
-      "earthly_s1": "Không có lý do trần thế nào khiến chuông báo động reo."
+      "earthly_s1": "Kh?ng c? l? do n?o tr?n ??i khi?n chu?ng b?o ??ng reo."
     },
     "tip": "",
     "regional": {}

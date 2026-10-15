@@ -20073,7 +20073,8 @@
         "by": "codex-manual-vi-020"
       },
       "touching_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "volcano_s1": {
         "s": "approved",
@@ -20081,25 +20082,32 @@
         "src": "12c0b97151a0"
       },
       "bloc_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "bob_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "cardinal_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "clasp_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "consolation_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "corresponding_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "dander_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "despair_s1": {
         "s": "approved",
@@ -20107,13 +20115,16 @@
         "src": "f78a99aec0dc"
       },
       "earshot_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "earthly_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "easter_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "faithful_s1": {
         "s": "approved",
@@ -20126,10 +20137,12 @@
         "src": "f36fc45c07d7"
       },
       "friends_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "frustum_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "furious_s1": {
         "s": "approved",
@@ -20137,7 +20150,8 @@
         "src": "1facffeb02e4"
       },
       "heed_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "her_s1": {
         "s": "approved",
@@ -20145,28 +20159,36 @@
         "src": "4d083bf65f23"
       },
       "huff_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "hullabaloo_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "intestine_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "ken_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "lark_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "midst_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "mortal_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "neon_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "nonsense_s1": {
         "s": "approved",
@@ -20174,10 +20196,12 @@
         "src": "7d536ec92d1e"
       },
       "omen_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "oodles_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "participle_s1": {
         "s": "approved",
@@ -20185,7 +20209,8 @@
         "src": "8b3999491612"
       },
       "pique_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-vi-021"
       },
       "reef_s1": {
         "s": "approved",
