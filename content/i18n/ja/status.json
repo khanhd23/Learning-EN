@@ -2086,79 +2086,104 @@
         "by": "codex-manual-ja-021"
       },
       "garage_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "location_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "plumber_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "leak_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "residential_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "roommate_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "downtown_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "downtown_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "suburb_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "own_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "own_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "construction_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "brick_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "ceiling_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "household_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "mortgage_rate_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "student_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "lesson_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "homework_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "exam_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "degree_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "degree_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "graduate_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "graduate_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "scholarship_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-022"
       },
       "tuition_s1": {
         "s": "missing"
