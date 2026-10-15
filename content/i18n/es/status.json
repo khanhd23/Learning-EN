@@ -19386,13 +19386,16 @@
         "by": "codex-manual-es-020"
       },
       "rummage_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "scamper_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "scum_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "sixty_s1": {
         "s": "reviewed",
@@ -19400,61 +19403,80 @@
         "src": "dd5fabc09a16"
       },
       "snub_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "solace_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "solitude_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "speaking_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "stature_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "strait_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "stranglehold_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "suspense_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "sway_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "tenacious_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "tenth_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "tether_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "tickle_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "toss_up_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "unrest_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "usury_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "venom_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "victor_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "ware_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "woodland_s1": {
         "s": "reviewed",
@@ -19462,7 +19484,8 @@
         "src": "30bfcf87cc50"
       },
       "zing_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "accuse_s1": {
         "s": "reviewed",
@@ -19485,10 +19508,12 @@
         "src": "c2bd2b3ccb59"
       },
       "mining_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "nonplus_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-es-021"
       },
       "queer_s1": {
         "s": "draft"
