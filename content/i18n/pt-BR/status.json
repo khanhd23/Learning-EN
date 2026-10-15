@@ -17856,22 +17856,28 @@
         "by": "codex-manual-ptbr-006"
       },
       "thrust_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "vanity_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "verification_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "vigour_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "wreck_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "accede_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "accountable_s1": {
         "s": "reviewed",
@@ -17884,7 +17890,8 @@
         "src": "fcc8dadc8063"
       },
       "avalanche_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "avenue_s1": {
         "s": "reviewed",
@@ -17892,13 +17899,16 @@
         "src": "71d175868418"
       },
       "ballast_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "brace_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "coil_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "companion_s1": {
         "s": "reviewed",
@@ -17906,7 +17916,8 @@
         "src": "41c94495a7a9"
       },
       "congress_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "contemplate_s1": {
         "s": "reviewed",
@@ -17919,10 +17930,12 @@
         "src": "adb3e76057d7"
       },
       "cutting_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "descent_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "devise_s1": {
         "s": "reviewed",
@@ -17930,7 +17943,8 @@
         "src": "7566bd040b68"
       },
       "dominion_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "entail_s1": {
         "s": "reviewed",
@@ -17938,19 +17952,24 @@
         "src": "bd2866d37768"
       },
       "facing_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "flutter_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "gripe_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "header_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "hitch_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "humanity_s1": {
         "s": "reviewed",
@@ -17963,10 +17982,12 @@
         "src": "232490624935"
       },
       "jest_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "kicker_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "lodge_s1": {
         "s": "reviewed",
@@ -17974,13 +17995,16 @@
         "src": "8185de915be1"
       },
       "louder_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "prose_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "refuge_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "remedy_s1": {
         "s": "reviewed",
@@ -17988,7 +18012,8 @@
         "src": "d623e84a83df"
       },
       "roar_s1": {
-        "s": "draft"
+        "s": "reviewed",
+        "by": "codex-manual-ptbr-007"
       },
       "rogue_s1": {
         "s": "draft"

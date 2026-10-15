@@ -26258,7 +26258,7 @@
   "coil_s1": {
     "g": "bobina",
     "ex": {
-      "coil_s1": "O cabo estava enrolado ao lado da mesa."
+      "coil_s1": "O cabo estava enrolado em uma bobina organizada ao lado da mesa."
     }
   },
   "companion_s1": {
@@ -26316,9 +26316,9 @@
     }
   },
   "facing_s1": {
-    "g": "entretela de cetim",
+    "g": "vista ou acabamento de cetim",
     "ex": {
-      "facing_s1": "A jaqueta tem uma entretela de cetim ao redor da gola."
+      "facing_s1": "A jaqueta tem um acabamento de cetim ao redor da gola."
     }
   },
   "flutter_s1": {
@@ -26402,7 +26402,7 @@
   "roar_s1": {
     "g": "rugido",
     "ex": {
-      "roar_s1": "Podíamos ouvir o rugido das ondas da casa."
+      "roar_s1": "Pod?amos ouvir, de dentro da casa, o rugido das ondas."
     }
   },
   "rogue_s1": {
