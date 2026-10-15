@@ -1786,79 +1786,104 @@
         "by": "codex-manual-ja-018"
       },
       "network_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "network_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "network_s3": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "data_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "backup_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "update_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "update_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "security_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "virus_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "virus_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "screen_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "screen_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "keyboard_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "technician_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "malfunction_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "user_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "website_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "browser_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "attachment_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "artificial_intelligence_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "innovation_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "digital_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "access_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "access_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "compatible_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-019"
       },
       "troubleshoot_s1": {
         "s": "missing"
