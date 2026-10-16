@@ -39510,13 +39510,16 @@
         "by": "codex-manual-ja-passage-009"
       },
       "p6_d5_app": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-010"
       },
       "p6_d5_flight": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-010"
       },
       "p6_d5_equipment": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-010"
       },
       "p6_d6_meeting": {
         "s": "missing"
