@@ -39426,13 +39426,16 @@
         "by": "codex-manual-ja-passage-002"
       },
       "p6_policy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-003"
       },
       "p6_hotel": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-003"
       },
       "p6_launch": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-003"
       },
       "p6_library": {
         "s": "missing"
