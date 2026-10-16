@@ -29876,26 +29876,31 @@
       },
       "b_level": {
         "s": "reviewed",
-        "by": "codex-manual-ko-ui-006"
+        "by": "codex-manual-ko-ui-007"
       },
       "b_mode": {
         "s": "reviewed",
-        "by": "codex-manual-ko-ui-006"
+        "by": "codex-manual-ko-ui-007"
       },
       "b_skill": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-007"
       },
       "b_source": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-007"
       },
       "b_topic": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-007"
       },
       "b_type": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-007"
       },
       "back": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-007"
       },
       "backup_desc": {
         "s": "missing"
@@ -29907,16 +29912,19 @@
         "s": "missing"
       },
       "backup_info": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-007"
       },
       "backup_title": {
         "s": "missing"
       },
       "best_combo": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-007"
       },
       "blank_n": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-007"
       },
       "bowl_full": {
         "s": "missing"
