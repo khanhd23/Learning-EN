@@ -31893,34 +31893,44 @@
         "by": "codex-manual-ko-ui-051"
       },
       "skip": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-052"
       },
       "skip_test": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-052"
       },
       "slot_bed": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-052"
       },
       "slot_face": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-052"
       },
       "slot_hat": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-052"
       },
       "slot_lamp": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-052"
       },
       "slot_neck": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-052"
       },
       "slot_plant": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-052"
       },
       "slot_rug": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-052"
       },
       "slot_theme": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-052"
       },
       "slot_toy": {
         "s": "missing"
