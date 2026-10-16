@@ -30079,13 +30079,16 @@
         "by": "codex-manual-ko-ui-011"
       },
       "daily_challenge": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-026"
       },
       "daily_challenge_desc": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-026"
       },
       "daily_challenge_done": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-026"
       },
       "daily_goal": {
         "s": "reviewed",
@@ -30833,10 +30836,12 @@
         "s": "missing"
       },
       "mic_reason": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-026"
       },
       "mic_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-026"
       },
       "mine": {
         "s": "missing"
@@ -31357,7 +31362,8 @@
         "s": "missing"
       },
       "quest_new_words": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-026"
       },
       "quest_progress": {
         "s": "missing"
@@ -31366,10 +31372,12 @@
         "s": "missing"
       },
       "quest_speaking": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-026"
       },
       "quest_stories": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-026"
       },
       "quest_xp": {
         "s": "missing"
@@ -31697,7 +31705,8 @@
         "by": "codex-manual-ko-ui-025"
       },
       "speak_again": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-026"
       },
       "species_cat": {
         "s": "missing"
@@ -32074,7 +32083,8 @@
         "s": "missing"
       },
       "weekly_quests": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-026"
       },
       "welcome_session": {
         "s": "missing"
