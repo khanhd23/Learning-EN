@@ -30641,37 +30641,47 @@
         "by": "codex-manual-ko-ui-025"
       },
       "ins_sentence": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-028"
       },
       "ins_spelling": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-028"
       },
       "ins_stress": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-028"
       },
       "ins_synonym": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-028"
       },
       "ins_transform": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-028"
       },
       "ins_word_order": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-028"
       },
       "keep_working": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-028"
       },
       "last_30": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-028"
       },
       "last_7": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-028"
       },
       "learn_list": {
         "s": "missing"
       },
       "learn_topic": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-028"
       },
       "level_desc_1": {
         "s": "missing"
