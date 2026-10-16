@@ -30943,34 +30943,44 @@
         "by": "codex-manual-ko-ui-033"
       },
       "mock_leave_msg": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-034"
       },
       "mock_leave_save": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-034"
       },
       "mock_leave_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-034"
       },
       "mock_result": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-034"
       },
       "mode_flashcard": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-034"
       },
       "mode_listening": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-034"
       },
       "mode_matching": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-034"
       },
       "mode_practice": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-034"
       },
       "mode_quiz": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-034"
       },
       "mode_spelling": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-034"
       },
       "mode_timed": {
         "s": "missing"
