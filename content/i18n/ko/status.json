@@ -26875,13 +26875,16 @@
         "by": "codex-manual-ko-grammar-003"
       },
       "present_continuous": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-004"
       },
       "comparison": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-004"
       },
       "quantifiers": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-004"
       },
       "future": {
         "s": "missing"
