@@ -38720,7 +38720,8 @@
         "by": "codex-manual-ja-q462"
       },
       "qdea57421d": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-q463"
       },
       "q0bdb183e8": {
         "s": "reviewed",
@@ -38743,31 +38744,39 @@
         "by": "codex-manual-ja-q462"
       },
       "q93324fc6a": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-q463"
       },
       "q4b5999eda": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-q463"
       },
       "q5a992a207": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-q463"
       },
       "q79fa16989": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-q463"
       },
       "qe1da35cac": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-q463"
       },
       "q7ee3fe26c": {
         "s": "missing"
       },
       "q2480d56ac": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-q463"
       },
       "q7e22a5338": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-q463"
       },
       "qa347f453d": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-q463"
       },
       "q49adf24f3": {
         "s": "missing"
@@ -39239,6 +39248,10 @@
       },
       "qc5eae3739": {
         "s": "missing"
+      },
+      "q7ee3fe26": {
+        "s": "reviewed",
+        "by": "codex-manual-ja-q463"
       }
     },
     "passages": {
