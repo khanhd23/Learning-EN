@@ -914,34 +914,44 @@
         "by": "codex-manual-ko-words-023"
       },
       "exchange_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-024"
       },
       "representative_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-024"
       },
       "contract_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-024"
       },
       "contract_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-024"
       },
       "agreement_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-024"
       },
       "terms_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-024"
       },
       "sign_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-024"
       },
       "sign_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-024"
       },
       "negotiate_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-024"
       },
       "expire_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-024"
       },
       "renew_s1": {
         "s": "missing"
