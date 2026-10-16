@@ -42,45 +42,45 @@
     ]
   },
   "plurals": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "복수 명사",
+    "when": "사람이나 사물이 둘 이상일 때 씁니다.",
+    "body": "대부분의 명사는 -s를 붙입니다. -s, -sh, -ch, -x로 끝나는 명사와 -o로 끝나는 일부 명사는 -es를 붙입니다(buses, watches, boxes, tomatoes). 자음+y로 끝나면 -ies로 바뀝니다(city → cities). 불규칙 복수형은 따로 익혀야 합니다: man → men, woman → women, child → children, foot → feet, tooth → teeth, person → people, mouse → mice. information, advice, furniture 같은 셀 수 없는 명사는 복수형이 없습니다.",
     "examples": [
-      "",
-      "",
-      ""
+      "There are three boxes on the floor.",
+      "Many children like cartoons.",
+      "We visited two cities."
     ],
     "mistakes": [
-      "",
-      ""
+      "two childs → two children — Child의 불규칙 복수형은 children입니다.",
+      "many informations → much information — Information은 셀 수 없으므로 -s를 붙이지 않고 many가 아니라 much와 함께 씁니다."
     ]
   },
   "prep_time": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "시간과 장소의 전치사: in / on / at",
+    "when": "어떤 일이 언제 일어나는지 또는 무언가가 어디에 있는지 말할 때 씁니다.",
+    "body": "시간에는 at + 시각이나 특정 시점(at 7 o'clock, at night), on + 요일이나 날짜(on Monday, on 5 May), in + 월·연도·계절·하루의 일부(in May, in 2025, in summer, in the morning)를 씁니다. 장소에는 at + 지점(at the bus stop), on + 표면(on the table), in + 공간이나 구역의 안(in the box, in the city)을 씁니다.",
     "examples": [
-      "",
-      "",
-      ""
+      "The meeting is at 9 a.m. on Monday.",
+      "I was born in 2005.",
+      "Your phone is on the desk."
     ],
     "mistakes": [
-      "",
-      ""
+      "in Monday → on Monday — 요일 앞에는 on을 씁니다.",
+      "at the morning → in the morning — 하루의 일부에는 in을 씁니다: in the morning, in the afternoon, in the evening. 예외는 at night입니다."
     ]
   },
   "there_is": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "There is / There are",
+    "when": "무언가가 존재하거나 특정 장소에 있음을 말할 때 씁니다.",
+    "body": "어딘가에 무언가가 존재한다고 말할 때는 have나 it has가 아니라 there is 또는 there are를 씁니다. 동사는 뒤에 오는 명사에 맞춥니다: There is a book. There are two books. 목록에서는 첫 번째 명사에 맞춥니다: There is a pen and two books. 의문문은 Is there…? 또는 Are there…?로 만듭니다.",
     "examples": [
-      "",
-      "",
-      ""
+      "There is a bank near my house.",
+      "There are 30 students in my class.",
+      "Is there any milk in the fridge?"
     ],
     "mistakes": [
-      "",
-      ""
+      "It has a park near here. → There is a park near here. — 장소에 무언가가 존재함을 말할 때는 there is를 씁니다. It has는 어떤 것이 무언가를 소유한다는 뜻입니다.",
+      "There is many people. → There are many people. — People은 복수이므로 동사는 are입니다."
     ]
   },
   "can_could": {

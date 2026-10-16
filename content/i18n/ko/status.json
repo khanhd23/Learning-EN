@@ -26851,13 +26851,16 @@
         "by": "codex-manual-ko-grammar-001"
       },
       "plurals": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-002"
       },
       "prep_time": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-002"
       },
       "there_is": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-002"
       },
       "can_could": {
         "s": "missing"
