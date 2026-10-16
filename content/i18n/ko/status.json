@@ -1634,34 +1634,44 @@
         "by": "codex-manual-ko-words-041"
       },
       "host_s3": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-042"
       },
       "recommend_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-042"
       },
       "conference_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-042"
       },
       "seminar_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-042"
       },
       "workshop_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-042"
       },
       "venue_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-042"
       },
       "register_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-042"
       },
       "register_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-042"
       },
       "participant_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-042"
       },
       "speaker_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-042"
       },
       "presentation_s1": {
         "s": "missing"
