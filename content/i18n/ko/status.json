@@ -31152,22 +31152,28 @@
         "by": "codex-manual-ko-ui-038"
       },
       "ob_time": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-039"
       },
       "open_pet_home": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-039"
       },
       "owned": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-039"
       },
       "palette": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-039"
       },
       "palette_legend": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-039"
       },
       "part_test": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-039"
       },
       "passage_hide": {
         "s": "missing"
@@ -31176,7 +31182,8 @@
         "s": "missing"
       },
       "pet_ate": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-039"
       },
       "pet_care_ad": {
         "s": "reviewed",
@@ -31195,7 +31202,8 @@
         "by": "codex-manual-ko-ui-019"
       },
       "pet_cd": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-039"
       },
       "pet_default_cat": {
         "s": "missing"
@@ -31210,10 +31218,12 @@
         "s": "missing"
       },
       "pet_full_after": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-039"
       },
       "pet_hidden_hint": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-039"
       },
       "pet_hide": {
         "s": "missing"
