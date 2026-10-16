@@ -170,143 +170,173 @@
     ]
   },
   "comparison": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "比較級と最上級",
+    "when": "2つ以上の人や物を比較するときに使う。",
+    "body": "短い形容詞には-er / -est、長い形容詞にはmore / mostを使う。as ... asは同程度の比較に使う。",
     "examples": [
-      "",
-      "",
-      ""
+      "This phone is cheaper than that one.",
+      "She is the best student in the class.",
+      "My town is as quiet as a village."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "This phone is more cheap than that one.",
+        "right": "This phone is cheaper than that one.",
+        "why": "短い形容詞には-er / -est、長い形容詞にはmore / mostを使う。as ... asは同程度の比較に使う。"
+      }
     ]
   },
   "quantifiers": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "可算名詞・不可算名詞と数量詞",
+    "when": "量や数について話すときに使う。",
+    "body": "how muchは不可算名詞、how manyは可算名詞に使う。a fewは少数の可算名詞、someは肯定文などで使う。",
     "examples": [
-      "",
-      "",
-      ""
+      "How much money do you need?",
+      "I have a few friends in Canada.",
+      "Would you like some tea?"
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "How many money do you need?",
+        "right": "How much money do you need?",
+        "why": "how muchは不可算名詞、how manyは可算名詞に使う。a fewは少数の可算名詞、someは肯定文などで使う。"
+      }
     ]
   },
   "future": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "willとbe going to",
+    "when": "将来のこと、今決めたこと、予測、計画について話す。",
+    "body": "willはその場での決定や予測、be going toは既にある計画や目に見える根拠のある予測に使う。",
     "examples": [
-      "",
-      "",
-      ""
+      "I'm hungry. I'll make you a sandwich.",
+      "We're going to visit Japan next month.",
+      "Look at the sky! It's going to rain."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "I going to visit Japan.",
+        "right": "I'm going to visit Japan.",
+        "why": "willはその場での決定や予測、be going toは既にある計画や目に見える根拠のある予測に使う。"
+      }
     ]
   },
   "past_continuous": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "過去進行形",
+    "when": "過去の特定時点で進行中だった行動、中断された行動、別の行動と同時に起きた行動を表す。",
+    "body": "was / wereと動詞の-ing形を使う。whenの後ろには短い出来事、whileの後ろには進行中の行動を置くことが多い。",
     "examples": [
-      "",
-      "",
-      ""
+      "I was cooking dinner at eight yesterday.",
+      "They were watching a film when the lights went out.",
+      "While I was walking home, it started to rain."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "I cooking dinner at eight.",
+        "right": "I was cooking dinner at eight.",
+        "why": "was / wereと動詞の-ing形を使う。whenの後ろには短い出来事、whileの後ろには進行中の行動を置くことが多い。"
+      }
     ]
   },
   "must_should": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "must / should / have to",
+    "when": "義務、助言、禁止されていることについて話す。",
+    "body": "mustは強い義務、shouldは助言、have toは必要性を表す。mustn'tはしてはいけない、don't have toはする必要がないという意味。",
     "examples": [
-      "",
-      "",
-      ""
+      "You should drink more water.",
+      "You mustn't smoke here.",
+      "You don't have to come if you're busy."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "You mustn't to smoke here.",
+        "right": "You mustn't smoke here.\t",
+        "why": "mustは強い義務、shouldは助言、have toは必要性を表す。mustn'tはしてはいけない、don't have toはする必要がないという意味。"
+      }
     ]
   },
   "pronouns": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "代名詞と所有代名詞",
+    "when": "名詞の代わりに使ったり、物が誰のものかを示したりする。",
+    "body": "主格、目的格、所有形、再帰形を文中の役割に応じて使い分ける。",
     "examples": [
-      "",
-      "",
-      ""
+      "This is my bag. That one is yours.",
+      "Can you help me?",
+      "She made the cake herself."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "Can you help I?",
+        "right": "Can you help me?",
+        "why": "主格、目的格、所有形、再帰形を文中の役割に応じて使い分ける。"
+      }
     ]
   },
   "present_perfect": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "現在完了（過去形との違い）",
+    "when": "経験、終わったばかりの行動、過去に始まり現在も続く状態、現在に結果がある過去の行動を表す。",
+    "body": "have / hasと過去分詞を使う。明確に終わった過去の時点を示す場合は通常、過去形を使う。",
     "examples": [
-      "",
-      "",
-      ""
+      "I have already finished my homework.",
+      "She has worked here since 2019.",
+      "Have you ever been to Korea?"
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "I have finished it yesterday.",
+        "right": "I finished it yesterday.",
+        "why": "have / hasと過去分詞を使う。明確に終わった過去の時点を示す場合は通常、過去形を使う。"
+      }
     ]
   },
   "present_perfect_continuous": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "現在完了進行形",
+    "when": "過去に始まり現在も続く行動、または終わったばかりで現在に結果がある行動を表す。",
+    "body": "have / has beenと動詞の-ing形を使い、行動の継続時間や過程に焦点を置く。",
     "examples": [
-      "",
-      "",
-      ""
+      "I have been studying for two hours.",
+      "She has been working here since May.",
+      "It has been raining all morning."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "I have studying for two hours.",
+        "right": "I have been studying for two hours.",
+        "why": "have / has beenと動詞の-ing形を使い、行動の継続時間や過程に焦点を置く。"
+      }
     ]
   },
   "future_continuous": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "未来進行形",
+    "when": "将来の特定の時点で進行中となる行動を表す。",
+    "body": "will beと動詞の-ing形を使う。未来のある時点で進行中の行動を示す。",
     "examples": [
-      "",
-      "",
-      ""
+      "This time tomorrow, I will be flying to Seoul.",
+      "At nine tonight, she will be working.",
+      "When you arrive, we will be waiting outside."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "I will flying tomorrow.",
+        "right": "I will be flying tomorrow.",
+        "why": "will beと動詞の-ing形を使う。未来のある時点で進行中の行動を示す。"
+      }
     ]
   },
   "passive": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "受動態",
+    "when": "行動を受ける人や物が重要な場合、または行為者が不明・不要な場合に使う。",
+    "body": "be動詞と過去分詞を使う。時制はbe動詞で示し、行為者を言う場合はbyを使う。",
     "examples": [
-      "",
-      "",
-      ""
+      "This bridge was built in 1900.",
+      "English is spoken all over the world.",
+      "The meeting will be held on Monday."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "This bridge built in 1900.",
+        "right": "This bridge was built in 1900.",
+        "why": "be動詞と過去分詞を使う。時制はbe動詞で示し、行為者を言う場合はbyを使う。"
+      }
     ]
   },
   "conditionals": {

@@ -35716,34 +35716,44 @@
         "by": "codex-manual-ja-357"
       },
       "comparison": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-358"
       },
       "quantifiers": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-358"
       },
       "future": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-358"
       },
       "past_continuous": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-358"
       },
       "must_should": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-358"
       },
       "pronouns": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-358"
       },
       "present_perfect": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-358"
       },
       "present_perfect_continuous": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-358"
       },
       "future_continuous": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-358"
       },
       "passive": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-358"
       },
       "conditionals": {
         "s": "missing"
