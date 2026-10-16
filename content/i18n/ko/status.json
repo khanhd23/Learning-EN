@@ -31933,22 +31933,28 @@
         "by": "codex-manual-ko-ui-052"
       },
       "slot_toy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-053"
       },
       "slot_wall": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-053"
       },
       "sort_az": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-053"
       },
       "sort_default": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-053"
       },
       "sort_hard": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-053"
       },
       "sort_wrong": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-053"
       },
       "sound_practice": {
         "s": "reviewed",
@@ -31976,16 +31982,20 @@
         "s": "missing"
       },
       "speed_sub": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-053"
       },
       "speed_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-053"
       },
       "src_new": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-053"
       },
       "src_saved": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-053"
       },
       "src_wrong": {
         "s": "missing"
