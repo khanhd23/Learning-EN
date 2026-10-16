@@ -31215,7 +31215,8 @@
         "s": "missing"
       },
       "pet_drag_hint": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-040"
       },
       "pet_full_after": {
         "s": "reviewed",
@@ -31226,10 +31227,12 @@
         "by": "codex-manual-ko-ui-039"
       },
       "pet_hide": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-040"
       },
       "pet_hide_bubbles_today": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-040"
       },
       "pet_item_bed_basket": {
         "s": "missing"
@@ -31343,25 +31346,32 @@
         "s": "missing"
       },
       "pet_menu_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-040"
       },
       "pet_reset_position": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-040"
       },
       "pet_tap_cd": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-040"
       },
       "pet_teaser": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-040"
       },
       "pet_tip": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-040"
       },
       "pet_too_many_pats": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-040"
       },
       "placement_intro": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-040"
       },
       "placement_later": {
         "s": "missing"
