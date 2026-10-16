@@ -31813,34 +31813,44 @@
         "by": "codex-manual-ko-ui-049"
       },
       "set_new_words": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-050"
       },
       "set_notifications": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-050"
       },
       "set_open_pet": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-050"
       },
       "set_pet": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-050"
       },
       "set_pet_size": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-050"
       },
       "set_privacy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-050"
       },
       "set_reduce_motion": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-050"
       },
       "set_reminder": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-050"
       },
       "set_reminder_time": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-050"
       },
       "set_reset_pos": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-050"
       },
       "set_show_pet": {
         "s": "missing"
