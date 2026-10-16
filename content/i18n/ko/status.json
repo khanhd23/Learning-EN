@@ -30375,31 +30375,40 @@
         "by": "codex-manual-ko-ui-018"
       },
       "f_new": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-019"
       },
       "f_saved": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-019"
       },
       "fb_almost": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-019"
       },
       "fb_correct_1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-019"
       },
       "fb_correct_2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-019"
       },
       "fb_correct_3": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-019"
       },
       "fb_correct_4": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-019"
       },
       "fb_wrong": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-019"
       },
       "feed": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-019"
       },
       "fix_to": {
         "s": "missing"
@@ -31010,7 +31019,8 @@
         "s": "missing"
       },
       "pet_care_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-019"
       },
       "pet_cd": {
         "s": "missing"
