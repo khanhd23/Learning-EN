@@ -39410,13 +39410,16 @@
     },
     "passages": {
       "p6_renovation": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-001"
       },
       "p6_order": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-001"
       },
       "p6_hiring": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-001"
       },
       "p6_conference": {
         "s": "missing"

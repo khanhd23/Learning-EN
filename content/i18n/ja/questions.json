@@ -1064,26 +1064,26 @@
   "passages": {
     "p6_renovation": {
       "blanks": [
-        "",
-        "",
-        "",
-        ""
+        "作業は未来のことで、動作を受けるのは lobby なので、受動態は will be renovated です。",
+        "この文は工事期間について住民に実用的な情報を追加します。エレベーターは通常どおり動きます。",
+        "some の後には名詞が必要なので、inconvenience です。",
+        "この文は新しい設備をもう1つ追加するため、In addition が適切です。"
       ]
     },
     "p6_order": {
       "blanks": [
-        "",
-        "",
-        "",
-        ""
+        "Within に期間が続くと、その期間内という意味になります。つまり within two weeks です。",
+        "品切れを伝えた後なので、遅れについて謝罪する文が最も適切です。",
+        "For customers who は「そのような顧客の場合」という意味です。",
+        "メールには reply to を使います。"
       ]
     },
     "p6_hiring": {
       "blanks": [
-        "",
-        "",
-        "",
-        ""
+        "名詞句 marketing assistant の前には形容詞 enthusiastic が必要です。",
+        "plan と並列するため（help plan ... and analyze）、動詞の原形 analyze が必要です。",
+        "段落では応募者の要件を挙げているため、別の要件を表す文が適切です。",
+        "動作を受けるのは candidates なので、受動態 are selected です。"
       ]
     },
     "p6_conference": {
