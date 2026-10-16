@@ -26935,13 +26935,16 @@
         "by": "codex-manual-ko-grammar-008"
       },
       "agreement": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-009"
       },
       "word_forms": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-009"
       },
       "past_perfect": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-009"
       },
       "past_perfect_continuous": {
         "s": "missing"
