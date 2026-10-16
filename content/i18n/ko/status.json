@@ -30855,28 +30855,36 @@
         "by": "codex-manual-ko-ui-031"
       },
       "mastery_new": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-032"
       },
       "mastery_stats": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-032"
       },
       "matches": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-032"
       },
       "max_stage": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-032"
       },
       "meal_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-032"
       },
       "meal_today": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-032"
       },
       "meanings": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-032"
       },
       "memory_tip": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-032"
       },
       "mic_reason": {
         "s": "reviewed",
@@ -30887,10 +30895,12 @@
         "by": "codex-manual-ko-ui-026"
       },
       "mine": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-032"
       },
       "mine_empty": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-032"
       },
       "mine_known": {
         "s": "missing"
