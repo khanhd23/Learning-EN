@@ -6,25 +6,32 @@
   "entries": {
     "words": {
       "office_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-001"
       },
       "office_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-001"
       },
       "meeting_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-001"
       },
       "schedule_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-001"
       },
       "schedule_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-001"
       },
       "deadline_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-001"
       },
       "colleague_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-001"
       },
       "supervisor_s1": {
         "s": "missing"
