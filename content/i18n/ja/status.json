@@ -40848,79 +40848,104 @@
         "by": "codex-manual-ja-382"
       },
       "set_notifications": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "set_open_pet": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "set_pet": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "set_pet_size": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "set_privacy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "set_reduce_motion": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "set_reminder": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "set_reminder_time": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "set_reset_pos": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "set_show_pet": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "set_slow_tts": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "set_sounds": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "set_text_size": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "set_theme": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "set_translation": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "settings": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "show_more": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "show_translation": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "signals": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "skip": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "skip_test": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "slot_bed": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "slot_face": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "slot_hat": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "slot_lamp": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-383"
       },
       "slot_neck": {
         "s": "missing"
