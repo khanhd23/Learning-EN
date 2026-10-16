@@ -31474,7 +31474,8 @@
         "by": "codex-manual-ko-ui-043"
       },
       "privacy_ads": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-044"
       },
       "privacy_ads_title": {
         "s": "reviewed",
@@ -31497,29 +31498,36 @@
         "by": "codex-manual-ko-ui-043"
       },
       "privacy_link_hint": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-044"
       },
       "privacy_microphone": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-044"
       },
       "privacy_microphone_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-044"
       },
       "privacy_open_link": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-044"
       },
       "privacy_policy": {
         "s": "reviewed",
         "by": "codex-manual-ko-ui-043"
       },
       "privacy_reminders": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-044"
       },
       "privacy_reminders_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-044"
       },
       "privacy_text": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-044"
       },
       "quest_daily": {
         "s": "reviewed",
@@ -31554,10 +31562,12 @@
         "by": "codex-manual-ko-ui-027"
       },
       "quick_session": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-044"
       },
       "quiet_hours": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-044"
       },
       "quit_keep": {
         "s": "missing"
