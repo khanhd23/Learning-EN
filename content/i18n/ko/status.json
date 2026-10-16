@@ -31458,34 +31458,43 @@
         "by": "codex-manual-ko-ui-042"
       },
       "preset_default": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-043"
       },
       "preset_name": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-043"
       },
       "preset_saved": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-043"
       },
       "prev": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-043"
       },
       "privacy_ads": {
         "s": "missing"
       },
       "privacy_ads_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-043"
       },
       "privacy_backup": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-043"
       },
       "privacy_backup_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-043"
       },
       "privacy_intro": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-043"
       },
       "privacy_intro_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-043"
       },
       "privacy_link_hint": {
         "s": "missing"
@@ -31500,7 +31509,8 @@
         "s": "missing"
       },
       "privacy_policy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-043"
       },
       "privacy_reminders": {
         "s": "missing"
