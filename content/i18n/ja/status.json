@@ -39522,13 +39522,16 @@
         "by": "codex-manual-ja-passage-010"
       },
       "p6_d6_meeting": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-011"
       },
       "p6_d6_sales": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-011"
       },
       "p6_d6_lease": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-011"
       },
       "p6_d6_training": {
         "s": "missing"
