@@ -594,34 +594,44 @@
         "by": "codex-manual-ko-words-015"
       },
       "loss_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-016"
       },
       "cost_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-016"
       },
       "cost_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-016"
       },
       "accurate_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-016"
       },
       "fiscal_year_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-016"
       },
       "bill_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-016"
       },
       "balance_sheet_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-016"
       },
       "expenditure_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-016"
       },
       "advertise_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-016"
       },
       "campaign_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-016"
       },
       "brand_s1": {
         "s": "missing"
