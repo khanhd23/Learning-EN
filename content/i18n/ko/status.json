@@ -31610,28 +31610,36 @@
         "by": "codex-manual-ko-ui-045"
       },
       "rate_yes": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-046"
       },
       "recent_searches": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-046"
       },
       "redo_all": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-046"
       },
       "redo_group": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-046"
       },
       "remove_mastered": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-046"
       },
       "rename": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-046"
       },
       "report": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-046"
       },
       "report_body": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-046"
       },
       "report_mistake": {
         "s": "missing"
@@ -31646,10 +31654,12 @@
         "s": "missing"
       },
       "report_subject": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-046"
       },
       "reset_confirm": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-046"
       },
       "reset_done": {
         "s": "missing"
