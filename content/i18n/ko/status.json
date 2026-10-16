@@ -30007,34 +30007,44 @@
         "by": "codex-manual-ko-ui-009"
       },
       "close": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-010"
       },
       "coins_earned": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-010"
       },
       "coins_hint": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-010"
       },
       "collocations": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-010"
       },
       "coming_soon": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-010"
       },
       "common_mistakes": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-010"
       },
       "confusables": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-010"
       },
       "confused_with": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-010"
       },
       "cont": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-010"
       },
       "contact": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-010"
       },
       "continue_grammar": {
         "s": "missing"
