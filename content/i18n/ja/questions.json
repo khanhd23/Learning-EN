@@ -1216,26 +1216,26 @@
     },
     "p6_d3_feedback": {
       "blanks": [
-        "",
-        "",
-        "",
-        ""
+        "Approximately は take を修飾する副詞で、およその所要時間を示します。",
+        "Find はここで目的格補語を取ります。Useful は顧客が重視する機能を表します。",
+        "If は、読み手がすでにアンケートを完了している条件を導入します。",
+        "By は返信して割引コードを受け取る期限を示します。"
       ]
     },
     "p6_d4_refund": {
       "blanks": [
-        "",
-        "",
-        "",
-        ""
+        "Directly は issued を修飾し、返金が元の方法で行われることを説明します。",
+        "need additional time to の後には不定詞 to release が必要です。",
+        "Meanwhile は待機中に取る行動を導入します。",
+        "Provide assistance はサポートチームからの助けを表す正しい名詞句です。"
       ]
     },
     "p6_d4_budget": {
       "blanks": [
-        "",
-        "",
-        "",
-        ""
+        "Accurate は正確な figures を説明する形容詞です。",
+        "If は説明が必要になる条件を導入します。",
+        "Additional は不可算名詞 information を修飾する形容詞です。",
+        "By は最終決定を送る期限を示します。"
       ]
     },
     "p6_d4_support": {

@@ -39486,13 +39486,16 @@
         "by": "codex-manual-ja-passage-007"
       },
       "p6_d3_feedback": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-008"
       },
       "p6_d4_refund": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-008"
       },
       "p6_d4_budget": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-008"
       },
       "p6_d4_support": {
         "s": "missing"
