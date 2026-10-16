@@ -29904,7 +29904,8 @@
         "by": "codex-manual-ko-ui-007"
       },
       "backup_desc": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-071"
       },
       "backup_done": {
         "s": "missing"
@@ -29917,7 +29918,8 @@
         "by": "codex-manual-ko-ui-007"
       },
       "backup_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-071"
       },
       "best_combo": {
         "s": "reviewed",
@@ -30679,7 +30681,8 @@
         "by": "codex-manual-ko-ui-028"
       },
       "learn_list": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-071"
       },
       "learn_topic": {
         "s": "reviewed",
@@ -30718,7 +30721,8 @@
         "by": "codex-manual-ko-ui-029"
       },
       "list_source": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-071"
       },
       "listen": {
         "s": "reviewed",
@@ -31021,7 +31025,8 @@
         "by": "codex-manual-ko-ui-035"
       },
       "n_of_m_ready": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-071"
       },
       "n_questions": {
         "s": "reviewed",
@@ -31180,10 +31185,12 @@
         "by": "codex-manual-ko-ui-039"
       },
       "passage_hide": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-071"
       },
       "passage_show": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-071"
       },
       "pet_ate": {
         "s": "reviewed",
@@ -31810,7 +31817,8 @@
         "by": "codex-manual-ko-ui-048"
       },
       "section_n": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-071"
       },
       "see_word": {
         "s": "reviewed",
@@ -32536,10 +32544,12 @@
         "by": "codex-manual-ko-ui-065"
       },
       "word_lists": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-071"
       },
       "word_lists_desc": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-071"
       },
       "word_of_day": {
         "s": "reviewed",
