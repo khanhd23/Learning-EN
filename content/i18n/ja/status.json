@@ -39546,22 +39546,28 @@
         "by": "codex-manual-ja-passage-012"
       },
       "p6_d7_recruitment": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-013"
       },
       "p6_d7_maintenance": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-013"
       },
       "p6_d8_feedback": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-013"
       },
       "p6_d8_shipping": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-013"
       },
       "p6_d8_training": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-013"
       },
       "p6_d8_vendor": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-013"
       }
     },
     "ui": {
