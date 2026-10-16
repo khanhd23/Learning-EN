@@ -32290,38 +32290,48 @@
         "by": "codex-manual-ko-ui-060"
       },
       "tag_wish": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-061"
       },
       "tag_word_order": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-061"
       },
       "tap_to_flip": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-061"
       },
       "tap_to_replay": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-061"
       },
       "tap_to_speak": {
         "s": "reviewed",
         "by": "codex-manual-ko-ui-025"
       },
       "tap_wrong_part": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-061"
       },
       "tell_apart": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-061"
       },
       "test_meta": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-061"
       },
       "tests": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-061"
       },
       "theme_dark": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-061"
       },
       "theme_light": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-061"
       },
       "theme_system": {
         "s": "missing"
