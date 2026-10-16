@@ -554,34 +554,44 @@
         "by": "codex-manual-ko-words-014"
       },
       "refund_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-015"
       },
       "charge_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-015"
       },
       "charge_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-015"
       },
       "charge_s3": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-015"
       },
       "total_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-015"
       },
       "total_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-015"
       },
       "increase_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-015"
       },
       "increase_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-015"
       },
       "decrease_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-015"
       },
       "decrease_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-015"
       },
       "loss_s1": {
         "s": "missing"
