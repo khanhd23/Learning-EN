@@ -40648,79 +40648,104 @@
         "by": "codex-manual-ja-380"
       },
       "rename": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "report": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "report_body": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "report_mistake": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "report_mistake_body": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "report_mistake_no_app": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "report_mistake_subject": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "report_subject": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "reset_confirm": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "reset_done": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "reset_msg": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "reset_progress": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "reset_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "restore_bad_file": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "restore_confirm_msg": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "restore_confirm_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "restore_desc": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "restore_done": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "restore_newer_version": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "restore_replace": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "restore_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "result_done": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "result_great": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "result_meta": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "retry_wrong": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-381"
       },
       "review_answers": {
         "s": "missing"
