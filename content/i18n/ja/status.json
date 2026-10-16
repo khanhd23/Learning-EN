@@ -41548,13 +41548,16 @@
         "by": "codex-manual-ja-389"
       },
       "xp_left": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-390"
       },
       "you_said": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-390"
       },
       "your_weak": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-390"
       }
     }
   }
