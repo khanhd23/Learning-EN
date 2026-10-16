@@ -26995,19 +26995,24 @@
         "by": "codex-manual-ko-grammar-013"
       },
       "cleft": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-014"
       },
       "inversion_adv": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-014"
       },
       "ellipsis": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-014"
       },
       "hedging": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-014"
       },
       "register": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-014"
       }
     },
     "questions": {
