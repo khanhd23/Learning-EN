@@ -30315,23 +30315,28 @@
         "by": "codex-manual-ko-ui-015"
       },
       "exam_section_arrange": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-018"
       },
       "exam_section_complete": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-018"
       },
       "exam_section_leaflet": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-018"
       },
       "exam_section_notice": {
         "s": "reviewed",
         "by": "codex-manual-ko-ui-017"
       },
       "exam_section_reading1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-018"
       },
       "exam_section_reading2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-018"
       },
       "exam_sections": {
         "s": "reviewed",
@@ -30346,23 +30351,28 @@
         "by": "codex-manual-ko-ui-016"
       },
       "exam_type": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-018"
       },
       "exam_vstep": {
         "s": "reviewed",
         "by": "codex-manual-ko-ui-016"
       },
       "examples_tap": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-018"
       },
       "f_all": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-018"
       },
       "f_known": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-018"
       },
       "f_learning": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-018"
       },
       "f_new": {
         "s": "missing"
