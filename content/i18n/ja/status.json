@@ -38648,79 +38648,104 @@
     },
     "ui": {
       "about_disclaimer": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "about_feature_grammar": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "about_feature_practice": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "about_feature_words": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "about_features_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "about_independent_text": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "about_independent_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "about_intro": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "about_tagline": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "accuracy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "ach_combo": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "ach_combo_h": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "ach_decor": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "ach_decor_h": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "ach_first": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "ach_first_h": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "ach_g1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "ach_g1_h": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "ach_l1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "ach_l1_h": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "ach_mock": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "ach_mock_h": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "ach_pet10": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "ach_pet10_h": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "ach_pet3": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-361"
       },
       "ach_pet3_h": {
         "s": "missing"
