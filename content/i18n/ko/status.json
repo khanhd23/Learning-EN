@@ -30815,34 +30815,44 @@
         "by": "codex-manual-ko-ui-030"
       },
       "lvl_basic_d": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-031"
       },
       "lvl_beginner": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-031"
       },
       "lvl_beginner_d": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-031"
       },
       "lvl_inter": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-031"
       },
       "lvl_inter_d": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-031"
       },
       "lvl_upper": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-031"
       },
       "lvl_upper_d": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-031"
       },
       "mastery": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-031"
       },
       "mastery_known": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-031"
       },
       "mastery_learning": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-031"
       },
       "mastery_new": {
         "s": "missing"
