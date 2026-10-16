@@ -10194,34 +10194,44 @@
         "by": "codex-manual-ko-words-255"
       },
       "jury_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-256"
       },
       "composition_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-256"
       },
       "coin_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-256"
       },
       "bunch_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-256"
       },
       "sanction_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-256"
       },
       "trick_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-256"
       },
       "potato_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-256"
       },
       "shine_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-256"
       },
       "servant_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-256"
       },
       "excess_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-256"
       },
       "liability_s1": {
         "s": "missing"
