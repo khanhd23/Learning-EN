@@ -31251,25 +31251,32 @@
         "by": "codex-manual-ko-ui-067"
       },
       "pet_item_face_round": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-069"
       },
       "pet_item_face_star": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-069"
       },
       "pet_item_hat_beanie": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-069"
       },
       "pet_item_hat_crown": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-069"
       },
       "pet_item_hat_flower": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-069"
       },
       "pet_item_hat_grad": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-069"
       },
       "pet_item_hat_party": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-069"
       },
       "pet_item_lamp_floor": {
         "s": "reviewed",
@@ -31284,13 +31291,16 @@
         "by": "codex-manual-ko-ui-068"
       },
       "pet_item_neck_bow": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-069"
       },
       "pet_item_neck_medal": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-069"
       },
       "pet_item_neck_scarf": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-069"
       },
       "pet_item_plant_cactus": {
         "s": "reviewed",
