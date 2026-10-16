@@ -30476,34 +30476,44 @@
         "by": "codex-manual-ko-ui-021"
       },
       "goal_basics": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-022"
       },
       "goal_done": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-022"
       },
       "goal_ielts": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-022"
       },
       "goal_progress": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-022"
       },
       "goal_talk": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-022"
       },
       "goal_toeic": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-022"
       },
       "goal_travel": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-022"
       },
       "goal_work": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-022"
       },
       "grammar_mastered": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-022"
       },
       "grammar_points": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-022"
       },
       "greet_afternoon": {
         "s": "missing"
