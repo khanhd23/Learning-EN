@@ -31066,34 +31066,44 @@
         "by": "codex-manual-ko-ui-036"
       },
       "no_words_filter": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-037"
       },
       "node_available": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-037"
       },
       "node_locked": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-037"
       },
       "node_mastered": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-037"
       },
       "node_progress": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-037"
       },
       "not_now": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-037"
       },
       "not_set": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-037"
       },
       "nothing_to_practice": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-037"
       },
       "notif_channel": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-037"
       },
       "notif_msg": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-037"
       },
       "notif_title": {
         "s": "missing"
