@@ -30724,7 +30724,8 @@
         "by": "codex-manual-ko-ui-029"
       },
       "listen_slow": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-030"
       },
       "listening_now": {
         "s": "reviewed",
@@ -30778,31 +30779,40 @@
         "by": "codex-manual-ko-ui-001"
       },
       "locked_msg": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-030"
       },
       "locked_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-030"
       },
       "loosen": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-030"
       },
       "lv_12": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-030"
       },
       "lv_23": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-030"
       },
       "lv_34": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-030"
       },
       "lv_45": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-030"
       },
       "lv_auto": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-030"
       },
       "lvl_basic": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-030"
       },
       "lvl_basic_d": {
         "s": "missing"
