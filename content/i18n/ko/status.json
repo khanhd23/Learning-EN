@@ -31769,38 +31769,48 @@
         "s": "missing"
       },
       "see_word": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-049"
       },
       "set_about": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-049"
       },
       "set_ad_privacy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-049"
       },
       "set_appearance": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-049"
       },
       "set_bubbles": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-049"
       },
       "set_data": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-049"
       },
       "set_goal": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-049"
       },
       "set_haptics": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-049"
       },
       "set_language": {
         "s": "reviewed",
         "by": "codex-manual-ko-ui-001"
       },
       "set_learning": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-049"
       },
       "set_level": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-049"
       },
       "set_new_words": {
         "s": "missing"
