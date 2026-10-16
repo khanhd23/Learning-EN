@@ -31106,16 +31106,20 @@
         "by": "codex-manual-ko-ui-037"
       },
       "notif_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-038"
       },
       "notif_yes": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-038"
       },
       "ob_goal_sub": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-038"
       },
       "ob_goal_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-038"
       },
       "ob_language_sub": {
         "s": "missing"
@@ -31124,22 +31128,28 @@
         "s": "missing"
       },
       "ob_level_sub": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-038"
       },
       "ob_level_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-038"
       },
       "ob_pet_explain": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-038"
       },
       "ob_pet_name": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-038"
       },
       "ob_pet_sub": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-038"
       },
       "ob_pet_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-038"
       },
       "ob_time": {
         "s": "missing"
