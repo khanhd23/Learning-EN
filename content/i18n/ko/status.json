@@ -29927,34 +29927,44 @@
         "by": "codex-manual-ko-ui-007"
       },
       "bowl_full": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-008"
       },
       "bowl_hungry": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-008"
       },
       "bowl_ok": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-008"
       },
       "builder_sub": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-008"
       },
       "builder_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-008"
       },
       "buy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-008"
       },
       "buy_msg": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-008"
       },
       "by_level": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-008"
       },
       "by_qtype": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-008"
       },
       "by_skill": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-008"
       },
       "by_topic": {
         "s": "missing"
