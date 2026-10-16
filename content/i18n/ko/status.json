@@ -31235,16 +31235,20 @@
         "by": "codex-manual-ko-ui-040"
       },
       "pet_item_bed_basket": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-067"
       },
       "pet_item_bed_cloud": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-067"
       },
       "pet_item_bed_cushion": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-067"
       },
       "pet_item_bed_royal": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-067"
       },
       "pet_item_face_round": {
         "s": "missing"
@@ -31286,22 +31290,28 @@
         "s": "missing"
       },
       "pet_item_plant_cactus": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-067"
       },
       "pet_item_plant_monstera": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-067"
       },
       "pet_item_plant_sunflower": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-067"
       },
       "pet_item_rug_paw": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-067"
       },
       "pet_item_rug_rainbow": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-067"
       },
       "pet_item_rug_round": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-067"
       },
       "pet_item_theme_beach": {
         "s": "reviewed",
