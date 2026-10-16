@@ -4554,34 +4554,44 @@
         "by": "codex-manual-ko-words-114"
       },
       "talk_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-115"
       },
       "hear_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-115"
       },
       "listen_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-115"
       },
       "look_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-115"
       },
       "see_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-115"
       },
       "watch_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-115"
       },
       "ask_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-115"
       },
       "answer_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-115"
       },
       "answer_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-115"
       },
       "help_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-115"
       },
       "try_s1": {
         "s": "missing"
