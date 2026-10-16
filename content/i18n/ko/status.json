@@ -30574,34 +30574,43 @@
         "by": "codex-manual-ko-ui-023"
       },
       "ins_choose": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-024"
       },
       "ins_cloze": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-024"
       },
       "ins_dictation": {
         "s": "missing"
       },
       "ins_find_error": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-024"
       },
       "ins_flashcard": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-024"
       },
       "ins_listen": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-024"
       },
       "ins_listen_picture": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-024"
       },
       "ins_match_pictures": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-024"
       },
       "ins_matching": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-024"
       },
       "ins_meaning": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-024"
       },
       "ins_minimal_pair": {
         "s": "missing"
@@ -30610,7 +30619,8 @@
         "s": "missing"
       },
       "ins_picture_word": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-024"
       },
       "ins_pronunciation": {
         "s": "missing"
