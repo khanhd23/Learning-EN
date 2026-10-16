@@ -31026,34 +31026,44 @@
         "by": "codex-manual-ko-ui-035"
       },
       "n_selected": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-036"
       },
       "n_words": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-036"
       },
       "need_coins": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-036"
       },
       "need_practice": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-036"
       },
       "need_stage": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-036"
       },
       "new_mastered": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-036"
       },
       "next": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-036"
       },
       "next_stage": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-036"
       },
       "no_mail_app": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-036"
       },
       "no_results": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-036"
       },
       "no_words_filter": {
         "s": "missing"
