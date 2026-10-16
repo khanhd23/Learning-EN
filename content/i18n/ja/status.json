@@ -39474,13 +39474,16 @@
         "by": "codex-manual-ja-passage-006"
       },
       "p6_d3_wellness": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-007"
       },
       "p6_d3_contract": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-007"
       },
       "p6_d3_delivery": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-007"
       },
       "p6_d3_feedback": {
         "s": "missing"
