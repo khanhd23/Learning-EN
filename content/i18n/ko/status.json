@@ -26789,40 +26789,52 @@
         "by": "codex-manual-ko-confusables-002"
       },
       "customer_client_guest": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-003"
       },
       "salary_wage": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-003"
       },
       "price_prize": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-003"
       },
       "job_career": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-003"
       },
       "travel_trip_journey": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-003"
       },
       "its_its": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-003"
       },
       "than_then": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-003"
       },
       "especially_specially": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-003"
       },
       "hard_hardly": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-003"
       },
       "late_lately": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-003"
       },
       "alone_lonely": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-003"
       },
       "excited_exciting": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-003"
       }
     },
     "grammar": {
