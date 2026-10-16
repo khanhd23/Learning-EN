@@ -26983,13 +26983,16 @@
         "by": "codex-manual-ko-grammar-012"
       },
       "future_perfect_continuous": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-013"
       },
       "noun_phrase": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-013"
       },
       "subjunctive": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-013"
       },
       "cleft": {
         "s": "missing"
