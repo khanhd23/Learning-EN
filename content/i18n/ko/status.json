@@ -31272,13 +31272,16 @@
         "s": "missing"
       },
       "pet_item_lamp_floor": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-068"
       },
       "pet_item_lamp_lava": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-068"
       },
       "pet_item_lamp_star": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-068"
       },
       "pet_item_neck_bow": {
         "s": "missing"
@@ -31342,25 +31345,32 @@
         "by": "codex-manual-ko-ui-066"
       },
       "pet_item_toy_ball": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-068"
       },
       "pet_item_toy_books": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-068"
       },
       "pet_item_toy_teddy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-068"
       },
       "pet_item_toy_yarn": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-068"
       },
       "pet_item_wall_abc": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-068"
       },
       "pet_item_wall_clock": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-068"
       },
       "pet_item_wall_map": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-068"
       },
       "pet_menu_title": {
         "s": "reviewed",
