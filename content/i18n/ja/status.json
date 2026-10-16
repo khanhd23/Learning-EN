@@ -39498,13 +39498,16 @@
         "by": "codex-manual-ja-passage-008"
       },
       "p6_d4_support": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-009"
       },
       "p6_d4_event": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-009"
       },
       "p6_d5_hotel": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-009"
       },
       "p6_d5_app": {
         "s": "missing"
