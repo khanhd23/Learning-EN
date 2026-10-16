@@ -29868,7 +29868,8 @@
         "by": "codex-manual-ko-ui-006"
       },
       "audio_evidence": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-029"
       },
       "b_count": {
         "s": "reviewed",
@@ -30684,34 +30685,43 @@
         "by": "codex-manual-ko-ui-028"
       },
       "level_desc_1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-029"
       },
       "level_desc_2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-029"
       },
       "level_desc_3": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-029"
       },
       "level_desc_4": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-029"
       },
       "level_desc_5": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-029"
       },
       "level_n": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-029"
       },
       "licenses": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-029"
       },
       "licenses_text": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-029"
       },
       "list_source": {
         "s": "missing"
       },
       "listen": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-029"
       },
       "listen_slow": {
         "s": "missing"
