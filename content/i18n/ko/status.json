@@ -32417,34 +32417,44 @@
         "by": "codex-manual-ko-ui-063"
       },
       "unanswered": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-064"
       },
       "unlocked": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-064"
       },
       "unsaved": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-064"
       },
       "untimed": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-064"
       },
       "version": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-064"
       },
       "vocab_total": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-064"
       },
       "vs_previous": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-064"
       },
       "wake_ad": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-064"
       },
       "wake_free": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-064"
       },
       "wake_token": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-064"
       },
       "weak_none": {
         "s": "missing"
