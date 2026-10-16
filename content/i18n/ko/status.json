@@ -29840,38 +29840,47 @@
         "by": "codex-manual-ko-ui-005"
       },
       "ach_w500_h": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-006"
       },
       "ach_w50_h": {
         "s": "reviewed",
         "by": "codex-manual-ko-ui-005"
       },
       "achievements": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-006"
       },
       "ad_limit": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-006"
       },
       "ad_loading": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-006"
       },
       "all_types": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-006"
       },
       "app_short_name": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-006"
       },
       "audio_evidence": {
         "s": "missing"
       },
       "b_count": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-006"
       },
       "b_level": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-006"
       },
       "b_mode": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-006"
       },
       "b_skill": {
         "s": "missing"
@@ -30519,7 +30528,8 @@
         "s": "missing"
       },
       "loading": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-006"
       },
       "locale_ar": {
         "s": "reviewed",
