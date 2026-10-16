@@ -32170,34 +32170,44 @@
         "by": "codex-manual-ko-ui-057"
       },
       "tag_confusable": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-058"
       },
       "tag_conjunction": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-058"
       },
       "tag_ellipsis": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-058"
       },
       "tag_error": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-058"
       },
       "tag_gerund": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-058"
       },
       "tag_hedging": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-058"
       },
       "tag_inversion": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-058"
       },
       "tag_linking": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-058"
       },
       "tag_modal": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-058"
       },
       "tag_noun_phrase": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-058"
       },
       "tag_participle": {
         "s": "missing"
