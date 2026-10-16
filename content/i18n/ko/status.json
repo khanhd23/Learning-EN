@@ -29724,34 +29724,44 @@
         "by": "codex-manual-ko-ui-002"
       },
       "accuracy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-003"
       },
       "ach_combo": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-003"
       },
       "ach_combo_h": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-003"
       },
       "ach_decor": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-003"
       },
       "ach_decor_h": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-003"
       },
       "ach_first": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-003"
       },
       "ach_first_h": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-003"
       },
       "ach_g1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-003"
       },
       "ach_g1_h": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-003"
       },
       "ach_l1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-003"
       },
       "ach_l1_h": {
         "s": "missing"
