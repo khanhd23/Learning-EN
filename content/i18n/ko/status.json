@@ -26709,34 +26709,44 @@
     },
     "confusables": {
       "affect_effect": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-001"
       },
       "borrow_lend": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-001"
       },
       "say_tell": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-001"
       },
       "make_do": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-001"
       },
       "lose_loose": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-001"
       },
       "job_work": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-001"
       },
       "fun_funny": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-001"
       },
       "bored_boring": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-001"
       },
       "hear_listen": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-001"
       },
       "look_see_watch": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-confusables-001"
       },
       "rise_raise": {
         "s": "missing"
