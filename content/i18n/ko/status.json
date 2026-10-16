@@ -29688,31 +29688,40 @@
     },
     "ui": {
       "about_disclaimer": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-002"
       },
       "about_feature_grammar": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-002"
       },
       "about_feature_practice": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-002"
       },
       "about_feature_words": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-002"
       },
       "about_features_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-002"
       },
       "about_independent_text": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-002"
       },
       "about_independent_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-002"
       },
       "about_intro": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-002"
       },
       "about_tagline": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-002"
       },
       "accuracy": {
         "s": "missing"
@@ -30494,7 +30503,8 @@
         "by": "codex-manual-ko-ui-001"
       },
       "locale_fr": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-002"
       },
       "locale_hi": {
         "s": "reviewed",
