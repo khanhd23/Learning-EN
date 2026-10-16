@@ -29967,34 +29967,44 @@
         "by": "codex-manual-ko-ui-008"
       },
       "by_topic": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-009"
       },
       "by_type": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-009"
       },
       "by_type_sub": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-009"
       },
       "by_type_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-009"
       },
       "cancel": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-009"
       },
       "change_species": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-009"
       },
       "chart_14": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-009"
       },
       "check": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-009"
       },
       "choose_format": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-009"
       },
       "clear": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-009"
       },
       "close": {
         "s": "missing"
