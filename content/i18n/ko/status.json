@@ -30047,28 +30047,36 @@
         "by": "codex-manual-ko-ui-010"
       },
       "continue_grammar": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-011"
       },
       "continue_label": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-011"
       },
       "continue_mock": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-011"
       },
       "correct_answer_is": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-011"
       },
       "d_easy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-011"
       },
       "d_hard": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-011"
       },
       "d_medium": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-011"
       },
       "d_mixed": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-011"
       },
       "daily_challenge": {
         "s": "missing"
@@ -30080,7 +30088,8 @@
         "s": "missing"
       },
       "daily_goal": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-011"
       },
       "day_detail": {
         "s": "missing"
@@ -31619,7 +31628,8 @@
         "s": "missing"
       },
       "story_score": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-011"
       },
       "streak_cd": {
         "s": "missing"
