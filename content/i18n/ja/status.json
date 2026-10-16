@@ -40548,79 +40548,104 @@
         "by": "codex-manual-ja-379"
       },
       "quest_daily": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "quest_new_words": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "quest_progress": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "quest_reward": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "quest_speaking": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "quest_stories": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "quest_xp": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "quest_xp_reward": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "quick_session": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "quiet_hours": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "quit_keep": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "quit_leave": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "quit_msg": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "quit_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "rate_again": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "rate_easy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "rate_good": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "rate_hard": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "rate_msg": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "rate_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "rate_yes": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "recent_searches": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "redo_all": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "redo_group": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "remove_mastered": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-380"
       },
       "rename": {
         "s": "missing"
