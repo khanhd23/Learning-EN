@@ -30214,7 +30214,8 @@
         "s": "missing"
       },
       "exam_format_toeic_p5_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-016"
       },
       "exam_format_toeic_p6_desc": {
         "s": "missing"
@@ -30237,17 +30238,20 @@
         "by": "codex-manual-ko-ui-014"
       },
       "exam_ielts": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-016"
       },
       "exam_ket": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-016"
       },
       "exam_listening": {
         "s": "reviewed",
         "by": "codex-manual-ko-ui-014"
       },
       "exam_other": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-016"
       },
       "exam_part1": {
         "s": "reviewed",
@@ -30282,10 +30286,12 @@
         "by": "codex-manual-ko-ui-015"
       },
       "exam_part_sets_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-016"
       },
       "exam_pet": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-016"
       },
       "exam_practice_sets_n": {
         "s": "reviewed",
@@ -30318,19 +30324,23 @@
         "s": "missing"
       },
       "exam_sections": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-016"
       },
       "exam_thpt": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-016"
       },
       "exam_toeic": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-016"
       },
       "exam_type": {
         "s": "missing"
       },
       "exam_vstep": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-016"
       },
       "examples_tap": {
         "s": "missing"
