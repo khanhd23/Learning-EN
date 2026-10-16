@@ -39438,13 +39438,16 @@
         "by": "codex-manual-ja-passage-003"
       },
       "p6_library": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-004"
       },
       "p6_d1_training": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-004"
       },
       "p6_d1_invoice": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-004"
       },
       "p6_d1_store": {
         "s": "missing"
