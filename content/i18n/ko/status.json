@@ -32038,29 +32038,36 @@
         "by": "codex-manual-ko-ui-054"
       },
       "start_new": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-055"
       },
       "step_careful": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-055"
       },
       "step_practice": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-055"
       },
       "step_see": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-055"
       },
       "step_understand": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-055"
       },
       "story_score": {
         "s": "reviewed",
         "by": "codex-manual-ko-ui-011"
       },
       "streak_cd": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-055"
       },
       "streak_days": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-055"
       },
       "streak_shield_info": {
         "s": "reviewed",
@@ -32071,13 +32078,16 @@
         "by": "codex-manual-ko-ui-027"
       },
       "study_minutes": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-055"
       },
       "study_modes": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-055"
       },
       "study_more": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-055"
       },
       "submit": {
         "s": "missing"
