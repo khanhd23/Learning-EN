@@ -30983,37 +30983,47 @@
         "by": "codex-manual-ko-ui-034"
       },
       "mode_timed": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-035"
       },
       "mood_dozing": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-035"
       },
       "mood_full": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-035"
       },
       "mood_happy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-035"
       },
       "mood_hi": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-035"
       },
       "mood_hungry": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-035"
       },
       "mood_sleeping": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-035"
       },
       "mood_sleepy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-035"
       },
       "n_items": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-035"
       },
       "n_of_m_ready": {
         "s": "missing"
       },
       "n_questions": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-035"
       },
       "n_selected": {
         "s": "missing"
