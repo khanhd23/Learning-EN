@@ -26971,13 +26971,16 @@
         "by": "codex-manual-ko-grammar-011"
       },
       "inversion_basic": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-012"
       },
       "modal_perfect": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-012"
       },
       "linking": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-012"
       },
       "future_perfect_continuous": {
         "s": "missing"
