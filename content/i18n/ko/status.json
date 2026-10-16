@@ -31570,34 +31570,44 @@
         "by": "codex-manual-ko-ui-044"
       },
       "quit_keep": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-045"
       },
       "quit_leave": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-045"
       },
       "quit_msg": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-045"
       },
       "quit_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-045"
       },
       "rate_again": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-045"
       },
       "rate_easy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-045"
       },
       "rate_good": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-045"
       },
       "rate_hard": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-045"
       },
       "rate_msg": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-045"
       },
       "rate_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-045"
       },
       "rate_yes": {
         "s": "missing"
