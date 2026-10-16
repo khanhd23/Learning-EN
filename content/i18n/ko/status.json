@@ -31662,16 +31662,20 @@
         "by": "codex-manual-ko-ui-046"
       },
       "reset_done": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-047"
       },
       "reset_msg": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-047"
       },
       "reset_progress": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-047"
       },
       "reset_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-047"
       },
       "restore_bad_file": {
         "s": "missing"
@@ -31698,22 +31702,28 @@
         "s": "missing"
       },
       "result_done": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-047"
       },
       "result_great": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-047"
       },
       "result_meta": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-047"
       },
       "retry_wrong": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-047"
       },
       "review_answers": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-047"
       },
       "review_each": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-047"
       },
       "review_now": {
         "s": "missing"
