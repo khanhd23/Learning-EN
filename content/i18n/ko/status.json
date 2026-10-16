@@ -26923,13 +26923,16 @@
         "by": "codex-manual-ko-grammar-007"
       },
       "relative": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-008"
       },
       "gerund_infinitive": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-008"
       },
       "conj_prep": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-008"
       },
       "agreement": {
         "s": "missing"
