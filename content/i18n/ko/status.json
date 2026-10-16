@@ -29908,10 +29908,12 @@
         "by": "codex-manual-ko-ui-071"
       },
       "backup_done": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-072"
       },
       "backup_failed": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-072"
       },
       "backup_info": {
         "s": "reviewed",
@@ -31729,28 +31731,36 @@
         "by": "codex-manual-ko-ui-047"
       },
       "restore_bad_file": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-072"
       },
       "restore_confirm_msg": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-072"
       },
       "restore_confirm_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-072"
       },
       "restore_desc": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-072"
       },
       "restore_done": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-072"
       },
       "restore_newer_version": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-072"
       },
       "restore_replace": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-072"
       },
       "restore_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-072"
       },
       "result_done": {
         "s": "reviewed",
