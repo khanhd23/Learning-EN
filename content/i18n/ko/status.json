@@ -30548,23 +30548,28 @@
         "by": "codex-manual-ko-ui-023"
       },
       "hint_context": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-073"
       },
       "hint_find_error": {
         "s": "reviewed",
         "by": "codex-manual-ko-ui-023"
       },
       "hint_generic": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-073"
       },
       "hint_picture": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-073"
       },
       "hint_word_order": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-073"
       },
       "hint_word_order_meaning": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-073"
       },
       "history": {
         "s": "reviewed",
@@ -31695,16 +31700,20 @@
         "by": "codex-manual-ko-ui-046"
       },
       "report_mistake": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-073"
       },
       "report_mistake_body": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-073"
       },
       "report_mistake_no_app": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-073"
       },
       "report_mistake_subject": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-073"
       },
       "report_subject": {
         "s": "reviewed",
@@ -32427,7 +32436,8 @@
         "by": "codex-manual-ko-ui-062"
       },
       "topic_story": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-073"
       },
       "topics": {
         "s": "reviewed",
