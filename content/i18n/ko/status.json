@@ -30582,7 +30582,8 @@
         "by": "codex-manual-ko-ui-024"
       },
       "ins_dictation": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-025"
       },
       "ins_find_error": {
         "s": "reviewed",
@@ -30613,7 +30614,8 @@
         "by": "codex-manual-ko-ui-024"
       },
       "ins_minimal_pair": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-025"
       },
       "ins_passage": {
         "s": "missing"
@@ -30629,7 +30631,8 @@
         "s": "missing"
       },
       "ins_say_it": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-025"
       },
       "ins_sentence": {
         "s": "missing"
@@ -30698,7 +30701,8 @@
         "s": "missing"
       },
       "listening_now": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-025"
       },
       "loading": {
         "s": "reviewed",
@@ -31253,7 +31257,8 @@
         "s": "missing"
       },
       "play_slow": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-025"
       },
       "pos_adj": {
         "s": "missing"
@@ -31680,13 +31685,16 @@
         "s": "missing"
       },
       "sound_practice": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-025"
       },
       "sound_practice_desc": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-025"
       },
       "sound_tip": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-025"
       },
       "speak_again": {
         "s": "missing"
@@ -31945,7 +31953,8 @@
         "s": "missing"
       },
       "tap_to_speak": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-025"
       },
       "tap_wrong_part": {
         "s": "missing"
@@ -32104,7 +32113,8 @@
         "s": "missing"
       },
       "you_said": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-025"
       },
       "your_weak": {
         "s": "missing"
