@@ -30152,7 +30152,8 @@
         "by": "codex-manual-ko-ui-013"
       },
       "earn_coins_ad": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-020"
       },
       "est_1": {
         "s": "reviewed",
@@ -30411,22 +30412,28 @@
         "by": "codex-manual-ko-ui-019"
       },
       "fix_to": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-020"
       },
       "flag": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-020"
       },
       "formula": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-020"
       },
       "g_all": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-020"
       },
       "g_toeic": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-020"
       },
       "g_tricky": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-020"
       },
       "gallery": {
         "s": "missing"
@@ -31010,13 +31017,16 @@
         "s": "missing"
       },
       "pet_care_ad": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-020"
       },
       "pet_care_study": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-020"
       },
       "pet_care_sub": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-020"
       },
       "pet_care_title": {
         "s": "reviewed",
