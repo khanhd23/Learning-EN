@@ -26839,13 +26839,16 @@
     },
     "grammar": {
       "be": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-001"
       },
       "present_simple": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-001"
       },
       "articles": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-001"
       },
       "plurals": {
         "s": "missing"
