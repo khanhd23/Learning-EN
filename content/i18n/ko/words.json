@@ -49,104 +49,74 @@
     "tip": ""
   },
   "supervisor_s1": {
-    "g": "",
+    "g": "다른 직원들을 관리하거나 지휘하는 사람",
     "ex": {
-      "supervisor_s1": ""
+      "supervisor_s1": "하루 쉬어야 하면 상사에게 물어보세요."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "department_s1": {
-    "g": "",
+    "g": "조직의 한 부서",
     "ex": {
-      "department_s1": ""
+      "department_s1": "그녀는 영업부에서 일합니다."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "agenda_s1": {
-    "g": "",
+    "g": "회의에서 논의할 주제 목록",
     "ex": {
-      "agenda_s1": ""
+      "agenda_s1": "의제의 첫 번째 항목은 예산입니다."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "memo_s1": {
-    "g": "",
+    "g": "회사 내부에서 보내는 짧은 서면 메시지",
     "ex": {
-      "memo_s1": ""
+      "memo_s1": "관리자가 새 규칙에 관한 메모를 보냈습니다."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "memo_s2": {
-    "g": "",
+    "g": "무언가를 기억하기 위해 쓰는 짧은 메모",
     "ex": {
-      "memo_s2": ""
+      "memo_s2": "잊지 않으려고 음성 메모를 녹음했습니다."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "document_s1": {
-    "g": "",
+    "g": "서면 또는 전자 기록",
     "ex": {
-      "document_s1": ""
+      "document_s1": "문서를 닫기 전에 저장하세요."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "photocopy_s1": {
-    "g": "",
+    "g": "복사기를 사용해 사본을 만들다",
     "ex": {
-      "photocopy_s1": ""
+      "photocopy_s1": "이 페이지들을 복사해 주시겠어요?"
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "submit_s1": {
-    "g": "",
+    "g": "누군가가 검토하거나 승인하도록 무언가를 보내다",
     "ex": {
-      "submit_s1": ""
+      "submit_s1": "금요일까지 경비 보고서를 제출해 주세요."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "approve_s1": {
-    "g": "",
+    "g": "무언가를 공식적으로 받아들이거나 동의하다",
     "ex": {
-      "approve_s1": ""
+      "approve_s1": "이사가 새 계획을 승인했습니다."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "approve_s2": {
-    "g": "",
+    "g": "무언가가 좋거나 받아들일 만하다고 생각하다",
     "ex": {
-      "approve_s2": ""
+      "approve_s2": "부모님은 제가 새로 한 헤어스타일을 못마땅해하십니다."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "postpone_s1": {
     "g": "",
