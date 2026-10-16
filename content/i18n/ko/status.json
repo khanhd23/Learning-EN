@@ -30092,34 +30092,44 @@
         "by": "codex-manual-ko-ui-011"
       },
       "day_detail": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-012"
       },
       "decorate": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-012"
       },
       "disclaimer": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-012"
       },
       "disclaimer_full": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-012"
       },
       "done": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-012"
       },
       "double_xp": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-012"
       },
       "double_xp_done": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-012"
       },
       "double_xp_sub": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-012"
       },
       "dozing_sub": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-012"
       },
       "dozing_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-012"
       },
       "drills_ready": {
         "s": "missing"
