@@ -39,11 +39,11 @@
   "environment_energy": "환경과 에너지",
   "government_society": "정부와 사회",
   "arts_entertainment": "예술과 엔터테인먼트",
-  "sports_fitness": "",
-  "function_words": "",
-  "core_verbs": "",
-  "describing_things": "",
-  "linking_words": "",
-  "phrasal_verbs": "",
-  "idioms_chunks": ""
+  "sports_fitness": "스포츠와 운동",
+  "function_words": "기능어",
+  "core_verbs": "핵심 동사",
+  "describing_things": "사물 묘사",
+  "linking_words": "연결어",
+  "phrasal_verbs": "구동사",
+  "idioms_chunks": "관용 표현과 덩어리 표현"
 }

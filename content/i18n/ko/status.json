@@ -26679,25 +26679,32 @@
         "by": "codex-manual-ko-topics-004"
       },
       "sports_fitness": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-topics-005"
       },
       "function_words": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-topics-005"
       },
       "core_verbs": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-topics-005"
       },
       "describing_things": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-topics-005"
       },
       "linking_words": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-topics-005"
       },
       "phrasal_verbs": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-topics-005"
       },
       "idioms_chunks": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-topics-005"
       }
     },
     "confusables": {
