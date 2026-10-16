@@ -35796,46 +35796,60 @@
         "by": "codex-manual-ja-359"
       },
       "reported": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-360"
       },
       "participle": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-360"
       },
       "wish": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-360"
       },
       "inversion_basic": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-360"
       },
       "modal_perfect": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-360"
       },
       "linking": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-360"
       },
       "future_perfect_continuous": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-360"
       },
       "noun_phrase": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-360"
       },
       "subjunctive": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-360"
       },
       "cleft": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-360"
       },
       "inversion_adv": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-360"
       },
       "ellipsis": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-360"
       },
       "hedging": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-360"
       },
       "register": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-360"
       }
     },
     "questions": {
