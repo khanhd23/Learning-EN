@@ -31304,25 +31304,32 @@
         "s": "missing"
       },
       "pet_item_theme_beach": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-066"
       },
       "pet_item_theme_candy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-066"
       },
       "pet_item_theme_castle": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-066"
       },
       "pet_item_theme_cozy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-066"
       },
       "pet_item_theme_forest": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-066"
       },
       "pet_item_theme_garden": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-066"
       },
       "pet_item_theme_space": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-066"
       },
       "pet_item_toy_ball": {
         "s": "missing"
@@ -32507,17 +32514,20 @@
         "by": "codex-manual-ko-ui-065"
       },
       "words_mastered": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-066"
       },
       "xp_left": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-066"
       },
       "you_said": {
         "s": "reviewed",
         "by": "codex-manual-ko-ui-025"
       },
       "your_weak": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-066"
       }
     }
   }
