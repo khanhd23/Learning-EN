@@ -30567,7 +30567,8 @@
         "by": "codex-manual-ko-ui-023"
       },
       "i_speak": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-070"
       },
       "in_use": {
         "s": "reviewed",
@@ -30740,7 +30741,8 @@
         "by": "codex-manual-ko-ui-001"
       },
       "locale_en": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-070"
       },
       "locale_es": {
         "s": "reviewed",
@@ -31122,10 +31124,12 @@
         "by": "codex-manual-ko-ui-038"
       },
       "ob_language_sub": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-070"
       },
       "ob_language_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-070"
       },
       "ob_level_sub": {
         "s": "reviewed",
@@ -31206,13 +31210,16 @@
         "by": "codex-manual-ko-ui-039"
       },
       "pet_default_cat": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-070"
       },
       "pet_default_dragon": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-070"
       },
       "pet_default_panda": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-070"
       },
       "pet_drag_hint": {
         "s": "reviewed",
@@ -32010,13 +32017,16 @@
         "by": "codex-manual-ko-ui-026"
       },
       "species_cat": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-070"
       },
       "species_dragon": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-070"
       },
       "species_panda": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-070"
       },
       "speed_sub": {
         "s": "reviewed",
