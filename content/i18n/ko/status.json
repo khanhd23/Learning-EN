@@ -30199,35 +30199,44 @@
         "by": "codex-manual-ko-ui-014"
       },
       "exam_format_school_desc": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-017"
       },
       "exam_format_school_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-017"
       },
       "exam_format_thpt_desc": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-017"
       },
       "exam_format_thpt_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-017"
       },
       "exam_format_toeic_p5_desc": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-017"
       },
       "exam_format_toeic_p5_title": {
         "s": "reviewed",
         "by": "codex-manual-ko-ui-016"
       },
       "exam_format_toeic_p6_desc": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-017"
       },
       "exam_format_toeic_p6_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-017"
       },
       "exam_format_toeic_p7_desc": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-017"
       },
       "exam_format_vstep_desc": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-017"
       },
       "exam_full_reading": {
         "s": "reviewed",
@@ -30315,7 +30324,8 @@
         "s": "missing"
       },
       "exam_section_notice": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-017"
       },
       "exam_section_reading1": {
         "s": "missing"
