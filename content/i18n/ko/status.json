@@ -26959,13 +26959,16 @@
         "by": "codex-manual-ko-grammar-010"
       },
       "reported": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-011"
       },
       "participle": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-011"
       },
       "wish": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-011"
       },
       "inversion_basic": {
         "s": "missing"
