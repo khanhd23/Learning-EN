@@ -32250,34 +32250,44 @@
         "by": "codex-manual-ko-ui-059"
       },
       "tag_reported": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-060"
       },
       "tag_sentence": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-060"
       },
       "tag_spelling": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-060"
       },
       "tag_stress": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-060"
       },
       "tag_subjunctive": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-060"
       },
       "tag_synonym": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-060"
       },
       "tag_tense": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-060"
       },
       "tag_transform": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-060"
       },
       "tag_vocab": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-060"
       },
       "tag_vocab_work": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-060"
       },
       "tag_wish": {
         "s": "missing"
