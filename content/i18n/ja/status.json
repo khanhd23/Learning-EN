@@ -39450,13 +39450,16 @@
         "by": "codex-manual-ja-passage-004"
       },
       "p6_d1_store": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-005"
       },
       "p6_d1_appointment": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-005"
       },
       "p6_d2_relocation": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-005"
       },
       "p6_d2_supplier": {
         "s": "missing"
