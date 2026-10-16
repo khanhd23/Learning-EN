@@ -1,0 +1,648 @@
+{
+  "be": {
+    "title": "be動詞（am / is / are）",
+    "when": "人や物が何であるかを言ったり、職業・場所・年齢・気持ちを説明したりするときに使う。",
+    "body": "主語に応じてam、is、areを使い分ける。否定はnotを加え、疑問文ではbe動詞を主語の前に置く。",
+    "examples": [
+      "I am a student.",
+      "My parents are at home.",
+      "Is she your sister?"
+    ],
+    "mistakes": [
+      {
+        "wrong": "She are my friend.||She is my friend.",
+        "right": "主語sheは単数なのでareではなくisを使う。",
+        "why": "主語に応じてam、is、areを使い分ける。否定はnotを加え、疑問文ではbe動詞を主語の前に置く。"
+      }
+    ]
+  },
+  "present_simple": {
+    "title": "現在形",
+    "when": "習慣、繰り返す行動、いつも真である事実、固定された予定を表す。",
+    "body": "he、she、itや単数名詞では動詞にsやesを付ける。否定や疑問ではdo / doesを使い、その後は原形にする。",
+    "examples": [
+      "She works in a bank.",
+      "I don't drink coffee.",
+      "Does he play football?"
+    ],
+    "mistakes": [
+      {
+        "wrong": "He work every day.||He works every day.",
+        "right": "heは三人称単数なので動詞にsが必要。",
+        "why": "he、she、itや単数名詞では動詞にsやesを付ける。否定や疑問ではdo / doesを使い、その後は原形にする。"
+      }
+    ]
+  },
+  "articles": {
+    "title": "冠詞（a / an / the）",
+    "when": "名詞が不特定の一つなのか、特定のものなのかを示す。",
+    "body": "aは子音音の前、anは母音音の前に使う。theは聞き手にも特定できるものに使う。",
+    "examples": [
+      "I saw a dog.",
+      "She ate an apple.",
+      "The dog was friendly."
+    ],
+    "mistakes": [
+      {
+        "wrong": "I bought a umbrella.||I bought an umbrella.",
+        "right": "umbrellaは母音音で始まるためanを使う。",
+        "why": "aは子音音の前、anは母音音の前に使う。theは聞き手にも特定できるものに使う。"
+      }
+    ]
+  },
+  "plurals": {
+    "title": "複数形",
+    "when": "一つより多い人や物について話す。",
+    "body": "通常は名詞にsを付けるが、childなど不規則に変化する語もある。複数主語には適切な動詞を使う。",
+    "examples": [
+      "There are two books.",
+      "The children are outside.",
+      "I bought some tomatoes."
+    ],
+    "mistakes": [
+      {
+        "wrong": "Two book are on the desk.||Two books are on the desk.",
+        "right": "複数のbookにはsを付け、be動詞はareにする。",
+        "why": "通常は名詞にsを付けるが、childなど不規則に変化する語もある。複数主語には適切な動詞を使う。"
+      }
+    ]
+  },
+  "prep_time": {
+    "title": "時間の前置詞（at / on / in）",
+    "when": "時刻、曜日・日付、月・年・長い期間を表す。",
+    "body": "atは時刻、onは特定の日、inは月・年・長い期間に使う。",
+    "examples": [
+      "The class starts at nine.",
+      "We meet on Monday.",
+      "She was born in 2001."
+    ],
+    "mistakes": [
+      {
+        "wrong": "The meeting is in Monday.||The meeting is on Monday.",
+        "right": "Mondayのような特定の日にはonを使う。",
+        "why": "atは時刻、onは特定の日、inは月・年・長い期間に使う。"
+      }
+    ]
+  },
+  "there_is": {
+    "title": "there is / there are",
+    "when": "場所や状況に何かが存在することを伝える。",
+    "body": "単数にはthere is、複数にはthere areを使う。疑問文ではis / areを前に置く。",
+    "examples": [
+      "There is a book on the desk.",
+      "There are three chairs.",
+      "Is there a problem?"
+    ],
+    "mistakes": [
+      {
+        "wrong": "There is two students.||There are two students.",
+        "right": "主語two studentsは複数なのでareを使う。",
+        "why": "単数にはthere is、複数にはthere areを使う。疑問文ではis / areを前に置く。"
+      }
+    ]
+  },
+  "can_could": {
+    "title": "can / could",
+    "when": "能力、許可、可能性、依頼を表す。",
+    "body": "助動詞の後ろには動詞の原形を置く。couldは過去の能力や、より丁寧な依頼にも使う。",
+    "examples": [
+      "She can swim.",
+      "Could you help me?",
+      "It could rain later."
+    ],
+    "mistakes": [
+      {
+        "wrong": "He can swims.||He can swim.",
+        "right": "助動詞canの後ろでは動詞にsを付けない。",
+        "why": "助動詞の後ろには動詞の原形を置く。couldは過去の能力や、より丁寧な依頼にも使う。"
+      }
+    ]
+  },
+  "word_order": {
+    "title": "基本的な語順",
+    "when": "英語の文では、通常、主語・動詞・目的語の順に語を並べる。",
+    "body": "疑問文では助動詞や疑問詞の位置に注意する。形容詞は通常、名詞の前に置く。",
+    "examples": [
+      "The student opened the book.",
+      "They play tennis.",
+      "Where does she work?"
+    ],
+    "mistakes": [
+      {
+        "wrong": "Opened the student the book.||The student opened the book.",
+        "right": "通常の文では主語を動詞の前に置く。",
+        "why": "疑問文では助動詞や疑問詞の位置に注意する。形容詞は通常、名詞の前に置く。"
+      }
+    ]
+  },
+  "past_simple": {
+    "title": "過去形",
+    "when": "過去に始まり終わった行動や出来事を表す。",
+    "body": "規則動詞にはedを付ける。否定や疑問ではdidを使い、その後は動詞の原形にする。",
+    "examples": [
+      "We visited Kyoto last year.",
+      "She didn't call me.",
+      "Did they arrive on time?"
+    ],
+    "mistakes": [
+      {
+        "wrong": "She didn't went home.||She didn't go home.",
+        "right": "didn'tの後ろでは過去形ではなく原形を使う。",
+        "why": "規則動詞にはedを付ける。否定や疑問ではdidを使い、その後は動詞の原形にする。"
+      }
+    ]
+  },
+  "present_continuous": {
+    "title": "現在進行形",
+    "when": "話している時点で進行中の行動や、一時的な状況を表す。",
+    "body": "be動詞と動詞の-ing形を組み合わせる。主語に応じてam、is、areを選ぶ。",
+    "examples": [
+      "I am reading now.",
+      "They are working today.",
+      "Is he coming?"
+    ],
+    "mistakes": [
+      {
+        "wrong": "She reading a book.||She is reading a book.",
+        "right": "進行形には主語の後ろにbe動詞が必要。",
+        "why": "be動詞と動詞の-ing形を組み合わせる。主語に応じてam、is、areを選ぶ。"
+      }
+    ]
+  },
+  "comparison": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "quantifiers": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "future": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "past_continuous": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "must_should": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "pronouns": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "present_perfect": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "present_perfect_continuous": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "future_continuous": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "passive": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "conditionals": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "relative": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "gerund_infinitive": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "conj_prep": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "agreement": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "word_forms": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "past_perfect": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "past_perfect_continuous": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "future_perfect": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "conditional3": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "reported": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "participle": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "wish": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "inversion_basic": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "modal_perfect": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "linking": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "future_perfect_continuous": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "noun_phrase": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "subjunctive": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "cleft": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "inversion_adv": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "ellipsis": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "hedging": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  },
+  "register": {
+    "title": "",
+    "when": "",
+    "body": "",
+    "examples": [
+      "",
+      "",
+      ""
+    ],
+    "mistakes": [
+      "",
+      ""
+    ]
+  }
+}

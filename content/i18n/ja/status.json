@@ -35676,34 +35676,44 @@
     },
     "grammar": {
       "be": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-357"
       },
       "present_simple": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-357"
       },
       "articles": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-357"
       },
       "plurals": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-357"
       },
       "prep_time": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-357"
       },
       "there_is": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-357"
       },
       "can_could": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-357"
       },
       "word_order": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-357"
       },
       "past_simple": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-357"
       },
       "present_continuous": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-357"
       },
       "comparison": {
         "s": "missing"
