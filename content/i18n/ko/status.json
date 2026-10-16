@@ -30516,28 +30516,35 @@
         "by": "codex-manual-ko-ui-022"
       },
       "greet_afternoon": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-023"
       },
       "greet_evening": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-023"
       },
       "greet_morning": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-023"
       },
       "greet_noon": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-023"
       },
       "heatmap": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-023"
       },
       "hint": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-023"
       },
       "hint_context": {
         "s": "missing"
       },
       "hint_find_error": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-023"
       },
       "hint_generic": {
         "s": "missing"
@@ -30552,16 +30559,19 @@
         "s": "missing"
       },
       "history": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-023"
       },
       "i_speak": {
         "s": "missing"
       },
       "in_use": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-023"
       },
       "ins_antonym": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-023"
       },
       "ins_choose": {
         "s": "missing"
