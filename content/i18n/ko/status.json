@@ -994,34 +994,44 @@
         "by": "codex-manual-ko-words-025"
       },
       "party_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-026"
       },
       "party_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-026"
       },
       "party_s3": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-026"
       },
       "breach_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-026"
       },
       "dispute_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-026"
       },
       "court_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-026"
       },
       "court_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-026"
       },
       "confidential_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-026"
       },
       "liable_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-026"
       },
       "obligation_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-026"
       },
       "draft_s1": {
         "s": "missing"
