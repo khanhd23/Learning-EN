@@ -399,104 +399,74 @@
     "tip": ""
   },
   "position_s3": {
-    "g": "",
+    "g": "무언가를 특정 장소에 놓다",
     "ex": {
-      "position_s3": ""
+      "position_s3": "카메라를 문 위에 설치하세요."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "training_s1": {
-    "g": "",
+    "g": "직업이나 활동에 필요한 기술을 가르치는 활동",
     "ex": {
-      "training_s1": ""
+      "training_s1": "신입 직원들은 2주간 교육을 받습니다."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "training_s2": {
-    "g": "",
+    "g": "스포츠, 공연 또는 활동을 위한 연습이나 준비",
     "ex": {
-      "training_s2": ""
+      "training_s2": "팀은 결승전을 위해 훈련 중입니다."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "performance_s1": {
-    "g": "",
+    "g": "음악, 연극 또는 다른 오락을 선보이는 행위",
     "ex": {
-      "performance_s1": ""
+      "performance_s1": "그녀의 공연은 관객 모두에게 깊은 인상을 주었습니다."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "evaluate_s1": {
-    "g": "",
+    "g": "무언가의 품질, 가치 또는 성과를 판단하다",
     "ex": {
-      "evaluate_s1": ""
+      "evaluate_s1": "관리자는 매년 각 직원을 평가합니다."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "probation_s1": {
-    "g": "",
+    "g": "누군가가 직무에 적합한지 확인하는 시험 기간",
     "ex": {
-      "probation_s1": ""
+      "probation_s1": "신입 직원에게는 3개월의 수습 기간이 있습니다."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "full_time_s1": {
-    "g": "",
+    "g": "정해진 표준 근무 시간 전체를 일하는",
     "ex": {
-      "full_time_s1": ""
+      "full_time_s1": "그녀는 은행에서 정규직으로 일합니다."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "part_time_s1": {
-    "g": "",
+    "g": "정규직보다 적은 시간 동안 일하는",
     "ex": {
-      "part_time_s1": ""
+      "part_time_s1": "많은 학생이 아르바이트를 합니다."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "personnel_s1": {
-    "g": "",
+    "g": "조직에서 일하는 사람들",
     "ex": {
-      "personnel_s1": ""
+      "personnel_s1": "허가받은 직원만 이 구역에 들어갈 수 있습니다."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "reference_s1": {
-    "g": "",
+    "g": "직업을 추천해 줄 수 있는 사람",
     "ex": {
-      "reference_s1": ""
+      "reference_s1": "이전 고용주 두 명의 추천인을 제시해 주세요."
     },
-    "tip": "",
-    "regional": {
-      "es-ES": ""
-    }
+    "tip": ""
   },
   "reference_s2": {
     "g": "",
