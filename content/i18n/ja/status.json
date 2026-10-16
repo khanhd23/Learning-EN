@@ -39462,13 +39462,16 @@
         "by": "codex-manual-ja-passage-005"
       },
       "p6_d2_supplier": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-006"
       },
       "p6_d2_library": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-006"
       },
       "p6_d2_travel": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-006"
       },
       "p6_d3_wellness": {
         "s": "missing"
