@@ -32377,34 +32377,44 @@
         "by": "codex-manual-ko-ui-062"
       },
       "trap_preposition": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-063"
       },
       "trap_similar": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-063"
       },
       "trap_tense": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-063"
       },
       "trap_wrong_pos": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-063"
       },
       "type_choice": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-063"
       },
       "type_error": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-063"
       },
       "type_here": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-063"
       },
       "type_meta": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-063"
       },
       "type_passage": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-063"
       },
       "type_sound": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-063"
       },
       "unanswered": {
         "s": "missing"
