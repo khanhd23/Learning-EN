@@ -30621,17 +30621,20 @@
         "by": "codex-manual-ko-ui-025"
       },
       "ins_passage": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-027"
       },
       "ins_picture_word": {
         "s": "reviewed",
         "by": "codex-manual-ko-ui-024"
       },
       "ins_pronunciation": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-027"
       },
       "ins_reverse": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-027"
       },
       "ins_say_it": {
         "s": "reviewed",
@@ -31359,17 +31362,20 @@
         "s": "missing"
       },
       "quest_daily": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-027"
       },
       "quest_new_words": {
         "s": "reviewed",
         "by": "codex-manual-ko-ui-026"
       },
       "quest_progress": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-027"
       },
       "quest_reward": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-027"
       },
       "quest_speaking": {
         "s": "reviewed",
@@ -31380,10 +31386,12 @@
         "by": "codex-manual-ko-ui-026"
       },
       "quest_xp": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-027"
       },
       "quest_xp_reward": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-027"
       },
       "quick_session": {
         "s": "missing"
@@ -31785,10 +31793,12 @@
         "s": "missing"
       },
       "streak_shield_info": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-027"
       },
       "streak_shields": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-027"
       },
       "study_minutes": {
         "s": "missing"
