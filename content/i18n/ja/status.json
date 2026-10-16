@@ -39948,79 +39948,104 @@
         "by": "codex-manual-ja-373"
       },
       "mode_quiz": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "mode_spelling": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "mode_timed": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "mood_dozing": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "mood_full": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "mood_happy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "mood_hi": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "mood_hungry": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "mood_sleeping": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "mood_sleepy": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "n_items": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "n_of_m_ready": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "n_questions": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "n_selected": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "n_words": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "need_coins": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "need_practice": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "need_stage": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "new_mastered": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "next": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "next_stage": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "no_mail_app": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "no_results": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "no_words_filter": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "node_available": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-374"
       },
       "node_locked": {
         "s": "missing"
