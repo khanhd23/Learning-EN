@@ -39534,13 +39534,16 @@
         "by": "codex-manual-ja-passage-011"
       },
       "p6_d6_training": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-012"
       },
       "p6_d7_inventory": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-012"
       },
       "p6_d7_membership": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ja-passage-012"
       },
       "p6_d7_recruitment": {
         "s": "missing"
