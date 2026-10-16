@@ -26863,13 +26863,16 @@
         "by": "codex-manual-ko-grammar-002"
       },
       "can_could": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-003"
       },
       "word_order": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-003"
       },
       "past_simple": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-grammar-003"
       },
       "present_continuous": {
         "s": "missing"

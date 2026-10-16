@@ -84,45 +84,45 @@
     ]
   },
   "can_could": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "Can / Could",
+    "when": "능력을 말하거나 허락을 요청·허가하거나 정중하게 부탁할 때 씁니다.",
+    "body": "Can은 현재의 능력(I can swim)이나 허락(You can sit here)에 씁니다. Could는 과거의 능력(I could read at four)이나 더 정중한 부탁(Could you help me?)에 씁니다. can과 could 뒤에는 항상 동사 원형을 씁니다. to도 -s도 붙이지 않으며 he·she·it에 따라 형태가 바뀌지 않습니다.",
     "examples": [
-      "",
-      "",
-      ""
+      "She can speak three languages.",
+      "I couldn't sleep last night.",
+      "Could you open the window, please?"
     ],
     "mistakes": [
-      "",
-      ""
+      "He can swims. → He can swim. — can 뒤에는 -s 없는 동사 원형을 씁니다: swim.",
+      "I can to drive. → I can drive. — can 뒤에는 to 없이 바로 동사 원형이 옵니다."
     ]
   },
   "word_order": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "기본 어순",
+    "when": "영어 문장을 만들 때 자연스러운 순서를 지키기 위해 씁니다.",
+    "body": "기본 순서는 주어 + 동사 + 목적어 + 장소 + 시간입니다: I met Tom at the station yesterday. 형용사는 설명하는 명사 앞에 옵니다: a red car. 빈도 부사(always, often, never)는 일반동사 앞, 동사 be 뒤에 옵니다: She always walks. She is always late.",
     "examples": [
-      "",
-      "",
-      ""
+      "I bought a new phone yesterday.",
+      "She always drinks coffee in the morning.",
+      "He is always late."
     ],
     "mistakes": [
-      "",
-      ""
+      "I have a car red. → I have a red car. — 영어에서는 형용사가 명사 앞에 옵니다: a red car.",
+      "She drinks always coffee. → She always drinks coffee. — 빈도 부사는 일반동사 뒤가 아니라 앞에 둡니다."
     ]
   },
   "past_simple": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "과거 시제 (Past simple)",
+    "when": "과거의 특정한 시점에 시작하고 끝난 행동을 말할 때 씁니다.",
+    "body": "규칙동사는 -ed를 붙입니다(worked, studied, stopped). 불규칙동사는 고유한 형태를 따로 익혀야 합니다(go → went, buy → bought, see → saw). 부정문과 의문문은 did와 동사 원형을 씁니다: I didn't go. Did you see it? 동사 be의 과거형은 was(I, he, she, it)와 were(you, we, they)입니다.",
     "examples": [
-      "",
-      "",
-      ""
+      "I visited the old city last summer.",
+      "She didn't come to class yesterday.",
+      "Did you see the match?"
     ],
     "mistakes": [
-      "",
-      ""
+      "I didn't went there. → I didn't go there. — did가 이미 과거를 나타내므로 본동사는 원형 go를 씁니다.",
+      "Yesterday I go to school. → Yesterday I went to school. — Yesterday는 끝난 과거 시점이므로 동사는 과거형 went여야 합니다."
     ]
   },
   "present_continuous": {
