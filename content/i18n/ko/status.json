@@ -26519,34 +26519,44 @@
     },
     "topics": {
       "family": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-topics-001"
       },
       "friends_relationships": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-topics-001"
       },
       "body_appearance": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-topics-001"
       },
       "feelings_personality": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-topics-001"
       },
       "health_illness": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-topics-001"
       },
       "age_life_stages": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-topics-001"
       },
       "home_furniture": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-topics-001"
       },
       "daily_routine": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-topics-001"
       },
       "food_drink": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-topics-001"
       },
       "shopping": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-topics-001"
       },
       "clothes": {
         "s": "missing"
