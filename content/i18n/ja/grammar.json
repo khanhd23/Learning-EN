@@ -340,143 +340,173 @@
     ]
   },
   "conditionals": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "条件文（ゼロ・第1・第2条件文）",
+    "when": "常に真の事実、未来の現実的な可能性、現在の想像上の状況を表す。",
+    "body": "ゼロ条件はif節も結果節も現在形。第1条件はif節に現在形、結果節にwill。第2条件は想像を表し、wouldを使う。",
     "examples": [
-      "",
-      "",
-      ""
+      "If it rains tomorrow, we will cancel the trip.",
+      "If I were you, I would apply for that job.",
+      "If you heat water to 100°C, it boils."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "If it will rain tomorrow, we will cancel the trip.",
+        "right": "If it rains tomorrow, we will cancel the trip.",
+        "why": "ゼロ条件はif節も結果節も現在形。第1条件はif節に現在形、結果節にwill。第2条件は想像を表し、wouldを使う。"
+      }
     ]
   },
   "relative": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "関係節（who / which / that / whose / where）",
+    "when": "直前の名詞に関する追加情報を加える。",
+    "body": "人にはwho、物にはwhichやthat、所有にはwhose、場所にはwhereを使うことが多い。",
     "examples": [
-      "",
-      "",
-      ""
+      "The woman who lives next door is a doctor.",
+      "This is the phone which I bought yesterday.",
+      "That's the man whose car was stolen."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "The woman which lives next door is a doctor.",
+        "right": "The woman who lives next door is a doctor.",
+        "why": "人にはwho、物にはwhichやthat、所有にはwhose、場所にはwhereを使うことが多い。"
+      }
     ]
   },
   "gerund_infinitive": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "動名詞と不定詞",
+    "when": "別の動詞や前置詞の後ろで正しい動詞の形を選ぶ。",
+    "body": "動詞によって動名詞またはto不定詞を選ぶ。前置詞toの後ろでは動名詞になる場合がある。",
     "examples": [
-      "",
-      "",
-      ""
+      "I enjoy reading in the evening.",
+      "She decided to study abroad.",
+      "We look forward to meeting you."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "I enjoy to read in the evening.",
+        "right": "I enjoy reading in the evening.",
+        "why": "動詞によって動名詞またはto不定詞を選ぶ。前置詞toの後ろでは動名詞になる場合がある。"
+      }
     ]
   },
   "conj_prep": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "接続詞と前置詞（although / despiteなど）",
+    "when": "同じような意味を持つ接続詞と前置詞を使い分ける。後ろが節か名詞句かに注目する。",
+    "body": "althoughの後ろには節、despiteやdue toの後ろには名詞句を置く。",
     "examples": [
-      "",
-      "",
-      ""
+      "Although it was late, she kept working.",
+      "Despite the rain, the match continued.",
+      "The flight was canceled due to bad weather."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "Despite it was late, she kept working.",
+        "right": "Although it was late, she kept working.",
+        "why": "althoughの後ろには節、despiteやdue toの後ろには名詞句を置く。"
+      }
     ]
   },
   "agreement": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "主語と動詞の一致",
+    "when": "文の実際の主語に合わせて動詞を変える。",
+    "body": "主語と動詞の間にある名詞に惑わされず、主語の数に合わせる。everyは単数扱い、a number ofは複数扱い。",
     "examples": [
-      "",
-      "",
-      ""
+      "The list of candidates is on the desk.",
+      "Every student has a laptop.",
+      "A number of employees are working from home."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "The list of candidates are on the desk.",
+        "right": "The list of candidates is on the desk.",
+        "why": "主語と動詞の間にある名詞に惑わされず、主語の数に合わせる。everyは単数扱い、a number ofは複数扱い。"
+      }
     ]
   },
   "word_forms": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "語形（名詞・動詞・形容詞・副詞）",
+    "when": "文中の位置から、空欄に必要な品詞を選ぶ。",
+    "body": "冠詞の後ろには名詞、動詞を修飾する位置には副詞、be動詞の後ろには形容詞が来ることが多い。",
     "examples": [
-      "",
-      "",
-      ""
+      "We made a final decision.",
+      "The new system works efficiently.",
+      "The room is available now."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "The new system works efficient.",
+        "right": "The new system works efficiently.",
+        "why": "冠詞の後ろには名詞、動詞を修飾する位置には副詞、be動詞の後ろには形容詞が来ることが多い。"
+      }
     ]
   },
   "past_perfect": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "過去完了",
+    "when": "過去の別の行動や時点より前に起きた行動を表す。",
+    "body": "hadと過去分詞を使い、過去の基準時より前の出来事を示す。",
     "examples": [
-      "",
-      "",
-      ""
+      "When we arrived, the film had already started.",
+      "She had worked there for ten years before she retired.",
+      "By the time I called, he had left."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "When we arrived, the film already started.",
+        "right": "When we arrived, the film had already started.",
+        "why": "hadと過去分詞を使い、過去の基準時より前の出来事を示す。"
+      }
     ]
   },
   "past_perfect_continuous": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "過去完了進行形",
+    "when": "過去の別の行動や時点より前から、一定期間続いていた行動を表す。",
+    "body": "had beenと動詞の-ing形を使い、過去の時点までの継続に焦点を置く。",
     "examples": [
-      "",
-      "",
-      ""
+      "They had been waiting for an hour when the bus arrived.",
+      "He was tired because he had been running.",
+      "She had been working there for five years before she moved."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "They had waiting for an hour.",
+        "right": "They had been waiting for an hour.",
+        "why": "had beenと動詞の-ing形を使い、過去の時点までの継続に焦点を置く。"
+      }
     ]
   },
   "future_perfect": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "未来完了",
+    "when": "未来の特定の時点や行動より前に完了する行動を表す。",
+    "body": "will haveと過去分詞を使う。byは完了の期限を示す。",
     "examples": [
-      "",
-      "",
-      ""
+      "By Friday, I will have finished the report.",
+      "She will have left by the time you arrive.",
+      "By next year, they will have built the bridge."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "By Friday, I will finished the report.",
+        "right": "By Friday, I will have finished the report.",
+        "why": "will haveと過去分詞を使う。byは完了の期限を示す。"
+      }
     ]
   },
   "conditional3": {
-    "title": "",
-    "when": "",
-    "body": "",
+    "title": "第3条件文と混合条件文",
+    "when": "過去と異なる結果を想像したり、過去の条件が現在の結果に影響したりすることを表す。",
+    "body": "第3条件文はif + had + 過去分詞、would have + 過去分詞。混合条件文では結果が現在に及ぶためwould beなどを使う。",
     "examples": [
-      "",
-      "",
-      ""
+      "If I had left earlier, I wouldn't have missed the bus.",
+      "If she had studied medicine, she would be a doctor now.",
+      "Had I known, I would have helped."
     ],
     "mistakes": [
-      "",
-      ""
+      {
+        "wrong": "If I had left earlier, I wouldn't miss the bus.",
+        "right": "If I had left earlier, I wouldn't have missed the bus.",
+        "why": "第3条件文はif + had + 過去分詞、would have + 過去分詞。混合条件文では結果が現在に及ぶためwould beなどを使う。"
+      }
     ]
   },
   "reported": {
