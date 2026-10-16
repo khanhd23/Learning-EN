@@ -31726,34 +31726,44 @@
         "by": "codex-manual-ko-ui-047"
       },
       "review_now": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-048"
       },
       "review_now_title": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-048"
       },
       "rv_flagged": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-048"
       },
       "rv_wrong": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-048"
       },
       "save": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-048"
       },
       "save_preset": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-048"
       },
       "saved": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-048"
       },
       "search": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-048"
       },
       "search_hint": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-048"
       },
       "seconds_left": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-048"
       },
       "section_n": {
         "s": "missing"
