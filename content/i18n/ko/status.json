@@ -32457,29 +32457,36 @@
         "by": "codex-manual-ko-ui-064"
       },
       "weak_none": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-065"
       },
       "weak_spots": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-065"
       },
       "weekly_quests": {
         "s": "reviewed",
         "by": "codex-manual-ko-ui-026"
       },
       "welcome_session": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-065"
       },
       "when_to_use": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-065"
       },
       "woke_up": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-065"
       },
       "word_detail": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-065"
       },
       "word_family": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-065"
       },
       "word_lists": {
         "s": "missing"
@@ -32488,13 +32495,16 @@
         "s": "missing"
       },
       "word_of_day": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-065"
       },
       "words": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-065"
       },
       "words_known": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-ui-065"
       },
       "words_mastered": {
         "s": "missing"
