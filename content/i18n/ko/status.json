@@ -834,34 +834,44 @@
         "by": "codex-manual-ko-words-021"
       },
       "order_s2": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-022"
       },
       "order_s3": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-022"
       },
       "order_s4": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-022"
       },
       "cashier_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-022"
       },
       "salesperson_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-022"
       },
       "retail_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-022"
       },
       "wholesale_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-022"
       },
       "bargain_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-022"
       },
       "apologize_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-022"
       },
       "inconvenience_s1": {
-        "s": "missing"
+        "s": "reviewed",
+        "by": "codex-manual-ko-words-022"
       },
       "available_s1": {
         "s": "missing"
