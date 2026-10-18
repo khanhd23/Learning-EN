@@ -2,228 +2,228 @@
   "affect_effect": {
     "tip": "affectは主に動詞で「影響を与える」、effectは主に名詞で「影響・効果」を表す。",
     "notes": {
-      "affect": "affect?影響を与える",
-      "effect": "effect??????"
+      "affect": "affect：影響を与える",
+      "effect": "effect：影響・効果"
     }
   },
   "borrow_lend": {
     "tip": "borrowは人から借りる、lendは人に貸すという方向の違いに注意する。",
     "notes": {
-      "borrow": "borrow?借りる",
-      "lend": "lend???"
+      "borrow": "borrow：借りる",
+      "lend": "lend：貸す"
     }
   },
   "say_tell": {
     "tip": "sayは発した言葉の内容、tellは相手に情報を伝えることに焦点がある。",
     "notes": {
-      "say": "say?言う",
-      "tell": "tell????"
+      "say": "say：言う",
+      "tell": "tell：伝える"
     }
   },
   "make_do": {
     "tip": "makeは作る・生み出す、doは作業や行為を行うときに使う。",
     "notes": {
-      "make": "make?作る・生み出す",
-      "do": "do???"
+      "make": "make：作る・生み出す",
+      "do": "do：する・行う"
     }
   },
   "lose_loose": {
     "tip": "loseは失う、looseは固定されていない・緩いという意味。",
     "notes": {
-      "lose": "lose?失う",
-      "loose": "loose???"
+      "lose": "lose：失う",
+      "loose": "loose：固定されていない・緩い"
     }
   },
   "job_work": {
     "tip": "jobは具体的な職や仕事、workは仕事全般や働く行為を指す。",
     "notes": {
-      "job": "job?職・具体的な仕事",
-      "work": "work??????"
+      "job": "job：職・具体的な仕事",
+      "work": "work：仕事・働くこと"
     }
   },
   "fun_funny": {
     "tip": "funは楽しい活動や楽しさ、funnyは面白い、または奇妙なことを表す。",
     "notes": {
-      "fun": "fun?楽しさ・楽しい活動",
-      "funny": "funny????????"
+      "fun": "fun：楽しさ・楽しい活動",
+      "funny": "funny：面白い・奇妙な"
     }
   },
   "bored_boring": {
     "tip": "boredは人が退屈している状態、boringは物事が退屈だという性質。",
     "notes": {
-      "bored": "bored?退屈している",
-      "boring": "boring????"
+      "bored": "bored：退屈している",
+      "boring": "boring：退屈な"
     }
   },
   "hear_listen": {
     "tip": "hearは自然に音が聞こえる、listenは意識して耳を傾ける。",
     "notes": {
-      "hear": "hear?聞こえる",
-      "listen": "listen??????"
+      "hear": "hear：聞こえる",
+      "listen": "listen：耳を傾ける"
     }
   },
   "look_see_watch": {
     "tip": "lookは意識して見る、seeは目に入る、watchは動くものを注意して見る。",
     "notes": {
-      "look": "look?見る・目を向ける",
-      "see": "see????",
+      "look": "look：見る・目を向ける",
+      "see": "see：見える・目に入る",
       "watch": ""
     }
   },
   "rise_raise": {
     "tip": "riseは主語が自ら上がる、raiseは何かを上げる他動詞。",
     "notes": {
-      "rise": "rise?上がる",
-      "raise": "raise????"
+      "rise": "rise：上がる",
+      "raise": "raise：上げる"
     }
   },
   "among_between": {
     "tip": "amongは3つ以上の中で、betweenは通常2つの間で使う。",
     "notes": {
-      "among": "among?～の中で",
-      "between": "between????"
+      "among": "among：～の中で",
+      "between": "between：～の間で"
     }
   },
   "since_for": {
     "tip": "sinceは開始時点、forは継続期間を示す。",
     "notes": {
-      "since": "since?～以来",
-      "for": "for????"
+      "since": "since：～以来",
+      "for": "for：～の間"
     }
   },
   "during_while": {
     "tip": "duringの後ろには名詞、whileの後ろには主語と動詞を置く。",
     "notes": {
-      "during": "during?～の間",
-      "while": "while?????"
+      "during": "during：～の間",
+      "while": "while：～する間"
     }
   },
   "although_despite": {
     "tip": "althoughの後ろには節、despiteの後ろには名詞や動名詞を置く。",
     "notes": {
-      "although": "although?～だけれども",
-      "despite": "despite?????????"
+      "although": "although：～だけれども",
+      "despite": "despite：～にもかかわらず"
     }
   },
   "because_because_of": {
     "tip": "becauseの後ろには節、because ofの後ろには名詞句を置く。",
     "notes": {
-      "because": "because?なぜなら～だから",
-      "because of": "because of??????"
+      "because": "because：なぜなら～だから",
+      "because of": "because of：～のために"
     }
   },
   "economic_economical": {
     "tip": "economicは経済に関する、economicalは無駄がなく費用効率がよいという意味。",
     "notes": {
-      "economic": "economic?経済の",
-      "economical": "economical???????????"
+      "economic": "economic：経済の",
+      "economical": "economical：費用効率のよい"
     }
   },
   "advice_advise": {
     "tip": "adviceは名詞の「助言」、adviseは動詞の「助言する」。",
     "notes": {
-      "advice": "advice?助言",
-      "advise": "advise?????"
+      "advice": "advice：助言",
+      "advise": "advise：助言する"
     }
   },
   "remember_remind": {
     "tip": "rememberは自分が覚えている、remindは人に思い出させる。",
     "notes": {
-      "remember": "remember?覚えている・思い出す",
-      "remind": "remind???????"
+      "remember": "remember：覚えている・思い出す",
+      "remind": "remind：思い出させる"
     }
   },
   "check_control": {
     "tip": "checkは確認する、controlは管理・制御するという意味。",
     "notes": {
-      "check": "check?確認する",
-      "control": "control?????"
+      "check": "check：確認する",
+      "control": "control：管理する・制御する"
     }
   },
   "customer_client_guest": {
     "tip": "customerは商品を買う人、clientは専門サービスの依頼人、guestは招かれた客。",
     "notes": {
-      "customer": "customer?顧客・購入者",
-      "client": "client????",
+      "customer": "customer：顧客・購入者",
+      "client": "client：専門サービスの依頼人",
       "guest": ""
     }
   },
   "salary_wage": {
     "tip": "salaryは通常定期的な給与、wageは時間や日単位で計算される賃金。",
     "notes": {
-      "salary": "salary?給与",
-      "wage": "wage???"
+      "salary": "salary：給与",
+      "wage": "wage：賃金"
     }
   },
   "price_prize": {
     "tip": "priceは商品の値段、prizeは競争などの賞を表す。",
     "notes": {
-      "price": "price?価格",
-      "prize": "prize??"
+      "price": "price：価格",
+      "prize": "prize：賞"
     }
   },
   "job_career": {
     "tip": "jobは個別の職、careerは長期的な職業上の経歴を表す。",
     "notes": {
-      "job": "job?職・仕事",
-      "career": "career???"
+      "job": "job：職・具体的な仕事",
+      "career": "career：職業上の経歴"
     }
   },
   "travel_trip_journey": {
     "tip": "travelは旅行全般、tripは一回の旅行、journeyは移動の過程に焦点がある。",
     "notes": {
-      "travel": "travel?旅行する・旅行全般",
-      "trip": "trip??????",
+      "travel": "travel：旅行する・旅行全般",
+      "trip": "trip：一回の旅行",
       "journey": ""
     }
   },
   "its_its": {
     "tip": "itsは所有を表し、it'sはit isまたはit hasの短縮形。",
     "notes": {
-      "its": "its?それの",
-      "it's": "it's?it is / it has ????"
+      "its": "its：それの",
+      "it's": "it's：it is / it has の短縮形"
     }
   },
   "than_then": {
     "tip": "thanは比較、thenは時間や順序を表す。",
     "notes": {
-      "than": "than?～より",
-      "then": "then?????????"
+      "than": "than：～より",
+      "then": "then：そのとき・それから"
     }
   },
   "especially_specially": {
     "tip": "especiallyは特に、speciallyは特定の目的のためにという意味。",
     "notes": {
-      "especially": "especially?特に",
-      "specially": "specially??????????"
+      "especially": "especially：特に",
+      "specially": "specially：特定の目的のために"
     }
   },
   "hard_hardly": {
     "tip": "hardは一生懸命に、hardlyはほとんど～ないという意味。",
     "notes": {
-      "hard": "hard?一生懸命に・難しい",
-      "hardly": "hardly????????"
+      "hard": "hard：一生懸命に・難しい",
+      "hardly": "hardly：ほとんど～ない"
     }
   },
   "late_lately": {
     "tip": "lateは遅れて・遅い、latelyは最近という意味。",
     "notes": {
-      "late": "late?遅い・遅れて",
-      "lately": "lately???"
+      "late": "late：遅い・遅れて",
+      "lately": "lately：最近"
     }
   },
   "alone_lonely": {
     "tip": "aloneは一人でいる状態、lonelyは孤独を感じる気持ちを表す。",
     "notes": {
-      "alone": "alone?一人で",
-      "lonely": "lonely????"
+      "alone": "alone：一人で",
+      "lonely": "lonely：孤独な"
     }
   },
   "excited_exciting": {
     "tip": "excitedは人が興奮している状態、excitingは物事が人を興奮させる性質。",
     "notes": {
-      "excited": "excited?興奮している",
-      "exciting": "exciting????????"
+      "excited": "excited：興奮している",
+      "exciting": "exciting：興奮させる"
     }
   }
 }
