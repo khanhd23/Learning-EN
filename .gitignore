@@ -18,3 +18,8 @@ __pycache__/
 
 # Owner/Codex batch working files (sources are the committed TSV outputs)
 tools/authoring/work/
+
+# Local translation/review scratch files and release artifacts; never ship these.
+.tmp_*
+apk/closed/
+.vscode/
