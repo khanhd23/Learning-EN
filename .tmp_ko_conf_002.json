@@ -1,0 +1,12 @@
+{
+  "rise_raise": {"tip": "rise는 목적어 없이 ‘오르다’이고, raise는 목적어를 취해 무언가를 ‘올리다’입니다.", "notes": {"rise": "스스로 올라가거나 증가하다; 직접 목적어를 쓰지 않음.", "raise": "무언가를 들어 올리거나 증가시키다; 목적어가 필요함."}},
+  "among_between": {"tip": "between은 서로 구분되는 두 대상이나 지점 사이에, among은 여러 대상이 모인 집단 안에 씁니다.", "notes": {"among": "여러 사람이나 사물로 이루어진 집단 사이에.", "between": "구분되는 두 대상이나 경계 사이에."}},
+  "since_for": {"tip": "since는 일이 시작된 시점을, for는 그 일이 지속된 기간을 나타냅니다.", "notes": {"since": "시작점부터: since 2020.", "for": "일정한 기간 동안: for three years."}},
+  "during_while": {"tip": "during 뒤에는 명사나 사건이 오고, while 뒤에는 주어와 동사가 있는 절이 옵니다.", "notes": {"during": "명사와 함께 ‘~ 동안’: during the meeting.", "while": "절과 함께 ‘~하는 동안’: while I was working."}},
+  "although_despite": {"tip": "although 뒤에는 절이 오고, despite 뒤에는 명사·대명사 또는 -ing 형태가 옵니다.", "notes": {"although": "주어와 동사가 있는 절 앞에: although it was late.", "despite": "명사나 동명사 앞에: despite the rain; despite being tired."}},
+  "because_because_of": {"tip": "because는 절 형태의 원인을 소개하고, because of는 명사나 명사구 형태의 원인을 소개합니다.", "notes": {"because": "주어와 동사가 뒤따르는 ‘왜냐하면’: because I was tired.", "because of": "명사나 명사구가 뒤따르는 ‘~ 때문에’: because of the rain."}},
+  "economic_economical": {"tip": "economic은 경제와 관련된다는 뜻이고, economical은 돈·시간·자원을 적게 쓴다는 뜻입니다.", "notes": {"economic": "경제나 경제 체제와 관련된.", "economical": "낭비나 비용을 줄여 효율적인."}},
+  "advice_advise": {"tip": "advice는 보통 복수형을 쓰지 않는 명사이고, advise는 동사이며 끝소리가 /z/로 납니다.", "notes": {"advice": "조언이나 안내; 셀 수 없는 명사.", "advise": "조언하거나 안내하다; 동사."}},
+  "remember_remind": {"tip": "remember는 기억 속에 간직하거나 기억해 내는 것이고, remind는 다른 사람이 기억하도록 알려 주는 것입니다.", "notes": {"remember": "무언가를 기억하거나 잊지 않다.", "remind": "누군가에게 무언가를 기억하게 하다: remind someone to do something."}},
+  "check_control": {"tip": "check는 확인하는 것이고, control은 상황을 관리하거나 지배하고 영향을 주는 것입니다.", "notes": {"check": "무언가가 맞거나 제대로 작동하는지 확인하다.", "control": "관리하거나 지배하거나 통제하다."}}
+}

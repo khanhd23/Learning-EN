@@ -1,0 +1,25 @@
+tell_apart	見分け方
+test_meta	%1$d問 · %2$s · 前回: %3$s · ベスト: %4$s
+tests	テスト
+theme_dark	ダーク
+theme_light	ライト
+theme_system	端末の設定に合わせる
+time_up	時間切れです！
+time_used	時間: %1$d:%2$02d
+tips_title	ヒント
+today_plan	今日のプラン
+token_used	目覚ましトークンを使用しました
+too_few	これらのフィルターに一致する問題が十分にありません。
+topic_story	短い物語
+topics	トピック
+total_xp	合計XP
+trap_lookalike	見た目が似ている単語
+trap_preposition	前置詞の誤り
+trap_similar	似た意味
+trap_tense	時制の誤り
+trap_wrong_pos	語形の誤り
+type_choice	選択式
+type_error	誤りを見つける
+type_here	答えを入力
+type_meta	%1$d問 · 正答率 %2$s · 習得済み %3$d
+type_passage	読解文

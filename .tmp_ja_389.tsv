@@ -1,0 +1,25 @@
+type_sound	リスニング
+unanswered	未回答
+unlocked	解除済み
+unsaved	保存から削除しました
+untimed	時間制限なし
+version	バージョン %1$s
+vocab_total	%1$d単語 · %2$d意味
+vs_previous	前回比 %1$d%%
+wake_ad	動画を見て起こす
+wake_free	学習して起こす
+wake_token	目覚ましトークンを使う（残り%1$d個）
+weak_none	まだ苦手な分野はありません。よくできました！
+weak_spots	苦手な分野
+weekly_quests	週間クエスト
+welcome_session	初めてのレッスン
+when_to_use	使う場面
+woke_up	ペットが起きました！
+word_detail	単語
+word_family	語族
+word_lists	試験用単語リスト
+word_lists_desc	各試験で最もよく使われる単語
+word_of_day	今日の単語
+words	単語
+words_known	%2$d単語中 %1$d語を習得
+words_mastered	習得した単語

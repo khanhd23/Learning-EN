@@ -1,0 +1,10 @@
+species_cat	고양이
+species_panda	판다
+species_dragon	용
+pet_default_cat	Mia
+pet_default_panda	Bao
+pet_default_dragon	Ember
+locale_en	영어
+ob_language_title	어떤 언어를 사용하시나요?
+ob_language_sub	의미와 설명이 이 언어로 표시됩니다.
+i_speak	저는 %1$s를 사용해요

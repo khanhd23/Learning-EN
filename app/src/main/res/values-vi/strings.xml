@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="set_language">Nội dung học</string>
+    <string name="set_language">Ngôn ngữ hiển thị</string>
     <string name="locale_vi">Tiếng Việt</string>
-    <string name="locale_es">Español</string>
-    <string name="locale_pt_br">Português (Brasil)</string>
-    <string name="locale_id">Bahasa Indonesia</string>
-    <string name="locale_hi">हिन्दी</string>
-    <string name="locale_ar">العربية</string>
-    <string name="locale_ja">日本語</string>
-    <string name="locale_ko">한국어</string>
-    <string name="locale_th">ไทย</string>
-    <string name="locale_fr">Français</string>
+    <string name="locale_en">Tiếng Anh</string>
+    <string name="locale_es">Tiếng Tây Ban Nha</string>
+    <string name="locale_pt_br">Tiếng Bồ Đào Nha (Brazil)</string>
+    <string name="locale_id">Tiếng Indonesia</string>
+    <string name="locale_hi">Tiếng Hindi</string>
+    <string name="locale_ar">Tiếng Ả Rập</string>
+    <string name="locale_ja">Tiếng Nhật</string>
+    <string name="locale_ko">Tiếng Hàn</string>
+    <string name="locale_th">Tiếng Thái</string>
+    <string name="locale_fr">Tiếng Pháp</string>
     <string name="about_disclaimer">Giới thiệu LingoMori</string>
     <string name="about_tagline">Học tiếng Anh nhẹ nhàng, tiến bộ bền vững.</string>
     <string name="about_intro">LingoMori biến việc luyện tập hằng ngày thành những bước nhỏ, rõ ràng và dễ duy trì — để bạn tự tin hơn mà không bị quá tải.</string>
@@ -694,7 +695,6 @@
     <string name="pet_default_cat">Mít</string>
     <string name="pet_default_panda">Bánh Bao</string>
     <string name="pet_default_dragon">Lửa</string>
-    <string name="locale_en">English</string>
     <string name="ob_language_title">Bạn nói ngôn ngữ nào?</string>
     <string name="ob_language_sub">Nghĩa và giải thích sẽ hiển thị bằng ngôn ngữ này.</string>
     <string name="i_speak">Tôi nói %1$s</string>

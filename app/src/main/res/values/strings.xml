@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="set_language">Learning content</string>
+    <string name="set_language">Display language</string>
     <string name="locale_vi">Tiếng Việt</string>
     <string name="locale_es">Español</string>
     <string name="locale_pt_br">Português (Brasil)</string>

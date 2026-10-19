@@ -2,6 +2,7 @@ package com.yourbrand.englishlearn.core
 
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.os.LocaleListCompat
+import com.yourbrand.englishlearn.ui.Perf
 
 /** Keeps the learner-content locale and the AppCompat UI locale in sync. */
 object AppLocale {
@@ -33,10 +34,12 @@ object AppLocale {
     }
 
     fun apply(contentLocale: String) {
+        val started = System.nanoTime()
         val desired = languageTag(contentLocale)
         val current = AppCompatDelegate.getApplicationLocales()
         val currentTag = if (current.isEmpty) "" else current[0]?.toLanguageTag().orEmpty()
         if (!needsApply(currentTag, desired)) return
         AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(desired))
+        Perf.log("locale apply requested: $currentTag -> $desired call=${Perf.ms(started, System.nanoTime())}")
     }
 }

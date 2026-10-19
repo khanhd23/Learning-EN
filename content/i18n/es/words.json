@@ -123,7 +123,8 @@
     "g": "recordar, recordarle algo a alguien",
     "ex": {
       "remind_s1": "Recuérdame llamar al cliente."
-    }
+    },
+    "tip": "remind significa hacer que alguien recuerde algo y suele ir seguido de una persona: remind me."
   },
   "arrange_s1": {
     "g": "organizar; concertar",
@@ -273,13 +274,15 @@
     "g": "salario, sueldo",
     "ex": {
       "salary_s1": "El salario se paga el último día de cada mes."
-    }
+    },
+    "tip": "salary es un pago regular, normalmente mensual o anual; wage suele calcularse por horas o días trabajados."
   },
   "wage_s1": {
     "g": "salario; sueldo",
     "ex": {
       "wage_s1": "El salario mínimo aumentará el próximo año."
-    }
+    },
+    "tip": "wage suele calcularse por horas o días trabajados; salary es un pago regular mensual o anual."
   },
   "benefit_s1": {
     "g": "beneficio; prestación laboral",
@@ -681,13 +684,15 @@
     "g": "pedir prestado",
     "ex": {
       "borrow_s1": "¿Puedo pedirte prestada tu pluma por un minuto?"
-    }
+    },
+    "tip": "borrow es tomar algo prestado y devolverlo; lend es prestarlo temporalmente."
   },
   "lend_s1": {
     "g": "prestar",
     "ex": {
       "lend_s1": "¿Podrías prestarme tu pluma por un minuto?"
-    }
+    },
+    "tip": "lend es prestar algo temporalmente; borrow es tomarlo prestado y devolverlo después."
   },
   "invoice_s1": {
     "g": "factura",
@@ -1161,13 +1166,15 @@
     "g": "cliente",
     "ex": {
       "customer_s1": "El cliente pagó el pedido por internet."
-    }
+    },
+    "tip": "customer compra bienes o servicios; client suele recibir servicios profesionales y guest es una persona invitada o alojada."
   },
   "client_s1": {
     "g": "cliente",
     "ex": {
       "client_s1": "El abogado se reunió con su cliente a las diez."
-    }
+    },
+    "tip": "client suele recibir servicios profesionales; customer compra bienes o servicios."
   },
   "discount_s1": {
     "g": "descuento",
@@ -1821,7 +1828,8 @@
     "g": "precio",
     "ex": {
       "price_s1": "El precio de la habitación incluye un desayuno gratis."
-    }
+    },
+    "tip": "price es el precio de algo; prize es un premio ganado en una competencia."
   },
   "cheap_s1": {
     "g": "barato; económico",
@@ -2193,7 +2201,8 @@
     "g": "viaje",
     "ex": {
       "journey_s1": "El viaje dura unas cinco horas."
-    }
+    },
+    "tip": "journey enfatiza el trayecto o la experiencia de ir de un lugar a otro; trip es un viaje concreto."
   },
   "traffic_jam_s1": {
     "g": "embotellamiento; atasco",
@@ -2247,7 +2256,8 @@
     "g": "huésped",
     "ex": {
       "guest_s1": "Los huéspedes del hotel pueden usar la piscina gratis."
-    }
+    },
+    "tip": "guest es una persona invitada o alojada; customer y client se refieren a compradores o usuarios de servicios."
   },
   "vacant_s1": {
     "g": "desocupado; vacío y sin ocupantes",
@@ -3993,13 +4003,15 @@
     "g": "afectar; influir en",
     "ex": {
       "affect_s1": "La falta de sueño afecta tu memoria."
-    }
+    },
+    "tip": "affect suele ser un verbo que significa ‘influir’; effect suele ser un sustantivo que significa ‘resultado’. "
   },
   "effect_s1": {
     "g": "efecto",
     "ex": {
       "effect_s1": "El medicamento no tuvo ningún efecto en mi dolor de cabeza."
-    }
+    },
+    "tip": "effect suele ser un sustantivo que significa ‘resultado’; affect suele ser el verbo ‘influir’. "
   },
   "define_s1": {
     "g": "definir; explicar",
@@ -4167,13 +4179,15 @@
     "g": "levantar; alzar",
     "ex": {
       "raise_s1": "Levanta la mano antes de responder."
-    }
+    },
+    "tip": "raise significa levantar o aumentar algo y lleva objeto; rise significa subir por sí solo."
   },
   "raise_s2": {
     "g": "aumento de sueldo",
     "ex": {
       "raise_s2": "Le pidió un aumento de sueldo a su jefe."
-    }
+    },
+    "tip": "raise significa levantar o aumentar algo y lleva objeto; rise significa subir por sí solo."
   },
   "bring_up_s1": {
     "g": "criar; educar",
@@ -4323,13 +4337,15 @@
     "g": "emocionado, emocionada",
     "ex": {
       "excited_s1": "Estoy muy emocionado por el viaje."
-    }
+    },
+    "tip": "excited describe lo que siente una persona; exciting describe lo que provoca esa emoción."
   },
   "bored_s1": {
     "g": "aburrido, aburrida",
     "ex": {
       "bored_s1": "Estoy aburrido. Vamos a salir."
-    }
+    },
+    "tip": "bored describe lo que siente una persona; boring describe lo que causa esa sensación."
   },
   "nervous_s1": {
     "g": "nervioso, nerviosa",
@@ -4437,7 +4453,8 @@
     "g": "solo, sola; sentirse solo",
     "ex": {
       "lonely_s1": "Se sintió sola en la ciudad nueva."
-    }
+    },
+    "tip": "lonely describe el sentimiento de aislamiento; alone solo significa sin otras personas."
   },
   "calm_s1": {
     "g": "tranquilo, tranquila",
@@ -4893,13 +4910,15 @@
     "g": "perder",
     "ex": {
       "lose_s1": "A menudo pierdo las llaves en casa."
-    }
+    },
+    "tip": "lose significa perder algo o no ganar; loose significa ‘suelto’ o ‘flojo’. "
   },
   "lose_s2": {
     "g": "perder",
     "ex": {
       "lose_s2": "Volví a perder las llaves."
-    }
+    },
+    "tip": "lose significa perder algo o no ganar; loose significa ‘suelto’ o ‘flojo’. "
   },
   "coach_s1": {
     "g": "entrenador, entrenadora",
@@ -5667,7 +5686,8 @@
     "g": "flojo; holgado",
     "ex": {
       "loose_s1": "Estos pantalones están demasiado flojos de la cintura."
-    }
+    },
+    "tip": "loose significa ‘suelto’ o ‘flojo’; lose significa perder algo o no ganar."
   },
   "tight_s1": {
     "g": "ajustado; apretado",
@@ -5805,7 +5825,8 @@
     "g": "entre",
     "ex": {
       "between_s1": "La farmacia está entre el banco y la escuela."
-    }
+    },
+    "tip": "between suele unir dos elementos claros; among se refiere a un miembro dentro de un grupo."
   },
   "corner_s1": {
     "g": "esquina",
@@ -6675,25 +6696,29 @@
     "g": "decir",
     "ex": {
       "say_s1": "Di tu nombre despacio, por favor."
-    }
+    },
+    "tip": "say se enfoca en las palabras dichas; tell normalmente lleva una persona después: tell me."
   },
   "tell_s1": {
     "g": "decir; contar",
     "ex": {
       "tell_s1": "Cuéntame cómo fue tu primer día de clases."
-    }
+    },
+    "tip": "tell normalmente lleva una persona como objeto: tell me the answer; say se enfoca en las palabras."
   },
   "make_s1": {
     "g": "hacer; preparar",
     "ex": {
       "make_s1": "Los domingos preparamos el desayuno juntos."
-    }
+    },
+    "tip": "make suele significar crear o producir; do se usa mucho con tareas, actividades y trabajo."
   },
   "do_s1": {
     "g": "hacer",
     "ex": {
       "do_s1": "Hago la tarea después de cenar."
-    }
+    },
+    "tip": "do se usa mucho con tareas, actividades y trabajo; make suele significar crear o producir."
   },
   "be_s1": {
     "g": "ser; estar",
@@ -6783,7 +6808,8 @@
     "g": "recordar",
     "ex": {
       "remember_s1": "Recuerda cerrar la puerta con llave antes de salir."
-    }
+    },
+    "tip": "remember significa recordar; remind significa hacer que otra persona recuerde algo."
   },
   "forget_s1": {
     "g": "olvidar",
@@ -6831,31 +6857,36 @@
     "g": "oír",
     "ex": {
       "hear_s1": "Puedo oír pájaros fuera de mi ventana."
-    }
+    },
+    "tip": "hear es oír un sonido, a menudo sin intención; listen es escuchar prestando atención."
   },
   "listen_s1": {
     "g": "escuchar",
     "ex": {
       "listen_s1": "Escucha atentamente las instrucciones de seguridad."
-    }
+    },
+    "tip": "listen es escuchar prestando atención y suele ir con to; hear es oír un sonido."
   },
   "look_s1": {
     "g": "mirar",
     "ex": {
       "look_s1": "Mira la imagen de la página diez."
-    }
+    },
+    "tip": "look suele ir con at: look at the picture; see es ver y watch es observar durante un tiempo."
   },
   "see_s1": {
     "g": "ver",
     "ex": {
       "see_s1": "¿Puedes ver el puente desde aquí?"
-    }
+    },
+    "tip": "see suele significar ver o notar; look dirige la mirada y watch implica observar durante un tiempo."
   },
   "watch_s1": {
     "g": "ver; mirar",
     "ex": {
       "watch_s1": "Vemos una película los viernes por la noche."
-    }
+    },
+    "tip": "watch significa observar algo durante un tiempo, como una película o un partido."
   },
   "ask_s1": {
     "g": "preguntar; pedir",
@@ -7155,19 +7186,22 @@
     "g": "tarde",
     "ex": {
       "late_s1": "Llegó tarde porque perdió el autobús."
-    }
+    },
+    "tip": "late significa después de la hora esperada; lately significa recientemente."
   },
   "late_s2": {
     "g": "tarde; retrasado",
     "ex": {
       "late_s2": "Lo siento, llego tarde a clase."
-    }
+    },
+    "tip": "late significa después de la hora esperada; lately significa recientemente."
   },
   "lately_s1": {
     "g": "últimamente; recientemente",
     "ex": {
       "lately_s1": "¿Has leído algún libro bueno últimamente?"
-    }
+    },
+    "tip": "lately significa recientemente; late significa después de la hora esperada."
   },
   "always_s1": {
     "g": "siempre",
@@ -7791,25 +7825,29 @@
     "g": "difícil",
     "ex": {
       "hard_s1": "La última pregunta fue difícil."
-    }
+    },
+    "tip": "hard puede significar difícil o con esfuerzo; hardly significa ‘casi no’. "
   },
   "hard_s2": {
     "g": "trabajar duro; esforzarse",
     "ex": {
       "hard_s2": "Ella trabaja duro para mejorar su inglés."
-    }
+    },
+    "tip": "hard puede significar difícil o con esfuerzo; hardly significa ‘casi no’. "
   },
   "hard_s3": {
     "g": "duro; dura",
     "ex": {
       "hard_s3": "Este pan está demasiado duro para comerlo."
-    }
+    },
+    "tip": "hard puede significar difícil o con esfuerzo; hardly significa ‘casi no’. "
   },
   "hardly_s1": {
     "g": "apenas; difícilmente",
     "ex": {
       "hardly_s1": "Apenas podía oírla en la habitación ruidosa."
-    }
+    },
+    "tip": "hardly significa ‘casi no’; hard significa difícil o con esfuerzo."
   },
   "fast_s1": {
     "g": "rápido; rápida",
@@ -7929,37 +7967,43 @@
     "g": "divertido, divertida",
     "ex": {
       "fun_s1": "La clase de cocina fue divertida."
-    }
+    },
+    "tip": "fun significa diversión o algo agradable; funny significa gracioso o que provoca risa."
   },
   "fun_s2": {
     "g": "diversión",
     "ex": {
       "fun_s2": "Nos divertimos mucho en el picnic."
-    }
+    },
+    "tip": "fun significa diversión o algo agradable; funny significa gracioso o que provoca risa."
   },
   "funny_s1": {
     "g": "gracioso, graciosa",
     "ex": {
       "funny_s1": "Contó una historia graciosa sobre su perro."
-    }
+    },
+    "tip": "funny suele significar gracioso; fun significa divertido o agradable."
   },
   "boring_s1": {
     "g": "aburrido, aburrida",
     "ex": {
       "boring_s1": "La película era tan aburrida que dejé de verla."
-    }
+    },
+    "tip": "boring describe algo que causa falta de interés; bored describe la sensación de la persona."
   },
   "exciting_s1": {
     "g": "emocionante",
     "ex": {
       "exciting_s1": "Empezar un curso nuevo es emocionante."
-    }
+    },
+    "tip": "exciting describe algo que provoca entusiasmo; excited describe la emoción de una persona."
   },
   "alone_s1": {
     "g": "solo, sola",
     "ex": {
       "alone_s1": "Ella estaba sola en el salón de clases."
-    }
+    },
+    "tip": "alone significa sin otras personas; lonely describe el sentimiento de sentirse aislado."
   },
   "beautiful_s1": {
     "g": "hermoso; hermosa",
@@ -8031,25 +8075,29 @@
     "g": "porque",
     "ex": {
       "because_s1": "Me quedé en casa porque estaba cansado."
-    }
+    },
+    "tip": "because va seguido de una oración; because of va seguido de un sintagma nominal."
   },
   "because_of_s1": {
     "g": "debido a; se usa para expresar la razón de algo",
     "ex": {
       "because_of_s1": "El partido se canceló debido a la fuerte lluvia."
-    }
+    },
+    "tip": "because of va seguido de un sintagma nominal; because va seguido de una oración."
   },
   "although_s1": {
     "g": "aunque",
     "ex": {
       "although_s1": "Aunque hacía frío, salimos a caminar."
-    }
+    },
+    "tip": "although va seguido de una oración; despite va seguido de un sustantivo o una forma en -ing."
   },
   "despite_s1": {
     "g": "a pesar de",
     "ex": {
       "despite_s1": "Disfrutamos el viaje a pesar de la lluvia."
-    }
+    },
+    "tip": "despite va seguido de un sustantivo o una forma en -ing; although va seguido de una oración."
   },
   "if_s1": {
     "g": "si",
@@ -8073,37 +8121,43 @@
     "g": "mientras",
     "ex": {
       "while_s1": "Escuché música mientras cocinaba."
-    }
+    },
+    "tip": "while va seguido de una oración: while I was working; during va seguido de un sintagma nominal."
   },
   "during_s1": {
     "g": "durante",
     "ex": {
       "during_s1": "Apaga el teléfono durante la clase."
-    }
+    },
+    "tip": "during va seguido de un sintagma nominal: during the meeting; while va seguido de una oración."
   },
   "since_s1": {
     "g": "desde",
     "ex": {
       "since_s1": "Vivo aquí desde 2020."
-    }
+    },
+    "tip": "since introduce un punto de inicio: since 2020; for introduce una duración: for five years."
   },
   "since_s2": {
     "g": "desde que",
     "ex": {
       "since_s2": "La conozco desde que éramos niños."
-    }
+    },
+    "tip": "since introduce un punto de inicio: since 2020; for introduce una duración: for five years."
   },
   "for_s1": {
     "g": "durante; por",
     "ex": {
       "for_s1": "Esperamos veinte minutos."
-    }
+    },
+    "tip": "for introduce una duración o un propósito; since introduce un punto de inicio."
   },
   "for_s2": {
     "g": "para",
     "ex": {
       "for_s2": "Este regalo es para mi hermanita."
-    }
+    },
+    "tip": "for introduce una duración o un propósito; since introduce un punto de inicio."
   },
   "before_s1": {
     "g": "antes de",
@@ -8127,43 +8181,50 @@
     "g": "entre",
     "ex": {
       "among_s1": "Encontré mi pluma entre los libros."
-    }
+    },
+    "tip": "among se usa para alguien o algo dentro de un grupo; between suele unir dos elementos claros."
   },
   "than_s1": {
     "g": "que",
     "ex": {
       "than_s1": "Esta bolsa es más ligera que esa."
-    }
+    },
+    "tip": "than se usa en comparaciones; then se refiere al tiempo o al siguiente paso."
   },
   "then_s1": {
     "g": "luego; entonces",
     "ex": {
       "then_s1": "Lee el texto y luego responde las preguntas."
-    }
+    },
+    "tip": "then se refiere al tiempo o al orden; than se usa en comparaciones."
   },
   "its_s1": {
     "g": "su (posesivo)",
     "ex": {
       "its_s1": "El gato se está lavando la cara."
-    }
+    },
+    "tip": "its indica posesión: its policy; it's es la contracción de it is o it has."
   },
   "it_s_s1": {
     "g": "it's; contracción de «it is» o «it has»",
     "ex": {
       "it_s_s1": "«It's» ha sido una semana ocupada, pero el proyecto va según lo previsto."
-    }
+    },
+    "tip": "it's es la contracción de it is o it has; its indica posesión."
   },
   "especially_s1": {
     "g": "especialmente; sobre todo",
     "ex": {
       "especially_s1": "Disfruto los deportes al aire libre, especialmente la natación."
-    }
+    },
+    "tip": "especially significa ‘especialmente’; specially significa ‘para un propósito específico’. "
   },
   "specially_s1": {
     "g": "especialmente; expresamente",
     "ex": {
       "specially_s1": "La sala fue preparada especialmente para el conferencista visitante."
-    }
+    },
+    "tip": "specially significa ‘para un propósito específico’; especially significa ‘especialmente’. "
   },
   "however_s1": {
     "g": "sin embargo",
@@ -8217,91 +8278,106 @@
     "g": "empleo; trabajo",
     "ex": {
       "job_s1": "Encontró trabajo en una librería."
-    }
+    },
+    "tip": "job es un puesto remunerado concreto; work es la actividad laboral y career es una trayectoria profesional larga."
   },
   "work_s1": {
     "g": "trabajo",
     "ex": {
       "work_s1": "Hoy tengo mucho trabajo que hacer."
-    }
+    },
+    "tip": "work puede significar trabajo o empleo; cuando significa trabajo en general suele ser incontable: a lot of work."
   },
   "work_s2": {
     "g": "trabajar",
     "ex": {
       "work_s2": "Trabajo en una oficina pequeña cerca de mi casa."
-    }
+    },
+    "tip": "work puede significar trabajo o empleo; cuando significa trabajo en general suele ser incontable: a lot of work."
   },
   "career_s1": {
     "g": "carrera profesional",
     "ex": {
       "career_s1": "Quiere una carrera en educación."
-    }
+    },
+    "tip": "career es la trayectoria profesional a largo plazo; job es un puesto concreto."
   },
   "advice_s1": {
     "g": "consejo",
     "ex": {
       "advice_s1": "Gracias por tu útil consejo."
-    }
+    },
+    "tip": "advice es un sustantivo incontable: some advice; advise es el verbo."
   },
   "advise_s1": {
     "g": "aconsejar; recomendar",
     "ex": {
       "advise_s1": "La maestra me aconsejó leer todos los días."
-    }
+    },
+    "tip": "advise es el verbo ‘aconsejar’; advice es el sustantivo incontable ‘consejo’. "
   },
   "check_s1": {
     "g": "revisar; comprobar",
     "ex": {
       "check_s1": "Revisa tus respuestas antes de enviar el formulario."
-    }
+    },
+    "tip": "check significa comprobar o revisar; control significa controlar o dirigir."
   },
   "control_s1": {
     "g": "controlar; manejar",
     "ex": {
       "control_s1": "Este pequeño botón controla el volumen."
-    }
+    },
+    "tip": "control significa controlar o limitar; check significa comprobar o revisar."
   },
   "rise_s1": {
     "g": "subir; aumentar",
     "ex": {
       "rise_s1": "Los precios suben cuando la oferta disminuye."
-    }
+    },
+    "tip": "rise significa subir sin objeto directo; raise significa levantar o aumentar algo y lleva objeto."
   },
   "economic_s1": {
     "g": "económico; relacionado con el dinero, el comercio o la producción",
     "ex": {
       "economic_s1": "El informe explica claramente la situación económica."
-    }
+    },
+    "tip": "economic significa relacionado con la economía; economical significa que ahorra dinero o combustible."
   },
   "economical_s1": {
     "g": "económico; que usa el mínimo de tiempo o recursos necesario para ser eficaz",
     "ex": {
       "economical_s1": "Este automóvil pequeño es económico de usar."
-    }
+    },
+    "tip": "economical significa que cuesta poco; economic significa relacionado con la economía."
   },
   "prize_s1": {
     "g": "premio",
     "ex": {
       "prize_s1": "Ganó el primer premio en el concurso de escritura."
-    }
+    },
+    "tip": "prize es un premio ganado en una competencia; price es el precio de algo."
   },
   "travel_s1": {
     "g": "viajar",
     "ex": {
       "travel_s1": "Viajo al trabajo en tren todos los días."
-    }
+    },
+    "tip": "travel es la actividad general de desplazarse; trip es un viaje concreto."
   },
   "travel_s2": {
     "g": "viaje; viajar",
     "ex": {
       "travel_s2": "Viajar en avión puede ser caro durante las vacaciones."
-    }
+    },
+    "tip": "travel es la actividad general de desplazarse; trip es un viaje concreto."
   },
   "trip_s1": {
     "g": "viaje",
     "ex": {
       "trip_s1": "Hicimos un viaje corto a la costa."
-    }
+    },
+    "tip": "trip es un viaje o visita concreta; travel es la actividad general de viajar."
   },
   "teacher_s1": {
     "g": "profesor; profesora",
@@ -20192,7 +20268,7 @@
   "agony_s1": {
     "g": "agonía; sentimientos intensos de sufrimiento o dolor mental o físico agudo",
     "ex": {
-      "agony_s1": "Sufr?a un dolor intenso despu?s de lesionarse la rodilla."
+      "agony_s1": "Sufría un dolor intenso después de lesionarse la rodilla."
     }
   },
   "angel_s1": {
@@ -21806,7 +21882,7 @@
   "refuge_s1": {
     "g": "refugio",
     "ex": {
-      "refuge_s1": "El refugio ofreci? protecci?n a las familias despu?s de la tormenta."
+      "refuge_s1": "El refugio ofreció protección a las familias después de la tormenta."
     }
   },
   "remedy_s1": {
@@ -22208,7 +22284,7 @@
   "wandering_s1": {
     "g": "errante, divagante",
     "ex": {
-      "wandering_s1": "Su explicaci?n divagante confundi? al p?blico."
+      "wandering_s1": "Su explicación divagante confundió al público."
     }
   },
   "wane_s1": {
@@ -22914,7 +22990,7 @@
     }
   },
   "liaison_s1": {
-    "g": "relaci?n sexual secreta o il?cita",
+    "g": "relación sexual secreta o ilícita",
     "ex": {
       "liaison_s1": "La novela describe una relación secreta entre dos personajes."
     }
@@ -23186,7 +23262,7 @@
   "torment_s1": {
     "g": "tormento",
     "ex": {
-      "torment_s1": "El paciente sufr?a un tormento despu?s de la grave lesi?n."
+      "torment_s1": "El paciente sufría un tormento después de la grave lesión."
     }
   },
   "tot_s1": {
@@ -23874,7 +23950,7 @@
     }
   },
   "unrest_s1": {
-    "g": "disturbios e inquietud p?blica",
+    "g": "disturbios e inquietud pública",
     "ex": {
       "unrest_s1": "El gobierno pidió calma tras varios días de inestabilidad pública."
     }
@@ -24062,13 +24138,13 @@
   "rickroll_s1": {
     "g": "engañar con un enlace de Rickroll",
     "ex": {
-      "rickroll_s1": "Ese enlace acortado redirigir? al v?deo de Rick Astley a cualquiera que haga clic."
+      "rickroll_s1": "Ese enlace acortado redirigirá al vídeo de Rick Astley a cualquiera que haga clic."
     }
   },
   "riverside_s1": {
     "g": "ribera; orilla de un río",
     "ex": {
-      "riverside_s1": "Las familias se reunieron junto al r?o para hacer un picnic el domingo."
+      "riverside_s1": "Las familias se reunieron junto al río para hacer un picnic el domingo."
     }
   },
   "semiquincentennial_s1": {
@@ -24116,7 +24192,7 @@
   "url_s1": {
     "g": "dirección web",
     "ex": {
-      "url_s1": "Introduce la URL en el navegador para abrir la p?gina oficial de informaci?n."
+      "url_s1": "Introduce la URL en el navegador para abrir la página oficial de información."
     }
   },
   "ushanka_s1": {
@@ -24176,7 +24252,7 @@
   "perplex_s1": {
     "g": "desconcertar",
     "ex": {
-      "perplex_s1": "El resultado inesperado sigui? desconcertando al equipo de investigaci?n."
+      "perplex_s1": "El resultado inesperado siguió desconcertando al equipo de investigación."
     }
   },
   "ram_s1": {
@@ -24284,13 +24360,13 @@
   "wanting_s1": {
     "g": "sin, carente de",
     "ex": {
-      "wanting_s1": "La propuesta fue rechazada porque carec?a de detalles pr?cticos."
+      "wanting_s1": "La propuesta fue rechazada porque carecía de detalles prácticos."
     }
   },
   "warfare_s1": {
     "g": "guerra",
     "ex": {
-      "warfare_s1": "La guerra moderna depende de la comunicaci?n, la planificaci?n y la log?stica."
+      "warfare_s1": "La guerra moderna depende de la comunicación, la planificación y la logística."
     }
   },
   "aka_s1": {
@@ -24380,7 +24456,7 @@
   "sheaf_s1": {
     "g": "fajo o grupo reunido",
     "ex": {
-      "sheaf_s1": "Llev? un fajo de papeles a la reuni?n."
+      "sheaf_s1": "Llevó un fajo de papeles a la reunión."
     }
   },
   "them_s1": {
@@ -24398,7 +24474,7 @@
   "touching_s1": {
     "g": "conmovedor",
     "ex": {
-      "touching_s1": "Su mensaje conmovedor hizo sonre?r al profesor que se jubilaba."
+      "touching_s1": "Su mensaje conmovedor hizo sonreír al profesor que se jubilaba."
     }
   },
   "volcano_s1": {
@@ -24488,7 +24564,7 @@
   "friends_s1": {
     "g": "amigos",
     "ex": {
-      "friends_s1": "Los buenos amigos se apoyan durante los momentos dif?ciles."
+      "friends_s1": "Los buenos amigos se apoyan durante los momentos difíciles."
     }
   },
   "frustum_s1": {
@@ -24674,7 +24750,7 @@
   "acquit_s1": {
     "g": "absolver",
     "ex": {
-      "acquit_s1": "El tribunal absolvi? al acusado despu?s de revisar las nuevas pruebas."
+      "acquit_s1": "El tribunal absolvió al acusado después de revisar las nuevas pruebas."
     }
   },
   "adieu_s1": {
@@ -24818,7 +24894,7 @@
   "dogs_s1": {
     "g": "carreras de perros",
     "ex": {
-      "dogs_s1": "Anoche perd? dinero apostando en las carreras de perros del hip?dromo."
+      "dogs_s1": "Anoche perdí dinero apostando en las carreras de perros del hipódromo."
     }
   },
   "duct_s1": {
@@ -24858,7 +24934,7 @@
     }
   },
   "features_s1": {
-    "g": "caracter?sticas o funciones destacadas",
+    "g": "características o funciones destacadas",
     "ex": {
       "features_s1": "El teléfono nuevo tiene funciones de accesibilidad útiles."
     }
@@ -24984,7 +25060,7 @@
     }
   },
   "reciprocal_s1": {
-    "g": "rec?proco o inverso multiplicativo",
+    "g": "recíproco o inverso multiplicativo",
     "ex": {
       "reciprocal_s1": "El recíproco de cuatro es un cuarto."
     }
@@ -25232,7 +25308,7 @@
   "abusive_s1": {
     "g": "insultante; que expresa reproches ofensivos",
     "ex": {
-      "abusive_s1": "El refugio ayud? a los ni?os a salir de forma segura de un hogar abusivo."
+      "abusive_s1": "El refugio ayudó a los niños a salir de forma segura de un hogar abusivo."
     }
   },
   "acting_s1": {
@@ -25472,7 +25548,7 @@
   "candied_s1": {
     "g": "confitado; cubierto de azúcar o almíbar",
     "ex": {
-      "candied_s1": "La panader?a vende fruta confitada durante el festival de invierno."
+      "candied_s1": "La panadería vende fruta confitada durante el festival de invierno."
     }
   },
   "circular_s1": {
@@ -25502,7 +25578,7 @@
   "forgather_s1": {
     "g": "reunirse",
     "ex": {
-      "forgather_s1": "Los antiguos compa?eros de clase se re?nen cada a?o para compartir una cena."
+      "forgather_s1": "Los antiguos compañeros de clase se reúnen cada año para compartir una cena."
     }
   },
   "glaring_s1": {
@@ -25688,7 +25764,7 @@
   "lour_s1": {
     "g": "cernirse de forma oscura y amenazante",
     "ex": {
-      "lour_s1": "Las nubes oscuras se cern?an sobre la costa antes de la tormenta."
+      "lour_s1": "Las nubes oscuras se cernían sobre la costa antes de la tormenta."
     }
   },
   "lower_s1": {
@@ -25826,7 +25902,7 @@
   "gallant_s1": {
     "g": "valiente y honorable",
     "ex": {
-      "gallant_s1": "El valiente bombero llev? al ni?o a un lugar seguro."
+      "gallant_s1": "El valiente bombero llevó al niño a un lugar seguro."
     }
   },
   "grate_s1": {
@@ -25916,7 +25992,7 @@
   "practically_s1": {
     "g": "prácticamente",
     "ex": {
-      "practically_s1": "El port?til viejo era pr?cticamente inutilizable sin una bater?a nueva."
+      "practically_s1": "El portátil viejo era prácticamente inutilizable sin una batería nueva."
     }
   },
   "repel_s1": {
@@ -26768,7 +26844,7 @@
   "salient_s1": {
     "g": "destacado",
     "ex": {
-      "salient_s1": "El informe destaca los hechos m?s destacados del caso."
+      "salient_s1": "El informe destaca los hechos más destacados del caso."
     }
   },
   "sanguine_s1": {
@@ -26786,7 +26862,7 @@
   "slit_s1": {
     "g": "hacer un corte largo y estrecho",
     "ex": {
-      "slit_s1": "El sastre hizo un corte largo y estrecho en la tela siguiendo la l?nea marcada."
+      "slit_s1": "El sastre hizo un corte largo y estrecho en la tela siguiendo la línea marcada."
     }
   },
   "solicit_s1": {
@@ -26976,9 +27052,9 @@
     }
   },
   "cane_s1": {
-    "g": "cubrir con tiras de ca?a",
+    "g": "cubrir con tiras de caña",
     "ex": {
-      "cane_s1": "El artesano cubri? con tiras de ca?a el asiento de la silla vieja."
+      "cane_s1": "El artesano cubrió con tiras de caña el asiento de la silla vieja."
     }
   },
   "celestial_s1": {
@@ -27156,9 +27232,9 @@
     }
   },
   "gravitate_s1": {
-    "g": "sentirse atra?do",
+    "g": "sentirse atraído",
     "ex": {
-      "gravitate_s1": "Los alumnos nuevos suelen sentirse atra?dos por la biblioteca tranquila."
+      "gravitate_s1": "Los alumnos nuevos suelen sentirse atraídos por la biblioteca tranquila."
     }
   },
   "groom_s1": {
@@ -27182,7 +27258,7 @@
   "humming_s1": {
     "g": "que produce un zumbido continuo",
     "ex": {
-      "humming_s1": "El refrigerador que produc?a un zumbido continuo no lo dej? dormir."
+      "humming_s1": "El refrigerador que producía un zumbido continuo no lo dejó dormir."
     }
   },
   "ignominious_s1": {
@@ -27218,7 +27294,7 @@
   "indemnify_s1": {
     "g": "indemnizar",
     "ex": {
-      "indemnify_s1": "La p?liza indemniza a los clientes contra los da?os sufridos durante la entrega."
+      "indemnify_s1": "La póliza indemniza a los clientes contra los daños sufridos durante la entrega."
     }
   },
   "inland_s1": {
@@ -27242,7 +27318,7 @@
   "intended_s1": {
     "g": "previsto",
     "ex": {
-      "intended_s1": "El p?blico previsto para este curso para principiantes son estudiantes adultos."
+      "intended_s1": "El público previsto para este curso para principiantes son estudiantes adultos."
     }
   },
   "interesting_s1": {
@@ -27374,7 +27450,7 @@
   "planetary_s1": {
     "g": "planetario; relacionado con las características físicas u orbitales de un planeta",
     "ex": {
-      "planetary_s1": "Los investigadores compararon varios sistemas planetarios m?s all? del nuestro."
+      "planetary_s1": "Los investigadores compararon varios sistemas planetarios más allá del nuestro."
     }
   },
   "plank_s1": {
@@ -27542,7 +27618,7 @@
   "studied_s1": {
     "g": "cuidadosamente pensado",
     "ex": {
-      "studied_s1": "Dio una respuesta cuidadosamente pensada a la pregunta dif?cil."
+      "studied_s1": "Dio una respuesta cuidadosamente pensada a la pregunta difícil."
     }
   },
   "superficial_s1": {
@@ -27656,7 +27732,7 @@
   "volcanic_s1": {
     "g": "volcánico; relacionado con volcanes, producido por ellos o compuesto de ellos",
     "ex": {
-      "volcanic_s1": "Las rocas volc?nicas de la isla se formaron despu?s de una antigua erupci?n."
+      "volcanic_s1": "Las rocas volcánicas de la isla se formaron después de una antigua erupción."
     }
   },
   "weary_s1": {
@@ -27728,7 +27804,7 @@
   "beneficent_s1": {
     "g": "beneficente",
     "ex": {
-      "beneficent_s1": "La organizaci?n beneficente apoya la atenci?n m?dica gratuita."
+      "beneficent_s1": "La organización beneficente apoya la atención médica gratuita."
     }
   },
   "blacken_s1": {
@@ -27824,7 +27900,7 @@
   "dreadful_s1": {
     "g": "terrible",
     "ex": {
-      "dreadful_s1": "Los viajeros enfrentaron un clima terrible en la monta?a."
+      "dreadful_s1": "Los viajeros enfrentaron un clima terrible en la montaña."
     }
   },
   "elicit_s1": {
@@ -28106,7 +28182,7 @@
   "procession_s1": {
     "g": "procesión",
     "ex": {
-      "procession_s1": "Una procesi?n avanz? lentamente por la plaza del pueblo."
+      "procession_s1": "Una procesión avanzó lentamente por la plaza del pueblo."
     }
   },
   "profuse_s1": {
@@ -28196,7 +28272,7 @@
   "sparing_s1": {
     "g": "parco, que usa o da poco",
     "ex": {
-      "sparing_s1": "El gu?a fue parco en detalles t?cnicos."
+      "sparing_s1": "El guía fue parco en detalles técnicos."
     }
   },
   "sparkling_s1": {

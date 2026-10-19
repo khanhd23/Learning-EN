@@ -35,6 +35,7 @@ class MeScreen(activity: MainActivity) : ScrollScreen(activity) {
     }
 
     override fun build(body: LinearLayout) {
+        if (showContentLoading(body)) return
         val c = ctx
         val s = services
         val items = s.store.allItems()

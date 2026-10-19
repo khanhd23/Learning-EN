@@ -1,0 +1,14 @@
+{
+  "customer_client_guest": {"tip": "customer는 상품이나 서비스를 구매하는 사람, client는 전문 서비스를 받는 사람, guest는 초대받은 사람이나 손님입니다.", "notes": {"customer": "상품이나 서비스를 구매하는 사람.", "client": "전문 서비스를 받는 개인이나 조직.", "guest": "집, 호텔 또는 행사에 초대받은 사람이나 투숙객."}},
+  "salary_wage": {"tip": "salary는 보통 월급이나 연봉처럼 고정된 급여이고, wage는 시간·일·작업량에 따라 계산되는 경우가 많습니다.", "notes": {"salary": "보통 월별 또는 연별로 지급되는 고정 급여.", "wage": "주로 시간이나 짧은 기간을 기준으로 지급되는 임금."}},
+  "price_prize": {"tip": "price는 무언가에 지불하는 금액이고, prize는 경쟁에서 이기거나 성과를 내서 받는 상입니다.", "notes": {"price": "상품, 서비스 또는 활동에 부과되는 가격.", "prize": "경쟁에서 이기거나 성과를 인정받아 받는 상."}},
+  "job_career": {"tip": "job은 특정 직업이나 직책이고, career는 장기간에 걸친 직업적 경로입니다.", "notes": {"job": "특정한 일자리, 직책 또는 업무.", "career": "시간이 지나며 이어지는 직업 생활의 경로."}},
+  "travel_trip_journey": {"tip": "travel은 여행이나 이동 전반, trip은 특정한 여행, journey는 한 장소에서 다른 장소로 이동하는 과정에 초점을 둡니다.", "notes": {"travel": "여행하거나 이동하는 일반적인 활동.", "trip": "특정한 여행이나 방문, 보통 왕복 여행.", "journey": "두 장소 사이를 이동하는 여정이나 과정."}},
+  "its_its": {"tip": "its는 소유를 나타내고, it's는 it is 또는 it has의 축약형입니다.", "notes": {"its": "사물이나 동물에 대해 ‘그것의’라는 소유를 나타냄.", "it's": "it is 또는 it has의 줄임말."}},
+  "than_then": {"tip": "than은 비교에 쓰이고, then은 시간·순서·결과를 나타냅니다.", "notes": {"than": "비교급 뒤에 사용: better than.", "then": "그다음에, 그때, 또는 그런 경우에."}},
+  "especially_specially": {"tip": "especially는 ‘특히’라는 강조이고, specially는 특정 목적을 위해 ‘특별히’라는 뜻입니다.", "notes": {"especially": "특히, 무엇보다도.", "specially": "특정한 목적이나 용도를 위해."}},
+  "hard_hardly": {"tip": "hard는 열심히·강하게 또는 어려운이라는 뜻이고, hardly는 ‘거의 ~않다’라는 뜻입니다.", "notes": {"hard": "열심히, 강하게, 또는 어려운.", "hardly": "거의 ~않다; 아주 조금만."}},
+  "late_lately": {"tip": "late는 예정된 시간보다 늦거나 기간의 끝 무렵이라는 뜻이고, lately는 ‘최근에’라는 뜻입니다.", "notes": {"late": "예상한 시간보다 늦은, 또는 늦은 시점의.", "lately": "최근에; 요즘."}},
+  "alone_lonely": {"tip": "alone은 함께 있는 사람이 없는 상태이고, lonely는 동료나 연결이 없어 슬픈 감정입니다.", "notes": {"alone": "다른 사람이 곁에 없는 상태.", "lonely": "동료나 정서적 연결이 없어 외로운 감정을 느끼는."}},
+  "excited_exciting": {"tip": "excited는 사람이 느끼는 감정이고, exciting은 그 감정을 일으키는 대상을 설명합니다.", "notes": {"excited": "무언가에 대해 신나거나 들뜬.", "exciting": "흥미와 열정을 불러일으키는, 신나는."}}
+}

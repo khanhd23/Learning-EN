@@ -131,7 +131,10 @@ def empty_files(root: Path, locale: str) -> dict[str, object]:
     words = {}
     for word in en["words"].get("words", []):
         for sense in word.get("senses", []):
-            words[sense["id"]] = {"g": "", "ex": {x["id"]: "" for x in sense.get("ex", [])}, "tip": "", "regional": {"es-ES": ""}}
+            entry = {"g": "", "ex": {x["id"]: "" for x in sense.get("ex", [])}, "tip": ""}
+            if locale == "es":
+                entry["regional"] = {"es-ES": ""}
+            words[sense["id"]] = entry
     grammar = {}
     for item in en["grammar"].get("points", []):
         grammar[item["id"]] = {"title": "", "when": "", "body": "", "examples": ["" for _ in item.get("examples", [])], "mistakes": ["" for _ in item.get("mistakes", [])]}
@@ -216,10 +219,13 @@ def draft_value(item: dict, locale: str, provider: str, api_key: str):
     if item["kind"] == "words":
         # The gloss is a short equivalent of the headword in this sense, not a translated definition.
         context = " ".join([source.get("def", "")] + [x.get("text", "") for x in source.get("ex", [])])
-        return {"g": translate_text(item.get("lemma", ""), {}, locale, provider, api_key, context=context),
-                "ex": {x["id"]: translate_text(x.get("text", ""), {"lemma": item.get("lemma", "")}, locale, provider, api_key)
-                       for x in source.get("ex", [])},
-                "tip": "", "regional": {"es-ES": ""}}
+        result = {"g": translate_text(item.get("lemma", ""), {}, locale, provider, api_key, context=context),
+                  "ex": {x["id"]: translate_text(x.get("text", ""), {"lemma": item.get("lemma", "")}, locale, provider, api_key)
+                         for x in source.get("ex", [])},
+                  "tip": ""}
+        if locale == "es":
+            result["regional"] = {"es-ES": ""}
+        return result
     if item["kind"] == "grammar":
         # Title, when, body and each mistake's "why" are owner-written English sources
         # (tools/authoring/grammar_en.json). Formulas, signals and the wrong/right sentences are taught

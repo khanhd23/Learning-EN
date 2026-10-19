@@ -1,0 +1,25 @@
+goal_done	今日の目標を達成しました！
+goal_ielts	IELTSの準備
+goal_progress	今日のXP：%1$d / %2$d
+goal_talk	自信を持って話す
+goal_toeic	TOEICの準備
+goal_travel	旅行のための英語
+goal_work	仕事のための英語
+grammar_mastered	文法をマスターしました
+grammar_points	文法
+greet_afternoon	こんにちは！
+greet_evening	こんばんは！
+greet_morning	おはようございます！
+greet_noon	こんにちは！
+heatmap	学習カレンダー
+hint	ヒント
+hint_context	この文から推測しましょう：「%1$s」
+hint_find_error	語形と時制を確認しましょう。
+hint_generic	まず文全体を読み、空欄の周りの重要語を見つけ、文法と意味の両方に合う選択肢を確認しましょう。
+hint_picture	まず見えているものを英語で言い、その単語を探しましょう。
+hint_word_order	まず主語と動詞を見つけ、周りに他の語を加えましょう。
+hint_word_order_meaning	意味：「%1$s」。まず主語と動詞を見つけ、周りに他の語を加えましょう。
+history	履歴
+i_speak	私は%1$sを話します
+in_use	使用中
+ins_antonym	反対の意味を持つ語を選んでください。

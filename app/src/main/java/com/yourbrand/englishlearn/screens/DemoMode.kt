@@ -28,7 +28,9 @@ object DemoMode {
         intent.getStringExtra("demo_species")?.let { s.pet.state.species = it }
         intent.getStringExtra("demo_theme")?.let { s.pet.state.equipped["theme"] = it; s.pet.state.owned += it }
         s.savePet()
-        val b = s.builder()
+        // Building the session factory parses the whole locale pack. Keep it lazy: screenshot
+        // and adb launch targets such as Settings must not pay the content cost on the main thread.
+        fun builder() = s.builder()
         when (screen) {
             "today" -> a.selectTab(Tab.TODAY)
             "vocab" -> a.selectTab(Tab.VOCAB)
@@ -49,9 +51,9 @@ object DemoMode {
             "me" -> a.selectTab(Tab.ME)
             "settings" -> { a.selectTab(Tab.ME); a.open(SettingsScreen(a)) }
             "licenses" -> { a.selectTab(Tab.ME); a.open(SettingsScreen(a)); (a.navigator.current as? SettingsScreen)?.openLicenses() }
-            "session" -> { a.selectTab(Tab.TODAY); a.startSession(b.examType("Part 5", "toeic_p5", "pos", 3)) }
-            "passage" -> { a.selectTab(Tab.EXAM); a.startSession(b.examType("Part 6", "toeic_p6", null, 3)) }
-            "mock" -> { a.selectTab(Tab.EXAM); a.open(MockScreen(a, MockTest.build(s.content, b, "toeic_p5", "Part 5", 10, emptySet()))) }
+            "session" -> { a.selectTab(Tab.TODAY); a.startSession(builder().examType("Part 5", "toeic_p5", "pos", 3)) }
+            "passage" -> { a.selectTab(Tab.EXAM); a.startSession(builder().examType("Part 6", "toeic_p6", null, 3)) }
+            "mock" -> { a.selectTab(Tab.EXAM); a.open(MockScreen(a, MockTest.build(s.content, builder(), "toeic_p5", "Part 5", 10, emptySet()))) }
             "pet" -> { a.selectTab(Tab.TODAY); a.openPetHome() }
             "shop" -> { a.selectTab(Tab.TODAY); a.openPetHome() }
             "builder" -> { a.selectTab(Tab.EXAM); a.open(BuilderScreen(a)) }

@@ -1,0 +1,10 @@
+set_show_pet	화면에 펫 표시
+set_slow_tts	더 느린 오디오
+set_sounds	효과음
+set_text_size	텍스트 크기
+set_theme	테마
+set_translation	번역 표시
+settings	설정
+show_more	%1$d개 더 보기
+show_translation	번역
+signals	단서 단어

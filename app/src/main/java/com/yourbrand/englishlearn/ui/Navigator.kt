@@ -17,6 +17,8 @@ enum class PetMode { FLOATING, MINI, HIDDEN }
 abstract class Screen(val activity: MainActivity) {
     lateinit var view: View
         private set
+    internal var viewLocaleTag: String? = null
+        private set
 
     /** Highlighted bottom tab; null hides the bottom bar. */
     open val tab: Tab? = null
@@ -28,7 +30,14 @@ abstract class Screen(val activity: MainActivity) {
     protected val inflater: LayoutInflater get() = activity.layoutInflater
     protected val ctx get() = activity
 
-    internal fun create(parent: ViewGroup): View { view = onCreateView(parent); return view }
+    internal fun create(parent: ViewGroup): View {
+        view = onCreateView(parent)
+        markLocaleCurrent()
+        return view
+    }
+    internal fun markLocaleCurrent() {
+        viewLocaleTag = activity.resources.configuration.locales[0].toLanguageTag()
+    }
     internal val hasView get() = ::view.isInitialized
     protected abstract fun onCreateView(parent: ViewGroup): View
 
@@ -37,6 +46,8 @@ abstract class Screen(val activity: MainActivity) {
     open fun onDestroy() {}
     open fun onPause() {}
     open fun onResume() {}
+    /** Return true when the existing view was translated in place. */
+    open fun onLocaleChanged(): Boolean = false
     /** True when the screen consumed the back press. */
     open fun onBack(): Boolean = false
 
@@ -62,6 +73,7 @@ class Navigator(private val container: FrameLayout, private val onChanged: (Scre
      * [keep] screens are not destroyed when they leave the stack.
      */
     fun resetTo(screen: Screen, keep: Collection<Screen>) {
+        rebuildIfLocaleStale(screen)
         if (!screen.hasView) {
             val old = stack.toList()
             show(screen, Transition.FADE) { stack.clear(); stack += screen }
@@ -88,6 +100,7 @@ class Navigator(private val container: FrameLayout, private val onChanged: (Scre
         if (stack.size <= 1) return false
         val leaving = stack.removeAt(stack.lastIndex)
         val target = stack.last()
+        rebuildIfLocaleStale(target)
         animateSwap(leaving.view, target.view, Transition.BACK)
         leaving.onHidden(); leaving.onDestroy()
         target.onShown(false)
@@ -101,17 +114,44 @@ class Navigator(private val container: FrameLayout, private val onChanged: (Scre
      */
     fun rebuildViews() {
         val top = current ?: return
-        stack.forEach { screen ->
-            val old = if (screen.hasView) screen.view else null
-            screen.onHidden()
-            val fresh = screen.create(container)
-            old?.let { it.animate().cancel(); container.removeView(it) }
-            container.addView(fresh, FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT))
-            fresh.visibility = if (screen === top) View.VISIBLE else View.INVISIBLE
-            screen.onShown(true)
-            if (screen !== top) screen.onHidden()
+        val started = System.nanoTime()
+        if (top.onLocaleChanged()) {
+            top.markLocaleCurrent()
+            Perf.log("locale update in place screen=${top.javaClass.simpleName} total=${Perf.ms(started, System.nanoTime())}")
+        } else {
+            rebuildScreen(top, visible = true)
         }
         onChanged(top)
+    }
+
+    private fun rebuildIfLocaleStale(screen: Screen) {
+        val currentTag = container.context.resources.configuration.locales[0].toLanguageTag()
+        if (!screen.hasView || screen.viewLocaleTag == currentTag) return
+        rebuildScreen(screen, visible = screen === current)
+    }
+
+    private fun rebuildScreen(screen: Screen, visible: Boolean) {
+        val started = System.nanoTime()
+        val old = if (screen.hasView) screen.view else null
+        screen.onHidden()
+        val fresh = screen.create(container)
+        val params = FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
+        // Keep the old view underneath while the replacement is attached. This avoids the
+        // one-frame hole caused by remove-then-add, which looked like an Activity restart.
+        container.suppressLayout(true)
+        try {
+            old?.animate()?.cancel()
+            val oldIndex = old?.let { container.indexOfChild(it) } ?: -1
+            if (oldIndex >= 0) container.addView(fresh, oldIndex + 1, params)
+            else container.addView(fresh, params)
+            fresh.visibility = if (visible) View.VISIBLE else View.INVISIBLE
+            old?.let { container.removeView(it) }
+        } finally {
+            container.suppressLayout(false)
+        }
+        screen.onShown(true)
+        if (!visible) screen.onHidden()
+        Perf.log("locale rebuild screen=${screen.javaClass.simpleName} total=${Perf.ms(started, System.nanoTime())} visible=$visible")
     }
 
     /** Pops until [predicate] matches the top screen (or only the root is left). */

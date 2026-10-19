@@ -1,0 +1,10 @@
+continue_grammar	계속: %1$s (%2$d%%)
+continue_label	계속
+continue_mock	연습 시험 계속하기
+correct_answer_is	정답: %1$s
+story_score	%1$d/%2$d개 정답
+d_easy	쉬움
+d_hard	어려움
+d_medium	보통
+d_mixed	혼합
+daily_goal	오늘의 목표

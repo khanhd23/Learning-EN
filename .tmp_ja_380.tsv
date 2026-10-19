@@ -1,0 +1,25 @@
+quest_daily	毎日のチャレンジを%1$d個完了
+quest_new_words	新しい単語を%1$d語学ぶ
+quest_progress	%1$d/%2$d
+quest_reward	報酬：%1$s
+quest_speaking	%1$d日間、発話練習をする
+quest_stories	物語を%1$d本読み終える
+quest_xp	+%1$d XP
+quest_xp_reward	週間ボーナス：+%1$d XP
+quick_session	クイックセッション
+quiet_hours	22:00から08:00の間はリマインダーを送信しません。
+quit_keep	続ける
+quit_leave	退出
+quit_msg	このセッションの進捗は失われます。
+quit_title	このセッションを退出しますか？
+rate_again	もう一度
+rate_easy	簡単
+rate_good	良い
+rate_hard	難しい
+rate_msg	LingoMoriを楽しんでいるなら、評価すると他の学習者が見つけやすくなります。
+rate_title	LingoMoriを楽しんでいますか？
+rate_yes	今すぐ評価
+recent_searches	最近の検索
+redo_all	すべてやり直す（%1$d）
+redo_group	このグループをやり直す
+remove_mastered	マスターした問題を削除

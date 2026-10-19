@@ -43,6 +43,7 @@ class Services(private val app: Application) {
     val bubbles = BubbleScheduler(LearningStore::dayKey)
 
     @Volatile private var contentReadyLocale: String? = null
+    @Volatile private var contentLoadingLocale: String? = null
     val contentReady: Boolean get() = contentReadyLocale == settings.contentLocale
     val content: Content
         get() {
@@ -53,9 +54,19 @@ class Services(private val app: Application) {
     /** Parse the active content pack away from the first Activity traversal. */
     fun prewarmContent() {
         val locale = settings.contentLocale
-        thread(name = "content-prewarm", priority = Thread.NORM_PRIORITY - 1) {
+        thread(name = "locale-index-prewarm", priority = Thread.MIN_PRIORITY) {
+            runCatching { contentRepo.prewarmSelectableLocales() }
+        }
+        synchronized(this) {
+            if (contentReadyLocale == locale || contentLoadingLocale == locale) return
+            contentLoadingLocale = locale
+        }
+        // Parse off the UI thread at the lowest priority so every tap/frame remains responsive
+        // on weak phones while Home is independent of the result.
+        thread(name = "content-prewarm", priority = Thread.MIN_PRIORITY) {
             runCatching { contentRepo.get(locale) }
                 .onSuccess { if (settings.contentLocale == locale) contentReadyLocale = locale }
+                .also { synchronized(this@Services) { if (contentLoadingLocale == locale) contentLoadingLocale = null } }
         }
     }
 
@@ -235,21 +246,10 @@ class EnglishApp : Application() {
         // Android 14/MIUI can perform the first SharedPreferences directory check for
         // hundreds of milliseconds. Do that while the launch/splash window is still up so
         // MainActivity never pays the cost during its first traversal.
-        thread(name = "prefs-prewarm", priority = Thread.MIN_PRIORITY) {
-            getSharedPreferences("settings_v1", Context.MODE_PRIVATE)
-            getSharedPreferences("ui_state_v1", Context.MODE_PRIVATE)
-            getSharedPreferences("pet_v1", Context.MODE_PRIVATE)
-            getSharedPreferences("ads_v1", Context.MODE_PRIVATE)
-            getSharedPreferences("ach", Context.MODE_PRIVATE)
-        }
         services = Services(this)
-        // Some MIUI builds synchronously resolve sans-serif-medium from disk on the first
-        // styled TextView. Warm the shared typefaces off the UI thread while content prewarms.
-        thread(name = "font-prewarm", priority = Thread.MIN_PRIORITY) {
-            Typeface.create("sans-serif", Typeface.NORMAL)
-            Typeface.create("sans-serif", Typeface.BOLD)
-        }
-        val selectable = services.contentRepo.selectableLocales()
+        // Do not open an asset and parse the approval index on the startup thread. The generated
+        // index is validated later; this tiny build-time list is enough to map the device locale.
+        val selectable = ContentRepository.startupSelectableLocales
         val appLocaleTag = AppCompatDelegate.getApplicationLocales().let { locales ->
             if (locales.isEmpty) "" else locales[0]?.toLanguageTag().orEmpty()
         }
@@ -263,10 +263,8 @@ class EnglishApp : Application() {
         }
         AppLocale.apply(services.settings.contentLocale)
         AppCompatDelegate.setDefaultNightMode(services.settings.nightMode)
-        // These are warmups only. Blocking the main thread here makes a low-end device wait for
-        // disk I/O and the multi-megabyte content parser before it can draw the first frame.
-        thread(name = "learning-prewarm", priority = Thread.MIN_PRIORITY) { services.store.load() }
-        thread(name = "pet-prewarm", priority = Thread.MIN_PRIORITY) { services.pet }
+        // Start the full locale parse immediately, but at the lowest scheduler priority. Home
+        // does not wait for it; starting here gives later tabs a warm snapshot sooner.
         services.prewarmContent()
     }
 }

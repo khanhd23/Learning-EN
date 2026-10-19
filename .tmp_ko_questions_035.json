@@ -1,0 +1,12 @@
+{
+  "qdebbc67b6": "전치사(before) 뒤에는 -ing 형태를 씁니다.",
+  "qabee56cb4": "전치사(in) 뒤에는 -ing 형태를 씁니다: learning.",
+  "qa55965414": "Avoid 뒤에는 -ing 형태를 씁니다: answering.",
+  "q2047040b9": "Agree 뒤에는 to + 동사 형태를 씁니다: to help.",
+  "qbb4f99147": "About 같은 전치사 뒤에는 명사나 동명사가 옵니다. 따라서 동사 원형 change가 아니라 changing을 씁니다.",
+  "q152740bb4": "Want 뒤에는 to와 동사 원형이 옵니다. To 뒤의 동사 원형은 become입니다.",
+  "qb48bd6338": "The high price는 명사구이므로 Despite를 씁니다.",
+  "qf0f790a33": "The store was busy는 절이므로 Although를 씁니다.",
+  "q7d2bdaa78": "The storm은 명사구이므로 due to를 씁니다.",
+  "q033eecd49": "The presentation은 명사구이므로 during을 씁니다."
+}

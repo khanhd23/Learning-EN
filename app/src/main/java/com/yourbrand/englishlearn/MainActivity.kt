@@ -5,6 +5,7 @@ import android.content.pm.PackageManager
 import android.graphics.Path
 import android.graphics.PathMeasure
 import android.graphics.Rect
+import android.graphics.Typeface
 import android.content.res.Configuration
 import android.net.Uri
 import android.os.Bundle
@@ -32,6 +33,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.yourbrand.englishlearn.learning.LearningStore
 import com.yourbrand.englishlearn.learning.Session
+import kotlin.concurrent.thread
 import com.yourbrand.englishlearn.core.ProgressBackup
 import com.yourbrand.englishlearn.pet.Mood
 import com.yourbrand.englishlearn.pet.PetFloatingView
@@ -141,6 +143,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         localeTag = resources.configuration.locales[0].toLanguageTag()
+        Perf.log("activity created: id=${System.identityHashCode(this)} tag=$localeTag settings=${getString(R.string.settings)}")
         buildRoot()
         setContentView(rootFrame)
 
@@ -164,11 +167,21 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null && BuildConfig.DEBUG) DemoMode.handle(this, intent)
 
         rootFrame.post {
-            // Consent/WebView/ads can trigger a large provider initialization on the main
-            // thread. Let the first screen and the first touch settle before starting it.
+            // All non-essential warmups start after Home has drawn. This keeps process startup
+            // and the first interaction independent of SQLite/assets on low-end devices.
             rootFrame.postDelayed({
-                if (!isFinishing && !isDestroyed) services.prewarmContentDb()
-            }, 700L)
+                if (isFinishing || isDestroyed) return@postDelayed
+                thread(name = "learning-prewarm", priority = Thread.MIN_PRIORITY) { services.store.load() }
+                thread(name = "pet-prewarm", priority = Thread.MIN_PRIORITY) { services.pet }
+                thread(name = "font-prewarm", priority = Thread.MIN_PRIORITY) {
+                    Typeface.create("sans-serif", Typeface.NORMAL)
+                    Typeface.create("sans-serif", Typeface.BOLD)
+                }
+            }, 250L)
+            // Search DB warming is deferred until Search is opened. Copying its ~11 MB asset at
+            // startup competes with the first Home frame and provides no value to the dashboard.
+            // Consent/WebView/ads can trigger provider initialization, so let the first touch
+            // settle before starting those services.
             rootFrame.postDelayed({
                 if (isFinishing || isDestroyed) return@postDelayed
                 services.ads.gatherConsent(this) { loadBanner() }
@@ -185,25 +198,44 @@ class MainActivity : AppCompatActivity() {
      */
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
+        val started = System.nanoTime()
         val tag = newConfig.locales[0].toLanguageTag()
+        Perf.log("activity locale config callback: id=${System.identityHashCode(this)} tag=$tag settings=${getString(R.string.settings)}")
         if (tag == localeTag) return
         localeTag = tag
+        services.prewarmContent()
         relocalize()
+        Perf.log("locale configuration handled: tag=$tag total=${Perf.ms(started, System.nanoTime())}")
     }
 
     private fun relocalize() {
         if (!::navigator.isInitialized) return
+        val started = System.nanoTime()
         val onStack = navigator.screens.toSet()
         hubs.entries.removeAll { (_, screen) -> (screen !in onStack).also { gone -> if (gone) screen.onDestroy() } }
-        bottomNav.removeAllViews()
-        navItems.clear()
-        addNav(Tab.TODAY, R.drawable.ic_sun, R.string.tab_today)
-        addNav(Tab.VOCAB, R.drawable.ic_book, R.string.tab_vocab)
-        addNav(Tab.GRAMMAR, R.drawable.ic_structure, R.string.tab_grammar)
-        addNav(Tab.EXAM, R.drawable.ic_target, R.string.tab_exam)
-        addNav(Tab.ME, R.drawable.ic_person, R.string.tab_me)
+        val afterPrune = System.nanoTime()
+        refreshNavLabels()
+        val afterChrome = System.nanoTime()
         navigator.rebuildViews()
+        val afterViews = System.nanoTime()
         updateChrome()
+        Perf.log("locale relocalize: prune=${Perf.ms(started, afterPrune)} nav=${Perf.ms(afterPrune, afterChrome)} views=${Perf.ms(afterChrome, afterViews)} chrome=${Perf.ms(afterViews, System.nanoTime())} total=${Perf.ms(started, System.nanoTime())} stack=${navigator.depth}")
+    }
+
+    /** Updates the existing bottom bar in place so locale changes never show an empty bar. */
+    private fun refreshNavLabels() {
+        listOf(
+            Tab.TODAY to R.string.tab_today,
+            Tab.VOCAB to R.string.tab_vocab,
+            Tab.GRAMMAR to R.string.tab_grammar,
+            Tab.EXAM to R.string.tab_exam,
+            Tab.ME to R.string.tab_me,
+        ).forEach { (tab, label) ->
+            navItems[tab]?.let { (item, _, text) ->
+                item.contentDescription = getString(label)
+                text.setText(label)
+            }
+        }
     }
 
     // ---- layout ------------------------------------------------------------------------------
@@ -594,6 +626,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onDestroy() {
+        Perf.log("activity destroyed: id=${System.identityHashCode(this)} changingConfig=$isChangingConfigurations")
         services.ads.destroyBanner(bannerContainer)
         if (isFinishing) services.tts.stop()
         super.onDestroy()

@@ -24,6 +24,7 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
     override val tab = Tab.TODAY
     override val allowsBanner = true
     override val petMode = PetMode.FLOATING
+    private var contentRefreshGeneration = 0
     override fun headerActions(bar: LinearLayout) = HubHeader.build(this, bar, greeting())
 
     private fun greeting(): String {
@@ -34,6 +35,7 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
     override fun build(body: LinearLayout) {
         val c = ctx
         val s = services
+        if (!s.contentReady) scheduleContentRefresh()
         val now = System.currentTimeMillis()
         s.ensureWeekly(now)
         val goal = s.settings.dailyGoalXp
@@ -124,8 +126,7 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
         // Finish the dashboard in the same build pass. Previously this section was posted to
         // the next frame and could remove/rebuild the whole body when content prewarming ended,
         // which made Home visibly blink and inserted Continue after the first render.
-        if (!s.contentReady) s.content
-        continueCard()?.let { if (continueSlot.childCount == 0) continueSlot.addView(it) }
+        if (s.contentReady) continueCard()?.let { if (continueSlot.childCount == 0) continueSlot.addView(it) }
         // 4. Due reviews
         val due = s.store.allItems().count { Scheduler.isDue(it, now) }
         body.addView(Kit.clickableCard(c, 16, 12, onClick = { activity.startSessionAsync { s.builder().review(str(R.string.review_now_title), now) } }) {
@@ -154,8 +155,10 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
         val plan = Kit.card(c, 6, 4)
         val todayKey = LearningStore.dayKey(now)
         val todayHist = s.store.history().filter { LearningStore.dayKey(it.at) == todayKey }
-        val topic = topicForPlan()
-        val list = selectedListForPlan()
+        // The dashboard is useful before the multi-megabyte pack is ready. Content-backed
+        // labels/cards are completed on the next visit or after the background warm-up.
+        val topic = if (s.contentReady) topicForPlan() else null
+        val list = if (s.contentReady) selectedListForPlan() else null
         val dailyNewWords = s.settings.dailyNewWordsTarget
         val listWords = list?.let { s.content.wordsByList[it.id].orEmpty().filter { word -> word.tier == "silver" } }.orEmpty()
         val topicWords = topic?.let { s.content.wordsByTopic[it.id].orEmpty() }.orEmpty()
@@ -169,7 +172,7 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
                 else activity.startSessionAsync { s.builder().words(SessionKind.TOPIC, t?.name ?: str(R.string.words), candidates, com.yourbrand.englishlearn.learning.VocabMode.MIXED, n = dailyNewWords, newFirst = true) }
             }
         }
-        val gp = nextGrammarPoint()
+        val gp = if (s.contentReady) nextGrammarPoint() else null
         planRow(plan, str(R.string.plan_grammar, gp?.title ?: ""), todayHist.any { it.kind == "GRAMMAR" }) { gp?.let { activity.open(GrammarLessonScreen(activity, it.id)) } }
         val examLabel = if ("toeic" in s.settings.goals) str(R.string.plan_part5) else str(R.string.plan_school)
         planRow(plan, examLabel, todayHist.any { it.kind == "EXAM_TYPE" || it.kind == "BUILDER" || it.kind == "MOCK" }) {
@@ -180,7 +183,7 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
         body.addView(plan)
 
         // Word of the day (fun, changes daily)
-        val wod = s.content.words.filter { it.level >= 2 && it.senses.size >= 2 }.let { list -> if (list.isEmpty()) null else list[Math.floorMod(todayKey, list.size.toLong()).toInt()] }
+        val wod = if (s.contentReady) s.content.words.filter { it.level >= 2 && it.senses.size >= 2 }.let { list -> if (list.isEmpty()) null else list[Math.floorMod(todayKey, list.size.toLong()).toInt()] } else null
         if (wod != null) {
             body.addView(Kit.section(c, str(R.string.word_of_day)))
             body.addView(Kit.clickableCard(c, 16, 4, onClick = { activity.open(WordDetailScreen(activity, wod.id)) }) {
@@ -236,6 +239,20 @@ class TodayScreen(activity: MainActivity) : ScrollScreen(activity) {
                 addView(Kit.chevron(c))
             })
         }
+    }
+
+    /** Finish content-backed cards after the first frame without showing a blocking loader. */
+    private fun scheduleContentRefresh() {
+        val token = ++contentRefreshGeneration
+        var attempts = 0
+        val check = object : Runnable {
+            override fun run() {
+                if (token != contentRefreshGeneration || activity.navigator.current !== this@TodayScreen) return
+                if (services.contentReady) refresh()
+                else if (++attempts < 300) view.postDelayed(this, 100L)
+            }
+        }
+        view.postDelayed(check, 100L)
     }
 
     private fun planRow(parent: LinearLayout, text: String, done: Boolean, onClick: () -> Unit) {

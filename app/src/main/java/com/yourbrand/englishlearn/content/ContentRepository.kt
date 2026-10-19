@@ -245,8 +245,14 @@ object ContentParser {
 }
 
 class ContentRepository(private val context: Context) {
+    /** Small build-time locale allowlist used before the asset index is warmed. */
+    companion object {
+        val startupSelectableLocales = listOf("en", "vi", "es", "pt-BR", "id", "hi", "ar", "ja", "ko", "th", "fr")
+    }
     private val cached = mutableMapOf<String, Content>()
     private val approvalCached = mutableMapOf<String, LocaleApproval>()
+    private val approvalLock = Any()
+    private val localeListLock = Any()
     private val approvalManifest by lazy {
         runCatching { JSONObject(asset("locale_approvals.json")) }.getOrElse { JSONObject() }
     }
@@ -287,17 +293,19 @@ class ContentRepository(private val context: Context) {
         return "en"
     }
 
-    private fun approval(path: String): LocaleApproval = approvalCached.getOrPut(path) {
-        val locale = path.removePrefix("i18n/")
-        approvalManifest.optJSONObject(locale)?.let { return@getOrPut localeApprovalFromManifest(it) }
-        // Keep a safe fallback for older/dev asset bundles that predate the generated manifest.
-        ApprovalGate.evaluate(
-            JSONObject(asset("$path/status.json")),
-            JSONObject(asset("en/words.json")),
-            JSONObject(asset("en/grammar.json")),
-            JSONObject(asset("en/questions.json")),
-            runCatching { JSONObject(asset("en/stories.json")) }.getOrElse { JSONObject() },
-        )
+    private fun approval(path: String): LocaleApproval = synchronized(approvalLock) {
+        approvalCached.getOrPut(path) {
+            val locale = path.removePrefix("i18n/")
+            approvalManifest.optJSONObject(locale)?.let { return@getOrPut localeApprovalFromManifest(it) }
+            // Keep a safe fallback for older/dev asset bundles that predate the generated manifest.
+            ApprovalGate.evaluate(
+                JSONObject(asset("$path/status.json")),
+                JSONObject(asset("en/words.json")),
+                JSONObject(asset("en/grammar.json")),
+                JSONObject(asset("en/questions.json")),
+                runCatching { JSONObject(asset("en/stories.json")) }.getOrElse { JSONObject() },
+            )
+        }
     }
 
     private fun isSelectablePath(path: String): Boolean = runCatching {
@@ -305,7 +313,7 @@ class ContentRepository(private val context: Context) {
     }.getOrDefault(false)
 
     /** Locale packs that are actually bundled in this build and pass the release gate. */
-    fun selectableLocales(): List<String> = synchronized(this) {
+    fun selectableLocales(): List<String> = synchronized(localeListLock) {
         selectableCache ?: run {
             // New bundles provide a tiny generated list. Keep the old discovery path only for
             // development/legacy assets that predate this optimization.
@@ -319,10 +327,14 @@ class ContentRepository(private val context: Context) {
         }
     }
 
+    /** Non-blocking variant for first-frame settings UI. */
+    fun selectableLocalesIfReady(): List<String>? = synchronized(localeListLock) { selectableCache }
+
+    /** Warms the tiny locale index away from the main thread. */
+    fun prewarmSelectableLocales() { selectableLocales() }
+
     /** Backward-compatible name used by Settings; this is now the approval-gated picker list. */
-    fun shippableLocales(): List<String> = synchronized(this) {
-        selectableLocales()
-    }
+    fun shippableLocales(): List<String> = selectableLocales()
 
     fun effectiveLocale(locale: String): String = localePack(locale).removePrefix("i18n/")
 
@@ -383,7 +395,10 @@ class ContentRepository(private val context: Context) {
         questions = asset("$path/questions.json"),
         pet = asset("$path/pet.json"),
             tips = asset("$path/tips.json"),
-        sound = asset("$path/sound.json"),
+        // Locale packs may not provide localized sound-practice text yet. Keep the
+        // pack load safe and let ContentParser use the English sound source instead
+        // of crashing the first Activity with FileNotFoundException.
+        sound = runCatching { asset("$path/sound.json") }.getOrDefault("{}"),
         stories = runCatching { asset("$path/stories.json") }.getOrDefault("{}"),
     )
 

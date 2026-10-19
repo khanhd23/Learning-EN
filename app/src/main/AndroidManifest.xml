@@ -32,6 +32,7 @@
             android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboardHidden|locale|layoutDirection"
             android:exported="true"
             android:label="@string/app_short_name"
+            android:launchMode="singleTask"
             android:theme="@style/Theme.App.Launch"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>

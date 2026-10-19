@@ -41,6 +41,7 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
     private var selectedFamily: String? = null
 
     override fun build(body: LinearLayout) {
+        if (showContentLoading(body)) return
         val c = ctx
         val content = services.content
         val formats = availableFormats()

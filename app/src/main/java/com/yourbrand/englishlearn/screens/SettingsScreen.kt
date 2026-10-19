@@ -27,24 +27,32 @@ import java.util.concurrent.Future
 class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
     override val petMode = PetMode.HIDDEN
     override val barTitle: String get() = str(R.string.settings)
+    private val localeBindings = ArrayList<() -> Unit>()
+    private var localeIndexRetry = 0
+
+    override fun onShown(firstTime: Boolean) {
+        super.onShown(firstTime)
+        // UMP consent access may initialize a provider lazily and can take seconds on a weak
+        // device. It is optional settings chrome, so discover it after the first frame.
+        if (firstTime) view.postDelayed({
+            if (hasView && activity.navigator.current === this && services.ads.privacyOptionsRequired) refresh()
+        }, 1200L)
+        if (firstTime) retryLocaleIndex()
+    }
 
     override fun build(body: LinearLayout) {
+        localeBindings.clear()
         val c = ctx
         val s = services.settings
 
         group(body, R.string.set_learning) { g ->
-            val locales = services.contentRepo.shippableLocales()
+            val locales = services.contentRepo.selectableLocalesIfReady().orEmpty()
             if (locales.size > 1) {
-                val labels = locales.map { localeLabel(it) }
-                choice(g, R.string.set_language, labels, locales.indexOf(services.contentRepo.effectiveLocale(s.contentLocale)).coerceAtLeast(0)) {
-                    s.contentLocale = locales[it]
-                    s.contentLocaleChosen = true
-                    AppLocale.apply(s.contentLocale)
-                }
+                languageChoice(g, locales)
             }
-            choice(g, R.string.set_goal, Settings.DAILY_MINUTES.map { str(R.string.minutes_n, it) }, Settings.DAILY_MINUTES.indexOf(s.dailyMinutes).coerceAtLeast(0)) { s.dailyMinutes = Settings.DAILY_MINUTES[it] }
-            choice(g, R.string.set_new_words, listOf("3", "5", "8"), listOf(3, 5, 8).indexOf(s.newWordsPerSession)) { s.newWordsPerSession = listOf(3, 5, 8)[it] }
-            choice(g, R.string.set_level, listOf(R.string.lvl_beginner, R.string.lvl_basic, R.string.lvl_inter, R.string.lvl_upper).map { str(it) }, s.level) { s.level = it }
+            choice(g, R.string.set_goal, { Settings.DAILY_MINUTES.map { str(R.string.minutes_n, it) } }, Settings.DAILY_MINUTES.indexOf(s.dailyMinutes).coerceAtLeast(0)) { s.dailyMinutes = Settings.DAILY_MINUTES[it] }
+            choice(g, R.string.set_new_words, { listOf("3", "5", "8") }, listOf(3, 5, 8).indexOf(s.newWordsPerSession)) { s.newWordsPerSession = listOf(3, 5, 8)[it] }
+            choice(g, R.string.set_level, { listOf(R.string.lvl_beginner, R.string.lvl_basic, R.string.lvl_inter, R.string.lvl_upper).map { str(it) } }, s.level) { s.level = it }
             toggle(g, R.string.set_translation, s.showTranslation) { s.showTranslation = it }
             toggle(g, R.string.set_slow_tts, s.slowTts) { s.slowTts = it }
             toggle(g, R.string.set_haptics, s.haptics) { s.haptics = it }
@@ -54,36 +62,39 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
         group(body, R.string.set_pet) { g ->
             toggle(g, R.string.set_show_pet, s.petVisible) { s.petVisible = it; activity.updateChrome() }
             toggle(g, R.string.set_bubbles, s.petBubbles) { s.petBubbles = it }
-            choice(g, R.string.set_pet_size, listOf("S", "M", "L"), s.petSize) { s.petSize = it; activity.petView.applySize() }
+            choice(g, R.string.set_pet_size, { listOf("S", "M", "L") }, s.petSize) { s.petSize = it; activity.petView.applySize() }
             action(g, R.string.set_reset_pos) { activity.petView.resetPosition(); activity.toast(str(R.string.done)) }
             action(g, R.string.set_open_pet) { activity.openPetHome() }
         }
 
         group(body, R.string.set_notifications) { g ->
             toggle(g, R.string.set_reminder, s.reminderOn) { on -> if (on) Reminders.enable(activity, s.reminderHour) else Reminders.disable(c); refresh() }
-            if (s.reminderOn) choice(g, R.string.set_reminder_time, listOf(8, 12, 18, 20, 21).map { "%02d:00".format(it) }, listOf(8, 12, 18, 20, 21).indexOf(s.reminderHour)) {
+            if (s.reminderOn) choice(g, R.string.set_reminder_time, { listOf(8, 12, 18, 20, 21).map { "%02d:00".format(it) } }, listOf(8, 12, 18, 20, 21).indexOf(s.reminderHour)) {
                 s.reminderHour = listOf(8, 12, 18, 20, 21)[it]; Reminders.schedule(c, s.reminderHour)
             }
-            g.addView(Kit.text(c, str(R.string.quiet_hours), R.style.Text_Caption).apply { setPadding(c.dpi(12), 0, c.dpi(12), c.dpi(8)) })
+            val quietHours = Kit.text(c, str(R.string.quiet_hours), R.style.Text_Caption).apply { setPadding(c.dpi(12), 0, c.dpi(12), c.dpi(8)) }
+            bindText(quietHours) { str(R.string.quiet_hours) }
+            g.addView(quietHours)
         }
 
         group(body, R.string.set_appearance) { g ->
-            choice(g, R.string.set_theme, listOf(R.string.theme_system, R.string.theme_light, R.string.theme_dark).map { str(it) }, s.theme) {
+            choice(g, R.string.set_theme, { listOf(R.string.theme_system, R.string.theme_light, R.string.theme_dark).map { str(it) } }, s.theme) {
                 s.theme = it; AppCompatDelegate.setDefaultNightMode(s.nightMode)
             }
-            choice(g, R.string.set_text_size, listOf("100%", "125%", "150%"), s.textSize) { s.textSize = it }
+            choice(g, R.string.set_text_size, { listOf("100%", "125%", "150%") }, s.textSize) { s.textSize = it }
             toggle(g, R.string.set_reduce_motion, s.reduceMotion) { s.reduceMotion = it }
         }
 
         group(body, R.string.set_privacy) { g ->
-            if (services.ads.privacyOptionsRequired) action(g, R.string.set_ad_privacy) { services.ads.showPrivacyOptions(activity) }
             action(g, R.string.privacy_policy) {
                 activity.open(PrivacyPolicyScreen(activity, BuildConfig.PRIVACY_URL))
             }
         }
 
         group(body, R.string.set_data) { g ->
-            g.addView(Kit.text(c, str(R.string.backup_info), R.style.Text_Caption).apply { setPadding(c.dpi(12), c.dpi(8), c.dpi(12), c.dpi(8)) })
+            val backupInfo = Kit.text(c, str(R.string.backup_info), R.style.Text_Caption).apply { setPadding(c.dpi(12), c.dpi(8), c.dpi(12), c.dpi(8)) }
+            bindText(backupInfo) { str(R.string.backup_info) }
+            g.addView(backupInfo)
             action(g, R.string.backup_title) { activity.startBackup() }
             action(g, R.string.restore_title) { activity.startRestore() }
             action(g, R.string.reset_progress, destructive = true) {
@@ -109,8 +120,44 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
             action(g, R.string.contact) {
                 runCatching { activity.startActivity(Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:${BuildConfig.SUPPORT_EMAIL}?subject=" + Uri.encode(str(R.string.app_short_name) + " feedback")))) }
             }
-            g.addView(Kit.text(c, str(R.string.version, BuildConfig.VERSION_NAME), R.style.Text_Caption).apply { setPadding(c.dpi(12), c.dpi(8), c.dpi(12), c.dpi(12)) })
+            val version = Kit.text(c, str(R.string.version, BuildConfig.VERSION_NAME), R.style.Text_Caption).apply { setPadding(c.dpi(12), c.dpi(8), c.dpi(12), c.dpi(12)) }
+            bindText(version) { str(R.string.version, BuildConfig.VERSION_NAME) }
+            g.addView(version)
         }
+    }
+
+    private fun retryLocaleIndex() {
+        if (!hasView || activity.navigator.current !== this || localeIndexRetry++ >= 30) return
+        if (services.contentRepo.selectableLocalesIfReady().isNullOrEmpty()) {
+            view.postDelayed({ retryLocaleIndex() }, 100L)
+        } else refresh()
+    }
+
+    override fun onLocaleChanged(): Boolean {
+        if (!hasView) return false
+        val started = System.nanoTime()
+        root.suppressLayout(true)
+        val afterSuppress = System.nanoTime()
+        var slowestNs = 0L
+        try {
+            refreshHeaderLocale()
+            val afterHeader = System.nanoTime()
+            localeBindings.forEach { binding ->
+                val bindingStarted = System.nanoTime()
+                binding()
+                slowestNs = maxOf(slowestNs, System.nanoTime() - bindingStarted)
+            }
+            val afterBindings = System.nanoTime()
+            Perf.log("SettingsScreen locale detail suppress=${Perf.ms(started, afterSuppress)} header=${Perf.ms(afterSuppress, afterHeader)} bindings=${Perf.ms(afterHeader, afterBindings)} slowest=${Perf.ms(0L, slowestNs)}")
+        } finally {
+            root.suppressLayout(false)
+        }
+        Perf.log("SettingsScreen locale bindings=${localeBindings.size} total=${Perf.ms(started, System.nanoTime())}")
+        return true
+    }
+
+    private fun bindText(view: TextView, value: () -> CharSequence) {
+        localeBindings += { view.text = value() }
     }
 
     /** Opens the complete offline license catalogue; used by the release smoke test too. */
@@ -148,8 +195,78 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
         else -> locale
     }
 
+    private fun localeFlag(locale: String): String = when (locale) {
+        "en" -> "🇬🇧"
+        "vi" -> "🇻🇳"
+        "es" -> "🇪🇸"
+        "pt-BR" -> "🇧🇷"
+        "id" -> "🇮🇩"
+        "hi" -> "🇮🇳"
+        "ar" -> "🇸🇦"
+        "ja" -> "🇯🇵"
+        "ko" -> "🇰🇷"
+        "th" -> "🇹🇭"
+        "fr" -> "🇫🇷"
+        else -> "🌐"
+    }
+
+    private fun languageChoice(g: LinearLayout, locales: List<String>) {
+        val c = ctx
+        val settings = services.settings
+        val current = services.contentRepo.effectiveLocale(settings.contentLocale)
+        val flag = Kit.emojiTile(c, localeFlag(current), R.color.surface_variant, 42, 21f)
+        val row = Kit.row(
+            c,
+            flag,
+            str(R.string.set_language),
+            localeLabel(current),
+            Kit.chevron(c),
+        ) {
+            val sheet = BottomSheet(activity)
+            sheet.show { box ->
+                box.addView(Kit.text(c, str(R.string.set_language), R.style.Text_Title).margins(c, bottom = 8))
+                locales.forEach { locale ->
+                    val selected = locale == services.contentRepo.effectiveLocale(settings.contentLocale)
+                    val check = if (selected) Kit.icon(c, R.drawable.ic_check, c.col(R.color.primary), 22) else null
+                    box.addView(Kit.row(
+                        c,
+                        Kit.emojiTile(c, localeFlag(locale), R.color.surface_variant, 42, 21f),
+                        localeLabel(locale),
+                        null,
+                        check,
+                    ) {
+                        if (!selected) {
+                            settings.contentLocale = locale
+                            settings.contentLocaleChosen = true
+                            sheet.dismiss(immediate = true)
+                            // Match the onboarding selector: let the sheet removal be drawn
+                            // before AppCompat dispatches the locale configuration callback.
+                            // Applying in the same click frame makes the whole SettingsScreen
+                            // rebuild before the user sees the selection take effect.
+                            activity.window.decorView.post { AppLocale.apply(locale) }
+                        } else {
+                            sheet.dismiss()
+                        }
+                    })
+                }
+            }
+        }
+        val labels = row.getChildAt(1) as LinearLayout
+        val title = labels.getChildAt(0) as TextView
+        val subtitle = labels.getChildAt(1) as TextView
+        localeBindings += {
+            val active = services.contentRepo.effectiveLocale(settings.contentLocale)
+            flag.text = localeFlag(active)
+            title.text = str(R.string.set_language)
+            subtitle.text = localeLabel(active)
+        }
+        g.addView(row)
+    }
+
     private fun group(body: LinearLayout, title: Int, block: (LinearLayout) -> Unit) {
-        body.addView(Kit.text(ctx, str(title), R.style.Text_BodyStrong, ctx.col(R.color.primary)).margins(ctx, top = 20, bottom = 6))
+        val heading = Kit.text(ctx, str(title), R.style.Text_BodyStrong, ctx.col(R.color.primary)).margins(ctx, top = 20, bottom = 6)
+        bindText(heading) { str(title) }
+        body.addView(heading)
         val card = Kit.card(ctx, 4, 0)
         block(card)
         body.addView(card)
@@ -162,17 +279,29 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
         row.isClickable = true
         row.background = c.rounded(0, 12f, ripple = true)
         row.contentDescription = str(label)
+        val labels = row.getChildAt(0) as LinearLayout
+        val title = labels.getChildAt(0) as TextView
+        localeBindings += {
+            title.text = str(label)
+            row.contentDescription = str(label)
+        }
         row.setOnClickListener { it.haptic(); sw.isChecked = !sw.isChecked; onChange(sw.isChecked) }
         g.addView(row)
     }
 
-    private fun choice(g: LinearLayout, label: Int, options: List<String>, selected: Int, onPick: (Int) -> Unit) {
+    private fun choice(g: LinearLayout, label: Int, options: () -> List<String>, selected: Int, onPick: (Int) -> Unit) {
         val c = ctx
         val box = Kit.vbox(c) { setPadding(c.dpi(12), c.dpi(10), c.dpi(12), c.dpi(4)) }
-        box.addView(Kit.text(c, str(label), R.style.Text_BodyStrong))
+        val labelView = Kit.text(c, str(label), R.style.Text_BodyStrong)
+        bindText(labelView) { str(label) }
+        box.addView(labelView)
         val flow = Kit.flow(c).margins(c, top = 8)
         val chips = ArrayList<TextView>()
-        options.forEachIndexed { i, o -> chips += Kit.chip(c, o, i == selected) { onPick(i); chips.forEachIndexed { j, v -> Kit.styleChip(v, j == i) } }.also { flow.addView(it) } }
+        options().forEachIndexed { i, o -> chips += Kit.chip(c, o, i == selected) { onPick(i); chips.forEachIndexed { j, v -> Kit.styleChip(v, j == i) } }.also { flow.addView(it) } }
+        localeBindings += {
+            val labels = options()
+            chips.forEachIndexed { i, chip -> if (i < labels.size) chip.text = labels[i] }
+        }
         box.addView(flow)
         g.addView(box)
     }
@@ -180,7 +309,9 @@ class SettingsScreen(activity: MainActivity) : ScrollScreen(activity) {
     private fun action(g: LinearLayout, label: Int, destructive: Boolean = false, onClick: () -> Unit) {
         val c = ctx
         g.addView(Kit.row(c, null, str(label), null, Kit.chevron(c), onClick).apply {
-            if (destructive) ((getChildAt(0) as LinearLayout).getChildAt(0) as TextView).setTextColor(c.col(R.color.error))
+            val title = ((getChildAt(0) as LinearLayout).getChildAt(0) as TextView)
+            bindText(title) { str(label) }
+            if (destructive) title.setTextColor(c.col(R.color.error))
         })
     }
 }

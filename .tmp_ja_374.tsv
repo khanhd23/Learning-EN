@@ -1,0 +1,25 @@
+mode_quiz	クイズ
+mode_spelling	スペリング
+mode_timed	時間制
+mood_dozing	居眠り中
+mood_full	満腹
+mood_happy	嬉しい
+mood_hi	あなたに会えてうれしい
+mood_hungry	空腹
+mood_sleeping	睡眠中
+mood_sleepy	眠い
+n_items	%1$d項目
+n_of_m_ready	準備完了：%1$d / %2$d語
+n_questions	%1$d問
+n_selected	%1$d件選択中
+n_words	%1$d語
+need_coins	あと%1$dコイン必要です。
+need_practice	もっと練習が必要
+need_stage	ステージ%1$dで解除
+new_mastered	新しくマスターした単語
+next	次へ
+next_stage	次のステージ
+no_mail_app	メールアプリが見つかりません。
+no_results	結果が見つかりません
+no_words_filter	このフィルターに一致する単語はありません。
+node_available	学習できます

@@ -1,0 +1,10 @@
+backup_done	진행 상황 저장됨
+backup_failed	파일을 저장할 수 없습니다. 다른 위치를 시도하세요.
+restore_title	진행 상황 복원
+restore_desc	백업 파일에서 진행 상황 불러오기
+restore_confirm_title	진행 상황을 바꿀까요?
+restore_confirm_msg	%1$s의 백업에는 %2$d개 단어, %3$d개 테스트, 레벨 %4$d 펫이 있습니다. 이 휴대폰의 현재 진행 상황이 대체됩니다.
+restore_replace	대체
+restore_done	진행 상황 복원됨
+restore_bad_file	이 파일은 LingoMori 백업이 아니거나 손상되었습니다.
+restore_newer_version	이 백업은 LingoMori의 최신 버전으로 만들어졌습니다. 먼저 앱을 업데이트하세요.

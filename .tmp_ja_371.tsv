@@ -1,0 +1,25 @@
+learn_list	このリストを学ぶ
+learn_topic	このトピックを学ぶ
+level_desc_1	初めて英語を学ぶ人向けの日常語。
+level_desc_2	日常生活や簡単な会話で使う一般的な語。
+level_desc_3	仕事、学習、より長い会話で使う語。
+level_desc_4	読解や試験のための学術・ビジネス用語。
+level_desc_5	高度で正式な語。
+level_n	レベル%1$d
+licenses	ライセンス
+licenses_text	LingoMoriは公開データとライブラリを使用しています。出典とライセンスは以下に記載しています。
+list_source	出典：%1$s
+listen	聞く
+listen_slow	ゆっくり聞く
+listening_now	聞いています…
+loading	読み込み中…
+locale_ar	العربية
+locale_en	English
+locale_es	Español
+locale_fr	Français
+locale_hi	हिन्दी
+locale_id	Bahasa Indonesia
+locale_ja	日本語
+locale_ko	한국어
+locale_pt_br	Português (Brasil)
+locale_th	ไทย

@@ -7,6 +7,7 @@ plugins { alias(libs.plugins.android.application) }
 // App identity + tunables live in config/app_config.json (SKILL.md section 2).
 val appConfig = JsonSlurper().parse(file("../config/app_config.json")) as Map<*, *>
 val flags = appConfig["flags"] as Map<*, *>
+val generatedLocaleRes = layout.buildDirectory.dir("generated/localeRes")
 
 // Real AdMob IDs + signing live in git-ignored secrets.properties. Missing keys fall back to Google's
 // public test IDs so debug builds always work; release bundles refuse to build with test IDs.
@@ -81,12 +82,15 @@ android {
         }
     }
 
-    // English is the fallback in values/; Vietnamese is the shipped translated UI.
-    androidResources { localeFilters += listOf("en", "vi") }
+    // Keep every approved learner-language UI pack in the APK; English remains the fallback.
+    androidResources {
+        localeFilters += listOf("en", "es", "hi", "in", "ja", "ko", "pt-rBR", "vi")
+    }
 
     sourceSets["main"].assets.srcDir("build/generated/contentAssets")
     sourceSets["main"].assets.srcDir("build/generated/licenseAssets")
     sourceSets["main"].res.srcDir("build/generated/imageAssets/res")
+    sourceSets["main"].res.srcDir(generatedLocaleRes.get().asFile)
 
     testOptions { unitTests.isReturnDefaultValues = true }
 }
@@ -219,6 +223,23 @@ val copyContent = tasks.register("generateContentAssets") {
         if (builder.waitFor() != 0) error("build_content_db.py failed")
     }
 }
+
+val generateAndroidLocaleStrings = tasks.register("generateAndroidLocaleStrings") {
+    group = "build"
+    description = "Generates Android UI string resources from the approved locale UI JSON packs."
+    inputs.file(rootProject.file("tools/generate_android_locale_strings.py"))
+    inputs.files(fileTree(rootProject.file("content/i18n")) { include("*/ui.json") })
+    outputs.dir(generatedLocaleRes)
+    doLast {
+        val process = ProcessBuilder(
+            "python", "tools/generate_android_locale_strings.py",
+            "--output", generatedLocaleRes.get().asFile.absolutePath,
+        ).directory(rootProject.projectDir).inheritIO().start()
+        if (process.waitFor() != 0) error("generate_android_locale_strings.py failed")
+    }
+}
+
+tasks.named("preBuild").configure { dependsOn(generateAndroidLocaleStrings) }
 val imageOut = layout.buildDirectory.dir("generated/imageAssets").get().asFile
 val buildImages = tasks.register("generateImageAssets") {
     group = "build"

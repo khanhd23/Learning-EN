@@ -44,7 +44,7 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
         super.onShown(firstTime)
         // ScrollScreen restores/resets its position first. Restore Grammar's learning position
         // afterwards so returning to this tab never jumps back to the top.
-        val id = roadmapId ?: currentRoadmapId(services.content.grammar)
+        val id = if (services.contentReady) roadmapId ?: currentRoadmapId(services.content.grammar) else null
         if (!firstTime && cachedScrollY != null && cachedRoadmapId == id) {
             scroll.scrollTo(0, cachedScrollY!!)
         } else {
@@ -87,6 +87,7 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
     }
 
     override fun build(body: LinearLayout) {
+        if (showContentLoading(body)) return
         val c = ctx
         val chips = Kit.hbox(c)
         listOf(R.string.g_all, R.string.g_toeic, R.string.g_tricky).forEachIndexed { i, label -> chips.addView(Kit.chip(c, str(label), filter == i) { filter = i; refresh() }) }

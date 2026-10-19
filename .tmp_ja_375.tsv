@@ -1,0 +1,25 @@
+node_locked	ロック中
+node_mastered	マスター済み
+node_progress	学習中
+not_now	今はしない
+not_set	未設定
+nothing_to_practice	まだ練習する項目がありません。まず新しい単語を学びましょう！
+notif_channel	学習リマインダー
+notif_msg	%1$sがお腹をすかせないよう、毎日リマインダーを設定しますか？
+notif_title	毎日のリマインダー
+notif_yes	リマインドする
+ob_goal_sub	目標に合ったレッスンを提案します。
+ob_goal_title	目標は何ですか？
+ob_language_sub	意味と説明がこの言語で表示されます。
+ob_language_title	何語を話しますか？
+ob_level_sub	無理のないところから始めましょう。後で変更できます。
+ob_level_title	英語のレベルはどのくらいですか？
+ob_pet_explain	学習するとペットが成長します。数日休むとお腹をすかせますが、逃げることはありません。
+ob_pet_name	ペットに名前を付ける
+ob_pet_sub	学習仲間を選び、名前を付けましょう。
+ob_pet_title	学習仲間に会いましょう
+ob_time	毎日の学習時間
+open_pet_home	タップしてペットを訪ねる
+owned	所有済み
+palette	問題一覧
+palette_legend	回答済み：%1$d / %2$d

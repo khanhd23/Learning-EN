@@ -300,6 +300,7 @@ abstract class ScrollScreen(activity: MainActivity) : Screen(activity) {
     protected lateinit var header: LinearLayout
     protected lateinit var root: LinearLayout
     protected var footer: LinearLayout? = null
+    private var contentWaitGeneration = 0
 
     /** Non-null shows a top bar with a back arrow (pushed screens). */
     protected open val barTitle: String? = null
@@ -361,6 +362,12 @@ abstract class ScrollScreen(activity: MainActivity) : Screen(activity) {
 
     protected open fun headerActions(bar: LinearLayout) {}
 
+    /** Rebuilds only the small app bar after a locale change, leaving the screen body intact. */
+    protected fun refreshHeaderLocale() {
+        header.removeAllViews()
+        buildHeader()
+    }
+
     private var builtRevision = -1L
     /** True only while building a newly opened screen: long lists may then fill in over frames.
      *  Rebuilds (filters, returning after changes) stay synchronous so the scroll position holds. */
@@ -382,6 +389,29 @@ abstract class ScrollScreen(activity: MainActivity) : Screen(activity) {
     }
 
     protected abstract fun build(body: LinearLayout)
+
+    /**
+     * Keep the first frame cheap while the locale content parser runs off the UI thread.
+     * Screens must call this before touching Services.content.
+     */
+    protected fun showContentLoading(body: LinearLayout): Boolean {
+        if (services.contentReady) {
+            contentWaitGeneration++
+            return false
+        }
+        body.addView(Kit.card(ctx, 20, 24, ctx.col(R.color.surface_variant), null) {
+            addView(Kit.text(ctx, str(R.string.loading), R.style.Text_Title))
+        })
+        val token = ++contentWaitGeneration
+        val retry = object : Runnable {
+            override fun run() {
+                if (token != contentWaitGeneration || activity.navigator.current !== this@ScrollScreen) return
+                if (services.contentReady) refresh() else view.postDelayed(this, 100L)
+            }
+        }
+        view.postDelayed(retry, 100L)
+        return true
+    }
 
     fun scrollToTop() = scroll.smoothScrollTo(0, 0)
 
@@ -502,12 +532,18 @@ class BottomSheet(private val activity: MainActivity) {
         return this
     }
 
-    fun dismiss() {
+    fun dismiss(immediate: Boolean = false) {
         val s = scrim ?: return
         val p = panel ?: return
         scrim = null; panel = null
         activity.sheets -= this
         if (activity.sheets.isEmpty()) activity.petView.setBlocked(false)
+        if (immediate) {
+            activity.overlay.removeView(s)
+            activity.overlay.removeView(p)
+            onDismiss?.invoke()
+            return
+        }
         s.animate().alpha(0f).setDuration(180).withEndAction { activity.overlay.removeView(s) }.start()
         p.animate().translationY(p.height.toFloat()).setDuration(180).withLayer().withEndAction { activity.overlay.removeView(p) }.start()
         onDismiss?.invoke()

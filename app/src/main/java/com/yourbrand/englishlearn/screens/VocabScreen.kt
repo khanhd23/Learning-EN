@@ -52,6 +52,7 @@ class VocabScreen(activity: MainActivity) : ScrollScreen(activity) {
     private lateinit var pageHost: LinearLayout
 
     override fun build(body: LinearLayout) {
+        if (showContentLoading(body)) return
         masteredWords = services.store.allItems().asSequence().filter { it.mastered && it.key.startsWith("w:") }.map { it.key }.toSet()
         pages = arrayOfNulls(3)
         body.addView(segmentBar())

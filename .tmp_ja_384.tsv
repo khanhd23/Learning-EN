@@ -1,0 +1,25 @@
+slot_neck	首
+slot_plant	植物
+slot_rug	ラグ
+slot_theme	部屋
+slot_toy	おもちゃ
+slot_wall	壁
+sort_az	A–Z
+sort_default	標準の順番
+sort_hard	難しい順
+sort_wrong	間違いが多い順
+sound_practice	リスニングと発音
+sound_practice_desc	似た音の違いを聞き分け、聞こえたとおりに書きましょう。
+sound_tip	ヒント: %1$s
+speak_again	もう一度試す
+species_cat	ネコ
+species_dragon	ドラゴン
+species_panda	パンダ
+speed_sub	60秒間でできるだけ多く答えましょう。
+speed_title	スピードチャレンジ
+src_new	新しい問題
+src_saved	保存済み
+src_wrong	間違えた問題
+stage_n	ステージ %1$d
+stage_of	全 %2$d ステージ中 %1$d
+stage_up_sub	%1$sはあなたと一緒に成長します
