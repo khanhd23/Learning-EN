@@ -1,6 +1,7 @@
 package com.yourbrand.englishlearn.content
 
 import android.content.Context
+import com.yourbrand.englishlearn.ui.Perf
 import org.json.JSONException
 import org.json.JSONArray
 import org.json.JSONObject
@@ -70,9 +71,10 @@ object ContentParser {
     private fun JSONObject.strOrNull(k: String): String? = if (has(k) && !isNull(k)) optString(k).takeIf { it.isNotEmpty() } else null
     private inline fun <T> JSONArray?.map(f: (JSONObject) -> T): List<T> = if (this == null) emptyList() else List(length()) { f(getJSONObject(it)) }
 
-    fun parse(words: String, grammar: String, questions: String, locale: LocalePackFiles, formats: String, approval: LocaleApproval? = null, images: Map<String, String> = emptyMap(), soundJson: String? = null, soundLocaleJson: String? = null, blockedSenses: Set<String> = emptySet(), storiesSourceJson: String? = null, examBanks: Map<String, ExamBank> = emptyMap(), wordListsJson: String? = null): Content {
+    fun parse(words: String, grammar: String, questions: String, locale: LocalePackFiles, formats: String, approval: LocaleApproval? = null, images: Map<String, String> = emptyMap(), soundJson: String? = null, soundLocaleJson: String? = null, blockedSenses: Set<String> = emptySet(), storiesSourceJson: String? = null, examBanks: Map<String, ExamBank> = emptyMap(), wordListsJson: String? = null, wordsMetaJson: String? = null, parseWords: Boolean = true): Content {
+        val parseStarted = System.nanoTime()
         val viTopics = JSONObject(locale.topics)
-        val viWords = JSONObject(locale.words)
+        val viWords = if (parseWords) JSONObject(locale.words) else JSONObject()
         val viConf = JSONObject(locale.confusables)
         val viGrammar = JSONObject(locale.grammar)
         val localeQuestions = JSONObject(locale.questions)
@@ -83,16 +85,17 @@ object ContentParser {
         val viP = localeQuestions.optJSONObject("passages") ?: JSONObject()
         val soundTranslations = JSONObject(soundLocaleJson ?: locale.sound).optJSONObject("focus") ?: JSONObject()
         val exampleTranslations = linkedMapOf<String, String>()
-        viWords.keys().forEach { senseId ->
+        if (parseWords) viWords.keys().forEach { senseId ->
             viWords.optJSONObject(senseId)?.optJSONObject("ex")?.let { examples ->
                 examples.keys().forEach { exampleId -> exampleTranslations[exampleId] = examples.optString(exampleId) }
             }
         }
 
-        val w = JSONObject(words)
-        val topics = w.getJSONArray("topics").map { Topic(it.getString("id"), viTopics.optString(it.getString("id")), it.getString("icon"), it.getInt("hue")) }
+        val w = if (parseWords) JSONObject(words) else JSONObject()
+        val meta = JSONObject(wordsMetaJson ?: if (parseWords) words else "{}")
+        val topics = (meta.optJSONArray("topics") ?: JSONArray()).map { Topic(it.getString("id"), viTopics.optString(it.getString("id")), it.getString("icon"), it.getInt("hue")) }
             .filter { approval == null || it.id in approval.approvedTopics }
-        val wordList = w.getJSONArray("words").map { o ->
+        val wordList = if (!parseWords) emptyList() else w.getJSONArray("words").map { o ->
             val id = o.getString("id")
             val senses = o.getJSONArray("senses").let { arr ->
                 List(arr.length()) { i ->
@@ -126,7 +129,7 @@ object ContentParser {
             val senses = word.senses.filter { approval == null || it.id in approval.approvedWords }
             if (senses.isEmpty()) null else word.copy(senses = senses)
         }
-        val conf = w.getJSONArray("confusables").map { o ->
+        val conf = (meta.optJSONArray("confusables") ?: JSONArray()).map { o ->
             val cv = viConf.optJSONObject(o.getString("id")) ?: JSONObject()
             val notes = cv.optJSONObject("notes")
             Confusable(
@@ -150,7 +153,7 @@ object ContentParser {
         }.filter { approval == null || it.id in approval.approvedGrammar }
 
         val q = JSONObject(questions)
-        val questionList = q.getJSONArray("questions").map { o ->
+        val questionList = (q.optJSONArray("questions") ?: JSONArray()).map { o ->
             val id = o.getString("id")
             Question(
                 id = id, type = o.getString("type"), fmt = o.optString("fmt", "grammar"), qtype = o.strOrNull("qtype"),
@@ -162,7 +165,7 @@ object ContentParser {
                 notes = viQNotes.strOrNull(id), explanation = viQ.optString(id),
             )
         }.filter { approval == null || it.id in approval.approvedQuestions }
-        val passageList = q.getJSONArray("passages").map { o ->
+        val passageList = (q.optJSONArray("passages") ?: JSONArray()).map { o ->
             val pv = viP.optJSONObject(o.getString("id"))?.optJSONArray("blanks").strings()
             Passage(
                 o.getString("id"), o.getString("title"), o.getString("text"), o.strOrNull("topic"), o.optInt("level", 3),
@@ -238,10 +241,32 @@ object ContentParser {
             } }
         }.getOrDefault(emptyList())
         return Content(topics, visibleWords, conf, grammarList, questionList, passageList, formatList, soon, pet, tips,
-            approval?.availableLevels ?: (1..5).toSet(), approval?.selectable ?: true, sound, stories, examBanks, wordLists)
+            approval?.availableLevels ?: (1..5).toSet(), approval?.selectable ?: true, sound, stories, examBanks, wordLists).also {
+                Perf.log("ContentParser parseWords=$parseWords elapsed=${Perf.ms(parseStarted, System.nanoTime())}")
+            }
     }
 
     private fun parseSoundSentences(a: JSONArray?, translations: Map<String, String>): List<SoundSentence> = if (a == null) emptyList() else List(a.length()) { i -> a.getJSONObject(i).let { SoundSentence(it.getString("id"), it.getString("text"), it.optInt("level", 1), translations[it.getString("id")]) } }
+}
+
+/** Map facade that keeps exam-bank names available without parsing bank JSON until accessed. */
+private class LazyExamBanks(
+    private val names: Set<String>,
+    private val loader: (String) -> ExamBank?,
+) : AbstractMap<String, ExamBank>() {
+    private val loaded = HashMap<String, ExamBank>()
+    private val missing = HashSet<String>()
+
+    override fun containsKey(key: String): Boolean = key in names
+
+    override fun get(key: String): ExamBank? {
+        if (key !in names || key in missing) return null
+        loaded[key]?.let { return it }
+        return loader(key)?.also { loaded[key] = it } ?: run { missing += key; null }
+    }
+
+    override val entries: Set<Map.Entry<String, ExamBank>>
+        get() = names.mapNotNull { key -> get(key)?.let { java.util.AbstractMap.SimpleEntry(key, it) } }.toSet()
 }
 
 class ContentRepository(private val context: Context) {
@@ -250,6 +275,7 @@ class ContentRepository(private val context: Context) {
         val startupSelectableLocales = listOf("en", "vi", "es", "pt-BR", "id", "hi", "ar", "ja", "ko", "th", "fr")
     }
     private val cached = mutableMapOf<String, Content>()
+    private val cachedLight = mutableMapOf<String, Content>()
     private val approvalCached = mutableMapOf<String, LocaleApproval>()
     private val approvalLock = Any()
     private val localeListLock = Any()
@@ -296,6 +322,11 @@ class ContentRepository(private val context: Context) {
     private fun approval(path: String): LocaleApproval = synchronized(approvalLock) {
         approvalCached.getOrPut(path) {
             val locale = path.removePrefix("i18n/")
+            // The build emits one small row beside each shipped locale. Read it first so the
+            // first tab does not parse the nearly-1 MB combined approval manifest.
+            runCatching { JSONObject(asset("$path/approval.json")) }.getOrNull()?.let { row ->
+                return@getOrPut localeApprovalFromManifest(row)
+            }
             approvalManifest.optJSONObject(locale)?.let { return@getOrPut localeApprovalFromManifest(it) }
             // Keep a safe fallback for older/dev asset bundles that predate the generated manifest.
             ApprovalGate.evaluate(
@@ -308,8 +339,14 @@ class ContentRepository(private val context: Context) {
         }
     }
 
+    /** Approval subset needed by the light snapshot; it deliberately omits the large word list. */
+    private fun lightApproval(path: String): LocaleApproval = synchronized(approvalLock) {
+        runCatching { JSONObject(asset("$path/approval_light.json")) }.getOrNull()?.let { return localeApprovalFromManifest(it) }
+        approval(path)
+    }
+
     private fun isSelectablePath(path: String): Boolean = runCatching {
-        context.assets.list("content/$path").orEmpty().contains("status.json") && approval(path).selectable
+        context.assets.list("content/$path").orEmpty().contains("status.json") && lightApproval(path).selectable
     }.getOrDefault(false)
 
     /** Locale packs that are actually bundled in this build and pass the release gate. */
@@ -345,7 +382,7 @@ class ContentRepository(private val context: Context) {
             asset("en/words.json"),
             asset("en/grammar.json"),
             asset("en/questions.json"),
-            if (key == "en") englishLocaleFiles() else localeFiles(key),
+            if (key == "en") englishLocaleFiles(runCatching { asset("en/words_meta.json") }.getOrNull()) else localeFiles(key),
             asset("exam_formats.json"),
             if (key == "en") null else approval(key),
             imageManifest(),
@@ -355,7 +392,28 @@ class ContentRepository(private val context: Context) {
             runCatching { asset("en/stories.json") }.getOrNull(),
             loadExamBanks(key, asset("exam_formats.json"), if (key == "en") null else approval(key)),
             wordListsJson = runCatching { asset("word_lists.json") }.getOrNull(),
+            wordsMetaJson = runCatching { asset("en/words_meta.json") }.getOrNull(),
         ).also { cached[key] = it }
+    }
+
+    /** Parses the non-vocabulary payload. Grammar, Exam and Me can render from this snapshot. */
+    fun getLight(locale: String = "vi"): Content = synchronized(this) {
+        val key = localePack(locale)
+        cachedLight[key] ?: ContentParser.parse(
+            words = "{}",
+            grammar = asset("en/grammar.json"),
+            questions = asset("en/questions.json"),
+            locale = if (key == "en") englishLocaleFiles(runCatching { asset("en/words_meta.json") }.getOrNull(), includeWords = false, minimal = true) else localeFiles(key, includeWords = false, minimal = true),
+            formats = asset("exam_formats.json"),
+            approval = if (key == "en") null else lightApproval(key),
+            soundJson = null,
+            soundLocaleJson = null,
+            storiesSourceJson = null,
+            examBanks = loadExamBanks(key, asset("exam_formats.json"), if (key == "en") null else lightApproval(key)),
+            wordListsJson = null,
+            wordsMetaJson = runCatching { asset("en/words_meta.json") }.getOrNull(),
+            parseWords = false,
+        ).also { cachedLight[key] = it }
     }
 
     private fun loadExamBanks(key: String, formatsJson: String, approval: LocaleApproval?): Map<String, ExamBank> {
@@ -365,49 +423,52 @@ class ContentRepository(private val context: Context) {
                 List(sections.length()) { sections.getJSONObject(it).optString("bank") }.filter { it.isNotBlank() }
             } ?: emptyList()
         }.toSet()
-        return names.mapNotNull { bank ->
-            val source = runCatching { asset("en/exams/$bank.json") }.getOrNull() ?: return@mapNotNull null
-            val base = ExamBankParser.parse(source)
-            val localized = if (key == "en") null else runCatching { asset("$key/exams/$bank.json") }.getOrNull()
-            bank to ExamBankParser.merge(
-                base,
-                localized,
-                approval?.approvedExams ?: emptySet(),
-                // Assessment material must stay in its authored language for every exam.
-                // This includes IELTS/VSTEP/THPT/KET/PET: translating a stem, passage or
-                // group title changes what the learner is being assessed on. Explanations
-                // remain localizable through the approved locale pack.
-                translatePassages = false,
-                translateGroupTitles = false,
-                translateItemStems = false,
-            )
-        }.toMap()
+        return LazyExamBanks(names) { bank ->
+            val source = runCatching { asset("en/exams/$bank.json") }.getOrNull()
+            if (source == null) null else {
+                val base = ExamBankParser.parse(source)
+                val localized = if (key == "en") null else runCatching { asset("$key/exams/$bank.json") }.getOrNull()
+                ExamBankParser.merge(
+                    base,
+                    localized,
+                    approval?.approvedExams ?: emptySet(),
+                    // Assessment material must stay in its authored language for every exam.
+                    // This includes IELTS/VSTEP/THPT/KET/PET: translating a stem, passage or
+                    // group title changes what the learner is being assessed on. Explanations
+                    // remain localizable through the approved locale pack.
+                    translatePassages = false,
+                    translateGroupTitles = false,
+                    translateItemStems = false,
+                )
+            }
+        }
     }
 
     /** True only for a locale pack that has passed the content-release gate. */
     fun isShippable(locale: String): Boolean = locale == "en" || isSelectablePath("i18n/${locale.trim().replace('_', '-')}")
 
-    private fun localeFiles(path: String) = LocalePackFiles(
+    private fun localeFiles(path: String, includeWords: Boolean = true, minimal: Boolean = false) = LocalePackFiles(
         topics = asset("$path/topics.json"),
-        words = asset("$path/words.json"),
-        confusables = asset("$path/confusables.json"),
+        words = if (includeWords) asset("$path/words.json") else "{}",
+        confusables = if (minimal) "{}" else asset("$path/confusables.json"),
         grammar = asset("$path/grammar.json"),
-        questions = asset("$path/questions.json"),
-        pet = asset("$path/pet.json"),
-            tips = asset("$path/tips.json"),
+        questions = if (minimal) "{}" else asset("$path/questions.json"),
+        pet = if (minimal) "{}" else asset("$path/pet.json"),
+            tips = if (minimal) "{}" else asset("$path/tips.json"),
         // Locale packs may not provide localized sound-practice text yet. Keep the
         // pack load safe and let ContentParser use the English sound source instead
         // of crashing the first Activity with FileNotFoundException.
-        sound = runCatching { asset("$path/sound.json") }.getOrDefault("{}"),
-        stories = runCatching { asset("$path/stories.json") }.getOrDefault("{}"),
+        sound = if (minimal) "{}" else runCatching { asset("$path/sound.json") }.getOrDefault("{}"),
+        stories = if (minimal) "{}" else runCatching { asset("$path/stories.json") }.getOrDefault("{}"),
     )
 
-    private fun englishLocaleFiles(): LocalePackFiles {
-        val words = JSONObject(asset("en/words.json"))
+    private fun englishLocaleFiles(wordsMetaJson: String? = null, includeWords: Boolean = true, minimal: Boolean = false): LocalePackFiles {
+        val words = if (includeWords) JSONObject(asset("en/words.json")) else JSONObject()
+        val meta = JSONObject(wordsMetaJson ?: words.toString())
         val topics = JSONObject()
-        words.getJSONArray("topics").let { array -> for (i in 0 until array.length()) { val t = array.getJSONObject(i); topics.put(t.getString("id"), t.optString("name", t.getString("id"))) } }
+        (meta.optJSONArray("topics") ?: JSONArray()).let { array -> for (i in 0 until array.length()) { val t = array.getJSONObject(i); topics.put(t.getString("id"), t.optString("name", t.getString("id"))) } }
         val wordValues = JSONObject()
-        words.getJSONArray("words").let { array ->
+        if (includeWords) words.getJSONArray("words").let { array ->
             for (i in 0 until array.length()) {
                 val word = array.getJSONObject(i)
                 val senses = word.getJSONArray("senses")
@@ -428,18 +489,20 @@ class ContentRepository(private val context: Context) {
             }
         }
         // Question and passage explanations: the English source "expl" fields.
-        val enQuestions = JSONObject(asset("en/questions.json"))
-        val explanations = JSONObject()
-        enQuestions.getJSONArray("questions").let { array -> for (i in 0 until array.length()) { val item = array.getJSONObject(i); explanations.put(item.getString("id"), item.optString("expl")) } }
-        val passageValues = JSONObject()
-        enQuestions.getJSONArray("passages").let { array ->
-            for (i in 0 until array.length()) {
-                val item = array.getJSONObject(i)
-                val blanks = JSONArray(); item.getJSONArray("blanks").let { bs -> for (j in 0 until bs.length()) blanks.put(bs.getJSONObject(j).optString("expl")) }
-                passageValues.put(item.getString("id"), JSONObject().put("blanks", blanks))
+        val questionValues = if (minimal) JSONObject() else {
+            val enQuestions = JSONObject(asset("en/questions.json"))
+            val explanations = JSONObject()
+            enQuestions.getJSONArray("questions").let { array -> for (i in 0 until array.length()) { val item = array.getJSONObject(i); explanations.put(item.getString("id"), item.optString("expl")) } }
+            val passageValues = JSONObject()
+            enQuestions.getJSONArray("passages").let { array ->
+                for (i in 0 until array.length()) {
+                    val item = array.getJSONObject(i)
+                    val blanks = JSONArray(); item.getJSONArray("blanks").let { bs -> for (j in 0 until bs.length()) blanks.put(bs.getJSONObject(j).optString("expl")) }
+                    passageValues.put(item.getString("id"), JSONObject().put("blanks", blanks))
+                }
             }
+            JSONObject().put("q", explanations).put("passages", passageValues)
         }
-        val questionValues = JSONObject().put("q", explanations).put("passages", passageValues)
-        return LocalePackFiles(topics.toString(), wordValues.toString(), "{}", grammarValues.toString(), questionValues.toString(), asset("en/pet.json"), asset("en/tips.json"), "{}", runCatching { asset("en/stories.json") }.getOrDefault("{}"))
+        return LocalePackFiles(topics.toString(), wordValues.toString(), "{}", grammarValues.toString(), questionValues.toString(), if (minimal) "{}" else asset("en/pet.json"), if (minimal) "{}" else asset("en/tips.json"), "{}", if (minimal) "{}" else runCatching { asset("en/stories.json") }.getOrDefault("{}"))
     }
 }

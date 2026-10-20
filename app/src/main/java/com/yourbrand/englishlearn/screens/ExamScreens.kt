@@ -25,6 +25,8 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
     override val allowsBanner = true
     override val petMode = PetMode.FLOATING
 
+    private val displayContent get() = if (services.contentReady) services.content else services.contentLight
+
     override fun headerActions(bar: LinearLayout) = HubHeader.build(this, bar, str(R.string.tab_exam))
 
     private var formatId: String
@@ -41,9 +43,9 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
     private var selectedFamily: String? = null
 
     override fun build(body: LinearLayout) {
-        if (showContentLoading(body)) return
+        if (showLightContentLoading(body)) return
         val c = ctx
-        val content = services.content
+        val content = displayContent
         val formats = availableFormats()
         val fmt = formats.firstOrNull { it.id == formatId } ?: formats.first()
 
@@ -174,7 +176,7 @@ class ExamScreen(activity: MainActivity) : ScrollScreen(activity) {
     }
 
     private fun availableFormats(): List<ExamFormat> =
-        ExamCatalog.visibleToLocale(services.content.formats, services.settings.contentLocale)
+        ExamCatalog.visibleToLocale(displayContent.formats, services.settings.contentLocale)
 
     private fun isThptPaper(format: ExamFormat): Boolean =
         format.id == "thpt" || format.id.startsWith("thpt_")

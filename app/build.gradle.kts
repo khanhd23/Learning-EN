@@ -139,6 +139,7 @@ val copyContent = tasks.register("generateContentAssets") {
     inputs.file(rootProject.file("config/app_config.json"))
     inputs.file(rootProject.file("config/blocked_senses.txt"))
     inputs.file(rootProject.file("tools/build_content_db.py"))
+    inputs.file(rootProject.file("tools/minify_content.py"))
     outputs.dir(contentOut)
     doLast {
         contentOut.deleteRecursively()
@@ -206,6 +207,23 @@ val copyContent = tasks.register("generateContentAssets") {
             )
         }
         File(dst, "locale_approvals.json").writeText(JsonOutput.prettyPrint(JsonOutput.toJson(manifest)), Charsets.UTF_8)
+        // Keep the large combined manifest for compatibility, but place the active locale's
+        // single decision row next to its pack so startup never parses all locales at once.
+        manifest.forEach { (locale, row) ->
+            val rowFile = File(dst, "i18n/$locale/approval.json")
+            rowFile.parentFile.mkdirs()
+            rowFile.writeText(JsonOutput.toJson(row), Charsets.UTF_8)
+            val approved = (row as Map<*, *>)["approved"] as Map<*, *>
+            val lightRow = mapOf(
+                "selectable" to row["selectable"],
+                "availableLevels" to row["availableLevels"],
+                "approved" to mapOf(
+                    "topics" to approved["topics"],
+                    "grammar" to approved["grammar"],
+                ),
+            )
+            File(dst, "i18n/$locale/approval_light.json").writeText(JsonOutput.toJson(lightRow), Charsets.UTF_8)
+        }
         val selectableLocales = manifest.filterValues { row -> (row as? Map<*, *>)?.get("selectable") == true }.keys.sorted()
         File(dst, "selectable_locales.json").writeText(JsonOutput.toJson(selectableLocales), Charsets.UTF_8)
         rootProject.file("config/exam_formats.json").copyTo(File(dst, "exam_formats.json"), overwrite = true)
@@ -215,6 +233,9 @@ val copyContent = tasks.register("generateContentAssets") {
         rootProject.file("config/blocked_senses.txt").copyTo(File(dst, "blocked_senses.txt"), overwrite = true)
         rootProject.file("content/LICENSES.md").copyTo(File(dst, "LICENSES.md"), overwrite = true)
         rootProject.file("content/open-vocabulary-manifest.json").copyTo(File(dst, "open-vocabulary-manifest.json"), overwrite = true)
+        val minify = ProcessBuilder("python", "tools/minify_content.py", dst.absolutePath)
+            .directory(rootProject.projectDir).inheritIO().start()
+        if (minify.waitFor() != 0) error("minify_content.py failed")
         val builder = ProcessBuilder(
             "python", "tools/build_content_db.py", "--root", rootProject.projectDir.absolutePath,
             "--output", File(dst, "content.db").absolutePath,

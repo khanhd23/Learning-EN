@@ -25,6 +25,7 @@ import com.yourbrand.englishlearn.pet.BubbleScheduler
 import com.yourbrand.englishlearn.pet.PetConfig
 import com.yourbrand.englishlearn.pet.PetEngine
 import com.yourbrand.englishlearn.pet.PetState
+import com.yourbrand.englishlearn.ui.Perf
 import org.json.JSONObject
 import java.util.Calendar
 import kotlin.concurrent.thread
@@ -43,12 +44,22 @@ class Services(private val app: Application) {
     val bubbles = BubbleScheduler(LearningStore::dayKey)
 
     @Volatile private var contentReadyLocale: String? = null
+    @Volatile private var contentLightReadyLocale: String? = null
     @Volatile private var contentLoadingLocale: String? = null
     val contentReady: Boolean get() = contentReadyLocale == settings.contentLocale
+    val contentLightReady: Boolean get() = contentLightReadyLocale == settings.contentLocale
+    /** True only when the vocabulary/index payload is ready; light content is not enough for word practice. */
+    val wordsReady: Boolean get() = contentReady
     val content: Content
         get() {
             val locale = settings.contentLocale
             return contentRepo.get(locale).also { contentReadyLocale = locale }
+        }
+
+    val contentLight: Content
+        get() {
+            val locale = settings.contentLocale
+            return contentRepo.getLight(locale).also { contentLightReadyLocale = locale }
         }
 
     /** Parse the active content pack away from the first Activity traversal. */
@@ -63,9 +74,15 @@ class Services(private val app: Application) {
         }
         // Parse off the UI thread at the lowest priority so every tap/frame remains responsive
         // on weak phones while Home is independent of the result.
-        thread(name = "content-prewarm", priority = Thread.MIN_PRIORITY) {
+        thread(name = "content-prewarm", priority = Thread.NORM_PRIORITY) {
+            val lightStarted = System.nanoTime()
+            runCatching { contentRepo.getLight(locale) }
+                .onSuccess { if (settings.contentLocale == locale) contentLightReadyLocale = locale }
+                .also { Perf.log("content light locale=$locale parse=${Perf.ms(lightStarted, System.nanoTime())}") }
+            val fullStarted = System.nanoTime()
             runCatching { contentRepo.get(locale) }
                 .onSuccess { if (settings.contentLocale == locale) contentReadyLocale = locale }
+                .also { Perf.log("content full locale=$locale parse=${Perf.ms(fullStarted, System.nanoTime())}") }
                 .also { synchronized(this@Services) { if (contentLoadingLocale == locale) contentLoadingLocale = null } }
         }
     }

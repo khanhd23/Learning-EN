@@ -28,6 +28,8 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
     private var cachedScrollY: Int? = null
     private var cachedRoadmapId: String? = null
 
+    private val displayContent get() = if (services.contentReady) services.content else services.contentLight
+
     private fun visiblePoints(all: List<GrammarPoint>): List<GrammarPoint> = all.filter { gp -> when (filter) {
         1 -> gp.exam
         2 -> gp.mistakes.size >= 2 && gp.tags.any { it in setOf("tense", "conjunction", "agreement", "conditional", "gerund_infinitive", "pronoun") }
@@ -44,7 +46,7 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
         super.onShown(firstTime)
         // ScrollScreen restores/resets its position first. Restore Grammar's learning position
         // afterwards so returning to this tab never jumps back to the top.
-        val id = if (services.contentReady) roadmapId ?: currentRoadmapId(services.content.grammar) else null
+        val id = if (services.contentLightReady) roadmapId ?: currentRoadmapId(displayContent.grammar) else null
         if (!firstTime && cachedScrollY != null && cachedRoadmapId == id) {
             scroll.scrollTo(0, cachedScrollY!!)
         } else {
@@ -63,8 +65,8 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
     /** Re-selects the saved roadmap node when the learner taps the Grammar tab again. */
     fun restoreLearningPosition() {
         if (!hasView) return
-        val id = roadmapId ?: currentRoadmapId(services.content.grammar) ?: return
-        val point = services.content.grammarById[id]
+        val id = roadmapId ?: currentRoadmapId(displayContent.grammar) ?: return
+        val point = displayContent.grammarById[id]
         val target = point?.let { body.findViewWithTag<View>("grammar-progress:${it.level}") }
             ?: body.findViewWithTag<View>("grammar-node:$id")
         if (target != null) {
@@ -82,12 +84,12 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
         if (st.stars(gp.id) > 0) return NodeState.MASTERED
         val unlocked = i == 0 || st.stars(points[i - 1].id) > 0
         if (!unlocked) return NodeState.LOCKED
-        val started = services.content.questionsByPoint[gp.id].orEmpty().any { (st.item(it.key)?.seen ?: 0) > 0 }
+        val started = displayContent.questionsByPoint[gp.id].orEmpty().any { (st.item(it.key)?.seen ?: 0) > 0 }
         return if (started) NodeState.IN_PROGRESS else NodeState.AVAILABLE
     }
 
     override fun build(body: LinearLayout) {
-        if (showContentLoading(body)) return
+        if (showLightContentLoading(body)) return
         val c = ctx
         val chips = Kit.hbox(c)
         listOf(R.string.g_all, R.string.g_toeic, R.string.g_tricky).forEachIndexed { i, label -> chips.addView(Kit.chip(c, str(label), filter == i) { filter = i; refresh() }) }
@@ -98,7 +100,7 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
             addView(Kit.row(c, Kit.emojiTile(c, "🕒", c.col(R.color.surface_variant)), "12 ${str(R.string.tag_tense)}", str(R.string.drills_sub, 42), Kit.chevron(c)))
         }.margins(c, top = 8, bottom = 4))
 
-        val all = services.content.grammar
+        val all = displayContent.grammar
         roadmapId = currentRoadmapId(all)
         if (firstBuild) {
             buildSmooth(body, c, all)
@@ -107,7 +109,7 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
         (1..5).forEach { lvl ->
             val pts = all.filter { it.level == lvl }
             val visible = visiblePoints(pts)
-            if (!services.content.isLevelAvailable(lvl)) {
+            if (!displayContent.isLevelAvailable(lvl)) {
                 body.addView(Kit.card(c, 14, 8, Hues.container(c, lvl * 2 - 2), null) {
                     addView(Kit.text(c, "${str(R.string.level_n, lvl)} · ${str(R.string.coming_soon)}", R.style.Text_Caption).apply {
                         gravity = Gravity.CENTER
@@ -137,7 +139,7 @@ class GrammarScreen(activity: MainActivity) : ScrollScreen(activity) {
             val lvl = levelIndex + 1
             val pts = all.withIndex().filter { it.value.level == lvl }
             val visible = pts.filter { (_, gp) -> gp.id in filteredIds }
-            if (!services.content.isLevelAvailable(lvl)) {
+            if (!displayContent.isLevelAvailable(lvl)) {
                 body.addView(Kit.card(c, 14, 8, Hues.container(c, lvl * 2 - 2), null) {
                     addView(Kit.text(c, "${str(R.string.level_n, lvl)} - ${str(R.string.coming_soon)}", R.style.Text_Caption).apply {
                         gravity = Gravity.CENTER

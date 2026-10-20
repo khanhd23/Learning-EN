@@ -24,6 +24,8 @@ class MeScreen(activity: MainActivity) : ScrollScreen(activity) {
     override val allowsBanner = true
     override val petMode = PetMode.FLOATING
 
+    private val displayContent get() = if (services.contentReady) services.content else services.contentLight
+
     override fun headerActions(bar: LinearLayout) {
         HubHeader.build(this, bar, str(R.string.tab_me))
         bar.addView(ImageView(ctx).apply {
@@ -35,12 +37,12 @@ class MeScreen(activity: MainActivity) : ScrollScreen(activity) {
     }
 
     override fun build(body: LinearLayout) {
-        if (showContentLoading(body)) return
+        if (showLightContentLoading(body)) return
         val c = ctx
         val s = services
         val items = s.store.allItems()
         val wordsKnown = items.count { it.key.startsWith("w:") && it.mastered }
-        val grammarDone = s.content.grammar.count { s.store.stars(it.id) > 0 }
+        val grammarDone = displayContent.grammar.count { s.store.stars(it.id) > 0 }
         val streak = s.streak()
 
         // Overview
@@ -137,7 +139,7 @@ class MeScreen(activity: MainActivity) : ScrollScreen(activity) {
 
         // Exam goal
         body.addView(Kit.section(c, str(R.string.exam_goal)))
-        val visibleFormats = ExamCatalog.visibleToLocale(s.content.formats, s.settings.contentLocale)
+        val visibleFormats = ExamCatalog.visibleToLocale(displayContent.formats, s.settings.contentLocale)
         val goalFmt = s.settings.examGoal?.let { id -> visibleFormats.firstOrNull { it.id == id }?.let { format -> ExamFormatText.label(c, format) } } ?: str(R.string.not_set)
         val date = s.settings.examDate.takeIf { it > 0 }?.let { DateFormat.getDateInstance(DateFormat.MEDIUM).format(Date(it)) } ?: str(R.string.not_set)
         body.addView(Kit.card(c, 6, 4) {
@@ -165,7 +167,7 @@ class MeScreen(activity: MainActivity) : ScrollScreen(activity) {
         val sheet = BottomSheet(activity)
         sheet.show { box ->
             box.addView(Kit.text(ctx, str(R.string.exam_type), R.style.Text_Title))
-            ExamCatalog.visibleToLocale(services.content.formats, services.settings.contentLocale).forEach { f ->
+            ExamCatalog.visibleToLocale(displayContent.formats, services.settings.contentLocale).forEach { f ->
                 box.addView(Kit.row(ctx, null, ExamFormatText.label(ctx, f), f.family, if (services.settings.examGoal == f.id) Kit.icon(ctx, R.drawable.ic_check, ctx.col(R.color.primary)) else null) {
                     services.settings.examGoal = f.id; sheet.dismiss(); refresh()
                 })
@@ -192,8 +194,9 @@ object Achievements {
         val known = items.count { it.key.startsWith("w:") && it.mastered }
         val streak = s.streak()
         val hist = s.store.history()
-        val stars = s.content.grammar.count { s.store.stars(it.id) > 0 }
-        val l1 = s.content.grammar.filter { it.level == 1 }.all { s.store.stars(it.id) > 0 }
+        val grammar = if (s.contentReady) s.content.grammar else s.contentLight.grammar
+        val stars = grammar.count { s.store.stars(it.id) > 0 }
+        val l1 = grammar.filter { it.level == 1 }.all { s.store.stars(it.id) > 0 }
         val pet = s.pet.state
         fun t(id: Int) = a.getString(id)
         return listOf(

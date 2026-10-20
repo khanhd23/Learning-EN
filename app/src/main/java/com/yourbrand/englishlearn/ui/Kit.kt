@@ -413,6 +413,27 @@ abstract class ScrollScreen(activity: MainActivity) : Screen(activity) {
         return true
     }
 
+    /** Same gate for the small snapshot used by Grammar, Exam and Me. */
+    protected fun showLightContentLoading(body: LinearLayout): Boolean {
+        if (services.contentLightReady) {
+            contentWaitGeneration++
+            return false
+        }
+        services.prewarmContent()
+        body.addView(Kit.card(ctx, 20, 24, ctx.col(R.color.surface_variant), null) {
+            addView(Kit.text(ctx, str(R.string.loading), R.style.Text_Title))
+        })
+        val token = ++contentWaitGeneration
+        val retry = object : Runnable {
+            override fun run() {
+                if (token != contentWaitGeneration || activity.navigator.current !== this@ScrollScreen) return
+                if (services.contentLightReady) refresh() else view.postDelayed(this, 50L)
+            }
+        }
+        view.postDelayed(retry, 50L)
+        return true
+    }
+
     fun scrollToTop() = scroll.smoothScrollTo(0, 0)
 
     /** Brings a restored learning position into view without jumping unrelated screens. */
